@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-09-11T12:24:00Z",
+  "status": "PASS",
+  "target": "https://alakfamester-wp.clicknest.hu/fooldal/#szolgaltatasi-utak",
+  "reference": "https://alakfamester.click/#szolgaltatasi-utak",
+  "environment": {
+    "browser": "Chromium",
+    "dpr": 1,
+    "authenticated_target": true
+  },
+  "page": {
+    "id": 56,
+    "template": "elementor_header_footer",
+    "top_level_branches": 6,
+    "elements": 139,
+    "unique_ids": 139,
+    "new_ids": {
+      "first": "af130001",
+      "last": "af130023",
+      "count": 23
+    },
+    "server_bytes": 51762,
+    "server_sha256": "c381db7bd4eabb3c768745c99d0b00a147657547f8a445f1efb33af6524544dd",
+    "modified_gmt": "2026-09-11 12:10:30"
+  },
+  "css": {
+    "post_id": 8,
+    "marker": "v019",
+    "marker_count": 1,
+    "bytes": 70681,
+    "server_sha256": "9b7744ed70c23819de79498ec53a916c8a3046a6d48da9026c76732b8ace2859",
+    "local_lf_sha256": "594bdba17c298fa80c8429bdf30bf15b815857aac4fae376ab4a217092169357",
+    "modified_gmt": "2026-09-11 12:20:17"
+  },
+  "geometry": {
+    "desktop": {
+      "viewport": [1440, 1000],
+      "target_client_width": 1425,
+      "reference_client_width": 1430,
+      "section_height_px": 679.392883,
+      "head": [1180, 97.241074],
+      "grid": [1180, 414.803589],
+      "cards": [[377.330383, 414.803589], [377.330383, 414.803589], [377.330383, 414.803589]],
+      "overflow_px": 0
+    },
+    "mobile": {
+      "viewport": [390, 844],
+      "target_client_width": 375,
+      "reference_client_width": 380,
+      "section_height_px": 1523.375122,
+      "target_card_width_px": 327.428589,
+      "reference_card_width_difference_reason": "5 px client-width difference",
+      "card_heights_px": [398.803589, 425.196442, 425.196442],
+      "overflow_px": 0
+    }
+  },
+  "typography": {
+    "body": "16px/26.4px system-ui",
+    "quote": "22px/29.48px Georgia",
+    "eyebrow": "18px/29.7px 700; letter-spacing 2.88px",
+    "mobile_h2": "28.2154px/37.2444px"
+  },
+  "behavior": {
+    "root_tags": ["a", "a", "a"],
+    "tab_index": [0, 0, 0],
+    "keyboard_sequence": "first card focus -> Tab -> second card; :focus-visible true",
+    "links": [
+      "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+      "#kialakitas",
+      "#apolas"
+    ],
+    "icons_visible": 3,
+    "arrows_visible": 3,
+    "waves_visible": 2,
+    "frontend_console_errors": 0,
+    "frontend_console_warnings": 0
+  },
+  "editor": {
+    "section": 1,
+    "cards": 3,
+    "icons": 3,
+    "quotes": 3,
+    "bodies": 3,
+    "ctas": 3,
+    "publish_disabled": true,
+    "known_warning": "wp.compose.pure deprecation from third-party editor code"
+  },
+  "notes": [
+    "The CSS data-URI SVG colors use literal # values inside base64; this corrected invisible icons and a black outgoing wave.",
+    "The page save was read back before any repeat; the server-normalized value is the recorded baseline.",
+    "Authenticated preview was used, so the logged-out full-page image pair/overlay/diff remains open."
+  ]
+}
