@@ -1,0 +1,111 @@
+{
+  "package": "main-service-v001",
+  "timestamp_utc": "2026-09-11T14:41:20Z",
+  "status": "VERIFY_PENDING",
+  "target": {
+    "site": "https://alakfamester-wp.clicknest.hu/",
+    "page_id": 56,
+    "view_url": "https://alakfamester-wp.clicknest.hu/fooldal/",
+    "page_template": "elementor_header_footer"
+  },
+  "reconciliation": {
+    "state_md_top_checkpoint": "stale: reviews-v001 complete, routes-v001 next",
+    "live_before_write": {
+      "top_level": 7,
+      "elementor_ids": 198,
+      "bytes": 72086,
+      "sha256": "033b72e266cb85db33f0cf45eb52487d05247d370dc811eb090e3b3f53e3b8b9",
+      "routes_present": true,
+      "definitions_present": true
+    },
+    "authoritative_result": "Live WordPress matched reports/home/definitions-v001-target.json and the later AGENTS/work-package checkpoints; routes and definitions were preserved and not rebuilt.",
+    "css_live_before_write": {
+      "post_id": 8,
+      "marker": "af-project:start v026",
+      "bytes": 89034,
+      "sha256": "0b9ce60bf09e0f16233740d915416bb4c469baaa3dc80997a428d925370d62ec",
+      "modified_gmt": "2026-09-11 13:01:14",
+      "note": "newer than definitions-v001 v025 evidence; already contained main-service-v001 selectors, no CSS write performed in this package"
+    }
+  },
+  "write": {
+    "method": "WPVibe /wpvibe/v1/content/edit match-once patches on _elementor_data; no direct SQL or WP-CLI meta write. A blocked WP-CLI eval attempt was not retried.",
+    "patches": 3,
+    "patch_results_bytes": [
+      74617,
+      78712,
+      82697
+    ],
+    "new_element_ids_count": 34,
+    "new_element_id_range": "af150001..af150022",
+    "new_top_level_roots": [
+      "af150001",
+      "af150022"
+    ],
+    "new_section_id": "fo-szolgaltatas",
+    "reused_global_classes": [
+      "g-af-type-eyebrow",
+      "g-af-type-heading",
+      "g-af-type-body"
+    ],
+    "new_plugins": [],
+    "new_assets": [],
+    "new_global_classes": [],
+    "css_write": false,
+    "links": {
+      "create": "#kialakitas",
+      "care": "#apolas"
+    }
+  },
+  "readback": {
+    "bytes": 82697,
+    "sha256": "1eec600ee9c718ac56e48b35b7b12d167cb306db05c808703f21f53c22c00189",
+    "json_valid": true,
+    "top_level": 9,
+    "element_ids": 232,
+    "element_ids_basis": "SQL occurrence count of literal key prefix \"id\":\"af (8 chars): raw delta 1856/8 = 232; previous verified count was 198 and 34 new IDs were locally unique.",
+    "new_af15_ids": 34,
+    "new_af15_ids_basis": "SQL occurrence count of literal key prefix \"id\":\"af15 (10 chars): raw delta 340/10 = 34.",
+    "cache": "Elementor CSS cache and object cache auto-purged by WPVibe during readback."
+  },
+  "frontend_dom": {
+    "status": "PASS_STRUCTURAL",
+    "selector": "#fo-szolgaltatas",
+    "root_data_id": "af150001",
+    "cards": [
+      "af-service-half-create",
+      "af-service-half-care"
+    ],
+    "list_items": 6,
+    "links": [
+      {
+        "id": "af-service-link-create",
+        "href": "#kialakitas",
+        "text": "A kialakítás folyamata"
+      },
+      {
+        "id": "af-service-link-care",
+        "href": "#apolas",
+        "text": "Az alakfa ápolása"
+      }
+    ],
+    "content": "Exact source headings, body text and six list items were present in rendered HTML."
+  },
+  "not_checked_in_normal_chat": [
+    "logged-out source-target screenshot pair/overlay/diff",
+    "desktop/mobile geometry and overflow measurement",
+    "Elementor editor reopen/editability/unsaved-change state",
+    "specific rendered verification of decorative #af-wave-service-out"
+  ],
+  "homepage_option": "unchanged; show_on_front=posts, page_on_front=0 from pre-package live check",
+  "quota": {
+    "last_direct_provider_signal_used": 80,
+    "last_direct_provider_signal_total": 100,
+    "successful_calls_after_signal": 6,
+    "failed_security_blocked_eval_may_or_may_not_count": true,
+    "estimated_used": "86-87/100",
+    "reserve": 10,
+    "action": "No further WordPress writes in this work package until quota frees or verification can be completed within reserve."
+  },
+  "next_action": "Verify main-service-v001 visually at desktop/mobile and reopen page56 in Elementor. If those pass, mark package PASS and continue with the next source unit: \"Amit egy jól formázott növény visszaad a kertnek\"."
+}
