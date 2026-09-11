@@ -31,31 +31,17 @@
   "write": {
     "method": "WPVibe /wpvibe/v1/content/edit match-once patches on _elementor_data; no direct SQL or WP-CLI meta write. A blocked WP-CLI eval attempt was not retried.",
     "patches": 3,
-    "patch_results_bytes": [
-      74617,
-      78712,
-      82697
-    ],
+    "patch_results_bytes": [74617,78712,82697],
     "new_element_ids_count": 34,
     "new_element_id_range": "af150001..af150022",
-    "new_top_level_roots": [
-      "af150001",
-      "af150022"
-    ],
+    "new_top_level_roots": ["af150001","af150022"],
     "new_section_id": "fo-szolgaltatas",
-    "reused_global_classes": [
-      "g-af-type-eyebrow",
-      "g-af-type-heading",
-      "g-af-type-body"
-    ],
+    "reused_global_classes": ["g-af-type-eyebrow","g-af-type-heading","g-af-type-body"],
     "new_plugins": [],
     "new_assets": [],
     "new_global_classes": [],
     "css_write": false,
-    "links": {
-      "create": "#kialakitas",
-      "care": "#apolas"
-    }
+    "links": {"create":"#kialakitas","care":"#apolas"}
   },
   "readback": {
     "bytes": 82697,
@@ -63,49 +49,57 @@
     "json_valid": true,
     "top_level": 9,
     "element_ids": 232,
-    "element_ids_basis": "SQL occurrence count of literal key prefix \"id\":\"af (8 chars): raw delta 1856/8 = 232; previous verified count was 198 and 34 new IDs were locally unique.",
+    "element_ids_basis": "SQL occurrence count of literal key prefix id:af; previous verified count was 198 and 34 new IDs were locally unique.",
     "new_af15_ids": 34,
-    "new_af15_ids_basis": "SQL occurrence count of literal key prefix \"id\":\"af15 (10 chars): raw delta 340/10 = 34.",
     "cache": "Elementor CSS cache and object cache auto-purged by WPVibe during readback."
   },
   "frontend_dom": {
     "status": "PASS_STRUCTURAL",
     "selector": "#fo-szolgaltatas",
     "root_data_id": "af150001",
-    "cards": [
-      "af-service-half-create",
-      "af-service-half-care"
-    ],
+    "cards": ["af-service-half-create","af-service-half-care"],
     "list_items": 6,
     "links": [
-      {
-        "id": "af-service-link-create",
-        "href": "#kialakitas",
-        "text": "A kialakítás folyamata"
-      },
-      {
-        "id": "af-service-link-care",
-        "href": "#apolas",
-        "text": "Az alakfa ápolása"
-      }
+      {"id":"af-service-link-create","href":"#kialakitas","text":"A kialakítás folyamata"},
+      {"id":"af-service-link-care","href":"#apolas","text":"Az alakfa ápolása"}
     ],
     "content": "Exact source headings, body text and six list items were present in rendered HTML."
   },
+  "verification_after_account_switch": {
+    "wpvibe_account": "ncsnorbert+20260911@gmail.com",
+    "quota_signal": {"used":12,"total":300,"remaining":288,"reserve":10},
+    "page56_readback": {
+      "bytes": 82697,
+      "sha256": "1eec600ee9c718ac56e48b35b7b12d167cb306db05c808703f21f53c22c00189",
+      "json_valid": true,
+      "top_level": 9,
+      "element_ids": 232,
+      "af15_ids": 34,
+      "matches_checkpoint": true
+    },
+    "wave_frontend": {"selector":"#af-wave-service-out","present":true,"data_id":"af150022"},
+    "editor_reopen": {
+      "status": "BLOCKED_IN_CURRENT_RENDERER",
+      "result": "Anonymous server-side admin fetch returns WordPress login page; no authenticated Elementor canvas evidence."
+    },
+    "visual_capture": {
+      "status": "BLOCKED_IN_CURRENT_ENVIRONMENT",
+      "result": "Current tool environment cannot produce the required target screenshot/overlay/diff; no visual PASS claimed."
+    }
+  },
   "not_checked_in_normal_chat": [
     "logged-out source-target screenshot pair/overlay/diff",
-    "desktop/mobile geometry and overflow measurement",
-    "Elementor editor reopen/editability/unsaved-change state",
-    "specific rendered verification of decorative #af-wave-service-out"
+    "desktop/mobile rendered geometry and overflow measurement",
+    "authenticated Elementor editor reopen/editability/unsaved-change state"
   ],
   "homepage_option": "unchanged; show_on_front=posts, page_on_front=0 from pre-package live check",
   "quota": {
-    "last_direct_provider_signal_used": 80,
-    "last_direct_provider_signal_total": 100,
-    "successful_calls_after_signal": 6,
-    "failed_security_blocked_eval_may_or_may_not_count": true,
-    "estimated_used": "86-87/100",
+    "wpvibe_account": "ncsnorbert+20260911@gmail.com",
+    "last_direct_provider_signal_used": 12,
+    "last_direct_provider_signal_total": 300,
+    "remaining": 288,
     "reserve": 10,
-    "action": "No further WordPress writes in this work package until quota frees or verification can be completed within reserve."
+    "action": "No remote deployment of the next source unit until the main-service acceptance gate is closed; local/GitHub preparation is allowed."
   },
-  "next_action": "Verify main-service-v001 visually at desktop/mobile and reopen page56 in Elementor. If those pass, mark package PASS and continue with the next source unit: \"Amit egy jól formázott növény visszaad a kertnek\"."
+  "next_action": "Obtain the two missing main-service acceptance proofs (logged-out desktop/mobile visual pair and authenticated Elementor editor reopen). The next source unit is prepared and versioned in benefits-species-v001 files but must not be deployed before this gate passes."
 }
