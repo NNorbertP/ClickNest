@@ -1,5 +1,27 @@
 # STATE — Alakfa mester
 
+**Legfrissebb folytatási pont — 2026-09-11 15:21 UTC**
+
+Az új WPVibe-fiókra váltás és az ismételt élő ellenőrzés lezárult. Az aktív WPVibe-fiók **`ncsnorbert+20260911@gmail.com`**, a céloldal `https://alakfamester-wp.clicknest.hu/` ehhez a fiókhoz sikeresen kapcsolódik, a WordPress-kapcsolat admin jogosultsággal működik. A legutóbbi közvetlen kvótajelzés **12/300 használt, 288 szabad**; a D11 szerinti 10 hívásos lezárási/helyreállítási tartalék továbbra is kötelező.
+
+A GitHub projektállapot immár a `NNorbertP/ClickNest` **`main`** ágán kanonikus: a korábbi `alakfamester-sync-20260911` ág fast-forwarddal rávezetésre került a `main`-re. A folytatáshoz mindig a `main/alakfamester/STATE.md` az elsődleges projektállapot-fájl.
+
+A page56 az új fiókkal frissen visszaolvasva továbbra is pontosan a `main-service-v001` checkpointon áll: **82697 byte**, SHA256 **`1eec600ee9c718ac56e48b35b7b12d167cb306db05c808703f21f53c22c00189`**, JSON valid, **9 felső szintű ág, 232 `af...` Elementor-ID, 34 `af15...` ID**. A dekoratív `#af-wave-service-out` külön frontend-visszaolvasása is sikeres, `data-id="af150022"`.
+
+A `main-service-v001` státusza továbbra is **ellenőrzésre vár / VERIFY_PENDING**, nem teljes PASS. A hiányzó kötelező bizonyítékok: (1) kijelentkezott desktop/mobil source–target screenshotpár + overlay/diff + geometria/overflow mérés, (2) authentikált page56 Elementor-editor újranyitás/szerkeszthetőség/mentetlen-változás ellenőrzés. A jelenlegi WPVibe szerveroldali admin-render anonim login oldalt ad, a jelenlegi környezet pedig nem biztosít hiteles céloldali screenshot-capture-t; ezért ezekről nincs hamis PASS. Bizonyíték frissítve: `reports/home/main-service-v001-target.json`.
+
+A következő forrásegység, **„Amit egy jól formázott növény visszaad a kertnek” + „Fajok, amelyeken már dolgoztam”**, teljesen elő van készítve, de **nincs WordPressre telepítve**. A forrásból rögzített 22 szöveg, a hat benefit-ikon, a felső/alsó hullám SVG-hashe, valamint a 1440 px referenciaképből mért geometria dokumentált. A tervezett tiszta Atomic fa **53 új elemet** használ, lefoglalt tartomány: **`af160001`–`af160035`**; telepítés esetén a várt page56 összesen 11 felső szintű ágra és 285 `af...` ID-ra nő. Élő ütközésvizsgálat: `af16` = 0 találat, `#af-benefit`/`benefit` CSS = 0 találat. Új plugin, asset vagy globális Elementor-osztály nem kell.
+
+Előkészített, GitHub `main` alatt megőrzött állományok:
+
+- `specs/patterns/benefits-species-v001.json` — kanonikus kompakt Atomic rekonstrukciós terv, pontos tartalom- és hierarchiaszerződéssel;
+- `build/additional-css-benefits-species-v001.fragment.css` — **PREPARED ONLY**, nem önálló CSS-owner és nem került élő Additional CSS-be;
+- `build/benefits-svg-source-v001.json` — forrás SVG markup + index + SHA256 proveniencia;
+- `reports/home/benefits-species-v001-prep.json` — forrásmérés, ütközésvizsgálat, várható elemszám és deployment-gate;
+- `specs/decisions.md` — D16 döntés hozzáadva.
+
+**Következő művelet:** először csak a `main-service-v001` hiányzó két elfogadási bizonyítékát szabad lezárni. Ha mindkettő PASS, közvetlenül a következő WordPress-írás előtt újra kell olvasni page56 hash/ID/top-level állapotát, az `af16` ütközést, a Hello Additional CSS aktuális markerét/hashét és a WPVibe-kvótát. Csak változatlan precondition mellett telepíthető a `benefits-species-v001`, lehetőleg egy stabil Elementor-save ciklusban. A tényleges WordPress-állapot minden eltérésnél elsőbbséget élvez. A statikus kezdőlap-beállítás továbbra is változatlan: `show_on_front=posts`, `page_on_front=0`.
+
 **Kanonikus folytatási pont — 2026-09-11 14:41 UTC**
 
 Ez a fájl a feltöltött korábbi `STATE.md`, a projekt riportjai és a WPVibe-bal 2026-09-11-én frissen visszaolvasott WordPress-állapot összevetéséből készült. **Eltérés esetén a tényleges WordPress-állapot a mérvadó.** Már elkészült oldalt, sablont, ID-t, assetet, osztályt vagy beállítást nem szabad duplikálni.
@@ -68,7 +90,7 @@ A v026 már tartalmazta a következő szolgáltatásblokk célzott CSS-szabálya
 3. `reviews-atomic-v001` — Atomic Tabs + 3 legacy image widget; af-project 0.2.0 billentyűkezelés.
 4. `routes-v001` — `#szolgaltatasi-utak`; Atomic linkkártyák, D13.
 5. `definitions-v001` — `#mi-az-alakfa`; Atomic definíciós és összehasonlító szerkezet, D14.
-6. `main-service-v001` — **most felépítve, ellenőrzésre vár**, részletek lent.
+6. `main-service-v001` — **felépítve, ellenőrzésre vár**, részletek lent.
 
 ## main-service-v001 — aktuális állapot
 
@@ -96,7 +118,7 @@ A módosítás WPVibe `content/edit` match-once patch-ekkel történt a page56 `
 - új `af15...` ID-k: **34**
 - Elementor CSS cache és object cache a visszaolvasás során automatikusan ürült.
 
-Frontend DOM ellenőrzés a `/fooldal/` oldalon, `#fo-szolgaltatas` szelektorral: **PASS_STRUCTURAL**. Megjelent a fő szakasz, mindkét article-kártya, mind a 6 listapont, a pontos szöveg és mindkét horgonylink.
+Frontend DOM ellenőrzés a `/fooldal/` oldalon, `#fo-szolgaltatas` szelektorral: **PASS_STRUCTURAL**. Megjelent a fő szakasz, mindkét article-kártya, mind a 6 listapont, a pontos szöveg és mindkét horgonylink. A `#af-wave-service-out` későbbi külön visszaolvasása szintén sikeres.
 
 Bizonyíték: `reports/home/main-service-v001-target.json`.
 
@@ -104,12 +126,11 @@ Bizonyíték: `reports/home/main-service-v001-target.json`.
 
 **Állapot: ellenőrzésre vár — nem teljes PASS.**
 
-A normál Chat-környezetben még nem készült:
+A jelenlegi környezetben még nincs hitelesen igazolva:
 
 - kijelentkezott desktop/mobil source–target screenshotpár, overlay és diff;
 - pontos desktop/mobil geometria- és overflow-mérés;
-- page56 Elementor-editor újranyitás / szerkeszthetőség / mentetlen változás ellenőrzés;
-- a dekoratív `#af-wave-service-out` külön renderellenőrzése.
+- page56 authentikált Elementor-editor újranyitás / szerkeszthetőség / mentetlen változás ellenőrzés.
 
 Ezek nélkül a csomagot nem szabad `megfelelt` állapotúnak jelölni.
 
@@ -119,13 +140,13 @@ Ezek nélkül a csomagot nem szabad `megfelelt` állapotúnak jelölni.
 
 ## WPVibe-keret
 
-Utolsó közvetlen szolgáltatói jelzés a mostani csomag előtt: **80/100 használt**. Ezt követően 6 sikeres WPVibe-hívás történt; a biztonságilag blokkolt `eval` hívás elszámolása nem ismert. Munkabecslés: **86–87/100 használt**, az AGENTS szerinti **10 hívásos lezárási/helyreállítási tartalékot meg kell őrizni**.
+**Aktív fiók:** `ncsnorbert+20260911@gmail.com`. Legutóbbi közvetlen jelzés: **12/300 használt, 288 szabad**. A 10 hívásos lezárási/helyreállítási tartalék megőrzendő. A korábbi `80/100` és `86–87/100` értékek a lecserélt WPVibe-fiók történeti adatai, a jelenlegi munkakeretre nem vonatkoznak.
 
 Ne kezdj új WordPress-írási csomagba addig, amíg a teljes mentés–visszaolvasás–ellenőrzés és a tartalék együtt nem fér bele.
 
 ## KÖVETKEZŐ MŰVELET
 
-1. Először **csak a `main-service-v001` hiányzó desktop/mobil vizuális és Elementor-editor ellenőrzését** végezd el.
+1. Először **csak a `main-service-v001` hiányzó desktop/mobil vizuális és authentikált Elementor-editor ellenőrzését** zárd le.
 2. Ha minden kötelező ellenőrzés PASS, frissítsd ezt a STATE-et és a `reports/home/main-service-v001-target.json` bizonyítékot `megfelelt` állapotra.
-3. Csak ezután folytasd a következő eredeti főoldali forrásegységgel: **„Amit egy jól formázott növény visszaad a kertnek”**.
-4. Minden új munkacsomag előtt ismét olvasd vissza a tényleges page56/CSS/ID/keret állapotot; a WordPress élő állapota marad mérvadó.
+3. Ezután telepíthető a már előkészített `benefits-species-v001` csomag, de közvetlenül előtte kötelező a page56/CSS/hash/ID/keret újraolvasása és az ütközésvizsgálat.
+4. Minden új munkacsomagnál a WordPress élő állapota marad mérvadó.
