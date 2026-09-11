@@ -1,0 +1,86 @@
+{
+  "package": "benefits-species-v001-prep",
+  "timestamp_utc": "2026-09-11T15:10:00Z",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "gate": {
+    "blocked_by": "main-service-v001 full acceptance",
+    "reason": [
+      "logged-out source-target screenshot/overlay/diff unavailable in current tool environment",
+      "authenticated Elementor editor reopen unavailable from server-side renderer"
+    ],
+    "remote_write_performed": false
+  },
+  "source": {
+    "page": "index.html",
+    "section_selector": "section.section.section--sage",
+    "heading_selector": "#benefit-title",
+    "heading": "Amit egy jól formázott növény visszaad a kertnek",
+    "exact_text_contract": {
+      "benefits-eyebrow": "Miért éri meg alakfákat kialakítani?",
+      "benefits-title": "Amit egy jól formázott növény visszaad a kertnek",
+      "benefits-intro": "Egy húszéves növény törzsvastagságát és karakterét pénzért nem lehet pótolni – csak megőrizni. Az alábbi hat dolog az, amiért a legtöbben belevágnak.",
+      "species-eyebrow": "Miből lehet szép alakfa?",
+      "species-title": "Fajok, amelyeken már dolgoztam",
+      "species-intro": "Nem általános fajlistát adok, hanem azokat a növényeket sorolom fel, amelyeket ténylegesen formáztam már.",
+      "species-1": "Tiszafa (Taxus)",
+      "species-2": "Boróka (Juniperus)",
+      "species-3": "Leylandi és arany leylandi ciprus",
+      "species-4": "Hamisciprus (Chamaecyparis)",
+      "benefit-title-space": "Több használható hely a kertben",
+      "benefit-body-space": "A szabályozott korona visszaadja a növény alatti és melletti területet.",
+      "benefit-title-light": "Visszatér a fény",
+      "benefit-body-light": "Az ablak, a terasz és a kert árnyékolt része újra használhatóvá válik.",
+      "benefit-title-visibility": "Nagyobb átláthatóság",
+      "benefit-body-visibility": "A kusza tömegből tiszta, olvasható forma és biztonságos rálátás lesz.",
+      "benefit-title-focus": "Karakteres fókuszpont",
+      "benefit-body-focus": "Egyetlen jól formázott növény meghatározza az egész kert hangulatát.",
+      "benefit-title-safety": "Nagyobb biztonság",
+      "benefit-body-safety": "A csökkentett korona kisebb szél- és törésterhelést jelent.",
+      "benefit-title-growth": "Kontrollálható növekedés",
+      "benefit-body-growth": "A fenntartó ápolással a méret hosszú távon kiszámítható marad."
+    },
+    "svg_contract": {
+      "top_wave_existing": {"source_index":41,"viewBox":"0 0 1440 120","sha256":"36bd1f551c2ea9f95081543726d9d39d63a52154ac43acc0139938a8537e485f"},
+      "benefit_space": {"source_index":42,"viewBox":"0 0 24 24","sha256":"9c084a7090bf0fc2df70043754af171c889ce25661c4188866a4d0d5e10cb016"},
+      "benefit_light": {"source_index":43,"viewBox":"0 0 24 24","sha256":"8498470e2b8d24b42a8d97f7091e6cfeb0cc105fea6d4e2facba3684c29fc038"},
+      "benefit_visibility": {"source_index":44,"viewBox":"0 0 24 24","sha256":"fc1b9d4b1ffc700357b506e17dcd6cced90107ef127650c967cc86c241eef546"},
+      "benefit_focus": {"source_index":45,"viewBox":"0 0 24 24","sha256":"239ea06d5f620caa2a38f9e278160e9041e6327fd1482e6f76b939d1362495e4"},
+      "benefit_safety": {"source_index":46,"viewBox":"0 0 24 24","sha256":"0b2480c63155cad7a8b331fbf2d1102867c3248cf0289c789d17d58964fdbf08"},
+      "benefit_growth": {"source_index":47,"viewBox":"0 0 24 24","sha256":"b4bfce9ba445d4cb43bc53a0a43dfcf8aa26b22e40c20c61e837d5504b1c79de"},
+      "bottom_wave": {"source_index":48,"viewBox":"0 0 1440 120","sha256":"43aedbd8890fbd5ccfc279df7a773ccd3af6d91ab84a17dcb54aefff47eee889"}
+    },
+    "reference_image": "crop1.png",
+    "measured_geometry_1440": {
+      "content_left_px": 131,
+      "content_right_px": 1309,
+      "content_width_px": 1179,
+      "benefit_card_columns_px": [349,349],
+      "benefit_grid_gap_px": 18,
+      "outer_gap_to_species_px": 33,
+      "species_card_width_px": 430,
+      "benefit_card_height_px_approx": 145,
+      "species_card_height_px_approx": 471,
+      "sage_background_rgb": [221,231,223]
+    }
+  },
+  "planned_target": {
+    "page_id": 56,
+    "precondition_sha256": "1eec600ee9c718ac56e48b35b7b12d167cb306db05c808703f21f53c22c00189",
+    "element_id_prefix": "af16",
+    "collision_check_matches": 0,
+    "css_role_collision_check_matches": 0,
+    "new_elements": 53,
+    "new_top_level_roots": 2,
+    "expected_total_elements": 285,
+    "expected_top_level": 11,
+    "reused_global_classes": ["g-af-type-eyebrow","g-af-type-heading","g-af-type-body"],
+    "new_plugins": [],
+    "new_assets": [],
+    "new_global_classes": [],
+    "pattern": "specs/patterns/benefits-species-v001.json",
+    "pattern_representation": "canonical compact reconstruction plan; exact source text/SVG contracts and 53-node hierarchy retained",
+    "css_fragment": "build/additional-css-benefits-species-v001.fragment.css",
+    "svg_provenance": "build/benefits-svg-source-v001.json"
+  },
+  "next_action": "Do not deploy until main-service-v001 acceptance gate is closed. Immediately before deployment, re-read page56 hash/count, verify af16 and CSS role absence, re-read Additional CSS marker/hash, then append CSS in the single Hello Additional CSS owner and save the stable Elementor tree once via /wpvibe/v1/elementor/save-page."
+}
