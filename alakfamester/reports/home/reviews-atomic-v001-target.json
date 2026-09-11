@@ -1,0 +1,140 @@
+{
+  "checked_at_utc": "2026-09-11T07:31:00+00:00",
+  "target": "https://alakfamester-wp.clicknest.hu/fooldal/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "page_id": 56,
+  "package": "reviews-atomic-v001 / pattern version 2",
+  "save": {
+    "page_payload": "build/payloads/page56-through-reviews-atomic-v008.api.json",
+    "route": "/wpvibe/v1/elementor/save-page",
+    "warnings": [],
+    "status": "PASS"
+  },
+  "readback": {
+    "top_level": 3,
+    "elements": 116,
+    "unique_ids": 116,
+    "review_elements": 51,
+    "review_tabs": 3,
+    "review_panels": 3,
+    "legacy_image_widgets": 3,
+    "elementor_data_bytes": 42805,
+    "elementor_data_sha256": "8e6442a924da9b7996be74104f32f1561fd18e4cfb49991b06bdf9fb117ed2af",
+    "status": "PASS"
+  },
+  "global_classes": {
+    "created_and_read_back": 18,
+    "plan": "build/payloads/reviews-atomic-global-classes-v001.plan.json",
+    "response": "build/payloads/reviews-atomic-global-classes-v001.api.json",
+    "status": "PASS"
+  },
+  "assets": [
+    {
+      "attachment_id": 75,
+      "sha256": "492e7421dbd687b2d3a94d531cf3bf46ecc35acc06dfd9bab37ee162f3cabe87",
+      "source_dimensions": [2501, 1000]
+    },
+    {
+      "attachment_id": 76,
+      "sha256": "50c3eb03627d696150f8f688b5cfc7f6892a4333d496351ca510d83b095001ab",
+      "source_dimensions": [1000, 1250]
+    },
+    {
+      "attachment_id": 77,
+      "sha256": "b7d88057351f50b6d178c107611db7165fb29aebb480931031ba8a4e4b68f6fa",
+      "source_dimensions": [1000, 1013]
+    }
+  ],
+  "additional_css": {
+    "post_id": 8,
+    "theme": "hello-elementor",
+    "marker": "v016",
+    "sha256": "4ec5770075507723f6713f489cdf4fdc54b6f2fb68d252446ed6a22939731922",
+    "modified_gmt": "2026-09-11 07:23:55",
+    "start_markers": 1,
+    "end_markers": 1,
+    "literal_backtick_newlines": 0,
+    "readback": "PASS"
+  },
+  "project_plugin": {
+    "version": "0.2.0",
+    "status": "active",
+    "package": "build/af-project-0.2.0-build3.zip",
+    "sha256": "89b30d0dcb7eefb09e926e19bf334f46f9518c6c283138f5513700c08322491e",
+    "local_verification": "PASS",
+    "role": "delegated Arrow/Up/Down/Home/End activation parity for Atomic Tabs; custom review widget remains an unused fallback"
+  },
+  "desktop_1440x1000": {
+    "target_client_width": 1425,
+    "target_card": {"width": 1320, "height": 616.625},
+    "target_tab_widths": [439.6161, 439.6161, 439.6161],
+    "target_media": {"width": 250.0000, "height": 140.4464},
+    "reference_media": {"width": 250.0000, "height": 140.4464},
+    "visible_panels": ["flex", "none", "none"],
+    "positive_overflow_px": 0,
+    "fonts": {"heading": "Georgia", "body": "system UI stack"},
+    "status": "PASS"
+  },
+  "mobile_390x844": {
+    "target_client_width": 375,
+    "target_card_width": 327.4286,
+    "target_tab_widths": [326.2857, 326.2857, 326.2857],
+    "target_first_media": {"width": 241.9732, "height": 135.9375, "ratio": 1.78},
+    "reference_first_media": {"width": 241.9732, "height": 135.9375, "ratio": 1.78},
+    "target_third_media": {"width": 148.0714, "height": 149.9911, "ratio": 0.9872},
+    "signature_direction": "row",
+    "positive_overflow_px": 0,
+    "status": "PASS"
+  },
+  "interactions": {
+    "click": "PASS",
+    "arrow_right": "selects and focuses next tab",
+    "home": "selects and focuses first tab",
+    "end": "selects and focuses last tab",
+    "autoplay": false,
+    "desktop": "PASS",
+    "mobile": "PASS",
+    "editor_iframe": "PASS"
+  },
+  "editor": {
+    "iframe": "iframe#elementor-preview-iframe",
+    "reviews": 1,
+    "tabs": 3,
+    "panels": 3,
+    "images": 3,
+    "hero": 1,
+    "trust_items": 4,
+    "toc_links": 8,
+    "review_script_loaded": true,
+    "publish_button_disabled": true,
+    "status": "PASS"
+  },
+  "console": {
+    "frontend_errors": [],
+    "editor_errors": [],
+    "third_party_warnings": [
+      "wp.compose.pure deprecation from WordPress 7.1 / Elementor editor"
+    ]
+  },
+  "recovered_failures": [
+    "Atomic e-image was rejected with invalid_value; the page remained unchanged and the final tree uses editable legacy image widgets inside Atomic panels.",
+    "An unsupported div tag on e-paragraph was rejected; the final markup uses supported p/span content.",
+    "Media upload temporarily set page56 featured_media; it was restored to 0 and verified.",
+    "CSS v011 contained three literal newline tokens; v012 removed them and v016 is the verified saved block.",
+    "Mobile Atomic box-model and V4 class specificity narrowed the panel and signature; v015 corrected both from measured computed styles.",
+    "The native tab buttons retained 160 px widths and browser borders; v016 restores the source three-column/full-width rail and active indicator."
+  ],
+  "limitations": [
+    "The target browser session was authenticated and carried the WordPress admin bar. Element sizes, wrapping, computed styles and overflow are valid; a logged-out source-target screenshot pair/overlay/diff remains open.",
+    "The full page below the review section is not built yet, so whole-page height and downstream scroll interactions are not acceptance evidence."
+  ],
+  "wpvibe_usage_after_package": {
+    "used": 64,
+    "limit": 100,
+    "remaining": 36,
+    "reserve": 10,
+    "usable_before_next_close": 26,
+    "calls_invoked_in_this_continuation": 17,
+    "note": "Rolling expirations occurred during the work; the provider balance is authoritative. One read returned no visible payload and was repeated safely. Browser plugin upload/update did not use a WPVibe call."
+  }
+}
