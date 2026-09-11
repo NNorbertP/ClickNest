@@ -1,0 +1,50 @@
+{
+  "top_wave_existing": {
+    "source_index": 41,
+    "viewBox": "0 0 1440 120",
+    "sha256": "36bd1f551c2ea9f95081543726d9d39d63a52154ac43acc0139938a8537e485f",
+    "markup": "<svg viewBox=\"0 0 1440 120\" preserveAspectRatio=\"none\"><path d=\"M0,44 C180,4 340,86 540,58 C720,33 880,-8 1080,14 C1240,32 1360,72 1440,60 L1440,120 L0,120 Z\" fill=\"var(--color-bg-alt)\"></path></svg>"
+  },
+  "benefit_space": {
+    "source_index": 42,
+    "viewBox": "0 0 24 24",
+    "sha256": "9c084a7090bf0fc2df70043754af171c889ce25661c4188866a4d0d5e10cb016",
+    "markup": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 10.5 12 3l9 7.5\"></path><path d=\"M5 9.5V21h14V9.5\"></path><path d=\"M9.5 21v-6h5v6\"></path></svg>"
+  },
+  "benefit_light": {
+    "source_index": 43,
+    "viewBox": "0 0 24 24",
+    "sha256": "8498470e2b8d24b42a8d97f7091e6cfeb0cc105fea6d4e2facba3684c29fc038",
+    "markup": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4\"></path></svg>"
+  },
+  "benefit_visibility": {
+    "source_index": 44,
+    "viewBox": "0 0 24 24",
+    "sha256": "fc1b9d4b1ffc700357b506e17dcd6cced90107ef127650c967cc86c241eef546",
+    "markup": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>"
+  },
+  "benefit_focus": {
+    "source_index": 45,
+    "viewBox": "0 0 24 24",
+    "sha256": "239ea06d5f620caa2a38f9e278160e9041e6327fd1482e6f76b939d1362495e4",
+    "markup": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle><circle cx=\"12\" cy=\"12\" r=\"5\"></circle><circle cx=\"12\" cy=\"12\" r=\"1.4\"></circle></svg>"
+  },
+  "benefit_safety": {
+    "source_index": 46,
+    "viewBox": "0 0 24 24",
+    "sha256": "0b2480c63155cad7a8b331fbf2d1102867c3248cf0289c789d17d58964fdbf08",
+    "markup": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z\"></path><path d=\"m9 12 2 2 4-4\"></path></svg>"
+  },
+  "benefit_growth": {
+    "source_index": 47,
+    "viewBox": "0 0 24 24",
+    "sha256": "b4bfce9ba445d4cb43bc53a0a43dfcf8aa26b22e40c20c61e837d5504b1c79de",
+    "markup": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 15 15 3l6 6L9 21Z\"></path><path d=\"m7 11 2 2M10 8l2 2M13 5l2 2\"></path></svg>"
+  },
+  "bottom_wave": {
+    "source_index": 48,
+    "viewBox": "0 0 1440 120",
+    "sha256": "43aedbd8890fbd5ccfc279df7a773ccd3af6d91ab84a17dcb54aefff47eee889",
+    "markup": "<svg viewBox=\"0 0 1440 120\" preserveAspectRatio=\"none\"><path d=\"M0,44 C180,4 340,86 540,58 C720,33 880,-8 1080,14 C1240,32 1360,72 1440,60 L1440,120 L0,120 Z\" fill=\"var(--color-bg)\"></path></svg>"
+  }
+}
