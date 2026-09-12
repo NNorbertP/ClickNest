@@ -1,0 +1,68 @@
+{
+  "page_id": 268,
+  "package": "WP20260912-F2",
+  "scope": "Replace the subpage-only af-project reviews widget with the proven D12 native Atomic Tabs pattern while preserving F1 video work.",
+  "preflight": {
+    "f1_marker": "af2c0100",
+    "f1_marker_matches_before_save": 1,
+    "prepared_data_sha256": "91c4d369cb0a5eb94a9158193eca7c990cc7f8dd719f895e926a2580f057f055",
+    "element_count": 105,
+    "unique_ids": true,
+    "review_tabs": 3,
+    "review_panels": 3,
+    "legacy_image_attachment_ids": [75, 76, 77],
+    "custom_reviews_widget_present_in_prepared_data": false,
+    "preserved_video_ids": ["af2c0049", "af2c000b", "af2c004a", "af2c0048", "af2c0009", "af2c000a", "af2c000c"]
+  },
+  "save": {
+    "endpoint": "/wpvibe/v1/elementor/save-page",
+    "status": "success",
+    "warnings": [],
+    "view_url": "https://alakfamester-wp.clicknest.hu/referencia-videok/",
+    "edit_url": "https://alakfamester-wp.clicknest.hu/wp-admin/post.php?post=268&action=elementor"
+  },
+  "frontend_readback": {
+    "native_atomic_tabs_rendered": true,
+    "tabs_root_id": "af2c0230",
+    "tab_count": 3,
+    "tabpanel_count": 3,
+    "first_tab_selected": true,
+    "other_panels_hidden_initially": true,
+    "attachment_ids_rendered": [75, 76, 77],
+    "panasonic_image_dimensions": [2501, 1000],
+    "otolecz_image_dimensions": [1000, 1250],
+    "arkers_image_dimensions": [1000, 1013],
+    "source_review_titles_and_full_copy_present": true,
+    "f1_video_content_still_present": true,
+    "all_seven_videos_still_exposed_as_play_buttons": true,
+    "featured_cta_links_still_present": true
+  },
+  "editor_readback": {
+    "editor_reopened_after_save": true,
+    "elementor_atomic_tabs_widget_available": true,
+    "page_title_correct": true
+  },
+  "diagnostic_visual": {
+    "pre_f2_defect": "raw pink custom-tab styling and oversized media were visible in Opera",
+    "post_f2_top_of_section": "native section heading is rendered with the shared design system; raw custom tab strip is no longer present in the accessibility tree",
+    "qualified_pixel_comparison": false
+  },
+  "interaction_status": {
+    "page56_pattern_previously_proven_for_click_arrow_home_end": true,
+    "shared_keyboard_js_changed_in_f2": false,
+    "page268_direct_click_keyboard_retest_in_this_connector": false,
+    "reason": "The available Opera connector exposes accessibility/read/screenshot/navigation but no generic click/key action tool in this session."
+  },
+  "open": [
+    "Reference-video hero still lacks the original animated illustration and the full source meta row.",
+    "Final page CTA still links to /fooldal/#ajanlatkeres instead of the mapped contact-page anchor and should be corrected in a later small package.",
+    "Qualified frozen-reference screenshot/overlay/diff, font-rendering proof, network/console collection and direct keyboard interaction remain open because the required frozen acceptance/source files and Playwright/CDP workflow are unavailable in this run."
+  ],
+  "pixel_pass": false,
+  "quota_after_verification": {
+    "used": 191,
+    "limit": 300,
+    "remaining": 109,
+    "minimum_reserve": 10
+  }
+}
