@@ -1,0 +1,16 @@
+{
+  "package":"oldtrees-content-parity-v003",
+  "date":"2026-09-12",
+  "page_id":264,
+  "pre_sha256":"336eafeb38bc47350733127345fc2299b4baeb70ee6cfc71038059273b28635c",
+  "post_sha256":"c23ad9d1dfa85c52a0f5c324d4860832913b077566ac0c0cff3ca18ba66f14a6",
+  "post_bytes":37499,
+  "changes":[
+    "Added missing source problem label Túl közel került a házhoz to the existing problem-card group.",
+    "Comparison eyebrow changed to Két út.",
+    "All eight Kivágás / Átalakítás alakfává list items aligned to the diagnostic reference wording.",
+    "Restored the source maintenance caveat: Cserébe rendszeres fenntartást igényel – ezt előre tisztázzuk, nem utólag derül ki."
+  ],
+  "checks":{"frontend_problem_label_present":true,"frontend_comparison_text_present":true,"elementor_ids_preserved":true,"smtp_or_external_submission":false,"pixel_pass":false},
+  "open":["Hero art, inline MetForm request form and exact source problem-grid visual structure remain structural work."]
+}
