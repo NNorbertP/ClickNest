@@ -1,0 +1,36 @@
+{
+  "package": "home-hedge-notfit-price-source-parity-v002",
+  "date": "2026-09-12",
+  "status": "CLOSED; supersedes v001 content claims",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "source": "https://alakfamester.clicknest.hu/index.html",
+  "scope": ["#soveny-formazas", "#mikor-nem", "#arkepzes"],
+  "correction_reason": "A later full live-source main-document reread exposed that the earlier isolated hedge evidence had been stale/misinterpreted. The target was immediately corrected back to the actual current live original before continuing the homepage audit.",
+  "source_truth": {
+    "hedge_heading": ["Sövény formára vágás", "Minőségi sövényformázás – nem csak egyenes vonal"],
+    "hedge_shapes": ["Gömbös sövényvég", "Kúpos lezárás", "Állatfej / figura", "Kapu / átjáró", "Hullámos felső él", "Ablak / kivágás"],
+    "hedge_info_cards": ["Szerkezeti fenntartás a forma alatt", "A sövényben álló egyedi növényből alakfa is lehet"],
+    "not_fit": "Current target already matches the live original exactly: four cross-list items plus three alternatives under `Mi történik ilyenkor?`.",
+    "price": "Current target already matches the live original exactly: seven numbered factors plus the photo-estimate note."
+  },
+  "repairs": {
+    "hedge": "Reverted all incorrect v001 text substitutions back to the exact current source heading, six source card titles/bodies, two source info-card titles/bodies/CTA labels, and the source gallery destination mapped canonically to `/galeria/`.",
+    "css": "The source SVG shape drawings and source-like responsive visual treatment from the v001 CSS package remain valid. The corrective selector block remains necessary because it maps those drawings/styles to the actual live Atomic IDs.",
+    "links": "`A teljes sövény szolgáltatás` -> `/soveny-specialista/`; `Sövénymunkák a galériában` -> `/galeria/`."
+  },
+  "verification": {
+    "live_source": "Full `main` HTML reread from the original site supplied the authoritative current content for hedge/not-fit/price.",
+    "live_target": "Final `#soveny-formazas`, `#mikor-nem`, and `#arkepzes` target rereads match the current original content/structure and canonical link intent.",
+    "additional_css_bytes": 358191,
+    "additional_css_chars": 357466,
+    "additional_css_sha256": "acac06ce3aeba0a2b62dfd2b9c886e0a80b4043ff6e56ece73cd6f3e03d1877a",
+    "page56_elementor_data_bytes": 246583,
+    "page56_elementor_data_chars": 244681,
+    "page56_elementor_data_sha256": "b3188295a2d5acfc939bf26b7d3f9163808163bb71cda5923449a7feb4f49c1d",
+    "quota": "240/300 used; 60 remaining"
+  },
+  "qa": {
+    "browser_visual": "Not claimed; Opera screenshot endpoint remains unavailable.",
+    "formal_pixel_acceptance": false
+  }
+}
