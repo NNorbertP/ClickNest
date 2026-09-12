@@ -1,0 +1,17 @@
+{
+  "package":"about-content-v003",
+  "date":"2026-09-12",
+  "page_id":270,
+  "pre_sha256":"254c5c25a2ffb5a4b0d5c49202c83eb7dd089e1853bf361579da09fc11b18386",
+  "post_sha256":"143e4f5e323db2898bfa7e1a367b1e74710de1e046046656502be7e39d83911f",
+  "post_bytes":33446,
+  "changes":[
+    "Timeline item titles Gyermekkori kezdet, Szakmai képzés és első évek, Évtizedes kertészeti gyakorlat, Specializáció: alakfa és niwaki changed from strong text to h3 headings inside the existing text-editor.",
+    "Recovered source article Miért lettem kertész? with the exact diagnostic reference paragraph and inserted it into the existing work-method split without changing Elementor IDs/tree."
+  ],
+  "checks":{"logged_out_headings_present":true,"elementor_editor_reopened":true,"smtp_or_external_submission":false,"pixel_pass":false},
+  "open":[
+    "Source hero illustration A formanevelés három fázisa still needs a supported structural Elementor save.",
+    "Separate source portrait Biró János munka közben remains missing. The live source URL https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp returned Not Found to upload_media; do not retry that URL. A frozen/local source asset is required."
+  ]
+}
