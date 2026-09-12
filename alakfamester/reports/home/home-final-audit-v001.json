@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "timestamp_local": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "scope": "homepage + global navigation/footer final content/structural audit",
+  "rules": ["D03", "D07", "D08", "D09", "D11", "D18"],
+  "changes": [
+    {
+      "resource": "page56 _elementor_data",
+      "change": "swapped the two existing hedge intro paragraph contents between af-hedge-intro and af-hedge-second-intro without changing element IDs",
+      "verified": true
+    },
+    {
+      "resource": "MetForm33 _elementor_data",
+      "change": "added source final direct-call note after submit as Atomic paragraph af04000d / #af-form-direct-call with tel:+36305394820",
+      "verified": true,
+      "smtp_or_submission": false
+    },
+    {
+      "resource": "ElementsKit footer21 _elementor_data",
+      "change": "removed target-only #af-footer-brand-subtitle widget (Biró János · topiarista)",
+      "verified": true
+    }
+  ],
+  "saved_state": {
+    "page56": {"chars": 244706, "bytes": 246602, "sha256": "66126facdd0fd5e7d8ff395ebf095efbe605e6e4af1de57fcecab90e5dfd82d1"},
+    "metform33": {"chars": 6068, "bytes": 6068, "sha256": "ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3"},
+    "footer21": {"chars": 11491, "bytes": 11491, "sha256": "81ea2bb5e50768b17230efac4e1f175d177759bda7df1325aa8912038c7322e1"}
+  },
+  "structural_audit": {
+    "canonical_pages_published": 10,
+    "canonical_page_template": "elementor_header_footer",
+    "published_global_headers": 1,
+    "published_global_footers": 1,
+    "source_host_or_html_refs_in_elementor_data": 0,
+    "navigation_mapping": "canonical WordPress destinations retained per D09"
+  },
+  "frontend_readback": {
+    "direct_call_note_visible": true,
+    "direct_call_href": "tel:+36305394820",
+    "hedge_paragraph_order_matches_source": true,
+    "footer_target_only_subtitle_removed_from_saved_data": true
+  },
+  "quota_checkpoint": {"used": 46, "limit": 300, "remaining": 254, "recovery_reserve": 10},
+  "pixel_pass": false,
+  "pixel_pass_reason": "Exact source-target screenshot/overlay/diff at the frozen acceptance viewports is still unavailable in this environment; structural/content/link and accessibility-DOM checks are not a substitute for page-wide pixel proof."
+}
