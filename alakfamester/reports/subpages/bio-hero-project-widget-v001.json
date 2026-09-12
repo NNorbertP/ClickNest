@@ -1,0 +1,49 @@
+{
+  "package": "bio-hero-project-widget-v001",
+  "date": "2026-09-12",
+  "page_id": 256,
+  "slug": "biologiai-vedelem",
+  "decision_refs": ["D03", "D04", "D07", "D11", "D18"],
+  "before": {
+    "chars": 34101,
+    "bytes": 34468,
+    "sha256": "10d21e63ca63c86a70640e9532054cd977ab3eb878967fb7d0ffe6d2b73e6066",
+    "element_id": "af26000c",
+    "widget_type": "text-editor",
+    "layout_class": "af-art",
+    "rendered_art": "inline SVG stored in editor field"
+  },
+  "audit_finding": "All other canonical hero variants use the documented af-hero-art project widget; page256 alone retained the legacy inline SVG text-editor. The live af-hero-art schema includes the biologiai-vedelem variant, so this was a concrete D04/editability inconsistency rather than a visual-only difference.",
+  "change": {
+    "save_path": "WPVibe /wpvibe/v1/content/edit on Elementor _elementor_data",
+    "element_id_preserved": true,
+    "new_widget_type": "af-hero-art",
+    "art": "biologiai-vedelem",
+    "scroll_mode": "hero",
+    "accessible_title": "Biológiai védelem – hasznos szervezetek a növény körül",
+    "accessible_description": "Növényi forma körül keringő hasznos mikroorganizmusok pályái, fölötte bronz védőívvel.",
+    "legacy_layout_class_preserved": "af-art",
+    "notes": "The old editor payload remains as an ignored unknown setting for rollback locality; no full-page save was used, avoiding D18 Atomic class normalization risk. No CSS write was required."
+  },
+  "after": {
+    "chars": 34338,
+    "bytes": 34725,
+    "sha256": "b480423f4a29331789541b3a1ded5ec1e681dfd773bb205a5c09e4d4d1dbf253",
+    "hero_widget_refs": 1,
+    "element_id_refs": 1,
+    "variant_refs": 1
+  },
+  "frontend_verification": {
+    "selector": "#af-sub-bio-hero",
+    "widget_wrapper": "elementor-widget-af-hero-art",
+    "inner_wrapper": "af-art af-original-art",
+    "svg_role": "img",
+    "title_matches_source": true,
+    "description_matches_source": true,
+    "motion_dataset_defaults_present": true,
+    "contact_cta_still_maps_to": "/kapcsolat/#ajanlatkeres"
+  },
+  "editor_reopen": "pending: Opera Browser Connector disconnected during closeout (Allow AI connection required); no further target write is needed for this verification.",
+  "smtp_or_submission": false,
+  "pixel_pass": false
+}
