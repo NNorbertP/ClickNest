@@ -1,0 +1,30 @@
+{
+  "package": "fruit-content-parity-v001",
+  "date": "2026-09-12",
+  "target_page_id": 262,
+  "target_url": "https://alakfamester-wp.clicknest.hu/gyumolcsfak-metszese-es-vedelme/",
+  "reference_url": "https://alakfamester.clicknest.hu/gyumolcsfak-metszese-es-vedelme.html",
+  "reference_kind": "live diagnostic; frozen aggregate remains canonical",
+  "pre_sha256": "3c052fad377c81bf529269af710a3927ca3531e418a498bceaa931f061e6374e",
+  "post_sha256": "9e440c34c1fb45ef27061807aea590b79581eb592bf4e72f98fa2fc414090737",
+  "post_bytes": 25970,
+  "changes": [
+    "FAQ question corrected to: Metszhető a fa télen, fagyban?",
+    "All four fruit-tree FAQ answers aligned to the reference wording; the biological-protection answer maps its link to /biologiai-vedelem/.",
+    "The Mikor történik a metszés? note text was expanded to the reference wording.",
+    "Mikor történik a metszés? changed from strong text to an h3 heading inside the existing text-editor widget."
+  ],
+  "checks": {
+    "elementor_ids_preserved": true,
+    "tree_structure_changed": false,
+    "frontend_question_role_visible": true,
+    "frontend_metszes_heading_role_visible": true,
+    "elementor_editor_reopened": true,
+    "smtp_or_external_submission": false,
+    "pixel_pass": false
+  },
+  "open": [
+    "Hero illustration Gyümölcsfa nyitott vázkoronával is still missing and requires a supported full Elementor save.",
+    "Formal frozen six-viewport visual/behavior acceptance remains unavailable because acceptance/behaviors specs are absent from the repository snapshot."
+  ]
+}
