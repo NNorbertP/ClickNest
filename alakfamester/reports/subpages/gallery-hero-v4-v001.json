@@ -1,0 +1,54 @@
+{
+  "package": "gallery-hero-v4-v001",
+  "date": "2026-09-12",
+  "page_id": 258,
+  "pre_chars": 72236,
+  "pre_bytes": 72603,
+  "pre_sha256": "9af1124e4aa167f73e3d1ab34bb5b243db7169cd20fbea38ff50f049e9921294",
+  "post_chars": 72530,
+  "post_bytes": 72912,
+  "post_sha256": "eea6760b95605cd81d52367b44a837a8e43e61c779f698b86339ed9db8763535",
+  "widget": {
+    "container_id": "af270041",
+    "id": "af27004c",
+    "widgetType": "af-hero-art",
+    "art": "galeria",
+    "accessible_title": "Formakatalógus – négy alakfa-sziluett",
+    "accessible_description": "Négy különböző formavilág egy polcon: rétegzett niwaki, gömb, kúp és felhőcsokor.",
+    "scroll_mode": "hero"
+  },
+  "d18_inventory": {
+    "atomic_legacy_css_classes_found": 0,
+    "new_global_class_bridges_required": false,
+    "legacy_css_classes_location": "classic/legacy widgets only"
+  },
+  "write_method": {
+    "route": "/wpvibe/v1/content/edit",
+    "kind": "guarded structural exception",
+    "replaced": 1,
+    "reason": "The fresh page tree is 72 kB and the only change was inserting one already-validated project widget into the unique empty af270041 container. This reuses the same-page D17 guarded structural-edit precedent and avoids a high-blast-radius full-page round trip. The widget rendered immediately, the stored hash changed only by the expected insertion, and the Elementor editor reopened."
+  },
+  "preserved": {
+    "native_reviews": "c2580005 Atomic Tabs",
+    "featured_section": "af270045",
+    "before_after_section": "af270047",
+    "eael_masonry": "af27000e, 44 configured source items",
+    "existing_ids_and_assets": true
+  },
+  "checks": {
+    "source_a11y_hero": "Formakatalógus – négy alakfa-sziluett Négy különböző formavilág egy polcon: rétegzett niwaki, gömb, kúp és felhőcsokor.",
+    "target_a11y_hero_matches_source": true,
+    "native_review_tabs_target": 3,
+    "target_accessibility_image_count": 60,
+    "source_accessibility_image_count": 61,
+    "editor_reopened": true,
+    "smtp_or_external_submission": false,
+    "pixel_pass": false
+  },
+  "known_gap": {
+    "type": "missing frozen/local source asset",
+    "asset": "175725917368bda5a5b1ae6_370X354.webp",
+    "effect": "Source accessibility tree has one more image than target (61 vs 60). The known live URL is 404 and must not be retried or replaced with an invented asset."
+  },
+  "quota_after_package": "183/300 used; 117 remaining"
+}
