@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "scope": "fresh verification of the three background-helper items carried forward from site-finalization-20260911.md",
+  "rules": ["D03", "D07", "D08", "D11", "D18"],
+  "result": "no-op; all three previously reported mismatches are already corrected in current live Elementor data",
+  "checks": [
+    {"page_id":270,"selector":"af-s-rolam-9","current":"af-bg-sage","expected":"af-bg-sage","pass":true},
+    {"page_id":270,"selector":"af-s-rolam-11","current":"af-bg-paper","expected":"af-bg-paper","pass":true},
+    {"page_id":272,"selector":"af-s-soveny-specialista-8","current":"af-bg-sage","expected":"af-bg-sage","pass":true}
+  ],
+  "saved_state": {
+    "page270":{"chars":38705,"bytes":38705,"sha256":"7a100609dbb724419f46139d3a4b256dcf1e1e545f5e698c4249209bec4cba6f"},
+    "page272":{"chars":53311,"bytes":53311,"sha256":"4c80d1108004fa133341da566e60adcda1b93c1f9ba5e3d110ff4cfdee4006e5"}
+  },
+  "writes": 0,
+  "pixel_pass": false
+}
