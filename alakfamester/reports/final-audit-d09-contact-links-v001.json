@@ -1,0 +1,28 @@
+{
+  "package": "final-audit-d09-contact-links-v001",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "date": "2026-09-12",
+  "decision": "D09",
+  "finding": "Source subpage/contact CTAs point to kapcsolat.html#ajanlatkeres; target still had /fooldal/#ajanlatkeres on five canonical pages and in global header/footer contact actions.",
+  "fixes": {
+    "20": {"replaced": 2, "before_sha256": "aae6f10a44dbf90ca6198d31e8ea50513a8877ccac4ee5c5ca718944a8496d64", "after_sha256": "5805d442345495096bb492d74fe6a863e9278f56ba1fb432818ad776d274fb2c"},
+    "21": {"replaced_contact_refs": 2, "location_link_changed_to_page_root": true, "before_sha256": "24cb14f93f17c1e2ac72bb0d568e720b9f6c279092a42bef5741b9b7eefcdbb4", "after_sha256": "fbc1511c676ba38460b03daa3547775bf9bef97b57e21d0cd321802e60d77737"},
+    "256": {"replaced": 2, "before_sha256": "35d297e6e2738935d40c6aba303dc01db9168d2179274af4b20f507cfb9661fe", "after_sha256": "10d21e63ca63c86a70640e9532054cd977ab3eb878967fb7d0ffe6d2b73e6066"},
+    "258": {"replaced": 2, "before_sha256": "eea6760b95605cd81d52367b44a837a8e43e61c779f698b86339ed9db8763535", "after_sha256": "1494ff3cce05b92be9a4e962c67bbb4bd903c3ae2829c7e46914c09d2065d656"},
+    "260": {"replaced": 2, "before_sha256": "7d6d50bb58a1bc70d8ae17eb249e3aba8d5f6339318a50007a86419619e03fcb", "after_sha256": "e3ddf65d54039a4866e88311fe870bcc70b3cd408e78e3c020c325f62b2b0660"},
+    "262": {"replaced": 2, "before_sha256": "0e7ed4b97f4c3fde3be91a532f62d936a35ac52567ac1a2d5b44f1af2f57d816", "after_sha256": "59179aff94198af9b6504c4202d9b3cae62f20872e4af4d424cf1ca4d7738e74"},
+    "270": {"replaced": 2, "before_sha256": "bf89d384396db61cc9ff85c78d3a5fb7c25c80d94f3ab9a440efbf7f7f431b6b", "after_sha256": "7a100609dbb724419f46139d3a4b256dcf1e1e545f5e698c4249209bec4cba6f"}
+  },
+  "supported_save": "WPVibe /wpvibe/v1/content/edit on Elementor _elementor_data, exact replace_all per resource; no raw SQL write.",
+  "frontend_verification": {
+    "page_256": {
+      "hero_cta": "https://alakfamester-wp.clicknest.hu/kapcsolat/#ajanlatkeres",
+      "section_cta": "https://alakfamester-wp.clicknest.hu/kapcsolat/#ajanlatkeres",
+      "header_contact": "https://alakfamester-wp.clicknest.hu/kapcsolat/#ajanlatkeres",
+      "header_survey": "https://alakfamester-wp.clicknest.hu/kapcsolat/#ajanlatkeres",
+      "footer_location": "https://alakfamester-wp.clicknest.hu/kapcsolat/",
+      "footer_offer": "https://alakfamester-wp.clicknest.hu/kapcsolat/#ajanlatkeres"
+    }
+  },
+  "notes": "No SMTP, form submission, CSS write, new plugin, or asset mutation occurred. Remaining /fooldal/#... links are audited separately because several intentionally correspond to source index.html anchors."
+}
