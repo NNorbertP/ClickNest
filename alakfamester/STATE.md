@@ -1,9 +1,9 @@
-# STATE - 2026-09-12, HOMEPAGE VISUAL AUDIT ACTIVE; HEDGE SOURCE CORRECTION V002 CLOSED
+# STATE - 2026-09-12, HOMEPAGE VISUAL AUDIT ACTIVE; SPECIALIST/HEALTH/REFERENCES CLOSED
 
 ## Current target / quota
 Target: https://alakfamester-wp.clicknest.hu/ ; repo `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
-WPVibe account: `ncsnorbert+20260912-3@gmail.com`; live site connection verified. Latest exact quota after the hedge source-truth correction: **240/300 used, 60 remaining** in rolling 24 hours. Keep at least 10 for recovery/closeout. No SMTP and no external form/test message.
+WPVibe account: `ncsnorbert+20260912-3@gmail.com`; live site connection verified. Latest exact quota after specialist/health/references closeout: **267/300 used, 33 remaining** in rolling 24 hours. Keep at least 10 for recovery/closeout. No SMTP and no external form/test message.
 
 Environment live: WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; Hello Elementor 3.5.1 active. Preserve page56, page12, ElementsKit header20/footer21, MetForm33, Additional CSS post8 and canonical subpages. Homepage template remains `elementor_header_footer`; `show_on_front=page`, `page_on_front=56`, `page_for_posts=0`.
 
@@ -34,17 +34,21 @@ Evidence: `reports/home/home-survivor-forms-source-parity-v001.json`.
 ## CLOSED / SUPERSEDED - Hedge / not-fit / price
 Authoritative evidence: `reports/home/home-hedge-notfit-price-source-parity-v002.json`, commit `b290fe40056f508ec1dd82292ac3e7ab75962cfd`. The earlier v001 content claims are superseded.
 
-A later full live-source `main` HTML reread exposed that the earlier isolated hedge evidence was stale/misinterpreted. The target was immediately corrected back to the actual current original.
+`#soveny-formazas` now follows current live source truth: six cards (Gömbös sövényvég, Kúpos lezárás, Állatfej / figura, Kapu / átjáró, Hullámos felső él, Ablak / kivágás), exact current bodies, two info cards and canonical `/soveny-specialista/` + `/galeria/` links. `#mikor-nem` matches four cross-list items + three alternatives. `#arkepzes` matches seven factors + photo-estimate note. CSS keeps source SVG drawings, split-heading/grid geometry, asymmetric not-fit layout and 4→2 price tiles.
 
-`#soveny-formazas` current source truth and target now match:
-- heading `Sövény formára vágás` / `Minőségi sövényformázás – nem csak egyenes vonal`;
-- six cards: Gömbös sövényvég, Kúpos lezárás, Állatfej / figura, Kapu / átjáró, Hullámos felső él, Ablak / kivágás, with exact current source bodies;
-- info cards `Szerkezeti fenntartás a forma alatt` and `A sövényben álló egyedi növényből alakfa is lehet`, exact source bodies/CTA labels;
-- canonical source-intent links: `/soveny-specialista/` and `/galeria/`.
+## CLOSED DATA/CSS - Homepage specialist + health + references parity v001
+Evidence: `reports/home/home-specialist-health-references-source-parity-v001.json`, commit `526e85d6ba59ca468df029ba24b52779a43ca1c9`.
 
-The hedge CSS package remains useful: source SVG shape drawings, source-like split heading/grid/info-card geometry; selector correction block targets actual Atomic IDs. `#mikor-nem` already matches the live original exactly: four cross-list items + three alternatives. `#arkepzes` already matches the live original exactly: seven factors + photo-estimate note. CSS keeps source-like asymmetric not-fit layout and 4→2 price tile geometry.
+The current live original and target DOM were reread before changes. Existing editable Elementor V4 structure/IDs were preserved. Three literal arrow glyphs were normalized to exact source visible copy: `Biológiai védelem`, `Megnyitom`, `Megnézem`; graphical arrows are supplied by scoped CSS.
 
-Current checkpoint: Additional CSS post8 **357466 chars / 358191 B**, SHA `acac06ce3aeba0a2b62dfd2b9c886e0a80b4043ff6e56ece73cd6f3e03d1877a`; page56 `_elementor_data` **244681 chars / 246583 B**, SHA `b3188295a2d5acfc939bf26b7d3f9163808163bb71cda5923449a7feb4f49c1d`.
+A single scoped Hello Additional CSS package `home-specialist-health-references-v001` now restores:
+- specialist: source typography, sage section, organic 2×2 outlined cards, target/scissors/sprout/airflow source icon roles and graphical `Bővebben rólam` CTA;
+- health: source reverse two-column composition, dark forest health card, bronze shield badge, checklist, promise callout and mobile collapse;
+- references: source split heading, two organic white route cards, gallery/play badges, graphical arrows, hover/focus behavior and responsive collapse.
+
+Selector readback found and corrected the actual saved DOM IDs (`#af-specialist-grid`, `#af-health-body`, `#af-references-head`). The source portrait `kepek/biro-janos-portre.webp` is unavailable and no proven target attachment exists, so the empty specialist media slot is collapsed rather than filled with an invented substitute.
+
+Current checkpoint: page56 `_elementor_data` **244675 chars / 246571 B**, SHA `6ed7a694e76a6bbc8e0b9cd6cda702c5083e60914aba151706da01a608161e45`; Additional CSS post8 **387763 chars / 388490 B**, SHA `815040d1c46b551b929a89b0746553dfafc012bf2596ad7f2d809a548200014a`. CSS package start marker occurs exactly once.
 
 ## Previously stable packages
 - MetForm33 source/config parity closed for prompt-2 no-delivery mode; no SMTP/submission.
@@ -56,13 +60,13 @@ Current checkpoint: Additional CSS post8 **357466 chars / 358191 B**, SHA `acac0
 - Page258 Gallery keeps 44-item EAEL masonry/native reviews.
 - Page56 partner section restored.
 
-## NEXT MAIN PACKAGE - homepage specialist / health / references
-Before any write reread AGENTS/STATE and D03/D07/D08/D09/D11/D18, exact quota and page56/CSS hashes. A full live-source main-document reread has already captured the current original specialist/health/references markup and copy. Compare target readbacks against it; fix only measured defects and preserve native V4 IDs/media. Before any Additional CSS write reread the complete post8 field.
+## NEXT MAIN PACKAGE - homepage FAQ / contact / partner
+Before any write reread AGENTS/STATE and D03/D07/D08/D09/D11/D18, exact quota and page56/CSS hashes. Compare the current live original against target readbacks for the remaining FAQ, contact/offer form and partner/footer-adjacent content. Fix only measured defects, preserve native IDs/widgets/MetForm, do not submit any form or trigger external mail. Before any Additional CSS write reread the complete post8 field.
 
-After that continue FAQ / contact / partner, then final structural/link/content audit. Once Opera reconnects, run actual source–target screenshots and behavior checks at desktop/tablet/mobile widths for every closed package; do not claim page-wide pixel parity before those pass.
+After that run the final structural/link/content audit. Once Opera/browser access is available, run actual source–target screenshots and behavior checks at desktop/tablet/mobile widths for every closed package; do not claim page-wide pixel parity before those pass.
 
 ## Known external/frozen blockers
-- Page270 source portrait `Biró János munka közben`: source URL 404; no proven substitute on that subpage. Homepage original references `kepek/biro-janos-portre.webp`; target availability still must be checked before altering homepage media.
+- Source portrait `Biró János munka közben` / `kepek/biro-janos-portre.webp`: source URL is unavailable; no proven substitute.
 - Gallery Ellwoodi source asset: source URL 404; no proven substitute.
 - `specs/acceptance.json` and `specs/behaviors.json` are not exposed through the repository connection. Formal frozen automated matrix is unavailable.
 - SMTP/delivery and real MetForm submission are prompt-3 tasks.
