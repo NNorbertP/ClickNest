@@ -1,9 +1,9 @@
-# STATE - 2026-09-12, HOMEPAGE VISUAL AUDIT ACTIVE; BEFORE/AFTER DATA PACKAGE CLOSED
+# STATE - 2026-09-12, HOMEPAGE VISUAL AUDIT ACTIVE; PROCESS/CARE/CONCERNS PACKAGE CLOSED
 
 ## Current target / quota
 Target: https://alakfamester-wp.clicknest.hu/ ; repo `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
-WPVibe account: `ncsnorbert+20260912-3@gmail.com`; authorization and live site connection verified. Latest exact quota after the homepage before/after checkpoint: **103/300 used, 197 remaining** in rolling 24 hours. Keep at least 10 for recovery/closeout. No SMTP and no external form/test message.
+WPVibe account: `ncsnorbert+20260912-3@gmail.com`; authorization and live site connection verified. Latest exact quota after the process/care/concerns checkpoint: **134/300 used, 166 remaining** in rolling 24 hours. Keep at least 10 for recovery/closeout. No SMTP and no external form/test message.
 
 Environment live: WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; Hello Elementor 3.5.1 active. Preserve page56, page12, ElementsKit header20/footer21, MetForm33, Additional CSS post8 and canonical subpages. Homepage template remains `elementor_header_footer`; `show_on_front=page`, `page_on_front=56`, `page_for_posts=0`.
 
@@ -37,9 +37,17 @@ The source has three interactive before/after projects. Target now keeps the exi
 
 All six media alt texts now match source semantics. Active Code Snippets ID **8**, `AF homepage before-after parity`, marker `af-home-ba-parity-v001`, adds source-style Előtte/Utána badges, a labelled native range control at 50%, visible split/handle and an idempotent homepage-only lifecycle. Hello Additional CSS block `home-before-after-v001` restores the source 4:3 contain layers, clip split, focus state and responsive 3→2→1 grid. The CSS write started from a fresh full post8 read and only appended the project block.
 
-Current page56: **243466 chars / 245364 B**, SHA `868e825568000ea1e66187806529a944406bac145fca0d42d26723dc279cc101`; each new widget ID occurs once. Current Additional CSS post8: **288510 chars / 289222 B**, SHA `e7efb74a56de2d9ace76b08f44c37a54f05a547bcbbd47d844801a7e3e3aa644`. Frontend readback renders all six saved images and exact project title/body/gallery/CTA copy. Snippet8 is active with `code_error=null`.
+Current page56 after the subsequent process-label normalization: **243460 chars / 245358 B**, SHA `c3424e82a1135e45f96563bf32c09d720194c995608bc737c57cc859044715aa`; process counters are exact source values `1`–`6`. Runtime drag/keyboard verification remains open only because the Opera Browser Connector screenshot/runtime endpoint is disconnected; WPVibe rendered-HTML fetch exposes saved content but not the footer-script DOM mutations. Do not duplicate the runtime code.
 
-Runtime drag/keyboard verification remains open only because the Opera Browser Connector disconnected; WPVibe rendered-HTML fetch exposes saved content but not the footer-script DOM mutations. Do not duplicate the runtime code. Verify it in the next browser-available pass.
+## CLOSED CSS - Homepage #kialakitas + #apolas + #aggodalmak source parity v001
+Evidence: `reports/home/home-process-care-concerns-source-parity-v001.json`, commit `7602bdf1242be71c49e6d2a095ca784824ae15a7`.
+
+The live original DOM and CSS were reread before the write. The existing editable Elementor/V4 tree and exact copy were preserved. A single scoped Hello Additional CSS package `home-process-care-concerns-v001` now restores:
+- `#kialakitas`: source radial/linear forest background, two-column split heading, dashed six-step timeline, bronze leaf counters, translucent organic timeline bodies and mobile collapse;
+- `#apolas`: source 3→2→1 care-card grid, six semantic SVG-mask icons, alternating organic card geometry, decorative watermark and two source callouts;
+- `#aggodalmak`: source 2→1 concerns grid, organic cards, bronze→sage vertical accent, quoted question treatment, hover and reduced-motion behavior.
+
+Additional CSS post8 pre-write SHA was `e7efb74a56de2d9ace76b08f44c37a54f05a547bcbbd47d844801a7e3e3aa644`. Post-write: **307573 chars / 308289 B**, SHA `1e53b0b9a7d3d8ea29022a35ba51b21f241544659667ec9a106ba36ac4040fb2`. Page56 Elementor data remained unchanged at SHA `c3424e82a1135e45f96563bf32c09d720194c995608bc737c57cc859044715aa`. The package was reread from the live `#wp-custom-css`, so frontend delivery is proven. Opera screenshots are still blocked by the connector's `Allow AI connection` state, so no screenshot/pixel claim is made.
 
 ## Previously stable packages
 - MetForm33 source/config parity closed for prompt-2 no-delivery mode; no SMTP/submission.
@@ -52,9 +60,9 @@ Runtime drag/keyboard verification remains open only because the Opera Browser C
 - Page56 partner section restored.
 
 ## NEXT MAIN PACKAGE - continue homepage section audit in document order
-Before any write reread AGENTS/STATE and D03/D07/D09/D11/D18, exact quota and page56/CSS hashes. Next compare original vs target beginning with `#kialakitas`, then `#apolas`, `#aggodalmak`, survivor/forms/hedge/price/specialist/health/references/FAQ/contact/partner. For each: source DOM/content/assets/behavior first, target readback second, then fix only measured defects. Prefer existing IDs/assets and native editable Elementor structure. Before every Additional CSS write reread the complete post8 field.
+Before any write reread AGENTS/STATE and D03/D07/D09/D11/D18, exact quota and page56/CSS hashes. Continue with the source/target comparison of survivor/forms/hedge/not-fit/price/specialist/health/references/FAQ/contact/partner. For each: source DOM/content/assets/behavior first, target readback second, then fix only measured defects. Prefer existing IDs/assets and native editable Elementor structure. Before every Additional CSS write reread the complete post8 field.
 
-Browser-independent work may continue while Opera is unavailable. Once Opera reconnects, queue actual desktop/tablet/mobile source–target screenshots and behavior tests for header/mobile menu, hero proof carousel and all three before/after ranges; do not claim page-wide pixel parity until those pass.
+Browser-independent work may continue while Opera is unavailable. Once Opera reconnects, queue actual desktop/tablet/mobile source–target screenshots and behavior tests for header/mobile menu, hero proof carousel, all three before/after ranges and the newly corrected process/care/concerns sections; do not claim page-wide pixel parity until those pass.
 
 ## Known external/frozen blockers
 - Page270 source portrait `Biró János munka közben`: source URL 404; no proven substitute.
