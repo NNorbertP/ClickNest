@@ -1,0 +1,62 @@
+{
+  "package": "gallery258 native reviews + available QA",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/galeria/",
+  "page_id": 258,
+  "preflight": {
+    "bytes": 62725,
+    "sha256": "be648d1260d51219b6a92eab2f79a272c6b18a1703f1fd2fe903177e45c64bdc",
+    "gallery_marker": "af270007",
+    "measured_defect": "wrapper af270042 still contained custom af-project-reviews widget af270006, contrary to D12 native Atomic Tabs decision"
+  },
+  "repair": {
+    "wrapper_preserved": "af270042",
+    "wrapper_class": "g-af-reviews-section",
+    "legacy_widget_removed": "af270006 / af-project-reviews",
+    "native_tabs_root": "a1b20006",
+    "native_tab_count": 3,
+    "native_panel_count": 3,
+    "review_images": [75,76,77],
+    "fresh_ids_unique": true,
+    "local_full_child_sha256": "898025eaee5babc26a1e63c29ff4b9598f8536ada63a23e51231b5f4aabb81d6"
+  },
+  "readback": {
+    "bytes": 81094,
+    "sha256": "a3a3f85d828933caf0500984f9852c43b9c44cfce5a769edefd55673ef6984f1",
+    "old_reviews_widget_present": false,
+    "gallery_marker_preserved": true,
+    "native_tabs_rendered": true,
+    "first_tab_selected": true,
+    "other_panels_hidden_initially": true,
+    "editor_reopened": true,
+    "post_modified_gmt_after_supported_post_touch": "2026-09-12T11:43:50"
+  },
+  "gallery_structure_available_qa": {
+    "project_cards": 7,
+    "before_after_controls": 4,
+    "manual_carousels": 6,
+    "masonry_items": 44,
+    "masonry_zoom_buttons": 44,
+    "shared_js_marker": "af-source-interactions-v001",
+    "shared_js_marker_count": 1,
+    "mobile_accessibility_tree_exposes_range_sliders": true,
+    "mobile_accessibility_tree_exposes_carousel_prev_next_and_dot_buttons": true,
+    "mobile_accessibility_tree_exposes_masonry_zoom_buttons": true,
+    "reviews_tabs_aria_wiring": true
+  },
+  "notes": [
+    "No gallery media was reimported and af270007 was not rewritten.",
+    "The project section contains 42 inline image occurrences before the masonry boundary; this includes repeated views used by BA/carousel markup, so it is not used as a unique-asset count. Previously verified 36 featured source assets remain an unchanged package-B fact.",
+    "Yoast OG image still points at the equivalent Panasonic review asset under the af-project plugin path even after the live reviews widget was removed. It is not a broken resource, but its stale SEO selection remains a later SEO/indexable cleanup item if desired.",
+    "Opera screenshot calls remained unavailable, but accessibility tree reads worked and confirmed the Elementor editor and mobile frontend structures."
+  ],
+  "open": [
+    "qualified visual source-target desktop/mobile screenshot comparison",
+    "runtime BA drag/keyboard change proof",
+    "runtime carousel arrows/dots/swipe proof",
+    "runtime masonry lightbox open/next/close/focus-lock proof",
+    "computed layout and page-height measurement",
+    "console/network error capture and second browser engine"
+  ],
+  "pixel_pass": false
+}
