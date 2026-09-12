@@ -1,0 +1,43 @@
+{
+  "package": "page268 available acceptance QA",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/referencia-videok/",
+  "basis": {
+    "page268_sha256": "1f9cfaba55dc15fd6d6cb1e675e6e6c79f9b4f930a0e2e60cadd8a05b1919dc5",
+    "additional_css_sha256": "f659a3b805dc54c7e28e832a531b14e9854508f1671621df9a4fa525435b042d",
+    "live_source_for_diagnosis_only": true
+  },
+  "passed_available_checks": {
+    "hero_visible_desktop_diagnostic": true,
+    "hero_art_widget_visible": true,
+    "hero_accessible_svg_in_dom": true,
+    "editor_reopens": true,
+    "native_tabs_roles_and_aria_wiring": true,
+    "tabs_default_panel_state": true,
+    "featured_video_lazy_load": true,
+    "featured_video_overlay": true,
+    "featured_video_play_control_role_button": true,
+    "featured_video_play_control_tabindex_0": true,
+    "youtube_privacy_mode": true,
+    "final_contact_cta_readback": true,
+    "all_f1_video_ids_preserved": true
+  },
+  "interaction_structure": {
+    "reviews_tabs_root": "af2c0230",
+    "tab_count": 3,
+    "featured_video_widget": "af2c0049",
+    "featured_video_youtube": "qJIcIt1a6Mk",
+    "play_control_aria_label": "Videó lejátszása"
+  },
+  "open_due_to_tooling_or_frozen_reference": [
+    "qualified six-viewport source-target screenshot pairs/overlay/diff",
+    "controlled tab click plus Arrow/Home/End runtime proof in this browser connector",
+    "controlled video keyboard activation runtime proof",
+    "controlled hero animation entry/intermediate/full-cycle timing",
+    "mobile and prefers-reduced-motion animation proof",
+    "computed geometry and font-render proof",
+    "console/network/asset error capture",
+    "second browser engine"
+  ],
+  "pixel_pass": false
+}
