@@ -1,9 +1,9 @@
-# STATE - 2026-09-12, HOMEPAGE + NAVIGATION FINAL AUDIT CLOSED; SUBPAGE FINALIZATION ACTIVE
+# STATE - 2026-09-12, HOMEPAGE/NAV CLOSED; SUBPAGE MEDIA FINALIZATION ACTIVE
 
 ## Current target / quota
 Target: https://alakfamester-wp.clicknest.hu/ ; repo `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
-WPVibe account: `ncsnorbert+20260912-4@gmail.com`; live site connection verified. Latest exact quota after homepage closeout: **46/300 used, 254 remaining** in rolling 24 hours. **Keep at least 10 calls for recovery/closeout.** No SMTP and no external form/test message.
+WPVibe account: `ncsnorbert+20260912-4@gmail.com`; live site connection verified. Latest exact quota checkpoint after homepage closeout: **46/300 used, 254 remaining** in rolling 24 hours. **Keep at least 10 calls for recovery/closeout.** Recheck the exact counter before any large write package. No SMTP and no external form/test message.
 
 Environment live: WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; Hello Elementor 3.5.1 active. Preserve page56, page12, ElementsKit header20/footer21, MetForm33, Additional CSS post8 and canonical subpages. Homepage template remains `elementor_header_footer`; `show_on_front=page`, `page_on_front=56`, `page_for_posts=0`.
 
@@ -15,78 +15,56 @@ D02 Hello Elementor + ElementsKit global header/footer. D03 V4 Atomic normal str
 ## CLOSED - Homepage + navigation final audit v001
 Evidence: `reports/home/home-final-audit-v001.json`, commit `3bf78b117ac90b614ad69b998e442ad1808a50b8`.
 
-The final homepage structural/link/content audit was run against the live target and current source. Three proven defects were corrected with targeted supported edits and immediate readback:
-- page56 hedge intro paragraphs now render in the source order while preserving the existing element IDs `af-hedge-intro` and `af-hedge-second-intro`;
-- MetForm33 now contains the source final direct-call note after submit as Atomic paragraph `af04000d` / `#af-form-direct-call`, linking to `tel:+36305394820`; no form submission, SMTP or delivery path was touched;
-- footer21 target-only `#af-footer-brand-subtitle` (`Biró János · topiarista`) was removed; the rest of the footer structure and links were preserved.
+Three proven final defects were corrected with targeted supported edits and immediate frontend/data readback:
+- page56 hedge intro paragraphs render in source order while preserving `af-hedge-intro` / `af-hedge-second-intro` IDs;
+- MetForm33 contains the source final direct-call note after submit as Atomic paragraph `af04000d` / `#af-form-direct-call`, linked to `tel:+36305394820`; no form submission, SMTP or delivery path touched;
+- footer21 target-only `#af-footer-brand-subtitle` (`Biró János · topiarista`) removed without changing the remaining footer structure/links.
 
-Frontend accessibility-DOM readback confirms the direct-call note/link and hedge paragraph order. Final saved hashes: page56 `_elementor_data` **244706 chars / 246602 B**, SHA `66126facdd0fd5e7d8ff395ebf095efbe605e6e4af1de57fcecab90e5dfd82d1`; MetForm33 **6068 B**, SHA `ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3`; footer21 **11491 B**, SHA `81ea2bb5e50768b17230efac4e1f175d177759bda7df1325aa8912038c7322e1`.
+Final saved hashes after that package: page56 `_elementor_data` **244706 chars / 246602 B**, SHA `66126facdd0fd5e7d8ff395ebf095efbe605e6e4af1de57fcecab90e5dfd82d1`; MetForm33 **6068 B**, SHA `ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3`; footer21 **11491 B**, SHA `81ea2bb5e50768b17230efac4e1f175d177759bda7df1325aa8912038c7322e1`.
 
-Structural closeout: all ten canonical pages are published with `elementor_header_footer`, exactly one published ElementsKit global header and one footer remain, and Elementor data contains **0** source-host / `.html` references. D09 canonical WordPress navigation mapping remains intact.
+Structural closeout: all ten canonical pages published with `elementor_header_footer`, exactly one published ElementsKit global header and footer, Elementor data has **0** source-host / `.html` references, D09 canonical navigation mapping intact.
 
-`PIXEL_PASS=false`: exact source-target screenshot/overlay/diff at the frozen acceptance viewports is still unavailable in this environment, so content/structure/link/AX-DOM checks are not represented as page-wide pixel proof.
+## CLOSED - Subpage background-helper verification v001
+Evidence: `reports/subpages/background-helper-finalization-v001.json`, commit `db71fa6f35046a25ca15ec864fa2c1978a18091f`.
 
-## CLOSED - Homepage header + hero parity v001
-Evidence: `reports/home/home-header-hero-parity-v001.json`.
-- header20 subtitle exact `Biró János`;
-- Code Snippets ID 7 supplies desktop dropdowns, mobile drawer/submenus, scroll state, keyboard brand behavior and fixed quick-contact dock;
-- source logo attachment 136;
-- hero native carousel `af1000a2` / `#af-home-proof-carousel`, source attachments 173–193, arrows+dots, 4000 ms autoplay and pause behavior.
+The three mismatches carried forward from `reports/site-finalization-20260911.md` were freshly checked against live Elementor data and are already correct, so **no WordPress write was made**:
+- page270 `af-s-rolam-9` = `af-bg-sage` PASS;
+- page270 `af-s-rolam-11` = `af-bg-paper` PASS;
+- page272 `af-s-soveny-specialista-8` = `af-bg-sage` PASS.
 
-## CLOSED - Homepage #elotte-utana before/after parity v001
-Evidence: `reports/home/home-before-after-parity-v001.json`.
-Existing V4 cards contain editable images 127/128, 165/166, 118/121. Code Snippets ID 8 provides source-style badges/range controls and idempotent lifecycle; CSS `home-before-after-v001` restores 4:3 contain split cards.
+Current hashes at this no-op checkpoint: page270 **38705 B**, SHA `7a100609dbb724419f46139d3a4b256dcf1e1e545f5e698c4249209bec4cba6f`; page272 **53311 B**, SHA `4c80d1108004fa133341da566e60adcda1b93c1f9ba5e3d110ff4cfdee4006e5`.
 
-## CLOSED - Homepage #kialakitas + #apolas + #aggodalmak parity v001
-Evidence: `reports/home/home-process-care-concerns-source-parity-v001.json`.
-`#kialakitas`: forest split-heading timeline. `#apolas`: source-like 3→2→1 care grid with six semantic icons and two callouts. `#aggodalmak`: source-like 2→1 organic concern cards.
-
-## CLOSED - Homepage #af-survivor + #formavilag parity v001
-Evidence: `reports/home/home-survivor-forms-source-parity-v001.json`.
-`#af-survivor`: native carousel `af1b0100` / `#af-survivor-carousel`, exact source attachments 130–135/alts and source-like controls. `#formavilag`: 12 editable Atomic cards retain exact source names and exact source SVG drawings; 6→4→3 responsive grid.
-
-## CLOSED / SUPERSEDED - Hedge / not-fit / price
-Authoritative evidence: `reports/home/home-hedge-notfit-price-source-parity-v002.json`, commit `b290fe40056f508ec1dd82292ac3e7ab75962cfd`.
-
-`#soveny-formazas` follows current live source truth: six cards, two info cards and canonical `/soveny-specialista/` + `/galeria/` links. `#mikor-nem` matches four cross-list items + three alternatives. `#arkepzes` matches seven factors + photo-estimate note. CSS keeps source SVG drawings, split-heading/grid geometry, asymmetric not-fit layout and 4→2 price tiles.
-
-## CLOSED DATA/CSS - Homepage specialist + health + references parity v001
-Evidence: `reports/home/home-specialist-health-references-source-parity-v001.json`, commit `526e85d6ba59ca468df029ba24b52779a43ca1c9`.
-
-Existing editable Elementor V4 structure/IDs were preserved. Source-visible CTA text is exact and graphical arrows are supplied by scoped CSS. Specialist has source typography/organic 2×2 cards and four semantic icons; health has the source two-column forest-card composition; references has source split heading and two route cards. The unavailable source portrait `kepek/biro-janos-portre.webp` is not replaced by an invented asset.
-
-## CLOSED DATA/CSS - Homepage FAQ + contact parity v001
-Evidence: `reports/home/home-faq-contact-source-parity-v001.json`, commit `01671965689a8fbd2045afbd622637b5685e1f76`.
-
-The live source FAQ was reread and contains eight items. Target native Elementor Toggle widget `af230005` retains all eight exact source questions and answer copy. The missing source inline link in the sixth answer was restored to `#soveny-formazas`; frontend reread confirms the anchor renders.
-
-The existing MetForm33 form remains untouched structurally except for the final direct-call source note added in the later final audit. No form was submitted and no SMTP/delivery path was touched.
-
-## Previously stable packages
-- MetForm33 source/config parity closed for prompt-2 no-delivery mode; no SMTP/submission.
+## Previously closed/stable packages
+- Homepage header/hero: `reports/home/home-header-hero-parity-v001.json`.
+- Homepage before/after: `reports/home/home-before-after-parity-v001.json`.
+- Homepage process/care/concerns: `reports/home/home-process-care-concerns-source-parity-v001.json`.
+- Homepage survivor/forms: `reports/home/home-survivor-forms-source-parity-v001.json`.
+- Homepage hedge/not-fit/price authoritative: `reports/home/home-hedge-notfit-price-source-parity-v002.json`.
+- Homepage specialist/health/references: `reports/home/home-specialist-health-references-source-parity-v001.json`.
+- Homepage FAQ/contact: `reports/home/home-faq-contact-source-parity-v001.json`.
+- MetForm33 source/config parity closed for prompt-2 no-delivery mode.
 - D09 contact-link audit closed.
 - Page256 biological hero uses `af-hero-art`.
-- Structural audit: canonical pages published on `elementor_header_footer`, one ElementsKit header/footer, no source-host or `.html` refs and no custom reviews widget.
-- Page272 Hedge keeps 21-image proof, native reviews, 28-item EAEL masonry and MetForm.
 - Page264 Old Trees hero/problem grid/local MetForm/CTA remap closed.
-- Page258 Gallery keeps 44-item EAEL masonry/native reviews.
+- Page258 Gallery documented with 44-item EAEL masonry/native reviews.
+- Page272 Hedge documented with 21-image proof, native reviews, 28-item EAEL masonry and MetForm.
 - Page56 partner section restored.
 
-## NEXT - SUBPAGE FINALIZATION
-Use `reports/site-finalization-20260911.md` as the next-work inventory together with fresh live reads; do not assume its old measurements are still current. Before each package reread the relevant AGENTS/decisions rules and compare known IDs/classes/hashes against live state.
+## NEXT - GALLERY + HEDGE MEDIA PARITY RECHECK
+Use `reports/site-finalization-20260911.md` only as an old issue inventory; **do not assume its image counts remain current**. Before any write:
+1. reread D08/D11/D17/D18 and the current page258/page272 evidence;
+2. compare current live source and current target image/media inventories and page hashes;
+3. preserve existing attachment IDs/order and never upload a duplicate asset;
+4. only add/change media if a concrete source→target gap is proven;
+5. verify EAEL masonry/native reviews and Hedge proof/gallery behavior after any change.
 
-Priority order:
-1. verify and fix the three known simple background-helper mismatches only if still present: `af-s-rolam-9` paper→sage, `af-s-rolam-11` sage→paper, `af-s-soveny-specialista-8` stone→sage;
-2. recompute Gallery and Hedge media parity from current live data/source before adding anything; preserve attachment IDs and do not duplicate assets;
-3. recompute Rólam / Idős fák media parity and fix only proven gaps;
-4. verify Reference Videos featured block vertical structure and use the smallest supported correction if a real mismatch remains;
-5. continue viewport/behavior verification with the available browser access and record anything that cannot be proven because exact screenshot instrumentation is unavailable.
+After Gallery/Hedge, recompute Rólam / Idős fák media parity, then verify Reference Videos featured-block vertical structure. Exact source-target screenshot/overlay/diff at the frozen acceptance viewports remains open if the available browser instrumentation cannot produce controlled viewport evidence.
 
 ## Known external/frozen blockers
 - Source portrait `Biró János munka közben` / `kepek/biro-janos-portre.webp`: source URL unavailable; no proven substitute.
 - Gallery Ellwoodi source asset: source URL 404; no proven substitute.
-- `specs/acceptance.json` and `specs/behaviors.json` are not exposed through the repository connection. Formal frozen automated matrix is unavailable.
+- `specs/acceptance.json` and `specs/behaviors.json` are not exposed through the repository connection; formal frozen automated matrix is unavailable.
 - SMTP/delivery and real MetForm submission are prompt-3 tasks.
 
 ## Acceptance
-Homepage content/structure/navigation final audit is closed, but site-wide viewport-level visual/interaction acceptance remains open. `PIXEL_PASS=false`.
+Homepage content/structure/navigation final audit is closed. Site-wide viewport-level visual/interaction acceptance remains open. `PIXEL_PASS=false`.
