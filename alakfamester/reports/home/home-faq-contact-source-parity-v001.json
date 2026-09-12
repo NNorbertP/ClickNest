@@ -1,0 +1,56 @@
+{
+  "package": "home-faq-contact-source-parity-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "source": "https://alakfamester.clicknest.hu/",
+  "rules": ["D02", "D03", "D05", "D06", "D07", "D08", "D09", "D11", "D18"],
+  "preflight": {
+    "page56": {"bytes": 246571, "chars": 244675, "sha256": "6ed7a694e76a6bbc8e0b9cd6cda702c5083e60914aba151706da01a608161e45"},
+    "additional_css_post8": {"bytes": 388490, "chars": 387763, "sha256": "815040d1c46b551b929a89b0746553dfafc012bf2596ad7f2d809a548200014a"},
+    "quota": {"used": 271, "limit": 300, "remaining": 29, "reserved": 10}
+  },
+  "source_truth": {
+    "faq_items": 8,
+    "faq_titles": [
+      "Minden fából lehet alakfa?",
+      "Mennyi idő alatt készül el?",
+      "Mikor lehet metszeni?",
+      "Milyen gyakran kell fenntartani?",
+      "Mi történik, ha évekig kimarad az ápolás?",
+      "Sövényt is vállal, nem csak alakfát?",
+      "Honnan tudom, hogy menthető-e a növény?",
+      "Hogyan készül az ajánlat, és van kiszállási díj?"
+    ],
+    "faq_hedge_link": "#soveny-formazas",
+    "contact_heading": "Küldjön 3–5 fotót a növényéről",
+    "contact_response_time": "Általában 24–48 órán belül válaszolok.",
+    "contact_phone": "+36 30 539 48 20",
+    "contact_email": "kreativ@alakfa-mester.hu"
+  },
+  "changes": [
+    "Restored the source inline link in the sixth FAQ answer: A sövényformázásról itt írok bővebben. -> #soveny-formazas.",
+    "Kept the existing native editable Elementor Toggle widget af230005 and its exact eight source questions/answers; no custom FAQ widget or duplicated runtime was introduced.",
+    "Added a scoped Hello Additional CSS package af-project:home-faq-contact-v001 after a fresh full post8 read. The FAQ now follows the source divider rhythm, Georgia question typography, organic plus/minus control treatment, answer spacing and focus treatment.",
+    "Kept the previously closed MetForm33 form intact and styled only its surrounding contact section/card. No form submission, SMTP setting, notification or external message was triggered.",
+    "The contact section now follows the source sage background, centered heading hierarchy, white organic form panel, response-time clock cue, phone/email contact cards and responsive single-column mobile layout.",
+    "The previously restored partner section was carried forward unchanged because no concrete regression was found and quota reserve rules prohibit speculative rebuilding."
+  ],
+  "verification": {
+    "faq_css_marker_count": 1,
+    "faq_frontend_reread": true,
+    "faq_frontend_item_count": 8,
+    "faq_sixth_answer_link_rendered": true,
+    "metform_submission_attempted": false,
+    "smtp_or_external_delivery_touched": false,
+    "page56_after": {"bytes": 246602, "chars": 244706, "sha256": "28b9541df404181052e328a8016a2ff68e04e6b36e2f38fa732460ca8f9a926d"},
+    "additional_css_post8_after": {"bytes": 398211, "chars": 397484, "sha256": "8843fa833362389f36b23c007e9ee382116708fe8ad7fda29a49e44ac708ded9"},
+    "quota_after": {"used": 283, "limit": 300, "remaining": 17, "reserved": 10}
+  },
+  "open": [
+    "Do not start another main WPVibe package until rolling quota releases enough calls above the mandatory 10-call recovery reserve.",
+    "Desktop/tablet/mobile screenshot geometry and interaction acceptance remains open; PIXEL_PASS remains false.",
+    "The source final in-form direct-call footnote is not present as a separate visible target node; MetForm33 remains preserved because its prompt-2 form package is already structurally closed and low quota makes a structural re-save unjustified."
+  ],
+  "status": "DATA_AND_CSS_PARITY_PASS_VISUAL_QA_OPEN",
+  "pixel_pass": false
+}
