@@ -1,0 +1,56 @@
+{
+  "package": "hedge-native-reviews-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "page_id": 272,
+  "decision": "D12",
+  "status": "STRUCTURAL_PASS_FORMAL_VISUAL_OPEN",
+  "preflight": {
+    "elementor_data_bytes": 29351,
+    "elementor_data_sha256": "a9ed7c155a5e09256cd493370be6bb40481541e76c82d098d7deaf359178b1d8",
+    "custom_reviews_widget_id": "af2e0006",
+    "eael_masonry_id": "b2e2c001",
+    "proof_carousel_id": "af2e004d",
+    "form_id": "af2e0011"
+  },
+  "implementation": {
+    "wrapper_id": "af2e0042",
+    "wrapper_class": "g-af-reviews-section",
+    "section_head_id": "c3d30001",
+    "tabs_root_id": "c3d30005",
+    "tab_count": 3,
+    "panel_count": 3,
+    "review_image_attachment_ids": [75,76,77],
+    "global_classes_reused": true,
+    "new_additional_css": false,
+    "custom_af_project_reviews_removed": true,
+    "eael_masonry_preserved": true,
+    "proof_carousel_preserved": true,
+    "metform_preserved": true
+  },
+  "save_note": {
+    "path": "Six match-once guarded _elementor_data edits built the already-proven D12 Atomic Tabs subtree in validated stages because the connector does not accept a local file reference for a generated whole-page payload. No raw SQL meta write was used.",
+    "cache_recovery": "After final JSON readback, the WordPress page was touched through normal post hooks and Elementor CSS was purged/regenerated once so newly referenced global classes compile for page272.",
+    "invalid_attempt": "One malformed stage-3 request was rejected by the connector before execution; the corrected request then succeeded. No uncertain write was repeated."
+  },
+  "readback": {
+    "elementor_data_bytes": 45479,
+    "elementor_data_sha256": "fa839a47d966de6b1a1379c5f7caf5c126d3cffdff8a037cf99d5f07c70ed27c",
+    "post_modified_gmt": "2026-09-12 12:41:34",
+    "json_valid": true,
+    "custom_reviews_count": 0,
+    "tabs_path": "$[0].elements[1].elements[1].id",
+    "eael_item_count": 28,
+    "additional_css_unchanged": "262730|a8ebd21e85595df6bbeae46759cfc5e7a1a4a3ddbe4b4c7ec70a7d4dbc52209f"
+  },
+  "browser_qa": {
+    "frontend": "Opera accessibility tree exposes heading 'Amit a megbízóim mondanak', three tabs, active Panasonic tabPanel and the Panasonic review image/text.",
+    "editor": "Elementor editor reopened after the migration; the editor UI loaded with the existing Filterable Gallery controls and no fatal/error page.",
+    "keyboard": "Shared af-project 0.2.0 D12 delegated Arrow/Home/End parity remains the common site implementation; runtime keypress on this page is not separately clicked because available Opera connector has no interaction action."
+  },
+  "open": [
+    "Formal frozen-reference screenshot pair/overlay/diff and computed geometry remain unavailable in this session.",
+    "Per-page runtime tab key interaction is inferred from the shared proven handler but not newly executed here.",
+    "PIXEL_PASS remains false globally."
+  ]
+}
