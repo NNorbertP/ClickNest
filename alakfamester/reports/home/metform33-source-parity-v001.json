@@ -1,0 +1,104 @@
+{
+  "package": "metform33-source-parity-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "form_id": 33,
+  "decision": "D05",
+  "status": "STRUCTURAL_AND_CONFIGURATION_PASS_NO_SUBMISSION_BY_DESIGN",
+  "preflight": {
+    "elementor_data_bytes": 5568,
+    "elementor_data_sha256": "47152dff5fa5d5369a8955f7581e71b0652604c39a6c283fd15e243a543d01f3",
+    "textarea_id": "af04000b",
+    "textarea_name": "uzenet",
+    "source_rows": 5,
+    "target_template_rows_before": 10,
+    "upload_id": "af04000a",
+    "upload_name": "fotok",
+    "multiple": true,
+    "file_size_limit_kb": 8192,
+    "required": true,
+    "notifications_enabled": false,
+    "webhooks_enabled": false,
+    "store_entries": true
+  },
+  "schema": {
+    "metform_version": "4.3.0",
+    "textarea_native_rows_control": false,
+    "textarea_available_height_control": "mf_textarea_field_height",
+    "file_upload_native_max_file_count_control": false,
+    "mf_input_min_length_and_max_length_are_character_or_word_validation_only": true,
+    "hook_contract": "mf_after_validation_check receives is_valid, form_data and file_data after built-in validation"
+  },
+  "implementation": {
+    "new_authorized_plugin": {
+      "slug": "code-snippets",
+      "name": "Code Snippets",
+      "version": "3.10.2",
+      "status": "active",
+      "reason": "AGENTS.md explicitly permits Code Snippets for small PHP extensions; selected for the persistent MetForm server validation hook because MetForm Free exposes no max-file-count control."
+    },
+    "server_validation": {
+      "snippet_id": 5,
+      "name": "AF MetForm photo count validation",
+      "scope": "global",
+      "active": true,
+      "code_error": null,
+      "hook": "mf_after_validation_check",
+      "route_scope": "/metform/v1/entries/insert/33",
+      "field": "fotok",
+      "minimum_files": 3,
+      "maximum_files": 5,
+      "minimum_error": "Kérem, töltsön fel legalább 3 fotót a növényről.",
+      "maximum_error": "Legfeljebb 5 fotót tud feltölteni."
+    },
+    "textarea_rows_parity": {
+      "snippet_id": 6,
+      "name": "AF MetForm source UI parity",
+      "scope": "front-end",
+      "active": true,
+      "code_error": null,
+      "script_marker": "af-metform-ui-parity-v001",
+      "selector": ".mf-form-wrapper[data-form-id=\"33\"] textarea[name=\"uzenet\"]",
+      "rows": 5,
+      "lifecycle": "one guarded page-level MutationObserver re-applies after MetForm/Elementor dynamic rendering; no timers or duplicate handlers"
+    },
+    "success_state": {
+      "metform_route": "/metform/v1/forms/update/33",
+      "success_title_exact_source": "Az űrlap kitöltése rendben",
+      "target_message": "Köszönöm, az ajánlatkérést rögzítettem. Hamarosan jelentkezem a megadott elérhetőségek egyikén.",
+      "contact_line_preserved": true,
+      "source_demo_warning_not_copied_verbatim": true,
+      "reason": "The frozen source has an empty endpoint and explicitly says the demo message was not sent. The WordPress target intentionally stores local MetForm entries, so repeating that demo-only statement would be false. The source heading/state and contact guidance are preserved while the body truthfully reflects the target behavior."
+    }
+  },
+  "readback": {
+    "elementor_data_bytes": 5568,
+    "elementor_data_sha256": "47152dff5fa5d5369a8955f7581e71b0652604c39a6c283fd15e243a543d01f3",
+    "form_settings_chars": 5856,
+    "form_settings_bytes": 5883,
+    "form_settings_sha256": "6b7b86d709165ef0c418df6b8ef80de15bd0e1d11529f72eb998c341f51b5911",
+    "store_entries": "1",
+    "user_notification": "",
+    "admin_notification": "",
+    "rest_webhook": "",
+    "zapier": "",
+    "slack": "",
+    "success_message_read_back": true,
+    "active_project_snippets": [5, 6],
+    "frontend_script_marker_rendered": true,
+    "homepage_accessibility_tree_exposes_description_textfield": true,
+    "elementor_form_editor_reopened": true
+  },
+  "testing_policy": {
+    "source_form_submitted": false,
+    "target_form_submitted": false,
+    "smtp_configured": false,
+    "external_test_message_sent": false,
+    "note": "The user explicitly prohibited external delivery tests in this mode and STATE required that the validator not be proven by sending a form. The active snippet has no parse error and its contract was verified against MetForm's validation hook implementation."
+  },
+  "open": [
+    "No end-to-end form submission was performed by design; actual entry creation and delivery remain for the later SMTP/test mode.",
+    "Formal frozen-reference multi-viewport visual acceptance remains unavailable because specs/acceptance.json and specs/behaviors.json are absent.",
+    "PIXEL_PASS remains false globally."
+  ]
+}
