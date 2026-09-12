@@ -1,0 +1,70 @@
+{
+  "package": "oldtrees-inline-form-v001",
+  "date": "2026-09-12",
+  "page_id": 264,
+  "pre_sha256": "e049f78fadf426e2743dc1244e3abe1e519843ccd82d965b607cd28f627e395f",
+  "post_chars": 47320,
+  "post_bytes": 47327,
+  "post_sha256": "ae8ed86ab62b4f27c5f72f1c4baf5ecaa2b14186e067ebd2fee5f61d3938e765",
+  "save_route": "/wpvibe/v1/elementor/save-page",
+  "page_template": "elementor_header_footer",
+  "d18_inventory": {
+    "atomic_legacy_css_classes_found": 0,
+    "new_global_class_bridges_required": false,
+    "reused_typed_classes": ["g-af-src-subpage", "g-af-src-bgsage", "g-af-type-eyebrow", "g-af-type-heading", "g-af-type-body"]
+  },
+  "structure": {
+    "section_id": "af2a0008",
+    "frontend_id": "ajanlatkeres",
+    "new_eyebrow_id": "af2a0053",
+    "source_intro_widget_id": "af2a0054",
+    "metform_widget_id": "af2a0055",
+    "metform_id": 33,
+    "removed_old_button_id": "af2a000b",
+    "preserved_heading_id": "af2a0009",
+    "preserved_body_id": "af2a000a"
+  },
+  "source_copy_restored": [
+    "Mielőtt kivágatná",
+    "Küldjön róla néhány képet",
+    "Néhány fotóból már meg tudom mondani, hogy érdemes-e egyáltalán helyszíni felmérésben gondolkodni.",
+    "Ajánlatkérés",
+    "A képek és a település megadása után jelentkezem az előzetes véleménnyel.",
+    "Jellemzően 24 órán belül válaszolok.",
+    "Ha inkább telefonon vagy e-mailben egyeztetne, itt bármikor elér:",
+    "A csillaggal jelölt mezők kitöltése kötelező."
+  ],
+  "cta_remap": {
+    "old": "/fooldal/#ajanlatkeres",
+    "new": "#ajanlatkeres",
+    "replaced": 2,
+    "remaining_fooldal_matches": 0
+  },
+  "source_correction": {
+    "old": "Nem lesz csúnya az erős visszavágás után?",
+    "new": "Nem lesz csúnya a növény az erős visszavágás után?"
+  },
+  "metform": {
+    "id": 33,
+    "sha256": "47152dff5fa5d5369a8955f7581e71b0652604c39a6c283fd15e243a543d01f3",
+    "notifications_webhooks_disabled": true,
+    "submission_performed": false,
+    "smtp_configured": false
+  },
+  "checks": {
+    "save_warnings_empty": true,
+    "frontend_section_id_ajanlatkeres": true,
+    "frontend_source_intro_copy": true,
+    "frontend_metform33_present": true,
+    "editor_reopened": true,
+    "external_message_sent": false,
+    "pixel_pass": false
+  },
+  "open": [
+    "MetForm textarea renders rows=10; source uses rows=5.",
+    "Server-side maximum-five-file validation is not yet implemented.",
+    "Exact source success message/submit-state parity remains open.",
+    "Formal visual/runtime acceptance remains open."
+  ],
+  "quota_after_closeout": "176/300 used; 124 remaining"
+}
