@@ -1,0 +1,48 @@
+{
+  "package": "contact-hero-v4-class-bridge-v001",
+  "date": "2026-09-12",
+  "target_page_id": 266,
+  "target_url": "https://alakfamester-wp.clicknest.hu/kapcsolat/",
+  "reference_url": "https://alakfamester.clicknest.hu/kapcsolat.html",
+  "reference_kind": "live diagnostic; frozen aggregate remains canonical",
+  "pre_sha256": "b9ef3e23aa2ac1ae9cc9e8cb8d5c050ed7842f0b1af4d695236925a0ecf0511f",
+  "pre_bytes": 8117,
+  "final_sha256": "815f22bec4aa1a4401a78186505bf553740a2c19710b720407d19b4703366fae",
+  "final_bytes": 8685,
+  "final_modified_gmt": "2026-09-12 14:05:50",
+  "hero_widget": {
+    "id": "af2b0046",
+    "widgetType": "af-hero-art",
+    "art": "kapcsolat",
+    "accessible_title": "Nyitott kertkapu egy megformált növény mellett",
+    "accessible_description": "Bronz kertkapu-ív, mögötte gereblyézett ösvény és egy kész alakfa – hívogató nyitókép.",
+    "scroll_mode": "hero"
+  },
+  "v4_class_bridge": [
+    {"id":"g-af-src-wave","label":"af-source-wave"},
+    {"id":"g-af-src-contact1","label":"af-s-kapcsolat-1"},
+    {"id":"g-af-src-contact5","label":"af-s-kapcsolat-5"},
+    {"id":"g-af-src-subpage","label":"af-subpage-section"},
+    {"id":"g-af-src-bgpaper","label":"af-bg-paper"},
+    {"id":"g-af-probe-hero","label":"af-hero","reused":true}
+  ],
+  "content_semantics": [
+    "Added Elérhetőségek h2 to the existing contact-card text-editor.",
+    "Converted the four process-step titles from strong text to h3 headings inside the existing form-copy text-editor."
+  ],
+  "checks": {
+    "supported_elementor_save_page": true,
+    "post_save_readback": true,
+    "frontend_hero_classes": "af-s-kapcsolat-1 af-hero",
+    "frontend_form_section_classes": "af-s-kapcsolat-5 af-subpage-section af-bg-paper",
+    "frontend_hero_svg_title_desc_present": true,
+    "frontend_headings_present": true,
+    "elementor_editor_reopened": true,
+    "smtp_or_external_submission": false,
+    "pixel_pass": false
+  },
+  "important_discovery": "Elementor 4.2.4 strips legacy _css_classes from Atomic e-flexbox settings during supported save-page. Required project/source class labels must therefore be represented as native V4 global classes and referenced through typed settings.classes before a structural save.",
+  "open": [
+    "Formal frozen viewport visual/behavior acceptance remains open."
+  ]
+}
