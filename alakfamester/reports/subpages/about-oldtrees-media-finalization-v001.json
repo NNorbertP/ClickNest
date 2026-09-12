@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-12",
+  "scope": "fresh source-target media parity recheck for Rólam page270 and Idős fák page264",
+  "writes": 0,
+  "quota_before_package": {"used":58,"limit":300,"remaining":242},
+  "about": {
+    "source_url":"https://alakfamester.clicknest.hu/rolam.html",
+    "target_url":"https://alakfamester-wp.clicknest.hu/rolam/",
+    "source_ax_images_total":11,
+    "source_global_footer_reference_images":1,
+    "source_main_images":10,
+    "target_main_images":9,
+    "target_page_bytes":38705,
+    "target_page_sha256":"7a100609dbb724419f46139d3a4b256dcf1e1e545f5e698c4249209bec4cba6f",
+    "only_missing_source_image": {
+      "alt":"Biró János munka közben",
+      "url":"https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp",
+      "direct_browser_result":"404 / This Page Does Not Exist",
+      "action":"no substitute and no upload; frozen/local source bytes required"
+    },
+    "all_other_visible_source_media_roles_present":true
+  },
+  "old_trees": {
+    "source_url":"https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+    "target_url":"https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+    "source_ax_images_total":6,
+    "source_global_footer_reference_images":1,
+    "source_main_images":5,
+    "target_main_images":5,
+    "main_count_pass":true,
+    "observed_media_roles_match":true,
+    "target_page_bytes":47327,
+    "target_page_sha256":"ae8ed86ab62b4f27c5f72f1c4baf5ecaa2b14186e067ebd2fee5f61d3938e765"
+  },
+  "pixel_pass":false,
+  "pixel_pass_reason":"controlled frozen-viewport screenshot/overlay/diff remains unavailable"
+}
