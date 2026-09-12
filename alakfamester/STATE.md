@@ -1,16 +1,30 @@
-# STATE - 2026-09-12, HOMEPAGE VISUAL AUDIT ACTIVE; FAQ/CONTACT PACKAGE CLOSED
+# STATE - 2026-09-12, HOMEPAGE + NAVIGATION FINAL AUDIT CLOSED; SUBPAGE FINALIZATION ACTIVE
 
 ## Current target / quota
 Target: https://alakfamester-wp.clicknest.hu/ ; repo `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
-WPVibe account: `ncsnorbert+20260912-3@gmail.com`; live site connection verified. Latest exact quota after FAQ/contact closeout: **283/300 used, 17 remaining** in rolling 24 hours. **Keep at least 10 calls for recovery/closeout. Do not begin another main package with only 7 calls above reserve.** No SMTP and no external form/test message.
+WPVibe account: `ncsnorbert+20260912-4@gmail.com`; live site connection verified. Latest exact quota after homepage closeout: **46/300 used, 254 remaining** in rolling 24 hours. **Keep at least 10 calls for recovery/closeout.** No SMTP and no external form/test message.
 
 Environment live: WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; Hello Elementor 3.5.1 active. Preserve page56, page12, ElementsKit header20/footer21, MetForm33, Additional CSS post8 and canonical subpages. Homepage template remains `elementor_header_footer`; `show_on_front=page`, `page_on_front=56`, `page_for_posts=0`.
 
 Frozen source aggregate remains `fc1229f01ea7002131153b606f3cb6c549b001f93337efbb2352089800349707`.
 
-## Rules for the active homepage audit
+## Rules for current finalization
 D02 Hello Elementor + ElementsKit global header/footer. D03 V4 Atomic normal structure; MetForm/addon/af-project complex widgets may remain legacy in V4. D04 hero art remains editable `af-hero-art`. D05 MetForm Free. D06 Georgia/system stack. D07 handwritten CSS only in Hello Additional CSS. D08 exact source text/service structure. D09 map source links to canonical WP destinations while retaining intended anchors. D11 keep 10-call recovery reserve. D12 reviews remain native Atomic Tabs. D17 masonry uses EAEL Free gallery. D18 inventory/preserve V4 class semantics before any structural full-save. Localized supported `content/edit` is permitted for unique proven insertions with immediate readback. Before every Additional CSS write reread the complete post8 field and modify only the `af-project` block.
+
+## CLOSED - Homepage + navigation final audit v001
+Evidence: `reports/home/home-final-audit-v001.json`, commit `3bf78b117ac90b614ad69b998e442ad1808a50b8`.
+
+The final homepage structural/link/content audit was run against the live target and current source. Three proven defects were corrected with targeted supported edits and immediate readback:
+- page56 hedge intro paragraphs now render in the source order while preserving the existing element IDs `af-hedge-intro` and `af-hedge-second-intro`;
+- MetForm33 now contains the source final direct-call note after submit as Atomic paragraph `af04000d` / `#af-form-direct-call`, linking to `tel:+36305394820`; no form submission, SMTP or delivery path was touched;
+- footer21 target-only `#af-footer-brand-subtitle` (`Biró János · topiarista`) was removed; the rest of the footer structure and links were preserved.
+
+Frontend accessibility-DOM readback confirms the direct-call note/link and hedge paragraph order. Final saved hashes: page56 `_elementor_data` **244706 chars / 246602 B**, SHA `66126facdd0fd5e7d8ff395ebf095efbe605e6e4af1de57fcecab90e5dfd82d1`; MetForm33 **6068 B**, SHA `ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3`; footer21 **11491 B**, SHA `81ea2bb5e50768b17230efac4e1f175d177759bda7df1325aa8912038c7322e1`.
+
+Structural closeout: all ten canonical pages are published with `elementor_header_footer`, exactly one published ElementsKit global header and one footer remain, and Elementor data contains **0** source-host / `.html` references. D09 canonical WordPress navigation mapping remains intact.
+
+`PIXEL_PASS=false`: exact source-target screenshot/overlay/diff at the frozen acceptance viewports is still unavailable in this environment, so content/structure/link/AX-DOM checks are not represented as page-wide pixel proof.
 
 ## CLOSED - Homepage header + hero parity v001
 Evidence: `reports/home/home-header-hero-parity-v001.json`.
@@ -44,15 +58,9 @@ Existing editable Elementor V4 structure/IDs were preserved. Source-visible CTA 
 ## CLOSED DATA/CSS - Homepage FAQ + contact parity v001
 Evidence: `reports/home/home-faq-contact-source-parity-v001.json`, commit `01671965689a8fbd2045afbd622637b5685e1f76`.
 
-The live source FAQ was reread and contains **eight** items. Target native Elementor Toggle widget `af230005` retains all eight exact source questions and answer copy. The missing source inline link in the sixth answer was restored to `#soveny-formazas`; frontend reread confirms the anchor renders.
+The live source FAQ was reread and contains eight items. Target native Elementor Toggle widget `af230005` retains all eight exact source questions and answer copy. The missing source inline link in the sixth answer was restored to `#soveny-formazas`; frontend reread confirms the anchor renders.
 
-A fresh full Additional CSS read preceded the single scoped `home-faq-contact-v001` append. The FAQ now uses source-like divider rhythm, Georgia question typography, organic plus/minus controls, answer spacing and focus treatment while remaining a native editable Toggle.
-
-The existing MetForm33 form remains untouched structurally. Only its surrounding contact section/card is restyled to the source sage section, centered heading hierarchy, white organic panel, response-time clock cue, phone/email contact cards and responsive mobile layout. **No form was submitted and no SMTP/delivery path was touched.** The previously restored partner section was carried forward unchanged because no concrete regression was found.
-
-Current checkpoint after FAQ/contact: page56 `_elementor_data` **244706 chars / 246602 B**, SHA `28b9541df404181052e328a8016a2ff68e04e6b36e2f38fa732460ca8f9a926d`; Additional CSS post8 **397484 chars / 398211 B**, SHA `8843fa833362389f36b23c007e9ee382116708fe8ad7fda29a49e44ac708ded9`. The `home-faq-contact-v001` start marker occurs exactly once.
-
-One minor source difference remains intentionally open inside the form: the source has a final separate `Vagy hívjon közvetlenül: +36 30 539 48 20` note after submit; target MetForm33 does not expose it as a separate visible node. Do not force a structural builder save at the current quota. Revisit only when sufficient quota exists and after D18 structural preflight.
+The existing MetForm33 form remains untouched structurally except for the final direct-call source note added in the later final audit. No form was submitted and no SMTP/delivery path was touched.
 
 ## Previously stable packages
 - MetForm33 source/config parity closed for prompt-2 no-delivery mode; no SMTP/submission.
@@ -64,12 +72,15 @@ One minor source difference remains intentionally open inside the form: the sour
 - Page258 Gallery keeps 44-item EAEL masonry/native reviews.
 - Page56 partner section restored.
 
-## NEXT - WAIT FOR SAFE WPVIBE CAPACITY, THEN FINAL HOMEPAGE AUDIT
-Current rolling quota leaves only **7 calls above the mandatory 10-call reserve**, so do not start another main package now.
+## NEXT - SUBPAGE FINALIZATION
+Use `reports/site-finalization-20260911.md` as the next-work inventory together with fresh live reads; do not assume its old measurements are still current. Before each package reread the relevant AGENTS/decisions rules and compare known IDs/classes/hashes against live state.
 
-When capacity releases: reread AGENTS/STATE and D03/D07/D08/D09/D11/D18, exact quota and page56/CSS hashes. Then run the final homepage structural/link/content audit, address only proven remaining defects (including the optional final direct-call form note if a safe native edit path is available), and update evidence/STATE. Do not submit MetForm or touch SMTP.
-
-Once Opera/browser access is available, run actual source–target screenshots and behavior checks at desktop/tablet/mobile widths for every closed package: header/mobile menu, hero proof carousel, before/after sliders, reviews, process/care/concerns, survivor carousel, forms, hedge, specialist, health, references, FAQ and contact. Do not claim page-wide pixel parity before those pass.
+Priority order:
+1. verify and fix the three known simple background-helper mismatches only if still present: `af-s-rolam-9` paper→sage, `af-s-rolam-11` sage→paper, `af-s-soveny-specialista-8` stone→sage;
+2. recompute Gallery and Hedge media parity from current live data/source before adding anything; preserve attachment IDs and do not duplicate assets;
+3. recompute Rólam / Idős fák media parity and fix only proven gaps;
+4. verify Reference Videos featured block vertical structure and use the smallest supported correction if a real mismatch remains;
+5. continue viewport/behavior verification with the available browser access and record anything that cannot be proven because exact screenshot instrumentation is unavailable.
 
 ## Known external/frozen blockers
 - Source portrait `Biró János munka közben` / `kepek/biro-janos-portre.webp`: source URL unavailable; no proven substitute.
@@ -78,4 +89,4 @@ Once Opera/browser access is available, run actual source–target screenshots a
 - SMTP/delivery and real MetForm submission are prompt-3 tasks.
 
 ## Acceptance
-Homepage content/CSS reconstruction is substantially advanced, but viewport-level visual/interaction acceptance is still open. `PIXEL_PASS=false`.
+Homepage content/structure/navigation final audit is closed, but site-wide viewport-level visual/interaction acceptance remains open. `PIXEL_PASS=false`.
