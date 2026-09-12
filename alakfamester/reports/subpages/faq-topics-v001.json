@@ -1,0 +1,19 @@
+{
+  "package":"faq-topics-v001",
+  "date":"2026-09-12",
+  "page_id":260,
+  "pre_sha256":"9599ff0129ee166c48a5adbc40a8db69bd013da4e114ba7056173dca7934e524",
+  "post_sha256":"44dede060325e853927313ebef441a0330b6a18ebb6bd0e738a02348f990b253",
+  "post_bytes":28708,
+  "changes":["The existing Témakörök label inside #af-faq-topics was changed from a paragraph eyebrow to an h2 heading; topic links and IDs were preserved."],
+  "checks":{"logged_out_heading_present":true,"elementor_tree_unchanged":true,"pixel_pass":false},
+  "prepared_structural_bridge":[
+    {"id":"g-af-src-faq1","label":"af-s-gyakran-ismetelt-kerdesek-1"},
+    {"id":"g-af-src-faq2","label":"af-s-gyakran-ismetelt-kerdesek-2"},
+    {"id":"g-af-src-reviews","label":"af-source-reviews"},
+    {"id":"g-af-src-faq16","label":"af-s-gyakran-ismetelt-kerdesek-16"},
+    {"id":"g-af-src-bgsage","label":"af-bg-sage"},
+    {"id":"g-af-src-subfinal","label":"af-sub-final"}
+  ],
+  "open":["Hero art Jelölt formatanulmány – ahol a kérdések felmerülnek still needs a D18-compliant supported full Elementor save."]
+}
