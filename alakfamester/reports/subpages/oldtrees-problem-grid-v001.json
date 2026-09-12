@@ -1,0 +1,44 @@
+{
+  "package": "oldtrees-problem-grid-v001",
+  "date": "2026-09-12",
+  "page_id": 264,
+  "widget_id": "af2a0007",
+  "pre_page_sha256": "2a3e3293b7310864dba91ea219ef055c031e26eacb6bc5c603c8c80c067a06aa",
+  "post_page_sha256": "e049f78fadf426e2743dc1244e3abe1e519843ccd82d965b607cd28f627e395f",
+  "post_page_chars": 44689,
+  "additional_css_post_id": 8,
+  "pre_css_chars": 262010,
+  "pre_css_sha256": "a8ebd21e85595df6bbeae46759cfc5e7a1a4a3ddbe4b4c7ec70a7d4dbc52209f",
+  "post_css_chars": 262646,
+  "post_css_sha256": "bcf0d595f5dd4573298ea06addac55751834f4220148970034cdee0d9c419d01",
+  "css_block": "af-project:oldtrees-problem-grid-v001",
+  "changes": [
+    "Replaced the generic seven-card problem list with the source problem-grid/problem-chip structure.",
+    "Restored all seven decorative inline SVG icons from the source.",
+    "Aligned the sixth label to the source wording: Részben beteg vagy sérült.",
+    "Added source-resolved desktop/tablet/mobile grid rules to the existing Hello Additional CSS project block only."
+  ],
+  "source_resolved_css": {
+    "desktop_columns": 4,
+    "gap_px": 16,
+    "margin_top_px": 48,
+    "chip_padding_px": 16,
+    "chip_radius_px": 24,
+    "icon_px": 22,
+    "breakpoint_960_columns": 2,
+    "breakpoint_760_columns": 1
+  },
+  "checks": {
+    "fresh_full_additional_css_read_before_write": true,
+    "project_block_only_css_edit": true,
+    "frontend_problem_grid_present": true,
+    "frontend_problem_chip_count": 7,
+    "all_source_labels_present": true,
+    "all_source_svg_icons_present": true,
+    "elementor_editor_reopened": true,
+    "screenshot_attempt": "Opera connector became unavailable only for screenshot capture after navigation; structural/frontend verification used WPVibe and the editor tab was reopened before the connector error.",
+    "smtp_or_external_submission": false,
+    "pixel_pass": false
+  },
+  "quota_after_package": "157/300 used; 143 remaining"
+}
