@@ -1,0 +1,56 @@
+{
+  "page_id": 268,
+  "package": "WP20260912-F1",
+  "input_sha256": "fec3b94865400b50f39d2e33955233e637a2a0d713189b8998ee062b2f0a5563",
+  "output_sha256": "8bd02d2f900abf01bb8a78c7fd6d63abe3f2f1c3c9a7ccd151c9f35772d4c4f3",
+  "element_count": 56,
+  "unique_ids": true,
+  "video_map": {
+    "af2c0049": "https://www.youtube.com/watch?v=qJIcIt1a6Mk",
+    "af2c000b": "https://www.youtube.com/watch?v=Qs5q1Dcl4aw",
+    "af2c004a": "https://www.youtube.com/watch?v=ww28lnsg8QY",
+    "af2c0048": "https://www.youtube.com/watch?v=mbA7iEkfHCE",
+    "af2c0009": "https://www.youtube.com/watch?v=5mGcFuxc0JI",
+    "af2c000a": "https://www.youtube.com/watch?v=GLIrUif2eG8",
+    "af2c000c": "https://www.youtube.com/watch?v=c7JZBmKwTwM"
+  },
+  "featured": "af2c0049",
+  "shaping": ["af2c000b", "af2c004a", "af2c0048"],
+  "health": ["af2c0009", "af2c000a", "af2c000c"],
+  "notes": [
+    "7 video IDs preserved",
+    "YouTube URL identity preserved",
+    "image overlay + lazy load enabled",
+    "exact source section/card titles restored",
+    "featured CTA restored"
+  ],
+  "save_result": {
+    "warnings": [],
+    "view_url": "https://alakfamester-wp.clicknest.hu/referencia-videok/",
+    "editor_url": "https://alakfamester-wp.clicknest.hu/wp-admin/post.php?post=268&action=elementor"
+  },
+  "post_save_frontend": {
+    "verified": true,
+    "featured_title_present": true,
+    "featured_video_click_cover_present": true,
+    "featured_cta_links_present": true,
+    "shaping_titles_present": [
+      "Egy magas nyugati tuja sövény nyírása",
+      "A korallberkenye metszése",
+      "Az arany leylandi ciprus nyírása"
+    ],
+    "health_titles_present": [
+      "Fiatal hársfa repedése",
+      "Kecskerágó pajzstetű",
+      "Boróka-tarkadíszbogár kártétele tuján – az ágpusztulás felismerése és kezelése"
+    ],
+    "all_seven_video_widgets_render_as_clickable_play_covers": true,
+    "editor_opened": true
+  },
+  "known_open_defects": [
+    "Hero still lacks the source illustration/full meta row.",
+    "Reviews block on this subpage is still the af-project custom widget; screenshot shows broken pink tab styling and oversized/incorrect media presentation. D12 requires the native Atomic Tabs pattern. This is the next repair package.",
+    "Qualified frozen-reference screenshot/overlay/diff and font/network/console proof remain blocked by missing repository acceptance/source files."
+  ],
+  "pixel_pass": false
+}
