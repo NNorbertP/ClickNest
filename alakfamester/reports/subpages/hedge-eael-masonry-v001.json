@@ -1,0 +1,78 @@
+{
+  "package": "hedge-eael-masonry-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "page_id": 272,
+  "decision": "D17",
+  "status": "STRUCTURAL_PASS_VISUAL_FORMAL_OPEN",
+  "preflight": {
+    "elementor_data_bytes": 29730,
+    "elementor_data_sha256": "e1270fed74f2379eb2b8c938e16cd24316ba2a4a987111588a0516e40daf44af",
+    "legacy_masonry_widget_id": "af2e004a",
+    "proof_carousel_id": "af2e004d",
+    "source_gallery_count": 28
+  },
+  "failed_probe_and_restore": {
+    "root_cause": "The first locally prepared EAEL element omitted widgetType=eael-filterable-gallery. Direct structural injection therefore produced an invalid Elementor widget and a frontend fatal after regeneration.",
+    "restore": "The exact injected trial element was removed with a match-once server-side edit; the page returned byte-for-byte to the preflight 29730-byte/e127... state before the supported save was attempted.",
+    "frontend_after_restore": "PASS",
+    "editor_after_restore": "PASS"
+  },
+  "verified_probe": {
+    "temporary_page_id": 348,
+    "save_path": "/wpvibe/v1/elementor/save-page",
+    "widget": "eael-filterable-gallery",
+    "masonry_render": "PASS",
+    "external_media_id_zero_alt_from_item_name": "PASS",
+    "cleanup": "page 348 trashed after production verification"
+  },
+  "implementation": {
+    "save_path": "/wpvibe/v1/elementor/save-page",
+    "warnings": [],
+    "widget_id": "b2e2c001",
+    "widget_type": "eael-filterable-gallery",
+    "items": 28,
+    "grid_style": "masonry",
+    "columns_desktop": 4,
+    "columns_tablet": 3,
+    "columns_mobile": 2,
+    "popup": "none",
+    "image_resolution": "full",
+    "first_item": "Babérmeggy sövény a nyírás előtt",
+    "last_item": "Sövénymunka, 21. kép",
+    "media_reimported": false,
+    "legacy_image_widgets_preserved_hidden": ["af2e0009","af2e000a","af2e000b","af2e000c","af2e000d","af2e000e"]
+  },
+  "readback": {
+    "elementor_data_bytes": 29351,
+    "elementor_data_sha256": "a9ed7c155a5e09256cd493370be6bb40481541e76c82d098d7deaf359178b1d8",
+    "widget_json_path": "$[0].elements[10].elements[7].id",
+    "item_count": 28,
+    "frontend_selector": ".af-hedge-eael-gallery",
+    "frontend_data_total_gallery_items": 28,
+    "frontend_masonry_mode": true,
+    "editor_reopened": true
+  },
+  "additional_css": {
+    "post_id": 8,
+    "before_bytes": 259652,
+    "before_sha256": "f659a3b805dc54c7e28e832a531b14e9854508f1671621df9a4fa525435b042d",
+    "after_bytes": 261028,
+    "after_sha256": "ce9450a47515519f46139b96fa4a588c741c13b316a68c59c6da2e7ac18a683f",
+    "marker": "af-project:hedge-eael-masonry-v001",
+    "purpose": "Hide EAEL hover captions, restore natural image ratio, organic radius/border/shadow, source 16px desktop and 12px mobile gutters, and source-like 3-column 721-767 behavior.",
+    "cache": "Elementor/object cache automatically purged by the WPVibe write/read flow; no redundant full purge was started."
+  },
+  "source_diagnostic": {
+    "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+    "reference_role": "diagnostic only; frozen aggregate remains authoritative for final acceptance",
+    "count": 28,
+    "order_and_alt": "matched live source diagnostic exactly"
+  },
+  "open": [
+    "Formal frozen-reference screenshot pair/overlay/diff and computed geometry are unavailable in this session.",
+    "Opera screenshot connection failed during this closeout, so no screenshot is claimed as evidence.",
+    "Page272 still contains legacy custom reviews widget af2e0006; D12 native Atomic Tabs migration is a separate pending package and was intentionally not combined into the immediate second Atomic save.",
+    "PIXEL_PASS remains false globally."
+  ]
+}
