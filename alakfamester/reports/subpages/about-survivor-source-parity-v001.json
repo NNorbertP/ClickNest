@@ -1,0 +1,77 @@
+{
+  "package": "WP-20260912-E",
+  "timestamp_utc": "2026-09-12T09:20:00Z",
+  "target": "https://alakfamester-wp.clicknest.hu",
+  "pages": {
+    "270": {
+      "slug": "rolam",
+      "stable_widgets": ["af2d0007", "af2d0047", "af2d004b"],
+      "changes": [
+        "hide source-extra af2d0007 visual while preserving its Elementor ID",
+        "replace af2d0047 editor HTML with 5-slide manual source carousel plus timeline",
+        "replace af2d004b editor HTML with three source-like before-after project cards"
+      ],
+      "media_uploads": 0,
+      "validation_before_builder_save": {
+        "json_valid": true,
+        "elementor_data_bytes": 17551,
+        "carousel_slides": 5,
+        "ba_ranges": 3,
+        "legacy_af_personal_gallery_refs": 0,
+        "required_boroka_pair_present": true,
+        "required_tuja_pair_present": true
+      },
+      "elementor_document_resave": "PASS",
+      "frontend": {
+        "af2d0047": "PASS — 5-slide manual carousel and timeline rendered",
+        "af2d004b": "PASS — three source-like before-after project cards rendered"
+      },
+      "browser_behavior": {
+        "manual_carousel_no_autoplay": "PASS — active accessible image stayed Biró János a munkájában, 1. kép across two reads separated by more than the 4 s autoplay interval",
+        "before_after_direct_interaction": "OPEN"
+      }
+    },
+    "264": {
+      "slug": "idos-fak-megmentese-szolgaltatas",
+      "stable_widgets": ["af2a004a"],
+      "changes": [
+        "replace af2a004a editor HTML with source-like two-project story grid",
+        "first project: 50+ yew before-after range",
+        "second project: six-slide automatic Nordmann-fir carousel with story metadata"
+      ],
+      "media_uploads": 0,
+      "validation_before_builder_save": {
+        "json_valid": true,
+        "elementor_data_bytes": 20170,
+        "carousel_slides": 6,
+        "ba_ranges": 1,
+        "legacy_af_before_after_refs": 0,
+        "abies_2_present": true,
+        "abies_5_present": true
+      },
+      "elementor_document_resave": "PASS",
+      "frontend": {
+        "af2a004a": "PASS — one BA story plus six-slide Nordmann carousel and story-meta rendered"
+      },
+      "browser_behavior": {
+        "auto_carousel_first_live_state": "active accessible image was Nordmann-jegenyefenyő koronaátalakítása, 3. kép",
+        "second_state": "OPEN — Opera Browser Connector disconnected before second timed read; shared 4 s autoplay had already been proven independently on page272",
+        "before_after_direct_interaction": "OPEN"
+      }
+    }
+  },
+  "css": {
+    "owner": "Hello Additional CSS post 8 / af-project block",
+    "marker": "af-project:about-survivor-media-v001",
+    "marker_count": 1,
+    "post_bytes_after_patch": 255948,
+    "scope": "page270 source-extra image/layout adapter; page264 story-meta and carousel-card adapter"
+  },
+  "source_behavior_owner": "Head & Footer Code site-wide footer / af-source-interactions-v001",
+  "notes": [
+    "No media was uploaded because every actually rendered source asset required by the two rebuilt structures already existed in the target media library.",
+    "biro-janos-portre.webp was not imported: frozen source live main DOM showed it is not a required visible source element for this page state.",
+    "One initial page270 content/edit returned 422 no_match and made no change; the actual raw stored bytes were then verified by SHA before the successful exact-once edit."
+  ],
+  "status": "STRUCTURE_AND_FRONTEND_PASS_BEHAVIOR_PARTIAL"
+}
