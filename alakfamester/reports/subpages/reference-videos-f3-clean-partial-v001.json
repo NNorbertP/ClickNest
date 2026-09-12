@@ -1,0 +1,63 @@
+{
+  "page_id": 268,
+  "package": "WP20260912-F3-clean",
+  "status": "partial_not_accepted",
+  "base": "verified F2 / server revision 324",
+  "current_remote_after_last_supported_edit": {
+    "elementor_data_bytes_reported_by_content_edit": 45668,
+    "exact_post_edit_sha256": "not re-read because the remaining WPVibe budget reached the closing reserve threshold",
+    "hero_root_id": "af2c0002",
+    "hero_copy_wrapper": "af2c0330",
+    "art_container_id": "af2c0041",
+    "art_widget_id": "af2c0345",
+    "art_variant": "referencia-videok",
+    "native_contact_pair": true,
+    "native_cta_row": true,
+    "native_meta_row": true,
+    "source_full_subcopy": true
+  },
+  "frontend_readback": {
+    "hero_copy_present": true,
+    "phone_link_present": true,
+    "mail_link_present": true,
+    "featured_anchor_present": true,
+    "gallery_link_present": true,
+    "meta_7_reference_videos_present": true,
+    "meta_click_to_play_present": true,
+    "af_hero_art_svg_present_in_dom": true,
+    "af_hero_art_accessible_title_present": true,
+    "reviews_atomic_tabs_still_present_in_accessibility_tree": true,
+    "f1_video_sections_and_play_buttons_still_present_in_accessibility_tree": true
+  },
+  "visual_diagnostic": {
+    "opera_desktop": "hero text/contact/CTA/meta render cleanly, but the referencia-videok art is not visibly painted in the current screenshot even though it is in DOM/accessibility tree",
+    "art_container_width_experiment": "removing g-af-v-inner-art did not make the SVG visible",
+    "accepted": false
+  },
+  "css_diagnostic": {
+    "global_268_desktop_compiled": true,
+    "af_layout_hero_rule_present": true,
+    "af_layout_hero_copy_rule_present": true,
+    "af_layout_hero_art_rule_present": true,
+    "additional_css_widget_width_rule_present": ".af-layout-hero-art>.elementor-widget-af-hero-art{width:100%;}"
+  },
+  "rollback": {
+    "preferred_supported_restore": "use the prepared /wpvibe/v1/elementor/save-page body at /mnt/data/alakfamester/build/page-268-f3-rollback-to-f2-save-body.json after a fresh no-conflict preflight",
+    "prepared_save_body_sha256": "2ea649d288affd9ecadc6db26b06a26235494117b0be77834eda5d022c5a4b94",
+    "f2_data_sha256_local": "91c4d369cb0a5eb94a9158193eca7c990cc7f8dd719f895e926a2580f057f055",
+    "server_revision_324_meta_sha256": "c5c91f9922ad1a978ba48f7b239865951d0c12719d12705817584504b885a942",
+    "raw_sql_restore": "NOT executed; an approval-gated raw SQL rollback request was intentionally left unapproved because it bypasses Elementor save semantics"
+  },
+  "quota": {
+    "last_exact": "285/300 used before the final diagnostic calls",
+    "minimum_reserve": 10,
+    "current_exact": "not re-queried to avoid consuming the closing reserve; stop remote writes now"
+  },
+  "next": [
+    "When quota has recovered, first re-read page268 hash/modified time and confirm no manual conflict.",
+    "Either complete the art paint/lifecycle diagnosis within a small closeable F3 package, or restore the prepared F2 save body through the supported Elementor save-page endpoint before any unrelated work.",
+    "Do not use the pending raw-SQL approval path; let it expire.",
+    "After a successful supported save, re-open frontend and Elementor editor and verify F1/F2 markers plus the hero visual."
+  ],
+  "pixel_pass": false
+}
