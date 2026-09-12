@@ -1,36 +1,140 @@
-# STATE - 2026-09-12, D12 CLOSED; GALLERY FEATURED PARITY NEXT
+# STATE - 2026-09-12, WPVIBE WORKING BUDGET EXHAUSTED; CONTENT PARITY ADVANCED
 
-## Current state and continuation
-Target: https://alakfamester-wp.clicknest.hu/ ; repository NNorbertP/ClickNest, main, alakfamester/.
+## Current state and hard stop condition
+Target: https://alakfamester-wp.clicknest.hu/ ; repository `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
-WPVibe account `ncsnorbert+20260912-1@gmail.com`. Last exact quota read before the latest QA lane: 227/300 used, 73 remaining in the rolling 24-hour window. Several successful reads have occurred since; re-read the exact service counter before any large remote package. Keep at least 10 calls for closeout/recovery. Connection and active Hello Elementor site state were verified healthy.
+WPVibe account: `ncsnorbert+20260912-1@gmail.com`.
 
-## Closed structural packages - preserve, do not repeat
-- Page258 D17: EAEL `eael-filterable-gallery` id `af27000e`, 44 masonry images, own lightbox chain, no legacy `js-masonry`/`js-zoom`; current page hash `1f90bcd2e1f53c51cd901bced6ea5d6cc03a957a56541a9330866cbcd8cd0a85`. Evidence `reports/subpages/gallery-eael-masonry-v001.json`.
-- Page272 D17: EAEL widget `b2e2c001`, 28 images in source order. Evidence `reports/subpages/hedge-eael-masonry-v001.json`.
-- Page272 D12: native Atomic Tabs root `c3d30005`, images 75/76/77, old custom reviews absent; current page hash `fa839a47d966de6b1a1379c5f7caf5c126d3cffdff8a037cf99d5f07c70ed27c`. Evidence `reports/subpages/hedge-native-reviews-v001.json`.
-- Page268: seven videos/native reviews/hero structurally present; formal pixel/runtime proof remains open.
-- The remaining five D12 violations are now closed. Current `_elementor_data` readback: page256 `35d297e6e2738935d40c6aba303dc01db9168d2179274af4b20f507cfb9661fe` (34464 B); page260 `9599ff0129ee166c48a5adbc40a8db69bd013da4e114ba7056173dca7934e524` (28729 B); page262 `3c052fad377c81bf529269af710a3927ca3531e418a498bceaa931f061e6374e` (25801 B); page264 `48713257e1e950e4123b0ace59ed9760961d6edaed5e6b35cacdd532bc3c68e0` (35176 B); page270 `254c5c25a2ffb5a4b0d5c49202c83eb7dd089e1853bf361579da09fc11b18386` (33129 B). All five contain `g-af-reviews-tabs`, attachment ids 75/76/77 and zero `af-project-reviews`. Frontend native tab rendering was explicitly read back on page256; Elementor editors reopened on page256/page270. The guarded content-edit sequence is recorded as an implementation exception; do not replay it.
+**Last exact quota read: 292/300 used, 8 remaining in the rolling 24-hour window.** The project rule requires at least 10 calls as recovery/closeout reserve. Therefore routine WPVibe reads/writes are stopped now; the remaining 8 calls are emergency recovery only. Do not spend them on diagnosis, routine hash reads, cache flushes or new packages. When calls roll out of the 24-hour window, first re-read quota and the exact target hashes before continuing.
 
-## Current canonical audit
-Page56 `3e1f0bd0d5ca4102e1e44d1e4e7bb23433cd4f35c60d8f155088cf9efa7fd1b6` 240028 B; native reviews + MetForm + deployed benefits/species content. Page258 hash above; native reviews + EAEL gallery + MetForm. Page266 `b9ef3e23aa2ac1ae9cc9e8cb8d5c050ed7842f0b1af4d695236925a0ecf0511f` 8117 B + MetForm. Page268 `1f9cfaba55dc15fd6d6cb1e675e6e6c79f9b4f930a0e2e60cadd8a05b1919dc5` 45647 B + native reviews. Page272 hash above + native reviews + EAEL + MetForm. All ten canonical pages currently have zero custom reviews widgets.
+No SMTP was configured and no external form submission/test message was sent.
 
-## Active package: page258 featured-project source parity
-The 44-image D17 EAEL masonry is already correct and must not be touched. The remaining demonstrated gallery mismatch is inside existing text-editor widget `af270007` (`#kiemelt-referenciak`). Frozen/live reference accounting expects 39 featured-project images; current target payload has 36. Source diagnostic also proves two text differences: eyebrow must be `Referenciák` (target currently `Előtte → utána`), and the intro must be `Minden panel egy növény vagy egy dokumentált munka. Ahol azonos nézőpontból van előtte–utána pár, ott a csúszka húzható; ahol több állomás vagy nézet van, ott körhinta lépteti végig őket.`
+## Environment / resources to preserve
+- WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4.
+- Active theme `hello-elementor` 3.5.1; Elementor 4.2.4.
+- ElementsKit Lite 4.0.4; Essential Addons 6.8.3; MetForm 4.3.0; `af-project` 0.2.0; UpdraftPlus and Head & Footer Code active.
+- Preserve homepage56, capability page12, ElementsKit header20/footer21, MetForm33, Additional CSS post8, and canonical pages 256/258/260/262/264/266/268/270/272.
+- Page template remains `elementor_header_footer`.
+- Shared interaction JS remains the single Head & Footer Code marker `af-source-interactions-v001`; do not duplicate handlers.
+- Last known unchanged Additional CSS: 259652 bytes, SHA256 `f659a3b805dc54c7e28e832a531b14e9854508f1671621df9a4fa525435b042d`. Re-read before any future CSS write.
+- Frozen source aggregate remains `fc1229f01ea7002131153b606f3cb6c549b001f93337efbb2352089800349707`; live original is diagnostic only.
 
-Known missing-image evidence: source first-project subcarousel semantically has 4 slides while target has 3; source Ellwoodi carousel has 6 while target has 4. One missing Ellwoodi file is explicitly observed as `175725917368bda5a5b1ae6_370X354.webp`, alt `A többgömbös Ellwoodi niwaki, másik nézet`. Determine the other two exact source filenames from source DOM/media inventory before writing; reuse existing media only and do not upload duplicates. Then patch only the `af270007` editor content, preserving all Elementor IDs and the 44-image EAEL widget. No Additional CSS change is expected.
+## Closed / stable packages - do not repeat
+- D12 native reviews are now present on all canonical pages that use reviews; no canonical page retains `af-project-reviews`.
+- Page258 D17: Essential Addons `eael-filterable-gallery` id `af27000e`, 44-image masonry, source order/lightbox; evidence `reports/subpages/gallery-eael-masonry-v001.json`.
+- Page272 D17: Essential Addons widget `b2e2c001`, 28 source images; evidence `reports/subpages/hedge-eael-masonry-v001.json`.
+- Page272 D12 native Atomic Tabs root `c3d30005`, review media 75/76/77; evidence `reports/subpages/hedge-native-reviews-v001.json`.
+- Page268 seven reference videos, native reviews and hero are structurally present. Do not revert to the old F2/F3 experiments.
+- Page56 D16 benefits/species content is already deployed despite stale prep metadata; do not redeploy it.
 
-### Page258 write preconditions
-Before write: re-read exact page258 hash and post8 hash, verify no manual conflict, identify all three missing filenames/URL identities, validate final featured image count 39 and source order. Prefer a guarded content edit inside the existing text-editor content for text/slide-list changes; do not introduce or remove Elementor structural elements. After write: reread data/hash, fetch `#kiemelt-referenciak`, verify 39 featured images/content/order and existing JS controls, reopen editor. Update evidence + STATE.
+## MetForm33 source-parity package
+MetForm 33 was saved once through the supported Elementor save route with stable IDs. Current verified form meta at that checkpoint: **5568 bytes, SHA256 `47152dff5fa5d5369a8955f7581e71b0652604c39a6c283fd15e243a543d01f3`**.
 
-## Parallel read-only lanes after/in parallel with gallery package
-1. Re-audit page270/page264 source-media parity using current target, not stale payloads.
-2. Re-audit page268 featured-video sibling/section structure against source and prepare a minimal supported fix if needed.
-3. Re-audit page56 homepage D15/D16 and remaining source sections; D16 content is already deployed despite stale `benefits-species-v001.json`, so do not redeploy it.
-4. Continue logged-out DOM/interaction checks through WPVibe. Opera screenshot remains unavailable (`Browser not connected / Allow AI connection`), so no screenshot/pixel PASS may be claimed until that recovers.
+Aligned internal source names/placeholders: `nev`, `telefon`, `email`, `telepules`, radio `kapcsolat-tema`, `magassag`, `faj`, `fotok`, `uzenet`, `hozzajarulas`. Required topic radio, required multi-file upload, 8 MB/file limit and required GDPR consent are active. MetForm stores entries while admin/user notifications and webhook/REST integrations remain disabled, so mail-free processing is preserved.
 
-## Environment / preserved resources
-WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; Hello Elementor 3.5.1 active; Elementor 4.2.4; ElementsKit Lite 4.0.4; Essential Addons 6.8.3; MetForm 4.3.0; af-project 0.2.0; UpdraftPlus active. Preserve page56, capability page12, ElementsKit header20/footer21, MetForm33, Additional CSS8 and canonical pages 256/258/260/262/264/266/268/270/272. Page template `elementor_header_footer`. Shared JS remains the single Head & Footer Code marker `af-source-interactions-v001`.
+Open form parity: MetForm Free schema exposes no native maximum-file-count control, so the source's max-5 rule still needs the documented targeted validation extension; textarea currently renders 10 rows vs source 5; exact source success-message copy remains to be recovered. Do not send an external submission while fixing these.
+
+## Page258 Gallery - current continuation
+D17 masonry is closed and must not be touched.
+
+The featured-project block text was corrected in existing widget `af270007` without changing element structure:
+- eyebrow now `Referenciák`;
+- intro now source text: `Minden panel egy növény vagy egy dokumentált munka. Ahol azonos nézőpontból van előtte–utána pár, ott a csúszka húzható; ahol több állomás vagy nézet van, ott körhinta lépteti végig őket.`
+
+Last verified page258 after those text changes: **72603 bytes, SHA256 `9af1124e4aa167f73e3d1ab34bb5b243db7169cd20fbea38ff50f049e9921294`**.
+
+Opera accessibility comparison: source exposes 61 images, target 59. The two meaningful differences are:
+1. missing source hero illustration `Formakatalógus – négy alakfa-sziluett`;
+2. missing Ellwoodi slide `A többgömbös Ellwoodi niwaki, másik nézet`, source file `175725917368bda5a5b1ae6_370X354.webp`.
+
+The Ellwoodi source file currently returns 404 to WPVibe `upload-media`; do not retry the same URL, invent a replacement or upload a duplicate. A frozen/local source asset is required.
+
+Prepared Gallery hero structural package: existing empty hero host `af270041`; intended fresh child `af27004c`; widget `af-hero-art`; `art=galeria`; accessible title `Formakatalógus – négy alakfa-sziluett`; description `Négy különböző formavilág egy polcon: rétegzett niwaki, gömb, kúp és felhőcsokor.`; `scroll_mode=hero`. **Implement only with a fresh full page258 read and supported `save-page`; do not structurally inject with content/edit.**
+
+## Page272 Hedge - content parity advanced
+Evidence: `reports/subpages/hedge-content-parity-v002.json`.
+
+Guarded edits restored source content without changing Elementor IDs:
+- missing second hero-sub sentence;
+- `Egyedi forma is kérhető` callout;
+- `Forma és dekoratív sövényvégek` and `Beteg, ritkuló, károsodott sövény` cards;
+- expanded renewal copy and biological-protection link;
+- `Mit nem vállalok?` and exact four price factors;
+- source form-intro copy (`Ajánlatkérés`, response timing, phone/e-mail pair, required-fields note);
+- hero CTAs/facts now map to source intent: `Kérek felmérést` -> `/kapcsolat/#ajanlatkeres`; `Formák, amiket vállalok` -> `#formara-vagas`; facts are `Formára vágás és szerkezeti fenntartás`, `Növény-egészségügyi szemlélettel`, `Fotó alapján is felmérem – díjmentesen`;
+- existing content inner received `id='formara-vagas'`.
+
+Last exact read before the final hero CTA/anchor edits: **49347 bytes, SHA256 `b86eb746bcd76c9efdae71aebb366edb75c98d3fc19f22cff20672143240db6f`**. The final two guarded edits were confirmed successful but were not re-hashed because the quota approached reserve. Re-read page272 before the next write.
+
+Opera fresh frontend audit contains all restored headings and the Elementor editor reopened without fatal error.
+
+Remaining hedge structural gap: source hero illustration `Nyírt sövénysáv díszes véggel`, description `Szerkezetileg fenntartott, egyenesre nyírt sövénysáv, a végén formára nevelt oszloppal.` Existing empty hero host was previously `af2e0041`; use `af-hero-art`, `art=soveny-specialista`, through a fresh full supported page save only.
+
+## Page264 Old trees - content parity advanced
+Evidence: `reports/subpages/oldtrees-content-parity-v002.json`.
+
+Starting exact state before this package: 35176 bytes, SHA256 `48713257e1e950e4123b0ace59ed9760961d6edaed5e6b35cacdd532bc3c68e0`.
+
+Guarded edits restored:
+- source `Biológiai támogatás – kiegészítő mechanizmus` card and canonical biological-protection link;
+- source `Kivágás helyett mit nyerhet?` card with four bullets;
+- `Három lépés, kötelezettség nélkül` heading;
+- source `És az ajánlat?` callout with `/kapcsolat/#kiszallas` mapping;
+- second credibility paragraph explaining when a saveable plant is still a poor long-term fit;
+- missing fourth FAQ `Vállalja a munkát akkor is, ha nem én ültettem a növényt?` with exact answer;
+- source `Kivágás vagy átalakítás?` introductory paragraph.
+
+Last guarded edit reported **36867 bytes**. Final SHA was deliberately not queried after the quota crossed the reserve threshold; re-read before any page264 write. Fresh Opera target reload exposes the new headings and fourth FAQ.
+
+Open page264 parity:
+- source hero art still missing: title `Idős fa megtartott, alátámasztott vezérággal`; description `Öreg fa vastag törzzsel és nehéz alsó vezérággal, amelyet bronz támasz tart meg.` Use the matching `af-hero-art` option with a supported full page save after a fresh read.
+- source has a full inline request form at `#ajanlatkeres`; target still routes to the shared contact form. Rebuild structurally with existing MetForm33 when quota allows.
+- source problem grid includes `Túl közel került a házhoz`; target still omits it.
+- source comparison bullets are more detailed than the target simplified wording.
+
+## Quota-safe Opera source-target audit
+Evidence: `reports/subpages/readonly-source-target-audit-v001.json`.
+
+### Page260 FAQ
+All 17 source FAQ disclosure questions are present on target. Open: source hero art `Jelölt formatanulmány – ahol a kérdések felmerülnek` is missing; source `Témakörök` heading/navigation is absent. Image count source 3 vs target 1; one source-only image is only the ClickNest footer credit, so the meaningful media gap is one hero illustration.
+
+### Page262 Fruit trees
+Most technical content and all four FAQ controls are present. Open:
+- source hero art `Gyümölcsfa nyitott vázkoronával` missing;
+- source section title `Mikor történik a metszés?` exists as target static text but is not a semantic heading;
+- FAQ wording differs: source `Metszhető a fa télen, fagyban?`, target `Metszhető ősszel a fám, fagynál?`.
+Meaningful image gap is the hero art; source's other extra image is only the ClickNest footer credit.
+
+### Page270 About
+Core expertise/work-method/projects remain present. Open:
+- source hero art `A formanevelés három fázisa` missing;
+- source separate image `Biró János munka közben` missing (target still has the separate carousel image `Biró János a munkájában, 1. kép`);
+- timeline item titles are static text instead of source-equivalent headings;
+- source heading/content `Miért lettem kertész?` is absent from the target audit.
+Source 11 images vs target 8; after excluding ClickNest footer credit this confirms two meaningful media gaps.
+
+### Page266 Contact
+Core contact data, MetForm, trip-fee/urgency/area sections are present. Open:
+- source hero art `Nyitott kertkapu egy megformált növény mellett` missing;
+- source `Elérhetőségek` heading absent;
+- the four process-step titles exist as static target text rather than source semantic headings.
+
+### Page256 Biological protection
+Hero illustration and review media are present; the only source-only image in the accessibility count is the ClickNest reference-footer credit. Do not unnecessarily rebuild this hero.
+
+## Other known open parity
+- Page56 homepage still lacks the source `Ingatlanértékesítési partnerprogram` block after the contact/form area. Recover source HTML and add it as an editable pattern in a future package.
+- Page268 structure is largely aligned; target video overlay accessible controls remain generic `Videó lejátszása` while source includes the video title in the label. Treat as accessibility/behavior parity follow-up, not a media reorder.
+- Global final visual/behavior acceptance remains open.
+
+## Mandatory next action when WPVibe working budget returns
+1. Call `list_sites`, verify at least the 10-call reserve plus enough package capacity is available; verify site connection.
+2. Re-read exact current hashes/state for the page being touched and Additional CSS if relevant. Specifically page264/page272 must be re-hashed because final guarded edits were not re-read; page258 must be re-read before structural save.
+3. Execute prepared hero-art packages one page at a time with fresh complete Elementor trees and supported `save-page`, starting with page258 Gallery, then page272 Hedge. Re-read/frontend/editor-verify each before the next structural save. Then page264/260/262/270/266 hero-art gaps as warranted by source.
+4. Recover or locate the frozen/local Ellwoodi asset; do not retry the live 404 URL.
+5. Repair high-value content gaps: page270 `Miért lettem kertész?` + missing work portrait; page264 inline MetForm/problem chip/detail copy; page262 FAQ wording/heading semantics; page266 heading semantics; page56 partner-program block.
+6. Finish MetForm max-five validation/textarea/success-state parity without SMTP or external test messaging.
+7. Run the formal acceptance pipeline when frozen reference/spec tooling and screenshot capture are available.
 
 ## Acceptance
-`PIXEL_PASS=false`. Formal frozen six-viewport source-target screenshot pairs/overlay/diff, computed geometry/fonts, controlled animation timelines, complete runtime interactions, console/network proof and second browser engine remain open. Live original is diagnostic only; preserve frozen aggregate `fc1229f01ea7002131153b606f3cb6c549b001f93337efbb2352089800349707`.
+`PIXEL_PASS=false`. Formal frozen six-viewport source-target screenshot pairs/overlay/diff, computed geometry/fonts, controlled animation timelines/reduced motion, complete runtime interactions, console/network/asset proof and second browser engine remain required. Opera accessibility-tree work is structural evidence only, not pixel acceptance.
