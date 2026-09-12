@@ -1,0 +1,41 @@
+{
+  "package": "home-process-care-concerns-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "source": "https://alakfamester.clicknest.hu/",
+  "scope": ["#kialakitas", "#apolas", "#aggodalmak"],
+  "source_evidence": {
+    "kialakitas": "Live original DOM reread: section-head--split plus six-item timeline, leaf-num counters 1-6, translucent timeline bodies on forest background.",
+    "apolas": "Live original DOM reread: six card/card--tight items in a three-column grid, semantic sprout/scissors/wind/ruler/shield/droplet icons, then two callouts.",
+    "aggodalmak": "Live original DOM reread: two-column concerns grid with eight cards; gradient edge and quoted question treatment.",
+    "css": "Live original styles.css reread supplied 1180px container, section spacing, forest radial/linear background, split-heading, timeline, card/callout and concern geometry/tokens."
+  },
+  "changes": {
+    "location": "Hello Elementor Additional CSS, inside af-project block only",
+    "marker": "af-project:home-process-care-concerns-v001",
+    "elementor_structure": "Preserved; no page builder rewrite in this package.",
+    "process": "Rebuilt visual layer to source split heading, dashed timeline, leaf counters and translucent organic cards; preserved V4 IDs and copy.",
+    "care": "Rebuilt visual layer to source three/two/one-column responsive cards, six source-equivalent icons, organic card alternation and two source callouts.",
+    "concerns": "Rebuilt visual layer to source two/one-column concern cards with gradient edge, quoted headings, hover and reduced-motion handling.",
+    "responsive": "Desktop, tablet and mobile rules scoped to body.page-id-56; 1024/900/767/560 breakpoints used only where the source pattern requires them."
+  },
+  "preflight": {
+    "additional_css_sha256": "e7efb74a56de2d9ace76b08f44c37a54f05a547bcbbd47d844801a7e3e3aa644",
+    "page56_elementor_data_sha256": "c3424e82a1135e45f96563bf32c09d720194c995608bc737c57cc859044715aa"
+  },
+  "postflight": {
+    "additional_css_bytes": 308289,
+    "additional_css_chars": 307573,
+    "additional_css_sha256": "1e53b0b9a7d3d8ea29022a35ba51b21f241544659667ec9a106ba36ac4040fb2",
+    "page56_elementor_data_bytes": 245358,
+    "page56_elementor_data_chars": 243460,
+    "page56_elementor_data_sha256": "c3424e82a1135e45f96563bf32c09d720194c995608bc737c57cc859044715aa",
+    "frontend_css": "Verified live through #wp-custom-css; package marker and complete scoped rules are present."
+  },
+  "qa": {
+    "content_integrity": "Page 56 Elementor data hash unchanged by this CSS package.",
+    "browser_visual": "Not claimed: Opera screenshot endpoint returned Browser not connected / Allow AI connection required. Live DOM and live delivered CSS were verified instead.",
+    "formal_pixel_acceptance": false,
+    "formal_pixel_acceptance_blocker": "Repository still lacks the full frozen source/page acceptance measurement bundle and automated viewport screenshot tooling is unavailable in the current connector state."
+  }
+}
