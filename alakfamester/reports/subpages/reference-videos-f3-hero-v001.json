@@ -1,0 +1,58 @@
+{
+  "package": "F3 reference-videos hero repair",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/referencia-videok/",
+  "page_id": 268,
+  "result": "structural_frontend_editor_pass_visual_diagnostic_pass_acceptance_open",
+  "page_state": {
+    "elementor_data_bytes": 45647,
+    "elementor_data_sha256": "1f9cfaba55dc15fd6d6cb1e675e6e6c79f9b4f930a0e2e60cadd8a05b1919dc5",
+    "art_widget_id": "af2c0345",
+    "art_variant": "referencia-videok",
+    "tabs_root": "af2c0230",
+    "all_seven_f1_video_identities_present": true,
+    "experimental_heading_class_removed": "g-af-v-inner-heading",
+    "final_cta": "https://alakfamester-wp.clicknest.hu/kapcsolat/#ajanlatkeres"
+  },
+  "additional_css": {
+    "post_id": 8,
+    "bytes": 259652,
+    "sha256": "f659a3b805dc54c7e28e832a531b14e9854508f1671621df9a4fa525435b042d",
+    "project_marker": "af-project:start v027",
+    "package_marker": "af-project:videos-hero-v001",
+    "single_project_start": true,
+    "single_project_end": true
+  },
+  "diagnosis": "Legacy generic subpage hero selectors were overriding the proven V4 Atomic hero layout and centering the page268 hero. The video hero and its eyebrow/title/body were excluded from those legacy selectors. A scoped bridge at the end of the project CSS maps the proven V4 hero tree to the frozen-source inner-hero geometry. The unused experimental heading global class was removed from the H1.",
+  "verified": {
+    "frontend_svg_visible_in_opera": true,
+    "frontend_full_source_subcopy": true,
+    "frontend_native_phone_mail_cta_meta": true,
+    "frontend_final_cta_readback": true,
+    "elementor_editor_reopened": true,
+    "f1_markers_preserved": true,
+    "f2_native_tabs_preserved": true
+  },
+  "visual_diagnostic": {
+    "source_live_used_for_diagnosis_only": true,
+    "desktop_source_target_structure_visually_close": true,
+    "admin_bar_present_on_target_capture": true,
+    "formal_pixel_comparison": false,
+    "mobile_side_by_side_data_iframe": "blocked by browser connector actions"
+  },
+  "acceptance_open": [
+    "qualified six-viewport screenshot pairs/overlay/diff against frozen reference",
+    "computed geometry and text-wrap measurements",
+    "animation timeline/intermediate/full-cycle/mobile/reduced-motion verification",
+    "video keyboard/click interaction proof",
+    "console/network/asset error proof",
+    "second browser engine",
+    "mail-free form processing where supported"
+  ],
+  "quota_after_closeout": {
+    "used": 49,
+    "limit": 300,
+    "remaining": 251,
+    "window": "rolling 24h"
+  }
+}
