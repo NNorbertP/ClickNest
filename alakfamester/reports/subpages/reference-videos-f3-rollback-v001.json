@@ -1,0 +1,40 @@
+{
+  "page_id": 268,
+  "package": "WP20260912-F3-rollback",
+  "status": "restored_verified_f2",
+  "source_revision": 324,
+  "restored_meta": {
+    "bytes": 38989,
+    "sha256": "c5c91f9922ad1a978ba48f7b239865951d0c12719d12705817584504b885a942",
+    "matches_revision_324_sha256": true
+  },
+  "markers": {
+    "f2_tabs_af2c0230": true,
+    "f3_art_af2c0307": false,
+    "old_custom_reviews_widget": false,
+    "all_seven_video_urls_present": true
+  },
+  "cache": {
+    "elementor_css_regenerated": true
+  },
+  "frontend": {
+    "hero_restored_to_f2": true,
+    "native_atomic_reviews_rendered": true,
+    "first_review_tab_selected": true,
+    "other_review_panels_hidden": true,
+    "diagnostic_opera_screenshot": "F2 layout restored; broken F3 oversized SVG/plain-contact rendering is gone"
+  },
+  "editor": {
+    "reopened": true,
+    "page_title_correct": true,
+    "atomic_widgets_available": true
+  },
+  "quota_after_restore": {
+    "used": 264,
+    "limit": 300,
+    "remaining": 36,
+    "minimum_reserve": 10
+  },
+  "next": "Restart F3 hero parity only from this restored F2 state, using a proven target-side hero structure/classes and the exact af-hero-art widget contract. Do not reuse the experimental g-af-src-* styling approach.",
+  "pixel_pass": false
+}
