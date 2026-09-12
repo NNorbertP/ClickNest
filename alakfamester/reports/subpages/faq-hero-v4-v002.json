@@ -1,0 +1,12 @@
+{
+  "package":"faq-hero-v4-v002",
+  "date":"2026-09-12",
+  "page_id":260,
+  "pre_sha256":"44dede060325e853927313ebef441a0330b6a18ebb6bd0e738a02348f990b253",
+  "post_sha256":"7d6d50bb58a1bc70d8ae17eb249e3aba8d5f6339318a50007a86419619e03fcb",
+  "post_bytes":34184,
+  "hero_widget":{"id":"af28004f","widgetType":"af-hero-art","art":"gyakran-ismetelt-kerdesek","accessible_title":"Jelölt formatanulmány – ahol a kérdések felmerülnek","accessible_description":"Egy alakfa bronz jelölésekkel a jellemző pontjain: ághalom, elágazás, korona és tő.","scroll_mode":"hero"},
+  "d18_bridges":["g-af-src-faq1","g-af-src-faq2","g-af-src-reviews","g-af-src-faq16","g-af-src-bgsage","g-af-src-subfinal","g-af-src-wave","g-af-src-subpage","g-af-probe-hero"],
+  "checks":{"supported_save_page":true,"frontend_hero_classes_preserved":true,"frontend_review_classes_preserved":true,"hero_svg_title_desc_present":true,"native_atomic_reviews_present":true,"elementor_editor_reopened":true,"pixel_pass":false},
+  "open":["Formal frozen visual/behavior acceptance remains open."]
+}
