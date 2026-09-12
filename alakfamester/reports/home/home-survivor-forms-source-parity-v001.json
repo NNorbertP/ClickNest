@@ -1,0 +1,41 @@
+{
+  "package": "home-survivor-forms-source-parity-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "source": "https://alakfamester.clicknest.hu/index.html",
+  "scope": ["#af-survivor", "#formavilag"],
+  "source_evidence": {
+    "survivor": "Live original DOM reread: two-column media-row, exact Túlélők copy/checklist/CTA, six-slide Nordmann fir project-card carousel, exact captions/alts and source carousel controls.",
+    "forms": "Live original DOM reread: twelve named .shape items (Niwaki, Gömb, Spirál, Kúp, Obeliszk, Hasáb, Tojás, Többszintes, Pom-pom, Felhőforma, Ív / kapu, Figurális) and exact source SVGs.",
+    "css": "Live original styles.css reread: .media-row, .project-card/.carousel, .shapes/.shape responsive geometry including 6→4→3 columns."
+  },
+  "changes": {
+    "survivor_structure": "Preserved existing V4 Atomic section/card IDs and inserted one native legacy Elementor image-carousel only inside empty Atomic media host af1b000f.",
+    "survivor_carousel_widget": "af1b0100 / #af-survivor-carousel",
+    "survivor_media_ids": [130,131,132,133,134,135],
+    "survivor_behavior": "One slide, arrows+dots, full-size images, lazyload, autoplay 4000 ms, pause on hover/interact, infinite, 450 ms transition; source-equivalent 4:3 contain visual bridge in Hello Additional CSS.",
+    "survivor_alt_texts": "Updated attachments 130–135 to exact source semantic pattern: Nordmann-jegenyefenyő gombaformára alakítva, N. kép.",
+    "forms_structure": "Preserved twelve existing editable Atomic cards and empty symbol hosts; no HTML widget added.",
+    "forms_visuals": "Replaced generic CSS blobs with the twelve exact frozen-source SVG drawings as scoped CSS backgrounds; restored source card/hover/6→4→3 responsive geometry.",
+    "additional_css_marker": "af-project:home-survivor-forms-v001"
+  },
+  "preflight": {
+    "additional_css_sha256": "1e53b0b9a7d3d8ea29022a35ba51b21f241544659667ec9a106ba36ac4040fb2",
+    "page56_elementor_data_sha256": "c3424e82a1135e45f96563bf32c09d720194c995608bc737c57cc859044715aa"
+  },
+  "postflight": {
+    "additional_css_bytes": 330303,
+    "additional_css_chars": 329585,
+    "additional_css_sha256": "5ad4fea0e5297430977b48b61dc56cad64f879424cea4196671e9bdeccedb63c",
+    "page56_elementor_data_bytes": 246583,
+    "page56_elementor_data_chars": 244681,
+    "page56_elementor_data_sha256": "1293a6cb96b122c7e5bd00fa8ca8ad6ad4dcaa23379360717acf41f398e041cd",
+    "rendered_survivor": "Verified live target HTML contains six carousel slides, source-equivalent ARIA label, arrows/pagination and exact updated alt text on all six images.",
+    "rendered_forms": "Verified live target HTML retains all twelve exact form names and canonical /galeria/ CTA; source SVGs are delivered by the scoped Additional CSS block."
+  },
+  "qa": {
+    "content_integrity": "Existing homepage copy, V4 IDs and canonical links preserved; only the formerly empty survivor media host gained the native carousel widget.",
+    "browser_visual": "Not claimed: Opera screenshot endpoint remains disconnected; rendered DOM and saved CSS/data were verified through the WordPress connection.",
+    "formal_pixel_acceptance": false
+  }
+}
