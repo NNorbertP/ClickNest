@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "scope": "site-wide content, navigation, media, structural and editor-route finalization available without controlled screenshot instrumentation",
+  "writes_in_this_package": 0,
+  "results": {
+    "homepage_navigation": "closed by reports/home/home-final-audit-v001.json",
+    "gallery_media": "main image count 60 source vs 60 target; one unavailable source Ellwoodi asset remains 404",
+    "hedge_media": "main image count 31 source vs 31 target; proof contains soveny-21.webp; D17 EAEL gallery present",
+    "about_media": "only missing role is Biró János munka közben; source portrait URL remains 404",
+    "old_trees_media": "5 source-main vs 5 target-main roles pass",
+    "reference_videos": "all seven videos remain present; source featured region CTA precedes featured heading/video, target DOM places CTA after featured split; safe structural save path unavailable in current tools",
+    "biological_protection": "hero/review media and critical links map correctly; apparent heading-order discrepancy was an accessibility-tree flattening artifact: Mi történik a metszés után? is an article nested inside the source and target Miért nem ér véget... region; no write justified",
+    "faq": "section structure, hero/review media and canonical links present; sampled questions Mi az alakfa?, Miből lehet alakfát kialakítani?, Mennyi idő alatt lesz látványos?, Van kiszállási díj?, Garantálja a gyógyulást? are present as disclosure controls on target",
+    "fruit_trees": "hero/review media and canonical links present; apparent heading-order discrepancy was an accessibility-tree flattening artifact: Mikor történik a metszés? is an internal note within the same Gyümölcsfa metszés és gondozás – röviden region on source and target; no write justified",
+    "contact": "hero image, phone/email routes and form submit are present; MetForm AX exposure is less detailed than source HTML, so prior verified MetForm configuration remains authoritative; no submission or SMTP test performed",
+    "editor_routes": {
+      "page56": "direct authenticated Elementor URL opened with title Edit \"Főoldal\" with Elementor",
+      "page268": "direct authenticated Elementor URL opened with title Edit \"Referencia videók – alakfa, sövénynyírás és növény-egészségügy\" with Elementor",
+      "deep_editor_ax": "not verified because Browser Connector disconnected immediately after editor navigation"
+    },
+    "noncanonical_pages": {
+      "page12": "published documented isolated capability test; preserve",
+      "page239": "private TEMP QA Mobile Compare; ownership not documented in repo, therefore not deleted automatically",
+      "page3": "default Privacy Policy draft"
+    }
+  },
+  "final_saved_hashes": {
+    "header20": {"bytes":5855,"sha256":"e8293a7b0d7c7910af1e5eeb8dd7613677d65b08e315d4fe12cbb59ade4fcafb"},
+    "footer21": {"bytes":11491,"sha256":"81ea2bb5e50768b17230efac4e1f175d177759bda7df1325aa8912038c7322e1"},
+    "metform33": {"bytes":6068,"sha256":"ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3"},
+    "page56": {"bytes":246602,"sha256":"66126facdd0fd5e7d8ff395ebf095efbe605e6e4af1de57fcecab90e5dfd82d1"},
+    "page256": {"bytes":34725,"sha256":"b480423f4a29331789541b3a1ded5ec1e681dfd773bb205a5c09e4d4d1dbf253"},
+    "page258": {"bytes":72916,"sha256":"1494ff3cce05b92be9a4e962c67bbb4bd903c3ae2829c7e46914c09d2065d656"},
+    "page260": {"bytes":34188,"sha256":"e3ddf65d54039a4866e88311fe870bcc70b3cd408e78e3c020c325f62b2b0660"},
+    "page262": {"bytes":31792,"sha256":"59179aff94198af9b6504c4202d9b3cae62f20872e4af4d424cf1ca4d7738e74"},
+    "page264": {"bytes":47327,"sha256":"ae8ed86ab62b4f27c5f72f1c4baf5ecaa2b14186e067ebd2fee5f61d3938e765"},
+    "page266": {"bytes":8685,"sha256":"815f22bec4aa1a4401a78186505bf553740a2c19710b720407d19b4703366fae"},
+    "page268": {"bytes":45647,"sha256":"1f9cfaba55dc15fd6d6cb1e675e6e6c79f9b4f930a0e2e60cadd8a05b1919dc5"},
+    "page270": {"bytes":38705,"sha256":"7a100609dbb724419f46139d3a4b256dcf1e1e545f5e698c4249209bec4cba6f"},
+    "page272": {"bytes":53311,"sha256":"4c80d1108004fa133341da566e60adcda1b93c1f9ba5e3d110ff4cfdee4006e5"}
+  },
+  "structural_closeout": {
+    "source_host_or_html_refs_in_elementor_data": 0,
+    "published_global_headers": 1,
+    "published_global_footers": 1
+  },
+  "open_blockers": [
+    "Rólam source portrait /kepek/biro-janos-portre.webp returns 404; source bytes unavailable",
+    "Gallery source Ellwoodi /kepek/175725917368bda5a5b1ae6_370X354.webp returns 404; source bytes unavailable",
+    "Reference Videos featured CTA DOM/focus order needs supported Elementor structural save preserving full current V4 graph; current tools expose no safe partial reorder and CSS order would not fix focus order",
+    "Controlled acceptance viewport screenshot/overlay/diff unavailable because Opera screenshot/AX connector disconnects and container cannot resolve Clicknest hosts"
+  ],
+  "smtp_or_external_submission": false,
+  "pixel_pass": false
+}
