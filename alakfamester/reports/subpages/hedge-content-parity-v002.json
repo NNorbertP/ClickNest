@@ -1,0 +1,42 @@
+{
+  "package": "hedge-content-parity-v002",
+  "date": "2026-09-12",
+  "target_page_id": 272,
+  "source": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "before": {
+    "elementor_bytes": 45479,
+    "elementor_sha256": "fa839a47d966de6b1a1379c5f7caf5c126d3cffdff8a037cf99d5f07c70ed27c"
+  },
+  "after": {
+    "elementor_bytes": 49347,
+    "elementor_sha256": "b86eb746bcd76c9efdae71aebb366edb75c98d3fc19f22cff20672143240db6f"
+  },
+  "changes": [
+    "Restored the missing second hero-sub sentence from the source.",
+    "Restored the source callout 'Egyedi forma is kérhető' with exact body copy.",
+    "Restored the maintenance cards 'Forma és dekoratív sövényvégek' and 'Beteg, ritkuló, károsodott sövény' plus the expanded renewal copy and biological-protection link.",
+    "Restored 'Mit nem vállalok?' and the detailed four price factors.",
+    "Restored the source form-intro content: Ajánlatkérés heading, reply timing, phone/e-mail contact pair and required-fields note."
+  ],
+  "preserved": [
+    "EAEL masonry widget b2e2c001 and its 28 source images",
+    "native Atomic reviews root c3d30005",
+    "proof carousel af2e004d",
+    "MetForm widget af2e0011",
+    "all existing Elementor element IDs"
+  ],
+  "verification": {
+    "frontend_accessibility_headings": "Fresh Opera accessibility-tree reload now contains every previously missing source heading: Egyedi forma is kérhető; Forma és dekoratív sövényvégek; Beteg, ritkuló, károsodott sövény; Mit nem vállalok?; Ajánlatkérés.",
+    "editor_reopen": "Elementor editor URL reopened after the edits and loaded the page title without a WordPress fatal.",
+    "source_target_image_count": {
+      "source": 32,
+      "target": 30,
+      "explanation": "One remaining meaningful page-content image mismatch is the source hedge hero-art SVG; the other count difference is the source ClickNest footer credit image. Hero-art remains a structural follow-up."
+    }
+  },
+  "open": [
+    "Hero animated illustration is still absent on page272 and requires a supported structural Elementor save package.",
+    "Formal screenshot/overlay/pixel acceptance remains open because screenshot capture is unavailable in the Opera connector."
+  ]
+}
