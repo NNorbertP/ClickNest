@@ -1,0 +1,58 @@
+{
+  "page_id": 268,
+  "package": "WP20260912-F3",
+  "status": "interrupted_remote_rate_limit",
+  "completed_before_interruption": [
+    "F1 video grouping/content repair remains present.",
+    "F2 native Atomic Tabs reviews remain present.",
+    "Final CTA href was corrected to /kapcsolat/#ajanlatkeres.",
+    "Final CTA eyebrow and mail contact content were added.",
+    "The exact referencia-videok af-hero-art widget and source hero copy/meta content were introduced during F3."
+  ],
+  "current_remote_warning": "Do not treat the current F3 hero rendering as accepted. A diagnostic attempt to reuse source class names on Atomic wrappers is currently on the remote page and the latest Opera screenshot shows incorrect hero presentation (plain/pink contact text, oversized SVG/play graphic, expected art geometry not proven). Restore the verified F2 page before any further F3 iteration.",
+  "known_current_f3_mutations": {
+    "hero_art_element_id": "af2c0307",
+    "hero_art_variant": "referencia-videok",
+    "hero_art_widget_classes": "af-sub-hero-art hero-art af-hero",
+    "source_label_global_classes_added": [
+      "g-af-src-hero",
+      "g-af-src-hero-inner",
+      "g-af-src-hero-container",
+      "g-af-src-hero-grid",
+      "g-af-src-hero-copy",
+      "g-af-src-eyebrow",
+      "g-af-src-hero-sub",
+      "g-af-src-hero-visual"
+    ],
+    "other_f3_global_classes_added": ["g-af-v-inner-heading", "g-af-v-inner-art"],
+    "inline_phone_svg_removed_from_page268_meta": true,
+    "inline_email_svg_removed_from_two_page268_locations": true
+  },
+  "last_verified_good_restore_point": {
+    "scope": "page 268 after F2, before F3",
+    "local_data": "/mnt/data/alakfamester/backups/page-268-after-f2-restore-v001.json",
+    "data_sha256": "91c4d369cb0a5eb94a9158193eca7c990cc7f8dd719f895e926a2580f057f055",
+    "element_count": 105,
+    "element_ids_unique": true,
+    "prepared_save_body": "/mnt/data/alakfamester/build/page-268-f3-rollback-to-f2-save-body.json",
+    "prepared_save_body_sha256": "2ea649d288affd9ecadc6db26b06a26235494117b0be77834eda5d022c5a4b94"
+  },
+  "mandatory_resume_sequence": [
+    "Wait for/resolve the target-side WPVibe HTTP 429 throttle; do not repeatedly retry during the block.",
+    "Before writing, re-read page268 modified/hash/markers to detect any manual change.",
+    "If no conflicting manual change exists, restore page268 from the prepared F2 save body through /wpvibe/v1/elementor/save-page and verify warnings=[], frontend F1/F2 content, native reviews, and editor reopen.",
+    "Only then restart F3 from the restored F2 tree. Use the target's proven af-* V4 classes and af-project animation/widget contract; do not reuse unverified source class labels as styling hooks.",
+    "Remove or leave unused the newly added F3 experimental global classes only after usage is checked; do not delete shared classes blindly."
+  ],
+  "blocker": {
+    "http_status": 429,
+    "tool_message": "Target returned Too Many Requests after 3 retries. WPVibe identified likely Wordfence/host/Cloudflare rate limiting and recommends allowlisting requests carrying X-WPVibe: 1 or User-Agent WPVibe/1.0.",
+    "permission_note": "WPVibe ChatGPT plugin permission was already raised to full_access; this 429 is target/network rate limiting, not the ChatGPT plugin permission setting."
+  },
+  "quota": {
+    "last_service_report_before_the_429": "243/300 used, 57 remaining in rolling 24h",
+    "exact_current_after_429": "unknown",
+    "minimum_reserve": 10
+  },
+  "pixel_pass": false
+}
