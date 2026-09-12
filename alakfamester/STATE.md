@@ -1,85 +1,38 @@
-# STATE — Alakfa mester
+# STATE - 2026-09-12, WP20260912-F1 in progress
 
-**Legfrissebb folytatási pont — 2026-09-12 09:22 UTC**
+## Current work package
+Target: https://alakfamester-wp.clicknest.hu/ ; repository NNorbertP/ClickNest, main, alakfamester/.
+Next task selected from the previous checkpoint: page 268 /referencia-videok/.
+No WordPress construction write made in this package yet.
+Preflight raw _elementor_data: 8947 bytes, SHA256 fec3b94865400b50f39d2e33955233e637a2a0d713189b8998ee062b2f0a5563.
+Exact local export: backups/page-268-raw-pre-v001.json (hash verified against server, not a guessed reconstruction).
+Hello Additional CSS: post 8, 255948 bytes, SHA256 2618f40875d30cdbf468ef2f07715b265b26c6c9e695662c1b9758cee1066e06. Native revision 307 is byte-identical and is the rollback point. Revision 280 of page 268 is NOT current; do not restore it as this package's backup.
 
-Aktív WPVibe-fiók: **`clicknest001@gmail.com`**. Cél: `https://alakfamester-wp.clicknest.hu/`. Friss szolgáltatói számláló: **132/300 használt, 168 szabad**; a D11 szerinti **10 hívásos lezárási/helyreállítási tartalék kötelező**, így 158 hívás tervezhető a tartalék fölött. WordPress 7.1, PHP 8.3.33, WPVibe 1.16.4, aktív téma Hello Elementor 3.5.1, Elementor 4.2.4.
+Scope: preserve all seven video widget IDs and their URL identity, restore correct featured/shaping/health grouping, nest the featured player with its full source explanation, restore missing card titles and featured CTA. Native Atomic structural elements + existing legacy Video and bounded rich-text elements. No SMTP, plugin install, new media import, theme switch or shared JS change.
+Mapping: featured af2c0049/qJIcIt1a6Mk; shaping af2c000b/Qs5q1Dcl4aw, af2c004a/ww28lnsg8QY, af2c0048/mbA7iEkfHCE; health af2c0009/5mGcFuxc0JI, af2c000a/GLIrUif2eG8, af2c000c/c7JZBmKwTwM.
+Before dispatch recheck page 268 + CSS 8 hashes, class order and package-local validation. Any mismatch: merge actual manual change; do not overwrite.
 
-## Tényleges élő célállapot
+## Verified environment and preserved resources
+WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; active hello-elementor 3.5.1; Elementor 4.2.4.
+Preserve static homepage 56, page_for_posts=0; page 12; ElementsKit header 20 and footer 21; MetForm 33; Additional CSS 8. Do not duplicate these.
+Canonical published pages: 256 biologiai-vedelem; 258 galeria; 260 gyakran-ismetelt-kerdesek; 262 gyumolcsfak-metszese-es-vedelme; 264 idos-fak-megmentese-szolgaltatas; 266 kapcsolat; 268 referencia-videok; 270 rolam; 272 soveny-specialista. Page template elementor_header_footer.
+Existing project/plugin setup retained. No repeated installation or full schema inventory. LiteSpeed activity needs a targeted check before any optimization work: old STATE said inactive, site_info lists the plugin; do not infer a manual reactivation or change settings.
 
-- statikus kezdőlap: `show_on_front=page`, `page_on_front=56`, `page_for_posts=0`;
-- kanonikus aloldalak: 256 `biologiai-vedelem`, 258 `galeria`, 260 `gyakran-ismetelt-kerdesek`, 262 `gyumolcsfak-metszese-es-vedelme`, 264 `idos-fak-megmentese-szolgaltatas`, 266 `kapcsolat`, 268 `referencia-videok`, 270 `rolam`, 272 `soveny-specialista`;
-- megőrzendő: page12, ElementsKit header20/footer21, MetForm33, Hello Additional CSS post8;
-- aktív: `af-project` 0.2.0, Elementor 4.2.4, ElementsKit Lite 4.0.4, Head & Footer Code 1.5.9, MetForm 4.3.0, UpdraftPlus 1.26.7, WPVibe 1.16.4, Yoast 28.4; LiteSpeed Cache 7.9.1 inaktív.
+## Earlier completed packages - preserve, do not repeat
+A1: page270 af-s-rolam-9 paper->sage, -11 sage->paper; page272 af-s-soveny-specialista-8 stone->sage. Visual parity remains open.
+B: gallery258 af270007, 36 featured images and 44 masonry images; native save/front-end structural check passed. Interaction/exact/editor QA open. Never repeat obsolete op_dd3ae07c6db44c60.
+C: hedge272 proof af2e004d has 21 slides/dots; masonry af2e004a has 28 images. Old images preserved hidden. Auto 5->6 observed, remaining QA open.
+D: shared JS is auhfc_settings_sitewide.footer, marker af-source-interactions-v001 exactly once, probe marker absent. GitHub build/source-interactions-v001.js, commit 6710e707bbe4e4272ce6356c527c8511521de061, SHA256 c545a177861d1e811041b3444bda5a587de34aa32edee4060936514928fe1e66. BA/carousel/lightbox/masonry/editor mutation handling present; full lifecycle QA open.
+E: about270 hero extra af2d0007 hidden, af2d0008 full-width; af2d0047 5-slide manual carousel/timeline; af2d004b three BA cards. Oldtrees264 af2a004a has tiszafa BA + six-slide Nordmann auto story. Native saves/readbacks passed; manual no-autoplay observed; auto started at image3, further read interrupted. CSS marker af-project:about-survivor-media-v001. Evidence reports/subpages/about-survivor-source-parity-v001.json, commit 188e1a3cb853750d103de17f64177ce9af4d3654. Actual post_modified_gmt 270=2026-09-12 09:25:03, 264=09:25:09, newer than old checkpoint; do not rewrite from old cached payload.
 
-## Kötelező határok
+## Newly found blockers and defects
+Repository folder tree 6a421337dbbda48cb95ab27e1ec482859600c87b does NOT contain source/, specs/acceptance.json, specs/behaviors.json, full page specs or the referenced tools. No source ZIP is attached in this conversation. Frozen source aggregate recorded previously: fc1229f01ea7002131153b606f3cb6c549b001f93337efbb2352089800349707. Do not replace this reference with a new live snapshot.
+Live original https://alakfamester.clicknest.hu/ is available via WPVibe for diagnosis; it is NOT a verified frozen reference in this run. Source CSS/HTML content was read for video page restoration.
+Opera screenshot initially succeeded (logged in/admin bar, diagnostic only); subsequent browser read said disconnected. Container DNS cannot reach source/target/GitHub; no connected Playwright automation. No qualified screenshot pair/overlay/diff or font-rendering/network/CDP proof yet.
+Video hero lacks its source art/full meta; custom af-project-reviews on subpages contradicts D12's claimed Atomic conversion, and screenshot showed raw pink tab buttons/oversized image. Investigate actual native home pattern, do not assume existing plain _css_classes are valid Atomic controls.
+The target CSS contains fixed per-viewport section heights with overflow:hidden. These cannot be used as pixel-parity evidence. Remove obsolete rules within the verified repair scope; do not hide text or force source heights.
 
-D03 V4 Atomic általános szerkezet / dokumentált legacy összetett határ. D05 MetForm Free, SMTP/külső tesztüzenet tilos. D07 saját CSS csak Hello Additional CSS `af-project` blokk. D11 10 WPVibe-hívás tartalék. D12–D16 stabil Elementor-ID-k és rögzített Atomic/legacy/SVG határok megőrzendők. Source referencia hash: `fc1229f01ea7002131153b606f3cb6c549b001f93337efbb2352089800349707`. Acceptance viewportok: 1440×1000, 1024×900, 768×1024, 390×844, 360×800, 1920×1080.
-
-## WP-20260912-A1 — lezárva
-
-Helper háttérjavítások: page270 `af-s-rolam-9` paper→sage, page270 `af-s-rolam-11` sage→paper, page272 `af-s-soveny-specialista-8` stone→sage. Végső vizuális QA-ban újramérendők.
-
-## WP-20260912-B — page258 galéria struktúra/frontend PASS, behavior QA részben nyitott
-
-A fagyasztott forrás renderelt készlete: 36 működő kiemelt projektkép + 44 további kép. A teljes rekonstruált projekt-DOM és 44 masonry elem bent van; natív Elementor újramentés sikeres; `af270007` frontendben az új referencia DOM-ot rendereli. Közös JS telepítve. Nyitott: BA/manual/lightbox/masonry közvetlen műveleti QA, reduced-motion, exact vizuális mérés, editor reopen. A korábbi `op_dd3ae07c6db44c60` cache-delete approval nem szükséges és nem ismétlendő.
-
-## WP-20260912-C — page272 sövény média/frontend PASS, auto-carousel PASS
-
-Hero proof: 21 kép / 21 slide / 21 dot, widget `af2e004d`. Referencia: 28 masonry elem `af2e004a`. A régi ismétlődő képi blokkok visszaállíthatóan megmaradtak, célzottan rejtve. Natív Elementor újramentés PASS, frontend DOM PASS. Opera böngészőben a proof auto-carousel 5.→6. aktív képre lépett a 4 s intervallumon belül. Nyitott: masonry konkrét oszlopgeometria, reduced-motion, exact vizuális mérés, editor reopen.
-
-## WP-20260912-D — közös forrás-viselkedési JS telepítve
-
-Tulajdonos: Head & Footer Code 1.5.9 site-wide `auhfc_settings_sitewide.footer`, marker `af-source-interactions-v001`. GitHub main: `build/source-interactions-v001.js`, commit `6710e707bbe4e4272ce6356c527c8511521de061`, SHA256 `c545a177861d1e811041b3444bda5a587de34aa32edee4060936514928fe1e66`, `node --check` PASS. BA, auto/manual carousel, lightbox, masonry, broken-slide removal, reduced-motion no-autoplay és Elementor MutationObserver benne van. A site-wide optionban final marker 1, probe 0.
-
-## WP-20260912-E — page270 `Rólam` + page264 `Idős fák` forrásstruktúra-paritás: STRUCTURE/FRONTEND PASS, behavior részben QA-zva
-
-Forrás-DOM alapján nem kellett új médiafeltöltés; `biro-janos-portre.webp` nem szükséges látható forráselem. Minden tényleges source asset már a médiatárban volt.
-
-### page270 `Rólam`
-
-- `af2d0007` forrásidegen kép stabil ID megtartásával vizuálisan rejtve; a copy 100% szélességet kapott;
-- `af2d0047` ugyanazon stabil widgetben 5 képes **manual carousel** + timeline;
-- `af2d004b` ugyanazon stabil widgetben 3 source-like BA projektkártya: tiszafa, kék boróka, keleti tuja;
-- pre-save validáció: JSON-valid, `_elementor_data` 17 551 byte, 5 carousel slide, 3 BA range, `af-personal-gallery` 0;
-- natív Elementor dokumentum-újramentés PASS;
-- frontend `af2d0047` és `af2d004b` visszaolvasás PASS;
-- Opera manual-carousel teszt PASS: két, 4+ másodperccel elválasztott állapotban végig `Biró János a munkájában, 1. kép` maradt aktív → nincs autoplay.
-
-### page264 `Idős fák`
-
-- `af2a004a` ugyanazon stabil widgetben source-like két projektkártya;
-- tiszafa: teljes BA range + story-meta;
-- Nordmann-jegenyefenyő: 6 képes **auto** carousel + 6 dot + story-meta;
-- pre-save validáció: JSON-valid, `_elementor_data` 20 170 byte, 6 carousel slide, 1 BA range, régi `af-before-after` 0; abies 2–5 hivatkozások jelen;
-- natív Elementor dokumentum-újramentés PASS;
-- frontend `af2a004a` visszaolvasás PASS;
-- Opera első live állapotban a Nordmann carousel aktív képe már a 3. kép volt, tehát az inicializáció/autoplay elindult; a második időzített olvasás előtt az Opera Connector megszakadt. Emiatt az oldalspecifikus auto-carousel kétállapotos PASS még nyitott, noha a közös autoplay page272-n már bizonyított.
-
-CSS: Hello Additional CSS post8-ban marker `af-project:about-survivor-media-v001` pontosan egyszer; patch utáni postméret 255 948 byte. Részletes bizonyíték: `reports/subpages/about-survivor-source-parity-v001.json` (commit `188e1a3cb853750d103de17f64177ce9af4d3654`).
-
-## WP-20260912-F — aktív következő csomag: page268 `Referencia videók`
-
-Munkalistából következő független feladat: a már meglévő 7 videó mellett a **featured videó szerkezeti/geometriai eltérésének** pontos forrás↔target auditja és minimális javítása.
-
-Kötelező sorrend a következő írás előtt:
-
-1. visszaolvasni a releváns page268 specifikációt, acceptance/behavior szabályokat és a fagyasztott forrás `main`/videó szakasz tényleges DOM-ját;
-2. frissen visszaolvasni page268 `_elementor_data` stabil ID-ket, video URL-eket és a hozzá tartozó post8 CSS owner szabályokat;
-3. eldönteni, hogy a különbség tartalom/szerkezet vagy kizárólag geometriai adapter; a 7 már meglévő videót nem duplikálni;
-4. változáscsomagot helyben validálni, majd a legkisebb támogatott Elementor/CSS mentést használni;
-5. natív dokumentum-újramentés, frontend readback, lehetőség szerint Opera source↔target ellenőrzés.
-
-## Utána
-
-1. source↔target exact acceptance viewport QA: screenshot, overlay, diff, kulcsgeometria, overflow, kritikus viselkedések;
-2. kritikus Elementor editor reopen/editability/unsaved-change;
-3. nyitott BA/manual/lightbox/masonry/reduced-motion tesztek lezárása, amennyire a böngészőeszköz engedi;
-4. csak teljes bizonyíték után `PIXEL_PASS`, majd 3. prompt átadási mód.
-
-## Kapacitás
-
-Friss keret: **132/300 használt, 168 szabad**; D11 tartalék után 158 tervezhető. A következő nagy csomag lezárásakor újra közvetlen számláló-lekérés szükséges.
-
-## Hivatkozások
-
-`AGENTS.md`; `specs/decisions.md`; `specs/acceptance.json`; `specs/behaviors.json`; `specs/pages/galeria.json`; `specs/pages/soveny-specialista.json`; extrahált `specs/pages/rolam.json`; extrahált `specs/pages/idos-fak-megmentese-szolgaltatas.json`; `reports/site-finalization-20260911.md`; `reports/summary.md`; `reports/subpages/about-survivor-source-parity-v001.json`; `build/source-interactions-v001.js`.
+## Acceptance / budget
+PIXEL_PASS = false. Open: six viewport screenshot pair/overlay/diff, geometry/text wrapping/page heights, actual fonts (including accented glyphs), asset/network/console errors, video click/keyboard operation, source animation time samples/full cycle/mobile/reduced motion, menu/focus/scroll locks, Elementor reopen/reinitialization, optimized configuration, second browser engine, mail-free form processing where supported. No SMTP or external test send.
+Initial service quota this run: used132/300, remaining168 in rolling24h. Minimum closing reserve10. Actual current quota must be queried again; do not subtract only successful writes or claim a guessed remainder.
+Working files: /mnt/data/alakfamester/. Prepared packages and evidence must be committed before closing. Next package after F1 depends on its readback/browser result; mandatory missing frozen inputs remain a separate block to final acceptance and prompt3 handover.
