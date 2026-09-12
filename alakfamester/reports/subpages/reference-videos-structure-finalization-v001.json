@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-12",
+  "page_id": 268,
+  "source": "https://alakfamester.clicknest.hu/referencia-videok.html",
+  "target": "https://alakfamester-wp.clicknest.hu/referencia-videok/",
+  "basis": {
+    "target_elementor_bytes": 45647,
+    "target_elementor_sha256": "1f9cfaba55dc15fd6d6cb1e675e6e6c79f9b4f930a0e2e60cadd8a05b1919dc5",
+    "accepted_prior_evidence": "reports/subpages/reference-videos-acceptance-available-v001.json"
+  },
+  "fresh_findings": {
+    "source_featured_region_child_order": [
+      "CTA article: Ugyanezt a munkát az Ön kertjében is elvégzem",
+      "featured heading: Kínai hibrid terülő boróka (Niwaki) nyírása – Mire figyeljünk?",
+      "featured intro",
+      "video/details"
+    ],
+    "target_featured_inner_elementor_order": ["af2c0007 heading/introduction", "af2c0102 split/video+details", "af2c0107 CTA"],
+    "target_rendered_dom_order_matches_elementor_data": true,
+    "visual_only_css_reorder_rejected": "would leave keyboard/screen-reader focus order video-before-CTA while visually showing CTA first",
+    "af_project_partial_reorder_ability": false,
+    "browser_editor_mutation_available": false
+  },
+  "writes": 0,
+  "status": "OPEN_SAFE_STRUCTURAL_WRITE_BLOCKED",
+  "required_safe_fix": "Use a supported Elementor structural save that preserves the full current V4 data/class graph and moves existing af2c0107 before af2c0007 inside af2c0101, then verify editor reopen, DOM/focus order, all seven videos, tabs, CSS and frontend. Do not reconstruct or hand-edit the 45 KB full tree from truncated/snippet data and do not use CSS order as a behavioral substitute.",
+  "pixel_pass": false,
+  "notes": [
+    "The current target hash exactly matches the previously accepted reference-videos basis, so no uncertain prior write was repeated.",
+    "Screenshot connector was unavailable during this package; accessibility-tree and rendered HTML evidence were used only for structural diagnosis."
+  ]
+}
