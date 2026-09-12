@@ -1,0 +1,12 @@
+{
+  "package":"fruit-hero-v4-v002",
+  "date":"2026-09-12",
+  "page_id":262,
+  "pre_sha256":"9e440c34c1fb45ef27061807aea590b79581eb592bf4e72f98fa2fc414090737",
+  "post_sha256":"0e7ed4b97f4c3fde3be91a532f62d936a35ac52567ac1a2d5b44f1af2f57d816",
+  "post_bytes":31788,
+  "hero_widget":{"id":"af290047","widgetType":"af-hero-art","art":"gyumolcsfak-metszese-es-vedelme","accessible_title":"Gyümölcsfa nyitott vázkoronával","accessible_description":"Metszéssel nyitott, kehely alakú vázkorona négy vezérággal és érő terméssel.","scroll_mode":"hero"},
+  "d18_bridges":["g-af-src-fruit1","g-af-src-fruit2","g-af-src-fruit8","g-af-src-hero-wide","g-af-src-bgstone","g-af-src-wave","g-af-src-reviews","g-af-src-subpage","g-af-src-subfinal","g-af-probe-hero"],
+  "checks":{"supported_save_page":true,"frontend_hero_classes_preserved":true,"frontend_review_classes_preserved":true,"hero_svg_title_desc_present":true,"native_atomic_reviews_present":true,"elementor_editor_reopened":true,"pixel_pass":false},
+  "open":["Formal frozen visual/behavior acceptance remains open."]
+}
