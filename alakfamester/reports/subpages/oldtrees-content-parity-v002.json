@@ -1,0 +1,48 @@
+{
+  "package": "oldtrees-content-parity-v002",
+  "date": "2026-09-12",
+  "target_page_id": 264,
+  "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "before": {
+    "elementor_bytes": 35176,
+    "elementor_sha256": "48713257e1e950e4123b0ace59ed9760961d6edaed5e6b35cacdd532bc3c68e0"
+  },
+  "after": {
+    "elementor_bytes_reported_by_last_guarded_edit": 36867,
+    "elementor_sha256": null,
+    "hash_note": "No additional WPVibe read was spent after the final guarded edit because the rolling quota dropped below the mandatory recovery reserve. Re-read before the next write."
+  },
+  "changes": [
+    "Restored the source card 'Biológiai támogatás – kiegészítő mechanizmus' with its source paragraph and canonical biological-protection link.",
+    "Restored the source card 'Kivágás helyett mit nyerhet?' with its four source bullets.",
+    "Renamed 'Három lépés' to the source heading 'Három lépés, kötelezettség nélkül'.",
+    "Restored the source 'És az ajánlat?' callout and mapped its trip-fee link to /kapcsolat/#kiszallas.",
+    "Restored the second credibility paragraph explaining when a theoretically saveable plant is still a bad long-term fit.",
+    "Restored the fourth FAQ question and answer: 'Vállalja a munkát akkor is, ha nem én ültettem a növényt?'.",
+    "Restored the source comparison intro explaining that removal should not be the starting decision before inspecting structure."
+  ],
+  "verification": {
+    "fresh_frontend_accessibility_tree": [
+      "Biológiai támogatás – kiegészítő mechanizmus",
+      "Kivágás helyett mit nyerhet?",
+      "Három lépés, kötelezettség nélkül",
+      "És az ajánlat?"
+    ],
+    "fourth_faq": "Fresh target accessibility tree exposes the restored question as a disclosure control.",
+    "source_target_image_observation": "Source exposes the old-tree hero art plus review/story media; target still lacks the old-tree hero-art image. Carousel image identity can differ at capture time because the target auto carousel was on slide 6 while the source sample was on slide 1."
+  },
+  "preserved": [
+    "native Atomic reviews",
+    "tiszafa before/after interaction",
+    "six-slide Nordmann carousel",
+    "all existing Elementor element IDs"
+  ],
+  "open": [
+    "Add source hero illustration through the supported full Elementor save path; source accessible title is 'Idős fa megtartott, alátámasztott vezérággal' and description is 'Öreg fa vastag törzzsel és nehéz alsó vezérággal, amelyet bronz támasz tart meg.'.",
+    "Source page contains a full inline request form at #ajanlatkeres; target still routes to the contact page instead. Decide/rebuild this structurally with existing MetForm 33 in the next safe structural package.",
+    "Source problem chips include 'Túl közel került a házhoz'; target still omits that chip.",
+    "Source comparison bullets are more detailed than the target's simplified wording and remain a text-parity follow-up.",
+    "Formal screenshot/overlay/pixel acceptance remains open."
+  ]
+}
