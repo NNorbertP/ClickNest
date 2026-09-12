@@ -1,0 +1,83 @@
+{
+  "package": "gallery-eael-masonry-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/galeria/",
+  "page_id": 258,
+  "decision": "D17",
+  "status": "STRUCTURAL_PASS_RUNTIME_LIGHTBOX_OPEN_FORMAL_VISUAL_OPEN",
+  "preflight": {
+    "elementor_data_bytes": 81094,
+    "elementor_data_sha256": "a3a3f85d828933caf0500984f9852c43b9c44cfce5a769edefd55673ef6984f1",
+    "featured_widget_id": "af270007",
+    "masonry_text_widget_id": "af270045",
+    "native_reviews_root": "a1b20006",
+    "masonry_count": 44,
+    "zoom_count": 44
+  },
+  "implementation": {
+    "plugin": "Essential Addons for Elementor Free 6.8.3",
+    "widget_id": "af27000e",
+    "widget_type": "eael-filterable-gallery",
+    "existing_hidden_image_widget_repurposed": true,
+    "items": 44,
+    "grid_style": "masonry",
+    "columns_desktop": 4,
+    "columns_tablet": 3,
+    "columns_mobile": 2,
+    "image_resolution": "full",
+    "popup": "media",
+    "full_image_clickable": true,
+    "full_image_action": "lightbox",
+    "photo_gallery_chain": true,
+    "media_reimported": false,
+    "first_item": "Saját alakfa- és niwaki-munka, 1. kép",
+    "last_item": "A sövényvég síkja",
+    "featured_project_payload_af270007_preserved": true,
+    "native_reviews_preserved": true
+  },
+  "cleanup": {
+    "legacy_js_masonry_removed_from_elementor_data": true,
+    "legacy_js_zoom_removed_from_elementor_data": true,
+    "legacy_hidden_duplicate_grid_removed_from_af270045": true,
+    "af270045_now_contains_only_source_heading_and_intro": true,
+    "remaining_old_image_widgets_af270009_to_af27000d": "preserved hidden; not part of the 44-item runtime masonry"
+  },
+  "readback": {
+    "elementor_data_bytes": 72615,
+    "elementor_data_sha256": "1f90bcd2e1f53c51cd901bced6ea5d6cc03a957a56541a9330866cbcd8cd0a85",
+    "json_valid": true,
+    "eael_items": 44,
+    "js_masonry_count": 0,
+    "js_zoom_count": 0,
+    "post_modified_gmt": "2026-09-12 12:35:25",
+    "frontend_widget_data_total_gallery_items": 44,
+    "frontend_masonry_mode": true,
+    "frontend_popup_media": true,
+    "frontend_full_image_anchor": "proved on isolated page352 before production switch",
+    "editor_reopened": true,
+    "editor_accessibility_tree_exposes_filterable_gallery": true
+  },
+  "additional_css": {
+    "post_id": 8,
+    "bytes": 262730,
+    "sha256": "a8ebd21e85595df6bbeae46759cfc5e7a1a4a3ddbe4b4c7ec70a7d4dbc52209f",
+    "marker": "af-project:gallery-eael-masonry-v001",
+    "purpose": "Expose repurposed EAEL widget, suppress EAEL captions, preserve natural image ratio and original organic border/shadow/gutters; source-like 3 columns in 721-767 and 2 columns at mobile.",
+    "fresh_field_rule": "post8 hash was rechecked immediately before the gallery migration and only the project block was patched"
+  },
+  "browser_qa": {
+    "target_accessibility_tree": "Visible gallery exposes the 44 EAEL image alt labels in expected source order; hidden old custom masonry is not exposed.",
+    "target_editor": "Elementor reopened at page258; Filterable Gallery button/control present in accessibility tree.",
+    "source_reference": "https://alakfamester.clicknest.hu/galeria.html used diagnostically only",
+    "screenshot": "Opera screenshot action unavailable/disconnected during closeout; no screenshot PASS claimed"
+  },
+  "save_note": {
+    "structural_widget_repurpose": "The connector could not practically stream the complete 80k Elementor document as one generated save payload in this lane, so the already-proven existing hidden widget af27000e was repurposed with a match-once guarded _elementor_data edit. Every subsequent cleanup edit was inside the legacy text-editor content, then JSON/hash/frontend/editor were re-read and the WordPress page was touched to run normal post-save hooks. This is recorded as an implementation exception; no SQL meta write was used.",
+    "rollback": "Exact pre-migration page258 payload is retained locally as page258-current.json and hash a3a3f85d..."
+  },
+  "open": [
+    "Actual Magnific Popup open/next/previous/close/focus behavior still needs a browser action tool capable of clicking; the rendered linked media chain is proven but runtime interaction is not claimed.",
+    "Formal frozen-reference six-viewport screenshot pair/overlay/diff and computed geometry remain unavailable in this session.",
+    "PIXEL_PASS remains false globally."
+  ]
+}
