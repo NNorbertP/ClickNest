@@ -1,0 +1,47 @@
+{
+  "package": "oldtrees-hero-v4-v001",
+  "date": "2026-09-12",
+  "page_id": 264,
+  "pre_sha256": "c23ad9d1dfa85c52a0f5c324d4860832913b077566ac0c0cff3ca18ba66f14a6",
+  "post_sha256": "2a3e3293b7310864dba91ea219ef055c031e26eacb6bc5c603c8c80c067a06aa",
+  "post_chars": 43091,
+  "post_bytes": 43091,
+  "save_route": "/wpvibe/v1/elementor/save-page",
+  "page_template": "elementor_header_footer",
+  "widget": {
+    "container_id": "af2a0041",
+    "id": "af2a0052",
+    "widgetType": "af-hero-art",
+    "art": "idos-fak-megmentese-szolgaltatas",
+    "accessible_title": "Idős fa megtartott, alátámasztott vezérággal",
+    "accessible_description": "Öreg fa vastag törzzsel és nehéz alsó vezérággal, amelyet bronz támasz tart meg.",
+    "scroll_mode": "hero"
+  },
+  "d18_inventory": {
+    "atomic_legacy_css_classes_found": 0,
+    "new_global_class_bridges_required": false,
+    "note": "Fresh page264 tree had no Atomic e-flexbox _css_classes values; existing typed review classes were preserved."
+  },
+  "platform_event": {
+    "first_save_attempt": "WPVibe D1 database overload before site write",
+    "recovery": "Retried the exact supported save once as instructed; retry succeeded with warnings=[]"
+  },
+  "checks": {
+    "save_warnings_empty": true,
+    "frontend_widget_present": true,
+    "frontend_svg_title_desc_exact": true,
+    "logged_out_accessibility_image_matches_source": true,
+    "native_review_tabs_present": 3,
+    "comparison_heading_preserved": true,
+    "final_cta_heading_preserved": true,
+    "editor_reopened": true,
+    "smtp_or_external_submission": false,
+    "pixel_pass": false
+  },
+  "quota_after_package": "126/300 used; 174 remaining",
+  "open": [
+    "Exact source problem-grid chip DOM/visual structure.",
+    "Inline request form at #ajanlatkeres.",
+    "Formal pixel/geometry/animation acceptance."
+  ]
+}
