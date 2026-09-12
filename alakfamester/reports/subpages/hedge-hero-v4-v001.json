@@ -1,0 +1,48 @@
+{
+  "package": "hedge-hero-v4-v001",
+  "date": "2026-09-12",
+  "page_id": 272,
+  "pre_sha256": "0db2ad33292b338446b3b8f9358c434521894ea8ad0f5dfa8c92b78d035ca3d8",
+  "post_sha256": "4c80d1108004fa133341da566e60adcda1b93c1f9ba5e3d110ff4cfdee4006e5",
+  "post_chars": 53311,
+  "post_bytes": 53311,
+  "save_route": "/wpvibe/v1/elementor/save-page",
+  "page_template": "elementor_header_footer",
+  "widget": {
+    "container_id": "af2e0041",
+    "id": "af2e004e",
+    "widgetType": "af-hero-art",
+    "art": "soveny-specialista",
+    "accessible_title": "Nyírt sövénysáv díszes véggel",
+    "accessible_description": "Szerkezetileg fenntartott, egyenesre nyírt sövénysáv, a végén formára nevelt oszloppal.",
+    "scroll_mode": "hero"
+  },
+  "d18_inventory": {
+    "atomic_legacy_css_classes_found": 0,
+    "new_global_class_bridges_required": false,
+    "note": "Fresh page272 tree had no Atomic e-flexbox _css_classes values. Existing typed review classes were preserved. Legacy classes remain only on legacy widgets where D18 does not apply."
+  },
+  "preserved": {
+    "hero_proof": "af2e004d, 21 source images",
+    "reviews": "c3d30005 native Atomic Tabs",
+    "masonry": "b2e2c001 EAEL filterable gallery, 28 items",
+    "form": "af2e0011 MetForm 33",
+    "content_package": "hedge-content-parity-v002"
+  },
+  "checks": {
+    "save_warnings_empty": true,
+    "frontend_widget_present": true,
+    "frontend_svg_title_desc_exact": true,
+    "logged_out_accessibility_image_matches_source": true,
+    "native_review_tabs_present": 3,
+    "gallery_heading_present": true,
+    "form_heading_present": true,
+    "editor_reopened": true,
+    "smtp_or_external_submission": false,
+    "pixel_pass": false
+  },
+  "quota_after_package": "124/300 used; 176 remaining",
+  "open": [
+    "Formal pixel/geometry/animation acceptance remains open because repository acceptance/behavior specs are absent and no formal multi-viewport diff harness is available in this session."
+  ]
+}
