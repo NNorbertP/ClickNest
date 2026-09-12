@@ -1,13 +1,13 @@
-# STATE - 2026-09-12, WPVIBE WORKING BUDGET EXHAUSTED; CONTENT PARITY ADVANCED
+# STATE - 2026-09-12, WPVIBE BUDGET RESTORED; GALLERY HERO PACKAGE ACTIVE
 
-## Current state and hard stop condition
+## Current state and active continuation
 Target: https://alakfamester-wp.clicknest.hu/ ; repository `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
-WPVibe account: `ncsnorbert+20260912-1@gmail.com`.
+WPVibe account is now `ncsnorbert+20260912-2@gmail.com`. The site authorization is live and `site_info` confirms the connected WordPress administrator and active Hello Elementor environment. Exact quota at the start of this continuation: **0/300 used, 300 remaining** in the rolling 24-hour window. Keep at least 10 calls for recovery/closeout.
 
-**Last exact quota read: 292/300 used, 8 remaining in the rolling 24-hour window.** The project rule requires at least 10 calls as recovery/closeout reserve. Therefore routine WPVibe reads/writes are stopped now; the remaining 8 calls are emergency recovery only. Do not spend them on diagnosis, routine hash reads, cache flushes or new packages. When calls roll out of the 24-hour window, first re-read quota and the exact target hashes before continuing.
+The active work package is page258 Gallery hero source parity. A fresh target read before any write confirmed page258 is still **72603 bytes, SHA256 `9af1124e4aa167f73e3d1ab34bb5b243db7169cd20fbea38ff50f049e9921294`, modified GMT `2026-09-12 13:15:27`**, matching the previous checkpoint. The existing empty hero host is `af270041`; the prepared new child remains `af27004c`, widget `af-hero-art`, `art=galeria`, accessible title `Formakatalógus – négy alakfa-sziluett`, accessible description `Négy különböző formavilág egy polcon: rétegzett niwaki, gömb, kúp és felhőcsokor.`, `scroll_mode=hero`. The live widget schema was re-read on Elementor 4.2.4 and confirms `art`, `accessible_title`, `accessible_description`, and `scroll_mode` are valid controls. Perform this only through the supported Elementor full-save workflow, then reread data, frontend and editor before the next structural package.
 
-No SMTP was configured and no external form submission/test message was sent.
+No SMTP is configured and no external form submission/test message may be sent in this mode.
 
 ## Environment / resources to preserve
 - WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4.
@@ -41,15 +41,15 @@ The featured-project block text was corrected in existing widget `af270007` with
 - eyebrow now `Referenciák`;
 - intro now source text: `Minden panel egy növény vagy egy dokumentált munka. Ahol azonos nézőpontból van előtte–utána pár, ott a csúszka húzható; ahol több állomás vagy nézet van, ott körhinta lépteti végig őket.`
 
-Last verified page258 after those text changes: **72603 bytes, SHA256 `9af1124e4aa167f73e3d1ab34bb5b243db7169cd20fbea38ff50f049e9921294`**.
+Fresh page258 pre-write state: **72603 bytes, SHA256 `9af1124e4aa167f73e3d1ab34bb5b243db7169cd20fbea38ff50f049e9921294`**.
 
-Opera accessibility comparison: source exposes 61 images, target 59. The two meaningful differences are:
+Opera accessibility comparison previously showed source 61 images vs target 59. The two meaningful differences are:
 1. missing source hero illustration `Formakatalógus – négy alakfa-sziluett`;
 2. missing Ellwoodi slide `A többgömbös Ellwoodi niwaki, másik nézet`, source file `175725917368bda5a5b1ae6_370X354.webp`.
 
 The Ellwoodi source file currently returns 404 to WPVibe `upload-media`; do not retry the same URL, invent a replacement or upload a duplicate. A frozen/local source asset is required.
 
-Prepared Gallery hero structural package: existing empty hero host `af270041`; intended fresh child `af27004c`; widget `af-hero-art`; `art=galeria`; accessible title `Formakatalógus – négy alakfa-sziluett`; description `Négy különböző formavilág egy polcon: rétegzett niwaki, gömb, kúp és felhőcsokor.`; `scroll_mode=hero`. **Implement only with a fresh full page258 read and supported `save-page`; do not structurally inject with content/edit.**
+Prepared Gallery hero structural package: existing empty hero host `af270041`; intended fresh child `af27004c`; widget `af-hero-art`; `art=galeria`; accessible title `Formakatalógus – négy alakfa-sziluett`; description `Négy különböző formavilág egy polcon: rétegzett niwaki, gömb, kúp és felhőcsokor.`; `scroll_mode=hero`. Implement with supported full Elementor save, then verify current hash/tree/frontend/editor before moving on.
 
 ## Page272 Hedge - content parity advanced
 Evidence: `reports/subpages/hedge-content-parity-v002.json`.
@@ -64,16 +64,14 @@ Guarded edits restored source content without changing Elementor IDs:
 - hero CTAs/facts now map to source intent: `Kérek felmérést` -> `/kapcsolat/#ajanlatkeres`; `Formák, amiket vállalok` -> `#formara-vagas`; facts are `Formára vágás és szerkezeti fenntartás`, `Növény-egészségügyi szemlélettel`, `Fotó alapján is felmérem – díjmentesen`;
 - existing content inner received `id='formara-vagas'`.
 
-Last exact read before the final hero CTA/anchor edits: **49347 bytes, SHA256 `b86eb746bcd76c9efdae71aebb366edb75c98d3fc19f22cff20672143240db6f`**. The final two guarded edits were confirmed successful but were not re-hashed because the quota approached reserve. Re-read page272 before the next write.
-
-Opera fresh frontend audit contains all restored headings and the Elementor editor reopened without fatal error.
+Last exact read before the final hero CTA/anchor edits: **49347 bytes, SHA256 `b86eb746bcd76c9efdae71aebb366edb75c98d3fc19f22cff20672143240db6f`**. The final two guarded edits were confirmed successful but were not re-hashed; re-read page272 before the next write.
 
 Remaining hedge structural gap: source hero illustration `Nyírt sövénysáv díszes véggel`, description `Szerkezetileg fenntartott, egyenesre nyírt sövénysáv, a végén formára nevelt oszloppal.` Existing empty hero host was previously `af2e0041`; use `af-hero-art`, `art=soveny-specialista`, through a fresh full supported page save only.
 
 ## Page264 Old trees - content parity advanced
 Evidence: `reports/subpages/oldtrees-content-parity-v002.json`.
 
-Starting exact state before this package: 35176 bytes, SHA256 `48713257e1e950e4123b0ace59ed9760961d6edaed5e6b35cacdd532bc3c68e0`.
+Starting exact state before the prior package: 35176 bytes, SHA256 `48713257e1e950e4123b0ace59ed9760961d6edaed5e6b35cacdd532bc3c68e0`.
 
 Guarded edits restored:
 - source `Biológiai támogatás – kiegészítő mechanizmus` card and canonical biological-protection link;
@@ -84,7 +82,7 @@ Guarded edits restored:
 - missing fourth FAQ `Vállalja a munkát akkor is, ha nem én ültettem a növényt?` with exact answer;
 - source `Kivágás vagy átalakítás?` introductory paragraph.
 
-Last guarded edit reported **36867 bytes**. Final SHA was deliberately not queried after the quota crossed the reserve threshold; re-read before any page264 write. Fresh Opera target reload exposes the new headings and fourth FAQ.
+Last guarded edit reported **36867 bytes**. Final SHA was deliberately not queried after the previous account crossed the reserve threshold; re-read before any page264 write. Fresh Opera target reload exposed the new headings and fourth FAQ.
 
 Open page264 parity:
 - source hero art still missing: title `Idős fa megtartott, alátámasztott vezérággal`; description `Öreg fa vastag törzzsel és nehéz alsó vezérággal, amelyet bronz támasz tart meg.` Use the matching `af-hero-art` option with a supported full page save after a fresh read.
@@ -127,14 +125,14 @@ Hero illustration and review media are present; the only source-only image in th
 - Page268 structure is largely aligned; target video overlay accessible controls remain generic `Videó lejátszása` while source includes the video title in the label. Treat as accessibility/behavior parity follow-up, not a media reorder.
 - Global final visual/behavior acceptance remains open.
 
-## Mandatory next action when WPVibe working budget returns
-1. Call `list_sites`, verify at least the 10-call reserve plus enough package capacity is available; verify site connection.
-2. Re-read exact current hashes/state for the page being touched and Additional CSS if relevant. Specifically page264/page272 must be re-hashed because final guarded edits were not re-read; page258 must be re-read before structural save.
-3. Execute prepared hero-art packages one page at a time with fresh complete Elementor trees and supported `save-page`, starting with page258 Gallery, then page272 Hedge. Re-read/frontend/editor-verify each before the next structural save. Then page264/260/262/270/266 hero-art gaps as warranted by source.
+## Mandatory next action
+1. Complete page258 Gallery hero via supported full Elementor save, then reread data/hash/frontend/editor.
+2. Re-read and execute page272 Hedge hero-art package similarly.
+3. Then page264/260/262/270/266 hero-art gaps one page at a time, always with fresh target state and one clean supported save per atomic page.
 4. Recover or locate the frozen/local Ellwoodi asset; do not retry the live 404 URL.
 5. Repair high-value content gaps: page270 `Miért lettem kertész?` + missing work portrait; page264 inline MetForm/problem chip/detail copy; page262 FAQ wording/heading semantics; page266 heading semantics; page56 partner-program block.
 6. Finish MetForm max-five validation/textarea/success-state parity without SMTP or external test messaging.
 7. Run the formal acceptance pipeline when frozen reference/spec tooling and screenshot capture are available.
 
 ## Acceptance
-`PIXEL_PASS=false`. Formal frozen six-viewport source-target screenshot pairs/overlay/diff, computed geometry/fonts, controlled animation timelines/reduced motion, complete runtime interactions, console/network/asset proof and second browser engine remain required. Opera accessibility-tree work is structural evidence only, not pixel acceptance.
+`PIXEL_PASS=false`. The repository currently does not contain `specs/acceptance.json` or `specs/behaviors.json`; this was rechecked at resume and both paths return 404. Formal frozen six-viewport source-target screenshot pairs/overlay/diff, computed geometry/fonts, controlled animation timelines/reduced motion, complete runtime interactions, console/network/asset proof and second browser engine remain required. Opera accessibility-tree work is structural evidence only, not pixel acceptance.
