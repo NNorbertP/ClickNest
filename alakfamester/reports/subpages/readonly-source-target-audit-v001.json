@@ -1,0 +1,75 @@
+{
+  "package": "readonly-source-target-audit-v001",
+  "date": "2026-09-12",
+  "method": "Opera accessibility-tree comparison of live original and current WordPress target; no WordPress writes in this audit lane",
+  "quota_guard": "The last exact WPVibe counter after content work was 292/300 used, 8 remaining. Routine WPVibe work was stopped because this is below the project's mandatory 10-call recovery reserve.",
+  "findings": {
+    "page260_faq": {
+      "good": "All 17 FAQ disclosure questions exposed by the source are also exposed by the target in the same topic groups.",
+      "open": [
+        "Source hero exposes illustration 'Jelölt formatanulmány – ahol a kérdések felmerülnek'; target image tree lacks it.",
+        "Source exposes a 'Témakörök' heading/navigation block; target heading tree does not."
+      ],
+      "source_images": 3,
+      "target_images": 1,
+      "image_note": "One of the source-only images is the ClickNest reference-footer credit; the meaningful page-content difference is the missing hero illustration."
+    },
+    "page262_fruit": {
+      "good": "The main technical content headings, taxonomy cards, four FAQ controls, CTA and native review block are present on the target.",
+      "open": [
+        "Source hero exposes illustration 'Gyümölcsfa nyitott vázkoronával'; target image tree lacks it.",
+        "Source section title 'Mikor történik a metszés?' exists only as static text on the target, not as a heading.",
+        "Source FAQ wording is 'Metszhető a fa télen, fagyban?'; target currently says 'Metszhető ősszel a fám, fagynál?'."
+      ],
+      "source_images": 3,
+      "target_images": 1,
+      "image_note": "One source-only image is the ClickNest reference-footer credit; the meaningful page-content difference is the missing hero illustration."
+    },
+    "page270_about": {
+      "good": "Core expertise sections, work method, three before/after project headings and CTA remain present.",
+      "open": [
+        "Source hero exposes illustration 'A formanevelés három fázisa'; target image tree lacks it.",
+        "Source exposes a separate 'Biró János munka közben' image; target lacks that portrait/work image while retaining the carousel image 'Biró János a munkájában, 1. kép'.",
+        "Timeline item titles are static text on target rather than source-equivalent headings: Gyermekkori kezdet; Szakmai képzés és első évek; Évtizedes kertészeti gyakorlat; Specializáció: alakfa és niwaki.",
+        "Source heading 'Miért lettem kertész?' is absent from the target heading and text audit and requires a content check/rebuild."
+      ],
+      "source_images": 11,
+      "target_images": 8,
+      "image_note": "The third source-only image is the ClickNest reference-footer credit; two meaningful media gaps remain on the page."
+    },
+    "page266_contact": {
+      "good": "Hero/title, direct contact data, request form, trip-fee section, urgency block and operating-area section are present. The four source process-step titles are present as static target text.",
+      "open": [
+        "Source hero exposes illustration 'Nyitott kertkapu egy megformált növény mellett'; target has no page-content image in the accessibility tree.",
+        "Source heading 'Elérhetőségek' and the four process-step titles are semantic headings in source but not in target; this is a structure/accessibility parity issue, not missing visible text."
+      ],
+      "source_images": 2,
+      "target_images": 0,
+      "image_note": "One source image is the ClickNest reference-footer credit; the meaningful page-content gap is the missing hero illustration."
+    },
+    "page256_biological_protection": {
+      "good": "Source hero illustration and native review image are present on target; target differs from source image count only by the source ClickNest footer credit."
+    },
+    "page258_gallery": {
+      "open": [
+        "Target still lacks source hero illustration 'Formakatalógus – négy alakfa-sziluett'.",
+        "Target still lacks source Ellwoodi slide 'A többgömbös Ellwoodi niwaki, másik nézet'; exact source file 175725917368bda5a5b1ae6_370X354.webp currently returns 404 to WordPress upload-media, so do not fake or duplicate it."
+      ]
+    },
+    "page272_hedge": {
+      "open": [
+        "Content gaps were repaired in hedge-content-parity-v002; remaining meaningful image gap is the source hero illustration 'Nyírt sövénysáv díszes véggel'."
+      ]
+    },
+    "page264_old_trees": {
+      "open": [
+        "Content gaps were repaired in oldtrees-content-parity-v002; remaining hero image gap is 'Idős fa megtartott, alátámasztott vezérággal'.",
+        "Source has a full inline request form at #ajanlatkeres; target still routes out to the shared contact form and needs a structural parity decision/package."
+      ]
+    }
+  },
+  "acceptance": {
+    "pixel_pass": false,
+    "reason": "Opera accessibility inspection is useful structural evidence but is not the required screenshot-pair/overlay/difference pipeline. Screenshot capture is still unavailable through the connector, and the frozen source acceptance tooling is not present in this session."
+  }
+}
