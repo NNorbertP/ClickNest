@@ -1,0 +1,41 @@
+{
+  "package": "home-header-hero-parity-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "source": "https://alakfamester.clicknest.hu/",
+  "wpvibe_account": "ncsnorbert+20260912-3@gmail.com",
+  "quota_checkpoint": {"used": 67, "limit": 300, "remaining": 233, "reserved": 10},
+  "rules": ["D02", "D03", "D04", "D06", "D07", "D09", "D11", "D18"],
+  "rollback_before": {
+    "header20": {"bytes": 5866, "sha256": "2ec455eb238808906826dae16460334023632819f08864ef5c66ea77adaba2dd"},
+    "page56": {"chars": 238662, "bytes": 240555, "sha256": "3df6d7f02b25688a551223e4af57e9a239b3dc0f032326967e3790268984209f"},
+    "additional_css_post8": {"bytes": 262646, "sha256": "bcf0d595f5dd4573298ea06addac55751834f4220148970034cdee0d9c419d01"}
+  },
+  "current": {
+    "header20": {"chars": 5855, "bytes": 5855, "sha256": "e8293a7b0d7c7910af1e5eeb8dd7613677d65b08e315d4fe12cbb59ade4fcafb"},
+    "page56": {"chars": 241842, "bytes": 243740, "sha256": "259179abc73584e2a030d717cdc1784777910b02d4aaf09b71ca0ca9b88f18ec"},
+    "additional_css_post8": {"chars": 282900, "bytes": 283610, "sha256": "2112242c3464ac407fd537365330ce0c56e2e3f0b1a86a0a313ed06d58cda287"}
+  },
+  "changes": [
+    "Header subtitle changed from Biró János · topiarista to source text Biró János.",
+    "Code Snippets ID 7 adds guarded source-style desktop dropdowns, mobile drawer, scroll state, brand keyboard behavior and fixed quick-contact dock; marker af-header-nav-parity-v001.",
+    "Additional CSS home-header-parity-v001 and home-header-hero-source-exact-v002 restore source desktop/tablet/mobile header geometry, logo plate, navigation, dock and homepage hero geometry.",
+    "Homepage hero gained editable native Elementor image-carousel af1000a2 with the proven 21 existing media attachments 173–193, label Saját munkák and source 4:3 contain behavior.",
+    "Additional CSS home-hero-proof-v001 styles the source proof carousel without duplicating assets.",
+    "Removed the obsolete benefits-species-v001 visual-fix glyph override; exact D16 SVG-mask rules remain present."
+  ],
+  "verification": {
+    "mobile_nav_rendered": true,
+    "dock_rendered": true,
+    "hero_proof_rendered": true,
+    "hero_proof_image_count": 21,
+    "benefit_glyph_override_refs": 0,
+    "exact_benefit_mask_rule_present": true,
+    "additional_css_fresh_full_field_read_before_writes": true
+  },
+  "open": [
+    "Continue full homepage section-by-section source/target audit. Next proven major mismatch is #elotte-utana: source has three interactive before/after range sliders; target currently needs behavior/DOM parity audit and repair.",
+    "Desktop/tablet/mobile full-page pixel/geometry acceptance remains open until later viewport passes."
+  ],
+  "pixel_pass": false
+}
