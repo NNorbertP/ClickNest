@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-12",
+  "scope": "fresh live source-target media parity recheck for Gallery page258 and Hedge page272",
+  "decision": "D17",
+  "writes": 0,
+  "gallery": {
+    "source_url": "https://alakfamester.clicknest.hu/galeria.html",
+    "target_url": "https://alakfamester-wp.clicknest.hu/galeria/",
+    "source_ax_images_total": 61,
+    "source_global_footer_reference_images": 1,
+    "source_main_images": 60,
+    "target_ax_images_total": 60,
+    "target_main_images": 60,
+    "main_count_pass": true,
+    "eael_gallery_documented_items": 44,
+    "target_page_bytes": 72916,
+    "target_page_sha256": "1494ff3cce05b92be9a4e962c67bbb4bd903c3ae2829c7e46914c09d2065d656",
+    "open_source_asset": {
+      "alt": "A többgömbös Ellwoodi niwaki, másik nézet",
+      "url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+      "direct_browser_result": "404 / This Page Does Not Exist",
+      "target_current_related_image": "attachment 150, alt A kialakított forma",
+      "action": "do not invent or upload a substitute; source bytes unavailable"
+    }
+  },
+  "hedge": {
+    "source_url": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+    "target_url": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+    "source_ax_images_total": 32,
+    "source_global_footer_reference_images": 1,
+    "source_main_images": 31,
+    "target_ax_images_total": 31,
+    "target_main_images": 31,
+    "main_count_pass": true,
+    "eael_gallery_documented_items": 28,
+    "proof_last_asset_present_in_saved_data": "soveny-21.webp",
+    "proof_active_slide_difference": "source/target AX observed different current carousel slide; treated as timing state, not missing media",
+    "target_page_bytes": 53311,
+    "target_page_sha256": "4c80d1108004fa133341da566e60adcda1b93c1f9ba5e3d110ff4cfdee4006e5"
+  },
+  "conclusion": "The large media-count gaps recorded in site-finalization-20260911.md are stale after the D17 migrations. No duplicate uploads or structural writes are justified by the fresh counts.",
+  "pixel_pass": false,
+  "pixel_pass_reason": "controlled frozen-viewport screenshot/overlay/diff remains unavailable"
+}
