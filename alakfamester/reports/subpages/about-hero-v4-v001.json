@@ -1,0 +1,38 @@
+{
+  "package": "about-hero-v4-v001",
+  "date": "2026-09-12",
+  "page_id": 270,
+  "pre_sha256": "143e4f5e323db2898bfa7e1a367b1e74710de1e046046656502be7e39d83911f",
+  "post_sha256": "bf89d384396db61cc9ff85c78d3a5fb7c25c80d94f3ab9a440efbf7f7f431b6b",
+  "post_chars": 38701,
+  "post_bytes": 38701,
+  "save_route": "/wpvibe/v1/elementor/save-page",
+  "page_template": "elementor_header_footer",
+  "widget": {
+    "container_id": "af2d0041",
+    "id": "af2d004c",
+    "widgetType": "af-hero-art",
+    "art": "rolam",
+    "accessible_title": "A formanevelés három fázisa",
+    "accessible_description": "Ugyanaz a növény három érettségi állapotban, balról jobbra: első formázás, kialakuló váz, kész alakfa.",
+    "scroll_mode": "hero"
+  },
+  "d18_inventory": {
+    "atomic_legacy_css_classes_found": 0,
+    "new_global_class_bridges_required": false,
+    "note": "Fresh page270 tree had no Atomic e-flexbox _css_classes values. Existing typed review classes were preserved."
+  },
+  "checks": {
+    "save_warnings_empty": true,
+    "frontend_widget_present": true,
+    "frontend_svg_title_desc_exact": true,
+    "logged_out_accessibility_image_matches_source": true,
+    "existing_content_ids_preserved": true,
+    "smtp_or_external_submission": false,
+    "pixel_pass": false
+  },
+  "open": [
+    "Separate source portrait 'Biró János munka közben' still lacks a proven frozen/local asset; known live portrait URL must not be retried.",
+    "Formal pixel/geometry/animation acceptance remains open because repository acceptance/behavior specs are absent."
+  ]
+}
