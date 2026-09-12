@@ -1,0 +1,38 @@
+{
+  "package": "home-specialist-health-references-source-parity-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "source": "https://alakfamester.clicknest.hu/",
+  "rules": ["D02", "D03", "D06", "D07", "D09", "D11", "D18"],
+  "preflight": {
+    "page56": {"bytes": 246583, "chars": 244681, "sha256": "b3188295a2d5acfc939bf26b7d3f9163808163bb71cda5923449a7feb4f49c1d"},
+    "additional_css_post8": {"bytes": 358191, "chars": 357466, "sha256": "acac06ce3aeba0a2b62dfd2b9c886e0a80b4043ff6e56ece73cd6f3e03d1877a"}
+  },
+  "changes": [
+    "Preserved the existing editable Elementor V4 tree and stable IDs; only three unique visible arrow-glyph strings in _elementor_data were normalized to source copy.",
+    "Health CTA text is now exact source text: Biológiai védelem; reference CTA texts are Megnyitom and Megnézem. Graphical arrows are supplied by scoped source-parity CSS rather than literal glyphs.",
+    "Added one scoped Hello Additional CSS package, marker af-project:home-specialist-health-references-v001, after a fresh full post8 read.",
+    "Specialist section now follows source typography, organic outlined 2x2 card treatment and the four semantic source icon roles. The empty portrait slot is intentionally collapsed because the source portrait asset is unavailable; no substitute was invented.",
+    "Health section now follows the source reverse two-column layout, forest health card, bronze shield badge, checklist, source callout and responsive collapse.",
+    "References now follows the source split heading, two organic white route cards, gallery/play badges, graphical arrows, hover/focus treatment and responsive collapse.",
+    "Selector readback found the actual saved Specialist, Health and References IDs; corrective DOM bridge rules were appended inside the same project block before closeout."
+  ],
+  "verification": {
+    "css_marker_count": 1,
+    "specialist_dom_reread": true,
+    "health_dom_reread": true,
+    "references_dom_reread": true,
+    "source_text_preserved": true,
+    "source_links_mapped_to_canonical_wp": true,
+    "invented_portrait_asset": false,
+    "page56_after": {"bytes": 246571, "chars": 244675, "sha256": "6ed7a694e76a6bbc8e0b9cd6cda702c5083e60914aba151706da01a608161e45"},
+    "additional_css_post8_after": {"bytes": 388490, "chars": 387763, "sha256": "815040d1c46b551b929a89b0746553dfafc012bf2596ad7f2d809a548200014a"},
+    "quota_after": {"used": 267, "limit": 300, "remaining": 33, "reserved": 10}
+  },
+  "open": [
+    "Source portrait biro-janos-portre.webp remains unavailable/404 and no proven target substitute exists.",
+    "Desktop/tablet/mobile screenshot geometry acceptance remains open; PIXEL_PASS remains false."
+  ],
+  "status": "DATA_AND_CSS_PARITY_PASS_VISUAL_QA_OPEN",
+  "pixel_pass": false
+}
