@@ -1,0 +1,71 @@
+{
+  "package": "final-structural-audit-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "quota_checkpoint": {"used": 278, "limit": 300, "remaining": 22, "reserved": 10, "planable": 12},
+  "environment": {
+    "wp": "7.1",
+    "php": "8.3.33",
+    "wpvibe": "1.16.4",
+    "theme": "hello-elementor 3.5.1",
+    "page_on_front": 56,
+    "show_on_front": "page",
+    "page_for_posts": 0,
+    "siteurl": "https://alakfamester-wp.clicknest.hu",
+    "home": "https://alakfamester-wp.clicknest.hu"
+  },
+  "structure": {
+    "canonical_pages": [56,256,258,260,262,264,266,268,270,272],
+    "all_published": true,
+    "all_page_templates": "elementor_header_footer",
+    "published_elementskit_templates": {"header": 20, "footer": 21, "duplicates_found": false},
+    "source_host_refs_in_elementor_data": 0,
+    "dot_html_refs_in_elementor_data": 0,
+    "stale_fooldal_contact_refs": 0,
+    "custom_reviews_widget_refs": 0,
+    "hero_art_widget_refs": {"56":1,"256":1,"258":1,"260":1,"262":1,"264":1,"266":1,"268":1,"270":1,"272":1},
+    "atomic_review_tabs": {
+      "56":"3 headers + 3 panels",
+      "256":"3 headers + 3 panels",
+      "258":"3 headers + 3 panels",
+      "260":"3 headers + 3 panels",
+      "262":"3 headers + 3 panels",
+      "264":"3 headers + 3 panels",
+      "266":"none by design",
+      "268":"3 headers + 3 panels",
+      "270":"3 headers + 3 panels",
+      "272":"3 headers + 3 panels"
+    },
+    "metform_widget_presence": {"56":1,"256":0,"258":1,"260":0,"262":0,"264":1,"266":1,"268":0,"270":0,"272":1},
+    "reference_videos_youtube_refs": 7
+  },
+  "verified_fixes_in_this_audit_cycle": [
+    "D09 contact CTA remap to /kapcsolat/#ajanlatkeres on affected pages and global templates",
+    "footer location link remapped to /kapcsolat/ without the form anchor",
+    "page256 biological hero converted from legacy inline-SVG text-editor to af-hero-art while preserving element ID and layout class"
+  ],
+  "page256_after": {"sha256":"b480423f4a29331789541b3a1ded5ec1e681dfd773bb205a5c09e4d4d1dbf253","chars":34338,"bytes":34725},
+  "page268_runtime_structure": {
+    "hero_root": "af-sub-videos-hero",
+    "copy_class": "af-layout-hero-copy",
+    "art_class": "af-layout-hero-art",
+    "project_widget": "af-hero-art",
+    "variant_accessible_title": "Alakfa a kamera keresőjében",
+    "cta_featured": "#af-video-featured",
+    "cta_gallery": "/galeria/",
+    "offer_cta": "/kapcsolat/#ajanlatkeres"
+  },
+  "no_write_needed": [
+    "Remaining /fooldal/#... links correspond to the canonical Főoldal page/anchors rather than stale contact routing; /fooldal/ is the current Yoast canonical for page56 even when requested at root.",
+    "No Additional CSS change was justified by this structural audit."
+  ],
+  "open_blockers": [
+    "Opera Browser Connector disconnected during the final cycle, so fresh logged-out source/target screenshots and the specific page256 editor reopen cannot be completed now.",
+    "Formal specs/acceptance.json and specs/behaviors.json are absent from the exposed repository state, so the frozen six-viewport automated acceptance cycle cannot be run from the documented files.",
+    "Source portrait for page270 remains 404 and has no proven substitute.",
+    "Gallery Ellwoodi source asset remains 404 and has no proven substitute.",
+    "SMTP/delivery and real MetForm entry submission are intentionally deferred to prompt 3."
+  ],
+  "pixel_pass": false,
+  "remote_write_status": "stopped after structural fixes; reserve preserved"
+}
