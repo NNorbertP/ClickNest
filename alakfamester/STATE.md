@@ -1,16 +1,15 @@
 # STATE — Alakfa mester
 
-**Legfrissebb folytatási pont — 2026-09-12 09:00 UTC**
+**Legfrissebb folytatási pont — 2026-09-12 09:08 UTC**
 
-Aktív WPVibe-fiók: **`clicknest001@gmail.com`**. Cél: `https://alakfamester-wp.clicknest.hu/`. A friss szolgáltatói számláló **101/300 használt, 199 szabad**; a D11 szerinti **10 hívásos lezárási/helyreállítási tartalék kötelező**, ezért 189 hívás tervezhető a tartalék fölött. WordPress 7.1, PHP 8.3.33, WPVibe 1.16.4, aktív téma **Hello Elementor 3.5.1** (`hello-elementor`), élő admin kapcsolat rendben.
+Aktív WPVibe-fiók: **`clicknest001@gmail.com`**. Cél: `https://alakfamester-wp.clicknest.hu/`. A friss szolgáltatói számláló **109/300 használt, 191 szabad**; a D11 szerinti **10 hívásos lezárási/helyreállítási tartalék kötelező**, ezért 181 hívás tervezhető a tartalék fölött. WordPress 7.1, PHP 8.3.33, WPVibe 1.16.4, aktív téma **Hello Elementor 3.5.1** (`hello-elementor`), élő admin kapcsolat rendben.
 
 ## Tényleges élő célállapot
 
 - statikus kezdőlap: `show_on_front=page`, `page_on_front=56`, `page_for_posts=0`;
 - kanonikus aloldalak: 256 `biologiai-vedelem`, 258 `galeria`, 260 `gyakran-ismetelt-kerdesek`, 262 `gyumolcsfak-metszese-es-vedelme`, 264 `idos-fak-megmentese-szolgaltatas`, 266 `kapcsolat`, 268 `referencia-videok`, 270 `rolam`, 272 `soveny-specialista`;
-- megőrzendő erőforrások: page12, ElementsKit header20/footer21, MetForm33, Hello Additional CSS post8;
-- aktív pluginok a friss leltár szerint: `af-project` 0.2.0, Elementor 4.2.4, ElementsKit Lite 4.0.4, Head & Footer Code 1.5.9, MetForm 4.3.0, UpdraftPlus 1.26.7, WPVibe 1.16.4, Yoast 28.4; **LiteSpeed Cache 7.9.1 inaktív**;
-- új konkurens galéria-/carousel-addon nem szükséges.
+- megőrzendő: page12, ElementsKit header20/footer21, MetForm33, Hello Additional CSS post8;
+- friss pluginleltár: `af-project` 0.2.0, Elementor 4.2.4, ElementsKit Lite 4.0.4, Head & Footer Code 1.5.9, MetForm 4.3.0, UpdraftPlus 1.26.7, WPVibe 1.16.4, Yoast 28.4 aktív; **LiteSpeed Cache 7.9.1 inaktív**.
 
 ## Kötelező határok
 
@@ -18,60 +17,60 @@ D03: V4 Atomic általános szerkezet, dokumentált legacy összetett widget-hat�
 
 ## WP-20260912-A1 — lezárva
 
-Három bizonyított helper-hiba célzottan javítva: page270 `af-s-rolam-9` paper→sage, page270 `af-s-rolam-11` sage→paper, page272 `af-s-soveny-specialista-8` stone→sage. Mindhárom egyszeres `content/edit` csere volt; végső vizuális QA-ban újramérendő.
+Helper háttérjavítások: page270 `af-s-rolam-9` paper→sage, page270 `af-s-rolam-11` sage→paper, page272 `af-s-soveny-specialista-8` stone→sage. Végső vizuális QA-ban újramérendők.
 
 ## WP-20260912-B — page258 galéria média-/DOM-paritás frontend-live
 
-A fagyasztott forrás helyes renderelt készlete: **36 működő kiemelt projektkép + 44 további galériakép**; a statikus HTML három 1757… hivatkozása a forráson is 404 volt, az eredeti JS ezeket eltávolította.
+A forrás helyes renderelt készlete **36 működő kiemelt projektkép + 44 további galériakép**; a statikus HTML három 1757… hivatkozása a forráson is 404 volt. Page258 `_elementor_data` JSON-valid, 57 899 byte, a teljes rekonstruált projektstruktúra + 44 masonry elem bent van, a forrás-404-ek nincsenek. A natív Elementor dokumentum-újramentés sikeres. A `.elementor-element-af270007` frontend-visszaolvasás ténylegesen rendereli az új `#kiemelt-referenciak` blokkot, BA paneleket és manual carouseleket. A korábbi `op_dd3ae07c6db44c60` védett cache-törlés már nem szükséges; nem szabad újrapróbálni.
 
-A page258 `_elementor_data` JSON-valid, 57 899 byte; a teljes rekonstruált kiemelt projektstruktúra, a 44 masonry elem és a rejtett régi kontrollblokk jelen van, a három forrás-404 nincs beépítve. A korábbi teljes `save-page` WAF 403-mal elbukott és nem landolt; a tartalom kis `content/edit` csomagokban került fel. A natív Elementor `POST /elementor/v1/documents/258/media/import` dokumentum-újramentés sikeres (`document_saved: true`). Az Elementor element-cache base64-dekódolva már az új `ref-grid` és `af-gallery-legacy-hidden` állapotot tartalmazza. A stabil `.elementor-element-af270007` frontend-visszaolvasás **ténylegesen rendereli** az új `#kiemelt-referenciak` blokkot, before-after paneleket, manual carouseleket és a teljes új projektkártya-DOM-ot. A korábbi `.ref-grid` közvetlen selector no-match a WPVibe selector viselkedésének korlátja volt, nem hiányzó frontend tartalom.
-
-A védett `_elementor_element_cache` közvetlen törlésére korábban létrejött `op_dd3ae07c6db44c60` approval függőben maradt, de **a feladat folytatásához már nem szükséges**; nem szabad újrapróbálni vagy nyers SQL-lel megkerülni.
-
-Nyitott page258: source-viselkedési JS (before-after, manual carousel, lightbox, masonry), reduced-motion és interakcióteszt, vizuális/geometriai screenshot QA, Elementor editor reopen.
+Nyitott page258: BA/manual-carousel/lightbox/masonry közvetlen műveleti QA, reduced-motion, exact screenshot/geometria, Elementor editor reopen.
 
 ## WP-20260912-C — page272 sövény médiaforrás-paritás frontend-live
 
-A forrás médiakészlete teljesen helyreállt, új médiafeltöltés nélkül, a már meglévő WordPress assetekből:
+Hero proof: **21 kép** `soveny-1.webp`…`soveny-21.webp`, stabil új widget **`af2e004d`**, 21 slide + 21 dot. Referencia: **28 masonry elem** a meglévő `af2e004a` widgetben. A régi ismétlődő képi blokkok visszaállítható kontrollként megmaradtak, célzottan rejtve. Mentés előtti validáció és natív Elementor újramentés PASS. Frontend DOM-ban mind a 21 hero proof és 28 referenciaelem ténylegesen jelen van.
 
-- hero proof: **21 kép** (`soveny-1.webp` … `soveny-21.webp`), új stabil widget ID **`af2e004d`**, class `af-art af-hedge-proof-host`, 21 carousel slide + 21 dot;
-- referencia: **28 masonry elem** = 2 babérmeggy + 5 magas leylandi + 21 `soveny-*`; a meglévő `af2e004a` szerkeszthető text-editor widgetben;
-- a korábbi 6 külön image widget és 15 képes legacy grid megmaradt visszaállítható kontrolladatként, de célzott rejtési osztállyal/stabil elem-ID-kre kötött CSS-sel nem jelenik meg;
-- reviews komponens érintetlen.
+A fresh Opera target tabon a proof auto-carousel valódi böngészős működése igazolt: két egymást követő accessibility tree lekérésben az aktív kép **5. → 6.** lett, tehát a 4000 ms automatikus léptetés fut. A proof-kártya a hero jobb oldali oszlopában vizuálisan megjelent; képbetöltés friss navigáció után megtörtént. Nyitott: masonry konkrét oszlopgeometria, reduced-motion, exact source-target vizuális mérés, editor reopen.
 
-Mentés előtti validáció: page272 JSON-valid, 29 057 byte, `af2e004d` pontosan egyszer, 21 `carousel__slide`, 28 `masonry__item`, `af-hedge-legacy-hidden` egyszer, `af-project:hedge-media-v001:start` CSS marker egyszer. A natív Elementor `POST /elementor/v1/documents/272/media/import` újramentés sikeres (`document_saved: true`). Frontend visszaolvasás:
+## WP-20260912-D — közös forrás-viselkedési JS telepítve / részben QA-zva
 
-- `.elementor-element-af2e004d` ténylegesen rendereli mind a 21 proof képet és 21 navigációs pontot;
-- `.elementor-element-af2e004a` ténylegesen rendereli mind a 28 referencia masonry elemet és a rejtett legacy kontrollblokkot.
+Head & Footer Code 1.5.9 pontos sémája a plugin saját forrásából igazolva: site-wide tulajdonos **`auhfc_settings_sitewide`** (`head/body/footer`, prioritások, shortcode flag-ek). A telepítés előtt ez az option nem létezett, tehát nem volt idegen HFC site-wide kód.
 
-Hello Additional CSS post8 a hedge-media patch után **254 457 byte**; `af-project:hedge-media-v001:start` pontosan egyszer. A már meglévő globális source `.carousel`, `.masonry` és before-after CSS újrahasznált, nem duplikált. A proof-host külön target-geometriai adaptert kapott a meglévő `.af-hero > .af-art` jobb oldali oszlop-szerződéshez.
+A közös target-adaptált source interaction csomag GitHub mainen: `build/source-interactions-v001.js`, commit `6710e707bbe4e4272ce6356c527c8511521de061`. Helyi validáció: `node --check` PASS, 9 516 byte, SHA256 `c545a177861d1e811041b3444bda5a587de34aa32edee4060936514928fe1e66`.
 
-Nyitott page272: auto-carousel és masonry JS tényleges futása/reduced motion; exact source-target geometria és screenshot QA; Elementor editor reopen.
+Tulajdonos: Head & Footer Code site-wide `footer`, marker **`af-source-interactions-v001`**. A rövid probe előbb sikeresen felkerült, majd véglegesen lecserélve. Friss adatellenőrzés az `auhfc_settings_sitewide` optionon:
 
-## WP-20260912-D — aktív következő csomag: közös forrás-viselkedési JS
+- option méret 9 790 byte;
+- final marker = 1;
+- probe marker = 0;
+- `__AF_SOURCE_INTERACTIONS_V001__` guard jelen;
+- autoplay `setInterval` jelen;
+- Elementor lifecycle `MutationObserver` jelen.
 
-A fagyasztott `script.js` viselkedési szerződései visszaolvasva. Egyetlen névtérbe zárt közös tulajdonos szükséges, nem oldalpéldányonkénti script:
+A script egy tulajdonosból inicializálja: `.js-ba`, `.js-carousel`, `.js-zoom`, `.masonry`; auto carousel 4000 ms; 600 ms vizuális transitiont a meglévő source CSS adja; nyíl/pont/billentyű/swipe, pause, reduced-motion no-autoplay, broken slide removal, lightbox, shortest-column masonry és 120 ms resize schedule. Elementor DOM-rerenderhez idempotens MutationObserver van.
 
-- `.js-ba-range` → before-after `--ba-pos` frissítés;
-- `.js-carousel` → auto/manual carousel, 600 ms CSS transition, auto mód 4000 ms, nyíl/pont/billentyű/swipe, hover/focus pause, reduced-motion esetén nincs autoplay;
-- `.js-zoom` → lightbox;
-- `.masonry.js-masonry` → forrás szerinti oszlopképzés/átrendezés és resize kezelés.
+Böngészős PASS jelenleg csak az **auto-carousel tényleges futására** van. BA/manual/lightbox/masonry interaktív működést közvetlen művelettel még igazolni kell; ezeket nem szabad PASS-nak nevezni.
 
-Az AGENTS szerint összetett saját JS elsődleges helye a projektplugin; dokumentumszintű kódhoz a Head & Footer Code engedélyezett. Jelenleg Head & Footer Code 1.5.9 aktív. `auhfc_settings` opció még **nem létezik**, DB-ben csak `auhfc_db_ver` található, ezért nincs meglévő globális idegen kód, amit felül lehetne írni. Írás előtt a plugin 1.5.9 pontos opciósémáját saját forrásból igazolni kell; találgatott `auhfc_settings` struktúra nem menthető.
+## WP-20260912-E — aktív következő csomag: page270 + page264 médiaaudit
 
-## További sorrend
+Munkalistából következő független építési feladat: a `Rólam` és `Idős fák megmentése` oldalak forrásképeinek teljes paritása. A következő távoli írás előtt kötelező:
 
-1. közös source JS tulajdonos lezárása + page258/page272 behavior QA;
-2. page270 / page264 teljes médiaaudit és szükséges pótlás;
-3. page268 featured videó szerkezeti/geometriai javítása;
-4. source↔target desktop/mobile vizuális QA az exact acceptance viewportokon, screenshot/overlay/diff/overflow;
-5. kritikus Elementor editor reopen/editability/unsaved-change;
-6. csak teljes bizonyíték után `PIXEL_PASS`, majd 3. prompt átadási mód.
+1. visszaolvasni `specs/pages/rolam.json`, `specs/pages/idos-fak-megmentese-szolgaltatas.json` és szükséges media/behavior szerződéseket;
+2. összevontan felmérni a médiatárban meglévő forrásfájlokat és a page270/page264 jelenlegi `_elementor_data` hivatkozásait;
+3. helyben előállítani a hiánylistát; azonos assetet nem tölteni újra;
+4. csak ténylegesen hiányzó, forrásban működő assetet importálni, majd stabil ID-kkel a legkisebb támogatott Elementor-csomagban bekötni;
+5. natív dokumentum-újramentés + DOM/adat visszaellenőrzés.
+
+## Utána
+
+1. page268 featured videó szerkezeti/geometriai korrekció;
+2. source↔target exact acceptance viewport QA: screenshot, overlay, diff, kulcsgeometria, overflow, viselkedések;
+3. kritikus Elementor editor reopen/editability/unsaved-change;
+4. csak teljes bizonyíték után `PIXEL_PASS`, majd 3. prompt átadási mód.
 
 ## Kapacitás
 
-Friss keret: **101/300 használt, 199 szabad**; D11 tartalék után 189 tervezhető. Következő nagy csomag lezárásakor a szolgáltatói számlálót újra közvetlenül le kell kérni. A tényleges számláló elsődleges minden becsléssel szemben.
+Friss keret: **109/300 használt, 191 szabad**; D11 tartalék után 181 tervezhető. A tényleges szolgáltatói számláló elsődleges minden becsléssel szemben.
 
 ## Hivatkozások
 
-`AGENTS.md`; `specs/decisions.md`; `specs/acceptance.json`; `specs/behaviors.json`; `specs/pages/galeria.json`; `specs/pages/soveny-specialista.json`; `reports/site-finalization-20260911.md`; `reports/summary.md`.
+`AGENTS.md`; `specs/decisions.md`; `specs/acceptance.json`; `specs/behaviors.json`; `specs/pages/galeria.json`; `specs/pages/soveny-specialista.json`; `reports/site-finalization-20260911.md`; `reports/summary.md`; `build/source-interactions-v001.js`.
