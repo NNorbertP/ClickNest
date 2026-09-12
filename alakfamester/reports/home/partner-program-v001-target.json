@@ -1,0 +1,43 @@
+{
+  "package": "partner-program-v001-target",
+  "date": "2026-09-12",
+  "page_id": 56,
+  "pre_chars": 238139,
+  "pre_bytes": 240028,
+  "pre_sha256": "3e1f0bd0d5ca4102e1e44d1e4e7bb23433cd4f35c60d8f155088cf9efa7fd1b6",
+  "post_chars": 238662,
+  "post_bytes": 240555,
+  "post_sha256": "3df6d7f02b25688a551223e4af57e9a239b3dc0f032326967e3790268984209f",
+  "d18_inventory": {
+    "atomic_e_flexbox_legacy_css_classes": 0,
+    "only_page_css_classes_match": "af-faq-toggle on legacy Elementor Toggle af230005",
+    "new_global_class_bridges_required": false
+  },
+  "existing_structure": {
+    "section": "af250001 / #af-partner-section",
+    "container": "af250002 / #af-partner-container",
+    "toggle": "af250003 / af-partner-toggle"
+  },
+  "changes": [
+    "Inserted Atomic h2 af250004 as the first child of af250002 with typed g-af-type-heading and id af-partner-title.",
+    "Restored source heading: Ingatlanértékesítési partnerprogram.",
+    "Converted the existing toggle body from newline-only text into the source semantic two-paragraph structure.",
+    "Restored strong Kinek szól? semantics and a mailto link on kreativ@alakfa-mester.hu."
+  ],
+  "css": {
+    "changed": false,
+    "reason": "The existing Hello Additional CSS already contained dedicated #af-partner-section/#af-partner-container/toggle rules."
+  },
+  "checks": {
+    "frontend_h2_present": true,
+    "toggle_title_exact": "Ingatlanértékesítőknek: partnerprogram",
+    "semantic_paragraphs_present": true,
+    "strong_kinek_szol_present": true,
+    "mailto_present": true,
+    "opera_target_heading_matches_source": true,
+    "elementor_editor_reopened": true,
+    "smtp_or_external_submission": false,
+    "pixel_pass": false
+  },
+  "quota_after_package": "193/300 used; 107 remaining"
+}
