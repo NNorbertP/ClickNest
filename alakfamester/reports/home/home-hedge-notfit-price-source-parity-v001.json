@@ -1,0 +1,50 @@
+{
+  "package": "home-hedge-notfit-price-source-parity-v001",
+  "date": "2026-09-12",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "source": "https://alakfamester.clicknest.hu/index.html",
+  "scope": ["#soveny-formazas", "#mikor-nem", "#arkepzes"],
+  "source_evidence": {
+    "hedge": "Fresh live original DOM reread captured the exact source eyebrow/title/aside/lead, all six hedge shape titles/bodies, two informational cards and source CTA intent. Original styles.css supplied split heading, hedge-shape grid and organic card patterns.",
+    "not_fit": "Fresh target read plus cached live-original accessibility-tree comparison confirmed the existing six cross-list items and four alternative items already match the current original text exactly.",
+    "price": "Fresh target read plus cached live-original accessibility-tree comparison confirmed the existing seven factors and photo-estimate note already match the current original text exactly."
+  },
+  "content_fixes": {
+    "hedge_heading": "Restored source `Sövény-specialista` and `Sövények formázása – kreatív végekkel, átjárókkal`.",
+    "hedge_intro": "Separated the exact source aside from the exact two-sentence lead.",
+    "hedge_shapes": [
+      "Gömbös sövényvég — Lágy, klasszikus forma, ami díszkapuknál és bejáratoknál különösen jól érvényesül.",
+      "Kúp — Karakteres sarok- vagy végpont – pontos arányokkal.",
+      "Figurális vég — Állatfejre vagy szoborszerű formára emlékeztető lezárás – csak adottságtól függően.",
+      "Átjáró / kapu — Boltíves vagy szabályos átjáró, ami kertre vagy másik udvarrészre nyit.",
+      "Hullámos felső vonal — Ritmust ad a hosszú zöld falnak, és oldja a túl merev hatást.",
+      "Ablak / kivágás — Kitekintő vagy fénykapu természetes kerettel – csak stabil, sűrű sövénynél."
+    ],
+    "hedge_info_cards": "Restored exact source titles/bodies/CTA labels `Mitől lesz tartós a forma?` / `Sövény-specialista szolgáltatás` and `Alakfák erős sövényből` / `Sövény galéria`.",
+    "links": "Mapped source hedge CTAs to canonical `/soveny-specialista/` and `/soveny-specialista/#galeria`."
+  },
+  "visual_fixes": {
+    "location": "Hello Elementor Additional CSS, project block only",
+    "main_marker": "af-project:home-hedge-notfit-price-v001",
+    "correction_marker": "af-project:home-hedge-notfit-price-v001-fix",
+    "hedge": "Source-colored sage section, split heading, responsive shape grid, exact source SVG shape drawings on existing editable Atomic symbol hosts, two organic source-style information cards and source-equivalent CTA treatment.",
+    "not_fit": "Source-like asymmetric checklist/card layout with organic X/check leaf marks and responsive single-column collapse.",
+    "price": "Eight-tile responsive source-style stat layout using the seven existing factor cards plus the existing photo-estimate hint as tile eight.",
+    "correction": "A post-write DOM reread exposed three provisional icon selectors and two provisional info-card selectors that did not match the live target IDs. One scoped corrective block now targets `af-hedge-ball-icon`, `af-hedge-figure-icon`, `af-hedge-gate-icon`, `af-hedge-info-structure` and `af-hedge-info-alakfa`; the first source SVG was independently re-encoded and decode-verified before the correction write."
+  },
+  "postflight": {
+    "additional_css_bytes": 358191,
+    "additional_css_chars": 357466,
+    "additional_css_sha256": "acac06ce3aeba0a2b62dfd2b9c886e0a80b4043ff6e56ece73cd6f3e03d1877a",
+    "page56_elementor_data_bytes": 246498,
+    "page56_elementor_data_chars": 244617,
+    "page56_elementor_data_sha256": "7eaa35dd2c18642b110aef067f1b0950c179baf8a318e20bd2e33e304488e00d",
+    "quota_after_closeout_read": "203/300 used; 97 remaining",
+    "rendered_hedge": "Final live target HTML reread proves exact source hedge heading/aside/lead, all six source card texts, both source info-card texts/labels and canonical CTA destinations."
+  },
+  "qa": {
+    "browser_visual": "Not claimed: Opera screenshot endpoint remains disconnected / Allow AI connection required.",
+    "formal_pixel_acceptance": false,
+    "reason": "Actual desktop/tablet/mobile screenshots and interaction playback still require a reconnected visual browser; repository lacks the full frozen acceptance/baseline bundle."
+  }
+}
