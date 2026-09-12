@@ -1,9 +1,9 @@
-# STATE - 2026-09-12, HOMEPAGE VISUAL AUDIT ACTIVE; HEDGE/NOT-FIT/PRICE PACKAGE CLOSED
+# STATE - 2026-09-12, HOMEPAGE VISUAL AUDIT ACTIVE; HEDGE SOURCE CORRECTION V002 CLOSED
 
 ## Current target / quota
 Target: https://alakfamester-wp.clicknest.hu/ ; repo `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
-WPVibe account: `ncsnorbert+20260912-3@gmail.com`; live site connection verified. Latest exact quota after the hedge/not-fit/price closeout: **203/300 used, 97 remaining** in rolling 24 hours. Keep at least 10 for recovery/closeout. No SMTP and no external form/test message.
+WPVibe account: `ncsnorbert+20260912-3@gmail.com`; live site connection verified. Latest exact quota after the hedge source-truth correction: **240/300 used, 60 remaining** in rolling 24 hours. Keep at least 10 for recovery/closeout. No SMTP and no external form/test message.
 
 Environment live: WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; Hello Elementor 3.5.1 active. Preserve page56, page12, ElementsKit header20/footer21, MetForm33, Additional CSS post8 and canonical subpages. Homepage template remains `elementor_header_footer`; `show_on_front=page`, `page_on_front=56`, `page_for_posts=0`.
 
@@ -14,51 +14,37 @@ D02 Hello Elementor + ElementsKit global header/footer. D03 V4 Atomic normal str
 
 ## CLOSED - Homepage header + hero parity v001
 Evidence: `reports/home/home-header-hero-parity-v001.json`.
-
 - header20 subtitle exact `Biró János`;
-- Code Snippets ID 7 (`af-header-nav-parity-v001`) supplies guarded desktop dropdowns, mobile drawer/submenus, scroll state, keyboard brand behavior and fixed quick-contact dock with canonical WP links;
+- Code Snippets ID 7 supplies desktop dropdowns, mobile drawer/submenus, scroll state, keyboard brand behavior and fixed quick-contact dock;
 - source logo attachment 136;
-- Hello Additional CSS `home-header-parity-v001` + `home-header-hero-source-exact-v002`;
 - hero native carousel `af1000a2` / `#af-home-proof-carousel`, source attachments 173–193, arrows+dots, 4000 ms autoplay and pause behavior.
 
-## CLOSED DATA/CSS - Homepage #elotte-utana before/after parity v001
-Evidence: `reports/home/home-before-after-parity-v001.json`, commit `ebd94065222aeeb7de088b2b4d2d5b369c2ed87c`.
+## CLOSED - Homepage #elotte-utana before/after parity v001
+Evidence: `reports/home/home-before-after-parity-v001.json`.
+Existing V4 cards contain editable images 127/128, 165/166, 118/121. Code Snippets ID 8 provides source-style badges/range controls and idempotent lifecycle; CSS `home-before-after-v001` restores 4:3 contain split cards.
 
-Existing V4 cards now contain six editable images (127/128, 165/166, 118/121). Code Snippets ID 8 `AF homepage before-after parity`, marker `af-home-ba-parity-v001`, provides source-style badges, labelled range controls and idempotent lifecycle. Additional CSS `home-before-after-v001` restores 4:3 contain layers, split handle/focus and responsive 3→2→1 grid. Runtime browser verification is still pending because Opera screenshot/runtime connection is unavailable.
+## CLOSED - Homepage #kialakitas + #apolas + #aggodalmak parity v001
+Evidence: `reports/home/home-process-care-concerns-source-parity-v001.json`.
+`#kialakitas`: forest split-heading timeline. `#apolas`: source-like 3→2→1 care grid with six semantic icons and two callouts. `#aggodalmak`: source-like 2→1 organic concern cards.
 
-## CLOSED CSS - Homepage #kialakitas + #apolas + #aggodalmak source parity v001
-Evidence: `reports/home/home-process-care-concerns-source-parity-v001.json`, commit `7602bdf1242be71c49e6d2a095ca784824ae15a7`.
+## CLOSED - Homepage #af-survivor + #formavilag parity v001
+Evidence: `reports/home/home-survivor-forms-source-parity-v001.json`.
+`#af-survivor`: native carousel `af1b0100` / `#af-survivor-carousel`, exact source attachments 130–135/alts and source-like controls. `#formavilag`: 12 editable Atomic cards retain exact source names and exact source SVG drawings; 6→4→3 responsive grid.
 
-- `#kialakitas`: source forest background, split heading, dashed six-step timeline, bronze leaf counters, translucent organic cards;
-- `#apolas`: source 3→2→1 care grid, six semantic SVG-mask icons, organic cards and two callouts;
-- `#aggodalmak`: source 2→1 concerns grid, gradient edge, quoted question treatment, hover/reduced-motion.
+## CLOSED / SUPERSEDED - Hedge / not-fit / price
+Authoritative evidence: `reports/home/home-hedge-notfit-price-source-parity-v002.json`, commit `b290fe40056f508ec1dd82292ac3e7ab75962cfd`. The earlier v001 content claims are superseded.
 
-## CLOSED DATA/CSS - Homepage #af-survivor + #formavilag source parity v001
-Evidence: `reports/home/home-survivor-forms-source-parity-v001.json`, commit `81c9e76921703f6c37739d8173947f197f867f2b`.
+A later full live-source `main` HTML reread exposed that the earlier isolated hedge evidence was stale/misinterpreted. The target was immediately corrected back to the actual current original.
 
-`#af-survivor`: existing Atomic host `af1b000f` contains native image-carousel `af1b0100` / `#af-survivor-carousel`; source attachments 130–135 and exact semantic alts; one slide, arrows+dots, lazyload, 4000 ms autoplay, pause hover/interact, source-like 4:3 contain responsive card.
+`#soveny-formazas` current source truth and target now match:
+- heading `Sövény formára vágás` / `Minőségi sövényformázás – nem csak egyenes vonal`;
+- six cards: Gömbös sövényvég, Kúpos lezárás, Állatfej / figura, Kapu / átjáró, Hullámos felső él, Ablak / kivágás, with exact current source bodies;
+- info cards `Szerkezeti fenntartás a forma alatt` and `A sövényben álló egyedi növényből alakfa is lehet`, exact source bodies/CTA labels;
+- canonical source-intent links: `/soveny-specialista/` and `/galeria/`.
 
-`#formavilag`: all 12 Atomic cards preserved; exact source names and twelve source SVG drawings restored on existing symbol hosts; source 6→4→3 responsive grid; canonical `/galeria/` CTA.
+The hedge CSS package remains useful: source SVG shape drawings, source-like split heading/grid/info-card geometry; selector correction block targets actual Atomic IDs. `#mikor-nem` already matches the live original exactly: four cross-list items + three alternatives. `#arkepzes` already matches the live original exactly: seven factors + photo-estimate note. CSS keeps source-like asymmetric not-fit layout and 4→2 price tile geometry.
 
-## CLOSED DATA/CSS - Homepage #soveny-formazas + #mikor-nem + #arkepzes source parity v001
-Evidence: `reports/home/home-hedge-notfit-price-source-parity-v001.json`, commit `3dbaf203fb721f3e53c8224f86af114070452d98`.
-
-Fresh live original DOM/styles and target DOM were compared before changes.
-
-`#soveny-formazas`:
-- exact source heading restored: `Sövény-specialista` / `Sövények formázása – kreatív végekkel, átjárókkal`;
-- source aside and two-sentence lead restored as separate blocks;
-- all six card texts restored exactly: Gömbös sövényvég, Kúp, Figurális vég, Átjáró / kapu, Hullámos felső vonal, Ablak / kivágás;
-- exact source informational cards restored: `Mitől lesz tartós a forma?` and `Alakfák erős sövényből`, including bodies and CTA labels;
-- source CTA intent mapped canonically to `/soveny-specialista/` and `/soveny-specialista/#galeria`;
-- scoped Additional CSS `home-hedge-notfit-price-v001` restores split heading, sage section, 3→2 hedge shape grid, exact source SVG drawings and source-like info cards;
-- immediate DOM reread exposed provisional selector-name mismatch for three icons and two info cards. Scoped correction block `home-hedge-notfit-price-v001-fix` now targets the actual live IDs (`af-hedge-ball-icon`, `af-hedge-figure-icon`, `af-hedge-gate-icon`, `af-hedge-info-structure`, `af-hedge-info-alakfa`). The first source SVG was independently base64-encoded and decode-verified before the corrective CSS write.
-
-`#mikor-nem`: fresh target read plus cached live-original accessibility comparison proved the current six X-items and four alternatives already match the current original text. CSS restores asymmetric source-style checklist + sage card and responsive collapse.
-
-`#arkepzes`: fresh target read plus cached live-original accessibility comparison proved the current seven factors + photo-estimate note already match the current original text. CSS lays them out as source-style eight stat tiles with responsive 4→2 geometry.
-
-Final live target HTML reread proves exact source hedge text/labels and canonical CTA destinations. Current checkpoint: Additional CSS post8 **357466 chars / 358191 B**, SHA `acac06ce3aeba0a2b62dfd2b9c886e0a80b4043ff6e56ece73cd6f3e03d1877a`; page56 `_elementor_data` **244617 chars / 246498 B**, SHA `7eaa35dd2c18642b110aef067f1b0950c179baf8a318e20bd2e33e304488e00d`.
+Current checkpoint: Additional CSS post8 **357466 chars / 358191 B**, SHA `acac06ce3aeba0a2b62dfd2b9c886e0a80b4043ff6e56ece73cd6f3e03d1877a`; page56 `_elementor_data` **244681 chars / 246583 B**, SHA `b3188295a2d5acfc939bf26b7d3f9163808163bb71cda5923449a7feb4f49c1d`.
 
 ## Previously stable packages
 - MetForm33 source/config parity closed for prompt-2 no-delivery mode; no SMTP/submission.
@@ -71,14 +57,14 @@ Final live target HTML reread proves exact source hedge text/labels and canonica
 - Page56 partner section restored.
 
 ## NEXT MAIN PACKAGE - homepage specialist / health / references
-Before any write reread AGENTS/STATE and D03/D07/D08/D09/D11/D18, exact quota and page56/CSS hashes. Audit live original `#af-specialist-section`, `#af-health-section`, and the current source references section DOM/CSS/assets/links first, then target readback, then fix only measured defects. Preserve existing IDs/media/native V4 structure. Before any Additional CSS write reread the complete post8 field.
+Before any write reread AGENTS/STATE and D03/D07/D08/D09/D11/D18, exact quota and page56/CSS hashes. A full live-source main-document reread has already captured the current original specialist/health/references markup and copy. Compare target readbacks against it; fix only measured defects and preserve native V4 IDs/media. Before any Additional CSS write reread the complete post8 field.
 
-After that continue FAQ / contact / partner, then a final structural/link/content audit. Once Opera reconnects, run actual source–target screenshots and behavior checks at desktop/tablet/mobile widths for every closed package; do not claim page-wide pixel parity before those pass.
+After that continue FAQ / contact / partner, then final structural/link/content audit. Once Opera reconnects, run actual source–target screenshots and behavior checks at desktop/tablet/mobile widths for every closed package; do not claim page-wide pixel parity before those pass.
 
 ## Known external/frozen blockers
-- Page270 source portrait `Biró János munka közben`: source URL 404; no proven substitute.
+- Page270 source portrait `Biró János munka közben`: source URL 404; no proven substitute on that subpage. Homepage original references `kepek/biro-janos-portre.webp`; target availability still must be checked before altering homepage media.
 - Gallery Ellwoodi source asset: source URL 404; no proven substitute.
-- `specs/acceptance.json` and `specs/behaviors.json` are not exposed through the repository connection. Formal frozen automated matrix is unavailable; use live original + documented viewports and record actual measurements.
+- `specs/acceptance.json` and `specs/behaviors.json` are not exposed through the repository connection. Formal frozen automated matrix is unavailable.
 - SMTP/delivery and real MetForm submission are prompt-3 tasks.
 
 ## Acceptance
