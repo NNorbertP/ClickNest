@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "package": "stale-blockers-do-not-reopen-20260915-v002",
+  "date": "2026-09-15",
+  "supersedes_for_planning": "reports/stale-blockers-do-not-reopen-20260914-v001.json",
+  "scope": "Planning/verification only. Zero WordPress writes and no scope override; STATE.md remains authoritative.",
+  "purpose": "Prevent older broad reports, stale connector reads and superseded build plans from reopening work that later evidence closed or reclassified.",
+  "closed_do_not_reopen": [
+    {
+      "item": "page270 Rólam hero illustration missing",
+      "current": "CLOSED by reports/subpages/about-hero-v4-v001.json. Preserve af2d004c hero art/title/description and completed survivor structures."
+    },
+    {
+      "item": "page268 Reference Videos CTA sibling/focus order",
+      "current": "CLOSED by reports/subpages/reference-videos-cta-order-fix-v001.json. Preserve exact IDs, seven video controls and CTA route; editor-reopen/formal runtime proof remains proof-only."
+    },
+    {
+      "item": "page260/page262/page266 hero or V4 class work incomplete",
+      "current": "CLOSED by their later hero/class closeouts. Only formal frozen visual/behavior acceptance remains."
+    },
+    {
+      "item": "page264 old hero/media/problem-chip/comparison/form semantic/content gaps",
+      "current": "CLOSED by current reconciliation and acceptance evidence. Known page264-local implementation candidates are only conditional v006/v007; all other open items are diagnostic/proof-only unless fresh live truth proves a new delta."
+    },
+    {
+      "item": "page272 shared-media/gallery/background/saved legacy semantic gaps",
+      "current": "CLOSED. Preserve 53606-byte accepted baseline facts, 26/26 recovery, 28/28 page-local EAEL gallery, five legacy regions, CTA/contact semantics and D09 links."
+    },
+    {
+      "item": "page272 semantic runtime v002/v003 is current deployment candidate",
+      "current": "STALE. Current only candidate is existing ID36 -> build/hedge-semantic-runtime-v004.php under hedge semantic static QA v007 + live-window v005 native-ARIA/ID/cardinality gates."
+    },
+    {
+      "item": "page272 review labels Otolecz Attila / Rosivall László represent current GitHub source contract",
+      "current": "REJECTED stale/mixed evidence. reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json proves current v004 and its Git history retain Panasonic/Kardos Attila, Otolecz/Andrea and ARKER'S/Lőrincz Balázs. Do not hold or rewrite v004 because of the rejected apparent names; still verify trustworthy rendered tab identity/order and full panel preservation before live write."
+    },
+    {
+      "item": "page256 shared Hello Additional CSS is the current future delivery route",
+      "current": "STALE. Current future scope requires build/bio-page-local-style-carrier-probe-20260914-v001.json first; only after probe PASS may visual v007 be delivered through the existing page-local af260016 carrier. Probe failure cancels that route and does not authorize global CSS fallback."
+    },
+    {
+      "item": "page256 old visual/FAQ/hero/wave/technology-callout packages are current",
+      "current": "STALE/OBSOLETE per reports/subpages/bio-evidence-supersedence-20260915-v003.json. Preserve current visual v007, structural v014, hero v003, accessibility-safe FAQ/CTA v006 and owner-proven review microfix chain only after explicit scope handoff."
+    },
+    {
+      "item": "missing acceptance.json/behaviors.json/tools can be reconstructed from repository history",
+      "current": "REPOSITORY RECOVERY EXHAUSTED by reports/formal-acceptance-artifact-recovery-20260915-v001.json: absent from current main, sync branch, tags and exact-path commit ancestry sampled. Do not recreate by guess and call it the original frozen acceptance system."
+    }
+  ],
+  "still_open_not_stale": [
+    "Active page264 conditional v006/v007 live gate/readback and its proof-only acceptance items.",
+    "Global header homepage/service-child route-current package v010 after explicit global scope handoff.",
+    "Global floating contact dock visual/cascade diagnosis after explicit global scope handoff.",
+    "Page258 exact frozen Ellwoodi WEBP equivalence: same-basename old public JPG is provenance only, not exact proof.",
+    "Page270 portrait: exact bytes unrecovered; first obtain fresh trustworthy reference proof that the portrait is actually required in the current acceptance state.",
+    "Original formal specs/runners or an explicitly authorized replacement acceptance contract/harness.",
+    "Deterministic six-view same-browser DPR/zoom/font/load-state overlay/diff and remaining interaction proofs.",
+    "SMTP/delivery/real form submissions remain excluded."
+  ],
+  "precedence": [
+    "Fresh trustworthy live evidence",
+    "STATE.md for current write scope",
+    "latest specific reconciliation/continuation/supersession/closeout",
+    "prepared gated candidate",
+    "historical broad audit"
+  ],
+  "critical_rules": [
+    "Never replay a solved write merely to refresh proof.",
+    "Any HTTP 429 write is UNKNOWN until exact readback; never blind retry.",
+    "Prepared escaped snippets are not future old_content; structural edits require fresh exact search bytes.",
+    "Tool unavailability or stale browser output is not proof of a site defect and never licenses speculative CSS/JS.",
+    "At most one source and one target Opera tab; no replacement fan-out or reload loop."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "LATEST_DO_NOT_REOPEN_LEDGER_RECONCILED"
+}
