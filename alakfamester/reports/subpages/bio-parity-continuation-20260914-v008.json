@@ -1,0 +1,85 @@
+{
+  "package": "bio-parity-continuation-20260914-v008",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "slug": "biologiai-vedelem",
+  "scope": "Only https://alakfamester-wp.clicknest.hu/biologiai-vedelem/ was modified. Reference remained read-only.",
+  "decision_refs": ["D03", "D07", "D11", "D12", "D18"],
+  "result": "All source-proven safe legacy page256 deltas are fixed. Remaining exact-parity blockers are Atomic/runtime or global UI and were not guessed around.",
+  "applied_page256_changes": {
+    "list_text": "13/13 target-only terminal periods removed across af260007, af260010, af260013",
+    "symptom_table": {
+      "headers": ["TÜNET", "MIT VIZSGÁLOK", "LEHETSÉGES IRÁNY"],
+      "first_column": "four body cells changed to th scope=row"
+    },
+    "named_regions": [
+      "Miért nem ér véget a munka a metszéssel?",
+      "Mit jelent nálam a biológiai, mikrobiológiai megközelítés?",
+      "Mire figyelek a leggyakrabban?",
+      "Mit várhatunk – és mit nem?"
+    ],
+    "final_cta": "Existing mailto anchor preserved; explicit aria-label now exactly ÍRJON BÁTRAN kreativ@alakfa-mester.hu"
+  },
+  "save_method": "Only guarded WPVibe content/search + match-once content/edit on page256 _elementor_data. No full Elementor save, no old snapshot restore, no raw SQL mutation.",
+  "last_successful_full_saved_data_readback": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "writes_after_this_readback": 0
+  },
+  "frontend_ax_verified": {
+    "all_13_list_text_deltas": "PASS",
+    "table_headers": "exact source match",
+    "four_row_headers": "exact source match",
+    "four_legacy_regions": "present with exact source names",
+    "final_cta_accessible_name": "exact source match",
+    "heading_sets": "same 22 heading names; ordering differences remain consistent with DOM/AX flattening and are not a write justification"
+  },
+  "remaining_atomic_runtime_deltas": {
+    "hero_named_region": {
+      "owner": "Atomic e-flexbox root af260001 / inner af260002",
+      "status": "open",
+      "reason": "e-flexbox live schema exposes tag/classes/link/attributes/_cssid; accessible naming requires attributes, but Elementor 4.2.4 Attributes_Transformer is already proven to return null and an isolated page256 pilot stored but did not render aria data"
+    },
+    "faq_outer_named_region": {
+      "status": "open",
+      "reason": "visible FAQ content is legacy, but source region also contains the following CTA; naming only the inner legacy block would create a false partial region. Outer owner is Atomic and has the same attributes blocker"
+    },
+    "review_tablist_name": {
+      "source": "Ügyfélvélemények",
+      "target": null,
+      "status": "open",
+      "reason": "live e-tabs/e-tabs-menu schemas expose no dedicated aria-label control; only attributes, which does not render on Elementor 4.2.4"
+    },
+    "review_tab_names": {
+      "source": [
+        "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+        "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+        "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+      ],
+      "target_prefix_delta": "target accessible names include 01 / 02 / 03",
+      "extra_focusable_target_controls": ["1. vélemény", "2. vélemény", "3. vélemény"],
+      "decision": "Do not remove/hide or rewrite without a proven owner-safe implementation and keyboard/click behavior proof"
+    }
+  },
+  "visual_diagnostic": {
+    "method": "Two-tab Opera source/target screenshots; diagnostic only, no deterministic viewport/DPR/zoom harness",
+    "hero": "Core page256 hero content/art is visually close. Target shows additional top spacing relative to source; no geometry write was made because root settings read was host-throttled before a measured cause could be established.",
+    "global_header": "Reference shows active Szolgáltatások pill treatment while target global header differs; global template is outside this page-only write scope.",
+    "floating_contact_bar": "Reference renders phone/email/button content; target screenshot shows a persistent blank/partially clipped global floating pill. This is a global UI issue outside page256-only write scope.",
+    "pixel_pass": false
+  },
+  "throttling_and_quota": {
+    "latest_exact_account_counter": "183/300 used; 117 remaining",
+    "D11_reserve": 10,
+    "remaining_above_reserve": 107,
+    "blocker": "Target host repeatedly returns HTTP 429 after bursts; final redundant hash read was blocked after three exponential-backoff retries. Account quota is not exhausted."
+  },
+  "next_safe_action": [
+    "When host throttle clears, perform one fresh page256 hash/JSON readback; if it differs from 35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3, reconcile manual drift before any write.",
+    "Do not retry Atomic attributes on Elementor 4.2.4.",
+    "To close the remaining Atomic semantics exactly would require an explicitly accepted page256-scoped runtime implementation (for example a guarded project-plugin/snippet path) because native page content cannot render the required attributes on this Elementor version; this was not deployed under the current page-only/no-plugin-config scope.",
+    "Global header/floating-contact differences require global component work and are not legal under the current page256-only modification scope.",
+    "No SMTP, real form submission or external message was performed."
+  ]
+}
