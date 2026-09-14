@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "package": "bio-responsive-source-contract-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "SOURCE_FROZEN_TARGET_MOBILE_COMPARE_REQUIRED",
+  "source_breakpoints": {
+    "max_1000_reviews": [
+      "review grid becomes one column/three rows: media, body, by",
+      "review media uses 4/3 and mobile height/max-width caps"
+    ],
+    "max_900": [
+      "hero and hero--inner grid stack to one column with 32px gap",
+      "hero copy max-width none; hero sub max46ch; art max500",
+      "grid--2/grid--3/grid--4 and cta-band__grid collapse to one column",
+      "cta-band__actions gets 24px top margin"
+    ],
+    "max_760_reviews": [
+      "review rail stacks one column",
+      "review tab min-height56, bottom borders, active 3px left bronze rule",
+      "inactive tab meta hidden, active meta shown",
+      "review quote width38"
+    ],
+    "max_720": [
+      "root --space-section = clamp(40px,9vw,60px)",
+      "card/route-card/form-panel/cta-band padding = 24px",
+      "hero CTA buttons full width"
+    ],
+    "max_560_reviews": [
+      "review media remains 4/3",
+      "review by gap11",
+      "monogram 40x40 and .9rem"
+    ]
+  },
+  "prepared_safe_mapping": {
+    "file": "build/bio-card-mobile-source-v001.css",
+    "commit": "b81564fc9ab106432130d55816d2a25b23b52f7d",
+    "covers": "24px source card padding for future technology/stress/expectations prepared cards and CTA band variable <=720"
+  },
+  "hold_items": [
+    {
+      "item": "legacy section vertical padding <=720",
+      "source": "clamp(40px,9vw,60px)",
+      "target_prior_base": "clamp(48px,5.6vw,88px)",
+      "why_hold": "Project has prior 390/360 measured height rules plus later fluid-layout overrides; exact winning mobile cascade must be read back and visually compared before changing section spacing."
+    },
+    {
+      "item": "review responsive geometry",
+      "why_hold": "Target native Atomic Tabs has its own responsive cascade. Desktop structure is already close; do not overwrite without fresh <=1000/760 target proof."
+    },
+    {
+      "item": "hero mobile geometry",
+      "why_hold": "Existing target mobile hero accepted/measured rules are intentionally preserved by hero v003, which only starts >900px."
+    }
+  ],
+  "rule": "No prepared desktop parity block may be declared final until 900/760/720/560 behavior is either inherited correctly or covered by an explicit source responsive companion and fresh target QA.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
