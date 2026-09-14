@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "package": "bio-continuation-20260914-v026",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "scope": "Current user conversation continues page256 parity only. Reference read-only. Shared/global WordPress resources remain read-only. No WordPress write in this continuation while WPVibe is disabled and fresh repository STATE.md remains page264-only.",
+  "wordpress_writes_this_round": 0,
+  "remote_state": {
+    "WPVibe": "DISABLED",
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "plus5_site_connection": "UNKNOWN",
+    "plus5_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "STATE_md": "fresh last read remains page264-only",
+    "Opera": "exactly two shared tabs; do not steal/navigate while parallel page264 QA owns them"
+  },
+  "historical_saved_page256_baseline": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "ID35": "active at last verified state",
+    "warning": "Historical only; fresh saved live state is authoritative."
+  },
+  "current_public_read_only_evidence": {
+    "source_document_sha256": "8e1f5502ea4059b809370b9008470fc2a3f05a07424bb4da946127fd40eb19ba",
+    "target_document_sha256": "65b41d8f3859b87880227637b7968180830e7097f6fa8bec6ee5e0f561f7c275",
+    "target_wp_custom_css_sha256": "3b57394b1036d01bbdfc2eadc268c50d530a49ad2ad927f6e120c241cd4c0a31",
+    "target_wp_custom_css_chars": 191079,
+    "af_project_end_count": 1,
+    "planned_global_marker_counts": "all zero",
+    "method": "public HTTP/static DOM/CSS/runtime read-only; no Opera navigation and no WordPress mutation"
+  },
+  "protected_closed_state": [
+    "13/13 corrected legacy list strings",
+    "uppercase table headers and four scope=row cells",
+    "four legacy region names plus ID35 hero/review/FAQ naming",
+    "review exact accessible tab names and native Atomic Tabs relationships",
+    "ID35 duplicate numbered dot controls hidden from AX/focus",
+    "final CTA mailto href and exact accessible name",
+    "hero artwork/copy/links and existing source-like contact/fact icons",
+    "technology three article content/order and current source-like icons/callout rail"
+  ],
+  "current_confirmed_visible_text_delta": {
+    "element": "b2560031",
+    "source": "ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+    "target_current_public_HTML": "ügyvezető · ARKER'S Építésziroda Kft.",
+    "plan": "build/bio-review-third-author-role-text-20260914-v002.json",
+    "write_rule": "fresh saved _elementor_data exact search mandatory"
+  },
+  "semantic_oracle_correction": {
+    "current": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "old_whole_page_gate": "reports/subpages/bio-ax-role-count-gate-20260914-v001.json is regression heuristic only",
+    "reason": "whole-page list counts were accidentally equal while the source Panasonic review has a real 3-item list and target currently has only spans",
+    "source_main_lists": "5 lists / 16 items",
+    "target_current_structural_main_lists": "4 lists / 13 items",
+    "missing": "Panasonic testimonial points list1/items3"
+  },
+  "review_current_state": {
+    "presentation": [
+      "quote source override prepared",
+      "active dot source override prepared",
+      "ordinal duplicate owners fully explained; isolated decorative SVG strategy prepared but AX readback required"
+    ],
+    "semantics": [
+      "Panasonic testimonial points list semantics missing; candidate in bio-review-points-semantics-20260914-v001.json remains diagnostic-first",
+      "review deep-link missing",
+      "third author role short"
+    ],
+    "interaction": "source prev/next focuses new panel; current ID35 does not explicitly focus it",
+    "plan": "build/bio-reviews-current-fix-plan-20260914-v003.json"
+  },
+  "stress_current_state": {
+    "public_DOM": "p1 -> aside.card -> p2",
+    "visual": "bio-stress-current-dom-visual-v003.css can reproduce source visual without node movement",
+    "semantic": "bio-stress-article-semantic-20260914-v001.json allows one atomic aside->article only if exactly two af260007 whole-word matches are freshly proven",
+    "hard_residual": "saved/AX reading order differs from source; no safe atomic node move"
+  },
+  "expectations_current_state": {
+    "source": "two article owners",
+    "target": "h2 + split(list cards) + h3 + body + link siblings",
+    "plan": "build/bio-expectations-source-structure-20260914-v004.json",
+    "status": "DEPLOYMENT_HOLD_NO_SAFE_ATOMIC_REGROUPING"
+  },
+  "FAQ_current_state": {
+    "visual": "source-like native-details styling can be delivered later locally",
+    "exact": "HARD BLOCKER: source buttons + aria-expanded/controls + Arrow/Home/End focus collection + custom motion vs native details/summary",
+    "oracle": "build/bio-faq-source-interaction-contract-20260914-v001.json"
+  },
+  "delivery_model": {
+    "global_Hello_Additional_CSS": "FORBIDDEN_WRITE under current scope",
+    "global_ID35": "PRESERVE_READ_ONLY",
+    "page_local_style_carrier": "UNPROVEN; probe first",
+    "probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "first_visual_after_probe": "build/bio-page-local-visual-delivery-20260914-v002.json"
+  },
+  "current_safe_structural_queue": "build/bio-page256-next-safe-package-20260914-v015.json",
+  "current_remote_runbook": "build/bio-next-remote-window-20260914-v003.json",
+  "current_call_budget": "build/bio-remote-call-budget-20260914-v005.json",
+  "current_acceptance": "specs/bio-final-acceptance-20260914-v003.json",
+  "current_convergence": "reports/subpages/bio-convergence-ledger-20260914-v004.json",
+  "current_exactness_blockers": "reports/subpages/bio-exactness-blockers-20260914-v002.json",
+  "current_supersedence": "reports/subpages/bio-evidence-supersedence-20260914-v003.json",
+  "future_remote_sequence_after_all_gates": [
+    "1. page-local style carrier probe",
+    "2. first local visual payload",
+    "3. compact v015 structural transactions",
+    "4. stress atomic article tag if safely proven + current-DOM visual",
+    "5. FAQ/CTA structure + local visual dependency transaction",
+    "6. isolated review ordinal + AX readback",
+    "7. section-local Panasonic review AX diagnostic before any review-points semantic write",
+    "8. final section-local semantic/content/visual/responsive/interaction acceptance"
+  ],
+  "no_speculative_remote_budget": [
+    "stress physical p2 node move",
+    "expectations article regrouping",
+    "FAQ exact runtime conversion",
+    "review prev/next panel-focus correction",
+    "review points semantic mutation before browser AX proof"
+  ],
+  "forbidden": [
+    "full Elementor save",
+    "raw SQL/search-replace builder mutation",
+    "Hello Additional CSS/global snippet/plugin/theme mutation",
+    "blind 429 retry",
+    "stealing/adding Opera tabs around parallel QA",
+    "old stress wrapper plan",
+    "expectations v003 multi-step regrouping",
+    "claiming whole-page role-count equality or visual similarity as exact semantic/runtime PASS"
+  ],
+  "current_result": "READ_ONLY_PREPARATION_ADVANCED; REMOTE_AND_EXACT_PARITY_NOT_FINISHED",
+  "pixel_pass": false
+}
