@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-visual-audit-20260914-v001",
+  "date": "2026-09-14",
+  "scope": {
+    "page_id": 264,
+    "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+    "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+    "wordpress_write_scope": "page264 visual effect only",
+    "wordpress_writes_this_audit": 0,
+    "opera_memory_policy": "one source tab plus one target tab; tab IDs reused"
+  },
+  "baseline": {
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "elementor_len": 48874,
+    "elementor_json_valid": true,
+    "additional_css_post_id": 8,
+    "additional_css_len": 600999,
+    "additional_css_sha256": "8cd8a9cfb804ba6ca5ab57a8ff59d7858c2e14bfb940f4921f2bceddefd80b83",
+    "af_project_end_position": 600195,
+    "oldtrees_visual_marker_present": false
+  },
+  "source_material": {
+    "stylesheet": "https://alakfamester.clicknest.hu/styles.css",
+    "method": "direct source stylesheet inspection plus same-Opera source/target screenshots",
+    "no_invented_font_or_asset": true
+  },
+  "proven_visual_deltas": [
+    {
+      "section": "Kivágás vagy átalakítás?",
+      "target_widget": "af2a0045",
+      "target_markup": ["af-sub-split", "af-sub-card", "af-card-muted", "af-card-positive"],
+      "source_equivalent": ["compare", "compare__col", "checklist", "checklist--cross"],
+      "source_observed": "bronze-leaf eyebrow; two equal large rounded cards; beige negative card, sage positive card; warning/growth header icons; X/check leaf bullets; source spacing and typography",
+      "target_observed": "eyebrow styling missing; generic white cards; default browser bullets; uneven card heights/visual weight",
+      "cause": "content is source-equivalent but target uses af-sub-* markup that does not receive the source compare/checklist rules",
+      "fix_strategy": "map exact source geometry/colors/list semantics onto existing page264 markup; no content or DOM rewrite"
+    },
+    {
+      "section": "#ajanlatkeres",
+      "target_widgets": ["af2a0054", "af2a0055"],
+      "source_equivalent": ["form-panel", "form-reply", "contact-pair", "contact-btn", "form-note"],
+      "source_observed": "centered eyebrow/title/intro; one white rounded panel; 18x18 clock icon in reply pill; compact contact buttons; form fields begin inside same panel",
+      "target_observed": "heading block left aligned; reply SVG expands to a huge arc; intro and MetForm do not visually join into source form panel",
+      "cause": "source markup is split into two Elementor siblings and several source form component rules are absent/not winning on page264",
+      "fix_strategy": "join the two existing widgets visually using scoped background/border/radius/padding; constrain existing reply SVG to 18x18; restore source contact component rules; no form field/value/submission change"
+    }
+  ],
+  "prepared_css": {
+    "file": "build/oldtrees-visual-parity-v001.css",
+    "commit": "1aaf6ffe4aec00123f4b876902f1003d728d5e66",
+    "scope_selector": "body.page-id-264",
+    "marker_start": "/* af-oldtrees-visual-v001:start",
+    "marker_end": "/* af-oldtrees-visual-v001:end */",
+    "contains_media_queries": true,
+    "contains_data_url_svg": true,
+    "global_header_footer_selectors": false,
+    "other_page_selectors": false,
+    "status": "PREPARED_NOT_DEPLOYED"
+  },
+  "deployment_contract": [
+    "Re-read page264 _elementor_data hash and JSON validity immediately before write.",
+    "Re-read current Additional CSS post8 length/hash and prove project end marker is present and the oldtrees marker absent or reconcile drift.",
+    "Use the supported server-side content/search + match-once content/edit path against post8; preserve all existing Additional CSS bytes and insert only the complete marked page264 block before the unique af-project:end marker.",
+    "Do not write any other page/template/media/plugin setting. Do not alter global header/footer CSS.",
+    "Read back Additional CSS hash/marker and page264 Elementor hash after write.",
+    "Fresh-load source/target comparison and form anchors using only one Opera pair and capture diagnostic screenshots; iterate only if a measured visual cause remains.",
+    "Do not purge cache unless fresh rendered page is demonstrably stale after the supported CSS save."
+  ],
+  "blockers": {
+    "wpvibe": "A content/search request for the Additional CSS end marker returned HTTP 429 after the read-only hash preflight; no CSS write was attempted.",
+    "controlled_viewports": "Opera connector exposes screenshot but not deterministic viewport/DPR/zoom controls.",
+    "acceptance_json": "specs/acceptance.json and specs/behaviors.json are absent from repository history; do not invent them."
+  },
+  "pixel_pass": false
+}
