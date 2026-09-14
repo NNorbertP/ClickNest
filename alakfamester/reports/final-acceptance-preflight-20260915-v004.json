@@ -1,0 +1,66 @@
+{
+  "schema_version": 4,
+  "package": "final-acceptance-preflight-20260915-v004",
+  "date": "2026-09-15",
+  "supersedes_for_planning": "reports/final-acceptance-preflight-20260915-v003.json",
+  "scope": "Read-only finalization gate. STATE.md remains PAGE264 ONLY and is the sole current write-scope authority.",
+  "tool_state": {
+    "wpvibe": "Do not call again in this continuation: first read-only list_sites returned tool disabled; +5 site/quota unknown.",
+    "opera": "Do not call again in this continuation: existing target tab returned stale page-mismatched AX content; zero new/replacement tabs.",
+    "wordpress_writes_current_continuation": 0,
+    "opera_new_tabs_current_continuation": 0
+  },
+  "active_page264_not_final": {
+    "current": ["reports/subpages/oldtrees-continuation-20260915-v010.json", "build/oldtrees-next-remote-window-20260915-v003.json", "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json"],
+    "remaining_implementation_candidates": ["conditional v006 request-contact foreground", "conditional v007 equal comparison columns"],
+    "rule": "Fresh +5/site/quota + page/hash/marker + trustworthy paired visual gate; at most one selected page264 CSS write; mandatory readback; 429 UNKNOWN until readback.",
+    "proof_only": ["Form33 native required/safe rejection", "inner form field visual measurements", "route href readback", "review/Tiszafa/Nordmann interactions", "hero measured owner/cascade", "six-view matrix"]
+  },
+  "page256_future_not_final": {
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v006.json",
+    "acceptance": "specs/bio-final-acceptance-20260914-v002.json",
+    "delivery": "Mandatory af260016 inert carrier probe before page-local visual delivery v002; probe failure is a hard blocker and never authorizes global CSS fallback.",
+    "hard_exactness_blockers": [
+      "Stress actual saved/read DOM order must be p1 -> p2 -> article; CSS-only visual reorder does not pass.",
+      "FAQ native details/summary is functional but does not yet match source button role, Arrow/Home/End keyboard collection and source motion contract; visual parity alone cannot close this.",
+      "Review previous/next switches content but current ID35 does not explicitly focus newly active tabpanel as source does; no global/ad-hoc JS workaround is authorized."
+    ],
+    "content_gate": "Third review author role must include ARKER Mérnökiroda Kft. (3DPano™), but only after fresh saved-data exact confirmation; tab accessible name must remain unchanged."
+  },
+  "page272_future_not_final": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "only_semantic_candidate": "existing ID36 -> hedge-semantic-runtime-v004.php under baseline/cardinality/native-ARIA/ID uniqueness gates",
+    "review_panel_preservation": "Full quote/visible author-company-role/image identity/accessibility/tab-panel wiring for all three panels must be captured read-only; any content mismatch is a separate smallest-owner correction and never folded into ID36 v004.",
+    "page_css_candidate": "NONE"
+  },
+  "accepted_do_not_reopen": [
+    "page264 accepted content/main-media/semantics plus live visual v004/v005",
+    "page272 saved baseline/media/gallery/five legacy regions/CTA-contact/D09 links",
+    "page268 CTA sibling/focus order and seven video controls",
+    "page260/page262/page266/page270 completed hero/class work",
+    "shared Form33 ID5 photo validator, ID6 rows=5 and configured local success state"
+  ],
+  "global_open": {
+    "header": "build/header-deployment-plan-v010.json after global scope handoff only; existing ID7 owner and full route matrix",
+    "floating_dock": "diagnostic-first global ID7/CSS owner; AX controls exist but visual pill blank/clipped; exact markup/cascade before any fix"
+  },
+  "asset_open": {
+    "reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "ellwoodi": "Exact frozen WEBP equivalence unresolved; same-basename old public JPG is provenance only.",
+    "portrait": "Exact bytes unresolved and current acceptance visibility conflicts; obtain fresh trustworthy reference proof before treating it as required."
+  },
+  "formal_machine_acceptance": {
+    "recovery": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "original_repo_artifacts": "README-referenced acceptance.json, behaviors.json, reports/index.json and runner files are not recoverable from exposed Git evidence; do not reconstruct by guess and label as original.",
+    "still_needed_for_final": ["original external specs/harness or explicitly authorized replacement contract", "deterministic same-browser 1920/1440/1024/768/390/360 DPR/zoom/font/load-state captures + overlays/diffs", "stable action-capable browser for remaining keyboard/pointer/timing proofs"]
+  },
+  "completion_rule": "Final parity and PIXEL_PASS may not be declared while any active implementation candidate, exactness blocker, required asset equivalence, or required deterministic/interaction acceptance remains open. Tool absence is not defect evidence and never licenses speculative CSS/JS.",
+  "next_safe_action": "Obey STATE.md. When live tools are trustworthy again, execute oldtrees-next-remote-window-20260915-v003 first; no other page/global write until explicit scope handoff.",
+  "known_wpvibe_budget": "UNKNOWN for +5; never reuse historical +3/+4 counters",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "NOT_FINAL_CURRENT_EXACTNESS_AND_LIVE_GATES_REMAIN_OPEN"
+}
