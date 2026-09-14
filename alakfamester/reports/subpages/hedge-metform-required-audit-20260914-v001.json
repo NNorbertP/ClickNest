@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "package": "hedge-metform-required-audit-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_writes": 0,
+  "decision": "D05",
+  "requirement": "The required service/topic radio choice must be genuinely enforced on the WordPress target; source visible copy must not change.",
+  "shared_form_constraint": "MetForm33 is shared by multiple pages. Page272-only scope forbids changing the shared Form33 configuration globally merely to satisfy this page unless the change is separately authorized/proven safe for every owner.",
+  "native_radio_contract": {
+    "metform_source": "common-repository/metform widgets/radio/radio.php",
+    "required_setting_key": "mf_input_required",
+    "required_enabled_value": "yes",
+    "frontend_effect": "Radio widget maps mf_input_required=yes to required=true in its frontend validation configuration and renders the required-label marker.",
+    "status": "CLIENT_REQUIRED_CAPABILITY_PROVEN"
+  },
+  "server_path_audit": {
+    "action_source": "common-repository/metform core/entries/action.php",
+    "submit_calls_validate_form_data": true,
+    "required_flag_read": true,
+    "finding": "The generic PHP validator uses mf_input_required to decide whether an empty non-required submitted field can skip further checks, but no independent missing/empty required-radio rejection was identified in this path. Error increments found there are tied to min/max, character/word length and expression constraints.",
+    "absent_radio_risk": "Validation iterates submitted form_data. A completely absent unchecked radio value is not independently proven to be rejected by this generic PHP path.",
+    "rest_route": "Entries API routes submission into Action::submit; no separate radio-required server validator was identified in the audited route layer.",
+    "file_validation": "core/entries/file-data-validation.php validates file-specific properties only and adds no radio-required enforcement.",
+    "entry_formatting": "core/entries/form-data.php formats/stores entry values and adds no identified mf_input_required rejection layer.",
+    "extension_hook": "Action::submit applies mf_after_validation_check after built-in validation and rejects the request when the filter returns is_valid=false. This is the same supported extension hook already used by project snippet ID5 for photo-count validation.",
+    "status": "NATIVE_SERVER_REQUIRED_NOT_PROVEN"
+  },
+  "current_project_evidence": {
+    "form33_report": "reports/home/metform33-source-parity-v001.json",
+    "known_server_extension": "Code Snippets ID5: AF MetForm photo count validation, mf_after_validation_check, Form33 route scoped, active/no code error in last verified report.",
+    "known_ui_extension": "Code Snippets ID6: textarea rows parity.",
+    "radio_setting_or_field_name_in_repo": "NOT_FOUND",
+    "live_form_ax": "page264 live comparison proves service group label and six radio option names match source, but no submission was performed and no radio input name/required-setting readback was recorded."
+  },
+  "mandatory_next_live_read_before_any_validation_write": [
+    "Read Form33 current _elementor_data/widget settings around the single #af-form-service radio widget only.",
+    "Identify the exact widget ID/type and exact mf_input_name; do not infer the field name from label text.",
+    "Read mf_input_required and record whether it is exactly yes.",
+    "Confirm the six current option values/order remain source-equivalent.",
+    "Do not edit Form33 as part of the page272 package."
+  ],
+  "page272_server_enforcement_design_gate": {
+    "status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+    "reason": "D05 requires genuine enforcement, while shared Form33 settings are outside page272-only write scope and the exact service field name is not yet proven.",
+    "allowed_future_direction": "After the exact field name is read, prepare a separate page272-only validation runtime using mf_after_validation_check with an explicit page272-origin marker/guard and Form33 route guard. Keep it separate from the prepared semantic ID36 v003 update until both ownership and scoping are proven.",
+    "must_not": [
+      "Do not guess the radio field name.",
+      "Do not modify shared Form33 settings globally from page272 scope.",
+      "Do not add a second competing global Form33 validator without reading existing snippet ID5 and current snippet inventory.",
+      "Do not claim server enforcement from the client required flag alone.",
+      "Do not perform a real form submission or external delivery test."
+    ]
+  },
+  "conclusion": "Client-side native required support exists, but robust server-side enforcement of an absent service radio is not proven in the audited MetForm entry path. The next safe step is a narrow live Form33 settings read to learn the exact service field name and required flag; any page272-only server enforcement must then be designed around the proven mf_after_validation_check hook without changing shared Form33 configuration.",
+  "smtp_or_external_submission": false,
+  "pixel_pass": false
+}
