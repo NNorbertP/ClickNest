@@ -1,0 +1,171 @@
+/* af-bio-hero-layout-v002:start
+ * Scope: body.page-id-256 #af-sub-bio-hero only.
+ * Prepared, not deployed. Supersedes v001 for future deployment.
+ * Source contract: .hero.hero--inner, .hero__grid, .hero__copy, .hero__sub,
+ * .contact-pair/.contact-btn and .hero__meta exact rules from reference styles.css.
+ * Target structural adaptation: existing plain label/strong anchors and fact spans
+ * receive decorative pseudo-SVG only; text/hrefs/IDs remain untouched.
+ */
+
+@media (min-width: 901px) {
+  body.page-id-256 #af-sub-bio-hero {
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr) !important;
+    column-gap: clamp(24px, 2.6vw, 44px) !important;
+    align-items: center !important;
+    align-content: start !important;
+    padding-top: clamp(20px, 2.2vw, 34px) !important;
+    padding-bottom: clamp(28px, 3.2vw, 50px) !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero > *:not(.af-art) {
+    width: 100% !important;
+    max-width: 46rem !important;
+    justify-self: start !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero > #af-sub-bio-hero-body {
+    width: auto !important;
+    max-width: 60ch !important;
+    margin-bottom: 24px !important;
+    color: #4A5750 !important;
+    font-size: clamp(1.03rem, .96rem + .35vw, 1.19rem) !important;
+    line-height: 1.6 !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    align-items: center !important;
+    margin: 0 0 16px !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a {
+    display: grid !important;
+    grid-template-columns: 40px auto !important;
+    grid-template-rows: auto auto !important;
+    column-gap: 12px !important;
+    row-gap: 0 !important;
+    align-items: center !important;
+    justify-content: start !important;
+    min-height: 60px !important;
+    width: auto !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+    padding: 10px 24px 10px 10px !important;
+    border-radius: 999px !important;
+    background: linear-gradient(145deg, #2F5D46, #3d7357) !important;
+    border: 1px solid transparent !important;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    box-shadow: 0 12px 28px rgba(23, 61, 45, .22) !important;
+    transition: transform 220ms cubic-bezier(.22,.68,.36,1), box-shadow 220ms cubic-bezier(.22,.68,.36,1), background-color 220ms cubic-bezier(.22,.68,.36,1) !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a::before {
+    content: "";
+    grid-column: 1 !important;
+    grid-row: 1 / span 2 !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 4px 64% 4px 64% !important;
+    background-color: rgba(255,255,255,.18) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 19px 19px !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a[href^="tel:"]::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z'/%3E%3C/svg%3E") !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a[href^="mailto:"]::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='16' rx='2'/%3E%3Cpath d='m2 7 10 6 10-6'/%3E%3C/svg%3E") !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a > span {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    display: block !important;
+    align-self: end !important;
+    min-width: 0 !important;
+    color: rgba(255,255,255,.9) !important;
+    font-size: .68rem !important;
+    line-height: 1.18 !important;
+    letter-spacing: .13em !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a > strong {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    display: block !important;
+    align-self: start !important;
+    min-width: 0 !important;
+    color: #FFFFFF !important;
+    font-size: 1.02rem !important;
+    line-height: 1.18 !important;
+    font-weight: 700 !important;
+    letter-spacing: .01em !important;
+    word-break: break-word !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a:hover,
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a:focus-visible {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 18px 36px rgba(23, 61, 45, .28) !important;
+    color: #FFFFFF !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px 24px !important;
+    padding-top: 16px !important;
+    margin-top: 16px !important;
+    border-top: 1px solid #D7D2C6 !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts > span {
+    display: flex !important;
+    align-items: center !important;
+    gap: 9px !important;
+    color: #4A5750 !important;
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts > span::before {
+    content: "";
+    width: 17px !important;
+    height: 17px !important;
+    flex: 0 0 17px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 17px 17px !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts > span:nth-child(1)::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F5D46' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2.5S5.5 10 5.5 14.5a6.5 6.5 0 0 0 13 0C18.5 10 12 2.5 12 2.5Z'/%3E%3C/svg%3E") !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts > span:nth-child(2)::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F5D46' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.9 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13.5'/%3E%3Cline x1='12' y1='17' x2='12' y2='17.1'/%3E%3C/svg%3E") !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts > span:nth-child(3)::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F5D46' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h3l1.5-2.5h9L18 8h3v12H3Z'/%3E%3Ccircle cx='12' cy='13.5' r='4'/%3E%3C/svg%3E") !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  body.page-id-256 #af-sub-bio-hero {
+    column-gap: 56px !important;
+  }
+}
+
+/* Source stacks inner-page hero below 901px. Existing target mobile stack is
+ * intentionally preserved; no mobile geometry override is added here. */
+
+/* af-bio-hero-layout-v002:end */
