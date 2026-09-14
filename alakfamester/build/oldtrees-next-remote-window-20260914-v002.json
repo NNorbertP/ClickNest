@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-next-remote-window-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "supersedes_for_planning": "build/oldtrees-next-remote-window-20260914-v001.json",
+  "authoritative_acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+  "objective": "Close only freshly reproduced page264 deltas with at most one WordPress write, then use remaining safe capacity for read-only acceptance without reopening passed work.",
+  "hard_scope": [
+    "Only page264 may change.",
+    "Additional CSS is allowed only when every effect selector is explicitly body.page-id-264 scoped.",
+    "No other page, global header/footer, shared media, shared plugin setting, SMTP, notification, webhook or real form submission may be modified/tested from this package."
+  ],
+  "phase_0_connection_and_budget": {
+    "actions": [
+      "Verify WPVibe identity ncsnorbert+20260914-5@gmail.com.",
+      "Confirm the target site connection.",
+      "Read the exact rolling usage/remaining counter; never reuse +4 history."
+    ],
+    "stop": "If connection is not confirmed or exact remaining capacity cannot cover the selected package plus 10-call D11 reserve, perform no WordPress write."
+  },
+  "phase_1_compact_server_preflight": {
+    "actions": [
+      "Read page264 _elementor_data length/SHA256/JSON validity only and reconcile against 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / valid.",
+      "Read compact Hello Additional CSS marker/hash inventory without round-tripping the full 600KB+ field through chat.",
+      "Require af-project:end=1, af-oldtrees-visual-v004=1, af-oldtrees-visual-v005=1; record v006/v007 counts.",
+      "If cheap in the same safe window, read ID33 active/hash and require the last accepted page guard behavior before semantic claims."
+    ],
+    "stop_conditions": [
+      "Unexpected page264 hash/JSON drift -> reconcile; do not restore stale data.",
+      "Unexpected marker multiplicity or missing project end -> reconcile; do not insert CSS.",
+      "ID33 drift that changes page264 semantics -> reconcile before interaction/AX acceptance."
+    ]
+  },
+  "phase_2_two_tab_live_visual_gate": {
+    "browser": "Reuse exactly one reference and one target tab. Open zero replacements. Stop if connector disconnects or tabs are repurposed by another process.",
+    "checks": {
+      "v006": "At #ajanlatkeres, compare green contact-button label/value foreground. Failure only if target remains dark while source is white under matched state.",
+      "v007": "At Kivágás vagy átalakítás?, compare desktop card column widths/wrapping under matched viewport. Failure only if target remains unequal while source is equal."
+    },
+    "decision": {
+      "both_fail": "Use build/oldtrees-visual-v006-v007-single-write-bundle.css.",
+      "only_v006_fails": "Use build/oldtrees-visual-v006-contact-text-cascade.css only.",
+      "only_v007_fails": "Use build/oldtrees-visual-v007-comparison-grid-cascade.css only.",
+      "neither_fails": "No visual write."
+    }
+  },
+  "phase_3_at_most_one_write": {
+    "method": "One guarded match-once insertion immediately before the unique af-project:end marker.",
+    "rules": [
+      "Selected marker(s) must be absent before insert.",
+      "Do not rewrite or replay v004/v005 or any older oldtrees visual bundle.",
+      "Do not modify page264 Elementor data to solve these two cascade defects.",
+      "HTTP 429 write response means UNKNOWN outcome; do not retry until exact marker/hash readback."
+    ]
+  },
+  "phase_4_mandatory_closeout": {
+    "actions": [
+      "Read back selected new marker(s) exactly once and af-project:end exactly once.",
+      "Re-read page264 data hash/JSON and require unchanged accepted content baseline.",
+      "Fresh targeted source/target capture of only the changed section(s) and adjacent preserved geometry.",
+      "For v006 require white foreground with unchanged contact-button size/shape and joined panel geometry.",
+      "For v007 require equal columns/source-like wrapping while preserving v005 beige/sage surfaces, equal height, icons and bullets."
+    ]
+  },
+  "phase_5_read_only_form_acceptance": {
+    "prerequisite": "Only if calls remain safely above D11 reserve after mandatory closeout.",
+    "action": "Inspect Form33 service/topic radio schema/runtime to prove whether submission-time required validation already exists.",
+    "rule": "Change nothing if already enforced. If not enforced, document the exact native control/hook owner first; do not combine a form write into the visual CSS write.",
+    "forbidden": "No real submission, SMTP, notification, webhook or external delivery test."
+  },
+  "phase_6_interaction_acceptance": {
+    "plan": "build/oldtrees-interaction-acceptance-20260914-v001.json",
+    "rule": "Interaction proof does not require a WordPress write. Run only in an interaction-capable stable browser; do not add duplicate JS because the current Opera connector lacks click/keyboard actions.",
+    "components": ["reviews", "tiszafa before-after", "Nordmann carousel"]
+  },
+  "phase_7_hero_diagnostic": {
+    "plan": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "rule": "Diagnostic only until exact page264 owner/cascade is proven. No arbitrary -40px margin/transform or blanket padding correction."
+  },
+  "phase_8_formal_visual_acceptance": {
+    "views": ["1920x1080", "1440x1000", "1024x900", "768x1024", "390x844", "360x800"],
+    "contract": "Same browser engine, viewport, DPR, zoom, fonts/images/load state, scroll and moving-content state. Produce source, target, overlay/diff and key geometry. Do not resize/crop to conceal differences.",
+    "result_rule": "PIXEL_PASS remains false until this deterministic matrix exists."
+  },
+  "call_economy": {
+    "preferred_combination": "Combine compact read-only server facts in as few supported WPVibe calls as possible; if both visual deltas fail, deploy both in one guarded CSS write.",
+    "estimated_core_calls": "Approximately 5-8 for connection/preflight/write/readback depending on supported compact reads and whether a write is needed.",
+    "mandatory_remaining_reserve": 10,
+    "do_not_spend_for": [
+      "full Additional CSS round-trip when a compact marker/hash query suffices",
+      "cache purge without demonstrated stale render",
+      "rechecking already-passed content/semantics merely to collect duplicate evidence",
+      "repeated Opera reconnect/tab creation attempts"
+    ]
+  },
+  "stop_conditions": [
+    "WPVibe unavailable/disabled -> no WordPress write; continue repository/static preparation only.",
+    "Opera unstable/disconnected/repurposed -> stop browser testing and preserve the two-tab memory policy.",
+    "Fresh state contradicts repository baseline -> reconcile first; never force the documented state onto newer live truth.",
+    "Two attempted fixes without measurable improvement -> stop iteration and re-diagnose ownership/cascade."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "READY_FOR_FRESH_LIVE_GATE"
+}
