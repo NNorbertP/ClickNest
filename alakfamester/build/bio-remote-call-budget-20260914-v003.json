@@ -1,0 +1,114 @@
+{
+  "schema_version": 3,
+  "package": "bio-remote-call-budget-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_REQUIRED",
+  "supersedes": "build/bio-remote-call-budget-20260914-v002.json",
+  "scope_correction": "No Hello Additional CSS write under current page256-only scope. CSS delivery budget now starts with a page-local style-carrier proof inside page256 Elementor data.",
+  "known": {
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "site_connection": "UNKNOWN",
+    "exact_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "current_wordpress_writes": 0,
+    "current_repo_write_scope": "page264-only until handoff"
+  },
+  "phase_0_preflight": {
+    "planned_range": "4-6 logical WPVibe actions",
+    "actions": [
+      "profile/site/quota",
+      "page256 bytes/SHA/JSON",
+      "ID35 status if not bundled",
+      "read-only global Additional CSS critical owner search",
+      "fresh af260016 exact owner search"
+    ],
+    "go_rule": "No write unless the entire next phase, its immediate readback, possible rollback and >=10 reserve all fit the live counter."
+  },
+  "phase_1_page_local_style_probe": {
+    "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "planned_range": "4-6 plus 1-2 rollback calls reserved",
+    "actions": [
+      "exact af260016 content/search if not already suitable from phase0: 0-1",
+      "one inert probe content/edit: 1",
+      "page bytes/SHA/JSON readback: 1",
+      "rendered HTML/style-marker verification: 1",
+      "visual no-op/browser spot check: 0 WPVibe",
+      "probe cleanup/rollback + readback if plan requires or if failed: 1-2"
+    ],
+    "stop": "Probe failure cancels CSS delivery path; never spend calls switching to global Additional CSS automatically."
+  },
+  "phase_2_page_local_visual_owner": {
+    "package": "build/bio-page-local-visual-delivery-20260914-v001.json",
+    "design_payload": "build/bio-visual-single-write-plan-20260914-v007.json",
+    "planned_range": "4-5 after probe PASS",
+    "actions": [
+      "fresh final af260016 owner search: 1",
+      "one match-once edit creating style#af-page256-parity with six dependency-safe blocks: 1",
+      "page bytes/SHA/JSON readback: 1",
+      "rendered owner/internal marker verification: 1",
+      "optional extra page/readback if sanitization/hash delta is surprising: 0-1"
+    ],
+    "note": "No global style write/readback cost. Browser visual QA uses released Opera tabs and is outside this logical WPVibe count."
+  },
+  "phase_3_structural_v014": {
+    "package": "build/bio-page256-next-safe-package-20260914-v014.json",
+    "planned_range": "6 mandatory; +3 optional review anchor",
+    "units": [
+      "FAQ order class: ~3",
+      "stress copy wrapper: ~3",
+      "review anchor ID if exact Atomic owner proven: ~3"
+    ]
+  },
+  "phase_4_stress": {
+    "semantic_unit": "~3",
+    "visual_append_unit": "~4 (global cascade owner read if needed + exact local style end-marker search/edit + page/rendered readback)",
+    "total": "~7"
+  },
+  "phase_5_table_structure": {
+    "planned_range": "5-8",
+    "package": "build/bio-table-source-structure-20260914-v001.json",
+    "note": "title ownership move is structure; its CSS can later append to the page-local style owner rather than a shared field"
+  },
+  "phase_6_expectations": {
+    "planned_range": "11-14",
+    "package": "build/bio-expectations-source-structure-20260914-v003.json",
+    "rule": "do not start near reserve"
+  },
+  "phase_7_FAQ_CTA": {
+    "package": "build/bio-faq-cta-source-layout-20260914-v006.json",
+    "planned_range_after_FAQ_order_done": "7-9",
+    "actions": [
+      "CTA mail fresh search/edit/readback ~3",
+      "fresh pseudo/cascade owner read 1-2",
+      "fresh page-local style end-marker search + one coherent append edit for only absent FAQ-wave/layout/interaction blocks: 2",
+      "page/rendered readback: 1-2"
+    ]
+  },
+  "phase_8_reviews": {
+    "owner_diagnostic": "1-2 read-only WPVibe reads",
+    "ordinal_dot_fix": "about 3-4 if DOM+CSS ownership requires both tiny structure and local CSS changes; exact owner decides",
+    "review_anchor": "~3 if not done in v014",
+    "third_author_role": "~3 only after fresh live confirmation",
+    "optional_decor": "~3-4 after pseudo-slot proof and local style owner append"
+  },
+  "closeout": {
+    "planned_range": "2-4 WPVibe reads",
+    "actions": [
+      "final page256 bytes/SHA/JSON",
+      "rendered page-local style owner/internal marker inventory",
+      "ID35 status if not bundled",
+      "optional read-only global cascade confirmation where a pseudo conflict mattered"
+    ]
+  },
+  "window_rules": [
+    "<8 calls above reserve: no mutation; evidence/static work only",
+    "8-15 above reserve: one low-risk complete microfix/probe only; carrier probe may fit if rollback reserve is explicit",
+    "16-25 above reserve: probe + page-local visual owner may fit if preflight is compact and live state clean",
+    "large structure phases such as expectations need their own generous window",
+    "429/unknown write immediately converts the next safe action into readback, never retry",
+    "a successful carrier probe does not mean all visual phases should run in the same quota window"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
