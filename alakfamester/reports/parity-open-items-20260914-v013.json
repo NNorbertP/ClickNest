@@ -1,0 +1,89 @@
+{
+  "schema_version": 13,
+  "project": "alakfamester",
+  "date": "2026-09-15",
+  "type": "planning_only_no_scope_override",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260914-v012.json",
+  "active_wordpress_write_scope": {
+    "authority": "STATE.md",
+    "current": "PAGE264 ONLY",
+    "rule": "This queue does not authorize page256/page272/global writes. Fresh STATE.md and fresh live truth always outrank this planning file."
+  },
+  "tool_state": {
+    "wpvibe": "First read-only list_sites attempt in the current continuation returned tool disabled. Do not call again in this continuation; +5 target connection/quota remain unknown.",
+    "opera": "Exactly two existing tabs, zero new. Current page256 target URL/title returned homepage AX content, so connector payload is stale/untrusted and further Opera reads were stopped.",
+    "wordpress_writes_current_continuation": 0,
+    "opera_new_tabs_current_continuation": 0
+  },
+  "page264_active": {
+    "authoritative": [
+      "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+      "reports/subpages/oldtrees-continuation-20260914-v008.json",
+      "build/oldtrees-next-remote-window-20260914-v002.json"
+    ],
+    "baseline": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+    "known_local_failures_only": ["v006 request-contact foreground", "v007 equal desktop comparison columns"],
+    "decision": "Fresh +5/site/quota + hash/marker + trustworthy same-browser visual gate; at most one CSS write, combined only if both failures reproduce.",
+    "proof_only": ["Form33 service radio mf_input_required exact live setting and non-delivery behavior", "review keyboard", "tiszafa pointer/keyboard", "Nordmann timing/swipe/pause/reduced motion", "hero measured owner/cascade", "six-view deterministic visual matrix"]
+  },
+  "page256_future_after_scope_handoff": {
+    "authoritative_continuation": "reports/subpages/bio-continuation-20260914-v023.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260914-v002.json",
+    "historical_baseline_requires_fresh_reconcile": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid / ID35",
+    "first_visual_phase": "build/bio-visual-single-write-plan-20260914-v006.json",
+    "structural_microfixes": "build/bio-page256-next-safe-package-20260914-v014.json",
+    "hero_current_candidate": "build/bio-hero-layout-parity-v003.css",
+    "reviews": [
+      "build/bio-review-anchor-parity-20260914-v001.json",
+      "build/bio-review-quote-source-color-v002.css",
+      "build/bio-reviews-cascade-diagnostic-20260914-v001.json",
+      "build/bio-review-third-author-role-text-20260914-v001.json"
+    ],
+    "fresh_corrections": [
+      "Do not deploy hero decorative icons; target already has them.",
+      "Do not deploy technology callout wrapper/CSS; panel and rail already exist.",
+      "Use exact source SVG wave direction, not old Atomic wave class bridge.",
+      "Third review author role visible text has a guarded prepared microfix, but requires fresh exact search and must not change the tab accessible name."
+    ]
+  },
+  "page272_future_after_scope_handoff": {
+    "authoritative_continuation": "reports/subpages/hedge-continuation-20260915-v012.json",
+    "artifact_precedence": "reports/subpages/hedge-artifact-supersession-20260915-v002.json",
+    "baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid; fresh read required",
+    "semantic_candidate": "build/hedge-semantic-runtime-v004.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "rule": "Update existing ID36 only after cardinality/ownership gates. v002/v003 are obsolete for deployment. v004 intentionally does not invent a partial #ajanlatkeres outer region.",
+    "required_radio": "Native mf_input_required=yes capability is proven, but current Form33 setting and safe empty-choice rejection remain live-read/proof first; server fallback is optional only if native behavior is absent/insufficient.",
+    "outer_regions": "Hero/gallery/form outer regions remain HOLD until one complete stable root for each source region is proven."
+  },
+  "global_future": {
+    "header": "Use only the latest authoritative header deployment/runtime plan after global scope handoff; multi-route service-child acceptance required.",
+    "floating_dock": "Diagnostic first. AX controls exist but visual pill is nearly blank; read current ID7 markup and winning cascade before any CSS/runtime change."
+  },
+  "do_not_reopen": [
+    "page264 historical content/media/semantic packages and visual v001-v005",
+    "page272 shared-media recovery, EAEL gallery decoupling and saved legacy semantics",
+    "page256 closed semantic strings/table row headers/ID35 review AX fixes",
+    "page268 CTA sibling order",
+    "page260/page262/page266/page270 hero/class work",
+    "Form33 ID5 photo validator, ID6 rows helper and configured local success state"
+  ],
+  "formal_blockers": [
+    "page270 exact portrait source bytes unavailable/404",
+    "page258 exact Ellwoodi source bytes unavailable/404",
+    "specs/acceptance.json absent",
+    "specs/behaviors.json absent",
+    "deterministic exact viewport/DPR/zoom overlay-diff harness unavailable",
+    "stable generic click/keyboard browser automation unavailable",
+    "SMTP/delivery/real submissions excluded"
+  ],
+  "critical_rules": [
+    "Any 429 write is UNKNOWN until exact readback; never blind retry.",
+    "Preserve at least 10 WPVibe calls for D11 closeout/recovery.",
+    "Use at most one source and one target Opera tab; no replacement fan-out.",
+    "Never merge unrelated page/global packages merely to reduce call count.",
+    "Prepared escaped snippets are not future old_content; fresh content/search bytes are mandatory before structural edits."
+  ],
+  "next_action": "Remain page264-only. When WPVibe and trustworthy two-tab QA return, run oldtrees-next-remote-window-v002 exactly. Do not start page256/page272/global writes until a normal scope handoff updates authoritative STATE.md.",
+  "pixel_pass": false
+}
