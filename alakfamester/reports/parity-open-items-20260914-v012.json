@@ -1,0 +1,130 @@
+{
+  "schema_version": 12,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "type": "planning_only_no_scope_override",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260914-v011.json",
+  "active_wordpress_write_scope": {
+    "authority": "STATE.md",
+    "current": "PAGE264 ONLY",
+    "rule": "This queue does not authorize cross-page/global writes. Until STATE.md changes through the normal handoff, only page264 and explicitly body.page-id-264-scoped Additional CSS effects may be written. All other items below are read-only/prepared future packages."
+  },
+  "tool_state": {
+    "wpvibe_plugin": "Installed, but the first read-only list_sites invocation in this continuation immediately returned tool disabled; no further WPVibe calls were sent.",
+    "wpvibe_plus5_identity": "ncsnorbert+20260914-5@gmail.com previously verified; target connection and exact rolling quota remain unconfirmed/unknown.",
+    "opera": "Exactly two existing tabs reused; zero new/replacement tabs. They were repeatedly repurposed by another flow. A stable page256 source/target pair briefly produced fresh 1640x920 evidence, then the connector disconnected again.",
+    "wordpress_writes_this_continuation": 0,
+    "opera_new_tabs_this_continuation": 0
+  },
+  "current_active_page264_package": {
+    "ledger": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+    "accepted_elementor": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+    "live_visual": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "ready_gated": [
+      "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "build/oldtrees-visual-v006-v007-single-write-bundle.css"
+    ],
+    "decision": "Fresh +5/site/quota + page/hash/post8 marker + same-browser visual gate first. Use combined bundle only if both exact failures still reproduce; otherwise one standalone block or no write.",
+    "proof_only": [
+      "hero vertical geometry owner/cascade",
+      "review Arrow/Home/End",
+      "tiszafa pointer/keyboard",
+      "Nordmann autoplay/keyboard/swipe/pause/reduced motion",
+      "Form33 service/topic submission-time required enforcement",
+      "deterministic visual overlay/diff"
+    ],
+    "global_exclusions": ["header", "footer", "global dock", "other pages", "shared media", "SMTP"]
+  },
+  "future_page256_package_after_scope_handoff": {
+    "baseline": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid; ID35 preserved",
+    "structure_first": {
+      "plan": "build/bio-page256-next-safe-package-20260914-v012.json",
+      "operations": [
+        "af260015 remove sole af-faq-content legacy class to restore FAQ-before-CTA order",
+        "af260007 group the two existing explanatory paragraphs into one left wrapper while preserving existing stress-card owner/content",
+        "af26000e/af26000f/af260012/af260014 add proven typed global class g-af-src-wave without full save"
+      ],
+      "method": "surgical content/search + match-once content/edit only; no full save and no Additional CSS in this structure package"
+    },
+    "visual_second": {
+      "existing_plan": "build/bio-visual-single-write-plan-20260914-v004.json",
+      "blocks": ["build/bio-visual-parity-v001.css", "build/bio-hero-layout-parity-v001.css"],
+      "fresh_evidence": [
+        "reports/subpages/bio-visual-live-compare-20260914-v015.json",
+        "reports/subpages/bio-technology-live-compare-20260914-v016.json"
+      ],
+      "now_proven_again": [
+        "hero copy starts about 40px too low at 1640x920 while lower hero boundary is close",
+        "technology eyebrow source leaf missing",
+        "technology lead measure/type differs",
+        "technology card source watermark/hairline/surface rhythm absent or materially weaker",
+        "use-case list still shows native bullets instead of source check-leaf markers"
+      ],
+      "hold": "bio-visual-parity-v002-expectations.css remains separate/HOLD until direct fresh visual proof; do not merge structure and visual writes into one rollback unit"
+    },
+    "semantic_followups": [
+      "stress-card article semantic fix only from fresh exact raw af260007 after structure reconciliation",
+      "expectations article/grouping only from fresh exact af260013 boundaries"
+    ]
+  },
+  "future_global_header_package_after_scope_handoff": {
+    "authoritative_plan": "build/header-deployment-plan-v010.json",
+    "runtime": "build/header-runtime-parity-v008.json",
+    "css": "build/header-source-flex-responsive-v007.css plus v010 homepage-neutral guard",
+    "fresh_route_evidence": "reports/header/header-service-child-route-live-qa-20260914-v008.json",
+    "important_new_finding": "Old Trees service child previously showed Services current, but fresh Biological Protection source shows Services current while target is neutral. Current live behavior is not consistently correct across service children.",
+    "required_postdeploy_matrix": [
+      "/soveny-specialista/",
+      "/idos-fak-megmentese-szolgaltatas/",
+      "/biologiai-vedelem/",
+      "/gyumolcsfak-metszese-es-vedelme/",
+      "/galeria/",
+      "/referencia-videok/",
+      "/"
+    ],
+    "rule": "Do not create another route-current helper; deploy only through the authoritative header plan when global scope is active."
+  },
+  "future_page272_package_after_scope_handoff": {
+    "continuation": "reports/subpages/hedge-continuation-20260914-v010.json",
+    "accepted_elementor": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+    "candidate": "build/hedge-semantic-runtime-v003.php",
+    "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+    "action": "Update existing ID36 only if fresh DOM proves the shared MetForm33 wrapper owns #af-form-direct-call or its exact wrapper-scoped tel paragraph; never create a duplicate helper.",
+    "visual": "No currently documented page272 visual/content delta beyond this semantic successor; new visual work requires a fresh reproduced source-target difference."
+  },
+  "global_floating_dock": {
+    "plan": "build/floating-contact-dock-diagnostic-plan-20260914-v002.json",
+    "status": "DIAGNOSTIC_FIRST_NO_WRITE",
+    "known": "Explicit source captures show phone/mail/CTA; explicit target captures repeatedly show nearly blank pill while target AX contains the three controls. Exact source dock CSS contract is known.",
+    "missing_before_fix": "Fresh current target ID7 emitted classes plus current post8 winning .dock/.dock__icon/.dock__cta/.af-source-dock cascade.",
+    "rule": "Do not recreate markup, do not add a second runtime owner, do not fold a global dock fix into page264/page256 packages."
+  },
+  "preserve_closed_work": [
+    "page272 shared media 26/26 and gallery 28/28; saved legacy semantics; existing ID36 v001 until successor gate passes",
+    "page264 content/semantics and v004/v005 live visual work",
+    "page256 semantic closeout/ID35 and exact saved baseline",
+    "page268 CTA structural order and verified seven video controls",
+    "solved page260/page262/page266/page270 hero/class bridge work",
+    "Form33 ID5 photo validation, ID6 textarea rows=5 and configured local success state"
+  ],
+  "formal_blockers": [
+    "page270 exact portrait source bytes unavailable/404",
+    "page258 exact Ellwoodi alternate-view source bytes unavailable/404",
+    "specs/acceptance.json absent",
+    "specs/behaviors.json absent",
+    "deterministic six-viewport same-browser DPR/zoom overlay/diff runner unavailable",
+    "generic click/keyboard automation unavailable in current Opera connector",
+    "SMTP/delivery and real submissions excluded"
+  ],
+  "critical_rules": [
+    "Fresh STATE.md write scope outranks this planning queue.",
+    "Fresh live readback/capture outranks older audit notes.",
+    "Any 429-returned write has UNKNOWN outcome until exact readback; never blind-retry.",
+    "Preserve 10 WPVibe calls for D11 closeout/recovery and require enough margin for complete package + readback before starting.",
+    "Use at most one source and one target Opera tab; no replacement-tab fan-out.",
+    "Do not merge unrelated page/global packages merely to save calls; rollback isolation is more important."
+  ],
+  "next_action": "Remain in page264-only scope: when WPVibe and stable two-tab QA return, perform +5/site/quota -> page264 hash/post8 marker -> fresh v006/v007 visual gate -> at most one selected page264 CSS insertion -> mandatory readback/targeted QA. Do not start page256/header/page272 writes until a later scope handoff.",
+  "pixel_pass": false
+}
