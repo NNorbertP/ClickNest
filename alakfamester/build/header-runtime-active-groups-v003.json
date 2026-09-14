@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only runtime delta",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_WPVIBE_UNAVAILABLE",
+  "supersedes": "build/header-runtime-active-groups-v002.json",
+  "snippet": {
+    "id": 7,
+    "required_prewrite_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "required_prewrite_bytes": 9723,
+    "required_marker": "af-header-nav-parity-v005",
+    "must_remain_active": true,
+    "must_keep_scroll_threshold_px": 8,
+    "must_keep_mobile_breakpoint_px": 1240,
+    "must_keep_main_navigation_aria_label": "Főmenü",
+    "must_keep_brand_accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "source_contract": {
+    "dropdown_parent_current_state": ".nav__link.is-section uses the same sage surface/border as a current top-level link but without the bronze current-page dot",
+    "dropdown_child_current_state": ".nav__panel a[aria-current='page'] uses the sage surface and its leaf bullet becomes bronze",
+    "dropdown_parent_accessible_name": "no aria-current is exposed on the popup button in the live reference accessibility tree"
+  },
+  "runtime_change": {
+    "location": "makePanel(old, items, id)",
+    "matching": [
+      "Resolve every item[1] through new URL(item[1], window.location.origin).",
+      "Normalize pathname so '/foo' and '/foo/' compare as the same path while root remains '/'.",
+      "Normal child-page entries match by normalized pathname.",
+      "The '/#szolgaltatasi-utak' entry matches only when pathname is root AND location.hash is exactly '#szolgaltatasi-utak'; it must not mark Services current on the normal homepage."
+    ],
+    "parent_state": "If any group item matches, add host.classList.add('is-current').",
+    "child_state": "When each runtime panel anchor is created, if that item is the exact current destination under the same matching rule, set aria-current='page' on that anchor only.",
+    "do_not_add": "Do not add aria-current to the popup button itself."
+  },
+  "reference_group_paths": {
+    "services": [
+      "/#szolgaltatasi-utak",
+      "/soveny-specialista/",
+      "/idos-fak-megmentese-szolgaltatas/",
+      "/biologiai-vedelem/",
+      "/gyumolcsfak-metszese-es-vedelme/"
+    ],
+    "references": [
+      "/galeria/",
+      "/referencia-videok/"
+    ]
+  },
+  "paired_css": {
+    "path": "build/header-alignment-responsive-v005.css",
+    "commit": "d60b759f8a405d809ac76c6a59be32b570ed7791",
+    "required_effects": [
+      "suppress ElementsKit pseudo-caret",
+      "style host.is-current as the source section state",
+      "style panel a[aria-current='page'] as the source current child state"
+    ]
+  },
+  "guarded_execution": [
+    "Do not write while WPVibe is unavailable or while the target returns HTTP 429.",
+    "On reconnect, verify the authenticated profile and quota once, preserving D11's 10-call reserve plus retry margin.",
+    "GET snippet 7 using the Code Snippets plugin-aware REST route and require the exact prewrite hash/bytes above. Any drift stops the package.",
+    "Capture the full live code as the rollback payload before editing.",
+    "Apply only the current-route helper, host is-current class, and matching panel-anchor aria-current attribute. Preserve every previously verified behavior.",
+    "PUT only the code field through the plugin route, then GET and verify active=true, code_error=null, marker present, 8px threshold, 1240px breakpoint, Főmenü label and existing brand/dropdown names.",
+    "Fresh-load homepage, one services child, one references child and a non-group page; verify only the expected parent/child state is current.",
+    "If any regression occurs, restore the captured prewrite code through the same plugin route and verify again."
+  ],
+  "do_not_change": [
+    "Elementor header structure",
+    "page body",
+    "footer",
+    "forms",
+    "SMTP",
+    "menu destination mapping",
+    "mobile drawer content",
+    "quick-contact dock content"
+  ]
+}
