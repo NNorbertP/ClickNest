@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-form-required-validation-plan-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "form_id": 33,
+  "decision": "D05",
+  "mode": "READ_FIRST_NO_SUBMISSION_NO_WRITE_BY_DEFAULT",
+  "goal": "Prove that the mandatory Miben kér segítséget? service/topic choice is genuinely enforced for page264-origin Form33 submissions, while preserving shared Form33, ID5, ID6 and all other pages.",
+  "why_open": {
+    "d05": "The source radio-group JavaScript does not prove group-level checked validation; the target must genuinely enforce the mandatory topic choice.",
+    "existing_page264_evidence": "ID33 proves accessible group labelling and six option semantics, but AX semantics are not submission-time validation proof.",
+    "shared_form_report": "metform33-source-parity-v001 proves the photo upload required state and ID5 photo-count validation, but does not record the service-radio required property or a group-level validation result."
+  },
+  "ownership_preference": [
+    "First prefer an already-correct native MetForm field setting/validation path and make no change if it truly rejects an empty required radio group.",
+    "If native configuration is marked required but live source code/runtime evidence proves it does not enforce the group, use the existing page264 semantic owner ID33 rather than creating a second page264 snippet by default.",
+    "Never mutate shared Form33 settings merely to solve a page264-only behavior if that would alter other pages using Form33."
+  ],
+  "mandatory_live_reads_before_any_code": [
+    "Current page264 accepted Elementor hash/JSON validity.",
+    "Current Code Snippets ID33 body, active state, scope, code_error and hash; require page264 semantic behavior reconciliation before modification.",
+    "Current #af-form-service exact MetForm widget ID/type and settings, including exact mf_input_name, mf_input_required, six option values/order and any native validation/error-text settings.",
+    "Current ID5 exact body, hook registration/priority, active state, code_error and route guard so a future service validator cannot overwrite photo-count failures.",
+    "Current ID6 active/state only to prove no unrelated form-runtime mutation is needed."
+  ],
+  "decision_tree": {
+    "native_required_and_enforced": "PASS with read-only evidence; change nothing.",
+    "native_required_false_but_page264_can_be_corrected_without_shared_side_effect": "Prefer the narrowest supported page264-local owner/control; prove no shared Form33 mutation before write.",
+    "native_required_true_but_group_not_enforced": "Prepare an ID33 extension only after exact live field/route/error-copy reads; do not create a second validator snippet by default.",
+    "field_or_owner_drift": "STOP and reconcile; never guess mf_input_name, options, error message or hook priority."
+  },
+  "future_id33_server_filter_contract_if_needed": {
+    "location": "Top-level named callback/filter in the existing ID33 snippet, separate from its wp_footer callback. Keep the existing is_page(264) footer guard unchanged.",
+    "hook": "mf_after_validation_check",
+    "route_guard": "Exact/current Form33 entries insert route using the convention proven by ID5.",
+    "page_guard": "Resolve wp_get_referer() with url_to_postid() and require integer page ID 264; do not rely on is_page() inside REST validation.",
+    "field_guard": "Use only the exact live-read service radio mf_input_name.",
+    "preexisting_failure": "If incoming validation is already false, return the whole result unchanged so ID5/photo or native errors are never overwritten.",
+    "missing_or_empty_service": "Return invalid with only the currently proven/native/source-equivalent user-visible error copy.",
+    "present_service": "Return unchanged. Do not whitelist guessed option values; if value validation is required, use only the six exact current live values.",
+    "other_page_same_form": "Return unchanged.",
+    "other_route": "Return unchanged.",
+    "shared_Form33_mutation": false,
+    "ID5_mutation": false,
+    "ID6_mutation": false
+  },
+  "non_delivery_acceptance_if_filter_needed": [
+    {
+      "case": "page264_missing_service",
+      "method": "Invoke the named validation callback directly in a controlled server context with Form33 route/page264 referer and empty exact service field; do not call MetForm Action::submit.",
+      "expected": "is_valid=false with proven validation message."
+    },
+    {
+      "case": "page264_service_present",
+      "method": "Same synthetic route/page264 context with one current exact option value.",
+      "expected": "Incoming valid result remains valid and unrelated form_data remains unchanged."
+    },
+    {
+      "case": "other_page_same_form",
+      "method": "Same Form33 route with a referer resolving to another page.",
+      "expected": "Result remains unchanged; no page264 validator leakage."
+    },
+    {
+      "case": "different_route",
+      "method": "Page264 referer but non-Form33 insert route.",
+      "expected": "Result remains unchanged."
+    },
+    {
+      "case": "preexisting_failure",
+      "method": "Incoming result already invalid with an existing message such as ID5 photo validation.",
+      "expected": "Existing failure/message remains unchanged."
+    }
+  ],
+  "forbidden_acceptance_shortcuts": [
+    "No real MetForm REST submission.",
+    "No entry creation.",
+    "No SMTP or external e-mail.",
+    "No webhook, Slack, Zapier or other delivery.",
+    "No file upload test.",
+    "No second global validator snippet by default.",
+    "No guessed field name/value/error text.",
+    "No change to shared Form33 merely because page264 proof is missing."
+  ],
+  "postwrite_readback_if_future_fix_is_needed": [
+    "ID33 active=true, code_error=null and new exact hash recorded.",
+    "Existing semantic/runtime body preserved plus exactly one named service validator/filter registration.",
+    "ID5 and ID6 unchanged.",
+    "Page264 Elementor hash/JSON unchanged.",
+    "Direct non-delivery callback cases all pass.",
+    "Fresh page264 AX semantics remain unchanged."
+  ],
+  "current_status": "PREPARED_READ_ONLY_GATE_REQUIRED; NO_CUSTOM_VALIDATOR_JUSTIFIED_YET",
+  "wordpress_writes": 0,
+  "smtp_or_external_submission": false,
+  "pixel_pass": false
+}
