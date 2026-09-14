@@ -1,3 +1,46 @@
+# STATE - 2026-09-14, HEDGE PAGE272 PARTIAL CLOSEOUT; SCOPE RECOVERY 24/26; WPVIBE RESERVE
+
+## Current Hedge continuation point
+Write scope: **only** `https://alakfamester-wp.clicknest.hu/soveny-specialista/` (page272). Reference: `https://alakfamester.clicknest.hu/soveny-specialista.html`.
+Evidence: `reports/subpages/hedge-parity-continuation-20260914-v002.json`, commit `90db24fdeb57214d574113b957ed9ea2de2e1659`. Prepared next package: `build/hedge-parity-next-20260914-v002.json`, commit `dc2114f7ebf70afbff2c72d1110fc74af75e8755`.
+
+WPVibe account: `ncsnorbert+20260914-3@gmail.com`. **Latest exact counter: 280/300 used, 20 remaining** in the rolling 24-hour window. D11 requires at least **10 calls reserved**, therefore only **10 calls are currently usable above reserve**. The target still returns HTTP 429 without `Retry-After` even after pauses and WPVibe exponential retries. Per project rules, start **no new remote work package** until the rolling window frees enough calls for the entire package plus reserve.
+
+### Page272 saved data - keep
+- last verified `_elementor_data`: **53097 B**, SHA256 `bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc`, JSON valid;
+- EAEL `b2e2c001` resolution is restored to `full`;
+- exact source sentence `Jellemzően 24 órán belül válaszolok.` is restored in saved data;
+- fresh cache-busted Opera read before disconnect showed the 24-hour sentence and original/full gallery URLs on frontend;
+- hero `af2e004e`, proof carousel `af2e004d`, native review tabs `c3d30005`, MetForm `af2e0011`, the 2026-09-14 source-copy expansions and `#ajanlatkeres` must remain;
+- legacy image widgets `af2e0009`-`af2e000e` must remain removed;
+- do **not** restore revision378 wholesale and do not repeat the already successful resolution/reply patches.
+
+### Scope recovery - shared media
+The first media-alt parity job modified shared attachments that are also used by page258 Gallery, violating the page272-only final write scope. This was detected and recovery was started from the exact pre-package alt map.
+
+**Restored to their pre-package values (24/26):** `204,203,206,205,112,207,208,209,210,211,212,213,214,215,216,217,218,219,104,105,106,107,108,109`.
+
+**Still pending because every later write returned 429:**
+- attachment `110` -> required pre-package alt `Saját sövénymunka, 15. kép`; last known current value `Sövénymunka, 20. kép`;
+- attachment `111` -> required pre-package alt `Saját sövénymunka, 16. kép`; last known current value `Sövénymunka, 21. kép`.
+
+Before retrying, read only 110/111. Restore only if still different. Then perform one full 26-item readback to prove all shared media metadata is back at the pre-package state. Make no further shared-media changes for Hedge parity.
+
+### Next complete page272-only package - do not start until it fits above reserve
+1. Verify exact WPVibe counter and page272 hash `bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc`.
+2. Finish 110/111 scope recovery and verify all 26 shared alt values.
+3. EAEL gallery `b2e2c001`: preserve all 28 item URLs/names/order/repeater IDs and all other settings, but set `eael_fg_gallery_img.id=0` for all 28 items inside **page272 only**, matching the previously proven D17 implementation. EAEL source confirms attachment alt is preferred and item title is the fallback; this page-only decoupling prevents shared-media metadata from affecting Hedge accessible names. Prefer one exact validated `eael_fg_gallery_items` replacement; do not full-save unless D18 inventory is re-proven.
+4. Legacy page272 semantics after exact content/search:
+   - `af2e000f`: source exposes the complete `ÍRJON BÁTRAN + kreativ@alakfa-mester.hu` block as one mailto link; restore that clickable range while preserving `#ajanlatkeres`;
+   - `af2e004c`: keep the 24-hour sentence and give the two existing contact links exact source accessible names without changing href or visible styling;
+   - add named-region semantics only to complete legacy-contained source sections: `af2e0007`, `af2e0045`, `af2e0047`, `af2e0049`, `af2e000f`. Do not fake partial regions for the Atomic hero, EAEL composite gallery or MetForm composite section.
+5. Reviews: source tablist name is `Ügyfélvélemények`; target tablist is unnamed, target tabs expose `01/02/03`, and target has extra focusable `1./2./3. vélemény` controls. Do **not** guess Atomic attributes. First inspect live `e-tabs` schema in an unthrottled window. The page256 Elementor 4.2.4 pilot proved stored guessed Atomic `aria-labelledby` did not render.
+6. Read back page272 JSON/hash, then fresh frontend; verify hero/proof/reviews/gallery/form preservation, 28 exact gallery names, full URLs, contact-link semantics and named regions.
+
+Opera Browser Connector is currently disconnected; do not open a memory-heavy multi-tab session when it reconnects. Reuse only the Hedge source/target pair and close stale diagnostics. Deterministic 1920/1440/1024/768/390/360 screenshot/overlay/diff remains unavailable; `PIXEL_PASS=false`. `specs/acceptance.json` and `specs/behaviors.json` are still absent.
+
+---
+
 # STATE - 2026-09-14, PARITY QUEUE CHECKPOINT; WPVIBE RESERVE PRESERVED
 
 ## Current global continuation point
@@ -237,7 +280,6 @@ Acceptance for this package:
 - hero/reviews/proof/form IDs preserved;
 - no hidden legacy image widgets reintroduced;
 - no SMTP or real form submission.
-
 ### Current blocker
 WPVibe began returning **HTTP 429** during the verification phase. A later `/batch/v1` write attempt also returned HTTP 429 **before execution**. No WordPress writes from `hedge-parity-fix-20260914-v001` have executed. Do not retry the same call blindly; first verify target hash/state and quota again in a fresh window/session.
 
