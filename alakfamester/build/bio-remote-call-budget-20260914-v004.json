@@ -1,0 +1,76 @@
+{
+  "schema_version": 4,
+  "package": "bio-remote-call-budget-20260914-v004",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_REQUIRED",
+  "supersedes": "build/bio-remote-call-budget-20260914-v003.json",
+  "known": {
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "site_connection": "UNKNOWN",
+    "exact_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "current_wordpress_writes": 0,
+    "current_repo_write_scope": "page264-only until normal handoff"
+  },
+  "counting_note": "Logical WPVibe action ranges only; live account counter is authoritative.",
+  "phase_0_preflight": {
+    "range": "4-6",
+    "actions": ["profile/site/quota", "page256 bytes/SHA/JSON", "ID35 if not bundled", "read-only global owner checks", "fresh af260016 owner search"]
+  },
+  "phase_1_style_carrier_probe": {
+    "range": "4-6 plus 1-2 rollback reserve",
+    "package": "bio-page-local-style-carrier-probe-20260914-v001.json"
+  },
+  "phase_2_first_local_visual": {
+    "range": "4-5",
+    "package": "bio-page-local-visual-delivery-20260914-v002.json",
+    "includes": "quote + source dot in addition to v007 base visual payload; no ordinal yet"
+  },
+  "phase_3_compact_structural_v015": {
+    "package": "bio-page256-next-safe-package-20260914-v015.json",
+    "units": {
+      "FAQ_order": "~3",
+      "review_anchor_optional": "~3",
+      "third_review_role": "~3",
+      "table_title_conditional": "~3-5 if a compact exact boundary is available"
+    },
+    "rule": "Each unit is a separate complete transaction and stop point. Do not reserve calls for an unsafe stress wrapper; that operation was removed."
+  },
+  "phase_4_stress": {
+    "article_semantic": "~3 if exact two-match aside proof allows atomic replace_all",
+    "current_DOM_visual_append": "~3-4 after page-local owner and pseudo-owner proof",
+    "physical_p2_move": "NO BUDGET; unsupported/unsafe with current primitive"
+  },
+  "phase_5_expectations": {
+    "status": "NO REMOTE BUDGET RESERVED",
+    "reason": "v004 is a hard HOLD until one safe atomic owner-level regrouping primitive exists; do not spend calls probing multi-step wrapper surgery near live state"
+  },
+  "phase_6_FAQ_CTA": {
+    "range": "7-9 after FAQ order completed",
+    "includes": "CTA mail child microfix + local CSS append with fourth wave/paper layout/interactions",
+    "exact_FAQ_runtime": "NO BUDGET RESERVED under current constraints; native details remains interaction blocker"
+  },
+  "phase_7_reviews": {
+    "ordinal_isolated": "~3-4 including local end-marker search/edit + AX/browser readback",
+    "third_role": "normally handled in v015",
+    "review_anchor": "normally optional v015",
+    "media_aspect": "diagnostic only until measured",
+    "prev_next_panel_focus": "NO REMOTE BUDGET RESERVED until sanctioned page-local runtime owner exists",
+    "optional_decor": "~3-4 last only after pseudo-owner proof"
+  },
+  "closeout": {
+    "range": "2-4 WPVibe reads plus browser QA",
+    "requirements": "final page data, rendered local-style marker inventory, ID35 status if needed, exact acceptance gates"
+  },
+  "window_rules": [
+    "<8 calls above reserve: no mutation",
+    "8-15: at most one low-risk complete probe/microfix unit with explicit rollback reserve",
+    "16-25: probe plus first local visual may fit if preflight is compact and live state clean",
+    "do not start a package whose exact owner search may exceed the remaining window",
+    "429/unknown write makes the next safe action readback, never retry",
+    "unsupported exactness blockers receive zero speculative remote-call budget"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
