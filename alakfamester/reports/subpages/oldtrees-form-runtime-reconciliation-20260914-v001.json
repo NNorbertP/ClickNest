@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-form-runtime-reconciliation-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "form_id": 33,
+  "scope": "read-only repository reconciliation; no WordPress write",
+  "evidence": [
+    "reports/subpages/oldtrees-inline-form-v001.json",
+    "reports/home/metform33-source-parity-v001.json",
+    "specs/decisions.md D05"
+  ],
+  "closed_items": {
+    "textarea_rows": {
+      "source": 5,
+      "target_template_native_rows": 10,
+      "live_correction_owner": "Code Snippets ID6 AF MetForm source UI parity",
+      "selector": ".mf-form-wrapper[data-form-id=\"33\"] textarea[name=\"uzenet\"]",
+      "effective_rows": 5,
+      "lifecycle": "guarded MutationObserver; no timer/duplicate handler",
+      "status": "IMPLEMENTED_AND_PREVIOUSLY_READ_BACK"
+    },
+    "photo_count": {
+      "source_contract": "3-5 photos, 8 MB per file",
+      "upload_field": "fotok",
+      "multiple": true,
+      "file_size_limit_kb": 8192,
+      "required": true,
+      "owner": "Code Snippets ID5 AF MetForm photo count validation",
+      "hook": "mf_after_validation_check",
+      "route_scope": "/metform/v1/entries/insert/33",
+      "minimum_files": 3,
+      "maximum_files": 5,
+      "status": "SERVER_SIDE_IMPLEMENTED_AND_PREVIOUSLY_READ_BACK"
+    },
+    "success_state": {
+      "source_heading": "Az űrlap kitöltése rendben",
+      "target_message": "Köszönöm, az ajánlatkérést rögzítettem. Hamarosan jelentkezem a megadott elérhetőségek egyikén.",
+      "reason_for_body_difference": "The frozen source endpoint is a demo/no-send state while the target stores local MetForm entries; copying the source no-send sentence would be false.",
+      "notifications_enabled": false,
+      "webhooks_enabled": false,
+      "store_entries": true,
+      "status": "CONFIGURED_AND_PREVIOUSLY_READ_BACK"
+    }
+  },
+  "still_requires_live_proof": {
+    "required_service_radio": "D05 requires the mandatory topic/service choice to be genuinely enforced. Existing accessibility/runtime evidence proves group labelling and six options but does not explicitly prove submission-time required validation. Do not modify until fresh form schema/runtime evidence shows whether it already passes or fails.",
+    "end_to_end_submission": "Intentionally not performed in this mode; no SMTP or external delivery test."
+  },
+  "do_not_repeat": [
+    "Do not add a second photo-count validator.",
+    "Do not add another textarea rows MutationObserver.",
+    "Do not rewrite the success state merely because oldtrees-inline-form-v001 predates the shared MetForm33 closeout.",
+    "Do not enable notifications/webhooks/SMTP."
+  ],
+  "status": "THREE_FORM_GAPS_RECONCILED_ONE_REQUIRED_RADIO_PROOF_OPEN"
+}
