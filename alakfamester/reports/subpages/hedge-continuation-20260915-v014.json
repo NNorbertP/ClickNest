@@ -1,0 +1,88 @@
+{
+  "schema_version": 14,
+  "package": "hedge-continuation-20260915-v014",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "page272-specific runtime/content only",
+  "wordpress_writes_this_continuation": 0,
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required_before_write": true
+  },
+  "authoritative_chain": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v006.json",
+    "next_live_window": "build/hedge-next-live-window-plan-20260915-v005.json",
+    "acceptance_matrix": "build/hedge-acceptance-matrix-20260915-v005.json",
+    "convergence_ledger": "reports/subpages/hedge-convergence-ledger-20260915-v001.json",
+    "css_ownership": "reports/subpages/hedge-css-ownership-static-audit-20260915-v001.json",
+    "link_meta": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
+    "shared_chrome": "reports/subpages/hedge-shared-chrome-external-gates-20260915-v001.json",
+    "formal_tooling": "reports/subpages/hedge-formal-acceptance-tooling-audit-20260915-v001.json",
+    "state_prepend": "build/hedge-state-prepend-20260915-v010.md"
+  },
+  "current_write_candidate": {
+    "resource": "build/hedge-semantic-runtime-v004.php",
+    "owner": "existing ID36 only",
+    "code_changed_since_v013": false,
+    "new_safety_requirement_since_v013": "Strict existing native ARIA/ID conflict gate before deployment.",
+    "gate_summary": [
+      "fresh baseline and exact ID36 rollback body/state",
+      "review and Form33 structure/cardinality/order",
+      "capture current tab/form/service/city aria-label/aria-labelledby/aria-describedby/role/error state",
+      "v004 must not overwrite meaningful native semantics or be ineffective because of stronger native naming relations",
+      "planned/reused relation IDs must be unique",
+      "any conflict => HOLD v004 and design preserving successor; never delete native semantics blindly"
+    ]
+  },
+  "closed_preserve": [
+    "26/26 shared-media recovery",
+    "EAEL 28/28 id=0/full/original/exact order+names",
+    "five complete legacy regions",
+    "CTA/contact exact semantics and 24h sentence",
+    "hero exact accessible SVG + proof 21 + reviews 3 + Form33",
+    "removed legacy image widgets absent",
+    "D09 page272 links/anchors closed",
+    "historical media/background issues stale/closed",
+    "no page272 CSS candidate from current registry/history"
+  ],
+  "read_first_local": [
+    "complete hero/gallery/form region roots",
+    "ordered source/target H1-H6 levels/names",
+    "proof-carousel item/parent roles and owner",
+    "Form33 service radio exact required configuration and native rejection proof",
+    "document-head title/description/canonical/robots/OG/schema comparison"
+  ],
+  "proof_only": [
+    "review direct interactions unless failure",
+    "proof-carousel arrow/swipe/pause/reduced-motion",
+    "Hedge lightbox until source-specific proof",
+    "visual/CSS until current synchronized local delta and cascade owner proof"
+  ],
+  "external_shared_gates": [
+    "global header route current-state on /soveny-specialista/",
+    "global floating dock paint/layout",
+    "footer gross regression observation"
+  ],
+  "formal_blocker": "Current main does not expose acceptance.json, behaviors.json or the historical README-referenced tools runner set; deterministic six-view same-browser DPR/zoom overlay/diff remains unavailable.",
+  "tool_state": {
+    "wpvibe": "disabled in this conversation; one list_sites attempt failed disabled; no further calls",
+    "opera": "two old project tabs observed, zero new tabs; connector disconnected during cleanup and was not retried; previous Hedge URL/title returned stale prior-page content",
+    "public_http": "unavailable and not retried",
+    "github": "available"
+  },
+  "future_budget": {
+    "nominal_wpvibe_max": 9,
+    "D11_reserve": 10,
+    "preferred_remaining_after_counter": 21
+  },
+  "state_md": "Parallel page264-only STATE.md intentionally untouched; use v010 prepend only after state ownership is reconciled.",
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "STATIC_PAGE272_PREPARATION_MAXIMIZED_WITH_NATIVE_ARIA_CONFLICT_GUARD_LIVE_EXECUTION_BLOCKED"
+}
