@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-semantic-audit-20260914-v001",
+  "date": "2026-09-14",
+  "scope": "page264 only; read-only source-target accessibility/DOM audit after oldtrees source parity fix",
+  "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "wordpress_writes": 0,
+  "baseline": {
+    "last_successfully_verified_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "last_successfully_verified_char_length": 48867,
+    "note": "A fresh hash query later hit HTTP 429, so no write was attempted."
+  },
+  "accessibility_counts": {
+    "source": {"heading":38,"region":11,"sectionWithoutName":1,"form":1,"group":3,"legend":1,"image":6,"link":33},
+    "target": {"heading":29,"region":1,"sectionWithoutName":2,"form":1,"group":1,"details":4,"disclosureTriangle":4,"image":9,"link":37}
+  },
+  "proven_heading_role_delta": [
+    "Állapotfelmérés",
+    "A megtartható szerkezet kiválasztása",
+    "A korona csökkentése",
+    "Karakteres forma kialakítása",
+    "Seb- és egészségügyi kezelés",
+    "További formanevelés",
+    "Fotók",
+    "Előzetes vélemény",
+    "Helyszíni felmérés"
+  ],
+  "proven_named_region_delta": {
+    "source_named_regions": [
+      "Túlnőtt a fa? Mielőtt kivágatná, nézzük meg, lehet-e belőle alakfa",
+      "Amit a megbízóim mondanak",
+      "Ezekkel a helyzetekkel keresnek a leggyakrabban",
+      "Kivágás vagy átalakítás?",
+      "Hat lépés a kivágás helyett",
+      "Nem minden növényt kell és nem minden növényt lehet megmenteni",
+      "Növények, amiket nem vágtunk ki",
+      "Van hasonló növénye?",
+      "Három lépés, kötelezettség nélkül",
+      "Túlnőtt növények – kérdések",
+      "Küldjön róla néhány képet"
+    ],
+    "target_named_regions_observed": ["Amit a megbízóim mondanak"],
+    "source_has_one_unnamed_content_section": true,
+    "target_af2a004d_should_remain_unnamed": true
+  },
+  "proven_cta_delta": {
+    "source_accessible_name":"ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+    "target_accessible_name":"kreativ@alakfa-mester.hu",
+    "target_widget":"af2a004b",
+    "visual_neutral_fix":"aria-label on existing mailto anchor"
+  },
+  "preserved_good_work": [
+    "hero art and its accessible title/description",
+    "native Atomic reviews",
+    "seven-source-chip problem grid",
+    "source comparison copy",
+    "six-step source copy",
+    "credibility copy and mini checklist",
+    "tiszafa before-after interaction",
+    "six-slide Nordmann carousel",
+    "support/gain cards",
+    "three-step copy and offer callout",
+    "four FAQ questions",
+    "inline MetForm33 request section",
+    "source-visible 24-hour reply sentence",
+    "removal of source-absent Az első alkalom eyebrow"
+  ],
+  "not_treated_as_static_mismatch": [
+    "Nordmann current image number: source and target autoplay states were sampled at different moments.",
+    "Global header/footer URL host differences: target intentionally uses canonical WordPress URLs per D09.",
+    "Atomic hero/form region and shared MetForm group semantics: require a separately proven page-scoped solution; no global/shared write is authorized by this page-only scope."
+  ],
+  "prepared_followup": "build/oldtrees-semantic-parity-20260914-v001.json",
+  "blockers": {
+    "wpvibe_429": true,
+    "opera_screenshot_connection": false,
+    "controlled_viewport_pixel_acceptance": false
+  },
+  "pixel_pass": false
+}
