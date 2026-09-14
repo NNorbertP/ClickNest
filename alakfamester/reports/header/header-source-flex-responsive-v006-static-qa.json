@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only static QA; no WordPress write",
+  "package": "build/header-source-flex-responsive-v006.css",
+  "package_commit": "3860464e951e34b1441272988e9a9f89b4c4ec5e",
+  "status": "STATIC_QA_PASS_NOT_DEPLOYED",
+  "supersedes_prepared_not_deployed": [
+    "build/header-desktop-alignment-v004.css",
+    "build/header-alignment-responsive-v005.css"
+  ],
+  "reason_for_supersession": "Direct live reference styles.css proves the header uses a natural-width three-child flex row with justify-content:space-between; the earlier prepared absolute-centering model was a visual approximation and must not be deployed.",
+  "source_contract": {
+    "layout": "header__inner = flex row, align-items:center, justify-content:space-between, gap:16px; brand/nav/actions are natural-width flex items",
+    "header_height_px": 76,
+    "container_wide_px": 1340,
+    "desktop_compact_at_px": 1460,
+    "desktop_compact_nav": "9px 9px padding, .84rem font, zero list gap",
+    "drawer_at_px": 1240,
+    "small_header_at_px": 900,
+    "small_header_height_px": 68,
+    "header_cta_hidden_at_px": 900,
+    "compact_brand_at_px": 560,
+    "compact_logo_px": "57x38",
+    "compact_brand_name_rem": 1.04,
+    "sticky_threshold_px": 8
+  },
+  "static_scope": {
+    "allowed_selectors": [
+      "Elementor header IDs a1000001/a1000002/a1000003/a1000004/a1000006/a1000007/a1000009/a100000a",
+      "af-nav-dropdown-host / af-nav-dropdown-panel",
+      "menu-toggle / mobile-nav",
+      "body.admin-bar header offset only"
+    ],
+    "body_content_selectors": false,
+    "footer_selectors": false,
+    "form_selectors": false,
+    "shared_media_changes": false,
+    "elementor_structure_changes": false
+  },
+  "cascade_checks": [
+    "v006 is designed to replace the currently deployed v003 alignment block, not append beside it.",
+    "The deployed base header-live-source-v001 block remains untouched.",
+    "At <=520, v006's later <=900 68px header rule overrides the old base v001 70px target-only rule.",
+    "At 561-700, v006 explicitly restores the full source desktop brand dimensions/tagline that old v001 compacted too early.",
+    "At <=560, v006 applies the exact source brand mark/name/tagline contract.",
+    "The existing <=1240 menu switch is preserved because it already matches the source."
+  ],
+  "paired_runtime": {
+    "path": "build/header-runtime-parity-v004.json",
+    "commit": "4a6e5dde183d7802aba2d7926ea0653e6c485a7c",
+    "status": "prepared, not deployed"
+  },
+  "deployment_preconditions": [
+    "WPVibe must be available again.",
+    "Verify requested authenticated account and quota; preserve D11 ten-call reserve plus retry margin.",
+    "Fresh-read post8 and require deployed v003 marker/hash state unless a manual edit is detected.",
+    "Fresh-read Code Snippets ID7 and require the guarded prewrite hash in header-runtime-parity-v004.json.",
+    "Replace the complete v003 block with complete v006 using one match-once operation.",
+    "Apply only the runtime v004 deltas through the Code Snippets plugin-aware endpoint.",
+    "Read back both resources before any visual conclusion."
+  ],
+  "post_deploy_qa": [
+    "same source-target desktop top screenshot",
+    "same source-target scrolled sticky screenshot",
+    "desktop dropdown closed/open/current-child states",
+    "ArrowDown trigger entry, panel ArrowUp/ArrowDown traversal and Escape return",
+    "1240 breakpoint menu switch",
+    "900 breakpoint 68px header + hidden CTA",
+    "560 breakpoint brand geometry",
+    "mobile drawer initial focus, submenu, Escape return, resize unlock",
+    "no body/footer/form change"
+  ],
+  "pixel_pass": false,
+  "blocker": "WPVibe disabled in current conversation; no remote deployment is permitted/possible."
+}
