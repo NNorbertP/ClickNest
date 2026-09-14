@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_QUOTA_GUARD",
+  "wordpress_write_executed_in_this_continuation": false,
+  "scope_guard": {
+    "allowed": ["ElementsKit global header ID20", "header-only rules in Hello Additional CSS post8", "header-specific Code Snippets runtime behavior through plugin REST API"],
+    "untouched": ["page body", "hero", "footer", "forms", "other templates", "SMTP", "other page work packages"]
+  },
+  "last_clean_target_baseline": {
+    "additional_css_post_id": 8,
+    "additional_css_modified_gmt": "2026-09-14 16:32:25",
+    "additional_css_bytes": 576084,
+    "additional_css_sha256": "7ac99daf3e30139ce30d57963506de3730db97fd62f03fc729cc3308ab5407f1",
+    "prepared_css_marker_present": false,
+    "header_template_id": 20,
+    "header_elementor_data_bytes": 7729,
+    "header_elementor_data_sha256": "db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d",
+    "header_modified_gmt": "2026-09-13 13:00:33",
+    "drift_detected_at_last_clean_preflight": false
+  },
+  "reference_contract": {
+    "desktop_header_height_px": 76,
+    "wide_container_px": 1340,
+    "logo_plate_px": "69x46",
+    "brand_gap_px": 12,
+    "nav_min_height_px": 44,
+    "nav_padding_px": "10 13",
+    "dropdown_min_width_px": 268,
+    "cta_min_height_px": 44,
+    "cta_padding_px": "10 18",
+    "mobile_breakpoint_px": 1240,
+    "scroll_threshold_px": 8,
+    "brand_interaction": "whole brand block is one link"
+  },
+  "target_known_runtime": {
+    "mobile_breakpoint_px": 1240,
+    "scroll_threshold_px": 24,
+    "snippet_id": 7,
+    "snippet_marker": "af-header-nav-parity-v005"
+  },
+  "prepared_packages": {
+    "css": {
+      "path": "build/header-live-source-v001.css",
+      "commit": "7535f984f886a7e501d17edef75aaf9ffcdce035",
+      "marker": "af-project:header-live-source-v001",
+      "status": "complete package prepared; not written"
+    },
+    "runtime": {
+      "path": "build/header-runtime-threshold-v001.json",
+      "commit": "f684142220ee7011632c77c3c2265da5c8aec3e1",
+      "status": "plugin-aware update procedure prepared; not written"
+    }
+  },
+  "new_findings": {
+    "code_snippets_api": {
+      "verified_namespace": "code-snippets/v1",
+      "item_route": "/code-snippets/v1/snippets/{id}",
+      "read_method": "GET",
+      "update_method": "PUT",
+      "partial_field_update_supported": true,
+      "reason": "The controller loads the existing Snippet object and changes only request fields that are present before save_snippet().",
+      "upstream_controller_blob_sha": "c1b8ff455857493d4f5d7a398044efb7a0f1a611"
+    },
+    "reference_history_lookup": "The archived source styles.css is not present in current GitHub path history through the available connector. Continue using the documented frozen source evidence plus the current live reference; do not invent a historical file.",
+    "public_frontend_semantics": "Current public source and target remain reachable. Narrow-view behavior previously matched at 1240 breakpoint; exact deterministic visual overlay remains unavailable."
+  },
+  "quota": {
+    "latest_exact": "280/300 used",
+    "remaining": 20,
+    "mandatory_closeout_reserve": 10,
+    "usable_above_reserve": 10,
+    "decision": "Do not start a remote header write package. Prior 429 retries showed that a nominal single site write can consume far more than one call. Preserve reserve."
+  },
+  "opera_hygiene": {
+    "status": "visual connector unavailable for screenshot in the latest attempt",
+    "policy": "Do not open additional Opera sessions or parallel tabs while disconnected. Reuse one tab when the connector becomes available.",
+    "memory_action": "No new memory-heavy Opera sessions created in this continuation."
+  },
+  "next_safe_remote_package": [
+    "Re-read AGENTS.md, STATE.md and D02/D07/D11/D18.",
+    "Require enough quota for the entire package plus ten-call reserve and retry margin; current 20 remaining is insufficient after observed 429 retry amplification.",
+    "Run one combined preflight for post8 marker/hash and header20 hash; reconcile any drift before writing.",
+    "Insert the COMPLETE build/header-live-source-v001.css before the unique af-project:end marker through match-once content/edit. Never send a shortened fragment.",
+    "Read back post8 marker/bytes/hash and verify fresh frontend header without touching the body/footer.",
+    "GET Code Snippets ID7 through /code-snippets/v1/snippets/7, hash current code and verify marker/current threshold.",
+    "Change only sticky threshold 24 px to 8 px through plugin REST PUT, then GET and verify active=true and no code_error.",
+    "Verify source-target header behavior at matched desktop/narrow states, dropdown keyboard behavior, mobile drawer/body lock and sticky state.",
+    "Only claim pixel-perfect PASS after deterministic same-viewport/DPR screenshots, overlay and diff are available."
+  ]
+}
