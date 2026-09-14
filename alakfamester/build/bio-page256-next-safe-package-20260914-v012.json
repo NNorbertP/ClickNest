@@ -1,0 +1,64 @@
+{
+  "package": "bio-page256-next-safe-package-20260914-v012",
+  "status": "prepared_not_sent_tool_unavailable",
+  "target_page_id": 256,
+  "precondition": {
+    "elementor_bytes": 35382,
+    "elementor_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "semantic_runtime_snippet_id": 35,
+    "semantic_runtime_must_remain_active": true
+  },
+  "constraints": [
+    "page256 only",
+    "no full Elementor save-page",
+    "no raw SQL mutation",
+    "no Additional CSS write in this package",
+    "no shared/global template/media/plugin-setting change",
+    "preserve existing IDs, text, AX parity and CTA semantics",
+    "use content/search then match-once content/edit only"
+  ],
+  "operations": [
+    {
+      "priority": 1,
+      "element_id": "af260015",
+      "purpose": "restore source FAQ-before-CTA order",
+      "current_exact_field_fragment": "\"id\":\"af260015\",\"elType\":\"widget\",\"settings\":{\"_css_classes\":\"af-faq-content\"",
+      "intended_fragment": "\"id\":\"af260015\",\"elType\":\"widget\",\"settings\":{\"_css_classes\":\"\"",
+      "why_safe": "af-faq-content has exactly one CSS use, #af-sub-bio-cta>.af-faq-content{order:10!important}; removing it changes only this page widget and restores default order before CTA children",
+      "verification": ["fresh frontend DOM order", "FAQ button AX names unchanged", "CTA exact mailto accessible name unchanged"]
+    },
+    {
+      "priority": 2,
+      "element_id": "af260007",
+      "purpose": "restore source two-column grouping",
+      "search_anchor": "Egy er\\u0151sen visszav\\u00e1gott",
+      "transformation": "inside existing af-sub-split, wrap the two existing explanatory p elements in one new div so the grid has exactly two direct children: left text wrapper and existing aside",
+      "preserve": ["all text bytes", "existing aside", "region role/aria-label", "widget ID", "existing classes"],
+      "verification": ["frontend split has exactly two direct children", "source text unchanged", "region AX name unchanged"]
+    },
+    {
+      "priority": 3,
+      "element_ids": ["af26000e", "af26000f", "af260012", "af260014"],
+      "purpose": "restore four source wave separators through proven D18 V4 class bridge",
+      "global_class": {"id":"g-af-src-wave","label":"af-source-wave"},
+      "current_atomic_setting": "_css_classes=af-source-wave is stored but not rendered",
+      "intended_atomic_setting": "add typed settings.classes={\"$$type\":\"classes\",\"value\":[\"g-af-src-wave\"]} while preserving the legacy _css_classes field and all element IDs",
+      "save_method": "individual exact match-once content/edit patches on _elementor_data; do not use save-page",
+      "verification": ["frontend each ID exposes af-source-wave", "existing af-source-wave CSS applies", "no other Atomic class drift", "JSON valid"]
+    }
+  ],
+  "deferred_due_scope": [
+    "technology cards/callout exact source visual styling",
+    "symptom table exact source visual styling/markup",
+    "expectations two-card exact source visual grouping if it requires new page-scoped CSS",
+    "FAQ exact source visual skin"
+  ],
+  "postconditions": [
+    "fresh bytes/SHA/JSON readback",
+    "source-target frontend order/structure check",
+    "7/7 named regions still exact",
+    "review tablist/tabs and FAQ buttons still exact",
+    "no other page affected"
+  ]
+}
