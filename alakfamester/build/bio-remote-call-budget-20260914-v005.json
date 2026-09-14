@@ -1,0 +1,70 @@
+{
+  "schema_version": 5,
+  "package": "bio-remote-call-budget-20260914-v005",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_REQUIRED",
+  "supersedes": "build/bio-remote-call-budget-20260914-v004.json",
+  "known": {
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "site_connection": "UNKNOWN",
+    "exact_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "current_wordpress_writes": 0,
+    "current_repo_write_scope": "page264-only until normal handoff"
+  },
+  "counting_note": "Logical WPVibe action planning only. Future live account counter is authoritative.",
+  "phase_0_preflight": {
+    "range": "4-6",
+    "actions": ["profile/site/quota", "page256 bytes/SHA/JSON", "ID35 status if not bundled", "read-only shared/global owner diagnostics", "fresh af260016 owner search"]
+  },
+  "phase_1_style_carrier_probe": {"range":"4-6 plus 1-2 rollback reserve","package":"bio-page-local-style-carrier-probe-20260914-v001.json"},
+  "phase_2_first_local_visual": {"range":"4-5","package":"bio-page-local-visual-delivery-20260914-v002.json","includes":"quote + source dot; ordinal isolated later"},
+  "phase_3_compact_structural_v015": {
+    "package":"bio-page256-next-safe-package-20260914-v015.json",
+    "units": {
+      "FAQ_order":"~3",
+      "review_anchor_optional":"~3",
+      "third_review_role":"~3",
+      "table_title_conditional":"~3-5 if one compact exact boundary exists"
+    }
+  },
+  "phase_4_stress": {
+    "article_semantic":"~3 if exactly two af260007 whole-word aside tokens are proven",
+    "current_DOM_visual_append":"~3-4 after local owner and pseudo-owner proof",
+    "physical_p2_move":"NO BUDGET; unsupported/unsafe"
+  },
+  "phase_5_expectations": {
+    "status":"NO REMOTE BUDGET RESERVED",
+    "reason":"v004 deployment HOLD until a single safe atomic owner-level regrouping primitive exists"
+  },
+  "phase_6_FAQ_CTA": {
+    "range":"7-9 after FAQ-order predecessor",
+    "includes":"CTA mail child microfix + local CSS append with fourth wave/paper layout/interactions",
+    "exact_FAQ_runtime":"NO BUDGET RESERVED under current constraints"
+  },
+  "phase_7_reviews": {
+    "ordinal_isolated_visual_AX":"~3-4 after local style owner exists: exact end-marker search + local CSS append + rendered/AX readback",
+    "review_points_section_AX_diagnostic":"0 WPVibe if released Opera AX can inspect the live active Panasonic panel; otherwise one rendered/public diagnostic may be needed but do not mutate",
+    "review_points_semantic_write":"NO SPECULATIVE WRITE BUDGET YET. Only after section-local browser AX confirms current source-vs-target list semantics and fresh saved-data searches prove isolatable point-span boundaries. If that proof passes, reserve a separate generous 4-6 logical actions for exact searches, one compact semantic edit strategy and immediate AX/page readback; do not start near reserve.",
+    "third_role":"normally handled in v015",
+    "review_anchor":"normally optional v015",
+    "media_aspect":"diagnostic only until rendered container measured",
+    "prev_next_panel_focus":"NO REMOTE BUDGET RESERVED until sanctioned runtime owner exists",
+    "optional_decor":"~3-4 last only after pseudo-slot proof"
+  },
+  "closeout": {
+    "range":"2-4 WPVibe reads plus browser QA",
+    "requirements":"final page data, rendered local-style marker inventory, ID35 status if needed, section-local AX acceptance"
+  },
+  "window_rules": [
+    "<8 calls above reserve: no mutation",
+    "8-15: at most one low-risk complete probe/microfix unit with rollback reserve",
+    "16-25: probe plus first local visual may fit if preflight is compact and live state clean",
+    "do not start any semantic candidate whose exact saved-data boundaries are not already proven within the available window",
+    "429/unknown write makes the next safe action readback, never retry",
+    "unsupported exactness blockers and unverified review-points semantics receive zero speculative mutation budget"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
