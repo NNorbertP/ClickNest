@@ -1,0 +1,74 @@
+{
+  "schema_version": 5,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "supersedes_for_planning": "reports/parity-open-items-20260914-v004.json",
+  "priority_queue": [
+    {
+      "priority": 1,
+      "resource": "page272 Hedge legacy semantics continuation",
+      "latest_evidence": "reports/subpages/hedge-legacy-semantics-20260914-v006.json",
+      "resume_payload": "build/hedge-page272-legacy-semantics-resume-20260914-v004.json",
+      "last_successful_reported_bytes": 53369,
+      "completed_regions": ["af2e0007", "af2e0045", "af2e0047", "af2e0049"],
+      "important_reconciliation": "The first af2e0007 content/edit returned HTTP 429 but later exact readback proved it executed; its full +73 byte UTF-8 delta explained the apparent baseline drift. Never blindly repeat a 429-returned write.",
+      "pending": [
+        "fresh page272 bytes/SHA/JSON + completed-fragment inventory before any write",
+        "af2e000f region + exact source mailto clickable range",
+        "af2e004c source-exact phone/email accessible names",
+        "fresh protected-component/gallery/hash/frontend AX closeout",
+        "Atomic review schema only through proven path; no guessed attributes"
+      ],
+      "preserve": "26/26 shared media recovery PASS; EAEL gallery 28/28 ids=0/full/original URLs; no more shared-media writes"
+    },
+    {
+      "priority": 2,
+      "resource": "page256 Biological Protection legacy parity",
+      "latest_evidence": "reports/subpages/bio-parity-continuation-20260914-v006.json",
+      "state": "Eight terminal periods were successfully removed (all four af260007 + all four af260010). The following af260013 write returned 429 and is unconfirmed.",
+      "pending": [
+        "fresh page256 bytes/SHA/JSON and af260013 raw snippet inventory first",
+        "five af260013 terminal periods only where still present",
+        "af260011 uppercase table headers + four th scope=row cells",
+        "four complete legacy named regions",
+        "final CTA aria-label only if fresh AX still differs"
+      ],
+      "atomic_rule": "No guessed hero/FAQ/review-tablist attributes on Elementor 4.2.4."
+    },
+    {
+      "priority": 3,
+      "resource": "page264 Old Trees acceptance-only remainder",
+      "latest_evidence": "reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json",
+      "live_helper_source": "build/oldtrees-semantic-runtime-v003.php",
+      "static_qa": "reports/subpages/oldtrees-semantic-runtime-static-qa-v002.json",
+      "saved_elementor_baseline": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+      "content_semantics_status": "PASS to current proven source contract",
+      "remaining": ["final delayed-dot AX proof", "review keyboard interaction", "tiszafa pointer/keyboard", "Nordmann normal/reduced timed behavior", "formal deterministic pixel comparison"]
+    },
+    {
+      "priority": 4,
+      "resource": "shared review runtime candidate",
+      "prepared": "build/reviews-controls-v006-dot-a11y-plan.json",
+      "status": "NOT DEPLOYED",
+      "gate": "Representative multi-page source/target proof required before changing global Code Snippets ID14."
+    },
+    {
+      "priority": 5,
+      "resource": "global header",
+      "evidence": "reports/header/header-live-source-audit-20260914-v003.json",
+      "status": "prepared only; fresh post8/header20 conflict preflight required before write"
+    }
+  ],
+  "active_remote_blocker": "Intermittent target-side HTTP 429/browser challenge. Account quota is not exhausted. Failed calls may retry automatically; do not spam site requests.",
+  "opera_policy": "Do not open additional Opera tabs. Existing two tabs are shared/concurrently repurposed; current connector has no click/keyboard action.",
+  "formal_blockers": [
+    "specs/acceptance.json and specs/behaviors.json unavailable and must not be invented",
+    "deterministic six-viewport screenshot/overlay/diff unavailable",
+    "local Chromium cannot resolve Clicknest hosts",
+    "two exact source image assets remain 404 without proven substitute",
+    "SMTP/real submission intentionally excluded"
+  ],
+  "pixel_pass": false
+}
