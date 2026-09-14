@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "V003_DEPLOYED_V004_PREPARED_HOST_429",
+  "wordpress_verified": {
+    "additional_css_post_id": 8,
+    "bytes": 600999,
+    "sha256": "8cd8a9cfb804ba6ca5ab57a8ff59d7858c2e14bfb940f4921f2bceddefd80b83",
+    "base_marker": "af-project:header-live-source-v001",
+    "alignment_marker": "af-project:header-desktop-alignment-v003",
+    "v002_marker_present": false,
+    "snippet_id": 7,
+    "snippet_active": true,
+    "snippet_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "snippet_bytes": 9723,
+    "sticky_threshold_px": 8,
+    "main_navigation_aria_label": "Főmenü",
+    "brand_accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "live_dom_findings": {
+    "services_runtime_button": "button#af-nav-services.ekit-menu-nav-link.ekit-menu-dropdown-toggle",
+    "services_button_contains_one_svg_indicator": true,
+    "duplicate_visual_caret_root_cause": "ekit-menu-dropdown-toggle pseudo-element ::after; not a second SVG",
+    "service_parent_current_classes_on_oldtrees": false,
+    "active_state_strategy": "runtime adds is-current from location pathname; CSS styles .af-nav-dropdown-host.is-current>button",
+    "desktop_nav_v003": "visually centered around the same header centerline as the source; residual width is trigger-state/caret related"
+  },
+  "visual_qa": {
+    "source_target_top_pair_captured": true,
+    "header_height": "close",
+    "logo_plate": "close",
+    "brand_typography": "close",
+    "cta": "close",
+    "desktop_nav_centerline": "v003 materially improved and visually centered",
+    "remaining": [
+      "suppress ekit-menu-dropdown-toggle ::after duplicate caret",
+      "restore source-like active parent pill for service/reference route groups",
+      "re-capture top and scrolled header after v004",
+      "narrow/mobile behavior still requires controlled QA"
+    ],
+    "pixel_pass": false
+  },
+  "prepared": {
+    "css": {
+      "path": "build/header-desktop-alignment-v004.css",
+      "commit": "b42f27fd7b2317d8f164652ade362efc3b0797b7",
+      "replace_marker": "af-project:header-desktop-alignment-v003",
+      "status": "not deployed; host returned 429"
+    },
+    "runtime_delta": [
+      "inside makePanel after host creation, add is-current when current pathname matches an item URL in that group",
+      "preserve Főmenü aria-label, 8px sticky threshold and current brand/dropdown accessible names"
+    ]
+  },
+  "scope_guard": {
+    "modified": ["Hello Additional CSS header-only blocks", "Code Snippets ID7 header runtime"],
+    "not_modified": ["page body", "footer", "forms", "SMTP", "other templates", "other page work packages"]
+  },
+  "next_safe_actions": [
+    "Do not retry while host is actively returning 429.",
+    "Before retry, read post8 hash and snippet hash; require the exact values in wordpress_verified unless a manual change is detected.",
+    "Replace v003 block with the complete v004 block in one match-once write.",
+    "Update snippet ID7 with only the route-group is-current logic, preserving every verified v005 behavior.",
+    "Read back both resources, then reuse only the existing Opera source/target tabs for fresh top and scrolled screenshots.",
+    "If a visual change does not measurably improve parity, roll back that exact isolated block instead of stacking another guess."
+  ]
+}
