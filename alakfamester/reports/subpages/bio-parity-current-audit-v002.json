@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "package": "bio-parity-current-audit-v002",
+  "date": "2026-09-14",
+  "scope": {
+    "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+    "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+    "wordpress_page_id": 256,
+    "write_scope": "Only page256 was eligible for WordPress modification in this package. No other target page, global template, CSS block or plugin configuration was modified."
+  },
+  "rules": ["D03", "D07", "D09", "D11", "D12", "D18"],
+  "preflight": {
+    "wpvibe_account": "ncsnorbert+20260914-3@gmail.com",
+    "theme": "hello-elementor 3.5.1",
+    "elementor": "4.2.4",
+    "page_template": "elementor_header_footer",
+    "live_elementor_data_before": {
+      "bytes": 34930,
+      "sha256": "c84feb47f8ca33218914b546d0dd2d10dd924a60b703fb049c4b8652bca9f729"
+    },
+    "prior_documented_checkpoint": {
+      "bytes": 34725,
+      "sha256": "b480423f4a29331789541b3a1ded5ec1e681dfd773bb205a5c09e4d4d1dbf253"
+    },
+    "drift_policy": "The live tree was treated as authoritative. The prior checkpoint was not restored because the current value differed and the drift was not attributable to a safe revision rollback.",
+    "page_revisions": [
+      {"id": 274, "date": "2026-09-11 18:48:09", "bytes": 19431, "sha256": "04f1201b6419f6342d8ebd63bd9d81eb9b6711456ee8f28b7af22096217449a3"},
+      {"id": 257, "date": "2026-09-11 18:14:41", "bytes": 9220, "sha256": "88b804590edb731af66610c2e88ead943409ea8d5ec56f633d464133627cfbf8"}
+    ]
+  },
+  "fresh_source_target_audit": {
+    "headings": "The source and target expose the same 22 heading texts. Apparent local ordering differences are consistent with the previously documented accessibility-tree flattening behavior and were not treated as proof of a visual DOM-order defect.",
+    "page_media": "The biological-protection hero illustration and Panasonic review image are present on the target. The extra target logo image belongs to the global header, not page256 content. The reference ClickNest footer credit remains outside page256 content.",
+    "links": "Page-content phone, email, technology anchor, home #apolas and contact-form links map to the documented WordPress equivalents under D09.",
+    "confirmed_differences": [
+      "The source exposes named regions for the hero, four main content sections and the FAQ area; the target exposes only the review section as a named region and leaves the other page sections unnamed/generic.",
+      "The source review tablist has accessible name 'Ügyfélvélemények'; the target tablist has no accessible name.",
+      "The source symptom table uses uppercase stored column labels TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY and exposes the first cell of each body row as rowHeader; the target stores title-case labels and exposes all body cells as regular cells.",
+      "The source list items in the stress, use-case and expectation lists do not end with periods; the target strings do.",
+      "The source final mailto link exposes the complete 'ÍRJON BÁTRAN kreativ@alakfa-mester.hu' block as one link; the target links only the email address and leaves 'Írjon bátran' outside the link."
+    ],
+    "unresolved_without_controlled_visual_capture": [
+      "Target accessibility output includes review index text 01/02/03 and previous/next glyphs not present as source static text.",
+      "Target accessibility output includes decorative technology-card glyphs ⌁ / ◇ / ◇ not present as source static text.",
+      "These may be CSS/pseudo-element presentation differences; no visual CSS change is justified without controlled screenshots/computed-style evidence."
+    ]
+  },
+  "atomic_attribute_pilot": {
+    "goal": "Test a native Elementor V4 aria-labelledby on existing hero e-flexbox af260002 without a full save.",
+    "schema": "Live e-flexbox schema confirmed attributes type; Elementor Atomic source defines attributes as an array of key-value string props.",
+    "write": "Surgical /wpvibe/v1/content/edit inserted only a typed aria-labelledby attribute into af260002 settings. Element IDs, classes, styles, children and content were unchanged.",
+    "intermediate_bytes": 35122,
+    "frontend_result": "FAIL: fresh rendered #af-sub-bio-hero HTML did not contain aria-labelledby. The Atomic 4.2.4 renderer on this target did not emit the stored attribute.",
+    "rollback": "The exact inserted attributes fragment was removed immediately through the same supported content/edit route.",
+    "rollback_verified": {
+      "bytes": 34930,
+      "sha256": "c84feb47f8ca33218914b546d0dd2d10dd924a60b703fb049c4b8652bca9f729"
+    },
+    "persistent_wordpress_change": false,
+    "decision": "Do not use guessed/native Atomic attributes for the remaining hero/tablist/final-section semantics on this Elementor 4.2.4 target. Do not full-save page256 while D18-sensitive legacy _css_classes remain."
+  },
+  "blocked_write_package": {
+    "planned_safe_legacy_edits": [
+      "Remove source-nonexistent trailing periods from the three legacy list groups after exact raw-string search/count.",
+      "Restore source-equivalent symptom-table header text and th scope=row semantics in legacy text-editor content.",
+      "Restore the final CTA mailto clickable range so the label and email are one link, after exact source-markup confirmation.",
+      "Add named region semantics only where a complete source section is wholly contained inside a legacy text-editor block; do not fake the Atomic hero/tablist/final outer-section semantics."
+    ],
+    "blocker": "The target began returning HTTP 429 Too Many Requests to WPVibe requests. The last WPVibe site request attempted its own exponential-backoff retries and still returned 429 with no Retry-After header. No raw meta/SQL write or other bypass was used.",
+    "status": "NOT STARTED remotely; prepared findings only. Re-check the live hash before any future write."
+  },
+  "acceptance_blockers": {
+    "spec_files": "specs/acceptance.json and specs/behaviors.json are absent from current main.",
+    "visual": "PIXEL_PASS=false. Opera screenshot remains unavailable and the container Chromium/network path is blocked for Clicknest hosts, so the required controlled six-viewport screenshot/overlay/diff pipeline cannot be produced in this session.",
+    "behavior": "The available Opera connector exposes accessibility-tree reads but no click/keyboard action, so FAQ/tab interaction state transitions could not be exercised in this package."
+  },
+  "quota_closeout": {
+    "exact_counter": "86/300 used",
+    "remaining": 214,
+    "mandatory_reserve": 10,
+    "remaining_above_reserve": 204
+  },
+  "next_safe_operation": [
+    "Verify page256 _elementor_data is still 34930 B / c84feb47f8ca33218914b546d0dd2d10dd924a60b703fb049c4b8652bca9f729 and re-check the live WPVibe counter.",
+    "If the target no longer returns 429, re-read D03/D07/D11/D18 and use /wpvibe/v1/content/search plus /content/edit only for the verified legacy text-editor corrections above.",
+    "Read back the resulting hash and rendered HTML, then repeat source/target accessibility comparison for headings, region names, table roles, links and text.",
+    "Do not modify other pages, global header/footer, Additional CSS, plugin configuration or SMTP for this scoped task.",
+    "Leave PIXEL_PASS=false until the documented deterministic screenshot matrix is available."
+  ]
+}
