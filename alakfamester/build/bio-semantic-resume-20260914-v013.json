@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "package": "bio-semantic-resume-20260914-v013",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "baseline": {
+    "elementor_bytes": 35382,
+    "elementor_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "semantic_runtime_snippet_id": 35
+  },
+  "closed_do_not_repeat": [
+    "13/13 source-absent terminal periods",
+    "source-exact symptom-table uppercase headers and four rowHeader cells",
+    "four complete legacy region names",
+    "final CTA exact aria-label and mailto range",
+    "runtime hero/FAQ/review naming from ID35",
+    "duplicate numbered review-dot AX/focus suppression"
+  ],
+  "open_safe_semantic_probe": [
+    {
+      "element": "af260007",
+      "source_role": "article",
+      "target_role": "complementary because stored legacy root is aside",
+      "next": "Fresh content/search by element ID; if exact current widget still uses one neutral aside root around the source-exact card, replace only opening <aside ...> with <article ...> and closing </aside> with </article> using guarded match-once edits. Preserve class/content/order.",
+      "geometry_risk": "Default block geometry remains equivalent, but fresh AX readback is mandatory."
+    },
+    {
+      "element": "af260013",
+      "source_role": "two articles",
+      "target_role": "same visible headings/lists/copy but neutral div card roots",
+      "next": "Fresh raw content/search only. Determine exact card root boundaries before deciding whether two tag-only div->article changes are possible. Do not reconstruct or full-rewrite from AX evidence."
+    }
+  ],
+  "unsafe_or_not_needed": [
+    "Do not reorder content based on AX flattening.",
+    "Do not change technology card semantics: three article roles already match source.",
+    "Do not replace native FAQ details/summary behavior; visual mapping belongs to prepared CSS.",
+    "Do not modify Atomic attributes by guesswork or full-save the page."
+  ],
+  "remote_gate": "Run only after exact quota has enough headroom for search/write/readback plus D11 reserve. A 429-returned write is UNKNOWN until readback."
+}
