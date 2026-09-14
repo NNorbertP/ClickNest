@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-visual-deploy-manifest-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "mode": "PREDEPLOY_IDENTITY_AND_MARKER_MANIFEST_NO_WORDPRESS_WRITE",
+  "standalone": {
+    "v006": {
+      "path": "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "github_blob_sha": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+      "start_marker": "af-oldtrees-visual-v006:start",
+      "end_marker": "af-oldtrees-visual-v006:end",
+      "required_prewrite_start_marker_count": 0,
+      "required_postwrite_start_marker_count": 1,
+      "scope_root": "body.page-id-264 #ajanlatkeres .elementor-element-af2a0054",
+      "properties": ["color"],
+      "purpose": "Make the already-source-correct v004 white request-contact foreground win the live cascade."
+    },
+    "v007": {
+      "path": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "github_blob_sha": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+      "start_marker": "af-oldtrees-visual-v007:start",
+      "end_marker": "af-oldtrees-visual-v007:end",
+      "required_prewrite_start_marker_count": 0,
+      "required_postwrite_start_marker_count": 1,
+      "scope_root": "body.page-id-264 .elementor-element-af2a0045",
+      "properties": ["display", "grid-template-columns", "gap", "align-items", "width", "max-width", "min-width"],
+      "responsive": "At max-width:900px keep one minmax(0,1fr) column.",
+      "purpose": "Make the already-source-correct v004 equal desktop comparison grid win the live cascade."
+    }
+  },
+  "combined_bundle": {
+    "path": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+    "github_blob_sha": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+    "contains_v006_start_marker_once": true,
+    "contains_v006_end_marker_once": true,
+    "contains_v007_start_marker_once": true,
+    "contains_v007_end_marker_once": true,
+    "content_identity_review": "The actual v006 and v007 rule bodies and marked blocks in the bundle match the standalone files; the bundle adds only its policy header and inter-block separation.",
+    "use_only_when": "Fresh trustworthy source/target gate proves BOTH v006 and v007 failures still reproduce and both live new-marker counts are zero."
+  },
+  "existing_live_markers_to_require": {
+    "af-project:end": 1,
+    "af-oldtrees-visual-v004:start": 1,
+    "af-oldtrees-visual-v005:start": 1
+  },
+  "decision_matrix": {
+    "v006_fail_v007_fail": "Insert the combined bundle once.",
+    "v006_fail_v007_pass": "Insert v006 standalone once.",
+    "v006_pass_v007_fail": "Insert v007 standalone once.",
+    "v006_pass_v007_pass": "Write nothing."
+  },
+  "insert_contract": [
+    "Fresh current server-side Additional CSS marker/hash inventory must be read before insertion.",
+    "Insert exactly the selected complete marked block or bundle immediately before the unique af-project:end marker with a supported match-once edit.",
+    "Do not assemble a new CSS block manually during the remote write; use the repository artifact identified by this manifest.",
+    "Do not replay or alter v004/v005 or any earlier oldtrees visual block.",
+    "Do not write page264 Elementor data for these cascade fixes.",
+    "Any HTTP 429 write response is UNKNOWN until marker/hash readback; never blind retry."
+  ],
+  "mandatory_postwrite": [
+    "Selected new start/end marker counts exactly one each.",
+    "af-project:end count exactly one and still follows the inserted block(s).",
+    "page264 Elementor data still reconciles to the accepted baseline unless fresh preflight had already documented legitimate drift.",
+    "Targeted visual capture proves the selected failure closed and accepted v004/v005 appearance/geometry did not regress."
+  ],
+  "rollback_contract": "If the new block causes a measurable regression, remove only the exact newly inserted marked block through a guarded current-state edit. Never restore a stale full Additional CSS snapshot.",
+  "wordpress_writes": 0,
+  "status": "DEPLOY_ARTIFACT_IDENTITIES_AND_MARKERS_FROZEN_FOR_NEXT_LIVE_GATE"
+}
