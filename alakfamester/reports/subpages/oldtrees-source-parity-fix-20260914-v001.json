@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "oldtrees-source-parity-fix-20260914-v001",
+  "date": "2026-09-14",
+  "target_site": "https://alakfamester-wp.clicknest.hu",
+  "source_url": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "target_url": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "page_id": 264,
+  "scope": "two proven source-content parity deltas only; no full-page restore",
+  "preflight": {
+    "page_template": "elementor_header_footer",
+    "elementor_bytes": 48951,
+    "elementor_sha256": "9cd9242e302ba1ae8074b16f307f6d29414f503929dcfed6d3ba435136142781",
+    "manual_drift_detected": true,
+    "source_24h_reply_visible": true,
+    "target_24h_reply_initially_hidden": true,
+    "source_extra_first_visit_eyebrow_present": false,
+    "target_extra_first_visit_eyebrow_present": true
+  },
+  "writes": [
+    {
+      "route": "/wpvibe/v1/content/edit",
+      "target": "page264 meta:_elementor_data",
+      "match_once": true,
+      "change": "Removed hidden aria-hidden=true from the existing form-reply paragraph so the source sentence Jellemzően 24 órán belül válaszolok. is rendered and exposed to accessibility APIs.",
+      "replaced": 1
+    },
+    {
+      "route": "/wpvibe/v1/content/edit",
+      "target": "page264 meta:_elementor_data",
+      "match_once": true,
+      "change": "Removed the source-absent Az első alkalom eyebrow immediately before the existing Mennyire változik meg már az első alkalommal? heading.",
+      "replaced": 1
+    }
+  ],
+  "post_readback": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "preserved_ids": ["af2a0008", "af2a004d", "af2a0054", "af2a0055"],
+    "rendered_24h_reply_visible": true,
+    "accessibility_24h_reply_visible": true,
+    "accessibility_extra_first_visit_eyebrow_present": false,
+    "existing_first_visit_heading_preserved": true
+  },
+  "testing": {
+    "fresh_target_html_readback": true,
+    "fresh_opera_accessibility_readback": true,
+    "source_form_submitted": false,
+    "target_form_submitted": false,
+    "smtp_configured": false,
+    "external_message_sent": false,
+    "full_page_save_performed": false,
+    "extra_cache_flush_performed": false
+  },
+  "visual_acceptance": {
+    "pixel_pass": false,
+    "reason": "Opera screenshot capture became unavailable and the local headless Chromium environment could not produce a deterministic source-target viewport capture. No pixel-perfect claim is made."
+  },
+  "quota_closeout": {
+    "used": 93,
+    "limit": 300,
+    "remaining": 207,
+    "reserved_for_recovery_closeout": 10
+  },
+  "next_safe_action": "Return to the prepared Hedge page272 parity package only after re-reading its current hash and affected media values; do not restore revision 378 wholesale."
+}
