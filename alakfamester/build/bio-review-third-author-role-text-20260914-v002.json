@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "package": "bio-review-third-author-role-text-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "b2560031",
+  "status": "CURRENT_PUBLIC_HTML_PROVEN_DELTA_FRESH_SAVED_SEARCH_REQUIRED_BEFORE_WRITE",
+  "supersedes": "build/bio-review-third-author-role-text-20260914-v001.json",
+  "source_text": "ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+  "target_current_public_HTML_text": "ügyvezető · ARKER'S Építésziroda Kft.",
+  "current_proof": {
+    "source_HTTP_document_sha256": "8e1f5502ea4059b809370b9008470fc2a3f05a07424bb4da946127fd40eb19ba",
+    "target_HTTP_document_sha256": "65b41d8f3859b87880227637b7968180830e7097f6fa8bec6ee5e0f561f7c275",
+    "evidence": "read-only public source/target HTML diff; no Opera navigation and no WordPress write",
+    "repo_decision_search": "no decision/evidence found intentionally shortening this role line"
+  },
+  "future_safe_edit": {
+    "precondition": "Fresh page256 _elementor_data bytes/SHA/JSON reconciled and fresh content/search around b2560031 or unique ASCII ARKER'S anchor confirms the SAVED live value is still exactly the short target text.",
+    "method": "Use the exact returned escaped snippet in one match-once content/edit. Replace only b2560031 visible paragraph text. Preserve ID, element type, classes and surrounding Atomic hierarchy.",
+    "do_not": [
+      "do not alter the third tab label/accessibility name",
+      "do not alter Lőrincz Balázs name/title or review body",
+      "do not rewrite the entire review panel/widget/page",
+      "do not use full Elementor save/raw SQL/search-replace"
+    ]
+  },
+  "postconditions": [
+    "full source role text visible exactly once",
+    "third tab accessible name remains exactly ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető",
+    "review panel body/title/image/alt unchanged",
+    "page JSON valid",
+    "protected content manifest differs only at this explicitly approved field"
+  ],
+  "rollback": "Fresh-search the exact full source role string in b2560031 and restore only the prior short role value if a proven regression occurs; never restore an old page blob.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
