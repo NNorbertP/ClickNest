@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only runtime parity",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_WPVIBE_UNAVAILABLE",
+  "supersedes": "build/header-runtime-parity-v007.json",
+  "required_prewrite": {
+    "snippet_id": 7,
+    "sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "bytes": 9723,
+    "active": true,
+    "marker": "af-header-nav-parity-v005"
+  },
+  "brand_semantic_delta": {
+    "source": "one home link named 'Alakfa mester BIRÓ JÁNOS' with brand-name and tagline text as its children; decorative logo does not create a separate announced object",
+    "target_now": "home link already has correct full aria-label, but visible tagline remains a separate staticText sibling and the separate logo image remains an unnamed image node",
+    "runtime_fix": [
+      "Keep brandLink aria-label='Alakfa mester BIRÓ JÁNOS'.",
+      "Set aria-hidden='true' on the separate visible tagline widget/root or its heading title so it is not announced a second time; do not hide it visually.",
+      "Set logo alt='' and aria-hidden='true'; do not alter src, size or visual rendering."
+    ]
+  },
+  "popup_semantic_delta": {
+    "source": "popup button accessibility children contain text only; caret is decorative",
+    "target_now": "copied ElementsKit SVG indicator appears as an unnamed image child",
+    "runtime_fix": "mark copied .elementskit-submenu-indicator SVG aria-hidden='true' and focusable='false' while retaining its visual geometry"
+  },
+  "landmark_delta": {
+    "source": "header/banner landmark",
+    "target_now": "sectionHeader",
+    "runtime_fix": "set role='banner' on existing header root"
+  },
+  "behavior_deltas": [
+    "rAF-throttle sticky state while preserving target is-scrolled class and >8px threshold",
+    "native Enter/Space button activation; special trigger ArrowDown only",
+    "open-panel ArrowUp/ArrowDown traversal + Escape trigger return + outside click close",
+    "source-like current group and exact child current state from normalized location",
+    "mobile initial focus on first interactive drawer item after open",
+    "native duplicate ul.elementskit-dropdown made aria-hidden/inert and descendants non-tabbable when custom dropdown host exists"
+  ],
+  "paired_css": {
+    "path": "build/header-source-flex-responsive-v007.css",
+    "commit": "6913d2d0994c4f8c36d39a55c3c0ab4a5bd1e38d"
+  },
+  "protected_values": {
+    "scroll_threshold_px": 8,
+    "mobile_breakpoint_px": 1240,
+    "main_nav_label": "Főmenü",
+    "brand_link_label": "Alakfa mester BIRÓ JÁNOS",
+    "services_label": "Szolgáltatások",
+    "references_label": "Referenciák"
+  },
+  "guarded_execution": [
+    "No execution while WPVibe unavailable or host throttled.",
+    "Verify requested -5 profile, connection, fresh quota and exact prewrite hash/bytes before editing.",
+    "Capture complete immediate prewrite snippet as rollback payload.",
+    "Use only Code Snippets plugin-aware REST update; no raw SQL/search-replace.",
+    "Read back active=true, code_error=null, protected values and all new semantic/behavior logic before browser checks.",
+    "Closed-state accessibility acceptance: target header role matches source header; brand appears as one named home link without separately announced tagline/logo; popup buttons expose text but no image child; Főmenü roles/names remain unchanged.",
+    "Then execute current/open/keyboard/mobile behavior checks; restore exact prewrite code on any regression."
+  ],
+  "do_not_change": [
+    "Elementor header structure",
+    "visible brand text or logo",
+    "page body",
+    "footer",
+    "forms",
+    "SMTP",
+    "menu destination mapping",
+    "visible caret geometry",
+    "mobile drawer content",
+    "quick-contact dock content"
+  ]
+}
