@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only local/static QA",
+  "package": "build/header-desktop-alignment-v004.css",
+  "package_blob_sha": "4ec9132cca910bd4d6e8833a9f4a35e7ea4a3c92",
+  "status": "STATIC_QA_PASS_NOT_DEPLOYED",
+  "checks": {
+    "start_marker": "af-project:header-desktop-alignment-v004:start",
+    "end_marker": "af-project:header-desktop-alignment-v004:end",
+    "marker_counts_expected": "1 start / 1 end after deployment",
+    "desktop_scope": "all geometry selectors are limited to Elementor header elements a1000002/a1000003/a1000009/a100000a under @media(min-width:1241px)",
+    "caret_scope": "duplicate-caret suppression targets only .elementor-element-a1000009 .af-nav-dropdown-host>button::after and duplicate indicator descendants",
+    "active_scope": "current-state rules target only dropdown host buttons inside .elementor-element-a1000009",
+    "footer_selector_present": false,
+    "form_selector_present": false,
+    "page_body_component_selector_present": false,
+    "elementor_header_structure_write_required": false
+  },
+  "intended_effects": [
+    "Keep desktop brand/action columns at 270px each.",
+    "Anchor the desktop navigation wrapper to the physical center of the 1340px header container.",
+    "Suppress the ElementsKit ekit-menu-dropdown-toggle ::after pseudo-caret while retaining the single copied SVG indicator.",
+    "Render the source-like sage active pill when the runtime host receives is-current or WordPress supplies a current-menu class."
+  ],
+  "reference_contract_preserved": {
+    "desktop_header_height_px": 76,
+    "wide_container_px": 1340,
+    "logo_plate_px": "69x46",
+    "brand_gap_px": 12,
+    "nav_min_height_px": 44,
+    "nav_padding_px": "10 13",
+    "dropdown_min_width_px": 268,
+    "cta_min_height_px": 44,
+    "cta_padding_px": "10 18",
+    "mobile_breakpoint_px": 1240,
+    "scroll_threshold_px": 8
+  },
+  "deployment_guard": [
+    "Before deployment re-read post8 and require current deployed v003 hash/marker unless a manual change is detected.",
+    "Replace the complete v003 block with the complete v004 block in one match-once operation; do not append v004 beside v003.",
+    "Read back post8 and require v003 marker absent, v004 marker exactly once, base header-live-source-v001 marker exactly once.",
+    "Do not purge another full cache if the supported save path already regenerates the needed CSS; only perform the documented minimal cache action.",
+    "Retain only if a fresh source-target comparison shows measurable improvement and no regression."
+  ],
+  "pixel_pass": false
+}
