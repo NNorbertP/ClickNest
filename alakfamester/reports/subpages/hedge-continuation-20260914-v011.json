@@ -1,0 +1,82 @@
+{
+  "schema_version": 11,
+  "package": "hedge-continuation-20260914-v011",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "page272 only",
+  "wordpress_writes_this_continuation": 0,
+  "accepted_saved_baseline": {
+    "elementor_bytes": 53606,
+    "elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true
+  },
+  "current_execution_sources": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "open_items": "reports/subpages/hedge-open-items-20260914-v003.json",
+    "live_window": "build/hedge-next-live-window-plan-20260914-v002.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260914-v002.json",
+    "artifact_precedence": "reports/subpages/hedge-artifact-supersession-20260914-v001.json"
+  },
+  "semantic_safety_correction": {
+    "obsolete_candidates": ["build/hedge-semantic-runtime-v002.php", "build/hedge-semantic-runtime-v003.php"],
+    "reason": "They attempted to label #ajanlatkeres as the complete source region Küldjön fotót a sövényről without proof that the root contains the separate af2e004c intro/contact content plus Form33.",
+    "v004": "Removes that unproven outer-region mutation while preserving exact review-tab labels and complete Form33 component semantics.",
+    "outer_regions_hold": [
+      "Minőségi sövény formára vágás, metszés és megújítás",
+      "Sövénymunkák",
+      "Küldjön fotót a sövényről"
+    ]
+  },
+  "required_radio_latest": {
+    "audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+    "source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+    "finding": "MetForm Radio mf_input_required=yes is wired into the actual frontend register/required validation path; this is real native enforcement capability, not just a visual required marker.",
+    "unknown_live_fact": "Current shared Form33 #af-form-service exact mf_input_name/mf_input_required/options were never recorded and must be read live.",
+    "decision": "Native setting + non-delivery behavior proof first. Server-side ID36 fallback is optional only if native Required is absent or demonstrably insufficient.",
+    "fallback_plan": "build/hedge-form-required-server-plan-20260914-v002.json",
+    "fallback_test": "build/hedge-form-required-nondelivery-test-plan-20260914-v001.json"
+  },
+  "interaction_latest": {
+    "audit": "reports/subpages/hedge-interaction-static-audit-20260914-v001.json",
+    "reviews": "Shared D12 af-project 0.2.0 click/Arrow/Home/End behavior already has desktop/mobile/editor proof; page272 direct run is proof-only unless failure reproduces.",
+    "proof_carousel": "Shared source-interactions runtime is deployed; page272 4000ms autoplay was historically observed by active proof image 5->6. Keyboard/swipe/pause/reduced-motion are proof-only unless failure reproduces.",
+    "new_interaction_code_justified": false
+  },
+  "gallery_lightbox": {
+    "audit": "reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json",
+    "decision": "Do not change popup=none until trustworthy Hedge source DOM proves its 28 gallery items are zoom/grouped-lightbox controls. Page258's explicit 44 zoom items are a different page contract."
+  },
+  "closed_preserve": [
+    "26/26 shared-media recovery",
+    "28/28 page-local EAEL id=0/full/original URLs/exact names/order",
+    "five legacy named regions",
+    "full CTA mailto + exact contact-link names + 24-hour reply",
+    "hero af2e004e, proof af2e004d, reviews c3d30005, gallery b2e2c001, Form33 af2e0011",
+    "legacy image widgets af2e0009-af2e000e absent",
+    "current sage background; historical media/background gaps stale",
+    "ID36 v001 remains live owner until verified successor readback"
+  ],
+  "tool_state": {
+    "wpvibe": "disabled in this conversation; do not call again; +5 site connection and exact quota unknown",
+    "opera": "exactly two existing tabs reused, zero new tabs; after navigation to Hedge URLs/titles, AX trees and screenshot remained stale Biológiai védelem content, so connector evidence is untrusted and no further Opera calls are allowed in this continuation",
+    "public_http": "Clicknest source/target fetch fallback unavailable",
+    "formal_acceptance_files": "specs/acceptance.json and specs/behaviors.json absent",
+    "pixel_runner": "deterministic synchronized six-viewport DPR/zoom overlay/diff unavailable"
+  },
+  "next_live_order": [
+    "verify +5 identity/site/exact quota and preserve D11 reserve + package margin",
+    "fresh-read page272 baseline and current ID36 exact rollback body/state",
+    "one minimal rendered-DOM pass for review/Form33 cardinality/ownership and opportunistic complete outer-root ancestry",
+    "one Form33 saved-settings read for exact #af-form-service widget/name/required/options",
+    "if semantic gates pass and no newer helper exists, update existing ID36 only to v004 and perform mandatory ID36 + unchanged-page-hash readback",
+    "if native radio required=yes, prove empty-choice blocking without real entry/delivery before any PHP fallback",
+    "if trustworthy browser returns, reuse at most one source + one target tab for changed-section AX/visual and proof-only interactions; stop immediately on stale mismatch"
+  ],
+  "state_md_note": "Current repository STATE.md is owned by an active page264-only continuation. It was intentionally not overwritten by this page272 checkpoint to avoid destroying concurrent correct state; a separate Hedge STATE prepend candidate is prepared instead.",
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "STATIC_PREPARATION_MAXIMIZED_V004_ONLY_CURRENT_WRITE_CANDIDATE_LIVE_TOOLS_BLOCKED"
+}
