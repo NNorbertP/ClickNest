@@ -1,0 +1,60 @@
+{
+  "schema_version": 7,
+  "package": "bio-evidence-supersedence-20260915-v007",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "purpose": "Planning/evidence precedence only. Promote the explicit hard exactness blocker ledger so visual/role approximations cannot be mistaken for exact page parity. No WordPress write or scope handoff.",
+  "scope_gate": "STATE.md remains PAGE264 ONLY; page256 stays read-only until explicit normal scope handoff.",
+  "supersedes": "reports/subpages/bio-evidence-supersedence-20260915-v006.json",
+  "authoritative_current": {
+    "final_acceptance": "specs/bio-final-acceptance-20260914-v002.json",
+    "hard_blockers": "reports/subpages/bio-exactness-blockers-20260914-v001.json",
+    "budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "local_visual_delivery": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "review_plan": "build/bio-reviews-current-fix-plan-20260914-v002.json"
+  },
+  "hard_exactness_blockers_do_not_fake": [
+    {
+      "id": "scope_remote",
+      "resolution": "normal page256 scope handoff + verified +5 WPVibe + released trustworthy two-tab browser; never steal tabs/overwrite STATE/use stale quota"
+    },
+    {
+      "id": "page_local_css_carrier",
+      "resolution": "carrier probe PASS; failure blocks CSS delivery and never licenses global/shared fallback"
+    },
+    {
+      "id": "stress_dom_order",
+      "requirement": "saved/read/AX order p1 -> p2 -> article/list",
+      "current": "p1 -> aside/list -> p2",
+      "rule": "CSS-only visual reorder or duplicate-then-delete/JS reorder does not pass; require a proven atomic node move/owner transform"
+    },
+    {
+      "id": "expectations_article_ownership",
+      "requirement": "left article owns h2 + 3 positive + 2 negative items; right article owns h3 + body + link",
+      "current": "h2 outside, two list cards inside split, h3/body/link outside",
+      "rule": "Do not create half-owned article wrappers with separate opening/closing writes and do not fake ownership for role counts; require a proven atomic full-owner regrouping path or explicitly approved builder path preserving D18"
+    },
+    {
+      "id": "FAQ_exact_runtime",
+      "requirement": "four real buttons + aria-expanded/controls + Arrow/Up/Down/Left/Right/Home/End focus collection + source motion",
+      "current": "functional native details/summary",
+      "rule": "visual styling does not close exact runtime; no ad-hoc/global JS workaround"
+    },
+    {
+      "id": "review_prev_next_focus",
+      "requirement": "prev/next focuses newly active tabpanel",
+      "current": "ID35 switches tabs/dots but does not explicitly focus panel",
+      "rule": "preserve current working owner until sanctioned page-local runtime correction exists; do not modify global ID35 merely to force parity"
+    },
+    {
+      "id": "responsive_unverified",
+      "resolution": "controlled final responsive source-target QA at frozen source breakpoints after implementation; prepared specs are not PASS evidence"
+    }
+  ],
+  "safe_prepared_work_remains_valid": "Carrier probe/local visual v002, v014 structural microfixes, tag-only semantics where exact match-once safe, table/FAQ visual packages, and review presentation/content microfixes remain candidates only where they do not pretend to clear the blockers above.",
+  "completion_rule": "A visual approximation, role-count match or design-spec artifact never clears a hard blocker. Each blocker requires its named resolution evidence before exact page256 parity can be declared.",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "PAGE256_PRECEDENCE_RECONCILED_HARD_EXACTNESS_BLOCKERS_EXPLICIT"
+}
