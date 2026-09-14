@@ -1,0 +1,12 @@
+/* af-bio-faq-cta-label-guard-v001:start
+ * Required companion to af-bio-faq-cta-source-v001.
+ * Fresh target AX exposes a current CSS-generated staticText KÖVETKEZŐ LÉPÉS.
+ * The source-layout block renders the label from #af-sub-bio-cta-title::before,
+ * so every legacy outer-section generated label must be suppressed to avoid a
+ * visual/AX duplicate.
+ */
+body.page-id-256 #af-sub-bio-cta::after {
+  content: none !important;
+  display: none !important;
+}
+/* af-bio-faq-cta-label-guard-v001:end */
