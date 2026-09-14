@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "package": "bio-visual-structure-audit-20260914-v012",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "page_id": 256,
+  "scope": "Page256 only. Reference read-only. No other page, shared media, global template, SMTP or external submission may be modified.",
+  "wordpress_writes_in_this_continuation": 0,
+  "last_verified_elementor_checkpoint": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true
+  },
+  "preserve": [
+    "all completed 13/13 list text parity fixes",
+    "table row-header semantics and current source-equivalent accessible structure",
+    "four legacy named regions",
+    "final CTA exact accessible name",
+    "Code Snippets ID35 page256-only semantic runtime and its exact AX parity",
+    "hero art and native review content/images"
+  ],
+  "new_proven_deltas": {
+    "why_section_af260007": {
+      "type": "structural",
+      "source": "two-column grid with both explanatory paragraphs grouped in the left column and one forest stress card in the right column",
+      "target": "af-sub-split has three direct children: paragraph, paragraph, aside; with the current two-column CSS the second paragraph occupies column two and the card wraps to another row",
+      "safe_fix": "wrap the two existing paragraphs in one left div while preserving text, aside, IDs and region semantics; no full Elementor save"
+    },
+    "technology_af260010": {
+      "type": "visual_and_markup",
+      "source_card": {
+        "padding_px": 32,
+        "border": "1px solid rgba(215,210,198,0.6)",
+        "radius": "28px 34px 26px 32px",
+        "shadow": "0 16px 40px rgba(47,58,47,0.08)",
+        "leaf_watermark": true,
+        "middle_sage_card": true,
+        "middle_botanical_top_rule": true,
+        "exact_leaf_badges": true
+      },
+      "target": "26px padding, simple 24px radius, simplified pseudo-character badges, no source leaf watermark, no source botanical top rule; screenshot confirms materially shorter cards and different heading wrapping",
+      "source_callout": "organic recessed callout with bronze left stripe and source checklist leaf checks",
+      "target_callout": "plain h3 plus ul",
+      "decision": "requires page256-scoped CSS/markup refinement; do not alter shared Additional CSS under current page-only scope unless explicitly authorized"
+    },
+    "symptom_table_af260011": {
+      "type": "visual_markup_only",
+      "accessibility": "already preserved and verified",
+      "source": "separate table-title plus table.data; organic radius, shadow-sm, sage header, 13px x 24px cells, title-case source strings uppercased by CSS",
+      "target": "caption inside table, 24px radius, no source shadow, beige header, 15px x 16px cells, uppercase strings stored directly",
+      "decision": "preserve current row-header semantics; visual refinement must not regress AX parity"
+    },
+    "expectations_af260013": {
+      "type": "structural_visual",
+      "source": "left card contains h2 plus positive checklist plus cross checklist; right sage card contains care relationship h3, paragraph and link-arrow",
+      "target": "h2 outside split; positive and negative lists are separate cards; care relationship content sits outside cards",
+      "decision": "restructure only with exact current snippet and source-equivalent grouping; do not reuse page264-only card CSS selectors"
+    },
+    "faq_cta_order_af260015": {
+      "type": "structural_order",
+      "source": "FAQ first, then next-step CTA band",
+      "target_reason": "Additional CSS rule #af-sub-bio-cta>.af-faq-content{order:10!important} moves FAQ after CTA children",
+      "class_usage_proof": "af-faq-content occurs in exactly one CSS selector and its sole purpose is order:10",
+      "safe_page_only_fix": "remove af-faq-content from legacy widget af260015 _css_classes via guarded content/edit; this restores default order 0 before CTA children ordered 1-4 without changing shared CSS"
+    },
+    "faq_visual": {
+      "source": "24px-radius faq cards, 20px 24px trigger, 28px source plus icon, open-state border/shadow",
+      "target": "native details with 15px radius and simpler summary styling",
+      "decision": "retain native details behavior unless a page-scoped styling route is explicitly permitted"
+    },
+    "wave_separators": {
+      "type": "atomic_class_bridge",
+      "ids": ["af26000e", "af26000f", "af260012", "af260014"],
+      "stored_state": "each Atomic e-flexbox stores legacy _css_classes=af-source-wave",
+      "frontend_state": "class is absent because Elementor 4.2.4 does not render Atomic legacy _css_classes",
+      "existing_css": "af-source-wave rules and measured viewport heights already exist; no new CSS is required",
+      "proven_global_class": {"id": "g-af-src-wave", "label": "af-source-wave"},
+      "safe_fix": "surgically add typed settings.classes reference to g-af-src-wave on each of the four existing Atomic containers; preserve IDs and legacy field; never full-save page256"
+    }
+  },
+  "reference_tokens": {
+    "colors": {"bg":"#F5F3ED","bg_alt":"#DDE7DF","surface":"#FFFFFF","surface_2":"#EFEDE4","forest":"#173D2D","forest_deep":"#102A20","primary":"#2F5D46","sage":"#7D9B83","sage_light":"#B0C7B6","stone":"#D7D2C6","stone_deep":"#B9B2A2","text":"#202723","text_muted":"#4A5750","bronze":"#B59A61"},
+    "shadows": {"sm":"0 8px 22px rgba(23,61,45,0.06)","md":"0 16px 40px rgba(47,58,47,0.08)","lg":"0 28px 70px rgba(23,61,45,0.12)"},
+    "radii": {"organic":"28px 34px 26px 32px","organic_2":"34px 26px 32px 28px","leaf":"4px 64% 4px 64%"}
+  },
+  "opera_policy": "Reuse at most the existing two tabs. Concurrent navigation can move them; verify URL before every measurement. No tab fan-out.",
+  "current_blocker": "WPVibe tool became unavailable before the prepared page256-only writes could be executed. No raw SQL/meta fallback was used.",
+  "next_safe_remote_package": [
+    "Reconnect/read exact WPVibe quota and re-read page256 35382-byte/hash/JSON checkpoint.",
+    "Guarded content/search + content/edit: remove af-faq-content class from af260015 and verify FAQ precedes CTA.",
+    "Guarded content/search + content/edit: group af260007 two paragraphs into one left wrapper and verify two-column source structure.",
+    "For af26000e/af26000f/af260012/af260014, add typed classes reference g-af-src-wave using surgical exact snippets, not save-page; verify four wave separators render.",
+    "Re-read page256 JSON/hash and perform fresh source-target AX/visual checks.",
+    "Do not start af260010/af260011/af260013 visual CSS package until a page256-scoped styling route is explicitly legal under the current scope."
+  ],
+  "pixel_pass": false,
+  "smtp_or_submission": false
+}
