@@ -1,0 +1,84 @@
+{
+  "schema_version": 3,
+  "package": "hedge-open-items-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_planning": "reports/subpages/hedge-open-items-20260914-v002.json",
+  "wordpress_writes": 0,
+  "accepted_baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+  "current_single_write_candidate": {
+    "item": "ID36 semantic successor",
+    "build": "build/hedge-semantic-runtime-v004.php",
+    "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "action": "Update existing ID36 only after all live gates pass.",
+    "scope": "review + complete Form33 component accessibility attributes only",
+    "explicitly_removed_from_candidate": "No #ajanlatkeres outer region label until complete intro/contact+form root is proven.",
+    "obsolete_for_deploy": ["build/hedge-semantic-runtime-v002.php", "build/hedge-semantic-runtime-v003.php"]
+  },
+  "closed_do_not_reopen": [
+    "26/26 shared-media recovery",
+    "28/28 page-local EAEL gallery id=0/full/original URLs/exact names/order",
+    "five complete legacy named regions",
+    "full CTA mailto and exact af2e004c contact-link semantics",
+    "24-hour reply sentence",
+    "hero/proof/native reviews/MetForm protected component presence",
+    "current sage background and historical page272 media/background gaps",
+    "ID36 v001 remains accepted live owner until a successor is verified"
+  ],
+  "live_read_and_proof_first": [
+    {
+      "item": "Required service/topic choice",
+      "audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+      "rule": "Read exact #af-form-service settings/name/required/options. Native Required proof first; server fallback only if absent or insufficient.",
+      "server_fallback": "build/hedge-form-required-server-plan-20260914-v002.json"
+    }
+  ],
+  "complete_root_proof_required_no_write": [
+    {
+      "source_region": "Minőségi sövény formára vágás, metszés és megújítás",
+      "target": "hero complete copy+art root",
+      "status": "UNPROVEN"
+    },
+    {
+      "source_region": "Sövénymunkák",
+      "target": "common heading+EAEL root",
+      "status": "UNPROVEN"
+    },
+    {
+      "source_region": "Küldjön fotót a sövényről",
+      "target": "common af2e004c intro/contact + Form33 root",
+      "status": "UNPROVEN",
+      "note": "Do not label #ajanlatkeres alone from current evidence."
+    }
+  ],
+  "proof_only_no_code_without_failure": [
+    "page272 direct review keyboard run; shared D12 implementation already proven",
+    "proof carousel keyboard/swipe/pause/reduced-motion; autoplay/shared owner already proven"
+  ],
+  "source_specific_no_write_gates": [
+    "Hedge lightbox: source-specific zoom/grouped-lightbox controls must be proven before changing EAEL popup=none.",
+    "Any visual CSS: require a newly reproduced synchronized source-target visual delta with proven DOM/cascade owner.",
+    "SEO/meta/canonical: direct source-target metadata read required before any mutation."
+  ],
+  "formal_blockers": [
+    "WPVibe disabled in this conversation; +5 site/quota unknown",
+    "Opera current Hedge DOM/screenshot state stale/untrusted; 0 replacement tabs",
+    "specs/acceptance.json absent",
+    "specs/behaviors.json absent",
+    "deterministic six-viewport overlay/diff unavailable"
+  ],
+  "next_live_order": [
+    "1 +5/site/quota + D11 reserve",
+    "2 page272 baseline + exact current ID36 rollback body/state",
+    "3 one minimal rendered-DOM pass proving review/Form33 cardinality/ownership and, if possible, complete hero/gallery/form outer roots",
+    "4 one Form33 saved-settings read for #af-form-service exact field contract",
+    "5 deploy existing ID36 -> v004 only if semantic gates pass; mandatory readback and unchanged page hash",
+    "6 decide native required acceptance from actual setting/non-delivery proof; no automatic server fallback",
+    "7 trustworthy two-tab AX/visual acceptance only; stop immediately on stale mismatch"
+  ],
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "V004_ONLY_CURRENT_WRITE_CANDIDATE_REQUIRED_RADIO_NATIVE_FIRST_OUTER_REGIONS_HOLD"
+}
