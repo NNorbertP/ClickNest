@@ -1,0 +1,107 @@
+{
+  "schema_version": 7,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "supersedes_for_planning": "reports/parity-open-items-20260914-v006.json",
+  "latest_exact_wpvibe": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "used": 283,
+    "limit": 300,
+    "remaining": 17,
+    "mandatory_D11_reserve": 10,
+    "usable_above_reserve": 7,
+    "decision": "No new remote write package may start at this balance because one host-429 request can consume three automatic retries and strand verification below reserve."
+  },
+  "closed_or_saved_to_safe_limit": [
+    {
+      "resource": "page272 Hedge",
+      "saved_data": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+      "closed": "26/26 shared-media recovery, 28/28 page-only gallery id=0/full/original URLs, five legacy named regions, CTA/mailto and form-contact accessible names, 24-hour sentence",
+      "runtime": "Code Snippets ID36 active/page272-only/code_error=null; tablist naming plus duplicate review-dot AX/focus suppression. Post-JS interaction proof remains open."
+    },
+    {
+      "resource": "page256 Biological Protection",
+      "saved_data": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid",
+      "closed": "v010 source-safe semantic closeout: 13/13 punctuation, exact table headers/rowHeaders, legacy regions, CTA, review/hero/FAQ runtime semantics",
+      "runtime": "Code Snippets ID35 active; do not repeat v004-v010 semantic work."
+    },
+    {
+      "resource": "page264 Old Trees semantics",
+      "saved_data": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+      "closed": "source content/semantic parity to proven contract; review names and regions; native range initialization",
+      "runtime": "ID33 active; duplicate numbered review dots removed from AX/focus page-scoped."
+    },
+    {
+      "resource": "global header saved/runtime package",
+      "additional_css": "post8 after v004: 601189 B / 6d711a670cbfc62da45fa84d2b8d0c04b8078aa4ff93553ae492c2104c5ae003; v003 marker absent, v004 present, base header marker preserved",
+      "runtime": "ID7 preserved byte-for-byte with 8px sticky threshold; ID37 active/code_error=null adds route-group is-current class only",
+      "closed": "duplicate pseudo-caret suppression + route-group active CSS/runtime prepared and deployed; runtime visual/interaction proof remains browser-blocked"
+    }
+  ],
+  "priority_when_quota_reopens": [
+    {
+      "priority": 1,
+      "resource": "page264 Old Trees visual parity",
+      "bundle": "build/oldtrees-visual-parity-bundle-v004.css",
+      "static_qa": "reports/subpages/oldtrees-visual-predeploy-static-qa-20260914-v004.json",
+      "single_write_goal": "one page264-scoped Additional CSS insert before af-project:end, covering comparison cards and request-form panel plus final responsive/hover/glow corrections",
+      "preconditions": ["page264 exact hash unchanged", "fresh current post8 reconciliation against header-v004 state", "unique af-project:end", "bundle marker absent", "enough calls for write+readback+frontend QA above D11 reserve"]
+    },
+    {
+      "priority": 2,
+      "resource": "page256 Biological Protection visual parity",
+      "css": "build/bio-visual-parity-v001.css",
+      "static_qa": "reports/subpages/bio-visual-predeploy-static-qa-20260914-v001.json",
+      "scope": "page256-only legacy eyebrows, technology cards, symptom table surface and native FAQ visual mapping; no hero/section-height/semantic/runtime changes",
+      "preconditions": ["page256 exact v010 hash unchanged", "fresh current post8 reconciliation", "unique af-project:end", "marker absent", "sufficient quota"]
+    },
+    {
+      "priority": 3,
+      "resource": "page256 post-closeout semantic tag parity",
+      "plan": "build/bio-semantic-resume-20260914-v013.json",
+      "safe_probe": "af260007 exact raw aside->article tag-only conversion; af260013 exact raw proof before any two-article tag change",
+      "rule": "no reconstructed/full widget rewrite"
+    },
+    {
+      "priority": 4,
+      "resource": "header runtime visual acceptance",
+      "open": ["prove ID37 route-current state after footer JS", "desktop dropdown focus/hover/keyboard", "mobile drawer/body lock", "top vs scrolled visual comparison"],
+      "write_rule": "No further header write unless a new reproducible source delta is measured."
+    },
+    {
+      "priority": 5,
+      "resource": "page264 interactions",
+      "open": ["review Arrow/Home/End", "tiszafa pointer/keyboard", "Nordmann normal/reduced-motion timing", "final dot AX proof"],
+      "write_rule": "No page264 content/runtime write unless interaction evidence proves a defect."
+    },
+    {
+      "priority": 6,
+      "resource": "Gallery page258 runtime acceptance",
+      "open": ["Magnific Popup open/next/previous/close/focus return", "before-after pointer+keyboard", "six manual carousels controls/swipe", "formal geometry/pixel matrix"],
+      "asset_blocker": "Ellwoodi exact source image remains 404; do not invent substitute."
+    },
+    {
+      "priority": 7,
+      "resource": "Reference Videos page268 runtime/editor acceptance",
+      "open": ["review tab keyboard", "video keyboard activation/lazy iframe/privacy host", "hero animation normal/reduced", "authenticated Elementor reopen proof", "formal visual matrix"],
+      "rule": "do not resave merely to obtain editor proof"
+    }
+  ],
+  "global_floating_contact": {
+    "status": "NO_WRITE_JUSTIFIED",
+    "investigation": "Live base .dock rules contain phone/mail masks and CTA; later .af-source-dock override only changes safe-area bottom; mobile rules preserve/grow icons and flex CTA. No proven hide/clip cascade was found.",
+    "decision": "Do not change from one intermediate screenshot without reproducible computed/visual evidence."
+  },
+  "formal_blockers": [
+    "specs/acceptance.json and specs/behaviors.json absent from repository history",
+    "no deterministic 1920/1440/1024/768/390/360 same-browser viewport/DPR screenshot-overlay-diff runner",
+    "Opera shared/challenged and connector has no click/keyboard action; zero new tabs opened",
+    "container DNS cannot resolve Clicknest hosts",
+    "page270 portrait source and page258 Ellwoodi source asset remain 404 without proven substitutes",
+    "SMTP/delivery and real form submission excluded from prompt-2 work"
+  ],
+  "rate_limit_rule": "A 429-returned write is UNKNOWN until bytes/SHA/fragment readback; never blind-retry.",
+  "pixel_pass": false
+}
