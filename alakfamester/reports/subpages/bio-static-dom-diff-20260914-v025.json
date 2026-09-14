@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "package": "bio-static-dom-diff-20260914-v025",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_CURRENT_PUBLIC_HTML_EVIDENCE",
+  "retrieval": {
+    "source_url": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+    "target_url": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/?qa=bio-static-dom-v001",
+    "method": "direct public HTTP download; no Opera navigation and no WordPress write",
+    "source_bytes": 37849,
+    "source_sha256": "8e1f5502ea4059b809370b9008470fc2a3f05a07424bb4da946127fd40eb19ba",
+    "target_bytes": 76772,
+    "target_sha256": "65b41d8f3859b87880227637b7968180830e7097f6fa8bec6ee5e0f561f7c275",
+    "note": "These are HTTP document hashes, not saved Elementor/meta hashes. Dynamic ID35/browser post-processing may add semantics later; structural HTML ownership findings remain useful."
+  },
+  "current_target_structural_findings": {
+    "stress_af260007": {
+      "direct_split_order": ["first explanatory p", "aside.af-sub-card", "second explanatory p"],
+      "source_order": ["single left copy owner containing both paragraphs", "article forest card"],
+      "impact": "The old wrapper plan that assumed adjacent p+p is not sufficient. Exact future microfix must both move the second paragraph before the card in DOM order and wrap the two original paragraphs into one neutral left owner, while preserving text bytes and card content."
+    },
+    "technology_af260010": {
+      "cards": "three article elements present with correct content and current decorative icons supplied by existing CSS/pseudos",
+      "use_case_structure": "h3 + ul remain direct siblings with no wrapper",
+      "visual_note": "Fresh prior live screenshot proved the target already visually provides the recessed callout surface + left accent rail; therefore do not add the obsolete proposed wrapper solely for presentation."
+    },
+    "table_af260011": {
+      "title": "still an internal caption",
+      "source": "external p.table-title#tunet-tabla-cim plus table aria-labelledby",
+      "headers": "TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY still correct",
+      "row_headers": "four th scope=row still present"
+    },
+    "expectations_af260013": {
+      "current_order": [
+        "h2 outside cards",
+        "split div containing positive 3-item card + muted 2-item card",
+        "h3 outside cards",
+        "body p outside cards",
+        "Az alakfa ápolása link outside cards"
+      ],
+      "source": "left white article owns h2 + all 3 positive + 2 negative items; right sage article owns h3 + body + arrow link",
+      "impact": "v003 expectations regrouping remains a real current structural delta."
+    },
+    "FAQ_CTA_af_sub_bio_cta": {
+      "server_DOM_order": ["FAQ widget af260015", "CTA h2", "CTA body", "mailto widget 9a1b2c3d", "form button"],
+      "live_visual_order": "prior live CSS moves FAQ after CTA via sole af-faq-content order owner",
+      "mailto_children": "strong email + br + raw Írjon bátran text still current",
+      "impact": "FAQ order class removal + deterministic mail-child microfix remain current."
+    }
+  },
+  "current_target_visible_text_finding": {
+    "third_review_author_role_source": "ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+    "third_review_author_role_target_current_public_HTML": "ügyvezető · ARKER'S Építésziroda Kft.",
+    "status": "CURRENT_CONFIRMED_VISIBLE_TEXT_DELTA",
+    "note": "A future WordPress edit still requires fresh exact _elementor_data content/search because current public HTML is evidence of the delta, not an edit boundary."
+  },
+  "normalized_content_summary": {
+    "source_only_content_tokens_are_consistent_with": [
+      "visual review ordinals 01/02/03",
+      "source-only standalone Következő lépés eyebrow in raw source HTML",
+      "the longer third review author organization string"
+    ],
+    "interpretation": "No new broad prose rewrite requirement was discovered. Most remaining differences are ownership/order/presentation rather than missing body copy."
+  },
+  "safety_consequence": [
+    "Supersede any stress plan that assumes adjacent p+p nodes.",
+    "Promote third review author role from tentative browser reconfirmation to current public-HTML-proven delta, while still requiring fresh exact saved-data search before write.",
+    "Preserve table cells/headers and all expectations/list strings exactly while changing owners."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_touched": 0,
+  "pixel_pass": false
+}
