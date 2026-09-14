@@ -1,0 +1,55 @@
+{
+  "schema_version": 5,
+  "package": "hedge-semantic-runtime-static-qa-v005",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "source": "build/hedge-semantic-runtime-v003.php",
+  "intended_live_snippet": 36,
+  "status": "STATIC_PASS_DEPLOYMENT_LIVE_CARDINALITY_AND_OWNER_GATES_REQUIRED",
+  "supersedes_for_deploy_gate": "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+  "preserved_static_pass": [
+    "is_page(272) server guard",
+    "accessibility attributes only",
+    "no CSS/visible text/DOM reorder/validation/submission/click/keyboard change",
+    "exact source review tablist + three tab label constants",
+    "duplicate review dots AX/focus-hidden only",
+    "#ajanlatkeres region name",
+    "Form33 name/direct-call/service-group/city-help contract",
+    "direct-call search strictly inside Form33 wrapper, stable #af-form-direct-call preferred",
+    "one 900ms timer plus child-addition-only observer",
+    "wp_footer priority 120"
+  ],
+  "v001_to_v003_regression_audit": "reports/subpages/hedge-id36-v001-v003-delta-audit-20260914-v001.json",
+  "mandatory_preupdate_live_gate": [
+    "Verify +5 profile/site connection/exact quota and keep >=10-call D11 reserve plus complete readback margin.",
+    "Fresh page272 _elementor_data must equal accepted 53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 or drift must be reconciled first.",
+    "Read current Code Snippets ID36 exact body, active state and code_error; preserve exact rollback body.",
+    "Rendered page272 must contain exactly one .elementor-element-c3d30005, exactly one tablist in it and exactly three role=tab elements.",
+    "Rendered page272 must contain exactly one .mf-form-wrapper[data-form-id=33], one form inside it and wrapper-owned #af-form-direct-call or exact tel:+36305394820 paragraph.",
+    "If any cardinality/owner condition differs, do not update ID36 from this candidate."
+  ],
+  "update_contract": [
+    "Update existing ID36 only through the proven plugin-aware Code Snippets path.",
+    "Never create a second page272 semantic helper.",
+    "If the write returns HTTP 429 or uncertain transport status, treat outcome as UNKNOWN and do not retry before exact ID36 readback."
+  ],
+  "mandatory_postupdate_readback": [
+    "ID36 active and code_error null; exact stored body corresponds to v003 candidate.",
+    "Rendered af-hedge-semantic-parity-v003 marker exactly once.",
+    "Old af-hedge-review-semantic-parity-v001 marker absent after confirmed replacement.",
+    "No duplicate page272 semantic script/helper markers.",
+    "page272 Elementor bytes/SHA unchanged because runtime-only snippet update must not mutate page content.",
+    "hero/proof/reviews/gallery/form protected components remain present.",
+    "Fresh trustworthy post-footer-JS AX: exact tablist + three review names; duplicate dots absent from AX/tab order; #ajanlatkeres region and Form33 name/description/service/city relationships exact."
+  ],
+  "separate_not_part_of_v003": [
+    "required service/topic server validation: separate read-first implementation plan",
+    "hero outer region semantics",
+    "gallery outer region semantics",
+    "Hedge lightbox decision",
+    "visual CSS",
+    "SMTP/real submission"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
