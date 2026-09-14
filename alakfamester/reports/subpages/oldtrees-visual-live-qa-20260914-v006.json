@@ -1,0 +1,76 @@
+{
+  "schema_version": 6,
+  "package": "oldtrees-visual-live-qa-20260914-v006",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "scope": "page264 visual parity only",
+  "preflight": {
+    "elementor_chars": 48867,
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "elementor_json_valid": true,
+    "additional_css_before_chars": 600407,
+    "additional_css_before_bytes": 601189,
+    "additional_css_before_sha256": "6d711a670cbfc62da45fa84d2b8d0c04b8078aa4ff93553ae492c2104c5ae003",
+    "af_project_end_matches": 1,
+    "oldtrees_v004_marker_before": 0
+  },
+  "writes": [
+    {
+      "target": "Hello Additional CSS post 8 post_content",
+      "route": "/wpvibe/v1/content/edit",
+      "match_once_anchor": "/* af-project:end */",
+      "block": "af-oldtrees-visual-v004",
+      "scope_selector": "body.page-id-264",
+      "replaced": 1,
+      "returned_bytes": 611030
+    },
+    {
+      "target": "Hello Additional CSS post 8 post_content",
+      "route": "/wpvibe/v1/content/edit",
+      "match_once_anchor": "/* af-project:end */",
+      "block": "af-oldtrees-visual-v005",
+      "purpose": "narrow comparison-card cascade fix after live screenshot proved backgrounds/stretch were still overridden",
+      "scope_selector": "body.page-id-264 .elementor-element-af2a0045",
+      "replaced": 1,
+      "returned_bytes": 611423
+    }
+  ],
+  "readback": {
+    "v004_end_marker_matches": 1,
+    "v004_end_immediately_before_project_end": true,
+    "additional_css_after_v004_chars": 610248,
+    "additional_css_after_v004_bytes": 611030,
+    "additional_css_after_v004_sha256": "87fb6f275f9550dfcb406ac855b1287f4cf4dbd15da226840e6d2d8c28108bb6",
+    "elementor_after_v004_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "elementor_after_v004_json_valid": true,
+    "v005_end_marker_matches": 1,
+    "v005_end_immediately_before_project_end": true,
+    "post_v005_full_css_hash_not_spent": "D11 reserve preserved"
+  },
+  "live_visual_observation_after_v004_before_v005": {
+    "source_target_tabs": 2,
+    "new_opera_tabs_opened": 0,
+    "comparison_target_icons": "source-like warning, growth, X/check leaf bullets rendered",
+    "remaining_delta": "negative/positive card surfaces still white and unequal height",
+    "diagnosis": "v004 selectors matched, but background/stretch lost in the cascade; v005 adds page264-only important overrides"
+  },
+  "opera_memory": {
+    "max_project_tabs": 2,
+    "new_tabs_opened": 0,
+    "decision": "reused existing source/target pair and stopped on connector disconnect rather than opening replacements"
+  },
+  "quota": {
+    "last_explicit_usage": "287/300 before the final DOM read + v005 write + v005 marker readback",
+    "policy": "no more WPVibe calls in this run; preserve D11 recovery reserve"
+  },
+  "open_next_visual_gates": [
+    "Fresh comparison capture after v005 to confirm beige/sage surfaces and equal card height.",
+    "Fresh #ajanlatkeres source/target capture after v004 to verify joined panel, 18px clock icon, contact buttons, organic glow and field continuity.",
+    "Re-check hero same-viewport vertical geometry; previous ~40px target offset has no proven root cause, so no hero patch was made.",
+    "Only inspect the comparison-to-dark divider if a fresh post-v005 capture proves a difference.",
+    "Formal deterministic pixel overlay remains open; PIXEL_PASS=false."
+  ],
+  "status": "LIVE_V004_DEPLOYED_V005_DEPLOYED_VISUAL_RECHECK_PENDING",
+  "pixel_pass": false
+}
