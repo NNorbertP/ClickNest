@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "package": "bio-semantic-deep-audit-20260914-v012",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "Read-only deep continuation. No WordPress write in this audit. Reference read-only; only page256 eligible for future writes.",
+  "baseline": {
+    "elementor_data_bytes": 35382,
+    "elementor_data_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "semantic_runtime_snippet": 35
+  },
+  "source_target_findings": {
+    "stress_section": {
+      "source": "The stress card is exposed as article and contains the A NÖVÉNY STRESSZE eyebrow, Mi történik a metszés után? heading and four-item list.",
+      "target": "The same card is exposed as complementary because saved legacy markup uses aside. Content/text are already source-exact.",
+      "safe_fix": "After exact content/search readback of af260007, replace only the opening/closing aside tag pair with article while preserving class, content, IDs and order. Default block geometry is unchanged; fresh AX must show article instead of complementary.",
+      "do_not": "Do not reorder the article relative to the heading/paragraphs based only on AX flattening."
+    },
+    "technology_section": {
+      "source_articles": 3,
+      "target_articles": 3,
+      "finding": "Article semantics and content are already aligned. Target generated icon glyphs appear after article content in AX (⌁ / ◇ / ◇), consistent with an article::after-owned icon system; prepared visual CSS therefore does not claim article pseudo-elements."
+    },
+    "expectations_section": {
+      "source": "Two articles: first contains Mit várhatunk – és mit nem? plus the positive/negative lists; second contains Hogyan kapcsolódik az alakfa ápolásához?, paragraph and link.",
+      "target": "Same headings/lists/copy/link are present, but no article roles are exposed. Prior raw snippet evidence shows the positive/negative lists inside af-sub-split / af-sub-card divs.",
+      "status": "OPEN_NEEDS_EXACT_RAW_SNIPPET",
+      "safe_direction": "Only after fresh af260013 content/search, determine whether two neutral article wrappers can be inserted without changing text/order/classes. Do not infer or full-rewrite the widget from AX alone."
+    },
+    "faq": {
+      "source_ax": "heading -> button controls panel",
+      "target_ax": "details -> disclosureTriangle -> heading",
+      "names": "Exact question names already match.",
+      "decision": "Preserve the native editable details/toggle behavior. Project homepage precedent home-faq-contact-source-parity-v001 intentionally kept the native Elementor Toggle and used scoped Additional CSS for source visual parity rather than duplicating a custom FAQ runtime. Page256 prepared CSS follows the same principle.",
+      "visual_fix": "Prepared in build/bio-visual-parity-v001.css; no saved markup/JS rewrite."
+    }
+  },
+  "opera_memory": {
+    "tabs_used": 2,
+    "new_tabs_opened": 0,
+    "note": "Concurrent browsing can redirect the shared tabs; URLs were checked before evidence reads."
+  },
+  "remote_status": "Target WPVibe route remained host-throttled with HTTP 429 after automatic retries; no retry loop was started.",
+  "wordpress_writes": 0,
+  "next_safe_remote_actions": [
+    "When unthrottled, re-read exact quota and page256 baseline.",
+    "Use content/search on af260007 and apply only aside -> article tag pair if the live snippet still matches.",
+    "Use content/search on af260013 to assess neutral two-article wrapper feasibility; do not write if raw structure is ambiguous.",
+    "Then proceed to the separately prepared page256-scoped visual CSS package only if its Additional CSS preflight also passes and the whole package fits above D11 reserve."
+  ],
+  "pixel_pass": false
+}
