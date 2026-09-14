@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only guarded deployment",
+  "status": "READY_WHEN_WPVIBE_RETURNS",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "requested_account": "ncsnorbert+20260914-5@gmail.com",
+  "authoritative_packages": {
+    "source_contract": {"path":"specs/header-contract-v001.json","commit":"87b58189a3c43505adac039bbd19168f8598a101"},
+    "acceptance": {"path":"specs/header-acceptance-v001.json","commit":"43da03549f73600e922101cb9d39fe6fb3c751c5"},
+    "behaviors": {"path":"specs/header-behaviors-v001.json","commit":"109ba113d5b4d7970e16dbe0e87762895aec01be"},
+    "css": {"path":"build/header-source-flex-responsive-v007.css","commit":"6913d2d0994c4f8c36d39a55c3c0ab4a5bd1e38d","marker":"af-project:header-source-flex-responsive-v007"},
+    "runtime": {"path":"build/header-runtime-parity-v006.json","commit":"f6015c2f4f49b020aa9f07fed7b848eaa39b0ef6","snippet_id":7}
+  },
+  "do_not_deploy_superseded": [
+    "build/header-desktop-alignment-v004.css",
+    "build/header-alignment-responsive-v005.css",
+    "build/header-source-flex-responsive-v006.css",
+    "build/header-runtime-active-groups-v002.json",
+    "build/header-runtime-active-groups-v003.json",
+    "build/header-runtime-parity-v004.json",
+    "build/header-runtime-parity-v005.json",
+    "build/header-deployment-plan-v007.json"
+  ],
+  "last_verified_live_baseline": {
+    "post8_bytes": 600999,
+    "post8_sha256": "8cd8a9cfb804ba6ca5ab57a8ff59d7858c2e14bfb940f4921f2bceddefd80b83",
+    "deployed_base_marker": "af-project:header-live-source-v001",
+    "deployed_refinement_marker": "af-project:header-desktop-alignment-v003",
+    "header20_bytes": 7729,
+    "header20_sha256": "db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d",
+    "snippet7_bytes": 9723,
+    "snippet7_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "snippet7_active": true
+  },
+  "budget_guard": {
+    "expected_remote_calls": 8,
+    "mandatory_closeout_reserve": 10,
+    "retry_margin": 7,
+    "minimum_fresh_remaining_before_start": 25,
+    "note": "Fresh -5 account quota is currently unknown. Never reuse the stale -4 account counter."
+  },
+  "prewrite": [
+    "Verify WPVibe profile email exactly ncsnorbert+20260914-5@gmail.com, site connected, and fresh remaining calls >=25.",
+    "One combined guarded read wherever possible: post8 bytes/hash/marker counts, header20 bytes/hash, snippet7 bytes/hash/active/code_error.",
+    "If any baseline differs, stop and reconcile the intervening change; do not replay this package blindly.",
+    "Use supported content/search to retrieve the exact complete deployed v003 block. Never construct old_content from this plan or memory.",
+    "GET exact snippet7 body through Code Snippets plugin REST immediately before write and retain it as rollback payload."
+  ],
+  "writes": [
+    "POST /wpvibe/v1/content/edit: replace exactly the deployed v003 refinement block with the complete header-source-flex-responsive-v007 block; preserve base v001 and all foreign post8 bytes.",
+    "Read back post8 before runtime write: base marker once, v003 absent, v007 once, record new bytes/hash.",
+    "PUT only code for snippet7 through Code Snippets REST, applying header-runtime-parity-v006 deltas and preserving all content/link labels/mappings.",
+    "GET snippet7 after write: require active=true, code_error=null, marker intact, protected threshold/breakpoint/labels intact and new role/keyboard/current/native-submenu/mobile-focus logic present."
+  ],
+  "no_extra_cache_rule": "If the supported Additional CSS edit already triggers the required CSS regeneration/cache action, do not automatically run another whole-site purge.",
+  "rollback": {
+    "css": "restore exact captured v003 block using the same match-once path",
+    "runtime": "restore exact immediate-prewrite snippet7 code using the same Code Snippets REST route",
+    "trigger": "any failed readback, duplicate/missing marker, code_error, lost active state, or measurable header regression"
+  },
+  "postwrite_browser_qa": [
+    "Reuse only one source + one target Opera tab; no diagnostic tab fan-out.",
+    "Run all relevant specs/header-behaviors-v001.json tests.",
+    "Run specs/header-acceptance-v001.json at available controlled viewports, prioritizing 1440, 1461/1460, 1241/1240, 901/900, 561/560, 390 and 360.",
+    "Verify exactly one visible/focusable dropdown implementation per group: custom panel only; native ElementsKit duplicate hidden + inert.",
+    "Capture top and >8px scrolled pairs; open/current/focus states; record actual geometry/diff results.",
+    "Confirm page body/footer/forms unchanged apart from expected vertical start caused solely by correct header height at responsive breakpoints."
+  ],
+  "completion_rule": "Do not mark PIXEL_PASS until paired same-browser/viewport/DPR/zoom/load-state screenshots plus overlay/diff exist and all required behavior checks pass.",
+  "pixel_pass": false
+}
