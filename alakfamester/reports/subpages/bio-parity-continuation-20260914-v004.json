@@ -1,0 +1,88 @@
+{
+  "package": "bio-parity-continuation-20260914-v004",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "slug": "biologiai-vedelem",
+  "scope": "Only the Biological Protection page",
+  "result": "No new WordPress write in v004; work stopped exactly at the D11 10-call reserve after fresh verification and source-code research.",
+  "fresh_page_readback": {
+    "bytes": 34930,
+    "sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+    "json_valid": true,
+    "matches_v003_post_CTA_state": true
+  },
+  "quota_closeout": {
+    "used": 290,
+    "limit": 300,
+    "remaining": 10,
+    "D11_reserve": 10,
+    "usable_above_reserve": 0,
+    "decision": "No further WPVibe call is allowed until rolling-window calls age out."
+  },
+  "failed_or_read_only_probes": [
+    {
+      "operation": "WordPress /batch/v1 with validation=require-all",
+      "result": "400 before inner execution because this WordPress expects validation=require-all-validate",
+      "writes": 0
+    },
+    {
+      "operation": "WordPress /batch/v1 with validation=require-all-validate",
+      "result": "validation failed with rest_batch_not_allowed for each /wpvibe/v1/content/search request; no inner search ran",
+      "writes": 0
+    },
+    {
+      "operation": "content/search using rendered Hungarian Unicode text",
+      "pattern": "A lombfelület csökkenése miatt átmenetileg kevesebb tartalék keletkezik.",
+      "result": "0 matches; stored Elementor JSON is byte-literal with non-ASCII escaped as backslash-u sequences",
+      "writes": 0
+    }
+  ],
+  "atomic_core_research": {
+    "finding": "Do not use Atomic settings.attributes for the remaining aria labels/landmarks on Elementor 4.2.4.",
+    "evidence": [
+      "Atomic_Tabs_Menu declares attributes and its Twig template would print settings.attributes",
+      "Elementor registers Attributes_Transformer for Attributes_Prop_Type",
+      "Attributes_Transformer::transform currently returns null",
+      "Elementor core test is named test_core_attributes_transformer_always_returns_null",
+      "the earlier isolated page256 hero pilot independently confirmed the value can be stored while no aria attribute is rendered"
+    ],
+    "open_atomic_items": [
+      "hero named region",
+      "FAQ outer named region",
+      "review tablist accessible name Ügyfélvélemények"
+    ],
+    "safe_decision": "No guessed attributes, no full page save, no page-scoped JavaScript or global plugin/snippet workaround under the current page-only/no-plugin-config scope."
+  },
+  "next_search_anchors": {
+    "region_af260007": "af260007",
+    "stress_list": "kevesebb tartal",
+    "region_af260010": "af260010",
+    "use_case_list": "szerkezete megtarthat",
+    "region_af260011": "af260011",
+    "table_header": "Gyakori t",
+    "table_row_1": "barnul",
+    "table_row_2": "kiritkul",
+    "table_row_3": "hull",
+    "table_row_4": "jelenl",
+    "region_af260013": "af260013",
+    "expectation_list": "semmilyen kezel",
+    "final_cta": "af-sub-cta-contact"
+  },
+  "remaining_source_proven_legacy_deltas": [
+    "13 target-only terminal periods across af260007/af260010/af260013",
+    "af260011 header text must be TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY",
+    "af260011 four first-column body cells must expose rowHeader semantics, source-equivalent th scope=row preferred",
+    "four complete legacy-contained sections need named region semantics",
+    "final CTA may still need explicit aria-label for exact source accessible-name case/order after fresh AX recheck"
+  ],
+  "browser": {
+    "opera_memory_policy": "Only a source/target pair was reused; no memory-heavy tab expansion.",
+    "connector_status": "disconnected during v004 AX work",
+    "pixel_pass": false
+  },
+  "prepared_manifest": {
+    "path": "build/bio-parity-fix-20260914-v004.json",
+    "commit": "f2984561cbc3df1fb6527cf63e1cf6335cbd4d09"
+  },
+  "smtp_or_submission": false
+}
