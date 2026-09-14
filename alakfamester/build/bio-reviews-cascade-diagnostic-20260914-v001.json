@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "package": "bio-reviews-cascade-diagnostic-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_OWNER_DIAGNOSTIC_REQUIRED_BEFORE_WRITE",
+  "live_proof": {
+    "tab_ordinals": "source shows one 01/02/03; target visually shows 01 01 / 02 02 / 03 03",
+    "tab_ax": "target tab names remain exact company/person names; AX contains exactly one staticText ordinal per tab, so extra visible copy is decorative pseudo content",
+    "quote": "target large quote is darker bronze; source exact #D9C9A5",
+    "dots": "source active indicator is a 9px leaf-dot scaled 1.3; target live active indicator is materially oversized while prev/next controls are otherwise source-like"
+  },
+  "known_rendered_tab_dom_before_outage": "button.af-review-tab > span.af-review-tab-label with company name + br + person/meta; no literal 01/02/03 text in the saved/rendered tab child HTML",
+  "implication": "Both visible target ordinals are CSS-generated. Do not delete or rewrite tab label text/ARIA to solve a purely decorative cascade problem.",
+  "future_read_only_searches": [
+    "Search fresh Additional CSS for every selector containing af-review-tab and ::before/::after.",
+    "Search fresh Additional CSS for every selector containing af-review-tab-label and ::before/::after.",
+    "Search for content:'01', content:'02', content:'03', counter()/counter-increment and nth-child rules in the review tab scope.",
+    "Search fresh Additional CSS for af-reviews-dot / af-reviews-dots and any button/pseudo selector that can visually create the active indicator.",
+    "Search for width/height/border-radius/transform rules affecting the active review indicator and identify the final winning owner before overriding.",
+    "Search for af-review-quote color owner; if no more specific live rule exists, the already-prepared quote microfix may deploy alone."
+  ],
+  "safe_future_fixes_only_after_owner_proof": {
+    "ordinal": "Suppress exactly one duplicate pseudo owner, preserving the remaining source-like ordinal and all Atomic tab semantics.",
+    "dot": "Map the winning visual indicator to source .reviews__dot 9x9 leaf shape and active 1.3 rotate(-12deg), but never re-enable hidden/focusable duplicate dot controls.",
+    "quote": "Use build/bio-review-quote-source-color-v001.css; page256 review scope only."
+  },
+  "hard_preserve": [
+    "Atomic native Tabs hierarchy",
+    "three exact accessible tab names",
+    "ID35 previous/next and duplicate-dot AX/focus behavior",
+    "review images/alt text/copy",
+    "review panel geometry unless normalized computed-style proof finds a separate defect"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
