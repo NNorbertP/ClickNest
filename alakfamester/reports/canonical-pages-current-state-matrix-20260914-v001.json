@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "package": "canonical-pages-current-state-matrix-20260914-v001",
+  "date": "2026-09-14",
+  "scope": "planning/read-only synthesis; no WordPress writes; STATE.md remains the write-scope authority",
+  "canonical_pages": [
+    {
+      "page_id": 56,
+      "name": "Főoldal",
+      "implementation": "BODY_CONTENT_STRUCTURE_CLOSED",
+      "evidence": ["reports/home/home-final-audit-v001.json", "reports/final-structural-audit-v001.json"],
+      "preserve": ["canonical navigation/body routing", "direct-call Form33 note", "footer subtitle cleanup", "native reviews and hero/media work"],
+      "open": ["global header package is separate", "global floating dock diagnostic is separate", "formal deterministic visual/interaction acceptance"],
+      "write_now": false
+    },
+    {
+      "page_id": 256,
+      "name": "Biológiai védelem",
+      "implementation": "SEMANTICS_CLOSED_STRUCTURE_AND_VISUAL_PACKAGES_PREPARED_FUTURE_SCOPE",
+      "accepted_baseline": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid",
+      "preserve": ["ID35", "13 list-text corrections", "table row-header semantics", "named regions", "review semantics", "CTA semantics", "hero art"],
+      "future_structure": "build/bio-page256-next-safe-package-20260914-v012.json + reports/subpages/bio-page256-structure-execution-safety-20260914-v013.json",
+      "future_visual": "build/bio-visual-single-write-plan-20260914-v004.json",
+      "fresh_visual_evidence": ["reports/subpages/bio-visual-live-compare-20260914-v015.json", "reports/subpages/bio-technology-live-compare-20260914-v016.json"],
+      "hold": ["expectations visual v002 until direct fresh visual proof", "article/grouping semantic changes until fresh post-structure raw boundaries"],
+      "write_now": false
+    },
+    {
+      "page_id": 258,
+      "name": "Galéria",
+      "implementation": "STRUCTURE_REVIEWS_GALLERY_RUNTIME_STRUCTURE_CLOSED",
+      "evidence": ["reports/subpages/gallery-native-reviews-qa-v001.json", "reports/subpages/gallery-eael-masonry-v001.json"],
+      "preserve": ["native Atomic review tabs", "7 project cards", "4 BA controls", "6 manual carousels", "44 masonry items/zoom controls", "single shared interaction runtime"],
+      "open": ["exact Ellwoodi alternate-view source asset blocker", "BA/carousel/lightbox live interaction proof", "deterministic visual matrix"],
+      "write_now": false
+    },
+    {
+      "page_id": 260,
+      "name": "GYIK",
+      "implementation": "IMPLEMENTATION_CLOSED",
+      "evidence": ["reports/subpages/faq-hero-v4-v002.json", "reports/sitewide-functional-finalization-v001.json"],
+      "preserve": ["hero widget/V4 bridges", "native reviews", "disclosure structure"],
+      "open": ["formal frozen visual/behavior acceptance only"],
+      "write_now": false
+    },
+    {
+      "page_id": 262,
+      "name": "Gyümölcsfa metszés és védelem",
+      "implementation": "IMPLEMENTATION_CLOSED",
+      "evidence": ["reports/subpages/fruit-hero-v4-v002.json", "reports/sitewide-functional-finalization-v001.json"],
+      "preserve": ["hero widget/V4 bridges", "native reviews", "current source-equivalent content structure"],
+      "open": ["formal frozen visual/behavior acceptance only"],
+      "write_now": false
+    },
+    {
+      "page_id": 264,
+      "name": "Idős fák megmentése",
+      "implementation": "ACTIVE_SCOPE_CONTENT_SEMANTICS_CLOSED_TWO_VISUAL_MICROFIXES_GATED",
+      "accepted_baseline": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+      "authoritative": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+      "live": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005", "ID33 page-only semantic runtime"],
+      "ready_gated": ["oldtrees visual v006 contact foreground", "oldtrees visual v007 comparison grid", "combined bundle only if both fresh failures reproduce"],
+      "hold": ["hero vertical geometry until computed owner/cascade proof", "global dock from this page-only package"],
+      "proof_only": ["review keyboard", "tiszafa pointer/keyboard", "Nordmann autoplay/keyboard/swipe/pause/reduced motion", "Form33 service/topic submit-time required", "deterministic visual matrix"],
+      "write_now": "ONLY after fresh +5/site/quota + page/hash/post8 marker + same-browser visual gate"
+    },
+    {
+      "page_id": 266,
+      "name": "Kapcsolat",
+      "implementation": "IMPLEMENTATION_CLOSED",
+      "evidence": ["reports/subpages/contact-hero-v4-class-bridge-v001.json"],
+      "preserve": ["hero widget/V4 bridges", "Elérhetőségek h2", "four process h3 headings", "form section classes"],
+      "open": ["formal frozen visual/behavior acceptance", "real submission/SMTP explicitly excluded"],
+      "write_now": false
+    },
+    {
+      "page_id": 268,
+      "name": "Referencia videók",
+      "implementation": "STRUCTURAL_IMPLEMENTATION_CLOSED",
+      "accepted_latest": "46622 B / af362a9e7295cf06757b94c487e7504dbc5a01f84ee956906c16d6c93059e747",
+      "evidence": ["reports/subpages/reference-videos-cta-order-fix-v001.json", "reports/subpages/reference-videos-acceptance-available-v001.json"],
+      "preserve": ["fixed CTA sibling/focus order", "seven video controls/IDs", "privacy-mode/lazy structure", "native reviews", "hero"],
+      "open": ["authenticated editor-reopen proof after latest structural save", "review/video/hero animation interaction proof", "deterministic visual matrix"],
+      "write_now": false
+    },
+    {
+      "page_id": 270,
+      "name": "Rólam",
+      "implementation": "BODY_STRUCTURE_AND_HERO_CLOSED_ONE_EXACT_ASSET_BLOCKER",
+      "evidence": ["reports/subpages/about-hero-v4-v001.json", "reports/subpages/about-survivor-source-parity-v001.json", "reports/subpages/about-oldtrees-media-finalization-v001.json"],
+      "preserve": ["af-hero-art Rólam variant", "timeline/content headings", "5-slide manual carousel", "three BA project cards", "all other visible source media roles"],
+      "open": ["exact Biró János munka közben portrait bytes unavailable/404", "BA direct interaction proof", "formal deterministic visual/animation acceptance"],
+      "write_now": false
+    },
+    {
+      "page_id": 272,
+      "name": "Sövény specialista",
+      "implementation": "SAVED_CONTENT_MEDIA_CLOSED_SEMANTIC_SUCCESSOR_PREPARED_FUTURE_SCOPE",
+      "accepted_baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+      "evidence": ["reports/subpages/hedge-continuation-20260914-v010.json", "reports/subpages/hedge-semantic-runtime-static-qa-v004.json"],
+      "preserve": ["26/26 shared-media recovery", "28/28 page-local EAEL gallery", "five saved legacy regions", "mailto/contact semantics", "24h reply", "ID36 v001 until gated successor update"],
+      "future_candidate": "build/hedge-semantic-runtime-v003.php; update existing ID36 only after fresh MetForm33 wrapper direct-call ownership proof",
+      "open": ["live ID36 successor gate/readback/post-footer AX", "new visual work only if a fresh source-target delta is reproduced"],
+      "write_now": false
+    }
+  ],
+  "global_shared": {
+    "header": "future authoritative build/header-deployment-plan-v010.json; current live service-child current-state is inconsistent across routes; not current page264 write scope",
+    "floating_dock": "diagnostic-first; visual blank pill reproducible with AX content present; exact source CSS known, target winning cascade still unproven",
+    "metform33": "ID5 photo count, ID6 rows=5 and local success state accepted; service/topic submit-time required remains unproven",
+    "assets": "page270 portrait + page258 Ellwoodi exact bytes are hard blockers; no substitutes",
+    "formal": "acceptance.json/behaviors.json absent; deterministic six-viewport matrix unavailable; PIXEL_PASS=false"
+  },
+  "precedence": [
+    "STATE.md controls current write scope.",
+    "Fresh live evidence outranks this synthesis.",
+    "Later specific closeout evidence outranks older broad audits.",
+    "Do not turn proof-only gaps into new code without a reproducible failure."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
