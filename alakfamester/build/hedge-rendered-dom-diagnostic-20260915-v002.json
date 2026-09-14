@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "package": "hedge-rendered-dom-diagnostic-20260915-v002",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "mode": "READ_ONLY",
+  "wordpress_writes": 0,
+  "supersedes_for_execution": "build/hedge-rendered-dom-diagnostic-20260915-v001.json",
+  "goal": "Extract all remaining page272 structural-semantic/head/review-preservation evidence from one trustworthy rendered target HTML/DOM payload and compare the source from one matching reference payload when available.",
+  "target_selectors": {
+    "review_root": ".elementor-element-c3d30005",
+    "review_tablist": ".elementor-element-c3d30005 [role=tablist]",
+    "review_tabs": ".elementor-element-c3d30005 [role=tab]",
+    "review_panels": ".elementor-element-c3d30005 [role=tabpanel]",
+    "review_images": ".elementor-element-c3d30005 [role=tabpanel] img",
+    "proof_carousel": ".elementor-element-af2e004d",
+    "hero_art": ".elementor-element-af2e004e",
+    "gallery_widget": ".elementor-element-b2e2c001",
+    "form_intro_contact": ".elementor-element-af2e004c",
+    "form_wrapper": ".mf-form-wrapper[data-form-id=33]",
+    "form_service": "#af-form-service",
+    "form_city": "#af-form-city",
+    "headings": "h1,h2,h3,h4,h5,h6"
+  },
+  "extract_exact": {
+    "headings": "ordered array of {tagName/level, normalized visible text}; do not collapse duplicates",
+    "reviews_outer": "root count, tablist count/name, ordered tab count/current visible identity/current accessible name, .af-review-source-dot count/tabindex/aria-hidden",
+    "reviews_panels": "for each of the three tab/panel pairs capture tab id, visible text, computed name, aria-controls, panel id, aria-labelledby, selected/hidden state, full normalized visible quote text, visible company/person/role lines, review image src/currentSrc or stable media clue, image alt/computed name and order",
+    "existing_review_aria": "tablist and each real tab current aria-label/aria-labelledby before any v004 write",
+    "form": "Form33 wrapper count, form role/name/aria-labelledby/aria-describedby, direct-call owner/id/text/href, service wrapper role/aria-label/aria-labelledby/aria-describedby and label text, city input aria-label/aria-labelledby/aria-describedby/aria-errormessage/aria-invalid and help text",
+    "proof_carousel": "container role, direct item count, each emitted item role, parent role(s), accessible names/current active marker and stable owner classes/data attributes",
+    "hero": "hero art element ancestry plus ordered hero-copy heading/paragraph/CTA descendants of candidate ancestors",
+    "gallery": "Sövénymunkák heading node ancestry and b2e2c001 ancestry",
+    "form_outer": "af2e004c ancestry and Form33 wrapper ancestry",
+    "document_head_if_available": "title, meta description, canonical count/href, robots, og:title/og:description/og:url, JSON-LD/script count and top-level schema types/owners"
+  },
+  "review_preservation_contract": {
+    "known_saved_image_ids": [75, 76, 77],
+    "known_exact_tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "audit": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "rule": "Capture current target and trustworthy reference before any panel-content correction. Do not reconstruct quotes/images from memory or attachment IDs alone."
+  },
+  "lowest_common_ancestor_method": {
+    "hero": "Find nearest section-scale stable common ancestor of full source-equivalent hero copy and .elementor-element-af2e004e without swallowing following sections.",
+    "gallery": "Find nearest section-scale stable common ancestor of exact Sövénymunkák heading and .elementor-element-b2e2c001; b2e2c001 alone is insufficient if heading is outside.",
+    "form": "Find nearest section-scale stable common ancestor of .elementor-element-af2e004c and .mf-form-wrapper[data-form-id=33] without unrelated neighboring sections.",
+    "rule": "Do not accept page/main/root merely because it contains both nodes."
+  },
+  "source_comparison": {
+    "headings": "ordered {level,name} arrays",
+    "reviews": "all three tab names, tab↔panel wiring, quote text, visible author/company/role lines, image identity/accessibility and order",
+    "proof_carousel": "item/parent roles and accessible naming; historical source group role must be re-observed before target correction",
+    "regions": "source region names and actual section boundaries versus target common-root candidates",
+    "form": "post-runtime accessible names/relations after any ID36 deployment",
+    "head": "metadata intent with D09 WordPress /slug/ adaptation allowed"
+  },
+  "v004_deployment_gate_from_same_payload": [
+    "review root count=1, tablist count=1, tab count=3",
+    "current visible review identities remain in Panasonic -> Otolecz -> ARKER'S order",
+    "current tablist/tab aria state is conflict-free for v004 according to semantic QA v007",
+    "Form33 wrapper/form/direct-call/service/city cardinality gates pass",
+    "current form/service/city native ARIA/error relations are conflict-free for v004",
+    "planned/reused relation IDs are unique"
+  ],
+  "no_write_findings": [
+    "review panel inner-content mismatch",
+    "complete hero/gallery/form outer-region root discovery",
+    "heading level/order differences",
+    "proof carousel group/listitem difference",
+    "head metadata difference",
+    "unexpected extra source/target section semantics"
+  ],
+  "followup_rule": "Record diagnostic output first. Never expand ID36 v004 in the same package. Any new proven delta gets a separate smallest-owner plan.",
+  "call_budget_effect": "No extra target WPVibe call versus v001 when all target evidence is extracted from the already-planned broad rendered payload.",
+  "browser_memory_rule": "Reuse exactly one source + one target tab if browser becomes trustworthy. No new tabs; URL/title/content mismatch invalidates payload and ends browser branch immediately.",
+  "status": "READY_FOR_ONE_PASS_STRUCTURAL_SEMANTIC_REVIEW_HEAD_DIAGNOSTIC"
+}
