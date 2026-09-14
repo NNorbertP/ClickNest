@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "package": "oldtrees-css-cascade-ownership-20260915-v001",
   "date": "2026-09-15",
   "page_id": 264,
@@ -19,15 +19,16 @@
       ".af-card-muted": ["background:#EFEDE4!important"],
       ".af-card-positive": ["background:linear-gradient(160deg,#DDE7DF,#d1e0d5)!important"]
     },
-    "conclusion": "v005 does not set display, grid-template-columns, gap, child width/min-width/max-width/flex or any request-contact text color. Therefore v006 and v007 do not overwrite a v005-owned accepted property."
+    "conclusion": "v005 does not set display, grid-template-columns, gap, child width/min-width/max-width or any request-contact text color. Therefore v006 and v007 do not overwrite a v005-owned accepted property."
   },
   "v006_contact_foreground": {
     "file": "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "github_blob_sha": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
     "selector_root": "body.page-id-264 #ajanlatkeres .elementor-element-af2a0054",
     "properties": ["color"],
     "values": ["#FFF !important", "rgba(255,255,255,.9) !important"],
     "overlap_with_v004": "Intentional value-identical strengthening only. v004 already declares source white contact button/strong text and rgba(255,255,255,.9) label text, but fresh live evidence showed those colors losing the cascade.",
-    "overlap_with_v003": "v003 owns hover/focus transform and box-shadow plus width breakpoints. v006 changes neither; its hover/focus rule adds only winning white foreground.",
+    "overlap_with_v003": "v003 owns hover/focus transform and box-shadow plus width breakpoints. v006 changes neither; its base contact foreground makes the source-white color win without changing geometry.",
     "responsive_risk": "None identified: no width, padding, font-size, display, position or breakpoint declaration in v006.",
     "icon_effect": "Existing contact icon SVG uses currentColor, so forcing the button foreground to source white also keeps the icon source-white without a second icon rule.",
     "specificity_note": "Selectors include page-id-264, #ajanlatkeres and af2a0054 ownership; the !important is confined to the proven losing color declarations.",
@@ -35,17 +36,20 @@
   },
   "v007_comparison_grid": {
     "file": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+    "github_blob_sha": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
     "selector_root": "body.page-id-264 .elementor-element-af2a0045",
     "split_properties": ["display", "grid-template-columns", "gap", "align-items"],
-    "child_properties": ["width", "min-width", "max-width", "flex", "box-sizing"],
-    "overlap_with_v004": "Intentional value-identical strengthening of the source grid contract: display:grid, repeat(2,minmax(0,1fr)), 24px gap, stretch. Child width constraints are narrow cascade guards needed to stop generic split/flex sizing from defeating equal columns.",
+    "child_properties": ["width", "max-width", "min-width"],
+    "child_values": ["width:auto!important", "max-width:none!important", "min-width:0!important"],
+    "overlap_with_v004": "Intentional value-identical strengthening of the source grid contract: display:grid, repeat(2,minmax(0,1fr)), 24px gap, stretch. The exact standalone artifact resets only width/max-width/min-width on the cards; it does not set flex or box-sizing.",
     "overlap_with_v005": "No conflicting property. v005 owns card stretch/height and surfaces only. v007 preserves those declarations and does not set background, border, height, align-self, icon, bullet, typography or copy properties.",
     "responsive_contract": "At max-width:900px v007 keeps exactly one minmax(0,1fr) column, consistent with v004/source. It does not change the v004 max-width:720px card padding rule.",
-    "specificity_note": "The !important is limited to the source grid/width contract already proven to lose in the live cascade; it is not a broad card restyle.",
+    "specificity_note": "The !important is limited to the source grid contract and three card width constraints already associated with the live unequal-column cascade. It is not a broad card restyle.",
     "static_status": "MINIMAL_GEOMETRY_CASCADE_OVERRIDE_SAFE_IF_FRESH_FAILURE_REPRODUCES"
   },
   "combined_bundle": {
     "file": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+    "github_blob_sha": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
     "allowed_only_when": "A fresh same-state source/target gate proves both v006 and v007 failures simultaneously and both new marker counts are zero.",
     "benefit": "One Additional CSS match-once insertion and one closeout instead of two writes, reducing call/cascade risk.",
     "forbidden_when": "If only one failure reproduces, deploy only its standalone block. If neither reproduces, write nothing."
@@ -72,5 +76,5 @@
   "decision": "No WordPress write is justified while WPVibe is disabled and the Opera connector is disconnected. Prepared v006/v007 remain unchanged and gated, not speculative.",
   "wordpress_writes": 0,
   "pixel_pass": false,
-  "status": "CASCADE_OVERLAP_RECONCILED_V006_V007_REMAIN_MINIMAL_GATED_FIXES"
+  "status": "CASCADE_OVERLAP_RECONCILED_AGAINST_EXACT_V006_V007_ARTIFACTS"
 }
