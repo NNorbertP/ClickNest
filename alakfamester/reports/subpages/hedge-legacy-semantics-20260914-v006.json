@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "package": "hedge-legacy-semantics-20260914-v006",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "source_plan": "build/hedge-page272-legacy-semantics-20260914-v003.json",
+  "status": "PARTIAL_VERIFIED_WRITES_HOST_429_BEFORE_REMAINING_READS",
+  "initial_preflight": {
+    "expected_before_continuation": "53041 B / b283e07f441a11a8f2390a685c91323ea66d58be2b15713c2b4e6d1ca35d0627 / JSON valid",
+    "fresh_observed": "53114 B / 164dcd28b3f6da30c7bc66bd35a455ac904695d73c9340ab0c660b370c3e4a1e / JSON valid",
+    "reconciliation": "The entire +73-byte drift was exactly explained by the previously HTTP-429-returned af2e0007 edit actually having executed. UTF-8 byte delta of adding role=region + the source aria-label is 73 bytes. A combined read proved no other v003 region/contact operation was present at that point."
+  },
+  "writes_confirmed": [
+    {
+      "element": "af2e0007",
+      "change": "role=region + aria-label Egy sövény nem csak egyenes zöld fal lehet",
+      "origin": "Earlier content/edit returned HTTP 429 but later hash/fragment readback proved it executed",
+      "post_bytes": 53114
+    },
+    {
+      "element": "af2e0045",
+      "change": "role=region + aria-label A sövény ritkán egyik napról a másikra romlik le",
+      "storage_note": "Used live escaped Elementor JSON fragment with unicode \\u escapes and escaped closing tags after human-readable plan did not byte-match",
+      "reported_replaced": 1,
+      "post_bytes": 53215
+    },
+    {
+      "element": "af2e0047",
+      "change": "role=region + aria-label Egyszerű nyírás vagy szerkezeti fenntartás?",
+      "reported_replaced": 1,
+      "post_bytes": 53306
+    },
+    {
+      "element": "af2e0049",
+      "change": "role=region + aria-label Milyen munkákat vállalok?",
+      "reported_replaced": 1,
+      "post_bytes": 53369
+    }
+  ],
+  "pending": [
+    "af2e000f: add region Van hasonló növénye? and restore exact complete source mailto clickable range while preserving #ajanlatkeres",
+    "af2e004c: add exact source aria-labels to existing phone/email contact-btn anchors without href/style changes",
+    "fresh full page272 bytes/SHA/JSON readback and protected-component/gallery preservation check",
+    "fresh frontend source-target AX verification",
+    "review Atomic schema inspection remains separate and must not use guessed attributes"
+  ],
+  "last_operation": {
+    "type": "read-only content/search for kreativ@alakfa-mester.hu",
+    "result": "HTTP 429",
+    "writes_after_last_success": 0,
+    "decision": "Stop site calls; do not retry the search or remaining writes until a fresh page272 hash/JSON/fragment preflight succeeds."
+  },
+  "preservation_rules": [
+    "No shared attachment metadata writes",
+    "EAEL b2e2c001 must remain 28 items, all media ids zero, full resolution, names/URLs/order unchanged",
+    "Preserve hero af2e004e, proof af2e004d, reviews c3d30005, MetForm af2e0011, 24-hour reply sentence and #ajanlatkeres",
+    "Legacy image widgets af2e0009-af2e000e remain absent",
+    "No full Elementor save, raw SQL write, SMTP or external submission"
+  ],
+  "pixel_pass": false
+}
