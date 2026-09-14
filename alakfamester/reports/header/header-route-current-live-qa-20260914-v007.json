@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "package": "header-route-current-live-qa-20260914-v007",
+  "date": "2026-09-14",
+  "scope": "read-only global header QA; no WordPress write",
+  "browser": {"existing_tabs":2,"new_tabs_opened":0,"same_browser":true,"desktop_viewport_px":[1640,920]},
+  "live_state_preserved": ["header-v004 CSS", "ID7 8px sticky runtime", "ID37 route-current helper"],
+  "service_child": {
+    "route": "/idos-fak-megmentese-szolgaltatas/",
+    "source": "Szolgáltatások parent pill current; one caret",
+    "target": "Szolgáltatások parent pill current; one caret",
+    "status": "PASS"
+  },
+  "normal_home": {
+    "source": "Főoldal current; Szolgáltatások not current",
+    "target": "Főoldal current; Szolgáltatások not current",
+    "status": "PASS_NEGATIVE_ROUTE_GATE",
+    "meaning": "ID37 does not incorrectly mark the Services parent current on ordinary homepage load."
+  },
+  "duplicate_caret": "PASS on reviewed desktop captures; target shows one source-equivalent dropdown indicator.",
+  "still_open": {
+    "references_child": "Direct Gallery/Reference Videos route-current visual proof not completed because the shared target tab was concurrently repurposed before capture.",
+    "desktop_geometry": "Target center nav group appears wider than reference on homepage; exact computed owner/cascade not yet proven, so no padding/gap patch is justified.",
+    "dropdown_interaction": "click/keyboard/focus unavailable",
+    "mobile_drawer": "deterministic viewport/action tooling unavailable",
+    "top_vs_scrolled": "requires controlled scroll/action proof"
+  },
+  "obsolete_plan": "build/header-runtime-active-groups-v002.json must not be deployed; ID37 already provides the route-current behavior with lower blast radius.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
