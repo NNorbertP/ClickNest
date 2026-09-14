@@ -1,0 +1,231 @@
+/* af-bio-visual-v001:start
+ * Scope: body.page-id-256 only.
+ * Source: https://alakfamester.clicknest.hu/styles.css + same-Opera source/target screenshots.
+ * Intent: restore source component geometry/surfaces on existing editable page256 legacy markup.
+ * No section-height / hero-size rules: existing 1920/1440/1024/768/390/360 source-measured rules stay authoritative.
+ */
+
+/* --------------------------------------------------------------------------
+ * #technologiak anchor parity.
+ * Source anchor is on the padded section; target id currently sits on the
+ * inner content wrapper. Leave the same section-padding worth of breathing
+ * room when the inner target is scrolled into view.
+ * -------------------------------------------------------------------------- */
+body.page-id-256 #technologiak {
+  scroll-margin-top: clamp(48px, 5.6vw, 88px);
+}
+
+/* --------------------------------------------------------------------------
+ * Technology cards (af260010).
+ * Source maps to .grid.grid--3 > .card.feature, middle .card--sage.
+ * Existing target pseudo icon badges are intentionally not re-authored here.
+ * Pre-deploy requirement: prove the target icon owns ::before (or another
+ * child) and that article::after is free before enabling the watermark rules.
+ * -------------------------------------------------------------------------- */
+body.page-id-256 .elementor-element-af260010 .af-sub-cards {
+  gap: 24px !important;
+  margin: 32px 0 !important;
+  align-items: stretch !important;
+}
+body.page-id-256 .elementor-element-af260010 .af-sub-cards > article {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  padding: 32px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(215, 210, 198, .6) !important;
+  border-radius: 28px 34px 26px 32px !important;
+  box-shadow: 0 16px 40px rgba(47, 58, 47, .08) !important;
+  overflow: clip !important;
+}
+body.page-id-256 .elementor-element-af260010 .af-sub-cards > article:nth-child(2) {
+  background:
+    linear-gradient(90deg, transparent, #7D9B83, #B59A61, transparent) 8% 0 / 84% 3px no-repeat,
+    #DDE7DF !important;
+  border-color: rgba(47, 93, 70, .16) !important;
+  box-shadow: none !important;
+}
+body.page-id-256 .elementor-element-af260010 .af-sub-cards > article > h3 {
+  margin-bottom: 0 !important;
+}
+body.page-id-256 .elementor-element-af260010 .af-sub-cards > article > p {
+  margin-bottom: 0 !important;
+  flex: 1 1 auto !important;
+  max-width: 78ch !important;
+  color: #4A5750 !important;
+}
+
+/* Source .card lower-right organic watermark. Enable only after the preflight
+ * proves it does not replace an existing target icon pseudo-element. */
+body.page-id-256 .elementor-element-af260010 .af-sub-cards > article::after {
+  content: "";
+  position: absolute;
+  right: -46px;
+  bottom: -56px;
+  width: 150px;
+  height: 150px;
+  border-radius: 4px 64% 4px 64%;
+  background: #2F5D46;
+  opacity: .045;
+  transform: rotate(-16deg);
+  pointer-events: none;
+  z-index: 0;
+}
+body.page-id-256 .elementor-element-af260010 .af-sub-cards > article:nth-child(2)::after {
+  background: #173D2D;
+  opacity: .05;
+}
+body.page-id-256 .elementor-element-af260010 .af-sub-cards > article > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------------------------
+ * Symptom table (af260011).
+ * Source maps to .table-wrap + table.data. Text and row/column semantics are
+ * already source-exact; this block restores only source surface/spacing.
+ * -------------------------------------------------------------------------- */
+body.page-id-256 .elementor-element-af260011 .af-table-wrap {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  border-radius: 28px 34px 26px 32px !important;
+  border: 1px solid #D7D2C6 !important;
+  box-shadow: 0 8px 22px rgba(23, 61, 45, .06) !important;
+  background:
+    linear-gradient(to right, #FFFFFF 40%, rgba(255,255,255,0)) left / 44px 100% no-repeat local,
+    linear-gradient(to left, #FFFFFF 40%, rgba(255,255,255,0)) right / 44px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, rgba(23,61,45,.14), rgba(23,61,45,0)) left / 16px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgba(23,61,45,.14), rgba(23,61,45,0)) right / 16px 100% no-repeat scroll,
+    #FFFFFF !important;
+}
+body.page-id-256 .elementor-element-af260011 .af-table-wrap table {
+  width: 100% !important;
+  min-width: 520px !important;
+  margin: 0 !important;
+  border-collapse: collapse !important;
+  font-size: .95rem !important;
+}
+body.page-id-256 .elementor-element-af260011 .af-table-wrap caption {
+  caption-side: top !important;
+  text-align: left !important;
+  padding: 16px 24px 8px !important;
+  color: #4A5750 !important;
+  font-size: .9rem !important;
+  font-weight: 600 !important;
+}
+body.page-id-256 .elementor-element-af260011 .af-table-wrap th,
+body.page-id-256 .elementor-element-af260011 .af-table-wrap td {
+  padding: 13px 24px !important;
+  text-align: left !important;
+  vertical-align: top !important;
+  border-bottom: 1px solid rgba(215, 210, 198, .6) !important;
+}
+body.page-id-256 .elementor-element-af260011 .af-table-wrap thead th {
+  background: #DDE7DF !important;
+  color: #173D2D !important;
+  font-size: .8rem !important;
+  letter-spacing: .09em !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  border-bottom-color: rgba(47, 93, 70, .2) !important;
+}
+body.page-id-256 .elementor-element-af260011 .af-table-wrap tbody tr:nth-child(even) {
+  background: rgba(221, 231, 223, .35) !important;
+}
+body.page-id-256 .elementor-element-af260011 .af-table-wrap tbody th {
+  color: #173D2D !important;
+  font-weight: 650 !important;
+}
+body.page-id-256 .elementor-element-af260011 .af-table-wrap tbody tr:last-child th,
+body.page-id-256 .elementor-element-af260011 .af-table-wrap tbody tr:last-child td {
+  border-bottom: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+ * FAQ static/open-state parity (af260015).
+ * Existing native <details>/<summary> behavior and exact accessible question
+ * names are preserved. CSS maps source .faq/.faq__item/.faq__trigger/.faq__icon
+ * onto the current markup without JS or text replacement.
+ * -------------------------------------------------------------------------- */
+body.page-id-256 .elementor-element-af260015 .af-details {
+  display: grid !important;
+  gap: 12px !important;
+}
+body.page-id-256 .elementor-element-af260015 .af-details > details {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #FFFFFF !important;
+  border: 1px solid #D7D2C6 !important;
+  border-radius: 22px 26px 22px 26px !important;
+  overflow: clip !important;
+  transition: border-color 220ms cubic-bezier(.22,.68,.36,1), box-shadow 220ms cubic-bezier(.22,.68,.36,1) !important;
+}
+body.page-id-256 .elementor-element-af260015 .af-details > details[open] {
+  border-color: rgba(47, 93, 70, .34) !important;
+  box-shadow: 0 8px 22px rgba(23, 61, 45, .06) !important;
+}
+body.page-id-256 .elementor-element-af260015 .af-details > details > summary {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  width: 100% !important;
+  min-height: 64px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 16px 24px !important;
+  background: none !important;
+  border: 0 !important;
+  list-style: none !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  color: #173D2D !important;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif !important;
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  transition: background-color 220ms cubic-bezier(.22,.68,.36,1) !important;
+}
+body.page-id-256 .elementor-element-af260015 .af-details > details > summary::-webkit-details-marker {
+  display: none !important;
+}
+body.page-id-256 .elementor-element-af260015 .af-details > details > summary:hover {
+  background: #DDE7DF !important;
+}
+body.page-id-256 .elementor-element-af260015 .af-details > details > summary::after {
+  content: "";
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  box-sizing: border-box;
+  border-radius: 4px 64% 4px 64%;
+  border: 1px solid rgba(47, 93, 70, .2);
+  background:
+    linear-gradient(#173D2D, #173D2D) center / 14px 2px no-repeat,
+    linear-gradient(#173D2D, #173D2D) center / 2px 14px no-repeat,
+    #DDE7DF;
+  transition: background-color 220ms cubic-bezier(.22,.68,.36,1), transform 220ms cubic-bezier(.22,.68,.36,1);
+}
+body.page-id-256 .elementor-element-af260015 .af-details > details[open] > summary::after {
+  background:
+    linear-gradient(#FFFFFF, #FFFFFF) center / 14px 2px no-repeat,
+    #173D2D;
+  transform: rotate(-90deg);
+}
+body.page-id-256 .elementor-element-af260015 .af-details > details > p {
+  margin: 0 !important;
+  max-width: 96ch !important;
+  padding: 0 24px 24px !important;
+  color: #4A5750 !important;
+}
+
+@media (max-width: 900px) {
+  body.page-id-256 .elementor-element-af260010 .af-sub-cards {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+
+/* af-bio-visual-v001:end */
