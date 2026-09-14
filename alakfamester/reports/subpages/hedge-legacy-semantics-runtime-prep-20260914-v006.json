@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "hedge-legacy-semantics-runtime-prep-20260914-v006",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "write_scope": "page272 only",
+  "status": "LEGACY_SEMANTICS_SAVED_REVIEW_RUNTIME_PREPARED_HOST_429",
+  "page272_last_verified": {
+    "elementor_bytes": 53606,
+    "elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "protected": {
+      "hero_af2e004e": true,
+      "proof_af2e004d": true,
+      "reviews_c3d30005": true,
+      "metform_af2e0011": true,
+      "removed_legacy_image_widgets_present": 0
+    },
+    "gallery": {
+      "widget": "b2e2c001",
+      "item_count": 28,
+      "media_id_zero_count": 28,
+      "resolution": "full"
+    },
+    "reply_sentence": "Jellemzően 24 órán belül válaszolok."
+  },
+  "legacy_semantics_saved": [
+    {
+      "element_id": "af2e0007",
+      "region": "Egy sövény nem csak egyenes zöld fal lehet"
+    },
+    {
+      "element_id": "af2e0045",
+      "region": "A sövény ritkán egyik napról a másikra romlik le"
+    },
+    {
+      "element_id": "af2e0047",
+      "region": "Egyszerű nyírás vagy szerkezeti fenntartás?"
+    },
+    {
+      "element_id": "af2e0049",
+      "region": "Milyen munkákat vállalok?"
+    },
+    {
+      "element_id": "af2e000f",
+      "region": "Van hasonló növénye?",
+      "mailto_accessible_name": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+      "complete_mailto_range": true,
+      "ajanlatkeres_preserved": true
+    },
+    {
+      "element_id": "af2e004c",
+      "phone_accessible_name": "HÍVJON NYUGODTAN +36 30 539 48 20",
+      "email_accessible_name": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+      "hrefs_unchanged": true,
+      "reply_sentence_preserved": true
+    }
+  ],
+  "review_schema": {
+    "elementor_version": "4.2.4",
+    "slug": "e-tabs",
+    "free": true,
+    "atomic": true,
+    "props": ["classes", "default-active-tab", "attributes", "_cssid", "display-conditions"],
+    "attributes_kind": "array",
+    "conclusion": "The live schema proves an attributes control exists but does not prove the exact item wire shape or frontend emission. Prior page256 evidence showed guessed Atomic aria attributes can store without rendering, so no saved-data attribute guess was made."
+  },
+  "review_runtime_prepared": {
+    "file": "build/hedge-review-semantic-runtime-20260914-v001.php",
+    "commit": "d1fd7e134e22be6e2ec3042bb14f348af0cf7f25",
+    "scope_guard": "is_page(272)",
+    "root_selector": ".elementor-element-c3d30005",
+    "changes_only": [
+      "tablist aria-label = Ügyfélvélemények",
+      "three tab aria-label values = exact source accessible names"
+    ],
+    "does_not_change": [
+      "visible text",
+      "CSS",
+      "DOM order",
+      "click behavior",
+      "Arrow/Home/End behavior",
+      "extra 1./2./3. vélemény controls"
+    ],
+    "deployment": "NOT_DEPLOYED"
+  },
+  "remaining_review_deltas": [
+    "Target native tablist is unnamed until runtime/supported saved attribute solution is verified.",
+    "Target native tab accessible names include visible 01/02/03 prefixes until an exact accessible-name override is deployed and verified.",
+    "Target exposes extra focusable 1. vélemény / 2. vélemény / 3. vélemény controls; ownership and behavior must be proven before removal/hiding."
+  ],
+  "quota": {
+    "last_exact_counter": "239/300 used, 61 remaining",
+    "mandatory_D11_reserve": 10,
+    "note": "One later read hit HTTP 429 after built-in retries, so the exact current counter is higher than 239 and was intentionally not re-polled while throttled."
+  },
+  "blockers": [
+    "Host-level HTTP 429 currently blocks further WPVibe read/write verification.",
+    "Opera connector disconnected during the source-target AX query; no extra tabs were opened and browser usage was kept to the existing source/target pair.",
+    "Deterministic six-viewport screenshot/overlay/diff tooling and repository acceptance/behavior JSON remain unavailable; PIXEL_PASS=false."
+  ],
+  "next_safe_action": [
+    "After host throttling clears, re-read page272 hash and require ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 unless new drift is reconciled.",
+    "Fresh-load source and target with at most two Opera tabs and verify the five named legacy regions, CTA/contact accessible names, 28 gallery names and protected components.",
+    "Inspect current review DOM/implementation ownership for the extra review-index controls.",
+    "Deploy the page272-only review semantic runtime helper only through a supported plugin-aware path and verify frontend + editor lifecycle before considering any control removal.",
+    "Record readback and update STATE.md without overwriting concurrent page264/bio work."
+  ],
+  "pixel_pass": false
+}
