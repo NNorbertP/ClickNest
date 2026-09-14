@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "package": "hedge-outer-regions-static-audit-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "supersedes_for_planning": "reports/subpages/hedge-outer-regions-static-audit-20260914-v001.json",
+  "source_named_regions_requiring_complete_target_roots": [
+    "Minőségi sövény formára vágás, metszés és megújítás",
+    "Sövénymunkák",
+    "Küldjön fotót a sövényről"
+  ],
+  "hero": {
+    "known": "Historical hero evidence links candidate container af2e0041 with hero-art widget af2e004e, but does not prove that one target root contains the complete source hero copy plus art.",
+    "decision": "NO_WRITE until fresh DOM ancestry proves one stable complete root."
+  },
+  "gallery": {
+    "known": "EAEL b2e2c001 is the 28-item gallery composite, but repository evidence does not prove b2e2c001 itself also owns the Sövénymunkák heading.",
+    "decision": "NO_WRITE. Do not label the widget alone; prove a stable common heading+gallery ancestor first."
+  },
+  "form": {
+    "known": [
+      "af2e004c is a separate legacy form-intro/contact widget with the 24-hour reply and phone/e-mail links.",
+      "af2e0010 carries _cssid=ajanlatkeres and af2e0011 is the MetForm33 widget.",
+      "Historical page272 planning explicitly warned not to fake a partial region for the MetForm composite section.",
+      "Later prepared runtime v002/v003 attempted to label #ajanlatkeres as Küldjön fotót a sövényről without repository evidence proving #ajanlatkeres contains the separate af2e004c intro/contact content."
+    ],
+    "correction": "build/hedge-semantic-runtime-v004.php removes the #ajanlatkeres region mutation while preserving complete form/review component semantics.",
+    "decision": "NO OUTER REGION WRITE until fresh DOM proves one stable complete root contains the full source-equivalent form intro/contact content plus the Form33 composite."
+  },
+  "already_safe_named_regions": [
+    "Egy sövény nem csak egyenes zöld fal lehet",
+    "A sövény ritkán egyik napról a másikra romlik le",
+    "Egyszerű nyírás vagy szerkezeti fenntartás?",
+    "Milyen munkákat vállalok?",
+    "Van hasonló növénye?",
+    "Amit a megbízóim mondanak"
+  ],
+  "principle": "A source named region may be recreated only on a target root proven to contain the complete corresponding source section. Do not use an inner widget merely because it is visually located inside that source section.",
+  "next_live_dom_read": "When a trustworthy rendered DOM is available, inspect ancestry for hero copy+art, gallery heading+EAEL, and form intro/contact+MetForm in one targeted pass. If no stable complete common root exists, leave the outer source region unmatched rather than create misleading partial semantics.",
+  "pixel_pass": false
+}
