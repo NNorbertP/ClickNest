@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-readback-closeout-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Repository identity/readback closeout for the current page264 continuation. No WordPress write.",
+  "authoritative_files": {
+    "STATE.md": "332cdc1f5d5acae636c4ce0c69f6113b290abd85",
+    "build/oldtrees-next-remote-window-20260915-v003.json": "07d53049bf85246ff6f83775d4534cfa8f5a8c41",
+    "reports/subpages/oldtrees-continuation-20260915-v010.json": "2a56f883fa0ccf9e1a6d67abac10d37a91e064f3",
+    "build/oldtrees-visual-v006-contact-text-cascade.css": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+    "build/oldtrees-visual-v006-v007-single-write-bundle.css": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+    "build/oldtrees-visual-deploy-manifest-20260915-v001.json": "f254090efa5779b82d5db3d75f4b4aebc357b514",
+    "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json": "817fd8c79c844c36840f512822e0e650d33ed41e",
+    "build/oldtrees-form-required-validation-plan-20260915-v001.json": "4cc98464e8da6a9795c67d492da178274c63246d",
+    "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json": "b9c831ae744de4f4cadb5ba16b6ea07c7fc1bc22",
+    "reports/subpages/oldtrees-section-coverage-20260915-v001.json": "579008862df8ac223d2b37df3ca1b72c15371bb6",
+    "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json": "848ad2781fc0332959caa47ec22a5d1d1af92bba"
+  },
+  "accepted_remote_baseline_not_reverified_this_run": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_json_valid": true,
+    "live_visual_blocks": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "semantic_id33_last_accepted_sha256": "810e62e37b30b553dc96212783954e808e9bf251eb5c72ab8c509beb4957b22f",
+    "note": "These are accepted historical live readbacks, not a claim of a current server read in this continuation. Fresh live truth must be read before any WordPress write."
+  },
+  "current_repo_decision": {
+    "known_content_main_media_gap": false,
+    "known_static_semantic_ax_gap": false,
+    "proven_page264_local_visual_failures": ["v006 contact foreground", "v007 comparison equal desktop columns"],
+    "prepared_visual_write_count_if_both_fail": 1,
+    "prepared_visual_write_count_if_one_fails": 1,
+    "prepared_visual_write_count_if_none_fail": 0,
+    "hero": "diagnostic only; no speculative spacing fix",
+    "inner_form_fields": "no defect proven; measurement only",
+    "service_radio_required": "native capability proven, current Form33 field setting/behavior still requires fresh read/proof",
+    "runtime_interactions": "proof-only unless a stable live failure is reproduced"
+  },
+  "tool_state": {
+    "wpvibe": "Disabled on the single initial read-only attempt in this continuation; no retry.",
+    "opera": "Maximum two project tabs reached (one reused target + one new reference); first screenshot disconnected; no replacement/reconnect loop.",
+    "wordpress_writes": 0,
+    "smtp_or_external_submission": false
+  },
+  "next_run_drift_rule": [
+    "Re-read STATE.md and the v003 remote plan before acting.",
+    "Re-read exact v006/v007 artifact blob SHAs or current file contents before remote insertion; if any listed repo SHA changed, reconcile the newer repository truth first.",
+    "Fresh WPVibe live state always outranks this closeout manifest.",
+    "Do not use this file as authorization to write if WPVibe identity/site/quota/hash/markers or the fresh visual failure gate is unavailable."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "CURRENT_PAGE264_REPOSITORY_STATE_READ_BACK_AND_FROZEN_FOR_NEXT_SAFE_LIVE_GATE"
+}
