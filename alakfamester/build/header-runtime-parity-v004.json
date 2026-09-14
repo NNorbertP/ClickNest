@@ -1,0 +1,104 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only runtime parity",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_WPVIBE_UNAVAILABLE",
+  "supersedes": "build/header-runtime-active-groups-v003.json",
+  "snippet": {
+    "id": 7,
+    "required_prewrite_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "required_prewrite_bytes": 9723,
+    "required_marker": "af-header-nav-parity-v005",
+    "must_remain_active": true,
+    "must_keep_scroll_threshold_px": 8,
+    "must_keep_mobile_breakpoint_px": 1240,
+    "must_keep_main_navigation_aria_label": "Főmenü",
+    "must_keep_brand_accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "reference_runtime_evidence": {
+    "sticky": "script.js toggles header is-stuck at window.scrollY > 8 using requestAnimationFrame throttling",
+    "desktop_dropdown": [
+      "click toggles the current dropdown and closes other dropdowns",
+      "ArrowDown on the trigger opens and focuses the first panel link",
+      "Escape inside the dropdown closes all dropdowns and restores focus to the trigger",
+      "ArrowDown and ArrowUp walk panel links; ArrowUp from the first link returns focus to the trigger; ArrowDown at the last link remains on the last link",
+      "outside click closes all dropdowns"
+    ],
+    "mobile_drawer": [
+      "opening sets aria-expanded/label, opens the drawer, locks body scrolling and focuses the first a/button in the drawer",
+      "Escape closes and restores focus to the menu toggle",
+      "resize above 1240 closes an open drawer",
+      "mobile submenu buttons toggle aria-expanded and their controlled panel"
+    ]
+  },
+  "current_route_state": {
+    "source_parent_contract": ".nav__link.is-section uses the sage surface/border without the current-page bronze dot",
+    "source_child_contract": ".nav__panel a[aria-current='page'] uses sage background and bronze leaf bullet",
+    "matching_rules": [
+      "Resolve every item URL with new URL(item[1], window.location.origin).",
+      "Normalize pathnames so /foo and /foo/ compare equal while root stays '/'.",
+      "Normal child-page entries match by normalized pathname.",
+      "The /#szolgaltatasi-utak item matches only when pathname is root AND location.hash is exactly #szolgaltatasi-utak; Services must not appear current on the normal homepage."
+    ],
+    "parent_action": "add host.classList 'is-current' when any group item matches",
+    "child_action": "set aria-current='page' only on the exact matching runtime panel anchor",
+    "popup_button_action": "do not add aria-current to the popup button itself because the live reference accessibility tree does not expose it"
+  },
+  "desktop_keyboard_delta": {
+    "preserve": [
+      "existing click toggle",
+      "existing outside-click close",
+      "existing trigger ArrowDown open+first-focus",
+      "existing Escape close+trigger focus"
+    ],
+    "add": [
+      "On keydown inside host, when event.key is ArrowDown or ArrowUp and document.activeElement is one of panel.querySelectorAll('a'), preventDefault and move focus according to the source algorithm.",
+      "ArrowUp from link index 0 focuses the trigger.",
+      "ArrowDown from the final link keeps focus on the final link.",
+      "Do not invent Home/End behavior for this menu; the source header dropdown script does not implement it."
+    ]
+  },
+  "mobile_focus_delta": {
+    "add": "After setMenu(true) has removed inert/hidden tab suppression, focus mobile.querySelector('a, button') if present.",
+    "preserve": [
+      "Escape closes and focuses toggle",
+      "resize >1240 closes menu",
+      "body scroll lock",
+      "submenu aria-expanded state",
+      "existing close-on-mobile-link navigation behavior, which is harmless and does not alter the destination mapping"
+    ]
+  },
+  "paired_css": {
+    "path": "build/header-alignment-responsive-v005.css",
+    "commit": "d60b759f8a405d809ac76c6a59be32b570ed7791",
+    "effects": [
+      "exact desktop centerline and 1460 compaction",
+      "single visual caret",
+      "source current parent/child styling",
+      "source hamburger bar geometry",
+      "source 900px header/CTA breakpoint",
+      "source 560px brand breakpoint"
+    ]
+  },
+  "guarded_execution": [
+    "Do not write while WPVibe is unavailable or while the target returns HTTP 429.",
+    "On reconnect, verify the authenticated WPVibe profile is the requested account and read quota once; preserve D11 ten-call reserve plus retry margin.",
+    "GET Code Snippets ID7 via its plugin-aware REST endpoint and require the exact prewrite hash/bytes above. Any drift stops this package for reconciliation.",
+    "Capture the complete live code as rollback payload immediately before editing.",
+    "Apply the route-state, dropdown ArrowUp/ArrowDown navigation and mobile initial-focus changes only; preserve all verified names, mappings and thresholds.",
+    "PUT only the code field through the Code Snippets route, then GET and require active=true, code_error=null, marker present, threshold 8, breakpoint 1240, Főmenü label and existing brand/dropdown labels.",
+    "Fresh-load homepage, one services child, one references child and one non-group page; verify parent/child current states and the entire keyboard/focus contract.",
+    "If any behavior regresses, restore the captured prewrite code through the same plugin route and re-verify."
+  ],
+  "do_not_change": [
+    "Elementor header structure",
+    "page body",
+    "footer",
+    "forms",
+    "SMTP",
+    "menu destination mapping",
+    "mobile drawer content",
+    "quick-contact dock content"
+  ]
+}
