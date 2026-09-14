@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "package": "hedge-semantic-runtime-static-qa-v002",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "source": "build/hedge-semantic-runtime-v002.php",
+  "source_commit": "f899bf483b1a81154cd092603b21d2be0a002056",
+  "intended_live_snippet": 36,
+  "status": "STATIC_QA_PASS_SUCCESSOR_PREPARED_NOT_DEPLOYED",
+  "checks": {
+    "page_guard": "is_page(272)",
+    "attribute_only": true,
+    "css_change": false,
+    "visible_text_change": false,
+    "dom_reorder": false,
+    "click_or_keyboard_handler_change": false,
+    "validation_or_submission_change": false,
+    "review_root": ".elementor-element-c3d30005",
+    "review_tablist_name": "Ügyfélvélemények",
+    "review_tab_labels": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "duplicate_review_dots": "aria-hidden=true and tabindex=-1 only; visual/pointer behavior preserved",
+    "form_region": "#ajanlatkeres -> region / Küldjön fotót a sövényről",
+    "metform_root": ".mf-form-wrapper[data-form-id=33]",
+    "form_name": "Ajánlatkérés",
+    "form_description": "existing direct-call paragraph containing tel:+36305394820",
+    "service_group": "#af-form-service .mf-input-wrapper -> role=group + aria-labelledby existing label",
+    "city_help": "input[name=telepules] -> aria-describedby existing .mf-input-help",
+    "delayed_reapply": "900ms plus childList/subtree MutationObserver; attribute writes do not self-loop"
+  },
+  "supersedes": [
+    "live ID36 v001 review-tablist/dot-only helper",
+    "prepared but undeployed build/hedge-review-semantic-runtime-20260914-v001.php"
+  ],
+  "deployment_contract": [
+    "Do not create a second page272 helper; update existing Code Snippets ID36 through the plugin REST API.",
+    "Before update, require page272 saved-data baseline 53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid and fresh ID36 readback.",
+    "Require enough WPVibe headroom for PUT + GET + page hash + fresh frontend/AX QA while retaining D11 reserve.",
+    "A 429-returned PUT is UNKNOWN until GET/readback; never blind-retry.",
+    "Verify ID36 active=true/code_error=null and page272 Elementor hash unchanged.",
+    "Fresh post-JS accessibility proof must show review tablist/tabs, form region/name/description, service radio group and city help relationship without duplicate/conflicting labels."
+  ],
+  "current_remote_gate": "Latest exact WPVibe checkpoint remains 283/300 used, 17 remaining; successor intentionally not deployed.",
+  "pixel_pass": false
+}
