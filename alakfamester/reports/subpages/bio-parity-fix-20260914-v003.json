@@ -1,0 +1,61 @@
+{
+  "package": "bio-parity-fix-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "slug": "biologiai-vedelem",
+  "scope": "Only the Biological Protection page on alakfamester-wp.clicknest.hu",
+  "decision_refs": ["D03", "D07", "D11", "D18"],
+  "preflight": {
+    "bytes": 34930,
+    "sha256": "c84feb47f8ca33218914b546d0dd2d10dd924a60b703fb049c4b8652bca9f729",
+    "manual_drift_policy": "Current live tree treated as authoritative; no old snapshot restored.",
+    "save_policy": "Surgical WPVibe content/search + content/edit only; no full Elementor save."
+  },
+  "applied_change": {
+    "element_id": "9a1b2c3d",
+    "target": "final CTA mailto block",
+    "result": "The email address and 'Irjon batran' label are now inside the same mailto anchor; the email is strong, matching the source child structure and restoring the full clickable range.",
+    "replaced": 1,
+    "post_change_bytes": 34930,
+    "post_change_sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d"
+  },
+  "frontend_verification": {
+    "method": "Fresh Opera accessibility-tree read on a cache-busted target URL",
+    "mailto_target_preserved": "mailto:kreativ@alakfa-mester.hu",
+    "full_clickable_range": true,
+    "children": ["strong email", "label"],
+    "remaining_accessible_name_difference": "Target exposes 'KREATIV@ALAKFA-MESTER.HU Irjon batran' while source exposes 'IRJON BATRAN kreativ@alakfa-mester.hu' because target CSS text transformation affects the computed accessible text. An aria-label follow-up was prepared but not written because the server returned HTTP 429."
+  },
+  "source_target_ax_diff_reconfirmed": {
+    "source_named_regions": [
+      "Biológiai növényvédelem alakfákhoz, sövényekhez és értékes kerti növényekhez",
+      "Amit a megbízóim mondanak",
+      "Miért nem ér véget a munka a metszéssel?",
+      "Mit jelent nálam a biológiai, mikrobiológiai megközelítés?",
+      "Mire figyelek a leggyakrabban?",
+      "Mit várhatunk – és mit nem?",
+      "Biológiai védelem – kérdések"
+    ],
+    "target_named_regions": ["Amit a megbízóim mondanak"],
+    "source_tablist_name": "Ügyfélvélemények",
+    "target_tablist_name": null,
+    "source_table_headers": ["TÜNET", "MIT VIZSGÁLOK", "LEHETSÉGES IRÁNY"],
+    "target_table_headers": ["Tünet", "Mit vizsgálok", "Lehetséges irány"],
+    "source_first_column_role": "rowHeader",
+    "target_first_column_role": "cell"
+  },
+  "remaining_proven_legacy_differences": [
+    "Remove trailing periods from the 13 source-mismatching list items in af260007, af260010 and af260013.",
+    "Restore uppercase symptom-table header text and row-header semantics in af260011.",
+    "Add source-equivalent named region semantics only to complete sections wholly contained in legacy text-editor widgets, after exact content/search readback."
+  ],
+  "atomic_open_items": [
+    "Hero named region, FAQ outer named region and review tablist accessible name remain unresolved because the prior Elementor V4 typed-attributes pilot stored data but did not render attributes; it was fully rolled back. Do not retry guessed Atomic attributes or full-save the page."
+  ],
+  "blocked": {
+    "wordpress": "Two later guarded WPVibe requests returned HTTP 429 Too Many Requests. Further writes were intentionally stopped to preserve the D11 recovery reserve.",
+    "visual": "Opera screenshot endpoint remained disconnected; deterministic pixel screenshot/overlay verification is unavailable, so PIXEL_PASS remains false."
+  },
+  "smtp_or_submission": false,
+  "pixel_pass": false
+}
