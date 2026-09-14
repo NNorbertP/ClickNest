@@ -1,0 +1,70 @@
+{
+  "schema_version": 7,
+  "package": "hedge-open-items-20260915-v007",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes_this_continuation": 0,
+  "supersedes_for_execution": "reports/subpages/hedge-open-items-20260915-v006.json",
+  "accepted_baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid; fresh read before write",
+  "current_chain": {
+    "only_write_candidate": "build/hedge-semantic-runtime-v004.php",
+    "strict_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "one_pass_dom_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v002.json",
+    "review_panel_audit": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "next_live_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json"
+  },
+  "executable_only_if_fresh_gates_pass": [
+    "update existing ID36 only; no duplicate helper",
+    "fresh baseline and exact rollback body/state",
+    "review/Form33 cardinality and source-order identity",
+    "existing aria-label/aria-labelledby/aria-describedby/role states conflict-free for v004",
+    "planned relation IDs unique/non-conflicting",
+    "no newer native semantic owner/helper",
+    "any conflict => HOLD v004 rather than deleting/overwriting native semantics"
+  ],
+  "closed_preserve": [
+    "26/26 shared-media recovery; no more shared-media Hedge writes",
+    "EAEL 28/28 id=0/full/original URLs/exact names/order",
+    "five complete legacy regions, CTA/contact exact names and 24h sentence",
+    "hero exact accessible SVG, proof 21, native review structure 3 tabs/panels and exact tab-name contract, Form33 preserved",
+    "removed legacy widgets absent",
+    "D09 page272 links/anchors closed",
+    "old media deficit and stone/sage background defects stale/closed",
+    "no current page272 CSS candidate"
+  ],
+  "read_first_local": [
+    "complete common roots for hero/gallery/form outer region names",
+    "ordered source/target H1-H6 level/name tree",
+    "proof-carousel item/parent role semantics and owner",
+    "all three review panels: exact tab-panel wiring, quote text, visible company/person/role, image identity/accessibility/order",
+    "Form33 service radio exact mf_input_required/name/options plus native no-entry rejection proof if required=yes",
+    "source/target document-head metadata and schema ownership/count"
+  ],
+  "review_panel_rule": "Only structure/tab-name contract is closed. Do not reconstruct panel 2/3 quote/image content from memory or attachment IDs. A real mismatch becomes its own smallest-owner content/media package and must not be folded into ID36 v004.",
+  "proof_only_no_write": [
+    "review direct interactions unless a failure reproduces",
+    "proof-carousel arrows/swipe/pause/reduced-motion",
+    "Hedge lightbox until source-specific proof",
+    "visual changes until synchronized current page272-local delta and cascade owner proof"
+  ],
+  "external_shared_gates": [
+    "global header Services-parent route state on /soveny-specialista/",
+    "global floating contact dock paint/layout defect",
+    "footer gross regression observation"
+  ],
+  "formal_blockers": [
+    "acceptance.json absent",
+    "behaviors.json absent",
+    "historical tools runner set not present on current main",
+    "no deterministic same-engine DPR/zoom six-view capture+overlay+diff harness"
+  ],
+  "tool_state": {
+    "wpvibe": "disabled; no more calls this conversation",
+    "opera": "disconnected/stale; two-tab max honored; zero new tabs",
+    "public_http": "unavailable",
+    "github": "available"
+  },
+  "pixel_pass": false,
+  "status": "CURRENT_PAGE272_OPEN_ITEMS_V007_REVIEW_PANEL_PRESERVATION_ADDED"
+}
