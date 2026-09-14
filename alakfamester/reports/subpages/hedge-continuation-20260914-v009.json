@@ -1,0 +1,70 @@
+{
+  "schema_version": 9,
+  "package": "hedge-continuation-20260914-v009",
+  "date": "2026-09-14",
+  "scope": {
+    "only_wordpress_write_target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+    "page_id": 272,
+    "reference_read_only": "https://alakfamester.clicknest.hu/soveny-specialista.html"
+  },
+  "accepted_saved_baseline": {
+    "elementor_bytes": 53606,
+    "elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "evidence": "reports/subpages/hedge-legacy-review-closeout-20260914-v007.json"
+  },
+  "closed_do_not_repeat": [
+    "shared-media recovery 26/26",
+    "EAEL gallery 28/28 page-local image ids zero, full resolution, original URLs/names/order",
+    "five complete legacy named regions",
+    "full Van hasonló növénye? mailto range and exact accessible name",
+    "exact af2e004c phone/e-mail accessible names",
+    "24-hour reply sentence",
+    "hero/proof/native reviews/MetForm protected components",
+    "ID36 v001 tablist name plus duplicate review-dot AX/focus suppression"
+  ],
+  "next_only_ready_candidate": {
+    "build": "build/hedge-semantic-runtime-v003.php",
+    "build_commit": "8b25e0b9462103ebaba907ef2e5d76e0d7d7ff17",
+    "static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+    "qa_commit": "859adc288c8b2481a4b6430d6eee40f97b73a6b2",
+    "target": "update existing Code Snippets ID36 only",
+    "scope": "page272-only accessibility attributes; no CSS, visible text, DOM reorder, form processing, click or keyboard behavior",
+    "direct_call_rule": "Within .mf-form-wrapper[data-form-id=33], prefer stable #af-form-direct-call; fall back only to exact wrapper-scoped tel:+36305394820 paragraph. Never use the separate af2e004c contact widget.",
+    "live_gate": "Before update, prove current page272 baseline, current ID36 body/state, one current MetForm33 root/form and the wrapper-owned direct-call descriptor."
+  },
+  "no_write_gates": {
+    "hero_region": {
+      "source_name": "Minőségi sövény formára vágás, metszés és megújítás",
+      "audit": "reports/subpages/hedge-outer-regions-static-audit-20260914-v001.json",
+      "decision": "No region attribute until fresh DOM proves one complete hero root containing the whole copy and hero art; af2e0041 is only a candidate from existing reports."
+    },
+    "gallery_region": {
+      "source_name": "Sövénymunkák",
+      "audit": "reports/subpages/hedge-outer-regions-static-audit-20260914-v001.json",
+      "decision": "Do not label b2e2c001 alone. First prove a stable common ancestor containing both the gallery heading and the EAEL composite."
+    }
+  },
+  "remote_sequence_when_tools_return": [
+    "Confirm WPVibe account ncsnorbert+20260914-5@gmail.com, site connection and exact rolling quota; retain D11 10-call reserve plus enough headroom for complete package/readback.",
+    "Fresh-read page272 bytes/SHA/JSON and reconcile any drift before all writes.",
+    "Read current ID36 exact body/state as rollback source.",
+    "Read only the rendered #ajanlatkeres / MetForm33 DOM needed to prove direct-call ownership and, if cheap in the same read, hero/gallery ancestry; do not fan out reads.",
+    "If the MetForm gate passes, update ID36 with v003 through the proven plugin-aware path. Never create a second helper.",
+    "Any HTTP 429 write outcome is UNKNOWN; never blind-retry before readback.",
+    "Read back ID36 active/code_error and prove page272 Elementor data stayed unchanged.",
+    "Reuse at most one source and one target Opera tab for post-footer-JS AX/visual verification; no new tab fan-out.",
+    "Only if full hero/gallery boundaries are proven, prepare a later attribute-only extension; otherwise leave them open.",
+    "No SMTP and no real form submission."
+  ],
+  "tool_state": {
+    "wpvibe_identity": "ncsnorbert+20260914-5@gmail.com verified",
+    "site_connection_and_quota": "unknown because WPVibe became unavailable before verification",
+    "opera": "disconnected; no replacement tabs opened",
+    "local_clicknest_dns": "failed in one targeted recheck; no repeated retries"
+  },
+  "wordpress_writes_since_plus5_handoff": 0,
+  "repo_preparation_writes_only": true,
+  "smtp_or_external_submission": false,
+  "pixel_pass": false
+}
