@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "package": "bio-hero-cta-state-diagnostic-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_DIAGNOSTIC_BEFORE_ANY_HERO_CTA_STYLE_CHANGE",
+  "source_contract": {
+    "health_cta": "a.btn.btn--secondary",
+    "technology_cta": "a.btn.btn--secondary",
+    "meaning": "both lower hero CTAs use the same source outline/secondary visual state"
+  },
+  "target_current_markup": {
+    "health_cta": "a.af-btn.af-btn-primary",
+    "technology_cta": "a.af-btn.af-btn-secondary"
+  },
+  "why_no_immediate_fix": "Class names are not the winning computed style. Existing page256/global CSS may already make the first target CTA visually source-like. A blind class/style correction could regress a hero state that is already correct.",
+  "future_diagnostic_when_page256_browser_is_released": [
+    "At a controlled desktop viewport compare source and target health/technology CTA background, border, text color, radius, height, padding and gap.",
+    "Check hover/focus-visible state of both source buttons if the browser workflow supports it safely.",
+    "Read current target winning CSS owners for .af-btn-primary/.af-btn-secondary under #af-sub-bio-hero.",
+    "If both target buttons already render source-equivalent despite different class names, close with no write.",
+    "Only if the health CTA remains visually filled/primary while source is outline should a page256-local override be prepared; preserve href/text and all contact buttons."
+  ],
+  "do_not": [
+    "do not rename target classes merely to match source class strings",
+    "do not alter the hero contact phone/mail pills",
+    "do not alter button href/text",
+    "do not change shared/global button rules",
+    "do not infer hover behavior from static markup"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
