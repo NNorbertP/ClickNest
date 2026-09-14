@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "package": "hedge-outer-regions-static-audit-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "scope": "Read-only/static page272 semantic investigation; zero WordPress writes.",
+  "source_named_regions": {
+    "hero": "Minőségi sövény formára vágás, metszés és megújítás",
+    "reviews": "Amit a megbízóim mondanak",
+    "legacy_closed": [
+      "Egy sövény nem csak egyenes zöld fal lehet",
+      "A sövény ritkán egyik napról a másikra romlik le",
+      "Egyszerű nyírás vagy szerkezeti fenntartás?",
+      "Milyen munkákat vállalok?",
+      "Van hasonló növénye?"
+    ],
+    "gallery": "Sövénymunkák",
+    "form": "Küldjön fotót a sövényről"
+  },
+  "already_safe": {
+    "reviews": "Native reviews wrapper already exposes the review region; ID36 only needs tablist/tab semantics.",
+    "legacy": "Five complete legacy-contained regions are saved and verified in hedge-legacy-review-closeout-20260914-v007.",
+    "form": "#ajanlatkeres is the established page272 composite anchor/root and the prepared page272-only semantic runtime v003 can name it without changing MetForm behavior."
+  },
+  "hero_investigation": {
+    "known": [
+      "hedge-hero-v4-v001 records hero-art widget af2e004e and container_id af2e0041.",
+      "The hero-art SVG accessible title/description were verified on frontend and in editor after the supported save.",
+      "The source exposes the whole hero as named region 'Minőségi sövény formára vágás, metszés és megújítás'."
+    ],
+    "missing_proof": "Existing reports do not prove that .elementor-element-af2e0041 is the complete outer hero root containing all hero copy plus af2e004e. The recorded container_id is insufficient to assume full region ownership.",
+    "decision": "NO_WRITE. Do not add role=region/aria-label to af2e0041 or af2e004e until fresh rendered DOM proves the full source hero boundary maps to one target root.",
+    "future_minimum_probe": "One scoped rendered-DOM read around the hero root showing heading/copy/contact/proof/art ancestry. If a single complete root is proven, add attributes at runtime through the existing page272 helper rather than guessed Atomic saved attributes."
+  },
+  "gallery_investigation": {
+    "known": [
+      "EAEL widget b2e2c001 is structurally verified, 28 items, masonry, full resolution, page-local id=0 images.",
+      "hedge-hero-v4-v001 separately reports 'gallery heading present'.",
+      "The source exposes a named 'Sövénymunkák' region."
+    ],
+    "missing_proof": "No current report proves one target root that wholly contains both the section heading and the EAEL composite gallery. Labelling b2e2c001 alone could create a partial/fake source region.",
+    "decision": "NO_WRITE. Do not label the EAEL widget itself as the Sövénymunkák region and do not restructure the gallery merely for semantics.",
+    "future_minimum_probe": "Fresh rendered DOM around the gallery heading and b2e2c001 to identify their nearest stable common page272-only ancestor. Only a complete common root is eligible for role=region/aria-label."
+  },
+  "atomic_safety": "Elementor 4.2.4 exposes Atomic attributes controls but a prior target pilot proved guessed stored ARIA may fail to emit. Use a proven runtime attribute path for visual-neutral semantics rather than full-save/guessed Atomic data.",
+  "preserve": [
+    "page272 accepted 53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 baseline until fresh read proves otherwise",
+    "af2e004e hero art",
+    "af2e004d proof carousel",
+    "b2e2c001 EAEL gallery 28/28 id=0/full/original URLs",
+    "c3d30005 native reviews",
+    "af2e0011 MetForm33",
+    "ID36 v001 until a guarded successor update is verified"
+  ],
+  "tool_blocker": "WPVibe unavailable and Opera disconnected in current chat; no fresh ancestry probe can be obtained now.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
