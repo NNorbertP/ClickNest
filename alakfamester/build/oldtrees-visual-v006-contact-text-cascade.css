@@ -1,0 +1,16 @@
+/* af-oldtrees-visual-v006:start
+ * Scope: page264 request-form contact buttons only.
+ * Fresh same-browser post-v005 source/target screenshot proves the target label/value
+ * foreground is dark while the reference is white. v004 already declares the same
+ * source colors without !important, so this block resolves only the proven cascade loss.
+ */
+body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn {
+  color: #FFF !important;
+}
+body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn .contact-btn__label {
+  color: rgba(255,255,255,.9) !important;
+}
+body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn strong {
+  color: #FFF !important;
+}
+/* af-oldtrees-visual-v006:end */
