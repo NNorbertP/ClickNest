@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "package": "bio-next-remote-window-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READY_AS_RUNBOOK_NOT_AUTHORIZATION",
+  "authoritative_inputs": [
+    "reports/subpages/bio-evidence-supersedence-20260914-v001.json",
+    "reports/subpages/bio-convergence-ledger-20260914-v002.json",
+    "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "reports/subpages/bio-ax-role-count-gate-20260914-v001.json",
+    "specs/bio-final-acceptance-20260914-v001.json",
+    "build/bio-remote-call-budget-20260914-v002.json",
+    "build/bio-scope-handoff-ready-20260914-v001.json"
+  ],
+  "stage_0_no_remote_write_until_all_true": [
+    "Fresh STATE.md no longer grants an in-flight page264-only WordPress write package that page256 would clobber.",
+    "The two shared Opera tabs are released by the page264 QA flow and can both be assigned to page256 source/target without opening additional tabs.",
+    "WPVibe is usable again.",
+    "Profile is the intended +5 account, target site is connected, exact live quota is known.",
+    "Current user task remains page256 reference parity."
+  ],
+  "stage_1_fresh_preflight": [
+    "Load Elementor skill.",
+    "Read exact WPVibe remaining counter and compute calls available above 10-call D11 reserve.",
+    "Read page256 _elementor_data bytes/SHA/JSON. Compare to historical 35382 / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3; if different, reconcile live drift before using any prepared snippet/plan.",
+    "Confirm ID35 remains active/page256-guarded and the already-closed semantics still render.",
+    "Read complete Additional CSS bytes/SHA/unique af-project:end and current marker inventory.",
+    "Search critical winning owners for hero, waves, FAQ/CTA pseudos, review ordinal/dot and any unexpected already-live page256 parity blocks.",
+    "Place the two released Opera tabs on source/target page256 and confirm current visual deltas still reproduce."
+  ],
+  "stage_1_stop_conditions": [
+    "page256 live content differs materially from prepared ownership boundaries",
+    "required marker unexpectedly exists >1 times",
+    "unique af-project:end is not exactly one",
+    "ID35 missing/disabled/unscoped",
+    "quota cannot cover a complete chosen package + immediate readback + 10 reserve",
+    "page256 target is 5xx/unstable",
+    "Opera tabs are still owned by another in-flight QA",
+    "scope remains page264-only"
+  ],
+  "stage_2_first_complete_candidate": {
+    "package": "build/bio-visual-single-write-plan-20260914-v007.json",
+    "why_first": "No Elementor content mutation; page256-scoped source-proven fixes only; fourth FAQ-dependent wave excluded; immediate rollback by marker block.",
+    "estimated_actions_after_preflight": "3-4 logical WPVibe actions",
+    "write": "one guarded Additional CSS insertion with only currently-absent v007 blocks",
+    "readback": ["CSS hash/marker counts", "unchanged page256 Elementor bytes/SHA/JSON", "same-browser source-target visual check"],
+    "stop_on_any_regression": "Remove only the exact offending marked block; do not roll back unrelated live CSS."
+  },
+  "stage_3_structural_only_after_stage2_stable": {
+    "package": "build/bio-page256-next-safe-package-20260914-v014.json",
+    "sequence": [
+      "FAQ order class exact search/edit/readback",
+      "stress two-paragraph wrapper exact search/edit/readback",
+      "review #ugyfelvelemenyek only if fresh af26000d owner proves safe"
+    ],
+    "rule": "One microfix at a time. Re-run AX role/list/region counts after any semantic owner change."
+  },
+  "stage_4_followups_in_safe_order": [
+    "Stress aside->article exact tag-only edit then stress v002 visual after pseudo-owner preflight.",
+    "Table caption->external title exact microfix + table title CSS; preserve table cell semantics.",
+    "Expectations v003 regrouping in a sufficiently large quota window.",
+    "CTA mail child-structure microfix then FAQ/CTA v005 coherent CSS transaction including fourth wave.",
+    "Review ordinal/dot exact owner fix; third author role only after fresh shorter-text confirmation; optional review decor last."
+  ],
+  "stage_5_closeout": [
+    "Run bio-final-acceptance-20260914-v001 gates.",
+    "Require protected content manifest unchanged except any explicitly confirmed third-review role correction.",
+    "Require AX count convergence: article6/complementary1/caption0 while list9/listItem32/region7/table1/tabs stay equal; FAQ role difference may remain documented only if native control is deliberately retained.",
+    "Check deep links, desktop/responsive visuals, interactions, final page/CSS hashes/markers.",
+    "Update continuation/STATE only through a full-preserving safe path; never truncate concurrent history."
+  ],
+  "forbidden_shortcuts": [
+    "no full Elementor save",
+    "no raw SQL/search-replace",
+    "no blind 429 retry",
+    "no new Opera tabs just to regain page256 while shared tabs are owned elsewhere",
+    "no stale prepared snippet replay",
+    "no cross-page/global fix folded into page256 package",
+    "no quota estimate substituted for live counter"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
