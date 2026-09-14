@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "package": "bio-cta-mail-structure-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "9a1b2c3d",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "source_structure": "a.contact-btn > span.contact-btn__icon + span.contact-btn__text > span.contact-btn__label + strong",
+  "target_last_verified_structure": "p.af-sub-cta-contact > a[mailto][aria-label='ÍRJON BÁTRAN kreativ@alakfa-mester.hu'] > strong(email) + br + raw text Írjon bátran",
+  "problem": "The raw label text node cannot be assigned a deterministic source grid row by CSS without also moving/rebuilding the link. The source visibly places the label above the email.",
+  "guarded_future_edit": {
+    "method": "Fresh content/search on page256 _elementor_data using a unique ASCII anchor around af-sub-cta-contact / mailto. Paste the returned escaped snippet verbatim into one match-once content/edit.",
+    "intent": "Preserve p class, href and exact aria-label; replace only the anchor's visual children so they become <span class='af-sub-cta-label'>Írjon bátran</span><strong>kreativ@alakfa-mester.hu</strong>. Decorative envelope remains CSS-owned, not text/AX content.",
+    "do_not": [
+      "do not remove or alter aria-label",
+      "do not alter mailto href",
+      "do not change visible strings",
+      "do not touch widget ID",
+      "do not full-save Elementor",
+      "do not use raw SQL/search-replace"
+    ]
+  },
+  "postconditions": [
+    "visible strings remain Írjon bátran and kreativ@alakfa-mester.hu",
+    "AX link accessible name remains exactly ÍRJON BÁTRAN kreativ@alakfa-mester.hu because aria-label is unchanged",
+    "href remains mailto:kreativ@alakfa-mester.hu",
+    "new .af-sub-cta-label appears exactly once",
+    "page256 JSON valid and unrelated IDs/settings unchanged"
+  ],
+  "dependency": "Future bio-faq-cta source layout CSS v002 should depend on this microfix rather than trying to place an anonymous raw text grid item.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
