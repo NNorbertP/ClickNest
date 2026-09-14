@@ -1,0 +1,44 @@
+{
+  "schema_version": 16,
+  "project": "alakfamester",
+  "date": "2026-09-15",
+  "type": "PLANNING_ONLY_NO_SCOPE_OVERRIDE",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260915-v015.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; this file authorizes no page256/page272/global/media write.",
+  "tool_freeze": "WPVibe and Opera remain intentionally unused for the rest of this continuation after disabled/stale results; zero WordPress writes and zero new Opera tabs.",
+  "page264_active": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v010.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json",
+    "only_conditional_visual_candidates": ["v006 request-contact foreground", "v007 equal comparison columns", "combined only if both reproduce"],
+    "next": "Stable live window only: +5/site/exact quota -> compact page/hash/marker gate -> trustworthy paired visual gate -> at most one page264 CSS write -> mandatory readback; 429 UNKNOWN until readback."
+  },
+  "page256_future": {
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v006.json",
+    "acceptance": "specs/bio-final-acceptance-20260914-v002.json",
+    "budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "delivery": "carrier probe -> page-local visual delivery v002 with seven phase-1 blocks -> separate structure/content/ordinal/FAQ transactions",
+    "hard_exactness_open": ["stress actual DOM order p1->p2->article", "FAQ exact button/keyboard/motion contract", "review prev/next panel-focus contract"],
+    "no_global_fallback": true
+  },
+  "page272_future": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v004.php to existing ID36 only",
+    "review_panel_gate": "capture all three quotes/author-company-role/image identities/tab-panel wiring read-only; content mismatch is separate smallest-owner correction, never part of ID36 v004",
+    "page_css_candidate": "NONE"
+  },
+  "global_future": {
+    "header": "build/header-deployment-plan-v010.json through existing ID7 only",
+    "dock": "diagnostic-first current ID7 markup/winning cascade; do not recreate"
+  },
+  "assets_and_formal": {
+    "asset_reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "formal_recovery": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "pixel_pass": false
+  },
+  "rules": ["fresh trustworthy live truth wins", ">=10 WPVibe reserve", "fresh search bytes before structural edits", "max two Opera project tabs/no replacement loop", "missing tooling never licenses speculative code"],
+  "status": "QUEUE_CURRENT_PAGE264_ACTIVE_PAGE256_ACCEPTANCE_V002_HEDGE_V006_FUTURE"
+}
