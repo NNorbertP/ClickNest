@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "package": "hedge-convergence-ledger-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Reconcile every known historical Hedge/page272 parity thread against the latest accepted state, so stale reports cannot trigger duplicate or regressive work.",
+  "accepted_saved_state": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "rule": "fresh live truth outranks this ledger; any drift is reconciled before write"
+  },
+  "content_and_structure": [
+    {
+      "thread": "source section/copy coverage",
+      "historical": "early content audit identified missing source text/sections",
+      "current": "CLOSED_PRESERVE",
+      "evidence": ["reports/subpages/hedge-content-parity-v002.json", "reports/subpages/hedge-legacy-review-closeout-20260914-v007.json"],
+      "decision": "do not replay early content packages"
+    },
+    {
+      "thread": "hero illustration",
+      "historical": "readonly-source-target-audit-v001 left page272 hero illustration missing",
+      "current": "CLOSED_PRESERVE",
+      "evidence": ["reports/subpages/hedge-hero-v4-v001.json"],
+      "decision": "af2e004e present; exact accessible SVG title/description; historical frontend/editor proof"
+    },
+    {
+      "thread": "legacy named regions and CTA/contact semantics",
+      "historical": "generic regions and partial mail/contact accessible names",
+      "current": "CLOSED_PRESERVE",
+      "evidence": ["reports/subpages/hedge-legacy-semantics-20260914-v006.json", "reports/subpages/hedge-legacy-review-closeout-20260914-v007.json"],
+      "decision": "five complete legacy regions + full mailto/contact semantics + 24h sentence read back"
+    }
+  ],
+  "media_and_gallery": [
+    {
+      "thread": "old 52 source images vs 16 target media deficit",
+      "historical": "reports/site-finalization-20260911.md",
+      "current": "STALE_CLOSED_DO_NOT_REOPEN",
+      "current_roles": {"proof_carousel": 21, "reviews": 3, "eael_gallery": 28, "total": 52},
+      "decision": "do not use the old 52->16 metric as a current defect"
+    },
+    {
+      "thread": "shared media alt drift caused by Hedge parity attempt",
+      "current": "CLOSED_RECOVERED_26_OF_26",
+      "evidence": ["reports/subpages/hedge-shared-media-recovery-20260914-v004.json"],
+      "decision": "no further shared-media writes for Hedge"
+    },
+    {
+      "thread": "EAEL gallery shared-alt dependency / medium thumbnails",
+      "current": "CLOSED_PAGE_LOCAL",
+      "evidence": ["reports/subpages/hedge-gallery-page-only-finalization-20260914-v005.json", "reports/subpages/hedge-scope-recovery-gallery-pass-20260914-v004.json"],
+      "decision": "28/28 page-local IDs zero, full, original URLs, exact source names/order"
+    },
+    {
+      "thread": "EAEL lightbox",
+      "current": "READ_SOURCE_SPECIFIC_PROOF_FIRST",
+      "evidence": ["reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json"],
+      "decision": "preserve popup=none; page258 zoom behavior is not a proxy"
+    }
+  ],
+  "visual": [
+    {
+      "thread": "section 8 stone instead of sage",
+      "historical": "reports/site-finalization-20260911.md",
+      "current": "STALE_CLOSED_DO_NOT_REOPEN",
+      "evidence": ["reports/stale-blockers-do-not-reopen-20260914-v001.json"],
+      "decision": "later state confirms sage; no CSS write"
+    },
+    {
+      "thread": "new page272 visual CSS",
+      "current": "NO_CURRENT_WRITE_CANDIDATE",
+      "decision": "only fresh synchronized source-target reproduced delta plus proven page272-local owner can justify CSS"
+    },
+    {
+      "thread": "formal six-view pixel equality",
+      "current": "BLOCKED_TOOLING",
+      "evidence": ["reports/subpages/hedge-formal-acceptance-tooling-audit-20260915-v001.json"],
+      "decision": "PIXEL_PASS remains false; no CSS invented from missing tooling"
+    }
+  ],
+  "runtime_and_semantics": [
+    {
+      "thread": "review tablist name and duplicate numbered review dots",
+      "current": "LIVE_ID36_V001_PRESERVE_UNTIL_SUCCESSOR",
+      "decision": "current live owner; never create second helper"
+    },
+    {
+      "thread": "review exact tab names + complete Form33 component semantics",
+      "current": "ONLY_CURRENT_WRITE_CANDIDATE",
+      "candidate": "build/hedge-semantic-runtime-v004.php",
+      "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+      "decision": "update existing ID36 only after fresh baseline/owner/cardinality gates"
+    },
+    {
+      "thread": "outer hero/gallery/form named regions",
+      "current": "READ_COMPLETE_COMMON_ROOT_FIRST",
+      "evidence": ["reports/subpages/hedge-outer-regions-static-audit-20260914-v002.json"],
+      "decision": "no partial/fake regions"
+    },
+    {
+      "thread": "heading levels/order",
+      "current": "READ_FIRST",
+      "decision": "heading text-set parity is not enough; capture ordered H1-H6 level/name trees before any mutation"
+    },
+    {
+      "thread": "proof-carousel source group vs target listitem roles",
+      "current": "UNRESOLVED_READ_ONLY_AUDIT",
+      "evidence": ["reports/subpages/hedge-proof-carousel-role-audit-20260915-v001.json", "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json"],
+      "decision": "do not silently accept and do not blindly roll back"
+    }
+  ],
+  "interactions": [
+    {
+      "thread": "native review click/Arrow/Home/End",
+      "current": "SHARED_IMPLEMENTATION_PROVEN_PAGE272_DIRECT_PROOF_ONLY",
+      "decision": "no duplicate listener/runtime without failing page272 interaction evidence"
+    },
+    {
+      "thread": "proof carousel",
+      "current": "AUTOPLAY_HISTORICAL_PASS_OTHER_ACTIONS_PROOF_ONLY",
+      "known": "page272 historically advanced 5 -> 6 at ~4000 ms",
+      "open_proof": ["ArrowLeft/Right", "swipe", "hover/focus pause-resume", "reduced-motion"]
+    }
+  ],
+  "form": [
+    {
+      "thread": "photo count / size / textarea / success state",
+      "current": "SHARED_ACCEPTED_PRESERVE",
+      "decision": "do not rebuild ID5/ID6 or shared success settings"
+    },
+    {
+      "thread": "service/topic radio required",
+      "current": "READ_NATIVE_CONFIG_AND_PROVE_BEHAVIOR",
+      "evidence": ["reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json", "reports/subpages/hedge-metform-required-audit-20260914-v002.json"],
+      "decision": "native Required first; shared Form33 settings are out of page272 write scope; server fallback only if necessary"
+    }
+  ],
+  "links_and_metadata": [
+    {
+      "thread": "D09 links/anchors",
+      "current": "CLOSED_PRESERVE",
+      "evidence": ["reports/final-structural-audit-v001.json", "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json"],
+      "decision": "no source-host/.html/stale contact-route rewrite required on page272"
+    },
+    {
+      "thread": "title/meta/canonical/robots/OG/schema",
+      "current": "READ_ONLY_HEAD_PROOF_OPEN",
+      "decision": "no Yoast/post-meta write without direct source-target evidence; D09 /slug/ canonical adaptation is allowed"
+    }
+  ],
+  "shared_global_chrome": [
+    {
+      "thread": "header service-parent current state",
+      "current": "EXTERNAL_GLOBAL_GATE",
+      "decision": "sample /soveny-specialista/ under authoritative global header package; never local Hedge hack"
+    },
+    {
+      "thread": "floating contact dock blank pill",
+      "current": "KNOWN_EXTERNAL_GLOBAL_VISUAL_DELTA",
+      "decision": "global ID7/CSS diagnostic owner only; no page272 fix"
+    },
+    {
+      "thread": "footer",
+      "current": "OBSERVE_ONLY",
+      "decision": "no page272-specific defect currently documented"
+    }
+  ],
+  "authorized_divergences": [
+    "D09 WordPress /slug/ URLs instead of static .html",
+    "truthful local-processing MetForm success state instead of source demo-only no-send body",
+    "documented WordPress implementation technology differences where output/behavior/semantics are the parity target"
+  ],
+  "tool_state": {
+    "wpvibe": "disabled; zero WordPress writes this continuation",
+    "opera": "disconnected/stale; max-two-tab policy honored; zero new tabs",
+    "public_http": "unavailable",
+    "github": "static evidence available"
+  },
+  "next_plan": "build/hedge-next-live-window-plan-20260915-v004.json",
+  "acceptance": "build/hedge-acceptance-matrix-20260915-v004.json",
+  "status": "HEDGE_HISTORY_RECONCILED_CURRENT_LOCAL_WRITE_AND_PROOF_GATES_EXPLICIT"
+}
