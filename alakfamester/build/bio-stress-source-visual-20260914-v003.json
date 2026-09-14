@@ -1,0 +1,61 @@
+{
+  "schema_version": 3,
+  "package": "bio-stress-source-visual-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "af260007",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "supersedes_for_deployment": "build/bio-stress-source-visual-20260914-v002.json",
+  "reason": "Current public target HTML proves the saved/rendered direct child order is p1 -> aside.af-sub-card -> p2. The former wrapper-dependent visual plan assumed the two paragraphs could first become adjacent. v003 avoids unsafe node movement and reproduces the source visual on the current DOM with CSS grid only.",
+  "current_DOM_contract": {
+    "direct_children": ["first explanatory p", "aside.af-sub-card", "second explanatory p"],
+    "source_visual": "two left paragraphs stacked; forest article on the right spanning their height",
+    "source_DOM_order": "p1 -> p2 -> article",
+    "current_target_DOM_order": "p1 -> aside -> p2"
+  },
+  "preferred_visual_payload": {
+    "file": "build/bio-stress-current-dom-visual-v003.css",
+    "commit": "8d1a8c35",
+    "marker": "af-bio-stress-current-dom-v003",
+    "scope": "body.page-id-256 .elementor-element-af260007 only",
+    "behavior": [
+      "desktop grid: p1 left row1, p2 left row2, card right spanning both rows",
+      "p1 receives exact source lead treatment",
+      "forest card receives source gradient/radius/shadow/bronze eyebrow/sage checklist/watermark",
+      "<=900 visual stack becomes p1 -> p2 -> card even though saved DOM stays p1 -> card -> p2",
+      "<=720 forest card padding becomes source 24px"
+    ]
+  },
+  "semantic_microfix": {
+    "goal": "change target stress card role from aside/complementary to source article",
+    "safe_candidate": "After future fresh _elementor_data content/search, if the whole-word token aside occurs exactly two times and both proven matches are the opening and closing af260007 stress-card tags, use one content/edit with old_content='aside', new_content='article', replace_all=true, whole_word=true.",
+    "why": "One atomic replacement changes both tag names together and avoids an intermediate mismatched opening/closing tag.",
+    "abort_if": [
+      "aside match count is not exactly two",
+      "either match belongs outside af260007",
+      "content/edit cannot prove whole-word replace_all semantics",
+      "live page drift changes the stress-card owner"
+    ],
+    "verify": [
+      "page JSON valid",
+      "rendered card role article",
+      "AX article +1 and complementary -1",
+      "all four stress strings and named region unchanged"
+    ]
+  },
+  "residual_exactness_blocker": {
+    "item": "saved DOM / AX reading order",
+    "source": "p1 -> p2 -> article/list",
+    "target_after safe CSS + tag fix": "p1 -> article/list -> p2",
+    "status": "HOLD_NO_PROVEN_ATOMIC_NODE_MOVE",
+    "rule": "Do not perform a multi-step remove/reinsert/rebuild merely to move p2. A visual CSS reorder is acceptable as an interim presentation fix but must not be mislabeled as exact DOM-order parity. If a future supported atomic owner-level move becomes available, re-evaluate."
+  },
+  "pseudo_owner_gate": "Before deploying the forest-card watermark ::after in the page-local style owner, read the current winning af260007 .af-sub-card::after owners. If an essential owner exists, translate the watermark to a background layer instead of clobbering it.",
+  "obsolete_for_deployment": [
+    "build/bio-stress-source-visual-v002.css as a wrapper-dependent current implementation",
+    "any structural plan that assumes adjacent p+p nodes",
+    "any multi-step DOM move without an atomic supported primitive"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
