@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "package": "hedge-legacy-review-closeout-20260914-v007",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "status": "SAVED_AND_RENDERED_LEGACY_PASS_REVIEW_HELPER_INSTALLED_RUNTIME_INTERACTION_PROOF_OPEN",
+  "elementor_readback": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "post_runtime_helper_hash_unchanged": true
+  },
+  "legacy_semantics": {
+    "named_regions_completed": ["af2e0007", "af2e0045", "af2e0047", "af2e0049", "af2e000f"],
+    "af2e000f": "Fresh rendered frontend exposes region name Van hasonló növénye? and one mailto link containing both kreativ@alakfa-mester.hu and Írjon bátran with aria-label ÍRJON BÁTRAN kreativ@alakfa-mester.hu; #ajanlatkeres preserved.",
+    "af2e004c": "Fresh rendered frontend exposes exact 24-hour reply sentence and source-exact phone/e-mail accessible names with unchanged tel/mailto hrefs."
+  },
+  "gallery": {
+    "widget": "b2e2c001",
+    "item_count": 28,
+    "resolution": "full",
+    "media_ids": "28/28 zero in saved page data from prior verified package",
+    "fresh_frontend_original_webp_urls": true,
+    "fresh_frontend_alt_and_titles": "First seven page-specific names plus Sövénymunka, 1. kép through Sövénymunka, 21. kép rendered exactly.",
+    "shared_media_write_in_this_package": false,
+    "shared_media_recovery": "26/26 prior prepackage metadata map remains the governing PASS; no further Hedge media metadata writes allowed."
+  },
+  "protected_components": {
+    "hero_af2e004e": true,
+    "proof_carousel_af2e004d": true,
+    "native_reviews_c3d30005": true,
+    "metform_af2e0011": true,
+    "removed_legacy_af2e0009_still_absent": true
+  },
+  "reviews": {
+    "fresh_native_dom": "Three Atomic tabs and panels render with full source-like company/person labels; tab/panel aria-controls and aria-labelledby wiring intact. Native tablist lacks a saved aria-label.",
+    "helper": {
+      "code_snippets_id": 36,
+      "name": "AF Hedge review semantic parity v001",
+      "scope": "front-end; is_page(272) guard inside code",
+      "active": true,
+      "code_error": null,
+      "source": "build/hedge-review-runtime-v001.php",
+      "static_qa": "reports/subpages/hedge-review-runtime-static-qa-v001.json",
+      "frontend_script_present": true,
+      "behavior": "At DOMContentLoaded/current-ready and again after 900ms, set tablist aria-label=Ügyfélvélemények; hide only reusable numbered dot controls from AX/tab order with aria-hidden=true and tabindex=-1; no CSS, visible text, DOM reorder or real Atomic tab change."
+    },
+    "runtime_acceptance": "The current get_page_html snapshot exposes server-rendered Atomic markup before footer-JS mutations, so it cannot prove the post-JS accessibility tree. Opera target is currently challenged/shared and no click/keyboard action is available. Keep delayed AX + keyboard interaction proof open; do not rewrite saved Atomic attributes."
+  },
+  "rate_limit_rule": "Any 429-returned future write is UNKNOWN until exact readback; never blind-retry.",
+  "smtp_or_submission": false,
+  "pixel_pass": false
+}
