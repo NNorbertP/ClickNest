@@ -1,0 +1,100 @@
+{
+  "schema_version": 5,
+  "package": "bio-visual-single-write-plan-20260914-v005",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED_REMOTE_BLOCKED",
+  "supersedes_for_first_deploy": "build/bio-visual-single-write-plan-20260914-v004.json",
+  "reason": "Fresh exact source stylesheet audit proved the Biological Protection reference uses hero--inner columns 1.12/.88, hero--inner padding 20–34 / 28–50 and a 56px wide-screen gap. Previous hero v001 used base hero 1.06/.94 and max-44 gap, so it must not be deployed.",
+  "first_deploy_blocks": [
+    {
+      "order": 1,
+      "file": "build/bio-visual-parity-v001.css",
+      "content_sha": "8859a3ce497f00b947d19851d6312a90ac8852e4",
+      "marker": "af-bio-visual-v001",
+      "scope": "body.page-id-256 only",
+      "covers": [
+        "legacy section eyebrow bronze leaf",
+        "technology lead/cards/sage surface/watermark/checklist",
+        "source symptom-table surface/cell/header/even-row treatment",
+        "source-like FAQ static/open visual mapping while preserving native details behavior"
+      ]
+    },
+    {
+      "order": 2,
+      "file": "build/bio-hero-layout-parity-v003.css",
+      "content_sha": "8f0e4709276ca8fef74f942e47bc94d56bfe51a4",
+      "marker": "af-bio-hero-layout-v003",
+      "scope": "body.page-id-256 #af-sub-bio-hero; >900px only except >=1400 gap override",
+      "covers": [
+        "source hero--inner 1.12/.88 desktop columns",
+        "source inner-page top/bottom padding",
+        "source 56px gap at >=1400",
+        "source 46rem copy measure and 60ch hero-sub treatment",
+        "source contact-pair spacing/button outer surface",
+        "source hero-meta rhythm/text"
+      ]
+    }
+  ],
+  "obsolete_do_not_deploy": [
+    {
+      "file": "build/bio-hero-layout-parity-v001.css",
+      "reason": "base hero geometry, not actual hero--inner contract"
+    },
+    {
+      "file": "build/bio-hero-layout-parity-v002.css",
+      "reason": "diagnostic superset mixes corrected geometry with unverified decorative pseudo-SVG icons"
+    },
+    {
+      "file": "build/bio-visual-parity-v002-expectations.css",
+      "reason": "direct source expectations screenshot disproved its two-list-card structure"
+    }
+  ],
+  "held_separate": [
+    {
+      "file": "build/bio-hero-decorative-icons-v001.css",
+      "commit": "12184c4cf676387e0ee48ff8d9063489fffefc7d",
+      "status": "HOLD_FOR_FRESH_TARGET_SCREENSHOT",
+      "reason": "Source phone/mail and three hero fact SVGs are exact, but current winning target pseudo/icon cascade cannot be verified while target is 504. Do not risk duplicate icons."
+    },
+    {
+      "file": "build/bio-stress-source-visual-v001.css",
+      "commit": "b5fa00af45fab6b1f9b85839f541e94e62fea086",
+      "status": "SEPARATE_AFTER_STRESS_STRUCTURE_RECONCILIATION"
+    },
+    {
+      "file": "build/bio-expectations-source-structure-v003.css",
+      "commit": "d6cb87ebd240c5e1ce256fc0de81bed4390d8bb3",
+      "status": "SEPARATE_AFTER_AF260013_GUARDED_REGROUPING"
+    }
+  ],
+  "precondition": {
+    "page256_bytes": 35382,
+    "page256_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "page256_json_valid": true,
+    "scope_handoff": "Repository STATE.md currently says page264-only. Page256 WordPress deployment is forbidden until the normal scope handoff reconciles STATE.md with the current page256 user work package.",
+    "wpvibe": "Must be usable again under verified +5 identity with target site connection and exact quota known.",
+    "d11": "Complete package + readback/rollback margin must fit while leaving at least 10 calls."
+  },
+  "required_remote_preflight": [
+    "Confirm active WordPress write scope is page256, not page264.",
+    "Verify +5 profile, target site connection and exact quota.",
+    "Fresh-read page256 bytes/SHA/JSON and require exact accepted baseline or stop/reconcile.",
+    "Fresh-read complete Additional CSS length/SHA/marker inventory.",
+    "Require exactly one af-project:end marker.",
+    "Require af-bio-visual-v001=0 and af-bio-hero-layout-v003=0.",
+    "Require obsolete hero-v001/v002 markers absent; if any unexpectedly exists, stop and reconcile rather than layering v003."
+  ],
+  "write": "Insert the two complete marked blocks in order immediately before the unique af-project:end using one guarded server-side match-once content/edit. Never round-trip the full Additional CSS field.",
+  "unknown_write_rule": "Any HTTP 429 write response is UNKNOWN. Do not retry. First read exact marker counts/hash when safe.",
+  "post_write": [
+    "Read back Additional CSS bytes/SHA and unique marker counts.",
+    "Re-read page256 Elementor bytes/SHA/JSON; must remain unchanged.",
+    "Use only the two existing Opera tabs for fresh source-target hero/technology/table/FAQ checks.",
+    "Verify no duplicate hero contact/fact icons; decorative icon HOLD file remains off unless fresh target proof justifies it.",
+    "Verify no regression of reviews, CTA, region names, links, ID35 semantics, header or floating dock."
+  ],
+  "rollback": "Remove only the exact newly inserted v001 visual + hero v003 marked blocks by guarded match-once edits if a proven regression appears; never restore an old full Additional CSS snapshot.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
