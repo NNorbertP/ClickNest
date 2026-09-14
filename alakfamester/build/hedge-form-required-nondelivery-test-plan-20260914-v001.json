@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "package": "hedge-form-required-nondelivery-test-plan-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "form_id": 33,
+  "status": "FUTURE_TEST_PLAN_NO_WORDPRESS_WRITE",
+  "goal": "Prove the future page272-only service-radio server validator without creating a MetForm entry, triggering mail/webhooks or sending an external message.",
+  "implementation_requirement": {
+    "named_callback": "The future validator should expose a named project function rather than only an anonymous closure so its pure validation behavior can be invoked directly in a controlled WP-CLI eval.",
+    "hook": "mf_after_validation_check",
+    "route_scope": "/metform/v1/entries/insert/33",
+    "page_scope": "wp_get_referer() -> url_to_postid() must resolve to 272",
+    "field": "EXACT_LIVE_MF_INPUT_NAME_REQUIRED_BEFORE_CODE_GENERATION"
+  },
+  "non_delivery_tests": [
+    {
+      "case": "page272_missing_service",
+      "synthetic_context": "Set the same request URI/referer values the callback reads, call the named callback directly with is_valid=true and form_data lacking/empty exact service field.",
+      "expected": "is_valid=false with the proven project validation message."
+    },
+    {
+      "case": "page272_service_present",
+      "synthetic_context": "Same page272 route/referer, exact service field populated with one current allowed option value.",
+      "expected": "incoming valid result remains valid; callback does not alter unrelated form_data."
+    },
+    {
+      "case": "other_page_same_form",
+      "synthetic_context": "Same Form33 route but referer resolves to a different page using the shared form.",
+      "expected": "result returned byte-for-byte/semantically unchanged; no page272 validation effect."
+    },
+    {
+      "case": "different_route",
+      "synthetic_context": "Page272 referer but request URI is not the Form33 insert route.",
+      "expected": "result unchanged."
+    },
+    {
+      "case": "preexisting_failure",
+      "synthetic_context": "Incoming result already has is_valid=false/message from another validator.",
+      "expected": "return existing failure unchanged; never overwrite photo-count or other validation messages."
+    }
+  ],
+  "safety": {
+    "call_Action_submit": false,
+    "create_entry": false,
+    "send_email": false,
+    "webhook": false,
+    "smtp": false,
+    "upload_files": false,
+    "external_network_message": false,
+    "shared_Form33_mutation": false
+  },
+  "live_readback_after_future_install": [
+    "snippet active and code_error null",
+    "exact callback/hook/page/route/field guards present once",
+    "ID5 and ID6 unchanged",
+    "ID36 semantic runtime unchanged unless separately updated in its own package",
+    "page272 Elementor hash unchanged"
+  ],
+  "note": "This plan deliberately separates validation logic proof from a real REST submission. It can prove callback behavior without testing entry persistence/delivery, which remain excluded by the current user constraints."
+}
