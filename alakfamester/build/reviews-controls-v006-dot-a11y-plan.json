@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "reviews-controls-v006-dot-a11y-plan",
+  "date": "2026-09-14",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "candidate_shared_owner": {
+    "code_snippets_id": 14,
+    "name": "AF reusable reviews controls v005",
+    "active": true,
+    "scope": "front-end",
+    "priority": 90
+  },
+  "proven_behavior": {
+    "required_controls": ["Előző vélemény", "Következő vélemény"],
+    "duplicate_controls_generated_by_id14": ["1. vélemény", "2. vélemény", "3. vélemény"],
+    "dot_click_behavior": "Each dot activates/focuses the corresponding real Atomic tab.",
+    "real_tab_keyboard_behavior": "ID14 handles ArrowRight/ArrowDown/ArrowLeft/ArrowUp/Home/End on the real role=tab buttons."
+  },
+  "source_target_evidence": [
+    {
+      "page_id": 264,
+      "reference": "idos-fak-megmentese-szolgaltatas.html",
+      "finding": "Source AX exposes the three real tabs and previous/next review controls but not numbered dot buttons; target exposed the three extra focusable numbered dots. Live target native .af-reviews-tabs HTML contains only the three real tabs, proving ID14 owns the extra controls."
+    },
+    {
+      "page_id": 272,
+      "reference": "soveny-specialista.html",
+      "finding": "Fresh documented source AX had no numeric review controls while target exposed 1./2./3. vélemény as extra focusable controls; see hedge-parity-continuation-20260914-v002.json."
+    }
+  ],
+  "page264_containment_fix_already_live": {
+    "owner": "Code Snippets ID33 page guard is_page(264)",
+    "behavior": "Sets tabindex=-1 and aria-hidden=true on .af-review-source-dot after ID14 inserts them; visual appearance/pointer behavior remain unchanged.",
+    "reason": "Contained proof before considering a shared runtime change."
+  },
+  "proposed_global_v006_change": {
+    "location": "Inside ID14 dot creation loop immediately after creating/configuring each .af-review-source-dot",
+    "minimal_delta": [
+      "d.tabIndex=-1",
+      "d.setAttribute('aria-hidden','true')"
+    ],
+    "preserved": [
+      "dot DOM and visual styling",
+      "pointer click activation",
+      "previous/next controls",
+      "real Atomic tabs and roving tabindex",
+      "Arrow/Home/End handling",
+      "review semantic formatting"
+    ]
+  },
+  "deployment_gate": [
+    "Do not deploy globally from the two-page observation alone.",
+    "When browser/runtime access is stable, verify at least homepage representative reviews plus page264 and page272 source/target AX contracts.",
+    "Confirm no source review page intentionally exposes numbered dots as keyboard-focusable controls.",
+    "GET current ID14 through Code Snippets REST, hash it, reconcile drift, then PUT only the exact two-line semantic delta and GET/readback active+code_error.",
+    "Recheck representative desktop/mobile review keyboard behavior and editor/front-end lifecycle before calling the shared change PASS."
+  ],
+  "wordpress_writes": 0
+}
