@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-semantic-coverage-reconciliation-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "scope": "Supersede stale open conclusions from oldtrees-semantic-audit-v001 with later live ID33 and direct AX evidence. No WordPress write.",
+  "stale_audit_baseline": {
+    "report": "reports/subpages/oldtrees-semantic-audit-20260914-v001.json",
+    "source_headings": 38,
+    "target_headings_then": 29,
+    "source_named_regions": 11,
+    "target_named_regions_then": 1
+  },
+  "heading_roles": {
+    "original_delta": [
+      "Állapotfelmérés",
+      "A megtartható szerkezet kiválasztása",
+      "A korona csökkentése",
+      "Karakteres forma kialakítása",
+      "Seb- és egészségügyi kezelés",
+      "További formanevelés",
+      "Fotók",
+      "Előzetes vélemény",
+      "Helyszíni felmérés"
+    ],
+    "owner": "Code Snippets ID33 / build/oldtrees-semantic-runtime-v003.php promotes the nine strong step labels to role=heading aria-level=3.",
+    "later_live_evidence": "oldtrees-runtime-live-qa-v002 records source_count=38, target_count=38 and matching heading name sets.",
+    "status": "PASS_LIVE_DO_NOT_REPLAY_SAVED_DATA_SEMANTIC_PATCH"
+  },
+  "named_regions": {
+    "owner": "ID33 adds ten page264 regions; native reviews supplies the eleventh.",
+    "later_live_evidence": "oldtrees-runtime-live-qa-v002 records 11 source and 11 target named regions with exact ordered names match.",
+    "preserved_unnamed_section": "af2a004d remains intentionally unnamed as documented by the original audit.",
+    "status": "PASS_LIVE"
+  },
+  "review_semantics": {
+    "tablist": "Ügyfélvélemények",
+    "three_real_tab_names": "Exact source names are now present; later v003/v005 live evidence supersedes the older v002 partial-label observation.",
+    "duplicate_dots": "ID33 page-scoped containment sets tabindex=-1 and aria-hidden=true after ID14 creates them; direct v005 AX proves target numbered dots are absent while previous/next match source.",
+    "keyboard": "Shared ID14 documents ArrowRight/Down/Left/Up/Home/End handling, but live interaction proof remains separate proof-only acceptance.",
+    "status": "PASS_STATIC_AND_FINAL_AX; INTERACTION_PROOF_OPEN"
+  },
+  "cta_accessible_name": {
+    "original_delta": "Source af2a004b mail CTA exposes ÍRJON BÁTRAN kreativ@alakfa-mester.hu while target originally exposed only the e-mail address.",
+    "owner": "ID33 sets the aria-label on the existing page264 mailto anchor without visible-text or DOM change.",
+    "status": "IMPLEMENTED_PAGE_SCOPED; PRESERVE"
+  },
+  "form_semantics": {
+    "form_name": "Ajánlatkérés source/target match",
+    "form_description": "Vagy hívjon közvetlenül: +36 30 539 48 20 source/target match",
+    "service_group": "ID33 links the existing group to its label; six radio option labels match source.",
+    "city_help": "ID33 ensures Település input aria-describedby points to the existing help text.",
+    "fields": "Seven text field names/descriptions/placeholders were recorded as matching in live v002 evidence.",
+    "open_validation_only": "Submission-time required enforcement for the service/topic radio choice is not proven by AX semantics and remains a read-only schema/runtime check before any change.",
+    "status": "SEMANTIC_PASS; REQUIRED_VALIDATION_PROOF_OPEN"
+  },
+  "tiszafa": {
+    "static_semantics": "Native range initial source/target value 50 and accepted accessible name match; target initialization data and range 0..100 step1 were live-read.",
+    "open": "Pointer/keyboard split synchronization requires interaction-capable browser proof.",
+    "status": "PASS_INITIAL_STATIC_STATE"
+  },
+  "nordmann": {
+    "static_semantics": "Direct v005 AX proves source/target previous/next and six dot accessible names match.",
+    "old_role_snapshot": "Earlier source group vs target listItem current-slide role was a timed snapshot and was not used as a write basis.",
+    "open": "Autoplay/swipe/pause/reduced-motion behavior requires interaction-capable browser proof.",
+    "status": "PASS_STATIC_AX_INTERACTION_OPEN"
+  },
+  "explicit_nonissues": [
+    "A few flattened AX ordering differences around reviews/six-step/offer/form do not justify DOM reordering without visual/DOM ownership proof.",
+    "Different current carousel slide numbers sampled at different autoplay times are not content mismatches.",
+    "Canonical WordPress host differences in global header/footer URLs are not page264 semantic defects."
+  ],
+  "do_not_repeat": [
+    "Do not deploy build/oldtrees-semantic-parity-20260914-v001.json saved-data patch.",
+    "Do not deploy obsolete review-label-only runtime versions; live ID33 already contains full labels and later duplicate-dot containment.",
+    "Do not create another page264 semantic runtime owner while ID33 is active and correct.",
+    "Do not modify shared ID14 globally from the page264-only task."
+  ],
+  "remaining_semantic_or_runtime_acceptance": [
+    "Fresh ID33 active/hash readback when WPVibe returns before any later semantic claim after drift.",
+    "Form33 service/topic submission-time required schema/runtime proof.",
+    "Review keyboard interaction proof.",
+    "Tiszafa pointer/keyboard proof.",
+    "Nordmann timing/swipe/pause/reduced-motion proof."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "STALE_SEMANTIC_AUDIT_RECONCILED_STATIC_AND_AX_PARITY_CLOSED_RUNTIME_INTERACTION_PROOF_REMAINS"
+}
