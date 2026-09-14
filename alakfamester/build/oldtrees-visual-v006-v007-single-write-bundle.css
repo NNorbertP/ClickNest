@@ -1,0 +1,45 @@
+/* Bundle policy: use only when fresh preflight proves BOTH v006 and v007 deltas still fail.
+ * The two marked blocks below are byte-equivalent in effect to their standalone source files.
+ * Do not deploy this bundle if either delta is already solved live.
+ */
+
+/* af-oldtrees-visual-v006:start
+ * Scope: page264 request-form contact buttons only.
+ * Fresh same-browser post-v005 source/target screenshot proves the target label/value
+ * foreground is dark while the reference is white. v004 already declares the same
+ * source colors without !important, so this block resolves only the proven cascade loss.
+ */
+body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn {
+  color: #FFF !important;
+}
+body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn .contact-btn__label {
+  color: rgba(255,255,255,.9) !important;
+}
+body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn strong {
+  color: #FFF !important;
+}
+/* af-oldtrees-visual-v006:end */
+
+/* af-oldtrees-visual-v007:start
+ * Scope: page264 comparison grid geometry only.
+ * Fresh same-browser post-v005 capture proves source has two equal columns while
+ * target still renders unequal card widths. v004 already contains the source
+ * 1fr/1fr + 24px grid contract; this block only makes that existing contract win.
+ */
+body.page-id-264 .elementor-element-af2a0045 .af-sub-split {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+body.page-id-264 .elementor-element-af2a0045 .af-sub-card {
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+}
+@media (max-width: 900px) {
+  body.page-id-264 .elementor-element-af2a0045 .af-sub-split {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+/* af-oldtrees-visual-v007:end */
