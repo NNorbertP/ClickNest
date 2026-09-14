@@ -1,0 +1,103 @@
+{
+  "schema_version": 4,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "purpose": "Deduplicated live continuation manifest after page264 review-control parity and newer page272/page256 evidence. Supersedes parity-open-items v003 for planning only; historical files remain immutable evidence.",
+  "latest_account_checkpoint": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "used": 183,
+    "limit": 300,
+    "remaining": 117,
+    "mandatory_D11_reserve": 10,
+    "nominal_above_reserve": 107,
+    "important": "The active blocker is intermittent host-side HTTP 429/challenge, not account exhaustion. Failed WPVibe operations can consume several calls through automatic retries."
+  },
+  "priority_queue": [
+    {
+      "priority": 1,
+      "resource": "page272 Hedge legacy semantics",
+      "precondition": "53041 bytes / SHA256 b283e07f441a11a8f2390a685c91323ea66d58be2b15713c2b4e6d1ca35d0627 / JSON valid",
+      "already_closed": [
+        "shared-media recovery 26/26",
+        "EAEL gallery 28/28 page-only media ids=0",
+        "resolution=full and original webp frontend URLs",
+        "page-specific gallery accessible names",
+        "24-hour reply sentence restored"
+      ],
+      "prepared": "build/hedge-page272-legacy-semantics-20260914-v003.json",
+      "remaining": [
+        "five complete legacy named regions af2e0007/af2e0045/af2e0047/af2e0049/af2e000f",
+        "af2e000f complete source mailto clickable range while preserving #ajanlatkeres",
+        "af2e004c exact source phone/e-mail accessible names",
+        "review Atomic schema/runtime inspection only through a proven safe path; do not guess V4 attributes"
+      ],
+      "last_write_attempt": "First legacy region content/edit was rejected with HTTP 429 before confirmed execution. Fresh exact hash is mandatory before retry."
+    },
+    {
+      "priority": 2,
+      "resource": "page256 Biological Protection legacy parity",
+      "documented_baseline_before_partial": "34930 bytes / SHA256 1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+      "newer_evidence": "reports/subpages/bio-parity-continuation-20260914-v006.json",
+      "successful_partial_writes": "8 terminal periods removed: four in af260007 + four in af260010",
+      "last_reported_bytes_after_successes": 34922,
+      "remaining": [
+        "fresh bytes/SHA/JSON readback first; do not assume the following rejected af260013 write executed",
+        "five af260013 terminal periods, only where still present",
+        "af260011 uppercase table headers plus four row-header th scope=row cells",
+        "four complete legacy named regions af260007/af260010/af260011/af260013",
+        "final CTA aria-label only if fresh AX still differs"
+      ],
+      "atomic_rule": "Do not guess hero/FAQ/review-tablist attributes; prior Elementor 4.2.4 pilot/transformer evidence says guessed attributes do not render."
+    },
+    {
+      "priority": 3,
+      "resource": "page264 Old Trees runtime acceptance",
+      "saved_baseline": "48874 bytes / SHA256 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+      "latest_evidence": "reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json",
+      "closed": [
+        "38 heading names source-target match",
+        "11 named regions source-target match",
+        "form semantics source-target match",
+        "all three review tab accessible names source-target exact",
+        "duplicate numbered review dot controls identified as global Code Snippets ID14 output",
+        "page264-only ID33 now makes duplicate dots tabindex=-1 and aria-hidden=true without visual change",
+        "tiszafa before/after DOM initialized on native range control"
+      ],
+      "snippet33_postwrite": "active; code_error=null; SHA256 810e62e37b30b553dc96212783954e808e9bf251eb5c72ab8c509beb4957b22f; length 3810",
+      "remaining_acceptance_only": [
+        "final AX proof after delayed ID14 dot insertion",
+        "review Arrow/Home/End interaction proof",
+        "tiszafa pointer/keyboard interaction proof",
+        "Nordmann normal/reduced-motion timed proof",
+        "formal deterministic visual comparison"
+      ],
+      "rule": "No further page264 content/style write unless a new reproducible source-target delta is proven."
+    },
+    {
+      "priority": 4,
+      "resource": "global header",
+      "evidence": "reports/header/header-live-source-audit-20260914-v003.json",
+      "prepared_css": "build/header-live-source-v001.css",
+      "prepared_runtime": "build/header-runtime-threshold-v001.json",
+      "remaining": [
+        "fresh Additional CSS post8 + header20 conflict/hash preflight",
+        "apply the complete prepared header CSS only if baselines still match",
+        "verify desktop/narrow/mobile header states",
+        "then change Code Snippets ID7 sticky threshold 24px -> reference 8px through plugin REST GET/PUT/GET"
+      ]
+    }
+  ],
+  "formal_acceptance_blockers": [
+    "specs/acceptance.json and specs/behaviors.json were never committed and are unavailable; do not recreate them by guesswork",
+    "deterministic six-viewport source-target screenshot/overlay/diff tooling unavailable in this environment",
+    "shared Opera tabs are concurrently used by another process; do not open replacement tab fan-out or fight navigation state",
+    "current Opera connector exposes no click/keyboard automation",
+    "local Chromium runtime cannot resolve the Clicknest hosts",
+    "page270 Biró János portrait source asset remains 404 with no proven substitute",
+    "page258 Ellwoodi source asset remains 404 with no proven substitute",
+    "SMTP/delivery and real form submission remain intentionally excluded"
+  ],
+  "pixel_pass": false
+}
