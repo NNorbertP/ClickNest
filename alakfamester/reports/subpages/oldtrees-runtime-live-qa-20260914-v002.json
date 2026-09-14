@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-runtime-live-qa-20260914-v002",
+  "date": "2026-09-14",
+  "scope": {
+    "page_id": 264,
+    "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+    "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+    "wordpress_write_scope": "page264 only",
+    "wordpress_writes_this_package": 0,
+    "no_global_or_other_page_writes": true
+  },
+  "fresh_saved_data_preflight": {
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "mysql_byte_length": 48874,
+    "json_valid": true,
+    "result": "MATCHES_DOCUMENTED_BASELINE"
+  },
+  "installed_runtime_context": {
+    "helper": "build/oldtrees-semantic-runtime-v001.php",
+    "documented_install": "Code Snippets ID33",
+    "repo_sync_commit": "64605f00a711a1c357b7f5e97481fa6a1cc04319",
+    "page_guard": "is_page(264)",
+    "note": "The live accessibility effects of the helper are present. Therefore the older build/oldtrees-semantic-parity-20260914-v001.json saved-data patch must not be replayed blindly."
+  },
+  "live_accessibility_comparison": {
+    "headings": {
+      "source_count": 38,
+      "target_count": 38,
+      "name_sets": "MATCH",
+      "order_note": "A few source/target AX ordering differences remain around reviews, the six-step section, offer block and form heading. Older project evidence explicitly forbids DOM reordering based on AX flattening alone, so no write was based on these order differences."
+    },
+    "named_regions": {
+      "source_count": 11,
+      "target_count": 11,
+      "exact_ordered_names_match": true,
+      "names": [
+        "Túlnőtt a fa? Mielőtt kivágatná, nézzük meg, lehet-e belőle alakfa",
+        "Amit a megbízóim mondanak",
+        "Ezekkel a helyzetekkel keresnek a leggyakrabban",
+        "Kivágás vagy átalakítás?",
+        "Hat lépés a kivágás helyett",
+        "Nem minden növényt kell és nem minden növényt lehet megmenteni",
+        "Növények, amiket nem vágtunk ki",
+        "Van hasonló növénye?",
+        "Három lépés, kötelezettség nélkül",
+        "Túlnőtt növények – kérdések",
+        "Küldjön róla néhány képet"
+      ]
+    },
+    "reviews": {
+      "tablist_name_source": "Ügyfélvélemények",
+      "tablist_name_target": "Ügyfélvélemények",
+      "source_tab_names": [
+        "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+        "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+        "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+      ],
+      "target_tab_names": [
+        "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+        "Otolecz Transzportbeton Kft.",
+        "ARKER'S Építésziroda Kft."
+      ],
+      "proven_delta": "Target tab 2 and tab 3 omit the person/job suffix that the source exposes.",
+      "source_review_buttons": ["Előző vélemény", "Következő vélemény"],
+      "target_review_buttons": ["Előző vélemény", "Következő vélemény", "1. vélemény", "2. vélemény", "3. vélemény"],
+      "extra_target_controls": "Three additional focusable review-selector buttons are exposed on target. Do not hide or alter them until keyboard/click behavior and implementation ownership are proven."
+    },
+    "form": {
+      "source_form_name": "Ajánlatkérés",
+      "target_form_name": "Ajánlatkérés",
+      "source_form_description": "Vagy hívjon közvetlenül: +36 30 539 48 20",
+      "target_form_description": "Vagy hívjon közvetlenül: +36 30 539 48 20",
+      "service_group_source": "Miben kér segítséget?",
+      "service_group_target": "Miben kér segítséget? ",
+      "textfield_names_descriptions_placeholders": "MATCH for Név, Telefonszám, E-mail, Település, Növény hozzávetőleges magassága, Növényfaj, Rövid leírás; Település help text also matches.",
+      "radio_options": "MATCH, six options",
+      "no_submission_performed": true,
+      "smtp_or_external_message": false
+    },
+    "carousel_semantics_snapshot": {
+      "source_current_slide_role": "group (sampled 2 / 6)",
+      "target_current_slide_role": "listItem (sampled 1 / 6)",
+      "note": "Current slide identity differs by autoplay capture time. The role difference is recorded but not changed without runtime interaction proof."
+    }
+  },
+  "visual_diagnostic": {
+    "source_target_top_screenshots_captured": true,
+    "controlled_viewport_metadata": false,
+    "overlay_or_diff": false,
+    "observation": "Hero copy/line breaks and illustration are broadly aligned in the captured top state. Apparent header focus/navigation and floating quick-contact differences were visible, but focus/load state was not synchronized and header is outside the current page264-only write scope; no visual write was based on this capture.",
+    "pixel_pass": false
+  },
+  "prepared_followup": {
+    "file": "build/oldtrees-semantic-runtime-v002.php",
+    "safe_change": "Keep all v001 behavior and change only REVIEW_LABELS[1] and REVIEW_LABELS[2] to the exact source full accessible names.",
+    "intentionally_open": [
+      "Three extra target review selector buttons require keyboard/click ownership proof before any accessibility hiding or tabindex change.",
+      "Controlled viewport screenshot/overlay/diff and animation states remain open.",
+      "Nordmann carousel and tiszafa slider runtime interaction/reduced-motion checks remain open because Opera disconnected during continuation."
+    ]
+  },
+  "remote_blocker": {
+    "wpvibe_target": "HTTP 429 Too Many Requests after automatic exponential retries; no Retry-After header.",
+    "interpretation": "Host/WAF/site throttling, not WPVibe account exhaustion.",
+    "opera": "Browser Connector disconnected when attempting to continue anchor-level visual checks.",
+    "rule": "Do not retry uncertain writes while throttled. Re-read page264 baseline before the next WordPress write."
+  },
+  "wpvibe_quota_after_qa": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "used": 32,
+    "limit": 300,
+    "remaining": 268,
+    "mandatory_D11_reserve": 10,
+    "nominal_available_above_reserve": 258,
+    "note": "The current blocker is target-side 429 throttling rather than account call capacity."
+  }
+}
