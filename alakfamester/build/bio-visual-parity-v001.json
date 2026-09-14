@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "package": "bio-visual-parity-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "scope": "Visual effect only on body.page-id-256. Reference read-only. No other page, global template, media, plugin setting, SMTP or external message write.",
+  "decision_refs": ["D03", "D07", "D11", "D18"],
+  "css": {
+    "file": "build/bio-visual-parity-v001.css",
+    "latest_commit": "f78640579f0ae6ecdf7b9b9dc5684ea12ba0a808",
+    "content_sha": "305b08d0c28c375606a65c42137d6cc264f507c8",
+    "marker_start": "/* af-bio-visual-v001:start",
+    "marker_end": "/* af-bio-visual-v001:end */",
+    "scope_selector": "body.page-id-256",
+    "touches_acceptance_section_heights": false,
+    "touches_hero_dimensions": false,
+    "touches_global_header_footer": false
+  },
+  "page_precondition": {
+    "elementor_data_bytes": 35382,
+    "elementor_data_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "runtime_snippet_id": 35,
+    "note": "Re-read page256 immediately before any CSS write. If any value differs, stop and reconcile live drift first."
+  },
+  "proven_source_target_deltas": {
+    "technology_section": [
+      "Source direct eyebrow has a 16px bronze leaf; target legacy eyebrow lacks it.",
+      "Source section intro is 1.125rem / max-width 104ch and wraps to two lines at sampled desktop; target is 16px and one line.",
+      "Source three cards use 32px padding, organic radius, soft shadow, lower-right organic watermark; target uses 26px padding and simple 24px radius.",
+      "Source middle sage card has no shadow, source sage surface, top botanical hairline and darker watermark.",
+      "Target card widths/content/icons are otherwise aligned, so the CSS block deliberately preserves current icon generation and content."
+    ],
+    "symptom_table": [
+      "Saved table text and row/column semantics are already source-exact and must not change.",
+      "Source .table-wrap uses organic radius, soft shadow and horizontal-scroll edge treatment; target uses simple 24px radius/no shadow.",
+      "Source cell padding is 13px 24px; target is 15px 16px.",
+      "Source header is sage and letter-spaced; target header is paper beige."
+    ],
+    "faq": [
+      "Question names/accessibility are already source-exact and must remain so.",
+      "Source FAQ uses 22/26px organic cards, 64px triggers, hover sage treatment and leaf-shaped plus/minus control.",
+      "Target uses native details/summary with simple 15px radius and no source-equivalent trigger icon. CSS mapping preserves native details behavior without DOM or text replacement."
+    ]
+  },
+  "hard_preserve": [
+    "Code Snippets ID35 semantics and page guard",
+    "all 13 corrected list strings",
+    "table header text and four th scope=row cells",
+    "four legacy region labels and hero/FAQ/review runtime labels",
+    "final CTA exact aria-label and href",
+    "existing source-measured 1920/1440/1024/768/390/360 section heights, hero heading dimensions, art dimensions and wave heights",
+    "all existing Elementor IDs and saved page256 content"
+  ],
+  "required_predeploy_reads": [
+    "Exact WPVibe quota; preserve at least 10 calls after complete write/readback/QA package.",
+    "Page256 Elementor bytes/SHA/JSON validity; must match 35382 / 55fd9bbe...990f3 / valid.",
+    "Fresh complete Additional CSS length/SHA plus unique af-project:end marker and absence of af-bio-visual-v001 marker.",
+    "Target CSS pseudo ownership: prove whether .af-sub-cards>article::after or equivalent is already used. If article::after is occupied, do not deploy the watermark rules until reconciled.",
+    "Confirm current target technology icon generation remains visually present and is not owned by the same pseudo-element the new watermark needs."
+  ],
+  "suggested_compact_css_preflight_sql": "SELECT LENGTH(post_content) AS bytes, SHA2(post_content,256) AS sha256, LOCATE('af-bio-visual-v001',post_content) AS marker_pos, LOCATE('/* af-project:end */',post_content) AS end_pos, LOCATE('.af-sub-cards>article::before',REPLACE(post_content,' ','')) AS tech_before2, LOCATE('.af-sub-cards>article:before',REPLACE(post_content,' ','')) AS tech_before1, LOCATE('.af-sub-cards>article::after',REPLACE(post_content,' ','')) AS tech_after2, LOCATE('.af-sub-cards>article:after',REPLACE(post_content,' ','')) AS tech_after1, LOCATE('.af-details summary::after',REPLACE(post_content,' ','')) AS faq_after2, LOCATE('.af-details summary:after',REPLACE(post_content,' ','')) AS faq_after1 FROM {prefix}posts WHERE ID=8",
+  "deployment": [
+    "Use supported /wpvibe/v1/content/search on post8 post_content to retrieve the exact unique af-project:end snippet from the fresh field.",
+    "Insert the complete marked CSS block immediately before the unique project end marker using one guarded match-once /wpvibe/v1/content/edit. Do not round-trip or replace the whole Additional CSS field.",
+    "Treat HTTP 429 on the write as UNKNOWN. Do not retry; first read back marker/hash to determine whether it executed.",
+    "Read back Additional CSS bytes/SHA/marker count and re-read page256 Elementor bytes/SHA/JSON. Page256 saved data must remain unchanged.",
+    "Fresh-load source and target with only the existing two Opera tabs. Verify technology card geometry/surfaces, table surface, FAQ static state, exact AX semantics and no regression of hero/reviews/CTA.",
+    "If a measured regression appears, remove only the exact af-bio-visual-v001 marked block by guarded match-once edit; do not restore an old full Additional CSS snapshot."
+  ],
+  "intentionally_open": [
+    "#technologiak anchor ownership/offset: target id is currently on inner af-sub-inner; do not guess a scroll-margin or structural ID move without a supported outer-wrapper ID proof.",
+    "Stress and expectations split/list card visuals need additional direct source-target screenshot/component mapping before inclusion.",
+    "Global header active-state and floating-contact differences are outside page256-only scope.",
+    "Deterministic six-viewport screenshot/overlay/diff remains unavailable; PIXEL_PASS stays false until that evidence exists."
+  ],
+  "host_throttle": "Latest site calls still return HTTP 429 after three automatic retries. Do not deploy while throttle is active.",
+  "wordpress_writes_in_preparation": 0,
+  "pixel_pass": false
+}
