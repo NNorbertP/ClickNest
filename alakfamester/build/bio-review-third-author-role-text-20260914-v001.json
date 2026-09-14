@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "package": "bio-review-third-author-role-text-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "b2560031",
+  "status": "PREPARED_FROM_PRIOR_EXACT_RENDER_NEEDS_FRESH_SEARCH_BEFORE_WRITE",
+  "reference_text": "ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+  "target_last_verified_text_before_current_browser_handoff": "ügyvezető · ARKER'S Építésziroda Kft.",
+  "evidence_context": {
+    "source": "reference review__by footer for Lőrincz Balázs",
+    "target": "prior rendered page256 Elementor DOM readback of b2560031",
+    "warning": "The two shared Opera tabs were later taken over by the parallel page264 QA flow, so a fresh target live/browser confirmation is still required before mutation."
+  },
+  "future_safe_edit": {
+    "method": "After page256 scope handoff and usable WPVibe: fresh content/search on meta post_id 256 key _elementor_data using ASCII anchor b2560031 or ARKER'S. Use only the exact returned escaped snippet in one match-once content/edit.",
+    "change": "Replace only the visible paragraph text value for b2560031 if and only if the live target still equals the shorter last-verified text.",
+    "do_not": [
+      "do not alter b2560031 ID, element type or classes",
+      "do not alter the third tab label/accessibility name",
+      "do not alter Lőrincz Balázs heading/name or review body copy",
+      "do not full-save Elementor",
+      "do not use raw SQL/search-replace"
+    ]
+  },
+  "postconditions": [
+    "visible author role line equals the full reference text",
+    "third review tab accessible name remains ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető",
+    "review panel/ID35 interactions unchanged",
+    "page256 JSON valid and unrelated review nodes unchanged"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
