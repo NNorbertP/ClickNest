@@ -1,0 +1,88 @@
+{
+  "schema_version": 15,
+  "package": "bio-page256-next-safe-package-20260914-v015",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED_REMOTE_BLOCKED",
+  "supersedes": "build/bio-page256-next-safe-package-20260914-v014.json",
+  "reason": "Current public target HTML disproves the old stress wrapper assumption: af260007 is p1 -> card -> p2. Remove the unsafe paragraph-wrapper operation from the structural queue. Promote only compact owner-local edits that can be proven from fresh exact saved-data searches.",
+  "preconditions": [
+    "Normal scope handoff authorizes page256 and no page264 flow owns the remote/browser workspace.",
+    "WPVibe is usable under intended +5 identity; target site connected; exact quota known; complete chosen unit plus readback leaves >=10 D11 calls.",
+    "Load Elementor skill.",
+    "Fresh page256 _elementor_data bytes/SHA/JSON and ID35 state reconciled.",
+    "Every mutation begins with fresh content/search and uses only exact returned escaped bytes or a separately proven whole-word replace_all primitive."
+  ],
+  "operations": [
+    {
+      "order": 1,
+      "element": "af260015",
+      "purpose": "restore source FAQ-before-CTA order",
+      "current_owner": "settings._css_classes contains af-faq-content; the only identified winning CSS owner uses that class to force order:10",
+      "method": "Fresh exact search around af260015 settings. Remove only the af-faq-content token/value with one match-once edit; preserve editor HTML and widget ID.",
+      "verify": [
+        "server DOM content unchanged",
+        "frontend visual order FAQ then CTA before later paper-layout CSS",
+        "four native details controls still work",
+        "page JSON valid"
+      ]
+    },
+    {
+      "order": 2,
+      "element": "af26000d",
+      "purpose": "restore source deep-link #ugyfelvelemenyek",
+      "method": "Fresh exact raw settings search. Only if the current Atomic settings expose a proven safe _cssid-style owner/mechanism already used elsewhere on page256, set exact id ugyfelvelemenyek with the smallest match-once edit. Do not guess typed attributes and do not full-save.",
+      "verify": [
+        "frontend id=ugyfelvelemenyek exactly once",
+        "source-equivalent deep-link lands on review section when page256 browser tabs are available",
+        "Atomic Tabs hierarchy/IDs/ID35 semantics unchanged"
+      ],
+      "optional": true
+    },
+    {
+      "order": 3,
+      "element": "b2560031",
+      "purpose": "restore full third review author role line",
+      "current_public_target_text": "ügyvezető · ARKER'S Építésziroda Kft.",
+      "source_text": "ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+      "method": "Fresh content/search around b2560031 or a unique ASCII ARKER'S anchor. If the saved live text still equals the short current-public value, replace only that exact paragraph value. Preserve element ID/type/classes, review body and tab accessible name.",
+      "verify": [
+        "full source role visible exactly once",
+        "third tab accessible name remains ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető",
+        "review body/title/author unchanged",
+        "page JSON valid"
+      ]
+    },
+    {
+      "order": 4,
+      "element": "af260011",
+      "purpose": "source table-title ownership: external p.table-title + aria-labelledby, no caption",
+      "method": "Fresh content/search around the compact current boundary <div class=af-table-wrap><table><caption>Gyakori tünetcsoportok…</caption><thead>. If one exact returned snippet contains the complete caption boundary, replace that boundary atomically with <p class=af-table-title id=tunet-tabla-cim>same text</p><div class=af-table-wrap><table aria-labelledby=tunet-tabla-cim><thead>. If the exact boundary is split beyond safe returned snippets, STOP and leave this operation for a safer owner-level primitive; never reconstruct the full widget.",
+      "verify": [
+        "caption AX role disappears",
+        "external title visible exactly once",
+        "table accessible name remains exact via aria-labelledby",
+        "three uppercase column headers and four row headers unchanged",
+        "list/region/table AX counts unchanged except caption -1",
+        "page JSON valid"
+      ],
+      "conditional": true
+    }
+  ],
+  "separate_not_in_this_package": [
+    "stress p1/card/p2 physical reorder — HOLD_NO_SAFE_ATOMIC_MOVE",
+    "stress aside->article — separate atomic whole-word tag candidate in bio-stress-source-visual-20260914-v003.json",
+    "stress visuals — page-local CSS after carrier proof",
+    "expectations regrouping — separate high-risk v003 package",
+    "CTA mail child structure — separate FAQ/CTA dependency package",
+    "any CSS write — only through a proven page-local style carrier under current scope"
+  ],
+  "execution_rules": [
+    "Treat each operation as its own complete transaction: search -> one edit -> immediate saved/rendered/AX readback.",
+    "Do not chain subsequent operations after no_match, multiple_matches, drift, 429 unknown or surprising hash/JSON changes.",
+    "Already-correct content from bio-content-parity-manifest-20260914-v001.json is immutable except the explicitly confirmed third-review role line.",
+    "No full save-page, no raw SQL/search-replace, no stale escaped snippet replay."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
