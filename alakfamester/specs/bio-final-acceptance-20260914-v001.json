@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "package": "bio-final-acceptance-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "status": "ACCEPTANCE_SPEC_PREPARED_NOT_PASSED",
+  "scope": "Page256 main-content parity only. Shared header/current-route pill and floating dock are tracked globally and must not be silently fixed by page256 CSS.",
+  "preconditions_for_final_QA": [
+    "page256 is the active reconciled WordPress write/QA scope",
+    "all intended page256 remote packages have complete write/readback receipts",
+    "exactly two Opera tabs are available for page256 source/target and no parallel flow owns them",
+    "fresh target is reachable without unresolved 429/5xx ambiguity",
+    "final page256 Elementor bytes/SHA/JSON and Additional CSS marker inventory are recorded"
+  ],
+  "content_gate": {
+    "authority": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "requirements": [
+      "all protected visible strings match the reference in order and punctuation",
+      "the 13 corrected legacy list strings remain period-free exactly as frozen",
+      "table headers remain TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY",
+      "third review author role equals full reference string if fresh live verification confirms the prior shortened target state",
+      "no CSS/DOM regrouping duplicates or hides meaningful source text"
+    ]
+  },
+  "semantic_gate": {
+    "authority": "reports/subpages/bio-ax-role-count-gate-20260914-v001.json",
+    "must_match_before_FAQ_exact_role_work": {
+      "article": 6,
+      "complementary": 1,
+      "list": 9,
+      "listItem": 32,
+      "region": 7,
+      "table": 1,
+      "caption": 0,
+      "tab": 3,
+      "tabList": 1,
+      "tabPanel": 1
+    },
+    "FAQ_temporary_allowed_difference": "target may retain 4 native disclosureTriangle controls instead of source 4 button controls only while exact source click/keyboard/motion reproduction remains unproven; all question names/content must stay exact and functional",
+    "final_exact_if_FAQ_conversion_is_proven_safe": {"button":6,"disclosureTriangle":0},
+    "regression_stop": "Any change to already-equal list/listItem/region/table/tab counts is an immediate fail/rollback trigger."
+  },
+  "anchor_and_link_gate": [
+    "#technologiak lands on the biological approach section",
+    "#ugyfelvelemenyek lands on the review section after the source review ID microfix",
+    "hero health CTA points to /kapcsolat/#ajanlatkeres",
+    "hero technology CTA points to #technologiak",
+    "Az alakfa ápolása points to /#apolas and retains exact accessible name",
+    "final mail href remains mailto:kreativ@alakfa-mester.hu with exact accessible name ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+    "final form link remains /kapcsolat/#ajanlatkeres"
+  ],
+  "section_order_gate": [
+    "hero",
+    "reviews",
+    "wave",
+    "stress",
+    "wave",
+    "technology",
+    "symptom table",
+    "wave",
+    "expectations",
+    "wave",
+    "FAQ on paper",
+    "separate final CTA band"
+  ],
+  "visual_component_gate": {
+    "hero": [
+      "source inner-page 1.12/.88 desktop columns and correct top/bottom rhythm",
+      "source proof-row wrapping at comparable controlled viewport",
+      "no duplicated contact/fact icons",
+      "both hero CTA visual states compared explicitly to source before altering their existing classes"
+    ],
+    "reviews": [
+      "single visible 01/02/03 ordinal per tab",
+      "source warm quote color and responsive 46/38px size",
+      "source-like 9px active dot rather than oversized visual indicator",
+      "source paper/decor only if pseudo-owner-safe package is used",
+      "native Atomic tab interaction remains intact"
+    ],
+    "stress": [
+      "two-column direct-child structure desktop, one-column mobile",
+      "first paragraph source lead treatment",
+      "forest article organic radius/shadow/bronze eyebrow/sage checklist/source watermark"
+    ],
+    "technology": [
+      "source bronze eyebrow leaf",
+      "source lead measure/type",
+      "three organic cards with source padding/watermarks and middle botanical hairline",
+      "existing source-like icons preserved once only",
+      "existing callout surface/rail preserved; leaf/check markers replace native bullets"
+    ],
+    "table": [
+      "external table title above border surface, not internal caption",
+      "source table wrap/cell/header/even-row styling",
+      "source stone vertical gradient"
+    ],
+    "expectations": [
+      "left white article owns h2 + 3 positive + 2 negative items",
+      "right sage article owns h3 + copy + arrow link",
+      "source check/cross markers and organic watermarks"
+    ],
+    "FAQ_CTA": [
+      "FAQ is on paper and precedes CTA",
+      "source FAQ card/leaf plus-minus static/open visuals",
+      "separate radius36 forest CTA band with source rings/leaves",
+      "source CTA left/right desktop layout and responsive stack",
+      "mail label visually above email, bronze form button and source hover/focus states",
+      "exact source wave into paper FAQ deployed only after paper ownership is proven"
+    ]
+  },
+  "responsive_gate": {
+    "authority": "build/bio-responsive-source-contract-20260914-v001.json",
+    "required_breakpoint_checks": [
+      ">=1400 desktop hero 56px source gap and full multi-column sections",
+      "around 1024 / <=1000 review vertical media/body/by behavior",
+      "<=900 hero + grids + CTA columns stack source-like",
+      "<=760 review rail/mobile tab state and quote 38px",
+      "<=720 source card/CTA padding 24px and source section-spacing owner reconciled before pass",
+      "<=560 review monogram/contact text source mobile sizing",
+      "narrow ~390px no horizontal overflow, clipped card/table content or broken anchor focus"
+    ],
+    "rule": "Do not declare a desktop-only pass as final parity."
+  },
+  "interaction_gate": [
+    "review tabs switch panels with correct selected/tabindex states",
+    "review previous/next controls work and do not expose duplicate numbered controls",
+    "FAQ all four controls are keyboard reachable and expand/collapse content without losing accessible names",
+    "all links/buttons retain focus-visible indication",
+    "hover/focus transforms do not shift neighboring layout unexpectedly"
+  ],
+  "wave_gate": [
+    "first three exact source SVG curves are correct between current source-equivalent section tones",
+    "fourth expectations->FAQ wave is present only with paper FAQ ownership",
+    "no diagonal approximation remains as the winning page256 wave visual"
+  ],
+  "regression_gate": [
+    "ID35 remains active and page256-guarded",
+    "no Elementor full-save side effect or lost IDs/classes",
+    "hero artwork/review images/alt text unchanged",
+    "no changes to another page, shared media, template, plugin setting or SMTP",
+    "global header/dock defects are not hidden with page256-local duplicate markup",
+    "Additional CSS contains each approved page256 marker exactly once and no obsolete conflicting parity block"
+  ],
+  "evidence_required_for_PASS": [
+    "fresh final source/target AX comparison",
+    "fresh final source/target visual checks at desktop and responsive breakpoints supported by the workflow",
+    "final normalized visible-content comparison",
+    "final deep-link checks",
+    "final page256 saved-data + Additional CSS readback receipts"
+  ],
+  "current_result": "FAIL_OPEN_BY_DESIGN: remote write scope/WPVibe/parallel-browser gates prevent completion; several prepared packages are intentionally not yet deployed.",
+  "pixel_pass": false
+}
