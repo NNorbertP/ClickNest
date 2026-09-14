@@ -1,0 +1,104 @@
+/* af-bio-hero-layout-v003:start
+ * Scope: body.page-id-256 #af-sub-bio-hero only.
+ * Prepared, not deployed. Geometry/text-rhythm layer only.
+ * Supersedes v001 for future geometry deployment; v002 is retained as a
+ * diagnostic superset but is not the first-deploy candidate because it also
+ * adds decorative pseudo-SVG icons without a fresh target screenshot.
+ */
+
+@media (min-width: 901px) {
+  body.page-id-256 #af-sub-bio-hero {
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr) !important;
+    column-gap: clamp(24px, 2.6vw, 44px) !important;
+    align-items: center !important;
+    align-content: start !important;
+    padding-top: clamp(20px, 2.2vw, 34px) !important;
+    padding-bottom: clamp(28px, 3.2vw, 50px) !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero > *:not(.af-art) {
+    width: 100% !important;
+    max-width: 46rem !important;
+    justify-self: start !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero > #af-sub-bio-hero-body {
+    width: auto !important;
+    max-width: 60ch !important;
+    margin-bottom: 24px !important;
+    color: #4A5750 !important;
+    font-size: clamp(1.03rem, .96rem + .35vw, 1.19rem) !important;
+    line-height: 1.6 !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    align-items: center !important;
+    margin: 0 0 16px !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a {
+    min-height: 60px !important;
+    padding: 10px 24px 10px 10px !important;
+    border-radius: 999px !important;
+    background: linear-gradient(145deg, #2F5D46, #3d7357) !important;
+    border: 1px solid transparent !important;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    box-shadow: 0 12px 28px rgba(23, 61, 45, .22) !important;
+    transition: transform 220ms cubic-bezier(.22,.68,.36,1), box-shadow 220ms cubic-bezier(.22,.68,.36,1), background-color 220ms cubic-bezier(.22,.68,.36,1) !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a > span {
+    color: rgba(255,255,255,.9) !important;
+    font-size: .68rem !important;
+    line-height: 1.18 !important;
+    letter-spacing: .13em !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a > strong {
+    color: #FFFFFF !important;
+    font-size: 1.02rem !important;
+    line-height: 1.18 !important;
+    font-weight: 700 !important;
+    letter-spacing: .01em !important;
+    word-break: break-word !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a:hover,
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a:focus-visible {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 18px 36px rgba(23, 61, 45, .28) !important;
+    color: #FFFFFF !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px 24px !important;
+    padding-top: 16px !important;
+    margin-top: 16px !important;
+    border-top: 1px solid #D7D2C6 !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts > span {
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+    color: #4A5750 !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  body.page-id-256 #af-sub-bio-hero {
+    column-gap: 56px !important;
+  }
+}
+
+/* Existing target mobile stack and exact measured h1/art dimensions remain
+ * untouched; this layer intentionally starts only above 900px. */
+
+/* af-bio-hero-layout-v003:end */
