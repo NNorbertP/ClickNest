@@ -1,0 +1,108 @@
+{
+  "schema_version": 8,
+  "package": "oldtrees-continuation-20260914-v008",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "scope": "Page264-only continuation while WordPress and browser write/interaction gates are unavailable.",
+  "tool_state": {
+    "wpvibe": "Unavailable/disabled in this conversation after discovery; no further WPVibe calls attempted.",
+    "opera": "Connector disconnected after reuse/repurposing of the two existing project tabs; zero new/replacement tabs opened.",
+    "generic_web": "Direct source/target fetch unavailable; no usable replacement for the live browser gate.",
+    "github": "Available and used only for repository reconciliation/planning/checkpoint files."
+  },
+  "wordpress_writes": 0,
+  "opera_new_tabs": 0,
+  "accepted_live_state_preserved": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "elementor_json_valid": true,
+    "visual_v004": "live",
+    "visual_v005": "live",
+    "semantic_id33": "last verified active",
+    "form33_id5_photo_validator": "preserve",
+    "form33_id6_rows_helper": "preserve"
+  },
+  "new_repository_outputs": [
+    {
+      "file": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+      "commit": "928373c77c96371fc688992980e96e308f2733aa",
+      "purpose": "One authoritative page264 acceptance ledger separating PASS/do-not-rebuild, gated fixes, proof-only checks and hold/no-write items."
+    },
+    {
+      "file": "build/oldtrees-interaction-acceptance-20260914-v001.json",
+      "commit": "c025b5541fb9b7d039fb6b4b0cfd2ba516910f29",
+      "purpose": "Exact no-write review/tiszafa/Nordmann interaction sequences and regression rules."
+    },
+    {
+      "file": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+      "commit": "ca938239e7e62239eefb82165ba7c6efd8ddf157",
+      "purpose": "Measured computed-style/geometry gate for the unproven 40-45px hero offset; forbids arbitrary spacing/transform patches."
+    },
+    {
+      "file": "build/oldtrees-next-remote-window-20260914-v002.json",
+      "commit": "4c1cd5acca7ac6195306b955a24b61bcc765cb2f",
+      "purpose": "Refined low-call live sequence: compact preflight, two-delta visual gate, at most one CSS write, mandatory closeout, then read-only form/interaction/hero acceptance."
+    },
+    {
+      "file": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json",
+      "commit": "c338bf0763ae3dbb2289739f899ad198d42ca59f",
+      "purpose": "Reconciles every original visual-audit defect against v004/v005 and post-v005 evidence; only v006/v007 remain reproduced local failures."
+    },
+    {
+      "file": "reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json",
+      "commit": "d4beba85c5bec1e441525857cd5a1cccde6902b5",
+      "purpose": "Supersedes stale 29/38 heading and 1/11 region findings with later live 38/38 and 11/11 proof and current ID33 ownership."
+    }
+  ],
+  "reconciled_visual_status": {
+    "pass_live": [
+      "comparison beige/sage surfaces",
+      "comparison warning/growth icons",
+      "comparison X/check list markers",
+      "comparison equal-height stretch",
+      "request heading centering",
+      "request compact 18x18 clock",
+      "request joined white panel"
+    ],
+    "no_current_failure_formal_capture_open": [
+      "request contact-button broad shape/geometry",
+      "request organic glow/field continuity",
+      "comparison responsive <=900 one-column contract"
+    ],
+    "gated_proven_failures": {
+      "v006": "request green contact label/value foreground dark on target vs white source",
+      "v007": "desktop comparison target columns unequal vs equal source columns"
+    },
+    "hold": [
+      "KÉT ÚT anchor/visibility impression without matched scroll ownership proof",
+      "hero vertical offset without exact owner/cascade proof",
+      "global floating dock from page264-only write scope"
+    ]
+  },
+  "reconciled_semantic_status": {
+    "headings": "38 source / 38 target matching name sets after ID33 step-heading promotion",
+    "regions": "11 source / 11 target exact ordered names after native reviews + ID33 regions",
+    "reviews": "Exact tablist/tab names and source-equivalent previous/next; duplicate numbered dots absent from final page264 AX/focus",
+    "form": "Accessible name/description, service-group labelling, city describedby and seven text field semantics match; service/topic submission-time required enforcement remains proof-only",
+    "tiszafa": "static/native initial state pass; interaction open",
+    "nordmann": "static AX controls pass; timing/swipe/pause/reduced-motion open"
+  },
+  "next_live_decision": {
+    "plan": "build/oldtrees-next-remote-window-20260914-v002.json",
+    "first": "Verify +5 identity/site/quota and preserve 10-call D11 reserve.",
+    "then": "Compact page264 hash/JSON + post8 marker inventory; reconcile any drift before write.",
+    "visual_gate": "Fresh-check only v006/v007 in the existing two-tab pair.",
+    "write_limit": "At most one guarded page264-scoped Additional CSS insert selected by the four-way decision matrix.",
+    "closeout": "Mandatory marker/project-end/page264 hash readback and targeted regression capture.",
+    "after": "If safe capacity/tooling remains, service-radio schema proof, interaction matrix, hero diagnostic and deterministic visual matrix."
+  },
+  "hard_stops": [
+    "No blind retry after HTTP 429; write result remains UNKNOWN until readback.",
+    "No replacement Opera tabs after connector instability.",
+    "No new semantic/runtime/CSS layer merely because interaction tooling is missing.",
+    "No global dock/header/footer/shared setting change from this page264 package.",
+    "No PIXEL_PASS=true before deterministic exact viewport/DPR/zoom overlay/diff."
+  ],
+  "pixel_pass": false,
+  "status": "STATIC_RECONCILIATION_COMPLETE_WAITING_FOR_FRESH_LIVE_GATE"
+}
