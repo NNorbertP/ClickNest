@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "package": "hedge-open-items-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_planning": "reports/subpages/hedge-open-items-20260914-v001.json",
+  "wordpress_writes": 0,
+  "accepted_baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+  "closed_do_not_reopen": [
+    "26/26 shared-media recovery",
+    "28/28 page-local EAEL gallery id=0/full/original URLs/exact names/order",
+    "five legacy named regions",
+    "full CTA mailto and exact contact-link semantics",
+    "24-hour reply sentence",
+    "hero/proof/native reviews/MetForm protected components",
+    "current sage background and historical media/background gaps",
+    "ID36 v001 remains accepted current owner until successor readback succeeds"
+  ],
+  "implementation_candidate_ready_but_live_gated": [
+    {
+      "item": "ID36 semantic successor",
+      "build": "build/hedge-semantic-runtime-v003.php",
+      "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v005.json",
+      "delta_audit": "reports/subpages/hedge-id36-v001-v003-delta-audit-20260914-v001.json",
+      "action": "Update existing ID36 only after exact live cardinality/ownership/hash/quota gates pass.",
+      "write_scope": "runtime accessibility attributes on page272 only"
+    }
+  ],
+  "live_read_and_proof_first": [
+    {
+      "item": "Required Miben kér segítséget? service/topic choice",
+      "audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+      "next": "Read #af-form-service exact widget settings/name/required/options. If mf_input_required=yes, prove native empty-choice rejection through a safe non-delivery/non-entry path before considering PHP fallback.",
+      "server_fallback": "build/hedge-form-required-server-plan-20260914-v002.json",
+      "fallback_rule": "Only if native Required is absent or demonstrably insufficient. Existing ID36 remains preferred owner; no shared Form33 edit and no second default validator snippet."
+    }
+  ],
+  "proof_only_no_code_without_failure": [
+    "Native review click/Arrow/Home/End direct page272 run; shared D12 implementation already proven.",
+    "Proof carousel ArrowLeft/Right, swipe, pause/resume and reduced-motion; page272 autoplay already historically proven and shared runtime owner established."
+  ],
+  "no_write_until_direct_source_or_dom_proof": [
+    "Hero outer region: complete root containing full copy + hero art must be proven.",
+    "Sövénymunkák outer region: common heading + full EAEL gallery root must be proven.",
+    "Hedge lightbox: trustworthy source must prove the 28 source gallery items are zoom/grouped-lightbox controls before changing popup=none.",
+    "Any page272 visual CSS: require newly reproduced synchronized source-target delta and proven cascade/DOM owner.",
+    "SEO/meta/canonical: absence of a current metadata comparison is not a defect; read source/target first before any Yoast/post-meta idea."
+  ],
+  "formal_blockers": [
+    "specs/acceptance.json absent",
+    "specs/behaviors.json absent",
+    "deterministic same-browser 1920/1440/1024/768/390/360 DPR/zoom overlay-diff runner unavailable",
+    "current Opera Hedge DOM/screenshot state stale and untrusted",
+    "WPVibe disabled in this conversation; +5 site connection/exact quota unknown"
+  ],
+  "next_live_priority": [
+    "1 Verify +5 identity/site/quota once and preserve D11 reserve plus complete package readback margin.",
+    "2 Fresh page272 baseline and exact current ID36 rollback body/state.",
+    "3 Use the fewest reads possible to prove review cardinality, Form33 wrapper/direct-call ownership and #af-form-service exact settings/name/required/options.",
+    "4 If semantic gates pass, update existing ID36 to v003 only and read back ID36 + unchanged page272 Elementor hash.",
+    "5 Decide required-radio item from actual mf_input_required/native non-delivery behavior; do not auto-deploy server fallback.",
+    "6 Use trustworthy two-tab browser only for changed-section AX/visual and proof-only interaction checks; no extra tabs."
+  ],
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "ONLY_ONE_CURRENT_WRITE_CANDIDATE_ID36_V003_REQUIRED_RADIO_READ_PROOF_FIRST"
+}
