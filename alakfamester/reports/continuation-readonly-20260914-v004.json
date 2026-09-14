@@ -1,0 +1,51 @@
+{
+  "schema_version": 4,
+  "package": "continuation-readonly-20260914-v004",
+  "date": "2026-09-14",
+  "supersedes_for_resume": "reports/continuation-readonly-20260914-v003.json",
+  "reason": "STATE.md was advanced by a concurrent flow after v003 was written. This checkpoint reconciles to that later state rather than competing with it.",
+  "scope_authority": "Fresh STATE.md remains PAGE264 ONLY for WordPress writes.",
+  "latest_state_sha_from_readback": "96dd266fa4fed8d578391820dcb02ba3f84b2d87",
+  "latest_page264_plans": {
+    "remote": "build/oldtrees-next-remote-window-20260914-v002.json",
+    "interaction": "build/oldtrees-interaction-acceptance-20260914-v001.json",
+    "hero_geometry": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "acceptance_ledger": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json"
+  },
+  "page264_resume": [
+    "Verify +5 identity/site/exact rolling quota; keep >=10-call D11 reserve.",
+    "Compact page264 saved-data and post8 marker/hash preflight; reconcile drift, never force stale truth.",
+    "Reuse one source + one target tab only; fresh v006/v007 visual gate.",
+    "At most one selected CSS write: combined only if both fail, standalone if one fails, none if neither fails.",
+    "Mandatory marker/hash/page-hash readback; 429 write outcome UNKNOWN until readback.",
+    "Only after core closeout and safe capacity: Form33 service/topic required read-only proof, then interaction acceptance if an action-capable browser exists, then hero computed-style diagnostic."
+  ],
+  "current_live_blockers": {
+    "wpvibe": "First read-only list_sites attempt in this continuation returned tool disabled; exact +5 quota/site state remains unknown; no WordPress write sent.",
+    "opera": "No new tabs were opened. Final observed target tab showed 504 Gateway Time-out; do not reload-loop or create replacement tabs.",
+    "target_host": "504 is treated as transient infrastructure instability, not as a parity defect."
+  },
+  "cross_project_readonly_work_preserved": [
+    "reports/parity-open-items-20260914-v012.json",
+    "reports/final-acceptance-preflight-20260914-v002.json",
+    "reports/stale-blockers-do-not-reopen-20260914-v001.json",
+    "reports/canonical-pages-current-state-matrix-20260914-v001.json",
+    "reports/subpages/bio-visual-live-compare-20260914-v015.json",
+    "reports/subpages/bio-technology-live-compare-20260914-v016.json",
+    "reports/subpages/bio-page256-structure-execution-safety-20260914-v013.json",
+    "reports/header/header-service-child-route-live-qa-20260914-v008.json",
+    "reports/source-asset-recovery-audit-20260914-v003.json"
+  ],
+  "rules": [
+    "Cross-project planning does not authorize writes outside page264.",
+    "Fresh STATE/live evidence outranks older checkpoints.",
+    "Do not reopen solved work from older broad reports.",
+    "Do not add code to compensate for unavailable interaction tooling.",
+    "Zero replacement Opera tabs on instability."
+  ],
+  "wordpress_writes_this_continuation": 0,
+  "opera_new_tabs_this_continuation": 0,
+  "known_wpvibe_budget": "UNKNOWN for +5",
+  "pixel_pass": false,
+  "status": "RECONCILED_TO_LATEST_STATE_LIVE_WRITE_GATE_BLOCKED"
+}
