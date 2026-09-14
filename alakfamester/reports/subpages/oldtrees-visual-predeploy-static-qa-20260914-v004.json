@@ -1,0 +1,53 @@
+{
+  "schema_version": 4,
+  "package": "oldtrees-visual-predeploy-static-qa-20260914-v004",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "wordpress_writes": 0,
+  "bundle": {
+    "path": "build/oldtrees-visual-parity-bundle-v004.css",
+    "commit": "bfdad7ed0f91ff693d850ee5b81471c53bd2b885",
+    "marker": "af-oldtrees-visual-bundle-v004",
+    "composition": ["oldtrees-visual-parity-v001.css", "oldtrees-visual-parity-corrections-v003.css"],
+    "v002_handling": "Not duplicated: v003 already contains the exact v002 560/400 contact-button breakpoint correction."
+  },
+  "scope_review": {
+    "required_prefix": "body.page-id-264",
+    "all_effect_selectors_page264_scoped": true,
+    "header_selector_present": false,
+    "footer_selector_present": false,
+    "other_page_selector_present": false,
+    "javascript": false,
+    "elementor_write": false,
+    "metform_shared_write": false,
+    "visible_copy_change": false,
+    "dom_reorder": false
+  },
+  "covered_source_proven_deltas": [
+    "af2a0045 comparison card geometry/surfaces/source-like warning-growth icons and checklist X/check leaves",
+    "#ajanlatkeres centered intro plus visually joined white form panel across af2a0054/af2a0055",
+    "form-reply SVG constrained to 18x18",
+    "source-style contact buttons and form-note treatment",
+    "source form-panel organic sage glow",
+    "source contact-button hover/focus lift",
+    "source responsive rule: intrinsic contact button width through 401-560px and full-width only at <=400px"
+  ],
+  "cascade_review": {
+    "v001_max560_width_100_percent": "intentionally retained earlier in bundle as historical base rule",
+    "v003_later_max560_width_auto": "later in the same bundle and therefore wins by equal specificity/source order",
+    "v003_max400_width_100_percent": "later than max560 auto and therefore wins at <=400px",
+    "result": "Matches reference breakpoint contract; no need to deploy separate v002."
+  },
+  "deployment_contract": [
+    "Do not deploy while WPVibe remaining calls are too close to the 10-call D11 reserve or host 429 is active.",
+    "Fresh page264 _elementor_data must still be 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid.",
+    "Fresh Additional CSS post8 must be reconciled against the current header-v004 state; old 600999/8cd8 baseline is obsolete after header deployment.",
+    "Require exactly one af-project:end marker and absence of af-oldtrees-visual-bundle-v004 before insert.",
+    "Insert the complete bundle once immediately before af-project:end with match-once content/edit.",
+    "Read back post8 bytes/SHA/marker and page264 Elementor hash; only then perform fresh frontend/source visual QA.",
+    "If any write returns 429, treat outcome as UNKNOWN and read back before retrying."
+  ],
+  "current_remote_gate": "Latest exact WPVibe checkpoint before this static QA was 283/300 used; 17 remaining, only 7 above D11 reserve. Package intentionally not started.",
+  "status": "STATIC_QA_PASS_SINGLE_WRITE_BUNDLE_PREPARED_NOT_DEPLOYED",
+  "pixel_pass": false
+}
