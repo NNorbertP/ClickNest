@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "package": "bio-stress-source-visual-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "af260007",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "source_proof": {
+    "kind": "direct existing-Opera screenshot at #b-why-title plus exact reference stylesheet extraction",
+    "observed": [
+      "two-column section with text left and one forest card right",
+      "forest card uses deep green gradient, organic radius and strong soft shadow",
+      "card eyebrow A NÖVÉNY STRESSZE is bronze-light and has no section-eyebrow leaf prefix",
+      "card heading is white",
+      "checklist copy is sage-light",
+      "checklist markers are bronze leaf shapes with white checks",
+      "lower-right translucent bronze organic leaf watermark"
+    ]
+  },
+  "css": {
+    "file": "build/bio-stress-source-visual-v001.css",
+    "commit": "b5fa00af45fab6b1f9b85839f541e94e62fea086",
+    "marker": "af-bio-stress-source-v001",
+    "scope": "body.page-id-256 .elementor-element-af260007 only"
+  },
+  "source_contract": {
+    "card_base": "padding 32; rgba(215,210,198,.6) base-border contract; organic 28/34/26/32 radius",
+    "forest": "linear-gradient(155deg,#173D2D,#102A20); border rgba(168,192,174,.2); white text; shadow 0 28 70 rgba(23,61,45,.12)",
+    "watermark": "150x150 bronze leaf, right -46, bottom -56, rotate -16deg, opacity .14",
+    "card_eyebrow": "0.8rem, weight700, .12em, uppercase, #CFBA8D, margin-bottom 8",
+    "heading": "Georgia 1.375rem/1.32 white",
+    "checklist": "list-style none; gap12; margin-top24; item line-height1.55; #B0C7B6 text; 20px #B59A61 leaf marker with white check"
+  },
+  "dependency": {
+    "layout": "The current af-sub-split must have exactly two direct children. build/bio-page256-next-safe-package-20260914-v012.json already prepares grouping of the two explanatory paragraphs into one left wrapper.",
+    "semantics": "Source card root is article while target currently stores aside. build/bio-semantic-resume-20260914-v013.json prepares a separate exact tag-only aside->article microfix after fresh raw search."
+  },
+  "deployment_rule": "Do not combine the paragraph-grouping structural patch, aside->article semantic patch and visual CSS into one unrecoverable mutation. Verify each owner/readback separately. The CSS itself is safe with either aside or article root but should deploy only after fresh page/post8 preflight and visual need is reconfirmed.",
+  "hard_preserve": [
+    "all four stress list strings",
+    "outer region name",
+    "heading text",
+    "widget ID",
+    "all unrelated page256 content",
+    "no full Elementor save",
+    "no raw SQL write"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
