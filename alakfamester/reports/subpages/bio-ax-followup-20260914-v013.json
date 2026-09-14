@@ -1,0 +1,29 @@
+{
+  "package": "bio-ax-followup-20260914-v013",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "read-only source-target AX follow-up; no WordPress write",
+  "opera_tabs": 2,
+  "source_target_heading_region_content": "No new page-content text/heading/link omission found in the fresh compact AX comparison; corresponding page-local names remain present.",
+  "faq_role_delta": {
+    "reference": "Each of the four FAQ questions is exposed as a heading plus a button from the custom faq__trigger structure.",
+    "target": "Each question is exposed as a native disclosureTriangle plus heading/staticText from details/summary.",
+    "names": [
+      "Miért nem elég a hagyományos permetezés?",
+      "Veszélyes ez háziállatra, gyerekre?",
+      "Mennyi idő alatt látszik eredmény?",
+      "Csak alakfához kérhető?"
+    ],
+    "meaning": "Question text and disclosure functionality are present, but exact interactive role parity is not achieved.",
+    "safety_decision": "Do not replace working native details/summary merely for visual styling. Exact replacement requires a source-equivalent trigger/panel implementation plus keyboard/click/open-state verification; preserve current functionality until that implementation path is proven."
+  },
+  "still_preserved": [
+    "seven page-local named regions",
+    "review tablist and source-equivalent review tab accessible names via ID35 runtime",
+    "review previous/next controls",
+    "final CTA exact accessible name",
+    "all repaired table row-header semantics"
+  ],
+  "blocking_condition": "WPVibe tool became unavailable before prepared page256-only patches could be executed; no unsafe fallback was used.",
+  "pixel_pass": false
+}
