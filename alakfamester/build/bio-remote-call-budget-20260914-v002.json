@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "package": "bio-remote-call-budget-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_REQUIRED",
+  "supersedes": "build/bio-remote-call-budget-20260914-v001.json",
+  "known": {
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "site_connection": "UNKNOWN",
+    "exact_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "current_wordpress_writes": 0,
+    "current_repo_scope": "page264-only; page256 remote calls/writes wait for handoff"
+  },
+  "important": "Ranges below are logical WPVibe action planning only, not a claim about billing/quota accounting. The future live counter is authoritative.",
+  "phase_0_preflight": {
+    "range": "4-6",
+    "actions": ["profile/site/quota", "page256 bytes/SHA/JSON", "ID35 if not bundled", "full Additional CSS hash/markers/critical owner reads"],
+    "go_rule": "remaining calls after planned complete package/readback must still be >=10"
+  },
+  "phase_1_visual_v007": {
+    "package": "build/bio-visual-single-write-plan-20260914-v007.json",
+    "range_after_preflight": "3-4",
+    "actions": ["optional final insertion-owner search", "one guarded CSS write", "CSS readback", "page256 unchanged readback"],
+    "note": "Only first three waves. FAQ wave is later dependency-bound."
+  },
+  "phase_2_structural_v014": {
+    "package": "build/bio-page256-next-safe-package-20260914-v014.json",
+    "range": "6 mandatory; +3 optional review anchor",
+    "units": [
+      "FAQ order class: ~3",
+      "stress copy wrapper: ~3",
+      "review anchor ID if safe owner proven: ~3"
+    ]
+  },
+  "phase_3_stress": {
+    "semantic_unit": "~3 (fresh exact search + tag-only edit + readback)",
+    "visual_unit": "~4 (pseudo-owner read + marked CSS write + CSS/page readback)",
+    "total_if_one_window": "~7"
+  },
+  "phase_4_table_structure": {
+    "range": "5-8",
+    "package": "build/bio-table-source-structure-20260914-v001.json",
+    "note": "Move title ownership without full widget rewrite; table cell semantics are already source-equal and must remain so."
+  },
+  "phase_5_expectations": {
+    "range": "11-14",
+    "package": "build/bio-expectations-source-structure-20260914-v003.json",
+    "rule": "Never start near reserve; this is the largest exact-boundary regrouping."
+  },
+  "phase_6_FAQ_CTA_v005": {
+    "package": "build/bio-faq-cta-source-layout-20260914-v005.json",
+    "range_after_FAQ_order_is_done": "7-9",
+    "actions": [
+      "CTA mail fresh search/edit/readback ~3",
+      "fresh pseudo/marker/dependency read 1-2",
+      "one coherent CSS transaction containing only absent FAQ-wave/layout/interaction blocks 1",
+      "CSS + page readbacks 2"
+    ],
+    "dependency_savings": "If bio-visual-v001 and bio-card-mobile-v001 already live from v007, they are not reinserted and consume no extra write."
+  },
+  "phase_7_reviews": {
+    "owner_diagnostic": "1-2 reads",
+    "quote_v002_if_not_already_v007": "~2 write/readback; normally already live after v007",
+    "ordinal_and_active_dot": "~2 after exact owner proof",
+    "review_anchor": "~3 if not done in v014",
+    "third_author_role": "~3 only if shorter live target is reconfirmed",
+    "optional_decor": "~3 after pseudo-slot proof"
+  },
+  "phase_8_closeout": {
+    "range": "2-3 WPVibe reads plus browser QA",
+    "reads": ["final page256 bytes/SHA/JSON", "final Additional CSS hash/markers", "ID35 status if not bundled"],
+    "browser": "source/target pair only when released by parallel page264 flow"
+  },
+  "window_rules": [
+    "<8 calls above reserve: no new mutation; evidence/static work only",
+    "8-15 above reserve: one low-risk complete phase such as v007 or one microfix unit",
+    "16-25 above reserve: a medium structure+visual phase with margin",
+    "expectations v003 needs materially more than 14 calls above the 10-call reserve because exact searches can expand",
+    "429 write means package state unknown; spend the next safe call on readback, never on retry",
+    "fresh scope/counter/live owners can shrink or cancel a prepared package; prepared plans never override live evidence"
+  ],
+  "pixel_pass": false
+}
