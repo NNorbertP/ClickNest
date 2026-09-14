@@ -1,0 +1,115 @@
+{
+  "schema_version": 10,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "supersedes_for_planning": "reports/parity-open-items-20260914-v009.json",
+  "tool_state": {
+    "wpvibe_account_profile_verified": "ncsnorbert+20260914-5@gmail.com",
+    "wpvibe_account_email_verified": true,
+    "wpvibe_site_connection_on_plus5": "NOT_CONFIRMED",
+    "wpvibe_current_chat": "UNAVAILABLE; zero WordPress writes after tool loss",
+    "opera": "Exactly two existing tabs were reused for direct page256/page264 comparisons; no new tabs opened. Connector later disconnected; do not open replacements merely for QA.",
+    "plus5_quota": "UNKNOWN; never reuse the historical +4 counter"
+  },
+  "preserve_live_state": {
+    "page272": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid; legacy/gallery package closed; ID36 v001 documented active",
+    "page256": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid; v010 closeout + ID35 authoritative",
+    "page264": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid; ID33 active; visual v004+v005 already live",
+    "page264_additional_css": "v004 readback 611030 B / 87fb6f275f9550dfcb406ac855b1287f4cf4dbd15da226840e6d2d8c28108bb6; v005 marker readback passed at returned 611423 B; full post-v005 hash remains to be read on next safe window",
+    "header": "header-v004 CSS + ID37 route-current helper live; ID7 8px sticky preserved",
+    "page268": "CTA sibling order fixed; 46622 B / af362a9e7295cf06757b94c487e7504dbc5a01f84ee956906c16d6c93059e747"
+  },
+  "direct_evidence_new": {
+    "page256": {
+      "report": "reports/subpages/bio-direct-ax-compare-20260914-v014.json",
+      "stress": "source article vs target complementary/aside; real semantic delta",
+      "expectations": "source 2 articles vs target 0 while headings/content order match",
+      "technology": "3 article roles match",
+      "table_and_regions": "reviewed names match"
+    },
+    "page264": {
+      "report": "reports/subpages/oldtrees-direct-live-compare-20260914-v005.json",
+      "final_ax": "PASS: exact three review tab names, source-equivalent previous/next only, target numbered review dots absent from AX/focus",
+      "tiszafa": "source/target slider name and initial value 50 match",
+      "nordmann": "static AX control names source/target match for prev/next + dots 1-6",
+      "form_visual": "post-v005 panel/clock/alignment are much closer than old audit; remaining proven local delta is dark target contact-button label/value text versus source white",
+      "hero_visual": "target left copy begins lower than source at same 1640x920 screenshot; root cause still unproven",
+      "floating_dock": "global target dock visually almost empty while source shows phone/mail/CTA; target AX proves all three links exist -> visual/cascade defect"
+    }
+  },
+  "next_remote_ready_or_gated": [
+    {
+      "priority": 1,
+      "resource": "page256 first proven visual package",
+      "plan": "build/bio-visual-single-write-plan-20260914-v004.json",
+      "action": "one guarded Additional CSS insert containing bio-visual-parity-v001.css + bio-hero-layout-parity-v001.css only",
+      "gate": "WPVibe restored on +5, site connected, exact quota safely >= complete package + D11 reserve, page256 baseline matches/reconciles, fresh post8 includes page264 v004+v005 and both bio markers absent"
+    },
+    {
+      "priority": 2,
+      "resource": "page256 stress semantic microfix",
+      "plan": "build/bio-stress-article-resume-20260914-v001.json",
+      "action": "fresh raw af260007 search then exact tag-only aside->article",
+      "do_not": "no full save, no reconstructed escaped JSON"
+    },
+    {
+      "priority": 3,
+      "resource": "page264 contact text cascade microfix",
+      "build": "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "qa": "reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json",
+      "action": "three color-only page264 rules; deploy only after fresh post8/page264 readback proves v004=1,v005=1,v006=0 and no newer live fix already solved it"
+    },
+    {
+      "priority": 4,
+      "resource": "global floating quick-contact dock",
+      "plan": "build/floating-contact-dock-diagnostic-plan-20260914-v001.json",
+      "action": "DIAGNOSTIC FIRST. Read exact live ID7 markup/classes and current .dock/.af-source-dock CSS fragments; prepare smallest CSS-only fix only from proven winning cascade.",
+      "do_not": "do not recreate markup/runtime, do not touch header nav/body/footer/forms"
+    },
+    {
+      "priority": 5,
+      "resource": "page256 expectations article semantics",
+      "action": "fresh raw af260013 investigation only; mutate only if two neutral article roots are unambiguous"
+    },
+    {
+      "priority": 6,
+      "resource": "page272 ID36 successor",
+      "build": "build/hedge-semantic-runtime-v002.php",
+      "static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v003.json",
+      "gate": "fresh DOM must prove the direct-call description owner inside MetForm33; then update existing ID36 only, never create duplicate helper"
+    }
+  ],
+  "obsolete_or_hold": [
+    "build/header-runtime-active-groups-v002.json is obsolete for deployment because live ID37 already provides the route-current behavior with lower blast radius; do not reopen ID7 for this delta",
+    "build/bio-visual-parity-v002-expectations.css remains HOLD pending stronger direct visual proof",
+    "oldtrees visual v004/v005 are already live and must never be replayed"
+  ],
+  "acceptance_only_no_write_without_failure": [
+    "page264 comparison cards fresh post-v005 capture; hero vertical offset root-cause proof; review keyboard; tiszafa pointer/keyboard; Nordmann timed/swipe/reduced-motion",
+    "global header route-current/dropdown/mobile-drawer/top-vs-scrolled behavior",
+    "Gallery page258 lightbox/before-after/carousels and deterministic visual matrix",
+    "Reference Videos review/video/hero interactions and editor reopen",
+    "shared review ID14 remains globally gated on representative homepage source/target proof"
+  ],
+  "asset_blockers": [
+    "page270 portrait exact source bytes unavailable/404",
+    "page258 Ellwoodi alternate-view exact source bytes unavailable/404"
+  ],
+  "formal_blockers": [
+    "specs/acceptance.json absent",
+    "specs/behaviors.json absent",
+    "deterministic 1920/1440/1024/768/390/360 same-browser DPR/zoom overlay/diff runner unavailable",
+    "Opera connector disconnected and has no generic click/keyboard action even when connected",
+    "WPVibe connector unavailable after +5 account switch; site/quota unconfirmed",
+    "SMTP/delivery and real form submissions excluded"
+  ],
+  "critical_rules": [
+    "429-returned writes are UNKNOWN until exact readback; never blind-retry",
+    "fresh live readback beats stale STATE/history",
+    "do not modify correct content merely to obtain proof",
+    "open no extra Opera tabs to compensate for connector instability"
+  ],
+  "pixel_pass": false
+}
