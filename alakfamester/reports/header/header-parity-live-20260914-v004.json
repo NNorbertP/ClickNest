@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PARTIAL_DEPLOYMENT_VERIFIED_WRITE_THROTTLED_BEFORE_FINAL_VISUAL_QA",
+  "scope_guard": {
+    "allowed": [
+      "ElementsKit global header ID20 read-only inspection",
+      "header-only rules in Hello Additional CSS post8",
+      "Code Snippets ID7 header runtime"
+    ],
+    "untouched": [
+      "page body",
+      "hero/content sections",
+      "footer",
+      "forms",
+      "SMTP",
+      "other templates/pages"
+    ]
+  },
+  "preflight": {
+    "additional_css_post_id": 8,
+    "baseline_bytes": 576084,
+    "baseline_sha256": "7ac99daf3e30139ce30d57963506de3730db97fd62f03fc729cc3308ab5407f1",
+    "header_template_id": 20,
+    "header_bytes": 7729,
+    "header_sha256": "db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d",
+    "drift_detected": false
+  },
+  "deployed": {
+    "header_css_base": {
+      "marker": "af-project:header-live-source-v001",
+      "result_bytes": 599102,
+      "result_sha256": "221d4183d09c4f6383c50405c5ad05bc606923dd189d0e7957ce3cb2bf754adb",
+      "marker_count": 1
+    },
+    "header_runtime_id7": {
+      "active": true,
+      "sticky_threshold_px": 8,
+      "brand_accessible_name": "Alakfa mester BIRÓ JÁNOS",
+      "dropdown_accessible_names": ["Szolgáltatások", "Referenciák"],
+      "code_sha256_after_first_update": "fb27b6eab98da52e730a11831c90958a7cf7f09659d609bf4cfe5a47cfc08785",
+      "code_bytes_after_first_update": 9610
+    },
+    "desktop_alignment": {
+      "latest_saved_marker": "af-project:header-desktop-alignment-v003",
+      "intended_behavior": "desktop navigation anchored to header center; brand/actions remain independently aligned; service parent active-state selectors retained",
+      "save_reported_success": true,
+      "post_save_readback": "blocked by host HTTP 429 before confirmation"
+    }
+  },
+  "live_qa_before_v003": {
+    "semantic_pass": [
+      "brand accessible name matches source",
+      "service dropdown accessible name matches source",
+      "reference dropdown accessible name matches source",
+      "quick-contact dock accessible names match source"
+    ],
+    "visual_findings": [
+      "header height/logo plate/brand typography/CTA are close to source",
+      "desktop nav was still left of source before v003",
+      "runtime-copied dropdown button still showed a second literal caret character",
+      "service parent active pill was absent on service page before v003"
+    ],
+    "sticky_scrolled_state": "background/shadow behavior visibly present",
+    "pixel_pass": false
+  },
+  "prepared_runtime_followup_not_saved": {
+    "id": 7,
+    "changes": [
+      "set actual desktop nav aria-label to Főmenü",
+      "remove literal copied caret character from runtime dropdown trigger markup"
+    ],
+    "reason_not_saved": "host returned HTTP 429 after retries"
+  },
+  "blockers": {
+    "wpvibe": "target-side HTTP 429 without Retry-After; account quota is not exhausted",
+    "opera": "Browser Connector disconnected after v003 save; no new memory-heavy session opened"
+  },
+  "next_safe_actions": [
+    "When WPVibe is unthrottled, read back post8 and require exactly one header-live-source-v001 and one header-desktop-alignment-v003 marker before any further write.",
+    "Read Code Snippets ID7 and verify active=true, threshold 8 px, current semantic changes preserved.",
+    "Apply only the prepared Főmenü aria-label and literal caret removal if still absent; then read back code and code_error.",
+    "When Opera reconnects, reuse only one source-target pair; cache-bust and capture desktop top + scrolled header, then narrow/mobile behavior without opening extra tabs.",
+    "If v003 nav centering overshoots or regresses, replace only the v003 block; do not stack guessed CSS.",
+    "Do not claim pixel-perfect PASS until deterministic same-viewport screenshots/overlay/diff are available."
+  ]
+}
