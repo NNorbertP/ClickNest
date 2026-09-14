@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "package": "hedge-shared-media-recovery-20260914-v004",
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "Only page272 may be changed for final Hedge parity. Shared attachment metadata changes in this package only restore previously recorded pre-package values after earlier diagnostic drift.",
+  "shared_media_recovery": {
+    "status": "PASS_26_OF_26",
+    "restored_and_verified_ids": [104,105,106,107,108,109,110,111,112,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219],
+    "verification": "One combined readback matched the complete prepackage_shared_alt_map from build/hedge-shared-media-recovery-20260914-v003.json and page272 remained JSON-valid at the pre-gallery-patch baseline.",
+    "rule_after_pass": "No further shared-media metadata writes are allowed for Hedge parity."
+  },
+  "page272_pre_gallery_baseline": {
+    "bytes": 53097,
+    "sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+    "json_valid": true,
+    "gallery_widget": "b2e2c001",
+    "gallery_item_count": 28,
+    "gallery_resolution": "full"
+  },
+  "gallery_page_only_patch": {
+    "goal": "Preserve every gallery item URL, name, order and repeater _id but set eael_fg_gallery_img.id=0 for all 28 items so page272 accessible names no longer depend on shared attachment alt metadata.",
+    "method": "URL-bound match-once /wpvibe/v1/content/edit against page272 _elementor_data; no full Elementor save.",
+    "probe": {
+      "first_item": "b2e2c101",
+      "attachment_id_before": 137,
+      "attachment_id_after": 0,
+      "post_probe_item_count": 28,
+      "post_probe_resolution": "full",
+      "post_probe_json_valid": true
+    },
+    "confirmed_applied": [
+      {"repeater_id":"b2e2c101","old_attachment_id":137,"new_attachment_id":0},
+      {"repeater_id":"b2e2c102","old_attachment_id":138,"new_attachment_id":0},
+      {"repeater_id":"b2e2c103","old_attachment_id":204,"new_attachment_id":0},
+      {"repeater_id":"b2e2c104","old_attachment_id":203,"new_attachment_id":0}
+    ],
+    "last_confirmed_bytes_after_four_edits": 53089,
+    "failed_not_executed": {
+      "repeater_id": "b2e2c105",
+      "attachment_id": 206,
+      "reason": "HTTP 429 from WPVibe content/edit before execution"
+    },
+    "remaining_items": 24,
+    "expected_final_bytes_if_only_all_28_three_digit_ids_change_to_zero": 53041,
+    "resume_precondition": "Before any retry, re-read page272 JSON validity/bytes and gallery IDs. Expected resume state is 53089 bytes, first four gallery image ids zero, b2e2c105 still 206. Abort and reconcile if different.",
+    "resume_rule": "Continue only URL-bound match-once edits. Do not touch shared attachment alt metadata. After all 28 are zero, verify exact 28 URLs/names/order/repeater ids, resolution=full, JSON validity and preservation of protected page components."
+  },
+  "wpvibe": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "counter_at_checkpoint": "47/300 used",
+    "remaining_at_checkpoint": 253,
+    "mandatory_D11_reserve": 10,
+    "site_rate_limit": "HTTP 429 recurred during the fifth page-only gallery edit; no blind retry was made."
+  },
+  "protected_page272_components": ["af2e004e","af2e004d","c3d30005","af2e0011","#ajanlatkeres"],
+  "open_after_gallery": [
+    "Legacy semantic parity for af2e000f and af2e004c plus safe complete named regions.",
+    "Inspect live e-tabs schema before any review semantic change; do not guess Atomic aria attributes.",
+    "Fresh frontend preservation/accessibility verification.",
+    "Controlled six-viewport pixel/overlay/diff remains unavailable because specs/acceptance.json and specs/behaviors.json are absent and deterministic browser tooling is unavailable; PIXEL_PASS=false."
+  ]
+}
