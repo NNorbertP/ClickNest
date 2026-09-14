@@ -1,3 +1,38 @@
+# STATE - 2026-09-14, PAGE264 LIVE RUNTIME QA; PAGE-ONLY SCOPE; HOST 429
+
+## Current continuation point - Idős fák / page264 only
+Write scope: **only** `https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/` (page264). Reference: `https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html`. Do not write any other WordPress page, global template, Additional CSS, shared media, plugin setting, SMTP setting or external message for this scoped request.
+
+Fresh saved-data preflight on page264: `_elementor_data` SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, MySQL byte length **48874**, JSON valid. This exactly matches the documented page264 baseline, so there is no stored Elementor-data drift to reconcile before the next write.
+
+WPVibe account: `ncsnorbert+20260914-4@gmail.com`. Latest exact counter: **32/300 used, 268 remaining** in the rolling 24-hour window. D11 reserves 10 calls, so **258 calls are nominally available above reserve**. However, target-side WPVibe calls began returning **HTTP 429 Too Many Requests** after automatic retries despite the ample account quota; treat the current blocker as site/host throttling, not account exhaustion. Do not retry uncertain writes while throttled.
+
+### Live source-target QA completed
+Evidence: `reports/subpages/oldtrees-runtime-live-qa-20260914-v002.json`, commit `01a99640d1bb8ad6ddc712fe35f361b18a31e463`.
+- source headings: **38**; target headings: **38**; heading-name sets match;
+- source named regions: **11**; target named regions: **11**; exact ordered region names match;
+- the installed page264-only runtime helper documented as Code Snippets ID33 is visibly effective, therefore **do not replay** the older `build/oldtrees-semantic-parity-20260914-v001.json` saved-data package;
+- form accessible name/description, six radio options, text-field names/placeholders and Település help text match the source; no form submission or SMTP action was performed;
+- review tablist name already matches `Ügyfélvélemények`;
+- remaining proven review-tab accessible-name delta: target tab 2 lacks `Otolecz Andrea · ügyvezető`, target tab 3 lacks `Lőrincz Balázs · ügyvezető`;
+- target additionally exposes focusable `1. vélemény`, `2. vélemény`, `3. vélemény` controls. Do not hide/change them until keyboard/click behavior and implementation ownership are proven;
+- Nordmann current-slide identity differed because autoplay was sampled at different moments. No media change is justified by that snapshot.
+
+Top/hero screenshots were captured on source and target, but focus/load state and deterministic viewport metadata were not synchronized. They are diagnostic only; **`PIXEL_PASS=false`**. Opera later disconnected during deeper interaction checks.
+
+### Prepared, not sent
+`build/oldtrees-semantic-runtime-v002.php`, commit `be410db6810436b16c8f3f862a48e28e16ce906b`, is a page264-only, visual-neutral successor to the installed helper. Its only intended semantic change is to set review tabs 2 and 3 to the exact source full accessible names. It has **not** been deployed to WordPress because the target was throttled.
+
+### Next safe remote package
+1. Re-read exact WPVibe quota and page264 SHA/JSON validity. If SHA differs from `09f661e0...a788a`, stop and reconcile the live tree first.
+2. Read the currently installed Code Snippets ID33 body before any update; do not assume GitHub v001 is still byte-identical to live state.
+3. If live ID33 matches the documented helper contract, apply only the two review-label completions from v002 through a supported plugin-aware path; preserve the `is_page(264)` guard and every other behavior.
+4. Read back and fresh-load target; verify 38 headings, 11 exact named regions, full three source-equivalent review tab names, form semantics, and no duplicate/conflicting labels.
+5. Then test the three extra target review controls, review Arrow/Home/End behavior, tiszafa slider pointer/keyboard behavior, Nordmann carousel normal/reduced-motion behavior, and controlled visual states when Opera is stable.
+6. No SMTP, no real form submission, no global/header/footer/CSS or other-page write. Keep `PIXEL_PASS=false` until controlled screenshot/overlay/diff evidence exists.
+
+---
+
 # STATE - 2026-09-14, HEDGE PAGE272 PARTIAL CLOSEOUT; SCOPE RECOVERY 24/26; WPVIBE RESERVE
 
 ## Current Hedge continuation point
@@ -111,7 +146,7 @@ Pre-write page256 `_elementor_data` was re-read at **34930 B**, SHA256 `c84feb47
 - source named regions: hero, reviews, four content sections, FAQ; target currently exposes only the reviews region by name;
 - source review tablist name `Ügyfélvélemények`; target tablist remains unnamed;
 - source symptom-table headers are `TÜNET`, `MIT VIZSGÁLOK`, `LEHETSÉGES IRÁNY`, and the four first-column body cells are row headers; target still has title-case headers and regular cells;
-- 13 verified legacy list items on target still have trailing periods absent from the source;
+- 13 verified legacy list items on target still have trailing periods absent from source;
 - final CTA accessible-name case/order still needs the prepared semantic-only follow-up.
 
 ### Safe continuation rules
