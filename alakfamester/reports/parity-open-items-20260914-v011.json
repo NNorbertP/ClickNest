@@ -1,0 +1,70 @@
+{
+  "schema_version": 11,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "supersedes_for_planning": "reports/parity-open-items-20260914-v010.json",
+  "tool_state": {
+    "wpvibe_plus5_profile": "ncsnorbert+20260914-5@gmail.com verified; site connection/quota still unconfirmed; connector unavailable for WordPress calls",
+    "opera": "Two existing tabs reused only; no new tabs. Connector recovered temporarily and produced same-browser 1640x920 captures.",
+    "wordpress_writes_since_plus5_tool_loss": 0
+  },
+  "closed_or_strengthened_proof": [
+    "page264 final review AX proof PASS: exact three tab names; previous/next match; numbered review dots absent from target AX/focus",
+    "page264 tiszafa initial slider source/target name+value 50 match",
+    "page264 Nordmann static AX prev/next + dots 1-6 names match; interaction/timing still open",
+    "page264 v005 comparison surfaces/height correction visibly active",
+    "header service-child route-current visual state PASS on page264; duplicate caret absent",
+    "header normal-home negative route gate PASS: target Főoldal current, Szolgáltatások not incorrectly current",
+    "global floating dock visual defect reproduced on explicit target screenshots while target AX exposes all three expected controls; exact reference dock CSS contract recovered from source AX"
+  ],
+  "new_prepared_page264_microfixes": [
+    {
+      "order": 1,
+      "build": "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "qa": "reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json",
+      "reason": "post-v005 request-form green contact buttons still render dark label/value text; v004 already declares source white colors but loses cascade",
+      "effect": "three color-only page264 rules"
+    },
+    {
+      "order": 2,
+      "build": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "qa": "reports/subpages/oldtrees-visual-v007-comparison-grid-static-qa-20260914-v001.json",
+      "reason": "post-v005 source cards are equal-width while target left/right columns remain visibly unequal; v004 1fr/1fr grid contract is losing cascade",
+      "effect": "page264 comparison parent grid + child width/min-width only"
+    }
+  ],
+  "page264_do_not_patch_without_more_proof": [
+    "Hero left copy begins about 40-45px lower than source at same viewport while hero lower boundary is close; owner/cascade/root cause not yet proven.",
+    "KÉT ÚT exists in both source and target AX under the same comparison region; its absence in the anchored target screenshot may be anchor scroll ownership rather than hidden content. Do not add/rewrite copy or force visibility from that screenshot alone."
+  ],
+  "global_dock": {
+    "plan": "build/floating-contact-dock-diagnostic-plan-20260914-v002.json",
+    "status": "DIAGNOSTIC_FIRST",
+    "source_contract": "exact desktop/mobile .dock/.dock__icon/.dock__cta rules recovered from source AX",
+    "next": "fresh ID7 markup + current post8 winning declarations required before any CSS write"
+  },
+  "remote_priority_when_wpvibe_returns": [
+    "1 page256 single-write proven CSS package (bio-visual v001 + hero-layout v001) after full +5/hash/post8 gate",
+    "2 page256 af260007 aside->article exact raw tag-only microfix",
+    "3 page264 v006+v007 in one guarded post8 insert only if fresh browser/preflight still proves both failures",
+    "4 global dock live cascade diagnosis, then smallest fix only if exact target owner proves it",
+    "5 page256 af260013 article-boundary investigation",
+    "6 page272 ID36 successor only after live MetForm direct-call ownership proof"
+  ],
+  "hold_or_obsolete": [
+    "header-runtime-active-groups-v002 is obsolete: live ID37 already owns route-current behavior",
+    "bio expectations visual v002 remains HOLD",
+    "page264 visual v004/v005 are live; never replay",
+    "global review ID14 still not globally deployable: source homepage structured review-control AX proof remains unresolved because the source tree is dominated by a multi-page inline stylesheet and connector jq pagination is unreliable"
+  ],
+  "formal_open": [
+    "deterministic six-viewport overlay/diff remains unavailable",
+    "page270 portrait exact bytes unavailable",
+    "page258 Ellwoodi alternate-view exact bytes unavailable",
+    "acceptance.json and behaviors.json absent",
+    "click/keyboard interaction tooling unavailable",
+    "SMTP/delivery/real form submissions excluded"
+  ],
+  "critical_rules": ["429 write UNKNOWN until readback", "no blind replay", "zero extra Opera tabs", "fresh live readback supersedes stale state"],
+  "pixel_pass": false
+}
