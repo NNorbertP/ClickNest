@@ -1,48 +1,64 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "project": "alakfamester",
   "package": "hedge-review-semantic-runtime-static-qa-v001",
   "date": "2026-09-14",
   "target_page_id": 272,
   "build": "build/hedge-review-semantic-runtime-20260914-v001.php",
-  "build_commit": "d1fd7e134e22be6e2ec3042bb14f348af0cf7f25",
+  "build_commit": "2bbe5ee797ee2df712ebcf8d4a97082c38acee39",
   "status": "STATIC_PASS_NOT_DEPLOYED",
   "checks": {
     "page_guard_exact": "is_page(272)",
-    "stable_root_selector": ".elementor-element-c3d30005",
-    "root_source": "Existing protected native Atomic Tabs root c3d30005 from D12 / hedge-native-reviews-v001.",
+    "review_root_selector": ".elementor-element-c3d30005",
+    "review_root_source": "Existing protected native Atomic Tabs root c3d30005 from D12 / hedge-native-reviews-v001.",
     "tablist_selector": "[role=tablist] under the protected root",
     "tab_selector": "[role=tab] under the protected root",
     "exact_tab_count_expected": 3,
+    "form_region_selector": "#ajanlatkeres",
+    "metform_root_selector": ".mf-form-wrapper[data-form-id=\"33\"]",
+    "metform_contract_source": "reports/home/metform33-source-parity-v001.json plus the already deployed page264 semantic helper contract",
+    "service_group_selector": "#af-form-service .mf-input-wrapper",
+    "service_label_selector": "#af-form-service .mf-input-label",
+    "city_input_selector": "#af-form-city input[name=telepules]",
+    "city_help_selector": "#af-form-city .mf-input-help",
+    "direct_call_anchor": "form a[href=\"tel:+36305394820\"] -> closest p",
     "attribute_changes_only": true,
     "css_changes": false,
     "visible_text_changes": false,
     "dom_reordering": false,
     "event_listeners_for_click_or_keyboard": false,
+    "validation_changes": false,
+    "submission_changes": false,
     "existing_D12_keyboard_handler_touched": false,
     "extra_review_index_controls_touched": false,
-    "mutation_observer": "Re-applies only when nodes are added; required for Elementor/editor re-render lifecycle."
+    "mutation_observer": "Re-applies only when nodes are added; required for Elementor/MetForm/editor re-render lifecycle."
   },
-  "source_accessible_names": {
-    "tablist": "Ügyfélvélemények",
-    "tabs": [
+  "source_accessible_contract": {
+    "review_tablist": "Ügyfélvélemények",
+    "review_tabs": [
       "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
       "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
       "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
-    ]
+    ],
+    "form_region": "Küldjön fotót a sövényről",
+    "form": "Ajánlatkérés",
+    "form_description": "existing direct-call paragraph containing +36 30 539 48 20",
+    "service_radio_group": "Miben kér segítséget?",
+    "city_help_relation": "A kiszállás és az időpont ettől függ."
   },
   "safety": {
-    "reason_for_runtime_path": "Elementor 4.2.4 live e-tabs schema exposes an attributes array but does not expose its item wire shape. A prior page256 pilot proved guessed Atomic accessibility attributes can save without frontend emission. Runtime attributes avoid an unproven saved-data transformer and do not alter visual layout.",
+    "reason_for_runtime_path": "Elementor 4.2.4 live e-tabs schema exposes an attributes array but does not expose its item wire shape. A prior page256 pilot proved guessed Atomic accessibility attributes can save without frontend emission. Runtime attributes avoid an unproven saved-data transformer. The MetForm selectors are the existing form33 contract already documented and used by the page264 helper.",
     "deployment_gate": [
       "Fresh page272 hash must match the last accepted saved-data baseline or drift must be reconciled first.",
       "Inspect Code Snippets live inventory and confirm no existing page272 semantic helper conflicts.",
       "Use Code Snippets own REST namespace if no matching Abilities API write is registered, following the proven page264 deployment path.",
       "Read back active snippet state and page272 Elementor hash after deployment.",
-      "Fresh frontend and Elementor editor lifecycle must both show exact tablist/tab accessible names."
+      "Fresh frontend and Elementor editor lifecycle must both show exact review and form semantics without duplicate labels or behavior changes."
     ]
   },
   "open": [
     "The three extra 1./2./3. vélemény controls remain untouched until ownership and interaction behavior are proven.",
+    "Hero and gallery outer region semantics require separate complete-container proof before any runtime label is added.",
     "Formal deterministic pixel comparison remains unavailable; PIXEL_PASS=false."
   ]
 }
