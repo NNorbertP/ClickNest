@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-acceptance-ledger-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "reference": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "scope": "Authoritative page264-only acceptance ledger. No WordPress write performed by this package.",
+  "evidence_precedence": [
+    "Fresh live readback/capture outranks older audit notes.",
+    "Exact postwrite hash/marker readback outranks a successful write response.",
+    "Later reconciliation reports supersede earlier open-item lists when they prove the same item closed.",
+    "Static source/runtime contracts may define expected behavior but do not substitute for an interaction-capable live test."
+  ],
+  "accepted_live_baseline": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "elementor_json_valid": true,
+    "visual_v004": "LIVE_READBACK_PROVEN",
+    "visual_v005": "LIVE_MARKER_READBACK_PROVEN",
+    "semantic_id33": "ACTIVE_AT_LAST_VERIFICATION",
+    "semantic_id33_sha256": "810e62e37b30b553dc96212783954e808e9bf251eb5c72ab8c509beb4957b22f",
+    "semantic_id33_code_len": 3810
+  },
+  "pass_do_not_rebuild": {
+    "visible_content": [
+      "Source problem labels and seven-chip problem grid content are present.",
+      "Comparison eyebrow is Két út and all eight comparison list items plus the maintenance caveat match the diagnostic reference wording.",
+      "Source-visible 24-hour reply text is rendered and exposed; source-absent Az első alkalom eyebrow was removed.",
+      "Inline request section uses the source copy and local #ajanlatkeres destination."
+    ],
+    "structure_media": [
+      "Hero art owner af2a0052 is present with source-equivalent accessible title and description.",
+      "Problem grid owner af2a0007 contains seven source SVG icons and source-resolved 4/2/1 responsive grid contract.",
+      "Inline request section af2a0008 contains intro owner af2a0054 and MetForm33 owner af2a0055."
+    ],
+    "semantics_accessibility": [
+      "Eleven source-equivalent named regions are obtained from native reviews plus page264 ID33 regions.",
+      "Promoted process-step labels are heading level 3.",
+      "Review tablist accessible name is Ügyfélvélemények and all three tab names exactly match source.",
+      "Target-only numbered review dots are absent from keyboard/AX while their pointer presentation is preserved.",
+      "Form accessible name/description, service group labelling and Település describedby relationship are owned by ID33.",
+      "Tiszafa native range initial state is min 0 / max 100 / step 1 / value 50 and its two alt texts match the accepted source contract.",
+      "Nordmann static AX previous/next plus dots 1-6 control names match source."
+    ],
+    "form33_shared_runtime": [
+      "ID5 is the sole documented 3-5 photo-count validator for Form33, with 8 MB/file and required upload field.",
+      "ID6 is the sole documented Form33 textarea rows helper and forces effective rows=5.",
+      "Success state is configured/read back; notifications and webhooks remain disabled and entries are stored locally.",
+      "No SMTP or real/external form submission is part of this acceptance lane."
+    ],
+    "visual_already_live": [
+      "v004 source-like comparison warning/growth icons and X/check leaf bullets.",
+      "v005 beige negative card, sage positive card and equal-height stretch cascade correction.",
+      "Request section centered heading, compact 18x18 reply clock and joined white form panel are present in the freshest post-v005 comparison evidence."
+    ]
+  },
+  "ready_gated_not_deployed": {
+    "v006_contact_foreground": {
+      "build": "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "qa": "reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json",
+      "proven_failure": "Target green request-contact label/value foreground is dark while source is white.",
+      "effect": "Three page264-only color declarations; no geometry/background/content/form behavior change.",
+      "deploy_only_if": "Fresh live preflight still reproduces the failure and v006 marker count is zero."
+    },
+    "v007_comparison_grid": {
+      "build": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "qa": "reports/subpages/oldtrees-visual-v007-comparison-grid-static-qa-20260914-v001.json",
+      "proven_failure": "Post-v005 desktop target comparison cards are unequal width while source columns are equal; right card copy wraps an extra line.",
+      "effect": "Makes the existing v004 1fr/1fr + 24px grid and child width constraints win; <=900px remains one column.",
+      "deploy_only_if": "Fresh live preflight still reproduces the failure and v007 marker count is zero."
+    },
+    "single_write_bundle": {
+      "build": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+      "use_only_if": "Both v006 and v007 failures reproduce in the same fresh gate.",
+      "otherwise": "Use only the failing standalone block or write nothing."
+    }
+  },
+  "decision_matrix": {
+    "v006_fail_v007_fail": "One guarded insert of the combined v006+v007 bundle, then mandatory marker/hash readback and targeted visual regression check.",
+    "v006_fail_v007_pass": "Insert v006 standalone only.",
+    "v006_pass_v007_fail": "Insert v007 standalone only.",
+    "v006_pass_v007_pass": "No visual write."
+  },
+  "live_proof_only_no_write_without_failure": {
+    "form_service_radio_required": "Inspect fresh Form33 schema/runtime to prove submission-time mandatory enforcement. Existing evidence proves six labelled choices but not the validation contract. Change nothing if already enforced.",
+    "review_keyboard": "Verify Arrow/Home/End behavior in an interaction-capable browser; do not add review JS merely because the current Opera connector lacks action controls.",
+    "tiszafa_interaction": "Verify pointer drag and keyboard arrows update the split; native range structure already matches and must not be replaced if it passes.",
+    "nordmann_interaction": "Verify about-4000ms autoplay, ArrowLeft/Right, horizontal swipe threshold, hover/focus pause-resume and reduced-motion stop/re-evaluation.",
+    "deterministic_visual_matrix": "Exact same-browser viewport/DPR/zoom source-target captures plus overlay/diff remain required before any PIXEL_PASS=true claim."
+  },
+  "hold_no_speculative_write": {
+    "hero_vertical_geometry": {
+      "observation": "At the synchronized 1640x920 diagnostic the target left hero copy begins roughly 40-45px lower while the hero lower boundary is close.",
+      "reason": "Responsible owner/cascade has not been proven; possible contributors include child spacing/alignment, font readiness or render state.",
+      "required_before_fix": [
+        "same browser engine and exact viewport/DPR/zoom/load state",
+        "hero/root and copy-column bounding boxes",
+        "computed padding/margin/gap/align/min-height/line-height on the responsible source and target owners",
+        "proof that the delta belongs to page264 rather than shared/global layout"
+      ],
+      "rule": "No margin/padding/transform patch from screenshot impression alone."
+    },
+    "comparison_eyebrow_anchor": "KÉT ÚT exists in source and target AX under the same comparison region; anchored screenshot offset is not proof of hidden/missing content.",
+    "floating_dock": "The visual defect is real but its owner is global. This page264-only task must not deploy a global dock fix; any future page264 correction requires exact cascade ownership and body.page-id-264 scoping."
+  },
+  "regression_invariants": [
+    "Do not change page264 Elementor data when applying v006/v007 CSS; accepted hash must remain reconciled unless a separately proven page-content change is intentionally authorized.",
+    "Preserve element IDs af2a0052, af2a0007, af2a0045, af2a0008, af2a0054, af2a0055 and existing order/ownership.",
+    "Preserve ID33 is_page(264) guard and do not duplicate ID14/ID33 behaviors.",
+    "Preserve v004/v005 blocks exactly; never replay older v001-v005 visual bundles.",
+    "Preserve ID5 photo validator and ID6 textarea helper; do not add duplicates.",
+    "Do not modify other pages, global header/footer, shared media, shared plugin settings, SMTP, notifications or webhooks.",
+    "On any HTTP 429 write response classify outcome UNKNOWN until exact readback; never blind-retry.",
+    "Use at most one reference and one target Opera tab; reuse them and stop on connector instability instead of opening replacements."
+  ],
+  "remote_preflight_contract": [
+    "Verify WPVibe identity ncsnorbert+20260914-5@gmail.com, target-site connection and exact rolling quota; preserve at least 10 calls after the complete selected package.",
+    "Read page264 Elementor length/hash/JSON validity and reconcile any drift before write.",
+    "Read compact Additional CSS marker/hash inventory; require af-project:end=1, v004=1 and v005=1; selected new marker(s) must be zero before insert.",
+    "Fresh-check v006/v007 visual failures using only the existing two-tab source/target pair.",
+    "Perform at most one guarded match-once Additional CSS insertion selected by the decision matrix.",
+    "Read back selected marker(s), unique af-project:end and unchanged page264 data hash/JSON even after an apparently successful write.",
+    "Recheck only changed sections plus adjacent preserved geometry before spending calls on read-only form/interaction acceptance."
+  ],
+  "tool_state_at_ledger_creation": {
+    "wpvibe": "Unavailable/disabled in the current conversation; no WordPress write attempted.",
+    "opera": "Connector disconnected after reuse of the two existing tabs; no new/replacement tab opened.",
+    "github": "Available for repository reconciliation and documentation only."
+  },
+  "sources": [
+    "reports/subpages/oldtrees-content-parity-v003.json",
+    "reports/subpages/oldtrees-hero-v4-v001.json",
+    "reports/subpages/oldtrees-problem-grid-v001.json",
+    "reports/subpages/oldtrees-inline-form-v001.json",
+    "reports/subpages/oldtrees-source-parity-fix-20260914-v001.json",
+    "reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json",
+    "reports/subpages/oldtrees-direct-live-compare-20260914-v005.json",
+    "reports/subpages/oldtrees-post-v005-visual-qa-20260914-v007.json",
+    "reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json",
+    "reports/home/metform33-source-parity-v001.json",
+    "build/oldtrees-semantic-runtime-v003.php",
+    "build/source-interactions-v001.js",
+    "build/oldtrees-next-remote-window-20260914-v001.json"
+  ],
+  "wordpress_writes": 0,
+  "opera_new_tabs": 0,
+  "pixel_pass": false,
+  "status": "AUTHORITATIVE_PAGE264_ACCEPTANCE_LEDGER_READY_FOR_NEXT_LIVE_WINDOW"
+}
