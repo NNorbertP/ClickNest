@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-next-remote-window-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "scope": "page264 only; no remote work performed by this preparation",
+  "objective": "Close the two reproducibly proven post-v005 local cascade deltas with the fewest safe WordPress calls, then spend the remaining safe window on read-only acceptance.",
+  "current_remote_truth_to_recheck": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "elementor_json_valid": true,
+    "visual_v004": "live",
+    "visual_v005": "live",
+    "visual_v006": "prepared_not_deployed",
+    "visual_v007": "prepared_not_deployed"
+  },
+  "remote_sequence": [
+    {
+      "step": 1,
+      "action": "Verify WPVibe authenticated identity is ncsnorbert+20260914-5@gmail.com, verify target site connection, read exact rolling 24h quota.",
+      "stop": "If site not connected or quota cannot cover the selected package plus 10-call D11 reserve, perform no write."
+    },
+    {
+      "step": 2,
+      "action": "Fresh read page264 _elementor_data compact hash/length/JSON validity only.",
+      "stop": "If baseline differs, reconcile live state before any write; do not restore old data."
+    },
+    {
+      "step": 3,
+      "action": "Fresh server-side Additional CSS post8 compact marker/hash inventory without round-tripping the full field through chat.",
+      "require": ["af-project:end=1", "af-oldtrees-visual-v004=1", "af-oldtrees-visual-v005=1"],
+      "inspect": ["af-oldtrees-visual-v006", "af-oldtrees-visual-v007"],
+      "stop": "Unexpected counts or drift require reconciliation before write."
+    },
+    {
+      "step": 4,
+      "action": "With one reused source tab + one reused target tab, fresh-check only the two known deltas before writing: request contact foreground and desktop comparison equal-column geometry.",
+      "decision": {
+        "both_fail": "Use build/oldtrees-visual-v006-v007-single-write-bundle.css in one guarded match-once insertion before af-project:end.",
+        "only_v006_fails": "Use build/oldtrees-visual-v006-contact-text-cascade.css only.",
+        "only_v007_fails": "Use build/oldtrees-visual-v007-comparison-grid-cascade.css only.",
+        "neither_fails": "No visual write."
+      },
+      "memory": "Do not open replacement Opera tabs; if connector is unstable, stop instead of deploying from stale screenshots."
+    },
+    {
+      "step": 5,
+      "action": "If a visual write was selected, run exactly one guarded server-side content/edit insertion. If HTTP 429 is returned, classify write outcome UNKNOWN and do not retry."
+    },
+    {
+      "step": 6,
+      "action": "Read back selected marker(s), unique af-project:end and unchanged page264 hash/JSON. This is mandatory even if the write call reported success."
+    },
+    {
+      "step": 7,
+      "action": "Fresh source/target targeted screenshots/readbacks for only the changed sections and adjacent content. Verify no regression in v005 surfaces/icons/bullets or request-panel geometry. Do not full-cache-purge unless render is demonstrably stale."
+    },
+    {
+      "step": 8,
+      "action": "If calls remain safely above D11 reserve, inspect Form33 service/topic radio submission-time required schema/runtime read-only. Change nothing if already enforced."
+    },
+    {
+      "step": 9,
+      "action": "Spend any further safe acceptance capacity on review keyboard, tiszafa pointer/keyboard and Nordmann timing/reduced-motion. No duplicate JS without a failing proof."
+    }
+  ],
+  "known_proven_deltas": {
+    "v006": "Green request contact-button label/value foreground dark on target vs white source.",
+    "v007": "Post-v005 desktop comparison target cards unequal widths vs equal source columns; positive copy wraps one extra line."
+  },
+  "do_not_touch": [
+    "other WordPress pages",
+    "global header/footer",
+    "shared media",
+    "existing page264 Elementor content/IDs unless fresh drift diagnosis explicitly requires it",
+    "v004/v005 blocks",
+    "Code Snippets ID33/ID14",
+    "MetForm33 ID5 photo validator or ID6 textarea rows helper",
+    "SMTP/notifications/webhooks",
+    "global floating dock from this page264 task; diagnose only unless a correction can be proven and scoped to body.page-id-264"
+  ],
+  "estimated_remote_call_shape": {
+    "note": "Estimate only; exact account counter must be read first.",
+    "core_preflight_and_closeout": "approximately 5-8 WPVibe calls depending on whether a write is needed and whether compact hash/marker checks can be combined",
+    "mandatory_reserve_after_package": 10,
+    "rule": "Do not start the remote write package if measured remaining capacity cannot cover the whole selected package plus reserve."
+  },
+  "formal_limits": [
+    "PIXEL_PASS remains false without deterministic same-browser exact viewport/DPR/zoom overlay/diff tooling.",
+    "Hero vertical offset remains diagnostic-only until exact geometry/computed-style owner is proven.",
+    "Floating dock remains diagnostic-only in this page264 scope until exact live cascade is known."
+  ],
+  "wordpress_writes": 0
+}
