@@ -1,0 +1,10 @@
+/* af-bio-faq-cta-eyebrow-v001:start
+ * Source DOM text is title-case "Következő lépés" and .eyebrow uppercases it
+ * visually. Keep the generated target label visually uppercase while exposing
+ * the source-like underlying string when CSS generated text enters AX.
+ */
+body.page-id-256 #af-sub-bio-cta > #af-sub-bio-cta-title::before {
+  content: "Következő lépés" !important;
+  text-transform: uppercase !important;
+}
+/* af-bio-faq-cta-eyebrow-v001:end */
