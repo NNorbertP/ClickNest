@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "package": "hedge-form-required-server-plan-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "form_id": 33,
+  "status": "DESIGN_REFINED_EXISTING_ID36_OWNER_EXACT_FIELD_AND_ID5_LIVE_READ_REQUIRED",
+  "supersedes": "build/hedge-form-required-server-plan-20260914-v001.json",
+  "wordpress_writes": 0,
+  "decision": "D05",
+  "goal": "Genuinely enforce the required Miben kér segítséget? choice for page272-origin Form33 submissions without modifying shared Form33 settings, creating a second validator snippet or changing other pages.",
+  "code_snippets_scope_proof": {
+    "current_ID36": "front-end scope; is_page(272) guard inside its footer callback",
+    "plugin_execution_source": "Code Snippets snippet-ops selects active PHP scopes global, single-use and is_admin() ? admin : front-end.",
+    "consequence": "A non-admin MetForm REST request can load the existing front-end-scoped ID36 PHP snippet. A future mf_after_validation_check filter can therefore be registered at snippet top level without changing ID36 scope to global.",
+    "safety": "Keep the existing wp_footer semantic code separately guarded by is_page(272). The server filter itself must use strict Form33 route + referer post-id guards because is_page() is not the REST scope mechanism."
+  },
+  "proven_metform_scope": {
+    "entries_api": "Api::post_insert reads wp_get_referer(), converts it with url_to_postid(), and passes that post_id into Action::submit.",
+    "validation_hook": "Action::submit applies mf_after_validation_check after built-in validation and returns an error when is_valid=false.",
+    "page_guard": "Future filter resolves the same wp_get_referer() through url_to_postid() and requires integer 272.",
+    "route_guard": "Require exact/current Form33 entries insert route using the same convention already proven by ID5.",
+    "field_guard": "Use only the exact live-read service radio mf_input_name; never infer from label text."
+  },
+  "recommended_sequence": [
+    "1 Deploy/verify the already prepared semantic-only ID36 v003 first when its existing live gates pass; keep ID36 front-end scope unchanged.",
+    "2 In a later narrow read, obtain exact #af-form-service widget ID/type/mf_input_name/mf_input_required/options and current ID5 body/priority/state.",
+    "3 Generate an ID36 v004 candidate by preserving v003 semantic code byte-for-byte and adding one named top-level mf_after_validation_check callback only.",
+    "4 Update existing ID36 only; no second snippet and no scope change.",
+    "5 Run the non-delivery direct callback tests, then read back ID36 and unchanged page272/Form33 saved state."
+  ],
+  "future_filter_contract": {
+    "callback_name": "af_hedge_validate_required_service (name reserved for plan; final code generated only after exact field read)",
+    "preexisting_failure": "If incoming is_valid is already false, return the entire result unchanged so ID5/photo or other validator messages are never overwritten.",
+    "other_route": "Return unchanged.",
+    "other_page_referer": "Return unchanged.",
+    "missing_or_empty_exact_service_field": "Return is_valid=false with user-visible message only after the current/native/source error copy has been proven.",
+    "present_service_field": "Return unchanged; do not whitelist guessed values until current six exact option values are read.",
+    "shared_Form33_mutation": false,
+    "ID5_mutation": false,
+    "ID6_mutation": false
+  },
+  "mandatory_reads_before_v004_generation": [
+    "Current page272 accepted baseline/hash and current ID36 v003 or v001 body/state depending actual deployment state.",
+    "Current #af-form-service exact MetForm widget settings: widget ID/type, mf_input_name, mf_input_required, six option values/order.",
+    "Current ID5 exact body, hook priority/registration style, active state, code_error and route guard.",
+    "Current Code Snippets ID36 scope must still be front-end; if scope drifted, stop and reconcile before code generation."
+  ],
+  "nondelivery_test_plan": "build/hedge-form-required-nondelivery-test-plan-20260914-v001.json",
+  "do_not": [
+    "Do not create a new global validator snippet by default.",
+    "Do not change ID36 to global scope merely for REST validation.",
+    "Do not modify shared Form33 settings from page272 scope.",
+    "Do not guess service field name, values or visible error copy.",
+    "Do not call a real MetForm submit route for acceptance in the current no-submission mode."
+  ],
+  "smtp_or_external_submission": false,
+  "pixel_pass": false
+}
