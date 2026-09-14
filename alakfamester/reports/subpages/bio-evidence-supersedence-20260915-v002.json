@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "package": "bio-evidence-supersedence-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "purpose": "Deployment precedence only. Prevent stale page256 plans/CSS from being replayed after the latest accessibility-safe FAQ/CTA and visual-wave refinements. No WordPress write is authorized by this file.",
+  "scope_gate": "Current authoritative STATE.md remains page264-only. Page256 is read-only until a normal scope handoff.",
+  "authoritative_planning": [
+    {"file":"reports/subpages/bio-continuation-20260914-v023.json","role":"latest broad continuation before later static-only refinements"},
+    {"file":"reports/subpages/bio-convergence-ledger-20260914-v002.json","role":"section pass/open map"},
+    {"file":"reports/subpages/bio-content-parity-manifest-20260914-v001.json","role":"protected copy manifest"},
+    {"file":"reports/subpages/bio-ax-role-count-gate-20260914-v001.json","role":"semantic rollback/count gate"},
+    {"file":"specs/bio-final-acceptance-20260914-v001.json","role":"page256 acceptance criteria"},
+    {"file":"build/bio-responsive-source-contract-20260914-v001.json","role":"responsive source contract"},
+    {"file":"build/bio-remote-call-budget-20260914-v002.json","role":"current +5/unknown-quota budgeting framework except its FAQ/CTA v005 pointer is superseded below"}
+  ],
+  "current_remote_candidates_after_scope_handoff": [
+    {"file":"build/bio-visual-single-write-plan-20260914-v007.json","status":"FIRST_VISUAL_PHASE_CURRENT"},
+    {"file":"build/bio-page256-next-safe-package-20260914-v014.json","status":"STRUCTURAL_MICROFIX_QUEUE_CURRENT"},
+    {"file":"build/bio-stress-source-visual-20260914-v002.json","status":"STRESS_VISUAL_AFTER_STRUCTURE"},
+    {"file":"build/bio-semantic-resume-20260914-v013.json","status":"TAG_ONLY_SEMANTIC_PROBE_AFTER_FRESH_SEARCH"},
+    {"file":"build/bio-table-source-structure-20260914-v001.json","status":"TABLE_STRUCTURE_CURRENT"},
+    {"file":"build/bio-expectations-source-structure-20260914-v003.json","status":"EXPECTATIONS_STRUCTURE_CURRENT"},
+    {"file":"build/bio-faq-cta-source-layout-20260914-v006.json","status":"FAQ_CTA_CURRENT_ACCESSIBILITY_SAFE"},
+    {"file":"build/bio-review-anchor-parity-20260914-v001.json","status":"REVIEW_DEEPLINK_AFTER_SAFE_OWNER_PROOF"},
+    {"file":"build/bio-reviews-cascade-diagnostic-20260914-v001.json","status":"REVIEW_ORDINAL_DOT_OWNER_GATE"},
+    {"file":"build/bio-review-third-author-role-text-20260914-v001.json","status":"VISIBLE_TEXT_MICROFIX_ONLY_AFTER_FRESH_EXACT_CONFIRMATION"},
+    {"file":"build/bio-review-decor-source-20260914-v001.json","status":"OPTIONAL_HOLD_UNTIL_PSEUDO_OWNER_PROOF"}
+  ],
+  "first_visual_phase_v007": {
+    "current_components": [
+      "build/bio-visual-parity-v001.css",
+      "build/bio-hero-layout-parity-v003.css",
+      "build/bio-card-mobile-source-v001.css",
+      "build/bio-table-section-tone-v001.css",
+      "build/bio-wave-source-core-v001.css",
+      "build/bio-review-quote-source-color-v002.css"
+    ],
+    "critical_dependency": "Only the first three source waves belong to v007. The expectations->FAQ fourth wave is held for the FAQ paper conversion transaction."
+  },
+  "faq_cta_v006": {
+    "plan": "build/bio-faq-cta-source-layout-20260914-v006.json",
+    "layout_css": "build/bio-faq-cta-source-layout-v002.css",
+    "reason_for_v006": "Static accessibility QA found that generating the source eyebrow from h2::before could contaminate the H2 accessible name. v002 layout generates the eyebrow as a separate outer-section ::after grid item and suppresses h2::before.",
+    "structural_predecessors": [
+      "build/bio-page256-next-safe-package-20260914-v014.json operation 1: remove the sole af-faq-content order:10 owner",
+      "build/bio-cta-mail-structure-20260914-v001.json: preserve exact mail href/aria-label/strings and create deterministic .af-sub-cta-label child"
+    ],
+    "transaction_components_if_marker_count_zero": [
+      "build/bio-wave-source-faq-v001.css",
+      "build/bio-faq-cta-source-layout-v002.css",
+      "build/bio-faq-cta-mail-label-v001.css",
+      "build/bio-faq-cta-mail-interaction-v001.css",
+      "build/bio-faq-cta-button-interaction-v001.css",
+      "build/bio-faq-cta-section-spacing-v001.css"
+    ],
+    "shared_dependencies_may_already_be_live": ["build/bio-visual-parity-v001.css","build/bio-card-mobile-source-v001.css"],
+    "semantic_contract": [
+      "H2 accessible name remains exactly Egészségi problémát lát az alakfán?",
+      "Következő lépés is a separate generated static text, not part of the H2 accessible name",
+      "mailto accessible name remains exactly ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+      "native FAQ control names/answers remain unchanged"
+    ]
+  },
+  "superseded_planning_do_not_replay": [
+    {"pattern":"build/bio-visual-single-write-plan-20260914-v003..v006.json","by":"v007"},
+    {"file":"build/bio-page256-next-safe-package-20260914-v012.json","by":"v014"},
+    {"file":"build/bio-page256-next-safe-package-20260914-v013.json","by":"v014"},
+    {"pattern":"build/bio-faq-cta-source-layout-20260914-v001..v005.json","by":"v006"},
+    {"file":"build/bio-next-window-deployment-plan-20260914-v013.json","reason":"historical +4 quota and hero-v001 assumptions; use current +5 read-first planning and specific current packages instead"},
+    {"file":"build/bio-remote-call-budget-20260914-v001.json","by":"v002"},
+    {"file":"reports/subpages/bio-evidence-supersedence-20260914-v001.json","by":"this v002 map"}
+  ],
+  "obsolete_or_disproved_do_not_deploy": [
+    {"file":"build/bio-hero-layout-parity-v001.css","reason":"generic hero geometry, superseded by actual source hero-inner contract"},
+    {"file":"build/bio-hero-layout-parity-v002.css","reason":"mixed corrected geometry with duplicate/unneeded decorative icons"},
+    {"file":"build/bio-hero-decorative-icons-v001.css","reason":"fresh target already exposes source icons"},
+    {"file":"build/bio-visual-parity-v002-expectations.css","reason":"source screenshot disproved its two-list-card structure"},
+    {"file":"build/bio-technology-callout-v001.css","reason":"fresh target already has source-like callout surface/rail"},
+    {"file":"build/bio-technology-callout-20260914-v001.json","reason":"wrapper would duplicate existing ownership"},
+    {"file":"build/bio-review-quote-source-color-v001.css","reason":"misses source responsive quote-width rule; use v002"},
+    {"file":"build/bio-wave-source-exact-v001.css","reason":"do not deploy all four waves early; split core first three and FAQ-dependent fourth"},
+    {"file":"build/bio-faq-cta-source-layout-v001.css","reason":"replaced by accessibility-safe v002 layout"},
+    {"file":"build/bio-faq-cta-generated-label-guard-v001.css","reason":"v002 directly owns outer ::after as the separate source eyebrow"},
+    {"file":"build/bio-faq-cta-eyebrow-accessible-v001.css","reason":"v002 no longer generates eyebrow from h2::before"},
+    {"item":"Atomic g-af-src-wave mutation direction","reason":"exact SVG CSS on rendered divider IDs is more accurate and avoids D18 Atomic class mutation"}
+  ],
+  "budget_correction": "bio-remote-call-budget-v002 remains the current budgeting framework, but its phase_6_FAQ_CTA_v005 package pointer is superseded by bio-faq-cta-source-layout-v006. Re-estimate the exact phase cost from fresh live marker/predecessor state before execution; do not replay v005 for the sake of matching the old estimate.",
+  "rules": [
+    "Fresh live state always outranks this map.",
+    "Current artifact means candidate, not permission to write.",
+    "Fresh content/search bytes are mandatory before all structural edits; prepared escaped snippets are never future old_content.",
+    "Run structural units separately from CSS rollback units.",
+    "Never insert marker=1 dependencies twice; marker>1 means stop/reconcile.",
+    "Any HTTP 429 write is UNKNOWN until exact readback; never blind retry.",
+    "Preserve >=10 WPVibe calls for D11 closeout/recovery."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "PAGE256_ARTIFACT_PRECEDENCE_RECONCILED_TO_VISUAL_V007_FAQ_CTA_V006"
+}
