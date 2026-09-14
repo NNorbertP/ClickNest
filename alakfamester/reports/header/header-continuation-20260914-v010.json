@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-14",
+  "scope": "HEADER ONLY",
+  "status": "LOCAL_AND_READ_ONLY_AUDIT_COMPLETE_REMOTE_DEPLOYMENT_BLOCKED",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "user_write_boundary": "No WordPress body/footer/form/SMTP/other-page writes; only the global header is allowed.",
+  "last_verified_live_wordpress_baseline": {
+    "post8_bytes": 600999,
+    "post8_sha256": "8cd8a9cfb804ba6ca5ab57a8ff59d7858c2e14bfb940f4921f2bceddefd80b83",
+    "base_marker": "af-project:header-live-source-v001",
+    "deployed_refinement": "af-project:header-desktop-alignment-v003",
+    "header20_bytes": 7729,
+    "header20_sha256": "db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d",
+    "snippet7_bytes": 9723,
+    "snippet7_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "snippet7_active": true
+  },
+  "confirmed_keep_existing": [
+    "Homepage Főoldal current state already shows the source-like sage pill and bronze 6x6 leaf indicator; do not replace this with runtime route logic.",
+    "Closed desktop Főmenü name, top-level order, link/button roles and popup names match the source.",
+    "Closed native ElementsKit submenu is not exposed in the accessibility tree.",
+    "Existing brand/CTA/header base styling is close enough to preserve while replacing only the refinement layer."
+  ],
+  "confirmed_remaining_deltas": [
+    "Target header landmark is sectionHeader; source is header/banner.",
+    "Target brand link has correct full accessible name but the visual tagline is announced separately and the separate logo remains an unnamed image node; source brand is one link containing both text rows with no separate decorative image announcement.",
+    "Target popup triggers expose copied SVG caret as an unnamed image child; source caret is decorative/not exposed.",
+    "Deployed v003 alignment is an absolute/fixed-column approximation; source CSS proves natural-width brand/nav/actions in a space-between flex row.",
+    "Source exact responsive contracts at 1460/1240/900/560 are not all represented by deployed target rules.",
+    "Source service/reference parent current-section and exact current-child states need runtime route mapping for custom WordPress menu parents.",
+    "Source dropdown keyboard contract includes panel ArrowUp/ArrowDown traversal; target current runtime has not implemented full traversal.",
+    "Source mobile drawer focuses first interactive item on open; target current runtime does not.",
+    "Original ElementsKit submenu remains in DOM beside the custom runtime submenu; closed state is not exposed, but the authoritative package adds scoped visual+a11y duplicate suppression only when the custom host exists."
+  ],
+  "authoritative_specs": {
+    "contract": {"path":"specs/header-contract-v001.json","commit":"87b58189a3c43505adac039bbd19168f8598a101"},
+    "acceptance": {"path":"specs/header-acceptance-v001.json","commit":"43da03549f73600e922101cb9d39fe6fb3c751c5"},
+    "behaviors": {"path":"specs/header-behaviors-v001.json","commit":"109ba113d5b4d7970e16dbe0e87762895aec01be"},
+    "a11y": {"path":"specs/header-a11y-v001.json","commit":"2f98ae48a402ae596f330a01f5754cc47c97c5ba"}
+  },
+  "authoritative_next_build": {
+    "css": {"path":"build/header-source-flex-responsive-v007.css","commit":"6913d2d0994c4f8c36d39a55c3c0ab4a5bd1e38d","status":"prepared_not_deployed"},
+    "runtime": {"path":"build/header-runtime-parity-v008.json","commit":"4d2623dc3a0f377dd421e63143925e6f35263c57","status":"prepared_not_deployed"},
+    "deployment": {"path":"build/header-deployment-plan-v009.json","commit":"ac315ba84fdacfc4cf16402adcf3ffacb005b403","status":"authoritative"},
+    "index": {"path":"reports/header/README.md","commit":"bd39f1ffb27e58c4953278b4029abc733e41410d"}
+  },
+  "diagnostic_evidence": {
+    "home_current_state": {"path":"reports/header/header-home-current-state-20260914-v001.json","commit":"b35ad2db4fdd7cf0cb330ecc5304821a695f3337"},
+    "source_css_js_audit": {"path":"reports/header/header-source-css-js-audit-20260914-v006.json","commit":"ea2fef3e1568f5225fb7daa825ee489536b7780e"},
+    "source_flex_static_qa": {"path":"reports/header/header-source-flex-responsive-v006-static-qa.json","commit":"da190bda341175a4ec90bf348497ee357efa92a0"}
+  },
+  "browser_hygiene": {
+    "tabs": 2,
+    "source_tab": "reused for reference page/styles.css/script.js",
+    "target_tab": "reused for target page/a11y/screenshot checks",
+    "new_tabs_opened": 0,
+    "connector": "intermittent but read-only tree and latest homepage screenshot pair were obtained without spawning replacement tabs"
+  },
+  "remote_blocker": {
+    "wpvibe": "tool unavailable/disabled in this conversation; do not attempt alternative unsafe WordPress write paths",
+    "requested_account": "ncsnorbert+20260914-5@gmail.com",
+    "fresh_quota": "unknown",
+    "minimum_required_before_start": 25,
+    "why": "8 expected calls + 10 mandatory reserve + 7 retry margin because this host previously amplified 429 retries"
+  },
+  "next_action_when_unblocked": [
+    "Verify requested -5 WPVibe profile, site connection and fresh quota >=25.",
+    "Fresh-read post8/header20/snippet7; reconcile any drift against baseline before write.",
+    "Replace only deployed v003 refinement with complete CSS v007, read back markers/hash.",
+    "Apply only runtime v008 deltas through Code Snippets REST, read back active/code_error/protected values.",
+    "Reuse the same two Opera tabs and run a11y, behavior and visual acceptance specs; rollback isolated owner on regression.",
+    "Keep PIXEL_PASS=false until deterministic viewport/DPR/zoom/load-state screenshot pairs, overlay/diff and behavior tests pass."
+  ],
+  "pixel_pass": false
+}
