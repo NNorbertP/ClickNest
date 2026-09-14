@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "package": "hedge-gallery-page-only-finalization-20260914-v005",
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "status": "GALLERY_PASS_SEMANTIC_NEXT_BLOCKED_BY_429",
+  "shared_media_recovery": {
+    "status": "PASS_26_OF_26",
+    "rule": "No further shared attachment metadata writes for Hedge parity."
+  },
+  "page272_gallery_final": {
+    "bytes": 53041,
+    "sha256": "b283e07f441a11a8f2390a685c91323ea66d58be2b15713c2b4e6d1ca35d0627",
+    "json_valid": true,
+    "widget_id": "b2e2c001",
+    "item_count": 28,
+    "gallery_image_object_count": 28,
+    "image_id_zero_count": 28,
+    "resolution": "full",
+    "protected_components_present": {
+      "hero_af2e004e": true,
+      "proof_af2e004d": true,
+      "reviews_c3d30005": true,
+      "metform_af2e0011": true
+    },
+    "method": "28 URL-bound match-once content/edit operations on page272 _elementor_data; URLs, names, order and repeater ids preserved; no full Elementor save and no shared-media dependency remains.",
+    "frontend_verification": "Fresh rendered EAEL widget reports 28 items, uses original .webp upload URLs rather than medium thumbnails, and exposes page-specific item names as image alt text."
+  },
+  "next_package": {
+    "scope": "page272 legacy semantic parity only",
+    "planned_reads_first": ["af2e000f", "af2e004c", "af2e0007", "af2e0045", "af2e0047", "af2e0049"],
+    "planned_writes_after_exact_search": [
+      "restore complete IRJON BATRAN + kreativ@alakfa-mester.hu mailto clickable range in af2e000f while preserving #ajanlatkeres",
+      "preserve the 24-hour reply sentence in af2e004c and give the two existing contact links exact source accessible names without href/style changes",
+      "add source-equivalent named-region semantics only to complete legacy-contained sections af2e0007, af2e0045, af2e0047, af2e0049, af2e000f"
+    ],
+    "reviews_rule": "Do not guess Atomic aria attributes. Inspect live e-tabs schema before any review semantic write."
+  },
+  "blocker": {
+    "type": "HTTP_429",
+    "event": "First supported content/search for af2e000f was rate-limited; no semantic write executed.",
+    "resume_rule": "Do not repeat blindly. Re-read exact call counter and page272 hash first; require page272 SHA256 b283e07f441a11a8f2390a685c91323ea66d58be2b15713c2b4e6d1ca35d0627 before semantic work."
+  },
+  "acceptance_open": {
+    "pixel_pass": false,
+    "reason": "specs/acceptance.json and specs/behaviors.json are absent and deterministic six-viewport screenshot/overlay/diff tooling is unavailable."
+  }
+}
