@@ -1,0 +1,103 @@
+{
+  "version": "header-acceptance-v001",
+  "date": "2026-09-14",
+  "scope": "global header only",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "contract": "specs/header-contract-v001.json",
+  "measurement_policy": {
+    "same_browser": true,
+    "same_viewport": true,
+    "same_dpr": true,
+    "same_zoom": true,
+    "same_scroll_state": true,
+    "same_load_state": "wait for document fonts and header assets before capture",
+    "visitor_state": "logged out / no admin bar for acceptance images",
+    "pixel_pass_rule": "No whole-site percentage promise. Record actual per-capture difference metrics and geometry deltas. Header PIXEL_PASS stays false until controlled paired captures + overlay + diff exist."
+  },
+  "viewports": [
+    {"width":1920,"height":1080,"purpose":"wide desktop"},
+    {"width":1461,"height":900,"purpose":"desktop immediately above compact-nav breakpoint"},
+    {"width":1460,"height":900,"purpose":"compact-nav breakpoint"},
+    {"width":1440,"height":1000,"purpose":"primary desktop reference"},
+    {"width":1241,"height":900,"purpose":"last desktop-nav state"},
+    {"width":1240,"height":900,"purpose":"drawer breakpoint"},
+    {"width":1024,"height":900,"purpose":"drawer + header CTA visible"},
+    {"width":901,"height":900,"purpose":"last 76px header + CTA state"},
+    {"width":900,"height":900,"purpose":"68px header + CTA hidden"},
+    {"width":768,"height":1024,"purpose":"tablet drawer"},
+    {"width":561,"height":844,"purpose":"last full-brand state"},
+    {"width":560,"height":844,"purpose":"compact-brand breakpoint"},
+    {"width":390,"height":844,"purpose":"primary mobile"},
+    {"width":360,"height":800,"purpose":"narrow mobile"}
+  ],
+  "selector_pairs": {
+    "header_root": {"source":".header","target":"#af-site-header"},
+    "header_inner": {"source":".header__inner","target":".elementor-element-a1000002>.e-con-inner"},
+    "brand": {"source":".brand","target":"#af-header-brand"},
+    "brand_mark": {"source":".brand__mark","target":".elementor-element-a1000004"},
+    "brand_name": {"source":".brand__name","target":".elementor-element-a1000006 .elementor-heading-title"},
+    "brand_tag": {"source":".brand__tag","target":".elementor-element-a1000007 .elementor-heading-title"},
+    "desktop_nav": {"source":".nav","target":"#af-header-nav"},
+    "home_link": {"source":".nav__link[href*='index']","target":"#af-header-nav a.ekit-menu-nav-link[href='https://alakfamester-wp.clicknest.hu/']"},
+    "services_trigger": {"source":".js-dropdown-trigger[aria-controls*='service'], .js-dropdown-trigger:first-of-type","target":"#af-nav-services"},
+    "references_trigger": {"source":".js-dropdown-trigger[aria-controls*='refer'], .js-dropdown-trigger:last-of-type","target":"#af-nav-references"},
+    "dropdown_panel": {"source":".nav__panel","target":".af-nav-dropdown-panel"},
+    "header_cta": {"source":".header__actions .btn","target":"#af-header-actions .elementor-button"},
+    "menu_toggle": {"source":".js-menu-toggle","target":".af-mobile-menu-toggle"},
+    "mobile_nav": {"source":".js-mobile-nav","target":"#af-mobile-nav"}
+  },
+  "geometry_assertions": [
+    {"element":"header_root","property":"height","expected_desktop_px":76,"expected_at_or_below_900_px":68,"tolerance_px":1},
+    {"element":"header_inner","property":"max-width","expected_px":1340,"tolerance_px":1},
+    {"element":"brand_mark","property":"size","expected_desktop_px":"69x46","expected_at_or_below_560_px":"57x38","tolerance_px":1},
+    {"element":"services_trigger","property":"min-height","expected_px":44,"tolerance_px":1},
+    {"element":"references_trigger","property":"min-height","expected_px":44,"tolerance_px":1},
+    {"element":"header_cta","property":"min-height","expected_px":44,"tolerance_px":1},
+    {"element":"dropdown_panel","property":"min-width","expected_px":268,"tolerance_px":1},
+    {"element":"menu_toggle","property":"size","expected_px":"48x48","tolerance_px":1}
+  ],
+  "typography_assertions": [
+    {"element":"brand_name","desktop_font_family":"Georgia","desktop_size_rem":1.16,"weight":700,"line_height":1.1},
+    {"element":"brand_tag","desktop_size_rem":0.68,"weight":600,"letter_spacing_em":0.16,"text_transform":"uppercase"},
+    {"element":"services_trigger","desktop_size_rem":0.92,"desktop_weight":600,"compact_1460_size_rem":0.84},
+    {"element":"brand_name","at_or_below_560_size_rem":1.04}
+  ],
+  "responsive_assertions": [
+    {"at_width":1461,"desktop_nav_compact":false},
+    {"at_width":1460,"desktop_nav_compact":true,"top_link_padding_px":"9 9","font_size_rem":0.84},
+    {"at_width":1241,"desktop_nav_visible":true,"menu_toggle_visible":false},
+    {"at_width":1240,"desktop_nav_visible":false,"menu_toggle_visible":true},
+    {"at_width":901,"header_height_px":76,"header_cta_visible":true},
+    {"at_width":900,"header_height_px":68,"header_cta_visible":false},
+    {"at_width":561,"brand_tag_visible":true,"brand_mark_px":"69x46","brand_name_rem":1.16},
+    {"at_width":560,"brand_tag_visible":false,"brand_mark_px":"57x38","brand_name_rem":1.04}
+  ],
+  "semantic_assertions": [
+    {"element":"header_root","reference_role":"banner/header landmark","target_required_role":"banner/header landmark"},
+    {"element":"desktop_nav","accessible_name":"Főmenü"},
+    {"element":"brand","accessible_name":"Alakfa mester BIRÓ JÁNOS"},
+    {"element":"services_trigger","role":"button","accessible_name":"Szolgáltatások","has_popup":"menu"},
+    {"element":"references_trigger","role":"button","accessible_name":"Referenciák","has_popup":"menu"},
+    {"element":"mobile_nav","accessible_name":"Mobil navigáció"}
+  ],
+  "visual_states": [
+    "top / not stuck",
+    "scrollY >8 / stuck",
+    "homepage current-page Főoldal",
+    "services child current-section + current dropdown child",
+    "references child current-section + current dropdown child",
+    "services dropdown open",
+    "references dropdown open",
+    "mobile drawer closed",
+    "mobile drawer open",
+    "mobile services submenu open",
+    "focus-visible on brand/nav/dropdown/menu-toggle"
+  ],
+  "regression_guard": [
+    "Do not evaluate body/hero/footer differences as header failures unless the header change alters their vertical start or overlap.",
+    "A shared header CSS/runtime change requires rerun on representative homepage + service child + reference child at all affected breakpoints.",
+    "No body/footer/form selector may be introduced by a header parity package."
+  ],
+  "current_status": "SPEC_READY_TARGET_V006_NOT_DEPLOYED"
+}
