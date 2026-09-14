@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only runtime parity",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_WPVIBE_UNAVAILABLE",
+  "supersedes": "build/header-runtime-parity-v005.json",
+  "snippet": {
+    "id": 7,
+    "required_prewrite_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "required_prewrite_bytes": 9723,
+    "required_marker": "af-header-nav-parity-v005",
+    "must_remain_active": true,
+    "must_keep_scroll_threshold_px": 8,
+    "must_keep_mobile_breakpoint_px": 1240,
+    "must_keep_main_navigation_aria_label": "Főmenü",
+    "must_keep_brand_accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "changes_only": [
+    "Set role='banner' on existing header root so target exposes the same global header landmark role as source.",
+    "Use passive scroll + one requestAnimationFrame scheduler while preserving target is-scrolled class and >8px threshold.",
+    "Match reference desktop keyboard behavior: native Enter/Space click activation, special trigger ArrowDown only, ArrowUp/ArrowDown traversal across open-panel links, Escape close + trigger focus, outside click close.",
+    "Derive source-equivalent current group state and exact current child state from location; special-case /#szolgaltatasi-utak so normal homepage is not Services-current.",
+    "On mobile drawer open, after making it interactive, focus the first a/button; preserve Escape return, resize >1240 close and body lock.",
+    "When custom dropdown host is created, make the original sibling ul.elementskit-dropdown accessibility-inert: aria-hidden=true, inert=true and descendant interactive elements tabindex=-1. The paired CSS v007 hides only this sibling duplicate visually."
+  ],
+  "native_submenu_guard": {
+    "proven_target_dom": "Inside each menu-item-has-children li the runtime custom .af-nav-dropdown-host is followed by the original ul.elementskit-dropdown containing the same destinations.",
+    "visual_owner": "build/header-source-flex-responsive-v007.css hides only ul.elementskit-dropdown siblings that follow .af-nav-dropdown-host.",
+    "runtime_owner": [
+      "After host/panel creation, locate the parent li direct child ul.elementskit-dropdown (or the host's next matching sibling).",
+      "Set aria-hidden='true'.",
+      "Set inert=true when supported.",
+      "For all a,button,[tabindex] descendants, preserve any original tabindex in a data attribute only if needed for rollback/debug, then set tabindex='-1'.",
+      "Do not delete the original submenu from DOM and do not mutate its links/content, so rollback remains trivial."
+    ]
+  },
+  "current_route_matching": {
+    "normalize": "Resolve each item URL with new URL(item[1], origin); normalize trailing slash while retaining root '/'.",
+    "normal_child": "match normalized pathname",
+    "home_section": "match /#szolgaltatasi-utak only if current pathname is root and location.hash exactly equals #szolgaltatasi-utak",
+    "parent": "host.classList.add('is-current') when a group item matches",
+    "child": "matching runtime panel anchor gets aria-current='page' only",
+    "popup_button": "no aria-current on popup trigger"
+  },
+  "paired_css": {
+    "path": "build/header-source-flex-responsive-v007.css",
+    "commit": "6913d2d0994c4f8c36d39a55c3c0ab4a5bd1e38d",
+    "status": "prepared, not deployed"
+  },
+  "guarded_execution": [
+    "Do not execute while WPVibe is unavailable or target is returning HTTP 429.",
+    "On reconnect verify profile ncsnorbert+20260914-5@gmail.com, site connection and fresh quota; preserve minimum reserve from deployment plan.",
+    "GET snippet7 plugin-aware and require exact prewrite hash/bytes. Any drift stops replay.",
+    "Capture complete immediate prewrite code as rollback payload.",
+    "Apply only the documented deltas and PUT only code through Code Snippets REST.",
+    "GET again and require active=true, code_error=null, protected labels/thresholds/breakpoint intact and native-submenu inert logic present.",
+    "QA must prove there is one visible/focusable submenu implementation per group at desktop and mobile, plus all behavior tests in specs/header-behaviors-v001.json.",
+    "On regression restore exact prewrite snippet before further diagnosis."
+  ],
+  "do_not_change": [
+    "Elementor header structure",
+    "page body",
+    "footer",
+    "forms",
+    "SMTP",
+    "menu destination mapping",
+    "original native submenu link content",
+    "mobile drawer content",
+    "quick-contact dock content"
+  ]
+}
