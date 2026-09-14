@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "package": "bio-hero-layout-static-qa-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "input": {
+    "file": "build/bio-hero-layout-parity-v001.css",
+    "commit": "1aa319be9f37a52b8a38d243c18e73ea57eeeb1f"
+  },
+  "evidence": {
+    "source_css": {
+      "hero_padding_block": "clamp(22px,2.4vw,40px) clamp(24px,2.6vw,40px)",
+      "hero_grid": "minmax(0,1.06fr) minmax(0,.94fr)",
+      "hero_gap": "clamp(24px,2.6vw,44px)",
+      "hero_copy_max": "46rem",
+      "contact_pair_gap": "12px",
+      "contact_pair_margin_bottom": "16px",
+      "contact_button_min_height": "60px",
+      "hero_meta_gap": "8px 24px",
+      "hero_meta_padding_top": "16px",
+      "hero_meta_margin_top": "16px",
+      "hero_meta_font": ".9rem / 600"
+    },
+    "same_opera_top_pair": [
+      "Reference copy begins about one source-spacing step higher than target.",
+      "Target proof row fits all three facts in one row; reference wraps the third fact to a second row.",
+      "Outer hero lower boundary is already close, so the fix must change copy measure/internal rhythm rather than invent a new section height.",
+      "Hero illustration/content are present and visually aligned in subject; no asset replacement is justified."
+    ]
+  },
+  "checks": {
+    "page_scope": "PASS: all rules body.page-id-256 scoped.",
+    "desktop_only": "PASS: all overrides are inside min-width:901px, leaving existing <=900 source-measured mobile stack untouched.",
+    "section_height": "PASS: no height/min-height/max-height rule is written.",
+    "h1_exact_width": "PASS: no h1 width/font exact-width media rule is overwritten.",
+    "hero_art_size": "PASS: no art width/height/transform rule is written.",
+    "global_header_dock": "PASS: no header/nav/dock selector.",
+    "copy_measure": "PASS_STATIC: target direct non-art Elementor children receive source 46rem measure; existing grid-column ownership remains untouched.",
+    "contact": "PASS_STATIC: source contact geometry restored without text/href/ARIA changes.",
+    "proof": "PASS_STATIC: source meta gap/margin/padding/font restored; narrower source measure should reproduce the reference third-item wrap."
+  },
+  "deployment_gate": "Prepared only. Do not deploy in current quota window: latest exact counter 276/300 used, 24 remaining, D11 reserve 10, recent target site calls can spend three retries on one 429.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
