@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "package": "bio-page256-closeout-20260914-v010",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "page_id": 256,
+  "result": "Page256 safe content and accessibility parity package completed and frontend-verified. Further page-local writes are not justified by current evidence; remaining visible differences are global-scope or require deterministic visual tooling.",
+  "completed": [
+    "13/13 source-mismatching terminal periods removed",
+    "symptom table exact header text restored and four row headers restored",
+    "four complete legacy content regions named exactly like source",
+    "final CTA clickable range preserved and exact source accessible name restored",
+    "Code Snippets ID35 installed through code-snippets/v1 REST API, active front-end scope, guarded by is_page(256), code_error null",
+    "Atomic hero and FAQ outer regions named at runtime without CSS/text/DOM-order changes",
+    "review tablist and three tabs expose exact source accessible names",
+    "three extra review source-dot controls removed from accessibility/focus order using the already-proven shared project pattern",
+    "runtime scope spot-check on page264: bio helper script absent"
+  ],
+  "frontend_verified_exact_sets": {
+    "regions": [
+      "Biológiai növényvédelem alakfákhoz, sövényekhez és értékes kerti növényekhez",
+      "Amit a megbízóim mondanak",
+      "Miért nem ér véget a munka a metszéssel?",
+      "Mit jelent nálam a biológiai, mikrobiológiai megközelítés?",
+      "Mire figyelek a leggyakrabban?",
+      "Mit várhatunk – és mit nem?",
+      "Biológiai védelem – kérdések"
+    ],
+    "review_tablist": "Ügyfélvélemények",
+    "review_tabs": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "review_buttons": ["Előző vélemény", "Következő vélemény"],
+    "faq_buttons": [
+      "Miért nem elég a hagyományos permetezés?",
+      "Veszélyes ez háziállatra, gyerekre?",
+      "Mennyi idő alatt látszik eredmény?",
+      "Csak alakfához kérhető?"
+    ],
+    "table": "exact source column headers and rowHeader roles",
+    "final_cta": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu"
+  },
+  "last_successful_elementor_checkpoint": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "page256_elementor_writes_after_checkpoint": 0
+  },
+  "runtime_checkpoint": {
+    "snippet_id": 35,
+    "repo_file": "build/bio-semantic-runtime-v001.php",
+    "repo_commit": "5127ab897f44acbfeed3d4ef7e6d2faf58438719",
+    "active": true,
+    "scope": "front-end",
+    "page_guard": "is_page(256)",
+    "code_error": null
+  },
+  "visual_findings": {
+    "pixel_pass": false,
+    "reason": "No deterministic viewport/DPR/zoom/overlay/diff harness is available through the current Opera connector.",
+    "source_measured_target_css": "Current Additional CSS already contains reference-measured page256 section heights and hero sizes for 1920/1440/1024/768/390/360. Intermediate-width screenshots must not override those rules without controlled measurement.",
+    "technology_section": "Content/cards/motifs align structurally; intermediate-width screenshot geometry differs, but no measured page-local cause was established.",
+    "global_header": "Visible nav active-state differences remain; global ElementsKit/header work is outside the page256-only write scope.",
+    "global_floating_contact": "Target showed blank/partially clipped floating global contact pill while source showed phone/email/CTA content; global component is outside page256-only write scope."
+  },
+  "throttling": {
+    "latest_exact_wpvibe_usage": "214/300 used; 86 remaining",
+    "D11_reserve": 10,
+    "nominal_above_reserve": 76,
+    "current_remote_blocker": "target host HTTP 429 after request bursts, including the final redundant hash read after 3 exponential-backoff retries",
+    "decision": "No more WPVibe site calls in this work package. Do not burn remaining quota on retries."
+  },
+  "open": [
+    "Deterministic six-viewport screenshot/overlay/diff acceptance remains unavailable, therefore PIXEL_PASS=false.",
+    "Global header and floating-contact parity cannot be fixed legally under page256-only modification scope.",
+    "A future continuation should first wait for host throttle to clear, read the exact page256 checkpoint once, then avoid writes unless a new measured page-local defect is proven."
+  ],
+  "next_action": "Broaden scope explicitly to global header/floating-contact components and/or provide deterministic visual harness if full-page pixel parity including global UI is required. Otherwise page256 itself is closed at the currently provable level."
+}
