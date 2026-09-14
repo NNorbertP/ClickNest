@@ -1,0 +1,42 @@
+{
+  "schema_version": 7,
+  "package": "oldtrees-post-v005-visual-qa-20260914-v007",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "wordpress_writes": 0,
+  "browser": {"existing_tabs":2,"new_tabs_opened":0,"same_browser":true,"viewport_px":[1640,920]},
+  "live_prerequisite": "af-oldtrees-visual-v004 and v005 already live per oldtrees-visual-live-qa-v006",
+  "comparison_section": {
+    "source": "beige negative and sage positive cards, equal-width columns, warning/growth icons, cross/check markers",
+    "target_post_v005": "beige/sage surfaces and icons are now present; card heights stretch together, but left column is visibly wider than right and the right final checklist item wraps an extra line",
+    "conclusion": "v005 surface/height objective PASS; grid geometry still loses cascade",
+    "prepared_fix": "build/oldtrees-visual-v007-comparison-grid-cascade.css"
+  },
+  "request_form": {
+    "source": "joined white form panel, compact clock, white contact-button label/value text",
+    "target_post_v005": "centered heading, compact clock and joined white panel now visually present; remaining reproducible delta is dark label/value text on the green contact buttons",
+    "conclusion": "old broad form defects are no longer current; only contact foreground cascade remains proven",
+    "prepared_fix": "build/oldtrees-visual-v006-contact-text-cascade.css"
+  },
+  "hero": {
+    "source_target_same_view": "target left copy starts approximately 40-45px lower while hero lower boundary differs only slightly",
+    "status": "OPEN_ROOT_CAUSE_UNPROVEN",
+    "decision": "No margin/padding patch from screenshot alone. Need exact owner/cascade proof first."
+  },
+  "comparison_eyebrow": {
+    "text": "KÉT ÚT",
+    "source_ax_present": true,
+    "target_ax_present": true,
+    "same_region_owner": "Kivágás vagy átalakítás?",
+    "anchored_capture_difference": "Source anchor screenshot shows the eyebrow, target anchor screenshot begins at the heading.",
+    "decision": "Do not add/rewrite/hide-show the text. Difference may be anchor ownership/scroll-offset rather than visibility."
+  },
+  "floating_dock": {
+    "source_explicit_capture": "visible phone/mail/CTA",
+    "target_explicit_captures": "nearly blank pill",
+    "target_ax_controls_present": true,
+    "owner": "global, not page264",
+    "plan": "build/floating-contact-dock-diagnostic-plan-20260914-v002.json"
+  },
+  "pixel_pass": false
+}
