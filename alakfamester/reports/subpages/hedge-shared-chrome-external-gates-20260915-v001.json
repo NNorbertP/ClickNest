@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "package": "hedge-shared-chrome-external-gates-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target_route": "/soveny-specialista/",
+  "wordpress_writes": 0,
+  "purpose": "Track shared header/footer/floating-contact output visible on page272 without violating the user's page272-only write scope or creating duplicate local owners.",
+  "scope_boundary": {
+    "page272_package_may": [
+      "observe shared chrome for regression/parity",
+      "record a shared/global failure",
+      "prove whether a visible issue belongs to page272 or a global owner"
+    ],
+    "page272_package_must_not": [
+      "edit global header/footer templates",
+      "edit snippet7 or other global header/dock runtime",
+      "add page272-only CSS/JS to mask a global defect",
+      "change global Additional CSS merely because the defect is visible on page272"
+    ]
+  },
+  "header": {
+    "status": "EXTERNAL_SHARED_ACCEPTANCE_GATE",
+    "known_owner": "authoritative global header plan build/header-deployment-plan-v010.json; existing runtime owner includes snippet7",
+    "evidence": [
+      "Old Trees service-child route previously showed source-equivalent Services current-section state.",
+      "Biological Protection later reproduced a missing target Services current-section state, proving one service-child PASS cannot be generalized.",
+      "The global header postdeploy route matrix explicitly includes /soveny-specialista/."
+    ],
+    "page272_acceptance": "When the shared header package is live and browser evidence is trustworthy, verify /soveny-specialista/ shows the same Services-parent current state/caret behavior as the reference.",
+    "local_fix_rule": "Never solve a route-current failure with a Hedge-local helper; report it to the shared header owner."
+  },
+  "floating_contact_dock": {
+    "status": "KNOWN_GLOBAL_VISUAL_DELTA_EXTERNAL_TO_PAGE272",
+    "known_owner": "global ID7/header-dock runtime plus global CSS; diagnostic build/floating-contact-dock-diagnostic-plan-20260914-v002.json",
+    "known_failure": "Repeated same-browser evidence showed the target white dock pill nearly blank while AX still exposed Gyors kapcsolatfelvétel, phone, e-mail and Felmérést kérek. This points to shared paint/layout/cascade, not missing page272 links.",
+    "page272_acceptance": "Observe final shared-dock rendering at required viewports, but do not block or rewrite page272 saved content because of this global owner.",
+    "local_fix_rule": "No page272 dock markup/runtime/CSS owner may be created."
+  },
+  "footer": {
+    "status": "OBSERVE_ONLY_NO_PAGE272_SPECIFIC_DEFECT_DOCUMENTED",
+    "known_evidence": "Final structural audit found exactly one published global footer template and no duplicate global template owner; D09 global contact links were handled separately.",
+    "page272_acceptance": "Observe for regression in final synchronized screenshots/AX only. Any defect must be assigned to the global footer owner before a write."
+  },
+  "whole_page_acceptance_implication": "The page272 body/runtime can reach local parity while the full viewport still cannot claim pixel-perfect whole-page PASS if shared header/dock/footer output is failing. Record such failures as external shared gates rather than contaminating the page272 implementation.",
+  "opera_memory_rule": "Use at most the existing one source and one target tab. Open zero replacement/fan-out tabs. On stale URL/title/content disagreement, stop immediately.",
+  "status_summary": "PAGE272_LOCAL_WRITES_SEPARATED_FROM_SHARED_CHROME_OWNERS"
+}
