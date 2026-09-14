@@ -1,0 +1,120 @@
+{
+  "package": "bio-parity-fix-20260914-v004",
+  "date": "2026-09-14",
+  "status": "prepared_not_sent",
+  "page_id": 256,
+  "slug": "biologiai-vedelem",
+  "scope": "Only https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "decision_refs": ["D03", "D07", "D11", "D18"],
+  "precondition": {
+    "required_current_bytes": 34930,
+    "required_current_sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+    "note": "This is the last successful post-v003 readback. A fresh recheck is mandatory because the first v004 hash read was blocked by HTTP 429.",
+    "last_exact_quota": "280/300 used; 20 remaining; preserve 10 calls for D11 recovery/closeout"
+  },
+  "already_verified_and_preserve": {
+    "final_cta_widget_id": "9a1b2c3d",
+    "mailto": "mailto:kreativ@alakfa-mester.hu",
+    "state": "email and Irjon batran label are inside one anchor; do not revert",
+    "hero_widget_id": "af26000c",
+    "review_tabs_root_id": "b2560005",
+    "review_tabs_menu_id": "b2560006"
+  },
+  "source_proven_legacy_operations": [
+    {
+      "element_id": "af260007",
+      "purpose": "source text parity plus named-region parity",
+      "changes": [
+        "remove trailing periods from the four stress list items",
+        "add a region accessible name equal to: Miért nem ér véget a munka a metszéssel?"
+      ]
+    },
+    {
+      "element_id": "af260010",
+      "purpose": "source text parity plus named-region parity",
+      "changes": [
+        "remove trailing periods from the four use-case list items",
+        "add a region accessible name equal to: Mit jelent nálam a biológiai, mikrobiológiai megközelítés?"
+      ]
+    },
+    {
+      "element_id": "af260011",
+      "purpose": "source table semantics/text plus named-region parity",
+      "changes": [
+        "stored header text -> TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY",
+        "first body cell of each of the four rows -> th scope=row (source exposes rowHeader)",
+        "add a region accessible name equal to: Mire figyelek a leggyakrabban?"
+      ]
+    },
+    {
+      "element_id": "af260013",
+      "purpose": "source text parity plus named-region parity",
+      "changes": [
+        "remove trailing periods from the five expectation list items",
+        "add a region accessible name equal to: Mit várhatunk – és mit nem?"
+      ]
+    },
+    {
+      "element_id": "9a1b2c3d",
+      "purpose": "final CTA computed accessible-name parity without visual change",
+      "changes": [
+        "if still needed after fresh AX read, add aria-label='ÍRJON BÁTRAN kreativ@alakfa-mester.hu' to the existing mailto anchor while preserving its href and children"
+      ]
+    }
+  ],
+  "source_exact_list_text_without_terminal_period": {
+    "stress": [
+      "A növény energiát fordít a sebek lezárására",
+      "A lombfelület csökkenése miatt átmenetileg kevesebb tartalék keletkezik",
+      "A friss sebek belépési pontot jelenthetnek kórokozóknak",
+      "A gyökérzet és a lombtömeg aránya átrendeződik"
+    ],
+    "use_cases": [
+      "Erős szerkezeti visszavágás után, idős vagy értékes növénynél",
+      "Ha a növény láthatóan legyengült, de a szerkezete megtartható",
+      "Ha a sövény vagy az alakfa ismétlődő egészségügyi problémát mutat",
+      "Ha a tulajdonos kifejezetten kerülné az erős vegyszereket"
+    ],
+    "expectations": [
+      "A növény regenerációjának szakszerű támogatását",
+      "Arányos, a növény állapotához igazított beavatkozást",
+      "Őszinte visszajelzést, ha az állapot már nem javítható",
+      "Garantált gyógyulást semmilyen kezelésre nem ígérek",
+      "Azonnali, látványos eredményt sem – a regeneráció szezonokban mérhető"
+    ]
+  },
+  "atomic_findings": {
+    "hero_named_region": "open; unsafe to patch through atomic attributes",
+    "faq_outer_named_region": "open; unsafe to patch through atomic attributes",
+    "review_tablist_name": "open; core template would render settings.attributes, but Elementor's registered Attributes_Transformer currently returns null and its core test states that the core attributes transformer always returns null",
+    "source_files_checked": [
+      "elementor/modules/atomic-widgets/elements/atomic-tabs/atomic-tabs-menu/atomic-tabs-menu.php",
+      "elementor/modules/atomic-widgets/elements/atomic-tabs/atomic-tabs-menu/atomic-tabs-menu.html.twig",
+      "elementor/modules/atomic-widgets/props-resolver/transformers/settings/attributes-transformer.php",
+      "elementor/tests/phpunit/elementor/modules/atomic-widgets/test-attributes-transformer.php"
+    ],
+    "decision": "Do not retry guessed V4 attributes and do not full-save page256. The prior hero attributes pilot already proved stored attributes do not render on this target."
+  },
+  "execution_strategy_when_429_clears": {
+    "reads": [
+      "verify exact page256 bytes/SHA first",
+      "prefer a single /batch/v1 read of multiple /wpvibe/v1/content/search requests if the custom search route is batch-enabled; otherwise perform the minimum individual searches",
+      "use only snippets returned by content/search; never reconstruct raw Elementor JSON from rendered HTML"
+    ],
+    "writes": [
+      "prefer one /batch/v1 validation=require-all request containing guarded match-once /wpvibe/v1/content/edit operations if content/edit is batch-enabled",
+      "if batch is not supported, fall back to individual match-once content/edit calls and stop before the 10-call D11 reserve",
+      "no full Elementor save, no old snapshot restore, no raw SQL mutation"
+    ],
+    "verification": [
+      "read back page256 bytes/SHA and JSON validity",
+      "fresh frontend AX: exact 13 list strings, three table headers, four rowHeaders, four legacy named regions, final mailto accessible name",
+      "preserve all unrelated IDs/classes/content and existing canonical links"
+    ]
+  },
+  "visual": {
+    "pixel_pass": false,
+    "reason": "Opera Connector disconnected before deterministic screenshot comparison; do not change decorative review indices/arrows or technology glyphs without visual proof."
+  },
+  "smtp_or_submission": false
+}
