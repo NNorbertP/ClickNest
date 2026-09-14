@@ -1,0 +1,120 @@
+{
+  "schema_version": 3,
+  "package": "bio-final-acceptance-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "status": "ACCEPTANCE_SPEC_PREPARED_NOT_PASSED",
+  "supersedes": "specs/bio-final-acceptance-20260914-v002.json",
+  "scope": "Page256 only. No other page/shared media/template/plugin setting/SMTP/global style/runtime mutation.",
+  "resource_scope_gate": [
+    "No Hello Additional CSS or global Code Snippets/ID35 mutation under current scope.",
+    "Page-local style carrier probe must PASS before any parity CSS is delivered.",
+    "style#af-page256-parity must render exactly once inside page256 and preserve af260016 visible content.",
+    "Every internal component marker must be unique; obsolete/conflicting local blocks must be absent.",
+    "Failed carrier probe is a blocker, not permission for global fallback."
+  ],
+  "content_gate": {
+    "authority": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "requirements": [
+      "all protected visible strings match source order/punctuation",
+      "13 corrected legacy list strings remain exact and period-free",
+      "table headers remain TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY",
+      "third review author role equals ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+      "no structural/style/runtime change duplicates or hides meaningful source copy"
+    ]
+  },
+  "semantic_gate": {
+    "authority": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "rule": "Final semantic acceptance is section-local. Whole-page aggregate counts may be used only as regression heuristics.",
+    "reviews_active_Panasonic": {
+      "required": {"tabList":1,"tabs":3,"active_tabPanel":1,"testimonial_points_list":1,"testimonial_point_listItems":3,"step_buttons":2,"decorative_ordinal_AX_text":0},
+      "protected": "exact accessible tab names and Atomic tab/panel relationships"
+    },
+    "stress": {
+      "required": {"article":1,"complementary":0,"list":1,"listItems":4},
+      "additional_exactness": "saved/read/AX order must be p1 -> p2 -> article/list if exact semantic parity is claimed"
+    },
+    "technology": {"required":{"articles":3,"use_case_list":1,"use_case_items":4}},
+    "table": {"required":{"table":1,"caption":0,"columnHeaders":3,"rowHeaders":4}},
+    "expectations": {"required":{"articles":2,"lists":2,"listItems":5},"ownership":"left/right article ownership must match source, not merely role counts"},
+    "FAQ": {"required_exact":{"buttons":4,"disclosures":0},"additional_exactness":"source keyboard collection and motion must pass"},
+    "main_content_list_summary_expected_after_exact_review_fix": {"lists":5,"listItems":16}
+  },
+  "static_DOM_gate": [
+    "stress saved/read order p1 -> p2 -> article/list",
+    "review Panasonic points semantically form one 3-item list between intro and final testimonial text",
+    "table title is external p.table-title#tunet-tabla-cim and table uses aria-labelledby; no caption",
+    "expectations are two source-equivalent articles with correct child ownership",
+    "FAQ precedes CTA",
+    "final CTA mail visible children are deterministic label then strong email while href/aria-label stay unchanged"
+  ],
+  "anchor_link_gate": [
+    "#technologiak lands on approach section",
+    "#ugyfelvelemenyek exists exactly once and lands on review section",
+    "hero health CTA -> /kapcsolat/#ajanlatkeres",
+    "hero technology CTA -> #technologiak",
+    "Az alakfa ápolása -> /#apolas",
+    "mailto remains mailto:kreativ@alakfa-mester.hu with exact accessible name ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+    "final form link remains /kapcsolat/#ajanlatkeres"
+  ],
+  "section_order_gate": ["hero","reviews","exact wave","stress","exact wave","technology","symptom table","exact wave","expectations","exact wave","FAQ on paper","separate final CTA band"],
+  "visual_gate": {
+    "hero": ["source hero--inner desktop geometry", "source proof-row wrapping", "no duplicate icons", "hero CTA visual state explicitly compared before any change"],
+    "reviews": ["one visible 01/02/03 per tab", "no standalone ordinal AX text", "source warm quote #D9C9A5 with 46/38 responsive width", "source 9x9 active dot scale(1.3) rotate(-12)", "source-like media geometry after measured first-review aspect diagnostic", "optional paper decor only if pseudo-owner-safe"],
+    "stress": ["source visual p1+p2 left / forest card right", "source lead", "forest article styling/checks/watermark", "mobile visual p1->p2->card"],
+    "technology": ["source eyebrow leaf", "source lead", "source organic cards/watermarks/sage hairline", "existing icons only once", "existing callout rail preserved", "source leaf/check use-case markers"],
+    "table": ["external title above border", "source table surface/cells/header/even-row", "source stone gradient"],
+    "expectations": ["left white article and right sage article visually/source-owned", "source check/cross markers/watermarks"],
+    "FAQ_CTA": ["FAQ paper before CTA", "source FAQ cards/leaf plus-minus", "fourth source wave enters paper", "separate radius36 forest band", "source CTA columns/responsive stack", "mail label above email", "source mail/button hover/focus states"]
+  },
+  "review_interaction_gate": {
+    "source_oracle": "build/bio-review-source-interaction-contract-20260914-v001.json",
+    "required": [
+      "ArrowRight/Left/Up/Down + Home/End activate/focus tabs in source wrapping order",
+      "selected/tabindex/hidden update correctly",
+      "prev/next wrap and newly active tabpanel receives focus",
+      "visual dots follow active tab but stay aria-hidden/nonfocusable",
+      "decorative ordinals stay outside tab accessible name and AX text"
+    ],
+    "current_known_blocker": "ID35 switches prev/next tabs but does not explicitly focus the new panel."
+  },
+  "FAQ_interaction_gate": {
+    "source_oracle": "build/bio-faq-source-interaction-contract-20260914-v001.json",
+    "required_exact": [
+      "button role for each question",
+      "aria-expanded/aria-controls synchronized on click and Enter/Space",
+      "ArrowRight/Down next wrap, ArrowLeft/Up previous wrap, Home first, End last",
+      "280ms grid-row + 220ms opacity panel motion",
+      "source plus-to-minus open-state styling"
+    ],
+    "current_known_blocker": "Native target details/summary remains functional but not role/keyboard/motion exact; no sanctioned runtime correction exists under current constraints."
+  },
+  "responsive_gate": {
+    "authority": "build/bio-responsive-source-contract-20260914-v001.json",
+    "required": [">=1400 source hero columns/gap","<=1000 review vertical layout","<=900 hero/grids/CTA stack","<=760 review rail + quote38","<=720 source card/CTA padding and section spacing","<=560 review/contact mobile sizing","~390 no overflow/clipping/broken focus"],
+    "mobile_heading_gate": "Measure winning target h2 at <=720/~390 before any page-local fluid override."
+  },
+  "wave_gate": ["first three source SVG waves match their tones","fourth expectations->FAQ wave only with paper FAQ","no diagonal approximation wins"],
+  "regression_gate": [
+    "ID35 remains active/page256-guarded unless separately authorized migration exists",
+    "hero artwork/review assets/alt text unchanged",
+    "no full Elementor save side effects or lost IDs/classes",
+    "no changes to another page/shared media/template/plugin setting/SMTP/global styles/runtime",
+    "global header/dock issues are not hidden with duplicate page256 markup",
+    "page-local style owner and component markers are unique",
+    "review tab/panel relationships remain native Atomic"
+  ],
+  "evidence_required_for_exact_PASS": [
+    "fresh final saved page256 data readback",
+    "fresh rendered page-local style owner/marker inventory",
+    "fresh normalized source/target visible-content comparison",
+    "fresh SECTION-LOCAL AX roles/names/order comparison",
+    "fresh deep-link checks",
+    "fresh desktop + responsive visual checks",
+    "fresh review and FAQ keyboard/focus behavior checks"
+  ],
+  "current_result": "OPEN_NOT_PASS: scope/WPVibe/browser gates block writes; stress exact read order, expectations article ownership, FAQ exact runtime, review points semantics and review prev-next panel focus remain known exactness blockers.",
+  "pixel_pass": false
+}
