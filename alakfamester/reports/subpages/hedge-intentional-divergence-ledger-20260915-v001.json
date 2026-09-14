@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "package": "hedge-intentional-divergence-ledger-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Separate project-authorized source-to-WordPress adaptations from unresolved parity defects so a future exactness pass does not undo correct implementation decisions.",
+  "authorized_divergences": [
+    {
+      "area": "URL routing",
+      "decision": "D09",
+      "source": ".html/static source URLs",
+      "target": "canonical WordPress /slug/ destinations while anchors are preserved",
+      "closeout_rule": "Do not rewrite target links back to .html merely for literal URL equality."
+    },
+    {
+      "area": "Form submission model and success body",
+      "decision": "D05 / reports/home/metform33-source-parity-v001.json",
+      "source": "Frozen demo form has empty endpoint and states that no message was sent.",
+      "target": "MetForm stores local entries with external notifications/webhooks disabled; success title/contact guidance are source-equivalent but the body truthfully states local request recording instead of falsely claiming a demo no-send state.",
+      "closeout_rule": "Do not copy the source demo-only no-send wording verbatim onto a target that actually records local entries. No SMTP or external submission is part of current acceptance."
+    },
+    {
+      "area": "WordPress implementation technology",
+      "decision": "D02/D03/D04/D12/D17/D18",
+      "source": "static HTML/CSS/JS",
+      "target": "Hello Elementor + documented Atomic/legacy/addon/project-widget boundaries",
+      "closeout_rule": "Parity is judged by output/behavior/semantics under the accepted decisions, not by recreating the source implementation technology byte-for-byte."
+    }
+  ],
+  "unresolved_not_yet_authorized_as_divergence": [
+    {
+      "area": "proof carousel item roles",
+      "source_historical": "group",
+      "target_historical": "listitem",
+      "audit": "reports/subpages/hedge-proof-carousel-role-audit-20260915-v001.json",
+      "rule": "Do not silently call this a PASS or silently roll it back. Fresh source/target AX and owner proof are required; if intentionally retained, document the accessibility rationale explicitly before final closeout."
+    }
+  ],
+  "not_a_divergence_but_tooling_gap": [
+    "formal six-viewport pixel equality cannot be claimed without synchronized screenshot/overlay/diff tooling",
+    "hero/gallery/form outer source region semantics remain unimplemented until complete target roots are proven",
+    "required service-radio live configuration/behavior remains unread, not intentionally divergent"
+  ],
+  "global_out_of_scope_note": "Reference footer-credit/global template differences are not to be modified from the page272-only package. They must be judged in the separate global-template scope, not hidden inside a Hedge page write.",
+  "status": "AUTHORIZED_AND_UNRESOLVED_DIVERGENCES_SEPARATED"
+}
