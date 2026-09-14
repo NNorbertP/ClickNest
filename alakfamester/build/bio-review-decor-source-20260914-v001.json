@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "package": "bio-review-decor-source-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_HOLD_PSEUDO_OWNER_PREFLIGHT_REQUIRED",
+  "source_proof": {
+    "html": "reviews section contains blob--bronze blob--rev-a and rings rings--rev before the content container",
+    "blob": "420x380; top -140; right -120; blur2; opacity .9; bronze radial rgba(181,154,97,.20)",
+    "rings": "460x460; left -190; bottom -180; opacity .35; four sage ellipses rx/ry 148/140,116/112,84/82,52/54",
+    "section": "section--paper background #F5F3ED"
+  },
+  "live_target_visual": "Existing target review screenshot lacks source-like visible bronze top-right blob and bottom-left sage rings; outer field appears flatter/whiter than source.",
+  "css": {
+    "file": "build/bio-review-decor-source-v001.css",
+    "commit": "5b70d3aadd184144c8c23fb1b7e2ef31c6078359",
+    "marker": "af-bio-review-decor-v001"
+  },
+  "mandatory_preflight": [
+    "Fresh Additional CSS search for every .af-reviews-section::before and ::after owner.",
+    "Fresh rendered/computed review background owner check.",
+    "Do not deploy if either pseudo slot has an essential live visual/interaction owner; use a multi-background alternative or another proven child instead.",
+    "Require no existing af-bio-review-decor-v001 marker."
+  ],
+  "postconditions": [
+    "review section paper field matches source",
+    "bronze blob and sage rings visible in source-relative positions without covering tab/panel content",
+    "Atomic Tabs/review interactions and z-index/focus unchanged",
+    "no impact outside page256 review section"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
