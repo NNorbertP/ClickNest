@@ -1,3 +1,44 @@
+# STATE - 2026-09-14, HEDGE DATA PATCHED; CONCURRENT MEDIA DRIFT + FRONTEND CACHE BLOCKER
+
+## Current continuation point
+Target: https://alakfamester-wp.clicknest.hu/ ; repo `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
+WPVibe account: `ncsnorbert+20260914-3@gmail.com`.
+**Latest exact WPVibe counter: 214/300 used, 86 remaining** in the rolling 24-hour window. Preserve at least **10 calls** for recovery/closeout per D11; 76 calls remain above reserve.
+
+Hedge evidence: `reports/subpages/hedge-parity-fix-20260914-v001.json`, latest report commit `8503787f8e43cfdc1dbbe175ebd7967045336f23`.
+
+### Page272 data writes completed and last verified before concurrent media job
+- guarded match-once `_elementor_data` patch: `eael_fg_image_resolution_size` `medium` -> `full`;
+- guarded match-once insertion: `<p class='form-reply'>Jellemzően 24 órán belül válaszolok.</p>` immediately before the existing `form-lead-note`;
+- readback: **53097 B**, SHA256 `bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc`, JSON valid;
+- protected IDs `af2e004e`, `af2e004d`, `c3d30005`, `af2e0011` remained present;
+- removed legacy widgets `af2e0009`-`af2e000e` remained absent.
+
+### Media-alt write result and later conflict
+- project fleet job `fj_75bc98a970c64ce7`: 17/26 succeeded, 5 HTTP 429 failures, 4 skipped;
+- the nine remaining target alts were then updated individually;
+- a full readback immediately afterward showed all **28/28** attachment alt values matching the prepared source map;
+- after that verification, a separate concurrent fleet job `fj_9d41f7d4efff49db` ran and completed 6/26 commands, with 5 HTTP 429 failures and 15 skipped; its status exposed at least one conflicting command attempting to set media ID208 alt to an empty value;
+- therefore the **current media-alt state is UNKNOWN until a fresh readback after the rate limit clears**. Do not assume the earlier 28/28 PASS still holds and do not rerun all 28 blindly.
+
+### Frontend/cache state
+- normal `post update 272 --post_status=publish` succeeded;
+- `cache purge` purged Elementor CSS cache and object cache;
+- fresh rendered HTML still did not expose `.form-reply`, proving stale Elementor element-cache remains;
+- targeted delete of page272 `_elementor_element_cache` is pending browser approval as operation `op_fcdc663c565b4da0`:
+  https://mcp.wpvibe.ai/approve/op_fcdc663c565b4da0?t=8n8gUGVqlVe0oGJPAyrhQfujcMU7YStY4w_DqgIJSic
+- do not repeat the page272 data patches merely to invalidate cache.
+
+### Current hard blocker / next safe operation
+The target currently returns HTTP 429 to WPVibe site calls. Before **any** further WordPress write:
+1. wait for the site-level 429 window to clear;
+2. read back page272 bytes/SHA256/JSON validity and all 28 media alt values;
+3. reconcile only proven concurrent drift; preserve every unrelated/manual change;
+4. after the targeted cache-delete approval executes, fresh-read the frontend and verify the exact 24-hour sentence, full/original gallery image URLs, all 28 accessible names, protected IDs and absence of legacy widgets;
+5. only then close the Hedge package. `PIXEL_PASS=false` remains until deterministic six-viewport screenshot/overlay/diff evidence exists.
+
+---
+
 # STATE - 2026-09-14, OLD TREES PARITY CLOSED; BIOLOGICAL PROTECTION AUDIT + HEDGE PACKAGE PREPARED
 
 ## Current target / exact quota
