@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "package": "source-asset-recovery-web-evidence-20260914-v001",
+  "scope": "Read-only source-asset investigation. WordPress writes: 0. Frozen Clicknest reference remains authoritative; the prior public alakfamester.hu site is used only as provenance evidence for missing source bytes.",
+  "wordpress_writes": 0,
+  "gallery_page258_ellwoodi": {
+    "previous_blocker": {
+      "frozen_url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+      "frozen_alt": "A többgömbös Ellwoodi niwaki, másik nézet",
+      "recorded_result": "404 / source bytes unavailable",
+      "existing_target_related_attachment": "150 / A kialakított forma"
+    },
+    "recovered_public_original_candidate": {
+      "url": "https://alakfamester.hu/uploads/site11252/175725917368bda5a5b1ae6_370X354.jpg",
+      "same_generated_basename_stem": "175725917368bda5a5b1ae6_370X354",
+      "url_dimensions": "370x354",
+      "visual_subject": "multi-sphere Ellwoodi/false-cypress niwaki matching the frozen asset description family",
+      "evidence_strength": "STRONG_ORIGINAL_CANDIDATE_NOT_BYTE_OR_PIXEL_EQUIVALENCE_PROOF"
+    },
+    "decision": "Do not upload or replace anything yet. The exact basename stem and subject make this a strong provenance candidate, but the frozen .webp bytes are still unavailable. A future write requires either deterministic pixel-equivalence evidence, a documented source conversion mapping, or a direct frozen/local asset recovery. Never substitute a merely similar image."
+  },
+  "about_page270_portrait": {
+    "older_blocker": "about-content-v003 recorded frozen biro-janos-portre.webp as 404 and requested a frozen/local asset.",
+    "stronger_later_evidence": "about-survivor-source-parity-v001 explicitly records that the frozen source live main DOM did not require biro-janos-portre.webp as a visible source element for that page state.",
+    "public_old_site_candidate_for_provenance_only": "https://alakfamester.hu/uploads/site11252/175710979668bb5e24d0840_555x305.jpg",
+    "decision": "Treat the old portrait blocker as stale for the currently documented frozen acceptance DOM. Do not import a portrait solely to satisfy the older report. Re-open only if a fresh frozen-reference DOM/screenshot proves a visible portrait requirement."
+  },
+  "safety": {
+    "frozen_reference_authority_preserved": true,
+    "no_invented_asset": true,
+    "no_shared_media_write": true,
+    "no_target_media_upload": true,
+    "no_existing_good_component_changed": true
+  },
+  "environment": {
+    "latest_exact_wpvibe_before_this_report": "287/300 used, 13 remaining; only 3 above mandatory 10-call reserve",
+    "opera": "connector disconnected; no new tabs opened"
+  },
+  "next": [
+    "Keep page270 portrait out of the active blocker list unless fresh frozen-reference evidence contradicts the later live-DOM audit.",
+    "For page258, preserve the recovered exact-basename JPG URL as a provenance lead; do not write it into target until exactness is proven.",
+    "When remote quota reopens, prioritize already source-proven page264/page256 scoped visual packages before speculative asset work."
+  ]
+}
