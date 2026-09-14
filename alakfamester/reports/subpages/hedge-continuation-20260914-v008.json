@@ -1,0 +1,88 @@
+{
+  "schema_version": 8,
+  "package": "hedge-continuation-20260914-v008",
+  "date": "2026-09-14",
+  "scope": {
+    "only_wordpress_write_target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+    "page_id": 272,
+    "reference_read_only": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+    "rule": "No WordPress write to any other page, global template, shared media, shared form setting or plugin runtime except an existing page272-only helper update explicitly proven safe."
+  },
+  "account_handoff": {
+    "verified_identity": "ncsnorbert+20260914-5@gmail.com",
+    "email_verified": true,
+    "connect_attempt": "One-click authorization URL was returned in the handoff flow, but connection and exact rolling quota were not confirmed before WPVibe became unavailable.",
+    "current_decision": "Do not infer connection/quota; send no WordPress write until a fresh WPVibe read succeeds."
+  },
+  "accepted_page272_baseline": {
+    "elementor_bytes": 53606,
+    "elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "evidence": "reports/subpages/hedge-legacy-review-closeout-20260914-v007.json"
+  },
+  "closed_preserve": {
+    "shared_media": "26/26 restored to prepackage state; no further Hedge shared-media metadata writes.",
+    "gallery": "EAEL b2e2c001: 28 items, 28/28 page-local image ids zero, full resolution, original webp URLs, exact names/order.",
+    "legacy_regions": ["af2e0007", "af2e0045", "af2e0047", "af2e0049", "af2e000f"],
+    "cta": "Van hasonló növénye? mailto range and accessible name source-equivalent.",
+    "contact_links": "af2e004c phone/e-mail accessible names source-exact; hrefs unchanged.",
+    "reply_sentence": "Jellemzően 24 órán belül válaszolok.",
+    "protected_components": ["af2e004e hero", "af2e004d proof carousel", "c3d30005 native reviews", "af2e0011 MetForm"],
+    "removed_legacy_widgets": "af2e0009-af2e000e remain absent"
+  },
+  "current_runtime": {
+    "snippet_id": 36,
+    "documented_name": "AF Hedge review semantic parity v001",
+    "documented_state": "active/front-end/code_error=null",
+    "behavior": "tablist aria-label Ügyfélvélemények plus duplicate .af-review-source-dot tabindex=-1/aria-hidden=true; no CSS, visible text or real Atomic-tab replacement",
+    "do_not_create_second_helper": true
+  },
+  "next_runtime_candidate": {
+    "file": "build/hedge-semantic-runtime-v003.php",
+    "commit": "8b25e0b9462103ebaba907ef2e5d76e0d7d7ff17",
+    "static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+    "static_qa_commit": "859adc288c8b2481a4b6430d6eee40f97b73a6b2",
+    "status": "PREPARED_NOT_DEPLOYED",
+    "supersedes_for_future_candidate": "build/hedge-semantic-runtime-v002.php",
+    "delta_over_live_v001": [
+      "exact three real review-tab accessible names",
+      "#ajanlatkeres region name Küldjön fotót a sövényről",
+      "MetForm33 form name Ajánlatkérés",
+      "form aria-describedby from a direct-call description owned by the MetForm33 wrapper",
+      "service radio group aria-labelledby",
+      "Település help aria-describedby"
+    ],
+    "direct_call_hardening": "Prefer #af-form-direct-call inside .mf-form-wrapper[data-form-id=33]; fallback to exact wrapper-scoped tel:+36305394820 paragraph. The separate af2e004c legacy contact widget cannot be selected.",
+    "behavioral_scope": "attributes only; no CSS/text/reorder/validation/submission/click/keyboard behavior"
+  },
+  "shared_metform33_evidence": {
+    "source_parity_report": "reports/home/metform33-source-parity-v001.json",
+    "known_runtime": "Code Snippets ID5 enforces 3-5 photos on /metform/v1/entries/insert/33; ID6 sets textarea rows=5; no notifications/webhooks; entries stored locally.",
+    "direct_call_report": "reports/home/home-final-audit-v001.json documents Atomic paragraph af04000d / #af-form-direct-call with tel:+36305394820 added to MetForm33.",
+    "remaining_live_gate": "Confirm the rendered page272 .mf-form-wrapper[data-form-id=33] actually contains #af-form-direct-call or exact tel paragraph before updating ID36. Shared template evidence is strong but not a substitute for current rendered DOM proof."
+  },
+  "next_safe_remote_sequence": [
+    "Verify WPVibe identity is still ncsnorbert+20260914-5@gmail.com, site connection works and exact quota leaves the D11 10-call reserve plus complete package/readback margin.",
+    "Re-read page272 bytes/SHA/JSON; if it differs from 53606 / ef688b...13b56, stop and reconcile drift before any write.",
+    "Read current Code Snippets ID36 body/state and preserve it as the exact rollback body.",
+    "Read fresh rendered page272 DOM limited to #ajanlatkeres/.mf-form-wrapper[data-form-id=33] and prove direct-call ownership. Do not use af2e004c as form description.",
+    "If the DOM matches the v003 ownership contract, update existing ID36 only with hedge-semantic-runtime-v003.php using the proven plugin-aware path. Do not create a new snippet.",
+    "If the update returns HTTP 429, treat outcome as UNKNOWN and never blind-retry; read ID36 state/body first when safe.",
+    "Read back ID36 active/code_error and re-read page272 hash/JSON proving Elementor data unchanged.",
+    "With at most the existing one source + one target Opera tab, obtain fresh post-footer-JS AX proof for tablist/tabs, numbered-dot suppression, form region/name/description, radio group and city help. Open no replacement tab fan-out.",
+    "No SMTP and no form submission."
+  ],
+  "open_after_runtime_candidate": [
+    "Hero outer region naming remains unmodified unless a complete-container proof shows the source region maps safely to a target root.",
+    "Gallery outer region naming remains unmodified unless complete EAEL-container semantics can be added without mislabeling a partial composite.",
+    "Review keyboard/timed interaction and deterministic visual matrix remain proof-only; do not add new handlers unless an actual failure is reproduced."
+  ],
+  "tool_state": {
+    "wpvibe": "unavailable in current chat",
+    "opera": "disconnected after observing two existing project tabs; zero replacement tabs opened",
+    "container_clicknest_dns": "single targeted check failed for source and target; no repeated attempts"
+  },
+  "wordpress_writes_this_continuation": 0,
+  "smtp_or_external_submission": false,
+  "pixel_pass": false
+}
