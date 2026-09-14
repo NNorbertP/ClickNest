@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "package": "source-asset-recovery-audit-20260914-v002",
+  "date": "2026-09-14",
+  "scope": "read-only public/source recovery; no WordPress write",
+  "assets": [
+    {
+      "page": 270,
+      "source_url": "https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp",
+      "semantic_role": "Biró János munka közben",
+      "current_source_status": "documented 404",
+      "public_searches": ["exact filename", "site/name + exact semantic alt"],
+      "result": "No indexed exact filename, exact URL copy or exact semantic-role asset found."
+    },
+    {
+      "page": 258,
+      "source_url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+      "semantic_role": "A többgömbös Ellwoodi niwaki, másik nézet",
+      "current_source_status": "documented 404",
+      "public_searches": ["exact filename", "site/name + exact semantic alt"],
+      "result": "No indexed exact filename, exact URL copy or exact semantic-role asset found."
+    }
+  ],
+  "archive_attempt": {
+    "goal": "Query Internet Archive CDX by exact original asset URL and accept only a 200 archived original/digest.",
+    "result": "No indexable Wayback/CDX URL surfaced through the available web search. Direct container download was blocked because the archive query URL could not first be established through the browsing safety gate.",
+    "evidence_quality": "No archive miss is claimed; archive lookup remains technically unproven in this environment."
+  },
+  "decision": [
+    "Do not invent, redraw, substitute or upload a visually similar image.",
+    "Do not duplicate an existing target media item unless exact source bytes/hash become available and prove identity.",
+    "Only the original local source archive, an exact archived 200 response, or exact original bytes supplied later can clear either blocker."
+  ],
+  "wordpress_writes": 0
+}
