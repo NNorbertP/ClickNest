@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "package": "bio-ax-role-count-gate-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "main page accessibility-role parity; global header/footer differences excluded from write scope",
+  "browser": {
+    "source_tab": 1672632766,
+    "target_tab": 1672632815,
+    "new_tabs": 0
+  },
+  "source_counts": {
+    "article": 6,
+    "complementary": 1,
+    "list": 9,
+    "listItem": 32,
+    "region": 7,
+    "table": 1,
+    "caption": 0,
+    "button": 6,
+    "disclosureTriangle": 0,
+    "tab": 3,
+    "tabList": 1,
+    "tabPanel": 1
+  },
+  "target_counts": {
+    "article": 3,
+    "complementary": 2,
+    "list": 9,
+    "listItem": 32,
+    "region": 7,
+    "table": 1,
+    "caption": 1,
+    "button": 2,
+    "disclosureTriangle": 4,
+    "tab": 3,
+    "tabList": 1,
+    "tabPanel": 1
+  },
+  "already_equal_counts": [
+    "list=9",
+    "listItem=32",
+    "region=7",
+    "table=1",
+    "tab=3",
+    "tabList=1",
+    "tabPanel=1"
+  ],
+  "delta_mapping": [
+    {
+      "delta": "target has +1 complementary and -1 article",
+      "owner": "af260007 stress card",
+      "known_target": "aside/complementary",
+      "source": "article",
+      "prepared_fix": "fresh exact tag-only aside -> article microfix from bio-semantic-resume-20260914-v013"
+    },
+    {
+      "delta": "target has -2 article",
+      "owner": "af260013 expectations",
+      "source": "two article cards",
+      "target": "list wrappers/right copy are not article owners",
+      "prepared_fix": "build/bio-expectations-source-structure-20260914-v003.json"
+    },
+    {
+      "delta": "target has +1 caption",
+      "owner": "af260011 symptom table",
+      "source": "external p.table-title + aria-labelledby; no caption",
+      "prepared_fix": "build/bio-table-source-structure-20260914-v001.json"
+    },
+    {
+      "delta": "source has +4 button / target has +4 disclosureTriangle",
+      "owner": "four FAQ questions",
+      "source": "h3 + button[aria-expanded][aria-controls]",
+      "target": "native details/summary disclosure",
+      "status": "EXACT_ROLE_MOTION_HOLD",
+      "rule": "Do not replace working native controls until source click/keyboard/open-state behavior can be reproduced without regression."
+    }
+  ],
+  "future_acceptance_after_safe_structural_fixes": {
+    "before_any_FAQ_role_conversion": {
+      "expected_target_article": 6,
+      "expected_target_complementary": 1,
+      "expected_target_caption": 0,
+      "expected_target_list": 9,
+      "expected_target_listItem": 32,
+      "expected_target_region": 7,
+      "expected_target_table": 1,
+      "expected_target_tab": 3,
+      "expected_target_tabList": 1,
+      "expected_target_tabPanel": 1,
+      "faq_expected_temporary_role_difference": "2 normal review buttons + 4 disclosureTriangle instead of source 6 buttons"
+    },
+    "final_exact_if_FAQ_conversion_is_eventually_proven_safe": {
+      "article": 6,
+      "complementary": 1,
+      "caption": 0,
+      "button": 6,
+      "disclosureTriangle": 0
+    }
+  },
+  "safety": "If list/listItem/region/table/tab counts change during a structural patch, stop and roll back only that latest microfix; those counts are already source-equal and must not regress.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
