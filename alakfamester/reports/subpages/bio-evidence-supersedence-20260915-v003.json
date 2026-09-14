@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "package": "bio-evidence-supersedence-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "purpose": "Planning/evidence precedence only. Prevent global/shared CSS writes or stale page256 packages from being replayed after the page-local style-carrier delivery design. No WordPress write or scope handoff is authorized.",
+  "scope_gate": "Fresh STATE.md remains PAGE264 ONLY. Page256 stays read-only until an explicit normal scope handoff.",
+  "authoritative_current": {
+    "continuation": "reports/subpages/bio-continuation-20260914-v024.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260914-v002.json",
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "ax_role_gate": "reports/subpages/bio-ax-role-count-gate-20260914-v001.json",
+    "acceptance": "specs/bio-final-acceptance-20260914-v001.json",
+    "responsive": "build/bio-responsive-source-contract-20260914-v001.json",
+    "call_budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "style_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "style_delivery": "build/bio-page-local-visual-delivery-20260914-v001.json"
+  },
+  "future_execution_order_after_scope_handoff": [
+    {
+      "order": 0,
+      "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+      "rule": "Mandatory inert probe before any page256 CSS delivery. Failure cancels the local-style route; never fall back automatically to shared/global Additional CSS."
+    },
+    {
+      "order": 1,
+      "package": "build/bio-page-local-visual-delivery-20260914-v001.json",
+      "design_payload": "build/bio-visual-single-write-plan-20260914-v007.json",
+      "rule": "Only after probe PASS; create exactly one style#af-page256-parity in existing page-local af260016 and preserve all original carrier content byte-for-byte after the style owner."
+    },
+    {
+      "order": 2,
+      "package": "build/bio-page256-next-safe-package-20260914-v014.json",
+      "rule": "Fresh-search one structural microfix at a time with immediate readback."
+    },
+    {
+      "order": 3,
+      "packages": ["build/bio-semantic-resume-20260914-v013.json", "build/bio-stress-source-visual-20260914-v002.json"]
+    },
+    {
+      "order": 4,
+      "package": "build/bio-table-source-structure-20260914-v001.json"
+    },
+    {
+      "order": 5,
+      "package": "build/bio-expectations-source-structure-20260914-v003.json"
+    },
+    {
+      "order": 6,
+      "packages": ["build/bio-cta-mail-structure-20260914-v001.json", "build/bio-faq-cta-source-layout-20260914-v006.json"]
+    },
+    {
+      "order": 7,
+      "packages": ["build/bio-reviews-cascade-diagnostic-20260914-v001.json", "build/bio-review-ordinal-accessibility-20260914-v001.json", "build/bio-review-third-author-role-text-20260914-v001.json"]
+    }
+  ],
+  "page_local_css_owner_contract": {
+    "carrier": "existing af260016 legacy text-editor",
+    "probe_style_id": "af-page256-parity-probe",
+    "final_style_id": "af-page256-parity",
+    "first_payload_blocks": [
+      "build/bio-visual-parity-v001.css",
+      "build/bio-hero-layout-parity-v003.css",
+      "build/bio-card-mobile-source-v001.css",
+      "build/bio-table-section-tone-v001.css",
+      "build/bio-wave-source-core-v001.css",
+      "build/bio-review-quote-source-color-v002.css"
+    ],
+    "fourth_wave": "Excluded from first payload; add only in the FAQ paper-conversion transaction.",
+    "rollback": "Fresh-search and remove only the exact probe/style/component marker range; never restore an old full page blob."
+  },
+  "superseded_for_execution": [
+    "reports/subpages/bio-evidence-supersedence-20260914-v001.json",
+    "reports/subpages/bio-evidence-supersedence-20260915-v002.json",
+    "build/bio-remote-call-budget-20260914-v001.json",
+    "build/bio-remote-call-budget-20260914-v002.json",
+    "build/bio-next-window-deployment-plan-20260914-v013.json",
+    "build/bio-visual-single-write-plan-20260914-v003.json",
+    "build/bio-visual-single-write-plan-20260914-v004.json",
+    "build/bio-visual-single-write-plan-20260914-v005.json",
+    "build/bio-visual-single-write-plan-20260914-v006.json",
+    "build/bio-page256-next-safe-package-20260914-v012.json",
+    "build/bio-page256-next-safe-package-20260914-v013.json",
+    "build/bio-faq-cta-source-layout-20260914-v001.json",
+    "build/bio-faq-cta-source-layout-20260914-v002.json",
+    "build/bio-faq-cta-source-layout-20260914-v003.json",
+    "build/bio-faq-cta-source-layout-20260914-v004.json",
+    "build/bio-faq-cta-source-layout-20260914-v005.json"
+  ],
+  "obsolete_or_disproved_do_not_deploy": [
+    "build/bio-hero-layout-parity-v001.css",
+    "build/bio-hero-layout-parity-v002.css",
+    "build/bio-hero-decorative-icons-v001.css",
+    "build/bio-visual-parity-v002-expectations.css",
+    "build/bio-technology-callout-v001.css",
+    "build/bio-technology-callout-20260914-v001.json",
+    "build/bio-review-quote-source-color-v001.css",
+    "build/bio-wave-source-exact-v001.css",
+    "build/bio-faq-cta-source-layout-v001.css",
+    "build/bio-faq-cta-generated-label-guard-v001.css",
+    "build/bio-faq-cta-eyebrow-accessible-v001.css",
+    "Atomic g-af-src-wave mutation direction"
+  ],
+  "forbidden_delivery_routes_under_page256_only_scope": [
+    "Hello Additional CSS mutation",
+    "WPCode/Code Snippets/Head Footer Code global injection",
+    "theme-file edit",
+    "Elementor full save",
+    "V4 Custom CSS",
+    "raw SQL/search-replace",
+    "new hidden widget created only as a style carrier"
+  ],
+  "budget_rule": "Use bio-remote-call-budget-v003. Fresh exact quota is mandatory; complete phase + immediate readback + possible rollback + >=10 D11 reserve must fit before starting. Any 429 write is UNKNOWN until readback.",
+  "fresh_truth_rule": "Fresh live state always outranks this map. Prepared escaped snippets are never future old_content; every edit starts from fresh content/search bytes.",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "PAGE256_PRECEDENCE_RECONCILED_TO_PAGE_LOCAL_STYLE_CARRIER_BUDGET_V003"
+}
