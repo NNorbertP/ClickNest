@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "package": "bio-page-local-visual-delivery-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_REQUIRES_CARRIER_PROBE_PASS",
+  "supersedes": "build/bio-page-local-visual-delivery-20260914-v001.json",
+  "purpose": "Deliver the first low-risk, structure-independent page256 visual parity phase through a proven page-local style owner; never through shared/global CSS under current scope.",
+  "required_first_proof": "build/bio-page-local-style-carrier-probe-20260914-v001.json must PASS and be safely cleaned/reconciled before final owner creation.",
+  "physical_owner": {
+    "carrier_element": "af260016 legacy text-editor",
+    "style_id": "af-page256-parity",
+    "start_marker": "/* af-page256-parity:start */",
+    "end_marker": "/* af-page256-parity:end */"
+  },
+  "first_local_visual_payload": {
+    "base_design": "build/bio-visual-single-write-plan-20260914-v007.json",
+    "blocks_in_order": [
+      "build/bio-visual-parity-v001.css",
+      "build/bio-hero-layout-parity-v003.css",
+      "build/bio-card-mobile-source-v001.css",
+      "build/bio-table-section-tone-v001.css",
+      "build/bio-wave-source-core-v001.css",
+      "build/bio-review-quote-source-color-v002.css",
+      "build/bio-review-dot-source-v001.css"
+    ],
+    "why_dot_is_now_safe_enough_for_phase1": "Current public ID35 CSS explicitly owns base 9x9 dots and the incorrect active width30. The prepared page-local override changes presentation only, preserves ID35 creation/aria-hidden/tabindex behavior and maps exactly to source 9x9 + scale(1.3) rotate(-12deg).",
+    "not_in_first_payload": [
+      "build/bio-review-ordinal-source-v001.css — isolate as a later block because AX generated-content behavior must be read back independently",
+      "review decor — pseudo-owner HOLD",
+      "stress v003 visual — later after semantic/cascade checks",
+      "expectations — structure-dependent",
+      "FAQ/CTA outer layout + fourth wave — structure/dependency-dependent"
+    ]
+  },
+  "owner_creation_strategy": [
+    "Fresh-search af260016 again after probe cleanup; never reuse probe bytes.",
+    "Prepend one style#af-page256-parity containing the start/end markers and the seven approved blocks in order.",
+    "Keep the original hero extras markup byte-for-byte after the style element.",
+    "Immediate saved-data and rendered-owner readback is mandatory."
+  ],
+  "immediate_postconditions": [
+    "page256 JSON valid",
+    "style#af-page256-parity exactly once",
+    "all seven internal block markers exactly once",
+    "af260016 original hero contact/CTA/fact content unchanged",
+    "review quote source warm color and responsive width",
+    "review active visual dot source 9x9 leaf shape and no 30px expansion",
+    "no standalone ordinal fix has been attempted yet",
+    "no shared/global WordPress resource changed"
+  ],
+  "later_append_model": "Fresh-search the exact internal end marker and append one dependency-approved marked CSS block at a time with match-once content/edit, immediate saved/rendered/AX readback and block-level rollback.",
+  "forbidden": [
+    "Hello Additional CSS mutation",
+    "global ID35/Code Snippets edit",
+    "theme/plugin setting/global code injection",
+    "full Elementor save",
+    "raw SQL/search-replace",
+    "blind block concatenation without fresh owner/dependency checks"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
