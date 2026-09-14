@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "package": "bio-css-scope-audit-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "SELECTOR_SCOPE_PASS_RESOURCE_SCOPE_BLOCKED_FOR_GLOBAL_DELIVERY",
+  "supersedes": "reports/subpages/bio-css-scope-audit-20260914-v001.json",
+  "selector_scope_result": {
+    "status": "PASS",
+    "meaning": "Current prepared page256 parity rules are rooted at body.page-id-256 and/or unique page256 Elementor owners and are not intended to affect other pages when rendered.",
+    "audited_current_blocks": [
+      "bio-visual-parity-v001.css",
+      "bio-hero-layout-parity-v003.css",
+      "bio-card-mobile-source-v001.css",
+      "bio-table-section-tone-v001.css",
+      "bio-wave-source-core-v001.css",
+      "bio-wave-source-faq-v001.css",
+      "bio-review-quote-source-color-v002.css",
+      "bio-stress-source-visual-v002.css",
+      "bio-table-source-structure-v001.css",
+      "bio-expectations-source-structure-v003.css",
+      "bio-faq-cta-source-layout-v002.css",
+      "bio-faq-cta-mail-label-v001.css",
+      "bio-faq-cta-mail-interaction-v001.css",
+      "bio-faq-cta-button-interaction-v001.css",
+      "bio-faq-cta-section-spacing-v001.css",
+      "bio-review-decor-source-v001.css"
+    ]
+  },
+  "resource_scope_result": {
+    "status": "BLOCKS_HELLO_ADDITIONAL_CSS_UNDER_CURRENT_USER_SCOPE",
+    "meaning": "Hello Additional CSS is one global/shared WordPress resource even if the CSS selectors inside it are page256-only. The user's current package permits modifying page256 only and excludes global/shared resources. Therefore selector isolation does not authorize writing that field.",
+    "historical_project_preference": "D07 prefers own project CSS in Hello Additional CSS, but that generic preference cannot widen the current explicit user scope.",
+    "current_precedence": "user page256-only/no-shared-resource scope"
+  },
+  "delivery_implications": [
+    "Do not execute build/bio-visual-single-write-plan-20260914-v007.json through Hello Additional CSS under the current scope.",
+    "Do not execute any later FAQ/CTA/review/stress/expectations CSS plan through the global field unless the user explicitly broadens scope in a future turn.",
+    "Keep prepared CSS as exact source/design payloads and dependency evidence.",
+    "Preferred current-scope delivery experiment is build/bio-page-local-style-carrier-probe-20260914-v001.json, which tests whether one existing page256 legacy text-editor can safely carry a local style element through supported surgical _elementor_data editing."
+  ],
+  "two_layer_gate_for_any_future_CSS": {
+    "selector_gate": "Every effective rule remains page256-rooted; shared unqualified .card/.faq/.review/h2 selectors are rejected.",
+    "resource_gate": "The storage/delivery owner itself must also be allowed by the active user scope. Page-local page256 content may qualify after proof; global Additional CSS/plugin/theme/code-snippet resources do not qualify under the current scope."
+  },
+  "if_page_local_carrier_probe_passes": [
+    "Use one uniquely identified page-local style element in page256 content as the physical owner.",
+    "Retain individual internal block marker comments so dependency/supersedence/rollback remain auditable.",
+    "Do not duplicate blocks already delivered elsewhere.",
+    "Keep CSS source payloads unchanged except where a page-local delivery context requires a proven nonvisual wrapper/marker change."
+  ],
+  "if_page_local_carrier_probe_fails": [
+    "Roll back only the exact probe.",
+    "Do not escalate to a global/shared style mechanism on your own.",
+    "Continue structure/semantic fixes that need no CSS and record the remaining visual blocker, or wait for explicit user authorization for a global style resource."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
