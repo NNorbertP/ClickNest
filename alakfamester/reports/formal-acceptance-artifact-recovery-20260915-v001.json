@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "package": "formal-acceptance-artifact-recovery-20260915-v001",
+  "date": "2026-09-15",
+  "scope": "Repository-only recovery audit for README-referenced formal acceptance specs and runners. No WordPress/browser mutation and no generated replacement specs.",
+  "readme_contract": {
+    "file": "alakfamester/README.md",
+    "references": [
+      "specs/acceptance.json",
+      "specs/behaviors.json",
+      "reports/index.json",
+      "tools/measure.cjs",
+      "tools/behaviors.cjs",
+      "tools/compare-behaviors.cjs",
+      "tools/lib.cjs"
+    ],
+    "documented_runtime": "Node.js + Playwright/Chromium + pixelmatch/pngjs; target measurement commands and behavior comparison are described, but referenced bytes are not present in current repository state."
+  },
+  "branch_inventory": {
+    "branches": ["main", "alakfamester-sync-20260911"],
+    "sync_branch_head": "758a1d092bb7b2ace6bc0a237359d2915cabe512",
+    "sync_tree_result": "No acceptance.json, behaviors.json or tools/ directory in the complete non-truncated recursive tree.",
+    "tags": "No Git tag refs found."
+  },
+  "exact_path_history_main": {
+    "alakfamester/specs/acceptance.json": 0,
+    "alakfamester/specs/behaviors.json": 0,
+    "alakfamester/tools/measure.cjs": 0,
+    "alakfamester/tools/behaviors.cjs": 0,
+    "alakfamester/tools/compare-behaviors.cjs": 0,
+    "alakfamester/tools/lib.cjs": 0,
+    "alakfamester/reports/index.json": 0
+  },
+  "exact_path_history_sync_branch_samples": {
+    "alakfamester/specs/acceptance.json": 0,
+    "alakfamester/tools/measure.cjs": 0
+  },
+  "conclusion": {
+    "status": "NOT_RECOVERABLE_FROM_CURRENT_GIT_REPOSITORY_EVIDENCE",
+    "meaning": "The README documents a local/preparation acceptance system whose referenced committed bytes cannot be recovered from the two repository branches, tags or exact-path commit ancestry inspected here.",
+    "not_claimed": "This does not prove the files never existed outside Git, in an unpushed local worktree, external archive, prior export or unavailable remote repository."
+  },
+  "safety_rules": [
+    "Do not synthesize acceptance.json or behaviors.json from README prose or current implementation artifacts and call them frozen source specs.",
+    "Do not reimplement tools/measure.cjs or behavior runners and present them as the missing original acceptance runner without separately labeling them as a new replacement harness.",
+    "If original files are later supplied from an external source, preserve exact bytes/digest first, then validate their paths/dependencies before execution.",
+    "Until original specs/harness or an explicitly authorized replacement acceptance contract exists, PIXEL_PASS remains false."
+  ],
+  "remaining_possible_recovery_sources_outside_this_repo": [
+    "original local preparation worktree or backup",
+    "archived project bundle/ZIP",
+    "another private remote/repository not exposed here",
+    "original machine/Codex runtime filesystem if preserved"
+  ],
+  "wordpress_writes": 0,
+  "opera_new_tabs": 0,
+  "pixel_pass": false,
+  "status": "REPOSITORY_RECOVERY_EXHAUSTED_DO_NOT_RECONSTRUCT_BY_GUESS"
+}
