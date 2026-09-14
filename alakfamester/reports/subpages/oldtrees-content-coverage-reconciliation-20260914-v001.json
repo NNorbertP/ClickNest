@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-content-coverage-reconciliation-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "scope": "Reconcile historical page264 content/media open items against later completed packages. No WordPress write.",
+  "historical_content_package": "reports/subpages/oldtrees-content-parity-v002.json",
+  "closed_by_v002": [
+    "Biológiai támogatás – kiegészítő mechanizmus card, paragraph and canonical biological-protection link",
+    "Kivágás helyett mit nyerhet? card and four bullets",
+    "Három lépés, kötelezettség nélkül heading",
+    "És az ajánlat? callout with trip-fee link mapped to /kapcsolat/#kiszallas",
+    "second credibility paragraph about theoretically saveable but poor long-term fit",
+    "fourth FAQ question/answer: Vállalja a munkát akkor is, ha nem én ültettem a növényt?",
+    "comparison intro explaining removal should not be the starting decision before structural inspection"
+  ],
+  "v002_open_items_and_later_resolution": {
+    "hero_art": {
+      "then": "missing",
+      "resolved_by": "reports/subpages/oldtrees-hero-v4-v001.json",
+      "current": "af2a0052 af-hero-art present with exact source-equivalent accessible title/description",
+      "status": "CLOSED"
+    },
+    "inline_request_form": {
+      "then": "target routed to shared contact page",
+      "resolved_by": "reports/subpages/oldtrees-inline-form-v001.json",
+      "current": "inline #ajanlatkeres contains source intro and MetForm33; two page CTAs remapped locally to #ajanlatkeres",
+      "status": "CLOSED"
+    },
+    "missing_problem_chip": {
+      "then": "Túl közel került a házhoz omitted",
+      "resolved_by": ["reports/subpages/oldtrees-content-parity-v003.json", "reports/subpages/oldtrees-problem-grid-v001.json"],
+      "current": "seven source chips including the missing label and source SVG geometry are present",
+      "status": "CLOSED"
+    },
+    "simplified_comparison_copy": {
+      "then": "comparison bullets less detailed than source",
+      "resolved_by": "reports/subpages/oldtrees-content-parity-v003.json",
+      "current": "all eight Kivágás / Átalakítás alakfává list items and maintenance caveat aligned to the diagnostic reference wording",
+      "status": "CLOSED"
+    }
+  },
+  "later_source_cleanup": {
+    "report": "reports/subpages/oldtrees-source-parity-fix-20260914-v001.json",
+    "changes": [
+      "Existing Jellemzően 24 órán belül válaszolok. paragraph made visible/exposed like source.",
+      "Source-absent Az első alkalom eyebrow removed while its real following heading was preserved."
+    ],
+    "postreadback": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid"
+  },
+  "form_copy_and_routes": {
+    "source_copy_present": [
+      "Mielőtt kivágatná",
+      "Küldjön róla néhány képet",
+      "Néhány fotóból már meg tudom mondani, hogy érdemes-e egyáltalán helyszíni felmérésben gondolkodni.",
+      "Ajánlatkérés",
+      "A képek és a település megadása után jelentkezem az előzetes véleménnyel.",
+      "Jellemzően 24 órán belül válaszolok.",
+      "Ha inkább telefonon vagy e-mailben egyeztetne, itt bármikor elér:",
+      "A csillaggal jelölt mezők kitöltése kötelező."
+    ],
+    "local_cta_route": "#ajanlatkeres",
+    "local_cta_replacements": 2,
+    "old_fooldal_cta_matches_remaining": 0,
+    "faq_source_correction": "Nem lesz csúnya a növény az erős visszavágás után?"
+  },
+  "media": {
+    "evidence": "reports/subpages/about-oldtrees-media-finalization-v001.json",
+    "source_main_images": 5,
+    "target_main_images": 5,
+    "main_count_pass": true,
+    "observed_media_roles_match": true,
+    "note": "The source's additional global footer reference image is not a page-main media role."
+  },
+  "content_preserve": [
+    "Do not reopen v002/v003 copy edits unless a fresh source read proves a real change.",
+    "Do not replace or duplicate af2a0052 hero art.",
+    "Do not route the page264 CTAs back out to /fooldal/ or the contact page; the source-equivalent page-local form target is #ajanlatkeres.",
+    "Do not add/remove carousel content based on a different autoplay sample frame.",
+    "Do not alter truthful target success-message body merely to copy the frozen source demo/no-send wording."
+  ],
+  "remaining_content_work": [],
+  "remaining_acceptance_not_content": [
+    "v006 request contact foreground live gate",
+    "v007 comparison equal-column live gate",
+    "form service/topic required validation proof",
+    "runtime interaction proof",
+    "hero measured geometry diagnosis",
+    "deterministic pixel matrix"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "CONTENT_AND_MAIN_MEDIA_RECONCILED_NO_KNOWN_PAGE264_COPY_OR_MEDIA_GAP"
+}
