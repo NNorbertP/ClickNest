@@ -1,0 +1,8 @@
+/* af-bio-table-section-tone-v001:start
+ * Scope: page256 symptom-table section only. Prepared, not deployed.
+ * Source .section--stone = linear-gradient(180deg,#EFEDE4,#F5F3ED).
+ */
+body.page-id-256 .elementor-element-af260011.af-s-biologiai-vedelem-7 {
+  background: linear-gradient(180deg, #EFEDE4, #F5F3ED) !important;
+}
+/* af-bio-table-section-tone-v001:end */
