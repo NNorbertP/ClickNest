@@ -1,0 +1,40 @@
+{
+  "package": "header-nav-visual-fix-static-qa-v001",
+  "date": "2026-09-14",
+  "scope": "local/static QA only; no WordPress write",
+  "source_css": "build/header-nav-visual-fix-v001.css",
+  "source_commit": "3471486fdb5a85fd3c1657cc7623e6024d1a9c6f",
+  "status": "STATIC_QA_PASS_NOT_DEPLOYED",
+  "checks": {
+    "brace_balance": "PASS",
+    "negative_brace_depth": false,
+    "start_marker_count": 1,
+    "end_marker_count": 1,
+    "rule_blocks_reconstructed_from_commit_patch": 12,
+    "selector_scope": "Every reconstructed rule selector is restricted to header navigation wrapper .elementor-element-a1000009 and/or .af-nav-dropdown-panel.",
+    "footer_selector_present": false,
+    "metform_selector_present": false,
+    "page_content_element_ids_present": false
+  },
+  "intended_effects_only": [
+    "44px nav/dropdown control height",
+    "10px 13px top-level nav padding",
+    "dark green default text and transparent default state",
+    "sage hover/open/current states",
+    "single submenu indicator / duplicate caret suppression",
+    "268px dropdown minimum width and source-like panel geometry/colors"
+  ],
+  "not_covered_by_this_hotfix": [
+    "full header height/container/brand geometry",
+    "sticky threshold 24px -> 8px",
+    "mobile breakpoint/runtime behavior",
+    "page body, footer or forms"
+  ],
+  "deployment_preconditions": [
+    "Fresh post8 hash/marker readback and conflict reconciliation.",
+    "Enough WPVibe quota for write, readback and frontend verification above the D11 10-call reserve, including retry margin.",
+    "Insert only as a complete uniquely-marked block in Hello Additional CSS according to D07.",
+    "Verify desktop hover/focus/current/dropdown and narrow/mobile behavior before retaining it. Roll back the exact block if it causes regression."
+  ],
+  "pixel_pass": false
+}
