@@ -1,0 +1,81 @@
+{
+  "schema_version": 4,
+  "package": "hedge-open-items-20260914-v004",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_planning": "reports/subpages/hedge-open-items-20260914-v003.json",
+  "wordpress_writes": 0,
+  "accepted_baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+  "current_single_write_candidate": {
+    "build": "build/hedge-semantic-runtime-v004.php",
+    "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "target": "update existing ID36 only",
+    "scope": "complete review and Form33 component accessibility attributes only",
+    "outer_region_write": false
+  },
+  "closed_do_not_reopen": [
+    "shared-media recovery 26/26",
+    "EAEL 28/28 page-local id=0/full/original URLs/exact names/order",
+    "five complete legacy named regions",
+    "full CTA mailto and exact af2e004c contact semantics",
+    "24-hour reply sentence",
+    "hero/proof/native reviews/gallery/Form33 component presence",
+    "historical page272 media/background gaps; current section background sage",
+    "ID36 v001 remains accepted live owner until a verified successor replaces it"
+  ],
+  "live_read_and_proof_first": [
+    {
+      "item": "required Miben kér segítséget? choice",
+      "audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+      "source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+      "rule": "Read exact #af-form-service mf_input_name/mf_input_required/options. Native validation proof first; server fallback only if absent/insufficient."
+    },
+    {
+      "item": "heading levels/order",
+      "known": "Fresh historical evidence proves heading text-set parity, but not a source-target H1-H6 level/order matrix.",
+      "rule": "Capture source/target ordered heading role+level+name in the next trustworthy DOM/AX read. Do not change Elementor headings from absence of evidence."
+    },
+    {
+      "item": "proof carousel item roles",
+      "audit": "reports/subpages/hedge-proof-carousel-role-audit-20260915-v001.json",
+      "known": "Historical source group vs target listitem intentional drift was protected from automatic rollback.",
+      "rule": "Fresh source/target roles + parent semantics + owner proof required. Do not silently downgrade or silently declare exact parity."
+    }
+  ],
+  "complete_root_proof_required_no_write": [
+    "hero region: complete copy + af2e004e art root",
+    "Sövénymunkák region: heading + b2e2c001 common root",
+    "Küldjön fotót a sövényről region: separate af2e004c intro/contact + Form33 common root"
+  ],
+  "proof_only_no_code_without_failure": [
+    "page272 direct review click/Arrow/Home/End run; shared D12 behavior already proven",
+    "proof carousel ArrowLeft/Right, swipe, hover/focus pause-resume, reduced-motion; shared owner/autoplay already proven"
+  ],
+  "source_specific_no_write_gates": [
+    "Hedge lightbox: source-specific zoom/grouped-lightbox proof required before changing popup=none",
+    "any visual CSS: current synchronized source-target failure plus proven DOM/cascade owner required",
+    "SEO/meta/canonical: direct source-target metadata capture required before mutation"
+  ],
+  "intentional_divergence_ledger": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json",
+  "formal_blockers": [
+    "WPVibe disabled in this conversation; +5 site/quota unknown",
+    "Opera current Hedge DOM/screenshot stale/untrusted; no more calls and zero replacement tabs",
+    "specs/acceptance.json absent",
+    "specs/behaviors.json absent",
+    "deterministic synchronized six-viewport overlay/diff unavailable"
+  ],
+  "next_live_order": [
+    "verify +5/site/quota and D11 reserve",
+    "page272 baseline + exact current ID36 rollback body/state",
+    "one minimal trustworthy rendered DOM/AX pass that simultaneously covers v004 cardinality, complete outer-root ancestry, ordered heading levels/names and af2e004d role/parent semantics",
+    "one Form33 saved-settings read for exact service-radio field contract",
+    "deploy existing ID36 -> v004 only if semantic gates pass; read back ID36 and unchanged page hash",
+    "decide native required from actual setting/non-delivery behavior; no automatic server fallback",
+    "reuse at most one source + one target browser tab only when connector output is trustworthy"
+  ],
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "V004_ONLY_WRITE_CANDIDATE_OTHER_ITEMS_READ_PROOF_FIRST"
+}
