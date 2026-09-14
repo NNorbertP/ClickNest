@@ -1,0 +1,52 @@
+{
+  "schema_version": 5,
+  "package": "bio-evidence-supersedence-20260915-v005",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "purpose": "Small precedence correction after page-local visual delivery v002 added the owner-proven review dot block to phase 1. Planning only; no WordPress write or scope change.",
+  "scope_gate": "STATE.md remains PAGE264 ONLY; page256 stays read-only until explicit scope handoff.",
+  "supersedes": "reports/subpages/bio-evidence-supersedence-20260915-v004.json",
+  "current_core": {
+    "continuation": "reports/subpages/bio-continuation-20260914-v024.json",
+    "budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "local_visual_delivery": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "review_plan": "build/bio-reviews-current-fix-plan-20260914-v002.json",
+    "review_behavior_oracle": "build/bio-review-source-interaction-contract-20260914-v001.json"
+  },
+  "first_page_local_visual_payload_after_probe_pass": [
+    "build/bio-visual-parity-v001.css",
+    "build/bio-hero-layout-parity-v003.css",
+    "build/bio-card-mobile-source-v001.css",
+    "build/bio-table-section-tone-v001.css",
+    "build/bio-wave-source-core-v001.css",
+    "build/bio-review-quote-source-color-v002.css",
+    "build/bio-review-dot-source-v001.css"
+  ],
+  "phase1_rules": [
+    "Carrier probe must PASS and be cleaned/reconciled before owner creation.",
+    "Create exactly one style#af-page256-parity inside existing af260016 and preserve original hero extras content byte-for-byte after it.",
+    "Immediate saved-data and rendered-owner readback; all seven markers exactly once; no global/shared resource change.",
+    "Review dot change is presentation-only and must preserve ID35 aria-hidden/tabindex/creation ownership."
+  ],
+  "not_in_first_payload": [
+    "review ordinal: isolate later because generated-content AX behavior requires independent readback",
+    "review decorative blob/rings: HOLD until pseudo-owner proof",
+    "stress v003 visual: later after semantic/cascade checks",
+    "expectations: structure-dependent",
+    "FAQ/CTA outer layout + fourth wave: dependency/structure-dependent"
+  ],
+  "content_review_microfixes_separate": [
+    "build/bio-review-anchor-parity-20260914-v001.json only if fresh safe _cssid owner",
+    "build/bio-review-third-author-role-text-20260914-v002.json only after fresh SAVED-data exact short-role confirmation; do not change tab accessible name"
+  ],
+  "interaction_focus_delta": "HOLD_NO_SAFE_PAGE_LOCAL_JS_OWNER: do not edit global ID35 or inject ad-hoc page-local JS to mimic source previous/next focus target.",
+  "superseded_for_execution": [
+    "reports/subpages/bio-evidence-supersedence-20260915-v004.json",
+    "build/bio-page-local-visual-delivery-20260914-v001.json"
+  ],
+  "unchanged": "All structure/semantic/table/expectations/FAQ acceptance gates and obsolete package bans from v004 remain in force.",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "PAGE256_PRECEDENCE_ALIGNED_TO_LOCAL_VISUAL_DELIVERY_V002"
+}
