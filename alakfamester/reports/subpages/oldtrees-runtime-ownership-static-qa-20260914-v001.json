@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-runtime-ownership-static-qa-20260914-v001",
+  "date": "2026-09-14",
+  "scope": "page264 static runtime ownership audit; no WordPress write",
+  "page_id": 264,
+  "reference_runtime": {
+    "source": "build/source-interactions-v001.js",
+    "before_after": {
+      "selector": ".js-ba",
+      "contract": "range input drives --ba-pos from input.value; initialized once via data-af-ba-init"
+    },
+    "carousel": {
+      "selector": ".js-carousel",
+      "contract": [
+        "translate track by active slide index",
+        "update aria-hidden and aria-current",
+        "ArrowLeft/ArrowRight keyboard navigation",
+        "pointer swipe threshold 40px with horizontal-dominance check",
+        "pause on mouseenter/focusin and resume on mouseleave/focusout",
+        "autoplay every 4000ms unless manual, reduced-motion, disconnected or single-slide",
+        "restart policy responds to prefers-reduced-motion changes"
+      ]
+    }
+  },
+  "target_evidence": {
+    "before_after": {
+      "selector": ".js-ba",
+      "data_af_ba_init": "1",
+      "value": 50,
+      "split_position": "50%",
+      "source_alt_texts_exact": true,
+      "status": "STRUCTURE_AND_INITIALIZATION_PROVEN"
+    },
+    "reviews": {
+      "real_tabs": 3,
+      "shared_runtime_owner": "Code Snippets ID14 AF reusable reviews controls v005",
+      "page264_semantic_owner": "Code Snippets ID33 with is_page(264) guard",
+      "page264_semantic_fix": "numeric source-dot duplicates removed from keyboard/AX via tabindex=-1 and aria-hidden=true while pointer/visual behavior remains",
+      "tab_names_exact_source_match": true,
+      "global_id14_change_justified": false
+    },
+    "nordmann_carousel": {
+      "markup_selector": ".carousel.js-carousel",
+      "source_slide_count": 6,
+      "timing_and_reduced_motion_live_proof": false,
+      "reason": "Opera connector has no interaction action and later disconnected; host/WPVibe entered HTTP 429 window"
+    }
+  },
+  "decision": {
+    "new_page264_javascript_required_now": false,
+    "reason": "No reproducible runtime delta currently justifies adding a second owner for before/after, carousel, or review behavior. Duplicating source listeners would risk double navigation/timers and regressions.",
+    "preserve": [
+      "existing shared review runtime ID14",
+      "existing page264 semantic helper ID33",
+      "current before/after initialized structure",
+      "current Nordmann carousel markup"
+    ]
+  },
+  "next_live_gate": [
+    "Use an interaction-capable isolated browser when available to prove review Arrow/Home/End behavior.",
+    "Prove tiszafa range keyboard/pointer response without changing implementation first.",
+    "Measure Nordmann 4000ms autoplay and reduced-motion stop/restart contract before any runtime code change.",
+    "Do not modify shared ID14 from a page264-only work package."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
