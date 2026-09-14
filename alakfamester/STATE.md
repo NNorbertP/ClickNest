@@ -10,7 +10,8 @@ Repository: `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
 Authoritative continuation reconciliation: `reports/subpages/oldtrees-continuation-20260914-v006.json`.  
 Authoritative live visual deployment: `reports/subpages/oldtrees-visual-live-qa-20260914-v006.json`.  
-Shared form reconciliation: `reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json`.
+Shared form reconciliation: `reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json`.  
+Post-v005 no-write acceptance plan: `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
 
 ## Important correction — do NOT deploy another oldtrees visual bundle
 
@@ -86,6 +87,8 @@ Still open for live proof only:
 
 ## Next work is QA/readback first, not writing
 
+Execute `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`; it is deliberately `NO_WRITE_BY_DEFAULT`.
+
 When WPVibe is available again:
 1. verify account `ncsnorbert+20260914-5@gmail.com`, site connection and exact quota;
 2. re-read page264 hash/JSON; if it differs from `09f661e0...a788a`, stop and reconcile before any write;
@@ -115,14 +118,14 @@ Do not add another runtime layer unless one of these fails in a stable interacti
 
 Opera Browser Connector is disconnected. During this continuation only the existing two project tabs were reused; **zero new tabs** were opened. When Opera is stable again, use at most one source and one target tab and reuse them.
 
-Local Chromium exists, but this runtime cannot currently resolve the Clicknest hosts by DNS, so it cannot replace Opera for live deterministic capture.
+Local Chromium exists, but this runtime cannot currently resolve the Clicknest hosts by DNS, so it cannot replace Opera for live deterministic capture. The generic web fetch/search path also cannot currently fetch either Clicknest page.
 
 `specs/acceptance.json` and `specs/behaviors.json` are absent from current `main`; do not reconstruct them by guesswork. Deterministic frozen six-viewport same-browser/DPR/zoom capture remains unavailable.
 
 ## Current status
 
-**Elkészült:** page264 content/semantics; v004+v005 visual CSS live; shared MetForm33 photo-count/textarea/success behavior reconciled; repository state corrected; obsolete v003 prep removed.  
+**Elkészült:** page264 content/semantics; v004+v005 visual CSS live; shared MetForm33 photo-count/textarea/success behavior reconciled; repository state corrected; obsolete v003 prep removed; exact post-v005 no-write acceptance plan prepared.  
 **Ellenőrzött:** v004/v005 markers; Elementor hash unchanged; v004 icons/bullets visibly source-like; shared Form33 validator/UI helper/settings previously read back.  
 **Nyitott:** post-v005 visual capture, form-panel capture, hero geometry root-cause check, interaction acceptance, service-radio required runtime proof, deterministic pixel matrix.  
-**Következő művelet:** WPVibe `-5` connection/quota verification, then page/hash/marker/Form33 readback and **QA only** if intact.  
+**Következő művelet:** WPVibe `-5` connection/quota verification, then execute the no-write acceptance plan; write only after a fresh reproducible failure with proven cause.  
 **Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; no current-counter claim until WPVibe is available again.
