@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "package": "bio-visual-live-compare-20260914-v015",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "read-only source/target same-browser visual evidence; zero WordPress writes",
+  "source": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "browser": {
+    "existing_opera_tabs_only": true,
+    "new_tabs_opened": 0,
+    "same_browser": true,
+    "screenshot_viewport_px": [1640, 920],
+    "tab_state": "both tabs were already placed on page256 by another active flow; no navigation was performed for the top capture"
+  },
+  "fresh_findings": {
+    "hero_vertical_geometry": {
+      "status": "PROVEN_VISUAL_DELTA",
+      "finding": "Target hero left copy begins visibly lower than source by roughly 40px at the same viewport while the lower hero boundary remains close. The target contact/CTA/proof rhythm is correspondingly compressed/lower in the section rather than the entire hero simply being taller.",
+      "consequence": "The prepared build/bio-hero-layout-parity-v001.css remains justified for guarded deployment after its existing live/hash/quota gates; do not replace it with a new guessed margin patch."
+    },
+    "hero_content_and_art": {
+      "status": "PRESERVE",
+      "finding": "Headline/copy/contact/CTA/proof content and biological-protection hero illustration identity are present on both sides. No content or asset rewrite is justified from this capture."
+    },
+    "header_service_child_current": {
+      "status": "OPEN_REPRODUCIBLE_ON_PAGE256",
+      "source": "Szolgáltatások is rendered with the source current-section pill.",
+      "target": "Szolgáltatások is not rendered with the current-section pill in the fresh target page256 capture.",
+      "consequence": "Previous page264 route-current PASS must not be generalized to all service child pages. Diagnose the current header runtime owner before any new global write; existing page256 content package must not touch header."
+    },
+    "floating_contact_dock": {
+      "status": "REPRODUCED_VISUAL_ONLY_DELTA",
+      "source": "Phone, e-mail and Felmérést kérek controls are visible in the floating pill.",
+      "target": "Explicit target screenshot again shows an almost blank white floating pill.",
+      "consequence": "Supports the existing diagnostic-first dock plan; no page256-local or duplicate markup/runtime fix is justified."
+    }
+  },
+  "preserve": [
+    "page256 saved Elementor semantic closeout baseline and ID35",
+    "hero visible copy and links",
+    "hero illustration",
+    "global header from the page256 package",
+    "floating dock markup/runtime"
+  ],
+  "next": [
+    "When remote access is safe, keep the existing page256 first visual package limited to bio-visual-parity-v001.css + bio-hero-layout-parity-v001.css after fresh page256/post8 reconciliation.",
+    "Treat page256 header current-state mismatch as a separate global-header diagnostic item; do not fold it into page256 CSS.",
+    "Keep floating dock diagnostic-first."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
