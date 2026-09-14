@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only runtime delta",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_WPVIBE_UNAVAILABLE",
+  "snippet": {
+    "id": 7,
+    "required_prewrite_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "required_prewrite_bytes": 9723,
+    "required_marker": "af-header-nav-parity-v005",
+    "must_remain_active": true,
+    "must_keep_scroll_threshold_px": 8,
+    "must_keep_mobile_breakpoint_px": 1240,
+    "must_keep_main_navigation_aria_label": "Főmenü",
+    "must_keep_brand_accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "proven_remaining_delta": {
+    "services_parent_active_state": "missing on service child paths because the WordPress custom parent menu item does not receive current-menu-* classes",
+    "references_parent_active_state": "same risk on gallery/reference-video child paths",
+    "duplicate_visual_caret": "handled by build/header-desktop-alignment-v004.css through suppression of button.ekit-menu-dropdown-toggle::after; live runtime button already contains exactly one SVG indicator"
+  },
+  "runtime_change": {
+    "location": "inside makePanel(), immediately after creating/configuring host and before inserting it into the DOM",
+    "intent": "Add host.classList 'is-current' only when the current URL matches one of that dropdown group's destinations.",
+    "algorithm": [
+      "For every item URL, resolve it with new URL(item[1], window.location.origin).",
+      "Normalize pathname by removing duplicate trailing slashes while treating root as '/'.",
+      "For normal child-page URLs, match only normalized pathname.",
+      "For the home-section URL '/#szolgaltatasi-utak', require both root pathname and the exact #szolgaltatasi-utak hash so the Services parent is not marked current on the normal homepage.",
+      "If any item matches, add host.classList.add('is-current'); otherwise leave the class absent.",
+      "Do not add aria-current to the popup buttons because the live reference accessibility tree does not expose an aria-current state on those controls."
+    ],
+    "reference_group_paths": {
+      "services": [
+        "/#szolgaltatasi-utak",
+        "/soveny-specialista/",
+        "/idos-fak-megmentese-szolgaltatas/",
+        "/biologiai-vedelem/",
+        "/gyumolcsfak-metszese-es-vedelme/"
+      ],
+      "references": [
+        "/galeria/",
+        "/referencia-videok/"
+      ]
+    }
+  },
+  "guarded_execution": [
+    "Do not write while WPVibe is unavailable or while the target returns 429.",
+    "On reconnect, first verify the authenticated WPVibe profile is the user-requested account and list quota once.",
+    "GET Code Snippets ID7 through the plugin REST API and require the exact prewrite hash/bytes above. If they differ, stop and reconcile; do not replay this package blindly.",
+    "Apply only the route-group current-state logic while preserving every other byte where practical.",
+    "PUT only the code field through the Code Snippets plugin-aware REST route.",
+    "GET snippet 7 again; require active=true, no code_error, marker present, 8px threshold, 1240px breakpoint, Főmenü label and existing brand/dropdown accessible-name fixes.",
+    "Fresh-load service, reference and homepage routes and verify current parent styling without changing body/footer/form content.",
+    "If any regression appears, restore the exact prewrite code captured immediately before the write."
+  ],
+  "do_not_change": [
+    "Elementor header structure",
+    "page body",
+    "footer",
+    "forms",
+    "SMTP",
+    "menu destination mapping",
+    "mobile menu contents",
+    "quick-contact dock contents"
+  ]
+}
