@@ -1,0 +1,112 @@
+{
+  "schema_version": 9,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "supersedes_for_planning": "reports/parity-open-items-20260914-v008.json",
+  "tool_state": {
+    "wpvibe_account_profile_verified": "ncsnorbert+20260914-5@gmail.com",
+    "wpvibe_account_email_verified": true,
+    "wpvibe_site_connection_on_plus5": "NOT_CONFIRMED: connector became unavailable during connect/list-sites attempt; do not infer connection or quota.",
+    "wpvibe_current_chat": "UNAVAILABLE; no further WPVibe calls possible in this chat until connector returns.",
+    "opera": "Existing two tabs were observed as page264 source/target only; screenshot attempt then reported Browser not connected. Open no replacement tabs.",
+    "wordpress_writes_after_tool_loss": 0
+  },
+  "preserve_live_state": [
+    {
+      "resource": "page272 Hedge",
+      "saved_data": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+      "closed": "26/26 shared-media recovery, 28/28 page-local gallery id=0/full/original URLs, five legacy regions, full mailto range, exact contact-link names, 24-hour sentence",
+      "runtime": "Code Snippets ID36 v001 documented active/page272-only/code_error=null; review tablist name and duplicate review-dot AX/focus suppression",
+      "do_not_repeat": "No shared-media write; no replay of legacy semantic edits; no guessed Atomic attributes."
+    },
+    {
+      "resource": "page256 Biological Protection",
+      "saved_data": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid",
+      "closed": "v010 semantic closeout authoritative; 13 punctuation fixes, table headers/rowHeaders, legacy regions, CTA, review/hero/FAQ runtime semantics",
+      "runtime": "ID35 active; do not replay v004-v010 semantic work."
+    },
+    {
+      "resource": "page264 Old Trees",
+      "saved_data": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+      "runtime": "ID33 active; content/semantic parity preserved; duplicate numbered review dots removed from AX/focus page-scoped",
+      "visual_live": "af-oldtrees-visual-v004 and v005 were deployed to Hello Additional CSS. v004 readback hash 87fb6f275f9550dfcb406ac855b1287f4cf4dbd15da226840e6d2d8c28108bb6 at 611030 B; v005 then inserted successfully and marker readback passed, returning 611423 B. Full post-v005 CSS hash was intentionally not spent.",
+      "do_not_repeat": "Do not deploy oldtrees v004/v005 again; only visually recheck them when browser access returns."
+    },
+    {
+      "resource": "global header",
+      "state": "header-v004 Additional CSS and ID37 route-current helper deployed; ID7 8px sticky preserved",
+      "do_not_repeat": "No further header write without a new reproducible source delta."
+    },
+    {
+      "resource": "Reference Videos page268",
+      "state": "CTA sibling order structurally fixed by supported Elementor save; post-save 46622 B / af362a9e7295cf06757b94c487e7504dbc5a01f84ee956906c16d6c93059e747; frontend order and seven video controls verified",
+      "open_only": "authenticated editor-reopen proof, interaction/timing and deterministic visual matrix"
+    }
+  ],
+  "next_remote_ready_or_gated": [
+    {
+      "priority": 1,
+      "resource": "page256 first proven visual package",
+      "plan": "build/bio-visual-single-write-plan-20260914-v004.json",
+      "blocks": ["build/bio-visual-parity-v001.css", "build/bio-hero-layout-parity-v001.css"],
+      "hold": "build/bio-visual-parity-v002-expectations.css is intentionally excluded from first deploy pending stronger visual proof.",
+      "gate": "Requires WPVibe restored, exact +5 quota/site connection, page256 baseline reconciliation, fresh current post8 reconciliation including live page264 v004+v005, and enough headroom for complete write/readback/QA. Prefer browser availability for immediate visual verification."
+    },
+    {
+      "priority": 2,
+      "resource": "page256 stress-card semantic microfix",
+      "plan": "build/bio-stress-article-resume-20260914-v001.json",
+      "proof": "Direct source/target AX v014 proves source article vs target complementary/aside with content already aligned.",
+      "gate": "Fresh raw af260007 content/search and exact match-once aside->article tag-only edit; no full save/reconstruction."
+    },
+    {
+      "priority": 3,
+      "resource": "page256 expectations article semantics",
+      "proof": "Direct AX v014 proves source has two article roles and target has zero while headings/content order already align.",
+      "gate": "Investigation only until fresh raw af260013 boundaries prove two neutral article roots unambiguously. Do not infer wrappers from AX."
+    },
+    {
+      "priority": 4,
+      "resource": "page272 ID36 successor",
+      "build": "build/hedge-semantic-runtime-v002.php",
+      "static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v002.json + reports/subpages/hedge-semantic-runtime-deployment-gate-v003.json",
+      "action": "Update existing ID36 only; never create a second helper.",
+      "gate": "Before deployment, live DOM must prove whether the direct-call paragraph is actually inside the MetForm33 root. The current code searches inside the form; if that proof fails, revise before any live update. Fresh page272 hash and live ID36 body required."
+    }
+  ],
+  "acceptance_only_no_write_without_failure": [
+    "page264 post-v005 comparison cards and request-form panel visual recheck; interaction checks for review Arrow/Home/End, tiszafa range and Nordmann carousel normal/reduced motion",
+    "global header route-current/dropdown/mobile-drawer/top-vs-scrolled behavior",
+    "Gallery page258 lightbox/BA/carousels plus deterministic visual matrix",
+    "Reference Videos review keyboard/video keyboard-lazy/privacy/hero animation/editor reopen",
+    "global review ID14 remains gated on representative homepage source/target proof; keep page-scoped fixes"
+  ],
+  "stale_items_removed_from_active_queue": [
+    "page262 Gyümölcsfa hero missing: already solved by fruit-hero-v4-v002",
+    "page260 GYIK hero missing: already solved by faq-hero-v4-v002",
+    "page270 main hero missing: already solved by about-hero-v4-v001",
+    "page268 CTA structural order: already fixed and frontend order verified",
+    "page266 contact hero/class bridge/headings: already saved and verified"
+  ],
+  "asset_blockers": [
+    "page270 portrait source URL remains documented 404 with no exact indexed/archive-proven bytes; do not invent or substitute",
+    "page258 Ellwoodi alternate-view source URL remains documented 404 with no exact indexed/archive-proven bytes; do not invent or substitute"
+  ],
+  "formal_blockers": [
+    "specs/acceptance.json absent from repository current state",
+    "specs/behaviors.json absent from repository current state",
+    "deterministic 1920/1440/1024/768/390/360 same-browser DPR/zoom screenshot-overlay-diff runner unavailable",
+    "Opera connector currently disconnected and exposes no click/keyboard action when connected",
+    "WPVibe connector currently unavailable after +5 account switch attempt",
+    "SMTP/delivery and real form submissions remain excluded"
+  ],
+  "critical_rules": [
+    "Never blind-retry a 429-returned write; outcome is UNKNOWN until exact readback.",
+    "Do not use stale STATE top sections as live truth when later immutable evidence supersedes them.",
+    "Do not modify already-correct page/content/runtime merely to obtain missing proof.",
+    "Do not open extra Opera tabs to compensate for connector failure."
+  ],
+  "pixel_pass": false
+}
