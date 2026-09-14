@@ -1,0 +1,67 @@
+{
+  "schema_version": 13,
+  "package": "bio-page256-next-safe-package-20260914-v013",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED_REMOTE_BLOCKED",
+  "supersedes": "build/bio-page256-next-safe-package-20260914-v012.json",
+  "why_superseded": "The four Atomic wave class writes are no longer preferred. Exact source SVG waves can be restored more faithfully and with lower D18 risk by page256-scoped CSS on the already-rendered elementor-element IDs. This structural package now contains legacy HTML microfixes only.",
+  "precondition": {
+    "page_bytes": 35382,
+    "page_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "scope": "Future WordPress write scope must be explicitly reconciled to page256; current repository STATE.md says page264-only.",
+    "wpvibe": "verified +5 identity plus site connection/quota required",
+    "d11": "leave at least 10 calls after complete package/readback margin"
+  },
+  "operations": [
+    {
+      "order": 1,
+      "element": "af260015",
+      "purpose": "restore source FAQ-before-CTA order",
+      "known_live_owner_before_outage": "settings._css_classes = af-faq-content",
+      "proof": "The only CSS occurrence of af-faq-content is #af-sub-bio-cta>.af-faq-content{order:10!important}; source places FAQ before CTA.",
+      "method": "Fresh exact content/search around af260015; replace only the exact _css_classes value with an empty value or remove only that class token, preserving editor HTML and widget ID.",
+      "verify": "Fresh rendered order must be FAQ heading/questions first, then CTA heading/body/contact/form link; FAQ native controls unchanged."
+    },
+    {
+      "order": 2,
+      "element": "af260007",
+      "purpose": "restore source two-column direct-child structure",
+      "proof": "Source screenshot/HTML: two paragraphs share one left column, forest stress article is right column. Target af-sub-split currently has p + p + aside as three direct grid children.",
+      "method": "Fresh exact raw snippet; wrap only the two existing explanatory p nodes in one neutral div.af-stress-copy. Do not change paragraph text, card root, list or outer region.",
+      "verify": "af-sub-split has exactly two direct children; all text unchanged; source-like left/right columns; page JSON valid."
+    },
+    {
+      "order": 3,
+      "element": "af260010",
+      "purpose": "create the source callout ownership boundary",
+      "proof": "Direct source #technologiak screenshot + exact .callout CSS: Milyen esetekben használom? h3 and the four-item checklist belong to one recessed callout wrapper with left accent rail.",
+      "method": "Fresh exact raw snippet covering only the existing h3 + following four-item ul; wrap those bytes in one neutral div.af-bio-tech-callout. No text/list/card changes.",
+      "verify": "Technology three article roles/content/order unchanged; callout wrapper contains exactly one h3 and the same four li strings; JSON valid."
+    }
+  ],
+  "not_in_this_package": [
+    "wave Atomic class bridge — superseded by build/bio-wave-source-exact-20260914-v001.json",
+    "af260007 aside->article role microfix — keep separate after structure reconciliation",
+    "af260013 expectations regrouping — separate v003 plan because it changes two article ownership boundaries",
+    "any Additional CSS write",
+    "hero/reviews/table/CTA text or links",
+    "ID35 runtime"
+  ],
+  "execution_rules": [
+    "Load Elementor skill first in the future usable remote session.",
+    "For every operation: content/search -> copy returned escaped snippet exactly -> one match-once content/edit -> immediate readback before next structural edit.",
+    "Do not chain all three edits if an earlier readback changes ownership unexpectedly.",
+    "Never use full save-page, raw SQL, search-replace, old blob restore or guessed JSON.",
+    "429 write is UNKNOWN until exact readback; never blind-retry."
+  ],
+  "related_visual_packages_after_structure": [
+    "build/bio-stress-source-visual-20260914-v001.json",
+    "build/bio-technology-callout-20260914-v001.json",
+    "build/bio-wave-source-exact-20260914-v001.json",
+    "build/bio-visual-single-write-plan-20260914-v005.json"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
