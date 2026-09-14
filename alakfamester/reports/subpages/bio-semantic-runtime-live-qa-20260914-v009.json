@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "package": "bio-semantic-runtime-live-qa-20260914-v009",
+  "date": "2026-09-14",
+  "scope": {
+    "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+    "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+    "wordpress_page_id": 256,
+    "other_page_writes": 0,
+    "global_template_writes": 0,
+    "additional_css_writes": 0,
+    "smtp_or_submission": false
+  },
+  "saved_page_state_before_runtime": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "note": "No page256 Elementor-data write occurred after this successful readback. Runtime installation is a separate Code Snippets record."
+  },
+  "runtime": {
+    "repo_file": "build/bio-semantic-runtime-v001.php",
+    "repo_commit": "5127ab897f44acbfeed3d4ef7e6d2faf58438719",
+    "plugin": "Code Snippets",
+    "plugin_rest_namespace": "code-snippets/v1",
+    "snippet_id": 35,
+    "name": "AF Biological Protection semantic parity v001",
+    "scope": "front-end",
+    "active": true,
+    "priority": 10,
+    "page_guard": "is_page(256)",
+    "code_error": null,
+    "visual_neutral": true,
+    "changes": [
+      "name the complete Atomic hero region via #af-sub-bio-hero",
+      "name the complete FAQ+CTA Atomic outer region via .elementor-element-af260008",
+      "set review tablist accessible name to Ügyfélvélemények",
+      "set the three review tab accessible names to exact source names without changing visible text",
+      "remove shared review source-dot controls from accessibility/focus order with tabindex=-1 and aria-hidden=true"
+    ]
+  },
+  "runtime_preflight": {
+    "hero_owner": "Atomic e-flexbox root/inner; native Elementor 4.2.4 attributes path previously proved non-rendering",
+    "faq_outer_owner": "Atomic e-flexbox af260008, containing legacy FAQ widget af260015 and following CTA sibling af260009",
+    "reviews": "live e-tabs/e-tabs-menu schemas expose no dedicated accessible-name prop; only non-rendering attributes route",
+    "precedent": "page264 Code Snippets ID33 uses the same page-guarded visual-neutral runtime pattern and the same .af-review-source-dot handling"
+  },
+  "frontend_ax_exact_match": {
+    "named_regions": [
+      "Biológiai növényvédelem alakfákhoz, sövényekhez és értékes kerti növényekhez",
+      "Amit a megbízóim mondanak",
+      "Miért nem ér véget a munka a metszéssel?",
+      "Mit jelent nálam a biológiai, mikrobiológiai megközelítés?",
+      "Mire figyelek a leggyakrabban?",
+      "Mit várhatunk – és mit nem?",
+      "Biológiai védelem – kérdések"
+    ],
+    "tablist_name": "Ügyfélvélemények",
+    "tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "review_buttons": ["Előző vélemény", "Következő vélemény"],
+    "faq_buttons": [
+      "Miért nem elég a hagyományos permetezés?",
+      "Veszélyes ez háziállatra, gyerekre?",
+      "Mennyi idő alatt látszik eredmény?",
+      "Csak alakfához kérhető?"
+    ],
+    "result": "Exact ordered source-target match for regions, tablist, tabs and review/FAQ button names"
+  },
+  "scope_verification": {
+    "other_page_checked": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+    "selector": "#af-bio-semantic-parity-v001",
+    "result": "not present",
+    "page_guard_pass": true
+  },
+  "visual_diagnostic": {
+    "controlled_pixel_pass": false,
+    "reason": "Opera connector has no deterministic viewport/DPR/zoom control or overlay/diff pipeline and tabs are intermittently navigated by other activity.",
+    "top_hero": "Core page256 content and illustration broadly align; intermediate-width screenshot shows spacing differences but target CSS already contains source-measured exact rules for 1920/1440/1024/768/390/360, so no screenshot-guess CSS write was made.",
+    "technology_section": "Source/target content and motif structure align. Intermediate-width card geometry differs in screenshot, but current bio CSS contains discrete reference-measured acceptance heights; no unsupported interpolation fix was made.",
+    "global_header_and_floating_contact": "Visible differences remain in global components. They are outside the page256-only write scope and were not modified."
+  },
+  "host_throttling": {
+    "status": "intermittent HTTP 429 after request bursts",
+    "effect": "a redundant final page256 hash read was blocked after automatic retries",
+    "safety": "no uncertain write was repeated; account quota is not the same as host throttling"
+  },
+  "next_safe_work": [
+    "Continue read-only visual/behavior comparison of page256 sections with the existing two Opera tabs only.",
+    "Do not change page256 geometry unless a controlled or otherwise concrete source-target measurement identifies a page-local cause.",
+    "Global header/floating-contact parity requires broader global-component scope and cannot legally be fixed from page256-only work.",
+    "When host throttling cools, one fresh 35382-byte/hash/JSON readback can reconfirm the stored Elementor checkpoint; runtime does not require a page save."
+  ]
+}
