@@ -1,0 +1,144 @@
+{
+  "schema_version": 3,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "purpose": "Current deduplicated continuation manifest after local history recovery, low-call package preparation and post-install static QA. Supersedes v002 for planning only; historical reports remain immutable evidence.",
+  "quota": {
+    "last_exact_used": 290,
+    "limit": 300,
+    "remaining": 10,
+    "mandatory_D11_reserve": 10,
+    "usable_above_reserve": 0,
+    "source": "reports/subpages/bio-parity-continuation-20260914-v004.json",
+    "rule": "Make no WPVibe call, including read-only probes, until rolling-window calls have aged out."
+  },
+  "priority_remote_packages": [
+    {
+      "priority": 1,
+      "resource": "page272 Hedge shared-media scope recovery",
+      "prepared": "build/hedge-shared-media-recovery-20260914-v003.json",
+      "page_sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+      "pending_last_verified": [110,111],
+      "expected": {
+        "110": "Saját sövénymunka, 15. kép",
+        "111": "Saját sövénymunka, 16. kép"
+      },
+      "call_budget": "3-5 nominal calls; start only with >=19 remaining so 10-call reserve plus retry margin survives recent 429 behavior.",
+      "closeout": "One combined preflight reads page272 hash/JSON plus all 26 shared alts; update only 110/111 if still wrong; identical combined readback must prove 26/26 prepackage map. Then no more shared-media writes for Hedge."
+    },
+    {
+      "priority": 2,
+      "resource": "page272 Hedge page-only parity",
+      "prepared": "build/hedge-parity-next-20260914-v002.json",
+      "open": [
+        "EAEL widget b2e2c001: preserve 28 URL/name/order/repeater IDs/settings, keep resolution=full, set eael_fg_gallery_img.id=0 for all 28 so accessible names come from repeater titles rather than shared attachment metadata.",
+        "af2e000f complete mailto clickable range while preserving #ajanlatkeres.",
+        "af2e004c exact phone/e-mail accessible link names.",
+        "Complete legacy named regions af2e0007/af2e0045/af2e0047/af2e0049/af2e000f.",
+        "Native reviews: fresh live schema/AX inspection before any semantics change; do not guess Atomic attributes."
+      ],
+      "D17_history": "reports/subpages/hedge-eael-masonry-v001.json proves the original correct implementation used media id=0 and item-name alt fallback with 28 items/full resolution.",
+      "array_rule": "Do not reconstruct the 28-item array from memory. Prefer exact current array search/replacement or a proven historical widget extraction; no 28 independent edits."
+    },
+    {
+      "priority": 3,
+      "resource": "page256 Biological Protection",
+      "prepared": "build/bio-parity-fix-20260914-v004.json",
+      "current_sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+      "open": [
+        "13 source-absent trailing periods in af260007/af260010/af260013.",
+        "af260011 uppercase table headers and first-column th scope=row semantics.",
+        "Four complete legacy region names.",
+        "Final CTA aria-label only if fresh AX still needs it.",
+        "Atomic hero/FAQ/tablist names remain blocked: Elementor 4.2.4 attribute transformer/pilot proves guessed typed attributes do not render."
+      ],
+      "execution_rule": "No /batch/v1 for WPVibe content/search. Search by ASCII anchor or copy exact escaped snippets returned by content/search. Exact match-once content/edit only; no full Elementor save/raw SQL."
+    },
+    {
+      "priority": 4,
+      "resource": "page264 Old Trees semantic runtime verification",
+      "installed": "Code Snippets ID33; build/oldtrees-semantic-runtime-v001.php",
+      "static_qa": "reports/subpages/oldtrees-semantic-runtime-static-qa-v001.json PASS",
+      "source_audit": "reports/subpages/oldtrees-semantic-audit-20260914-v001.json",
+      "open": [
+        "Fresh page264 saved hash/content proof after runtime-only install.",
+        "Fresh AX proof for 10 added named regions plus already-native review region = source total 11 named regions.",
+        "Fresh AX proof for 9 promoted step headings.",
+        "Review tablist label/tab accessible names after ID33.",
+        "Form/CTA phone/mail/group/describedby attributes: verify against live source; do not treat static lint as semantic acceptance.",
+        "Check for duplicate/conflicting labels and ensure MutationObserver reapply causes no regression."
+      ],
+      "metform_old_open_items_closed": {
+        "textarea_rows": "Closed by MetForm33 source parity snippet ID6: rows=5.",
+        "file_count_validation": "Closed by snippet ID5: minimum 3 / maximum 5 on form33/fotok.",
+        "success_state": "Configured with exact source title and truthful target local-entry body; source demo-only false-delivery warning intentionally not copied.",
+        "remaining": "No end-to-end submission/delivery test by design; SMTP/external message prohibited in current mode."
+      }
+    },
+    {
+      "priority": 5,
+      "resource": "global header",
+      "preferred_first_change": "build/header-nav-visual-fix-v001.css",
+      "static_qa": "reports/header/header-nav-visual-fix-static-qa-v001.json PASS",
+      "reason": "Lower blast radius than full header remap: selectors limited to nav wrapper a1000009 / af-nav-dropdown-panel.",
+      "open": [
+        "Fresh post8/header20 hash+marker conflict check.",
+        "Insert minimal CSS only if unchanged and full write/readback/frontend package fits quota.",
+        "Verify desktop hover/focus/current/dropdown and narrow/mobile behavior.",
+        "Only after CSS PASS consider Code Snippets ID7 sticky threshold 24px -> source 8px using verified plugin REST GET/PUT/GET workflow."
+      ]
+    }
+  ],
+  "component_runtime_acceptance": {
+    "gallery258_eael": {
+      "structural": "PASS; 44 items/full resolution/masonry/lightbox chain/editor reopen.",
+      "open": ["actual Magnific Popup open/next/previous/close/focus behavior", "formal six-viewport geometry/pixel comparison"]
+    },
+    "gallery258_featured_interactions": {
+      "open": ["before/after drag+keyboard", "manual carousel arrows/dots/swipe"]
+    },
+    "hedge272_native_reviews": {
+      "structural": "PASS; 3 tabs/panels/native D12.",
+      "open": ["per-page Arrow/Home/End runtime proof", "current source-equivalent tablist/tab accessible-name proof after later page drift"]
+    },
+    "reference_videos268": {
+      "structural": "PASS for hero/video/tabs/CTA/video IDs/privacy mode.",
+      "open": ["tab click + Arrow/Home/End", "video keyboard activation", "hero animation start/intermediate/full cycle", "mobile + reduced-motion", "computed geometry/fonts", "console/network/assets", "second browser engine", "editor reopen after latest CTA package"]
+    }
+  },
+  "source_and_acceptance_recovery": {
+    "evidence": "reports/source-history-recovery-audit-20260914-v001.json",
+    "conclusion": "README-referenced source/, acceptance.json, behaviors.json and tools/measure.cjs were never committed to this repository. GitHub path history is empty for all of them; the first README already referenced local-only resources.",
+    "missing_assets": [
+      "page270 biro-janos-portre.webp / Biró János munka közben",
+      "page258 175725917368bda5a5b1ae6_370X354.webp / A többgömbös Ellwoodi niwaki, másik nézet"
+    ],
+    "public_exact_search": "No indexed exact URL/filename copy found for either asset.",
+    "rule": "Do not invent assets or acceptance specs. Only original local preparation workspace/source archive or exact source bytes may clear these blockers."
+  },
+  "content_structure_closed_except_formal_acceptance": [
+    "Homepage page56 content/navigation/footer packages",
+    "FAQ page260: hero/Témakörök/17 questions/native reviews",
+    "Fruit page262: hero/corrected FAQ/timing heading/native reviews",
+    "About page270: hero/timeline/content except missing 404 portrait/work source asset",
+    "Contact page266: hero/semantic headings/form structure",
+    "Gallery page258: hero/60 target main roles/44 EAEL/native reviews except missing 404 Ellwoodi source asset and runtime QA",
+    "Reference Videos page268: seven videos + CTA order; runtime/editor formal items listed separately"
+  ],
+  "global_formal_acceptance_open": [
+    "deterministic 1920x1080,1440x1000,1024x900,768x1024,390x844,360x800 screenshot pairs + overlay/diff",
+    "animations start/intermediate/end and reduced-motion",
+    "computed typography/geometry/image crop/page height",
+    "console/network/asset error capture",
+    "second browser engine",
+    "remaining editor reopen/editability proofs"
+  ],
+  "tooling": {
+    "opera": "disconnected; when restored, reuse one active source-target pair and close stale diagnostics to keep memory bounded.",
+    "container": "cannot resolve Clicknest hosts in this session.",
+    "acceptance_specs": "not recoverable from Git; absent by original repository history."
+  },
+  "pixel_pass": false
+}
