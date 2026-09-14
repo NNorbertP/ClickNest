@@ -1,0 +1,54 @@
+{
+  "schema_version": 4,
+  "package": "bio-expectations-source-structure-20260914-v004",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "af260013",
+  "status": "SOURCE_CONTRACT_VALID_DEPLOYMENT_HOLD_NO_SAFE_ATOMIC_REGROUPING_PRIMITIVE",
+  "supersedes_for_deployment": "build/bio-expectations-source-structure-20260914-v003.json",
+  "source_contract": {
+    "left_article": "white source card owns h2 Mit várhatunk – és mit nem? + three positive checklist items + two negative/cross checklist items",
+    "right_article": "sage source card owns h3 Hogyan kapcsolódik az alakfa ápolásához? + body paragraph + Az alakfa ápolása arrow link",
+    "desktop": "two columns with source grid gap",
+    "mobile": "source grid stacks to one column",
+    "copy": "all five list strings, both headings, body and link are already protected content and must remain byte-equivalent"
+  },
+  "current_target_public_DOM": {
+    "order": [
+      "h2 outside cards",
+      "div.af-sub-split containing div.af-card-positive with 3-item ul",
+      "div.af-card-muted with 2-item ul",
+      "h3 outside cards",
+      "body p outside cards",
+      "link p outside cards"
+    ],
+    "problem": "The nodes that must become the two source articles are separated across existing wrapper boundaries. A correct transform requires moving several complete sibling subtrees, not merely renaming one compact owner."
+  },
+  "why_v003_is_not_currently_executable": [
+    "The normal safe Elementor path returns exact bounded search snippets rather than a whole mutable widget owner.",
+    "Creating an article by separate opening-tag and closing-tag writes would produce a transient invalid or half-owned DOM between calls.",
+    "Duplicating nodes first and removing originals later would temporarily duplicate protected content on the live page.",
+    "Changing the two current list-card divs to article would satisfy an article count superficially but would still produce the wrong source ownership and must not be used as a fake semantic pass."
+  ],
+  "allowed_safe_work_now": [
+    "Keep v003 and its CSS as source/design evidence only.",
+    "Preserve all current copy and links.",
+    "A future page-local CSS layer may improve presentation only if it can do so without implying source semantic ownership is complete.",
+    "Continue read-only search for a supported atomic owner-level transform that can replace the complete af260013 editor value in one validated transaction without full page save."
+  ],
+  "future_exact_resolution_gate": [
+    "A single supported atomic transformation must be able to create both source articles and move their existing child nodes without an intermediate invalid/duplicate state.",
+    "The transformation must use freshly read exact saved-data bytes, preserve the outer named region and every protected string/link, and avoid full Elementor save/raw SQL.",
+    "Immediate readback must prove article count +2, protected text equality, valid JSON and correct rendered ownership before any visual CSS is considered complete."
+  ],
+  "do_not": [
+    "do not execute v003 multi-step regrouping under current snippet limitations",
+    "do not chase AX article count by assigning article roles to the wrong current wrappers",
+    "do not use aria-owns/role tricks to claim source DOM ownership parity without a real equivalent structure",
+    "do not inject JS to restructure this block at runtime under current scope",
+    "do not restore/rewrite a full old _elementor_data blob"
+  ],
+  "residual_effect_on_acceptance": "Exact expectations structure and source article ownership remain OPEN. Visual similarity alone cannot clear this item.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
