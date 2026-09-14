@@ -3,7 +3,7 @@
   "date": "2026-09-14",
   "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
   "source": "https://alakfamester.clicknest.hu/soveny-specialista.html",
-  "status": "DATA_PASS_FRONTEND_CACHE_BLOCKED",
+  "status": "ELEMENTOR_DATA_PASS_MEDIA_RECHECK_REQUIRED_FRONTEND_CACHE_BLOCKED",
   "wordpress_writes": {
     "elementor_data": [
       "eael_fg_image_resolution_size: medium -> full (match-once)",
@@ -15,12 +15,18 @@
       "fleet_job": "fj_75bc98a970c64ce7",
       "fleet_status_url": "https://mcp.wpvibe.ai/fleet/fj_75bc98a970c64ce7?t=1789579296169.0DEwnjuRjQFG3uihUtdpo24nTHjDHQfSu3Y7CkpgXo4",
       "fleet_result": "17 succeeded, 5 failed with HTTP 429, 4 skipped; all nine remaining IDs were then updated individually",
-      "final_readback": "all 28 attachment alt_text values exactly match the prepared source map"
+      "verified_before_concurrent_job": "all 28 attachment alt_text values exactly matched the prepared source map",
+      "concurrent_job_after_verification": {
+        "job_id": "fj_9d41f7d4efff49db",
+        "result": "6 succeeded, 5 failed with HTTP 429, 15 skipped",
+        "evidence_of_conflict": "status example showed a command attempting post meta update 208 _wp_attachment_image_alt to an empty value",
+        "current_media_state": "UNKNOWN_UNTIL_FRESH_READBACK_AFTER_429"
+      }
     },
     "normal_post_touch": "post update 272 --post_status=publish succeeded",
     "cache_purge": "Elementor CSS cache purged and object cache flushed; stale Elementor element cache remained"
   },
-  "final_elementor_data": {
+  "last_verified_elementor_data_before_concurrent_media_job": {
     "bytes": 53097,
     "sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
     "json_valid": true,
@@ -39,12 +45,19 @@
     "post_modified_after_touch": "2026-09-14T17:25:24+00:00",
     "targeted_element_cache_delete_op": "op_fcdc663c565b4da0",
     "approval_url": "https://mcp.wpvibe.ai/approve/op_fcdc663c565b4da0?t=8n8gUGVqlVe0oGJPAyrhQfujcMU7YStY4w_DqgIJSic",
-    "approval_status_at_report": "pending"
+    "approval_status_last_checked": "pending"
   },
-  "notes": [
-    "Do not repeat the successful Elementor-data patches or media-alt updates.",
-    "Do not restore old revision 378 wholesale; preserve all documented 2026-09-14 manual drift.",
-    "Next action is only the targeted Elementor element-cache invalidation after approval, then fresh frontend readback of reply sentence, full-size gallery URLs and all 28 accessible names.",
-    "PIXEL_PASS remains false; deterministic six-viewport screenshot/overlay/diff tooling and machine acceptance files are still unavailable."
+  "current_blockers": [
+    "WordPress is rate-limiting WPVibe with HTTP 429 after the concurrent fleet job, so current page272/media state cannot yet be re-read safely.",
+    "A concurrent media job ran after the 28/28 verification and may have reverted some alt values; do not assume the media state is still correct.",
+    "The saved Elementor data was correct at the last successful readback, but frontend remains on stale Elementor element cache.",
+    "Targeted element-cache deletion requires browser approval."
+  ],
+  "next_safe_action": [
+    "After the 429 window clears, first re-read page272 bytes/SHA256/JSON validity and all 28 media alt values; make no write before this conflict readback.",
+    "Only repair media values proven to have drifted after the concurrent job.",
+    "After approval of op_fcdc663c565b4da0, clear only page272 _elementor_element_cache, then verify fresh frontend reply sentence, full-size gallery URLs and all 28 accessible names.",
+    "Do not repeat the successful page272 Elementor-data patches unless the readback proves they were changed.",
+    "PIXEL_PASS remains false until deterministic six-viewport screenshot/overlay/diff evidence exists."
   ]
 }
