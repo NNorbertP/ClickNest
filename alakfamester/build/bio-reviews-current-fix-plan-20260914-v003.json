@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "package": "bio-reviews-current-fix-plan-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_WITH_SECTION_LOCAL_SEMANTIC_GATES",
+  "supersedes": "build/bio-reviews-current-fix-plan-20260914-v002.json",
+  "owner_evidence": [
+    "reports/subpages/bio-id35-public-runtime-audit-20260914-v001.json",
+    "reports/subpages/bio-current-public-css-cascade-audit-20260914-v001.json",
+    "reports/subpages/bio-static-dom-diff-20260914-v025.json",
+    "reports/subpages/bio-ax-role-gate-20260914-v002.json"
+  ],
+  "preserve": [
+    "native Elementor Atomic Tabs hierarchy",
+    "three exact accessible tab names",
+    "review images/alt/body copy",
+    "ID35 tablist/region semantics",
+    "ID35 aria-hidden/nonfocusable generated visual dots",
+    "ID35 generated prev/next controls",
+    "all tab/panel IDs/relationships"
+  ],
+  "presentation_fixes": [
+    {
+      "item":"quote",
+      "payload":"build/bio-review-quote-source-color-v002.css",
+      "source":"#D9C9A5; width46 default / 38 <=760",
+      "owner":"ID35 currently overrides source-like base to #B59A61",
+      "risk":"LOW presentation-only"
+    },
+    {
+      "item":"active visual dot",
+      "payload":"build/bio-review-dot-source-v001.css",
+      "source":"9x9 leaf; active #2F5D46 scale(1.3) rotate(-12deg)",
+      "owner":"ID35 currently expands active dot to width30",
+      "risk":"LOW presentation-only; leaves aria-hidden/tabindex ownership unchanged"
+    },
+    {
+      "item":"tab ordinal",
+      "payload":"build/bio-review-ordinal-source-v001.css",
+      "source":"one visual aria-hidden ordinal per tab",
+      "current":"global counter pseudo + ID35 literal pseudo both write text; visual duplication and prior standalone AX staticText",
+      "strategy":"later page-local isolated block empties textual pseudo content and redraws one decorative SVG ordinal",
+      "risk":"MEDIUM; immediate AX readback mandatory"
+    }
+  ],
+  "semantic_content_fixes": [
+    {
+      "item":"Panasonic three-point testimonial list semantics",
+      "package":"build/bio-review-points-semantics-20260914-v001.json",
+      "source":"one ul / three li between intro and final testimonial paragraphs",
+      "target":"three point spans inside p.af-review-text with no list/listitem roles",
+      "status":"DIAGNOSTIC_FIRST; do not write until section-local AX confirms current runtime shape",
+      "acceptance":"active Panasonic review exposes exactly list1/items3 in source order; intro/final remain outside list; visible copy/style/tabPanel unchanged"
+    },
+    {
+      "item":"review deep-link",
+      "package":"build/bio-review-anchor-parity-20260914-v001.json",
+      "condition":"fresh Atomic _cssid owner proven safe"
+    },
+    {
+      "item":"third author role line",
+      "package":"build/bio-review-third-author-role-text-20260914-v002.json",
+      "status":"current public HTML proven; fresh saved-data search required before edit"
+    }
+  ],
+  "interaction_delta": {
+    "source_oracle":"build/bio-review-source-interaction-contract-20260914-v001.json",
+    "item":"prev/next panel focus",
+    "source":"step switch focuses newly active tabpanel",
+    "target_ID35":"switches tabs and visual dot but does not explicitly focus the new panel",
+    "status":"HOLD_NO_SANCTIONED_PAGE_LOCAL_RUNTIME_OWNER",
+    "rule":"preserve working controls; no global ID35 edit/ad-hoc JS"
+  },
+  "media_delta": {
+    "package":"build/bio-review-media-aspect-diagnostic-20260914-v001.json",
+    "status":"MEASURE_ONLY",
+    "note":"first target image natural ratio differs but container may already reproduce source 1.78 with contain behavior"
+  },
+  "optional_decor": {
+    "package":"build/bio-review-decor-source-20260914-v001.json",
+    "status":"LAST_ONLY_AFTER_PSEUDO_OWNER_PROOF"
+  },
+  "recommended_order_after_page_local_style_carrier_PASS": [
+    "1. quote + dot in first local visual payload",
+    "2. ordinal as isolated marked block + immediate AX check",
+    "3. section-local Panasonic review AX diagnostic; only then evaluate review-points semantic candidate",
+    "4. review deep-link and third-author text as separate exact content transactions",
+    "5. optional decor last",
+    "6. keep prev/next focus exactness open until sanctioned runtime path exists"
+  ],
+  "final_review_semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
