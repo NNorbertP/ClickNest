@@ -1,0 +1,48 @@
+{
+  "schema_version": 14,
+  "package": "bio-page256-next-safe-package-20260914-v014",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED_REMOTE_WRITE_BLOCKED",
+  "supersedes": "build/bio-page256-next-safe-package-20260914-v013.json",
+  "reason": "Fresh same-browser target capture proves the technology callout surface/left rail are already live; the proposed wrapper would be redundant and risky. Remove it from the structural queue.",
+  "preconditions": [
+    "Repository write scope must be reconciled from current STATE.md page264-only to page256 through normal handoff.",
+    "WPVibe must be usable under verified +5 identity; site connection and exact quota known; leave D11 10-call reserve.",
+    "Fresh page256 saved bytes/SHA/JSON must match or be explicitly reconciled before any mutation.",
+    "Load Elementor skill before content edits."
+  ],
+  "operations": [
+    {
+      "order": 1,
+      "element": "af260015",
+      "delta": "source FAQ precedes CTA; target af-faq-content legacy class is the sole owner forcing order:10",
+      "method": "Fresh exact content/search; remove only the af-faq-content class token/value. Preserve widget/editor HTML/ID.",
+      "verify": "FAQ remains native details/summary and appears before CTA; all four questions/text unchanged."
+    },
+    {
+      "order": 2,
+      "element": "af260007",
+      "delta": "source two explanatory paragraphs form one left grid child; target has p+p+aside as three direct af-sub-split children",
+      "method": "Fresh exact raw search; wrap only the two existing p nodes in a neutral div.af-stress-copy. Preserve text/card/list/region.",
+      "verify": "af-sub-split has exactly two direct children; left copy + existing stress card."
+    },
+    {
+      "order": 3,
+      "element": "af26000d",
+      "delta": "source review section has id=ugyfelvelemenyek; target rendered Atomic review section has no matching id, so #ugyfelvelemenyek deep-link does not scroll",
+      "method": "Fresh exact _elementor_data search around af26000d settings first. Only if current live shape exposes a proven safe _cssid owner/mechanism, set exact source id ugyfelvelemenyek with the smallest match-once edit. Do not guess typed Atomic attributes or full-save.",
+      "verify": "frontend id appears exactly once; deep-link works in existing target tab; review Atomic Tabs/ID35 semantics unchanged."
+    }
+  ],
+  "removed_or_separate": [
+    "technology callout wrapper: OBSOLETE_NOT_NEEDED after fresh target capture",
+    "waves: use separate exact SVG CSS plan build/bio-wave-source-exact-20260914-v001.json; no Atomic class mutation",
+    "stress aside->article role: separate semantic microfix after structure readback",
+    "expectations two-article regrouping: separate v003 plan",
+    "all Additional CSS writes: separate rollback units"
+  ],
+  "execution": "Run one operation at a time: fresh search -> exact escaped match-once edit -> immediate bytes/SHA/JSON/rendered readback. Stop on drift, 429 unknown, multiple/no-match, or scope/quota uncertainty.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
