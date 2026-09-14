@@ -1,0 +1,45 @@
+{
+  "schema_version": 7,
+  "package": "hedge-artifact-supersession-20260915-v007",
+  "date": "2026-09-15",
+  "page_id": 272,
+  "purpose": "Small precedence correction after open-items v007 promoted full review-panel preservation. Planning only; no WordPress write or scope change.",
+  "scope_gate": "STATE.md remains PAGE264 ONLY; page272 stays read-only until explicit scope handoff.",
+  "supersedes": "reports/subpages/hedge-artifact-supersession-20260915-v006.json",
+  "current_chain": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "review_name_resolution": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "review_panel_preservation": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "live_window": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v014.json"
+  },
+  "execution_truth": "Exactly one possible future page272 write remains: update existing ID36 to semantic runtime v004 only after fresh baseline/rollback/cardinality/native-ARIA/ID-uniqueness gates. Review panel quote/author/image preservation is read-only evidence and any real mismatch is a separate smallest-owner content/media package, never folded into ID36 v004. Page272 CSS candidate remains NONE.",
+  "review_contract": {
+    "tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "rejected_stale_names": ["Otolecz Attila", "Rosivall László"],
+    "full_panel_inner_content": "READ_ONLY_PRESERVATION_PROOF_OPEN"
+  },
+  "superseded_for_execution": [
+    "reports/subpages/hedge-artifact-supersession-20260915-v006.json",
+    "reports/subpages/hedge-open-items-20260915-v006.json",
+    "build/hedge-acceptance-matrix-20260915-v005.json",
+    "build/hedge-next-live-window-plan-20260915-v005.json"
+  ],
+  "critical_rules": [
+    "Fresh trustworthy live truth outranks this map.",
+    "If stronger native semantics conflict with v004, HOLD v004; never delete native relations to make it win.",
+    "Any HTTP 429 write is UNKNOWN until exact readback; never blind retry.",
+    "Preserve >=10 WPVibe calls for D11 closeout/recovery.",
+    "At most one source and one target Opera tab; stop on stale/repurposed/disconnected state without replacements."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "HEDGE_PRECEDENCE_ALIGNED_TO_OPEN_ITEMS_V007"
+}
