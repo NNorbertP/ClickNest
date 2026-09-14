@@ -1,0 +1,114 @@
+{
+  "schema_version": 13,
+  "package": "hedge-continuation-20260915-v013",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "page272-specific runtime/content only",
+  "wordpress_writes_this_continuation": 0,
+  "smtp_or_external_submission": false,
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_before_write": true
+  },
+  "authoritative_current_chain": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v005.json",
+    "next_live_window": "build/hedge-next-live-window-plan-20260915-v004.json",
+    "acceptance_matrix": "build/hedge-acceptance-matrix-20260915-v004.json",
+    "rendered_dom_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v001.json",
+    "convergence_ledger": "reports/subpages/hedge-convergence-ledger-20260915-v001.json",
+    "link_meta_audit": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
+    "shared_chrome_gates": "reports/subpages/hedge-shared-chrome-external-gates-20260915-v001.json",
+    "formal_tooling_audit": "reports/subpages/hedge-formal-acceptance-tooling-audit-20260915-v001.json",
+    "intentional_divergence_ledger": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json",
+    "state_prepend_candidate": "build/hedge-state-prepend-20260915-v009.md"
+  },
+  "only_current_write_candidate": {
+    "resource": "build/hedge-semantic-runtime-v004.php",
+    "owner": "existing Code Snippets ID36 only",
+    "live_owner_until_verified_replacement": "ID36 v001 active/front-end/code_error null",
+    "effect": [
+      "exact three source review-tab accessible names",
+      "Form33 name Ajánlatkérés",
+      "wrapper-owned direct-call description relation",
+      "service-radio group label relationship",
+      "Település help relationship"
+    ],
+    "intentionally_not_in_candidate": [
+      "outer #ajanlatkeres region",
+      "hero/gallery outer regions",
+      "heading-level changes",
+      "proof-carousel role changes",
+      "form validation changes",
+      "lightbox changes",
+      "Yoast/meta changes",
+      "CSS/visual changes",
+      "shared/global header/dock/footer changes"
+    ],
+    "write_gate": "fresh baseline + exact current ID36 rollback body/state + exact rendered review/Form33 cardinality and ownership; newer/unknown live code or drift means stop"
+  },
+  "closed_preserve": [
+    "26/26 shared-media recovery; no more shared-media Hedge writes",
+    "EAEL b2e2c001 28 items, 28 id=0, full resolution, original URLs, exact source names/order",
+    "five complete legacy named regions",
+    "complete Van hasonló növénye? mailto and exact contact accessible names",
+    "24-hour reply sentence",
+    "hero af2e004e exact accessible SVG and historical editor/frontend proof",
+    "proof af2e004d 21 images, reviews c3d30005 3 tabs/panels, MetForm af2e0011",
+    "removed legacy image widgets af2e0009-af2e000e",
+    "page272 D09 local links/anchors",
+    "historical media deficit and stone/sage background defects are stale/closed"
+  ],
+  "local_read_first": {
+    "outer_regions": "prove complete common roots for hero, Sövénymunkák and form composite before attribute write",
+    "headings": "ordered source/target H1-H6 level/name tree",
+    "proof_carousel_roles": "fresh item role + parent semantics + owner before correction or divergence acceptance",
+    "form_required": "exact service radio widget/type/name/required/options then non-entry native rejection proof if required=yes",
+    "seo_head": "source/target title, description, canonical, robots, OG and schema ownership/count before any Yoast/post-meta mutation"
+  },
+  "proof_only": [
+    "review direct click/Arrow/Home/End on page272 unless failure reproduces",
+    "proof carousel ArrowLeft/Right, swipe, hover/focus pause-resume and reduced-motion; autoplay historically observed",
+    "Hedge lightbox until source-specific zoom proof",
+    "visual CSS until a current synchronized page272-local reproduced delta exists"
+  ],
+  "external_shared_gates": {
+    "header": "observe /soveny-specialista/ Services-parent current-state under authoritative global header package; no local hack",
+    "floating_dock": "known global blank-pill paint/layout defect owned by global ID7/CSS; no local fix",
+    "footer": "observe only; no page272-specific defect currently documented"
+  },
+  "formal_acceptance": {
+    "acceptance_json": "absent",
+    "behaviors_json": "absent",
+    "historical_readme_tools": "README references tools/measure.cjs, behaviors.cjs and compare-behaviors.cjs but current main tree does not expose the runnable tool set",
+    "required_views": [1920, 1440, 1024, 768, 390, 360],
+    "pixel_pass": false
+  },
+  "tool_state_this_continuation": {
+    "wpvibe": "first list_sites attempt returned tool disabled; explicit no-more-calls rule observed; +5 site/quota still unconfirmed",
+    "opera": "list-tabs showed exactly two old project tabs; zero new tabs; cleanup attempt disconnected connector; no retries/reconnect loop; earlier Hedge URL/title content was stale Biológiai content, so browser evidence remains untrusted",
+    "public_http": "target/source fallback unavailable; no repeated web loop",
+    "github": "available and used for static reconciliation/artifact creation"
+  },
+  "opera_memory_conformance": {
+    "policy": "build/runtime-qa-opera-memory-v001.json",
+    "max_project_tabs": 2,
+    "new_tabs_this_continuation": 0,
+    "disconnect_stop_rule_observed": true
+  },
+  "nominal_future_wpvibe_budget": {
+    "plan": "build/hedge-next-live-window-plan-20260915-v004.json",
+    "maximum_calls": 9,
+    "D11_reserve": 10,
+    "preferred_start_remaining_after_counter": 21
+  },
+  "state_md_note": "Repository STATE.md remains owned by a parallel page264-only continuation; it was intentionally not overwritten. Use the page272 v009 prepend candidate only when scope ownership is reconciled.",
+  "next_safe_operation": "When trustworthy live tools return, follow hedge-next-live-window-plan-20260915-v004.json exactly; do not replay obsolete semantic v002/v003 or closed content/media packages.",
+  "pixel_pass": false,
+  "status": "STATIC_PAGE272_RECONCILIATION_EXTENDED_LOCAL_SHARED_AND_FORMAL_GATES_EXPLICIT_LIVE_EXECUTION_BLOCKED"
+}
