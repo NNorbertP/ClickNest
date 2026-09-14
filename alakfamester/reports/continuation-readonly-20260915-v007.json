@@ -1,0 +1,31 @@
+{
+  "schema_version": 7,
+  "package": "continuation-readonly-20260915-v007",
+  "date": "2026-09-15",
+  "supersedes_for_resume": "reports/continuation-readonly-20260915-v006.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; this checkpoint does not alter scope.",
+  "base_checkpoint": "reports/continuation-readonly-20260915-v006.json remains authoritative for the full active page264/tool/global/asset/formal state except where explicitly advanced below.",
+  "advance": {
+    "page256_precedence": "reports/subpages/bio-evidence-supersedence-20260915-v007.json",
+    "page256_final_acceptance": "specs/bio-final-acceptance-20260914-v002.json",
+    "page256_hard_blockers": "reports/subpages/bio-exactness-blockers-20260914-v001.json",
+    "meaning": "Exact page256 parity must remain OPEN until each named blocker has explicit resolution evidence. Safe visual/semantic/content partial packages may proceed after future scope handoff only if they do not pretend to clear these blockers."
+  },
+  "page256_hard_blockers_summary": [
+    "normal page256 scope/live tool release",
+    "page-local CSS carrier probe",
+    "stress true saved/read/AX order p1 -> p2 -> article",
+    "expectations true two-article ownership requiring safe atomic full-owner regrouping",
+    "FAQ exact button/ARIA/keyboard/motion runtime",
+    "review prev/next focus of newly active panel",
+    "controlled final responsive acceptance"
+  ],
+  "tool_state_unchanged": "WPVibe and Opera remain frozen for this continuation after disabled/stale results; zero WordPress writes and zero new Opera tabs.",
+  "active_page264_unchanged": "Follow oldtrees continuation v010 + oldtrees-next-remote-window-v003. Only conditional v006/v007 visual microfixes are current implementation candidates after trustworthy fresh live gates.",
+  "page272_current": "Follow hedge precedence v007, acceptance/live plan v006 and open-items v007; no page272 write under current STATE scope.",
+  "known_wpvibe_budget": "UNKNOWN for +5",
+  "wordpress_writes_current_continuation": 0,
+  "opera_new_tabs_current_continuation": 0,
+  "pixel_pass": false,
+  "status": "CURRENT_RESUME_CHECKPOINT_PAGE264_ACTIVE_PAGE256_HARD_BLOCKERS_EXPLICIT"
+}
