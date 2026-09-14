@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "package": "hedge-review-name-contract-resolution-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Resolve an apparent review-name contradiction before any ID36 semantic deployment.",
+  "authoritative_review_labels": [
+    "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+    "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+    "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+  ],
+  "evidence_chain": [
+    {
+      "resource": "build/hedge-semantic-runtime-v002.php",
+      "finding": "uses Kardos Attila / Otolecz Andrea / Lőrincz Balázs"
+    },
+    {
+      "resource": "build/hedge-semantic-runtime-v003.php",
+      "finding": "preserves the same three labels"
+    },
+    {
+      "resource": "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+      "finding": "documents the same three labels as the exact source review contract"
+    },
+    {
+      "resource": "commit b2233f8810083f5957da59279d85186dab6eac62",
+      "finding": "the v004 creation patch preserves Andrea/Lőrincz; commit purpose is removal of the unproven partial form region"
+    },
+    {
+      "resource": "GitHub path history for build/hedge-semantic-runtime-v004.php",
+      "finding": "only b2233f... touches the file on main; no later file commit exists"
+    },
+    {
+      "resource": "current main build/hedge-semantic-runtime-v004.php",
+      "finding": "direct re-read also contains Andrea/Lőrincz"
+    }
+  ],
+  "rejected_apparent_state": {
+    "labels": ["Otolecz Attila", "Rosivall László"],
+    "status": "NOT_A_GITHUB_MAIN_STATE",
+    "reason": "No matching file history exists and direct current-main re-read contradicts it. Treat the earlier read as stale/kevert evidence, not a source-contract change."
+  },
+  "deployment_implication": "Do not HOLD v004 for a review-name regression. Keep the stricter v007 native-ARIA/ID predeploy gate and still verify current rendered tab identity/order before any write.",
+  "remaining_review_content_question": "The label contract is resolved, but exact full inner-content preservation for all three tabpanels (quote, visible author/company/role text, image identity/accessibility and tab-panel association) should be captured from trustworthy late evidence or the next single broad rendered DOM/AX read.",
+  "status": "REVIEW_LABEL_CONTRACT_RESOLVED_V004_NAMES_MATCH_DOCUMENTED_SOURCE_CONTRACT"
+}
