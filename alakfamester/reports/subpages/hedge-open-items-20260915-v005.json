@@ -1,0 +1,136 @@
+{
+  "schema_version": 5,
+  "package": "hedge-open-items-20260915-v005",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "page272-specific runtime/content only",
+  "wordpress_writes_this_continuation": 0,
+  "supersedes_for_execution": "reports/subpages/hedge-open-items-20260914-v004.json",
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required_before_write": true
+  },
+  "only_current_executable_write_candidate": {
+    "resource": "build/hedge-semantic-runtime-v004.php",
+    "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "owner": "existing Code Snippets ID36 only",
+    "status": "PREPARED_STATIC_PASS_LIVE_GATES_REQUIRED",
+    "effect": [
+      "exact three source review-tab accessible names",
+      "Form33 form name Ajánlatkérés",
+      "wrapper-owned direct-call form description relation",
+      "service radio group label relationship",
+      "Település help relationship"
+    ],
+    "preserves": [
+      "current tablist name",
+      "numbered duplicate review-dot AX/focus suppression",
+      "front-end snippet scope",
+      "CSS and visible copy",
+      "DOM order",
+      "Elementor saved data",
+      "form processing/interactions",
+      "all outer region semantics"
+    ],
+    "rule": "No deployment until fresh page hash, exact ID36 rollback body/state and exact rendered cardinality/ownership gates pass. Unknown newer code or drift means STOP."
+  },
+  "closed_do_not_reopen": [
+    "26/26 shared-media rollback complete; no more Hedge shared-media writes",
+    "EAEL b2e2c001: 28 items, exact source names/order, all page-local media IDs zero, full resolution, original URLs",
+    "five complete legacy named regions",
+    "Van hasonló növénye? full mailto range and exact accessible name",
+    "af2e004c exact source phone/e-mail accessible names and 24-hour reply sentence",
+    "hero af2e004e exact SVG title/description and historical editor/frontend proof",
+    "proof carousel af2e004d 21 source images preserved",
+    "native review structure c3d30005 exactly 3 tabs/panels preserved",
+    "MetForm widget af2e0011 preserved",
+    "legacy image widgets af2e0009-af2e000e remain absent",
+    "page272 D09 local link routing/anchors; no source-host/.html/stale contact route documented in canonical Elementor data",
+    "historical 52-to-16 media gap is stale/closed: current roles reconcile to 21 proof + 3 reviews + 28 gallery = 52",
+    "historical stone-vs-sage section background gap is stale/closed"
+  ],
+  "read_first_local_items": [
+    {
+      "item": "outer hero region",
+      "read": "prove one stable target root contains complete hero copy plus af2e004e art",
+      "write_after_proof_only": "source region name Minőségi sövény formára vágás, metszés és megújítás"
+    },
+    {
+      "item": "outer gallery region",
+      "read": "prove one stable target root contains Sövénymunkák heading plus complete b2e2c001 EAEL widget",
+      "write_after_proof_only": "source region name Sövénymunkák"
+    },
+    {
+      "item": "outer form region",
+      "read": "prove one stable target root contains separate af2e004c intro/contact plus Form33 composite",
+      "write_after_proof_only": "source region name Küldjön fotót a sövényről"
+    },
+    {
+      "item": "heading semantics",
+      "read": "ordered source/target H1-H6 level + accessible-name tree",
+      "rule": "historical heading text-set equality alone is not enough; do not mutate without a reproduced level/order delta"
+    },
+    {
+      "item": "proof carousel item roles",
+      "read": "fresh source/target item role, parent role and stable markup/runtime owner",
+      "rule": "historical source group vs target listitem is neither an automatic rollback nor an accepted divergence until fresh proof"
+    },
+    {
+      "item": "Form33 service radio required",
+      "read": "exact service widget ID/type, mf_input_name, mf_input_required and six option labels/values/order",
+      "rule": "if required=yes, prove native empty-choice rejection without entry/delivery before any PHP fallback; never mutate shared Form33 from page272 scope"
+    },
+    {
+      "item": "SEO/document head",
+      "read": "source/target title, description, canonical, robots, OG fields and structured-data owner/count",
+      "rule": "no Yoast/post-meta write from absence of evidence; D09 permits WordPress /soveny-specialista/ canonical instead of literal source .html"
+    }
+  ],
+  "proof_only_no_write_without_failure": [
+    "reviews click/Arrow/Home/End direct page272 run; shared D12 owner already proven on representative native tabs",
+    "proof carousel ArrowLeft/Right, swipe, hover/focus pause-resume and reduced-motion behavior; 4000 ms autoplay historically observed on page272",
+    "Hedge EAEL lightbox; preserve popup=none until source-specific 28-item zoom/grouped-lightbox proof",
+    "visual/CSS parity; require a current synchronized source-target reproduced delta and page272-local cascade/DOM owner"
+  ],
+  "external_shared_gates_visible_on_page272": [
+    {
+      "area": "global header",
+      "status": "OBSERVE_AND_REPORT_TO_GLOBAL_OWNER",
+      "gate": "/soveny-specialista/ Services-parent current-state/caret behavior must be sampled in authoritative global header route matrix",
+      "forbidden": "no Hedge-local current-state JS/CSS hack"
+    },
+    {
+      "area": "floating contact dock",
+      "status": "KNOWN_GLOBAL_VISUAL_DELTA",
+      "gate": "target blank/paint-layout defect must be resolved by global ID7/CSS owner",
+      "forbidden": "no page272 dock markup/runtime/CSS owner"
+    },
+    {
+      "area": "footer",
+      "status": "OBSERVE_ONLY",
+      "gate": "gross regression only; any reproduced failure must be assigned to global footer owner before a write"
+    }
+  ],
+  "formal_acceptance_blockers": [
+    "specs/acceptance.json absent from current main and unrecovered in history",
+    "specs/behaviors.json absent from current main and unrecovered in history",
+    "README describes historical measure/behavior runners but current main tree does not expose the required formal toolchain/input set",
+    "no deterministic synchronized 1920/1440/1024/768/390/360 source-target browser with known DPR/100% zoom/stable state",
+    "no trustworthy overlay/diff runner for those frozen states",
+    "current Opera connector lacks reliable interaction control and returned stale/challenged content in this conversation"
+  ],
+  "tool_state": {
+    "wpvibe": "disabled in current conversation; do not call again; intended +5 connection/quota unknown",
+    "opera": "disconnected after two-existing-tab-only check; zero new tabs; do not reconnect-loop",
+    "public_clicknest_http": "unavailable in fallback attempts; do not loop",
+    "github": "available for static evidence/planning only"
+  },
+  "next_safe_plan": "build/hedge-next-live-window-plan-20260915-v004.json",
+  "acceptance_matrix": "build/hedge-acceptance-matrix-20260915-v004.json",
+  "pixel_pass": false,
+  "status": "CURRENT_PAGE272_OPEN_ITEMS_EXPLICIT_LOCAL_SHARED_AND_FORMAL_GATES_SEPARATED"
+}
