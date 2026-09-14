@@ -10,13 +10,18 @@ Repository: `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
 Current planning/evidence:
 - `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json` — authoritative consolidated page264 acceptance ledger; use this first to avoid reopening already-passed work;
-- `reports/subpages/oldtrees-continuation-20260914-v007.json`
+- `reports/subpages/oldtrees-content-coverage-reconciliation-20260914-v001.json` — current copy/media reconciliation; no known page264 content/main-media gap;
+- `reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json` — supersedes the stale 29/38 heading and 1/11 region audit snapshot;
+- `reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json` — reconciles every original visual-audit defect; only v006/v007 remain reproduced page-local failures;
+- `reports/subpages/oldtrees-evidence-supersedence-20260914-v001.json` — authoritative/stale/do-not-replay map;
+- `reports/subpages/oldtrees-continuation-20260914-v008.json` — current no-write continuation checkpoint;
 - `reports/subpages/oldtrees-visual-live-qa-20260914-v006.json`
 - `reports/subpages/oldtrees-direct-live-compare-20260914-v005.json`
 - `reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json`
 - `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`
 - `build/oldtrees-interaction-acceptance-20260914-v001.json` — exact no-write review/tiszafa/Nordmann runtime test sequences;
 - `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json` — exact no-write owner/cascade gate for the unproven hero offset;
+- `build/oldtrees-responsive-acceptance-matrix-20260914-v001.json` — six-view responsive acceptance expectations from proven page264 breakpoint contracts;
 - `build/oldtrees-next-remote-window-20260914-v002.json` — current remote plan, supersedes v001 for planning.
 
 ## Live state to preserve
@@ -32,6 +37,12 @@ Last verified:
 - page264 Elementor data remained unchanged.
 
 v004 proved source-like warning/growth icons and X/check leaf bullets. v005 made the beige/sage comparison surfaces and stretch rules win. Do **not** redeploy v001-v005 visual packages or older semantic packages.
+
+## Content/media reconciliation — current PASS
+
+`reports/subpages/oldtrees-content-coverage-reconciliation-20260914-v001.json` reconciles the historical open list. Current evidence closes the old hero-art, inline-form, missing problem-chip and simplified comparison-copy gaps. The page-local form copy/CTA route, visible 24-hour reply and removal of the source-absent eyebrow are preserved. Fresh media reconciliation recorded **5 source main images / 5 target main images** with observed media roles matching.
+
+Known page264 content/main-media gap: **none**. Do not reopen old content packages merely because historical reports still contain open arrays.
 
 ## Two proven remaining page264-local visual deltas — prepared, NOT deployed
 
@@ -81,6 +92,22 @@ Postwrite:
 - same-browser targeted capture must prove the selected defect closed with no v005/form geometry regression;
 - do not cache-purge unless fresh render is demonstrably stale.
 
+## Visual audit reconciliation — do not reopen PASS items
+
+The original broad visual audit is now fully reconciled in `oldtrees-visual-coverage-reconciliation-20260914-v001.json`.
+
+Live PASS/currently non-failing:
+- beige negative / sage positive comparison surfaces;
+- warning/growth comparison icons;
+- X/check leaf list markers;
+- equal card heights;
+- centered request heading;
+- compact 18×18 reply clock;
+- joined white intro + MetForm panel;
+- broad request contact-button geometry is no longer a reproduced failure.
+
+Only reproduced local failures are **v006 contact foreground** and **v007 equal desktop comparison columns**. Responsive/formal captures remain acceptance work, not a reason to invent another CSS layer.
+
 ## WPVibe account handoff
 
 Requested WPVibe identity was verified as **`ncsnorbert+20260914-5@gmail.com`**, email verified. `connect_site` returned a one-click authorization URL, but WPVibe became unavailable before `list_sites` / `site_info` could confirm site connection or rolling quota.
@@ -112,6 +139,17 @@ Preserve:
 
 Do not add duplicate review/slider/carousel JS without a stable failing interaction proof.
 
+## Semantic audit reconciliation — current static/AX PASS
+
+`reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json` supersedes the early semantic audit snapshot:
+- headings: old 29 target → later live **38 source / 38 target**, matching name sets;
+- named regions: old 1 target → later live **11 source / 11 target**, exact ordered names;
+- reviews: exact tablist/tab names and source-equivalent previous/next; numbered duplicate dots absent from final page264 AX/focus;
+- form semantics: accessible name/description, group labelling and Település help relationship are implemented;
+- tiszafa initial static state and Nordmann static AX controls pass.
+
+Do not replay `oldtrees-semantic-parity-20260914-v001.json`, older ID33 runtime versions, or create a second semantic owner. Interaction proof remains separate.
+
 ## Shared MetForm33 — solved items must not be rebuilt
 
 `reports/home/metform33-source-parity-v001.json` proves:
@@ -137,12 +175,13 @@ These are not reasons for more static/semantic writes.
 
 ## Remaining QA after/around v006/v007
 
-Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `build/oldtrees-next-remote-window-20260914-v002.json`, `build/oldtrees-interaction-acceptance-20260914-v001.json`, `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
+Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `build/oldtrees-next-remote-window-20260914-v002.json`, `build/oldtrees-interaction-acceptance-20260914-v001.json`, `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json`, `build/oldtrees-responsive-acceptance-matrix-20260914-v001.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
 
 Visual:
 - after v007 or if a newer rule already fixes it, prove equal desktop comparison columns/source-like wrapping and preserve beige/sage surfaces/icons/bullets;
 - after v006 or if already fixed, prove white request-contact foreground and unchanged panel/button geometry;
 - hero target copy begins lower in the existing 1640×920 comparison, but root cause is unproven: **no hero padding/margin patch without measured geometry + computed-style owner/cascade proof**. Use the dedicated hero diagnostic plan before any write;
+- responsive acceptance views are 1920×1080, 1440×1000, 1024×900, 768×1024, 390×844 and 360×800; use the dedicated matrix for known 4→2→1 problem-grid, 2→1 comparison and <=400px contact-button contracts;
 - floating contact dock is visually nearly empty/clipped while AX content exists. Do not recreate markup/runtime. This page264 task must not deploy a global dock fix; any future correction from this task must first prove exact cascade ownership and be page264-scoped;
 - `PIXEL_PASS=false` until deterministic same-browser exact viewport/DPR/zoom screenshot pair + overlay + diff exists.
 
@@ -152,18 +191,30 @@ Interaction:
 - Nordmann ~4000 ms normal autoplay, ArrowLeft/Right, >40px horizontal swipe, hover/focus pause/resume, reduced-motion stop/re-evaluation;
 - these are proof-only by default: lack of an action-capable browser is not a reason to add another runtime owner.
 
+## Evidence precedence / stale reports
+
+Use `reports/subpages/oldtrees-evidence-supersedence-20260914-v001.json` before acting on historical open arrays. In particular:
+- old `readonly-source-target-audit-v001` hero/form gaps are closed;
+- old `oldtrees-semantic-audit-v001` 29/38 and 1/11 counts are closed;
+- old `oldtrees-runtime-live-qa-v002` partial review names/extra-dot state are closed by later evidence;
+- old `oldtrees-inline-form-v001` rows/photo-count/success-state opens are closed by Form33 ID5/ID6/settings;
+- old broad visual v001 audit is superseded by v004/v005 plus the visual reconciliation;
+- never redeploy historical visual bundles or obsolete semantic runtime versions.
+
+Fresh live truth always outranks this documentation; reconcile drift instead of forcing a stale snapshot.
+
 ## Tooling / memory constraints
 
 Opera Browser Connector is disconnected. Only the two existing project tabs were reused; **zero new/replacement tabs** were opened. When stable again, use at most one source + one target tab and reuse them; stop on instability instead of tab fan-out.
 
-Local Chromium exists but this runtime DNS cannot resolve the Clicknest hosts. Generic web fetch/search also cannot currently fetch these pages. Thus no current live QA/write gate is available in this conversation.
+Local Chromium/curl cannot currently resolve either Clicknest host by DNS. Generic web fetch/search also cannot currently fetch these pages. Thus no current live QA/write gate is available in this conversation.
 
 `specs/acceptance.json` and `specs/behaviors.json` are absent on `main`; do not invent them.
 
 ## Current status
 
-**Elkészült:** page264 content/semantics; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; v006+v007 single-write bundle; authoritative page264 acceptance ledger; exact interaction acceptance matrix; hero computed-style/geometry diagnostic gate; refined next-live-window v002 plan.  
-**Ellenőrzött:** historical live hash; v004/v005 markers; v004 icons/bullets; final review AX; tiszafa initial AX; Nordmann static AX; v006/v007 static scopes; shared Form33 helpers/settings; all new repository plans read back successfully; already-passed work separated from proof-only and hold/no-write items.  
-**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; hero measured root-cause proof; interaction acceptance; service-radio required proof; page264-scoped dock diagnosis; deterministic pixel matrix.  
-**Következő művelet:** follow `oldtrees-next-remote-window-20260914-v002.json`: verify WPVibe +5 connection/quota → compact hash/marker preflight → fresh two-delta visual gate → at most one selected CSS write → mandatory readback → form/interaction/hero read-only acceptance as capacity/tooling permits.  
+**Elkészült:** page264 content/semantics and main media reconciled with no known copy/media gap; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; v006+v007 single-write bundle; authoritative acceptance ledger; content/semantic/visual coverage reconciliations; evidence-supersedence map; exact interaction acceptance matrix; hero computed-style/geometry diagnostic gate; six-view responsive acceptance matrix; refined next-live-window v002 plan; continuation v008 checkpoint.  
+**Ellenőrzött:** historical live hash; v004/v005 markers; v004 icons/bullets; current visual PASS items; 38/38 heading names; 11/11 ordered regions; final review AX; tiszafa initial AX; Nordmann static AX; 5/5 main media roles; v006/v007 static scopes; shared Form33 helpers/settings; all new repository plans/reconciliations read back successfully.  
+**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; Form33 service-radio required proof; review/tiszafa/Nordmann interaction acceptance; hero measured root-cause proof; page264-scoped dock diagnosis only if a local owner is proven; deterministic six-view pixel matrix.  
+**Következő művelet:** follow `oldtrees-next-remote-window-20260914-v002.json`: verify WPVibe +5 connection/quota → compact hash/marker preflight → fresh v006/v007 visual gate → at most one selected CSS write → mandatory readback → form/interaction/hero/responsive read-only acceptance as capacity/tooling permits.  
 **Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; estimated selected remote package ~5–8 calls plus the mandatory 10-call reserve, but actual counter must be read first.
