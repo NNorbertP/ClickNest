@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only guarded deployment",
+  "status": "AUTHORITATIVE_READY_WHEN_WPVIBE_RETURNS",
+  "supersedes": "build/header-deployment-plan-v009.json",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "user_delta": "Homepage Services must never appear current at rest; Főoldal remains current.",
+  "base_plan": "build/header-deployment-plan-v009.json",
+  "additional_authoritative_guard": {
+    "css": {"path":"build/header-home-services-inactive-v001.css","commit":"61d3b792bb87d1ebac4111555530383bf2760e6e","marker":"af-project:header-home-services-inactive-v001"},
+    "runtime": {"path":"build/header-home-services-inactive-runtime-v001.json","commit":"028849a4684f91c6d444caa4583361e97b414411","snippet_id":7}
+  },
+  "execution": [
+    "Keep all v009 preflight/hash/quota/rollback guards.",
+    "When editing snippet7, fold the homepage guard into the same single plugin-aware runtime update: pathname '/' never marks Services host/children current.",
+    "Add the complete uniquely marked homepage CSS guard without modifying body/footer/forms or unrelated Additional CSS.",
+    "Read back both owners before browser verification.",
+    "On homepage verify Főoldal current, Services neutral at rest, Services normal hover/focus/open feedback.",
+    "On a real service subpage verify Services current-section state still works.",
+    "Rollback only the isolated owner that fails."
+  ],
+  "blocked_now": "WPVibe is disabled/unavailable in this conversation, so no live WordPress write has been executed."
+}
