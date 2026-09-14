@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "package": "bio-technology-live-compare-20260914-v016",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "read-only #technologiak source/target same-browser visual evidence; zero WordPress writes",
+  "browser": {
+    "existing_opera_tabs_only": true,
+    "new_tabs_opened": 0,
+    "same_browser": true,
+    "screenshot_viewport_px": [1640, 920],
+    "anchor": "#technologiak"
+  },
+  "fresh_findings": {
+    "eyebrow": {
+      "source": "A MEGKÖZELÍTÉS with the bronze source leaf glyph",
+      "target": "A MEGKÖZELÍTÉS text is present but the bronze source leaf glyph is absent",
+      "prepared_owner": "build/bio-visual-parity-v001.css direct legacy section-eyebrow mapping",
+      "status": "PROVEN_DELTA_PREPARED_FIX_MATCHES"
+    },
+    "lead": {
+      "source": "Source lead is larger and wraps to two lines at the sampled viewport.",
+      "target": "Target lead remains a smaller/wider one-line treatment.",
+      "prepared_owner": "build/bio-visual-parity-v001.css sets source 1.125rem/1.65 and 104ch measure",
+      "status": "PROVEN_DELTA_PREPARED_FIX_MATCHES"
+    },
+    "technology_cards": {
+      "source": "Three source cards show source padding/radii/shadow rhythm, subtle lower-right botanical watermark, and a sage middle card with top botanical hairline.",
+      "target": "Content and three-card order match, but the decorative watermark/hairline/source surface rhythm are absent or materially weaker; target cards are visibly shorter/less padded.",
+      "prepared_owner": "build/bio-visual-parity-v001.css",
+      "status": "PROVEN_DELTA_PREPARED_FIX_MATCHES"
+    },
+    "use_cases_checklist": {
+      "source": "Green leaf/check markers; no native bullet presentation.",
+      "target": "Native round bullets remain visible in the fresh target capture.",
+      "prepared_owner": "build/bio-visual-parity-v001.css h3+ul scoped checklist mapping",
+      "status": "PROVEN_DELTA_PREPARED_FIX_MATCHES"
+    },
+    "content_preservation": {
+      "status": "PASS_PRESERVE",
+      "finding": "Technology headings/copy/order are aligned; this visual evidence does not justify content, DOM, role or asset rewrites."
+    },
+    "floating_contact_dock": {
+      "status": "REPRODUCED_VISUAL_ONLY_DELTA",
+      "finding": "Source floating phone/mail/CTA controls are visible; target explicit screenshot again shows an almost blank pill. Keep global diagnostic-first plan separate from page256 CSS."
+    }
+  },
+  "deployment_consequence": [
+    "The existing first page256 visual package should remain limited to build/bio-visual-parity-v001.css plus build/bio-hero-layout-parity-v001.css after fresh live/hash/quota gates.",
+    "No new technology CSS layer is needed; the already prepared v001 rules directly map to the freshly reproduced differences.",
+    "Do not include bio-visual-parity-v002-expectations.css from this evidence; the expectations section was not freshly captured here.",
+    "Do not touch header or dock from the page256 package."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
