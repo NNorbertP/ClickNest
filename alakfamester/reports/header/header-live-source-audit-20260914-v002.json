@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_RATE_LIMIT",
+  "wordpress_write_executed": false,
+  "governing_rules_re_read": ["AGENTS.md", "STATE.md", "specs/decisions.md D02/D07/D11/D18", "WPVibe Elementor/edit-content/v4 playbooks"],
+  "scope_guard": {
+    "allowed": ["ElementsKit global header ID20", "header-only Hello Additional CSS override", "header-specific runtime behavior only through supported plugin-aware write path"],
+    "untouched": ["page body", "hero", "footer", "forms", "other templates", "SMTP", "other page packages"]
+  },
+  "fresh_preflight_before_write_attempt": {
+    "additional_css_post_id": 8,
+    "additional_css_modified_gmt": "2026-09-14 16:32:25",
+    "additional_css_bytes": 576084,
+    "additional_css_sha256": "7ac99daf3e30139ce30d57963506de3730db97fd62f03fc729cc3308ab5407f1",
+    "prepared_marker_present": false,
+    "header_template_id": 20,
+    "header_elementor_data_bytes": 7729,
+    "header_elementor_data_sha256": "db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d",
+    "header_modified_gmt": "2026-09-13 13:00:33",
+    "drift_detected": false
+  },
+  "prepared_css": {
+    "path": "build/header-live-source-v001.css",
+    "commit": "7535f984f886a7e501d17edef75aaf9ffcdce035",
+    "marker": "af-project:header-live-source-v001",
+    "purpose": "Map the existing Elementor/ElementsKit header DOM to the current live source header without changing header20 structure.",
+    "source_proven_values": {
+      "desktop_header_height_px": 76,
+      "wide_container_px": 1340,
+      "logo_plate_px": "69x46",
+      "brand_gap_px": 12,
+      "nav_min_height_px": 44,
+      "nav_padding_px": "10 13",
+      "dropdown_min_width_px": 268,
+      "cta_min_height_px": 44,
+      "cta_padding_px": "10 18",
+      "mobile_breakpoint_px": 1240
+    }
+  },
+  "runtime_comparison": {
+    "reference_mobile_breakpoint_px": 1240,
+    "target_runtime_mobile_breakpoint_px": 1240,
+    "reference_current_narrow_view": "hamburger navigation",
+    "target_current_narrow_view": "hamburger navigation",
+    "menu_content_and_primary_cta_targets": "semantically equivalent and mapped to WordPress URLs",
+    "reference_scroll_threshold_px": 8,
+    "target_scroll_threshold_px": 24,
+    "remaining_behavior_delta": "24px -> 8px sticky-state threshold; not changed because Code Snippets/plugin-aware safe write path was not executed"
+  },
+  "write_attempt": {
+    "route": "/wpvibe/v1/content/edit",
+    "target": "post8 post_content",
+    "anchor": "/* af-project:end */",
+    "result": "HTTP 429 before execution",
+    "confirmed_effect": "none; no WordPress write executed",
+    "unsafe_fallbacks_not_used": ["raw SQL mutation", "full post_content rewrite", "blind retry loop"]
+  },
+  "resource_hygiene": {
+    "opera": "unused tabs were closed; same tab reused for source/target checks",
+    "opera_connection": "later closed by connector; no further memory-heavy Opera sessions opened",
+    "playwright": "not installed in local container and local container has no public DNS access",
+    "public_web_check": "reference header/nav content remained reachable and consistent"
+  },
+  "quota": {
+    "counter_before_first clean preflight": "225/300 used, 75 remaining",
+    "counter_after rate-limited retries": "278/300 used, 22 remaining",
+    "mandatory_closeout_reserve": 10,
+    "usable_above_reserve": 12,
+    "decision": "No further WPVibe calls in this work package; preserve reserve."
+  },
+  "next_safe_action": [
+    "In a fresh unthrottled WPVibe window, call list_sites once and preserve 10-call reserve.",
+    "Run one guarded combined read for post8 marker/hash and header20 hash. Expected baseline if unchanged: post8 576084 B / 7ac99daf3e30139ce30d57963506de3730db97fd62f03fc729cc3308ab5407f1; header20 7729 B / db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d.",
+    "If unchanged, insert the COMPLETE build/header-live-source-v001.css block immediately before the unique /* af-project:end */ marker using content/edit; do not paste a shortened fragment.",
+    "Read back marker + post8 bytes/hash and verify frontend header only.",
+    "Compare source and target at the same narrow viewport, then at desktop when deterministic viewport control is available.",
+    "Only after CSS PASS, change the header runtime scroll threshold from 24 to 8 through a supported Code Snippets/plugin-aware path; verify sticky state and keyboard/mobile menu behavior.",
+    "Do not claim pixel-perfect PASS without deterministic screenshot/overlay/diff evidence."
+  ]
+}
