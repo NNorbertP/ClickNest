@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "package": "bio-visual-predeploy-static-qa-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "wordpress_writes": 0,
+  "source": "build/bio-visual-parity-v001.css",
+  "source_sha": "9bce52a63e6633febb3f1f970a75e9b60bba2171",
+  "status": "STATIC_QA_PASS_PREPARED_NOT_DEPLOYED",
+  "scope_checks": {
+    "required_scope_prefix": "body.page-id-256",
+    "all_effect_selectors_page256_scoped": true,
+    "header_selector_present": false,
+    "footer_selector_present": false,
+    "other_page_selector_present": false,
+    "javascript_change": false,
+    "elementor_saved_data_change": false,
+    "shared_metform_change": false,
+    "visible_copy_change": false
+  },
+  "preservation_checks": {
+    "acceptance_section_heights_touched": false,
+    "hero_dimensions_touched": false,
+    "review_runtime_touched": false,
+    "technology_article_before_or_after_written": false,
+    "table_text_or_semantics_changed": false,
+    "faq_native_details_behavior_replaced": false
+  },
+  "covered_proven_deltas": [
+    "legacy direct-section bronze leaf eyebrow motif",
+    "technology intro max-width/type scale plus three source-like card surfaces/padding/radius/shadow and sage middle-card hairline",
+    "symptom table organic wrapper, scroll-edge treatment, source cell padding/header/even-row surfaces while preserving exact semantic table markup",
+    "FAQ organic cards, 64px summary rows, hover/open surface and leaf-shaped plus/minus indicator while retaining native details/summary semantics"
+  ],
+  "deliberately_open": [
+    "technology lower-right watermark because target generated icon ownership likely uses article::after",
+    "stress/expectations visual cards pending further direct mapping",
+    "page256 stress aside->article semantic fix pending fresh raw content/search",
+    "expectations neutral article wrappers pending exact raw snippet proof",
+    "formal six-viewport screenshot/overlay/diff"
+  ],
+  "deployment_contract": [
+    "Do not deploy while WPVibe remaining calls are too close to D11 reserve or host 429 is active.",
+    "Require page256 35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid immediately before write.",
+    "Reconcile Additional CSS post8 against the CURRENT header-v004 state, not the older 600999/8cd8 baseline.",
+    "Require unique af-project:end and absence of af-bio-visual-v001 marker.",
+    "Insert complete block once before af-project:end via match-once content/edit; never round-trip the full field.",
+    "Read back post8 marker/hash and page256 Elementor hash before frontend QA.",
+    "A 429-returned write is UNKNOWN until marker/hash readback; never blindly retry."
+  ],
+  "current_remote_gate": "Latest exact WPVibe checkpoint before this QA: 283/300 used, 17 remaining; only 7 above the mandatory 10-call reserve. Deployment deferred.",
+  "pixel_pass": false
+}
