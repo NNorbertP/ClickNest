@@ -1,14 +1,65 @@
-# STATE - 2026-09-14, HEDGE PARITY PACKAGE PREPARED; WPVIBE 429 BLOCKS WRITES
+# STATE - 2026-09-14, BIOLOGICAL PROTECTION AUDIT + HEDGE PACKAGE PREPARED; WPVIBE 429 BLOCKS WRITES
 
 ## Current target / exact quota
 Target: https://alakfamester-wp.clicknest.hu/ ; repo `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 WPVibe account: `ncsnorbert+20260914-3@gmail.com`.
-**Latest exact WPVibe counter observed before throttling: 2/300 used, 298 remaining** in the rolling 24-hour window. Preserve at least **10 calls** for recovery/closeout per D11. The later HTTP 429 is a short-term rate-limit condition, not evidence that the 300-call quota is exhausted.
+**Latest exact WPVibe counter: 86/300 used, 214 remaining** in the rolling 24-hour window. Preserve at least **10 calls** for recovery/closeout per D11; 204 calls remain above reserve. HTTP 429 remains a short-term rate-limit condition, not evidence that the 300-call quota is exhausted.
 
 Environment rechecked 2026-09-14: WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; Hello Elementor 3.5.1 active; Elementor 4.2.4; ElementsKit Lite 4.0.4; MetForm 4.3.0. Preserve page56/page12, ElementsKit header20/footer21, MetForm33, Additional CSS post8 and canonical page IDs.
 
 ## Governing continuation rules
 D02 Hello + ElementsKit global header/footer. D03 V4 Atomic normal structure with documented legacy-widget boundary. D07 own CSS only Hello Additional CSS. D09 canonical WP URL mapping. D11 10-call reserve. D12 reviews native Atomic Tabs. D17 EAEL Free masonry. D18 preserve V4 Global Class semantics before structural full-save. Use the current live tree for structural work; do not restore old full-page snapshots. Preserve later manual changes unless a concrete source/acceptance conflict is proved. No raw SQL/meta structural mutation, no CSS behavioral substitute, no SMTP, real submission or external test message.
+
+## PREPARED, NOT SENT - Biological Protection source parity follow-up
+Target page: `page256`, `/biologiai-vedelem/`.
+Evidence: `reports/subpages/bio-parity-current-audit-v002.json`, commit `2e8b770a5678f947249714424def7239f187d1e9`.
+
+Fresh preflight:
+- current page256 `_elementor_data`: **34930 B**, SHA256 `c84feb47f8ca33218914b546d0dd2d10dd924a60b703fb049c4b8652bca9f729`;
+- prior documented checkpoint was 34725 B / `b480423f4a29331789541b3a1ded5ec1e681dfd773bb205a5c09e4d4d1dbf253`;
+- no safe matching Elementor revision exists for a whole-page rollback, so **do not restore the prior snapshot**; treat the live tree as authoritative and re-check the exact hash before any future write.
+
+Fresh source/target audit:
+- the same 22 heading texts are present; previously observed ordering differences remain consistent with accessibility-tree flattening and are not by themselves a write justification;
+- the hero illustration and Panasonic review image are present; critical page links map to canonical WordPress equivalents;
+- confirmed remaining source deltas:
+  1. source exposes named `region` landmarks for hero, four main content sections and FAQ; target leaves most unnamed/generic;
+  2. source review tablist accessible name is `Ügyfélvélemények`; target tablist has no accessible name;
+  3. source symptom table stores uppercase headers and exposes first-column body cells as row headers; target uses title-case stored labels and regular cells;
+  4. several target legacy list items have trailing periods absent from source text;
+  5. source final mailto link includes the complete `ÍRJON BÁTRAN + email` block, while target links only the email address.
+- target-only review index/navigation glyphs and technology-card decorative glyphs were not changed because deterministic visual/computed-style proof is unavailable.
+
+### Atomic aria pilot - failed and fully rolled back
+A single isolated pilot added only typed V4 `aria-labelledby` data to existing hero flexbox `af260002`. Elementor 4.2.4 stored the value, but fresh rendered frontend HTML did **not** emit the attribute. The exact inserted fragment was removed through the same supported `/wpvibe/v1/content/edit` route.
+
+Rollback readback returned page256 to the exact pre-pilot value: **34930 B**, SHA256 `c84feb47f8ca33218914b546d0dd2d10dd924a60b703fb049c4b8652bca9f729`. No persistent WordPress change from the pilot remains.
+
+Continuation decision: do not use guessed/native Atomic attributes for the remaining hero/tablist/final outer-section semantics on this Elementor 4.2.4 target. Do not full-save page256 while D18-sensitive legacy `_css_classes` remain.
+
+### Intended next safe Biological Protection write package
+Only page256 may be changed for this scoped request. Do not modify other pages, global templates, Additional CSS, plugin configuration or SMTP.
+
+Before any write:
+- re-read exact WPVibe counter;
+- verify page256 is still 34930 B / `c84feb47f8ca33218914b546d0dd2d10dd924a60b703fb049c4b8652bca9f729`;
+- re-read D03/D07/D11/D18;
+- use guarded `/wpvibe/v1/content/search` + match-once `/content/edit` only.
+
+Prepared source-verifiable legacy corrections:
+1. remove source-nonexistent trailing periods from verified stress/use-case/expectation list strings;
+2. restore source-equivalent symptom-table header text and `th scope="row"` first-column semantics;
+3. restore the final CTA mailto clickable range so label and email are one link;
+4. add named region semantics only where a complete source section is wholly contained inside a legacy text-editor block; do not fake Atomic hero/tablist/final outer-section semantics.
+
+Acceptance for this package:
+- current page256 IDs/classes/content outside exact edited legacy snippets preserved;
+- source-equivalent list text, table roles/labels and final mailto range verified on fresh frontend;
+- source/target headings, named regions, table roles, link ranges and text re-audited;
+- no whole-page restore/full-save, no unrelated page/global write, no SMTP or real submission.
+
+### Current blocker for Biological Protection
+WPVibe began returning **HTTP 429 Too Many Requests** during the guarded verification phase. No prepared legacy correction was sent. The only exploratory write was the Atomic aria pilot above, and it was fully rolled back to the exact pre-pilot hash. Do not retry blindly; first verify target hash/state and quota in a fresh window/session.
 
 ## PREPARED, NOT SENT - Hedge source parity follow-up
 Target page: `page272`, `/soveny-specialista/`.
@@ -90,13 +141,14 @@ Code Snippets ID23 `AF footer link semantics fix v001` is active on the live sit
 The full `main` tree was re-read on 2026-09-14. `specs/acceptance.json` and `specs/behaviors.json` are **not present**. `specs/` currently contains `css-registry.md`, `decisions.md`, `patterns/`, and `work-packages/`. Therefore the exact machine acceptance matrix requested by the project rules cannot be run until those files are restored or supplied.
 
 ## Remaining explicit blockers / next safe action
-1. **Hedge write package blocked by WPVibe 429:** resume from `build/hedge-parity-fix-20260914-v001.json`, but first re-check page272 hash and media values. Do not restore old revision 378 wholesale.
-2. **Exact acceptance matrix unavailable:** restore/provide `specs/acceptance.json` and `specs/behaviors.json`, then run their defined checks before final PASS.
-3. **Controlled visual acceptance still unavailable:** current Opera connector lacks deterministic viewport/DPR/zoom control for the frozen 1920/1440/1024/768/390/360 matrix. `PIXEL_PASS=false`.
-4. **Rólam source portrait unavailable:** `https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp` was previously 404. Need frozen/local source bytes; do not invent substitute.
-5. **Gallery Ellwoodi source asset unavailable:** `https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp` was previously 404. Need frozen/local source bytes; do not invent substitute.
-6. **Editor reopen proof for page268:** repeat only when an authenticated editor browser session is available; do not resave page268 merely to obtain this proof.
-7. SMTP/delivery and real MetForm submission remain prompt-3 tasks.
+1. **Biological Protection write package blocked by WPVibe 429:** resume from `reports/subpages/bio-parity-current-audit-v002.json`; first verify page256 exact hash. Do not full-save or restore the older checkpoint wholesale.
+2. **Hedge write package blocked by WPVibe 429:** resume from `build/hedge-parity-fix-20260914-v001.json`, but first re-check page272 hash and media values. Do not restore old revision 378 wholesale.
+3. **Exact acceptance matrix unavailable:** restore/provide `specs/acceptance.json` and `specs/behaviors.json`, then run their defined checks before final PASS.
+4. **Controlled visual acceptance still unavailable:** current Opera connector lacks deterministic viewport/DPR/zoom control for the frozen 1920/1440/1024/768/390/360 matrix. `PIXEL_PASS=false`.
+5. **Rólam source portrait unavailable:** `https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp` was previously 404. Need frozen/local source bytes; do not invent substitute.
+6. **Gallery Ellwoodi source asset unavailable:** `https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp` was previously 404. Need frozen/local source bytes; do not invent substitute.
+7. **Editor reopen proof for page268:** repeat only when an authenticated editor browser session is available; do not resave page268 merely to obtain this proof.
+8. SMTP/delivery and real MetForm submission remain prompt-3 tasks.
 
 ---
 
