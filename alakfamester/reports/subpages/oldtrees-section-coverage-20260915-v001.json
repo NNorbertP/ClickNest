@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-section-coverage-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Section-by-section acceptance coverage for every completed page264 area. No WordPress write.",
+  "principle": "Missing deterministic screenshot proof is not itself a reproduced defect and must not trigger speculative CSS/content/runtime changes.",
+  "sections": [
+    {
+      "order": 1,
+      "name": "Túlnőtt a fa? Mielőtt kivágatná, nézzük meg, lehet-e belőle alakfa",
+      "owners": ["#af-sub-survivor-hero", "af2a0041", "af2a0052"],
+      "content_semantics_media": "PASS: source title/copy contract preserved; hero art accessible title/description exact; named region present; main media role reconciled.",
+      "visual": "OPEN_DIAGNOSTIC: same-browser 1640x920 sample showed target left copy about 40-45px lower while lower hero boundary stayed close.",
+      "next": "Run build/oldtrees-hero-geometry-diagnostic-20260914-v001.json. No spacing/transform fix until the exact page264 owner/cascade is measured."
+    },
+    {
+      "order": 2,
+      "name": "Amit a megbízóim mondanak",
+      "owners": ["native Atomic Tabs", ".af-reviews-tabs", "shared ID14", "page264 ID33 containment"],
+      "content_semantics_media": "PASS_FINAL_AX: tablist and three tab names exact; source-equivalent previous/next controls; numbered duplicate dots absent from page264 AX/focus.",
+      "visual": "FORMAL_VISUAL_CAPTURE_OPEN; no current reproduced page264-local visual defect recorded.",
+      "interaction": "OPEN_PROOF_ONLY: ArrowRight/Down/Left/Up/Home/End and previous/next synchronization must be tested; do not add another handler without failure."
+    },
+    {
+      "order": 3,
+      "name": "Ezekkel a helyzetekkel keresnek a leggyakrabban",
+      "owners": ["af2a0007", ".problem-grid", ".problem-chip"],
+      "content_semantics_media": "PASS: seven source labels and seven source SVG icon geometries preserved; named region present.",
+      "visual": "SOURCE_BREAKPOINT_CONTRACT_IMPLEMENTED; deterministic captures still open.",
+      "known_contract": "4 columns desktop; <=960px 2 columns; <=760px 1 column; 16px gap; 48px top margin; 16px chip padding; 24px radius; 22px icon.",
+      "next": "Capture the six formal viewports; modify only if measured geometry/cascade differs from the source contract."
+    },
+    {
+      "order": 4,
+      "name": "Kivágás vagy átalakítás?",
+      "owners": ["af2a0045", ".af-sub-split", ".af-sub-card"],
+      "content_semantics_media": "PASS: eyebrow/copy/eight list items/maintenance caveat and region semantics match.",
+      "visual_pass": ["beige negative surface", "sage positive surface", "warning/growth icons", "X/check markers", "equal-height stretch"],
+      "visual_open": "PROVEN_FAIL_V007: desktop target columns remain unequal in the freshest post-v005 capture; right-card copy wraps an extra line.",
+      "prepared_fix": "build/oldtrees-visual-v007-comparison-grid-cascade.css; deploy only after fresh reproduction.",
+      "responsive": "<=900px one column; <=720px 24px card padding."
+    },
+    {
+      "order": 5,
+      "name": "Hat lépés a kivágás helyett",
+      "owners": ["af2a0047", ".af-number-steps"],
+      "content_semantics_media": "PASS: six source step labels/copy present; step labels promoted to level-3 headings by ID33; named region present.",
+      "visual": "FORMAL_VISUAL_CAPTURE_OPEN; no reproduced page264-local defect currently documented.",
+      "next": "Compare source/target spacing, number badge geometry, typography, background/divider at matched state before any CSS change."
+    },
+    {
+      "order": 6,
+      "name": "Nem minden növényt kell és nem minden növényt lehet megmenteni",
+      "owners": ["af2a0049"],
+      "content_semantics_media": "PASS: credibility copy, second source paragraph and mini-checklist preserved; named region present.",
+      "visual": "FORMAL_VISUAL_CAPTURE_OPEN; no current reproduced local defect.",
+      "next": "Matched source/target capture only; do not rebuild from old content reports."
+    },
+    {
+      "order": 7,
+      "name": "Növények, amiket nem vágtunk ki",
+      "owners": ["af2a004a", "tiszafa before/after and project media"],
+      "content_semantics_media": "PASS: story/media roles reconciled; named region present; tiszafa before/after accepted initial AX state value=50.",
+      "visual": "FORMAL_VISUAL_CAPTURE_OPEN; no current reproduced local styling defect.",
+      "interaction": "OPEN_PROOF_ONLY: native range pointer/keyboard must keep value and --ba-pos synchronized; do not replace native slider if it passes."
+    },
+    {
+      "order": 8,
+      "name": "Van hasonló növénye?",
+      "owners": ["af2a004b"],
+      "content_semantics_media": "PASS: CTA/source contact copy preserved; mailto accessible name corrected page-locally by ID33; named region present.",
+      "visual": "FORMAL_VISUAL_CAPTURE_OPEN; no reproduced page264-local defect.",
+      "next": "Matched capture and focus-visible check only."
+    },
+    {
+      "order": 9,
+      "name": "Support/gain content block",
+      "owners": ["af2a004d"],
+      "content_semantics_media": "PASS: Biológiai támogatás – kiegészítő mechanizmus and Kivágás helyett mit nyerhet? source content restored.",
+      "semantics": "INTENTIONALLY_UNNAMED_SECTION: preserve the documented unnamed state; do not add a region merely to increase counts.",
+      "visual": "FORMAL_VISUAL_CAPTURE_OPEN; no current reproduced local defect."
+    },
+    {
+      "order": 10,
+      "name": "Három lépés, kötelezettség nélkül",
+      "owners": ["af2a004f", ".af-number-steps"],
+      "content_semantics_media": "PASS: source heading/three step copy/offer callout present; three step labels promoted to level-3 headings; named region present.",
+      "visual": "FORMAL_VISUAL_CAPTURE_OPEN; no current reproduced local defect."
+    },
+    {
+      "order": 11,
+      "name": "Túlnőtt növények – kérdések",
+      "owners": ["af2a0050"],
+      "content_semantics_media": "PASS: four source FAQ questions/answers including the restored fourth item; named region present.",
+      "visual": "FORMAL_VISUAL_CAPTURE_OPEN; no current reproduced local defect.",
+      "interaction": "Disclosure open/close and keyboard/focus behavior should be sampled in the future interaction browser; no duplicate FAQ runtime is justified now."
+    },
+    {
+      "order": 12,
+      "name": "Küldjön róla néhány képet / Ajánlatkérés",
+      "owners": ["af2a0008", "af2a0054", "af2a0055", "MetForm33"],
+      "content_semantics_media": "PASS: source intro copy, visible 24-hour reply, local #ajanlatkeres routing, form accessible name/description, group labelling and city describedby preserved.",
+      "visual_pass": ["centered heading", "compact 18x18 clock", "joined white intro+form panel", "broad contact-button geometry no longer reproduced as defective"],
+      "visual_open": "PROVEN_FAIL_V006: green contact button label/value foreground is dark on target vs white source in freshest capture.",
+      "prepared_fix": "build/oldtrees-visual-v006-contact-text-cascade.css; deploy only after fresh reproduction.",
+      "validation_open": "D05 service/topic radio submission-time required enforcement needs read-only live schema/runtime proof; use build/oldtrees-form-required-validation-plan-20260915-v001.json."
+    },
+    {
+      "order": 13,
+      "name": "Nordmann six-slide carousel component",
+      "owners": [".carousel.js-carousel", "existing source-interactions owner"],
+      "content_semantics_media": "PASS_STATIC_AX: six-slide controls source-equivalent; current slide identity must not be compared across unsynchronized autoplay frames.",
+      "visual": "FORMAL_SYNCHRONIZED_CAPTURE_OPEN.",
+      "interaction": "OPEN_PROOF_ONLY: ~4000ms autoplay, ArrowLeft/Right, >40px horizontal swipe, hover/focus pause/resume and reduced-motion stop/re-evaluation."
+    }
+  ],
+  "global_component_excluded_from_page264_write_scope": {
+    "floating_contact_dock": "Visual blank/clipped target defect is reproducible while AX links exist, but owner is global ID7/header-dock runtime. Do not deploy a global fix from the page264 package. A page264 override requires fresh proof that the losing declaration can be corrected strictly under body.page-id-264 without altering the global owner."
+  },
+  "formal_visual_capture_policy": {
+    "views": ["1920x1080", "1440x1000", "1024x900", "768x1024", "390x844", "360x800"],
+    "browser": "Same engine/DPR/zoom/load/font/image/scroll/motion state for source and target.",
+    "memory": "At most one source and one target tab; reuse both, no replacement fan-out.",
+    "outputs": ["source capture", "target capture", "overlay/diff", "key geometry measurements"],
+    "moving_components": "Synchronize state or exclude moving regions from static diff; random carousel/review frames are not parity failures."
+  },
+  "write_policy": [
+    "Do not touch PASS content/semantics/media merely to obtain screenshot proof.",
+    "Only v006 and v007 are currently reproduced page264-local visual failures with prepared fixes.",
+    "Hero remains diagnostic-only until ownership is measured.",
+    "Interaction-proof gaps do not authorize duplicate JS/runtime owners.",
+    "PIXEL_PASS remains false until the deterministic matrix is completed."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "ALL_COMPLETED_PAGE264_SECTIONS_CLASSIFIED_TWO_VISUAL_FIXES_ONE_HERO_DIAGNOSTIC_AND_RUNTIME_PROOFS_REMAIN"
+}
