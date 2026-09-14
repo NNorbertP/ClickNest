@@ -1,0 +1,18 @@
+/* af-bio-faq-cta-mail-label-v001:start
+ * Companion to af-bio-faq-cta-source-v001 after the guarded 9a1b2c3d
+ * source-structure microfix. Makes the visible label/email rows deterministic.
+ */
+body.page-id-256 #af-sub-bio-cta .af-sub-cta-contact a > .af-sub-cta-label {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  display: block !important;
+  align-self: end !important;
+  min-width: 0 !important;
+  color: rgba(255,255,255,.9) !important;
+  font-size: .68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .13em !important;
+  line-height: 1.18 !important;
+  text-transform: uppercase !important;
+}
+/* af-bio-faq-cta-mail-label-v001:end */
