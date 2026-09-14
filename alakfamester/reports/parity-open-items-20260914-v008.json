@@ -1,0 +1,104 @@
+{
+  "schema_version": 8,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "supersedes_for_planning": "reports/parity-open-items-20260914-v007.json",
+  "latest_exact_wpvibe": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "used": 283,
+    "limit": 300,
+    "remaining": 17,
+    "mandatory_D11_reserve": 10,
+    "usable_above_reserve": 7,
+    "remote_write_decision": "STOP: no new remote write package at this balance. Recent host 429 can spend three automatic retries and make verification unsafe."
+  },
+  "live_saved_state_to_preserve": {
+    "page272": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+    "page256": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid",
+    "page264": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+    "additional_css_post8": "601189 B / 6d711a670cbfc62da45fa84d2b8d0c04b8078aa4ff93553ae492c2104c5ae003 after header-v004"
+  },
+  "priority_after_quota_headroom_returns": [
+    {
+      "priority": 1,
+      "resource": "page272 semantic runtime successor",
+      "live": "Code Snippets ID36 v001 active/code_error=null; currently handles review tablist and duplicate review-dot AX/focus suppression only.",
+      "prepared": "build/hedge-semantic-runtime-v002.php",
+      "static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v002.json",
+      "action": "UPDATE existing ID36, do not create a second helper. Add exact real-tab accessible names plus #ajanlatkeres region, MetForm form name/description, radio-group labelling and Település describedby while preserving current dot fix.",
+      "gate": "Fresh page272 exact hash + fresh ID36 body + enough calls for PUT/GET/page-hash/frontend AX QA above D11 reserve."
+    },
+    {
+      "priority": 2,
+      "resource": "page264 Old Trees visual parity",
+      "prepared": "build/oldtrees-visual-parity-bundle-v004.css",
+      "static_qa": "reports/subpages/oldtrees-visual-predeploy-static-qa-20260914-v004.json",
+      "action": "one page264-scoped Additional CSS insert only",
+      "covers": "comparison cards + request-form panel, 18x18 reply icon, source contact controls, final 560/400 responsive correction, glow and hover/focus lift",
+      "gate": "Fresh page264 exact hash + fresh post8/header-v004 reconciliation + unique af-project:end + marker absent + complete write/readback/QA budget."
+    },
+    {
+      "priority": 3,
+      "resource": "page256 Biological Protection visual parity",
+      "prepared": "build/bio-visual-parity-v001.css",
+      "static_qa": "reports/subpages/bio-visual-predeploy-static-qa-20260914-v001.json",
+      "action": "one page256-scoped Additional CSS insert only",
+      "covers": "legacy eyebrow leaves, technology card geometry/surfaces, symptom table visual mapping, native FAQ source-like visual mapping",
+      "gate": "Fresh v010 exact page hash + current post8 reconciliation + marker absent + sufficient budget."
+    },
+    {
+      "priority": 4,
+      "resource": "page256 tag-only semantic follow-up",
+      "prepared": "build/bio-semantic-resume-20260914-v013.json",
+      "action": "fresh raw content/search on af260007; if exact root is still aside, tag-only aside->article. af260013 requires exact raw proof before any two neutral card-root div->article change.",
+      "do_not": "No reconstruction, AX-inferred wrapper rewrite or full Elementor save."
+    }
+  ],
+  "acceptance_only_no_new_code_without_failure": [
+    {
+      "resource": "page264 interactions",
+      "ownership": "build/source-interactions-v001.js + ID14/ID33",
+      "proven_static_contract": "native range drives --ba-pos; carousel ArrowLeft/Right, swipe, 4000ms autoplay, focus/hover pause, prefers-reduced-motion stop/restart",
+      "open": "interaction-capable browser proof only. Do not add duplicate JS listeners/timers."
+    },
+    {
+      "resource": "global header",
+      "live": "header v004 Additional CSS + ID7 8px sticky + ID37 route-current helper",
+      "open": "post-footer-JS route-current visual proof, dropdown keyboard/focus, mobile drawer/body lock, top/scrolled matched-state capture. No further write absent a new reproducible delta."
+    },
+    {
+      "resource": "Gallery page258",
+      "live_structure": "44 EAEL items, 4 before-after controls, 6 manual carousels, native reviews, shared source interaction runtime",
+      "open": "lightbox focus/next/prev/close, BA pointer/keyboard, carousel arrows/dots/swipe, formal visual matrix",
+      "asset_blocker": "Ellwoodi exact source asset 404"
+    },
+    {
+      "resource": "Reference Videos page268",
+      "open": "review keyboard, video keyboard/lazy iframe/privacy host, hero animation normal/reduced, authenticated editor reopen, formal visual matrix",
+      "write_rule": "Do not resave merely for proof."
+    }
+  ],
+  "shared_review_id14": {
+    "status": "GLOBAL_UPDATE_STILL_GATED",
+    "plan": "build/reviews-controls-v006-dot-a11y-plan.json",
+    "evidence": "page264 and page272 prove numbered review dots are target-only focusable duplicates; page256 contains a page-scoped containment fix",
+    "missing_gate": "fresh representative homepage source/target AX proof. Gallery/Reference Videos historical reports do not cleanly prove the review-dot contract.",
+    "decision": "Keep page-scoped fixes; do not modify ID14 globally yet."
+  },
+  "global_floating_contact": {
+    "status": "NO_WRITE_JUSTIFIED",
+    "reason": "Base and later dock CSS inspected; phone/mail masks and CTA are present, safe-area rule only changes bottom, mobile rules retain/grow controls. No reproducible hide/clip cascade found."
+  },
+  "formal_blockers": [
+    "specs/acceptance.json and specs/behaviors.json absent from repository history",
+    "deterministic same-browser/DPR/zoom six-viewport screenshot-overlay-diff runner unavailable",
+    "Opera shared/challenged; no click/keyboard action; zero new tabs opened",
+    "container DNS cannot resolve Clicknest hosts",
+    "page270 portrait and page258 Ellwoodi exact source assets remain 404 without proven substitutes",
+    "SMTP/delivery and real form submission remain outside current prompt"
+  ],
+  "critical_429_rule": "Any 429-returned write is UNKNOWN until bytes/SHA/fragment or plugin-object readback proves outcome. Never blind-retry.",
+  "pixel_pass": false
+}
