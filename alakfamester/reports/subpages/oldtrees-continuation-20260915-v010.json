@@ -1,0 +1,82 @@
+{
+  "schema_version": 10,
+  "package": "oldtrees-continuation-20260915-v010",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CURRENT_CONTINUATION_READONLY_CHECKPOINT_NO_SCOPE_CHANGE",
+  "scope_authority": "STATE.md remains PAGE264 ONLY. This checkpoint does not authorize any global/other-page write.",
+  "tool_state_this_continuation": {
+    "wpvibe": "A single initial list_sites/preflight invocation returned disabled. No later WPVibe call was made.",
+    "opera": "Started with one existing tab. That tab was reused for the page264 target, and exactly one new reference tab was opened, reaching the hard maximum of two project tabs. The first screenshot request then disconnected the connector. No replacement tab and no reconnect loop followed.",
+    "github": "Used for repository reads and no-WordPress reports/plans.",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 1,
+    "opera_max_project_tabs": 2
+  },
+  "accepted_live_state_preserved": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "visual_live": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "semantic_owner": "ID33 last verified active with page264 guard",
+    "shared_form_runtime": ["ID5 photo-count validator", "ID6 rows=5 helper"],
+    "note": "No current live read was available to supersede these accepted values, so no write was attempted."
+  },
+  "current_convergence": {
+    "content_main_media": "No known gap; 5/5 main media roles and all historical page264 copy gaps reconciled.",
+    "semantic_static_ax": "38/38 headings, 11/11 ordered regions, exact final review names/buttons, form semantics, tiszafa initial state and Nordmann static controls accepted.",
+    "reproduced_page264_local_visual_failures": [
+      "v006 request contact foreground dark on target versus white reference",
+      "v007 desktop comparison columns unequal versus equal reference columns"
+    ],
+    "diagnostic_not_failure": [
+      "hero copy approximately 40-45px lower in one matched 1640x920 sample until exact geometry/computed-style owner is measured",
+      "inner MetForm field styling until synchronized computed-style/geometry proves a source-target difference"
+    ],
+    "proof_only": [
+      "Form33 service radio exact mf_input_required plus safe native empty-choice behavior",
+      "review keyboard behavior",
+      "tiszafa pointer/keyboard behavior",
+      "Nordmann timing/swipe/pause/reduced-motion behavior",
+      "fresh route/href readback",
+      "six-view deterministic overlay/diff"
+    ]
+  },
+  "new_files_created_in_this_continuation": [
+    "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json",
+    "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json",
+    "build/oldtrees-next-remote-window-20260915-v003.json"
+  ],
+  "new_evidence_reconciled": {
+    "css_cascade": "v006/v007 do not overwrite v005-owned accepted properties. v006 strengthens only source-identical contact colors; v007 strengthens only source-identical comparison grid/width contract.",
+    "native_required_capability": "MetForm mf_input_required=yes is a real validation input, not just required-star decoration. However current shared Form33 service-radio setting remains unread, so no PASS and no fallback yet.",
+    "form_inner_fields": "v004 deliberately contains no .mf-input/textarea restyle. No inner-field defect is currently reproduced; new field CSS is forbidden until measured.",
+    "runtime": "No new page264 JS is justified; existing review/tiszafa/Nordmann owners/markup must be tested before any runtime change.",
+    "routes": "Local #ajanlatkeres, /kapcsolat/#kiszallas, related service, tel and mailto contracts consolidated for fresh non-activating readback."
+  },
+  "authoritative_next_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+  "next_safe_live_order": [
+    "WPVibe +5 identity/site/quota once; preserve >=10 calls after complete package.",
+    "Compact page264 hash/JSON + Additional CSS marker/hash preflight.",
+    "Trustworthy two-tab v006/v007 gate only.",
+    "At most one guarded CSS write selected by both/one/neither outcome.",
+    "Mandatory marker/project-end/page-hash readback plus changed-section regression capture.",
+    "Then native Form33 required proof; only after that optional page264 fallback if live failure is real.",
+    "Then inner form field visual measurement, link-route readback, interaction proof, hero diagnostic and deterministic responsive visual matrix."
+  ],
+  "hard_preserve": [
+    "Never replay oldtrees visual v001-v005 or stale semantic saved-data packages.",
+    "Never add a second review/slider/carousel runtime owner because the browser tool is missing actions.",
+    "Never mutate shared Form33 or global dock/header/footer from page264 scope.",
+    "Never blindly retry a 429 write; read back exact outcome first.",
+    "Never exceed the two-tab Opera policy or open replacement fan-out after disconnect.",
+    "Never claim PIXEL_PASS without exact deterministic source-target overlay/diff."
+  ],
+  "wordpress_writes": 0,
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "PAGE264_STATIC_CONVERGENCE_FURTHER_REFINED_LIVE_WRITE_GATE_UNAVAILABLE"
+}
