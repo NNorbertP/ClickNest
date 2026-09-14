@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "package": "hedge-rendered-dom-diagnostic-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "mode": "READ_ONLY",
+  "wordpress_writes": 0,
+  "goal": "Extract all remaining page272 structural-semantic evidence from one trustworthy rendered target HTML/DOM payload, and compare the source from one matching reference payload when available.",
+  "target_selectors": {
+    "review_root": ".elementor-element-c3d30005",
+    "review_tablist": ".elementor-element-c3d30005 [role=tablist]",
+    "review_tabs": ".elementor-element-c3d30005 [role=tab]",
+    "proof_carousel": ".elementor-element-af2e004d",
+    "hero_art": ".elementor-element-af2e004e",
+    "gallery_widget": ".elementor-element-b2e2c001",
+    "form_intro_contact": ".elementor-element-af2e004c",
+    "form_wrapper": ".mf-form-wrapper[data-form-id=33]",
+    "form_service": "#af-form-service",
+    "form_city": "#af-form-city",
+    "headings": "h1,h2,h3,h4,h5,h6"
+  },
+  "extract_exact": {
+    "headings": "ordered array of {tagName/level, normalized visible text}; do not collapse duplicates",
+    "reviews": "root count, tablist count/name, ordered tab count/current visible identity/current accessible name, .af-review-source-dot count/tabindex/aria-hidden",
+    "form": "Form33 wrapper count, form count/name/aria-describedby target text, direct-call owner/id/text/href, service wrapper role/aria-labelledby and label text, city input aria-describedby and help text",
+    "proof_carousel": "container role, direct item count, each emitted item role, parent role(s), accessible names/current active marker and stable owner classes/data attributes",
+    "hero": "hero art element ancestry plus ordered hero-copy heading/paragraph/CTA descendants of candidate ancestors",
+    "gallery": "Sövénymunkák heading node ancestry and b2e2c001 ancestry",
+    "form_outer": "af2e004c ancestry and Form33 wrapper ancestry"
+  },
+  "lowest_common_ancestor_method": {
+    "hero": "Find the nearest common ancestor of the full source-equivalent hero copy block and .elementor-element-af2e004e. Candidate is acceptable only if it does not swallow the following reviews/content section and has a stable Elementor/project identity.",
+    "gallery": "Find nearest common ancestor of the heading whose normalized text is exactly Sövénymunkák and .elementor-element-b2e2c001. Do not use b2e2c001 alone unless the heading is actually inside it.",
+    "form": "Find nearest common ancestor of .elementor-element-af2e004c and .mf-form-wrapper[data-form-id=33]. Candidate is acceptable only if it corresponds to the complete source form section and does not also include unrelated preceding/following sections.",
+    "rule": "A very broad page/main/root ancestor is not an acceptable named-region owner merely because it contains both nodes. Require a section-scale stable owner."
+  },
+  "source_comparison": {
+    "headings": "compare ordered {level,name} arrays, not only name sets",
+    "proof_carousel": "compare item/parent roles and accessible naming; historical source role=group must be re-observed before any target correction",
+    "regions": "compare source region names and their actual section boundaries against the target LCA candidates",
+    "reviews_form": "compare post-runtime accessible names/relations after any ID36 v004 deployment"
+  },
+  "v004_deployment_gate_from_same_payload": [
+    "review root count=1",
+    "tablist count=1",
+    "tab count=3",
+    "visible/current identities in Panasonic -> Otolecz -> ARKER'S order",
+    "Form33 wrapper count=1 and form count=1",
+    "wrapper-owned direct-call descriptor count=1",
+    "service wrapper+label pair exactly one",
+    "city input+help pair exactly one"
+  ],
+  "no_write_findings": [
+    "complete hero/gallery/form outer-region root discovery",
+    "heading level/order differences",
+    "proof carousel group/listitem difference",
+    "unexpected extra source/target section semantics"
+  ],
+  "followup_rule": "Record diagnostic output first. Never expand the ID36 v004 write in the same package just because another discrepancy is discovered. Each new real delta gets a separate smallest-owner plan after source/target proof.",
+  "browser_memory_rule": "If browser is used, reuse exactly one source + one target tab. No extra tabs; stale URL/title vs DOM/screenshot mismatch invalidates the payload immediately.",
+  "status": "READY_FOR_ONE_PASS_STRUCTURAL_DIAGNOSTIC"
+}
