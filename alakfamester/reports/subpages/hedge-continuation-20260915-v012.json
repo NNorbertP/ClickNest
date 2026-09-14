@@ -1,0 +1,106 @@
+{
+  "schema_version": 12,
+  "package": "hedge-continuation-20260915-v012",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "page272 only",
+  "wordpress_writes_this_continuation": 0,
+  "accepted_saved_baseline": {
+    "elementor_bytes": 53606,
+    "elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required_before_any_future_write": true
+  },
+  "authoritative_execution_chain": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "open_items": "reports/subpages/hedge-open-items-20260914-v004.json",
+    "next_live_window": "build/hedge-next-live-window-plan-20260915-v003.json",
+    "acceptance_matrix": "build/hedge-acceptance-matrix-20260915-v003.json",
+    "rendered_dom_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v001.json",
+    "artifact_precedence": "reports/subpages/hedge-artifact-supersession-20260915-v002.json",
+    "state_prepend_candidate": "build/hedge-state-prepend-20260915-v008.md"
+  },
+  "current_semantic_candidate_v004": {
+    "why_v004": "v002/v003 attempted an unproven partial outer form region on #ajanlatkeres. v004 removes that mutation while preserving review and complete Form33 component semantics.",
+    "intended_existing_owner": "Code Snippets ID36 only",
+    "keep_scope": "front-end",
+    "delta": [
+      "exact three source review tab accessible names",
+      "Form33 name Ajánlatkérés",
+      "wrapper-owned direct-call form description",
+      "service radio group name relationship",
+      "Település help relationship"
+    ],
+    "no_change": ["CSS", "visible text", "DOM order", "form validation/submission", "click/keyboard behavior", "Elementor data", "outer form region"]
+  },
+  "outer_regions_hold": {
+    "audit": "reports/subpages/hedge-outer-regions-static-audit-20260914-v002.json",
+    "hero": "Need stable complete root containing full hero copy + af2e004e art.",
+    "gallery": "Need stable complete root containing Sövénymunkák heading + b2e2c001.",
+    "form": "Need stable complete root containing separate af2e004c intro/contact + Form33.",
+    "rule": "No partial/fake region labels."
+  },
+  "required_radio": {
+    "audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+    "native_source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+    "finding": "MetForm Radio mf_input_required=yes feeds required=true into the real front-end validation register path; native enforcement capability is proven but current Form33 setting is still unread.",
+    "next": "Read exact #af-form-service widget ID/type/mf_input_name/mf_input_required/six values. If required=yes, prove empty-choice rejection without entry/delivery before any PHP fallback.",
+    "server_fallback": "build/hedge-form-required-server-plan-20260914-v002.json",
+    "fallback_status": "OPTIONAL_ONLY_IF_NATIVE_ABSENT_OR_INSUFFICIENT"
+  },
+  "additional_parity_gates_found": {
+    "heading_levels": "Historical evidence proves heading text-set parity, not ordered H1-H6 level/name parity. Capture ordered source/target tree in next trustworthy DOM/AX pass; no write from absence of evidence.",
+    "proof_carousel_roles": "Historical source group vs target listitem was deliberately protected as accessibility drift. Fresh role/parent/owner proof required before either explicit intentional-divergence closeout or any correction.",
+    "proof_carousel_audit": "reports/subpages/hedge-proof-carousel-role-audit-20260915-v001.json",
+    "intentional_divergences": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json"
+  },
+  "interaction_and_gallery": {
+    "interaction_audit": "reports/subpages/hedge-interaction-static-audit-20260914-v001.json",
+    "review_behavior": "Shared D12 click/Arrow/Home/End implementation already proven on representative native tabs; page272 direct run is proof-only unless failure reproduces.",
+    "proof_carousel_behavior": "Shared source-interactions runtime is live; page272 4000ms autoplay historically observed 5->6; keyboard/swipe/pause/reduced-motion proof only.",
+    "lightbox_audit": "reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json",
+    "lightbox_rule": "Preserve popup=none until source-specific Hedge zoom/grouped-lightbox proof; page258 is not a proxy."
+  },
+  "closed_preserve": [
+    "shared-media recovery 26/26",
+    "EAEL gallery 28/28 id=0/full/original URLs/exact names/order",
+    "five complete legacy named regions",
+    "full CTA mailto and exact af2e004c contact accessible names",
+    "24-hour reply sentence",
+    "hero af2e004e / proof af2e004d / reviews c3d30005 / gallery b2e2c001 / Form33 af2e0011",
+    "legacy image widgets af2e0009-af2e000e absent",
+    "historical media/background gaps stale; current background sage",
+    "ID36 v001 live owner until successor verified"
+  ],
+  "one_pass_future_diagnostic": {
+    "plan": "build/hedge-rendered-dom-diagnostic-20260915-v001.json",
+    "from_same_target_payload": [
+      "v004 review/Form33 cardinality and ownership gates",
+      "hero/gallery/form complete-root ancestry candidates",
+      "ordered target H1-H6 level/name tree",
+      "af2e004d item/parent role semantics"
+    ],
+    "from_same_reference_pair_when_browser_is_trustworthy": [
+      "ordered source H1-H6 level/name tree",
+      "source proof-carousel roles",
+      "source region section boundaries",
+      "post-v004 changed-section AX/visual comparison"
+    ]
+  },
+  "tool_state": {
+    "wpvibe": "disabled in this conversation; do not call again; intended +5 identity verified previously but site connection/exact quota unknown",
+    "opera": "exactly two existing tabs reused, zero new; Hedge URLs/titles returned stale prior-page AX and screenshot content, therefore current connector data is untrusted and no further calls should be made in this continuation",
+    "public_clicknest_http": "unavailable in attempted fallback",
+    "acceptance_json": "absent",
+    "behaviors_json": "absent",
+    "pixel_harness": "unavailable"
+  },
+  "next_safe_operation": "When tools are trustworthy, follow build/hedge-next-live-window-plan-20260915-v003.json. Do not start partial work or replay obsolete v002/v003 semantic candidates.",
+  "state_md": "Repository STATE.md currently belongs to a parallel page264-only continuation and was intentionally not overwritten. The page272 prepend candidate is separate to avoid destroying correct concurrent state.",
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "STATIC_PAGE272_PREPARATION_MAXIMIZED_REMOTE_EXECUTION_AND_FORMAL_ACCEPTANCE_BLOCKED"
+}
