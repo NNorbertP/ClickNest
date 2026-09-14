@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "package": "hedge-semantic-runtime-metform-crosscheck-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_writes": 0,
+  "candidate": "build/hedge-semantic-runtime-v003.php",
+  "purpose": "Cross-check the page272 MetForm33 semantics against an already live, source-target compared use of the same shared Form33 contract without changing WordPress.",
+  "evidence": {
+    "shared_form_source_parity": "reports/home/metform33-source-parity-v001.json",
+    "page264_live_ax": "reports/subpages/oldtrees-runtime-live-qa-20260914-v002.json",
+    "page264_runtime_reference": "build/oldtrees-semantic-runtime-v003.php",
+    "page272_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v004.json"
+  },
+  "crosscheck": {
+    "form_name": {
+      "source_live_proven": "Ajánlatkérés",
+      "shared_target_live_proven": "Ajánlatkérés",
+      "page272_v003": "Ajánlatkérés",
+      "status": "MATCH"
+    },
+    "form_description": {
+      "source_live_proven": "Vagy hívjon közvetlenül: +36 30 539 48 20",
+      "shared_target_live_proven": "Vagy hívjon közvetlenül: +36 30 539 48 20",
+      "page272_v003_owner": "#af-form-direct-call preferred strictly inside .mf-form-wrapper[data-form-id=33], exact tel paragraph fallback in the same wrapper",
+      "status": "CONTRACT_MATCH_LIVE_EXISTENCE_GATE_REMAINS"
+    },
+    "service_group": {
+      "source_live_proven_name": "Miben kér segítséget?",
+      "shared_target_live_proven_name": "Miben kér segítséget?",
+      "page272_v003": "#af-form-service .mf-input-wrapper role=group + aria-labelledby existing .mf-input-label",
+      "status": "MATCH"
+    },
+    "city_help": {
+      "shared_source_target": "Település field help relation previously matched in live AX",
+      "page272_v003": "#af-form-city input[name=telepules] aria-describedby existing .mf-input-help",
+      "status": "MATCH"
+    }
+  },
+  "safety": {
+    "page_guard": "is_page(272)",
+    "external_af2e004c_contact_can_be_selected": false,
+    "validation_change": false,
+    "submission_change": false,
+    "visible_text_change": false,
+    "css_change": false,
+    "dom_reorder": false,
+    "new_click_keyboard_handlers": false
+  },
+  "conclusion": "The v003 form semantics are not a new guessed accessibility model; they mirror the already live/source-compared shared MetForm33 contract. The remaining deployment gate is current rendered ownership/existence inside page272 plus normal hash/snippet/quota readback, not semantic-design uncertainty.",
+  "live_gate": "Before updating ID36, prove current page272 contains exactly one .mf-form-wrapper[data-form-id=33], a form, and #af-form-direct-call or the exact wrapper-scoped tel:+36305394820 paragraph. If absent, do not deploy v003.",
+  "pixel_pass": false
+}
