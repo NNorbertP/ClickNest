@@ -1,14 +1,25 @@
-# STATE - 2026-09-14, BIOLOGICAL PROTECTION AUDIT + HEDGE PACKAGE PREPARED; WPVIBE 429 BLOCKS WRITES
+# STATE - 2026-09-14, OLD TREES PARITY CLOSED; BIOLOGICAL PROTECTION AUDIT + HEDGE PACKAGE PREPARED
 
 ## Current target / exact quota
 Target: https://alakfamester-wp.clicknest.hu/ ; repo `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 WPVibe account: `ncsnorbert+20260914-3@gmail.com`.
-**Latest exact WPVibe counter: 86/300 used, 214 remaining** in the rolling 24-hour window. Preserve at least **10 calls** for recovery/closeout per D11; 204 calls remain above reserve. HTTP 429 remains a short-term rate-limit condition, not evidence that the 300-call quota is exhausted.
+**Latest exact WPVibe counter: 93/300 used, 207 remaining** in the rolling 24-hour window. Preserve at least **10 calls** for recovery/closeout per D11; 197 calls remain above reserve. A prior HTTP 429 was transient for small guarded page264 calls; package-specific preflight is still mandatory before any further remote write.
 
 Environment rechecked 2026-09-14: WP 7.1 / PHP 8.3.33 / WPVibe 1.16.4; Hello Elementor 3.5.1 active; Elementor 4.2.4; ElementsKit Lite 4.0.4; MetForm 4.3.0. Preserve page56/page12, ElementsKit header20/footer21, MetForm33, Additional CSS post8 and canonical page IDs.
 
 ## Governing continuation rules
 D02 Hello + ElementsKit global header/footer. D03 V4 Atomic normal structure with documented legacy-widget boundary. D07 own CSS only Hello Additional CSS. D09 canonical WP URL mapping. D11 10-call reserve. D12 reviews native Atomic Tabs. D17 EAEL Free masonry. D18 preserve V4 Global Class semantics before structural full-save. Use the current live tree for structural work; do not restore old full-page snapshots. Preserve later manual changes unless a concrete source/acceptance conflict is proved. No raw SQL/meta structural mutation, no CSS behavioral substitute, no SMTP, real submission or external test message.
+
+## CLOSED - Idős fák source parity cleanup 2026-09-14
+Scope: page264 `/idos-fak-megmentese-szolgaltatas/` only. Evidence: `reports/subpages/oldtrees-source-parity-fix-20260914-v001.json`, commit `88edfb033efd8b84e5b4e7346670a1b5e279e235`.
+
+Fresh preflight found later live drift relative to the 2026-09-12 checkpoint, so no full-page snapshot was restored. Pre-write `_elementor_data`: **48951 B**, SHA256 `9cd9242e302ba1ae8074b16f307f6d29414f503929dcfed6d3ba435136142781`.
+
+Two source-proven deltas were corrected with guarded match-once `/wpvibe/v1/content/edit` only:
+- existing `form-reply` retained its content but `hidden aria-hidden='true'` was removed, restoring the source-visible sentence `Jellemzően 24 órán belül válaszolok.`;
+- source-absent eyebrow `Az első alkalom` was removed while the real heading `Mennyire változik meg már az első alkalommal?` was preserved.
+
+Post-write `_elementor_data`: **48874 B**, SHA256 `09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`; JSON valid. IDs `af2a0008`, `af2a004d`, `af2a0054`, `af2a0055` remain present. Fresh rendered HTML and Opera accessibility readback both expose the 24-hour sentence, do not expose the removed eyebrow, and retain the heading. No full-page save, extra cache purge, SMTP configuration, form submission or external message was performed. Deterministic screenshot/overlay tooling remained unavailable, therefore `PIXEL_PASS=false` and no pixel-perfect claim is made.
 
 ## PREPARED, NOT SENT - Biological Protection source parity follow-up
 Target page: `page256`, `/biologiai-vedelem/`.
