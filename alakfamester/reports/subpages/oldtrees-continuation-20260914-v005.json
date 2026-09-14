@@ -1,0 +1,92 @@
+{
+  "schema_version": 5,
+  "package": "oldtrees-continuation-20260914-v005",
+  "date": "2026-09-14",
+  "scope": {
+    "target_page_id": 264,
+    "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+    "reference": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+    "wordpress_write_scope": "page264 only; a Hello Additional CSS edit is permitted only when every effect selector is body.page-id-264 scoped",
+    "other_page_writes": 0,
+    "wordpress_writes_this_package": 0,
+    "smtp_or_external_submission": false
+  },
+  "account_handoff": {
+    "verified_wpvibe_identity": "ncsnorbert+20260914-5@gmail.com",
+    "email_verified": true,
+    "connect_site_result": "A one-click WordPress authorization URL was returned for this account.",
+    "connection_verification": "NOT_CONFIRMED",
+    "reason": "Before list_sites/site_info could verify the approved connection and exact rolling quota, the WPVibe connector became unavailable in this conversation. Do not assume authorization or quota state until a fresh WPVibe read succeeds."
+  },
+  "last_verified_remote_baseline": {
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_elementor_bytes": 48874,
+    "page264_json_valid": true,
+    "runtime_evidence": "reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json",
+    "runtime_state": "Code Snippets ID33 page guard is_page(264) was active; review tab names matched source; duplicate numbered review dots were hidden from the accessibility tree while preserving pointer behavior.",
+    "warning": "This is the last verified baseline, not a current read. Re-read before every later WordPress write."
+  },
+  "prepared_visual_package": {
+    "file": "build/oldtrees-visual-parity-v003.css",
+    "commit": "6b74c70b77150606a71e5c9df1999784b0f1a102",
+    "status": "PREPARED_NOT_DEPLOYED",
+    "scope_marker_start": "af-oldtrees-visual-v003:start",
+    "scope_marker_end": "af-oldtrees-visual-v003:end",
+    "selector_contract": "All effect selectors begin with body.page-id-264.",
+    "covers": [
+      "Kivágás vagy átalakítás? comparison/checklist presentation",
+      "#ajanlatkeres joined source-style form panel, 18x18 reply icon and contact component presentation",
+      "responsive correction: contact buttons remain auto-width at 401-560px and become full-width only at <=400px"
+    ],
+    "preserves": [
+      "Elementor DOM and element IDs",
+      "visible copy",
+      "MetForm values and processing",
+      "header/footer",
+      "all other pages"
+    ],
+    "supersedes_for_future_deploy": [
+      "build/oldtrees-visual-parity-v001.css",
+      "build/oldtrees-visual-parity-mobile-correction-v002.css"
+    ]
+  },
+  "static_runtime_audit": {
+    "source_interactions": "build/source-interactions-v001.js",
+    "source_before_after_contract": "input event updates --ba-pos; broken before/after media removes the figure.",
+    "source_carousel_contract": "4000ms autoplay unless manual/reduced-motion/<2 slides; click, ArrowLeft/ArrowRight, pointer swipe, hover/focus pause, broken-slide removal; reduced-motion change restarts/stops according to current preference.",
+    "target_last_proven": "Tiszafa .js-ba initialized with range 0..100 step1 value50 and data-af-ba-init=1. Timed Nordmann and keyboard/pointer parity still require an interaction-capable browser proof.",
+    "new_behavior_write_justified": false
+  },
+  "form_open_items": {
+    "evidence": "reports/subpages/oldtrees-inline-form-v001.json and specs/decisions.md D05",
+    "textarea_rows": "Target last documented rows=10; source rows=5. Needs a fresh live schema/read before changing shared MetForm33.",
+    "file_count": "Source contract is 3-5 photos, 8 MB/file. Native MetForm Free max-five control was not identified; mf_after_validation_check exists, but any custom validator must be proven page/form scoped and server-side before deployment.",
+    "success_state": "Exact source success/submit-state parity remains open.",
+    "radio_required": "Project decision requires the mandatory topic choice to be truly enforced on target; do not infer completion from source demo JS."
+  },
+  "opera_memory_policy": {
+    "max_tabs": 2,
+    "tabs_reused": 2,
+    "new_tabs_opened": 0,
+    "current_status": "Browser Connector disconnected after the existing source/target pair was reused. No reconnection loop or replacement tabs were opened.",
+    "pixel_pass": false
+  },
+  "next_safe_remote_sequence": [
+    "Restore WPVibe availability and verify the authenticated account is ncsnorbert+20260914-5@gmail.com and the site is connected.",
+    "Read exact rolling 24-hour quota; preserve the D11 10-call closeout reserve.",
+    "Load the Elementor WPVibe skill before any page-builder content edit.",
+    "Re-read page264 _elementor_data; require valid JSON and reconcile any SHA drift before writing.",
+    "Re-read current Hello Additional CSS post8 server-side; require exactly one af-project:end marker and prove af-oldtrees-visual-v003 is absent. Also detect any v001/v002 marker and reconcile instead of duplicating.",
+    "Insert the complete v003 block once before af-project:end using the supported match-once server-side content/edit path. Do not round-trip the full large Additional CSS field through chat.",
+    "Read back the v003 marker and unchanged page264 Elementor hash; do not purge cache unless the supported CSS save leaves demonstrably stale frontend output.",
+    "With at most one source and one target browser tab, compare the affected comparison and form sections first; then test review keyboard behavior, tiszafa pointer/keyboard behavior and Nordmann normal/reduced-motion timing when an interaction-capable browser is available.",
+    "Only after fresh evidence, address textarea rows / file-count validation / success state. Do not change shared MetForm33 globally from a page264-only package without a proven containment mechanism."
+  ],
+  "hard_blockers": [
+    "WPVibe connector unavailable in the current conversation, so no safe WordPress write or exact quota read can be performed now.",
+    "Opera Browser Connector disconnected; deterministic viewport/DPR/zoom screenshot-overlay-diff proof remains unavailable.",
+    "specs/acceptance.json and specs/behaviors.json are absent on current main, so the requested machine acceptance matrix cannot be run from the repository as-is."
+  ],
+  "status": "SAFE_LOCAL_PREPARATION_COMPLETE_REMOTE_WRITE_BLOCKED",
+  "pixel_pass": false
+}
