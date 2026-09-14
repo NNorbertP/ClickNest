@@ -1,0 +1,58 @@
+{
+  "package": "bio-parity-continuation-20260914-v007",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "slug": "biologiai-vedelem",
+  "scope": "Only the Biological Protection page on alakfamester-wp.clicknest.hu; reference read-only.",
+  "supersedes_partial_report": "reports/subpages/bio-parity-continuation-20260914-v006.json",
+  "wordpress_changes_verified": {
+    "list_terminal_periods": {
+      "af260007": "4/4 removed",
+      "af260010": "4/4 removed",
+      "af260013": "5/5 removed",
+      "total": "13/13",
+      "frontend_ax_sample_pass": true
+    },
+    "symptom_table_af260011": {
+      "headers": ["TÜNET", "MIT VIZSGÁLOK", "LEHETSÉGES IRÁNY"],
+      "row_headers": [
+        "Ágvégek barnulása, elhalása",
+        "Sövény alsó részének kiritkulása",
+        "Tűlevelek sárgulása, hullása",
+        "Kártevők jelenléte"
+      ],
+      "frontend_ax_exact_match_to_source": true
+    }
+  },
+  "known_saved_state": {
+    "after_first_8_period_fixes": {
+      "bytes": 34922,
+      "sha256": "4ebb602c3a533929cc3af273c20e750606082935be58f635de532735e625f83f"
+    },
+    "after_all_13_period_fixes_and_table_writes": {
+      "last_write_reported_bytes": 34973,
+      "sha256": "pending because post-package WPVibe read hit host HTTP 429"
+    }
+  },
+  "browser_evidence": {
+    "target_table_headers_and_row_headers": "PASS immediately after target navigation",
+    "source_table_headers_and_row_headers": "PASS and exact match",
+    "opera_memory_policy": "two existing tabs only; no tab fan-out",
+    "warning": "Opera tabs are being navigated by another concurrent browser activity; discard any target AX result whose URL is not the Biological Protection page at query time."
+  },
+  "quota": {
+    "latest_exact_account_counter": "151/300 used; 149 remaining",
+    "D11_reserve": 10,
+    "usable_above_reserve": 139,
+    "current_blocker": "target host burst-throttling HTTP 429, not account exhaustion"
+  },
+  "remaining_safe_page_only_work": [
+    "Fresh readback of page256 bytes/SHA/JSON validity when host throttle clears.",
+    "Use exact current content/search snippets to add source-equivalent named region semantics to legacy-contained widgets af260007, af260010, af260011, af260013 only.",
+    "Fresh frontend AX check of final CTA 9a1b2c3d; add explicit aria-label='ÍRJON BÁTRAN kreativ@alakfa-mester.hu' only if still required.",
+    "Do not retry guessed Atomic attributes for hero, FAQ outer region or review tablist on Elementor 4.2.4.",
+    "Do not full-save page256, restore an older snapshot, modify another page, shared media, global template, Additional CSS, plugin configuration or SMTP."
+  ],
+  "pixel_pass": false,
+  "smtp_or_submission": false
+}
