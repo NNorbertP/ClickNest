@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-15",
+  "scope": "header-only",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "issue": "On the homepage, Services incorrectly appears active at rest with the same pale-green pill treatment while Home is active.",
+  "verified": true,
+  "verification": "Fresh Opera screenshot of the target homepage showed both Főoldal and Szolgáltatások with green pill backgrounds.",
+  "required_behavior": {
+    "homepage": "Főoldal remains current; Szolgáltatások is neutral at rest.",
+    "interaction": "Szolgáltatások keeps normal hover/focus/open feedback.",
+    "service_subpages": "Szolgáltatások remains current-section on real service pages."
+  },
+  "prepared_fix": {
+    "css": "build/header-home-services-inactive-v001.css",
+    "selector": "#af-nav-services",
+    "runtime_guard": "On pathname '/', never mark the Services host/current child as current."
+  },
+  "live_write_status": "NOT_DEPLOYED",
+  "blocker": "WPVibe tool is disabled in the current conversation; no safe authenticated WordPress write path is available.",
+  "safety": "Do not alter body, footer, forms, SMTP, menu destinations, or other header items."
+}
