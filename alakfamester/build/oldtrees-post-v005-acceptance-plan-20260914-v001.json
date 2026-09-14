@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-post-v005-acceptance-plan-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "mode": "NO_WRITE_BY_DEFAULT",
+  "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "preconditions": [
+    "WPVibe account must be ncsnorbert+20260914-5@gmail.com, verified, and the target site connection must be confirmed.",
+    "Exact rolling quota must be read; keep at least 10 calls for D11 recovery/closeout.",
+    "page264 _elementor_data must be JSON-valid and reconciled against 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a.",
+    "Additional CSS must expose exactly one af-oldtrees-visual-v004 marker, one af-oldtrees-visual-v005 marker and one af-project:end marker. If marker counts differ, stop and reconcile; do not insert another visual block.",
+    "Use at most one reference + one target browser tab; reuse both tabs. Do not open replacement tabs after connector instability."
+  ],
+  "visual_checks": [
+    {
+      "id": "comparison-v005",
+      "anchor": "Kivágás vagy átalakítás?",
+      "target_scope": "body.page-id-264 .elementor-element-af2a0045",
+      "expected": [
+        "desktop >900px: two equal grid columns, 24px gap, cards stretched to equal height",
+        "negative card background #EFEDE4 and border #B9B2A2",
+        "positive card sage gradient #DDE7DF -> #d1e0d5",
+        "source-like warning and growth header icons",
+        "source-like X and check leaf bullets",
+        "card padding 32px desktop and 24px <=720px",
+        "single column <=900px"
+      ],
+      "failure_rule": "Only a fresh post-v005 screenshot/computed-style/geometry mismatch justifies another CSS change. Do not change copy or DOM."
+    },
+    {
+      "id": "request-form-v004",
+      "anchor": "#ajanlatkeres",
+      "target_scope": "body.page-id-264 #ajanlatkeres",
+      "expected": [
+        "centered eyebrow/title/intro",
+        "af2a0054 and af2a0055 visually join into one white bordered panel",
+        "top corners 36px on intro half; bottom corners 36px on MetForm half; no visible seam/gap",
+        "form reply clock SVG is 18x18, never an expanded arc",
+        "organic sage radial glow remains behind content and does not cover fields",
+        "contact buttons use source-like green pill/leaf-icon treatment and lift 2px on hover/focus-visible",
+        "contact buttons retain intrinsic width at 401-560px and become 100% only at <=400px",
+        "MetForm fields continue naturally within the same visual panel"
+      ],
+      "failure_rule": "Do not touch shared MetForm33 just to solve a page264 surface/layout mismatch; use page264-scoped CSS only after a measured cause is proven."
+    },
+    {
+      "id": "hero-geometry",
+      "anchor": "#af-sub-survivor-hero",
+      "expected": [
+        "source copy, line breaks, hero art identity and accessible title/description remain intact",
+        "re-measure vertical geometry only after matching browser, viewport, DPR, zoom, font/image readiness and focus/load state"
+      ],
+      "known_unproven_observation": "An earlier diagnostic suggested roughly 40px lower target content, but no responsible CSS/computed-style cause was proven.",
+      "failure_rule": "No padding/margin patch from screenshot impression alone. Require measured geometry and computed-style cause."
+    },
+    {
+      "id": "comparison-dark-divider",
+      "anchor": "transition after comparison section",
+      "expected": "Do not inspect or modify unless a synchronized post-v005 capture shows a reproducible source-target delta.",
+      "failure_rule": "No speculative separator CSS."
+    }
+  ],
+  "accessibility_checks": [
+    "11 named source-equivalent regions total, including native reviews plus helper-added page regions.",
+    "nine promoted step labels remain heading level 3.",
+    "review tablist accessible name is Ügyfélvélemények and all three tab names exactly match source.",
+    "numbered target-only review dots remain absent from keyboard/AX while pointer behavior stays intact.",
+    "form accessible name Ajánlatkérés and direct-call description remain correct.",
+    "service radio group relationship and Település describedby remain non-duplicated."
+  ],
+  "interaction_checks": [
+    {
+      "component": "reviews",
+      "owner": "ID14 + ID33",
+      "checks": ["ArrowLeft/ArrowRight", "ArrowUp/ArrowDown if current owner supports them", "Home", "End", "previous/next controls"],
+      "rule": "Do not add duplicate review JS unless live behavior fails."
+    },
+    {
+      "component": "tiszafa before-after",
+      "selector": ".js-ba",
+      "checks": ["pointer drag updates visual split", "keyboard arrows update native range and visual split", "value 50 corresponds to --ba-pos:50% at initial state", "source alt texts remain exact"],
+      "rule": "Do not replace the native range interaction if it passes."
+    },
+    {
+      "component": "Nordmann carousel",
+      "selector": ".carousel.js-carousel",
+      "checks": ["6 slides preserved", "normal motion advances at about 4000ms", "ArrowLeft/ArrowRight works", "pointer swipe horizontal threshold behavior", "mouseenter/focusin pauses", "mouseleave/focusout resumes", "prefers-reduced-motion prevents autoplay and preference changes re-evaluate start/stop"],
+      "rule": "Existing runtime is authoritative unless a stable interaction test proves a mismatch."
+    }
+  ],
+  "form_checks": [
+    "Verify Form33 textarea effective rows=5; owner ID6 should be present once.",
+    "Verify photo field remains required/multiple/8192KB and ID5 remains the sole 3-5 file-count validator for /metform/v1/entries/insert/33.",
+    "Verify notifications/webhooks remain disabled and local entry storage remains enabled.",
+    "Verify configured success state remains intact; do not copy the reference demo-only no-send sentence.",
+    "Inspect service/topic radio required schema/runtime. This is the only currently unclosed validation proof; change nothing if required enforcement already exists.",
+    "Do not perform real submission or SMTP/delivery test in this mode."
+  ],
+  "formal_capture_views_if_tooling_supports_exact_viewports": ["1920x1080", "1440x1000", "1024x900", "768x1024", "390x844", "360x800"],
+  "capture_contract": [
+    "same browser engine, exact viewport, DPR, zoom, scroll and load state for each pair",
+    "wait for fonts and required images",
+    "for moving content use matched start and documented time/progress, not random frames",
+    "produce source image, target image, overlay, difference image and key geometry measurements",
+    "do not use image cropping/resizing to hide page-height or content differences"
+  ],
+  "stop_conditions": [
+    "WPVibe/host returns 429: stop; any write outcome is UNKNOWN until readback.",
+    "page264 hash or Additional CSS marker counts drift: stop and reconcile before write.",
+    "Opera connector becomes unstable: stop using it; do not create replacement tab fan-out.",
+    "No deterministic screenshot tooling: keep PIXEL_PASS=false.",
+    "Two attempted fixes without measurable improvement: stop CSS iteration and re-diagnose root cause."
+  ],
+  "success_condition": "All existing page264 content/semantic/runtime contracts remain intact; v005 comparison and v004 form visuals match synchronized reference captures within documented measurement tolerances; no unproven new write remains. Formal pixel pass still requires deterministic overlay/diff tooling.",
+  "wordpress_writes": 0
+}
