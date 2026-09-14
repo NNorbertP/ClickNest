@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "package": "bio-visual-parity-v001",
   "date": "2026-09-14",
   "page_id": 256,
@@ -10,14 +10,15 @@
   "decision_refs": ["D03", "D07", "D11", "D18"],
   "css": {
     "file": "build/bio-visual-parity-v001.css",
-    "latest_commit": "f78640579f0ae6ecdf7b9b9dc5684ea12ba0a808",
-    "content_sha": "305b08d0c28c375606a65c42137d6cc264f507c8",
+    "latest_commit": "b68f25e070b9b36dda9d8003845df72446f92c69",
+    "content_sha": "9bce52a63e6633febb3f1f970a75e9b60bba2171",
     "marker_start": "/* af-bio-visual-v001:start",
     "marker_end": "/* af-bio-visual-v001:end */",
     "scope_selector": "body.page-id-256",
     "touches_acceptance_section_heights": false,
     "touches_hero_dimensions": false,
-    "touches_global_header_footer": false
+    "touches_global_header_footer": false,
+    "technology_article_pseudo_elements_written": false
   },
   "page_precondition": {
     "elementor_data_bytes": 35382,
@@ -27,12 +28,16 @@
     "note": "Re-read page256 immediately before any CSS write. If any value differs, stop and reconcile live drift first."
   },
   "proven_source_target_deltas": {
+    "legacy_eyebrows": [
+      "Reference legacy section eyebrows expose the 16px bronze leaf motif before uppercase primary text.",
+      "Current target legacy eyebrow text renders without the leaf; scoped direct-child ::before rules restore only the missing motif."
+    ],
     "technology_section": [
       "Source direct eyebrow has a 16px bronze leaf; target legacy eyebrow lacks it.",
       "Source section intro is 1.125rem / max-width 104ch and wraps to two lines at sampled desktop; target is 16px and one line.",
-      "Source three cards use 32px padding, organic radius, soft shadow, lower-right organic watermark; target uses 26px padding and simple 24px radius.",
-      "Source middle sage card has no shadow, source sage surface, top botanical hairline and darker watermark.",
-      "Target card widths/content/icons are otherwise aligned, so the CSS block deliberately preserves current icon generation and content."
+      "Source three cards use 32px padding, organic radius and source shadow; target uses 26px padding and simple 24px radius.",
+      "Source middle sage card has no shadow, source sage surface and a top botanical hairline.",
+      "Target card widths/content/icons are otherwise aligned. AX shows generated target icon glyphs after article content, consistent with article::after ownership, therefore the prepared CSS deliberately does not write article::before/::after and does not yet recreate the subtle source lower-right watermark."
     ],
     "symptom_table": [
       "Saved table text and row/column semantics are already source-exact and must not change.",
@@ -53,25 +58,26 @@
     "four legacy region labels and hero/FAQ/review runtime labels",
     "final CTA exact aria-label and href",
     "existing source-measured 1920/1440/1024/768/390/360 section heights, hero heading dimensions, art dimensions and wave heights",
-    "all existing Elementor IDs and saved page256 content"
+    "all existing Elementor IDs and saved page256 content",
+    "existing generated technology icon pseudo-elements"
   ],
   "required_predeploy_reads": [
     "Exact WPVibe quota; preserve at least 10 calls after complete write/readback/QA package.",
     "Page256 Elementor bytes/SHA/JSON validity; must match 35382 / 55fd9bbe...990f3 / valid.",
     "Fresh complete Additional CSS length/SHA plus unique af-project:end marker and absence of af-bio-visual-v001 marker.",
-    "Target CSS pseudo ownership: prove whether .af-sub-cards>article::after or equivalent is already used. If article::after is occupied, do not deploy the watermark rules until reconciled.",
-    "Confirm current target technology icon generation remains visually present and is not owned by the same pseudo-element the new watermark needs."
+    "Confirm current target technology icons remain visually present immediately before and after deployment; the new CSS does not claim their pseudo-element owners."
   ],
-  "suggested_compact_css_preflight_sql": "SELECT LENGTH(post_content) AS bytes, SHA2(post_content,256) AS sha256, LOCATE('af-bio-visual-v001',post_content) AS marker_pos, LOCATE('/* af-project:end */',post_content) AS end_pos, LOCATE('.af-sub-cards>article::before',REPLACE(post_content,' ','')) AS tech_before2, LOCATE('.af-sub-cards>article:before',REPLACE(post_content,' ','')) AS tech_before1, LOCATE('.af-sub-cards>article::after',REPLACE(post_content,' ','')) AS tech_after2, LOCATE('.af-sub-cards>article:after',REPLACE(post_content,' ','')) AS tech_after1, LOCATE('.af-details summary::after',REPLACE(post_content,' ','')) AS faq_after2, LOCATE('.af-details summary:after',REPLACE(post_content,' ','')) AS faq_after1 FROM {prefix}posts WHERE ID=8",
+  "suggested_compact_css_preflight_sql": "SELECT LENGTH(post_content) AS bytes, SHA2(post_content,256) AS sha256, LOCATE('af-bio-visual-v001',post_content) AS marker_pos, LOCATE('/* af-project:end */',post_content) AS end_pos, (LENGTH(post_content)-LENGTH(REPLACE(post_content,'/* af-project:end */','')))/LENGTH('/* af-project:end */') AS end_count FROM {prefix}posts WHERE ID=8",
   "deployment": [
     "Use supported /wpvibe/v1/content/search on post8 post_content to retrieve the exact unique af-project:end snippet from the fresh field.",
     "Insert the complete marked CSS block immediately before the unique project end marker using one guarded match-once /wpvibe/v1/content/edit. Do not round-trip or replace the whole Additional CSS field.",
     "Treat HTTP 429 on the write as UNKNOWN. Do not retry; first read back marker/hash to determine whether it executed.",
     "Read back Additional CSS bytes/SHA/marker count and re-read page256 Elementor bytes/SHA/JSON. Page256 saved data must remain unchanged.",
-    "Fresh-load source and target with only the existing two Opera tabs. Verify technology card geometry/surfaces, table surface, FAQ static state, exact AX semantics and no regression of hero/reviews/CTA.",
+    "Fresh-load source and target with only the existing two Opera tabs. Verify technology card geometry/surfaces and existing icon badges, table surface, FAQ static state, exact AX semantics and no regression of hero/reviews/CTA.",
     "If a measured regression appears, remove only the exact af-bio-visual-v001 marked block by guarded match-once edit; do not restore an old full Additional CSS snapshot."
   ],
   "intentionally_open": [
+    "Technology lower-right source card watermark: target icon generation appears to own article::after, so do not overwrite it. Find a collision-free owner or equivalent background implementation later.",
     "#technologiak anchor ownership/offset: target id is currently on inner af-sub-inner; do not guess a scroll-margin or structural ID move without a supported outer-wrapper ID proof.",
     "Stress and expectations split/list card visuals need additional direct source-target screenshot/component mapping before inclusion.",
     "Global header active-state and floating-contact differences are outside page256-only scope.",
