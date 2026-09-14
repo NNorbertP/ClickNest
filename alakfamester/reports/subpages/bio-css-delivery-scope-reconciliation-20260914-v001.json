@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "package": "bio-css-delivery-scope-reconciliation-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "SCOPE_CORRECTION_NO_WORDPRESS_WRITE",
+  "current_user_scope": {
+    "allowed_wordpress_target": "page256 /biologiai-vedelem/ only",
+    "reference": "read-only",
+    "disallowed_from_this_package": [
+      "other pages",
+      "shared/global templates",
+      "shared media",
+      "plugin settings",
+      "SMTP/external sends",
+      "global/shared style resources such as Hello Additional CSS unless the user later explicitly broadens scope"
+    ]
+  },
+  "important_correction": "Page256-scoped CSS selectors do not make Hello Additional CSS a page-local resource. The field itself is global/shared. Therefore selector isolation is necessary for safety but is not sufficient authorization to mutate that field under the current page-only scope.",
+  "impact_on_existing_plans": {
+    "build/bio-visual-single-write-plan-20260914-v007.json": "DESIGN_SPEC_ONLY_UNDER_CURRENT_SCOPE; do not execute via Hello Additional CSS",
+    "build/bio-css-scope-audit-20260914-v001.json": "selector-isolation evidence remains valid, but its physical delivery assumption is superseded by this scope reconciliation",
+    "other prepared CSS files": "retain as exact source/design specifications and candidate page-local style payloads, not global write permission"
+  },
+  "preferred_future_delivery_under_current_scope": {
+    "strategy": "prove a page-local style carrier inside existing page256 Elementor content using supported exact content/search -> match-once content/edit, without full save",
+    "why": [
+      "changes only page256 _elementor_data",
+      "preserves current user scope",
+      "avoids shared/global style field mutation",
+      "keeps prepared CSS selector scoping and marker rollback model usable",
+      "does not require V4 Custom CSS, plugin settings or a new global code snippet"
+    ],
+    "candidate_carrier": "existing legacy text-editor af260016 in the hero extras because it renders early and is already a legacy page-local owner",
+    "carrier_status": "UNPROVEN until a minimal reversible style-survival probe is performed in a future usable page256 WPVibe window"
+  },
+  "page_local_probe_rules": [
+    "Freshly re-read page256 baseline and exact af260016 escaped snippet first.",
+    "Insert only one tiny inert page256 style marker through match-once content/edit, for example <style id='af-page256-parity-probe'>body.page-id-256{--af-page256-probe:1}</style> before the existing hero-extras markup.",
+    "Immediately re-read page JSON/hash and rendered frontend HTML; require the style element and exact marker to survive sanitization/rendering.",
+    "Verify no visible layout change and no effect outside page256.",
+    "If stripped, reordered unsafely, duplicated or otherwise unstable, roll back only the exact probe and stop; do not escalate to full-save/raw SQL/global resources.",
+    "Only after probe PASS may current prepared CSS blocks be composed into one page-local marked style element, still page256-scoped and still subject to every package dependency/owner preflight."
+  ],
+  "do_not_use_as_fallback": [
+    "Hello Additional CSS under the current scope",
+    "WPCode/Code Snippets/Head Footer Code global injection",
+    "theme file edits",
+    "Elementor full save",
+    "Elementor V4 Custom CSS",
+    "raw SQL/search-replace",
+    "duplicated hidden markup solely to carry styles"
+  ],
+  "scope_precedence": "The current explicit page256-only user scope takes precedence over older generic project preference D07 for storing project CSS in Hello Additional CSS. If the user later explicitly authorizes a global/shared style write, D07 can become usable again after fresh state reconciliation.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
