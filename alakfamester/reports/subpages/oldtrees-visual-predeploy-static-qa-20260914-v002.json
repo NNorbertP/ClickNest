@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-visual-predeploy-static-qa-20260914-v002",
+  "date": "2026-09-14",
+  "scope": {
+    "page_id": 264,
+    "wordpress_writes": 0,
+    "source_css": "build/oldtrees-visual-parity-v001.css",
+    "source_css_sha": "d66210986ccef98048cf62a54e605f2564c64a54",
+    "source_css_bytes": 11169
+  },
+  "static_scope_checks": {
+    "required_scope_prefix": "body.page-id-264",
+    "all_reviewed_effect_selectors_scoped_to_page264": true,
+    "header_selector_present": false,
+    "footer_selector_present": false,
+    "other_page_id_selector_present": false,
+    "marker_start": "af-oldtrees-visual-v001:start",
+    "marker_end": "af-oldtrees-visual-v001:end",
+    "comparison_widget_only": "af2a0045",
+    "form_widgets_only": ["af2a0054", "af2a0055"],
+    "responsive_rules_remain_page264_scoped": true
+  },
+  "proven_deltas_covered": [
+    "Kivágás vagy átalakítás? source compare/checklist visual mapping",
+    "#ajanlatkeres source form-panel/reply/contact visual mapping"
+  ],
+  "preservation": {
+    "no_dom_rewrite": true,
+    "no_visible_copy_rewrite": true,
+    "no_elementor_write": true,
+    "no_global_header_footer_write": true,
+    "no_other_page_write": true,
+    "no_metform_value_or_submission_change": true
+  },
+  "current_remote_state": {
+    "wpvibe": "HTTP 429 on smallest site_info preflight; no retry/write in this run",
+    "opera": "Connector disconnected after reusing the existing two source/target tabs; no replacement tabs opened"
+  },
+  "deployment_gate": [
+    "Fresh page264 Elementor SHA256 must equal 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a and JSON must be valid.",
+    "Fresh Additional CSS post8 state must be reconciled; af-project:end must be unique and af-oldtrees-visual-v001 must be absent before insert.",
+    "Insert the complete marked block once before af-project:end using the supported match-once server-side edit path.",
+    "Read back Additional CSS marker/hash and page264 Elementor hash before any further change.",
+    "Do not claim PIXEL_PASS until deterministic source/target capture is available."
+  ],
+  "status": "STATIC_QA_PASS_PREPARED_NOT_DEPLOYED",
+  "pixel_pass": false
+}
