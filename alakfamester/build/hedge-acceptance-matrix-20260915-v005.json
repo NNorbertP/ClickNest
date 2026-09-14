@@ -1,0 +1,95 @@
+{
+  "schema_version": 5,
+  "package": "hedge-acceptance-matrix-20260915-v005",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-acceptance-matrix-20260915-v004.json",
+  "write_scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required": true
+  },
+  "closed_preserve": [
+    "hero af2e004e exact accessible SVG and historical frontend/editor proof",
+    "proof af2e004d 21 images",
+    "reviews c3d30005 exactly 3 tabs/panels",
+    "EAEL b2e2c001 28 items / 28 page-local IDs zero / full / original URLs / exact names/order",
+    "52 reference main-image roles reconciled as 21 proof + 3 reviews + 28 gallery",
+    "five complete legacy named regions",
+    "full CTA mailto + exact af2e004c contact names + 24h sentence",
+    "MetForm af2e0011 and accepted shared textarea/photo/success contracts",
+    "D09 page272 links/anchors",
+    "removed af2e0009-af2e000e",
+    "historical media deficit and stone/sage background gap are stale/closed"
+  ],
+  "semantic_runtime": {
+    "live_owner_until_verified_successor": "ID36 v001",
+    "only_candidate": "build/hedge-semantic-runtime-v004.php",
+    "authoritative_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "required_prewrite": [
+      "fresh accepted/reconciled page272 hash/JSON",
+      "exact current ID36 body/name/scope/active/code_error and rollback body",
+      "review + Form33 element cardinality/identity gates",
+      "existing tab/form/service/city ARIA attributes captured and conflict-free for v004",
+      "planned relation IDs unique/non-conflicting",
+      "no newer semantic helper/marker"
+    ],
+    "conflict_rule": "If a stronger/newer native aria-labelledby/aria-describedby/role/ID owner would be overwritten or make v004 ineffective, HOLD v004 and design a preserving successor; never delete native semantics merely to make the prepared script win.",
+    "expected_delta_only": [
+      "exact three review tab accessible names",
+      "Form33 name Ajánlatkérés",
+      "wrapper-owned direct-call description",
+      "service group naming relation",
+      "city help relation"
+    ],
+    "no_change": ["CSS", "visible text", "DOM order", "Elementor data", "form validation/submission", "click/keyboard behavior", "outer form region"]
+  },
+  "local_read_first": [
+    "complete common roots for hero/gallery/form outer regions",
+    "ordered source/target H1-H6 level/name trees",
+    "fresh proof-carousel item/parent roles and ownership",
+    "Form33 service-radio exact required setting and native rejection behavior",
+    "source/target title, description, canonical, robots, OG and schema ownership/count"
+  ],
+  "proof_only": [
+    "review direct interaction unless a failure reproduces",
+    "proof-carousel arrows/swipe/pause/reduced-motion; autoplay historical pass",
+    "Hedge lightbox until source-specific proof",
+    "visual/CSS changes until synchronized reproduced page272-local delta and owner proof"
+  ],
+  "links_and_metadata": {
+    "audit": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
+    "links": "CLOSED_PRESERVE",
+    "head": "READ_ONLY_OPEN_NO_YOAST_GUESS",
+    "canonical_rule": "D09 permits target /soveny-specialista/ instead of literal reference .html"
+  },
+  "shared_chrome_external": {
+    "audit": "reports/subpages/hedge-shared-chrome-external-gates-20260915-v001.json",
+    "header": "global owner route-matrix gate; no local hack",
+    "floating_dock": "known global paint/layout delta; no local fix",
+    "footer": "observe only unless global owner defect reproduced"
+  },
+  "authorized_divergences": {
+    "ledger": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json",
+    "allowed": ["D09 WordPress /slug/ routing", "truthful local-processing form success state", "documented implementation-tech differences where output/behavior is equivalent"],
+    "not_yet_authorized": ["proof-carousel source group vs target listitem"]
+  },
+  "css_ownership": {
+    "audit": "reports/subpages/hedge-css-ownership-static-audit-20260915-v001.json",
+    "current_page272_css_candidate": "NONE"
+  },
+  "formal_acceptance": {
+    "audit": "reports/subpages/hedge-formal-acceptance-tooling-audit-20260915-v001.json",
+    "views": [1920, 1440, 1024, 768, 390, 360],
+    "status": "BLOCKED_MISSING_FROZEN_SPECS_AND_DETERMINISTIC_CAPTURE_DIFF_HARNESS",
+    "pixel_pass": false
+  },
+  "next_live_plan": "build/hedge-next-live-window-plan-20260915-v005.json",
+  "convergence_ledger": "reports/subpages/hedge-convergence-ledger-20260915-v001.json",
+  "pixel_pass": false,
+  "status": "AUTHORITATIVE_PAGE272_ACCEPTANCE_V005_NATIVE_SEMANTICS_PRESERVATION_GATED"
+}
