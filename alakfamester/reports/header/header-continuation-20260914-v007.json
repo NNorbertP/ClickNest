@@ -1,0 +1,109 @@
+{
+  "date": "2026-09-14",
+  "scope": "HEADER ONLY",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "status": "REMOTE_BLOCKED_LOCAL_PACKAGE_COMPLETE",
+  "user_scope": "Only the global header may be modified. Body, footer, forms, SMTP and other templates/pages remain out of write scope until explicitly changed by the user.",
+  "rules_re_read": [
+    "AGENTS.md",
+    "STATE.md",
+    "specs/decisions.md D02/D07/D11/D18",
+    "reports/summary.md",
+    "live reference styles.css header section",
+    "live reference script.js header sections"
+  ],
+  "last_verified_live_target": {
+    "additional_css_post_id": 8,
+    "additional_css_bytes": 600999,
+    "additional_css_sha256": "8cd8a9cfb804ba6ca5ab57a8ff59d7858c2e14bfb940f4921f2bceddefd80b83",
+    "deployed_base_marker": "af-project:header-live-source-v001",
+    "deployed_refinement_marker": "af-project:header-desktop-alignment-v003",
+    "header_template_id": 20,
+    "header_elementor_data_bytes": 7729,
+    "header_elementor_data_sha256": "db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d",
+    "snippet_id": 7,
+    "snippet_active": true,
+    "snippet_bytes": 9723,
+    "snippet_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "verified_existing_runtime": [
+      "8px sticky threshold",
+      "1240px mobile breakpoint",
+      "Főmenü navigation accessible name",
+      "Alakfa mester BIRÓ JÁNOS brand accessible name",
+      "Szolgáltatások and Referenciák popup accessible names",
+      "custom mobile drawer + quick-contact dock runtime active"
+    ]
+  },
+  "fresh_source_target_read_only_findings": {
+    "closed_desktop_accessible_names": "brand/nav/top-level links/dropdown names/CTA/quick-contact names match for checked page",
+    "remaining_header_landmark_delta": "source is banner/header landmark; target was observed as sectionHeader",
+    "desktop_visual_delta": "deployed v003 absolute-centers target nav while source CSS proves natural-width flex space-between; paired screenshots show residual horizontal mismatch",
+    "services_current_state_delta": "source service child shows current-section parent state; target current custom parent state is not reliable",
+    "responsive_delta": "source exact 1460/1240/900/560 contracts differ from deployed target refinement/base rules",
+    "keyboard_delta": "source dropdown walks panel links with ArrowUp/ArrowDown; target current runtime has not implemented the full panel traversal",
+    "mobile_focus_delta": "source focuses first drawer item on open; target current runtime does not yet do so"
+  },
+  "source_contract": {
+    "path": "specs/header-contract-v001.json",
+    "commit": "87b58189a3c43505adac039bbd19168f8598a101"
+  },
+  "prepared_next_css": {
+    "path": "build/header-source-flex-responsive-v006.css",
+    "commit": "3860464e951e34b1441272988e9a9f89b4c4ec5e",
+    "blob_sha": "c5e84ce2f8e544e6b0af0e55642470b5f04c6555",
+    "marker": "af-project:header-source-flex-responsive-v006",
+    "status": "prepared and re-read; not deployed",
+    "supersedes_not_deployed": ["header-desktop-alignment-v004", "header-alignment-responsive-v005"],
+    "replaces_when_safe": "deployed header-desktop-alignment-v003 only; base header-live-source-v001 remains"
+  },
+  "prepared_next_runtime": {
+    "path": "build/header-runtime-parity-v005.json",
+    "commit": "c36c89cf991833c753960b29ca05b3192372847a",
+    "blob_sha": "fa6c0552a8a3542f8ee159105b35cbef1d3c5fa4",
+    "status": "prepared and re-read; not deployed",
+    "changes_only": [
+      "role=banner on existing header root",
+      "requestAnimationFrame-throttled sticky state while preserving 8px threshold and is-scrolled CSS class",
+      "native button Enter/Space behavior; custom ArrowDown only on trigger",
+      "ArrowUp/ArrowDown open-panel traversal and source-equivalent Escape behavior",
+      "source-equivalent current group + exact child state",
+      "mobile initial focus on first interactive drawer item"
+    ]
+  },
+  "acceptance_specs": {
+    "geometry_visual": {
+      "path": "specs/header-acceptance-v001.json",
+      "commit": "43da03549f73600e922101cb9d39fe6fb3c751c5"
+    },
+    "behavior": {
+      "path": "specs/header-behaviors-v001.json",
+      "commit": "109ba113d5b4d7970e16dbe0e87762895aec01be",
+      "tests": 20
+    }
+  },
+  "deployment_plan": {
+    "path": "build/header-deployment-plan-v007.json",
+    "commit": "cdf8e000e7e3ddfde3c3226902132cad432be315",
+    "expected_remote_calls": 8,
+    "mandatory_reserve": 10,
+    "retry_margin": 7,
+    "minimum_remaining_before_start": 25
+  },
+  "blockers": {
+    "wpvibe": "WPVibe tool is unavailable/disabled in the current conversation. No new -5 account connection verification, quota read, preflight or WordPress write can be performed.",
+    "quota": "unknown for ncsnorbert+20260914-5@gmail.com; stale -4 account quota must not be reused",
+    "opera": "connector became intermittent during screenshot attempts; only the existing two tabs were retained and no replacement/multi-tab session was opened"
+  },
+  "next_safe_action": [
+    "Wait for WPVibe availability; do not retry via unsafe raw SQL or unrelated plugin paths.",
+    "Verify profile email ncsnorbert+20260914-5@gmail.com, connection and fresh quota; require >=25 remaining for package+reserve+retry margin.",
+    "Fresh-read post8/header20/snippet7 and reconcile any drift against the hashes above.",
+    "Replace exactly deployed v003 with complete v006; read back before proceeding.",
+    "Apply runtime-parity-v005 only via Code Snippets plugin REST and read back before browser QA.",
+    "Reuse only the two existing Opera tabs and execute header-acceptance-v001 + header-behaviors-v001 affected tests.",
+    "Keep PIXEL_PASS=false until controlled paired screenshots/overlay/diff at required viewports exist."
+  ],
+  "state_md_note": "Main STATE.md was intentionally not rewritten through a blind whole-file replacement because the available GitHub write action requires complete replacement and the file contains other active work-package state. This report is the exact header continuation checkpoint until a safe merged STATE update can be made.",
+  "pixel_pass": false
+}
