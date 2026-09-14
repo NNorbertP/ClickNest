@@ -1,0 +1,37 @@
+/* af-bio-wave-core-v001:start
+ * First three source-exact page256 wave transitions. Prepared, not deployed.
+ * The fourth expectations->FAQ wave is intentionally excluded until the FAQ
+ * outer section is converted from the current forest panel to source paper.
+ */
+body.page-id-256 .elementor-element-af26000e,
+body.page-id-256 .elementor-element-af26000f,
+body.page-id-256 .elementor-element-af260012 {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: clamp(34px, 4vw, 66px) !important;
+  min-height: clamp(34px, 4vw, 66px) !important;
+  max-height: clamp(34px, 4vw, 66px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 100% !important;
+  --min-height: 0px !important;
+}
+
+/* reviews paper -> stress sage */
+body.page-id-256 .elementor-element-af26000e,
+/* table/stone -> expectations sage */
+body.page-id-256 .elementor-element-af260012 {
+  background-color: #F5F3ED !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,44 C180,4 340,86 540,58 C720,33 880,-8 1080,14 C1240,32 1360,72 1440,60 L1440,120 L0,120 Z' fill='%23DDE7DF'/%3E%3C/svg%3E") !important;
+}
+
+/* stress sage -> technology paper */
+body.page-id-256 .elementor-element-af26000f {
+  background-color: #DDE7DF !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,44 C180,4 340,86 540,58 C720,33 880,-8 1080,14 C1240,32 1360,72 1440,60 L1440,120 L0,120 Z' fill='%23F5F3ED'/%3E%3C/svg%3E") !important;
+}
+/* af-bio-wave-core-v001:end */
