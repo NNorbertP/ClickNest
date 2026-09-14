@@ -1,0 +1,278 @@
+/* af-bio-faq-cta-source-v002:start
+ * Scope: page256 #af-sub-bio-cta only. Prepared, not deployed.
+ * Accessibility correction vs v001: the source eyebrow is a separate generated
+ * staticText grid item on the OUTER section ::after, not h2::before, so the h2
+ * accessible name remains exactly "Egészségi problémát lát az alakfán?".
+ * Prerequisites: FAQ order microfix and CTA mail child-structure microfix.
+ */
+
+body.page-id-256 #af-sub-bio-cta {
+  --af-bio-band-pad: clamp(34px, 4.4vw, 64px);
+  --af-bio-band-gap: clamp(24px, 3vw, 48px);
+  position: relative !important;
+  isolation: isolate !important;
+  display: grid !important;
+  grid-template-columns:
+    [full-start] var(--af-bio-band-pad)
+    [left-start] minmax(0, 1.25fr) [left-end]
+    var(--af-bio-band-gap)
+    [right-start] minmax(0, .75fr) [right-end]
+    var(--af-bio-band-pad) [full-end] !important;
+  grid-template-rows: auto auto auto auto !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding-right: max(24px, calc((100% - 760px) / 2)) !important;
+  padding-left: max(24px, calc((100% - 760px) / 2)) !important;
+  background: #F5F3ED !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+/* Forest CTA-band background; spans eyebrow/title/action rows only. */
+body.page-id-256 #af-sub-bio-cta::before {
+  content: "" !important;
+  display: block !important;
+  grid-column: full-start / full-end;
+  grid-row: 2 / 5;
+  position: relative;
+  z-index: 0;
+  min-width: 0;
+  margin: 0 !important;
+  border-radius: 36px;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300' preserveAspectRatio='none'%3E%3Cg fill='none' stroke='%23A8C0AE' stroke-opacity='.175' stroke-width='1.4'%3E%3Cellipse cx='120' cy='150' rx='210' ry='190' stroke-dasharray='3 10'/%3E%3Cellipse cx='120' cy='150' rx='150' ry='132'/%3E%3Cellipse cx='120' cy='150' rx='92' ry='78' stroke-dasharray='3 10'/%3E%3C/g%3E%3Cpath d='M640,44 C666,14 726,18 742,52 C716,96 660,90 640,44 Z' fill='%23B59A61' fill-opacity='.11'/%3E%3Cpath d='M700,214 C720,192 764,196 776,220 C756,254 714,250 700,214 Z' fill='%23A8C0AE' fill-opacity='.09'/%3E%3C/svg%3E"),
+    radial-gradient(90% 120% at 8% 0%, #205140 0%, transparent 58%),
+    linear-gradient(150deg, #173D2D, #102A20) !important;
+  background-size: 100% 100%, auto, auto !important;
+  background-position: center, center, center !important;
+  background-repeat: no-repeat !important;
+  box-shadow: 0 28px 70px rgba(23, 61, 45, .12) !important;
+}
+
+/* Source eyebrow is separate from h2 semantics. */
+body.page-id-256 #af-sub-bio-cta::after {
+  content: "Következő lépés" !important;
+  display: block !important;
+  grid-column: left-start / left-end;
+  grid-row: 2;
+  position: relative;
+  z-index: 2;
+  align-self: end;
+  width: max-content;
+  margin: var(--af-bio-band-pad) 0 10px !important;
+  padding: 0 0 0 26px !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 4.5A3.5 3.5 0 0 1 4.5 1H15v10.5A3.5 3.5 0 0 1 11.5 15H1V4.5Z' fill='%23CFBA8D' transform='rotate(-12 8 8)'/%3E%3C/svg%3E");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  color: #CFBA8D !important;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
+  font-size: .8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .16em !important;
+  line-height: 1.65 !important;
+  text-transform: uppercase !important;
+}
+
+/* FAQ: first, paper, narrow. */
+body.page-id-256 #af-sub-bio-cta > .elementor-element-af260015 {
+  grid-column: full-start / full-end !important;
+  grid-row: 1 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  max-width: 760px !important;
+  justify-self: center !important;
+  margin: 0 0 48px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  color: #202723 !important;
+}
+body.page-id-256 #af-sub-bio-cta > .elementor-element-af260015 .af-sub-inner,
+body.page-id-256 #af-sub-bio-cta > .elementor-element-af260015 .af-details {
+  width: 100% !important;
+  max-width: 760px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+body.page-id-256 #af-sub-bio-cta > .elementor-element-af260015 .af-sub-inner > .af-sub-eyebrow {
+  display: flex !important;
+  width: max-content !important;
+  margin: 0 auto 16px !important;
+  justify-content: center !important;
+}
+body.page-id-256 #af-sub-bio-cta > .elementor-element-af260015 .af-sub-inner > h2 {
+  margin: 0 0 32px !important;
+  color: #173D2D !important;
+  text-align: center !important;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif !important;
+  font-size: clamp(1.75rem, 1.3rem + 1.9vw, 2.441rem) !important;
+  line-height: 1.32 !important;
+}
+
+/* CTA left. */
+body.page-id-256 #af-sub-bio-cta > #af-sub-bio-cta-title {
+  grid-column: left-start / left-end !important;
+  grid-row: 3 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  align-self: end !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+  color: #FFFFFF !important;
+  text-align: left !important;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif !important;
+  font-size: clamp(1.75rem, 1.3rem + 1.9vw, 2.441rem) !important;
+  line-height: 1.32 !important;
+}
+body.page-id-256 #af-sub-bio-cta > #af-sub-bio-cta-title::before {
+  content: none !important;
+  display: none !important;
+}
+body.page-id-256 #af-sub-bio-cta > #af-sub-bio-cta-body {
+  grid-column: left-start / left-end !important;
+  grid-row: 4 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  align-self: start !important;
+  margin: 0 0 var(--af-bio-band-pad) !important;
+  padding: 0 !important;
+  color: #B0C7B6 !important;
+  text-align: left !important;
+  font-size: 1rem !important;
+  line-height: 1.65 !important;
+}
+
+/* CTA right: mail action spans eyebrow/title rows and ends with the h2. */
+body.page-id-256 #af-sub-bio-cta > .elementor-element-9a1b2c3d {
+  grid-column: right-start / right-end !important;
+  grid-row: 2 / 4 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  align-self: end !important;
+  width: 100% !important;
+  margin: 0 0 6px !important;
+  padding: 0 !important;
+}
+body.page-id-256 #af-sub-bio-cta .af-sub-cta-contact {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-256 #af-sub-bio-cta .af-sub-cta-contact a {
+  display: grid !important;
+  grid-template-columns: 40px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  column-gap: 12px !important;
+  width: 100% !important;
+  min-height: 60px !important;
+  padding: 10px 24px 10px 10px !important;
+  border: 1px solid rgba(168,192,174,.45) !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,.12) !important;
+  color: rgba(255,255,255,.9) !important;
+  text-decoration: none !important;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
+  font-size: .68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .13em !important;
+  line-height: 1.18 !important;
+}
+body.page-id-256 #af-sub-bio-cta .af-sub-cta-contact a::before {
+  content: "";
+  grid-column: 1 !important;
+  grid-row: 1 / span 2 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 4px 64% 4px 64% !important;
+  background-color: rgba(255,255,255,.18) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='16' rx='2'/%3E%3Cpath d='m2 7 10 6 10-6'/%3E%3C/svg%3E") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 19px 19px !important;
+}
+body.page-id-256 #af-sub-bio-cta .af-sub-cta-contact a > br { display: none !important; }
+body.page-id-256 #af-sub-bio-cta .af-sub-cta-contact a > strong {
+  grid-column: 2 !important;
+  grid-row: 2 !important;
+  display: block !important;
+  align-self: start !important;
+  color: #FFFFFF !important;
+  font-size: 1.02rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .01em !important;
+  line-height: 1.18 !important;
+  text-transform: none !important;
+  word-break: break-word !important;
+}
+
+body.page-id-256 #af-sub-bio-cta > [data-interaction-id="af26000b"] {
+  grid-column: right-start / right-end !important;
+  grid-row: 4 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  align-self: start !important;
+  justify-self: stretch !important;
+  width: 100% !important;
+  min-height: 52px !important;
+  margin: 6px 0 var(--af-bio-band-pad) !important;
+  padding: 14px 26px !important;
+  border: 1px solid transparent !important;
+  border-radius: 999px !important;
+  background: #B59A61 !important;
+  color: #14251C !important;
+  box-shadow: 0 12px 28px rgba(23,61,45,.3) !important;
+  font-size: 1rem !important;
+  font-weight: 650 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+}
+body.page-id-256 #af-sub-bio-cta > [data-interaction-id="af26000b"]::after {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314251C' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='4' y1='12' x2='19' y2='12'/%3E%3Cpolyline points='13 6 19 12 13 18'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+}
+
+@media (max-width: 900px) {
+  body.page-id-256 #af-sub-bio-cta {
+    grid-template-columns:
+      [full-start] var(--af-bio-band-pad)
+      [content-start] minmax(0,1fr) [content-end]
+      var(--af-bio-band-pad) [full-end] !important;
+    grid-template-rows: auto auto auto auto auto auto !important;
+  }
+  body.page-id-256 #af-sub-bio-cta::before {
+    grid-column: full-start / full-end;
+    grid-row: 2 / 7;
+  }
+  body.page-id-256 #af-sub-bio-cta::after {
+    grid-column: content-start / content-end;
+    grid-row: 2;
+  }
+  body.page-id-256 #af-sub-bio-cta > #af-sub-bio-cta-title,
+  body.page-id-256 #af-sub-bio-cta > #af-sub-bio-cta-body,
+  body.page-id-256 #af-sub-bio-cta > .elementor-element-9a1b2c3d,
+  body.page-id-256 #af-sub-bio-cta > [data-interaction-id="af26000b"] {
+    grid-column: content-start / content-end !important;
+  }
+  body.page-id-256 #af-sub-bio-cta > #af-sub-bio-cta-title { grid-row: 3 !important; }
+  body.page-id-256 #af-sub-bio-cta > #af-sub-bio-cta-body { grid-row: 4 !important; margin-bottom: 24px !important; }
+  body.page-id-256 #af-sub-bio-cta > .elementor-element-9a1b2c3d { grid-row: 5 !important; margin: 0 0 6px !important; }
+  body.page-id-256 #af-sub-bio-cta > [data-interaction-id="af26000b"] { grid-row: 6 !important; }
+}
+
+/* af-bio-faq-cta-source-v002:end */
