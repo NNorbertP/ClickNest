@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "package": "bio-convergence-ledger-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "supersedes": "reports/subpages/bio-convergence-ledger-20260914-v001.json",
+  "remote_write_state": "BLOCKED: WPVibe disabled + repository STATE.md page264-only write owner. All items below are prepared/read-only until normal page256 handoff and fresh +5 connection/quota/baseline gates.",
+  "wordpress_writes_current_round": 0,
+  "opera_tabs": 2,
+  "sections": [
+    {
+      "section":"hero",
+      "pass_preserve":["copy/links/artwork", "phone+mail icons", "three fact icons", "accepted h1/art source-measured rules"],
+      "remaining":["desktop copy top rhythm", "source proof-row wrapping"],
+      "prepared":"build/bio-hero-layout-parity-v003.css",
+      "obsolete":["hero v001", "hero v002", "hero decorative icons"]
+    },
+    {
+      "section":"reviews",
+      "pass_preserve":["Atomic Tabs runtime", "tab AX names", "images/alt/copy", "prev/next", "ID35 duplicate-dot AX/focus suppression", "overall source-like panel structure"],
+      "remaining":["missing id=ugyfelvelemenyek", "duplicated visual tab ordinals", "quote source color/responsive width", "oversized active visual dot", "source paper field + bronze blob/sage rings"],
+      "prepared":["build/bio-review-anchor-parity-20260914-v001.json", "build/bio-review-quote-source-color-v002.css", "build/bio-reviews-cascade-diagnostic-20260914-v001.json", "build/bio-review-decor-source-20260914-v001.json"],
+      "hold":"ordinal/dot/decor require fresh Additional CSS/pseudo owner proof; panel width/title wrap require normalized viewport/computed proof"
+    },
+    {
+      "section":"wave reviews->stress",
+      "remaining":"missing exact source SVG curve",
+      "prepared":"build/bio-wave-source-exact-20260914-v001.json"
+    },
+    {
+      "section":"stress",
+      "pass_preserve":["region name", "heading/copy", "four exact list strings"],
+      "remaining":["two paragraphs need neutral left wrapper", "first p source lead mapping", "aside->article role", "forest card/checklist/watermark visuals"],
+      "prepared":["build/bio-page256-next-safe-package-20260914-v014.json op2", "build/bio-semantic-resume-20260914-v013.json", "build/bio-stress-source-visual-20260914-v002.json"],
+      "dependency":"pseudo-owner preflight for stress card ::after; shared <=720 card padding companion"
+    },
+    {
+      "section":"wave stress->technology",
+      "prepared":"build/bio-wave-source-exact-20260914-v001.json"
+    },
+    {
+      "section":"technology",
+      "pass_preserve":["three articles/content/order", "three source-like icons", "middle sage surface", "existing callout panel+rail"],
+      "remaining":["bronze eyebrow leaf", "source lead measure/type", "card padding/watermark", "sage top hairline", "leaf/check use-case markers"],
+      "prepared":["build/bio-visual-parity-v001.css", "build/bio-card-mobile-source-v001.css"],
+      "obsolete":"technology callout wrapper/CSS"
+    },
+    {
+      "section":"symptom table",
+      "pass_preserve":["region name", "all copy", "uppercase column headers", "four row headers"],
+      "remaining":["source external table-title + aria-labelledby instead of target internal caption", "source section-head intro type/gap", "source table-wrap/cell visuals", "source section--stone gradient"],
+      "prepared":["build/bio-table-source-structure-20260914-v001.json", "build/bio-table-source-structure-v001.css", "build/bio-visual-parity-v001.css", "build/bio-table-section-tone-v001.css"]
+    },
+    {
+      "section":"wave table->expectations",
+      "prepared":"build/bio-wave-source-exact-20260914-v001.json"
+    },
+    {
+      "section":"expectations",
+      "pass_preserve":["region name", "two headings/copy", "five exact list strings", "Az alakfa ápolása text/href"],
+      "remaining":"source two-article ownership: left white h2+3 checks+2 crosses; right sage h3+copy+arrow link",
+      "prepared":["build/bio-expectations-source-structure-20260914-v003.json", "build/bio-expectations-source-structure-v003.css", "build/bio-card-mobile-source-v001.css"],
+      "obsolete":"bio-visual-parity-v002-expectations.css"
+    },
+    {
+      "section":"wave expectations->FAQ",
+      "prepared":"build/bio-wave-source-exact-20260914-v001.json"
+    },
+    {
+      "section":"FAQ",
+      "pass_preserve":["four exact QA strings", "ID35 region name", "native details functionality until exact source keyboard behavior is reproducible"],
+      "remaining":["FAQ after CTA due sole order class", "common forest outer panel instead of paper", "source leaf plus/minus visuals", "source button role + 280ms panel motion remains exactness HOLD"],
+      "prepared":["build/bio-page256-next-safe-package-20260914-v014.json op1", "build/bio-visual-parity-v001.css FAQ block", "build/bio-faq-cta-source-layout-20260914-v003.json"]
+    },
+    {
+      "section":"final CTA",
+      "pass_preserve":["h2/body text", "mailto href", "exact aria-label", "form href/text", "Elementor IDs"],
+      "remaining":["separate source forest band", "source rings/leaves and columns", "source visual label-above-email child order"],
+      "prepared":["build/bio-cta-mail-structure-20260914-v001.json", "build/bio-faq-cta-source-layout-20260914-v003.json"],
+      "responsive":"exact source wave-adjacent section spacing + <=720 CTA/card padding prepared"
+    }
+  ],
+  "responsive": {
+    "source_contract":"build/bio-responsive-source-contract-20260914-v001.json",
+    "safe_companion":"build/bio-card-mobile-source-v001.css",
+    "review_quote":"v002 has source 46px default / 38px <=760",
+    "hold":"legacy page256 section padding <=720 pending fresh target mobile winning-cascade proof"
+  },
+  "first_future_css_phase":"build/bio-visual-single-write-plan-20260914-v006.json",
+  "structural_queue":"build/bio-page256-next-safe-package-20260914-v014.json plus separate table/CTA/expectations exact-search packages",
+  "authoritative_continuation":"reports/subpages/bio-continuation-20260914-v023.json",
+  "global_out_of_scope":["Szolgáltatások current-state header pill", "nearly blank target floating contact dock"],
+  "hard_rules":["no full Elementor save", "no raw SQL/search-replace", "fresh live state > artifacts", "429 write UNKNOWN until readback", "D11 >=10 reserve", "exactly two Opera tabs", "no other page/shared resource/SMTP write"],
+  "pixel_pass":false
+}
