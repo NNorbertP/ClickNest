@@ -1,0 +1,82 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only static QA; no WordPress write",
+  "package": "build/header-alignment-responsive-v005.css",
+  "package_commit": "d60b759f8a405d809ac76c6a59be32b570ed7791",
+  "status": "STATIC_QA_PASS_NOT_DEPLOYED",
+  "source_basis": {
+    "live_stylesheet": "https://alakfamester.clicknest.hu/styles.css",
+    "live_script": "https://alakfamester.clicknest.hu/script.js",
+    "verified_values": {
+      "base_header_height_px": 76,
+      "wide_container_px": 1340,
+      "logo_plate_desktop_px": "69x46",
+      "brand_gap_px": 12,
+      "brand_name_desktop_rem": 1.16,
+      "brand_tag_rem": 0.68,
+      "nav_control_min_height_px": 44,
+      "nav_control_padding_desktop_px": "10 13",
+      "nav_font_desktop_rem": 0.92,
+      "dropdown_min_width_px": 268,
+      "desktop_compact_breakpoint_px": 1460,
+      "desktop_compact_nav_padding_px": "9 9",
+      "desktop_compact_nav_font_rem": 0.84,
+      "mobile_menu_breakpoint_px": 1240,
+      "small_header_breakpoint_px": 900,
+      "small_header_height_px": 68,
+      "header_cta_hidden_at_or_below_px": 900,
+      "compact_brand_breakpoint_px": 560,
+      "compact_logo_plate_px": "57x38",
+      "compact_brand_name_rem": 1.04,
+      "sticky_threshold_px": 8,
+      "hamburger_px": "48x48",
+      "hamburger_bars_box_px": "22x15",
+      "hamburger_bar_offsets_px": "0 / 6.5 / 13"
+    }
+  },
+  "selector_scope_checks": {
+    "header_elementor_ids_only": ["a1000001", "a1000002", "a1000003", "a1000004", "a1000006", "a1000007", "a1000009", "a100000a"],
+    "runtime_header_classes_only": ["af-nav-dropdown-host", "af-nav-dropdown-panel", "menu-toggle", "mobile-nav"],
+    "page_body_component_selectors": false,
+    "footer_selectors": false,
+    "form_selectors": false,
+    "smtp_or_plugin_setting_changes": false
+  },
+  "cascade_strategy": {
+    "base": "Keep deployed af-project:header-live-source-v001 intact.",
+    "replacement": "When deployed, replace the entire current af-project:header-desktop-alignment-v003 block with the complete v005 block; do not stack v004/v005 next to v003.",
+    "why": "v005 contains the corrected desktop alignment from v003 plus the proven caret/current/responsive refinements, so one owner remains for this refinement layer.",
+    "rollback": "Capture the exact v003 block immediately before replacement and restore that single block if fresh QA regresses."
+  },
+  "conflict_resolution": [
+    "The base v001 <=700 brand compaction is intentionally overridden between 561 and 700 because the live source keeps the full 69x46 mark, tagline and 1.16rem brand name until 560px.",
+    "The base v001 <=520 70px header is intentionally overridden by the later v005 <=900 68px header rule, matching the source --header-h:68px breakpoint.",
+    "The base v001 <=700 header CTA hide remains compatible but v005 moves the effective source-equivalent hide boundary to <=900.",
+    "The base v001 <=1240 menu switch remains unchanged because it already matches the source."
+  ],
+  "runtime_dependency": {
+    "package": "build/header-runtime-parity-v004.json",
+    "commit": "4a6e5dde183d7802aba2d7926ea0653e6c485a7c",
+    "required_for": [
+      "source-like dropdown parent is-section state",
+      "current child aria-current state",
+      "desktop ArrowUp/ArrowDown menu traversal",
+      "mobile initial focus on drawer open"
+    ]
+  },
+  "acceptance_after_deploy": [
+    "Fresh post8 readback: base marker exactly once, v003 absent, v005 exactly once.",
+    "Fresh snippet readback: active, no code_error, expected marker and protected semantics/thresholds intact.",
+    "Desktop >1460: brand/nav/CTA source geometry and one caret per dropdown.",
+    "Desktop 1241-1460: compact 9px nav padding and .84rem type before the hamburger breakpoint.",
+    "<=1240: only custom mobile drawer trigger visible; native ElementsKit mobile panel remains non-focusable/hidden.",
+    "<=900: header 68px, header CTA hidden, drawer starts at 68px.",
+    "561-700: full desktop-size brand mark/tagline retained despite earlier target-only rule.",
+    "<=560: 57x38 logo, hidden tagline, 1.04rem brand name.",
+    "Dropdown current parent and exact child state match source route semantics.",
+    "Dropdown keyboard and mobile initial-focus behavior match source JS.",
+    "No body/footer/form visual or semantic change."
+  ],
+  "pixel_pass": false,
+  "deployment_blocker": "WPVibe tool unavailable in current conversation; package intentionally not written to WordPress."
+}
