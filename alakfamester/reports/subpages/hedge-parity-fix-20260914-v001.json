@@ -3,61 +3,66 @@
   "date": "2026-09-14",
   "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
   "source": "https://alakfamester.clicknest.hu/soveny-specialista.html",
-  "status": "ELEMENTOR_DATA_PASS_MEDIA_RECHECK_REQUIRED_FRONTEND_CACHE_BLOCKED",
+  "status": "ELEMENTOR_DATA_PASS_MEDIA_218_219_RECHECK_REQUIRED_FRONTEND_CACHE_BLOCKED",
   "wordpress_writes": {
     "elementor_data": [
-      "eael_fg_image_resolution_size: medium -> full (match-once)",
-      "inserted exact sentence before form-lead-note: Jellemzően 24 órán belül válaszolok."
+      "eael_fg_image_resolution_size: medium -> full (guarded match-once)",
+      "inserted exact sentence before form-lead-note: Jellemzően 24 órán belül válaszolok. (guarded match-once)"
     ],
+    "elementor_data_last_readback": {
+      "bytes": 53097,
+      "sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+      "json_valid": true
+    },
     "media_alt": {
       "expected_items": 28,
-      "already_correct_before_write": [137, 138],
-      "fleet_job": "fj_75bc98a970c64ce7",
-      "fleet_status_url": "https://mcp.wpvibe.ai/fleet/fj_75bc98a970c64ce7?t=1789579296169.0DEwnjuRjQFG3uihUtdpo24nTHjDHQfSu3Y7CkpgXo4",
-      "fleet_result": "17 succeeded, 5 failed with HTTP 429, 4 skipped; all nine remaining IDs were then updated individually",
-      "verified_before_concurrent_job": "all 28 attachment alt_text values exactly matched the prepared source map",
-      "concurrent_job_after_verification": {
-        "job_id": "fj_9d41f7d4efff49db",
-        "result": "6 succeeded, 5 failed with HTTP 429, 15 skipped",
-        "evidence_of_conflict": "status example showed a command attempting post meta update 208 _wp_attachment_image_alt to an empty value",
-        "current_media_state": "UNKNOWN_UNTIL_FRESH_READBACK_AFTER_429"
-      }
+      "project_fleet_job": "fj_75bc98a970c64ce7",
+      "project_fleet_result": "17 succeeded, 5 failed with HTTP 429, 4 skipped; remaining values were repaired individually and a 28/28 exact source-map readback passed before the later concurrent job",
+      "concurrent_job": "fj_9d41f7d4efff49db",
+      "concurrent_job_result": "6 succeeded, 5 failed with HTTP 429, 15 skipped",
+      "delayed_drift_observed_after_concurrent_job": [
+        "first wave: 112, 203, 204, 205, 206, 207",
+        "second wave: 208, 209, 210, 211, 212, 213",
+        "third wave: 214, 215, 216, 217, 218, 219"
+      ],
+      "repaired_after_concurrent_job": [112,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217],
+      "last_observed_before_rate_limit": {
+        "218": "Saját sövénymunka, 9. kép",
+        "219": "Saját sövénymunka, 10. kép"
+      },
+      "required_source_values": {
+        "218": "Sövénymunka, 12. kép",
+        "219": "Sövénymunka, 13. kép"
+      },
+      "current_media_state": "Only IDs 218 and 219 are known unresolved from the last successful full readback; however a fresh conflict readback is still mandatory before declaring 28/28 final because the site began returning HTTP 429 before those two could be rechecked."
     },
     "normal_post_touch": "post update 272 --post_status=publish succeeded",
     "cache_purge": "Elementor CSS cache purged and object cache flushed; stale Elementor element cache remained"
   },
-  "last_verified_elementor_data_before_concurrent_media_job": {
-    "bytes": 53097,
-    "sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
-    "json_valid": true,
-    "resolution_full_match_count": 1,
-    "reply_sentence_match_count": 1,
-    "preserved_ids": {
-      "hero_af2e004e": true,
-      "proof_af2e004d": true,
-      "tabs_c3d30005": true,
-      "metform_af2e0011": true
-    },
-    "removed_legacy_widgets_still_absent": true
+  "preservation_checks_from_last_successful_page272_readback": {
+    "hero_af2e004e": true,
+    "proof_af2e004d": true,
+    "tabs_c3d30005": true,
+    "metform_af2e0011": true,
+    "removed_legacy_widgets_af2e0009_to_af2e000e_absent": true
   },
   "frontend": {
-    "fresh_get_page_html_form_reply": "NOT_RENDERED_STALE_CACHE",
-    "post_modified_after_touch": "2026-09-14T17:25:24+00:00",
+    "fresh_get_page_html_form_reply_before_element_cache_clear": "NOT_RENDERED_STALE_CACHE",
     "targeted_element_cache_delete_op": "op_fcdc663c565b4da0",
     "approval_url": "https://mcp.wpvibe.ai/approve/op_fcdc663c565b4da0?t=8n8gUGVqlVe0oGJPAyrhQfujcMU7YStY4w_DqgIJSic",
     "approval_status_last_checked": "pending"
   },
   "current_blockers": [
-    "WordPress is rate-limiting WPVibe with HTTP 429 after the concurrent fleet job, so current page272/media state cannot yet be re-read safely.",
-    "A concurrent media job ran after the 28/28 verification and may have reverted some alt values; do not assume the media state is still correct.",
-    "The saved Elementor data was correct at the last successful readback, but frontend remains on stale Elementor element cache.",
-    "Targeted element-cache deletion requires browser approval."
+    "WPVibe site requests are currently receiving HTTP 429; do not retry blindly.",
+    "IDs 218 and 219 require fresh readback and, if still drifted, only those two exact alt updates.",
+    "The saved page272 Elementor data is correct but the frontend is still using stale Elementor element cache.",
+    "Targeted page272 _elementor_element_cache deletion is pending browser approval.",
+    "PIXEL_PASS remains false because deterministic six-viewport screenshot/overlay/diff tooling and the machine acceptance files are unavailable."
   ],
   "next_safe_action": [
-    "After the 429 window clears, first re-read page272 bytes/SHA256/JSON validity and all 28 media alt values; make no write before this conflict readback.",
-    "Only repair media values proven to have drifted after the concurrent job.",
-    "After approval of op_fcdc663c565b4da0, clear only page272 _elementor_element_cache, then verify fresh frontend reply sentence, full-size gallery URLs and all 28 accessible names.",
-    "Do not repeat the successful page272 Elementor-data patches unless the readback proves they were changed.",
-    "PIXEL_PASS remains false until deterministic six-viewport screenshot/overlay/diff evidence exists."
+    "After the 429 window clears, read only IDs 218 and 219 first; update only values still differing from the source map.",
+    "Then run one full 28-item media-alt readback and one page272 hash/JSON readback; do not rerun already-correct values.",
+    "After approval of op_fcdc663c565b4da0, invalidate only page272 Elementor element cache and verify fresh frontend: exact 24-hour sentence, full-size gallery URLs, all 28 accessible names, preserved IDs and absence of legacy widgets.",
+    "Do not repeat the successful page272 Elementor-data patches merely to invalidate cache."
   ]
 }
