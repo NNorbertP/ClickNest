@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-evidence-supersedence-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "purpose": "Prevent stale page264 plans/audits from reopening or overwriting later proven good work. Planning/evidence only; no WordPress write or scope change.",
+  "precedence_rule": "Fresh trustworthy live readback/capture > current STATE.md > current continuation/reconciliation > installed-current mirror > prepared gated candidate > historical audit/build.",
+  "scope_authority": "STATE.md PAGE264 ONLY",
+  "authoritative_now": {
+    "state": "STATE.md",
+    "overall_acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+    "current_continuation": "reports/subpages/oldtrees-continuation-20260915-v010.json",
+    "current_remote_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+    "content_reconciliation": "reports/subpages/oldtrees-content-coverage-reconciliation-20260914-v001.json",
+    "semantic_reconciliation": "reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json",
+    "visual_reconciliation": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "css_cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "route_ledger": "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json",
+    "semantic_runtime_mirror": "build/oldtrees-semantic-runtime-v003.php",
+    "form_required_gate": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "inner_form_visual_gate": "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json",
+    "interaction_plan": "build/oldtrees-interaction-acceptance-20260914-v001.json",
+    "hero_diagnostic": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "responsive_matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json"
+  },
+  "accepted_do_not_rebuild": [
+    "No known page264 copy or main-media implementation gap remains.",
+    "38/38 heading structure and 11/11 ordered named regions are accepted from later evidence.",
+    "Final review tab names/buttons, numbered-dot containment, form AX relationships, tiszafa initial native range and Nordmann static control names are accepted.",
+    "Shared Form33 ID5 photo-count validator, ID6 rows=5 helper and configured local success state remain the sole accepted owners for those behaviors.",
+    "Visual v004 and v005 are live and must not be replayed."
+  ],
+  "live_preserve_do_not_redeploy": {
+    "build/oldtrees-visual-parity-v004.css": "Marked block already live; preserve exactly.",
+    "build/oldtrees-visual-parity-v005-cascade-fix.css": "Marked block already live; preserve exactly.",
+    "build/oldtrees-semantic-runtime-v003.php": "Comparison mirror for existing ID33; do not create a duplicate snippet owner."
+  },
+  "only_current_page_local_visual_candidates": {
+    "build/oldtrees-visual-v006-contact-text-cascade.css": "Conditional: fresh matched gate must still prove dark target contact foreground and marker count zero.",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css": "Conditional: fresh matched desktop gate must still prove unequal target columns and marker count zero.",
+    "build/oldtrees-visual-v006-v007-single-write-bundle.css": "Conditional: only if both failures reproduce together; otherwise use only the failing standalone block or no write."
+  },
+  "diagnostic_or_proof_only_not_implementation_candidates": {
+    "build/oldtrees-form-required-validation-plan-20260915-v001.json": "Native-required/read-first D05 gate. No custom validator without exact current Form33/ID5/ID33 facts and safe non-delivery failure proof.",
+    "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json": "No inner field defect currently proven. Computed-style/geometry measurement before any page264-scoped field CSS.",
+    "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json": "40-45px observation is not a fix specification; exact owner/cascade required.",
+    "build/oldtrees-interaction-acceptance-20260914-v001.json": "Proof existing owners before any JS change; missing browser actions do not justify code.",
+    "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json": "Formal visual proof only; lack of deterministic tooling must not generate CSS."
+  },
+  "superseded_planning_do_not_use_for_resume": {
+    "build/oldtrees-next-remote-window-20260914-v001.json": "superseded",
+    "build/oldtrees-next-remote-window-20260914-v002.json": "superseded by build/oldtrees-next-remote-window-20260915-v003.json",
+    "reports/subpages/oldtrees-continuation-20260914-v007.json": "historical continuation",
+    "reports/subpages/oldtrees-continuation-20260914-v008.json": "historical continuation",
+    "reports/subpages/oldtrees-continuation-20260915-v009.json": "superseded by v010",
+    "reports/subpages/oldtrees-evidence-supersedence-20260914-v001.json": "superseded by this v002 map"
+  },
+  "historical_builds_do_not_replay": [
+    "build/oldtrees-semantic-parity-20260914-v001.json",
+    "build/oldtrees-semantic-runtime-v001.php",
+    "build/oldtrees-semantic-runtime-v002.php",
+    "build/oldtrees-visual-parity-v001.css",
+    "build/oldtrees-visual-parity-mobile-correction-v002.css",
+    "build/oldtrees-visual-parity-corrections-v003.css",
+    "build/oldtrees-visual-parity-bundle-v004.css"
+  ],
+  "historical_report_corrections": [
+    "Do not reopen the old hero-art, inline-form, missing problem-chip, comparison-copy or media gaps from readonly-source-target-audit-v001; later content/media packages closed them.",
+    "Do not use the old 29-heading/1-region semantic snapshot; later accepted state is 38/38 and 11/11.",
+    "Do not use older partial review-name/extra-dot snapshots to add another review runtime; later ID33 evidence closed them.",
+    "Do not use old Form33 rows/max-file/success open lists; shared ID5/ID6/settings later closed those items.",
+    "Do not interpret broad pre-v004/v005 visual failures as current; use visual coverage reconciliation and current v006/v007 gates only."
+  ],
+  "intentional_or_external_non_exactness": {
+    "form_success_body": "Target local-processing success copy intentionally stays truthful rather than reproducing source demo/no-send wording.",
+    "canonical_urls": "D09 WordPress canonical routes intentionally replace frozen source .html host routes.",
+    "floating_dock": "Known real visual defect belongs to global ID7/CSS ownership and is not a page264 write candidate without separately proven page264-only cascade ownership."
+  },
+  "live_resume_rule": "When tools return, follow oldtrees-next-remote-window-v003 exactly: +5/site/quota -> compact hash/marker preflight -> trustworthy v006/v007 gate -> at most one selected CSS write -> mandatory readback -> optional read-only form/route/interaction/hero/responsive proof. Any 429 write is UNKNOWN until exact readback.",
+  "drift_rule": "Fresh live truth always wins. Reconcile/version new evidence; never force this snapshot onto newer state.",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_EVIDENCE_PRECEDENCE_RECONCILED_TO_V010_REMOTE_V003"
+}
