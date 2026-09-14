@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "package": "bio-faq-cta-source-layout-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED",
+  "supersedes": "build/bio-faq-cta-source-layout-20260914-v001.json",
+  "reason": "The current target CTA mail link stores Írjon bátran as a raw text node after strong+br. CSS alone cannot guarantee the source label-above-email row order. v002 therefore adds a guarded markup prerequisite and deterministic label companion CSS.",
+  "required_structural_predecessors": [
+    "build/bio-page256-next-safe-package-20260914-v014.json operation 1: remove sole af-faq-content order:10 owner so FAQ comes before CTA",
+    "build/bio-cta-mail-structure-20260914-v001.json: preserve href+aria-label+strings but wrap visible label in .af-sub-cta-label before strong email"
+  ],
+  "css_blocks_after_structural_readback": [
+    {"file":"build/bio-visual-parity-v001.css","marker":"af-bio-visual-v001","role":"source FAQ details/summary/card/plus-minus visuals plus technology/table/eyebrow fixes"},
+    {"file":"build/bio-faq-cta-source-layout-v001.css","commit":"cf215806d78da9c70eff60fe5e6cb849c7a28eff","marker":"af-bio-faq-cta-source-v001","role":"paper FAQ ownership + separate source CTA band via existing siblings/grid"},
+    {"file":"build/bio-faq-cta-generated-label-guard-v001.css","commit":"40a086671da635e869113a0836e8372242ddf65e","marker":"af-bio-faq-cta-label-guard-v001","role":"suppress old outer ::after generated KÖVETKEZŐ LÉPÉS"},
+    {"file":"build/bio-faq-cta-mail-label-v001.css","commit":"5fad1bc70baf653d5c409a746fe46f751bb132b6","marker":"af-bio-faq-cta-mail-label-v001","role":"deterministic source label-above-email placement after guarded mail markup microfix"}
+  ],
+  "source_contract": {
+    "faq": "paper field, narrow centered section, source organic white FAQ cards with leaf plus/minus",
+    "cta": "separate radius36 forest band, source decorative rings/leaves, left eyebrow+h2+body, right mail pill and bronze form button",
+    "mail": "visual label ÍRJON BÁTRAN above email; exact accessible name stays ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+    "button": "Tovább az űrlaphoz plus decorative right arrow"
+  },
+  "live_target_proof": [
+    "current live target combines CTA and FAQ inside one forest panel",
+    "CTA appears before FAQ due af-faq-content order owner",
+    "target AX exposes one current CSS-generated KÖVETKEZŐ LÉPÉS staticText",
+    "target mail href/aria-label already exact and must be preserved"
+  ],
+  "preflight": [
+    "scope handoff authorizes page256",
+    "WPVibe +5 identity/site/quota verified; D11 reserve protected",
+    "fresh page256 baseline reconciled",
+    "fresh Additional CSS marker/cascade search confirms ::before band slot and ::after label guard are safe",
+    "both structural predecessors rendered and read back before any CTA CSS"
+  ],
+  "postconditions": [
+    "FAQ before CTA and on paper",
+    "CTA is visually a separate forest band",
+    "exactly one visible KÖVETKEZŐ LÉPÉS label",
+    "mailto visual label above email",
+    "mailto href and exact aria-label unchanged",
+    "form href/text unchanged",
+    "native FAQ behavior/AX remains functional",
+    "fresh same-browser source-target QA before pass"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
