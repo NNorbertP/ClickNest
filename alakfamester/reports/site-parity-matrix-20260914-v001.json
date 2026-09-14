@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "purpose": "Current ten-page evidence reconciliation. Separates actual remaining deltas from proof-only gaps so already-correct resources are not rewritten.",
+  "tool_state": {
+    "wpvibe": "Unavailable in this chat after +5 identity verification; no site connection/quota inference and no WordPress write.",
+    "opera": "Two existing page264 source/target tabs observed; connector then disconnected. Zero replacement tabs opened.",
+    "local_network": "Single targeted recheck: both Clicknest hostnames still fail DNS resolution in container; no repeated curl/Playwright attempts."
+  },
+  "pages": [
+    {
+      "page_id": 56,
+      "name": "Főoldal",
+      "last_verified_saved_state": "246602 B / 66126facdd0fd5e7d8ff395ebf095efbe605e6e4af1de57fcecab90e5dfd82d1",
+      "evidence": "reports/home/home-final-audit-v001.json",
+      "closed": ["content/structure audit", "canonical navigation mapping", "hedge paragraph order", "MetForm33 direct-call note", "target-only footer subtitle removal"],
+      "actual_known_delta": null,
+      "proof_only_open": ["deterministic six-viewport visual comparison", "representative review-dot source/target AX proof required before any global ID14 change", "interaction/animation states not comprehensively frozen"],
+      "write_decision": "NO_WRITE_WITHOUT_NEW_FAILURE"
+    },
+    {
+      "page_id": 256,
+      "name": "Biológiai védelem",
+      "last_verified_saved_state": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid",
+      "evidence": ["reports/subpages/bio-page256-closeout-20260914-v010.json", "reports/subpages/bio-direct-ax-compare-20260914-v014.json"],
+      "closed": ["v010 semantic/content corrections", "13 punctuation corrections", "table headers/rowHeaders", "major region names", "CTA and review/hero/FAQ runtime semantics"],
+      "actual_known_delta": [
+        "visual: proven technology/table/FAQ/legacy-eyebrow component styling and desktop hero internal rhythm are prepared but not deployed",
+        "semantic: stress card source role=article vs target aside/complementary",
+        "semantic: expectations source has two article roles while target has zero; exact raw wrapper ownership still requires proof"
+      ],
+      "prepared": [
+        "build/bio-visual-single-write-plan-20260914-v004.json (first deploy: v001 visual CSS + hero CSS only)",
+        "build/bio-stress-article-resume-20260914-v001.json",
+        "build/bio-visual-parity-v002-expectations.css stays HOLD pending stronger visual proof"
+      ],
+      "proof_only_open": ["controlled visual matrix", "FAQ open-state interaction if no interaction-capable browser"],
+      "write_decision": "NEXT_REAL_FIX_CANDIDATE_WHEN_TOOLS_RETURN"
+    },
+    {
+      "page_id": 258,
+      "name": "Galéria",
+      "last_verified_saved_state": "72916 B / 1494ff3cce05b92be9a4e962c67bbb4bd903c3ae2829c7e46914c09d2065d656",
+      "evidence": ["reports/subpages/gallery-native-reviews-qa-v001.json", "reports/subpages/gallery-hedge-media-finalization-v001.json"],
+      "closed": ["EAEL masonry migration structure", "native Atomic reviews", "60 target main images matching source main count after excluding source footer reference image", "hero package"],
+      "actual_known_delta": "Exact source asset 'A többgömbös Ellwoodi niwaki, másik nézet' is 404/unavailable; no exact substitute may be invented.",
+      "proof_only_open": ["lightbox open/next/previous/close/focus return", "before-after pointer/keyboard", "six manual carousels arrows/dots/swipe", "deterministic visual matrix"],
+      "write_decision": "NO_CONTENT_WRITE_UNLESS_EXACT_ASSET_RECOVERED_OR_INTERACTION_FAILURE_PROVEN"
+    },
+    {
+      "page_id": 260,
+      "name": "Gyakran ismételt kérdések",
+      "last_verified_saved_state": "34184 B / 7d6d50bb58a1bc70d8ae17eb249e3aba8d5f6339318a50007a86419619e03fcb",
+      "evidence": "reports/subpages/faq-hero-v4-v002.json",
+      "closed": ["hero af-project widget", "D18 class bridges", "frontend hero classes", "SVG title/description", "native reviews", "editor reopen"],
+      "actual_known_delta": null,
+      "proof_only_open": ["formal frozen visual/behavior acceptance"],
+      "write_decision": "NO_WRITE_WITHOUT_NEW_FAILURE"
+    },
+    {
+      "page_id": 262,
+      "name": "Gyümölcsfák metszése és védelme",
+      "last_verified_saved_state": "31788 B / 0e7ed4b97f4c3fde3be91a532f62d936a35ac52567ac1a2d5b44f1af2f57d816",
+      "evidence": "reports/subpages/fruit-hero-v4-v002.json",
+      "closed": ["content/FAQ wording corrections", "hero af-project widget", "D18 bridges", "frontend hero/review classes", "SVG title/description", "editor reopen"],
+      "actual_known_delta": null,
+      "proof_only_open": ["formal frozen visual/behavior acceptance"],
+      "write_decision": "NO_WRITE_WITHOUT_NEW_FAILURE"
+    },
+    {
+      "page_id": 264,
+      "name": "Idős fák megmentése",
+      "last_verified_saved_state": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+      "evidence": ["reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json", "reports/subpages/oldtrees-visual-live-qa-20260914-v006.json"],
+      "closed": ["content and named-region parity", "review exact names", "form semantics", "native before-after initialization", "duplicate review-dot AX/focus containment", "visual v004 comparison/form package deployed", "v005 narrow cascade fix deployed"],
+      "actual_known_delta": null,
+      "proof_only_open": ["fresh post-v005 comparison capture confirming beige/sage equal-height cards", "fresh request-form visual capture", "review Arrow/Home/End", "tiszafa range pointer/keyboard", "Nordmann 4000ms/reduced-motion", "same-viewport hero geometry"],
+      "write_decision": "DO_NOT_REDEPLOY_V004_V005; RECHECK_FIRST"
+    },
+    {
+      "page_id": 266,
+      "name": "Kapcsolat",
+      "last_verified_saved_state": "8685 B / 815f22bec4aa1a4401a78186505bf553740a2c19710b720407d19b4703366fae",
+      "evidence": "reports/subpages/contact-hero-v4-class-bridge-v001.json",
+      "closed": ["hero", "V4 class bridge", "Elérhetőségek h2", "four process-step h3 headings", "frontend hero/form-section classes", "SVG title/description", "editor reopen"],
+      "actual_known_delta": null,
+      "proof_only_open": ["formal frozen visual/behavior acceptance", "SMTP/delivery intentionally excluded"],
+      "write_decision": "NO_WRITE_WITHOUT_NEW_FAILURE"
+    },
+    {
+      "page_id": 268,
+      "name": "Referencia videók",
+      "last_verified_saved_state": "46622 B / af362a9e7295cf06757b94c487e7504dbc5a01f84ee956906c16d6c93059e747",
+      "evidence": "reports/subpages/reference-videos-cta-order-fix-v001.json",
+      "closed": ["supported structural CTA sibling reorder", "frontend accessibility order", "seven video widgets/controls preserved", "canonical CTA link preserved"],
+      "actual_known_delta": null,
+      "proof_only_open": ["authenticated Elementor editor reopen", "review keyboard", "video keyboard activation/lazy iframe/privacy host", "hero animation normal/reduced", "deterministic visual matrix"],
+      "write_decision": "DO_NOT_RESAVE_FOR_PROOF_ONLY"
+    },
+    {
+      "page_id": 270,
+      "name": "Rólam",
+      "last_verified_saved_state": "38701 B / bf89d384396db61cc9ff85c78d3a5fb7c25c80d94f3ab9a440efbf7f7f431b6b",
+      "evidence": "reports/subpages/about-hero-v4-v001.json",
+      "closed": ["main hero af-project widget", "frontend SVG title/description", "logged-out hero accessibility image"],
+      "actual_known_delta": "Separate source portrait 'Biró János munka közben' remains 404/unavailable with no exact proven bytes; do not substitute.",
+      "proof_only_open": ["formal pixel/geometry/animation acceptance"],
+      "write_decision": "NO_IMAGE_WRITE_UNLESS_EXACT_SOURCE_BYTES_RECOVERED"
+    },
+    {
+      "page_id": 272,
+      "name": "Sövény specialista",
+      "last_verified_saved_state": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+      "evidence": "reports/subpages/hedge-legacy-review-closeout-20260914-v007.json",
+      "closed": ["shared-media recovery 26/26", "EAEL gallery 28/28 page-local id=0/full/original URLs", "five legacy named regions", "full CTA mailto", "exact intro phone/email names", "24-hour sentence", "review tablist name + duplicate dot AX/focus suppression via ID36 v001"],
+      "actual_known_delta": ["prepared exact real-tab accessible names not yet live", "#ajanlatkeres/MetForm form-region/name/description/group/help parity successor not yet live and direct-call ownership must be proven before deployment"],
+      "prepared": "build/hedge-semantic-runtime-v002.php; update existing ID36 only after strengthened live-DOM gate",
+      "proof_only_open": ["post-JS accessibility/keyboard proof", "deterministic visual matrix"],
+      "write_decision": "REAL_SEMANTIC_SUCCESSOR_PENDING_LIVE_GATE"
+    }
+  ],
+  "site_wide": {
+    "header": "header-v004 CSS + ID37 route-current helper live; interaction/visual proof only unless a new failure is reproduced",
+    "footer": "single published footer21; target-only subtitle removed in final homepage audit",
+    "templates": "all ten canonical pages published using elementor_header_footer; one published global header and one global footer",
+    "global_review_runtime": "ID14 global dot-fix remains intentionally gated on representative homepage proof; do not replace page-scoped fixes yet",
+    "smtp": "not configured/tested; intentionally outside prompt 2"
+  },
+  "formal_acceptance": {
+    "pixel_pass": false,
+    "reasons": [
+      "specs/acceptance.json and specs/behaviors.json are absent from current repository state",
+      "deterministic same-browser/DPR/zoom six-viewport screenshot/overlay/diff tooling is unavailable",
+      "Opera connector is currently disconnected",
+      "container cannot resolve Clicknest hosts",
+      "WPVibe connector is currently unavailable after +5 account switch attempt"
+    ]
+  }
+}
