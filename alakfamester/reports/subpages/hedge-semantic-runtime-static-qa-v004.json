@@ -1,0 +1,70 @@
+{
+  "schema_version": 4,
+  "package": "hedge-semantic-runtime-static-qa-v004",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "source": "build/hedge-semantic-runtime-v003.php",
+  "source_commit": "8b25e0b9462103ebaba907ef2e5d76e0d7d7ff17",
+  "intended_live_snippet": 36,
+  "status": "STATIC_PASS_PREPARED_NOT_DEPLOYED",
+  "scope": {
+    "server_guard": "is_page(272)",
+    "review_root": ".elementor-element-c3d30005",
+    "form_region": "#ajanlatkeres",
+    "metform_root": ".mf-form-wrapper[data-form-id=33]",
+    "other_page_write": false,
+    "global_css_change": false,
+    "visible_text_change": false,
+    "dom_reorder": false,
+    "validation_or_submission_change": false,
+    "click_or_keyboard_handler_change": false
+  },
+  "review_contract": {
+    "tablist_name": "Ügyfélvélemények",
+    "tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "duplicate_source_dots": "tabindex=-1 and aria-hidden=true only; visual and pointer behavior remains under the existing shared runtime",
+    "protected_native_tabs": "No DOM replacement and no saved Atomic attribute mutation"
+  },
+  "form_contract": {
+    "region_name": "Küldjön fotót a sövényről",
+    "form_name": "Ajánlatkérés",
+    "direct_call_source": "Shared MetForm33 evidence documents Atomic paragraph #af-form-direct-call with tel:+36305394820 and source-equivalent direct-call copy.",
+    "v003_lookup": [
+      "First search stable #af-form-direct-call strictly inside .mf-form-wrapper[data-form-id=33].",
+      "Fallback search exact tel:+36305394820 strictly inside the same MetForm33 root and use its closest p.",
+      "Never search document-wide for the direct-call link, therefore the separate page272 legacy contact widget af2e004c cannot be selected accidentally."
+    ],
+    "aria_idref_note": "aria-describedby is an IDREF relationship and does not require the description node to be a child of the form element. Root containment is the relevant ownership guard; v003 no longer assumes direct form-child nesting.",
+    "service_group": "#af-form-service .mf-input-wrapper role=group + aria-labelledby existing .mf-input-label",
+    "city_help": "#af-form-city input[name=telepules] aria-describedby existing .mf-input-help"
+  },
+  "lifecycle": {
+    "initial": "DOMContentLoaded or immediate apply",
+    "delayed": "one 900ms reapply after documented ID14 delayed boot",
+    "observer": "childList/subtree only; attribute writes do not trigger self-loop",
+    "timers": 1,
+    "new_pointer_or_keyboard_listeners": 0
+  },
+  "improvement_over_v002": {
+    "old_risk": "v002 searched the direct-call tel link through form.querySelector, which unnecessarily assumed the direct-call paragraph rendered under the form element.",
+    "new_behavior": "v003 uses the proven MetForm33 wrapper as ownership boundary and prefers the stable #af-form-direct-call ID, with a wrapper-scoped tel fallback.",
+    "external_contact_safety": "af2e004c remains unreachable by this lookup because it is outside the MetForm33 wrapper."
+  },
+  "mandatory_live_gate": [
+    "Restore WPVibe and confirm +5 account site connection plus exact quota; keep D11 reserve.",
+    "Fresh-read page272 _elementor_data and require the accepted 53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 baseline or reconcile drift first.",
+    "Read current Code Snippets ID36 body/state. Update ID36 only; never create a second page272 helper.",
+    "Fresh rendered DOM before update should prove one .mf-form-wrapper[data-form-id=33], one form, and either #af-form-direct-call or the exact wrapper-scoped tel:+36305394820 paragraph. If neither exists, do not deploy v003.",
+    "After update, read back ID36 active/code_error and verify page272 Elementor hash unchanged.",
+    "Fresh post-footer-JS accessibility proof must show exact review tablist/tabs, region name, form name and description, service group name, city help relation, and no numbered review dots in AX/tab order.",
+    "No SMTP and no real form submission."
+  ],
+  "rollback": "If the helper causes a semantic regression, restore only the previously read exact ID36 body through the supported plugin path; do not alter Elementor data, shared media, global ID14 or form33 settings.",
+  "tool_blocker": "WPVibe unavailable and Opera disconnected in the current chat, so live deployment/readback/AX proof cannot be executed now.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
