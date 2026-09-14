@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "package": "header-service-child-route-live-qa-20260914-v008",
+  "date": "2026-09-14",
+  "scope": "read-only live header current-state evidence; zero WordPress writes",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "evidence": {
+    "page264_old_trees": {
+      "prior_same_browser_result": "PASS",
+      "finding": "Source and target both showed Services current-section treatment on the Old Trees service child route; duplicate caret was absent."
+    },
+    "page256_biological_protection": {
+      "fresh_same_browser_result": "FAIL_TARGET_CURRENT_GROUP",
+      "viewport_px": [1640, 920],
+      "source": "Services/Szolgáltatások current-section pill visible.",
+      "target": "Services/Szolgáltatások rendered neutral without the current-section pill in the fresh target capture."
+    },
+    "normal_home": {
+      "prior_same_browser_result": "PASS_NEGATIVE_GATE",
+      "finding": "Főoldal current, Services neutral at rest."
+    }
+  },
+  "diagnosis": [
+    "Do not generalize the page264 PASS to all service children.",
+    "Do not create another independent route-current helper. The repository authoritative global plan is build/header-deployment-plan-v010.json, based on runtime v008 normalized-path current-state logic plus a dedicated homepage neutral guard.",
+    "Because page264 passes while page256 fails, final acceptance after the authoritative header package must sample multiple real service-child routes, not only one representative child."
+  ],
+  "required_postdeploy_route_matrix": [
+    "/soveny-specialista/",
+    "/idos-fak-megmentese-szolgaltatas/",
+    "/biologiai-vedelem/",
+    "/gyumolcsfak-metszese-es-vedelme/",
+    "/galeria/",
+    "/referencia-videok/",
+    "/"
+  ],
+  "do_not_change_from_page256_package": [
+    "global header CSS/runtime",
+    "menu destinations",
+    "header Elementor structure"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
