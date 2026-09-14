@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "package": "hedge-id36-v001-v003-delta-audit-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "current_documented_live": "build/hedge-review-runtime-v001.php",
+  "candidate": "build/hedge-semantic-runtime-v003.php",
+  "preserved_behavior": [
+    "server guard is_page(272)",
+    "wp_footer priority 120",
+    "tablist aria-label Ügyfélvélemények",
+    ".af-review-source-dot tabindex=-1 and aria-hidden=true",
+    "DOMContentLoaded/immediate initial application",
+    "single 900ms delayed reapply after shared review boot",
+    "MutationObserver reacts only to added child nodes/subtrees; attribute writes do not self-loop",
+    "no CSS, visible text, DOM reorder, validation, submission, click or keyboard handler changes"
+  ],
+  "intentional_changes": [
+    "review root becomes exact protected Elementor root .elementor-element-c3d30005 instead of generic .af-reviews-tabs",
+    "three real role=tab elements receive exact source full accessible names",
+    "#ajanlatkeres gets region semantics/name",
+    "Form33 gets exact form name and direct-call description relationship",
+    "service radio wrapper gets group/name relationship",
+    "Település input gets help-description relationship",
+    "script marker changes from af-hedge-review-semantic-parity-v001 to af-hedge-semantic-parity-v003"
+  ],
+  "new_preupdate_cardinality_gate": [
+    "exactly one .elementor-element-c3d30005 review root",
+    "exactly one [role=tablist] under that root",
+    "exactly three real [role=tab] elements under that root",
+    "review labels are applied only after this live structure is confirmed; if cardinality differs, stop and reconcile rather than deploying from stale assumptions",
+    "exactly one .mf-form-wrapper[data-form-id=33] on page272",
+    "exactly one form inside that wrapper",
+    "wrapper-owned #af-form-direct-call or exact tel:+36305394820 paragraph exists"
+  ],
+  "postupdate_marker_and_regression_gate": [
+    "existing Code Snippets ID36 remains the only page272 semantic helper; no new snippet created",
+    "af-hedge-semantic-parity-v003 marker exactly once in rendered page",
+    "af-hedge-review-semantic-parity-v001 marker absent after successful ID36 replacement",
+    "no duplicate page272 review/form semantic marker/script",
+    "ID36 active and code_error null",
+    "page272 Elementor bytes/SHA unchanged because update is runtime-only",
+    "hero af2e004e, proof af2e004d, reviews c3d30005, gallery b2e2c001 and form af2e0011 still present",
+    "post-footer-JS AX exact source review/form semantics"
+  ],
+  "rollback": "Before update, store exact current ID36 body/state. If any marker/cardinality/AX regression appears, restore only that exact ID36 body; do not touch Elementor data, ID14, Form33, media or CSS.",
+  "conclusion": "v003 is a strict functional superset of the documented v001 accessibility runtime, with the same lifecycle and guards. Deployment remains blocked until live cardinality/ownership/hash/quota gates can be read."
+}
