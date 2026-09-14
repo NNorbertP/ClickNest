@@ -1,0 +1,34 @@
+{
+  "schema_version": 3,
+  "package": "hedge-semantic-runtime-static-qa-v003",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "source": "build/hedge-semantic-runtime-v002.php",
+  "intended_live_snippet": 36,
+  "status": "STATIC_PASS_WITH_LIVE_FORM_DESCRIPTION_PRECONDITION_NOT_DEPLOYED",
+  "preserved_static_pass": [
+    "is_page(272) guard",
+    "attribute-only behavior; no CSS/visible text/DOM reorder/validation/submission/click/keyboard change",
+    "exact review tablist name and exact three source review tab accessible names",
+    "existing .af-review-source-dot visual/pointer behavior preserved while removed from AX/tab order",
+    "#ajanlatkeres source-equivalent region naming",
+    "MetForm33 form accessible name, service group and Település help wiring code is scoped to .mf-form-wrapper[data-form-id=33]",
+    "900ms delayed reapply plus child-addition MutationObserver; attribute changes do not self-loop"
+  ],
+  "new_safety_finding": {
+    "code_path": "The prepared helper derives form aria-describedby from a tel:+36305394820 link found inside the actual form and then its closest p.",
+    "known_page_structure": "page272 also has a separate legacy form-intro/contact widget af2e004c containing a tel link outside MetForm33. The helper correctly does not use that external contact button as the form description, but static repository evidence alone cannot prove the shared MetForm33 form still contains the intended direct-call paragraph at runtime.",
+    "related_proven_contract": "page264 live QA proved the same shared form source contract has accessible description 'Vagy hívjon közvetlenül: +36 30 539 48 20', and its page-scoped helper uses #af-form-direct-call inside the form wrapper.",
+    "risk": "If the internal MetForm33 direct-call element is absent or its markup changed, the current page272 v002 helper would still set the form name but silently omit aria-describedby. That must not be accepted as full source parity."
+  },
+  "deployment_gate_addition": [
+    "Before PUT of ID36, fresh rendered/DOM read must prove .mf-form-wrapper[data-form-id=33] contains the direct-call description element expected by the shared form contract (prefer stable #af-form-direct-call if present, otherwise prove the exact tel-link paragraph structure).",
+    "If that element is present, deploy current v002 and verify form accessible description exactly equals source after footer JS.",
+    "If it is absent or structurally different, do not deploy current v002 as-is; update the helper against the proven live owner and rerun static QA first.",
+    "Do not use af2e004c external contact-pair as a substitute description unless fresh source AX proves that is the source form description relationship.",
+    "All previous hash/quota/429/readback gates remain mandatory."
+  ],
+  "quota_at_this_audit": "291/300 used, 9 remaining; below the mandatory 10-call D11 reserve, therefore zero WPVibe site calls are permitted until rolling headroom returns.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
