@@ -1,0 +1,135 @@
+{
+  "schema_version": 4,
+  "package": "hedge-acceptance-matrix-20260915-v004",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-acceptance-matrix-20260915-v003.json",
+  "write_scope": "Only page272-specific runtime/content. No shared media, shared Form33 settings, global CSS/templates/header/footer/dock, SMTP or other-page writes.",
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required_before_any_future_write": true
+  },
+  "local_closed_preserve": [
+    "published page272 with historical 9/9 measured source sections and 6/6 wave positions",
+    "hero af2e004e with source-equivalent Nyírt sövénysáv díszes véggel SVG title/description and editor reopen proof",
+    "proof carousel af2e004d with 21 source images preserved",
+    "native Atomic reviews c3d30005 with exactly 3 tabs/panels",
+    "EAEL b2e2c001 with 28 items, exact source names/order, 28 id=0, full resolution and original upload URLs",
+    "combined page-content media roles reconciled to 21 proof + 3 reviews + 28 gallery = 52 reference main-image roles",
+    "five complete legacy named regions",
+    "Van hasonló növénye? complete mailto range and exact accessible name",
+    "af2e004c exact phone/e-mail accessible names and 24-hour reply sentence",
+    "MetForm33 widget af2e0011 present; shared accepted textarea/photo/success contracts preserved",
+    "D09 page-local link routing/anchors reconciled; no current page272 link write justified",
+    "historical page272 stone/sage and media-gap defects are stale/closed",
+    "legacy image widgets af2e0009-af2e000e remain absent"
+  ],
+  "protected_ids": ["af2e004e", "af2e004d", "c3d30005", "b2e2c001", "af2e0011"],
+  "semantic_runtime": {
+    "live_owner_until_verified_replacement": "Code Snippets ID36 v001",
+    "only_current_candidate": "build/hedge-semantic-runtime-v004.php",
+    "static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "prewrite_gate": [
+      "fresh accepted page272 hash/JSON",
+      "exact current ID36 body/name/scope/active/code_error with rollback body saved",
+      "exactly one review root, one tablist and three real tabs in Panasonic -> Otolecz -> ARKER'S order",
+      "exactly one Form33 wrapper/form, wrapper-owned direct-call descriptor, service label/wrapper and city input/help pair",
+      "no newer semantic helper or existing v004 marker requiring readback instead of replay"
+    ],
+    "expected_effect_only": [
+      "tablist accessible name Ügyfélvélemények",
+      "three exact source review-tab accessible names",
+      "duplicate review dots excluded from AX/tab order while visuals/pointer ownership remain",
+      "Form33 name Ajánlatkérés",
+      "wrapper-owned direct-call description relation",
+      "service-radio group name relation",
+      "Település help relation"
+    ],
+    "must_not_change": ["CSS", "visible copy", "DOM order", "Elementor data", "form processing", "click/keyboard behavior", "outer form region"],
+    "postwrite": [
+      "ID36 exact v004 body, scope front-end, active=true, code_error=null",
+      "v004 marker exactly once and obsolete semantic markers absent when rendered evidence is trustworthy",
+      "page272 Elementor bytes/SHA unchanged",
+      "protected IDs preserved",
+      "post-footer-JS review/Form33 semantics exact"
+    ]
+  },
+  "local_open_read_or_write_gates": {
+    "outer_regions": [
+      {"name": "Minőségi sövény formára vágás, metszés és megújítás", "status": "READ_COMPLETE_COPY_PLUS_ART_COMMON_ROOT_BEFORE_ATTRIBUTE_WRITE"},
+      {"name": "Sövénymunkák", "status": "READ_HEADING_PLUS_COMPLETE_EAEL_COMMON_ROOT_BEFORE_ATTRIBUTE_WRITE"},
+      {"name": "Küldjön fotót a sövényről", "status": "READ_AF2E004C_INTRO_CONTACT_PLUS_FORM33_COMMON_ROOT_BEFORE_ATTRIBUTE_WRITE"}
+    ],
+    "heading_semantics": "Capture ordered source/target H1-H6 level+name trees. Historical text-set equality alone is insufficient and does not justify a mutation.",
+    "proof_carousel_roles": "Fresh source/target item role + parent semantics + stable owner proof required before either correction or explicit divergence closeout.",
+    "gallery_lightbox": "Preserve popup=none until source-specific Hedge 28-item zoom/grouped-lightbox proof; page258 is not a proxy.",
+    "visual_css": "No write from stale screenshots/history. Require a current synchronized reproduced delta and proven page272-local cascade/DOM owner."
+  },
+  "form_required_choice": {
+    "audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+    "native_source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+    "must_read": ["exact service widget ID/type", "mf_input_name", "mf_input_required", "six option labels/values/order"],
+    "known_capability": "mf_input_required=yes feeds required=true into the actual MetForm front-end validation register path.",
+    "decision": "If current Form33 is required=yes, prove empty-choice rejection without entry/delivery before any PHP fallback. If native behavior passes, close D05 and add no server code.",
+    "shared_setting_rule": "Do not mutate shared Form33 settings from page272 scope.",
+    "server_fallback": "Optional only if native Required is absent or demonstrably insufficient; use build/hedge-form-required-server-plan-20260914-v002.json after exact current ID5 read.",
+    "real_submission": "EXCLUDED",
+    "smtp_external_delivery": "EXCLUDED"
+  },
+  "interaction_acceptance": [
+    "review click/Arrow/Home/End shared D12 implementation is already proven; page272 direct run is proof-only unless a stable failure reproduces",
+    "proof carousel ~4000 ms autoplay historically observed page272 5 -> 6",
+    "proof carousel ArrowLeft/Right, swipe, hover/focus pause-resume and reduced-motion remain proof-only",
+    "never add a second interaction owner/timer from missing proof alone"
+  ],
+  "link_and_head_metadata": {
+    "audit": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
+    "links": "CLOSED_PRESERVE_RECHECK_AFTER_WRITE",
+    "seo_head": "OPEN_PROOF_ONLY_NO_WRITE",
+    "future_capture": "source/target title, description, canonical, robots, OG fields and schema ownership/count; permit D09 /slug/ canonical adaptation and documented WordPress/Yoast implementation differences",
+    "no_guess_rule": "No Yoast/post-meta write without direct page272 source-target head evidence."
+  },
+  "shared_global_chrome": {
+    "audit": "reports/subpages/hedge-shared-chrome-external-gates-20260915-v001.json",
+    "header": "EXTERNAL_SHARED_GATE: /soveny-specialista/ must eventually be sampled in the authoritative global header route matrix; never create a Hedge-local current-state hack.",
+    "floating_dock": "EXTERNAL_SHARED_GATE: known global blank/paint-layout defect owned by global ID7/CSS; no page272-local fix.",
+    "footer": "OBSERVE_ONLY: no page272-specific footer defect documented; assign any reproduced defect to the global footer owner before writing.",
+    "effect_on_status": "A shared chrome failure can prevent whole-viewport pixel PASS without invalidating already-closed page272 body content."
+  },
+  "authorized_divergences": {
+    "ledger": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json",
+    "allowed": [
+      "D09 WordPress /slug/ routes instead of static .html",
+      "truthful local-processing MetForm success state instead of source demo no-send wording",
+      "documented WordPress implementation technology boundaries"
+    ],
+    "unresolved_not_authorized": ["historical proof-carousel source group vs target listitem role difference"]
+  },
+  "responsive_visual_matrix": {
+    "viewports": [1920, 1440, 1024, 768, 390, 360],
+    "known_gallery_contract": {"desktop_columns": 4, "tablet_columns": 3, "mobile_columns": 2, "source_like_721_767_columns": 3, "desktop_gutter_px": 16, "mobile_gutter_px": 12},
+    "required": "same engine, synchronized load/focus/animation state, known DPR, 100% zoom, exact screenshot pair plus overlay/diff and overflow review",
+    "status": "FORMAL_TOOLING_BLOCKED"
+  },
+  "tooling": {
+    "wpvibe": "disabled in this conversation; do not call again",
+    "opera": "disconnected after a two-tab-only attempt; zero new tabs; prior Hedge title/URL with stale Biológiai AX/screenshot makes current connector output untrusted",
+    "public_http": "Clicknest fallback unavailable; do not loop retries",
+    "acceptance_json": "absent on main",
+    "behaviors_json": "absent on main",
+    "README_measure_tools": "documented historically but current repository tree does not expose the formal acceptance inputs/toolchain needed here"
+  },
+  "completion_levels": {
+    "page272_local_saved_content": "MOSTLY_CLOSED_PRESERVE",
+    "page272_local_runtime": "V004_DEPLOYMENT_AND_READBACK_PENDING_LIVE_TOOLS",
+    "page272_semantic_proofs": "OUTER_REGIONS_HEADINGS_CAROUSEL_ROLES_FORM_REQUIRED_OPEN_READS",
+    "shared_chrome": "EXTERNAL_GLOBAL_GATES",
+    "formal_pixel": "BLOCKED"
+  },
+  "pixel_pass": false,
+  "status": "AUTHORITATIVE_PAGE272_ACCEPTANCE_V004_READY_REMOTE_AND_FORMAL_GATES_REMAIN"
+}
