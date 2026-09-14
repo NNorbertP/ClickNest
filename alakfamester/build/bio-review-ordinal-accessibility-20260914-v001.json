@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "package": "bio-review-ordinal-accessibility-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "DIAGNOSTIC_AND_ACCEPTANCE_GATE_BEFORE_CSS_FIX",
+  "source_contract": {
+    "markup": "span.reviews__tab-mark aria-hidden=true containing 01/02/03",
+    "meaning": "ordinal is visual decoration only and must not contribute to tab accessible name/AX content"
+  },
+  "target_last_live_evidence": {
+    "saved_rendered_tab_children": "only af-review-tab-label company/person text; no literal 01/02/03 child",
+    "visual": "two visible copies of each ordinal",
+    "AX": "one staticText 01, one 02, one 03 appeared in a targeted AX query",
+    "tab_names": "company/person accessible tab names remained correct and did not include the ordinal"
+  },
+  "implication": "At least one visual ordinal is CSS generated and exposed as a separate AX staticText. Final parity requires both visual deduplication and source-like decorative/hidden accessibility behavior.",
+  "future_owner_diagnostic": [
+    "Fresh Additional CSS search for every af-review-tab/af-review-tab-label ::before/::after owner and nth-child/counter/content rule.",
+    "Fresh page256 AX query for literal 01/02/03 before the fix to reconfirm whether generated ordinals remain exposed in the current browser/runtime.",
+    "Identify which pseudo owns each visible ordinal and which owner produces the AX staticText; do not infer from selector order alone."
+  ],
+  "preferred_fix_shape_after_owner_proof": [
+    "Suppress the duplicate visual owner exactly.",
+    "For the single remaining visual ordinal, use a source-like non-semantic representation. Prefer a proven CSS generated-content accessibility override only if the browser AX readback confirms it removes staticText without changing the tab name; otherwise use the smallest safe real DOM aria-hidden marker approach supported by the existing Atomic hierarchy.",
+    "Never place 01/02/03 inside the accessible tab label/company string."
+  ],
+  "acceptance": [
+    "exactly one visual ordinal per tab",
+    "tab accessible names remain exact company/person names",
+    "no standalone AX staticText 01/02/03 nodes attributable to decorative tab marks",
+    "three native Atomic tabs and keyboard behavior unchanged"
+  ],
+  "forbidden_shortcuts": [
+    "do not hide the whole tab label",
+    "do not set aria-hidden on the tab button",
+    "do not remove company/person text",
+    "do not replace native Atomic tabs with legacy review JS",
+    "do not assume CSS speak:none or generated-content alt syntax works without AX readback"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
