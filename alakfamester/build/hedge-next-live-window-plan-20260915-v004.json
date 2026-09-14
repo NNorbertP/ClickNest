@@ -1,0 +1,144 @@
+{
+  "schema_version": 4,
+  "package": "hedge-next-live-window-plan-20260915-v004",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-next-live-window-plan-20260915-v003.json",
+  "status": "READY_FOR_FUTURE_STABLE_TOOLS_NO_CURRENT_WORDPRESS_WRITE",
+  "semantic_candidate": "build/hedge-semantic-runtime-v004.php",
+  "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+  "goal": "Use one bounded remote window to gate/deploy existing ID36 to v004 only, capture Form33 required-radio facts, and harvest all possible local/head/shared-observation evidence from the same reads without broadening write scope.",
+  "preconditions": [
+    "WPVibe becomes available in a future conversation; verify intended +5 identity, site connection and exact rolling quota once.",
+    "Preserve D11 10-call reserve plus complete package/readback margin; never start a partial package that cannot be closed safely.",
+    "Fresh live truth outranks every repository checkpoint.",
+    "Opera/browser evidence is usable only if URL/title/content/AX/screenshot agree; otherwise stop without tab fan-out or reconnect loops."
+  ],
+  "nominal_wp_call_budget": {
+    "quota_site_check": 1,
+    "page272_baseline": 1,
+    "ID36_read": 1,
+    "target_rendered_HTML_or_DOM_read": 1,
+    "Form33_service_settings_read": 1,
+    "ID36_update_if_gated": 1,
+    "ID36_readback": 1,
+    "page272_hash_readback": 1,
+    "optional_postwrite_rendered_read": 1,
+    "nominal_max": 9,
+    "start_rule": "Prefer at least 21 calls remaining after the exact counter read, or a stricter threshold if provider accounting/retry behavior warrants it."
+  },
+  "server_read_phase": [
+    {
+      "step": 1,
+      "read": "page272 _elementor_data bytes/SHA/JSON",
+      "accept": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / valid",
+      "on_drift": "STOP. Reconcile unknown drift before any prepared write."
+    },
+    {
+      "step": 2,
+      "read": "Code Snippets ID36 exact body/name/scope/active/code_error",
+      "accept": "Known page272-only owner, front-end scope; save exact body as rollback.",
+      "on_newer_or_unknown": "STOP. Do not overwrite newer live code with v004."
+    },
+    {
+      "step": 3,
+      "read": "one trustworthy rendered target HTML/DOM payload, preferably broad enough to include document head and the relevant page body",
+      "v004_gate": [
+        "one .elementor-element-c3d30005",
+        "one tablist below it",
+        "exactly three role=tab elements",
+        "Panasonic -> Otolecz -> ARKER'S visible/company identity order",
+        "one .mf-form-wrapper[data-form-id=33] and one form",
+        "one wrapper-owned #af-form-direct-call or exact wrapper tel:+36305394820 paragraph fallback",
+        "one #af-form-service wrapper/label pair",
+        "one #af-form-city input[name=telepules]/help pair"
+      ],
+      "free_local_evidence_from_same_payload": [
+        "complete common-root candidate containing all hero copy plus af2e004e art",
+        "complete common-root candidate containing Sövénymunkák heading plus b2e2c001",
+        "complete common-root candidate containing separate af2e004c intro/contact plus Form33",
+        "ordered target H1-H6 level/name tree",
+        "af2e004d proof-carousel item roles, parent role and owner clues",
+        "presence/preservation of protected IDs and absence of removed legacy image widgets"
+      ],
+      "free_target_head_evidence_if_payload_contains_head": [
+        "document title",
+        "meta description",
+        "canonical count/href",
+        "robots",
+        "og:title/og:description/og:url",
+        "structured-data script count/types and duplicate-owner clues"
+      ],
+      "rule": "Only v004_gate controls the v004 write. Missing proof for roots/headings/carousel/head metadata leaves those items open; it does not justify speculative writes."
+    },
+    {
+      "step": 4,
+      "read": "Form33 saved settings around #af-form-service only",
+      "capture": ["widget ID/type", "mf_input_name", "mf_input_required", "six exact option labels/values/order"],
+      "write": false
+    }
+  ],
+  "single_write_phase": {
+    "condition": "accepted baseline + current ID36 + v004 DOM gates pass; candidate is not already live; no newer helper exists",
+    "action": "Update existing Code Snippets ID36 only to build/hedge-semantic-runtime-v004.php through the proven plugin-aware path.",
+    "forbidden": [
+      "new/duplicate helper",
+      "ID36 scope change",
+      "Elementor saved-data mutation",
+      "shared Form33 setting mutation",
+      "shared media mutation",
+      "global CSS/header/footer/dock/template mutation",
+      "outer region write",
+      "heading/proof-carousel/lightbox/SEO visual write mixed into the same package"
+    ],
+    "429_rule": "Any unknown/429 outcome remains UNKNOWN until exact ID36 readback. Never blind-retry."
+  },
+  "mandatory_readback": [
+    "ID36 exact stored body=v004; scope front-end; active=true; code_error=null",
+    "page272 Elementor bytes/SHA unchanged",
+    "hero/proof/reviews/gallery/Form33 protected IDs preserved",
+    "when trustworthy rendered evidence is available: v004 marker once, obsolete semantic markers absent, exact review/Form33 post-footer-JS semantics"
+  ],
+  "required_radio_decision": {
+    "required_yes": "Prove native empty-choice rejection by a non-entry/non-delivery path before any PHP fallback.",
+    "required_not_yes": "Record a real configuration delta but do not mutate shared Form33 from page272 scope.",
+    "native_pass": "Close D05 mandatory-choice item and add no server code.",
+    "native_fail": "Only then consider existing-ID36 fallback design after exact current ID5 body/priority read."
+  },
+  "trusted_browser_pair": {
+    "maximum_tabs": 2,
+    "new_tabs": 0,
+    "reuse": "one Hedge source + one Hedge target only",
+    "local_page_collect_in_one_pass": [
+      "ordered source and target H1-H6 level/name trees",
+      "source and target proof-carousel role/parent semantics",
+      "complete source region boundaries for hero/gallery/form and target common-root comparison",
+      "source/target title/description/canonical/robots/OG/schema head evidence when accessible",
+      "post-v004 review/Form33 AX semantics",
+      "changed-section visual neutrality"
+    ],
+    "shared_observation_only": [
+      "Services parent current-state/caret on /soveny-specialista/ for the external global header route matrix",
+      "floating contact dock visible/painted state and AX names",
+      "footer gross regression only"
+    ],
+    "shared_failure_rule": "Log under reports/subpages/hedge-shared-chrome-external-gates-20260915-v001.json/global owner. Do not create a page272-local fix.",
+    "stale_rule": "If URL/title and content/AX/screenshot disagree, stop immediately. Do not reload repeatedly, reconnect-loop or open replacement tabs."
+  },
+  "head_metadata_decision": {
+    "audit": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
+    "links": "already closed/preserve",
+    "head": "read-only direct comparison required before any Yoast/post-meta mutation",
+    "canonical_adaptation": "Target canonical should reflect D09 WordPress /soveny-specialista/ route rather than literal source .html."
+  },
+  "formal_visual_after_local_runtime": {
+    "viewports": [1920, 1440, 1024, 768, 390, 360],
+    "require": "same engine, known DPR, 100% zoom, synchronized state, source-target screenshots, overlay/diff and overflow review",
+    "shared_chrome_note": "Whole-viewport PASS also depends on external shared header/dock/footer owners; do not repair them in this page package."
+  },
+  "smtp_or_external_submission": false,
+  "real_form_submission": false,
+  "pixel_pass": false
+}
