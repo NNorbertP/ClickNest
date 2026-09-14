@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "package": "bio-visual-parity-v001",
   "date": "2026-09-14",
   "page_id": 256,
@@ -10,8 +10,8 @@
   "decision_refs": ["D03", "D07", "D11", "D18"],
   "css": {
     "file": "build/bio-visual-parity-v001.css",
-    "latest_commit": "b68f25e070b9b36dda9d8003845df72446f92c69",
-    "content_sha": "9bce52a63e6633febb3f1f970a75e9b60bba2171",
+    "latest_commit": "a2f3d4908b3dff5f131f74cb584eb5e86e33fcbb",
+    "content_sha": "5bd2307064eb26a173098fd9780f8b7f913aa852",
     "marker_start": "/* af-bio-visual-v001:start",
     "marker_end": "/* af-bio-visual-v001:end */",
     "scope_selector": "body.page-id-256",
@@ -37,6 +37,7 @@
       "Source section intro is 1.125rem / max-width 104ch and wraps to two lines at sampled desktop; target is 16px and one line.",
       "Source three cards use 32px padding, organic radius and source shadow; target uses 26px padding and simple 24px radius.",
       "Source middle sage card has no shadow, source sage surface and a top botanical hairline.",
+      "Source screenshot shows the four Milyen esetekben használom? items with green leaf badges containing white check marks; source AX exposes no listMarker, while target currently exposes native bullet listMarkers. Prepared CSS maps those four items to the exact source checklist rule using empty decorative pseudo content.",
       "Target card widths/content/icons are otherwise aligned. AX shows generated target icon glyphs after article content, consistent with article::after ownership, therefore the prepared CSS deliberately does not write article::before/::after and does not yet recreate the subtle source lower-right watermark."
     ],
     "symptom_table": [
@@ -48,7 +49,8 @@
     "faq": [
       "Question names/accessibility are already source-exact and must remain so.",
       "Source FAQ uses 22/26px organic cards, 64px triggers, hover sage treatment and leaf-shaped plus/minus control.",
-      "Target uses native details/summary with simple 15px radius and no source-equivalent trigger icon. CSS mapping preserves native details behavior without DOM or text replacement."
+      "Target uses native details/summary with simple 15px radius and no source-equivalent trigger icon. CSS mapping preserves native details behavior without DOM or text replacement.",
+      "Homepage precedent home-faq-contact-source-parity-v001 intentionally preserved the native editable FAQ control and restored source visual rhythm through scoped Additional CSS, so page256 follows the same project pattern rather than duplicating a custom accordion runtime."
     ]
   },
   "hard_preserve": [
@@ -73,17 +75,18 @@
     "Insert the complete marked CSS block immediately before the unique project end marker using one guarded match-once /wpvibe/v1/content/edit. Do not round-trip or replace the whole Additional CSS field.",
     "Treat HTTP 429 on the write as UNKNOWN. Do not retry; first read back marker/hash to determine whether it executed.",
     "Read back Additional CSS bytes/SHA/marker count and re-read page256 Elementor bytes/SHA/JSON. Page256 saved data must remain unchanged.",
-    "Fresh-load source and target with only the existing two Opera tabs. Verify technology card geometry/surfaces and existing icon badges, table surface, FAQ static state, exact AX semantics and no regression of hero/reviews/CTA.",
+    "Fresh-load source and target with only the existing two Opera tabs. Verify technology card geometry/surfaces and existing icon badges, four custom checklist markers with no AX listMarker, table surface, FAQ static state, exact AX semantics and no regression of hero/reviews/CTA.",
     "If a measured regression appears, remove only the exact af-bio-visual-v001 marked block by guarded match-once edit; do not restore an old full Additional CSS snapshot."
   ],
   "intentionally_open": [
     "Technology lower-right source card watermark: target icon generation appears to own article::after, so do not overwrite it. Find a collision-free owner or equivalent background implementation later.",
     "#technologiak anchor ownership/offset: target id is currently on inner af-sub-inner; do not guess a scroll-margin or structural ID move without a supported outer-wrapper ID proof.",
-    "Stress and expectations split/list card visuals need additional direct source-target screenshot/component mapping before inclusion.",
+    "Stress and expectations custom-list variants/card visuals need additional direct source-target visual/component proof before inclusion.",
+    "Stress saved aside/complementary vs source article is tracked separately in bio-semantic-deep-audit-v012 and requires exact content/search before write.",
     "Global header active-state and floating-contact differences are outside page256-only scope.",
     "Deterministic six-viewport screenshot/overlay/diff remains unavailable; PIXEL_PASS stays false until that evidence exists."
   ],
-  "host_throttle": "Latest site calls still return HTTP 429 after three automatic retries. Do not deploy while throttle is active.",
+  "host_throttle": "Latest account counter is 276/300 used, 24 remaining. With D11 reserve 10 and site calls recently consuming three retries on 429, do not start deployment in the current window.",
   "wordpress_writes_in_preparation": 0,
   "pixel_pass": false
 }
