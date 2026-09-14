@@ -1,0 +1,16 @@
+/* af-oldtrees-visual-mobile-v002:start
+ * Scope: body.page-id-264 only.
+ * Static correction found before deployment by comparing the prepared package
+ * against the reference styles.css responsive rules.
+ */
+@media (max-width: 560px) {
+  body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn {
+    width: auto;
+  }
+}
+@media (max-width: 400px) {
+  body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn {
+    width: 100%;
+  }
+}
+/* af-oldtrees-visual-mobile-v002:end */
