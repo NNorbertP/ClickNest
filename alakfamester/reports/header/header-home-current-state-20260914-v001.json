@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only read-only homepage diagnostic",
+  "reference": "https://alakfamester.clicknest.hu/index.html",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "status": "QUALITATIVE_PASS_KEEP_EXISTING_CURRENT_PAGE_STATE",
+  "observed_source": {
+    "Főoldal": "sage pill + bronze current-page leaf dot",
+    "services": "normal closed dropdown trigger",
+    "references": "normal closed dropdown trigger",
+    "cta": "Felmérést kérek visible",
+    "header_height": "desktop state"
+  },
+  "observed_target": {
+    "Főoldal": "sage pill + bronze current-page leaf dot already rendered by existing WordPress current-menu-item + deployed header base CSS",
+    "services": "normal closed dropdown trigger",
+    "references": "normal closed dropdown trigger",
+    "cta": "Felmérést kérek visible",
+    "header_height": "desktop state"
+  },
+  "preserve": [
+    "Do not add runtime current-page logic for Főoldal; existing native WordPress current-menu-item state is already visually correct.",
+    "Runtime route logic is only needed for source-like parent group state + exact custom dropdown child state where custom menu parents do not receive reliable current classes.",
+    "Keep existing current-menu-item CSS rule and 6x6 bronze leaf pseudo-element."
+  ],
+  "a11y_pair": {
+    "main_navigation_name": "Főmenü on both",
+    "top_level_order_roles_names": "match",
+    "source_header_role": "header",
+    "target_header_role": "sectionHeader",
+    "popup_caret_delta": "target popup exposes unnamed image child; source does not",
+    "brand_delta": "target has separate tagline/logo accessibility nodes outside the already correctly named brand link; source brand is one link"
+  },
+  "visual_pair_limitations": {
+    "same_browser": true,
+    "same_two_tabs": true,
+    "connector_exposes_exact_viewport": false,
+    "connector_exposes_domain_zoom": false,
+    "connector_exposes_dpr": false,
+    "overlay_diff_generated": false,
+    "pixel_pass": false
+  },
+  "authoritative_next_packages": {
+    "css": "build/header-source-flex-responsive-v007.css",
+    "runtime": "build/header-runtime-parity-v008.json",
+    "deployment": "build/header-deployment-plan-v009.json"
+  }
+}
