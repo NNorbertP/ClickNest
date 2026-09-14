@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "package": "hedge-form-required-server-plan-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "form_id": 33,
+  "status": "DESIGN_ONLY_FIELD_NAME_AND_LIVE_INVENTORY_REQUIRED",
+  "wordpress_writes": 0,
+  "decision": "D05",
+  "goal": "Genuinely enforce the required Miben kér segítséget? service/topic choice for Form33 submissions originating from page272 without changing shared Form33 settings or affecting other pages.",
+  "proven_metform_server_contract": {
+    "entries_api": "MetForm Core Entries Api::post_insert obtains wp_get_referer(), converts it with url_to_postid(), and passes that post_id into Action::submit together with the form data.",
+    "validation_hook": "Action::submit applies mf_after_validation_check after built-in validation and rejects the request when the filter returns is_valid=false.",
+    "native_required_limit": "mf_input_required=yes is proven as native client-side required capability, but independent server rejection of a completely absent required radio was not identified in the audited generic PHP validator.",
+    "existing_project_pattern": "Code Snippets ID5 already uses mf_after_validation_check for Form33 photo-count validation. Its exact current body/priority must be read before adding another validation callback."
+  },
+  "preferred_scope_without_client_marker": {
+    "route_guard": "Confirm current REST request is the Form33 insert route /metform/v1/entries/insert/33 using the same proven route convention as ID5.",
+    "page_guard": "Inside the server filter, resolve wp_get_referer() through url_to_postid() and require integer post ID 272. This mirrors MetForm's own Entries API origin resolution and avoids adding a hidden frontend marker.",
+    "form_guard": "Require the exact live-read service radio mf_input_name. No field-name inference from label text.",
+    "existing_error_preservation": "If an earlier validation filter has already returned is_valid=false, return it unchanged so photo-count or other errors are not overwritten.",
+    "other_pages": "Return the incoming validation result unchanged for every referer post ID other than 272."
+  },
+  "mandatory_reads_before_code_generation": [
+    "Current Form33 _elementor_data/widget settings for #af-form-service: widget ID/type, exact mf_input_name, exact mf_input_required, current six option values/order.",
+    "Current Code Snippets ID5 exact PHP body, priority/registration style, active state and code_error so the new callback cannot mask or duplicate its behavior.",
+    "Current Code Snippets ID36 exact body/state because the semantic v003 successor is a separate package and must not be accidentally mixed with submission behavior.",
+    "Current page272 accepted Elementor hash/JSON and exact WPVibe quota/headroom when the connector exists again."
+  ],
+  "implementation_boundary": {
+    "separate_from_semantic_v003": true,
+    "shared_form33_edit": false,
+    "global_behavior_on_other_pages": false,
+    "smtp_change": false,
+    "external_submission_test": false,
+    "error_copy": "UNSET_UNTIL_CURRENT_NATIVE/SOURCE VALIDATION COPY IS PROVEN; do not invent user-visible text."
+  },
+  "acceptance_without_external_delivery": [
+    "Static/PHP readback: callback registered once, active, no code_error, strict page272 + Form33 route + exact field guards present.",
+    "Readback proves existing ID5 body/state unchanged and page272 Elementor/Form33 saved data unchanged.",
+    "If a non-delivering local validation path becomes available, prove missing service choice is rejected before entry storage while a populated service value reaches the existing validation chain; do not send an external message.",
+    "If no safe non-delivering validation execution is available, keep runtime behavior status explicitly unproven rather than submitting a real form."
+  ],
+  "rollback": "Disable/restore only the exact newly created or updated page272 validation snippet from its pre-read body. Do not alter Form33, ID5, ID6, Elementor data or shared media.",
+  "do_not_deploy_yet": true
+}
