@@ -1,0 +1,110 @@
+/* af-project:header-nav-visual-fix-v001:start */
+/* Header-only hotfix for the current Elementor/ElementsKit runtime menu. */
+/* Source contract: dark green text, transparent default state, sage hover/open state,
+   44px controls, 10px 13px padding, pill radius, one caret only. */
+
+body .elementor-element-a1000009 .elementskit-navbar-nav > li > a.ekit-menu-nav-link,
+body .elementor-element-a1000009 .elementskit-navbar-nav > li > .af-nav-dropdown-host > button {
+  min-height:44px!important;
+  padding:10px 13px!important;
+  border:1px solid transparent!important;
+  border-radius:999px!important;
+  background:transparent!important;
+  color:#173D2D!important;
+  box-shadow:none!important;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif!important;
+  font-size:.92rem!important;
+  font-weight:600!important;
+  line-height:1.2!important;
+}
+
+body .elementor-element-a1000009 .elementskit-navbar-nav > li > a.ekit-menu-nav-link:hover,
+body .elementor-element-a1000009 .elementskit-navbar-nav > li > a.ekit-menu-nav-link:focus-visible,
+body .elementor-element-a1000009 .elementskit-navbar-nav > li > .af-nav-dropdown-host > button:hover,
+body .elementor-element-a1000009 .elementskit-navbar-nav > li > .af-nav-dropdown-host > button:focus-visible,
+body .elementor-element-a1000009 .elementskit-navbar-nav > li > .af-nav-dropdown-host.is-open > button {
+  border-color:transparent!important;
+  background:rgba(47,93,70,.10)!important;
+  color:#173D2D!important;
+  box-shadow:none!important;
+}
+
+body .elementor-element-a1000009 .elementskit-navbar-nav > li.current-menu-item > a.ekit-menu-nav-link,
+body .elementor-element-a1000009 .elementskit-navbar-nav > li.current-menu-ancestor > a.ekit-menu-nav-link {
+  border-color:rgba(47,93,70,.20)!important;
+  background:#DDE7DF!important;
+  color:#173D2D!important;
+}
+
+/* Remove inherited magenta/red Elementor/ElementsKit state from dropdown triggers. */
+body .elementor-element-a1000009 .af-nav-dropdown-host > button,
+body .elementor-element-a1000009 .af-nav-dropdown-host > button:hover,
+body .elementor-element-a1000009 .af-nav-dropdown-host > button:focus,
+body .elementor-element-a1000009 .af-nav-dropdown-host > button:focus-visible,
+body .elementor-element-a1000009 .af-nav-dropdown-host.is-open > button {
+  outline-color:transparent!important;
+  text-decoration:none!important;
+}
+
+/* The runtime button currently inherits more than one dropdown indicator.
+   Keep a single 12x12 ElementsKit indicator and suppress every additional indicator. */
+body .elementor-element-a1000009 .af-nav-dropdown-host > button .elementskit-submenu-indicator {
+  display:inline-flex!important;
+  flex:0 0 12px!important;
+  width:12px!important;
+  height:12px!important;
+  margin:0!important;
+  padding:0!important;
+  color:currentColor!important;
+  font-size:12px!important;
+  line-height:12px!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+body .elementor-element-a1000009 .af-nav-dropdown-host > button .elementskit-submenu-indicator ~ .elementskit-submenu-indicator,
+body .elementor-element-a1000009 .af-nav-dropdown-host > button > .icon,
+body .elementor-element-a1000009 .af-nav-dropdown-host > button > .ekit-submenu-indicator,
+body .elementor-element-a1000009 .af-nav-dropdown-host > button > i:not(.elementskit-submenu-indicator) {
+  display:none!important;
+}
+body .elementor-element-a1000009 .af-nav-dropdown-host.is-open > button .elementskit-submenu-indicator {
+  transform:rotate(180deg)!important;
+}
+
+/* Dropdown panel geometry and colors from the live reference. */
+body .af-nav-dropdown-panel {
+  top:calc(100% + 8px)!important;
+  min-width:268px!important;
+  padding:12px!important;
+  border:1px solid #D7D2C6!important;
+  border-radius:22px 26px 22px 26px!important;
+  background:#FFFEFC!important;
+  box-shadow:0 28px 70px rgba(23,61,45,.12)!important;
+}
+body .af-nav-dropdown-panel > a {
+  min-height:44px!important;
+  padding:10px 12px!important;
+  border:0!important;
+  border-radius:12px!important;
+  background:transparent!important;
+  color:#173D2D!important;
+  font-size:.92rem!important;
+  font-weight:600!important;
+}
+body .af-nav-dropdown-panel > a:hover,
+body .af-nav-dropdown-panel > a:focus-visible {
+  background:#DDE7DF!important;
+  color:#173D2D!important;
+  transform:translateX(3px)!important;
+}
+body .af-nav-dropdown-panel > a:before {
+  width:10px!important;
+  height:10px!important;
+  border-radius:4px 64% 4px 64%!important;
+  background:#7D9B83!important;
+}
+body .af-nav-dropdown-panel > a:hover:before,
+body .af-nav-dropdown-panel > a:focus-visible:before {
+  background:#B59A61!important;
+}
+/* af-project:header-nav-visual-fix-v001:end */
