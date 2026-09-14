@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "package": "bio-page256-structure-execution-safety-20260914-v013",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "future execution safety only; zero WordPress writes; does not override current page264-only STATE scope",
+  "input_plan": "build/bio-page256-next-safe-package-20260914-v012.json",
+  "status": "STATIC_EXECUTION_GATE_REFINED_NOT_SENT",
+  "global_rule": "Every page256 mutation must be generated from a fresh current content/search return after baseline reconciliation. The plan's example/current fragments are evidence, not reusable old_content payloads.",
+  "operation_gates": [
+    {
+      "element": "af260015",
+      "change": "remove af-faq-content legacy class",
+      "gate": "Fresh search must return exactly one local field occurrence owned by af260015 and current live CSS/search must still prove the class has no second semantic/layout responsibility. If either count differs, stop and reconcile.",
+      "rollback": "Use exact postwrite local fragment to restore only the previous af260015 class value."
+    },
+    {
+      "element": "af260007",
+      "change": "group the two existing explanatory paragraphs in one neutral left wrapper",
+      "gate": "Fresh raw local snippet must unambiguously contain exactly the two source-exact explanatory p siblings plus the existing stress-card sibling inside the current af-sub-split. Build the replacement from those returned bytes; never reconstruct escaped Hungarian text or wrapper boundaries from this plan/history.",
+      "preserve": ["all paragraph bytes", "stress-card owner/content", "existing region role/name", "af260007 ID", "all existing classes"],
+      "rollback": "Capture exact prewrite local snippet and exact postwrite local snippet. Reverse only this local wrapper insertion if fresh frontend/AX shows regression; never restore an old full page blob."
+    },
+    {
+      "elements": ["af26000e", "af26000f", "af260012", "af260014"],
+      "change": "add typed g-af-src-wave class reference",
+      "gate": "For each container separately, fresh local search must prove its current typed classes state and the stored legacy af-source-wave marker. Skip any element that already has g-af-src-wave; never replace another typed class list wholesale.",
+      "rollback": "Remove only the newly added g-af-src-wave value from the exact affected element if that element alone regresses."
+    }
+  ],
+  "package_isolation": [
+    "Do not combine these structure edits with bio visual Additional CSS deployment.",
+    "Do not combine with stress aside->article semantic change; do that only after the structural af260007 readback creates the new authoritative local fragment.",
+    "Do not combine with expectations af260013 restructuring.",
+    "Do not touch ID35 or global/shared Form33/header/dock."
+  ],
+  "mandatory_closeout": [
+    "Fresh page256 bytes/SHA/JSON after all selected mutations.",
+    "Frontend source-target structural order check.",
+    "7/7 region names, review tabs, FAQ button names and final CTA semantics unchanged.",
+    "Any 429 write result is UNKNOWN until exact fragment/hash readback; no blind retry."
+  ],
+  "wordpress_writes": 0
+}
