@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "package": "floating-contact-dock-diagnostic-plan-20260914-v001",
+  "date": "2026-09-14",
+  "scope": "Global floating quick-contact component only. Diagnostic/preparation; no WordPress write.",
+  "status": "PROVEN_VISUAL_DELTA_NEEDS_FRESH_LIVE_CASCADE_READ",
+  "direct_evidence": {
+    "browser": "same existing Opera source/target pair",
+    "viewport_px": [1640, 920],
+    "source_visual": "White floating pill visibly contains phone icon, e-mail icon and green Felmérést kérek CTA.",
+    "target_visual": "Same-position white pill is almost entirely blank/clipped.",
+    "target_ax": [
+      "complementary: Gyors kapcsolatfelvétel",
+      "link: Telefonhívás: +36 30 539 48 20",
+      "link: E-mail írása: kreativ@alakfa-mester.hu",
+      "link: Felmérést kérek"
+    ],
+    "conclusion": "Markup/content/runtime are present. The defect is visual/layout/cascade, not missing DOM."
+  },
+  "prior_evidence": {
+    "report": "reports/header/header-parity-live-20260914-v006.json",
+    "known": "Base .dock CSS previously contained phone/mail mask icons and CTA; later .af-source-dock override was observed to change safe-area bottom only. No write was justified then because the visual defect had not been reproducibly captured."
+  },
+  "required_fresh_reads_when_wpvibe_returns": [
+    "Verify requested +5 WPVibe account, site connection and exact rolling quota first.",
+    "Read current Code Snippets ID7 body/hash without writing; identify the exact dock markup/classes it emits and preserve current href/aria-label strings.",
+    "Search current Hello Additional CSS post8 for '.dock', '.af-source-dock' and the exact emitted child classes. Return small snippets only; do not round-trip the full field.",
+    "Inventory all winning/relevant declarations for display/flex/grid, width/min-width/max-width, height/min-height/max-height, overflow, opacity, visibility, position/inset, transform, z-index, color/background and child flex/shrink/grow.",
+    "Reconcile post8 marker/hash after page264 v004+v005 before preparing any global CSS block."
+  ],
+  "fix_rule": [
+    "Do not recreate dock markup or add a second runtime owner.",
+    "Prefer the smallest CSS-only correction against the exact existing owner classes.",
+    "Do not touch header nav, page bodies, footer or forms.",
+    "If a later rule is proven to override a correct base rule, fix only that property/cascade at equal or narrower scope rather than restating the full component.",
+    "After deployment, source/target same-browser screenshot plus AX readback must prove all three visible controls and preserved accessible names."
+  ],
+  "rollback": "Remove only the new dedicated dock marker block if regression appears; never restore an old full Additional CSS snapshot.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
