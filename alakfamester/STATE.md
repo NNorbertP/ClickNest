@@ -9,6 +9,7 @@ Repository: `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 **WordPress write scope:** only page264 may change. A Hello Additional CSS edit is permitted only when every effect selector is explicitly page264-scoped. Do not modify another page, global header/footer template, shared media, shared plugin setting, SMTP or send a real/external form test from this package.
 
 Current planning/evidence:
+- `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json` — authoritative consolidated page264 acceptance ledger; use this first to avoid reopening already-passed work;
 - `reports/subpages/oldtrees-continuation-20260914-v007.json`
 - `reports/subpages/oldtrees-visual-live-qa-20260914-v006.json`
 - `reports/subpages/oldtrees-direct-live-compare-20260914-v005.json`
@@ -134,7 +135,7 @@ These are not reasons for more static/semantic writes.
 
 ## Remaining QA after/around v006/v007
 
-Follow `build/oldtrees-next-remote-window-20260914-v001.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
+Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `build/oldtrees-next-remote-window-20260914-v001.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
 
 Visual:
 - after v007 or if a newer rule already fixes it, prove equal desktop comparison columns/source-like wrapping and preserve beige/sage surfaces/icons/bullets;
@@ -158,8 +159,8 @@ Local Chromium exists but this runtime DNS cannot resolve the Clicknest hosts. G
 
 ## Current status
 
-**Elkészült:** page264 content/semantics; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; v006+v007 single-write bundle and exact next-window plan prepared.  
-**Ellenőrzött:** historical live hash; v004/v005 markers; v004 icons/bullets; final review AX; tiszafa initial AX; Nordmann static AX; v006/v007 static scopes; shared Form33 helpers/settings.  
+**Elkészült:** page264 content/semantics; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; v006+v007 single-write bundle and exact next-window plan prepared; authoritative page264 acceptance ledger consolidated.  
+**Ellenőrzött:** historical live hash; v004/v005 markers; v004 icons/bullets; final review AX; tiszafa initial AX; Nordmann static AX; v006/v007 static scopes; shared Form33 helpers/settings; already-passed work separated from proof-only and hold/no-write items in the ledger.  
 **Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; hero root-cause proof; interaction acceptance; service-radio required proof; page264-scoped dock diagnosis; deterministic pixel matrix.  
 **Következő művelet:** verify WPVibe +5 connection/quota → hash/marker preflight → fresh two-delta visual gate → at most one selected CSS write → mandatory readback → targeted QA.  
 **Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; estimated selected remote package ~5–8 calls plus the mandatory 10-call reserve, but actual counter must be read first.
