@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "hedge-scope-recovery-gallery-pass-20260914-v004",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "page_id": 272,
+  "status": "PASS",
+  "scope_recovery": {
+    "shared_media_count": 26,
+    "verified_exact_prepackage_map": true,
+    "pending": [],
+    "last_two_confirmed": {
+      "110": "Saját sövénymunka, 15. kép",
+      "111": "Saját sövénymunka, 16. kép"
+    },
+    "rule_after_pass": "No further shared-media write is allowed for Hedge parity."
+  },
+  "page272_gallery": {
+    "widget_id": "b2e2c001",
+    "widget_path_current": "$[0].elements[10].elements[1]",
+    "item_count": 28,
+    "all_media_ids_zero": true,
+    "repeater_ids": ["b2e2c101","b2e2c102","b2e2c103","b2e2c104","b2e2c105","b2e2c106","b2e2c107","b2e2c108","b2e2c109","b2e2c10a","b2e2c10b","b2e2c10c","b2e2c10d","b2e2c10e","b2e2c10f","b2e2c110","b2e2c111","b2e2c112","b2e2c113","b2e2c114","b2e2c115","b2e2c116","b2e2c117","b2e2c118","b2e2c119","b2e2c11a","b2e2c11b","b2e2c11c"],
+    "first_name": "Babérmeggy sövény a nyírás előtt",
+    "last_name": "Sövénymunka, 21. kép",
+    "urls_and_order_verified_from_live_json": true,
+    "expected_accessible_name_source": "eael_fg_gallery_item_name fallback, independent from shared attachment alt metadata"
+  },
+  "page272_new_baseline": {
+    "elementor_bytes": 53041,
+    "elementor_sha256": "b283e07f441a11a8f2390a685c91323ea66d58be2b15713c2b4e6d1ca35d0627",
+    "json_valid": true,
+    "delta_from_previous_53097_bytes": -56,
+    "delta_explained": "28 three-digit attachment ids were replaced by numeric 0 inside page272 only: 28 * 2 bytes shorter = 56 bytes. Live JSON_TABLE readback proved all 28 values are 0 and preserved the associated item names, URLs and repeater IDs."
+  },
+  "wpvibe": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "exact_counter_before_package": "76/300 used, 224 remaining",
+    "mandatory_D11_reserve": 10,
+    "host_throttle_after_pass": "HTTP 429 returned again during preflight for the next semantic package; no semantic write was started after the 429."
+  },
+  "next": "Execute build/hedge-page272-legacy-semantics-20260914-v003.json only after fresh page272 hash match and unique content/search preflight, then inspect live e-tabs schema before any Atomic review semantics change.",
+  "pixel_pass": false
+}
