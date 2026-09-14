@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "package": "bio-parity-resume-20260914-v007",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "scope": "page256 only",
+  "known_prepackage_baseline": {
+    "bytes": 34930,
+    "sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+    "json_valid": true
+  },
+  "confirmed_writes_before_throttle": {
+    "af260007_terminal_periods_removed": 4,
+    "af260010_terminal_periods_removed": 4,
+    "total_confirmed_periods_removed": 8,
+    "last_successful_reported_bytes": 34922
+  },
+  "unknown_429_write": {
+    "element": "af260013",
+    "operation": "remove terminal period from expectation list item 1",
+    "rule": "Outcome is UNKNOWN. Page272 proved a 429-returned content/edit may still execute. Never retry without readback."
+  },
+  "first_readback_decision_table": [
+    {
+      "bytes": 34922,
+      "meaning_if_no_other_drift": "Only the eight confirmed af260007/af260010 one-byte period removals are present; the 429-returned af260013 item-1 edit did not persist.",
+      "next": "Search af260013 raw escaped snippet and remove all five remaining terminal periods one by one only where present."
+    },
+    {
+      "bytes": 34921,
+      "meaning_if_no_other_drift": "The eight confirmed removals plus the 429-returned af260013 item-1 period removal are present.",
+      "next": "Search af260013 raw escaped snippet and remove only the remaining four terminal periods."
+    },
+    {
+      "bytes": "other",
+      "meaning": "Manual/concurrent drift or additional delayed mutation exists.",
+      "next": "Stop writes; inventory af260007/af260010/af260011/af260013/9a1b2c3d with raw escaped content/search and reconcile before editing."
+    }
+  ],
+  "expected_punctuation_only_bytes_after_all_13_source-absent_periods_are_removed_if_no_other_change": 34917,
+  "remaining_semantic_work_after_punctuation": [
+    "af260011: source-exact uppercase column headers TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY",
+    "af260011: four first-column body cells become th scope=row",
+    "af260007: complete legacy named region Miért nem ér véget a munka a metszéssel?",
+    "af260010: complete legacy named region Mit jelent nálam a biológiai, mikrobiológiai megközelítés?",
+    "af260011: complete legacy named region Mire figyelek a leggyakrabban?",
+    "af260013: complete legacy named region Mit várhatunk – és mit nem?",
+    "9a1b2c3d: explicit source-exact aria-label only if fresh AX still differs"
+  ],
+  "execution_contract": [
+    "Fresh bytes/SHA/JSON readback first.",
+    "Use content/search with ASCII anchors or exact escaped snippets returned by the server.",
+    "Use guarded match-once content/edit only; no full Elementor save, raw SQL mutation or old snapshot restore.",
+    "A 429 on a write makes its outcome UNKNOWN until readback.",
+    "Do not guess Elementor 4.2.4 Atomic hero/FAQ/review-tablist attributes.",
+    "No SMTP, real submission, global template/CSS/plugin or other-page write."
+  ]
+}
