@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "package": "bio-review-anchor-parity-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "af26000d",
+  "status": "PROVEN_DELTA_PREPARE_ONLY_EXACT_RAW_SEARCH_REQUIRED",
+  "source": {
+    "section_id": "ugyfelvelemenyek",
+    "heading": "Amit a megbízóim mondanak",
+    "deep_link": "#ugyfelvelemenyek",
+    "deep_link_behavior": "existing Opera source tab scrolls to the review section"
+  },
+  "target": {
+    "rendered_section": "elementor-element-af26000d af-reviews-section",
+    "id": "absent in last rendered HTML",
+    "deep_link_behavior": "#ugyfelvelemenyek leaves the target at the hero; repeated once in the existing target tab",
+    "text_fragment_behavior": "text-fragment attempt also did not provide a stable scroll target; no extra tab opened"
+  },
+  "decision": "Add the exact source section ID only if a future fresh _elementor_data content/search around af26000d proves a safe owner/settings boundary. Do not full-save Elementor and do not guess a typed Atomic attribute payload.",
+  "safe_candidate": {
+    "preferred_if_supported_by_exact_live_shape": "Use the same proven _cssid mechanism already rendered by other Atomic page256 sections, but only after seeing the current escaped af26000d settings snippet.",
+    "required_value": "ugyfelvelemenyek",
+    "must_preserve": [
+      "af-reviews-section class",
+      "b2560005 native Atomic Tabs hierarchy",
+      "ID35 review runtime semantics",
+      "tab/panel IDs and accessible names",
+      "all review copy/images/alt text"
+    ]
+  },
+  "verify_after_future_write": [
+    "fresh page JSON/hash readback",
+    "frontend section exposes id=ugyfelvelemenyek exactly once",
+    "same existing target Opera tab #ugyfelvelemenyek navigation lands on review section",
+    "review AX names/buttons unchanged"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
