@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "package": "bio-next-window-deployment-plan-20260914-v013",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "Only https://alakfamester-wp.clicknest.hu/biologiai-vedelem/ may be affected. Reference is read-only. No other page/template/media/plugin setting/SMTP/external message write.",
+  "status": "PREPARED_NOT_STARTED_LOW_QUOTA_AND_HOST_429",
+  "latest_exact_quota": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "used": 276,
+    "limit": 300,
+    "remaining": 24,
+    "D11_reserve": 10,
+    "nominal_above_reserve": 14,
+    "decision": "Do not start. Recent target-side 429s can spend three automatic retries per nominal site call."
+  },
+  "authoritative_page_baseline": {
+    "elementor_data_bytes": 35382,
+    "elementor_data_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "semantic_runtime_snippet": 35
+  },
+  "prepared_proven_css": [
+    {
+      "file": "build/bio-visual-parity-v001.css",
+      "commit": "fa54f456427b23ea486f1d24dc0373a7df6a14f9",
+      "content_sha": "8859a3ce497f00b947d19851d6312a90ac8852e4",
+      "marker": "af-bio-visual-v001",
+      "covers": ["legacy eyebrow bronze leaf", "technology lead/cards/source watermark/checklist", "symptom-table visual surface", "FAQ source-like native-details styling"]
+    },
+    {
+      "file": "build/bio-hero-layout-parity-v001.css",
+      "commit": "1aa319be9f37a52b8a38d243c18e73ea57eeeb1f",
+      "marker": "af-bio-hero-layout-v001",
+      "covers": ["desktop >900 source 1.06/.94 hero columns", "source copy measure", "contact spacing/button geometry", "proof-row source rhythm/wrap"]
+    }
+  ],
+  "prepared_but_not_first_deploy": [
+    {
+      "file": "build/bio-visual-parity-v002-expectations.css",
+      "commit": "018b6b8d80b834b11cf0850c998b160591d7e33e",
+      "reason": "Source semantic/list grouping is strong, but no direct middle-section screenshot could be captured with the current Opera connector. Keep separate until live/raw preflight and preferably additional visual proof."
+    }
+  ],
+  "recommended_first_remote_package": {
+    "goal": "Deploy only the two proven CSS layers in one guarded Additional CSS insertion, then verify before any content mutation.",
+    "minimum_call_shape": [
+      "1 account-level exact quota read",
+      "1 compact page256 Elementor bytes/SHA/JSON read",
+      "1 compact Additional CSS bytes/SHA/marker-count read",
+      "1 content/search for exact unique af-project:end snippet",
+      "1 guarded content/edit inserting BOTH complete proven CSS blocks immediately before af-project:end",
+      "1 compact Additional CSS readback (hash + each new marker count + af-project:end count)",
+      "1 compact page256 Elementor bytes/SHA/JSON readback proving saved page content unchanged"
+    ],
+    "required_capacity": "Start only if the complete 7-call package plus 10-call D11 reserve safely fits AND the target is no longer burning retry bursts. Prefer >=30 remaining before start because a single 429 may cost three calls and rollback/readback margin is required.",
+    "write_rule": "If the CSS content/edit returns 429, outcome is UNKNOWN. Do not retry. First read back both marker counts/hash when safe.",
+    "rollback": "If fresh visual/AX QA shows a regression, surgically remove only the exact two marked blocks; never restore an old full post8 snapshot."
+  },
+  "post_css_opera_qa": [
+    "Reuse only the existing source/target Opera tabs; open no new diagnostic tabs.",
+    "Top hero: source/target copy start, third proof-item wrap, hero illustration preservation, CTA links.",
+    "Technology #technologiak: eyebrow bronze leaf, two-line lead at sampled desktop, card height/padding/radii/shadow/sage hairline/background leaf, existing icon badges, green check markers; source listMarker count stays 0 and target use-case listMarker becomes 0.",
+    "Table: source-like organic surface/header tint/cell spacing while exact uppercase headers and four rowHeader roles remain.",
+    "FAQ: closed visual state and names; native details behavior remains owner. If connector cannot click, do not claim open-state interaction PASS from CSS alone.",
+    "Re-run compact AX inventory for 7 region names, review tablist/tabs/buttons, table headers/rowHeaders, final mailto name."
+  ],
+  "second_remote_microfix_after_css_pass": {
+    "resource": "af260007 stress card",
+    "finding": "Reference stress card is article; target is aside and AX role complementary. Content is source-exact.",
+    "method": "Fresh content/search on af260007 / A növény stressze. From the returned exact escaped snippet, match-once replace opening <aside ...> with <article ...> and matching closing </aside> with </article>. Do not change class/content/order.",
+    "verification": "Fresh page256 bytes/SHA/JSON plus target AX must expose article and no complementary for this stress card; all text/list items unchanged.",
+    "do_not": "Do not reconstruct the full widget from memory and do not combine this mutation with unrelated af260013 wrapper work."
+  },
+  "third_remote_investigation_only": {
+    "resource": "af260013 expectations",
+    "source": "Two article semantics: expectations comparison article + how-it-connects article.",
+    "target": "Same headings/lists/link but no article roles; raw markup previously shows af-sub-split with af-card-positive/af-card-muted.",
+    "next": "Fresh content/search first. Only if exact raw boundaries make two neutral article wrappers unambiguous may a match-once mutation be prepared. Otherwise leave open."
+  },
+  "hard_preserve": [
+    "No full Elementor save.",
+    "No raw SQL writes.",
+    "Code Snippets ID35 stays active and page256 guarded.",
+    "13 corrected list strings, table semantics, all region names, review semantics, CTA aria-label/href stay exact.",
+    "Existing source-measured 1920/1440/1024/768/390/360 section heights / hero h1 / art / wave rules remain untouched.",
+    "Global header/nav/floating dock remain out of page256-only scope."
+  ],
+  "formal_open": [
+    "Stress checklist marker/card visual variant lacks direct source screenshot evidence.",
+    "Expectations v002 visual CSS remains prepared but not in first deploy package.",
+    "#technologiak source outer-anchor ownership is not proven; no guessed ID move or scroll offset.",
+    "Deterministic six-viewport screenshot overlay/diff unavailable; PIXEL_PASS=false."
+  ],
+  "wordpress_writes_in_plan_creation": 0,
+  "pixel_pass": false
+}
