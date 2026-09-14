@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "page_id": 268,
+  "source": "https://alakfamester.clicknest.hu/referencia-videok.html",
+  "target": "https://alakfamester-wp.clicknest.hu/referencia-videok/",
+  "governing_evidence": "reports/subpages/reference-videos-structure-finalization-v001.json",
+  "preflight": {
+    "live_elementor_bytes": 45773,
+    "live_elementor_sha256": "b16abccf8de83a3e55fe46b3ed319acfec9d26e695a1933371f94a962ecd28c7",
+    "verified_sibling_order": ["af2c0007", "af2c0102", "af2c0107"],
+    "d18_atomic_legacy_css_class_risk": "No affected Atomic container used legacy _css_classes; the only page268 _css_classes occurrence was on the legacy text-editor widget af-section-heading. Affected Atomic containers already used typed V4 settings.classes.",
+    "wpvibe_quota_before_package": "42/300 used, 258 remaining"
+  },
+  "write": {
+    "method": "Temporary admin-only Code Snippets REST helper, guarded by exact SHA and sibling-order preconditions, then internal authenticated call to WPVibe /wpvibe/v1/elementor/save-page.",
+    "temporary_snippet_id": 24,
+    "temporary_snippet_status_after_verification": "inactive",
+    "element_ids_preserved": ["af2c0107", "af2c0007", "af2c0102"],
+    "new_sibling_order": ["af2c0107", "af2c0007", "af2c0102"],
+    "save_warnings": [],
+    "post_save_elementor_bytes": 46622,
+    "post_save_elementor_sha256": "af362a9e7295cf06757b94c487e7504dbc5a01f84ee956906c16d6c93059e747",
+    "post_modified_gmt": "2026-09-14 14:23:50"
+  },
+  "verification": {
+    "data_readback": "PASS: JSON_SEARCH confirms af2c0107 is child 0, af2c0007 child 1, af2c0102 child 2 inside af2c0101.",
+    "frontend_accessibility_order": "PASS: fresh Opera accessibility tree shows heading 'Ugyanezt a munkát az Ön kertjében is elvégzem' before 'Kínai hibrid terülő boróka (Niwaki) nyírása – Mire figyeljünk?'.",
+    "video_controls": "PASS: fresh browser tree shows seven 'Videó lejátszása' buttons; live Elementor data contains exactly seven legacy video widgets.",
+    "cta_link": "PASS: 'Tovább az űrlaphoz' remains https://alakfamester-wp.clicknest.hu/kapcsolat/#ajanlatkeres.",
+    "editor_reopen": "BLOCKED: Opera was redirected to wp-login.php with reauth=1, so authenticated editor-reopen proof was not available in this session. WPVibe save-page returned the canonical edit URL and no save warnings, but this is not recorded as editor PASS.",
+    "controlled_six_viewport_visual_acceptance": "OPEN: the current browser connector does not expose deterministic viewport/DPR/zoom controls required by the documented six-viewport matrix."
+  },
+  "repo_spec_availability": {
+    "acceptance_json": "missing from main tree",
+    "behaviors_json": "missing from main tree"
+  },
+  "status": "STRUCTURAL_FIX_PASS_EDITOR_REOPEN_AND_CONTROLLED_VISUAL_OPEN",
+  "pixel_pass": false
+}
