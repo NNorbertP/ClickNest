@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "package": "hedge-review-panel-preservation-audit-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Separate already-proven native review structure/tab-name contract from the remaining exact inner-panel preservation proof so no quote/image content is reconstructed or rewritten from memory.",
+  "proven": {
+    "native_structure": "D12 migration produced exactly 3 tabs and 3 panels under c3d30005 and removed the custom af-project-reviews owner.",
+    "review_images_saved": [75, 76, 77],
+    "first_panel_browser_proof": "Historical Opera QA directly exposed the active Panasonic panel and its review image/text.",
+    "late_structure_readback": "Later closeout proved one tablist, three tabs, three tabpanels and no duplicate numbered index buttons.",
+    "exact_tab_name_contract": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "name_contract_resolution": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json"
+  },
+  "not_proven_exactly_enough_for_closeout": [
+    "full normalized quote text of all three current target tabpanels versus the reference",
+    "visible company/person/role lines inside panel 2 and panel 3 versus the reference",
+    "rendered image src/media identity/accessibility text inside panel 2 and panel 3 versus the reference",
+    "exact tab aria-controls -> panel id and panel aria-labelledby -> tab id bijection for all three current rendered panels after current runtime",
+    "whether any later page edit accidentally changed panel inner content while preserving the outer native tab structure"
+  ],
+  "repository_search_result": "No committed page272 whole Elementor payload/back-up or review-specific build artifact was found that preserves all three complete panel internals. The native-review evidence commit stores counts/IDs/readback summary, not the full subtree content.",
+  "decision": "Do not recreate, replace or normalize review panel content from historical names, attachment IDs or memory. Treat current saved content as protected and capture exact rendered preservation evidence first.",
+  "future_single_payload_capture": {
+    "for_each_index_1_to_3": [
+      "tab DOM id",
+      "tab visible text and computed accessible name",
+      "tab aria-controls",
+      "panel DOM id",
+      "panel aria-labelledby",
+      "panel hidden/selected relation",
+      "full normalized visible quote text",
+      "visible company/person/role line(s)",
+      "review image src/currentSrc or stable media identity clue",
+      "review image alt/computed accessible name",
+      "panel order within review root"
+    ],
+    "global_checks": [
+      "exact one-to-one tab↔panel relation for 3 pairs",
+      "no panel content duplicated across tabs",
+      "no review image duplicated unintentionally across panels",
+      "current target values compared against one trustworthy reference read before any content correction"
+    ]
+  },
+  "write_rule": "A mismatch found here must be handled as a separate smallest-owner content/media correction after exact source-target proof. It must not be folded into ID36 v004, whose contract is attribute-only.",
+  "call_budget_effect": "NONE if harvested from the already-planned broad rendered DOM/HTML payload.",
+  "status": "STRUCTURE_AND_TAB_NAMES_PROVEN_FULL_THREE_PANEL_CONTENT_PRESERVATION_READ_ONLY_OPEN"
+}
