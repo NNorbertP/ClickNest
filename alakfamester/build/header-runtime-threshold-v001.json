@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only runtime behavior",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT",
+  "goal": "Change only the header sticky-state scroll threshold from the target's documented 24 px to the reference's documented 8 px, while preserving the existing 1240 px mobile breakpoint and every other snippet behavior.",
+  "snippet": {
+    "id": 7,
+    "known_marker": "af-header-nav-parity-v005",
+    "known_current_threshold_px": 24,
+    "desired_threshold_px": 8,
+    "mobile_breakpoint_px_must_remain": 1240
+  },
+  "supported_plugin_path": {
+    "plugin": "Code Snippets",
+    "namespace": "code-snippets/v1",
+    "get": "/code-snippets/v1/snippets/7",
+    "update": "/code-snippets/v1/snippets/7",
+    "update_method": "PUT",
+    "minimum_update_body": ["code"],
+    "notes": [
+      "The plugin's REST controller updates an existing Snippet object and only replaces fields present in the request.",
+      "Do not use raw SQL or generic search-replace on the snippets table.",
+      "Do not toggle activation separately unless fresh readback proves the snippet became inactive.",
+      "If a future verified installed plugin version supports POST plus HTTP method override and PUT is blocked upstream, document that version before using the override. Do not guess."
+    ],
+    "upstream_proof": {
+      "controller": "codesnippetspro/code-snippets src/php/REST_API/Snippets/Snippets_REST_Controller.php",
+      "controller_blob_sha": "c1b8ff455857493d4f5d7a398044efb7a0f1a611",
+      "base_controller": "src/php/REST_API/REST_Collection_Controller.php",
+      "base_controller_blob_sha": "b06753eb4aa42c538e358b8a8f2a7efd4df76689",
+      "namespace_constant": "REST_API_NAMESPACE = code-snippets/v"
+    }
+  },
+  "guarded_execution": [
+    "Before write, re-read exact WPVibe quota and preserve D11 ten-call closeout reserve.",
+    "GET snippet 7 through the plugin REST API.",
+    "Require id=7, active=true, marker af-header-nav-parity-v005 present, and verify the exact current threshold expression before editing.",
+    "Hash the full current code and retain it as the rollback payload for this work package.",
+    "Produce an edited code value with exactly one semantic change: sticky threshold 24 px -> 8 px. Require the 1240 px breakpoint and all other code to remain byte-identical where possible.",
+    "PUT only the code field through /code-snippets/v1/snippets/7.",
+    "GET snippet 7 again; require marker present, active=true, no code_error, 8 px threshold, and no unrelated diff.",
+    "Verify frontend sticky state before/after 8 px scroll, desktop menu/dropdowns, mobile menu, focus/keyboard behavior and body scroll lock.",
+    "If any check fails, restore the exact pre-write code through the same plugin REST endpoint and verify again."
+  ],
+  "do_not_change": [
+    "page body",
+    "hero",
+    "footer",
+    "forms",
+    "other templates",
+    "SMTP",
+    "mobile breakpoint",
+    "menu link mapping",
+    "dropdown contents"
+  ]
+}
