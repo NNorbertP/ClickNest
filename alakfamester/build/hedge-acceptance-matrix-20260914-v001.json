@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "package": "hedge-acceptance-matrix-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "purpose": "Operational acceptance matrix for the page272-only continuation while repository acceptance.json/behaviors.json and deterministic browser tooling are unavailable. This file does not itself claim formal frozen acceptance.",
+  "write_scope": "Only page272-specific runtime/content may be changed. No shared media, shared Form33 settings, global templates/CSS/header/footer/dock or other page writes from this scope.",
+  "prewrite_invariants": {
+    "accepted_elementor_bytes": 53606,
+    "accepted_elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "must_preserve_ids": ["af2e004e","af2e004d","c3d30005","b2e2c001","af2e0011"],
+    "legacy_image_widgets_must_remain_absent": ["af2e0009","af2e000a","af2e000b","af2e000c","af2e000d","af2e000e"],
+    "shared_media_writes_allowed": false
+  },
+  "saved_content_and_structure": [
+    {"check":"hero project widget af2e004e present","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"hero SVG accessible title Nyírt sövénysáv díszes véggel + documented description","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"proof carousel af2e004d present with 21 source images","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"native Atomic reviews c3d30005 with exactly 3 tabs/panels","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"EAEL b2e2c001 has exactly 28 items, exact source order/names, 28 id=0, full resolution, original upload URLs","status":"PASS_CLOSED_DO_NOT_REWRITE"},
+    {"check":"MetForm widget af2e0011 / Form33 present","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"five complete legacy named regions preserved","status":"PASS_CLOSED"},
+    {"check":"Van hasonló növénye? full mailto range + exact accessible name","status":"PASS_CLOSED"},
+    {"check":"af2e004c exact source phone/e-mail accessible names + 24h reply sentence","status":"PASS_CLOSED"},
+    {"check":"canonical page-content links / anchors remain source-intent/D09 equivalent","status":"LAST_FRESH_PASS_RECHECK_AFTER_ANY_WRITE"}
+  ],
+  "runtime_semantics": [
+    {"check":"existing ID36 v001 active/code_error null before successor","status":"MUST_FRESH_READ"},
+    {"check":"review tablist accessible name Ügyfélvélemények","status":"CURRENT_OWNER_ID36_V001; REVERIFY"},
+    {"check":"three review tabs exact source full accessible names","status":"IMPLEMENTATION_OPEN_V003"},
+    {"check":"numbered/duplicate review dots absent from AX/tab order while pointer visuals preserved","status":"CURRENT_OWNER_ID36_V001; V003_PRESERVES"},
+    {"check":"#ajanlatkeres named region Küldjön fotót a sövényről","status":"IMPLEMENTATION_OPEN_V003"},
+    {"check":"Form33 name Ajánlatkérés + direct-call description + service group name + Település help relation","status":"IMPLEMENTATION_OPEN_V003; SHARED_CONTRACT_PROVEN"},
+    {"check":"hero outer region name","status":"HOLD_UNTIL_COMPLETE_ROOT_DOM_PROOF"},
+    {"check":"Sövénymunkák outer gallery region name","status":"HOLD_UNTIL_COMMON_HEADING_PLUS_GALLERY_ROOT_PROOF"}
+  ],
+  "form_functionality": [
+    {"check":"textarea effective rows=5","status":"SHARED_FORM33_ID6_ACCEPTED_PRESERVE"},
+    {"check":"photo upload 3-5 count server validation + 8 MB/file contract","status":"SHARED_FORM33_ID5_ACCEPTED_PRESERVE"},
+    {"check":"configured local success state","status":"SHARED_FORM33_ACCEPTED_PRESERVE_NO_REAL_SUBMISSION"},
+    {"check":"Miben kér segítséget? six radio options/name/order","status":"LAST_LIVE_AX_PASS; EXACT_WIDGET_SETTINGS_READ_NEEDED"},
+    {"check":"native radio mf_input_required=yes","status":"UNKNOWN_LIVE_READ_REQUIRED"},
+    {"check":"server rejects missing service/topic on page272 only","status":"IMPLEMENTATION_OPEN_AFTER_EXACT_FIELD_READ", "plan":"build/hedge-form-required-server-plan-20260914-v001.json"},
+    {"check":"validator behavior proof without entry/delivery","status":"PLANNED", "plan":"build/hedge-form-required-nondelivery-test-plan-20260914-v001.json"},
+    {"check":"SMTP/external delivery","status":"EXCLUDED"},
+    {"check":"real form submission","status":"EXCLUDED"}
+  ],
+  "interaction_acceptance": [
+    {"check":"reviews click/Arrow/Home/End implementation owner","status":"SHARED_D12_PASS; PAGE272_DIRECT_RUN_PROOF_ONLY"},
+    {"check":"proof carousel 4000ms autoplay","status":"PAGE272_HISTORICAL_LIVE_PASS_5_TO_6"},
+    {"check":"proof carousel ArrowLeft/ArrowRight","status":"PROOF_ONLY_OPEN"},
+    {"check":"proof carousel pointer swipe","status":"PROOF_ONLY_OPEN"},
+    {"check":"proof carousel hover/focus pause-resume","status":"PROOF_ONLY_OPEN"},
+    {"check":"proof carousel prefers-reduced-motion disables/restarts appropriately","status":"PROOF_ONLY_OPEN"},
+    {"check":"EAEL masonry rendering","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"EAEL Hedge lightbox behavior","status":"NO_WRITE_UNTIL_SOURCE_SPECIFIC_ZOOM_PROOF", "audit":"reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json"}
+  ],
+  "responsive_visual_matrix": {
+    "viewports": [1920,1440,1024,768,390,360],
+    "required_for_each": [
+      "same source/target browser engine, synchronized load/focus/animation state",
+      "known DPR and 100% zoom",
+      "hero top/copy/art geometry and section boundary",
+      "review tabs/card geometry and no overflow",
+      "maintenance/cards/content section spacing",
+      "Sövénymunkák masonry columns/gutters/natural image ratio",
+      "CTA/contact/form panel geometry and button text/contrast",
+      "footer/header only observed for regression; no global write from page272 scope"
+    ],
+    "known_gallery_contract": {
+      "desktop_columns": 4,
+      "tablet_columns": 3,
+      "mobile_columns": 2,
+      "source_like_721_767_columns": 3,
+      "desktop_gutter_px": 16,
+      "mobile_gutter_px": 12
+    },
+    "status":"BLOCKED_NO_DETERMINISTIC_VIEWPORT_OVERLAY_DIFF_RUNNER"
+  },
+  "visual_write_rule": "Do not prepare CSS from stale historical screenshots. Only a current synchronized source-target delta with proven DOM/style owner may justify a page272-local visual patch.",
+  "postwrite_readback_for_v003": [
+    "ID36 exact body matches intended v003 and is active/code_error null",
+    "page272 Elementor bytes/SHA unchanged because v003 is runtime-only",
+    "one Form33 wrapper/form and exact direct-call relation still present",
+    "post-footer-JS AX exact review/form semantics and no duplicate labels",
+    "hero/proof/gallery/form structural IDs still present",
+    "no new console/fatal/editor failure if editor proof becomes available"
+  ],
+  "tool_state": {
+    "wpvibe":"disabled/unavailable; exact +5 site/quota unknown",
+    "opera":"two existing tabs only but current Hedge AX/screenshot stale; do not use as acceptance evidence",
+    "acceptance_json":"absent",
+    "behaviors_json":"absent"
+  },
+  "pixel_pass": false,
+  "status": "MATRIX_READY_FORMAL_AND_LIVE_EXECUTION_BLOCKED"
+}
