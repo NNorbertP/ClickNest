@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "package": "bio-convergence-ledger-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_PREPARATION_REMOTE_BLOCKED",
+  "supersedes": "reports/subpages/bio-convergence-ledger-20260914-v002.json",
+  "resource_scope": "page256 only; shared/global CSS/runtime resources are read-only under current scope",
+  "delivery": "future page-local style owner only after carrier probe PASS",
+  "sections": [
+    {
+      "name":"hero",
+      "visual_state":"source-proven desktop geometry payload ready; existing contact/fact icons preserved",
+      "exact_state":"OPEN until live source-target hero CTA visual state and responsive checks are re-run",
+      "current_payload":"bio-hero-layout-parity-v003.css",
+      "do_not_use":"old hero v001/v002/decorative-icons"
+    },
+    {
+      "name":"reviews",
+      "visual_state":"quote v002 and dot v001 low-risk local fixes ready; ordinal decorative SVG strategy ready but isolated AX readback required; media first aspect diagnostic remains open",
+      "exact_state":"OPEN: missing #ugyfelvelemenyek; third author role current delta; ordinal AX staticText; prev/next source panel-focus mismatch; optional decor pending pseudo proof",
+      "oracles":["bio-review-source-interaction-contract-20260914-v001.json","bio-id35-public-runtime-audit-20260914-v001.json"],
+      "plan":"bio-reviews-current-fix-plan-20260914-v002.json"
+    },
+    {
+      "name":"wave_reviews_stress",
+      "visual_state":"exact source SVG payload ready in core wave block",
+      "exact_state":"READY_AFTER_LOCAL_STYLE_CARRIER"
+    },
+    {
+      "name":"stress",
+      "visual_state":"current-DOM v003 can render source p1+p2 left/card right and mobile p1->p2->card without moving nodes",
+      "semantic_state":"aside->article has atomic whole-word candidate if future saved data proves exactly two af260007 aside tokens",
+      "exact_state":"BLOCKED: saved/AX reading order remains p1->article/list->p2 instead of source p1->p2->article; no safe atomic node-move proven",
+      "plans":["bio-stress-current-dom-visual-v003.css","bio-stress-article-semantic-20260914-v001.json","bio-stress-source-visual-20260914-v003.json"]
+    },
+    {
+      "name":"wave_stress_technology",
+      "visual_state":"exact source SVG payload ready in core wave block",
+      "exact_state":"READY_AFTER_LOCAL_STYLE_CARRIER"
+    },
+    {
+      "name":"technology",
+      "visual_state":"source eyebrow/lead/cards/watermarks/hairline/checklist payload ready; current target icons and callout rail preserved",
+      "exact_state":"VISUAL_OPEN_UNTIL_LOCAL_DELIVERY_AND_RESPONSIVE_QA; content/order already source-like",
+      "payload":"bio-visual-parity-v001.css"
+    },
+    {
+      "name":"table",
+      "visual_state":"source table surface and stone gradient payloads ready",
+      "semantic_state":"compact conditional caption->external table-title + aria-labelledby transform prepared",
+      "exact_state":"OPEN until caption role disappears and source title ownership is proven without cell/header regression",
+      "plans":["bio-table-source-structure-20260914-v001.json","bio-table-source-structure-v001.css","bio-table-section-tone-v001.css"]
+    },
+    {
+      "name":"wave_table_expectations",
+      "visual_state":"exact source SVG payload ready in core wave block",
+      "exact_state":"READY_AFTER_LOCAL_STYLE_CARRIER"
+    },
+    {
+      "name":"expectations",
+      "visual_state":"source contract remains known",
+      "exact_state":"HARD BLOCKER: current h2/list wrappers/h3/p/link cannot be regrouped into the two source articles through a proven single atomic owner transform; v003 deploy is superseded by v004 HOLD",
+      "plan":"bio-expectations-source-structure-20260914-v004.json"
+    },
+    {
+      "name":"wave_expectations_FAQ",
+      "visual_state":"exact source SVG payload ready but dependency-bound",
+      "exact_state":"DEPLOY_ONLY_WITH_FAQ_PAPER_CONVERSION via bio-wave-source-faq-v001.css"
+    },
+    {
+      "name":"FAQ",
+      "visual_state":"source-like native details card/leaf plus-minus styling prepared; paper placement/order design prepared",
+      "exact_state":"HARD BLOCKER: source uses real buttons, aria-expanded/controls, sibling arrow/Home/End keyboard collection and custom motion; target native details remains functional but not exact; no sanctioned page-local runtime owner",
+      "oracle":"bio-faq-source-interaction-contract-20260914-v001.json"
+    },
+    {
+      "name":"final_CTA",
+      "visual_state":"accessibility-safe source band/mail/button/responsive design ready; eyebrow separated from h2 semantics",
+      "structure_state":"mail child-order microfix still required",
+      "exact_state":"OPEN until FAQ-order/mail structure/page-local CSS transaction and responsive QA pass",
+      "plan":"bio-faq-cta-source-layout-20260914-v006.json"
+    }
+  ],
+  "content_state": {
+    "protected_manifest":"bio-content-parity-manifest-20260914-v001.json",
+    "current_confirmed_text_delta":"third review author role line only",
+    "third_role_plan":"bio-review-third-author-role-text-20260914-v002.json"
+  },
+  "AX_state": {
+    "already_equal":"list9/listItem32/region7/table1/tab3/tabList1/tabPanel1",
+    "target_vs_source_remaining":"article3->6, complementary2->1, caption1->0, FAQ disclosure4->source button4",
+    "authority":"bio-ax-role-count-gate-20260914-v001.json"
+  },
+  "delivery_state": {
+    "global_Additional_CSS":"FORBIDDEN_WRITE under current scope",
+    "global_ID35":"PRESERVE_READ_ONLY under current scope",
+    "page_local_style_carrier":"UNPROVEN; probe is first future CSS write candidate",
+    "first_local_visual_payload":"bio-page-local-visual-delivery-20260914-v002.json"
+  },
+  "remote_state": {
+    "WPVibe":"disabled",
+    "plus5_site_quota":"unknown",
+    "STATE_md":"page264-only latest fresh read",
+    "Opera":"exactly two shared tabs; do not steal while page264 owns QA"
+  },
+  "current_result":"MANY_SAFE_FIXES_PREPARED_BUT_EXACT_PARITY_NOT_YET_POSSIBLE; PIXEL_PASS=false",
+  "wordpress_writes":0,
+  "pixel_pass":false
+}
