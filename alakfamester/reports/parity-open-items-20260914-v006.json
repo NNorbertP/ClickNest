@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "supersedes_for_planning": "reports/parity-open-items-20260914-v005.json",
+  "priority_queue": [
+    {
+      "priority": 1,
+      "resource": "page272 Hedge legacy semantics continuation",
+      "resume_payload": "build/hedge-page272-legacy-semantics-resume-20260914-v004.json",
+      "last_successful_reported_bytes": 53369,
+      "completed_regions": ["af2e0007", "af2e0045", "af2e0047", "af2e0049"],
+      "pending": ["fresh bytes/SHA/JSON + fragment inventory", "af2e000f region + source-exact mailto range", "af2e004c phone aria-label", "af2e004c email aria-label", "protected component/gallery/frontend closeout"],
+      "expected_bytes_if_no_drift_after_all_three_pending_replacements": 53606,
+      "preserve": "26/26 shared media recovery PASS; EAEL 28/28 ids=0, resolution full, original URLs; no further shared-media writes"
+    },
+    {
+      "priority": 2,
+      "resource": "page256 Biological Protection legacy parity",
+      "resume_payload": "build/bio-parity-resume-20260914-v007.json",
+      "known_baseline_before_punctuation": "34930 B / 1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+      "last_successful_reported_bytes": 34922,
+      "confirmed": "8 of 13 source-absent terminal periods removed",
+      "unknown": "first af260013 period-removal write returned 429; may or may not have executed",
+      "readback_branches": {"34922":"429 write absent; five af260013 periods remain","34921":"429 write persisted; four af260013 periods remain","other":"stop and reconcile drift"},
+      "pending_after_punctuation": ["af260011 uppercase headers", "four th scope=row cells", "four complete legacy regions", "CTA explicit aria-label only if fresh AX differs"],
+      "atomic_rule": "No guessed Elementor 4.2.4 hero/FAQ/review-tablist attributes."
+    },
+    {
+      "priority": 3,
+      "resource": "page264 Old Trees acceptance-only remainder",
+      "status": "content/semantics PASS to proven source contract; saved Elementor data preserved",
+      "live_helper": "build/oldtrees-semantic-runtime-v003.php",
+      "remaining": ["delayed-dot AX proof", "review keyboard interaction", "tiszafa pointer/keyboard", "Nordmann normal/reduced timed behavior", "formal pixel comparison"]
+    },
+    {
+      "priority": 4,
+      "resource": "global header",
+      "first_candidate": "build/header-nav-visual-fix-v001.css",
+      "static_qa": "reports/header/header-nav-visual-fix-static-qa-v001.json",
+      "reason": "Lower blast radius than the complete header remap; selectors are restricted to navigation/dropdown only.",
+      "precondition": "Fresh post8 hash/marker + header20 hash; do not write while host rate limiting is active.",
+      "later": "Only after nav CSS verification consider full header geometry and Code Snippets ID7 sticky threshold 24px -> 8px."
+    },
+    {
+      "priority": 5,
+      "resource": "shared review runtime",
+      "prepared": "build/reviews-controls-v006-dot-a11y-plan.json",
+      "status": "NOT DEPLOYED",
+      "gate": "More representative source-target proof is required before changing global Code Snippets ID14. Page264 is fixed page-scoped; do not globalize from insufficient evidence."
+    }
+  ],
+  "rate_limit": {
+    "evidence": "reports/rate-limit-diagnosis-20260914-v001.json",
+    "latest_account_checkpoint": "241/300 used; 59 remaining; D11 reserve 10",
+    "site_state": "Two separated read-only page272 probes both returned HTTP 429 after three automatic exponential-backoff retries with no Retry-After header.",
+    "browser_state": "Existing target Opera tab later became blocked/challenged; no new Opera tabs were opened.",
+    "rule": "Stop repeated site probes. A 429-returned write is UNKNOWN until exact readback; never blind-retry."
+  },
+  "formal_blockers": [
+    "specs/acceptance.json and specs/behaviors.json absent and must not be invented",
+    "deterministic six-viewport screenshot/overlay/diff unavailable",
+    "Opera connector has no click/keyboard action and target tab can be challenged",
+    "container cannot resolve Clicknest hosts",
+    "two exact source assets remain 404 without proven substitutes",
+    "SMTP/real form submission excluded from prompt 2"
+  ],
+  "pixel_pass": false
+}
