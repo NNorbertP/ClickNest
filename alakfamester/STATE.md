@@ -1,4 +1,4 @@
-# STATE - 2026-09-14, PAGE264 ONLY; V004+V005 LIVE; V006 CONTACT COLOR READY/GATED; NEW WPVIBE ACCOUNT UNVERIFIED
+# STATE - 2026-09-14, PAGE264 ONLY; V004+V005 LIVE; V006+V007 READY/GATED; NEW WPVIBE ACCOUNT UNVERIFIED
 
 ## Current continuation point — Idős fák / page264 only
 
@@ -8,66 +8,86 @@ Repository: `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
 **WordPress write scope:** only page264 may change. A Hello Additional CSS edit is permitted only when every effect selector is explicitly page264-scoped. Do not modify another page, global header/footer template, shared media, shared plugin setting, SMTP or send a real/external form test from this package.
 
-Authoritative evidence/plans:
-- `reports/subpages/oldtrees-continuation-20260914-v006.json`
+Current planning/evidence:
+- `reports/subpages/oldtrees-continuation-20260914-v007.json`
 - `reports/subpages/oldtrees-visual-live-qa-20260914-v006.json`
 - `reports/subpages/oldtrees-direct-live-compare-20260914-v005.json`
 - `reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json`
-- `reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json`
 - `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`
+- `build/oldtrees-next-remote-window-20260914-v001.json`
 
-## Live visual state — preserve v004 + v005
+## Live state to preserve
 
 Page264 visual **v004 and v005 are already live** in Hello Additional CSS.
 
-Last verified live facts:
-- page264 `_elementor_data`: **48874 B**, SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, JSON valid;
-- v004 marker inserted/read back exactly once;
-- post-v004 Additional CSS: **611030 B**, SHA256 **`87fb6f275f9550dfcb406ac855b1287f4cf4dbd15da226840e6d2d8c28108bb6`**;
-- v005 marker inserted/read back exactly once; v005 write returned **611423 B**;
-- full post-v005 CSS SHA was intentionally not spent because D11 reserve was preserved;
-- Elementor data remained unchanged.
+Last verified:
+- `_elementor_data`: **48874 B**, SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, JSON valid;
+- v004 marker inserted/read back once;
+- post-v004 Additional CSS **611030 B**, SHA256 **`87fb6f275f9550dfcb406ac855b1287f4cf4dbd15da226840e6d2d8c28108bb6`**;
+- v005 marker inserted/read back once; v005 write returned **611423 B**;
+- full post-v005 CSS SHA intentionally not spent because D11 reserve was preserved;
+- page264 Elementor data remained unchanged.
 
-v004 live capture proved source-like warning/growth icons and X/check leaf bullets in `Kivágás vagy átalakítás?`. v005 then narrowly fixed the comparison card background/stretch cascade.
+v004 proved source-like warning/growth icons and X/check leaf bullets. v005 made the beige/sage comparison surfaces and stretch rules win. Do **not** redeploy v001-v005 visual packages or older semantic packages.
 
-**Never redeploy** v001/v002/v003/v004/v005 bundles. In particular do not reinsert:
-- `build/oldtrees-visual-parity-v001.css`
-- `build/oldtrees-visual-parity-mobile-correction-v002.css`
-- `build/oldtrees-visual-parity-corrections-v003.css`
-- `build/oldtrees-visual-parity-bundle-v004.css`
-- `build/oldtrees-visual-parity-v004.css`
-- `build/oldtrees-visual-parity-v005-cascade-fix.css`
+## Two proven remaining page264-local visual deltas — prepared, NOT deployed
 
-The redundant continuation-only `build/oldtrees-visual-parity-v003.css` was deleted in commit `1f37656b9c56cc40a658c5c96fb114a02735602a` after the later live v004/v005 state was discovered.
+### v006 — request contact foreground
 
-## Proven remaining local visual delta — v006 prepared, NOT deployed
+Fresh same-browser 1640×920 evidence proves target green request-contact label/value text is dark while source is white. The panel alignment, compact clock and joined form panel are already much closer and must be preserved.
 
-Fresh same-browser 1640×920 source/target evidence after v005 proves one remaining page264-local request-form defect:
-- target green contact-button label/value text is dark;
-- reference label/value text is white;
-- panel alignment, compact clock and joined white form panel are much closer and should be preserved.
+Candidate: `build/oldtrees-visual-v006-contact-text-cascade.css`.  
+QA: `reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json`.
 
-Prepared candidate: `build/oldtrees-visual-v006-contact-text-cascade.css`.
-Static QA: `reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json`.
-
-v006 is deliberately minimal:
-- scope prefix: `body.page-id-264 #ajanlatkeres .elementor-element-af2a0054`;
-- 3 selectors;
-- `color` properties only;
-- forces button/strong to `#FFF !important` and label to `rgba(255,255,255,.9) !important`;
+Scope/effect:
+- `body.page-id-264 #ajanlatkeres .elementor-element-af2a0054` only;
+- three `color` declarations only;
+- button/strong `#FFF !important`, label `rgba(255,255,255,.9) !important`;
 - no layout/background/spacing/DOM/copy/MetForm/other-page/header/footer change.
 
-**v006 deployment gate:** fresh page264 + post8 readback must prove/reconcile saved-data state, `v004=1`, `v005=1`, `v006=0`, `af-project:end=1`, and no newer rule already fixed the foreground. Only then insert the complete marked v006 block once immediately before `af-project:end` by guarded server-side match-once content/edit. Any HTTP 429 write result is UNKNOWN until marker readback; never blind-retry.
+### v007 — comparison equal-column grid cascade
+
+Fresh post-v005 same-browser evidence proves source has two equal desktop comparison columns while target left card remains wider, right card narrower, with extra positive-card text wrapping. v004 already declares the correct 1fr/1fr + 24px contract but it loses in the live cascade.
+
+Candidate: `build/oldtrees-visual-v007-comparison-grid-cascade.css`.  
+QA: `reports/subpages/oldtrees-visual-v007-comparison-grid-static-qa-20260914-v001.json`.
+
+Scope/effect:
+- `body.page-id-264 .elementor-element-af2a0045` only;
+- makes display/grid-template/gap/stretch and card width constraints win with `!important`;
+- <=900px remains one column;
+- preserves v005 surfaces, icons, bullets, copy, DOM, form and other pages.
+
+### One-write option if BOTH still fail
+
+Bundle: `build/oldtrees-visual-v006-v007-single-write-bundle.css`.  
+QA: `reports/subpages/oldtrees-visual-v006-v007-single-write-static-qa-20260914-v001.json`.
+
+Use the bundle **only** if fresh preflight + fresh same-browser check proves both failures still reproduce. If only one fails, deploy only that standalone block. If neither fails, write nothing.
+
+Required preflight for any visual write:
+- verify +5 account/site/quota and preserve D11 10-call reserve;
+- fresh page264 saved-data hash/JSON reconciled;
+- fresh post8 marker inventory: `af-project:end=1`, v004=1, v005=1, and selected new marker(s)=0;
+- no newer live rule already fixes the selected failure;
+- one guarded server-side match-once insertion only;
+- any HTTP 429 write result is UNKNOWN until marker/hash readback; never blind-retry.
+
+Postwrite:
+- read back marker(s), unique `af-project:end`, unchanged page264 hash/JSON;
+- same-browser targeted capture must prove the selected defect closed with no v005/form geometry regression;
+- do not cache-purge unless fresh render is demonstrably stale.
 
 ## WPVibe account handoff
 
-Requested WPVibe identity was verified as **`ncsnorbert+20260914-5@gmail.com`**, email verified. `connect_site` returned a one-click WordPress authorization URL, but WPVibe became unavailable before `list_sites` / `site_info` could confirm approved site connection or rolling quota.
+Requested WPVibe identity was verified as **`ncsnorbert+20260914-5@gmail.com`**, email verified. `connect_site` returned a one-click authorization URL, but WPVibe became unavailable before `list_sites` / `site_info` could confirm site connection or rolling quota.
 
 Therefore:
-- current `-5` account site connection is **not confirmed**;
+- current `-5` site connection is **not confirmed**;
 - exact current quota is **unknown**;
 - do not reuse historical `-4` counters;
-- after WPVibe returns, verify identity + site + quota first and preserve D11's **10-call** closeout/recovery reserve.
+- verify identity + site + quota first when WPVibe returns;
+- keep **10 calls** for D11 closeout/recovery.
 
 No WordPress write was made through the unavailable `-5` connection in this continuation.
 
@@ -76,76 +96,70 @@ No WordPress write was made through the unavailable `-5` connection in this cont
 Runtime evidence: `reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json`, `reports/subpages/oldtrees-runtime-ownership-static-qa-20260914-v001.json`, `build/oldtrees-semantic-runtime-v003.php`.
 
 Preserve:
-- Code Snippets ID33 page guard `is_page(264)`;
-- exact three review tab accessible names;
-- numbered target-only review dots absent from AX/focus while visual/pointer behavior remains;
-- form accessible name/description, radio-group labelling and Település describedby;
-- tiszafa `.js-ba` initial 50%, range `0..100`, step `1`;
-- hero `af2a0052` exact accessible title/description;
+- ID33 page guard `is_page(264)` and its semantic fixes;
+- exact three review tab names and source-equivalent previous/next controls;
+- numbered duplicate review dots absent from AX/focus while pointer behavior remains;
+- form accessible name/description, service group labelling, Település describedby;
+- tiszafa initial value 50, native 0..100 step1 range;
+- hero `af2a0052` exact title/description;
 - seven-chip problem grid `af2a0007` and source SVG geometry;
 - exact comparison copy/caveat;
 - inline MetForm33 section and visible 24-hour reply;
-- current page264 IDs/order/data hash.
+- current page264 IDs/order/data baseline.
 
-Do not replay older semantic saved-data packages and do not add duplicate review/slider/carousel JS without a failing live proof.
+Do not add duplicate review/slider/carousel JS without a stable failing interaction proof.
 
 ## Shared MetForm33 — solved items must not be rebuilt
 
-`reports/home/metform33-source-parity-v001.json` is authoritative for shared Form33 behavior.
-
-Already implemented/read back:
-- **3–5 photo server validation**, 8 MB/file, active Code Snippets **ID5**, route-scoped to `/metform/v1/entries/insert/33`, field `fotok`;
-- textarea effective **5 rows**, active Code Snippets **ID6**, form33/uzenet-only guarded MutationObserver;
+`reports/home/metform33-source-parity-v001.json` proves:
+- 3–5 photo server validation, 8 MB/file, active ID5, route-scoped to Form33 endpoint;
+- `uzenet` effective 5 rows via active ID6, one guarded Form33-only MutationObserver;
 - success state configured/read back;
-- notifications/webhooks disabled, local entry storage enabled;
+- notifications/webhooks disabled, local entries enabled;
 - no SMTP or external submission.
 
-Do not add another photo validator, rows helper or success-state rewrite.
+Do not add another validator, rows helper or success-state rewrite.
 
-Only form validation proof still open: D05 requires the service/topic radio choice to be genuinely mandatory. Inspect fresh Form33 schema/runtime first; change nothing if required enforcement already passes.
+Only form validation proof still open: D05 requires service/topic radio submission-time mandatory enforcement. Existing repo evidence does **not** explicitly prove this property; inspect fresh Form33 schema/runtime read-only first and change nothing if already correct.
 
-## Direct acceptance evidence already PASS
+## Direct acceptance already PASS
 
 `reports/subpages/oldtrees-direct-live-compare-20260914-v005.json` proves:
-- review tab names exact source match;
-- only source-equivalent previous/next review buttons exposed; numbered duplicate dots absent from AX/focus;
+- review AX names/buttons exact source match and numbered dots absent;
 - tiszafa slider source/target accessible name and initial value 50 match;
-- Nordmann static AX control names for prev/next + dots 1–6 match;
+- Nordmann static AX controls prev/next + dots 1–6 match;
 - reviewed named page regions match source names/order.
 
 These are not reasons for more static/semantic writes.
 
-## Remaining QA after/around v006
+## Remaining QA after/around v006/v007
 
-Execute `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json` (schema v2). It is no-write by default, with exactly one proven conditional microfix: v006 contact foreground.
+Follow `build/oldtrees-next-remote-window-20260914-v001.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
 
 Visual:
-- verify post-v005 comparison beige negative card, sage positive card and equal height;
-- verify `#ajanlatkeres` panel continuity, 18×18 clock, contact styling and MetForm transition;
-- after v006 (or if a newer live rule already fixes it), prove white contact-button label/value without geometry regression;
-- hero left copy begins lower in the 1640×920 direct screenshot, but root cause is still unproven; **do not patch hero spacing without measured geometry + computed-style owner/cascade proof**;
-- floating contact dock has a proven target visual defect while AX content exists. Because this task is page264-only, do not deploy a global dock change; any future correction must first prove exact cascade ownership and be page264-scoped if executed from this task;
-- formal overlay/diff remains open, therefore **`PIXEL_PASS=false`**.
+- after v007 or if a newer rule already fixes it, prove equal desktop comparison columns/source-like wrapping and preserve beige/sage surfaces/icons/bullets;
+- after v006 or if already fixed, prove white request-contact foreground and unchanged panel/button geometry;
+- hero target copy begins lower in the existing 1640×920 comparison, but root cause is unproven: **no hero padding/margin patch without measured geometry + computed-style owner/cascade proof**;
+- floating contact dock is visually nearly empty/clipped while AX content exists. Do not recreate markup/runtime. This page264 task must not deploy a global dock fix; any future correction from this task must first prove exact cascade ownership and be page264-scoped;
+- `PIXEL_PASS=false` until deterministic same-browser exact viewport/DPR/zoom screenshot pair + overlay + diff exists.
 
-Interactions:
+Interaction:
 - reviews Arrow/Home/End;
 - tiszafa pointer + keyboard;
 - Nordmann ~4000 ms normal autoplay, ArrowLeft/Right, swipe, hover/focus pause/resume, reduced-motion stop/re-evaluation.
 
-Do not add another runtime layer unless a stable interaction-capable browser proves a failure.
+## Tooling / memory constraints
 
-## Tooling / Opera memory constraints
+Opera Browser Connector is disconnected. Only the two existing project tabs were reused; **zero new/replacement tabs** were opened. When stable again, use at most one source + one target tab and reuse them; stop on instability instead of tab fan-out.
 
-Opera Browser Connector is disconnected. During this continuation only the two existing project tabs were reused; **zero new tabs** were opened. When stable again, use at most one source + one target tab and reuse them; do not create replacements merely because the connector becomes unstable.
+Local Chromium exists but this runtime DNS cannot resolve the Clicknest hosts. Generic web fetch/search also cannot currently fetch these pages. Thus no current live QA/write gate is available in this conversation.
 
-Local Chromium exists but current runtime DNS cannot resolve the Clicknest hosts. Generic web fetch/search also cannot currently fetch these pages. Therefore no current live post-v006/pre-v006 QA route is available in this conversation.
-
-`specs/acceptance.json` and `specs/behaviors.json` are absent from current `main`; do not invent them. Deterministic six-viewport same-browser/DPR/zoom screenshot+overlay+diff remains unavailable.
+`specs/acceptance.json` and `specs/behaviors.json` are absent on `main`; do not invent them.
 
 ## Current status
 
-**Elkészült:** page264 content/semantics; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; obsolete continuation bundle removed; v006 color-only contact microfix prepared and statically validated; acceptance plan updated.  
-**Ellenőrzött:** page264 historical live hash; v004/v005 markers; v004 icons/bullets; direct final review AX; tiszafa initial AX; Nordmann static AX; shared Form33 helpers/settings.  
-**Nyitott:** guarded v006 live deployment/readback; post-v006 screenshot; post-v005 comparison surface capture; hero root-cause proof; interaction acceptance; service-radio required runtime proof; page264-scoped floating dock diagnosis; deterministic pixel matrix.  
-**Következő művelet:** WPVibe `-5` connection/quota verification → page264/post8/Form33 readback → if v006 still genuinely missing and all gates match, one v006 match-once insert + readback → targeted QA only.  
-**Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; no current-counter claim until WPVibe is available again.
+**Elkészült:** page264 content/semantics; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; v006+v007 single-write bundle and exact next-window plan prepared.  
+**Ellenőrzött:** historical live hash; v004/v005 markers; v004 icons/bullets; final review AX; tiszafa initial AX; Nordmann static AX; v006/v007 static scopes; shared Form33 helpers/settings.  
+**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; hero root-cause proof; interaction acceptance; service-radio required proof; page264-scoped dock diagnosis; deterministic pixel matrix.  
+**Következő művelet:** verify WPVibe +5 connection/quota → hash/marker preflight → fresh two-delta visual gate → at most one selected CSS write → mandatory readback → targeted QA.  
+**Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; estimated selected remote package ~5–8 calls plus the mandatory 10-call reserve, but actual counter must be read first.
