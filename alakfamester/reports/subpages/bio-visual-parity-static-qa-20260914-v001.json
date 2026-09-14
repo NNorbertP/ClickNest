@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "package": "bio-visual-parity-static-qa-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "input": {
+    "css": "build/bio-visual-parity-v001.css",
+    "css_commit": "a2f3d4908b3dff5f131f74cb584eb5e86e33fcbb",
+    "css_content_sha": "5bd2307064eb26a173098fd9780f8b7f913aa852",
+    "contract": "build/bio-visual-parity-v001.json"
+  },
+  "checks": {
+    "page_scope": {
+      "result": "PASS",
+      "evidence": "Every substantive selector is rooted at body.page-id-256; the only unprefixed constructs are the enclosing @media rule and comments/marker."
+    },
+    "global_header_footer": {
+      "result": "PASS",
+      "evidence": "No header, footer, dock, nav, ElementsKit template, body-global or other-page selector is present."
+    },
+    "acceptance_dimensions": {
+      "result": "PASS",
+      "evidence": "No height/min-height/max-height rule for af-s-biologiai-vedelem-* and no hero h1/art/wave dimension override is present. Existing source-measured 1920/1440/1024/768/390/360 rules remain authoritative."
+    },
+    "saved_content": {
+      "result": "PASS",
+      "evidence": "CSS-only package: no Elementor IDs/text/HTML/ARIA/href/content strings are rewritten. Existing table semantics, region labels and CTA semantics are unaffected."
+    },
+    "external_assets": {
+      "result": "PASS",
+      "evidence": "No network asset URL. The only url() is an inline data SVG for the source-exact white check mark in the technology checklist."
+    },
+    "technology_icon_collision": {
+      "result": "PASS_AFTER_REVISION",
+      "evidence": "Target AX exposed generated glyphs after each technology article, consistent with an article::after-owned icon system. Earlier watermark pseudo rules were removed. Current CSS does not write article::before or article::after."
+    },
+    "technology_checklist": {
+      "result": "PASS_STATIC",
+      "evidence": "Selector is limited to af260010 direct h3 + ul. Source screenshot shows green leaf/white-check marker; source AX has zero native listMarker while target currently has native bullets. Pseudo content is empty so it remains decorative."
+    },
+    "faq_behavior": {
+      "result": "PASS_STATIC",
+      "evidence": "Native details/summary state remains the behavior owner. CSS only styles closed/open/hover state and the decorative plus/minus. No JS runtime or duplicate disclosure behavior is introduced."
+    },
+    "mobile": {
+      "result": "PASS_STATIC",
+      "evidence": "Only technology card grid is explicitly stacked below 900px. No fixed heights or source-measured breakpoint geometry are overwritten."
+    },
+    "markers": {
+      "result": "PASS",
+      "start": "af-bio-visual-v001:start",
+      "end": "af-bio-visual-v001:end",
+      "expected_count_after_deploy": 1
+    }
+  },
+  "not_yet_covered": [
+    "technology lower-right translucent source watermark because target icon pseudo ownership must be preserved",
+    "stress custom checklist variant and stress card visual treatment",
+    "expectations positive/cross checklist/card treatment",
+    "#technologiak outer anchor ownership",
+    "formal deterministic six-viewport pixel overlay/diff"
+  ],
+  "deployment_gate": "Do not deploy now: last exact account usage is 276/300 with 24 remaining and mandatory D11 reserve 10; recent site calls can burn three retries per 429.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
