@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "package": "bio-id35-public-runtime-audit-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_CURRENT_PUBLIC_HTML_RUNTIME_EVIDENCE",
+  "retrieval": "current public target HTML downloaded directly; no WordPress write and no Opera navigation",
+  "runtime_occurrence": {
+    "review_css_owner_block": 1,
+    "review_script_owner_block": 1,
+    "meaning": "the inspected public document contains one current ID35 review runtime owner block, not duplicate copies of the whole snippet"
+  },
+  "ID35_review_CSS_current": {
+    "tab_base": "position relative; padding-left 70px; forest text",
+    "tab_ordinal": "af-review-tab::before; absolute left22; .82rem Georgia bold bronze",
+    "tab_ordinals": ["01", "02", "03"],
+    "selected_tab": "white background plus inset 0 4px 0 #B59A61",
+    "quote": "af-review-quote color #B59A61; font-size44px; width46; mb12",
+    "dots_container": "display flex; center; gap7; pointer-events:none",
+    "dot_base": "9x9; pill radius; background #B9B2A2; opacity .9",
+    "dot_active": "width30px; background #2F5D46",
+    "mobile_tab": "<=760 single-column rail; min-height56; active 3px left bronze; inactive meta hidden",
+    "mobile_quote": "<=760 width38 font-size36"
+  },
+  "ID35_review_JS_current": {
+    "tablist_label": "sets role=tablist and aria-label=Ügyfélvélemények",
+    "tab_labels": "sets each tab aria-label to exact company/person string",
+    "panels": "sets tabindex=0",
+    "hidden_number_controls": "existing af-review-dots/af-review-dots-wrap are aria-hidden=true",
+    "generated_visual_dots": "creates div.af-reviews-dots with 3 disabled-tabindex buttons, aria-hidden=true, labels 1./2./3. vélemény, first aria-current=true",
+    "generated_step_controls": "creates Előző vélemény and Következő vélemény buttons after the native tabs",
+    "step_behavior": "click computes selected index, chooses previous/next tab, calls tab.click() and updates aria-current visual dot",
+    "focus_behavior": "step buttons do NOT explicitly focus the newly active tabpanel after switching",
+    "hero_region": "sets af-sub-bio-hero role=region + exact hero aria-label",
+    "FAQ_region": "sets af260015 role=region + aria-label Biológiai védelem – kérdések"
+  },
+  "source_vs_target_runtime_deltas_now_proven": [
+    "Source active review dot stays 9x9 and uses scale(1.3) rotate(-12deg); target ID35 expands active dot width to 30px.",
+    "Source quote color is #D9C9A5; target ID35 sets #B59A61.",
+    "Source prev/next activates panel and then focuses the new tabpanel; target ID35 step buttons switch tabs but do not explicitly focus the new panel.",
+    "Source visual ordinal is a real aria-hidden span; target ID35 creates one ordinal with CSS pseudo content, and prior AX evidence showed one standalone ordinal staticText, so decorative AX parity is not yet closed."
+  ],
+  "safe_current_scope_implications": [
+    "Do not modify global Code Snippets/ID35 under the page256-only scope.",
+    "Page-local CSS can override quote and dot presentation after the local style carrier is proven, leaving ID35 semantic/tab runtime intact.",
+    "Panel-focus parity and decorative ordinal AX parity require additional page-local-safe ownership proof; do not modify ID35 directly.",
+    "ID35 must remain active and page256-guarded because it already owns several closed semantics."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_touched": 0,
+  "pixel_pass": false
+}
