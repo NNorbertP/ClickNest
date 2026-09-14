@@ -1,0 +1,120 @@
+{
+  "schema_version": 14,
+  "project": "alakfamester",
+  "date": "2026-09-15",
+  "type": "PLANNING_ONLY_NO_SCOPE_OVERRIDE",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260914-v013.json",
+  "scope_authority": {
+    "source": "STATE.md",
+    "current": "PAGE264 ONLY",
+    "rule": "This file never authorizes page256/page272/global/media writes. Fresh STATE.md and fresh trustworthy live truth outrank this queue."
+  },
+  "current_tool_freeze": {
+    "wpvibe": "Do not call again in this continuation: first read-only list_sites returned tool disabled; +5 site connection and exact quota are unknown.",
+    "opera": "Do not read/navigate again in this continuation: an existing page256 target URL/title returned homepage AX content, proving stale connector state. Existing two tabs were left untouched; zero new tabs.",
+    "wordpress_writes_current_continuation": 0,
+    "opera_new_tabs_current_continuation": 0,
+    "github": "Available for immutable evidence/planning reconciliation only."
+  },
+  "priority_1_page264_active": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v010.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json",
+    "baseline": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid; fresh read before mutation",
+    "preserve": ["visual v004", "visual v005", "existing ID33 semantic owner", "accepted content/main media/38 headings/11 regions/review/form/static interaction contracts"],
+    "only_current_page_local_visual_candidates": [
+      "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "build/oldtrees-visual-v006-v007-single-write-bundle.css only if both failures reproduce"
+    ],
+    "proof_only": [
+      "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+      "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json",
+      "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json fresh non-activating href readback",
+      "build/oldtrees-interaction-acceptance-20260914-v001.json",
+      "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+      "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json"
+    ],
+    "next": "When live tools return: +5/site/quota once -> compact page/hash/marker gate -> trustworthy two-tab v006/v007 reproduction -> at most one selected CSS write -> mandatory readback -> optional read-only form/field/route/interaction/hero/responsive proof. Any 429 write is UNKNOWN until exact readback."
+  },
+  "priority_after_explicit_scope_handoff_page256": {
+    "continuation": "reports/subpages/bio-continuation-20260914-v024.json",
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v003.json",
+    "call_budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "historical_baseline": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid / ID35; fresh live state required",
+    "delivery_rule": "No Hello Additional CSS from page256-only scope. First prove existing af260016 can safely retain an inert page-local style carrier.",
+    "execution_chain": [
+      "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+      "build/bio-page-local-visual-delivery-20260914-v001.json using visual v007 only after probe PASS",
+      "build/bio-page256-next-safe-package-20260914-v014.json",
+      "build/bio-semantic-resume-20260914-v013.json + build/bio-stress-source-visual-20260914-v002.json",
+      "build/bio-table-source-structure-20260914-v001.json",
+      "build/bio-expectations-source-structure-20260914-v003.json",
+      "build/bio-cta-mail-structure-20260914-v001.json + build/bio-faq-cta-source-layout-20260914-v006.json",
+      "review owner-proven microfixes only after diagnostics"
+    ],
+    "review_behavior_oracle": "build/bio-review-source-interaction-contract-20260914-v001.json; do not replace Atomic Tabs with source legacy JS",
+    "review_microfixes": [
+      "build/bio-review-ordinal-accessibility-20260914-v001.json",
+      "build/bio-review-third-author-role-text-20260914-v001.json",
+      "build/bio-review-anchor-parity-20260914-v001.json only if safe owner exists",
+      "optional decor only after pseudo-slot proof"
+    ]
+  },
+  "priority_after_explicit_scope_handoff_page272": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v004.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v014.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v005.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v005.json",
+    "baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid; fresh read required",
+    "only_write_candidate": "build/hedge-semantic-runtime-v004.php updating existing ID36 only",
+    "strict_gate": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json plus fresh native ARIA/ID conflict capture; any stronger/newer native semantic owner => HOLD prepared v004 and design preserving successor, never delete native relations merely to make v004 win",
+    "read_first": ["hero/gallery/form complete roots", "H1-H6 ordered tree", "proof carousel roles/owner", "Form33 required saved settings and safe native rejection", "document head metadata/schema owners"],
+    "page272_css_candidate": "NONE"
+  },
+  "global_future_after_global_scope_handoff": {
+    "header": {
+      "plan": "build/header-deployment-plan-v010.json",
+      "issue": "homepage Services active-pill bug plus service-child route-current matrix",
+      "rule": "existing ID7 owner only; homepage Főoldal current/Services neutral, true service child Services current-section; no second runtime"
+    },
+    "floating_dock": {
+      "plan": "build/floating-contact-dock-diagnostic-plan-20260914-v002.json",
+      "rule": "AX controls exist but visual pill is blank/clipped; read exact ID7 markup + current winning cascade before any CSS/runtime change; do not recreate markup"
+    }
+  },
+  "asset_recovery": {
+    "reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "ellwoodi": "Exact frozen WEBP remains unrecovered. Same-basename old public JPG is strong provenance only, not byte/pixel equivalence; do not upload without exact/deterministic proof.",
+    "portrait": "Exact bytes unrecovered and acceptance visibility evidence conflicts. Obtain fresh trusted reference DOM/screenshot before treating it as an implementation blocker; never invent/stock-substitute."
+  },
+  "do_not_reopen": [
+    "page264 historical content/media/semantic packages and visual v001-v005",
+    "page272 shared-media recovery, EAEL decoupling, saved legacy semantics and historical media/background repairs",
+    "page256 closed strings/table row-header/ID35 semantic fixes and already-present technology callout/contact/fact icons",
+    "page268 CTA sibling/focus order",
+    "page260/page262/page266/page270 hero/class work",
+    "shared Form33 ID5 photo validator, ID6 textarea helper and configured local success state"
+  ],
+  "formal_blockers": [
+    "specs/acceptance.json absent",
+    "specs/behaviors.json absent",
+    "deterministic same-browser exact viewport/DPR/zoom/font/load-state six-view capture+overlay+diff harness unavailable",
+    "stable generic click/keyboard action-capable browser unavailable",
+    "exact frozen Ellwoodi asset bytes unavailable",
+    "portrait exact bytes unavailable if fresh acceptance proves the portrait required",
+    "SMTP/delivery/real submissions excluded"
+  ],
+  "critical_rules": [
+    "Fresh live state outranks all repository plans.",
+    "Any HTTP 429 write is UNKNOWN until exact readback; never blind retry.",
+    "Preserve >=10 WPVibe calls for D11 closeout/recovery.",
+    "Use at most one source and one target Opera tab; no replacement fan-out or reload loop.",
+    "Prepared escaped snippets are never future old_content; structural edits start from fresh exact content/search bytes.",
+    "Do not merge page/global packages merely to reduce call count.",
+    "Absence of interaction/deterministic visual tooling is not evidence of a defect and never licenses speculative CSS/JS."
+  ],
+  "pixel_pass": false,
+  "status": "CROSS_PROJECT_QUEUE_RECONCILED_ACTIVE_PAGE264_LIVE_GATE_BLOCKED"
+}
