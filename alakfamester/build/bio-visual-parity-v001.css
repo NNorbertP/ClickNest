@@ -43,9 +43,11 @@ body.page-id-256 .elementor-element-af260015 .af-sub-inner > .af-sub-eyebrow::be
  * Technology intro + cards (af260010).
  * Source section-head copy is 1.125rem and max 104ch; source card mapping is
  * .grid.grid--3 > .card.feature, middle .card--sage.
- * Existing target pseudo icon badges are intentionally not re-authored here.
- * Pre-deploy requirement: prove the target icon owns ::before (or another
- * child) and that article::after is free before enabling the watermark rules.
+ * The target already owns generated icon badges. AX inspection shows their
+ * generated glyphs after article content, consistent with article::after
+ * ownership. This block deliberately does not write article::before/::after.
+ * The source lower-right watermark therefore stays open until a collision-free
+ * owner is proven; preserving the good target icons takes priority.
  * -------------------------------------------------------------------------- */
 body.page-id-256 .elementor-element-af260010 .af-sub-lead {
   max-width: 104ch !important;
@@ -87,31 +89,6 @@ body.page-id-256 .elementor-element-af260010 .af-sub-cards > article > p {
   flex: 1 1 auto !important;
   max-width: 78ch !important;
   color: #4A5750 !important;
-}
-
-/* Source .card lower-right organic watermark. Enable only after the preflight
- * proves it does not replace an existing target icon pseudo-element. */
-body.page-id-256 .elementor-element-af260010 .af-sub-cards > article::after {
-  content: "";
-  position: absolute;
-  right: -46px;
-  bottom: -56px;
-  width: 150px;
-  height: 150px;
-  border-radius: 4px 64% 4px 64%;
-  background: #2F5D46;
-  opacity: .045;
-  transform: rotate(-16deg);
-  pointer-events: none;
-  z-index: 0;
-}
-body.page-id-256 .elementor-element-af260010 .af-sub-cards > article:nth-child(2)::after {
-  background: #173D2D;
-  opacity: .05;
-}
-body.page-id-256 .elementor-element-af260010 .af-sub-cards > article > * {
-  position: relative;
-  z-index: 1;
 }
 
 /* --------------------------------------------------------------------------
