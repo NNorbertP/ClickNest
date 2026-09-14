@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only runtime parity",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_WPVIBE_UNAVAILABLE",
+  "supersedes": "build/header-runtime-parity-v006.json",
+  "snippet": {
+    "id": 7,
+    "required_prewrite_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "required_prewrite_bytes": 9723,
+    "required_marker": "af-header-nav-parity-v005",
+    "must_remain_active": true,
+    "must_keep_scroll_threshold_px": 8,
+    "must_keep_mobile_breakpoint_px": 1240,
+    "must_keep_main_navigation_aria_label": "Főmenü",
+    "must_keep_brand_accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "fresh_accessibility_tree_delta": {
+    "source_popup_children": "staticText only; caret is decorative/not exposed",
+    "target_popup_children": "staticText plus an unnamed image from the copied ElementsKit SVG indicator",
+    "change": "After copying old.innerHTML into the runtime button, mark every .elementskit-submenu-indicator SVG inside the button aria-hidden='true' and focusable='false'. Do not remove or visually alter the SVG."
+  },
+  "other_runtime_changes": [
+    "Set role='banner' on existing header root to match source global header landmark.",
+    "Use passive scroll plus a single requestAnimationFrame scheduler, preserving is-scrolled and >8px threshold.",
+    "Desktop dropdown: native Enter/Space click activation; trigger ArrowDown opens/focuses first child; panel ArrowUp/ArrowDown traversal; Escape closes/returns trigger focus; outside click closes.",
+    "Current location: source-like parent is-current and exact child aria-current=page; /#szolgaltatasi-utak matches only exact root+hash.",
+    "Mobile drawer: focus first a/button after it becomes interactive; preserve Escape return, resize >1240 close, submenu state and body lock.",
+    "Make original sibling ul.elementskit-dropdown aria-hidden/inert and remove descendant tab stops whenever a custom af-nav-dropdown-host exists; paired CSS v007 hides only that duplicate sibling visually."
+  ],
+  "closed_state_a11y_guard": {
+    "proven_good": [
+      "navigation name Főmenü",
+      "Főoldal/Rólam/Kapcsolat roles and names",
+      "Szolgáltatások and Referenciák popup roles/names/hasPopup",
+      "closed native ElementsKit submenu is not currently exposed in the accessibility tree"
+    ],
+    "must_not_regress": true
+  },
+  "paired_css": {
+    "path": "build/header-source-flex-responsive-v007.css",
+    "commit": "6913d2d0994c4f8c36d39a55c3c0ab4a5bd1e38d"
+  },
+  "guarded_execution": [
+    "No execution while WPVibe unavailable or host throttled.",
+    "Reconnect only under requested -5 profile, fresh quota and exact live prewrite hash/bytes; any drift stops replay.",
+    "Capture complete snippet body as rollback payload.",
+    "Apply only documented deltas through Code Snippets plugin REST and read back active/code_error/protected constants before browser QA.",
+    "Closed-state accessibility tree after write must match source structure at role/name level and popup buttons must no longer expose an image child.",
+    "Then test open/current/keyboard/mobile states; rollback exact prewrite code on regression."
+  ],
+  "do_not_change": [
+    "Elementor header structure",
+    "page body",
+    "footer",
+    "forms",
+    "SMTP",
+    "menu destination mapping",
+    "visible caret geometry",
+    "native submenu destination content",
+    "mobile drawer content",
+    "quick-contact dock content"
+  ]
+}
