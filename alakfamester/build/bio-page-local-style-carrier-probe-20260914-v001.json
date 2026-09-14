@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "package": "bio-page-local-style-carrier-probe-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "status": "PREPARED_NOT_RUN",
+  "purpose": "Prove a page-local CSS delivery path that modifies only page256 Elementor data and does not touch Hello Additional CSS or any other shared/global resource.",
+  "candidate_carrier": {
+    "element_id": "af260016",
+    "type": "legacy text-editor widget",
+    "known_role": "hero extras containing existing hero contact buttons, CTAs and fact row",
+    "reason": "renders early on page256, is already a page-local legacy owner, and can be surgically edited through supported _elementor_data content/search + content/edit without full page save"
+  },
+  "historical_page_precondition": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "warning": "Historical only. Fresh live baseline and fresh af260016 exact escaped snippet are mandatory before the probe."
+  },
+  "remote_gates_before_probe": [
+    "Normal scope handoff authorizes page256 and no parallel page264 write/QA ownership would be disrupted.",
+    "WPVibe is usable under the intended +5 account; target site connected; exact quota known; >=10 D11 calls remain after the whole probe/readback/rollback margin.",
+    "Load Elementor skill in the future usable session.",
+    "Fresh page256 bytes/SHA/JSON and ID35 state are reconciled.",
+    "Fresh content/search on meta post_id 256 / _elementor_data returns the exact current af260016 editor boundary; never reuse stale escaped bytes."
+  ],
+  "probe_payload": {
+    "style_id": "af-page256-parity-probe",
+    "exact_intent": "prepend one tiny style element immediately inside the af260016 editor content, before its existing hero-extra markup",
+    "suggested_css": "body.page-id-256{--af-page256-probe:1}",
+    "visible_effect": "none",
+    "scope": "page256 body custom property only",
+    "note": "The probe tests style-element preservation/sanitization, not visual parity."
+  },
+  "execution": [
+    "1. content/search with a unique ASCII anchor inside af260016, such as af-hero-contact, and copy the returned escaped snippet verbatim.",
+    "2. Build the smallest match-once replacement that inserts the exact probe style element before the existing first hero-extra node. Do not reconstruct the full widget/editor value from memory.",
+    "3. POST content/edit on meta post_id 256 / _elementor_data once.",
+    "4. Immediately read page256 bytes/SHA/JSON and require valid JSON plus only the expected small size/hash change.",
+    "5. Fresh rendered page HTML check: require exactly one style#af-page256-parity-probe and verify the existing af260016 hero contact/CTA/fact markup is byte/content-equivalent and still rendered.",
+    "6. Browser/source-target visual spot check: require no visible layout change from the inert custom property.",
+    "7. If all checks pass, mark PAGE_LOCAL_STYLE_CARRIER_PROVEN. If the style tag is stripped, moved, escaped as text, duplicated, or causes any rendering/editor issue, immediately remove only the exact inserted style element via a fresh exact search/edit and mark FAIL."
+  ],
+  "success_criteria": [
+    "exactly one rendered <style id='af-page256-parity-probe'>",
+    "its rule is active/retained rather than printed as text",
+    "no visible change",
+    "all af260016 original content/links/text remain intact",
+    "page JSON valid",
+    "no other post/page/shared resource changed",
+    "no full Elementor save or global CSS write"
+  ],
+  "failure_stop_conditions": [
+    "style is sanitized/escaped/stripped",
+    "content/edit returns no_match/multiple_matches or uncertain 429 outcome",
+    "af260016 content changes beyond the intended insertion",
+    "page JSON invalid",
+    "frontend renders duplicate style marker or visible artifact",
+    "Elementor/editor/frontend behaves differently after probe",
+    "scope/quota ownership changes mid-probe"
+  ],
+  "rollback": "Freshly search the exact rendered/saved style marker and remove only that style element with one match-once content/edit; re-read page bytes/SHA/JSON/rendered markup. Never restore an old whole _elementor_data blob.",
+  "after_success_only": {
+    "next_step": "Prepare a single page-local <style id='af-page256-parity'> containing only the dependency-safe currently-approved page256 CSS blocks, preserving their internal marker comments for block-level rollback/audit.",
+    "important": "A successful carrier probe proves the delivery mechanism only. Every CSS block still needs its existing source/dependency/pseudo-owner/responsive preconditions before inclusion."
+  },
+  "estimated_logical_wpvibe_actions": "about 4-6 for search/write/readbacks plus 1-2 rollback calls reserved if probe fails; live quota is authoritative",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
