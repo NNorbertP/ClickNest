@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-visual-v006-contact-text-static-qa-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "source": "build/oldtrees-visual-v006-contact-text-cascade.css",
+  "status": "STATIC_PASS_NOT_DEPLOYED",
+  "evidence": {
+    "direct_compare": "reports/subpages/oldtrees-direct-live-compare-20260914-v005.json",
+    "live_prior_css": "reports/subpages/oldtrees-visual-live-qa-20260914-v006.json",
+    "finding": "Post-v005 same-browser screenshot shows target request-form green contact buttons with dark label/value text while reference uses white. Existing v004 already declares source white colors but without !important, proving this is a cascade-strength correction rather than a new design decision."
+  },
+  "scope_checks": {
+    "all_effect_selectors_prefix": "body.page-id-264 #ajanlatkeres .elementor-element-af2a0054",
+    "property_family": "color only",
+    "selectors": 3,
+    "layout_changes": false,
+    "background_changes": false,
+    "spacing_changes": false,
+    "dom_changes": false,
+    "visible_copy_changes": false,
+    "other_page_selectors": false,
+    "header_footer_selectors": false,
+    "metform_field_or_submission_changes": false
+  },
+  "preserve": [
+    "live af-oldtrees-visual-v004 and v005 blocks",
+    "page264 Elementor saved-data hash and IDs",
+    "request panel geometry now much closer to source",
+    "contact icon geometry/background",
+    "all shared MetForm behavior"
+  ],
+  "deployment_gate": [
+    "Do not deploy while WPVibe is unavailable.",
+    "Fresh page264 saved-data hash/readback required; reconcile any drift before write.",
+    "Fresh complete post8 compact hash/marker inventory required because v004/v005 are already live.",
+    "Require unique af-project:end, v004=1, v005=1 and v006=0 before insert.",
+    "Insert this one complete marked block once immediately before af-project:end using guarded match-once content/edit.",
+    "On HTTP 429 write result treat outcome as UNKNOWN and read back marker/hash before any retry.",
+    "Fresh same-browser source/target screenshot must prove label/value foreground white while panel geometry remains unchanged."
+  ],
+  "pixel_pass": false,
+  "wordpress_writes": 0
+}
