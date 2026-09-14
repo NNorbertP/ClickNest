@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only homepage current-state exception",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "status": "PREPARED_NOT_DEPLOYED_WPVIBE_UNAVAILABLE",
+  "user_requirement": "On the homepage, the Szolgáltatások top-level menu item must not appear active.",
+  "preserve": [
+    "Főoldal remains the native current-menu-item on the homepage.",
+    "Szolgáltatások remains current on actual service subpages.",
+    "Referenciák current-state logic is unchanged.",
+    "Hover, focus and open-dropdown feedback on Szolgáltatások remains source-like.",
+    "All menu destinations, labels and dropdown contents remain unchanged."
+  ],
+  "runtime_guard": {
+    "homepage_test": "Treat the WordPress root pathname '/' as homepage regardless of query string or hash.",
+    "services_parent": "On homepage only, remove/never add .is-current from the Services custom dropdown host.",
+    "services_children": "On homepage only, remove aria-current='page' from runtime Services panel anchors.",
+    "native_wp_classes": "Do not mutate WordPress current-menu-* classes; the paired CSS guard neutralizes any false parent highlight visually only on body.home/body.page-id-56.",
+    "non_home": "Outside the homepage, use the normal exact route-group matching from the authoritative header runtime package."
+  },
+  "paired_css": {
+    "path": "build/header-home-services-inactive-v001.css",
+    "commit": "61d3b792bb87d1ebac4111555530383bf2760e6e"
+  },
+  "prewrite_guard": [
+    "Read the live Code Snippets ID7 body and require the expected current hash before editing.",
+    "Capture the complete immediate prewrite body for rollback.",
+    "Apply only the homepage Services-current exception; do not touch other runtime behavior.",
+    "Read back active=true and code_error=null before browser verification."
+  ],
+  "browser_acceptance": [
+    "At https://alakfamester-wp.clicknest.hu/ the Főoldal item is current and Szolgáltatások is visually neutral at rest.",
+    "Hover/focus/open on Szolgáltatások still shows normal interactive feedback.",
+    "On a service subpage such as /idos-fak-megmentese-szolgaltatas/ Szolgáltatások still shows the current-section state.",
+    "No body/footer/form changes."
+  ]
+}
