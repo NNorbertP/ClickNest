@@ -45,9 +45,11 @@ body.page-id-256 .elementor-element-af260015 .af-sub-inner > .af-sub-eyebrow::be
  * .grid.grid--3 > .card.feature, middle .card--sage.
  * The target already owns generated icon badges. AX inspection shows their
  * generated glyphs after article content, consistent with article::after
- * ownership. This block deliberately does not write article::before/::after.
- * The source lower-right watermark therefore stays open until a collision-free
- * owner is proven; preserving the good target icons takes priority.
+ * ownership, so this block never writes article::before/::after.
+ * The source lower-right card leaf is reproduced as a background SVG layer.
+ * The 190px image viewport preserves the transformed bounding box of the
+ * source 150px leaf at right:-46/bottom:-56 with rotate(-16deg), without
+ * consuming either pseudo-element or entering the accessibility tree.
  * -------------------------------------------------------------------------- */
 body.page-id-256 .elementor-element-af260010 .af-sub-lead {
   max-width: 104ch !important;
@@ -68,15 +70,18 @@ body.page-id-256 .elementor-element-af260010 .af-sub-cards > article {
   height: 100% !important;
   box-sizing: border-box !important;
   padding: 32px !important;
-  background: #FFFFFF !important;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 190'%3E%3Cpath d='M24 20H74A96 96 0 0 1 170 116V166A4 4 0 0 1 166 170H116A96 96 0 0 1 20 74V24A4 4 0 0 1 24 20Z' transform='rotate(-16 95 95)' fill='%232F5D46' fill-opacity='.045'/%3E%3C/svg%3E") right -66px bottom -76px / 190px 190px no-repeat,
+    #FFFFFF !important;
   border: 1px solid rgba(215, 210, 198, .6) !important;
   border-radius: 28px 34px 26px 32px !important;
   box-shadow: 0 16px 40px rgba(47, 58, 47, .08) !important;
-  overflow: clip !important;
+  overflow: hidden !important;
 }
 body.page-id-256 .elementor-element-af260010 .af-sub-cards > article:nth-child(2) {
   background:
     linear-gradient(90deg, transparent, #7D9B83, #B59A61, transparent) 8% 0 / 84% 3px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 190'%3E%3Cpath d='M24 20H74A96 96 0 0 1 170 116V166A4 4 0 0 1 166 170H116A96 96 0 0 1 20 74V24A4 4 0 0 1 24 20Z' transform='rotate(-16 95 95)' fill='%23173D2D' fill-opacity='.05'/%3E%3C/svg%3E") right -66px bottom -76px / 190px 190px no-repeat,
     #DDE7DF !important;
   border-color: rgba(47, 93, 70, .16) !important;
   box-shadow: none !important;
