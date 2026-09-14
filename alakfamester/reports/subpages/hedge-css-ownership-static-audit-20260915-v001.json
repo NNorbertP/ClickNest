@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "package": "hedge-css-ownership-static-audit-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Prove whether current repository ownership justifies any Hedge-specific CSS layer before visual evidence returns.",
+  "registry_findings": {
+    "normal_subpage_layout": "css-registry assigns af-hero / af-s-{page}-{n} normal layout/order/spacing/heading-level ownership to Elementor controls with one designated owner.",
+    "shared_reviews": "shared reviews geometry/state is owned by documented common V4 classes + Hello Additional CSS review rules, not a Hedge-only duplicate block.",
+    "shared_carousel": "af-carousel overflow/clip/transition belongs to common controls + Additional CSS, with runtime position owned by JS.",
+    "shared_form": "af-form error/dropzone visual states belong to MetForm controls with documented Additional CSS exceptions.",
+    "specificity_rule": "registry explicitly requires real control/cascade investigation before !important and rejects arbitrary second owners.",
+    "hedge_named_owner_rows": 0,
+    "page272_element_id_owner_rows": 0,
+    "registry_length_check": "fetch past line 240 returned no further content; no hidden later Hedge owner was found."
+  },
+  "historical_page272_visual_reconciliation": {
+    "media_gap": "stale/closed; later page roles reconcile to 52 main-image roles",
+    "section_background": "stale/closed; later evidence confirms sage",
+    "current_page272_specific_css_candidate": "NONE"
+  },
+  "scope_implication": "The user's current write scope is page272 only. Do not create a global Additional CSS mutation merely to host a page272 experiment. Prefer existing page-local owners/runtime only when a fresh reproduced defect and exact safe owner exist.",
+  "future_visual_write_gate": [
+    "fresh synchronized source/target reproduction at a specified viewport/state",
+    "identify exact target DOM element/class and winning computed-style/cascade owner",
+    "prove the defect is page272-local rather than shared header/footer/dock/reviews/form/carousel ownership",
+    "prove no existing control/class/rule already expresses the source value",
+    "choose a page272-local implementation path with one owner and a rollback/readback contract",
+    "recheck the changed viewport plus adjacent responsive breakpoints and protected components"
+  ],
+  "forbidden_from_static_history_alone": [
+    "replay old site-finalization CSS ideas",
+    "add a second shared review/carousel/form style owner",
+    "use broad global selectors to make one Hedge screenshot look closer",
+    "add !important without live cascade proof",
+    "treat missing formal pixel harness as evidence of a CSS defect"
+  ],
+  "status": "NO_HEDGE_SPECIFIC_CSS_WRITE_JUSTIFIED_STATICALLY"
+}
