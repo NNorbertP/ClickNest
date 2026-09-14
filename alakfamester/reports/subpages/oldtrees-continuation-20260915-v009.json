@@ -1,0 +1,77 @@
+{
+  "schema_version": 9,
+  "package": "oldtrees-continuation-20260915-v009",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "READ_ONLY_CONTINUATION_NO_SCOPE_CHANGE",
+  "scope_authority": "STATE.md remains authoritative PAGE264 ONLY; this file does not alter scope.",
+  "wordpress_writes": 0,
+  "opera_new_tabs_this_continuation": 0,
+  "tool_state": {
+    "wpvibe": "First read-only list_sites invocation returned tool disabled. No further WPVibe calls are allowed in this continuation; +5 site connection/quota remain unknown.",
+    "opera": "Existing two tabs were not navigated. Target page256 URL/title returned homepage AX content, proving stale connector state; further Opera reads stopped and no new/replacement tabs were opened.",
+    "github": "Used for repository reconciliation and immutable planning only."
+  },
+  "accepted_baseline": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "live_visual_layers": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "semantic_owner": "existing Code Snippets ID33"
+  },
+  "new_authoritative_readonly_evidence": [
+    "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "build/oldtrees-form-required-validation-plan-20260915-v001.json"
+  ],
+  "section_coverage_conclusion": {
+    "classified_sections": 13,
+    "content_semantics_media": "No known page264 content/semantic/main-media implementation gap remains in completed sections.",
+    "reproduced_local_visual_failures_only": [
+      "v006 request contact foreground dark on target versus source white",
+      "v007 comparison desktop columns unequal versus source equal"
+    ],
+    "diagnostic_only": ["hero vertical copy offset about 40-45px until exact geometry/computed-style owner is proven"],
+    "proof_only": ["review keyboard", "tiszafa pointer/keyboard", "Nordmann timing/swipe/pause/reduced motion", "FAQ disclosure behavior sampling", "deterministic six-view visual matrix"]
+  },
+  "v006_v007_static_ownership": {
+    "v006": "Only winning color declarations under body.page-id-264 #ajanlatkeres .elementor-element-af2a0054; no geometry/breakpoint/runtime mutation; value-identical strengthening of source-white colors already intended by v004.",
+    "v007": "Only comparison grid/child width contract under body.page-id-264 .elementor-element-af2a0045; does not touch v005 surfaces/height/icons/bullets/copy; <=900 remains one column.",
+    "combined": "Allowed only if both failures reproduce in the same fresh trustworthy gate; otherwise standalone failing block or no write."
+  },
+  "form33_required_gate": {
+    "status": "OPEN_READ_FIRST_NO_CUSTOM_VALIDATOR_JUSTIFIED",
+    "must_read": [
+      "page264 accepted hash/JSON",
+      "ID33 current body/state/scope/code_error/hash",
+      "#af-form-service exact widget ID/type/mf_input_name/mf_input_required/six values/order/native validation text",
+      "ID5 exact hook/priority/guard/body/state",
+      "ID6 active/state"
+    ],
+    "decision": {
+      "native_required_and_enforced": "PASS no write",
+      "native_required_false": "Find narrow page264-local owner without shared Form33 mutation before any write",
+      "native_required_true_but_not_enforced": "Only then consider extending existing ID33 using exact live field/route/error-copy facts",
+      "drift": "STOP and reconcile"
+    },
+    "forbidden": ["real submission", "entry creation", "SMTP", "external email", "webhook", "file upload test", "second validator snippet", "guessed field name/value/error text", "shared Form33 mutation from page264 package"]
+  },
+  "next_live_sequence": [
+    "Verify +5 identity/site/exact rolling quota once and preserve >=10-call D11 reserve.",
+    "Compact page264 saved-data hash/JSON and Additional CSS marker/hash preflight; fresh live truth wins.",
+    "Use one reference + one target tab only if URL/title/content are trustworthy; fresh v006/v007 visual gate.",
+    "At most one guarded Additional CSS insertion according to both/one/neither decision.",
+    "Mandatory marker/project-end/page-hash readback; any 429 write is UNKNOWN until readback, never retry blindly.",
+    "If safe quota remains, perform Form33 service-radio read-only gate before interaction/hero proof work.",
+    "Do not touch global dock/header or any other page from this scope."
+  ],
+  "formal_blockers": [
+    "deterministic exact viewport/DPR/zoom six-view source-target overlay/diff unavailable",
+    "stable generic click/keyboard action-capable browser unavailable",
+    "specs/acceptance.json and specs/behaviors.json absent",
+    "SMTP/delivery/real submission excluded"
+  ],
+  "known_wpvibe_budget": "UNKNOWN for +5; do not reuse +3/+4 counters",
+  "pixel_pass": false,
+  "status": "PAGE264_STATIC_CONVERGENCE_MAXIMIZED_LIVE_GATE_BLOCKED"
+}
