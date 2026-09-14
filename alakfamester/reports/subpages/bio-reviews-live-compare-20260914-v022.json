@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "package": "bio-reviews-live-compare-20260914-v022",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "read-only review source/target comparison using only the two existing Opera tabs",
+  "browser": {
+    "tabs": 2,
+    "new_tabs_opened": 0,
+    "source_scroll_target": "#rev-tab-1",
+    "target_scroll_target": "#b2560005-tab-0",
+    "note": "Exact pixel widths are not promoted to defects because the connector does not expose/control per-origin zoom/DPR; component-internal qualitative deltas are used instead."
+  },
+  "source_contract": "build/bio-reviews-source-contract-20260914-v001.json",
+  "fresh_target_findings": {
+    "overall_structure": {
+      "status": "CLOSE_PRESERVE",
+      "finding": "Target already has the source-like three-tab rail, white rounded panel, left media/author column, right quote/body column and centered previous/next navigation. Native Atomic Tabs remains the correct runtime owner."
+    },
+    "tab_numbers": {
+      "status": "PROVEN_VISUAL_DELTA",
+      "source": "one visible ordinal per tab: 01 / 02 / 03",
+      "target": "two visible copies per tab: 01 01 / 02 02 / 03 03",
+      "target_ax": "AX query exposes exactly one staticText 01, one 02 and one 03; therefore the second visible copy is decorative CSS-generated content, not a second focusable/content node.",
+      "next_owner_gate": "When WPVibe returns, read-only search the current Additional CSS for the two ordinal pseudo owners. Suppress only the duplicate owner; do not alter tab DOM/labels/ID35."
+    },
+    "quote_color": {
+      "status": "PROVEN_VISUAL_DELTA",
+      "source": "large quote mark is light warm #D9C9A5",
+      "target": "large quote mark renders materially darker bronze",
+      "source_exact_rule": ".review__quote { width:46px; color:#D9C9A5; margin-bottom:12px; }",
+      "candidate": "page256-scoped color override on .af-review-quote after fresh winning-cascade confirmation"
+    },
+    "media_and_author": {
+      "status": "PRESERVE_PENDING_NORMALIZED_GEOMETRY",
+      "finding": "Same image identity/contain treatment and organic author monogram are present. Do not replace image, crop or author markup."
+    },
+    "panel_width_and_title_wrap": {
+      "status": "MEASURE_ONLY_AFTER_ZOOM_NORMALIZATION",
+      "finding": "Target screenshot appears narrower and title wraps earlier, but browser connector lacks explicit per-origin zoom/DPR control. Source CSS contract is 1340px max container-wide. Do not patch width from screenshots alone."
+    }
+  },
+  "already_closed_semantics_to_preserve": [
+    "exact review region name",
+    "three source-equivalent tab names",
+    "previous/next controls",
+    "duplicate numbered review dots absent from AX/focus",
+    "review images and alt text",
+    "ID35 page guard/runtime"
+  ],
+  "separate_deep_link_delta": "Source #ugyfelvelemenyek works; target section lacks that ID. See build/bio-review-anchor-parity-20260914-v001.json.",
+  "decision": "Do not create a full review restyle. Future review write should be a tiny page256-scoped cascade fix only after the exact duplicate ordinal pseudo owner and quote-color winner are read back.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
