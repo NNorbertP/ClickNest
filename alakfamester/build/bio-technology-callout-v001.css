@@ -1,0 +1,70 @@
+/* af-bio-tech-callout-v001:start
+ * Scope: body.page-id-256, af260010 only. Prepared, not deployed.
+ * Requires the guarded legacy wrapper .af-bio-tech-callout around the existing
+ * Milyen esetekben használom? h3 + existing four-item ul.
+ */
+
+body.page-id-256 .elementor-element-af260010 .af-bio-tech-callout {
+  position: relative !important;
+  box-sizing: border-box !important;
+  margin-top: 48px !important;
+  padding: 24px 32px 24px 40px !important;
+  border-radius: 34px 26px 32px 28px !important;
+  background: #EFEDE4 !important;
+  border: 1px solid rgba(215, 210, 198, .6) !important;
+}
+
+body.page-id-256 .elementor-element-af260010 .af-bio-tech-callout::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  bottom: 16px;
+  width: 6px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #B59A61, #7D9B83);
+}
+
+body.page-id-256 .elementor-element-af260010 .af-bio-tech-callout > h3 {
+  margin: 0 0 8px !important;
+  color: #173D2D !important;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif !important;
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+  line-height: 1.32 !important;
+}
+
+body.page-id-256 .elementor-element-af260010 .af-bio-tech-callout > ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 16px 0 0 !important;
+  display: grid !important;
+  gap: 12px !important;
+}
+
+body.page-id-256 .elementor-element-af260010 .af-bio-tech-callout > ul > li {
+  position: relative !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #202723 !important;
+  line-height: 1.55 !important;
+}
+
+body.page-id-256 .elementor-element-af260010 .af-bio-tech-callout > ul > li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  margin-top: 3px;
+  border-radius: 4px 64% 4px 64%;
+  background-color: #2F5D46;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 13px 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* af-bio-tech-callout-v001:end */
