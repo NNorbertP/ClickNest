@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "package": "bio-live-reconcile-20260914-v021",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "read-only same-browser source/target reconciliation after target recovered from temporary 504",
+  "browser": {
+    "tabs": 2,
+    "new_tabs": 0,
+    "source_tab": 1672632766,
+    "target_tab": 1672632815,
+    "viewport": "approximately 1640x920"
+  },
+  "wordpress_writes": 0,
+  "fresh_hero": {
+    "target_recovered": true,
+    "proven": [
+      "target already has phone/mail decorative icons in both hero contact pills",
+      "target already has all three hero fact icons",
+      "target hero left copy still begins about 40px lower than source while bottom boundary is close",
+      "target proof row keeps all three facts on one line while source wraps the third fact to a second line at this viewport",
+      "target hero art/content identity is correct and should be preserved"
+    ],
+    "consequence": [
+      "build/bio-hero-decorative-icons-v001.css is NOT NEEDED on current live target and must remain undeployed",
+      "build/bio-hero-layout-parity-v003.css remains the preferred geometry/text-rhythm candidate because it narrows copy ownership and corrects actual hero--inner columns/padding/wide gap without adding icons"
+    ]
+  },
+  "fresh_technology": {
+    "source_target_pair_captured": true,
+    "proven_deltas": [
+      "source eyebrow has bronze leaf; target eyebrow text has no bronze leaf",
+      "source lead wraps to two lines and uses larger source treatment; target lead spans one long line",
+      "source cards are taller/more padded and carry lower-right organic watermark; target cards are shorter and lack/understate watermark",
+      "source middle sage card has 3px botanical top hairline; target does not",
+      "source use-case checklist uses green leaf/check markers; target still uses native round bullets"
+    ],
+    "already_good": [
+      "three technology article order/content",
+      "three decorative technology icons are already present",
+      "middle sage surface is already present",
+      "Milyen esetekben használom? callout recessed surface and left bronze rail are already present on target"
+    ],
+    "consequence": [
+      "build/bio-visual-parity-v001.css remains justified for eyebrow/lead/card/watermark/hairline/checklist",
+      "build/bio-technology-callout-v001.css and build/bio-technology-callout-20260914-v001.json are OBSOLETE_NOT_NEEDED on current live target; do not add a new wrapper"
+    ]
+  },
+  "review_anchor": {
+    "source": "#ugyfelvelemenyek lands on review section",
+    "target": "same fragment leaves viewport at hero because the rendered Atomic review section has no id=ugyfelvelemenyek",
+    "text_fragment": "also did not provide stable scrolling",
+    "status": "PROVEN_DEEP_LINK_DELTA",
+    "plan": "build/bio-review-anchor-parity-20260914-v001.json"
+  },
+  "global_out_of_scope_visuals_reproduced": [
+    "source service-child header shows Szolgáltatások current pill while target page256 header is neutral",
+    "target floating quick-contact dock renders as nearly blank white pill while source shows phone/mail/CTA"
+  ],
+  "rule": "Do not fold header/dock into page256 package. Current repository STATE scope conflict also blocks all WordPress writes until normal scope handoff is reconciled.",
+  "pixel_pass": false
+}
