@@ -39,11 +39,12 @@
   ],
   "atomic_core_research": {
     "finding": "Do not use Atomic settings.attributes for the remaining aria labels/landmarks on Elementor 4.2.4.",
+    "exact_version_verified": "Elementor repository tag 4.2.4",
     "evidence": [
       "Atomic_Tabs_Menu declares attributes and its Twig template would print settings.attributes",
       "Elementor registers Attributes_Transformer for Attributes_Prop_Type",
-      "Attributes_Transformer::transform currently returns null",
-      "Elementor core test is named test_core_attributes_transformer_always_returns_null",
+      "At the exact Elementor 4.2.4 tag, Attributes_Transformer::transform returns null unconditionally",
+      "At the exact Elementor 4.2.4 tag, the unit test test_core_attributes_transformer_always_returns_null asserts that result",
       "the earlier isolated page256 hero pilot independently confirmed the value can be stored while no aria attribute is rendered"
     ],
     "open_atomic_items": [
