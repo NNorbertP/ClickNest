@@ -1,0 +1,134 @@
+{
+  "schema_version": 3,
+  "package": "hedge-acceptance-matrix-20260915-v003",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-acceptance-matrix-20260914-v002.json",
+  "write_scope": "Only page272-specific runtime/content; no shared media/Form33 setting/global CSS/template/header/footer/dock/other-page writes.",
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required_before_write": true
+  },
+  "must_preserve": {
+    "ids": ["af2e004e","af2e004d","c3d30005","b2e2c001","af2e0011"],
+    "legacy_image_widgets_absent": ["af2e0009","af2e000a","af2e000b","af2e000c","af2e000d","af2e000e"],
+    "shared_media_write": false
+  },
+  "closed_saved_parity": [
+    "hero project widget and documented source-equivalent SVG title/description",
+    "proof carousel component with 21 source images preserved",
+    "native Atomic review structure 3 tabs/panels",
+    "EAEL 28 items, exact source names/order, 28 id=0, full resolution, original upload URLs",
+    "MetForm33 component present",
+    "five complete legacy named regions",
+    "full Van hasonló növénye? mailto range/accessibility name",
+    "af2e004c exact phone/e-mail accessible names and 24-hour reply",
+    "D09 canonical WordPress destination mapping/anchors",
+    "historical page272 background/media defects closed"
+  ],
+  "semantic_runtime_acceptance": {
+    "live_owner_until_replaced": "Code Snippets ID36 v001",
+    "current_candidate": "build/hedge-semantic-runtime-v004.php",
+    "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "preupdate": [
+      "exact current ID36 body/scope/front-end/active/code_error read",
+      "one protected review root + one tablist + exactly 3 tabs",
+      "Panasonic -> Otolecz -> ARKER'S identity/order",
+      "one Form33 wrapper/form/direct-call owner/service label+wrapper/city input+help pair"
+    ],
+    "expected_v004_effect": [
+      "tablist name preserved Ügyfélvélemények",
+      "three exact source full review tab accessible names",
+      "duplicate source dots excluded from AX/tab order",
+      "Form33 name Ajánlatkérés",
+      "direct-call form description relation",
+      "service group name relation",
+      "Település help relation"
+    ],
+    "explicit_non_effect": "v004 must not add the outer Küldjön fotót a sövényről region or change CSS/text/order/form processing/interactions.",
+    "postupdate": [
+      "stored ID36 exact v004, scope front-end, active=true, code_error=null",
+      "v004 marker once and obsolete semantic markers absent when trustworthy rendered read exists",
+      "page272 Elementor bytes/SHA unchanged",
+      "protected component IDs preserved",
+      "post-footer-JS AX exact expected effect"
+    ]
+  },
+  "outer_region_acceptance": [
+    {"name":"Minőségi sövény formára vágás, metszés és megújítás","status":"OPEN_COMPLETE_COPY_PLUS_ART_ROOT_PROOF"},
+    {"name":"Sövénymunkák","status":"OPEN_HEADING_PLUS_COMPLETE_EAEL_ROOT_PROOF"},
+    {"name":"Küldjön fotót a sövényről","status":"OPEN_AF2E004C_INTRO_CONTACT_PLUS_FORM33_COMMON_ROOT_PROOF"}
+  ],
+  "heading_semantics": {
+    "known": "historical fresh evidence says source/target heading text set matches",
+    "open": "ordered source/target H1-H6 level+name matrix not yet recorded",
+    "acceptance": "ordered levels/names match, or each intentional difference is explicitly justified before closeout",
+    "write_rule": "no heading mutation from text-set evidence alone"
+  },
+  "proof_carousel_semantics": {
+    "audit": "reports/subpages/hedge-proof-carousel-role-audit-20260915-v001.json",
+    "historical_delta": "source group vs target listitem was deliberately preserved as live accessibility drift",
+    "acceptance": "fresh source/target role + parent semantics + owner proof; either match, correct an unintended invalid target role, or explicitly document a justified intentional divergence",
+    "interaction_preservation": "never disturb the already established shared carousel owner/autoplay while resolving role semantics"
+  },
+  "form_functionality": {
+    "accepted_preserve": [
+      "textarea effective 5 rows through shared ID6",
+      "photo count 3-5 and 8 MB/file shared contract/ID5",
+      "configured local success state",
+      "notifications/webhooks disabled; local entries; no SMTP"
+    ],
+    "service_radio": {
+      "audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+      "native_source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+      "must_read": ["exact mf_input_name", "mf_input_required", "six option labels/values/order"],
+      "native_capability": "mf_input_required=yes -> required=true -> actual frontend validation register rule",
+      "acceptance_if_yes": "safe non-entry/non-delivery empty-choice behavior proof before any fallback",
+      "server_fallback": "optional only if native required is absent or demonstrably insufficient; build/hedge-form-required-server-plan-20260914-v002.json"
+    },
+    "real_submission": "EXCLUDED",
+    "smtp_external_delivery": "EXCLUDED"
+  },
+  "interaction_acceptance": [
+    "review click/Arrow/Home/End: shared D12 implementation proven; page272 direct run proof-only unless failure",
+    "proof carousel 4000ms autoplay: historical page272 live PASS 5->6",
+    "proof carousel ArrowLeft/Right, swipe, hover/focus pause and reduced-motion: proof-only open",
+    "no new interaction owner/timer unless a stable failure reproduces"
+  ],
+  "gallery_behavior": {
+    "masonry": "historical structural/render PASS preserve",
+    "lightbox_audit": "reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json",
+    "popup_current": "none",
+    "change_rule": "source-specific 28-item zoom/grouped-lightbox proof required; page258's 44 zoom items are not a proxy"
+  },
+  "intentional_divergences": {
+    "ledger": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json",
+    "authorized": ["D09 WordPress slug routing instead of .html", "truthful MetForm local-processing success body instead of static demo no-send wording", "accepted WordPress implementation technology boundaries"],
+    "unresolved": ["proof carousel historical group/listitem role divergence"]
+  },
+  "responsive_visual_matrix": {
+    "viewports": [1920,1440,1024,768,390,360],
+    "known_gallery_contract": {"desktop_columns":4,"tablet_columns":3,"mobile_columns":2,"source_like_721_767_columns":3,"desktop_gutter_px":16,"mobile_gutter_px":12},
+    "required": "synchronized source-target engine/load/focus/animation, known DPR, 100% zoom, screenshot pair + geometry/overlay/diff",
+    "status": "BLOCKED"
+  },
+  "visual_write_rule": "No page272 CSS from stale history. Require a newly reproduced synchronized visual delta and proven target DOM/cascade owner.",
+  "seo_metadata": {
+    "status": "DIRECT_SOURCE_TARGET_METADATA_CAPTURE_ABSENT",
+    "rule": "absence of evidence is not a defect; no Yoast/post-meta mutation without a direct comparison"
+  },
+  "next_live_plan": "build/hedge-next-live-window-plan-20260915-v003.json",
+  "tool_state": {
+    "wpvibe":"disabled in current conversation; do not call again",
+    "opera":"two tabs reused, zero new; Hedge URL/title with stale prior-page AX/screenshot => untrusted and stopped",
+    "acceptance_json":"absent",
+    "behaviors_json":"absent",
+    "pixel_runner":"unavailable"
+  },
+  "pixel_pass": false,
+  "status": "COMPREHENSIVE_PAGE272_MATRIX_READY_REMOTE_AND_FORMAL_ACCEPTANCE_BLOCKED"
+}
