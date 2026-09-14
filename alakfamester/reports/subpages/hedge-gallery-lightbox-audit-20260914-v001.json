@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "package": "hedge-gallery-lightbox-audit-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "question": "Does the page272 EAEL masonry require a lightbox to match the Hedge reference?",
+  "evidence": {
+    "shared_source_runtime": "build/source-interactions-v001.js contains generic .js-zoom lightbox support, but that proves capability only; it does not prove every masonry on every source page carries .js-zoom.",
+    "gallery_page258": "reports/subpages/gallery-eael-masonry-v001.json explicitly records source zoom_count=44 and therefore implements popup=media, full-image clickability and photo-gallery chain.",
+    "hedge_page272": "reports/subpages/hedge-eael-masonry-v001.json records source_gallery_count=28 but no source zoom_count, and intentionally implements popup=none.",
+    "later_page272_finalization": "Later Hedge gallery closeout focuses on exact 28 names/order/full URLs/id=0 decoupling and does not identify a missing popup/lightbox as a reproduced defect."
+  },
+  "comparison": {
+    "page258_source_zoom_explicit": true,
+    "page258_target_popup": "media",
+    "page272_source_zoom_explicit": false,
+    "page272_target_popup": "none",
+    "generic_D17_wording_is_sufficient_to_change_page272": false
+  },
+  "decision": "NO_WRITE. Do not turn on EAEL popup for page272 solely from the generic D17 wording or from the existence of generic initZoom code. A current trustworthy Hedge source DOM must first prove the 28 source gallery items are zoom/lightbox controls or otherwise clickable into a grouped lightbox.",
+  "future_live_gate": [
+    "On a trustworthy source Hedge DOM, inspect the 28 Sövénymunkák items for .js-zoom/buttons/anchors and accessible click controls.",
+    "If source items are noninteractive, preserve popup=none.",
+    "If source items are proven grouped lightbox controls, then read current EAEL widget settings and prepare the smallest page272-only setting change to popup=media without altering items/order/names/URLs/id=0/full resolution.",
+    "Do not infer from Gallery page258 because that source explicitly had 44 zoom items and is a different page contract."
+  ],
+  "opera_current": "Stale/untrusted for Hedge in this continuation; no live zoom claim made.",
+  "pixel_pass": false
+}
