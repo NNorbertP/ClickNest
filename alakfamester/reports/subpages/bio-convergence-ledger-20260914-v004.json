@@ -1,0 +1,113 @@
+{
+  "schema_version": 4,
+  "package": "bio-convergence-ledger-20260914-v004",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_PREPARATION_REMOTE_BLOCKED",
+  "supersedes": "reports/subpages/bio-convergence-ledger-20260914-v003.json",
+  "resource_scope": "page256 only; shared/global CSS/runtime resources read-only under current scope",
+  "delivery": "future page-local style owner only after carrier probe PASS",
+  "sections": [
+    {
+      "name":"hero",
+      "visual_state":"source-proven desktop geometry payload ready; existing contact/fact icons preserved",
+      "exact_state":"OPEN until live hero CTA visual state and responsive checks are re-run",
+      "payload":"bio-hero-layout-parity-v003.css"
+    },
+    {
+      "name":"reviews",
+      "visual_state":"quote v002 + source dot v001 are low-risk; ordinal decorative SVG strategy ready but isolated AX readback required; optional decor and first media-aspect remain diagnostic",
+      "semantic_state":"OPEN: active Panasonic source 1-list/3-item testimonial points are currently five spans with no list semantics; missing #ugyfelvelemenyek; third author role is confirmed short",
+      "interaction_state":"OPEN: source prev/next focuses new panel; ID35 does not explicitly do so",
+      "plans":["bio-reviews-current-fix-plan-20260914-v003.json","bio-review-points-semantics-20260914-v001.json","bio-review-third-author-role-text-20260914-v002.json","bio-review-anchor-parity-20260914-v001.json"],
+      "oracle":"bio-review-source-interaction-contract-20260914-v001.json"
+    },
+    {
+      "name":"wave_reviews_stress",
+      "visual_state":"exact source SVG payload ready in core wave block",
+      "exact_state":"READY_AFTER_LOCAL_STYLE_CARRIER"
+    },
+    {
+      "name":"stress",
+      "visual_state":"current-DOM v003 can render source p1+p2 left/card right and mobile p1->p2->card without moving nodes",
+      "semantic_state":"aside->article has atomic whole-word candidate if exactly two saved af260007 aside tokens are proven",
+      "exact_state":"HARD BLOCKER: saved/AX order remains p1->article/list->p2 instead of source p1->p2->article; no safe atomic node move proven",
+      "plans":["bio-stress-current-dom-visual-v003.css","bio-stress-article-semantic-20260914-v001.json","bio-stress-source-visual-20260914-v003.json"]
+    },
+    {
+      "name":"wave_stress_technology",
+      "visual_state":"exact source SVG payload ready in core wave block",
+      "exact_state":"READY_AFTER_LOCAL_STYLE_CARRIER"
+    },
+    {
+      "name":"technology",
+      "visual_state":"source eyebrow/lead/cards/watermarks/hairline/checklist payload ready; current target icons and callout rail preserved",
+      "semantic_state":"source-like articles3 + use-case list1/items4",
+      "exact_state":"VISUAL_OPEN_UNTIL_LOCAL_DELIVERY_AND_RESPONSIVE_QA"
+    },
+    {
+      "name":"table",
+      "visual_state":"source table surface and stone gradient payloads ready",
+      "semantic_state":"compact conditional caption->external title + aria-labelledby transform prepared; col3/row4 protected",
+      "exact_state":"OPEN until caption disappears and title ownership is source-like"
+    },
+    {
+      "name":"wave_table_expectations",
+      "visual_state":"exact source SVG payload ready in core wave block",
+      "exact_state":"READY_AFTER_LOCAL_STYLE_CARRIER"
+    },
+    {
+      "name":"expectations",
+      "visual_state":"source contract known",
+      "semantic_state":"source requires articles2/lists2/items5; target currently articles0/lists2/items5",
+      "exact_state":"HARD BLOCKER: no safe atomic owner regrouping; v004 deployment HOLD",
+      "plan":"bio-expectations-source-structure-20260914-v004.json"
+    },
+    {
+      "name":"wave_expectations_FAQ",
+      "visual_state":"exact source SVG payload ready but dependency-bound",
+      "exact_state":"DEPLOY_ONLY_WITH_FAQ_PAPER_CONVERSION"
+    },
+    {
+      "name":"FAQ",
+      "visual_state":"source-like native details card/leaf plus-minus styling prepared; paper placement/order design prepared",
+      "semantic_state":"source buttons4/disclosure0; target buttons0/disclosure4",
+      "interaction_state":"source arrow/Home/End focus collection + custom motion not supplied by native details",
+      "exact_state":"HARD BLOCKER under current runtime constraints",
+      "oracle":"bio-faq-source-interaction-contract-20260914-v001.json"
+    },
+    {
+      "name":"final_CTA",
+      "visual_state":"accessibility-safe source band/mail/button/responsive design ready; eyebrow separated from h2 semantics",
+      "structure_state":"mail child-order microfix still required",
+      "exact_state":"OPEN until FAQ-order/mail structure/page-local CSS transaction and responsive QA pass"
+    }
+  ],
+  "section_local_AX_gate": {
+    "authority":"reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "main_source_lists":"5 lists / 16 items",
+    "main_current_target_structural_lists":"4 lists / 13 items",
+    "missing_semantics":"Panasonic review testimonial list1/items3",
+    "whole_page_count_warning":"prior whole-page source/target list count equality was accidental compensation and is not final proof"
+  },
+  "content_state": {
+    "protected_manifest":"bio-content-parity-manifest-20260914-v001.json",
+    "confirmed_visible_text_delta":"third review author role line",
+    "plan":"bio-review-third-author-role-text-20260914-v002.json"
+  },
+  "delivery_state": {
+    "global_Additional_CSS":"FORBIDDEN_WRITE",
+    "global_ID35":"PRESERVE_READ_ONLY",
+    "page_local_style_carrier":"UNPROVEN; probe first",
+    "first_local_visual_payload":"bio-page-local-visual-delivery-20260914-v002.json"
+  },
+  "remote_state": {
+    "WPVibe":"disabled",
+    "plus5_site_quota":"unknown",
+    "STATE_md":"page264-only latest fresh read",
+    "Opera":"exactly two shared tabs; do not steal while page264 owns QA"
+  },
+  "current_result":"SAFE_PREPARATION_ADVANCED; MULTIPLE_EXACTNESS_BLOCKERS_REMAIN; PIXEL_PASS=false",
+  "wordpress_writes":0,
+  "pixel_pass":false
+}
