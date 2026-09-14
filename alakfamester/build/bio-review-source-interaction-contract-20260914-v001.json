@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "package": "bio-review-source-interaction-contract-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "SOURCE_BEHAVIOR_PROVEN_TARGET_RUNTIME_TO_COMPARE_FRESH",
+  "source_evidence": {
+    "files": [
+      "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+      "https://alakfamester.clicknest.hu/app.js?v=20260205"
+    ],
+    "retrieval": "read-only public source download; no target/Opera mutation"
+  },
+  "source_runtime_contract": {
+    "root": ".js-reviews",
+    "tabs": ".reviews__tab[role=tab]",
+    "panels": ".review[role=tabpanel]",
+    "dots": ".reviews__dot",
+    "step_buttons": ".js-reviews-step[data-step]"
+  },
+  "setActive_behavior": [
+    "Normalize index modulo tab count.",
+    "For each tab: aria-selected=true only for active; tabindex=0 only for active, -1 for inactive.",
+    "For each panel: remove hidden only for active; set hidden=true for inactive.",
+    "For each visual dot: toggle .is-on only for active.",
+    "Update internal current index.",
+    "If focusPanel=true, focus the newly active tabpanel."
+  ],
+  "source_click_behavior": [
+    "Clicking a tab activates that tab/panel without forcing panel focus.",
+    "Clicking previous/next computes current selected tab, adds data-step -1/+1, activates the new tab/panel and focuses the new tabpanel."
+  ],
+  "source_tab_keyboard_behavior": {
+    "ArrowRight": "next tab, wrapping",
+    "ArrowDown": "next tab, wrapping",
+    "ArrowLeft": "previous tab, wrapping",
+    "ArrowUp": "previous tab, wrapping",
+    "Home": "first tab",
+    "End": "last tab",
+    "activation": "the shared keyboard helper calls tab.click() and focuses the target tab"
+  },
+  "source_initialization": "current index is selected-tab index if present, else 0; setActive runs once on init",
+  "source_accessibility": [
+    "tablist has accessible label Ügyfélvélemények",
+    "tabs are role=tab with aria-controls and unique IDs",
+    "panels are role=tabpanel with aria-labelledby and tabindex=0",
+    "previous/next buttons have accessible names Előző vélemény / Következő vélemény",
+    "visual ordinal marks are aria-hidden",
+    "visual dots are presentation-only"
+  ],
+  "target_known_good_to_preserve": [
+    "native Elementor Atomic Tabs hierarchy",
+    "three exact accessible tab names",
+    "selected/tabindex/tabpanel relationships were present in prior rendered target DOM",
+    "ID35 provides source-like previous/next controls and suppresses duplicate numbered dot controls from AX/focus",
+    "review region and tablist accessible names are already closed"
+  ],
+  "remaining_target_interaction_checks_when_page256_browser_returns": [
+    "ArrowRight/Left/Up/Down + Home/End move/activate tabs in source-equivalent wrapping order.",
+    "Previous/next controls wrap and focus the newly active panel as source does.",
+    "Inactive panels become hidden and active panel is exposed exactly once.",
+    "No duplicate numbered controls or decorative ordinals enter focus order.",
+    "Decorative ordinal staticText AX issue is resolved per bio-review-ordinal-accessibility-20260914-v001.json.",
+    "Visual active dot follows active tab without creating an accessible/focusable duplicate."
+  ],
+  "decision": "Do not replace Atomic Tabs with source legacy JS. Use the source interaction contract only as a behavior acceptance oracle; make the smallest ID35/CSS/content correction only if a fresh target behavior check proves a specific mismatch.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
