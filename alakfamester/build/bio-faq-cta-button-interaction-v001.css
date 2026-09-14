@@ -1,0 +1,17 @@
+/* af-bio-faq-cta-button-interaction-v001:start
+ * Exact source .btn + .btn--bronze transition/hover states for page256 CTA.
+ */
+body.page-id-256 #af-sub-bio-cta > [data-interaction-id="af26000b"] {
+  cursor: pointer !important;
+  transition: transform 220ms cubic-bezier(.22,.68,.36,1), background-color 220ms cubic-bezier(.22,.68,.36,1), box-shadow 220ms cubic-bezier(.22,.68,.36,1), border-color 220ms cubic-bezier(.22,.68,.36,1), color 220ms cubic-bezier(.22,.68,.36,1) !important;
+}
+body.page-id-256 #af-sub-bio-cta > [data-interaction-id="af26000b"]:hover,
+body.page-id-256 #af-sub-bio-cta > [data-interaction-id="af26000b"]:focus-visible {
+  background: #c6ab74 !important;
+  color: #14251C !important;
+  transform: translateY(-2px) !important;
+}
+body.page-id-256 #af-sub-bio-cta > [data-interaction-id="af26000b"]:active {
+  transform: translateY(0) !important;
+}
+/* af-bio-faq-cta-button-interaction-v001:end */
