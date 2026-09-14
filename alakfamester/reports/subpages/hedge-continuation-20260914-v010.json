@@ -1,0 +1,83 @@
+{
+  "schema_version": 10,
+  "package": "hedge-continuation-20260914-v010",
+  "date": "2026-09-14",
+  "scope": {
+    "only_wordpress_write_target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+    "page_id": 272,
+    "reference_read_only": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+    "rule": "No WordPress write to any other page/global template/shared media/shared form setting. Existing page272-only Code Snippets ID36 may be updated only after the documented live gates pass."
+  },
+  "accepted_saved_baseline": {
+    "elementor_bytes": 53606,
+    "elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "evidence": "reports/subpages/hedge-legacy-review-closeout-20260914-v007.json"
+  },
+  "closed_do_not_repeat": [
+    "shared-media recovery 26/26",
+    "EAEL gallery 28/28 page-local id=0, full resolution, original URLs and exact names/order",
+    "five legacy named regions",
+    "full Van hasonló növénye? mailto range and exact accessible name",
+    "exact af2e004c phone/e-mail accessible names",
+    "24-hour reply sentence",
+    "hero af2e004e / proof af2e004d / native reviews c3d30005 / MetForm af2e0011 preservation",
+    "ID36 v001 tablist name and duplicate review-dot AX/focus suppression",
+    "historical af-s-soveny-specialista-8 background mismatch: later fresh no-op audit proves current af-bg-sage equals expected af-bg-sage"
+  ],
+  "actual_known_delta": {
+    "candidate": "build/hedge-semantic-runtime-v003.php",
+    "target": "update existing Code Snippets ID36 only",
+    "delta": [
+      "exact three real review-tab accessible names",
+      "#ajanlatkeres region name Küldjön fotót a sövényről",
+      "MetForm33 form name Ajánlatkérés",
+      "form description relationship to the shared direct-call paragraph",
+      "service group accessible name",
+      "Település help relationship"
+    ],
+    "crosscheck": "reports/subpages/hedge-semantic-runtime-metform-crosscheck-20260914-v001.json",
+    "static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+    "status": "PREPARED_NOT_DEPLOYED"
+  },
+  "visual_reconciliation": {
+    "historical_media_gap": "obsolete after hero/proof/gallery packages and later media finalization; do not rebuild media",
+    "historical_background_gap": "obsolete; af-s-soveny-specialista-8 already verified sage",
+    "current_site_matrix": "No page272 visual/content delta is currently documented beyond the semantic successor; visual work requires a newly reproduced source-target difference.",
+    "pixel_pass": false,
+    "reason": "No trustworthy current exact-viewport target/source screenshot-overlay-diff evidence."
+  },
+  "outer_region_gates": {
+    "hero": "Do not add a region name until fresh DOM proves one stable complete root contains the full hero copy and hero art. af2e0041 remains only a candidate from historical hero evidence.",
+    "gallery": "Do not label EAEL b2e2c001 alone. First prove a stable common ancestor contains both the Sövénymunkák heading and the complete EAEL composite."
+  },
+  "opera_memory_and_integrity": {
+    "tabs": 2,
+    "new_tabs_opened": 0,
+    "action": "Reused only the two existing tabs and navigated them toward Hedge source/target.",
+    "failure": "After navigation, both tab-content accessibility trees returned stale Biológiai védelem content while browser tab titles/URLs indicated Sövény-specialista. This is connector/cache inconsistency, so none of those AX trees is accepted as Hedge evidence.",
+    "decision": "Stop Opera reads/navigation for this continuation rather than reconnect/reload loops or replacement-tab fan-out."
+  },
+  "wpvibe": {
+    "verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "current_tool": "DISABLED/UNAVAILABLE in this conversation",
+    "site_connection": "NOT_CONFIRMED",
+    "exact_current_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "wordpress_writes_this_continuation": 0
+  },
+  "next_safe_remote_sequence": [
+    "When WPVibe is available again, verify +5 identity/site connection/exact rolling quota and preserve D11 reserve plus full readback margin.",
+    "Fresh-read page272 bytes/SHA/JSON; require accepted baseline or reconcile drift before any write.",
+    "Read current ID36 exact body/active/error state and preserve it as rollback source.",
+    "Read the smallest rendered DOM slice that proves one Form33 wrapper/form and wrapper-owned #af-form-direct-call or exact tel paragraph. If absent, stop.",
+    "If the ownership gate passes, update existing ID36 only with hedge-semantic-runtime-v003.php through the proven plugin-aware path; never create a duplicate helper.",
+    "If a write returns HTTP 429, treat outcome as UNKNOWN and do not retry until exact readback.",
+    "Read back ID36 active/code_error/body identity and prove page272 Elementor hash unchanged.",
+    "Only with a trustworthy non-stale browser read, verify post-footer-JS review tabs/dot suppression and form semantics. Keep Opera to one source + one target tab.",
+    "Only if fresh DOM proves complete hero/gallery roots, prepare later attribute-only region semantics. Otherwise leave them open.",
+    "No SMTP and no real form submission."
+  ],
+  "status": "LOCAL_STATIC_PREPARATION_MAXIMIZED_REMOTE_WRITE_AND_TRUSTWORTHY_LIVE_AX_BLOCKED",
+  "pixel_pass": false
+}
