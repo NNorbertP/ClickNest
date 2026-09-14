@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "package": "continuation-closeout-20260914-v002",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "latest_exact_wpvibe": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "used": 291,
+    "limit": 300,
+    "remaining": 9,
+    "D11_nominal_reserve": 10,
+    "decision": "STOP ALL WPVibe calls. The current remaining balance is already below the nominal recovery reserve; do not spend another site or account call until rolling-window capacity returns."
+  },
+  "completed_live_in_this_continuation": {
+    "page272": {
+      "saved_data": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+      "legacy": "five named legacy regions, full mailto range, exact phone/e-mail accessible names, 24-hour reply sentence, protected components preserved",
+      "gallery": "28 items, full/original webp URLs, exact page-local names, media ids=0; no further shared-media write",
+      "runtime": "Code Snippets ID36 active/front-end/code_error=null; v001 adds review tablist name and removes duplicate numbered review dots from AX/focus without visual/pointer change",
+      "open_successor": "build/hedge-semantic-runtime-v002.php, static QA reports/subpages/hedge-semantic-runtime-static-qa-v002.json; update existing ID36 later to add exact real-tab labels plus MetForm region/form/description/group/help relationships. Do not create another helper."
+    },
+    "page256": {
+      "state": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid",
+      "authoritative_closeout": "reports/subpages/bio-page256-closeout-20260914-v010.json",
+      "decision": "Do not repeat v004-v010 semantic work."
+    },
+    "page264": {
+      "state": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+      "runtime": "ID33 active; content/semantic parity preserved; interaction ownership remains existing source-interactions-v001 and ID14/ID33."
+    },
+    "header": {
+      "additional_css_post8": "601189 B / 6d711a670cbfc62da45fa84d2b8d0c04b8078aa4ff93553ae492c2104c5ae003",
+      "css_change": "header-desktop-alignment v003 exact block replaced once by complete v004; duplicate pseudo-caret suppression + .is-current active styling; base header block preserved",
+      "runtime": "ID7 preserved; new ID37 AF header route current parity v001 active/front-end/code_error=null, class-only route state for four service and two reference routes, homepage excluded"
+    }
+  },
+  "prepared_not_deployed": [
+    {
+      "resource": "page272 semantic runtime successor",
+      "build": "build/hedge-semantic-runtime-v002.php",
+      "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v002.json",
+      "future_action": "plugin-aware UPDATE existing ID36 only"
+    },
+    {
+      "resource": "page264 visual parity",
+      "build": "build/oldtrees-visual-parity-bundle-v004.css",
+      "qa": "reports/subpages/oldtrees-visual-predeploy-static-qa-20260914-v004.json",
+      "future_action": "one page264-scoped Additional CSS insert after fresh page/hash/post8 preflight"
+    },
+    {
+      "resource": "page256 visual parity",
+      "build": "build/bio-visual-parity-v001.css",
+      "qa": "reports/subpages/bio-visual-predeploy-static-qa-20260914-v001.json",
+      "future_action": "one page256-scoped Additional CSS insert after fresh v010 hash/post8 preflight"
+    },
+    {
+      "resource": "page256 tag-only semantics",
+      "build": "build/bio-semantic-resume-20260914-v013.json",
+      "future_action": "fresh raw content/search required before af260007 aside->article or any af260013 card-root role change"
+    }
+  ],
+  "no_write_decisions": {
+    "floating_dock": "No reproducible CSS hide/clip cause found; do not change from one intermediate screenshot.",
+    "global_review_id14": "Still gated on fresh homepage representative AX proof; keep page-scoped dot fixes.",
+    "page264_interactions": "Existing runtime already owns range/carousel behavior; do not duplicate listeners/timers without failing live interaction evidence.",
+    "missing_assets": "No exact public/indexed source copies found; do not invent substitutes."
+  },
+  "opera_memory": {
+    "new_tabs_opened": 0,
+    "policy": "Existing two tabs only; they became shared/stale/challenged, so no navigation fan-out was attempted."
+  },
+  "formal_blockers": [
+    "specs/acceptance.json and specs/behaviors.json absent",
+    "no deterministic six-viewport screenshot/overlay/diff runner with same browser/DPR/zoom",
+    "Opera has no click/keyboard action and target can be challenged",
+    "container cannot resolve Clicknest hosts",
+    "page270 portrait and page258 Ellwoodi exact source assets remain unavailable/404",
+    "SMTP/delivery and real form submission excluded"
+  ],
+  "critical_rule": "A 429-returned write is UNKNOWN until readback proves outcome; never blind-retry.",
+  "next_action_when_capacity_returns": "First exact account counter only after rolling capacity is expected to be safely above reserve; then page272 ID36 v002 update is the smallest coherent closure package. After that deploy page264 v004 visual bundle, then page256 visual bundle, each with fresh hashes and full readback/QA.",
+  "pixel_pass": false
+}
