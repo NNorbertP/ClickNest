@@ -1,3 +1,54 @@
+# STATE - 2026-09-14, PARITY QUEUE CHECKPOINT; WPVIBE RESERVE PRESERVED
+
+## Current global continuation point
+Target: `https://alakfamester-wp.clicknest.hu/` only. Reference: `https://alakfamester.clicknest.hu/`. Repo: `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
+
+Latest exact WPVibe account counter: **278/300 used, 22 remaining** in the rolling 24-hour window. D11 requires **10 calls reserved**, so only **12 calls** are available above reserve. The site is currently returning HTTP 429 to WPVibe requests and WPVibe retries can consume several calls per failed request. **Do not send another WPVibe site call until a fresh/unthrottled window is available.** Opera Browser Connector is currently disconnected; do not open memory-heavy Opera sessions until it reconnects. `PIXEL_PASS=false`.
+
+### Priority 1 - page272 Hedge closure
+Evidence: `reports/subpages/hedge-parity-fix-20260914-v001.json`, latest report commit `ca65a8e7d32a54eb7bb8db3a599e0a760c2932d5`.
+- page272 `_elementor_data` last verified **53097 B**, SHA256 `bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc`, JSON valid;
+- `eael_fg_image_resolution_size=full` and `Jellemzően 24 órán belül válaszolok.` are saved in Elementor data;
+- protected IDs `af2e004e`, `af2e004d`, `c3d30005`, `af2e0011` remained present; removed legacy widgets `af2e0009`-`af2e000e` remained absent;
+- after the concurrent media job, delayed drift was repaired for IDs `112,203-217`; last successful full readback still showed only IDs **218 and 219** wrong;
+- required values: ID218 `Sövénymunka, 12. kép`; ID219 `Sövénymunka, 13. kép`;
+- updates/readbacks for 218/219 are currently blocked by HTTP 429. When the throttle clears: read only 218/219 first, repair only if still wrong, then one full 28-item readback plus one page272 hash readback;
+- frontend still has stale Elementor element cache. The prior protected-meta approval expired. After media/hash PASS and only if enough reserve remains, request a fresh approval to delete **only page272 `_elementor_element_cache`**, then verify the 24-hour sentence, full-size gallery URLs and 28 accessible image names. Do not repeat the successful page272 data patches to invalidate cache.
+
+### Priority 2 - page256 Biological Protection
+Evidence: `reports/subpages/bio-parity-fix-20260914-v003.json`, commit `5d4b4d104ee4ddf58a248ecef0371621e0b66fce`; latest STATE commit before this checkpoint `5f19ad436e7b565fbba95b223f7bfd859ebe526c`.
+- final contact widget `9a1b2c3d` was already surgically fixed so the label and email share one `mailto:` anchor;
+- latest verified page256 `_elementor_data`: **34930 B**, SHA256 `1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d`;
+- before any further page256 write, re-read this exact hash; do not full-save and do not restore an older snapshot;
+- remaining proven legacy deltas: 13 trailing periods in `af260007`, `af260010`, `af260013`; symptom table `af260011` uppercase headers + first-column row-header semantics; source-equivalent region semantics only for complete sections wholly contained inside legacy text-editor widgets; final CTA accessible-name case/order semantic follow-up;
+- unresolved Atomic hero/FAQ/tablist attributes must **not** use guessed V4 attributes: prior pilot stored but did not render and was rolled back;
+- use only `content/search` + match-once `content/edit`, with readback after each coherent package.
+
+### Priority 3 - page264 Old Trees semantic parity
+Evidence: `reports/subpages/oldtrees-semantic-audit-20260914-v001.json`, commit `ce78a1a2830d28b939dd29839b6dcdcffdefa493`; prepared package `build/oldtrees-semantic-parity-20260914-v001.json`, commit `5d18b49d7111074ccc94c99bdf8552a193835049`.
+- last verified page264 baseline: SHA256 `09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`; re-read before any write;
+- safe visual-neutral prepared edits: eight legacy `.af-sub-inner` wrappers get exact `role='region'` + `aria-label`; nine existing `strong` step labels get `role='heading' aria-level='3'`; existing mailto anchor in `af2a004b` gets exact `aria-label='ÍRJON BÁTRAN kreativ@alakfa-mester.hu'`;
+- preserve all existing tags/classes/IDs/order/text/CSS/geometry; `af2a004d` stays unnamed; no shared MetForm/global writes.
+
+### Priority 4 - global header parity
+Evidence: `reports/header/header-live-source-audit-20260914-v002.json`, commit `67d71075d0734c299d5adc9a748aae62b9d7d1fa`; prepared complete CSS `build/header-live-source-v001.css`, commit `7535f984f886a7e501d17edef75aaf9ffcdce035`.
+- last clean preflight: Additional CSS post8 **576084 B**, SHA256 `7ac99daf3e30139ce30d57963506de3730db97fd62f03fc729cc3308ab5407f1`, marker absent; header20 **7729 B**, SHA256 `db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d`;
+- before write, re-read both resources in one guarded preflight and reconcile any drift;
+- if unchanged and quota allows full write+readback+verification, insert the **complete** prepared CSS before unique `/* af-project:end */` using supported content/edit. Do not use a shortened fragment;
+- source sticky threshold is 8px vs target 24px; change only later through a proven plugin-aware Code Snippets path after header CSS PASS.
+
+### Hard acceptance blockers still open
+- `specs/acceptance.json` and `specs/behaviors.json` are absent from current main;
+- deterministic 1920/1440/1024/768/390/360 viewport screenshot/overlay/diff tooling is unavailable in the current environment;
+- Rólam portrait source and Gallery Ellwoodi source asset remain 404 with no proven substitute;
+- page268 editor reopen proof remains open; do not resave solely for proof;
+- SMTP/delivery and real MetForm submission remain prompt-3 scope.
+
+### Capacity decision
+With only 12 calls above reserve and active 429, **start no new remote work package now**. The next remote action must be the smallest closure read: Hedge media IDs 218/219. If that returns 429, stop immediately and preserve the reserve. If it succeeds, finish Hedge only if the entire read->repair->full-readback->hash-readback package still fits above the 10-call reserve. All other packages remain locally prepared.
+
+---
+
 # STATE - 2026-09-14, BIOLOGICAL PROTECTION CTA PATCHED; WPVIBE 429 BLOCKS REMAINING PARITY WRITES
 
 ## Current continuation point - Biological Protection page256
@@ -249,7 +300,7 @@ Evidence: `reports/home/home-final-audit-v001.json`, commit `3bf78b117ac90b614ad
 - homepage content/navigation package closed with documented hashes.
 
 ### CLOSED - Background-helper verification
-Evidence: `reports/subpages/background-helper-finalization-v001.json`, commit `db71fa6f35046a25ca15ec864fa2c1978a18091f`.
+Evidence: `reports/subpages/background-helper-finalization-v001.json`, commit `db71fa6f35046a25c09e4d4d1dbf253`.
 
 ### CLOSED - Gallery + Hedge media recheck
 Evidence: `reports/subpages/gallery-hedge-media-finalization-v001.json`, commit `d0ac9e9114aa44b400381537885ffa6cbdfcc0db`.
