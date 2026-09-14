@@ -1,0 +1,53 @@
+{
+  "schema_version": 5,
+  "package": "bio-faq-cta-source-layout-20260914-v005",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED",
+  "supersedes": "build/bio-faq-cta-source-layout-20260914-v004.json",
+  "reason": "The source-exact expectations->FAQ wave is dependency-bound to the FAQ paper conversion. v005 makes that fourth wave an explicit part of the FAQ/CTA phase rather than the earlier generic visual phase.",
+  "structural_predecessors": [
+    "build/bio-page256-next-safe-package-20260914-v014.json op1 — remove sole af-faq-content order:10 owner",
+    "build/bio-cta-mail-structure-20260914-v001.json — preserve exact mail href/aria-label/strings and create deterministic .af-sub-cta-label child"
+  ],
+  "css_blocks_after_predecessor_readback": [
+    {"file":"build/bio-visual-parity-v001.css","marker":"af-bio-visual-v001","note":"May already be live from first visual phase; never duplicate. If already marker=1, reuse it and do not include again."},
+    {"file":"build/bio-wave-source-faq-v001.css","blob_sha":"0e31639b0e7136d5d5c8fec11cbe003ba46327e1","marker":"af-bio-wave-faq-v001","role":"source expectations sage -> FAQ paper curve; only now safe"},
+    {"file":"build/bio-faq-cta-source-layout-v001.css","marker":"af-bio-faq-cta-source-v001","role":"paper FAQ + separate forest CTA band using existing siblings"},
+    {"file":"build/bio-faq-cta-generated-label-guard-v001.css","marker":"af-bio-faq-cta-label-guard-v001","role":"suppress old outer generated CTA eyebrow"},
+    {"file":"build/bio-faq-cta-mail-label-v001.css","marker":"af-bio-faq-cta-mail-label-v001","role":"deterministic source label-above-email row"},
+    {"file":"build/bio-faq-cta-mail-interaction-v001.css","marker":"af-bio-faq-cta-mail-interaction-v001","role":"source mail pill shadow/hover/mobile state"},
+    {"file":"build/bio-faq-cta-button-interaction-v001.css","marker":"af-bio-faq-cta-button-interaction-v001","role":"source bronze button transition/hover/active"},
+    {"file":"build/bio-faq-cta-eyebrow-accessible-v001.css","marker":"af-bio-faq-cta-eyebrow-v001","role":"source underlying Következő lépés string with visual uppercase"},
+    {"file":"build/bio-faq-cta-section-spacing-v001.css","marker":"af-bio-faq-cta-spacing-v001","role":"exact source wave-adjacent vertical rhythm"},
+    {"file":"build/bio-card-mobile-source-v001.css","marker":"af-bio-card-mobile-v001","note":"May already be live from first visual phase; never duplicate. Supplies source <=720 24px CTA padding."}
+  ],
+  "duplicate_marker_rule": "Before composing the single CSS write, fresh-read every marker. Include only blocks with count=0. Blocks already live with count=1 are dependencies, not candidates for reinsertion. Any count>1 is a stop/reconcile condition.",
+  "source_contract": {
+    "wave": "exact source path/height; sage background to paper fill",
+    "FAQ": "paper first, 760px narrow measure, source card/leaf plus-minus visuals",
+    "CTA": "48px after FAQ; radius36 forest band; source decorative rings/leaves; 1.25/.75 desktop grid; one-column <=900; 24px band padding <=720",
+    "mail": "visual label above email; exact existing accessible name/href; source on-forest hover/focus/mobile states",
+    "button": "source bronze base/hover/active plus decorative arrow",
+    "eyebrow": "underlying title-case source string; uppercase presentation"
+  },
+  "mandatory_preflight": [
+    "page256 scope handoff and shared Opera release",
+    "verified +5 WPVibe target connection/quota; D11 >=10 after complete write/readback margin",
+    "fresh page256 bytes/SHA/JSON reconciled",
+    "FAQ-order and CTA-mail structural predecessors separately read back",
+    "fresh Additional CSS search for all #af-sub-bio-cta::before/::after owners and every planned marker",
+    "af260014 still exists at the expectations->FAQ boundary and the FAQ outer winning background will become paper in this same CSS transaction"
+  ],
+  "write_strategy": "Compose one coherent guarded Additional CSS insertion from only currently-absent required blocks. The FAQ wave and paper layout must land in the same transaction so no sage->paper->forest intermediate state is created.",
+  "postconditions": [
+    "source-exact fourth wave enters a paper FAQ",
+    "FAQ appears before CTA and no longer shares the forest band",
+    "native FAQ controls remain functional and source-like visually",
+    "separate source-like CTA band has one eyebrow, correct mail/button visuals and exact existing href/accessibility",
+    "desktop and <=900/720/560 checks pass before marking visual complete"
+  ],
+  "rollback": "Remove only newly inserted absent-marker blocks from this transaction. Do not remove shared dependencies already live before the transaction.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
