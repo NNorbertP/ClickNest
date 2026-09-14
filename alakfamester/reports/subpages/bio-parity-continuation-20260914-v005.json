@@ -1,0 +1,84 @@
+{
+  "package": "bio-parity-continuation-20260914-v005",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "slug": "biologiai-vedelem",
+  "scope": "Only https://alakfamester-wp.clicknest.hu/biologiai-vedelem/ may be modified in this work package. Reference is read-only: https://alakfamester.clicknest.hu/biologiai-vedelem.html.",
+  "decision_refs": ["D03", "D07", "D11", "D18"],
+  "source_manifest": "build/bio-parity-fix-20260914-v004.json",
+  "wordpress_writes": 0,
+  "fresh_target_preflight": {
+    "elementor_data_bytes": 34930,
+    "elementor_data_sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+    "matches_v004_precondition": true,
+    "active_theme": "hello-elementor",
+    "wpvibe_account": "ncsnorbert+20260914-4@gmail.com"
+  },
+  "fresh_quota": {
+    "used": 19,
+    "limit": 300,
+    "remaining": 281,
+    "D11_reserve": 10,
+    "remaining_above_reserve": 271,
+    "finding": "Quota is not the blocker. The target site endpoint is independently returning HTTP 429."
+  },
+  "fresh_source_target_ax_recheck": {
+    "source_named_regions": [
+      "Biológiai növényvédelem alakfákhoz, sövényekhez és értékes kerti növényekhez",
+      "Amit a megbízóim mondanak",
+      "Miért nem ér véget a munka a metszéssel?",
+      "Mit jelent nálam a biológiai, mikrobiológiai megközelítés?",
+      "Mire figyelek a leggyakrabban?",
+      "Mit várhatunk – és mit nem?",
+      "Biológiai védelem – kérdések"
+    ],
+    "target_named_regions": ["Amit a megbízóim mondanak"],
+    "source_review_tablist_name": "Ügyfélvélemények",
+    "target_review_tablist_name": null,
+    "source_table_headers": ["TÜNET", "MIT VIZSGÁLOK", "LEHETSÉGES IRÁNY"],
+    "target_table_headers": ["Tünet", "Mit vizsgálok", "Lehetséges irány"],
+    "source_first_column_role": "rowHeader",
+    "target_first_column_role": "cell",
+    "source_final_cta_accessible_name": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+    "target_final_cta_accessible_name": "KREATIV@ALAKFA-MESTER.HU Írjon bátran",
+    "trailing_period_delta_count": 13
+  },
+  "wpvibe_probe": {
+    "successful_search": {
+      "pattern": "kevesebb tartal",
+      "matches": 1,
+      "finding": "Returned escaped Elementor JSON snippet reconfirmed terminal periods in all four af260007 stress-list items."
+    },
+    "blocked_search": {
+      "pattern": "af260007",
+      "attempts": 2,
+      "result": "HTTP 429 Too Many Requests",
+      "writes": 0
+    },
+    "decision": "Do not continue site writes while 429 persists; do not retry guessed Atomic attributes, full Elementor save, old snapshot restore, or raw SQL mutation."
+  },
+  "remaining_safe_legacy_package": [
+    "af260007: remove four source-mismatching terminal periods and add source-equivalent named-region semantics after exact content/search",
+    "af260010: remove four source-mismatching terminal periods and add source-equivalent named-region semantics after exact content/search",
+    "af260011: uppercase the three header strings, convert four first-column body cells to th scope=row, and add source-equivalent named-region semantics after exact content/search",
+    "af260013: remove five source-mismatching terminal periods and add source-equivalent named-region semantics after exact content/search",
+    "9a1b2c3d: if fresh AX still differs, add aria-label='ÍRJON BÁTRAN kreativ@alakfa-mester.hu' to the existing mailto anchor without visual change"
+  ],
+  "atomic_items_intentionally_open": [
+    "hero named region",
+    "FAQ outer named region",
+    "review tablist accessible name"
+  ],
+  "next_action": [
+    "When the target site is unthrottled, first re-read WPVibe counter and page256 34930 B / 1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d precondition.",
+    "Use ASCII-only or returned escaped snippets with /wpvibe/v1/content/search and guarded match-once /wpvibe/v1/content/edit only.",
+    "Apply the coherent legacy fixes, then re-read page256 bytes/SHA/JSON and run a fresh source-target AX check.",
+    "Do not touch any other WordPress page, shared media, global template, plugin setting, Additional CSS, or SMTP in this package."
+  ],
+  "acceptance_files": {
+    "specs/acceptance.json": "absent on main",
+    "specs/behaviors.json": "absent on main"
+  },
+  "pixel_pass": false,
+  "smtp_or_submission": false
+}
