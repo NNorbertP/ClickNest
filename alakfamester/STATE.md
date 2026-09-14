@@ -1,102 +1,117 @@
-# STATE - 2026-09-14, PAGE264 ONLY; NEW WPVIBE ACCOUNT HANDOFF; REMOTE WRITE BLOCKED
+# STATE - 2026-09-14, PAGE264 ONLY; V004+V005 LIVE; QA PENDING; NEW WPVIBE ACCOUNT UNVERIFIED
 
-## Current continuation point - Idős fák / page264 only
+## Current continuation point — Idős fák / page264 only
 
 Target: `https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/` (page264).  
 Reference: `https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html`.  
 Repository: `NNorbertP/ClickNest`, branch `main`, folder `alakfamester/`.
 
-**Write scope:** only page264 may be changed. A Hello Additional CSS write is allowed only when the complete inserted block is explicitly page-scoped with `body.page-id-264` effect selectors. Do not change any other page, header/footer template, shared media, shared plugin setting, SMTP setting or send an external/form test message from this package.
+**WordPress write scope:** only page264 may change. A Hello Additional CSS edit is permitted only when every effect selector is explicitly page264-scoped. Do not modify another page, global header/footer template, shared media, shared plugin setting, SMTP or send a real/external form test from this package.
 
-Historical broader STATE before this scoped checkpoint is preserved in Git at blob/STATE SHA `c62730d6a52913fa3739927a2f569d58db988340`; use the detailed reports below as the current source of truth instead of replaying older packages.
+Authoritative reconciliation report: `reports/subpages/oldtrees-continuation-20260914-v006.json`.  
+Authoritative live visual deployment evidence: `reports/subpages/oldtrees-visual-live-qa-20260914-v006.json`.
 
-## Account / connector state
+## Important correction — do NOT deploy another oldtrees visual bundle
 
-The WPVibe account identity was verified as **`ncsnorbert+20260914-5@gmail.com`**, with verified email. `connect_site` returned a one-click WordPress authorization URL, but before `list_sites` / `site_info` could confirm the approved connection and exact rolling quota, the WPVibe connector became unavailable in this conversation.
+The repository contains a later live QA proving that page264 visual **v004 and v005 are already deployed** in Hello Additional CSS.
+
+Live deployment facts:
+- page264 `_elementor_data`: **48874 B**, SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, JSON valid;
+- visual v004 marker was inserted once and read back once;
+- post-v004 Additional CSS: **611030 B**, SHA256 **`87fb6f275f9550dfcb406ac855b1287f4cf4dbd15da226840e6d2d8c28108bb6`**;
+- visual v005 marker was then inserted once and read back once; the write returned **611423 B**;
+- the full post-v005 Additional CSS hash was intentionally not spent because D11 reserve was being preserved;
+- Elementor data remained unchanged through the visual package.
+
+The v004 live capture already proved source-like warning/growth icons and X/check leaf bullets in `Kivágás vagy átalakítás?`. It also proved that card backgrounds/equal-height stretching were still losing in the cascade, which is why the narrow v005 page264-only `!important` cascade fix was added.
+
+Therefore **do not redeploy** any of these as a new package:
+- `build/oldtrees-visual-parity-v001.css`
+- `build/oldtrees-visual-parity-mobile-correction-v002.css`
+- `build/oldtrees-visual-parity-corrections-v003.css`
+- `build/oldtrees-visual-parity-bundle-v004.css`
+- `build/oldtrees-visual-parity-v004.css`
+- `build/oldtrees-visual-parity-v005-cascade-fix.css`
+
+A redundant `build/oldtrees-visual-parity-v003.css` created during continuation before this later live state was discovered has been deleted in commit `1f37656b9c56cc40a658c5c96fb114a02735602a`. Git history retains it if forensic comparison is ever needed.
+
+## WPVibe account handoff
+
+The current requested WPVibe identity was verified as **`ncsnorbert+20260914-5@gmail.com`** and the email is verified. `connect_site` returned a WordPress one-click authorization URL, but the WPVibe tool became unavailable before `list_sites` / `site_info` could verify the approved connection or the current rolling quota.
 
 Therefore:
-- **do not assume the new account is fully connected until a fresh WPVibe read succeeds**;
-- **exact current WPVibe quota is unknown** in this checkpoint;
-- preserve the D11 **10-call closeout/recovery reserve** after the next successful quota read;
-- no WordPress write was attempted after the connector became unavailable.
+- current `-5` account site connection is **not yet confirmed**;
+- current exact quota is **unknown**;
+- do not reuse the historical `-4` account counters as if they were current;
+- after WPVibe becomes available, verify identity + site connection + exact quota first and preserve D11's 10-call closeout reserve.
 
-Opera was limited to the two already-open project tabs. No replacement tabs were opened. The source tab was repurposed once, the target tab was repurposed once, then the Browser Connector disconnected. Do not start a reconnection/tab-opening loop; when Opera is available again, reuse at most one source + one target tab. `PIXEL_PASS=false`.
+No WordPress write was made through the unavailable `-5` connection in this continuation.
 
-## Last verified page264 remote baseline - re-read before every future write
+## Existing page264 content/runtime that must be preserved
 
-Last verified saved Elementor state:
-- `_elementor_data` SHA256: **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**;
-- bytes: **48874**;
-- JSON valid: **true**.
+Runtime evidence: `reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json` and `build/oldtrees-semantic-runtime-v003.php`.
 
-This is a historical verified baseline, **not a substitute for a fresh preflight**.
+- Code Snippets ID33 is page-guarded with `is_page(264)` and was active at last verification;
+- all three real review tab accessible names match the source;
+- target-only numbered review dots are removed from AX/focus while pointer appearance/behavior is preserved;
+- form accessible name/description, radio-group labelling and Település help relationship were already handled by the page264 runtime;
+- tiszafa `.js-ba` was initialized at 50%, native range `0..100`, step `1`;
+- do not replay older semantic saved-data packages or earlier review-label patches;
+- do not add duplicate interaction listeners/timers without a live failing proof.
 
-Runtime semantics evidence: `reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json`.
-- Code Snippets ID33 remained page-guarded with `is_page(264)`;
-- all three review tab accessible names matched the source;
-- the target-only numbered review dots were hidden from the accessibility tree while preserving their pointer behavior;
-- the tiszafa before/after widget was initialized at 50%, range `0..100`, step `1`;
-- no Elementor data changed in that runtime package;
-- timed Nordmann behavior, full review keyboard behavior and controlled visual proof remained open.
+Structural/content work already verified and to preserve:
+- hero `af2a0052` with exact accessible title/description;
+- seven-chip source problem grid `af2a0007` with original SVG geometry;
+- exact comparison copy and source caveat;
+- inline MetForm33 request section and source-visible 24-hour reply text;
+- current page264 IDs/order/data hash above.
 
-Do **not** replay older `oldtrees-semantic-parity-*` saved-data packages or the earlier review-label patch. Those semantic corrections are already represented by the later live runtime state.
+## Next work is QA/readback first, not writing
 
-## Prepared visual package - not deployed
+When WPVibe is available again:
+1. verify account `ncsnorbert+20260914-5@gmail.com`, site connection and exact quota;
+2. re-read page264 hash/JSON; if it differs from `09f661e0...a788a`, stop and reconcile before any write;
+3. server-side inspect Additional CSS marker counts; require one `af-oldtrees-visual-v004`, one `af-oldtrees-visual-v005`, and one `af-project:end`; do not insert visual CSS if v004/v005 are present;
+4. use fresh frontend QA only unless a new reproducible source-target delta is proven;
+5. if any future write returns HTTP 429, outcome is UNKNOWN until readback proves it; never blind-retry.
 
-Current single-package candidate: **`build/oldtrees-visual-parity-v003.css`**.  
-Commit: `6b74c70b77150606a71e5c9df1999784b0f1a102`.
+### Visual checks still required
+- fresh comparison capture after v005: beige negative card, sage positive card, equal card height;
+- fresh `#ajanlatkeres` source/target capture: joined white panel, 18×18 clock icon, contact buttons, organic sage glow, continuous transition into MetForm fields;
+- synchronized hero geometry recheck. A prior ~40 px target vertical offset has **no proven root cause**, so do not change hero padding/margin from that observation alone;
+- inspect comparison→dark divider only if a fresh post-v005 capture proves a mismatch;
+- formal screenshot pair + overlay + diff remains open, so **`PIXEL_PASS=false`**.
 
-This supersedes the future deployment of the separate prepared files `oldtrees-visual-parity-v001.css` + `oldtrees-visual-parity-mobile-correction-v002.css`; keep those only as history/evidence.
+### Interaction checks still required
+Source interaction owner: `build/source-interactions-v001.js`; target ownership remains the existing shared runtime + ID14/ID33.
+- review Arrow/Home/End keyboard behavior;
+- tiszafa pointer and keyboard behavior;
+- Nordmann carousel 4000 ms normal-motion behavior;
+- hover/focus pause and pointer-swipe behavior;
+- reduced-motion stop/restart behavior.
 
-The v003 package:
-- has start/end markers `af-oldtrees-visual-v003:start` / `af-oldtrees-visual-v003:end`;
-- uses `body.page-id-264` on every effect selector;
-- touches only the existing comparison widget `af2a0045` and form-area widgets `af2a0054` / `af2a0055` plus the page264 `#ajanlatkeres` wrapper;
-- performs no DOM, copy, Elementor-data, form-processing, header/footer or other-page change;
-- maps the source comparison/checklist appearance onto the existing editable target markup;
-- joins the existing intro + MetForm siblings into the source-style visual panel and constrains the existing reply SVG to 18x18;
-- includes the corrected source responsive contract: contact buttons stay auto-width at 401-560 px and become full-width only at <=400 px.
+Do not add another runtime layer unless one of these fails in a stable interaction-capable browser.
 
-Static predeploy evidence:
-- `reports/subpages/oldtrees-visual-audit-20260914-v001.json`;
-- `reports/subpages/oldtrees-visual-predeploy-static-qa-20260914-v002.json`;
-- `reports/subpages/oldtrees-continuation-20260914-v005.json`.
+### Form processing items still open
+Evidence: `reports/subpages/oldtrees-inline-form-v001.json`, D05.
+- textarea last documented as rows=10 vs source rows=5; changing shared MetForm33 requires fresh live schema/read plus page264-safe containment;
+- source upload contract is 3–5 photos, 8 MB/file; server-side maximum-five validation still requires a proven scoped `mf_after_validation_check` implementation;
+- required service/topic radio must be genuinely enforced on target;
+- exact success/submit-state parity remains open;
+- no SMTP, delivery test or real submission in this mode.
 
-## Form/runtime items that remain genuinely open
+## Tooling / memory constraints
 
-Evidence: `reports/subpages/oldtrees-inline-form-v001.json`, `specs/decisions.md` D05 and `build/source-interactions-v001.js`.
+Opera Browser Connector is disconnected. During continuation only the existing two project tabs were reused; **zero new tabs** were opened. When Opera is stable again, use at most one source and one target tab and reuse them.
 
-- MetForm textarea last documented as `rows=10`; source uses `rows=5`. Do not change shared MetForm33 until a fresh live form/schema read proves a page264-safe method.
-- Source contract is 3-5 photos, 8 MB/file. MetForm Free native max-five control was not proven. The `mf_after_validation_check` server filter exists, but a custom validator must be proven to affect only the intended request/form context before deployment.
-- Exact source success/submit-state parity remains open.
-- Required service/topic radio selection must be genuinely validated on target; do not infer completion from the static source demo behavior.
-- Source carousel contract: 4000 ms autoplay unless manual/reduced-motion/<2 slides; arrow/dot click, ArrowLeft/ArrowRight, pointer swipe, hover/focus pause, broken-slide removal and reduced-motion change handling. Do not add a new behavior layer unless live target proof shows a real delta.
-- Tiszafa pointer/keyboard and Nordmann timed/reduced-motion behavior still need an interaction-capable browser proof.
+Local Chromium exists, but this runtime cannot currently resolve the Clicknest hosts by DNS, so it cannot replace Opera for live deterministic screenshot comparison.
 
-## Next safe remote sequence
+`specs/acceptance.json` and `specs/behaviors.json` are absent from current `main`; do not reconstruct them by guesswork. Deterministic frozen six-viewport same-browser/DPR/zoom capture remains unavailable.
 
-1. Restore WPVibe availability.
-2. Verify authenticated identity is `ncsnorbert+20260914-5@gmail.com`, verify the site is connected, then read the exact rolling quota. Preserve 10 calls for D11 closeout.
-3. Call the WPVibe Elementor skill before any Elementor/page-builder edit.
-4. Re-read page264 `_elementor_data`; require valid JSON. If SHA differs from `09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`, stop and reconcile the live tree before any write.
-5. Re-read the **current full Hello Additional CSS server-side state** without round-tripping the large field through chat. Require exactly one `af-project:end` marker. Check for all `af-oldtrees-visual-v001`, `af-oldtrees-visual-mobile-v002` and `af-oldtrees-visual-v003` markers. If any old marker is already present, reconcile rather than duplicate.
-6. If preconditions match, insert the **complete v003 marked block exactly once** immediately before `af-project:end` through the supported server-side match-once `content/edit` route. Do not use a shortened fragment and do not alter foreign CSS.
-7. Read back v003 marker presence and re-read page264 Elementor SHA/JSON. Do not purge cache unless fresh rendered output is demonstrably stale after the supported CSS save.
-8. With at most one reference and one target browser tab, compare the `Kivágás vagy átalakítás?` and `#ajanlatkeres` sections first. Only measured remaining causes may justify another CSS change.
-9. Then verify review Arrow/Home/End, tiszafa pointer/keyboard, Nordmann normal/reduced-motion timing. Keep `PIXEL_PASS=false` until deterministic source/target viewport/DPR/zoom capture with screenshot pair + overlay + difference image is available.
-10. Only after the visual/runtime package is stable, revisit textarea rows, 3-5-file server validation, radio-required behavior and success state. Do not modify shared MetForm33 globally from this page264-only scope without a proven containment mechanism.
+## Current status
 
-## Current blockers
-
-- WPVibe connector is unavailable in this conversation, so the new account connection, exact quota, current page264 hash and Additional CSS state cannot presently be re-verified and **no safe WordPress write can be made**.
-- Opera Browser Connector is disconnected; no further tabs were opened.
-- `specs/acceptance.json` and `specs/behaviors.json` are absent on current `main`; do not invent the machine acceptance matrix.
-- Deterministic six-viewport screenshot/overlay/diff tooling remains unavailable; **`PIXEL_PASS=false`**.
-
-## Latest package result
-
-**Elkészült:** runtime semantic corrections already live from prior verified work; consolidated visual v003 package; static scope/responsive correction audit; exact continuation report and state.  
-**Ellenőrzött:** package is page264-scoped, does not target header/footer or another page, and avoids a two-write partial mobile deployment.  
-**Nyitott:** v003 live deployment/readback/visual QA; interaction QA; form processing parity items above.  
-**Következő művelet:** WPVibe availability + new-account/site/quota verification, then guarded page264/CSS preflight and one complete v003 insertion if unchanged.  
-**Ismert keret:** current exact value **unknown** because `list_sites` could not run after the connector became unavailable; do not reuse the older `-4` account counter as if current.
+**Elkészült:** page264 content/semantic work; v004 + v005 visual CSS is live; repository state reconciled; obsolete v003 prep removed.  
+**Ellenőrzött:** v004 marker/readback; v005 marker/readback; Elementor hash unchanged; v004 icons/bullets visibly source-like.  
+**Nyitott:** post-v005 visual capture, form-panel visual capture, hero geometry root-cause check, interaction acceptance, scoped form-processing parity, deterministic pixel matrix.  
+**Következő művelet:** WPVibe `-5` connection/quota verification, then page/hash/marker readback and **QA only** if intact.  
+**Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; no current-counter claim until WPVibe is available again.
