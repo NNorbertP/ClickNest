@@ -1,0 +1,126 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "SOURCE_CSS_JS_AUDITED_NEXT_PACKAGE_PREPARED_WPVIBE_UNAVAILABLE",
+  "scope_guard": {
+    "modified_in_current_continuation": ["GitHub build/report files only"],
+    "not_modified_remotely": ["WordPress Additional CSS", "Code Snippets", "Elementor header structure", "page body", "footer", "forms", "SMTP", "other templates/pages"]
+  },
+  "last_verified_wordpress_baseline_from_previous_unthrottled_readback": {
+    "additional_css_post_id": 8,
+    "bytes": 600999,
+    "sha256": "8cd8a9cfb804ba6ca5ab57a8ff59d7858c2e14bfb940f4921f2bceddefd80b83",
+    "base_marker": "af-project:header-live-source-v001",
+    "alignment_marker": "af-project:header-desktop-alignment-v003",
+    "snippet_id": 7,
+    "snippet_active": true,
+    "snippet_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "snippet_bytes": 9723,
+    "sticky_threshold_px": 8,
+    "main_navigation_accessible_name": "Főmenü",
+    "brand_accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "fresh_read_only_accessibility_comparison": {
+    "reference_header_sequence": [
+      "link: Alakfa mester BIRÓ JÁNOS",
+      "navigation: Főmenü",
+      "link: Főoldal",
+      "popup button: Szolgáltatások",
+      "popup button: Referenciák",
+      "link: Rólam",
+      "link: Kapcsolat",
+      "link: Felmérést kérek",
+      "quick contact phone/mail"
+    ],
+    "target_header_sequence": "same roles and accessible names for the checked closed desktop state",
+    "result": "SEMANTIC_CLOSED_STATE_MATCH"
+  },
+  "live_reference_css_findings": {
+    "header": "sticky, 76px, rgba(245,243,237,.9), blur14; stuck state .96 background + soft border/shadow",
+    "inner": "flex; align-items:center; justify-content:space-between; gap16; natural-width brand/nav/actions",
+    "brand": "12px gap; 69x46 logo plate; Georgia name 1.16rem; tagline .68rem/600/.16em",
+    "nav": "44px min-height; 10px 13px padding; .92rem/600; 2px list gap; one 12px caret",
+    "current_top": "sage background/border and bronze dot for an actual current page",
+    "current_group": "is-section uses sage background/border without the bronze current-page dot",
+    "dropdown": "top +8px; min-width268; padding12; organic 22/26px radii; current child gets sage background + bronze leaf bullet",
+    "cta": "44px min-height; 10px 18px padding",
+    "breakpoints": {
+      "1560": "header phone hidden; irrelevant to current target header because it has no desktop phone control",
+      "1460": "nav padding 9px; font .84rem; list gap0",
+      "1240": "desktop nav hidden; hamburger shown",
+      "900": "header height 68px; header CTA hidden",
+      "560": "tagline hidden; logo 57x38; brand name 1.04rem"
+    }
+  },
+  "live_reference_js_findings": {
+    "sticky": "is-stuck when scrollY > 8 using requestAnimationFrame throttling",
+    "desktop_dropdown": [
+      "click toggles",
+      "outside click closes",
+      "ArrowDown on trigger opens and focuses first panel link",
+      "Escape closes and returns trigger focus",
+      "ArrowDown/ArrowUp walk panel links; ArrowUp from first returns trigger; ArrowDown at last stays at last"
+    ],
+    "mobile_drawer": [
+      "open toggles state/body lock and focuses first a/button in drawer",
+      "Escape closes and restores toggle focus",
+      "resize >1240 closes open drawer",
+      "submenu buttons toggle aria-expanded and controlled panel"
+    ]
+  },
+  "current_target_deltas_proven": [
+    "Deployed v003 uses absolute center + fixed 270px side columns, but direct source CSS proves natural-width flex/space-between. Current paired screenshot therefore still places the target navigation left of the source navigation.",
+    "Source has a 1460px compact desktop nav state; deployed target refinement does not yet reproduce it.",
+    "Source switches header height to 68px and hides header CTA at 900px; deployed base target rules use later/different 700/520px thresholds.",
+    "Source keeps full brand through 561px and only at <=560 uses 57x38/logo + hidden tagline + 1.04rem name; deployed base target compacts brand already at <=700.",
+    "Service/reference parent current-section state and exact current dropdown-child state are not generated reliably by the WordPress custom-menu classes.",
+    "Reference desktop dropdown supports ArrowUp/ArrowDown traversal between open-panel links; current target runtime only proved trigger ArrowDown + Escape, not full traversal.",
+    "Reference mobile drawer focuses its first interactive item immediately after opening; current target runtime does not yet do this."
+  ],
+  "prepared_next_package": {
+    "css": {
+      "path": "build/header-source-flex-responsive-v006.css",
+      "commit": "3860464e951e34b1441272988e9a9f89b4c4ec5e",
+      "status": "static QA pass; not deployed"
+    },
+    "runtime": {
+      "path": "build/header-runtime-parity-v004.json",
+      "commit": "4a6e5dde183d7802aba2d7926ea0653e6c485a7c",
+      "status": "guarded plan prepared; not deployed"
+    },
+    "css_qa": {
+      "path": "reports/header/header-source-flex-responsive-v006-static-qa.json",
+      "commit": "da190bda341175a4ec90bf348497ee357efa92a0"
+    }
+  },
+  "superseded_not_deployed_packages": [
+    "build/header-desktop-alignment-v004.css",
+    "build/header-alignment-responsive-v005.css",
+    "build/header-runtime-active-groups-v002.json",
+    "build/header-runtime-active-groups-v003.json"
+  ],
+  "opera_hygiene": {
+    "open_tabs": 2,
+    "policy_followed": "reused one source and one target tab; no third tab opened",
+    "source_tab_role": "reference page / direct reference styles.css / script.js inspection",
+    "target_tab_role": "same target page for semantic and screenshot comparison"
+  },
+  "blocker": {
+    "wpvibe": "WPVibe tool became unavailable/disabled in this conversation, so no new account verification, quota read or WordPress write can be performed safely.",
+    "quota": "unknown for the newly requested -5 account; do not reuse the old -4 account's stale usage number."
+  },
+  "next_safe_remote_sequence": [
+    "When WPVibe becomes available, verify profile email is ncsnorbert+20260914-5@gmail.com and site connection, then read quota once.",
+    "Fresh-read post8 and Code Snippets ID7. Require the baseline hashes above unless an intervening manual change is detected; reconcile any drift first.",
+    "Replace exactly the deployed v003 refinement block with the complete v006 CSS block using a match-once supported edit. Preserve the deployed base header-live-source-v001 block and every foreign Additional CSS byte.",
+    "Read back post8 and require base marker once, v003 absent, v006 once.",
+    "Apply only runtime-parity-v004 deltas through the Code Snippets plugin REST route, using the immediate prewrite code as rollback payload.",
+    "Read back snippet active/code_error/hash and protected behaviors before browser QA.",
+    "Reuse only the existing source-target Opera pair for desktop top/scrolled/current/open/keyboard states and then narrow/mobile states; do not open a multi-tab diagnostic session.",
+    "Retain only changes with measurable parity improvement; roll back the isolated block/runtime payload on regression.",
+    "Keep PIXEL_PASS=false until same viewport/DPR/load-state overlay/diff evidence is available."
+  ],
+  "pixel_pass": false
+}
