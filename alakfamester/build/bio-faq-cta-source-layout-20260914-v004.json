@@ -1,0 +1,51 @@
+{
+  "schema_version": 4,
+  "package": "bio-faq-cta-source-layout-20260914-v004",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED",
+  "supersedes": "build/bio-faq-cta-source-layout-20260914-v003.json",
+  "structural_predecessors": [
+    "build/bio-page256-next-safe-package-20260914-v014.json op1 — remove sole af-faq-content order:10 owner",
+    "build/bio-cta-mail-structure-20260914-v001.json — preserve href/aria-label/strings, create .af-sub-cta-label child"
+  ],
+  "css_blocks": [
+    "build/bio-visual-parity-v001.css — FAQ card/summary/leaf plus-minus source visuals",
+    "build/bio-faq-cta-source-layout-v001.css — paper FAQ + separate forest band grid",
+    "build/bio-faq-cta-generated-label-guard-v001.css — remove old outer generated label",
+    "build/bio-faq-cta-mail-label-v001.css — deterministic label row",
+    "build/bio-faq-cta-mail-interaction-v001.css — exact source on-forest contact shadow/hover + <=560 email sizing",
+    "build/bio-faq-cta-button-interaction-v001.css — exact bronze button transition/hover/active",
+    "build/bio-faq-cta-eyebrow-accessible-v001.css — source underlying Következő lépés string + visual uppercase",
+    "build/bio-faq-cta-section-spacing-v001.css — exact wave-adjacent section vertical rhythm",
+    "build/bio-card-mobile-source-v001.css — source 24px CTA/card padding <=720"
+  ],
+  "source_exactness": {
+    "mail_base": "rgba(255,255,255,.12), sage border, 0 12 28 rgba(23,61,45,.22)",
+    "mail_hover": "rgba(255,255,255,.20), translateY(-2), 0 18 36 rgba(23,61,45,.28)",
+    "mail_max560": "padding-right16, strong .92rem",
+    "bronze_button": "#B59A61 / #14251C / shadow 0 12 28 rgba(...,.3); hover #c6ab74 translateY(-2)",
+    "eyebrow": "underlying title-case source string, CSS uppercase visually",
+    "band": "760px narrow-container ownership; radius36; source forest gradients/decor; 1.25/.75 desktop columns; one column <=900; 24px padding <=720",
+    "section_spacing": "source .wave + .section top = --space-section - 24px; bottom = --space-section with <=720 source root override"
+  },
+  "mandatory_preflight": [
+    "page256 scope handoff",
+    "verified +5 WPVibe site/quota + D11 reserve",
+    "fresh page256 baseline",
+    "fresh Additional CSS search for #af-sub-bio-cta::before/::after and package markers",
+    "structural predecessors independently read back before CSS",
+    "no duplicate generated Következő lépés after label guard"
+  ],
+  "postconditions": [
+    "FAQ on paper and before CTA",
+    "native FAQ functionality preserved",
+    "separate source-like CTA band",
+    "one source-like eyebrow label",
+    "mail label above email; exact mail aria-label/href unchanged",
+    "bronze form href/text unchanged",
+    "desktop and <=900/720/560 source states verified"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
