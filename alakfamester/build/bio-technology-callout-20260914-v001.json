@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "package": "bio-technology-callout-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "af260010",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "source_proof": {
+    "kind": "direct existing-Opera screenshot at #technologiak plus exact .callout source CSS",
+    "finding": "The reference Milyen esetekben használom? heading and four-item checklist sit inside one recessed organic callout panel with a left bronze-to-sage rail. Current target markup stores the h3 and ul as direct siblings without a wrapper."
+  },
+  "css": {
+    "file": "build/bio-technology-callout-v001.css",
+    "commit": "fccc9d575706980848d2c555a62b710923c4354b",
+    "marker": "af-bio-tech-callout-v001",
+    "scope": "body.page-id-256 .elementor-element-af260010 only"
+  },
+  "source_contract": {
+    "wrapper": "position relative; padding 24px 32px; left padding 40px; radius 34px 26px 32px 28px; #EFEDE4; border rgba(215,210,198,.6)",
+    "rail": "left0 top16 bottom16 width6 pill; linear-gradient(180deg,#B59A61,#7D9B83)",
+    "heading": "1.125rem source h3, margin-bottom8",
+    "checklist": "margin-top16, no native bullets, gap12, 20px green leaf/white-check markers"
+  },
+  "precondition": {
+    "accepted_page_baseline": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid",
+    "required": "Fresh exact baseline and raw af260010 content/search must still match before mutation."
+  },
+  "guarded_markup_intent": [
+    "Search the current escaped _elementor_data for the unique boundary beginning at the existing Milyen esetekben használom? h3 and ending after the existing four-item ul.",
+    "Use only the exact returned snippet; wrap those existing h3+ul bytes in <div class=\"af-bio-tech-callout\">...</div> without editing any text, list item, heading or surrounding card markup.",
+    "Do not reconstruct the full af260010 editor field and do not full-save Elementor."
+  ],
+  "deployment_order": [
+    "Apply wrapper microfix with guarded match-once content/edit after fresh search.",
+    "Read back page256 JSON/hash and rendered DOM; require all four list strings and technology article roles unchanged.",
+    "Then insert the complete marked callout CSS block into fresh Additional CSS only after normal post8 marker/quota/scope gates.",
+    "Fresh two-tab visual QA: panel geometry/rail/list marker parity and no regression of three cards."
+  ],
+  "interaction_semantics": "Wrapper div is neutral; h3/list semantics and list text remain unchanged.",
+  "rollback": "Remove only the wrapper boundary or only the marked callout CSS block depending on which unit proves defective; never restore full old blobs.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
