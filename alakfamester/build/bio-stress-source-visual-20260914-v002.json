@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "package": "bio-stress-source-visual-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "af260007",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "supersedes": "build/bio-stress-source-visual-20260914-v001.json",
+  "why": "v002 visual CSS adds the exact source .lead mapping for the first left paragraph and requires explicit pseudo-owner preflight for the forest card watermark.",
+  "css": {
+    "file": "build/bio-stress-source-visual-v002.css",
+    "commit": "505a4ec3b96903b6da5285d7fc48da30a7df690f",
+    "marker": "af-bio-stress-source-v002"
+  },
+  "required_predecessors": [
+    "Fresh exact structural microfix from build/bio-page256-next-safe-package-20260914-v014.json operation 2 creates neutral .af-stress-copy around the existing two p nodes.",
+    "Immediate JSON/hash/rendered readback confirms exactly two af-sub-split direct children.",
+    "Separate fresh exact tag-only aside->article semantic microfix may then run and be verified; visual CSS works with either tag but final source semantics require article."
+  ],
+  "mandatory_css_preflight": [
+    "Fresh Additional CSS search for page256 af260007 .af-sub-card::after and competing generic af-sub-card::after owners.",
+    "Do not deploy the watermark pseudo if an essential existing owner occupies ::after; reproduce source leaf with a background-image layer instead.",
+    "Require af-bio-stress-source-v002 marker count=0."
+  ],
+  "source_contract": [
+    "two equal columns, 32px gap",
+    "first left paragraph .lead = 1.125rem/1.62 #4A5750 max104ch",
+    "forest card 32px padding desktop, 24px <=720 via shared mobile companion",
+    "forest gradient #173D2D -> #102A20, rgba(168,192,174,.2) border, organic radius, shadow-lg",
+    "bronze-light .8rem card eyebrow, white 1.375rem h3",
+    "sage-light checklist text, bronze leaf white-check markers",
+    "150px bronze watermark right -46 bottom -56 rotate -16 opacity .14"
+  ],
+  "responsive_dependency": "build/bio-card-mobile-source-v001.css supplies source 24px .card padding <=720.",
+  "verify": [
+    "all two paragraphs and four list strings byte-identical",
+    "outer named region unchanged",
+    "card AX role article after semantic microfix",
+    "same-browser source-target visual at desktop plus <=720 acceptance when tooling allows",
+    "no effect outside af260007/page256"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
