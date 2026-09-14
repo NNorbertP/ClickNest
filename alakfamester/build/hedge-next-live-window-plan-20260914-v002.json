@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "package": "hedge-next-live-window-plan-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-next-live-window-plan-20260914-v001.json",
+  "status": "READY_FOR_FUTURE_STABLE_TOOLS_NO_CURRENT_WORDPRESS_WRITE",
+  "current_semantic_candidate": "build/hedge-semantic-runtime-v004.php",
+  "candidate_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+  "obsolete_for_deploy": ["build/hedge-semantic-runtime-v002.php", "build/hedge-semantic-runtime-v003.php"],
+  "goal": "Deploy only the safe complete-component ID36 v004 semantics, collect the exact native required-radio facts, and opportunistically prove complete outer-region roots without creating partial regions.",
+  "preconditions": [
+    "WPVibe available; verified +5 identity/site connection/exact quota.",
+    "Keep >=10 calls D11 reserve plus enough package/readback margin; do not start partial work.",
+    "Current page272 baseline must match/reconcile before any write.",
+    "Current ID36 exact body/state must be read first and preserved as rollback."
+  ],
+  "nominal_call_budget": {
+    "quota_site_check": 1,
+    "page272_baseline": 1,
+    "ID36_read": 1,
+    "minimal_rendered_DOM_read": 1,
+    "Form33_service_settings_read": 1,
+    "ID36_update_if_gated": 1,
+    "ID36_readback": 1,
+    "page272_hash_readback": 1,
+    "optional_rendered_marker_AX_read": 1,
+    "nominal_max": 9,
+    "start_rule": "Prefer >=21 remaining after exact counter read so nominal work + 10-call reserve + safety margin fit; use a stricter threshold if provider accounting or retry behavior requires it."
+  },
+  "read_phase": [
+    {
+      "step": 1,
+      "resource": "page272 _elementor_data",
+      "accept": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+      "drift": "STOP and reconcile."
+    },
+    {
+      "step": 2,
+      "resource": "Code Snippets ID36",
+      "capture": ["exact body", "name", "scope", "active", "code_error"],
+      "accept": "Known page272 helper owner; scope front-end. Unknown newer code => STOP."
+    },
+    {
+      "step": 3,
+      "resource": "smallest trustworthy rendered page272 DOM/HTML slice",
+      "semantic_gate": [
+        "exactly one .elementor-element-c3d30005",
+        "one tablist and exactly three role=tab elements",
+        "tab visible/company identities in source order: Panasonic, Otolecz, ARKER'S",
+        "exactly one Form33 wrapper and one form",
+        "one wrapper-owned direct-call descriptor",
+        "one service wrapper/label pair and one city input/help pair"
+      ],
+      "outer_region_opportunistic_read_only": [
+        "hero: identify whether one stable common root contains full hero copy + af2e004e art",
+        "gallery: identify whether one stable common root contains Sövénymunkák heading + b2e2c001",
+        "form: identify whether one stable common root contains separate af2e004c intro/contact + Form33 composite"
+      ],
+      "rule": "Failure to prove outer roots does NOT block v004; it only keeps those region labels open. Failure of semantic_gate DOES block v004."
+    },
+    {
+      "step": 4,
+      "resource": "Form33 saved settings around #af-form-service",
+      "capture": ["exact widget ID/type", "mf_input_name", "mf_input_required", "six exact option labels/values/order"],
+      "write": false
+    }
+  ],
+  "single_write": {
+    "condition": "page/hash + ID36 + semantic DOM gates all pass and v004 not already live",
+    "action": "Update existing ID36 only with build/hedge-semantic-runtime-v004.php through the proven plugin-aware path.",
+    "forbidden": ["second helper", "ID36 scope change", "Elementor write", "Form33 setting write", "shared media write", "CSS/global template write"],
+    "429": "UNKNOWN until exact readback; no blind retry."
+  },
+  "readback": [
+    "ID36 body=v004, scope front-end, active=true, code_error=null",
+    "v004 rendered marker exactly once when rendered read is trustworthy",
+    "old v001/v003 markers absent after confirmed replacement",
+    "page272 Elementor bytes/SHA unchanged",
+    "protected hero/proof/reviews/gallery/form IDs preserved",
+    "post-footer-JS AX exact review + complete Form33 component semantics when browser/read path is trustworthy"
+  ],
+  "required_radio_decision": {
+    "mf_input_required_yes": "Native Required configured. Prove non-delivery empty-choice rejection before any PHP fallback.",
+    "mf_input_required_not_yes": "Real configuration delta, but do not edit shared Form33 from page272 scope. Evaluate page272-local existing-ID36 fallback after exact ID5 read.",
+    "native_proof_pass": "Close D05 required-choice item; no server fallback.",
+    "native_proof_fail": "Use build/hedge-form-required-server-plan-20260914-v002.json only after exact field/ID5 reads."
+  },
+  "outer_regions": {
+    "audit": "reports/subpages/hedge-outer-regions-static-audit-20260914-v002.json",
+    "write_in_this_package": false,
+    "rule": "Even if complete roots are discovered, record them first and prepare a later attribute-only change; do not silently expand the v004 write."
+  },
+  "browser_policy": {
+    "max_tabs": 2,
+    "new_tabs": 0,
+    "stale_rule": "URL/title and AX/screenshot mismatch => stop immediately; no reload/reconnect/fan-out loop."
+  },
+  "smtp_or_external_submission": false,
+  "pixel_pass": false
+}
