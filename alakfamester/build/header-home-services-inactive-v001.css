@@ -1,0 +1,22 @@
+/* af-project:header-home-services-inactive-v001:start */
+/* User-requested homepage exception: Services must not look current on the WordPress homepage.
+   This guard is intentionally narrow and does not affect service subpages. */
+body.home #af-nav-services,
+body.page-id-56 #af-nav-services{
+  background:transparent!important;
+  border-color:transparent!important;
+  color:#173D2D!important;
+}
+
+/* Preserve the source-like interaction feedback on the homepage even though the item is not current. */
+body.home #af-nav-services:hover,
+body.home #af-nav-services:focus-visible,
+body.home .af-nav-dropdown-host.is-open>#af-nav-services,
+body.page-id-56 #af-nav-services:hover,
+body.page-id-56 #af-nav-services:focus-visible,
+body.page-id-56 .af-nav-dropdown-host.is-open>#af-nav-services{
+  background:rgba(47,93,70,.10)!important;
+  border-color:transparent!important;
+  color:#173D2D!important;
+}
+/* af-project:header-home-services-inactive-v001:end */
