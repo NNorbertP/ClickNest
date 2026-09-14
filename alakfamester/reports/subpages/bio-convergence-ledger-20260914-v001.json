@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "package": "bio-convergence-ledger-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "wordpress_writes_current_round": 0,
+  "opera": {"tabs":2,"new_tabs":0,"discipline":"reuse only"},
+  "remote_write_gate": "BLOCKED: WPVibe disabled in this chat and repository STATE.md currently owns page264-only WordPress write scope. Page256 handoff + verified +5 connection/quota required before any live write.",
+  "sections": [
+    {
+      "order": 1,
+      "name": "hero",
+      "preserve": ["copy", "links", "phone/mail icons", "three fact icons", "hero SVG identity", "accepted h1/art measured rules"],
+      "proven_deltas": ["left copy starts materially lower than source", "proof row remains one line where source wraps third fact at live comparison"],
+      "preferred_prepared_fix": "build/bio-hero-layout-parity-v003.css",
+      "do_not_deploy": ["bio-hero-layout-parity-v001.css", "bio-hero-layout-parity-v002.css", "bio-hero-decorative-icons-v001.css"],
+      "status": "FIX_PREPARED"
+    },
+    {
+      "order": 2,
+      "name": "reviews",
+      "preserve": ["native Atomic Tabs", "three exact tab accessible names", "images/alt/copy", "prev/next controls", "ID35 duplicate-dot AX/focus suppression", "overall panel/media/body structure"],
+      "proven_deltas": ["missing source section id=ugyfelvelemenyek", "visual 01/02/03 duplicated", "quote too dark", "active visual dot too large"],
+      "prepared": [
+        "build/bio-review-anchor-parity-20260914-v001.json",
+        "build/bio-review-quote-source-color-v001.css",
+        "build/bio-reviews-cascade-diagnostic-20260914-v001.json"
+      ],
+      "owner_gate": "ordinal/dot CSS owner must be found by fresh Additional CSS read-only search before any override",
+      "status": "SMALL_FIXES_PLUS_OWNER_DIAGNOSTIC"
+    },
+    {
+      "order": 3,
+      "name": "wave reviews-to-stress",
+      "proven_delta": "legacy af-source-wave class not rendered; current approximation is not exact source SVG",
+      "preferred_prepared_fix": "build/bio-wave-source-exact-20260914-v001.json",
+      "status": "FIX_PREPARED"
+    },
+    {
+      "order": 4,
+      "name": "stress",
+      "preserve": ["region name", "all four corrected list strings", "heading/copy"],
+      "proven_deltas": ["p+p+aside are three direct grid children instead of one left copy + one right card", "source first paragraph is lead", "source card role article vs target aside/complementary", "source forest card/checklist/watermark visual not exact"],
+      "prepared": [
+        "build/bio-page256-next-safe-package-20260914-v014.json operation 2",
+        "build/bio-semantic-resume-20260914-v013.json tag-only aside->article",
+        "build/bio-stress-source-visual-v002.css"
+      ],
+      "sequence": "wrapper microfix -> readback -> article tag-only microfix -> readback -> scoped visual CSS",
+      "status": "STRUCTURE_SEMANTICS_VISUAL_PREPARED"
+    },
+    {
+      "order": 5,
+      "name": "wave stress-to-technology",
+      "preferred_prepared_fix": "build/bio-wave-source-exact-20260914-v001.json",
+      "status": "FIX_PREPARED"
+    },
+    {
+      "order": 6,
+      "name": "technology",
+      "preserve": ["three article content/order", "three existing technology icons", "middle sage surface", "existing callout surface/left rail"],
+      "proven_deltas": ["missing bronze eyebrow leaf", "lead too wide/small", "cards less padded/no source watermark", "middle top hairline missing", "callout list uses native bullets instead of leaf/checks"],
+      "preferred_prepared_fix": "build/bio-visual-parity-v001.css",
+      "obsolete": ["build/bio-technology-callout-v001.css", "build/bio-technology-callout-20260914-v001.json"],
+      "status": "VISUAL_FIX_PREPARED"
+    },
+    {
+      "order": 7,
+      "name": "symptom table",
+      "preserve": ["exact uppercase headers", "four rowHeader cells", "caption/cell copy", "region name"],
+      "proven_deltas": ["source table surface/spacing not fully mapped live", "source section--stone is gradient while target prior readback was flat #EFEDE4"],
+      "prepared": ["build/bio-visual-parity-v001.css table block", "build/bio-table-section-tone-v001.css"],
+      "status": "CONTENT_SEMANTICS_PASS_VISUAL_FIX_PREPARED"
+    },
+    {
+      "order": 8,
+      "name": "wave table-to-expectations",
+      "preferred_prepared_fix": "build/bio-wave-source-exact-20260914-v001.json",
+      "status": "FIX_PREPARED"
+    },
+    {
+      "order": 9,
+      "name": "expectations",
+      "preserve": ["outer region name", "all five list strings", "h2/h3/copy", "Az alakfa ápolása href/text"],
+      "proven_delta": "source has two articles: left white owns h2+3 checks+2 crosses; right sage owns h3+copy+arrow link; target wrappers split lists and leave right content outside source card ownership",
+      "preferred_prepared": ["build/bio-expectations-source-structure-20260914-v003.json", "build/bio-expectations-source-structure-v003.css"],
+      "do_not_deploy": "build/bio-visual-parity-v002-expectations.css",
+      "status": "SOURCE_DIRECTLY_PROVEN_STRUCTURE_VISUAL_PREPARED"
+    },
+    {
+      "order": 10,
+      "name": "wave expectations-to-FAQ",
+      "preferred_prepared_fix": "build/bio-wave-source-exact-20260914-v001.json",
+      "status": "FIX_PREPARED"
+    },
+    {
+      "order": 11,
+      "name": "FAQ",
+      "preserve": ["four question/answer strings", "native details behavior until exact source keyboard behavior can be safely reproduced", "region name from ID35"],
+      "proven_deltas": ["FAQ currently ordered after CTA", "FAQ currently inside common forest outer section instead of paper", "native triangle/source visual mismatch", "source role button vs target disclosureTriangle and source 280ms panel motion remain an exactness gap"],
+      "prepared": [
+        "build/bio-page256-next-safe-package-20260914-v014.json operation 1",
+        "build/bio-visual-parity-v001.css FAQ block",
+        "build/bio-faq-cta-source-layout-20260914-v002.json"
+      ],
+      "status": "ORDER_AND_VISUAL_PREPARED_ROLE_MOTION_HOLD"
+    },
+    {
+      "order": 12,
+      "name": "final CTA",
+      "preserve": ["h2/body strings", "mailto href", "exact mail accessible name", "form href/text", "existing Elementor IDs"],
+      "proven_deltas": ["target CTA currently merged with FAQ forest panel", "source uses separate radius36 forest band with decorative rings/leaves and 1.25/.75 columns", "target mail visual child order is email then raw label; source label above email"],
+      "prepared": [
+        "build/bio-cta-mail-structure-20260914-v001.json",
+        "build/bio-faq-cta-source-layout-20260914-v002.json"
+      ],
+      "status": "STRUCTURE_VISUAL_PREPARED"
+    }
+  ],
+  "global_out_of_scope_reproduced": [
+    "service-child Szolgáltatások current pill missing on target page256 header",
+    "target floating contact dock nearly blank while source shows phone/mail/CTA"
+  ],
+  "global_rule": "Do not fix header/dock from this page256 package.",
+  "first_future_remote_phase": {
+    "gate": ["scope handoff", "+5 profile/site/quota", "D11 reserve", "fresh page256 baseline", "fresh post8 marker/hash/cascade"],
+    "candidate": "build/bio-visual-single-write-plan-20260914-v005.json",
+    "note": "Even prepared CSS must be revalidated against the live winning cascade before send; no blind replay."
+  },
+  "pixel_pass": false
+}
