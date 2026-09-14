@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "hedge-parity-fix-20260914-v001",
+  "date": "2026-09-14",
+  "status": "PREPARED_NOT_SENT_WPVIBE_429",
+  "target_site": "https://alakfamester-wp.clicknest.hu",
+  "target_page": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "target_page_id": 272,
+  "source": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "preflight": {
+    "elementor_bytes": 53032,
+    "elementor_sha256": "341793f0cf2dd80d33994d0668a78890c377eb196c21478625573c4ca44b962d",
+    "post_modified": "2026-09-14 15:22:08",
+    "current_revision_id": 531,
+    "known_prior_revision_id": 378,
+    "known_prior_revision_bytes": 53311,
+    "known_prior_revision_sha256": "4c80d1108004fa133341da566e60adcda1b93c1f9ba5e3d110ff4cfdee4006e5"
+  },
+  "preserve_live_drift": [
+    "Do not restore revision 378 wholesale.",
+    "Preserve the removal of hidden legacy image widgets af2e0009, af2e000a, af2e000b, af2e000c, af2e000d, af2e000e.",
+    "Preserve the 2026-09-14 exact-source text expansions in af2e0007, af2e0045, af2e0047 and af2e0049.",
+    "Preserve CTA af2e000f with e-mail contact, Tovább az űrlaphoz and #ajanlatkeres.",
+    "Preserve atomic form container af2e0010 _cssid=ajanlatkeres.",
+    "Preserve real media attachment IDs in EAEL gallery b2e2c001; fix their media alt metadata instead of zeroing the IDs.",
+    "Preserve the later carousel listitem semantics in af2e004d as manual live drift; source uses group, but do not overwrite this intentional accessibility change automatically."
+  ],
+  "proven_source_deltas": {
+    "missing_form_reply": "Jellemzően 24 órán belül válaszolok.",
+    "gallery_resolution_current": "medium",
+    "gallery_resolution_required": "full",
+    "gallery_source_items": 28,
+    "gallery_attachment_alt_issue": "EAEL uses attachment alt when a real media ID is present. Several current attachment alts differ from the source item names or are blank, causing source/target accessibility mismatch."
+  },
+  "media_alt_updates": [
+    {"id":137,"alt":"Babérmeggy sövény a nyírás előtt"},
+    {"id":138,"alt":"Babérmeggy sövény a nyírás után"},
+    {"id":204,"alt":"Magas leylandi sövény a nyírás előtt"},
+    {"id":203,"alt":"Magas leylandi sövény nyírása közben"},
+    {"id":206,"alt":"Magas leylandi sövény nyírása – másik szakasz"},
+    {"id":205,"alt":"A magas leylandi sövény teteje nyírás után"},
+    {"id":112,"alt":"A magas leylandi sövény lezárt vége"},
+    {"id":207,"alt":"Sövénymunka, 1. kép"},
+    {"id":208,"alt":"Sövénymunka, 2. kép"},
+    {"id":209,"alt":"Sövénymunka, 3. kép"},
+    {"id":210,"alt":"Sövénymunka, 4. kép"},
+    {"id":211,"alt":"Sövénymunka, 5. kép"},
+    {"id":212,"alt":"Sövénymunka, 6. kép"},
+    {"id":213,"alt":"Sövénymunka, 7. kép"},
+    {"id":214,"alt":"Sövénymunka, 8. kép"},
+    {"id":215,"alt":"Sövénymunka, 9. kép"},
+    {"id":216,"alt":"Sövénymunka, 10. kép"},
+    {"id":217,"alt":"Sövénymunka, 11. kép"},
+    {"id":218,"alt":"Sövénymunka, 12. kép"},
+    {"id":219,"alt":"Sövénymunka, 13. kép"},
+    {"id":104,"alt":"Sövénymunka, 14. kép"},
+    {"id":105,"alt":"Sövénymunka, 15. kép"},
+    {"id":106,"alt":"Sövénymunka, 16. kép"},
+    {"id":107,"alt":"Sövénymunka, 17. kép"},
+    {"id":108,"alt":"Sövénymunka, 18. kép"},
+    {"id":109,"alt":"Sövénymunka, 19. kép"},
+    {"id":110,"alt":"Sövénymunka, 20. kép"},
+    {"id":111,"alt":"Sövénymunka, 21. kép"}
+  ],
+  "intended_operations": [
+    "Before any write, re-read page272 _elementor_data bytes/SHA256 and abort if they differ from the recorded preflight unless the drift is first reconciled.",
+    "Re-read the 28 media records and only update alt_text where current value differs from the media_alt_updates map. Prefer WordPress REST batch/v1 in batches <=25.",
+    "Use WPVibe content/search on page272 meta _elementor_data for eael_fg_image_resolution_size; if exactly one current match is medium, use guarded content/edit to change only medium to full.",
+    "Use WPVibe content/search around form-lead-note; if the 24-hour sentence is still absent, insert <p class='form-reply'>Jellemzően 24 órán belül válaszolok.</p> immediately before form-lead-note with a match-once content/edit.",
+    "Do not perform a whole-page restore or structural save for these fixes.",
+    "After the patches, read back JSON validity/bytes/SHA256 and fresh frontend. If Elementor rendered-html remains stale, touch page272 through normal post hooks and regenerate Elementor CSS/cache once; do not add a redundant full cache purge."
+  ],
+  "acceptance_checks": [
+    "Fresh target accessibility/rendered tree contains the exact 24-hour reply sentence.",
+    "EAEL gallery still has 28 saved items and the exact source order.",
+    "Gallery frontend uses the original target media URLs/full-size sources rather than -225x300/-300x* thumbnails for the selected EAEL image source.",
+    "Gallery accessible names match the exact source item names for all 28 entries.",
+    "Hero af2e004e, proof carousel af2e004d, native review tabs c3d30005 and MetForm af2e0011 remain present.",
+    "No hidden legacy image widgets are reintroduced.",
+    "No SMTP, real form submission or external test message is performed.",
+    "PIXEL_PASS remains false until controlled viewport/DPR/zoom screenshot-overlay-diff evidence exists."
+  ],
+  "blocker": {
+    "kind": "WPVIBE_HTTP_429",
+    "details": "A read-only WPVibe query hit HTTP 429 after retries; a later WordPress REST batch write attempt also returned HTTP 429 before execution. No WordPress write from this package has executed.",
+    "wordpress_writes_executed": 0
+  }
+}
