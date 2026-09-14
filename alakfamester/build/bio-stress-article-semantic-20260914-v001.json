@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "package": "bio-stress-article-semantic-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "af260007",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "goal": "Match source stress-card semantic role article instead of target aside/complementary without changing any visible content or card structure.",
+  "source": "article.card.card--forest",
+  "target_current_public_HTML": "aside.af-sub-card",
+  "future_preconditions": [
+    "page256 active scope and usable WPVibe after normal handoff",
+    "fresh page256 _elementor_data bytes/SHA/JSON reconciled",
+    "fresh content/search/count proof for whole-word token aside in page256 _elementor_data",
+    "exactly two whole-word aside matches exist and both are proven to be the opening and closing af260007 stress-card tags",
+    "no other page256 widget/editor contains an aside token"
+  ],
+  "preferred_atomic_edit": {
+    "locator": "meta post_id=256 meta_key=_elementor_data",
+    "old_content": "aside",
+    "new_content": "article",
+    "replace_all": true,
+    "whole_word": true,
+    "expected_replacements": 2,
+    "why": "Both opening and closing tag names change in one server-side operation, so no intermediate mismatched-tag state exists."
+  },
+  "abort_if": [
+    "match count is not exactly two",
+    "either match cannot be tied to af260007 current editor HTML",
+    "content/edit response does not report exactly two replacements",
+    "429/unknown write result",
+    "page drift changes the stress-card owner"
+  ],
+  "immediate_postconditions": [
+    "page JSON valid",
+    "rendered stress card tag is article",
+    "AX article count +1 and complementary count -1",
+    "all two explanatory paragraphs, card heading/eyebrow and four list strings unchanged",
+    "outer named region unchanged",
+    "saved DOM order remains p1 -> article -> p2 unless a separate future safe move is proven"
+  ],
+  "residual": "This semantic tag fix does NOT solve the source DOM reading-order difference. Keep that as a separate exactness blocker; do not claim full stress semantic parity merely from article role parity.",
+  "rollback": "Only if the latest edit is proven defective: fresh-search exactly two whole-word article matches tied to the same af260007 stress card and atomically replace_all article -> aside. Never restore an old full page blob.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
