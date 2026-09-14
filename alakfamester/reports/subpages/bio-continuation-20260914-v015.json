@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "package": "bio-continuation-20260914-v015",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "Only target /biologiai-vedelem/ may be modified; reference is read-only.",
+  "wordpress_writes_this_round": 0,
+  "tool_state": {
+    "wpvibe": "DISABLED_IN_CURRENT_CHAT_BEFORE_ANY_WRITE",
+    "wpvibe_profile_last_verified": "ncsnorbert+20260914-5@gmail.com",
+    "plus5_site_connection": "UNCONFIRMED",
+    "plus5_exact_quota": "UNKNOWN",
+    "opera_tabs": 2,
+    "opera_new_tabs_opened": 0,
+    "target_http_state": "504 Gateway Time-out on the two deliberate page256 reload attempts; no repeated retry loop",
+    "source_tab": "reused for direct source screenshot and styles.css extraction"
+  },
+  "accepted_page_baseline_before_tool_loss": {
+    "elementor_bytes": 35382,
+    "elementor_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "semantic_runtime_snippet_id": 35,
+    "rule": "Must be re-read and match before any future write; this is not a substitute for a fresh preflight."
+  },
+  "direct_source_visual_proof_new": {
+    "expectations_faq_boundary": {
+      "source_anchor": "#b-expect-title",
+      "capture": "existing Opera source tab, approximately 1640x920",
+      "proved": [
+        "expectations section uses sage field",
+        "left white card contains heading plus all three positive check items and both negative X items",
+        "right sage card contains the how-it-connects heading, paragraph and arrow link",
+        "cards are equal-column peers with organic radii and lower-right leaf watermark",
+        "wave separates expectations from paper FAQ",
+        "FAQ eyebrow has bronze leaf, heading is centered, first FAQ card shows source leaf-shaped plus control"
+      ]
+    },
+    "technology": "Earlier same-Opera source capture remains authoritative for the source technology card geometry/sage card/badges/watermarks/callout. No new target capture was possible because target returned 504."
+  },
+  "exact_reference_css_extracted_new": {
+    "card": "padding 32; white; border rgba(215,210,198,.6); organic radius 28 34 26 32; shadow 0 16 40 rgba(47,58,47,.08)",
+    "card_sage": "#DDE7DF; border rgba(47,93,70,.16); no shadow",
+    "card_watermark": "150x150 organic leaf right -46 bottom -56 rotate -16; primary opacity .045, forest .05 on sage",
+    "checklist": "no native marker; 20x20 leaf; 12 gap; white check on #2F5D46",
+    "checklist_cross": "white X on #7d5a52",
+    "link_arrow": "inline-flex gap8 min-height44 weight650 primary + 17px arrow; bronze underline and +4px arrow shift on hover/focus",
+    "faq": "12px item gap; 22/26 organic white cards; 64px trigger; 16x24 padding; 34px leaf plus/minus; sage hover; open border/shadow; source panel uses 280ms grid-row transition"
+  },
+  "expectations_plan_update": {
+    "obsolete": "build/bio-visual-parity-v002-expectations.css — DO NOT DEPLOY",
+    "new_css": "build/bio-expectations-source-structure-v003.css",
+    "new_css_commit": "d6cb87ebd240c5e1ce256fc0de81bed4390d8bb3",
+    "new_structure_plan": "build/bio-expectations-source-structure-20260914-v003.json",
+    "new_structure_plan_commit": "2c6b1ed42380dd233f04ec83cf24ab79c1f36b2d",
+    "status": "PREPARED_NOT_DEPLOYED"
+  },
+  "prepared_remote_queue": [
+    {
+      "order": 1,
+      "package": "build/bio-visual-single-write-plan-20260914-v004.json",
+      "action": "after fresh +5/site/quota/page/post8 preflight, deploy only proven bio-visual-v001 + bio-hero-layout-v001 in one guarded Additional CSS match-once write",
+      "note": "expectations v003 is not part of this first CSS deployment"
+    },
+    {
+      "order": 2,
+      "package": "build/bio-page256-next-safe-package-20260914-v012.json",
+      "action": "fresh exact content searches then the smallest page256-only content fixes: FAQ-before-CTA order, stress text two-column grouping, four V4 wave class bridges",
+      "note": "split into independently verified microfixes if call/risk budget favors smaller commits"
+    },
+    {
+      "order": 3,
+      "package": "build/bio-semantic-resume-20260914-v013.json",
+      "action": "fresh raw af260007 search then tag-only aside -> article if exact live bytes still match"
+    },
+    {
+      "order": 4,
+      "package": "build/bio-expectations-source-structure-20260914-v003.json",
+      "action": "fresh raw af260013 boundary searches; source-equivalent two-article regrouping using only guarded match-once edits; then v003 scoped CSS after DOM readback"
+    }
+  ],
+  "faq_exactness": {
+    "visual": "prepared bio-visual-v001 maps source static/open colors, geometry and plus/minus control onto native details/summary",
+    "role_delta": "source button; target native summary exposes disclosureTriangle",
+    "motion_delta": "source custom panel has 280ms grid-row transition; target native details opens without that exact source panel animation",
+    "decision": "Do not replace working native details solely to chase role/motion parity until exact source interaction behavior and keyboard state transitions can be verified."
+  },
+  "hard_preserve": [
+    "13 corrected list strings",
+    "source-exact symptom table headers and rowHeader semantics",
+    "seven page-local named regions",
+    "ID35 review/hero/FAQ semantic runtime",
+    "final CTA aria-label/href",
+    "all existing Elementor IDs",
+    "measured section/hero/art/wave acceptance rules already live",
+    "no full Elementor save",
+    "no raw SQL write",
+    "no other page/shared resource/plugin setting/SMTP write"
+  ],
+  "next_action": "Do not perform any WordPress mutation while WPVibe is disabled or target is 504. When a new usable remote window exists: verify +5 profile/site/quota, preserve D11 10-call reserve, re-read page256 exact baseline and post8 markers, then execute the first complete proven package only if it safely fits. Treat any 429 write as UNKNOWN until readback.",
+  "pixel_pass": false
+}
