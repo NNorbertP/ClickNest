@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-hero-geometry-diagnostic-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "mode": "DIAGNOSTIC_ONLY_NO_WRITE",
+  "observation": "Fresh same-browser 1640x920 evidence showed the target hero left copy beginning approximately 40-45px lower than the reference while the lower hero boundary stayed comparatively close.",
+  "known_preserved_owner": {
+    "hero_root": "#af-sub-survivor-hero",
+    "art_container_elementor_id": "af2a0041",
+    "art_widget_elementor_id": "af2a0052",
+    "widget_type": "af-hero-art",
+    "art": "idos-fak-megmentese-szolgaltatas",
+    "accessible_title": "Idős fa megtartott, alátámasztott vezérággal",
+    "accessible_description": "Öreg fa vastag törzzsel és nehéz alsó vezérággal, amelyet bronz támasz tart meg."
+  },
+  "preconditions": [
+    "Use the same browser engine for reference and target.",
+    "Start with 1640x920 to reproduce the existing observation before testing any additional viewport.",
+    "Match DPR, zoom, top-of-page/scroll position, sticky-header state, focus state and reduced-motion setting.",
+    "Wait for document fonts.ready plus hero image/SVG readiness before measuring.",
+    "Use only one reference and one target tab; never open replacement tabs because the connector is unstable.",
+    "Confirm target is page264 and page264 saved-data hash is reconciled before attributing drift to layout."
+  ],
+  "resolve_before_measure": [
+    "Locate the source and target H1 by exact accessible/visible hero title rather than assuming matching DOM wrappers.",
+    "From each H1 walk to the smallest ancestor that owns the complete left hero copy column; record its selector/class/Elementor ID.",
+    "Record the hero root, inner layout owner, copy-column owner, H1, first body paragraph/lead, CTA group if present, art owner af2a0052 and the element immediately following the hero.",
+    "Do not compare generated Elementor wrapper IDs between source and target as if they were semantic equivalents; compare layout roles and computed ownership."
+  ],
+  "geometry_measurements_px": [
+    "hero root top/bottom/height",
+    "hero inner top/bottom/height",
+    "copy column top/bottom/height",
+    "H1 top/bottom/height",
+    "first lead/body top/bottom/height",
+    "CTA group top/bottom/height if present",
+    "art owner top/bottom/height",
+    "next section top",
+    "vertical delta from hero root top to copy column top",
+    "vertical delta from hero root top to H1 top",
+    "vertical delta from copy column bottom to hero root bottom"
+  ],
+  "computed_style_inventory": {
+    "hero_root_and_inner": [
+      "display",
+      "position",
+      "box-sizing",
+      "height",
+      "min-height",
+      "max-height",
+      "padding-top",
+      "padding-bottom",
+      "margin-top",
+      "margin-bottom",
+      "gap",
+      "row-gap",
+      "align-items",
+      "align-content",
+      "justify-content",
+      "overflow",
+      "transform"
+    ],
+    "copy_column": [
+      "display",
+      "position",
+      "height",
+      "min-height",
+      "padding-top",
+      "padding-bottom",
+      "margin-top",
+      "margin-bottom",
+      "gap",
+      "row-gap",
+      "align-self",
+      "justify-content",
+      "transform"
+    ],
+    "h1_and_lead": [
+      "margin-top",
+      "margin-bottom",
+      "padding-top",
+      "padding-bottom",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "line-height",
+      "letter-spacing",
+      "width",
+      "max-width",
+      "white-space"
+    ],
+    "art_owner": [
+      "align-self",
+      "margin-top",
+      "margin-bottom",
+      "height",
+      "min-height",
+      "transform"
+    ]
+  },
+  "font_and_wrap_checks": [
+    "Record document.fonts.status and the actual computed H1/body font families on both pages.",
+    "Record H1 and lead line counts; a line-wrap difference must be explained before changing vertical spacing.",
+    "If target uses the same vertical box model but text wraps differently, diagnose font/width ownership instead of adding top/bottom spacing.",
+    "If fonts are not ready or a different fallback wins, recapture after readiness; do not patch layout around a transient fallback."
+  ],
+  "classification_rules": {
+    "whole_hero_offset": "If root/inner padding or positioning differs by the measured amount and the next-section boundary shifts similarly, diagnose root/inner ownership.",
+    "copy_only_offset": "If hero root/art/next-section geometry matches but copy-column top differs, diagnose copy-column align/justify/padding/margin/gap.",
+    "typography_wrap": "If copy top aligns but H1/lead heights or line counts differ, diagnose width/font/line-height before spacing.",
+    "header_or_anchor_state": "If root top differs while document/header states differ, normalize sticky/scroll state; do not change page264 hero.",
+    "no_single_owner": "If several small differences combine to the observed 40-45px and no page264-local winner is proven, keep HOLD and make no write."
+  },
+  "write_gate": [
+    "A future fix must name the exact winning/losing declaration and responsible page264 selector or page264 element control.",
+    "The fix must not touch global header/footer, shared classes used by other pages, or af2a0052 art identity unless that owner is directly proven responsible.",
+    "Prefer the native Elementor owner/control when it exactly expresses the source value; use Additional CSS only for a proven non-native/page264-scoped exception.",
+    "After any future fix, require same-state source/target geometry readback plus adjacent-section regression check and unchanged content/AX contracts."
+  ],
+  "explicitly_forbidden_shortcuts": [
+    "No arbitrary margin-top:-40px or transform:translateY(-40px).",
+    "No blanket hero padding reduction from screenshot impression.",
+    "No content deletion or line-break insertion to force vertical alignment.",
+    "No global header offset fix from this page264 package.",
+    "No PIXEL_PASS claim from a single 1640x920 screenshot."
+  ],
+  "current_status": "PREPARED_NOT_RUN_CONNECTOR_DISCONNECTED",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
