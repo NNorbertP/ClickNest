@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-interaction-acceptance-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "mode": "READ_ONLY_ACCEPTANCE_NO_WRITE_BY_DEFAULT",
+  "scope": "Page264 review tabs, tiszafa before-after and Nordmann carousel only.",
+  "browser_policy": {
+    "required": "interaction-capable browser with source and target",
+    "max_project_tabs": 2,
+    "reuse": "one source tab + one target tab only",
+    "stop_on_disconnect": true,
+    "new_tabs_on_instability": 0,
+    "reason": "Preserve Opera memory and avoid mixing state from concurrently repurposed tabs."
+  },
+  "preconditions": [
+    "Fresh target URL must be page264, not a tab repurposed by another process.",
+    "Page264 saved-data hash must be reconciled with the accepted live baseline before attributing a new failure to runtime code.",
+    "Review static AX contract must still expose three real tabs plus source-equivalent previous/next only; numbered ID14 dots must remain absent from AX/focus on page264.",
+    "Tiszafa control must still be native input[type=range] min=0 max=100 step=1 value=50 with data-af-ba-init=1.",
+    "Nordmann static control names must still match source previous/next + dots 1-6."
+  ],
+  "review_tabs": {
+    "owners": {
+      "shared": "Code Snippets ID14 AF reusable reviews controls v005",
+      "page264_containment": "Code Snippets ID33 AF old trees semantic parity v001"
+    },
+    "expected_shared_keyboard_contract": [
+      "ArrowRight and ArrowDown activate/focus the next real role=tab, wrapping after the third.",
+      "ArrowLeft and ArrowUp activate/focus the previous real role=tab, wrapping before the first.",
+      "Home activates/focuses the first real tab.",
+      "End activates/focuses the last real tab."
+    ],
+    "page264_specific_invariants": [
+      "Exactly three real tabs remain keyboard-addressable.",
+      "Previous/next controls remain available with source-equivalent accessible names.",
+      ".af-review-source-dot elements may remain visually/pointer-active but have tabindex=-1 and aria-hidden=true after ID33 applies.",
+      "No duplicate review label or duplicate tablist name appears after any tab change."
+    ],
+    "test_sequence": [
+      "Focus real tab 1; ArrowRight -> tab 2; ArrowRight -> tab 3; ArrowRight -> tab 1.",
+      "From tab 1 ArrowLeft -> tab 3.",
+      "From tab 2 Home -> tab 1; End -> tab 3.",
+      "Repeat vertical ArrowDown/ArrowUp if ID14 remains the current owner; expected behavior mirrors right/left.",
+      "Activate source-style previous and next controls and verify selected real tab/panel stays synchronized.",
+      "After each change, inspect AX/focusables to ensure numbered dots did not re-enter the accessibility tree."
+    ],
+    "failure_response": "Diagnose current ID14/ID33 live bodies and event ownership before changing anything. Never add a second review handler."
+  },
+  "tiszafa_before_after": {
+    "selector": ".js-ba",
+    "accepted_initial_state": {
+      "range_min": 0,
+      "range_max": 100,
+      "range_step": 1,
+      "range_value": 50,
+      "css_split": "--ba-pos:50%",
+      "before_alt": "Az 50+ éves tiszafa a beavatkozás előtt",
+      "after_alt": "Ugyanaz a tiszafa a formázás után: többszintes niwaki"
+    },
+    "source_contract": "The source interaction handler listens to input on the native range and sets --ba-pos to value + '%'.",
+    "test_sequence": [
+      "At initial load require value 50 and visual split 50%.",
+      "Keyboard ArrowRight once -> value 51 and --ba-pos 51%; ArrowLeft -> back to 50.",
+      "Keyboard Home/End may follow native browser range semantics; do not add custom handlers if native behavior is source-equivalent.",
+      "Pointer drag to a clearly different position; require native value and visual split to move together.",
+      "Return to 50 and confirm alt text/accessible name did not change or duplicate."
+    ],
+    "failure_response": "First prove whether the existing source-interaction owner is absent, duplicated or losing a CSS variable. Do not replace the native range or add a parallel slider library."
+  },
+  "nordmann_carousel": {
+    "selector": ".carousel.js-carousel",
+    "source_runtime_contract": {
+      "slides": 6,
+      "autoplay_interval_ms": 4000,
+      "keyboard": ["ArrowLeft", "ArrowRight"],
+      "pointer_swipe_min_horizontal_px": 40,
+      "pointer_swipe_requires_horizontal_dominance": true,
+      "pause_events": ["mouseenter", "focusin"],
+      "resume_events": ["mouseleave", "focusout"],
+      "reduced_motion": "autoplay disabled while prefers-reduced-motion: reduce; change listener re-evaluates start/stop",
+      "wrap": true
+    },
+    "test_sequence_normal_motion": [
+      "Record selected slide/counter at t0 after a stable load.",
+      "Without hover/focus, sample after >4.1s and require one forward advance; sample another >4.1s later and require another forward advance.",
+      "Press ArrowRight -> exactly one forward advance; ArrowLeft -> exactly one backward advance.",
+      "Pointer swipe horizontally by >40px with vertical delta smaller than horizontal -> exactly one direction-appropriate advance.",
+      "Pointer movement <40px or vertically dominant movement -> no slide change.",
+      "While mouseenter is held across >4.1s, require no autoplay advance; after mouseleave require autoplay to resume.",
+      "While focus remains inside across >4.1s, require no autoplay advance; after focus leaves require autoplay to resume."
+    ],
+    "test_sequence_reduced_motion": [
+      "Enable prefers-reduced-motion: reduce before/reload or through supported emulation.",
+      "Observe >8.2s with no manual action; require no autoplay advance.",
+      "Manual ArrowLeft/ArrowRight and pointer controls must remain functional.",
+      "If the browser can switch the media query live, toggle preference and require the runtime to re-evaluate autoplay without duplicate timers."
+    ],
+    "failure_response": "Inspect the current live interaction owner and initialization marker before any JS write. Never add a second timer/keyboard/swipe layer merely to satisfy the test."
+  },
+  "cross_component_regression_checks": [
+    "No test action may change visible copy, page264 Elementor data, review accessible labels, form semantics or v004/v005/v006/v007 visual ownership.",
+    "No duplicate MutationObserver, timer or keyboard listener may be introduced as a test workaround.",
+    "Do not leave autoplay tabs running while testing unrelated sections; keep only the active source/target pair.",
+    "No SMTP or form submission is part of this interaction package."
+  ],
+  "pass_definition": "All three components complete their sequences with source-equivalent observable behavior and no new AX/focus or visual regression. A PASS is runtime acceptance only and does not imply PIXEL_PASS.",
+  "current_execution_status": "PREPARED_NOT_RUN: current Opera connector is disconnected and exposes no generic click/keyboard action when connected; WPVibe is unavailable. No runtime write is justified from this limitation.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
