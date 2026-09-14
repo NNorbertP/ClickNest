@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "package": "bio-review-media-aspect-diagnostic-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_DIAGNOSTIC_BEFORE_ANY_MEDIA_LAYOUT_CHANGE",
+  "source_contract": {
+    "review_1": "figure.review__media inline aspect-ratio:1.78/1 and width based on var(--rev-media-h)*1.7800",
+    "review_2": "aspect-ratio:0.8/1",
+    "review_3": "aspect-ratio:0.9872/1",
+    "image_fit": "source uses contained review media, not a destructive crop"
+  },
+  "target_current_public_HTML": {
+    "review_1_natural_image": "2501x1000 ~= 2.501:1",
+    "review_2_natural_image": "1000x1250 = 0.8:1",
+    "review_3_natural_image": "1000x1013 ~= 0.9872:1"
+  },
+  "finding": "Only the first target image's natural ratio materially differs from the source media-box ratio. This may or may not create a visible layout delta depending on the winning target media-container width/height/aspect and object-fit rules.",
+  "do_not_infer_yet": [
+    "do not replace or crop the Panasonic asset from natural dimensions alone",
+    "do not force image width/height before measuring the target media container",
+    "do not alter the already-matching second/third review image geometry"
+  ],
+  "future_diagnostic_when_page256_QA_returns": [
+    "Read the winning target review-media/image CSS owner from current public/global/page-local styles.",
+    "At a controlled desktop viewport, measure the rendered first media box aspect ratio and contained image bounds.",
+    "Compare against source 1.78 box, source contain behavior and source author/body grid relationship.",
+    "If target box is already 1.78 with the 2.501 natural image letterboxed/contained appropriately, close with no write.",
+    "Only if target media box itself is source-divergent should a page256-local geometry override be prepared."
+  ],
+  "preserve": [
+    "current image attachment/source URL unless a true asset mismatch is separately proven",
+    "exact alt text",
+    "review body/author/Atomic Tabs hierarchy",
+    "second and third media ratios"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
