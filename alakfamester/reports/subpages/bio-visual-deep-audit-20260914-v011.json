@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "package": "bio-visual-deep-audit-20260914-v011",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "scope": "Read-only continuation. No WordPress write in this v011 audit. Only page256 remains eligible for future changes.",
+  "preflight": {
+    "elementor_data_bytes": 35382,
+    "elementor_data_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "runtime_snippet_id": 35,
+    "runtime_semantic_parity": "PASS from v009/v010"
+  },
+  "opera_policy": {
+    "max_tabs": 2,
+    "new_tabs_opened": 0,
+    "note": "Only the two existing source/target tabs were reused. Concurrent browser activity may navigate them, so URL is checked before using evidence."
+  },
+  "technology_cards": {
+    "source_visual": [
+      "Three equal-width cards use noticeably larger inner padding and greater height than current target.",
+      "First source title wraps to three lines at the sampled desktop viewport; target wraps to two because the target content box is wider from smaller padding.",
+      "Source white cards have irregular organic radii, soft shadow and a subtle lower-right leaf watermark.",
+      "Source middle sage card has a botanical top hairline and a large subtle leaf watermark.",
+      "Icon badges and text content align in subject/order."
+    ],
+    "source_css_evidence": {
+      ".card": "padding var(--space-6)=32px; border-radius var(--radius-organic)=28px 34px 26px 32px; box-shadow var(--shadow-md); white surface; pseudo leaf watermark",
+      ".card--sage": "sage surface, no shadow, botanical top hairline, darker subtle watermark",
+      ".feature": "column flex; 16px gap; full height; paragraph flexes"
+    },
+    "target_markup": "#technologiak contains .af-sub-cards.af-sub-cards-3 with three bare article children; no native card/feature classes in saved legacy HTML.",
+    "target_css_evidence": ".af-sub-card,.af-sub-cards>article currently force background white, simple 24px radius and 26px padding with !important; .af-sub-cards uses 3 equal columns, 22px gap, 30px block margin.",
+    "finding": "Concrete page-content component-style mismatch, not merely an intermediate-width interpolation artifact. Widths align closely while padding/radius/decorative treatment and card height differ."
+  },
+  "table": {
+    "source_css_evidence": "Reference .table-wrap uses organic radius, shadow and scroll-edge treatment; table.data uses 13px x 24px cell padding, sage header, uppercase/letter-spaced header labels, even-row sage tint and forest row headers.",
+    "target_css_evidence": "Current .af-table-wrap uses simple 24px radius with no shadow; cells use 15px x 16px; header background #F5F3ED. Saved table semantics/text already match source exactly.",
+    "finding": "Probable visual component-style mismatch. Needs direct screenshot confirmation before a write."
+  },
+  "faq": {
+    "source_css_evidence": "Reference .faq/.faq__item/.faq__trigger/.faq__icon use irregular card radii, 64px trigger rows and a dedicated animated plus/minus leaf icon.",
+    "target_css_evidence": "Current legacy .af-details uses plain details/summary cards with 15px radius, 20px horizontal padding and no source trigger-icon markup.",
+    "finding": "Probable visual/component-structure mismatch. Accessibility question names already match source. Needs visual/ownership proof before a structural write."
+  },
+  "acceptance_widths": {
+    "important": "Do not alter existing reference-measured section heights or hero dimensions for 1920/1440/1024/768/390/360 based on the sampled intermediate desktop width.",
+    "current_target_css": "Already contains discrete source-measured page256 section heights and hero dimensions at all six acceptance widths."
+  },
+  "safe_next_decision": {
+    "preferred": "After host throttle clears, perform one compact read to determine whether the target existing CSS already contains reference generic .card/.card--sage/.feature/.grid/.table-wrap/.faq/.leaf-badge component rules.",
+    "if_present": "Prove exact source markup/classes and consider guarded page256-only legacy HTML class/structure edits so no global CSS/plugin resource changes are required.",
+    "if_absent": "Do not invent inline/widget CSS. Under the current page256 continuation restriction, record the visual CSS as blocked rather than modifying global Additional CSS without scope authority."
+  },
+  "remote_blocker": "Target host returned HTTP 429 after automatic retries during the compact CSS class-presence read. Do not immediately retry.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
