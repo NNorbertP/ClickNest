@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "status": "PREPARED_NOT_RUN_OPERA_DISCONNECTED",
+  "goal": "Collect the highest-value runtime/accessibility evidence when Opera Browser Connector returns, without accumulating tabs or exhausting memory.",
+  "browser_memory_policy": {
+    "max_open_project_tabs": 2,
+    "pair": "one source tab + one target tab for the active page only",
+    "reuse": "navigate the same two tab IDs to the next page rather than opening new diagnostic tabs",
+    "cleanup": "close view-source/wp-login/old qa query tabs before starting; after each page, retain only the pair or navigate them onward",
+    "no_full_dom_spam": "prefer targeted tab-content jq/search queries over repeated full accessibility-tree pagination",
+    "screenshots": "use only when connector screenshot becomes available; otherwise do not retry screenshot repeatedly in the same package",
+    "animations": "sample only documented states/times; do not leave autoplay pages open across unrelated tests"
+  },
+  "test_order": [
+    {
+      "order": 1,
+      "page": "page272 Hedge",
+      "why_first": "highest-priority active content package and later drift affects gallery/review semantics",
+      "source": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+      "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+      "after_remote_package": true,
+      "checks": [
+        "28 EAEL accessible image names exactly match source order after page-only id=0 decoupling; image URLs remain original/full-size",
+        "24-hour reply sentence exposed",
+        "complete mailto and phone/e-mail accessible names",
+        "five approved legacy named regions only",
+        "native reviews tablist accessible name and three tab names; compare extra target review controls before changing anything",
+        "review ArrowLeft/ArrowRight/Home/End runtime behavior if interaction tool is available",
+        "21-slide proof carousel autoplay: two states >4s apart when reduced-motion=false; no autoplay under prefers-reduced-motion",
+        "mobile/narrow layout and overflow",
+        "console/asset errors if connector exposes them"
+      ]
+    },
+    {
+      "order": 2,
+      "page": "page264 Old Trees",
+      "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+      "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+      "checks": [
+        "Code Snippets ID33 runtime marker appears exactly once",
+        "11 named regions total/source-equivalent labels: native review + 10 helper-added",
+        "nine promoted step labels exposed as heading level 3",
+        "review tablist name Ügyfélvélemények and three source-like tab names with no duplicate accessible naming",
+        "CTA and inline form phone/mail names",
+        "form aria-label, radio group/label relationship, city describedby; inspect for duplicate/conflicting native MetForm semantics rather than assuming helper is correct",
+        "tiszafa before/after range input: pointer drag and keyboard arrows update visual split while labels remain correct",
+        "Nordmann auto carousel advances on normal motion and does not autoplay under reduced-motion",
+        "page saved content/geometry unchanged by runtime-only helper"
+      ]
+    },
+    {
+      "order": 3,
+      "page": "page258 Gallery",
+      "source": "https://alakfamester.clicknest.hu/galeria.html",
+      "target": "https://alakfamester-wp.clicknest.hu/galeria/",
+      "checks": [
+        "44 EAEL masonry accessible image names/order and original media URLs",
+        "Magnific Popup open -> next -> previous -> close; keyboard Escape/Arrow if supported; focus returns to opener and background focus is not leaked",
+        "four featured before/after ranges drag + keyboard",
+        "six manual carousels arrows/dots/keyboard/swipe; prove no autoplay over >4s",
+        "native review tabs Arrow/Home/End",
+        "masonry column behavior at desktop/mobile and no overflow",
+        "do not treat missing 404 Ellwoodi source image as a target regression until exact source bytes are recovered"
+      ]
+    },
+    {
+      "order": 4,
+      "page": "page268 Reference Videos",
+      "source": "https://alakfamester.clicknest.hu/referencia-videok.html",
+      "target": "https://alakfamester-wp.clicknest.hu/referencia-videok/",
+      "checks": [
+        "CTA focus/DOM order before featured heading/video remains correct after latest structural fix",
+        "seven video controls and exact video identities",
+        "featured video keyboard activation and lazy iframe creation; privacy-enhanced YouTube host",
+        "review tab click/Arrow/Home/End",
+        "hero animation source/target start, intermediate and full-cycle timing; mobile and reduced-motion",
+        "editor reopen proof only if authenticated session already exists; do not resave solely for proof"
+      ]
+    },
+    {
+      "order": 5,
+      "page": "Homepage",
+      "source": "https://alakfamester.clicknest.hu/",
+      "target": "https://alakfamester-wp.clicknest.hu/",
+      "checks": [
+        "three before/after sliders pointer + keyboard at desktop/tablet/mobile",
+        "native review tabs keyboard behavior",
+        "hero/proof carousel/animation normal + reduced-motion behavior",
+        "header desktop dropdown hover/focus/current states, keyboard open/navigation, sticky threshold behavior after header package",
+        "mobile drawer open/close/body lock at <=1240",
+        "MetForm textarea rows=5 and 3-5 file validation UI contract without real submission",
+        "footer link semantics and canonical destinations"
+      ]
+    }
+  ],
+  "formal_visual_views_when_screenshot_is_available": [
+    "1920x1080",
+    "1440x1000",
+    "1024x900",
+    "768x1024",
+    "390x844",
+    "360x800"
+  ],
+  "visual_capture_contract": [
+    "same browser engine, DPR, zoom, load state and scroll position for source/target pair",
+    "wait for fonts/images before static capture",
+    "animations use matched start and documented time/scroll progress; do not compare random autoplay frames",
+    "capture source, target, overlay/diff and key geometry; image resizing must not mask page-height/content differences",
+    "re-measure all affected pages after global header/font/CSS changes"
+  ],
+  "stop_conditions": [
+    "connector becomes unstable/disconnected: stop opening/retrying tabs and persist partial evidence",
+    "memory pressure/tab proliferation: close stale tabs before continuing",
+    "fresh target state conflicts with documented hash/package: stop runtime claim and return to state reconciliation",
+    "no screenshot action: keep PIXEL_PASS=false; interaction/AX evidence does not substitute for pixel acceptance"
+  ]
+}
