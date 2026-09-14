@@ -1,0 +1,70 @@
+{
+  "schema_version": 3,
+  "package": "final-acceptance-preflight-20260915-v003",
+  "date": "2026-09-15",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "supersedes_for_planning": "reports/final-acceptance-preflight-20260914-v002.json",
+  "wordpress_writes_in_this_preflight": 0,
+  "scope": "STATE.md currently authorizes page264-only WordPress writes. This preflight is read-only/planning and cannot expand that scope.",
+  "current_tool_state": {
+    "wpvibe_profile": "ncsnorbert+20260914-5@gmail.com is the intended account; target connection and exact rolling quota remain UNKNOWN",
+    "wpvibe_current_continuation": "The first read-only list_sites invocation returned tool disabled. Do not call WPVibe again in this continuation. Zero WordPress writes followed.",
+    "opera_current_continuation": "Exactly two pre-existing tabs, zero new/replacement tabs. A page256 target URL/title returned homepage AX content, so the connector is stale/untrusted. Do not use Opera again in this continuation.",
+    "github": "Current reliable channel for immutable evidence/planning only."
+  },
+  "implementation_open": {
+    "page264_active_scope": {
+      "authoritative": ["reports/subpages/oldtrees-continuation-20260915-v010.json", "build/oldtrees-next-remote-window-20260915-v003.json", "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json"],
+      "only_reproduced_page_local_visual_deltas": ["v006 request-contact foreground", "v007 equal comparison columns"],
+      "deployment_rule": "Fresh +5/site/quota + saved-data/post8 marker gate + trustworthy matched-browser reproduction; at most one selected CSS write; mandatory readback; any 429 is UNKNOWN until readback.",
+      "proof_only": ["Form33 native required/non-delivery behavior", "inner field geometry/style", "route href readback", "review/tiszafa/Nordmann interactions", "hero measured owner/cascade", "six-view responsive matrix"]
+    },
+    "page256_future_scope": {
+      "authoritative": ["reports/subpages/bio-continuation-20260914-v024.json", "reports/subpages/bio-evidence-supersedence-20260915-v003.json", "build/bio-remote-call-budget-20260914-v003.json"],
+      "critical_delivery_gate": "Page-local style-carrier probe in existing af260016 must PASS before visual v007 can be delivered. Failure cancels the CSS delivery route; no automatic global CSS fallback.",
+      "remaining_future_structure": ["v014 structural microfixes", "stress semantic/visual", "table title ownership", "expectations grouping", "accessibility-safe FAQ/CTA v006", "owner-proven review microfixes"],
+      "review_rule": "Frozen source behavior is acceptance oracle only; do not replace native Atomic Tabs with legacy source JS."
+    },
+    "page272_future_scope": {
+      "authoritative": ["reports/subpages/hedge-artifact-supersession-20260915-v004.json", "reports/subpages/hedge-continuation-20260915-v014.json", "build/hedge-next-live-window-plan-20260915-v005.json", "build/hedge-acceptance-matrix-20260915-v005.json"],
+      "only_write_candidate": "Existing ID36 -> hedge-semantic-runtime-v004.php only if fresh structure/cardinality/current-native-ARIA/ID-uniqueness gates pass",
+      "preservation_rule": "If a stronger/newer native semantic relation would be overwritten or make v004 ineffective, HOLD the prepared write and design a preserving successor; never delete native semantics merely to make prepared code win.",
+      "page_css_candidate": "NONE"
+    },
+    "global_header_future_scope": "build/header-deployment-plan-v010.json through existing ID7 only; homepage Services must be neutral while Főoldal is current, and true service-child routes must mark Services current-section; multi-route acceptance required",
+    "global_dock": "Known global blank/clipped visual pill with AX content present. Diagnostic-first: exact ID7 markup and winning cascade before any fix."
+  },
+  "accepted_do_not_reopen": [
+    "page264 accepted content/main media/semantics and live visual v004+v005",
+    "page272 saved 53606-byte baseline content/media closeout, 26/26 recovery, 28/28 page-local EAEL gallery, five legacy regions and D09 links",
+    "page256 completed strings/table row headers/ID35 semantic closeout and already-present technology/contact/fact visuals",
+    "page268 CTA sibling/focus order and seven video controls",
+    "page260/page262/page266/page270 completed hero/class bridge work",
+    "shared Form33 ID5 photo-count validation, ID6 rows=5 helper and configured local success state"
+  ],
+  "asset_acceptance": {
+    "reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "ellwoodi": "Exact frozen WEBP remains unrecovered. Same-basename old public JPG is provenance evidence only; do not upload without exact/deterministic equivalence.",
+    "portrait": "Exact portrait bytes are unrecovered, but current acceptance visibility is conflicting. Obtain a fresh trusted reference DOM/screenshot before treating portrait recovery as an implementation requirement. No substitute is permitted."
+  },
+  "machine_acceptance_blockers": [
+    "specs/acceptance.json is absent",
+    "specs/behaviors.json is absent",
+    "deterministic same-browser 1920/1440/1024/768/390/360 viewport + DPR + zoom + fonts/images/stable-load controller is unavailable",
+    "trusted automated overlay/diff for those frozen states is unavailable",
+    "stable generic click/keyboard/pointer action-capable browser is unavailable for the remaining interaction matrix"
+  ],
+  "proof_only_or_external": [
+    "page268 authenticated editor reopen after latest structural save",
+    "Gallery BA/carousel/lightbox runtime proof",
+    "Reference Videos review/video/hero runtime proof",
+    "global header dropdown/mobile/sticky acceptance after the authoritative package",
+    "SMTP configuration, delivery and real form submissions are excluded"
+  ],
+  "completion_rule": "Do not declare final or PIXEL_PASS while any active implementation package, required exact asset equivalence, formal machine acceptance, or required interaction proof remains open. Tool unavailability is not evidence of a defect and must not generate speculative fixes.",
+  "next_safe_action": "Obey STATE.md. In a future stable live window run oldtrees-next-remote-window-v003 first. Other page/global work waits for an explicit normal scope handoff.",
+  "known_current_wpvibe_budget": "UNKNOWN for +5; never reuse historical +3/+4 counters",
+  "pixel_pass": false,
+  "status": "NOT_FINAL_LIVE_IMPLEMENTATION_AND_FORMAL_ACCEPTANCE_REMAIN_OPEN"
+}
