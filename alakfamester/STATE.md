@@ -15,7 +15,9 @@ Current planning/evidence:
 - `reports/subpages/oldtrees-direct-live-compare-20260914-v005.json`
 - `reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json`
 - `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`
-- `build/oldtrees-next-remote-window-20260914-v001.json`
+- `build/oldtrees-interaction-acceptance-20260914-v001.json` — exact no-write review/tiszafa/Nordmann runtime test sequences;
+- `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json` — exact no-write owner/cascade gate for the unproven hero offset;
+- `build/oldtrees-next-remote-window-20260914-v002.json` — current remote plan, supersedes v001 for planning.
 
 ## Live state to preserve
 
@@ -135,19 +137,20 @@ These are not reasons for more static/semantic writes.
 
 ## Remaining QA after/around v006/v007
 
-Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `build/oldtrees-next-remote-window-20260914-v001.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
+Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `build/oldtrees-next-remote-window-20260914-v002.json`, `build/oldtrees-interaction-acceptance-20260914-v001.json`, `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
 
 Visual:
 - after v007 or if a newer rule already fixes it, prove equal desktop comparison columns/source-like wrapping and preserve beige/sage surfaces/icons/bullets;
 - after v006 or if already fixed, prove white request-contact foreground and unchanged panel/button geometry;
-- hero target copy begins lower in the existing 1640×920 comparison, but root cause is unproven: **no hero padding/margin patch without measured geometry + computed-style owner/cascade proof**;
+- hero target copy begins lower in the existing 1640×920 comparison, but root cause is unproven: **no hero padding/margin patch without measured geometry + computed-style owner/cascade proof**. Use the dedicated hero diagnostic plan before any write;
 - floating contact dock is visually nearly empty/clipped while AX content exists. Do not recreate markup/runtime. This page264 task must not deploy a global dock fix; any future correction from this task must first prove exact cascade ownership and be page264-scoped;
 - `PIXEL_PASS=false` until deterministic same-browser exact viewport/DPR/zoom screenshot pair + overlay + diff exists.
 
 Interaction:
-- reviews Arrow/Home/End;
-- tiszafa pointer + keyboard;
-- Nordmann ~4000 ms normal autoplay, ArrowLeft/Right, swipe, hover/focus pause/resume, reduced-motion stop/re-evaluation.
+- reviews ArrowRight/Down/Left/Up/Home/End plus previous/next synchronization;
+- tiszafa pointer + keyboard with native range and `--ba-pos` staying synchronized;
+- Nordmann ~4000 ms normal autoplay, ArrowLeft/Right, >40px horizontal swipe, hover/focus pause/resume, reduced-motion stop/re-evaluation;
+- these are proof-only by default: lack of an action-capable browser is not a reason to add another runtime owner.
 
 ## Tooling / memory constraints
 
@@ -159,8 +162,8 @@ Local Chromium exists but this runtime DNS cannot resolve the Clicknest hosts. G
 
 ## Current status
 
-**Elkészült:** page264 content/semantics; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; v006+v007 single-write bundle and exact next-window plan prepared; authoritative page264 acceptance ledger consolidated.  
-**Ellenőrzött:** historical live hash; v004/v005 markers; v004 icons/bullets; final review AX; tiszafa initial AX; Nordmann static AX; v006/v007 static scopes; shared Form33 helpers/settings; already-passed work separated from proof-only and hold/no-write items in the ledger.  
-**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; hero root-cause proof; interaction acceptance; service-radio required proof; page264-scoped dock diagnosis; deterministic pixel matrix.  
-**Következő művelet:** verify WPVibe +5 connection/quota → hash/marker preflight → fresh two-delta visual gate → at most one selected CSS write → mandatory readback → targeted QA.  
+**Elkészült:** page264 content/semantics; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; v006+v007 single-write bundle; authoritative page264 acceptance ledger; exact interaction acceptance matrix; hero computed-style/geometry diagnostic gate; refined next-live-window v002 plan.  
+**Ellenőrzött:** historical live hash; v004/v005 markers; v004 icons/bullets; final review AX; tiszafa initial AX; Nordmann static AX; v006/v007 static scopes; shared Form33 helpers/settings; all new repository plans read back successfully; already-passed work separated from proof-only and hold/no-write items.  
+**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; hero measured root-cause proof; interaction acceptance; service-radio required proof; page264-scoped dock diagnosis; deterministic pixel matrix.  
+**Következő művelet:** follow `oldtrees-next-remote-window-20260914-v002.json`: verify WPVibe +5 connection/quota → compact hash/marker preflight → fresh two-delta visual gate → at most one selected CSS write → mandatory readback → form/interaction/hero read-only acceptance as capacity/tooling permits.  
 **Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; estimated selected remote package ~5–8 calls plus the mandatory 10-call reserve, but actual counter must be read first.
