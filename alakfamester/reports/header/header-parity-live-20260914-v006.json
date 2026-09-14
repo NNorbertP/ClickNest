@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-14",
+  "scope": "global header only",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "V004_CSS_DEPLOYED_ROUTE_CURRENT_HELPER_INSTALLED_RUNTIME_VISUAL_QA_OPEN",
+  "preflight": {
+    "post8_before_bytes": 600999,
+    "post8_before_sha256": "8cd8a9cfb804ba6ca5ab57a8ff59d7858c2e14bfb940f4921f2bceddefd80b83",
+    "v003_marker_present": true,
+    "v004_marker_present": false,
+    "snippet7_active": true,
+    "snippet7_bytes": 9723,
+    "snippet7_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "snippet7_threshold_8px": true,
+    "snippet7_is_current_logic": false
+  },
+  "css_write": {
+    "method": "match-once content/edit on Hello Additional CSS post8; exact live v003 marker block replaced by complete build/header-desktop-alignment-v004.css",
+    "result_bytes": 601189,
+    "result_sha256": "6d711a670cbfc62da45fa84d2b8d0c04b8078aa4ff93553ae492c2104c5ae003",
+    "v003_marker_after": false,
+    "v004_marker_after": true,
+    "base_header_live_source_marker_preserved": true,
+    "new_effects": [
+      "suppress ekit-menu-dropdown-toggle ::after duplicate caret",
+      "style .af-nav-dropdown-host.is-current with source-like active pill"
+    ]
+  },
+  "runtime": {
+    "existing_id7": "Preserved byte-for-byte; no full 9723-byte runtime rewrite was risked for a small delta.",
+    "new_helper_id": 37,
+    "name": "AF header route current parity v001",
+    "source": "build/header-route-current-runtime-v001.php",
+    "static_qa": "reports/header/header-route-current-static-qa-v001.json",
+    "active": true,
+    "scope": "front-end",
+    "code_error": null,
+    "behavior": "Class-only helper marks Services current on four service subpages and References current on Gallery/Reference Videos; homepage excluded; no text/href/layout/DOM reorder."
+  },
+  "preserved_verified_behavior": [
+    "ID7 Főmenü navigation accessible name",
+    "ID7 brand accessible name Alakfa mester BIRÓ JÁNOS",
+    "ID7 source-like dropdown accessible names",
+    "ID7 sticky threshold 8px",
+    "desktop nav centering geometry from v003 carried into v004",
+    "mobile breakpoint 1240 and existing drawer/runtime behavior"
+  ],
+  "floating_contact_investigation": {
+    "write_performed": false,
+    "finding": "Live base .dock CSS contains phone/mail mask icons plus CTA; later .af-source-dock override only changes safe-area bottom. Later mobile rules increase icon size and keep CTA flex. No proven CSS rule hiding/clipping the dock was found.",
+    "decision": "Do not change global dock from one intermediate screenshot without deterministic/cascade evidence."
+  },
+  "runtime_acceptance_open": [
+    "Current WPVibe get_page_html snapshot is server/pre-footer-JS for ID7-generated controls, so it does not expose the post-JS .is-current DOM state.",
+    "Existing Opera target tab is challenged/shared and no new tab was opened; click/keyboard and controlled top/scrolled/mobile visual proof remain open.",
+    "PIXEL_PASS=false until deterministic same-viewport/DPR screenshots/overlay/diff exist."
+  ],
+  "scope_guard": {
+    "modified": ["Hello Additional CSS header-desktop-alignment block only", "new header-only Code Snippets ID37"],
+    "not_modified": ["page bodies", "footer", "forms", "shared media", "SMTP"]
+  },
+  "pixel_pass": false
+}
