@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-evidence-supersedence-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "purpose": "Prevent stale page264 audits/builds from reopening or overwriting later proven good work.",
+  "precedence_rule": "Fresh live readback/capture > later reconciliation > installed-current build mirror > prepared gated candidate > historical audit/build.",
+  "authoritative_now": {
+    "overall_acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+    "current_state": "STATE.md page264 continuation section",
+    "current_remote_plan": "build/oldtrees-next-remote-window-20260914-v002.json",
+    "current_semantic_runtime_mirror": "build/oldtrees-semantic-runtime-v003.php",
+    "semantic_live_evidence": [
+      "reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json",
+      "reports/subpages/oldtrees-direct-live-compare-20260914-v005.json",
+      "reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json"
+    ],
+    "visual_live_evidence": [
+      "reports/subpages/oldtrees-visual-live-qa-20260914-v006.json",
+      "reports/subpages/oldtrees-post-v005-visual-qa-20260914-v007.json",
+      "reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json"
+    ],
+    "form_reconciliation": [
+      "reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json",
+      "reports/home/metform33-source-parity-v001.json"
+    ],
+    "interaction_plan": "build/oldtrees-interaction-acceptance-20260914-v001.json",
+    "hero_diagnostic": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json"
+  },
+  "live_preserve_do_not_redeploy": {
+    "build/oldtrees-visual-parity-v004.css": "Its marked page264 block is already live. Preserve; do not insert again.",
+    "build/oldtrees-visual-parity-v005-cascade-fix.css": "Its marked page264 block is already live. Preserve; do not insert again.",
+    "build/oldtrees-semantic-runtime-v003.php": "Mirrors current page264 ID33 after review-name and duplicate-dot containment fixes. Use for comparison/readback, not to create a duplicate snippet owner."
+  },
+  "current_gated_candidates_not_deployed": {
+    "build/oldtrees-visual-v006-contact-text-cascade.css": "Deploy only if a fresh matched live gate reproduces dark target contact foreground and marker count is zero.",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css": "Deploy only if a fresh matched desktop gate reproduces unequal target comparison columns and marker count is zero.",
+    "build/oldtrees-visual-v006-v007-single-write-bundle.css": "Use only when both failures reproduce in the same fresh gate."
+  },
+  "historical_do_not_replay": {
+    "build/oldtrees-semantic-parity-20260914-v001.json": "Historical saved-data semantic patch. Superseded by page-scoped ID33 runtime; replay would risk changing already-accepted Elementor data.",
+    "build/oldtrees-semantic-runtime-v001.php": "Older ID33 source before complete review labels and later dot containment.",
+    "build/oldtrees-semantic-runtime-v002.php": "Review-label-only successor preparation; live ID33 already gained the full labels and later v003 containment.",
+    "build/oldtrees-visual-parity-v001.css": "Historical broad prepared visual package, superseded by rebased/live v004 + v005 and later narrow candidates.",
+    "build/oldtrees-visual-parity-mobile-correction-v002.css": "Historical correction folded into later visual work; do not deploy separately.",
+    "build/oldtrees-visual-parity-corrections-v003.css": "Historical correction folded into later visual work; do not deploy separately.",
+    "build/oldtrees-visual-parity-bundle-v004.css": "Historical bundle; do not insert because live state already contains the selected v004/v005 blocks and only two narrower failures remain."
+  },
+  "stale_reports_use_only_as_history": {
+    "reports/subpages/readonly-source-target-audit-v001.json": "Its page264 hero-image and inline-form gaps were later closed by oldtrees-hero-v4-v001 and oldtrees-inline-form-v001. Do not treat those old gaps as current.",
+    "reports/subpages/oldtrees-semantic-audit-20260914-v001.json": "Its 29 target headings / 1 named region snapshot predates ID33. Later live evidence is 38/38 headings and 11/11 ordered named regions.",
+    "reports/subpages/oldtrees-runtime-live-qa-20260914-v002.json": "Useful for 38/38, 11/11 and field semantics, but its review tabs 2/3 partial-label and extra-dot state was later closed; do not reopen from this snapshot.",
+    "reports/subpages/oldtrees-inline-form-v001.json": "Its textarea rows=10, max-five-files and success-state open list predates shared Form33 ID5/ID6/settings closeout.",
+    "reports/subpages/oldtrees-visual-audit-20260914-v001.json": "Its broad comparison/form failures predate v004/v005; use the visual coverage reconciliation for current status.",
+    "reports/subpages/oldtrees-visual-live-qa-20260914-v006.json": "Authoritative for v004/v005 deployment facts, but its post-v005 visual recheck open list is partially superseded by oldtrees-post-v005-visual-qa-v007."
+  },
+  "known_intentional_non_exactness": {
+    "form_success_body": "Reference frozen source is demo/no-send while target stores local MetForm entries. Target success body intentionally tells the truth instead of copying a false no-send statement; heading/contact guidance remain aligned.",
+    "canonical_urls": "WordPress target uses canonical WordPress routes rather than frozen source .html host URLs where D09 requires it.",
+    "floating_dock": "A real visual delta exists, but owner is global and therefore not writable from the page264-only task without a proven page264-scoped cascade correction."
+  },
+  "drift_rule": "If a fresh live read contradicts this map, the fresh live state wins. Reconcile and version a new map; never force this documented snapshot onto newer truth.",
+  "wordpress_writes": 0,
+  "status": "PAGE264_EVIDENCE_PRECEDENCE_MAPPED"
+}
