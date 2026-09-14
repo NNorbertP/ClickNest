@@ -1,0 +1,89 @@
+{
+  "schema_version": 4,
+  "package": "bio-next-remote-window-20260914-v004",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READY_AS_RUNBOOK_NOT_AUTHORIZATION",
+  "supersedes": "build/bio-next-remote-window-20260914-v003.json",
+  "stage_0_no_write_until_all_true": [
+    "Fresh STATE.md no longer has an in-flight page264-only owner that page256 would disrupt.",
+    "The two shared Opera tabs are released and can both be assigned to page256 without opening replacements.",
+    "WPVibe is usable again under intended +5 identity; target site connection and exact quota are verified.",
+    "Current user task still authorizes page256-only changes and shared/global resources remain out of scope."
+  ],
+  "stage_1_read_only_preflight": [
+    "Load Elementor skill.",
+    "Read live WPVibe counter and calculate usable calls above 10-call D11 reserve.",
+    "Read page256 _elementor_data bytes/SHA/JSON and reconcile drift from historical baseline.",
+    "Confirm ID35 active/page256-guarded and protected semantics remain rendered.",
+    "Read current shared/global CSS/ID35 owners only for diagnostics; do not mutate them.",
+    "Fresh-search af260016 carrier boundary.",
+    "When released, assign the two Opera tabs to page256 source/target and reconfirm only the deltas involved in the next chosen package."
+  ],
+  "stage_2_first_write": {
+    "package":"build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "on_pass":"clean/reconcile probe, then create page-local parity style owner",
+    "on_fail":"rollback only probe and stop CSS delivery; no global fallback"
+  },
+  "stage_3_first_local_visual": {
+    "package":"build/bio-page-local-visual-delivery-20260914-v002.json",
+    "blocks":["bio-visual-v001","bio-hero-layout-v003","bio-card-mobile-v001","bio-table-section-tone-v001","bio-wave-core-v001","bio-review-quote-v002","bio-review-dot-v001"],
+    "note":"review ordinal remains isolated; stress current-DOM visual later"
+  },
+  "stage_4_compact_structural_queue": {
+    "package":"build/bio-page256-next-safe-package-20260914-v015.json",
+    "operations":["FAQ order class removal","optional review #ugyfelvelemenyek after safe Atomic owner proof","confirmed third review author role","conditional compact table caption->external-title transform"],
+    "rule":"one complete search/edit/readback transaction at a time"
+  },
+  "stage_5_stress": [
+    "Run bio-stress-article-semantic-20260914-v001.json only if exactly two af260007 whole-word aside tokens are freshly proven.",
+    "Append bio-stress-current-dom-visual-v003.css only after local style owner + pseudo-owner proof.",
+    "Do not attempt physical p2 node move with current tooling; keep saved/AX order mismatch open."
+  ],
+  "stage_6_table": "If not completed in v015, run bio-table-source-structure-20260914-v001.json only if one compact exact owner boundary supports an atomic transform.",
+  "stage_7_expectations": "DO NOT execute old v003 regrouping. v004 is deployment HOLD until a safe atomic owner-level regrouping primitive exists.",
+  "stage_8_FAQ_CTA": [
+    "Run CTA mail child-structure microfix with fresh exact search.",
+    "Append only currently absent blocks required by bio-faq-cta-source-layout-20260914-v006.json to the page-local style owner, including fourth FAQ wave in the same paper-conversion transaction.",
+    "Keep exact FAQ role/keyboard/motion OPEN unless a separately sanctioned page-local runtime owner exists."
+  ],
+  "stage_9_reviews": [
+    "Quote/dot normally already handled by first local visual phase.",
+    "Append bio-review-ordinal-source-v001.css as its own marked block; immediately verify one visual ordinal per tab, exact tab names and zero standalone ordinal AX text.",
+    "Run a SECTION-LOCAL AX diagnostic on the active Panasonic review: source must expose one testimonial list with three listitems between intro/final text; confirm target current list0/items0 before any semantic edit.",
+    "Only after that AX proof, evaluate bio-review-points-semantics-20260914-v001.json. Do not mutate if point-span boundaries cannot be isolated safely or aria-owns/list semantics read back unexpectedly.",
+    "Use current b2560031 role-text plan if saved live text remains short.",
+    "Review media aspect remains diagnostic until rendered first-container geometry is measured.",
+    "Prev/next source panel-focus mismatch stays OPEN; do not alter global ID35."
+  ],
+  "stage_10_closeout": [
+    "Run specs/bio-final-acceptance-20260914-v003.json.",
+    "Require protected content equality, section-local AX gates and unique page-local style owner/markers.",
+    "Do not mark exact PASS while stress read order, expectations article ownership, FAQ exact runtime, review points semantics or review prev/next panel focus remain unresolved."
+  ],
+  "stop_conditions": [
+    "scope conflict",
+    "browser still owned by parallel QA",
+    "unknown site/quota",
+    "5xx/429 unresolved state",
+    "unexpected page drift",
+    "ID35 missing/unsafe",
+    "carrier probe failure",
+    "package cannot finish above D11 reserve",
+    "section-local semantic regression",
+    "review-points AX candidate changes tab/panel reading order or duplicates protected text"
+  ],
+  "forbidden": [
+    "Hello Additional CSS write",
+    "global ID35/Code Snippets/plugin/theme edits",
+    "full Elementor save",
+    "raw SQL/search-replace builder mutation",
+    "blind 429 retry",
+    "new Opera tabs to bypass ownership",
+    "old v014 stress wrapper",
+    "expectations v003 multi-step regrouping",
+    "review points semantic write before section-local AX proof"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
