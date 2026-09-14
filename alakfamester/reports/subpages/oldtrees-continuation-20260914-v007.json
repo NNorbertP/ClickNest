@@ -1,0 +1,75 @@
+{
+  "schema_version": 7,
+  "package": "oldtrees-continuation-20260914-v007",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "scope": "page264 only; repository preparation and reconciliation; zero WordPress writes",
+  "supersedes_for_planning": "reports/subpages/oldtrees-continuation-20260914-v006.json",
+  "authoritative_live_baseline": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "visual_v004": "LIVE_READBACK_PROVEN",
+    "visual_v005": "LIVE_MARKER_READBACK_PROVEN",
+    "full_post_v005_hash": "OPEN_BY_D11_RESERVE",
+    "semantic_id33": "active at last verification"
+  },
+  "freshest_same_browser_evidence": {
+    "report": "reports/subpages/oldtrees-direct-live-compare-20260914-v005.json",
+    "viewport": "1640x920",
+    "review_ax": "PASS final source-equivalent controls/names",
+    "tiszafa_initial_ax": "PASS value 50/name",
+    "nordmann_static_ax": "PASS control names",
+    "request_form": "panel/alignment/clock materially corrected; contact label/value foreground still dark vs white source",
+    "comparison": "v005 surfaces/heights present, but later fresh capture proves unequal desktop card widths vs equal source columns",
+    "hero": "target copy begins lower; root cause unproven",
+    "floating_dock": "content exists in AX but target visual nearly empty/clipped; global owner/cascade unproven"
+  },
+  "prepared_not_deployed": {
+    "v006": {
+      "file": "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "qa": "reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json",
+      "effect": "three color-only page264 request-contact rules"
+    },
+    "v007": {
+      "file": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "qa": "reports/subpages/oldtrees-visual-v007-comparison-grid-static-qa-20260914-v001.json",
+      "effect": "make existing v004 equal-column grid geometry win; preserve <=900px one-column contract"
+    },
+    "single_write_bundle": {
+      "file": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+      "qa": "reports/subpages/oldtrees-visual-v006-v007-single-write-static-qa-20260914-v001.json",
+      "use_only_if": "fresh preflight and fresh same-browser check prove BOTH v006 and v007 failures remain",
+      "otherwise": "deploy only the still-failing standalone block, or write nothing if neither fails"
+    }
+  },
+  "next_window": {
+    "plan": "build/oldtrees-next-remote-window-20260914-v001.json",
+    "priority": "verify +5 account/site/quota; page264 hash; post8 markers; fresh two-delta visual gate; at most one visual write; mandatory readback; targeted QA",
+    "estimated_calls": "approximately 5-8 WPVibe calls for preflight/write/readback depending on selected path, plus mandatory 10-call D11 reserve; estimate only until current account counter is read"
+  },
+  "form_reconciliation": {
+    "photo_count_3_to_5": "already solved by active ID5",
+    "textarea_rows_5": "already solved by active ID6",
+    "success_state": "already configured/read back",
+    "service_radio_required": "still open: existing repository evidence does not explicitly prove submission-time required enforcement; inspect fresh schema/runtime read-only before any change",
+    "no_real_submission": true
+  },
+  "hold_no_guessing": [
+    "Hero vertical offset: no spacing patch without measured geometry + computed-style owner/cascade proof.",
+    "Floating dock: do not recreate markup/runtime; this page264 task must not deploy a global correction. A future fix from this task must be diagnostic-first and page264-scoped.",
+    "No duplicate review/BA/carousel JS without stable interaction failure.",
+    "Do not replay v004/v005 or older visual/semantic packages."
+  ],
+  "tool_state": {
+    "wpvibe_profile": "ncsnorbert+20260914-5@gmail.com verified",
+    "wpvibe_site_connection": "NOT_CONFIRMED because connector became unavailable before verification",
+    "quota": "UNKNOWN",
+    "opera": "disconnected after exactly two existing tabs were reused; zero replacement tabs opened",
+    "generic_web": "Clicknest pages unavailable through current fetch/search path",
+    "local_chromium": "present but runtime DNS cannot resolve Clicknest hosts"
+  },
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "TWO_PROVEN_MICROFIXES_READY_GATED_REMOTE_ACCESS_REQUIRED"
+}
