@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "package": "bio-continuation-20260914-v023",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "scope": "Current conversation is page256 Biological Protection parity. Reference is read-only. No WordPress write is permitted from this continuation while repository STATE.md owns page264-only write scope and WPVibe is disabled.",
+  "wordpress_writes_this_round": 0,
+  "browser": {
+    "opera_tabs": 2,
+    "new_tabs_opened": 0,
+    "target_status": "recovered after earlier temporary 504",
+    "discipline": "same two tabs reused for every source/target/stylesheet diagnostic"
+  },
+  "wpvibe": {
+    "current_chat": "DISABLED before any new WordPress write",
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "plus5_site_connection": "UNCONFIRMED",
+    "plus5_exact_quota": "UNKNOWN",
+    "d11_reserve_required": 10
+  },
+  "repository_scope_conflict": {
+    "fresh_STATE_md": "page264-only WordPress write scope",
+    "page256_action": "read-only QA + GitHub build/evidence preparation only",
+    "required_before_remote_write": "normal project scope handoff/reconciliation; never silently override parallel page264 owner"
+  },
+  "last_verified_page256_baseline_before_wpvibe_loss": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "runtime_snippet_id": 35,
+    "warning": "Historical baseline only. Fresh live read must match or be reconciled before every future write."
+  },
+  "closed_preserve": [
+    "13/13 exact list strings",
+    "uppercase table headers + four rowHeader cells",
+    "four legacy named regions",
+    "hero/review/FAQ runtime names via ID35",
+    "review accessible tab names + prev/next controls + duplicate-dot AX/focus suppression",
+    "final CTA mailto href and exact aria-label",
+    "hero art identity/copy/links",
+    "technology three icons/content/order and existing callout surface/rail"
+  ],
+  "live_reproduced_remaining": {
+    "hero": ["left copy too low vs source", "proof facts do not wrap like source at live desktop comparison"],
+    "reviews": ["missing #ugyfelvelemenyek deep-link ID", "visual ordinal duplicated per tab", "quote too dark", "active visual dot oversized", "source bronze blob/sage rings not source-like on target"],
+    "waves": ["four source SVG transitions not rendered exact"],
+    "stress": ["three direct grid children instead of two", "first paragraph lacks source lead mapping", "aside/complementary vs source article", "forest card/list/watermark visual not exact"],
+    "technology": ["eyebrow leaf missing", "lead too wide/small", "card padding/watermarks/hairline not exact", "use-case list has native bullets instead of source leaf checks"],
+    "table": ["source exact table surface prepared", "source stone section gradient differs from prior flat target readback"],
+    "expectations": ["source two-article ownership differs from target wrappers"],
+    "FAQ": ["ordered after CTA", "currently inside common forest panel", "native triangle/source leaf control visual mismatch before prepared CSS", "button-role/280ms motion exactness remains intentionally HOLD"],
+    "CTA": ["currently merged with FAQ forest panel", "source separate 760px band missing", "mail visible child order differs from source"]
+  },
+  "preferred_future_packages": {
+    "visual_phase_1": "build/bio-visual-single-write-plan-20260914-v006.json",
+    "structural_microfixes": "build/bio-page256-next-safe-package-20260914-v014.json",
+    "stress": ["build/bio-stress-source-visual-20260914-v002.json", "build/bio-semantic-resume-20260914-v013.json"],
+    "expectations": "build/bio-expectations-source-structure-20260914-v003.json",
+    "faq_cta": "build/bio-faq-cta-source-layout-20260914-v003.json",
+    "review_anchor": "build/bio-review-anchor-parity-20260914-v001.json",
+    "review_owner_diagnostic": "build/bio-reviews-cascade-diagnostic-20260914-v001.json",
+    "review_decor": "build/bio-review-decor-source-20260914-v001.json",
+    "responsive_contract": "build/bio-responsive-source-contract-20260914-v001.json",
+    "ledger": "reports/subpages/bio-convergence-ledger-20260914-v001.json"
+  },
+  "obsolete_do_not_deploy": [
+    "build/bio-hero-layout-parity-v001.css",
+    "build/bio-hero-layout-parity-v002.css",
+    "build/bio-hero-decorative-icons-v001.css — live target already has source icons",
+    "build/bio-visual-parity-v002-expectations.css",
+    "build/bio-technology-callout-v001.css and its wrapper plan — live target already has source-like callout surface/rail",
+    "build/bio-review-quote-source-color-v001.css — mobile source width fixed in v002",
+    "old page256 wave Atomic class-bridge direction — exact direct SVG CSS is preferred"
+  ],
+  "next_remote_sequence_after_all_gates": [
+    "1. Reconcile project scope to page256 without clobbering parallel page264 work.",
+    "2. Verify +5 profile, target site connection, exact quota; preserve >=10 D11 calls.",
+    "3. Fresh page256 bytes/SHA/JSON + ID35 + complete Additional CSS hash/markers/cascade owner preflight.",
+    "4. If safe, execute only the complete v006 structure-independent visual phase once; read back immediately.",
+    "5. Run v014 structural edits one at a time: FAQ order, stress copy wrapper, review ID only if exact Atomic owner proven.",
+    "6. Stress tag-only article semantics then stress v002 visual after pseudo-owner preflight.",
+    "7. Expectations v003 guarded regrouping then visual CSS + responsive companion.",
+    "8. CTA mail visual-child microfix then FAQ/CTA v003 CSS after ::before/::after owner preflight.",
+    "9. Review duplicate ordinal/active-dot owner diagnosis; tiny exact cascade fix only; optional decor only if pseudo slots free.",
+    "10. Fresh desktop + responsive source-target QA and AX; remove only failing marked block/microfix. Never full-save/restore blobs."
+  ],
+  "global_out_of_scope": [
+    "service-child header lacks source Szolgáltatások current pill",
+    "target floating dock appears nearly blank vs source controls"
+  ],
+  "hard_rules": [
+    "no full Elementor save",
+    "no raw SQL/search-replace mutation",
+    "429 write UNKNOWN until readback; no blind retry",
+    "no other page/global template/media/plugin-setting/SMTP write from this package",
+    "reuse exactly two Opera tabs",
+    "fresh live state always outranks prepared artifacts"
+  ],
+  "pixel_pass": false
+}
