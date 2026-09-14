@@ -1,0 +1,63 @@
+{
+  "schema_version": 4,
+  "package": "bio-visual-single-write-plan-20260914-v004",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED_WPVIBE_UNAVAILABLE",
+  "supersedes_for_first_deploy": "build/bio-visual-single-write-plan-20260914-v003.json",
+  "reason": "The later v013 deployment plan explicitly classifies expectations visual CSS as prepared but not first-deploy because direct middle-section visual proof is incomplete. This v004 removes that unproven layer from the first remote package.",
+  "first_deploy_blocks": [
+    {
+      "order": 1,
+      "file": "build/bio-visual-parity-v001.css",
+      "content_sha": "8859a3ce497f00b947d19851d6312a90ac8852e4",
+      "marker": "af-bio-visual-v001",
+      "scope": "body.page-id-256 only",
+      "covers": ["legacy eyebrow bronze leaf", "technology cards/lead/watermark/checklist", "symptom table surface", "FAQ visual mapping"]
+    },
+    {
+      "order": 2,
+      "file": "build/bio-hero-layout-parity-v001.css",
+      "content_sha": "56f0f32bb2c1974d461eb63302e7eda9406d423c",
+      "marker": "af-bio-hero-layout-v001",
+      "scope": "body.page-id-256 #af-sub-bio-hero only; min-width 901px only",
+      "covers": ["1.06/.94 desktop hero columns", "46rem copy measure", "contact geometry", "proof-row rhythm/wrap"]
+    }
+  ],
+  "hold_separate": {
+    "file": "build/bio-visual-parity-v002-expectations.css",
+    "content_sha": "5ff5258064082087cf3c90bc47b140aed0771e87",
+    "marker": "af-bio-expectations-visual-v002",
+    "reason": "Semantic/list grouping is strong but direct visual evidence for the middle-section source state is incomplete. Do not include until fresh comparison or equivalent frozen evidence proves the card treatment."
+  },
+  "collision_audit": {
+    "first_deploy_selector_overlap": false,
+    "breakpoint_conflict": false,
+    "global_header_footer_selectors": false,
+    "other_page_selectors": false,
+    "section_height_rules": false,
+    "saved_elementor_data_change": false,
+    "javascript_change": false,
+    "visible_copy_change": false
+  },
+  "remote_gate": [
+    "WPVibe connector is currently unavailable in this chat; send no WordPress write until it returns.",
+    "When available, load the Elementor playbook before any Elementor-content write. This CSS package itself targets Hello Additional CSS only.",
+    "Read exact +5 account quota and start only with enough headroom for the complete preflight/write/readback/QA package plus the D11 reserve.",
+    "Re-read page256 bytes/SHA/JSON and reconcile against 35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 before any write.",
+    "Re-read current Additional CSS post8 because page264 v004+v005 are now live and the old 601189-byte header-only state is obsolete.",
+    "Require one af-project:end marker and prove af-bio-visual-v001 and af-bio-hero-layout-v001 are absent before insertion.",
+    "Insert the two complete files in order 1->2 immediately before the unique project-end marker with one guarded match-once content/edit.",
+    "Any 429-returned write is UNKNOWN; never blind-retry. Read marker counts/hash first when safe.",
+    "Read back post8 bytes/SHA/marker counts and page256 unchanged Elementor bytes/SHA/JSON."
+  ],
+  "post_write_acceptance": [
+    "Hero copy vertical start and proof wrap become source-like without changing outer hero height, illustration size, mobile stack or links.",
+    "Technology lead/cards/checklist/table/FAQ match the proven source component rules while existing content, roles and review runtime remain intact.",
+    "No regression of Code Snippets ID35 semantics, reviews, CTA, page256 region names, global header or floating dock.",
+    "Expectations section remains unchanged by this first package."
+  ],
+  "rollback": "If a proven regression appears, remove only these two exact marked blocks via guarded match-once edit; never restore an old full Additional CSS snapshot.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
