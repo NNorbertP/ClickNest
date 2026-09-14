@@ -1,0 +1,75 @@
+{
+  "schema_version": 5,
+  "package": "hedge-artifact-supersession-20260915-v005",
+  "date": "2026-09-15",
+  "page_id": 272,
+  "purpose": "Deployment/evidence precedence only. Integrate the resolved review-name contract into the current Hedge semantic chain. No WordPress write or scope change is authorized.",
+  "scope_gate": "Current STATE.md remains PAGE264 ONLY; page272 is read-only until explicit scope handoff.",
+  "authoritative_current_chain": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "review_name_resolution": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "live_window": "build/hedge-next-live-window-plan-20260915-v005.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v005.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v006.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v014.json"
+  },
+  "review_contract": {
+    "authoritative_labels": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "rejected_stale_or_mixed_labels": ["Otolecz Attila", "Rosivall László"],
+    "implication": "Do not HOLD or rewrite v004 merely because of the rejected apparent names. Current GitHub v004 and its history preserve the documented source labels.",
+    "still_required_before_write": "Trustworthy rendered tab identity/order and full three-panel preservation check: quote text, visible author/company/role, image identity/accessibility and tab-panel association."
+  },
+  "only_write_candidate_after_scope_handoff": {
+    "action": "Update existing Code Snippets ID36 only to the exact current build/hedge-semantic-runtime-v004.php body.",
+    "preconditions": [
+      "Fresh page272 baseline 53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid or explicit drift reconciliation.",
+      "Fresh current ID36 exact body/state/error captured as rollback source.",
+      "Exactly one native review root/tablist/three real tabs in expected order.",
+      "Exactly one Form33 wrapper/form and required target nodes with unique IDs.",
+      "Fresh native ARIA/role/ID inventory proves v004 will not overwrite stronger/newer native semantics.",
+      "If any native relation would be lost or weakened, HOLD v004 and design a preserving successor instead of deleting native semantics."
+    ],
+    "write_limit": "At most one existing ID36 update; no duplicate helper and no page272 CSS write candidate.",
+    "closeout": "Read back ID36 body/active/code_error, unchanged page272 saved-data hash/JSON, then trusted AX/DOM acceptance. Any HTTP 429 write is UNKNOWN until exact readback."
+  },
+  "read_first_not_automatic_fixes": [
+    "complete hero/gallery/form outer roots",
+    "ordered H1-H6 tree",
+    "proof-carousel role/owner contract",
+    "Form33 mf_input_required saved setting and safe native empty-choice rejection",
+    "document-head title/meta/canonical/schema ownership"
+  ],
+  "closed_do_not_reopen": [
+    "26/26 shared-media recovery",
+    "28/28 EAEL page-local id=0/full/original gallery contract",
+    "five saved legacy regions",
+    "CTA/contact semantics and 24-hour sentence",
+    "hero/proof/native-reviews/MetForm preservation",
+    "D09 page-local links",
+    "historical sage-background and old media gaps"
+  ],
+  "superseded_for_execution": [
+    "reports/subpages/hedge-artifact-supersession-20260915-v004.json",
+    "build/hedge-semantic-runtime-v002.php",
+    "build/hedge-semantic-runtime-v003.php",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v001.json through v006",
+    "older hedge next-live-window plans through v004",
+    "older acceptance matrices through v004",
+    "older continuations through v013"
+  ],
+  "rules": [
+    "Fresh trustworthy live truth outranks this map.",
+    "Prepared code is a candidate, not permission to write.",
+    "No SMTP, real submission, shared media, header/footer, global CSS or unrelated-page mutation from a page272 package.",
+    "Preserve >=10 WPVibe calls for D11 closeout/recovery when page272 eventually becomes active scope.",
+    "Use at most one source and one target Opera tab and stop on stale/repurposed connector state."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "HEDGE_PRECEDENCE_RECONCILED_REVIEW_LABEL_CONTRACT_RESOLVED"
+}
