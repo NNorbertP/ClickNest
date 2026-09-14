@@ -1,0 +1,96 @@
+{
+  "schema_version": 6,
+  "package": "hedge-artifact-supersession-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 272,
+  "purpose": "Current page272 deployment/evidence precedence after full review-panel preservation was promoted into the acceptance/live plan. Planning only; no WordPress write or scope handoff.",
+  "scope_gate": "Current STATE.md remains PAGE264 ONLY; page272 is read-only until explicit normal scope handoff.",
+  "authoritative_current_chain": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "review_name_resolution": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "review_panel_preservation": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "live_window": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v014.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v006.json",
+    "historical_convergence_reference": "reports/subpages/hedge-convergence-ledger-20260915-v001.json (useful history, but its v004-plan/v004-acceptance pointers are superseded by this map)"
+  },
+  "accepted_saved_baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid; fresh read required",
+  "closed_preserve": [
+    "hero af2e004e exact accessible art and historical frontend/editor proof",
+    "proof af2e004d 21 images",
+    "native reviews c3d30005 exactly 3 tabs/panels and exact accepted tab-name contract",
+    "EAEL b2e2c001 28 page-local id=0/full/original exact items/order",
+    "52 reference main-image roles reconciled as 21 proof + 3 reviews + 28 gallery",
+    "five saved legacy named regions",
+    "CTA/contact semantics, 24-hour sentence and D09 page-local links",
+    "removed af2e0009-af2e000e",
+    "historical media/background deficits are stale/closed"
+  ],
+  "review_contract": {
+    "tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "rejected_stale_names": ["Otolecz Attila", "Rosivall László"],
+    "saved_review_image_ids": [75, 76, 77],
+    "structure": "CLOSED_PRESERVE",
+    "full_panel_content": "READ_ONLY_PRESERVATION_PROOF_OPEN",
+    "future_single_payload_requirements": [
+      "all three tab ids/names/aria-controls",
+      "all three panel ids/aria-labelledby/selected-hidden relation/order",
+      "full normalized quote text",
+      "visible company/person/role lines",
+      "image currentSrc/stable media clue and alt/computed accessible name",
+      "one-to-one tab-panel wiring and no accidental duplicate panel/image content"
+    ],
+    "content_write_rule": "Any proven quote/author/image mismatch is a separate smallest-owner content/media correction after exact source-target proof. Never fold it into attribute-only ID36 v004 and never reconstruct it from memory/attachment IDs alone."
+  },
+  "only_semantic_write_candidate_after_scope_handoff": {
+    "action": "Update existing Code Snippets ID36 only to exact build/hedge-semantic-runtime-v004.php body.",
+    "required_gates": [
+      "fresh accepted/reconciled page272 hash/JSON",
+      "current ID36 exact body/name/scope/active/code_error captured as rollback source",
+      "one review root/tablist and exactly three real tabs in accepted order",
+      "one Form33 wrapper/form/direct-call/service label+wrapper/city input+help",
+      "current native roles/aria-label/aria-labelledby/aria-describedby/error relations captured",
+      "planned relation IDs unique/non-conflicting",
+      "no newer semantic helper/marker"
+    ],
+    "conflict_rule": "Any stronger/newer native semantic relation that would be lost, weakened or overwritten => HOLD prepared v004 and design a preserving successor. Never delete native semantics to make v004 win.",
+    "expected_delta_only": ["three exact review-tab accessible names", "Form33 name Ajánlatkérés", "wrapper-owned direct-call description", "service-group naming relation", "city help relation"],
+    "forbidden_in_same_write": ["CSS", "visible text", "review panel inner content", "DOM order", "Elementor data", "form validation/submission", "click/keyboard behavior", "outer form region"],
+    "write_limit": "At most one existing ID36 update; page272 CSS candidate remains NONE."
+  },
+  "read_first_not_automatic_fixes": [
+    "complete hero/gallery/form common roots",
+    "ordered source/target H1-H6 level/name trees",
+    "proof-carousel item/parent roles and owner clues",
+    "Form33 service-radio mf_input_required plus six exact labels/values/order and safe native empty-choice rejection",
+    "document title/description/canonical/robots/OG/schema ownership/count",
+    "full three-panel review preservation from the same broad rendered payload"
+  ],
+  "current_live_plan_efficiency": "hedge-next-live-window-v006 harvests native ARIA conflicts, full review panels and outer/head/heading/carousel clues from one broad trustworthy DOM payload; review-panel mismatch does not block attribute-only v004 unless it also reveals a structural/native-semantic gate failure.",
+  "superseded_for_execution": [
+    "reports/subpages/hedge-artifact-supersession-20260915-v004.json",
+    "reports/subpages/hedge-artifact-supersession-20260915-v005.json",
+    "build/hedge-acceptance-matrix-20260915-v001.json through v005",
+    "build/hedge-next-live-window-plan-20260915-v001.json through v005",
+    "build/hedge-semantic-runtime-v002.php",
+    "build/hedge-semantic-runtime-v003.php",
+    "semantic static QA versions before v007"
+  ],
+  "rules": [
+    "Fresh trustworthy live truth outranks this map.",
+    "Prepared code is a candidate, not permission to write.",
+    "Any HTTP 429 write is UNKNOWN until exact readback; never blind retry.",
+    "Preserve >=10 WPVibe calls for D11 closeout/recovery when page272 becomes active scope.",
+    "No SMTP/real submission/shared media/global CSS/header/footer/dock/unrelated-page mutation from the page272 package.",
+    "Use at most one source and one target Opera tab; stale/repurposed/disconnected state stops browser work without replacement fan-out."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "HEDGE_PRECEDENCE_RECONCILED_TO_ACCEPTANCE_V006_LIVE_PLAN_V006"
+}
