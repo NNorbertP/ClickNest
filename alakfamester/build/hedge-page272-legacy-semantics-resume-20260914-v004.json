@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "package": "hedge-page272-legacy-semantics-resume-20260914-v004",
+  "date": "2026-09-14",
+  "status": "PREPARED_NOT_SENT",
+  "precondition": {
+    "last_successful_reported_bytes": 53369,
+    "required_before_write": "Fresh page272 bytes/SHA/JSON plus fragment inventory. Do not assume 53369 if another process/manual edit has occurred."
+  },
+  "already_completed": ["af2e0007 region", "af2e0045 region", "af2e0047 region", "af2e0049 region"],
+  "pending_operations": [
+    {
+      "element": "af2e000f",
+      "purpose": "region + exact source mailto range",
+      "storage_old": "<div class='af-sub-inner'><h2>Van hasonl\\u00f3 n\\u00f6v\\u00e9nye?<\\/h2><p>K\\u00fcldj\\u00f6n r\\u00f3la 3\\u20135 fot\\u00f3t, \\u00e9s meg\\u00edrom, milyen lehet\\u0151s\\u00e9geket l\\u00e1tok benne.<\\/p><p><a href='mailto:kreativ@alakfa-mester.hu'>kreativ@alakfa-mester.hu<\\/a><br><strong>\\u00cdrjon b\\u00e1tran<\\/strong><\\/p><a class='af-btn af-btn-bronze' href='#ajanlatkeres'>Tov\\u00e1bb az \\u0171rlaphoz<\\/a><p class='af-sub-eyebrow'>K\\u00f6vetkez\\u0151 l\\u00e9p\\u00e9s<\\/p><\\/div>",
+      "storage_new": "<div class='af-sub-inner' role='region' aria-label='Van hasonl\\u00f3 n\\u00f6v\\u00e9nye?'><h2>Van hasonl\\u00f3 n\\u00f6v\\u00e9nye?<\\/h2><p>K\\u00fcldj\\u00f6n r\\u00f3la 3\\u20135 fot\\u00f3t, \\u00e9s meg\\u00edrom, milyen lehet\\u0151s\\u00e9geket l\\u00e1tok benne.<\\/p><p><a href='mailto:kreativ@alakfa-mester.hu' aria-label='\\u00cdRJON B\\u00c1TRAN kreativ@alakfa-mester.hu'><strong>kreativ@alakfa-mester.hu<\\/strong><br>\\u00cdrjon b\\u00e1tran<\\/a><\\/p><a class='af-btn af-btn-bronze' href='#ajanlatkeres'>Tov\\u00e1bb az \\u0171rlaphoz<\\/a><p class='af-sub-eyebrow'>K\\u00f6vetkez\\u0151 l\\u00e9p\\u00e9s<\\/p><\\/div>",
+      "expected_stored_byte_delta": 124,
+      "gate": "First content/search a distinctive escaped substring and require exactly one current match."
+    },
+    {
+      "element": "af2e004c",
+      "purpose": "phone accessible name",
+      "storage_old": "<a class='contact-btn' href='tel:+36305394820'>",
+      "storage_new": "<a class='contact-btn' href='tel:+36305394820' aria-label='H\\u00cdVJON NYUGODTAN +36 30 539 48 20'>",
+      "expected_stored_byte_delta": 52
+    },
+    {
+      "element": "af2e004c",
+      "purpose": "email accessible name",
+      "storage_old": "<a class='contact-btn' href='mailto:kreativ@alakfa-mester.hu'>",
+      "storage_new": "<a class='contact-btn' href='mailto:kreativ@alakfa-mester.hu' aria-label='\\u00cdRJON B\\u00c1TRAN kreativ@alakfa-mester.hu'>",
+      "expected_stored_byte_delta": 61
+    }
+  ],
+  "expected_bytes_if_and_only_if_no_other_drift_and_all_three_pending_replacements_apply": 53606,
+  "execution_rule": "Use /wpvibe/v1/content/search and match-once /content/edit only. If a write returns 429, treat outcome as unknown and perform fresh readback before any retry. No shared-media, full-save, raw SQL, global CSS/plugin or SMTP write."
+}
