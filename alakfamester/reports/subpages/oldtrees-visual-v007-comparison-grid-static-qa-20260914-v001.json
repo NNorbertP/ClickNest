@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-visual-v007-comparison-grid-static-qa-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "source": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+  "status": "STATIC_PASS_NOT_DEPLOYED",
+  "evidence": {
+    "same_browser_capture": "Post-v005 source/target comparison section captured in the two existing Opera tabs at the same 1640x920 browser viewport.",
+    "source": "Two comparison cards render as equal-width columns with source-like text wrapping.",
+    "target": "Both v005 surfaces/heights are present, but left card is visibly wider than right; positive-card final list text wraps an extra line.",
+    "existing_contract": "Live v004 already declares display:grid, repeat(2,minmax(0,1fr)), gap:24px and stretch without !important; fresh capture proves that geometry is losing in the target cascade."
+  },
+  "scope_checks": {
+    "root": "body.page-id-264 .elementor-element-af2a0045",
+    "properties": ["display", "grid-template-columns", "gap", "align-items", "width", "max-width", "min-width"],
+    "preserves_card_backgrounds": true,
+    "preserves_icons_and_list_markers": true,
+    "preserves_copy": true,
+    "preserves_dom": true,
+    "preserves_form": true,
+    "preserves_header_footer": true,
+    "other_page_selectors": false,
+    "responsive_contract": "Below 900px remains one column, matching v004."
+  },
+  "deployment_gate": [
+    "WPVibe +5 site connection/quota must be freshly verified.",
+    "Fresh page264 hash must reconcile against the accepted saved-data baseline.",
+    "Fresh post8 inventory must prove v004=1, v005=1, v007=0 and unique af-project:end.",
+    "If another live rule has already corrected the width before deployment, do not add v007.",
+    "Prefer inserting v006 contact-color and v007 comparison-grid blocks in one guarded content/edit only if both remain reproducibly failing at preflight.",
+    "429 write outcome is UNKNOWN until marker/hash readback; never blind-retry.",
+    "Postwrite same-browser screenshot must show equal columns and source-like line wrapping without changing v005 surfaces/icons."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
