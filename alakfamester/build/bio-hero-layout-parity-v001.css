@@ -1,0 +1,79 @@
+/* af-bio-hero-layout-v001:start
+ * Scope: body.page-id-256 only, desktop/tablet > 900px only.
+ * Source: reference .hero / .hero__grid / .hero__copy / .hero__sub /
+ * .contact-pair / .hero__meta rules plus same-Opera source-target top screenshots.
+ * Does not modify source-measured section heights, h1 exact-width overrides,
+ * hero-art exact-size overrides, mobile stack, global header or floating dock.
+ */
+
+@media (min-width: 901px) {
+  body.page-id-256 #af-sub-bio-hero {
+    grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr) !important;
+    column-gap: clamp(24px, 2.6vw, 44px) !important;
+    align-items: center !important;
+    align-content: start !important;
+    padding-top: clamp(22px, 2.4vw, 40px) !important;
+    padding-bottom: clamp(24px, 2.6vw, 40px) !important;
+  }
+
+  /* Target has separate Elementor children rather than one .hero__copy wrapper.
+   * Apply the source 46rem copy measure to every copy-side child while leaving
+   * the af-art child untouched. Existing grid-column ownership stays intact. */
+  body.page-id-256 #af-sub-bio-hero > *:not(.af-art) {
+    width: 100% !important;
+    max-width: 46rem !important;
+    justify-self: start !important;
+  }
+
+  /* Source .hero__sub -> contact-pair spacing. The target contact block is the
+   * first classed wrapper after the descriptive paragraph. */
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    align-items: center !important;
+    margin: 24px 0 16px !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact a {
+    min-height: 60px !important;
+    padding: 10px 24px 10px 10px !important;
+    border-radius: 999px !important;
+    background: linear-gradient(145deg, #2F5D46, #3d7357) !important;
+    border: 1px solid transparent !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 12px 28px rgba(23, 61, 45, .22) !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact span {
+    font-size: .68rem !important;
+    line-height: 1.18 !important;
+    letter-spacing: .13em !important;
+    font-weight: 700 !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-contact strong {
+    font-size: 1.02rem !important;
+    font-weight: 700 !important;
+    letter-spacing: .01em !important;
+  }
+
+  /* Source .hero__meta. Narrower source copy measure makes the third fact wrap
+   * at the sampled acceptance desktop viewport exactly as seen in reference. */
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px 24px !important;
+    padding-top: 16px !important;
+    margin-top: 16px !important;
+    border-top: 1px solid #D7D2C6 !important;
+  }
+
+  body.page-id-256 #af-sub-bio-hero .af-hero-facts span {
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+    color: #4A5750 !important;
+  }
+}
+
+/* af-bio-hero-layout-v001:end */
