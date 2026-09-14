@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT",
+  "wordpress_write_executed": false,
+  "scope_guard": {
+    "allowed": ["ElementsKit global header ID20", "header-only rules in Hello Additional CSS post8", "header-specific navigation behavior only after safe supported write path is proven"],
+    "forbidden_and_untouched": ["page body", "hero", "footer", "forms", "other global templates", "SMTP", "external messages"]
+  },
+  "environment": {
+    "wordpress": "7.1",
+    "php": "8.3.33",
+    "theme": "hello-elementor 3.5.1",
+    "elementor": "4.2.4",
+    "elementskit_lite": "4.0.4",
+    "header_template_id": 20,
+    "additional_css_post_id": 8,
+    "header_runtime_snippet_id": 7,
+    "header_runtime_snippet_marker": "af-header-nav-parity-v005"
+  },
+  "target_observations": {
+    "header_elementor_data_last_confirmed_bytes": 7729,
+    "header_elementor_data_last_confirmed_sha256_prefix": "db2641",
+    "additional_css_last_confirmed_bytes": 576084,
+    "note": "Exact current hashes must be re-read immediately before any WordPress write because the final guarded hash preflight was blocked by HTTP 429.",
+    "current_runtime_mobile_breakpoint_px": 1240,
+    "current_runtime_scroll_threshold_px": 24
+  },
+  "reference_observations": {
+    "header_height_px": 76,
+    "wide_container_px": 1340,
+    "logo_plate_px": "69x46",
+    "brand_gap_px": 12,
+    "nav_item_min_height_px": 44,
+    "nav_item_padding_px": "10 13",
+    "dropdown_min_width_px": 268,
+    "cta_min_height_px": 44,
+    "cta_padding_px": "10 18",
+    "mobile_breakpoint_px": 1240,
+    "scroll_threshold_px": 8,
+    "brand_link_behavior": "entire brand block is one link in the reference"
+  },
+  "decisions": [
+    "Do not roll header20 back to the older V4 revision; the current ElementsKit structure is later intentional live drift and already contains the correct content/navigation primitives.",
+    "Do not replace the existing home-header-parity block because it also contains hero rules; user scope is header-only.",
+    "The older 90px header rules are not the effective cascade because the later af-reference-parity-v022 block restores 76px.",
+    "Use a new, separately marked header-only override based on actual Elementor IDs/runtime header IDs.",
+    "Do not change Code Snippets ID7 through raw SQL. The 24px-to-8px threshold remains open until a supported plugin-aware write path is available."
+  ],
+  "prepared_package": {
+    "path": "build/header-live-source-v001.css",
+    "commit": "7535f984f886a7e501d17edef75aaf9ffcdce035",
+    "bytes": 23018,
+    "css_parse": "146 rules, 0 syntax errors",
+    "contains_non_header_page_rules": false
+  },
+  "quota": {
+    "latest_exact_counter_before_final_guarded_hash_attempt": "213/300 used",
+    "remaining": 87,
+    "reserved_for_closeout": 10,
+    "usable_above_reserve": 77
+  },
+  "blocker": {
+    "type": "HTTP 429 Too Many Requests",
+    "final_guarded_hash_preflight": "failed after WPVibe retries; no write attempted",
+    "retry_policy": "Do not retry blindly. First re-read exact quota and both post8/header20 hashes in a fresh unthrottled window."
+  },
+  "continuation": [
+    "Re-read AGENTS.md, STATE.md and D02/D07/D11/D18 before the write package.",
+    "Re-read exact WPVibe quota.",
+    "Read post8 modified_gmt, byte length and SHA256 plus header20 _elementor_data byte length and SHA256 in one guarded preflight.",
+    "If any drift is present, reconcile it before writing; do not overwrite manually changed state.",
+    "Confirm header-live-source-v001 marker is absent, then insert the prepared block only into Additional CSS using a supported match-once server-side edit that preserves the rest of post8.",
+    "Read back marker, bytes/hash and fresh frontend DOM; verify desktop and mobile header behavior and that hero/footer/body are unchanged.",
+    "Only after CSS verification, investigate a plugin-aware supported route for the source 8px sticky threshold; otherwise leave the 24px difference explicitly open.",
+    "No pixel-perfect PASS may be claimed without deterministic viewport/DPR screenshot-overlay-diff tooling."
+  ]
+}
