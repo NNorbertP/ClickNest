@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "package": "bio-stress-article-resume-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element_id": "af260007",
+  "scope": "Only page256 _elementor_data. Reference read-only. No full save, no global/template/plugin/SMTP/media write.",
+  "status": "PREPARED_NOT_STARTED",
+  "baseline": {
+    "elementor_data_bytes": 35382,
+    "elementor_data_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true
+  },
+  "source_target_proof": {
+    "source_role": "article",
+    "source_contents": ["A NÖVÉNY STRESSZE", "Mi történik a metszés után?", "four source-exact list items"],
+    "target_role": "complementary",
+    "target_saved_owner": "legacy text-editor af260007 uses an aside wrapper around the same stress-card contents",
+    "target_contents": "Already source-exact after the 13 punctuation fixes.",
+    "finding": "This is a real element-semantic delta, not AX flattening: article vs aside/complementary."
+  },
+  "safe_execution": [
+    "Do not start in the current 276/300 quota state.",
+    "When capacity returns, first re-read exact quota and page256 bytes/SHA/JSON. Stop on any baseline drift.",
+    "POST /wpvibe/v1/content/search on post256 meta _elementor_data with short ASCII anchor af260007; if necessary search 'A n' or a returned escaped Hungarian fragment. Never reconstruct escaped old_content from memory.",
+    "From the returned exact snippet, identify the unique opening <aside ...> that owns the stress card and its corresponding closing </aside>.",
+    "Prefer one match-once replacement of a sufficiently local exact snippet that changes only the tag names aside -> article and </aside> -> </article>, preserving every class/attribute/child/text byte otherwise.",
+    "If a local exact old_content cannot include both boundaries safely, use two individually unique match-once edits after exact searches; do not use replace_all and do not round-trip the whole _elementor_data blob.",
+    "A 429 write result is UNKNOWN. Never blind-retry; read back exact fragment/hash first when safe."
+  ],
+  "acceptance": [
+    "Page256 JSON remains valid and all existing IDs/classes/content are preserved.",
+    "Fresh target AX exposes the stress card as article and no longer exposes complementary for that card.",
+    "The four stress list strings remain exact and punctuation-free.",
+    "Region name Miért nem ér véget a munka a metszéssel? remains exact.",
+    "No visual geometry regression: article and aside are both block-level by default and existing stress-card class remains unchanged."
+  ],
+  "rollback": "If fresh AX or frontend reveals a regression, use the exact post-write snippet readback to reverse only article back to aside; never restore an old full page snapshot.",
+  "current_blocker": "Latest exact account counter 276/300, 24 remaining; D11 reserve 10; recent site probes can spend three retries on 429.",
+  "wordpress_writes_in_preparation": 0
+}
