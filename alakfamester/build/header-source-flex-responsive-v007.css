@@ -1,0 +1,115 @@
+/* af-project:header-source-flex-responsive-v007:start */
+/* Header-only source-parity refinement. Supersedes prepared, never-deployed v006. */
+
+/* Source layout model: natural-width brand/nav/actions in one space-between flex row. */
+@media (min-width:1241px){
+  body .elementor-element.elementor-element-a1000002{position:relative!important}
+  body .elementor-element-a1000002>.e-con-inner{justify-content:space-between!important;gap:16px!important}
+  body .elementor-element.elementor-element-a1000003{
+    position:relative!important;flex:0 0 auto!important;width:auto!important;max-width:none!important;--width:auto!important
+  }
+  body .elementor-element.elementor-element-a1000009{
+    position:relative!important;left:auto!important;top:auto!important;flex:0 0 auto!important;
+    width:auto!important;max-width:none!important;min-width:0!important;margin:0!important;transform:none!important
+  }
+  body .elementor-element.elementor-element-a100000a{
+    position:relative!important;flex:0 0 auto!important;width:auto!important;max-width:none!important;margin:0!important;--width:auto!important
+  }
+}
+
+/* Source <=1460 compact desktop nav state. */
+@media (min-width:1241px) and (max-width:1460px){
+  body .elementor-element-a1000009 .elementskit-navbar-nav{gap:0!important}
+  body .elementor-element-a1000009 .elementskit-navbar-nav>li>a.ekit-menu-nav-link,
+  body .elementor-element-a1000009 .elementskit-navbar-nav>li>.af-nav-dropdown-host>button{
+    padding:9px 9px!important;font-size:.84rem!important
+  }
+}
+
+/* Once the runtime custom dropdown exists, the original ElementsKit submenu is a duplicate
+   implementation of the same destinations. Suppress only that sibling copy. */
+body .elementor-element-a1000009 .elementskit-navbar-nav>li>.af-nav-dropdown-host~ul.elementskit-dropdown{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+/* Keep exactly one visible caret: the copied SVG indicator. */
+body .elementor-element-a1000009 .af-nav-dropdown-host>button::after{content:none!important;display:none!important}
+body .elementor-element-a1000009 .af-nav-dropdown-host>button .elementskit-submenu-indicator{
+  display:inline-flex!important;flex:0 0 12px!important;width:12px!important;height:12px!important;
+  margin:0!important;padding:0!important;line-height:12px!important;align-items:center!important;justify-content:center!important
+}
+body .elementor-element-a1000009 .af-nav-dropdown-host>button .elementskit-submenu-indicator~.elementskit-submenu-indicator,
+body .elementor-element-a1000009 .af-nav-dropdown-host>button>.icon,
+body .elementor-element-a1000009 .af-nav-dropdown-host>button>.ekit-submenu-indicator,
+body .elementor-element-a1000009 .af-nav-dropdown-host>button>i:not(.elementskit-submenu-indicator){display:none!important}
+
+/* Source current-section parent and current child states. */
+body .elementor-element-a1000009 .af-nav-dropdown-host.is-current>button,
+body .elementor-element-a1000009 .elementskit-navbar-nav>li.current-menu-parent>.af-nav-dropdown-host>button,
+body .elementor-element-a1000009 .elementskit-navbar-nav>li.current-menu-ancestor>.af-nav-dropdown-host>button,
+body .elementor-element-a1000009 .elementskit-navbar-nav>li.current-menu-item>.af-nav-dropdown-host>button{
+  background:#DDE7DF!important;border-color:rgba(47,93,70,.2)!important;color:#173D2D!important
+}
+body .af-nav-dropdown-panel>a[aria-current="page"]{background:#DDE7DF!important;color:#173D2D!important}
+body .af-nav-dropdown-panel>a[aria-current="page"]:before{background:#B59A61!important}
+
+/* Source hamburger: 48px button with a 22x15 bar stack at 0 / 6.5 / 13px. */
+.menu-toggle{position:relative!important;gap:0!important}
+.menu-toggle>span{
+  position:absolute!important;left:50%!important;width:22px!important;height:2px!important;margin-left:-11px!important;
+  border-radius:2px!important;transform:none!important
+}
+.menu-toggle>span:nth-child(1){top:16.5px!important}
+.menu-toggle>span:nth-child(2){top:23px!important}
+.menu-toggle>span:nth-child(3){top:29.5px!important}
+.menu-toggle.is-open>span:nth-child(1){transform:translateY(6.5px) rotate(45deg)!important}
+.menu-toggle.is-open>span:nth-child(2){opacity:0!important}
+.menu-toggle.is-open>span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)!important}
+
+/* Source <=900: 68px header and no header CTA. */
+@media (max-width:900px){
+  body .elementor-element.elementor-element-a1000001,
+  header.elementor-element-a1000001,
+  #af-site-header,
+  body .elementor-element.elementor-element-a1000002,
+  body .elementor-element-a1000002>.e-con-inner{
+    height:68px!important;min-height:68px!important;max-height:68px!important;--min-height:68px!important
+  }
+  body .elementor-element.elementor-element-a100000a{display:none!important}
+  .menu-toggle{margin-left:auto!important}
+  .mobile-nav{inset:68px 0 0!important}
+  body.admin-bar #af-site-header{top:32px!important}
+  body.admin-bar .mobile-nav{inset:100px 0 0!important}
+}
+
+/* Undo the old target-only <=700 compact brand until the real source 560px breakpoint. */
+@media (min-width:561px) and (max-width:700px){
+  body .elementor-element.elementor-element-a1000004{
+    flex-basis:69px!important;width:69px!important;max-width:69px!important;height:46px!important;min-height:46px!important;
+    --container-widget-width:69px!important
+  }
+  body .elementor-element-a1000007{display:block!important}
+  body .elementor-element-a1000006 .elementor-heading-title,
+  body .elementor-element-a1000006 .elementor-heading-title a{font-size:1.16rem!important}
+}
+
+/* Source <=560 compact brand. */
+@media (max-width:560px){
+  body .elementor-element.elementor-element-a1000004{
+    flex-basis:57px!important;width:57px!important;max-width:57px!important;height:38px!important;min-height:38px!important;
+    --container-widget-width:57px!important
+  }
+  body .elementor-element-a1000007{display:none!important}
+  body .elementor-element-a1000006 .elementor-heading-title,
+  body .elementor-element-a1000006 .elementor-heading-title a{font-size:1.04rem!important}
+}
+
+/* Target-only authenticated admin-bar offset; visitor geometry remains source-equivalent. */
+@media (max-width:782px){
+  body.admin-bar #af-site-header{top:46px!important}
+  body.admin-bar .mobile-nav{inset:114px 0 0!important}
+}
+/* af-project:header-source-flex-responsive-v007:end */
