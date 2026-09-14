@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "hedge-shared-media-recovery-20260914-v003",
+  "date": "2026-09-14",
+  "status": "PREPARED_NOT_SENT_QUOTA_RESERVED",
+  "scope": "Undo only cross-page shared media metadata drift caused during page272 diagnosis; final page272 parity must not depend on these shared alt values.",
+  "page272_precondition": {
+    "bytes": 53097,
+    "sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+    "json_valid": true
+  },
+  "prepackage_shared_alt_map": {
+    "104": "Saját sövénymunka, 11. kép",
+    "105": "",
+    "106": "Saját sövénymunka, 12. kép",
+    "107": "",
+    "108": "Saját sövénymunka, 13. kép",
+    "109": "Saját sövénymunka, 14. kép",
+    "110": "Saját sövénymunka, 15. kép",
+    "111": "Saját sövénymunka, 16. kép",
+    "112": "A sövényvég síkja",
+    "203": "Létrás munkavégzés a sövényfalnál",
+    "204": "Rendezetlen oldalfelület a munka előtt",
+    "205": "A sövény felső síkja",
+    "206": "Simára nyírt oldalfal",
+    "207": "Saját sövénymunka, 1. kép",
+    "208": "",
+    "209": "Saját sövénymunka, 2. kép",
+    "210": "",
+    "211": "Saját sövénymunka, 3. kép",
+    "212": "Saját sövénymunka, 4. kép",
+    "213": "Saját sövénymunka, 5. kép",
+    "214": "Saját sövénymunka, 6. kép",
+    "215": "Saját sövénymunka, 7. kép",
+    "216": "",
+    "217": "Saját sövénymunka, 8. kép",
+    "218": "Saját sövénymunka, 9. kép",
+    "219": "Saját sövénymunka, 10. kép"
+  },
+  "already_restored_last_verified": [104,105,106,107,108,109,112,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219],
+  "pending_last_verified": {
+    "110": "Sövénymunka, 20. kép",
+    "111": "Sövénymunka, 21. kép"
+  },
+  "one_call_combined_read": "db query \"SELECT 'page272' AS item, CONCAT('bytes=',LENGTH(meta_value),';sha256=',SHA2(meta_value,256),';json=',JSON_VALID(meta_value)) AS value FROM {prefix}postmeta WHERE post_id=272 AND meta_key='_elementor_data' UNION ALL SELECT CONCAT('media:',post_id) AS item, meta_value AS value FROM {prefix}postmeta WHERE meta_key='_wp_attachment_image_alt' AND post_id IN (104,105,106,107,108,109,110,111,112,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219) ORDER BY item\" --limit=100",
+  "remote_sequence": [
+    "Call list_sites once for the exact rolling counter. Do not start unless enough headroom exists above D11 reserve and the latest state does not show an active conflicting job.",
+    "Run the combined read once. Abort immediately on 429, page272 hash mismatch, JSON invalidity or any unexpected drift outside 110/111.",
+    "If media 110 still differs, update only media 110 alt through /wp/v2/media/110 to the recorded prepackage value.",
+    "If media 111 still differs, update only media 111 alt through /wp/v2/media/111 to the recorded prepackage value.",
+    "Run the same combined read once. Require exact page272 hash plus exact 26/26 media map. After PASS, no further shared-media write is allowed for Hedge."
+  ],
+  "call_budget": {
+    "exact_counter_read": 1,
+    "combined_preflight": 1,
+    "conditional_writes_max": 2,
+    "combined_readback": 1,
+    "normal_total_max": 5,
+    "recommended_retry_margin": 4,
+    "mandatory_D11_reserve": 10,
+    "minimum_remaining_before_start": 19,
+    "reason": "Recent HTTP 429 operations used built-in exponential retries and consumed calls faster than one nominal operation; do not start this package with only the nominal five calls above reserve."
+  },
+  "after_pass": "Proceed later to a separate page272-only EAEL gallery item-array patch setting eael_fg_gallery_img.id=0 for all 28 items while preserving URL/name/order/repeater ids and resolution=full.",
+  "do_not": [
+    "Do not change media 137/138; they were outside the cross-page drift set.",
+    "Do not write any of the 26 shared media values to source-specific Hedge names after recovery.",
+    "Do not restore page272 revision wholesale.",
+    "Do not combine this recovery with the later page272 Elementor-data patch unless the expanded package has its own complete preflight/readback budget."
+  ]
+}
