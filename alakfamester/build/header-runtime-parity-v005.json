@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only runtime parity",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "status": "PREPARED_NOT_SENT_WPVIBE_UNAVAILABLE",
+  "supersedes": "build/header-runtime-parity-v004.json",
+  "snippet": {
+    "id": 7,
+    "required_prewrite_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "required_prewrite_bytes": 9723,
+    "required_marker": "af-header-nav-parity-v005",
+    "must_remain_active": true,
+    "must_keep_scroll_threshold_px": 8,
+    "must_keep_mobile_breakpoint_px": 1240,
+    "must_keep_main_navigation_aria_label": "Főmenü",
+    "must_keep_brand_accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "proven_semantic_delta": {
+    "reference_global_header_role": "header/banner landmark",
+    "target_current_accessibility_role": "sectionHeader",
+    "change": "Set role='banner' on the existing #af-site-header/root header at runtime. Do not replace or restructure the Elementor header."
+  },
+  "reference_sticky_contract": {
+    "threshold_px": 8,
+    "event_model": "passive scroll listener schedules at most one requestAnimationFrame; frame callback toggles stuck state and clears ticking flag",
+    "target_class_to_keep": "is-scrolled",
+    "change": "Preserve target CSS class name but adopt source-equivalent requestAnimationFrame throttling instead of toggling on every raw scroll event."
+  },
+  "reference_desktop_dropdown_contract": {
+    "click": "native button click toggles current dropdown and closes the other dropdown",
+    "trigger_keydown": "Only ArrowDown is special: preventDefault, open, focus first panel link. Enter and Space are left to native button activation/click behavior.",
+    "panel_keydown": [
+      "Escape closes all dropdowns and focuses the trigger.",
+      "ArrowDown and ArrowUp operate only when document.activeElement is a panel link.",
+      "ArrowUp from the first link focuses the trigger.",
+      "ArrowDown from the last link remains on the last link.",
+      "No Home/End behavior is added because the reference header script does not implement it."
+    ],
+    "outside_click": "closes dropdowns"
+  },
+  "current_route_state": {
+    "parent": "Add host class is-current only when one of the group's destinations matches the current location; paired CSS maps this to the source .is-section visual state.",
+    "child": "Set aria-current='page' only on the exact matching runtime panel anchor; paired CSS maps it to sage background + bronze leaf bullet.",
+    "popup_button": "Do not add aria-current to the popup trigger itself.",
+    "normalization": [
+      "Resolve items with new URL(item[1], window.location.origin).",
+      "Normalize /foo and /foo/ as equal, keep root '/'.",
+      "For /#szolgaltatasi-utak require both root pathname and exact #szolgaltatasi-utak hash so the ordinary homepage is not marked as the Services section."
+    ]
+  },
+  "reference_mobile_contract": {
+    "open": "After drawer is made interactive, focus the first a/button inside the drawer.",
+    "escape": "close and focus the menu toggle",
+    "resize": "if innerWidth >1240 and drawer is open, close it so the page cannot remain locked",
+    "submenu": "toggle aria-expanded and controlled submenu open state",
+    "body_lock": "existing target menu-open overflow lock may remain because its visitor effect equals source is-locked; no global body behavior outside open drawer changes"
+  },
+  "paired_css": {
+    "path": "build/header-source-flex-responsive-v006.css",
+    "commit": "3860464e951e34b1441272988e9a9f89b4c4ec5e",
+    "status": "prepared, static QA pass, not deployed"
+  },
+  "guarded_execution": [
+    "Do not execute while WPVibe is unavailable or while the target returns HTTP 429.",
+    "On reconnect, first verify the authenticated WPVibe profile is ncsnorbert+20260914-5@gmail.com and the site connection works; read quota once and preserve D11's 10-call reserve plus retry margin.",
+    "GET Code Snippets ID7 through the Code Snippets plugin REST endpoint and require the exact prewrite hash/bytes above. If it differs, stop and reconcile rather than replaying this package.",
+    "Capture the complete immediate prewrite code as rollback payload.",
+    "Apply only: role=banner, rAF sticky scheduling, exact native-button dropdown keyboard contract, current route parent/child state, and mobile initial focus. Preserve all links/content/labels/mobile breakpoint/8px threshold.",
+    "PUT only the code field through the plugin-aware route.",
+    "GET again and require active=true, code_error=null, marker intact, role/banner assignment present, threshold8, breakpoint1240, Főmenü and brand/dropdown accessible labels intact.",
+    "Browser QA must cover source-target closed header semantics, service/reference current states, click/outside-click, ArrowDown entry, panel ArrowUp/ArrowDown traversal, Escape focus return, mobile initial focus/Escape/resize unlock.",
+    "Any regression restores the captured prewrite code through the same plugin route before further work."
+  ],
+  "do_not_change": [
+    "Elementor header structure",
+    "page body",
+    "footer",
+    "forms",
+    "SMTP",
+    "menu destination mapping",
+    "mobile drawer content",
+    "quick-contact dock content"
+  ]
+}
