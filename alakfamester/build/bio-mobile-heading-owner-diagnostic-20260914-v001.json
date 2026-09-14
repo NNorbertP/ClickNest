@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "package": "bio-mobile-heading-owner-diagnostic-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_RESPONSIVE_DIAGNOSTIC_BEFORE_ANY_OVERRIDE",
+  "source_contract": {
+    "h2": "font-size: clamp(1.75rem, 1.3rem + 1.9vw, 2.441rem)",
+    "desktop_max": "about 39.1px",
+    "meaning": "the existing target 39px legacy h2 rule is effectively source-correct at wide desktop; risk exists only if it remains fixed at narrow widths"
+  },
+  "target_prior_readback": {
+    "rule": ".af-sub-inner h2 ... font-size:39px!important; line-height:1.16!important",
+    "later_mobile_override": "not proven in current repo evidence/search"
+  },
+  "future_diagnostic_when_page256_browser_and_WPVibe_are_available": [
+    "Fresh Additional CSS owner search for every page256/af-sub-inner h2 font-size rule and media query.",
+    "At controlled <=720 and ~390 viewport, read/compare rendered heading size/wrap on stress, technology, table, expectations and FAQ headings.",
+    "If a later winning target rule already follows source fluid behavior, preserve it and close this item with no write.",
+    "Only if target stays 39px and source clearly scales down should a page256-scoped fluid h2 override be prepared."
+  ],
+  "possible_source_mapping_if_and_only_if_proven_needed": "body.page-id-256 .af-sub-inner h2 { font-size:clamp(1.75rem,1.3rem + 1.9vw,2.441rem)!important; }",
+  "do_not": [
+    "do not change desktop h2 because the current 39px value is already source-equivalent there",
+    "do not apply a global h2 rule",
+    "do not infer mobile failure solely from the prior base rule; winning cascade must be measured",
+    "do not change line-height until source/target mobile wrap proof shows a separate mismatch"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
