@@ -1,0 +1,134 @@
+{
+  "schema_version": 5,
+  "package": "hedge-next-live-window-plan-20260915-v005",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-next-live-window-plan-20260915-v004.json",
+  "semantic_candidate": "build/hedge-semantic-runtime-v004.php",
+  "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+  "status": "READY_WHEN_LIVE_TOOLS_RETURN_STRICT_ARIA_CONFLICT_GATED",
+  "nominal_wp_call_budget": {
+    "quota_site_check": 1,
+    "page272_baseline": 1,
+    "ID36_read": 1,
+    "target_rendered_HTML_or_DOM_read": 1,
+    "Form33_service_settings_read": 1,
+    "ID36_update_if_all_gates_pass": 1,
+    "ID36_readback": 1,
+    "page272_hash_readback": 1,
+    "optional_postwrite_rendered_read": 1,
+    "nominal_max": 9,
+    "D11_reserve": 10,
+    "preferred_start_remaining_after_counter": 21
+  },
+  "preconditions": [
+    "WPVibe returns in a future conversation; verify intended +5 identity/site/quota once",
+    "fresh live truth outranks repository plans",
+    "do not start if package plus readback cannot complete above reserve",
+    "browser evidence only if URL/title/content/AX/screenshot are internally consistent; otherwise stop without fan-out"
+  ],
+  "read_phase": [
+    {
+      "step": 1,
+      "read": "page272 _elementor_data bytes/SHA/JSON",
+      "accept": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / valid, or fully reconciled intentional newer baseline",
+      "failure": "STOP"
+    },
+    {
+      "step": 2,
+      "read": "Code Snippets ID36 exact body/name/scope/active/code_error",
+      "accept": "known page272 owner, rollback body saved, no newer helper",
+      "failure": "STOP; never overwrite unknown/newer code"
+    },
+    {
+      "step": 3,
+      "read": "one broad trustworthy rendered target HTML/DOM payload, preferably including head and all relevant page272 body structures",
+      "structural_gate": [
+        "exactly one .elementor-element-c3d30005, one tablist and three real tabs in Panasonic -> Otolecz -> ARKER'S order",
+        "exactly one .mf-form-wrapper[data-form-id=33] and one form",
+        "exactly one wrapper-owned #af-form-direct-call or exact wrapper tel:+36305394820 paragraph fallback",
+        "exactly one service wrapper/label and one city input/help pair"
+      ],
+      "existing_aria_gate": [
+        "capture tablist and each real tab aria-label/aria-labelledby",
+        "capture form role/aria-label/aria-labelledby/aria-describedby",
+        "capture service wrapper role/aria-label/aria-labelledby/aria-describedby",
+        "capture city input aria-label/aria-labelledby/aria-describedby/aria-errormessage/aria-invalid",
+        "if stronger native naming relations would prevent v004 exact output, or v004 would overwrite meaningful existing descriptions/roles, STOP and prepare a preserving successor rather than deleting native semantics"
+      ],
+      "id_uniqueness_gate": [
+        "#af-form-direct-call belongs only to intended wrapper descriptor if present",
+        "if service label lacks ID, af-hedge-form-service-label is unused elsewhere",
+        "if city help lacks ID, af-hedge-form-city-help is unused elsewhere",
+        "no duplicate resulting IDREF target"
+      ],
+      "evidence_harvest_same_payload": [
+        "complete hero common-root candidate containing full copy + af2e004e",
+        "complete gallery common-root candidate containing Sövénymunkák heading + b2e2c001",
+        "complete form common-root candidate containing af2e004c intro/contact + Form33",
+        "ordered target H1-H6 level/name tree",
+        "af2e004d item/parent roles and owner clues",
+        "protected IDs and removed-widget absence",
+        "if document head present: title, description, canonical count/href, robots, OG fields, structured-data scripts/types/duplicate-owner clues"
+      ]
+    },
+    {
+      "step": 4,
+      "read": "Form33 service-radio saved settings only",
+      "capture": ["widget ID/type", "mf_input_name", "mf_input_required", "six exact labels/values/order"],
+      "write": false
+    }
+  ],
+  "write_phase": {
+    "condition": "all baseline, ID36, structural, existing-ARIA and ID-uniqueness gates pass; v004 not already live",
+    "action": "plugin-aware update of existing Code Snippets ID36 only to build/hedge-semantic-runtime-v004.php",
+    "keep": "front-end scope and active state",
+    "forbidden": [
+      "duplicate/new helper",
+      "native ARIA deletion to make v004 win",
+      "ID36 scope change",
+      "Elementor data write",
+      "shared Form33/media/global CSS/header/footer/dock write",
+      "outer-region/heading/carousel/lightbox/SEO change mixed into this package"
+    ],
+    "unknown_or_429": "UNKNOWN until exact ID36 readback; no blind retry"
+  },
+  "postwrite": [
+    "ID36 exact v004 body, front-end scope, active=true, code_error=null",
+    "page272 Elementor bytes/SHA unchanged",
+    "v004 marker exactly once and obsolete semantic markers absent when rendered evidence is trustworthy",
+    "exact computed review tablist/tab names and duplicate dots absent from AX/tab order",
+    "Form33 exact computed name/description/service-group/city-help semantics with no lost native error/description relations",
+    "all relation IDs unique",
+    "protected hero/proof/reviews/gallery/form IDs preserved"
+  ],
+  "required_radio_decision": {
+    "required_yes": "prove native empty-choice rejection without entry/delivery first",
+    "native_pass": "close D05; add no PHP",
+    "native_absent_or_fail": "record real delta; do not mutate shared Form33 from page272 scope; only then evaluate existing-ID36 page272-only fallback after exact ID5 read"
+  },
+  "trusted_browser_pair": {
+    "max_tabs": 2,
+    "new_tabs": 0,
+    "pair": "one source + one target",
+    "collect_in_same_pass": [
+      "source/target H1-H6 trees",
+      "proof-carousel roles/parents",
+      "complete region boundaries",
+      "document head comparison",
+      "post-v004 AX if write occurred",
+      "changed-section visual neutrality",
+      "shared header route-current, floating dock and footer gross state as observation only"
+    ],
+    "stale_or_disconnect": "stop immediately; no reload/reconnect/tab loop"
+  },
+  "formal_visual": {
+    "views": [1920, 1440, 1024, 768, 390, 360],
+    "status": "BLOCKED_UNTIL_DETERMINISTIC_HARNESS_AVAILABLE",
+    "pixel_pass": false
+  },
+  "smtp_or_external_submission": false,
+  "real_form_submission": false
+}
