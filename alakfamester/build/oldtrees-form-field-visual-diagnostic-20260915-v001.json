@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-form-field-visual-diagnostic-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "form_id": 33,
+  "mode": "DIAGNOSTIC_ONLY_NO_WRITE",
+  "scope": "Inner MetForm33 field geometry/styling under #ajanlatkeres only. This does not reopen the already-passed outer request panel/contact component work.",
+  "reason": "The live v004 package intentionally fixes the outer form panel, reply clock, contact controls, note and responsive panel geometry but contains no .mf-input/textarea/radio/dropzone field restyle. No current live evidence proves an inner-field defect, so a new CSS layer is forbidden until measured.",
+  "source_contract_already_recovered": {
+    "form_grid": "two columns on desktop; collapses to one column at the source responsive breakpoint already documented as <=900px for the form layout family",
+    "text_like_controls": {
+      "min_height_px": 52,
+      "padding_px": "13 16",
+      "background": "#F5F3ED",
+      "border": "1.5px solid #B9B2A2",
+      "radius_px": "14-16 depending on source control rule"
+    },
+    "textarea": {
+      "min_height_px": 132,
+      "effective_rows": 5,
+      "rows_owner": "Existing shared ID6, preserve"
+    },
+    "radio_options": "two-column option grid on desktop; responsive collapse must follow the source layout rather than a guessed MetForm default",
+    "panel": "Outer white joined panel, heading alignment, 18x18 reply clock and contact block are already separately accepted/preserved and are out of this diagnostic's write scope."
+  },
+  "target_root": "#ajanlatkeres #af-survivor-metform .mf-form-wrapper[data-form-id=\"33\"]",
+  "resolve_without_guessing": [
+    "Enumerate the current rendered direct field wrappers under Form33 and record their ids/classes/widget ownership before comparing styles.",
+    "Use actual rendered input types and wrapper roles rather than inferred field names for visual measurement.",
+    "Record exact live service-radio widget/input name only as part of the separate D05 validation read; do not conflate validation with styling.",
+    "Preserve current Form33 shared template and do not mutate it from page264 scope."
+  ],
+  "measurements_per_text_like_control": [
+    "bounding width/height",
+    "min-height",
+    "padding top/right/bottom/left",
+    "background-color",
+    "border width/style/color",
+    "border-radius",
+    "font family/size/weight/line-height",
+    "text color",
+    "placeholder color/opacity when obtainable",
+    "outline/box-shadow in normal state",
+    "outline/box-shadow/border-color in focus-visible state when interaction tooling is available"
+  ],
+  "measurements_textarea": [
+    "rows attribute must remain 5 after ID6 applies",
+    "bounding/min height",
+    "padding/background/border/radius/typography",
+    "resize behavior if source explicitly exposes it; otherwise do not invent a difference"
+  ],
+  "measurements_radio_group": [
+    "group container display/grid-template-columns/gap",
+    "each option bounding box/padding/background/border/radius",
+    "native/custom radio control size and alignment",
+    "label typography and wrapping",
+    "checked-state visual treatment",
+    "focus-visible treatment",
+    "mobile column collapse/overflow"
+  ],
+  "measurements_upload": [
+    "dropzone/control bounding box",
+    "background/border/radius/padding",
+    "icon/button/text geometry",
+    "hover/focus/drag state only if safely inspectable without file upload",
+    "do not upload a file solely for visual QA"
+  ],
+  "layout_checks": [
+    "At matched desktop viewport, compare source and target first-row two-column widths/gap and subsequent spanning rows.",
+    "At 768, 390 and 360 widths, prove the source-equivalent column collapse and zero horizontal overflow.",
+    "Measure wrapper margins/gaps between labels, controls, help text and validation message slots.",
+    "Do not change copy or insert manual line breaks to force wrapping parity."
+  ],
+  "decision_tree": {
+    "all_measured_values_source_equivalent": "PASS; no page264 field CSS.",
+    "only_metform_native_control_value_differs_and_can_be_page-locally expressed": "Name exact owner/control first; prefer supported native control only if it does not mutate shared Form33 for other pages.",
+    "shared_Form33_control_would_affect_other_pages": "Do not change shared Form33 from page264 scope; prepare only a body.page-id-264 scoped Additional CSS exception for a proven visual property, with exact selector and regression capture.",
+    "difference_is_only_focus/error/drag_state": "Test that state explicitly before writing; no normal-state blanket restyle.",
+    "no_stable_source_target_measurement": "HOLD; no speculative CSS."
+  },
+  "future_css_gate_if_needed": [
+    "Every effect selector begins with body.page-id-264 and is additionally rooted under #ajanlatkeres/#af-survivor-metform.",
+    "Change only properties with measured source-target differences.",
+    "Do not restyle the accepted af2a0054 outer contact block or v004/v006 ownership unless the same property is independently proven wrong.",
+    "Do not change form values, field names, required settings, notifications, hooks, entry behavior or shared template data.",
+    "Fresh Additional CSS marker/hash preflight and mandatory postwrite readback remain required."
+  ],
+  "regression_invariants": [
+    "Outer joined white panel remains continuous.",
+    "Reply clock remains 18x18.",
+    "Contact foreground/geometry follows the accepted v004 plus conditional v006 contract.",
+    "ID6 remains sole rows=5 owner.",
+    "ID5 remains sole photo-count server validator.",
+    "Form AX name/description/group/city help relationships remain unchanged.",
+    "No real form submission, file upload, SMTP or external delivery test."
+  ],
+  "current_status": "MEASUREMENT_GATE_READY_NO_INNER_FIELD_DEFECT_PROVEN",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
