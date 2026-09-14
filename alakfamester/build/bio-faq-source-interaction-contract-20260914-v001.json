@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "package": "bio-faq-source-interaction-contract-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "SOURCE_BEHAVIOR_PROVEN_TARGET_EXACTNESS_BLOCKED_BY_CURRENT_SAFE_IMPLEMENTATION_CONSTRAINTS",
+  "source_evidence": {
+    "files": [
+      "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+      "https://alakfamester.clicknest.hu/app.js?v=20260205",
+      "https://alakfamester.clicknest.hu/styles.css"
+    ],
+    "retrieval": "read-only public source download; no target or Opera mutation"
+  },
+  "source_markup_contract": {
+    "item": "div.faq__item",
+    "heading": "h3",
+    "trigger": "button.faq__trigger.js-faq-trigger type=button aria-expanded=false aria-controls=<panel-id>",
+    "icon": "span.faq__icon aria-hidden=true",
+    "panel": "div.faq__panel id=<panel-id> > div > div.faq__panel-inner > p"
+  },
+  "source_click_behavior": [
+    "On each .js-faq-trigger click, read current aria-expanded.",
+    "Set aria-expanded to the opposite string value.",
+    "Toggle .is-open on the controlled panel to the same new state."
+  ],
+  "source_keyboard_collection": {
+    "selector": ".js-faq-trigger",
+    "events": {
+      "ArrowRight": "focus next trigger, wrapping",
+      "ArrowDown": "focus next trigger, wrapping",
+      "ArrowLeft": "focus previous trigger, wrapping",
+      "ArrowUp": "focus previous trigger, wrapping",
+      "Home": "focus first trigger",
+      "End": "focus last trigger"
+    },
+    "note": "Enter/Space activation is native button behavior because triggers are real buttons."
+  },
+  "source_visual_motion": {
+    "item": "white source organic card with border; hover subtle shadow/translate; :has(.faq__panel.is-open) strengthens border/shadow",
+    "trigger": "min-height64; padding16px 24px; source heading font/forest color",
+    "icon": "34x34 source leaf shape; plus from ::before/::after; open state rotates and fades horizontal/vertical strokes to minus",
+    "panel_closed": "display:grid; grid-template-rows:0fr; opacity:0",
+    "panel_open": "grid-template-rows:1fr; opacity:1",
+    "transition": "grid-template-rows 280ms cubic-bezier(.22,.68,.36,1), opacity 220ms cubic-bezier(.22,.68,.36,1)",
+    "inner": "overflow:hidden; panel-inner padding 0 24px 20px"
+  },
+  "target_current_contract": {
+    "markup": "native details/summary inside legacy page256 text-editor",
+    "AX_role": "disclosureTriangle",
+    "behavior": "working native expand/collapse without source custom button-group keyboard collection",
+    "visual": "source-like card/leaf-plus-minus mapping prepared in bio-visual-parity-v001.css"
+  },
+  "exactness_delta": [
+    "source AX role button vs target disclosureTriangle",
+    "source explicit aria-expanded/aria-controls button contract vs native summary/details ownership",
+    "source ArrowUp/Down/Left/Right + Home/End sibling-focus navigation is not proven on target native summary controls",
+    "source 280ms custom grid-row/opacity panel motion is not the target native details behavior"
+  ],
+  "current_safe_decision": {
+    "status": "HOLD_EXACT_ROLE_MOTION_CONVERSION",
+    "reason": [
+      "Current project/user constraints forbid unsafe full Elementor rebuilds and global/plugin JS workarounds.",
+      "The page-local CSS carrier path, even if proven, does not by itself authorize page-local JavaScript injection.",
+      "A native details control is currently functional and accessible; replacing it without a proven project-approved runtime owner risks regression."
+    ],
+    "allowed_now": "Make the native control visually source-like while preserving its working expand/collapse behavior.",
+    "not_allowed_now": "Do not inject ad-hoc page-local script, modify global Code Snippets/plugin runtime, or fake button semantics with aria attributes that are not kept in sync."
+  },
+  "future_exact_paths_only_if_scope_and_project_rules_allow": [
+    "Use an existing approved page-local runtime owner that can implement the exact button/panel/keyboard contract and is proven safe for page256.",
+    "Or explicitly broaden project scope to a sanctioned af-project/plugin/runtime change with its own regression and rollback plan.",
+    "Any exact conversion must preserve four question/answer strings and final region name, and must pass click, Enter/Space, all six focus-navigation keys, aria-expanded/controls and motion checks."
+  ],
+  "acceptance_if_native_details_is_intentionally_retained": "Document the role/motion difference as the only known deliberate FAQ implementation delta; do not falsely mark exact AX/interactions as PASS.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
