@@ -1,0 +1,19 @@
+/* af-bio-table-source-structure-v001:start
+ * Companion to the guarded af260011 caption -> external table-title microfix.
+ * Prepared, not deployed.
+ */
+body.page-id-256 .elementor-element-af260011 .af-sub-inner > h2 + p {
+  max-width: 104ch !important;
+  margin-bottom: 32px !important;
+  color: #4A5750 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.65 !important;
+}
+body.page-id-256 .elementor-element-af260011 .af-table-title {
+  margin: 0 0 12px !important;
+  color: #4A5750 !important;
+  font-size: .9rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+/* af-bio-table-source-structure-v001:end */
