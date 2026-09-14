@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "package": "bio-css-scope-audit-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "STATIC_SCOPE_AUDIT_PASS_FOR_LISTED_CURRENT_BLOCKS",
+  "purpose": "Ensure prepared Biological Protection parity CSS cannot leak into other WordPress pages or shared templates.",
+  "audited_files": [
+    {"file":"build/bio-visual-parity-v001.css","scope":"body.page-id-256 legacy technology/table/FAQ selectors","result":"PASS"},
+    {"file":"build/bio-hero-layout-parity-v003.css","scope":"body.page-id-256 #af-sub-bio-hero","result":"PASS"},
+    {"file":"build/bio-card-mobile-source-v001.css","scope":"body.page-id-256 plus page256 element IDs/classes","result":"PASS"},
+    {"file":"build/bio-table-section-tone-v001.css","scope":"body.page-id-256 .elementor-element-af260011","result":"PASS"},
+    {"file":"build/bio-wave-source-core-v001.css","scope":"body.page-id-256 + af26000e/af26000f/af260012 rendered element classes","result":"PASS"},
+    {"file":"build/bio-wave-source-faq-v001.css","scope":"body.page-id-256 + af260014 rendered element class","result":"PASS"},
+    {"file":"build/bio-review-quote-source-color-v002.css","scope":"body.page-id-256 .af-reviews-section .af-review-quote","result":"PASS"},
+    {"file":"build/bio-stress-source-visual-v002.css","scope":"body.page-id-256 .elementor-element-af260007","result":"PASS"},
+    {"file":"build/bio-table-source-structure-v001.css","scope":"body.page-id-256 .elementor-element-af260011","result":"PASS"},
+    {"file":"build/bio-expectations-source-structure-v003.css","scope":"body.page-id-256 .elementor-element-af260013","result":"PASS"},
+    {"file":"build/bio-faq-cta-source-layout-v002.css","scope":"body.page-id-256 #af-sub-bio-cta and direct page256 children","result":"PASS"},
+    {"file":"build/bio-faq-cta-mail-label-v001.css","scope":"body.page-id-256 #af-sub-bio-cta","result":"PASS"},
+    {"file":"build/bio-faq-cta-mail-interaction-v001.css","scope":"body.page-id-256 #af-sub-bio-cta","result":"PASS"},
+    {"file":"build/bio-faq-cta-button-interaction-v001.css","scope":"body.page-id-256 #af-sub-bio-cta","result":"PASS"},
+    {"file":"build/bio-faq-cta-section-spacing-v001.css","scope":"body.page-id-256 #af-sub-bio-cta","result":"PASS"},
+    {"file":"build/bio-review-decor-source-v001.css","scope":"body.page-id-256 .af-reviews-section","result":"PASS_WITH_PSEUDO_OWNER_GATE"}
+  ],
+  "review_decor_note": "The rule body.page-id-256 .af-reviews-section > * is broad only within that single page256 review section and is used to lift current children above source decorative pseudos. It does not affect other pages. Deployment still requires ::before/::after owner preflight.",
+  "not_current_or_obsolete_not_audited_as_deploy_candidates": [
+    "bio-hero-layout-parity-v001.css",
+    "bio-hero-layout-parity-v002.css",
+    "bio-hero-decorative-icons-v001.css",
+    "bio-visual-parity-v002-expectations.css",
+    "bio-technology-callout-v001.css",
+    "bio-review-quote-source-color-v001.css",
+    "bio-wave-source-exact-v001.css as all-four early block",
+    "bio-faq-cta-source-layout-v001.css",
+    "bio-faq-cta-generated-label-guard-v001.css",
+    "bio-faq-cta-eyebrow-accessible-v001.css"
+  ],
+  "future_gate": [
+    "Any new CSS block must have every non-@ rule rooted at body.page-id-256 or an equivalently unique page256 owner under it.",
+    "Selectors using a shared class such as .card/.faq/.review without a page256 root are rejected from the page256 package.",
+    "Global CSS field may physically contain the blocks, but their selector effect must stay page256-only.",
+    "Pseudo owners still need fresh collision checks even when the selector scope is page256-only."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
