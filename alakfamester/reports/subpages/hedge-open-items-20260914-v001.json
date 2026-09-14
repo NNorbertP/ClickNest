@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "package": "hedge-open-items-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "scope": "page272-only implementation planning and evidence reconciliation",
+  "wordpress_writes": 0,
+  "accepted_baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid",
+  "closed_preserve": [
+    "26/26 shared-media recovery; never reopen for Hedge",
+    "EAEL b2e2c001 28/28 page-local id=0, full resolution, exact names/order/original URLs",
+    "five saved legacy named regions",
+    "Van hasonló növénye? complete mailto range/exact accessible name",
+    "af2e004c exact contact accessible names and 24-hour reply",
+    "hero af2e004e, proof carousel af2e004d, native reviews c3d30005, MetForm af2e0011",
+    "current sage background; historical background/media gaps are stale",
+    "ID36 v001 remains active owner until a gated successor is successfully read back"
+  ],
+  "deploy_ready_but_live_gated": [
+    {
+      "item": "ID36 semantic successor",
+      "build": "build/hedge-semantic-runtime-v003.php",
+      "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+      "crosscheck": "reports/subpages/hedge-semantic-runtime-metform-crosscheck-20260914-v001.json",
+      "action": "Update existing ID36 only, never create a duplicate.",
+      "gate": "Fresh +5/site/quota, accepted page272 hash or reconciled drift, exact current ID36 rollback body/state, one current Form33 wrapper/form and wrapper-owned direct-call descriptor.",
+      "expected_effect": "Exact review tab accessible names + page272 form/region/group/help semantics only; no CSS/visible text/DOM order/form processing/click/keyboard change."
+    }
+  ],
+  "live_read_first_implementation_open": [
+    {
+      "item": "Required Miben kér segítséget? server enforcement",
+      "audit": "reports/subpages/hedge-metform-required-audit-20260914-v001.json",
+      "design": "build/hedge-form-required-server-plan-20260914-v001.json",
+      "why_real": "D05 explicitly requires the topic choice to be genuinely enforced; audited MetForm generic PHP path does not independently prove rejection of a completely absent required radio.",
+      "must_read": [
+        "Form33 #af-form-service exact widget/type/mf_input_name/mf_input_required/six option values",
+        "current Code Snippets ID5 body/priority/state",
+        "current ID36 body/state and page272 baseline"
+      ],
+      "proven_scope_strategy": "MetForm Entries API resolves wp_get_referer() through url_to_postid(); a future validation filter can require referer post ID 272 + Form33 insert route without adding a client marker.",
+      "do_not": "Do not change shared Form33 settings or guess the service field name/error copy."
+    }
+  ],
+  "proof_only_no_code_without_failure": [
+    {
+      "item": "Native review keyboard/click on page272",
+      "reason": "Shared af-project 0.2.0 D12 handler has click/Arrow/Home/End desktop/mobile/editor proof; page272 uses same native tabs pattern."
+    },
+    {
+      "item": "Proof carousel af2e004d interaction matrix",
+      "reason": "Shared source-interactions runtime is live and page272 4000ms autoplay was historically observed 5->6; only direct Arrow/swipe/pause/reduced-motion execution remains unproven."
+    }
+  ],
+  "no_write_until_source_or_dom_proof": [
+    {
+      "item": "Hero outer region name",
+      "rule": "Do not label candidate af2e0041 until one complete root containing full hero copy + art is proven."
+    },
+    {
+      "item": "Sövénymunkák outer gallery region",
+      "rule": "Do not label EAEL b2e2c001 alone; prove a stable common ancestor containing heading + entire gallery composite."
+    },
+    {
+      "item": "Hedge gallery lightbox",
+      "audit": "reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json",
+      "rule": "Do not change popup=none until trustworthy source Hedge DOM proves the 28 source items are zoom/lightbox controls. Page258 cannot be used as proxy because it explicitly had 44 zoom items."
+    },
+    {
+      "item": "Any new visual CSS",
+      "rule": "Historical page272 media/background issues are closed. Require a newly reproduced, synchronized source-target visual delta before preparing page272 CSS."
+    }
+  ],
+  "evidence_gap_not_a_proven_defect": [
+    "page272 SEO/meta/canonical equivalence lacks a current source-target metadata capture in the exposed repo; do not mutate Yoast/post meta from absence of evidence",
+    "formal pixel parity cannot be claimed without deterministic synchronized viewports"
+  ],
+  "tool_blockers": {
+    "wpvibe": "Disabled/unavailable in this conversation; +5 site connection and exact quota unknown; no more calls permitted.",
+    "opera": "Current two-tab connector state is stale/untrustworthy for Hedge: URLs/titles changed but AX and screenshot remained a prior page. No replacement tabs or reload loops.",
+    "acceptance_files": ["specs/acceptance.json absent", "specs/behaviors.json absent"],
+    "pixel_harness": "deterministic six-viewport same-browser DPR/zoom screenshot-overlay-diff unavailable"
+  },
+  "next_remote_order_when_tools_are_trustworthy": [
+    "1 verify +5 identity/site/exact quota and preserve >=10-call D11 reserve plus package readback margin",
+    "2 read page272 baseline and current ID36 body/state",
+    "3 one narrow Form33 read covering direct-call ownership plus #af-form-service exact settings/name/options",
+    "4 if semantic gate passes, update existing ID36 to v003 and read back ID36 + unchanged Elementor hash",
+    "5 inspect current ID5 body/priority; then generate a separate page272-only required-radio server validator only from the exact field contract",
+    "6 use a trustworthy two-tab browser only for changed-section AX/visual and proof-only interaction checks; no extra tabs",
+    "7 leave hero/gallery/lightbox/SEO/visual items untouched unless direct evidence proves a delta"
+  ],
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "IMPLEMENTATION_OPEN_ITEMS_MINIMIZED_AND_CLASSIFIED"
+}
