@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "package": "bio-wave-source-exact-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED",
+  "source_contract": {
+    "wave_css": "display block; width100%; height clamp(34px,4vw,66px); margin-bottom -1px",
+    "path": "M0,44 C180,4 340,86 540,58 C720,33 880,-8 1080,14 C1240,32 1360,72 1440,60 L1440,120 L0,120 Z",
+    "dividers": [
+      {"target_element":"af26000e","source_transition":"paper -> sage","background":"#F5F3ED","fill":"#DDE7DF"},
+      {"target_element":"af26000f","source_transition":"sage -> paper","background":"#DDE7DF","fill":"#F5F3ED"},
+      {"target_element":"af260012","source_transition":"paper/stone -> sage","background":"#F5F3ED","fill":"#DDE7DF"},
+      {"target_element":"af260014","source_transition":"sage -> paper","background":"#DDE7DF","fill":"#F5F3ED"}
+    ]
+  },
+  "target_fact": "All four empty Atomic divider containers render stable Elementor element classes even though stored legacy _css_classes=af-source-wave is not emitted by Elementor 4.2.4.",
+  "supersedes_for_wave_visuals": {
+    "previous_direction": "Attach native V4 class g-af-src-wave to all four Atomic containers.",
+    "reason_for_supersede": "The already-existing af-source-wave CSS uses a diagonal linear-gradient approximation rather than the exact source SVG shape. Direct ID-class styling is both more exact and avoids Atomic settings mutation/D18 risk.",
+    "keep_previous_evidence": "g-af-src-wave remains a proven V4 bridge generally, but it is no longer the preferred page256 wave fix."
+  },
+  "css": {
+    "file": "build/bio-wave-source-exact-v001.css",
+    "commit": "8a3a7c0f47ef26d345d3f6754991d49f8150bc32",
+    "marker": "af-bio-wave-source-v001",
+    "scope": "body.page-id-256 plus four elementor-element IDs only"
+  },
+  "deployment_gate": [
+    "Current STATE.md scope must first be reconciled to page256.",
+    "WPVibe +5 profile/site/quota must be freshly verified.",
+    "Fresh target DOM must still contain exactly the four expected empty divider containers in the same order.",
+    "Fresh Additional CSS must contain exactly one af-project:end and no af-bio-wave-source-v001 marker.",
+    "Fresh page256 baseline must match accepted state or be reconciled before write."
+  ],
+  "postdeploy": [
+    "Read back CSS marker/hash and unchanged page256 Elementor data.",
+    "Existing two-tab source/target screenshot check at all four boundaries.",
+    "Do not additionally attach g-af-src-wave unless a separate proven need exists.",
+    "Only after visual proof consider source .wave + .section reduced-top-padding mapping; do not bundle it blindly because current target section heights have existing acceptance constraints."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
