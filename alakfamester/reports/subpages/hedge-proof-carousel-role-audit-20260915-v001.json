@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "package": "hedge-proof-carousel-role-audit-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "element_id": "af2e004d",
+  "wordpress_writes": 0,
+  "known_historical_difference": {
+    "source_role": "group",
+    "target_later_role": "listitem",
+    "evidence": "build/hedge-parity-fix-20260914-v001.json explicitly recorded: preserve later carousel listitem semantics as manual live drift; source uses group; do not overwrite automatically.",
+    "status": "INTENTIONAL_LIVE_DRIFT_RECORDED_BUT_NOT_BACKED_BY_A_SEPARATE_D12/D17/D18_DECISION"
+  },
+  "why_no_write_now": [
+    "The old report deliberately protected the listitem change from automatic rollback.",
+    "A current trustworthy source/target accessibility tree is unavailable because Opera Hedge content is stale and WPVibe/public HTTP are unavailable.",
+    "Changing listitem back to group merely for historical literal equality could remove an intentional accessibility improvement or break the current carousel owner's structural semantics.",
+    "The current project decisions explicitly govern reviews, galleries, V4 classes and URL/form behavior, but no separate recorded decision was found that mandates this proof-carousel role divergence."
+  ],
+  "next_trustworthy_live_check": [
+    "Read current reference proof carousel role structure for the 21 proof items.",
+    "Read current target af2e004d rendered role structure and its parent role/list semantics.",
+    "Determine whether target listitem is semantically valid in its current parent and whether it creates a user-observable AX difference from the reference.",
+    "Identify the actual owner of the emitted roles (project widget markup, shared runtime or saved widget setting) before considering any change."
+  ],
+  "decision_rule": {
+    "if_reference_and_target_now_match": "Close as stale historical divergence; write nothing.",
+    "if_reference_group_target_listitem_and_project_has_valid_accessibility_reason": "Record as explicit intentional divergence before closeout; do not silently downgrade semantics.",
+    "if_reference_group_target_listitem_and_target_semantics_are_invalid_or_unintended": "Prepare the smallest page272-local owner-level correction, with proof carousel behavior/readback preservation.",
+    "if_owner_is_shared_global": "Do not change it from page272-only scope; require a page272-local containment path or leave explicit."
+  },
+  "interaction_preservation": "Any future role correction must preserve the already established shared 4000ms autoplay and must not add a second carousel behavior owner.",
+  "status": "LIVE_RECHECK_REQUIRED_NO_AUTOMATIC_ROLE_ROLLBACK",
+  "pixel_pass": false
+}
