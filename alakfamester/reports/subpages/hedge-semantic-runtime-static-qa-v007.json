@@ -1,0 +1,95 @@
+{
+  "schema_version": 7,
+  "package": "hedge-semantic-runtime-static-qa-v007",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "source": "build/hedge-semantic-runtime-v004.php",
+  "source_commit": "b2233f8810083f5957da59279d85186dab6eac62",
+  "intended_live_snippet": 36,
+  "wordpress_writes": 0,
+  "status": "STATIC_PASS_V004_CODE_UNCHANGED_STRICTER_LIVE_ARIA_CONFLICT_GATE_REQUIRED",
+  "supersedes_for_deployment_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+  "source_re_read_findings": [
+    "server guard is is_page(272)",
+    "wp_footer priority is 120",
+    "no outer #ajanlatkeres region mutation",
+    "no CSS or style injection",
+    "no visible text replacement",
+    "no DOM reorder/removal",
+    "no form validation/submission handler",
+    "no click/keyboard interaction handler",
+    "no Elementor data mutation",
+    "review changes are aria-label on tablist/tabs plus tabindex/aria-hidden on duplicate source dots",
+    "form changes are aria-label/aria-describedby/role/aria-labelledby and IDs only"
+  ],
+  "supporting_cross_page_evidence": {
+    "resource": "build/oldtrees-semantic-runtime-v003.php",
+    "live_qa": "reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json",
+    "finding": "A closely matching Form33 semantic pattern has been deployed on page264 without changing Elementor data. This supports the implementation family but does not prove current page272 native ARIA is conflict-free."
+  },
+  "mandatory_preupdate_baseline_gate": [
+    "verify intended +5 account/site/quota and preserve D11 reserve plus full readback margin",
+    "fresh page272 _elementor_data exactly reconciled with accepted 53606 B / ef688b...13b56 or STOP",
+    "read exact current ID36 body/name/scope/active/code_error and save rollback body",
+    "no newer page272 helper or existing v004 marker requiring readback instead of replay"
+  ],
+  "mandatory_review_structure_gate": [
+    "exactly one .elementor-element-c3d30005",
+    "exactly one role=tablist inside it",
+    "exactly three role=tab elements",
+    "visible/company identity order Panasonic -> Otolecz -> ARKER'S",
+    "capture current tablist aria-label and aria-labelledby",
+    "capture each real tab aria-label and aria-labelledby",
+    "if an aria-labelledby chain or other native accessible-name owner would prevent v004 aria-label from producing the intended exact name, STOP and redesign rather than forcing/removing it blindly",
+    "capture duplicate .af-review-source-dot count/current tabindex/aria-hidden; unexpected owner/state means reconcile first"
+  ],
+  "mandatory_form_structure_gate": [
+    "exactly one .mf-form-wrapper[data-form-id=33] and one form",
+    "exactly one wrapper-owned #af-form-direct-call OR one exact wrapper-scoped tel:+36305394820 paragraph fallback",
+    "exactly one #af-form-service .mf-input-wrapper and .mf-input-label",
+    "exactly one #af-form-city input[name=telepules] and .mf-input-help"
+  ],
+  "mandatory_existing_aria_conflict_gate": {
+    "form": [
+      "capture current role, aria-label, aria-labelledby and aria-describedby",
+      "if aria-labelledby exists and does not already yield the intended source-equivalent form name, STOP because setting aria-label may not override the stronger naming relation",
+      "if aria-describedby contains any meaningful token other than the intended wrapper-owned direct-call descriptor, STOP and prepare a merge/exactness-safe successor instead of overwriting it"
+    ],
+    "service_group": [
+      "capture current role, aria-label, aria-labelledby and aria-describedby on #af-form-service .mf-input-wrapper",
+      "current role must be absent or group; any different semantic role => STOP",
+      "existing aria-labelledby must be absent or resolve only to the intended visible service label; any additional/different naming relation => STOP",
+      "do not discard any new native description/error relationship"
+    ],
+    "city_input": [
+      "capture current aria-label, aria-labelledby, aria-describedby, aria-errormessage and aria-invalid",
+      "existing aria-describedby must be absent or already the intended city-help relation at idle state; any additional persistent descriptive token => STOP and design a preserving successor",
+      "do not remove/replace native error semantics"
+    ]
+  },
+  "mandatory_id_uniqueness_gate": [
+    "#af-form-direct-call is either the intended wrapper descendant or absent before ensureId fallback; no conflicting element elsewhere",
+    "if service label has no ID, #af-hedge-form-service-label must not already belong to another element",
+    "if city help has no ID, #af-hedge-form-city-help must not already belong to another element",
+    "all resulting relation IDs must be unique in the document",
+    "unexpected duplicate IDs => STOP; do not let ensureId create ambiguous IDREFs"
+  ],
+  "write_contract_if_all_gates_pass": [
+    "update existing Code Snippets ID36 only through the proven plugin-aware path",
+    "keep scope front-end and active state",
+    "never create a duplicate helper",
+    "no Elementor/Form33/media/CSS/global-setting write",
+    "HTTP 429/unknown result remains UNKNOWN until exact ID36 readback; no blind retry"
+  ],
+  "mandatory_postupdate_readback": [
+    "ID36 exact stored body equals v004; active=true; code_error=null; scope front-end",
+    "page272 saved Elementor bytes/SHA unchanged",
+    "v004 marker once and obsolete page272 semantic markers absent when rendered evidence is trustworthy",
+    "review tablist + three tab computed names source-exact; duplicate dots absent from AX/tab order",
+    "Form33 computed name/description, service-group name and city-help relation exact without losing native error/description semantics",
+    "all generated/reused relation IDs unique",
+    "protected hero/proof/reviews/gallery/form IDs preserved"
+  ],
+  "failure_rule": "Any live ARIA/native-owner conflict converts v004 from deployable to HOLD. Do not patch by deleting native aria-labelledby/describedby/role until the source and plugin ownership are understood.",
+  "pixel_pass": false
+}
