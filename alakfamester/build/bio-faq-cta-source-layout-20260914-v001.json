@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "package": "bio-faq-cta-source-layout-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED",
+  "fresh_live_proof": {
+    "source": "FAQ on paper first, then a separate 760px forest cta-band",
+    "target": "one large forest rounded section currently contains CTA first and FAQ second",
+    "target_generated_label": "AX exposes one CSS-generated staticText KÖVETKEZŐ LÉPÉS",
+    "target_native_faq": "white details rows on forest, native triangle markers still visible before prepared FAQ CSS"
+  },
+  "required_structural_predecessor": "build/bio-page256-next-safe-package-20260914-v014.json operation 1 removes the sole af-faq-content order:10 owner so FAQ returns before CTA.",
+  "css_blocks_for_one_future_write": [
+    {
+      "file": "build/bio-faq-cta-source-layout-v001.css",
+      "commit": "cf215806d78da9c70eff60fe5e6cb849c7a28eff",
+      "marker": "af-bio-faq-cta-source-v001"
+    },
+    {
+      "file": "build/bio-faq-cta-generated-label-guard-v001.css",
+      "commit": "40a086671da635e869113a0836e8372242ddf65e",
+      "marker": "af-bio-faq-cta-label-guard-v001"
+    }
+  ],
+  "dependency": "build/bio-visual-parity-v001.css supplies source-exact native-details card/summary/plus-minus styling. This layout package supplies paper section ownership, narrow FAQ measure and separate forest CTA band.",
+  "layout_strategy": {
+    "reason": "Avoid full Elementor structural save and avoid duplicating CTA nodes.",
+    "method": "Turn existing #af-sub-bio-cta into a page-width paper grid. Keep FAQ widget as row 1. Use #af-sub-bio-cta::before as a grid item spanning CTA rows only, with source forest gradients/decor/radius/shadow. Existing h2/body/mail widget/form button occupy source-like left/right band columns.",
+    "faq": "760px max-width, centered, source reduced top padding after wave and normal bottom padding",
+    "cta": "760px total content width with internal source band padding and 1.25/.75 columns",
+    "mailto": "reuse existing aria-label/href; CSS grid reorders visual direct label/strong to source label-above-email presentation and adds decorative envelope leaf without changing accessible name",
+    "button": "reuse existing href/text; add source bronze surface and decorative arrow"
+  },
+  "preflight_before_future_css_write": [
+    "Scope handoff must authorize page256; current STATE.md page264-only must be reconciled first.",
+    "Verify +5 identity/site/quota and D11 reserve.",
+    "Fresh page256 bytes/SHA/JSON reconciled.",
+    "Fresh post8 marker inventory and unique af-project:end.",
+    "Fresh CSS search for every #af-sub-bio-cta::before/::after owner; ensure new ::before will not collide with an essential live pseudo owner.",
+    "Require source-layout and label-guard markers absent.",
+    "Require FAQ order microfix already rendered or do not deploy this package."
+  ],
+  "postconditions": [
+    "FAQ is visually on #F5F3ED, before CTA, max-width 760 and centered.",
+    "Prepared FAQ visual v001 removes native triangle and shows source leaf plus/minus without changing native details behavior.",
+    "CTA is a separate 36px-radius forest band with source decorative rings/leaves, left text block and right action stack.",
+    "Exactly one visible/generated KÖVETKEZŐ LÉPÉS label remains.",
+    "mailto accessible name stays ÍRJON BÁTRAN kreativ@alakfa-mester.hu and href unchanged.",
+    "form href stays /kapcsolat/#ajanlatkeres.",
+    "page256 Elementor hash remains unchanged by CSS write.",
+    "fresh same-browser source-target screenshot and AX proof before pass."
+  ],
+  "rollback": "Remove the two exact marked CSS blocks only. Structural FAQ-order microfix is a separate rollback unit and must not be reverted merely because CTA CSS fails.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
