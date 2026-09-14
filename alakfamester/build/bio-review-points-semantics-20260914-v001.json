@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "package": "bio-review-points-semantics-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "b2560014",
+  "status": "CURRENT_DOM_PROVEN_SEMANTIC_DELTA_FUTURE_AX_VERIFICATION_REQUIRED",
+  "source_contract": {
+    "intro": "p",
+    "points": "ul.review__points containing exactly three li items",
+    "final": "p",
+    "items": [
+      "2004–2005: János precíz tervei alapján épült meg a kert, amely cégünk értékrendjét tükrözi.",
+      "Több évtizedes gondoskodás: nemcsak az induláskor, hanem a mindennapi fenntartásban és a növények szakszerű ápolásában is hű társunk.",
+      "Folyamatos megújulás: János lélegzetelállító formára nyírt növénykülönlegességeivel folyamatosan fejleszti a teret."
+    ]
+  },
+  "target_current_public_DOM": "one p.af-review-text containing five span siblings: intro, point1, point2, point3, final; there is no list/listitem markup around the three points",
+  "why_this_matters": "The visual leaf bullets can be source-like while the accessibility structure still lacks the meaningful 3-item list present in the reference.",
+  "safe_future_diagnostic_first": [
+    "When page256 browser ownership returns, inspect only the active Panasonic review AX subtree and confirm source exposes one list/three listItems while target does not.",
+    "Do not rely on whole-page aggregate list counts because shared header/footer differences can compensate unrelated main-content role deltas."
+  ],
+  "candidate_page256_only_semantic_strategy_after_fresh_saved_search": {
+    "goal": "Expose one list with three listitems without changing visible text or the Atomic paragraph element type.",
+    "possible_shape": [
+      "Give the second and third point spans stable page256-local IDs and role=listitem through exact match-once edits.",
+      "Replace the complete first-point span only if a fresh returned exact snippet fully contains that one span; make it a span role=list owner containing a nested span role=listitem for point1 and aria-owns pointing to point2/point3 IDs.",
+      "This keeps intro/final spans outside the list and does not duplicate visible text."
+    ],
+    "warning": "This is an ARIA-equivalent candidate, not yet an approved write. Browser AX readback must prove the owned list order/name is source-equivalent and does not disturb paragraph/tabpanel semantics."
+  },
+  "abort_if": [
+    "fresh exact search cannot isolate each point span safely",
+    "aria-owns reorders or duplicates AX content unexpectedly",
+    "tabPanel accessible name/body reading order changes",
+    "protected review copy changes",
+    "Atomic paragraph/runtime behaves differently"
+  ],
+  "acceptance": [
+    "active Panasonic review exposes exactly one list with exactly three listitems in source order",
+    "intro and final testimonial paragraphs remain outside that list in reading order",
+    "visible content and styling unchanged",
+    "tab accessible name and panel relationships unchanged"
+  ],
+  "do_not": [
+    "do not inject block-level ul/li inside the existing rendered p without a proven Atomic tag-owner transformation",
+    "do not replace the Atomic review body with a legacy widget/full page save",
+    "do not fake a whole-page list count while the review-local subtree remains wrong"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
