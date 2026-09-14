@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "package": "bio-remote-call-budget-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_NO_LIVE_QUOTA_ASSUMED",
+  "known": {
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "plus5_target_site_connection": "UNKNOWN",
+    "plus5_exact_quota": "UNKNOWN",
+    "D11_required_reserve": 10,
+    "wordpress_writes_current_continuation": 0
+  },
+  "counting_model": "These are conservative logical WPVibe action counts for planning, not a claim about account billing or quota accounting. A future live counter read is authoritative. Opera/GitHub checks do not consume this planned WPVibe budget.",
+  "phase_0_remote_gate": {
+    "purpose": "establish usable +5 remote window and accepted live owners before any mutation",
+    "minimum_actions": [
+      "profile/site/quota read: 1-2",
+      "page256 bytes/SHA/JSON read: 1",
+      "ID35 status/owner read if not bundled: 1",
+      "complete Additional CSS hash/marker/critical-owner read: 1-2"
+    ],
+    "planned_range": "4-6",
+    "go_rule": "Do not start any write package unless the whole package plus immediate readback plus at least 10 recovery calls fits above the live remaining counter."
+  },
+  "phase_1_css_v006": {
+    "package": "build/bio-visual-single-write-plan-20260914-v006.json",
+    "minimum_actions_after_phase0": [
+      "guarded search/exact unique insertion owner if not already bundled in phase0: 0-1",
+      "one content/edit Additional CSS write: 1",
+      "Additional CSS marker/hash readback: 1",
+      "page256 Elementor bytes/SHA/JSON unchanged readback: 1"
+    ],
+    "planned_range": "3-4",
+    "recovery_margin_not_in_range": 10
+  },
+  "phase_2_structural_v014": {
+    "package": "build/bio-page256-next-safe-package-20260914-v014.json",
+    "operations": {
+      "FAQ_order_class": "search 1 + edit 1 + readback 1 = about 3",
+      "stress_copy_wrapper": "search 1 + edit 1 + readback 1 = about 3",
+      "review_anchor_optional": "raw owner search 1 + edit 1 + readback 1 = about 3 only if owner is proven safe"
+    },
+    "planned_range": "6 without optional review ID; 9 with review ID",
+    "rule": "Each operation is its own stop point. A failure/drift in one prevents blindly continuing to the next."
+  },
+  "phase_3_stress_semantics_visual": {
+    "packages": ["bio-semantic-resume-20260914-v013", "bio-stress-source-visual-20260914-v002"],
+    "minimum_actions": [
+      "fresh exact aside/article snippet search: 1",
+      "tag-only edit: 1",
+      "page/readback: 1",
+      "fresh CSS pseudo-owner/marker search: 1",
+      "stress marked CSS insertion: 1",
+      "CSS+page readback: 2"
+    ],
+    "planned_range": "7",
+    "note": "Can be split into semantic 3-call unit and visual 4-call unit if quota is tighter."
+  },
+  "phase_4_table_source_structure": {
+    "package": "build/bio-table-source-structure-20260914-v001.json",
+    "minimum_actions": [
+      "exact boundary searches: 1-2",
+      "one or two guarded match-once edits depending exact returned snippet: 1-2",
+      "page JSON/hash + rendered semantic readback: 1",
+      "table-title CSS marked write/readback if not folded into a separately approved CSS package: 2-3"
+    ],
+    "planned_range": "5-8",
+    "rule": "Do not move caption/title by reconstructing the full widget."
+  },
+  "phase_5_expectations_v003": {
+    "package": "build/bio-expectations-source-structure-20260914-v003.json",
+    "minimum_actions": [
+      "fresh exact raw boundary searches: 3-4",
+      "guarded wrapper/article edits: 3-4",
+      "intermediate/final page readbacks: 2-3",
+      "scoped CSS owner/marker read + write + readback: 3"
+    ],
+    "planned_range": "11-14",
+    "rule": "This is the highest-risk legacy regrouping and must never be started near reserve. Prefer one complete fresh window."
+  },
+  "phase_6_FAQ_CTA_v004": {
+    "package": "build/bio-faq-cta-source-layout-20260914-v004.json",
+    "minimum_actions": [
+      "CTA mail exact search: 1",
+      "mail visual-child structure edit: 1",
+      "page readback: 1",
+      "fresh ::before/::after/current-label CSS owner/marker read: 1-2",
+      "one coherent marked CSS write for all approved CTA/FAQ companion blocks: 1",
+      "CSS marker/hash + page unchanged readback: 2"
+    ],
+    "planned_range": "7-8 after FAQ-order predecessor is already complete",
+    "rule": "If FAQ-order predecessor is not complete, add its ~3-call unit first."
+  },
+  "phase_7_reviews": {
+    "owner_diagnostic_only": "Additional CSS exact owner searches can often be combined into 1-2 reads",
+    "quote_v002": "if owner proof allows, one CSS write + readback about 2",
+    "ordinal_and_active_dot": "after owner proof, ideally one tiny CSS write + readback about 2",
+    "review_anchor": "about 3 if not already done in v014",
+    "third_author_role_text": "fresh search + edit + readback about 3 only if shorter live text is reconfirmed",
+    "decor": "pseudo-owner read + marked CSS write + readback about 3, optional/last"
+  },
+  "closeout": {
+    "minimum_wp_actions": [
+      "final page256 bytes/SHA/JSON read: 1",
+      "final Additional CSS markers/hash read: 1",
+      "final ID35 status if not bundled: 0-1"
+    ],
+    "planned_range": "2-3",
+    "browser_QA": "Use source/target pair only when page256 browser ownership is available; does not spend planned WPVibe calls."
+  },
+  "recommended_window_strategy": [
+    "Never measure a package against a stale counter. Read the exact live counter first.",
+    "If remaining-above-reserve is <8, do no new remote mutation; do GitHub/static/browser work only.",
+    "If 8-15 calls are available above reserve, choose one low-risk complete phase such as CSS v006 or one structural microfix plus readback; do not start expectations.",
+    "If 16-25 are available above reserve, a medium complete structure+visual phase can run with margin.",
+    "Expectations v003 should start only with substantially more than its 11-14 planned calls plus the 10-call reserve, because multiple exact searches/readbacks may be required.",
+    "Any 429/unknown write immediately consumes the rest of the planned package until exact readback resolves state; do not budget a retry."
+  ],
+  "pixel_pass": false
+}
