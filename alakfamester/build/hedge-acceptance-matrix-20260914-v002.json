@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "package": "hedge-acceptance-matrix-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-acceptance-matrix-20260914-v001.json",
+  "purpose": "Operational page272-only acceptance matrix. It organizes proven passes and safe live gates but does not claim formal frozen pixel acceptance while the repository acceptance files/browser harness are unavailable.",
+  "write_scope": "Only page272-specific runtime/content. No shared media, shared Form33 settings, global CSS/templates/header/footer/dock or other-page writes.",
+  "prewrite_invariants": {
+    "accepted_elementor_bytes": 53606,
+    "accepted_elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "must_preserve_ids": ["af2e004e","af2e004d","c3d30005","b2e2c001","af2e0011"],
+    "legacy_image_widgets_must_remain_absent": ["af2e0009","af2e000a","af2e000b","af2e000c","af2e000d","af2e000e"],
+    "shared_media_writes_allowed": false
+  },
+  "saved_content_and_structure": [
+    {"check":"hero project widget af2e004e present and source-equivalent accessible SVG title/description","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"proof carousel af2e004d present with 21 source images","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"native Atomic reviews c3d30005 exactly 3 tabs/panels","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"EAEL b2e2c001 exactly 28 items, source order/names, 28 id=0, full resolution, original upload URLs","status":"PASS_CLOSED_DO_NOT_REWRITE"},
+    {"check":"MetForm widget af2e0011 / Form33 present","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"five complete legacy named regions","status":"PASS_CLOSED"},
+    {"check":"Van hasonló növénye? full mailto range and exact accessible name","status":"PASS_CLOSED"},
+    {"check":"af2e004c exact source phone/e-mail accessible names and 24-hour reply sentence","status":"PASS_CLOSED"},
+    {"check":"canonical page-content links/anchors remain D09/source-intent equivalent","status":"LAST_FRESH_PASS_RECHECK_AFTER_ANY_WRITE"},
+    {"check":"historical section background mismatch","status":"CLOSED_NOOP_CURRENT_AF_BG_SAGE"}
+  ],
+  "runtime_semantics": {
+    "current_live_owner": "Code Snippets ID36 v001 until verified successor readback",
+    "current_candidate": "build/hedge-semantic-runtime-v004.php",
+    "candidate_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "checks": [
+      {"check":"ID36 exact body/scope/active/code_error before update","status":"MUST_FRESH_READ"},
+      {"check":"review root/tab cardinality and Panasonic->Otolecz->ARKER'S source order","status":"MUST_FRESH_PROVE_BEFORE_INDEX_LABELS"},
+      {"check":"review tablist name Ügyfélvélemények","status":"CURRENT_V001_OWNER_PRESERVE"},
+      {"check":"three real review tabs exact source full accessible names","status":"IMPLEMENTATION_OPEN_V004"},
+      {"check":"duplicate review dots absent from AX/tab order while pointer visuals remain","status":"CURRENT_V001_OWNER_V004_PRESERVES"},
+      {"check":"Form33 name Ajánlatkérés","status":"IMPLEMENTATION_OPEN_V004_SHARED_CONTRACT_PROVEN"},
+      {"check":"Form33 direct-call description relation","status":"IMPLEMENTATION_OPEN_V004_WRAPPER_OWNER_GATE"},
+      {"check":"service radio group accessible name","status":"IMPLEMENTATION_OPEN_V004"},
+      {"check":"Település help description relation","status":"IMPLEMENTATION_OPEN_V004"}
+    ]
+  },
+  "outer_named_regions": [
+    {"source_name":"Minőségi sövény formára vágás, metszés és megújítás","status":"HOLD_COMPLETE_HERO_COPY_PLUS_ART_ROOT_UNPROVEN"},
+    {"source_name":"Sövénymunkák","status":"HOLD_COMMON_HEADING_PLUS_EAEL_ROOT_UNPROVEN"},
+    {"source_name":"Küldjön fotót a sövényről","status":"HOLD_COMMON_AF2E004C_INTRO_CONTACT_PLUS_FORM33_ROOT_UNPROVEN"}
+  ],
+  "outer_region_rule": "Never label an inner widget as the source section merely because it is visually inside that section. Fresh DOM must prove one stable root contains the complete source-equivalent section. v004 deliberately does not label #ajanlatkeres.",
+  "form_functionality": [
+    {"check":"textarea effective rows=5","status":"SHARED_FORM33_ID6_ACCEPTED_PRESERVE"},
+    {"check":"photo upload 3-5 count server validation + 8 MB/file contract","status":"SHARED_FORM33_ID5_ACCEPTED_PRESERVE"},
+    {"check":"configured local success state","status":"SHARED_FORM33_ACCEPTED_PRESERVE_NO_REAL_SUBMISSION"},
+    {"check":"Miben kér segítséget? six radio option names/order","status":"LAST_LIVE_AX_PASS_EXACT_SAVED_SETTINGS_READ_NEEDED"},
+    {"check":"#af-form-service exact mf_input_name","status":"UNKNOWN_LIVE_READ_REQUIRED"},
+    {"check":"native mf_input_required == yes","status":"UNKNOWN_LIVE_READ_REQUIRED"},
+    {"check":"MetForm native Required rule is wired into frontend validation","status":"PLUGIN_SOURCE_PROVEN_CAPABILITY"},
+    {"check":"live Form33 empty service choice is blocked before actual submission","status":"NON_DELIVERY_NATIVE_PROOF_REQUIRED_IF_REQUIRED_YES"},
+    {"check":"page272 server fallback","status":"OPTIONAL_ONLY_IF_NATIVE_REQUIRED_ABSENT_OR_PROVEN_INSUFFICIENT","plan":"build/hedge-form-required-server-plan-20260914-v002.json"},
+    {"check":"fallback callback proof without entry/delivery","status":"PLANNED_IF_FALLBACK_NEEDED","plan":"build/hedge-form-required-nondelivery-test-plan-20260914-v001.json"},
+    {"check":"SMTP/external delivery","status":"EXCLUDED"},
+    {"check":"real form submission","status":"EXCLUDED"}
+  ],
+  "interaction_acceptance": [
+    {"check":"reviews click/Arrow/Home/End implementation owner","status":"SHARED_D12_PASS_PAGE272_DIRECT_RUN_PROOF_ONLY"},
+    {"check":"proof carousel 4000ms autoplay","status":"PAGE272_HISTORICAL_LIVE_PASS_5_TO_6"},
+    {"check":"proof carousel ArrowLeft/ArrowRight","status":"PROOF_ONLY_OPEN"},
+    {"check":"proof carousel pointer swipe","status":"PROOF_ONLY_OPEN"},
+    {"check":"proof carousel hover/focus pause-resume","status":"PROOF_ONLY_OPEN"},
+    {"check":"proof carousel prefers-reduced-motion behavior","status":"PROOF_ONLY_OPEN"},
+    {"check":"EAEL masonry rendering","status":"HISTORICAL_PASS_PRESERVE"},
+    {"check":"EAEL Hedge lightbox behavior","status":"NO_WRITE_UNTIL_SOURCE_SPECIFIC_ZOOM_PROOF","audit":"reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json"}
+  ],
+  "responsive_visual_matrix": {
+    "viewports": [1920,1440,1024,768,390,360],
+    "required_for_each": [
+      "same source/target browser engine and synchronized load/focus/animation state",
+      "known DPR and 100% zoom",
+      "hero copy/art geometry and section boundary",
+      "reviews/card geometry and no overflow",
+      "content/card section spacing",
+      "Sövénymunkák masonry columns/gutters/natural ratios",
+      "CTA/contact/form geometry and text/contrast",
+      "header/footer observed only for regression; no global write from page272 scope"
+    ],
+    "known_gallery_contract": {
+      "desktop_columns": 4,
+      "tablet_columns": 3,
+      "mobile_columns": 2,
+      "source_like_721_767_columns": 3,
+      "desktop_gutter_px": 16,
+      "mobile_gutter_px": 12
+    },
+    "status":"BLOCKED_NO_DETERMINISTIC_SYNCHRONIZED_VIEWPORT_OVERLAY_DIFF_RUNNER"
+  },
+  "visual_write_rule": "No CSS from stale screenshots/history. Only a fresh synchronized source-target delta with proven target DOM/cascade owner may justify a page272-local visual patch.",
+  "v004_preupdate_gate": [
+    "verify +5/site/exact quota and D11 reserve plus readback margin",
+    "accepted page272 hash or reconciled drift",
+    "exact current ID36 rollback body/state/scope",
+    "exact review cardinality/order",
+    "one Form33 wrapper/form/direct-call owner/service pair/city pair",
+    "no newer helper; v004 already live => read back instead of replay"
+  ],
+  "v004_postwrite_readback": [
+    "ID36 exact body=v004, scope front-end, active=true, code_error=null",
+    "v004 marker exactly once and prior semantic markers absent when rendered read is trustworthy",
+    "page272 Elementor bytes/SHA unchanged",
+    "protected hero/proof/reviews/gallery/form IDs preserved",
+    "post-footer-JS AX exact review and complete Form33 component semantics",
+    "no claim for the three outer source regions until their complete roots are separately proven"
+  ],
+  "tool_state": {
+    "wpvibe":"disabled/unavailable in this conversation; +5 site/quota unknown",
+    "opera":"two existing tabs only but Hedge URL/title disagreed with stale AX/screenshot content; no further use this continuation",
+    "acceptance_json":"absent",
+    "behaviors_json":"absent"
+  },
+  "pixel_pass": false,
+  "status": "V004_MATRIX_READY_LIVE_EXECUTION_AND_FORMAL_PIXEL_PROOF_BLOCKED"
+}
