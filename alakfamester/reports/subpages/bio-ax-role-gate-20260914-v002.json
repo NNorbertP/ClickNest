@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "package": "bio-ax-role-gate-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "SECTION_LOCAL_GATE_SUPERSEDES_WHOLE_PAGE_AGGREGATE_AS_FINAL_ORACLE",
+  "supersedes": "reports/subpages/bio-ax-role-count-gate-20260914-v001.json",
+  "reason": "Current source/target DOM proves the first review's 3-item source list is missing semantically on target even though prior whole-page source/target list counts both happened to equal 9. Shared header/footer structures can compensate unrelated main-content role deltas. Final acceptance must therefore be section-local, not aggregate-only.",
+  "whole_page_v001_use_after_this": "REGRESSION_HEURISTIC_ONLY, not final parity proof.",
+  "section_expectations": {
+    "reviews_active_Panasonic": {
+      "source": {
+        "tabList": 1,
+        "tabs": 3,
+        "active_tabPanel": 1,
+        "testimonial_points_list": 1,
+        "testimonial_point_listItems": 3,
+        "step_buttons": 2,
+        "decorative_ordinals_in_AX": 0
+      },
+      "target_current_known": {
+        "tabList": 1,
+        "tabs": 3,
+        "active_tabPanel": 1,
+        "testimonial_points_list": 0,
+        "testimonial_point_listItems": 0,
+        "step_buttons": 2,
+        "decorative_ordinal_staticText": "at least one ordinal staticText was previously observed"
+      },
+      "open_plans": [
+        "build/bio-review-points-semantics-20260914-v001.json",
+        "build/bio-review-ordinal-source-v001.css",
+        "build/bio-review-ordinal-accessibility-20260914-v001.json"
+      ]
+    },
+    "stress": {
+      "source": {"article":1,"complementary":0,"list":1,"listItems":4},
+      "target_current": {"article":0,"complementary":1,"list":1,"listItems":4},
+      "open":"aside->article atomic candidate; source DOM reading order still separately blocked"
+    },
+    "technology": {
+      "source": {"articles":3,"use_case_list":1,"use_case_items":4},
+      "target_current": {"articles":3,"use_case_list":1,"use_case_items":4},
+      "status":"SEMANTIC_COUNTS_SOURCE_LIKE; visual markers/cards remain open"
+    },
+    "table": {
+      "source": {"table":1,"caption":0,"columnHeaders":3,"rowHeaders":4},
+      "target_current": {"table":1,"caption":1,"columnHeaders":3,"rowHeaders":4},
+      "open":"caption->external title + aria-labelledby"
+    },
+    "expectations": {
+      "source": {"articles":2,"lists":2,"listItems":5},
+      "target_current": {"articles":0,"lists":2,"listItems":5},
+      "status":"HARD BLOCKER: source article ownership not atomically regroupable with current safe primitive"
+    },
+    "FAQ": {
+      "source": {"buttons":4,"disclosures":0},
+      "target_current": {"buttons":0,"disclosures":4},
+      "status":"HARD BLOCKER: exact source runtime/role unavailable under current constraints"
+    }
+  },
+  "main_content_list_totals_derived_from_source_structure": {
+    "source": {"lists":5,"listItems":16},
+    "current_target_structural": {"lists":4,"listItems":13},
+    "breakdown": "review source 1/3 + stress 1/4 + technology 1/4 + expectations 2/5; target lacks only the review 1/3 list semantics among these blocks",
+    "note": "Use a future page-main/section-scoped AX query to verify these browser roles; do not mix shared header/footer lists into acceptance."
+  },
+  "regression_rules": [
+    "Technology articles/list and all stress/technology/expectations list item strings are already structurally present; do not lose them.",
+    "Table column/row headers are already correct and immutable during title ownership work.",
+    "Review list semantic work must not change tab names, tabPanel ownership, visible copy or active panel behavior.",
+    "A whole-page aggregate count matching source is insufficient if any section-local owner remains wrong."
+  ],
+  "final_exact_gate": [
+    "reviews: 1 points list / 3 listitems, no decorative ordinal AX text",
+    "stress: article1/complementary0/list1/items4 plus separately source reading order if exactness is claimed",
+    "technology: articles3/list1/items4",
+    "table: caption0/column3/row4",
+    "expectations: articles2/lists2/items5 with correct source ownership",
+    "FAQ: buttons4/disclosures0 plus source keyboard/motion behavior"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
