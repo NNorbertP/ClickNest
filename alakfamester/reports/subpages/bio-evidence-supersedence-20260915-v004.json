@@ -1,0 +1,66 @@
+{
+  "schema_version": 4,
+  "package": "bio-evidence-supersedence-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "purpose": "Planning/evidence precedence only. Add the current consolidated review fix plan v002 to the page-local carrier execution chain. No WordPress write or scope handoff.",
+  "scope_gate": "Fresh STATE.md remains PAGE264 ONLY; page256 stays read-only until explicit normal scope handoff.",
+  "supersedes": "reports/subpages/bio-evidence-supersedence-20260915-v003.json",
+  "authoritative_core": {
+    "continuation": "reports/subpages/bio-continuation-20260914-v024.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260914-v002.json",
+    "acceptance": "specs/bio-final-acceptance-20260914-v001.json",
+    "budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "style_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "style_delivery": "build/bio-page-local-visual-delivery-20260914-v001.json",
+    "review_plan": "build/bio-reviews-current-fix-plan-20260914-v002.json",
+    "review_behavior_oracle": "build/bio-review-source-interaction-contract-20260914-v001.json"
+  },
+  "execution_order_after_scope_handoff": [
+    "Mandatory inert af260016 page-local style-carrier probe; failure cancels CSS route and does not authorize global Additional CSS fallback.",
+    "After probe PASS, install the approved page-local visual v007 owner only through af260016.",
+    "Run v014 structural microfixes one fresh-search transaction at a time with immediate readback.",
+    "Then semantic/stress, table, expectations and accessibility-safe FAQ/CTA v006 in their documented order.",
+    "Review fixes follow build/bio-reviews-current-fix-plan-20260914-v002.json and remain independently gated."
+  ],
+  "review_current": {
+    "preserve": [
+      "native Elementor Atomic Tabs hierarchy",
+      "three exact accessible tab names",
+      "review images/alt/body copy",
+      "ID35 tablist/region semantics",
+      "ID35 aria-hidden nonfocusable visual dots and existing previous/next controls",
+      "all tab/panel IDs and relationships"
+    ],
+    "low_risk_presentation": [
+      "build/bio-review-quote-source-color-v002.css: source warm #D9C9A5 and source responsive quote width",
+      "build/bio-review-dot-source-v001.css: active dot returns to source 9x9 leaf behavior without changing AX/focus ownership"
+    ],
+    "medium_risk_isolated": "build/bio-review-ordinal-source-v001.css only after fresh precheck, then isolated AX readback: exactly one visual ordinal, tab names unchanged, no standalone AX 01/02/03, keyboard unchanged.",
+    "content_microfixes": [
+      "build/bio-review-anchor-parity-20260914-v001.json only if fresh Atomic _cssid owner is safe",
+      "build/bio-review-third-author-role-text-20260914-v002.json: public HTML proves target short role line; fresh SAVED-data search must still confirm exact short text before one match-once b2560031 visible-text edit"
+    ],
+    "third_author_source_text": "ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+    "third_author_tab_name_must_remain": "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető",
+    "interaction_focus_delta": "HOLD: source previous/next focuses newly active panel, current target ID35 does not explicitly do so; no page-local safe JS owner is proven. Do not modify global ID35 or inject ad-hoc page-local JS merely to close this proof gap.",
+    "optional_decor": "Last only after pseudo-owner proof; never block core content/interaction parity."
+  },
+  "page_local_delivery_rule": "Quote/dot can join the local visual owner only after carrier probe PASS and fresh marker precheck. Ordinal must remain separately marked/read back because of AX risk. Content/deep-link edits are separate structural transactions; never merge them into CSS rollback units.",
+  "superseded_for_execution": [
+    "reports/subpages/bio-evidence-supersedence-20260915-v003.json",
+    "build/bio-review-third-author-role-text-20260914-v001.json",
+    "older fragmented review-fix planning where contradicted by build/bio-reviews-current-fix-plan-20260914-v002.json"
+  ],
+  "unchanged_obsolete_set": "All obsolete hero v001/v002/decorative icon, old expectations v002, technology-callout, quote v001, all-four-wave, FAQ layout v001 and old +4/global-CSS delivery directions remain DO NOT DEPLOY as documented by v003.",
+  "rules": [
+    "Fresh live truth outranks this map.",
+    "Current candidate does not authorize a write before scope handoff and fresh baseline/quota gates.",
+    "Fresh content/search bytes are mandatory before structural edits; prepared strings are never future old_content.",
+    "Any 429 write is UNKNOWN until exact readback; never blind retry.",
+    "Preserve >=10 WPVibe calls for D11 recovery/closeout."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "PAGE256_PRECEDENCE_RECONCILED_REVIEW_PLAN_V002"
+}
