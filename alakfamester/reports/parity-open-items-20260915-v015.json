@@ -1,0 +1,62 @@
+{
+  "schema_version": 15,
+  "project": "alakfamester",
+  "date": "2026-09-15",
+  "type": "PLANNING_ONLY_NO_SCOPE_OVERRIDE",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260915-v014.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY. This queue does not authorize page256/page272/global/media writes.",
+  "tool_freeze_this_continuation": {
+    "wpvibe": "Do not call again: first read-only list_sites returned tool disabled; +5 site/quota unknown.",
+    "opera": "Do not call again: existing target tab produced stale page-mismatched AX content; zero new/replacement tabs.",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0
+  },
+  "priority_1_page264_active": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v010.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json",
+    "baseline": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid; fresh read before write",
+    "only_conditional_page_local_visual_candidates": ["v006 request-contact foreground", "v007 equal comparison columns", "combined only if both fresh failures reproduce"],
+    "proof_only": ["Form33 native required and safe non-delivery behavior", "inner field geometry/style", "href readback", "review/Tiszafa/Nordmann interactions", "hero measured owner/cascade", "six-view deterministic matrix"],
+    "next": "When live tools are stable: +5/site/exact quota -> compact page/hash/marker gate -> trustworthy two-tab v006/v007 reproduction -> at most one page264 CSS write -> mandatory readback. 429 is UNKNOWN until readback."
+  },
+  "page256_future_after_explicit_handoff": {
+    "continuation": "reports/subpages/bio-continuation-20260914-v024.json",
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v003.json",
+    "budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "delivery": "Mandatory inert page-local af260016 style-carrier probe first; probe failure cancels CSS route and does not authorize shared/global Additional CSS fallback.",
+    "chain": ["page-local visual delivery using visual v007 after probe PASS", "structural v014", "semantic/stress", "table", "expectations", "accessibility-safe FAQ/CTA v006", "owner-proven review microfixes"],
+    "review_oracle": "build/bio-review-source-interaction-contract-20260914-v001.json; preserve native Atomic Tabs, no legacy source-JS replacement"
+  },
+  "page272_future_after_explicit_handoff": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v014.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v004.php updating existing ID36 only",
+    "strict_gate": "fresh baseline/rollback/cardinality/native-ARIA/role/ID uniqueness; any stronger native relation conflict => HOLD v004 and design preserving successor",
+    "review_contract": "three accepted tab names remain Kardos Attila / Otolecz Andrea / Lőrincz Balázs; stale Otolecz Attila/Rosivall László evidence rejected",
+    "panel_preservation": "all three quote/visible author-company-role/image identities and tab-panel bijection must be captured read-only before any content/media correction; never reconstruct from memory/attachment IDs and never fold it into attribute-only ID36 v004",
+    "read_first": ["complete outer roots", "ordered H1-H6", "proof-carousel roles", "Form33 required config/native rejection", "head metadata/schema"],
+    "page_css_candidate": "NONE"
+  },
+  "global_future_after_scope_handoff": {
+    "header": "build/header-deployment-plan-v010.json through existing ID7 only; homepage Főoldal current/Services neutral and service-child Services current-section; multi-route acceptance mandatory",
+    "floating_dock": "diagnostic-first global ID7/CSS owner; AX controls exist but visual pill is blank/clipped; exact markup and winning cascade before any fix"
+  },
+  "assets": {
+    "reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "ellwoodi": "exact frozen WEBP unrecovered; same-basename old public JPG is provenance only, not exact equivalence",
+    "portrait": "exact bytes unrecovered and acceptance visibility conflicts; obtain fresh trustworthy reference proof before treating portrait as required"
+  },
+  "formal_acceptance": {
+    "recovery": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "status": "Original README-referenced acceptance specs/runners are not recoverable from exposed Git history; never reconstruct by guess and call them original.",
+    "still_required": ["original external specs/harness or explicitly authorized replacement contract", "deterministic six-view exact-browser overlay/diff", "stable action-capable interaction browser"]
+  },
+  "do_not_reopen": "reports/stale-blockers-do-not-reopen-20260915-v002.json",
+  "critical_rules": ["fresh trustworthy live state outranks plans", ">=10 WPVibe D11 reserve", "429 write UNKNOWN until exact readback", "fresh search bytes before structural edits", "max two Opera project tabs, no replacement/reload loop", "missing tooling never licenses speculative CSS/JS"],
+  "pixel_pass": false,
+  "status": "CROSS_PROJECT_QUEUE_RECONCILED_PAGE264_ACTIVE_HEDGE_V006_CHAIN_FUTURE"
+}
