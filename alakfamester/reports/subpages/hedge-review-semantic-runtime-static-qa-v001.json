@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "hedge-review-semantic-runtime-static-qa-v001",
+  "date": "2026-09-14",
+  "target_page_id": 272,
+  "build": "build/hedge-review-semantic-runtime-20260914-v001.php",
+  "build_commit": "d1fd7e134e22be6e2ec3042bb14f348af0cf7f25",
+  "status": "STATIC_PASS_NOT_DEPLOYED",
+  "checks": {
+    "page_guard_exact": "is_page(272)",
+    "stable_root_selector": ".elementor-element-c3d30005",
+    "root_source": "Existing protected native Atomic Tabs root c3d30005 from D12 / hedge-native-reviews-v001.",
+    "tablist_selector": "[role=tablist] under the protected root",
+    "tab_selector": "[role=tab] under the protected root",
+    "exact_tab_count_expected": 3,
+    "attribute_changes_only": true,
+    "css_changes": false,
+    "visible_text_changes": false,
+    "dom_reordering": false,
+    "event_listeners_for_click_or_keyboard": false,
+    "existing_D12_keyboard_handler_touched": false,
+    "extra_review_index_controls_touched": false,
+    "mutation_observer": "Re-applies only when nodes are added; required for Elementor/editor re-render lifecycle."
+  },
+  "source_accessible_names": {
+    "tablist": "Ügyfélvélemények",
+    "tabs": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ]
+  },
+  "safety": {
+    "reason_for_runtime_path": "Elementor 4.2.4 live e-tabs schema exposes an attributes array but does not expose its item wire shape. A prior page256 pilot proved guessed Atomic accessibility attributes can save without frontend emission. Runtime attributes avoid an unproven saved-data transformer and do not alter visual layout.",
+    "deployment_gate": [
+      "Fresh page272 hash must match the last accepted saved-data baseline or drift must be reconciled first.",
+      "Inspect Code Snippets live inventory and confirm no existing page272 semantic helper conflicts.",
+      "Use Code Snippets own REST namespace if no matching Abilities API write is registered, following the proven page264 deployment path.",
+      "Read back active snippet state and page272 Elementor hash after deployment.",
+      "Fresh frontend and Elementor editor lifecycle must both show exact tablist/tab accessible names."
+    ]
+  },
+  "open": [
+    "The three extra 1./2./3. vélemény controls remain untouched until ownership and interaction behavior are proven.",
+    "Formal deterministic pixel comparison remains unavailable; PIXEL_PASS=false."
+  ]
+}
