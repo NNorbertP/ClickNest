@@ -1,0 +1,99 @@
+{
+  "schema_version": 5,
+  "package": "continuation-readonly-20260915-v005",
+  "date": "2026-09-15",
+  "scope_authority": "Fresh STATE.md remains PAGE264 ONLY for WordPress writes. This checkpoint does not modify, broaden or supersede STATE.md.",
+  "state_sha_at_checkpoint": "332cdc1f5d5acae636c4ce0c69f6113b290abd85",
+  "main_head_before_checkpoint": "6d6a4800ef008ab859d93c317d5658d76d263e55",
+  "wordpress_writes_current_continuation": 0,
+  "opera_new_tabs_current_continuation": 0,
+  "tool_state": {
+    "wpvibe": "Do not call again in this continuation. The first read-only list_sites attempt returned tool disabled; intended +5 account site connection and exact rolling quota remain UNKNOWN.",
+    "opera": "Do not call again in this continuation. The two existing tabs were preserved; a page256 target URL/title returned homepage accessibility content, proving stale connector state. Zero new/replacement tabs, no reload loop and no tab close/navigation interference.",
+    "github": "Reliable channel used for repository reconciliation, precedence and immutable planning evidence only."
+  },
+  "active_page264": {
+    "accepted_baseline": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid; fresh read remains mandatory before any future mutation",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v010.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json",
+    "accepted_live_layers": ["oldtrees visual v004", "oldtrees visual v005", "existing page264 Code Snippets ID33 semantic owner"],
+    "known_content_main_media_gap": "NONE",
+    "only_reproduced_page_local_visual_candidates": [
+      "v006 request-contact foreground: conditional fresh failure only",
+      "v007 desktop comparison equal-column cascade: conditional fresh failure only",
+      "combined v006+v007 bundle only if both reproduce in the same trustworthy gate"
+    ],
+    "proof_or_diagnostic_only": [
+      "Form33 service/topic native required saved setting and safe non-delivery behavior",
+      "inner Form33 field computed geometry/style",
+      "page-local href readback",
+      "review keyboard behavior",
+      "Tiszafa pointer/keyboard behavior",
+      "Nordmann timing/swipe/pause/reduced-motion behavior",
+      "hero measured geometry/computed-style owner",
+      "six-view deterministic visual matrix"
+    ],
+    "next_live_action": "When a stable live window exists: verify +5 identity/site/exact quota once and preserve >=10 D11 reserve -> compact page264 saved-data and Additional CSS marker/hash gate -> exactly one trustworthy reference/target tab pair -> reproduce v006/v007 -> at most one selected page264-scoped CSS write -> mandatory marker/project-end/page-hash readback. Any HTTP 429 write is UNKNOWN until exact readback; never blind retry."
+  },
+  "cross_project_preparation_current": {
+    "queue": "reports/parity-open-items-20260915-v014.json",
+    "canonical_page_matrix": "reports/canonical-pages-current-state-matrix-20260915-v002.json",
+    "final_preflight": "reports/final-acceptance-preflight-20260915-v003.json",
+    "do_not_reopen": "reports/stale-blockers-do-not-reopen-20260915-v002.json",
+    "asset_reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "formal_acceptance_recovery": "reports/formal-acceptance-artifact-recovery-20260915-v001.json"
+  },
+  "page256_future_only_after_explicit_scope_handoff": {
+    "continuation": "reports/subpages/bio-continuation-20260914-v024.json",
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v003.json",
+    "budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "delivery_gate": "Mandatory inert page-local style-carrier probe in existing af260016. Probe failure cancels CSS delivery and never authorizes shared/global Additional CSS fallback.",
+    "current_visual_design": "visual v007 through the page-local owner only after probe PASS",
+    "current_structure": "v014 fresh-search microfix chain",
+    "current_faq_cta": "accessibility-safe v006; eyebrow generated outside H2 accessible name",
+    "review_rule": "Use frozen source behavior as acceptance oracle while preserving native Atomic Tabs; no legacy source review-JS replacement."
+  },
+  "page272_future_only_after_explicit_scope_handoff": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v005.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v014.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v005.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v005.json",
+    "only_write_candidate": "Update existing ID36 only to build/hedge-semantic-runtime-v004.php after baseline/cardinality/native-ARIA/ID uniqueness gates; page272 CSS candidate remains NONE.",
+    "review_name_contract": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "rejected_stale_names": ["Otolecz Attila", "Rosivall László"],
+    "new_panel_preservation_gate": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json. Before any content/media correction capture exact all-three-panel quote/visible author-company-role/image identity/accessibility and tab-panel bijection from trustworthy rendered data. Do not fold panel-content reconstruction into attribute-only ID36 v004."
+  },
+  "global_future_only_after_global_scope_handoff": {
+    "header": "build/header-deployment-plan-v010.json through existing ID7 only; homepage Főoldal current/Services neutral and real service-child Services current-section across route matrix.",
+    "floating_dock": "Diagnostic-first global ID7/CSS owner; AX controls exist while visual pill is blank/clipped. Read current markup and winning cascade before any fix; do not recreate markup/runtime."
+  },
+  "asset_state": {
+    "ellwoodi": "Exact frozen WEBP remains unrecovered. Same-basename old public JPG is strong provenance only and is not accepted as byte/pixel equivalence without deterministic proof.",
+    "portrait": "Exact bytes unrecovered. Acceptance visibility evidence conflicts; obtain a fresh trustworthy reference DOM/screenshot before treating the portrait as a required implementation blocker. No substitute/invented image."
+  },
+  "formal_acceptance_state": {
+    "recovery_audit": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "repository_result": "README-referenced acceptance.json, behaviors.json, reports/index.json and Node runner files are not recoverable from exposed main/sync branches, tags or exact-path commit history inspected; do not reconstruct them by guess and call them the original frozen system.",
+    "remaining": [
+      "original specs/harness from an external backup/worktree/other unavailable source, or a separately authorized replacement acceptance contract",
+      "deterministic same-browser exact viewport/DPR/zoom/font/load-state six-view screenshots + overlays/diffs",
+      "stable generic interaction-capable browser for remaining keyboard/pointer/timing proofs"
+    ]
+  },
+  "safety_rules": [
+    "Fresh trustworthy live state outranks all repository plans.",
+    "Never replay solved work merely to refresh proof.",
+    "Prepared escaped snippets are never future old_content; structural edits start from fresh exact search bytes.",
+    "Tool unavailability or stale browser output is not evidence of a site defect and never licenses speculative CSS/JS.",
+    "Use at most one source and one target Opera tab; no replacement fan-out, reload loop or memory-heavy full-DOM churn.",
+    "Do not merge unrelated page/global packages merely to reduce call count."
+  ],
+  "known_wpvibe_budget": "UNKNOWN for +5; historical +3/+4 counters are invalid for planning",
+  "pixel_pass": false,
+  "status": "READ_ONLY_CONVERGENCE_MAXIMIZED_ACTIVE_PAGE264_LIVE_GATE_BLOCKED"
+}
