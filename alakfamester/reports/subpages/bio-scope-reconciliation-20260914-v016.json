@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "package": "bio-scope-reconciliation-20260914-v016",
+  "date": "2026-09-14",
+  "user_requested_work_context": "Continue the Biological Protection page256 parity work and do not damage already-correct work.",
+  "page256_target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "fresh_repository_state": {
+    "file": "STATE.md",
+    "heading": "PAGE264 ONLY; V004+V005 LIVE; V006+V007 READY/GATED; NEW WPVIBE ACCOUNT UNVERIFIED",
+    "wordpress_write_scope": "page264 only",
+    "meaning": "A parallel project flow currently owns the repository-authoritative remote write scope."
+  },
+  "reconciliation_decision": {
+    "page256_read_only_preparation": "ALLOWED_AND_CONTINUED",
+    "page256_git_build_and_evidence_files": "ALLOWED_AND_CONTINUED; they do not mutate WordPress",
+    "page256_wordpress_write": "BLOCKED_UNTIL_SCOPE_HANDOFF_RECONCILED",
+    "page264_wordpress_write_from_this_conversation": "NOT_AUTHORIZED_BY_CURRENT_USER_TASK",
+    "global_or_other_page_write": "NOT_AUTHORIZED"
+  },
+  "additional_current_blockers": [
+    "WPVibe is disabled in this chat before any new write",
+    "plus5 target connection and exact quota are unconfirmed",
+    "target page returned 504 twice in the existing target Opera tab"
+  ],
+  "safe_work_completed_under_block": [
+    "direct source expectations/FAQ-boundary screenshot proof using an existing Opera tab",
+    "exact source card/checklist/link/FAQ CSS extraction",
+    "new source-correct expectations v003 CSS build",
+    "new source-correct expectations guarded structure plan",
+    "page256 continuation and state-prepend evidence updates"
+  ],
+  "next_remote_gate": [
+    "A future session must first confirm the intended active WordPress write scope. If the user continues page256, STATE.md must be reconciled through the normal project handoff rather than silently overridden.",
+    "Then verify +5 WPVibe profile, site connection and exact quota.",
+    "Then fresh-read page256 baseline and current post8 markers before any write.",
+    "Do not replay a prepared package merely because it exists; fresh live state outranks it."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
