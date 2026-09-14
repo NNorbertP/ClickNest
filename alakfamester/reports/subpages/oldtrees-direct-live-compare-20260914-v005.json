@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-direct-live-compare-20260914-v005",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "wordpress_writes": 0,
+  "browser": {
+    "existing_opera_tabs_only": true,
+    "new_tabs_opened": 0,
+    "same_browser": true,
+    "screenshot_viewport_px": [1640, 920]
+  },
+  "direct_ax_parity": {
+    "review_tabs": {
+      "source": [
+        "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+        "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+        "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+      ],
+      "target_exact_match": true,
+      "source_review_buttons": ["Előző vélemény", "Következő vélemény"],
+      "target_review_buttons_exact_match": true,
+      "target_numbered_review_dots_exposed_in_ax": false,
+      "status": "PASS_FINAL_AX_PROOF"
+    },
+    "tiszafa_slider": {
+      "name": "Előtte–utána csúszka: 50+ éves tiszafa – matuzsálemből niwaki",
+      "source_value": "50",
+      "target_value": "50",
+      "status": "PASS_INITIAL_STATE"
+    },
+    "nordmann_carousel": {
+      "source_controls": ["Előző kép", "Következő kép", "Ugrás a(z) 1. képre", "Ugrás a(z) 2. képre", "Ugrás a(z) 3. képre", "Ugrás a(z) 4. képre", "Ugrás a(z) 5. képre", "Ugrás a(z) 6. képre"],
+      "target_exact_match": true,
+      "status": "PASS_STATIC_AX; timed/swipe/reduced-motion interaction still requires an interaction-capable browser"
+    },
+    "named_regions": "All reviewed page regions in the direct filtered AX capture matched source names and order."
+  },
+  "direct_visual_findings": {
+    "hero_top": {
+      "finding": "Target left hero copy starts visibly lower than source at the same viewport while the hero lower boundary is close; likely copy-column spacing/alignment rather than a simple whole-section height mismatch.",
+      "status": "OPEN_NEEDS_OWNER/CASCADE_PROOF"
+    },
+    "request_form": {
+      "important_reconciliation": "Several defects from oldtrees-visual-audit-v001 are no longer reproduced in the fresh screenshot: the request heading is centered, reply icon is compact, and the white panel visually joins the intro/form much more closely than the old audit described.",
+      "remaining_proven_delta": "Target contact-button label/value foreground is dark on the green buttons while source label/value are white.",
+      "deployment_consequence": "Do not deploy build/oldtrees-visual-parity-bundle-v004.css blindly. Fresh live Additional CSS marker/hash/cascade reconciliation is required and the bundle must be reduced/rebased to only still-failing rules."
+    },
+    "floating_contact": {
+      "source": "Visible phone icon, e-mail icon and green Felmérést kérek control inside white floating pill.",
+      "target": "White floating pill is visually almost empty/clipped, although target AX exposes all three expected links and exact accessible names.",
+      "diagnosis": "PROVEN_VISUAL_ONLY_DELTA; content/runtime exists, so investigate CSS/layout/cascade rather than recreating markup."
+    }
+  },
+  "preserve": [
+    "page264 saved Elementor baseline 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a unless fresh readback proves reconciled drift",
+    "ID33 page264 semantic helper",
+    "shared review runtime ID14",
+    "existing source-interactions-v001 owner for before/after and carousel behavior"
+  ],
+  "pixel_pass": false,
+  "next": "When WordPress access returns, first read current post8 hash/markers and page264 hash. Reconcile whether any oldtrees visual rules were already applied by a parallel flow. Reduce the prepared bundle to only still-reproducible deltas before any write."
+}
