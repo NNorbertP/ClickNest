@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "package": "hedge-semantic-runtime-static-qa-v006",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "source": "build/hedge-semantic-runtime-v004.php",
+  "source_commit": "b2233f8810083f5957da59279d85186dab6eac62",
+  "intended_live_snippet": 36,
+  "status": "STATIC_PASS_V004_IS_CURRENT_CANDIDATE_LIVE_GATES_REQUIRED",
+  "supersedes_for_deployment": [
+    "reports/subpages/hedge-semantic-runtime-static-qa-v005.json",
+    "build/hedge-semantic-runtime-v003.php"
+  ],
+  "safety_correction_from_v003": {
+    "removed_change": "#ajanlatkeres role=region aria-label=Küldjön fotót a sövényről",
+    "reason": "Historical page272 scope rules explicitly warned not to create partial/fake named regions for the MetForm composite section. Existing repository evidence does not prove #ajanlatkeres is the complete common root for the separate af2e004c form-intro/contact content plus the Form33 composite.",
+    "result": "The source outer form-region name remains open until fresh DOM proves one complete target root. v004 changes only complete protected components."
+  },
+  "preserved_from_v003": [
+    "is_page(272) server guard",
+    "wp_footer priority 120",
+    "exact protected review root .elementor-element-c3d30005",
+    "tablist aria-label Ügyfélvélemények",
+    "exact three source review tab labels",
+    "duplicate .af-review-source-dot tabindex=-1 + aria-hidden=true",
+    "Form33 root .mf-form-wrapper[data-form-id=33]",
+    "form aria-label Ajánlatkérés",
+    "wrapper-scoped #af-form-direct-call preferred, exact tel paragraph fallback",
+    "service wrapper role=group + existing label relationship",
+    "Település help relationship",
+    "DOMContentLoaded/immediate apply + one 900ms delayed reapply + child-addition-only observer",
+    "no CSS, visible text, DOM reorder, validation, submission, click or keyboard behavior change"
+  ],
+  "mandatory_preupdate_live_gate": [
+    "Verify +5 profile/site/exact quota; preserve D11 reserve plus full readback margin.",
+    "Fresh page272 _elementor_data must match accepted 53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 or drift must be reconciled.",
+    "Read current ID36 exact body/name/scope/active/code_error and preserve exact rollback body.",
+    "Exactly one .elementor-element-c3d30005, one tablist and exactly three role=tab elements.",
+    "Before index-based label assignment, the three current tab visible/company identities must be in source order: Panasonic Hűtő-Klíma Technikai Kft.; Otolecz Transzportbeton Kft.; ARKER'S Építésziroda Kft. If order/identity differs, stop.",
+    "Exactly one .mf-form-wrapper[data-form-id=33] and one form inside it.",
+    "Exactly one wrapper-owned #af-form-direct-call, or one exact wrapper-scoped tel:+36305394820 paragraph fallback.",
+    "Exactly one #af-form-service .mf-input-wrapper + .mf-input-label pair and one #af-form-city input[name=telepules] + .mf-input-help pair.",
+    "No pre-existing newer page272 semantic helper/marker. If v004 marker already exists, read back instead of replaying."
+  ],
+  "write_contract": [
+    "Update existing Code Snippets ID36 only through the proven plugin-aware path.",
+    "Keep ID36 scope front-end.",
+    "Never create a duplicate helper.",
+    "No Elementor/Form33/media/CSS/global-setting write.",
+    "HTTP 429/uncertain write outcome is UNKNOWN until exact ID36 readback; no blind retry."
+  ],
+  "mandatory_postupdate_readback": [
+    "ID36 exact stored body is v004; active=true; code_error=null; scope remains front-end.",
+    "Rendered af-hedge-semantic-parity-v004 marker exactly once when trustworthy rendered read is available.",
+    "Old v001/v003 semantic markers absent after confirmed replacement.",
+    "page272 Elementor bytes/SHA unchanged.",
+    "hero af2e004e, proof af2e004d, reviews c3d30005, gallery b2e2c001 and form af2e0011 preserved.",
+    "Fresh post-footer-JS AX verifies tablist + exact three tab names; duplicate dots absent from AX/tab order; Form33 name/description/service/city relations exact.",
+    "Do NOT expect or assert the outer Küldjön fotót a sövényről region until its complete target root is separately proven."
+  ],
+  "separate_open_items": [
+    "outer form region Küldjön fotót a sövényről complete-root proof",
+    "hero outer region complete-root proof",
+    "Sövénymunkák outer region complete-root proof",
+    "required service/topic native enforcement read/non-delivery proof; server fallback only if needed",
+    "Hedge lightbox source-specific proof",
+    "any visual CSS requires fresh synchronized reproduced delta"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
