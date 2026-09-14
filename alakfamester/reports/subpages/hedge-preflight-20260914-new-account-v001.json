@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "hedge-preflight-20260914-new-account-v001",
+  "date": "2026-09-14",
+  "scope": {
+    "write_target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+    "page_id": 272,
+    "reference_only": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+    "rule": "Only page272 may be a final WordPress content/behavior target; shared-media recovery is limited to undoing prior out-of-scope drift."
+  },
+  "wpvibe": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "plan": "Free",
+    "exact_counter_preflight": "5/300 used, 295 remaining",
+    "mandatory_D11_reserve": 10,
+    "site_connection_verified": true,
+    "site_level_status": "Host/site WPVibe requests returned HTTP 429 after the initial successful preflight even though account quota remained ample. No Retry-After was available."
+  },
+  "environment_verified": {
+    "wordpress": "7.1",
+    "php": "8.3.33",
+    "theme": "hello-elementor 3.5.1 active",
+    "elementor": "4.2.4 active",
+    "elementskit_lite": "4.0.4 active",
+    "essential_addons": "6.8.3 active",
+    "metform": "4.3.0 active",
+    "af_project": "0.2.0 active",
+    "wpvibe_plugin": "1.16.4 active",
+    "note": "No theme/plugin install, activation, update or configuration change was needed in this continuation."
+  },
+  "page272_preflight": {
+    "post_name": "soveny-specialista",
+    "status": "publish",
+    "elementor_bytes": 53097,
+    "elementor_sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+    "matches_recorded_safe_baseline": true
+  },
+  "wpvibe_attempts": {
+    "combined_union_read": "Rejected safely by WP-CLI emulator as multiple SQL statements; no write executed.",
+    "followup_media_reads": "Blocked by site-level HTTP 429.",
+    "wordpress_writes_executed_in_this_continuation": 0
+  },
+  "fresh_browser_accessibility_evidence": {
+    "reference": {
+      "hero_region_named": "Minőségi sövény formára vágás, metszés és megújítás",
+      "reviews_region_named": "Amit a megbízóim mondanak",
+      "review_tablist_name": "Ügyfélvélemények",
+      "review_tabs_have_numeric_prefix": false,
+      "extra_review_index_buttons": false,
+      "legacy_named_regions": [
+        "Egy sövény nem csak egyenes zöld fal lehet",
+        "A sövény ritkán egyik napról a másikra romlik le",
+        "Egyszerű nyírás vagy szerkezeti fenntartás?",
+        "Milyen munkákat vállalok?",
+        "Sövénymunkák",
+        "Van hasonló növénye?",
+        "Küldjön fotót a sövényről"
+      ],
+      "final_cta_mailto_name": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+      "form_phone_link_name": "HÍVJON NYUGODTAN +36 30 539 48 20",
+      "form_email_link_name": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu"
+    },
+    "target": {
+      "hero_region_named": false,
+      "reviews_region_named": "Amit a megbízóim mondanak",
+      "review_tablist_name": null,
+      "review_tabs_have_numeric_prefix": true,
+      "extra_review_index_buttons": ["1. vélemény", "2. vélemény", "3. vélemény"],
+      "legacy_content_regions_named": false,
+      "gallery_region_named": false,
+      "form_region_named": false,
+      "final_cta_current_mailto_name": "kreativ@alakfa-mester.hu",
+      "final_cta_label_outside_link": "Írjon bátran",
+      "form_phone_link_name": "Hívjon nyugodtan+36 30 539 48 20",
+      "form_email_link_name": "Írjon bátrankreativ@alakfa-mester.hu",
+      "reply_sentence_present": "Jellemzően 24 órán belül válaszolok.",
+      "gallery_accessible_names_currently_depend_on_shared_attachment_alt": true,
+      "gallery_examples_proving_shared_alt_dependency": [
+        "Rendezetlen oldalfelület a munka előtt",
+        "Létrás munkavégzés a sövényfalnál",
+        "Simára nyírt oldalfal",
+        "A sövény felső síkja",
+        "A sövényvég síkja"
+      ],
+      "blank_gallery_accessible_names_observed_where_shared_alt_is_blank": true
+    }
+  },
+  "confirmed_next_remote_sequence_after_429_clears": [
+    "Re-read only media 110 and 111 first; restore only if still different from the recorded pre-package map.",
+    "Verify all 26 shared attachment alt values equal the pre-package map, then make no further shared-media changes for Hedge.",
+    "On page272 only, patch EAEL widget b2e2c001 so all 28 eael_fg_gallery_img.id values are 0 while preserving URLs, names, order, repeater IDs, full resolution and all other settings.",
+    "Apply only exact match-once legacy semantic fixes for af2e000f, af2e004c and complete legacy named-region roots af2e0007/af2e0045/af2e0047/af2e0049/af2e000f.",
+    "Inspect live e-tabs schema before any review semantics write; do not guess Atomic attributes.",
+    "Read back page272 JSON/hash and verify fresh frontend preservation and source-equivalent accessible names."
+  ],
+  "blockers": [
+    "Site-level WPVibe HTTP 429 blocks the safe remote write/readback sequence despite ample account quota.",
+    "specs/acceptance.json and specs/behaviors.json are absent from current repository history.",
+    "Controlled six-viewport screenshot/overlay/diff tooling remains unavailable; PIXEL_PASS=false."
+  ],
+  "status": "PREFLIGHT_PASS_REMOTE_WRITE_BLOCKED_BY_SITE_429"
+}
