@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-visual-v006-v007-single-write-static-qa-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "bundle": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+  "status": "STATIC_PASS_NOT_DEPLOYED",
+  "purpose": "Reduce WPVibe calls and eliminate partial-state risk when both already-proven post-v005 cascade deltas still reproduce at the same fresh preflight.",
+  "sources": [
+    "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css"
+  ],
+  "evidence": [
+    "reports/subpages/oldtrees-direct-live-compare-20260914-v005.json",
+    "reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json",
+    "reports/subpages/oldtrees-visual-v007-comparison-grid-static-qa-20260914-v001.json"
+  ],
+  "scope_checks": {
+    "v006_root": "body.page-id-264 #ajanlatkeres .elementor-element-af2a0054",
+    "v007_root": "body.page-id-264 .elementor-element-af2a0045",
+    "all_effect_selectors_page264_scoped": true,
+    "other_page_selectors": false,
+    "header_footer_selectors": false,
+    "metform_processing_changes": false,
+    "dom_or_copy_changes": false,
+    "javascript_changes": false,
+    "markers": ["af-oldtrees-visual-v006", "af-oldtrees-visual-v007"]
+  },
+  "deployment_decision": {
+    "both_deltas_fail": "Use this one bundle in one guarded match-once insertion immediately before the unique af-project:end marker.",
+    "only_v006_fails": "Do not use bundle; insert standalone build/oldtrees-visual-v006-contact-text-cascade.css only.",
+    "only_v007_fails": "Do not use bundle; insert standalone build/oldtrees-visual-v007-comparison-grid-cascade.css only.",
+    "neither_fails": "No visual write."
+  },
+  "preflight_gate": [
+    "Verify WPVibe identity ncsnorbert+20260914-5@gmail.com, site connection and exact rolling quota; preserve 10-call D11 reserve.",
+    "Fresh page264 _elementor_data must be JSON-valid and baseline drift reconciled before writing.",
+    "Fresh post8 marker inventory must prove af-project:end=1, v004=1, v005=1, v006=0 and v007=0 for bundle deployment.",
+    "Fresh same-browser QA must still reproduce both specific failures; do not infer from old screenshots if current rendering already changed.",
+    "If any write returns HTTP 429, outcome is UNKNOWN; read marker/hash state before any retry."
+  ],
+  "postwrite_gate": [
+    "Read back exactly one v006 marker and one v007 marker and confirm page264 Elementor hash/JSON remain unchanged.",
+    "Same-browser request-form capture must show white label/value foreground with unchanged button geometry/background.",
+    "Same-browser comparison capture must show equal desktop columns/source-like wrapping while preserving v005 beige/sage surfaces, icons and bullets.",
+    "At <=900px comparison must remain one column.",
+    "Do not cache-purge unless fresh frontend render is demonstrably stale after the supported CSS save."
+  ],
+  "rollback": "Remove only the newly inserted v006 and/or v007 marked blocks by exact guarded match; never restore an old full Additional CSS snapshot.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
