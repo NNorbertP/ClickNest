@@ -1,0 +1,237 @@
+{
+  "version": "header-contract-v001",
+  "date": "2026-09-14",
+  "reference": {
+    "site": "https://alakfamester.clicknest.hu/",
+    "css": "https://alakfamester.clicknest.hu/styles.css",
+    "js": "https://alakfamester.clicknest.hu/script.js",
+    "evidence_mode": "direct live reference read in the same Opera source tab; values below are transcription of the header-specific source rules/behavior, not visual guesses"
+  },
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "scope": "global header only",
+  "layout": {
+    "header": {
+      "position": "sticky",
+      "top_px": 0,
+      "z_role": "header",
+      "height_px": 76,
+      "background": "rgba(245,243,237,0.9)",
+      "backdrop_blur_px": 14,
+      "border_bottom_default": "1px solid transparent"
+    },
+    "stuck": {
+      "condition": "window.scrollY > 8",
+      "background": "rgba(245,243,237,0.96)",
+      "border_bottom_color": "rgba(215,210,198,0.6)",
+      "box_shadow": "0 10px 30px rgba(23,61,45,0.06)"
+    },
+    "inner": {
+      "display": "flex",
+      "align_items": "center",
+      "justify_content": "space-between",
+      "gap_px": 16,
+      "min_height_px": 76,
+      "wide_container_max_px": 1340,
+      "horizontal_gutter_px": 24,
+      "children_width_model": "brand, navigation and actions are natural-width flex children; navigation is not absolutely centered"
+    }
+  },
+  "brand": {
+    "interaction": "whole brand block is one home link",
+    "display": "inline-flex",
+    "gap_px": 12,
+    "padding_px": "6 4",
+    "logo_plate": {
+      "desktop_px": "69x46",
+      "radius_px": 10,
+      "background": "#fff",
+      "border": "1px solid rgba(215,210,198,0.6)",
+      "shadow": "0 6px 16px rgba(23,61,45,0.14)",
+      "image_fit": "contain",
+      "hover_transform": "rotate(-3deg) scale(1.04)"
+    },
+    "text_gap_px": 4,
+    "name": {
+      "font": "Georgia, Iowan Old Style, Palatino Linotype, Book Antiqua, Times New Roman, serif",
+      "font_size_rem": 1.16,
+      "weight": 700,
+      "line_height": 1.1,
+      "letter_spacing_em": -0.01,
+      "color": "#173D2D"
+    },
+    "tagline": {
+      "font_size_rem": 0.68,
+      "weight": 600,
+      "letter_spacing_em": 0.16,
+      "text_transform": "uppercase",
+      "color": "#4A5750"
+    },
+    "accessible_name": "Alakfa mester BIRÓ JÁNOS"
+  },
+  "desktop_navigation": {
+    "landmark_name": "Főmenü",
+    "nav_display": "flex",
+    "nav_gap_px": 8,
+    "list_gap_px": 2,
+    "control": {
+      "min_height_px": 44,
+      "padding_px": "10 13",
+      "gap_px": 6,
+      "radius": "pill",
+      "font_size_rem": 0.92,
+      "weight": 600,
+      "default_color": "#173D2D",
+      "default_background": "transparent",
+      "hover_background": "rgba(47,93,70,0.10)"
+    },
+    "current_page": {
+      "background": "#DDE7DF",
+      "border_color": "rgba(47,93,70,0.2)",
+      "indicator": "6x6 bronze leaf dot"
+    },
+    "current_section_parent": {
+      "class_contract": "is-section",
+      "background": "#DDE7DF",
+      "border_color": "rgba(47,93,70,0.2)",
+      "bronze_dot": false
+    },
+    "caret": {
+      "count": 1,
+      "size_px": "12x12",
+      "stroke_width": 2.2,
+      "expanded_transform": "rotate(180deg)"
+    }
+  },
+  "dropdown": {
+    "offset_top_px": 8,
+    "min_width_px": 268,
+    "padding_px": 12,
+    "background": "#fff",
+    "border": "1px solid #D7D2C6",
+    "radius_px": "22 26 22 26",
+    "shadow": "0 28px 70px rgba(23,61,45,0.12)",
+    "link": {
+      "min_height_px": 44,
+      "padding_px": "10 12",
+      "radius_px": 12,
+      "font_size_rem": 0.92,
+      "weight": 600,
+      "leaf_bullet_px": "10x10",
+      "leaf_default": "#7D9B83",
+      "hover_background": "#DDE7DF",
+      "hover_shift_x_px": 3,
+      "hover_leaf": "#B59A61"
+    },
+    "current_child": {
+      "semantic": "aria-current=page on the exact child link",
+      "background": "#DDE7DF",
+      "leaf": "#B59A61"
+    }
+  },
+  "actions": {
+    "display": "flex",
+    "gap_px": 12,
+    "primary_cta": {
+      "text": "Felmérést kérek",
+      "min_height_px": 44,
+      "padding_px": "10 18",
+      "font_size_rem": 0.9,
+      "weight": 650,
+      "background": "#2F5D46",
+      "hover_background": "#234737"
+    }
+  },
+  "hamburger": {
+    "button_px": "48x48",
+    "border": "1px solid #B9B2A2",
+    "radius_px": "14 16 14 16",
+    "background": "#fff",
+    "bars_box_px": "22x15",
+    "bar_height_px": 2,
+    "bar_top_offsets_px": [0, 6.5, 13],
+    "open_first": "translateY(6.5px) rotate(45deg)",
+    "open_second": "opacity:0",
+    "open_third": "translateY(-6.5px) rotate(-45deg)"
+  },
+  "mobile_drawer": {
+    "position": "fixed below current header height",
+    "background": "#F5F3ED",
+    "padding_px": "24 0 96",
+    "top_level_link": {
+      "min_height_px": 58,
+      "padding_px": "14 4",
+      "font": "heading/Georgia stack",
+      "font_size_rem": 1.14,
+      "weight": 700
+    },
+    "submenu_link": {
+      "min_height_px": 48,
+      "font_size_rem": 1.0,
+      "weight": 600,
+      "leaf_bullet_px": "9x9"
+    },
+    "meta": {
+      "margin_top_px": 32,
+      "padding_top_px": 24,
+      "border_top": "2px solid #D7D2C6"
+    }
+  },
+  "breakpoints": {
+    "1560": "desktop header phone hidden in source; no target equivalent is required because target header has no phone item",
+    "1460": {
+      "nav_padding_px": "9 9",
+      "nav_font_size_rem": 0.84,
+      "nav_list_gap_px": 0
+    },
+    "1240": "desktop nav hidden and hamburger shown",
+    "900": {
+      "header_height_px": 68,
+      "header_cta_hidden": true,
+      "drawer_top_px": 68
+    },
+    "560": {
+      "tagline_hidden": true,
+      "logo_plate_px": "57x38",
+      "brand_name_rem": 1.04
+    }
+  },
+  "runtime": {
+    "sticky": {
+      "threshold_px": 8,
+      "scheduling": "passive scroll + at most one requestAnimationFrame"
+    },
+    "desktop_dropdown": {
+      "click": "toggle current; close other dropdowns",
+      "trigger_arrow_down": "open and focus first panel link",
+      "enter_space": "native button activation; no custom keydown branch",
+      "escape": "close and restore trigger focus",
+      "panel_arrow_down_up": "walk focused panel links; ArrowUp from first returns trigger; ArrowDown at last remains last",
+      "outside_click": "close"
+    },
+    "mobile": {
+      "open": "open/lock and focus first a/button after drawer becomes interactive",
+      "escape": "close and restore toggle focus",
+      "resize": "close when innerWidth >1240",
+      "submenu": "toggle aria-expanded and controlled panel"
+    }
+  },
+  "accessibility": {
+    "global_header": "banner/header landmark",
+    "main_navigation": "navigation named Főmenü",
+    "brand_link_name": "Alakfa mester BIRÓ JÁNOS",
+    "service_trigger_name": "Szolgáltatások",
+    "reference_trigger_name": "Referenciák",
+    "mobile_navigation_name": "Mobil navigáció"
+  },
+  "target_ownership": {
+    "visible_structure": "existing ElementsKit/Elementor header ID20; no rebuild",
+    "static_exceptions": "Hello Elementor Additional CSS, uniquely marked header blocks",
+    "runtime_exceptions": "existing header-specific Code Snippets ID7 through plugin-aware REST path",
+    "no_body_footer_form_ownership": true
+  },
+  "acceptance": {
+    "pixel_pass_requires": "same browser + viewport + DPR + zoom + load/scroll state, fresh source/target screenshots, overlay and diff",
+    "behavior_pass_requires": "desktop dropdown click/keyboard/current states + sticky + mobile focus/submenu/Escape/resize",
+    "current_pixel_pass": false
+  }
+}
