@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "package": "stale-blockers-do-not-reopen-20260914-v001",
+  "date": "2026-09-14",
+  "scope": "planning/verification only; zero WordPress writes; does not override STATE.md",
+  "purpose": "Prevent later continuations from reopening already-solved work because older reports still contain historical open items.",
+  "superseded_historical_open_items": [
+    {
+      "item": "page270 Rólam hero illustration A formanevelés három fázisa missing",
+      "older_source": "reports/subpages/about-content-v003.json",
+      "superseding_evidence": "reports/subpages/about-hero-v4-v001.json",
+      "current": "CLOSED: af-hero-art widget af2d004c saved through supported Elementor route, frontend widget/title/description and logged-out AX verified.",
+      "still_open": "Only exact separate portrait Biró János munka közben asset plus formal pixel/behavior acceptance."
+    },
+    {
+      "item": "page268 Reference Videos featured CTA DOM/focus order",
+      "older_source": "reports/sitewide-functional-finalization-v001.json",
+      "superseding_evidence": "reports/subpages/reference-videos-cta-order-fix-v001.json",
+      "current": "CLOSED: sibling order changed through guarded supported Elementor save; exact IDs preserved; frontend AX order PASS; seven video controls and CTA link preserved.",
+      "still_open": "Authenticated editor-reopen proof and deterministic visual/interaction acceptance only."
+    },
+    {
+      "item": "page260 GYIK hero missing/incomplete",
+      "superseding_evidence": "reports/subpages/faq-hero-v4-v002.json",
+      "current": "CLOSED: hero widget/classes/accessible SVG/native reviews/editor reopen verified.",
+      "still_open": "Formal frozen visual/behavior acceptance only."
+    },
+    {
+      "item": "page262 Gyümölcsfa hero missing/incomplete",
+      "superseding_evidence": "reports/subpages/fruit-hero-v4-v002.json",
+      "current": "CLOSED: hero widget/classes/accessible SVG/native reviews/editor reopen verified.",
+      "still_open": "Formal frozen visual/behavior acceptance only."
+    },
+    {
+      "item": "page266 Kapcsolat hero/class bridge/headings incomplete",
+      "superseding_evidence": "reports/subpages/contact-hero-v4-class-bridge-v001.json",
+      "current": "CLOSED: supported save, V4 typed class bridges, exact hero SVG semantics and required headings verified; editor reopened.",
+      "still_open": "Formal frozen visual/behavior acceptance only."
+    },
+    {
+      "item": "page264 Old Trees media/story structures incomplete",
+      "superseding_evidence": [
+        "reports/subpages/about-survivor-source-parity-v001.json",
+        "reports/subpages/about-oldtrees-media-finalization-v001.json",
+        "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json"
+      ],
+      "current": "CLOSED for structure/static media roles and saved content; current active page264 deltas are only those explicitly listed by STATE/acceptance ledger.",
+      "still_open": "Current page264 v006/v007 gated visual microfixes plus proof-only interaction/hero diagnostics."
+    },
+    {
+      "item": "page272 Hedge media/background gap",
+      "superseding_evidence": "reports/subpages/hedge-continuation-20260914-v010.json",
+      "current": "CLOSED: shared media 26/26, page-local gallery 28/28, hero/proof/media preservation and current sage background reconciled.",
+      "still_open": "Only page272 semantic runtime v003 live owner gate/update/readback and any future newly reproduced visual delta."
+    }
+  ],
+  "hard_blockers_not_stale": [
+    "page270 exact Biró János portrait bytes unavailable/404; do not substitute",
+    "page258 exact Ellwoodi alternate-view bytes unavailable/404; do not substitute",
+    "specs/acceptance.json absent",
+    "specs/behaviors.json absent",
+    "deterministic six-viewport overlay/diff unavailable",
+    "remaining interaction proofs need a stable interaction-capable browser"
+  ],
+  "precedence_rule": "Fresh live evidence and later specific closeout reports supersede older broad audits for the same item. STATE.md controls current write scope. Never repeat a solved write merely to refresh proof.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
