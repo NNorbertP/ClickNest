@@ -1,0 +1,17 @@
+/* af-bio-card-mobile-v001:start
+ * Source responsive contract: @media(max-width:720px) .card,.cta-band use
+ * var(--space-5)=24px padding. Prepared, not deployed.
+ */
+@media (max-width: 720px) {
+  body.page-id-256 .elementor-element-af260010 .af-sub-cards > article,
+  body.page-id-256 .elementor-element-af260007 .af-sub-card,
+  body.page-id-256 .elementor-element-af260013 .af-expect-card {
+    padding: 24px !important;
+  }
+
+  /* Only becomes operative when the prepared CTA grid layout is present. */
+  body.page-id-256 #af-sub-bio-cta {
+    --af-bio-band-pad: 24px !important;
+  }
+}
+/* af-bio-card-mobile-v001:end */
