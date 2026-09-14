@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "package": "bio-content-parity-manifest-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "purpose": "Protect already-correct visible copy while the remaining work changes wrappers, semantics and presentation.",
+  "wordpress_writes": 0,
+  "source_reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "protected_exact_content": {
+    "hero": [
+      "Egyéb szolgáltatás",
+      "Biológiai növényvédelem alakfákhoz, sövényekhez és értékes kerti növényekhez",
+      "A metszés beavatkozás: sebeket okoz és stresszt jelent. Ha egy növény sok évtized alatt nőtt fel, megéri támogatni a regenerációját ahelyett, hogy csak a tüneteket kezelnénk.",
+      "Hívjon nyugodtan",
+      "+36 30 539 48 20",
+      "Írjon bátran",
+      "kreativ@alakfa-mester.hu",
+      "Egészségi problémát látok – küldök fotót",
+      "Milyen technológiákkal dolgozom?",
+      "A regeneráció támogatása",
+      "Garantált gyógyulást nem ígérek",
+      "Fotó alapján is felmérem – díjmentesen"
+    ],
+    "reviews_head": [
+      "Ügyfélvélemények",
+      "Amit a megbízóim mondanak",
+      "Három cég, amelynek évek óta – az egyiknél két évtizede – én gondozom a kertjét."
+    ],
+    "review_1": {
+      "tab": "Panasonic Hűtő-Klíma Technikai Kft. / Kardos Attila · ügyvezető",
+      "title": "Professzionális környezet a professzionális hűtés mögött – 20 év töretlen bizalma",
+      "author": "Kardos Attila",
+      "role": "ügyvezető · Panasonic Hűtő-Klíma Technikai Kft.",
+      "status": "PROTECT"
+    },
+    "review_2": {
+      "tab": "Otolecz Transzportbeton Kft. / Otolecz Andrea · ügyvezető",
+      "title": "Elvadult törpefenyőből elegáns, japán stílusú forma – egy ipari telephely közepén",
+      "author": "Otolecz Andrea",
+      "role": "ügyvezető · Otolecz Transzportbeton Kft.",
+      "status": "PROTECT"
+    },
+    "review_3": {
+      "tab": "ARKER'S Építésziroda Kft. / Lőrincz Balázs · ügyvezető",
+      "title": "Több mint egy évtizede építi és fejleszti az irodaházaink kertjeit",
+      "author": "Lőrincz Balázs",
+      "source_role": "ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+      "target_last_verified_role": "ügyvezető · ARKER'S Építésziroda Kft.",
+      "status": "ONLY_KNOWN_VISIBLE_TEXT_DELTA_REQUIRES_FRESH_LIVE_CONFIRMATION_BEFORE_EDIT"
+    },
+    "stress": {
+      "eyebrow": "A kiindulópont",
+      "heading": "Miért nem ér véget a munka a metszéssel?",
+      "card_eyebrow": "A növény stressze",
+      "card_heading": "Mi történik a metszés után?",
+      "list": [
+        "A növény energiát fordít a sebek lezárására",
+        "A lombfelület csökkenése miatt átmenetileg kevesebb tartalék keletkezik",
+        "A friss sebek belépési pontot jelenthetnek kórokozóknak",
+        "A gyökérzet és a lombtömeg aránya átrendeződik"
+      ]
+    },
+    "technology": {
+      "eyebrow": "A megközelítés",
+      "heading": "Mit jelent nálam a biológiai, mikrobiológiai megközelítés?",
+      "cards": [
+        "Endofita és talajmikrobiológiai támogatás",
+        "Kitozán, algakivonatok, humusz",
+        "Mikorrhiza"
+      ],
+      "callout_heading": "Milyen esetekben használom?",
+      "callout_list": [
+        "Erős szerkezeti visszavágás után, idős vagy értékes növénynél",
+        "Ha a növény láthatóan legyengült, de a szerkezete megtartható",
+        "Ha a sövény vagy az alakfa ismétlődő egészségügyi problémát mutat",
+        "Ha a tulajdonos kifejezetten kerülné az erős vegyszereket"
+      ]
+    },
+    "table": {
+      "eyebrow": "Célzott problémák",
+      "heading": "Mire figyelek a leggyakrabban?",
+      "title": "Gyakori tünetcsoportok örökzöldeken és formára nyírt növényeken",
+      "headers": ["TÜNET", "MIT VIZSGÁLOK", "LEHETSÉGES IRÁNY"],
+      "row_headers": [
+        "Ágvégek barnulása, elhalása",
+        "Sövény alsó részének kiritkulása",
+        "Tűlevelek sárgulása, hullása",
+        "Kártevők jelenléte"
+      ]
+    },
+    "expectations": {
+      "heading": "Mit várhatunk – és mit nem?",
+      "positive": [
+        "A növény regenerációjának szakszerű támogatását",
+        "Arányos, a növény állapotához igazított beavatkozást",
+        "Őszinte visszajelzést, ha az állapot már nem javítható"
+      ],
+      "negative": [
+        "Garantált gyógyulást semmilyen kezelésre nem ígérek",
+        "Azonnali, látványos eredményt sem – a regeneráció szezonokban mérhető"
+      ],
+      "right_heading": "Hogyan kapcsolódik az alakfa ápolásához?",
+      "link": "Az alakfa ápolása"
+    },
+    "faq": {
+      "eyebrow": "Gyakori kérdések",
+      "heading": "Biológiai védelem – kérdések",
+      "questions": [
+        "Miért nem elég a hagyományos permetezés?",
+        "Veszélyes ez háziállatra, gyerekre?",
+        "Mennyi idő alatt látszik eredmény?",
+        "Csak alakfához kérhető?"
+      ],
+      "status": "QUESTION_AND_ANSWER_COPY_PROTECT; role/motion parity is a separate open item"
+    },
+    "final_cta": {
+      "eyebrow_underlying_source_string": "Következő lépés",
+      "heading": "Egészségi problémát lát az alakfán?",
+      "body": "Küldjön róla 3–5 fotót, és megírom, mit látok rajta és mivel kezdeném.",
+      "mail_label": "Írjon bátran",
+      "mail": "kreativ@alakfa-mester.hu",
+      "mail_accessible_name": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+      "form_link": "Tovább az űrlaphoz"
+    }
+  },
+  "structural_rule": "Wrapper/tag/class/ARIA/CSS parity work must never rewrite protected copy as a side effect. If a guarded snippet contains more visible text than the intended owner boundary, search again for a smaller exact boundary instead of round-tripping a whole widget.",
+  "future_final_text_gate": [
+    "After all structural work, compare source/target normalized visible text order within page main content.",
+    "The third review author role is the only currently known visible text candidate for change and must be fresh-live confirmed first.",
+    "No punctuation/case normalization may be applied globally; preserve the already-closed 13 list strings and uppercase table headers exactly."
+  ],
+  "pixel_pass": false
+}
