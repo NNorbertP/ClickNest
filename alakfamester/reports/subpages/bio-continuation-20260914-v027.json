@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "package": "bio-continuation-20260914-v027",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "AUTHORITATIVE_CURRENT_CHECKPOINT_REMOTE_BLOCKED",
+  "scope": "page256 only; reference read-only; shared/global WordPress resources read-only",
+  "wordpress_writes_this_continuation": 0,
+  "remote_blockers": [
+    "WPVibe disabled in current chat",
+    "last verified +5 identity exists but target-site connection/quota unknown",
+    "last confirmed fresh STATE.md ownership remains page264-only",
+    "shared Opera workspace must not be taken from parallel page264 QA",
+    "D11 minimum 10-call reserve remains mandatory"
+  ],
+  "historical_saved_page256_baseline": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "warning": "historical only; future fresh live state wins"
+  },
+  "current_authoritative_files": {
+    "continuation_detail": "reports/subpages/bio-continuation-20260914-v026.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260914-v004.json",
+    "semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "exactness_blockers": "reports/subpages/bio-exactness-blockers-20260914-v002.json",
+    "CSS_resource_scope": "reports/subpages/bio-css-delivery-scope-reconciliation-20260914-v001.json",
+    "artifact_map": "reports/subpages/bio-evidence-supersedence-20260914-v004.json",
+    "final_acceptance": "specs/bio-final-acceptance-20260914-v003.json",
+    "next_remote_runbook": "build/bio-next-remote-window-20260914-v004.json",
+    "remote_call_budget": "build/bio-remote-call-budget-20260914-v005.json",
+    "state_handoff_prepend": "build/state-prepend-20260914-v014.md"
+  },
+  "first_future_write_after_all_scope_site_quota_gates": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+  "first_future_visual_after_probe_PASS": "build/bio-page-local-visual-delivery-20260914-v002.json",
+  "current_safe_structure_queue": "build/bio-page256-next-safe-package-20260914-v015.json",
+  "current_review_plan": "build/bio-reviews-current-fix-plan-20260914-v003.json",
+  "current_stress_plans": [
+    "build/bio-stress-article-semantic-20260914-v001.json",
+    "build/bio-stress-source-visual-20260914-v003.json",
+    "build/bio-stress-current-dom-visual-v003.css"
+  ],
+  "current_expectations_status": "build/bio-expectations-source-structure-20260914-v004.json = source contract valid, deployment HOLD",
+  "known_exactness_blockers": [
+    "page-local style carrier unproven",
+    "Panasonic review 3-point source list semantics missing on target",
+    "stress saved/AX order p1->card/list->p2 vs source p1->p2->article/list",
+    "expectations two-article source ownership lacks a safe atomic regrouping primitive",
+    "FAQ exact button/keyboard/motion runtime unavailable under current constraints",
+    "review prev/next does not explicitly focus newly active panel",
+    "review decorative ordinal AX parity requires isolated verification",
+    "final responsive acceptance pending"
+  ],
+  "current_confirmed_text_delta": "b2560031 third author role is shorter on current public target than source",
+  "semantic_acceptance_note": "Use section-local AX gate v002. Whole-page aggregate role counts are heuristic only and must not be used as final proof.",
+  "hard_rules": [
+    "no full Elementor save",
+    "no raw SQL/search-replace builder mutation",
+    "no Hello Additional CSS/global ID35/plugin/theme mutation under current scope",
+    "no blind 429 retry",
+    "no new/stolen Opera tabs",
+    "fresh live state outranks prepared artifacts",
+    "unsupported exactness blockers get zero speculative mutation budget"
+  ],
+  "pixel_pass": false
+}
