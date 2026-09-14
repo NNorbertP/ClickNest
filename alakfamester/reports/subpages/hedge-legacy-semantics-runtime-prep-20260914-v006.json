@@ -1,12 +1,12 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "project": "alakfamester",
   "package": "hedge-legacy-semantics-runtime-prep-20260914-v006",
   "date": "2026-09-14",
   "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
   "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
   "write_scope": "page272 only",
-  "status": "LEGACY_SEMANTICS_SAVED_REVIEW_RUNTIME_PREPARED_HOST_429",
+  "status": "LEGACY_SEMANTICS_SAVED_RUNTIME_STATIC_PASS_HOST_429",
   "page272_last_verified": {
     "elementor_bytes": 53606,
     "elementor_sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
@@ -27,36 +27,12 @@
     "reply_sentence": "Jellemzően 24 órán belül válaszolok."
   },
   "legacy_semantics_saved": [
-    {
-      "element_id": "af2e0007",
-      "region": "Egy sövény nem csak egyenes zöld fal lehet"
-    },
-    {
-      "element_id": "af2e0045",
-      "region": "A sövény ritkán egyik napról a másikra romlik le"
-    },
-    {
-      "element_id": "af2e0047",
-      "region": "Egyszerű nyírás vagy szerkezeti fenntartás?"
-    },
-    {
-      "element_id": "af2e0049",
-      "region": "Milyen munkákat vállalok?"
-    },
-    {
-      "element_id": "af2e000f",
-      "region": "Van hasonló növénye?",
-      "mailto_accessible_name": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
-      "complete_mailto_range": true,
-      "ajanlatkeres_preserved": true
-    },
-    {
-      "element_id": "af2e004c",
-      "phone_accessible_name": "HÍVJON NYUGODTAN +36 30 539 48 20",
-      "email_accessible_name": "ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
-      "hrefs_unchanged": true,
-      "reply_sentence_preserved": true
-    }
+    "af2e0007 region: Egy sövény nem csak egyenes zöld fal lehet",
+    "af2e0045 region: A sövény ritkán egyik napról a másikra romlik le",
+    "af2e0047 region: Egyszerű nyírás vagy szerkezeti fenntartás?",
+    "af2e0049 region: Milyen munkákat vállalok?",
+    "af2e000f region: Van hasonló növénye? + full mailto range + exact accessible name + #ajanlatkeres preserved",
+    "af2e004c exact source phone/e-mail accessible names + 24-hour reply preserved"
   ],
   "review_schema": {
     "elementor_version": "4.2.4",
@@ -65,48 +41,52 @@
     "atomic": true,
     "props": ["classes", "default-active-tab", "attributes", "_cssid", "display-conditions"],
     "attributes_kind": "array",
-    "conclusion": "The live schema proves an attributes control exists but does not prove the exact item wire shape or frontend emission. Prior page256 evidence showed guessed Atomic aria attributes can store without rendering, so no saved-data attribute guess was made."
+    "conclusion": "The live schema proves an attributes control exists but not its item wire shape/frontend emission; no guessed Atomic attribute was saved."
   },
-  "review_runtime_prepared": {
+  "runtime_prepared": {
     "file": "build/hedge-review-semantic-runtime-20260914-v001.php",
-    "commit": "d1fd7e134e22be6e2ec3042bb14f348af0cf7f25",
+    "latest_commit": "2bbe5ee797ee2df712ebcf8d4a97082c38acee39",
+    "static_qa": "reports/subpages/hedge-review-semantic-runtime-static-qa-v001.json",
+    "static_qa_commit": "e576addcdaa5248c598681d051e9a31690b48c40",
     "scope_guard": "is_page(272)",
-    "root_selector": ".elementor-element-c3d30005",
-    "changes_only": [
-      "tablist aria-label = Ügyfélvélemények",
-      "three tab aria-label values = exact source accessible names"
+    "visual_neutral": true,
+    "prepared_changes": [
+      "review tablist aria-label = Ügyfélvélemények",
+      "three review tab aria-label values = exact source names",
+      "#ajanlatkeres region aria-label = Küldjön fotót a sövényről",
+      "MetForm33 form aria-label = Ajánlatkérés",
+      "form aria-describedby -> existing direct-call paragraph",
+      "service radio wrapper role=group + aria-labelledby existing label",
+      "Település input aria-describedby -> existing help text"
     ],
-    "does_not_change": [
-      "visible text",
-      "CSS",
+    "explicitly_not_changed": [
+      "visible copy or CSS",
       "DOM order",
-      "click behavior",
-      "Arrow/Home/End behavior",
+      "form validation/submission",
+      "review click/Arrow/Home/End logic",
       "extra 1./2./3. vélemény controls"
     ],
     "deployment": "NOT_DEPLOYED"
   },
-  "remaining_review_deltas": [
-    "Target native tablist is unnamed until runtime/supported saved attribute solution is verified.",
-    "Target native tab accessible names include visible 01/02/03 prefixes until an exact accessible-name override is deployed and verified.",
-    "Target exposes extra focusable 1. vélemény / 2. vélemény / 3. vélemény controls; ownership and behavior must be proven before removal/hiding."
+  "remaining_open": [
+    "Deploy and verify the page272-only semantic runtime through Code Snippets own REST path after host throttle clears.",
+    "Prove ownership/behavior of the three extra review-index controls before considering removal/hiding.",
+    "Hero and gallery outer region semantics require complete-container proof.",
+    "Fresh source-target AX verification is pending because Opera tabs are currently being used by another QA flow; no extra tabs were opened.",
+    "Formal deterministic six-viewport pixel/overlay/diff acceptance remains unavailable; PIXEL_PASS=false."
   ],
   "quota": {
-    "last_exact_counter": "239/300 used, 61 remaining",
+    "last_exact_counter": "241/300 used, 59 remaining",
     "mandatory_D11_reserve": 10,
-    "note": "One later read hit HTTP 429 after built-in retries, so the exact current counter is higher than 239 and was intentionally not re-polled while throttled."
+    "usable_above_reserve": 49,
+    "note": "Repeated host 429 probes did not change the latest exact provider counter; stop site calls while throttled."
   },
-  "blockers": [
-    "Host-level HTTP 429 currently blocks further WPVibe read/write verification.",
-    "Opera connector disconnected during the source-target AX query; no extra tabs were opened and browser usage was kept to the existing source/target pair.",
-    "Deterministic six-viewport screenshot/overlay/diff tooling and repository acceptance/behavior JSON remain unavailable; PIXEL_PASS=false."
-  ],
   "next_safe_action": [
-    "After host throttling clears, re-read page272 hash and require ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 unless new drift is reconciled.",
-    "Fresh-load source and target with at most two Opera tabs and verify the five named legacy regions, CTA/contact accessible names, 28 gallery names and protected components.",
-    "Inspect current review DOM/implementation ownership for the extra review-index controls.",
-    "Deploy the page272-only review semantic runtime helper only through a supported plugin-aware path and verify frontend + editor lifecycle before considering any control removal.",
-    "Record readback and update STATE.md without overwriting concurrent page264/bio work."
+    "After host throttling clears, re-read page272 hash and require ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 unless drift is reconciled.",
+    "Discover Code Snippets abilities; if none match, follow the proven page264 plugin-aware REST namespace path and inspect live snippet inventory for conflicts.",
+    "Deploy one page272-only runtime snippet, read back active/error state, then prove Elementor hash unchanged.",
+    "Fresh frontend/editor AX QA for review tablist/tabs, form name/description/group/help and #ajanlatkeres region.",
+    "Only then investigate the extra review-index controls and complete outer hero/gallery region semantics."
   ],
   "pixel_pass": false
 }
