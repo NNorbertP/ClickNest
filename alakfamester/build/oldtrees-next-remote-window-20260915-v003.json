@@ -1,0 +1,151 @@
+{
+  "schema_version": 3,
+  "package": "oldtrees-next-remote-window-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "supersedes_for_planning": "build/oldtrees-next-remote-window-20260914-v002.json",
+  "authoritative_acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+  "objective": "Close only freshly reproduced page264 failures with the fewest safe remote operations, preserving every accepted content/semantic/runtime/visual contract.",
+  "hard_scope": [
+    "Only page264 may change.",
+    "Any Additional CSS effect selector must begin with body.page-id-264 and be further rooted to the proven page264 owner where possible.",
+    "No other page, global header/footer/dock runtime, shared media, shared plugin setting, shared Form33 template mutation, SMTP, notification, webhook or real submission is authorized."
+  ],
+  "phase_0_tools_and_budget": {
+    "actions": [
+      "Verify WPVibe identity ncsnorbert+20260914-5@gmail.com, target site connection and exact rolling quota once.",
+      "Reserve at least 10 calls after the complete selected write/readback package per D11.",
+      "Use at most one reference and one target Opera tab. Reuse them; do not open replacements after disconnect/stale-state evidence."
+    ],
+    "stop": "If WPVibe is disabled/unconfirmed or exact capacity cannot cover mandatory closeout plus the 10-call reserve, do no WordPress write. If Opera is stale/disconnected, do no screenshot-driven write."
+  },
+  "phase_1_compact_server_preflight": {
+    "facts": [
+      "page264 _elementor_data length/SHA256/JSON validity; reconcile against accepted 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / valid without forcing stale state onto newer truth",
+      "Hello Additional CSS compact marker/hash inventory: af-project:end=1, af-oldtrees-visual-v004=1, af-oldtrees-visual-v005=1, v006 count, v007 count, combined marker count",
+      "ID33 current active/scope/code_error/hash only if semantic/form validation work will be considered in the same safe window"
+    ],
+    "economy": "Prefer one supported compact read that returns multiple scalar facts. Do not round-trip the full 600KB+ Additional CSS field unless the supported write path explicitly requires a fresh full field and no safe match-once edit exists.",
+    "stop_conditions": [
+      "page264 drift not understood",
+      "af-project:end missing/duplicated",
+      "v004/v005 marker missing/duplicated",
+      "selected new marker already present without reconciled readback"
+    ]
+  },
+  "phase_2_trustworthy_two_delta_visual_gate": {
+    "browser_policy": "Exactly one reference + one target tab. Verify each tab URL/title/page content before trusting screenshots. Stop on disconnect or repurposing; never create replacement fan-out.",
+    "v006": {
+      "anchor": "#ajanlatkeres",
+      "failure": "Target green contact label/value foreground remains dark while reference is white.",
+      "fix": "build/oldtrees-visual-v006-contact-text-cascade.css"
+    },
+    "v007": {
+      "anchor": "Kivágás vagy átalakítás?",
+      "failure": "Desktop target comparison columns remain unequal while reference columns are equal, causing extra positive-card wrapping.",
+      "fix": "build/oldtrees-visual-v007-comparison-grid-cascade.css"
+    },
+    "decision": {
+      "both_fail": "Use build/oldtrees-visual-v006-v007-single-write-bundle.css once.",
+      "only_v006": "Use v006 standalone once.",
+      "only_v007": "Use v007 standalone once.",
+      "neither": "No CSS write."
+    }
+  },
+  "phase_3_at_most_one_visual_write": {
+    "method": "One guarded match-once insertion immediately before the unique af-project:end marker using the currently supported safe content-edit path.",
+    "rules": [
+      "Selected marker(s) must be absent immediately before insertion.",
+      "Never replay v001-v005 or rewrite existing oldtrees blocks.",
+      "Do not modify page264 Elementor data to solve v006/v007.",
+      "Any HTTP 429 write response is UNKNOWN; do not retry until exact marker/hash readback determines outcome."
+    ]
+  },
+  "phase_4_mandatory_visual_closeout": {
+    "actions": [
+      "Read selected marker(s) once and af-project:end once.",
+      "Re-read page264 hash/JSON; require unchanged accepted content baseline unless an independently authorized content package was intentionally run (none is planned here).",
+      "Fresh targeted source/target capture of only changed section(s) plus adjacent preserved geometry.",
+      "v006 pass requires white label/value foreground while button shape/size/green background/joined form panel remain unchanged.",
+      "v007 pass requires equal desktop columns/source-like wrapping while v005 beige/sage surfaces, equal height, warning/growth icons and X/check markers remain unchanged."
+    ],
+    "rollback": "If a selected microfix measurably regresses an accepted property, remove only its exact marked block via guarded edit; never restore a stale full Additional CSS snapshot."
+  },
+  "phase_5_form_required_native_first": {
+    "plan": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "prerequisite": "Only after visual closeout and only if enough safe quota remains.",
+    "read": [
+      "exact current service radio widget ID/type",
+      "exact mf_input_name",
+      "mf_input_required",
+      "six current values/order",
+      "native validation/error text",
+      "ID5 exact current hook/priority/route guard/body/state",
+      "ID33 exact current body/state/hash"
+    ],
+    "decision": {
+      "native_required_and_enforced": "PASS no write.",
+      "native_required_false_or_not_enforced": "Document exact current owner and only then consider a page264-only fallback. Prefer extending existing ID33 rather than creating a second page264 validator, and never mutate shared Form33 from this scope."
+    },
+    "test": "Use a non-delivery direct validation callback/native behavior proof. No real MetForm submission, entry creation, upload, SMTP, e-mail or webhook."
+  },
+  "phase_6_inner_form_visual_diagnostic": {
+    "plan": "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json",
+    "rule": "No inner-field CSS unless a synchronized source/target computed-style/geometry measurement proves a difference.",
+    "known_source_values": "Text-like controls min-height 52px, padding 13px 16px, #F5F3ED background, 1.5px #B9B2A2 border, ~14-16px radius; textarea min-height 132px/rows5; desktop radio option grid two columns.",
+    "shared_form_guard": "Do not mutate Form33 globally to solve a page264-only visual difference."
+  },
+  "phase_7_route_readback": {
+    "ledger": "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json",
+    "checks": [
+      "two page request CTAs -> #ajanlatkeres and no stale /fooldal/#ajanlatkeres",
+      "trip-fee -> /kapcsolat/#kiszallas",
+      "biological-support card -> canonical WordPress biological-protection route",
+      "tel:+36305394820 and mailto:kreativ@alakfa-mester.hu without activating external handlers",
+      "accessible phone/mail names remain source-equivalent"
+    ]
+  },
+  "phase_8_interactions": {
+    "plan": "build/oldtrees-interaction-acceptance-20260914-v001.json",
+    "rule": "Proof only by default. Read current runtime owner before any JS change if a real failure appears; missing interaction tooling is not a failure.",
+    "checks": [
+      "reviews ArrowRight/Down/Left/Up/Home/End and previous/next synchronization",
+      "tiszafa native range pointer/keyboard keeps value and --ba-pos synchronized",
+      "Nordmann ~4000ms autoplay, ArrowLeft/Right, >40px horizontal swipe, hover/focus pause-resume, reduced-motion stop/re-evaluation"
+    ]
+  },
+  "phase_9_hero": {
+    "plan": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "rule": "Diagnostic only until exact page264 owner/cascade is proven. No arbitrary -40px margin/transform or blanket hero padding patch."
+  },
+  "phase_10_section_and_responsive_visual_acceptance": {
+    "section_matrix": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "responsive_matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json",
+    "views": ["1920x1080", "1440x1000", "1024x900", "768x1024", "390x844", "360x800"],
+    "contract": "Same browser engine/DPR/zoom/fonts/images/load/scroll/motion state. Capture source, target, overlay/diff and key geometry. Synchronize or exclude moving regions. Lack of deterministic proof alone must not create a new CSS layer."
+  },
+  "global_exclusions": {
+    "floating_dock": "Known target visual defect belongs to global ID7/header-dock ownership. Do not modify it globally from page264. Consider a page264 override only after exact winning-cascade proof shows it can be corrected strictly under body.page-id-264 without changing the global owner."
+  },
+  "call_economy": {
+    "core_goal": "Connection/quota + compact preflight + at most one visual write + mandatory readback before optional proof work.",
+    "reserve": 10,
+    "do_not_spend_for": [
+      "rechecking already-passed copy/semantics merely to duplicate evidence",
+      "full Additional CSS fetch when a compact marker/hash read suffices",
+      "cache purge without demonstrated stale render",
+      "repeated Opera reconnect/replacement tabs",
+      "speculative JS/CSS when no stable failure exists"
+    ]
+  },
+  "stop_conditions": [
+    "WPVibe disabled/unverified or unsafe quota -> no WordPress write.",
+    "Opera stale/disconnected/repurposed -> stop visual/interaction claims, no replacement tabs.",
+    "Fresh live truth contradicts repo baseline -> reconcile first, never force stale state.",
+    "Two attempted fixes without measurable improvement -> stop iteration and diagnose ownership/cascade.",
+    "No deterministic visual harness -> PIXEL_PASS remains false."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "READY_FOR_MINIMAL_FRESH_LIVE_GATE"
+}
