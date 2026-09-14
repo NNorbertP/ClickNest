@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "purpose": "Deduplicated current open-item manifest. Older audit findings are excluded where a later verified package closed them.",
+  "last_exact_quota_from_latest_evidence": {
+    "used": 280,
+    "limit": 300,
+    "remaining": 20,
+    "mandatory_reserve": 10,
+    "usable_above_reserve": 10,
+    "source": "reports/subpages/hedge-parity-continuation-20260914-v002.json and reports/header/header-live-source-audit-20260914-v003.json",
+    "remote_decision": "No new WPVibe package may start while HTTP 429 persists or while the complete write/readback/verification package cannot fit above reserve."
+  },
+  "remote_priority_queue": [
+    {
+      "priority": 1,
+      "resource": "page272 /soveny-specialista/",
+      "evidence": [
+        "reports/subpages/hedge-parity-continuation-20260914-v002.json",
+        "build/hedge-parity-next-20260914-v002.json"
+      ],
+      "verified_saved_state": {
+        "elementor_bytes": 53097,
+        "elementor_sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+        "resolution_full": true,
+        "reply_sentence_saved_and_rendered_before_disconnect": true
+      },
+      "open": [
+        "Finish shared-media scope recovery: read attachment 110/111; if still drifted restore only 110='Saját sövénymunka, 15. kép' and 111='Saját sövénymunka, 16. kép', then prove all 26 shared attachment alts equal the pre-package map.",
+        "Page-only EAEL fix: preserve all 28 URL/name/order/repeater IDs/settings and set eael_fg_gallery_img.id=0 for all 28 items so source-specific names come from repeater titles rather than shared media metadata.",
+        "Legacy CTA af2e000f: restore entire 'ÍRJON BÁTRAN + kreativ@alakfa-mester.hu' clickable mailto range while preserving #ajanlatkeres.",
+        "Legacy form-intro af2e004c: exact accessible names for phone/email links without visual/href change.",
+        "Safe complete legacy named regions: af2e0007, af2e0045, af2e0047, af2e0049, af2e000f.",
+        "Review semantics remain open: inspect live e-tabs schema before any change; do not guess Atomic aria attributes."
+      ],
+      "do_not": [
+        "Do not make further shared-media changes for Hedge after scope recovery.",
+        "Do not restore old page272 revision wholesale.",
+        "Do not reintroduce af2e0009-af2e000e.",
+        "Do not repeat already-successful resolution/reply patches."
+      ]
+    },
+    {
+      "priority": 2,
+      "resource": "page256 /biologiai-vedelem/",
+      "evidence": "reports/subpages/bio-parity-fix-20260914-v003.json",
+      "verified_sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+      "already_fixed": "Final CTA label+email now share one mailto anchor.",
+      "open": [
+        "Remove source-absent trailing periods from 13 verified legacy list items in af260007, af260010, af260013 after exact raw search/count.",
+        "af260011 symptom table: uppercase stored headers TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY and first-column body cells as row headers.",
+        "Add source-equivalent named-region semantics only where a complete section is wholly contained in a legacy text-editor.",
+        "Final CTA accessible-name order/case semantic-only follow-up.",
+        "Atomic hero/FAQ/tablist semantics remain unresolved; prior typed V4 attributes pilot stored but did not render, so do not retry guessed attributes."
+      ],
+      "save_rule": "No full Elementor save while D18-sensitive legacy _css_classes remain; exact content/search + match-once content/edit only."
+    },
+    {
+      "priority": 3,
+      "resource": "page264 /idos-fak-megmentese-szolgaltatas/",
+      "evidence": [
+        "reports/subpages/oldtrees-semantic-audit-20260914-v001.json",
+        "build/oldtrees-semantic-parity-20260914-v001.json"
+      ],
+      "verified_baseline_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+      "open": [
+        "Eight complete legacy .af-sub-inner sections get exact role=region + aria-label: af2a0007, af2a0045, af2a0047, af2a0049, af2a004a, af2a004b, af2a004f, af2a0050.",
+        "Nine existing strong labels get role=heading aria-level=3, preserving tag/class/geometry.",
+        "af2a004b existing mailto anchor gets exact aria-label 'ÍRJON BÁTRAN kreativ@alakfa-mester.hu'."
+      ],
+      "preserve": [
+        "af2a004d stays unnamed",
+        "no shared MetForm/global writes",
+        "source-visible 24-hour sentence remains visible",
+        "source-absent 'Az első alkalom' remains absent"
+      ]
+    },
+    {
+      "priority": 4,
+      "resource": "global header20 + Hello Additional CSS post8 + Code Snippets ID7",
+      "evidence": [
+        "reports/header/header-live-source-audit-20260914-v003.json",
+        "build/header-live-source-v001.css",
+        "build/header-runtime-threshold-v001.json"
+      ],
+      "last_clean_baseline": {
+        "post8_bytes": 576084,
+        "post8_sha256": "7ac99daf3e30139ce30d57963506de3730db97fd62f03fc729cc3308ab5407f1",
+        "header20_bytes": 7729,
+        "header20_sha256": "db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d"
+      },
+      "open": [
+        "After fresh combined hash/marker preflight, insert complete header-live-source-v001 CSS before unique af-project:end and verify header-only frontend.",
+        "After CSS PASS, use verified Code Snippets plugin REST item route to change only sticky threshold 24px -> 8px in active snippet ID7; GET/verify active and no code_error afterward.",
+        "Verify desktop/narrow header, dropdown keyboard, mobile drawer/body lock and sticky state."
+      ]
+    }
+  ],
+  "source_asset_blockers": [
+    {
+      "resource": "page270 Rólam",
+      "missing": "Biró János munka közben portrait/work image",
+      "source_url": "https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp",
+      "status": "404 / source bytes unavailable; do not invent substitute",
+      "closed_elsewhere": ["Hero illustration A formanevelés három fázisa", "timeline heading semantics", "Miért lettem kertész? content"]
+    },
+    {
+      "resource": "page258 Galéria",
+      "missing": "A többgömbös Ellwoodi niwaki, másik nézet",
+      "source_url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+      "status": "404 / source bytes unavailable; do not invent substitute",
+      "closed_elsewhere": ["Hero Formakatalógus illustration", "60 target main images", "EAEL 44-item masonry", "native reviews"]
+    }
+  ],
+  "pages_with_content_structural_parity_closed_except_formal_acceptance": [
+    "page56 Homepage content/navigation/footer packages",
+    "page260 FAQ: 17 questions, Témakörök h2, hero illustration, native reviews",
+    "page262 Fruit Trees: corrected FAQ wording, Mikor történik a metszés? h3, hero illustration, native reviews",
+    "page266 Contact: Elérhetőségek h2, four process h3s, hero illustration, form structure",
+    "page268 Reference Videos: seven videos and featured CTA structural order fixed; editor reopen proof remains separately open"
+  ],
+  "behavior_acceptance_open": {
+    "gallery258": [
+      "controlled source-target desktop/mobile screenshot comparison",
+      "before/after drag and keyboard runtime proof",
+      "manual carousel arrow/dot/swipe proof",
+      "masonry lightbox open/next/close/focus-lock proof",
+      "computed layout/page-height measurement",
+      "console/network error capture and second browser engine"
+    ],
+    "global": [
+      "deterministic 1920x1080, 1440x1000, 1024x900, 768x1024, 390x844, 360x800 screenshot pair + overlay + diff",
+      "animations at documented start/intermediate/end states and reduced-motion",
+      "critical editor reopen/editability where still not proven"
+    ]
+  },
+  "acceptance_infrastructure_blockers": [
+    "specs/acceptance.json absent from current main and not found in searched commit history",
+    "specs/behaviors.json absent from current main and not found in searched commit history",
+    "Opera Browser Connector currently disconnected; do not open multiple tabs when it returns",
+    "container runtime cannot resolve Clicknest hosts, so local Playwright/network path cannot replace Opera in this session"
+  ],
+  "deferred_by_user_mode": [
+    "SMTP configuration",
+    "real external form submission / delivery verification"
+  ],
+  "pixel_pass": false
+}
