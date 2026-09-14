@@ -1,0 +1,50 @@
+{
+  "package": "hedge-parity-fix-20260914-v001",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "source": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "status": "DATA_PASS_FRONTEND_CACHE_BLOCKED",
+  "wordpress_writes": {
+    "elementor_data": [
+      "eael_fg_image_resolution_size: medium -> full (match-once)",
+      "inserted exact sentence before form-lead-note: Jellemzően 24 órán belül válaszolok."
+    ],
+    "media_alt": {
+      "expected_items": 28,
+      "already_correct_before_write": [137, 138],
+      "fleet_job": "fj_75bc98a970c64ce7",
+      "fleet_status_url": "https://mcp.wpvibe.ai/fleet/fj_75bc98a970c64ce7?t=1789579296169.0DEwnjuRjQFG3uihUtdpo24nTHjDHQfSu3Y7CkpgXo4",
+      "fleet_result": "17 succeeded, 5 failed with HTTP 429, 4 skipped; all nine remaining IDs were then updated individually",
+      "final_readback": "all 28 attachment alt_text values exactly match the prepared source map"
+    },
+    "normal_post_touch": "post update 272 --post_status=publish succeeded",
+    "cache_purge": "Elementor CSS cache purged and object cache flushed; stale Elementor element cache remained"
+  },
+  "final_elementor_data": {
+    "bytes": 53097,
+    "sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+    "json_valid": true,
+    "resolution_full_match_count": 1,
+    "reply_sentence_match_count": 1,
+    "preserved_ids": {
+      "hero_af2e004e": true,
+      "proof_af2e004d": true,
+      "tabs_c3d30005": true,
+      "metform_af2e0011": true
+    },
+    "removed_legacy_widgets_still_absent": true
+  },
+  "frontend": {
+    "fresh_get_page_html_form_reply": "NOT_RENDERED_STALE_CACHE",
+    "post_modified_after_touch": "2026-09-14T17:25:24+00:00",
+    "targeted_element_cache_delete_op": "op_fcdc663c565b4da0",
+    "approval_url": "https://mcp.wpvibe.ai/approve/op_fcdc663c565b4da0?t=8n8gUGVqlVe0oGJPAyrhQfujcMU7YStY4w_DqgIJSic",
+    "approval_status_at_report": "pending"
+  },
+  "notes": [
+    "Do not repeat the successful Elementor-data patches or media-alt updates.",
+    "Do not restore old revision 378 wholesale; preserve all documented 2026-09-14 manual drift.",
+    "Next action is only the targeted Elementor element-cache invalidation after approval, then fresh frontend readback of reply sentence, full-size gallery URLs and all 28 accessible names.",
+    "PIXEL_PASS remains false; deterministic six-viewport screenshot/overlay/diff tooling and machine acceptance files are still unavailable."
+  ]
+}
