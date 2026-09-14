@@ -1,0 +1,51 @@
+{
+  "schema_version": 3,
+  "package": "oldtrees-visual-predeploy-static-qa-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "wordpress_writes": 0,
+  "prepared_blocks": [
+    {
+      "path": "build/oldtrees-visual-parity-v001.css",
+      "blob_sha": "d66210986ccef98048cf62a54e605f2564c64a54",
+      "marker": "af-oldtrees-visual-v001",
+      "scope": "body.page-id-264"
+    },
+    {
+      "path": "build/oldtrees-visual-parity-mobile-correction-v002.css",
+      "marker": "af-oldtrees-visual-mobile-v002",
+      "scope": "body.page-id-264",
+      "purpose": "Correct the prepared package responsive contact-button breakpoint before any WordPress deployment."
+    }
+  ],
+  "responsive_crosscheck": {
+    "reference_max_560": "contact button keeps intrinsic width; only padding-right and strong font size change",
+    "reference_max_400": "contact button becomes width:100%",
+    "v001_issue_found_predeploy": "v001 set width:100% at max-width:560px",
+    "correction": "v002 overrides width:auto at max-width:560px and width:100% at max-width:400px",
+    "wordpress_regression_introduced": false
+  },
+  "scope_checks": {
+    "all_effect_selectors_page264_scoped": true,
+    "header_selector_present": false,
+    "footer_selector_present": false,
+    "other_page_id_selector_present": false,
+    "elementor_data_write_required": false,
+    "metform_shared_write_required": false,
+    "javascript_change_required": false
+  },
+  "deployment_order": [
+    "Fresh-read page264 Elementor hash and require 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a plus valid JSON.",
+    "Fresh-reconcile Additional CSS post8 and require unique af-project:end plus absence of both oldtrees visual markers.",
+    "Insert v001 immediately before af-project:end using match-once server-side content/edit.",
+    "Insert v002 immediately after v001 and before af-project:end; do not leave v001 deployed without v002 if the second write cannot be completed safely.",
+    "Read back both markers and page264 Elementor hash before any visual iteration.",
+    "If write budget or throttle makes the two-write sequence unsafe, defer both rather than deploy only v001."
+  ],
+  "current_blockers": {
+    "wpvibe": "HTTP 429 on smallest preflight in this run; no retry before cooldown gate",
+    "opera": "connector disconnected after two-tab reuse; no new tabs opened",
+    "pixel_pass": false
+  },
+  "status": "STATIC_QA_PASS_WITH_PREDEPLOY_RESPONSIVE_CORRECTION"
+}
