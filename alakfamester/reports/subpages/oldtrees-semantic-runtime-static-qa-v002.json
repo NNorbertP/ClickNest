@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-semantic-runtime-static-qa-v002",
+  "date": "2026-09-14",
+  "scope": "local/static QA of build/oldtrees-semantic-runtime-v003.php; no WordPress write",
+  "source_helper": "build/oldtrees-semantic-runtime-v003.php",
+  "local_sha256": "aa213281eedf001a5c79d113d48d2127e1f70b0de7dc72595926e6534a18f92d",
+  "local_bytes": 4122,
+  "tests": {
+    "php_lint": "PASS",
+    "embedded_javascript_node_check": "PASS",
+    "page_guard_is_page_264": true,
+    "css_write": false,
+    "dom_reordering": false,
+    "visible_text_replacement": false,
+    "mutation_observer_present": true,
+    "duplicate_review_dot_fix": "sets tabindex=-1 and aria-hidden=true on .af-review-source-dot while preserving pointer click behavior"
+  },
+  "live_correspondence": {
+    "code_snippets_id": 33,
+    "live_active_after_write": true,
+    "live_code_error": null,
+    "live_code_sha256": "810e62e37b30b553dc96212783954e808e9bf251eb5c72ab8c509beb4957b22f",
+    "note": "Build file includes documentation/header formatting and therefore is not byte-identical to the Code Snippets stored body; executable behavior is intentionally mirrored."
+  },
+  "status": "STATIC_QA_PASS",
+  "pixel_pass": false
+}
