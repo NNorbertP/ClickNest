@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "package": "bio-current-public-css-cascade-audit-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "READ_ONLY_PUBLIC_CASCADE_SNAPSHOT",
+  "retrieval": {
+    "source": "current public target HTML style#wp-custom-css plus current inline ID35 style",
+    "wp_custom_css_chars": 191079,
+    "wp_custom_css_sha256": "3b57394b1036d01bbdfc2eadc268c50d530a49ad2ad927f6e120c241cd4c0a31",
+    "af_project_end_count": 1,
+    "wordpress_writes": 0,
+    "opera_tabs_touched": 0
+  },
+  "planned_marker_counts_in_current_global_css": {
+    "af-bio-visual-v001": 0,
+    "af-bio-hero-layout-v003": 0,
+    "af-bio-card-mobile-v001": 0,
+    "af-bio-table-section-tone-v001": 0,
+    "af-bio-wave-core-v001": 0,
+    "af-bio-review-quote-v002": 0,
+    "af-bio-wave-faq-v001": 0,
+    "af-bio-stress-source-v002": 0,
+    "af-bio-faq-cta-source-v002": 0,
+    "af-page256-parity": 0
+  },
+  "current_global_page256_owners": {
+    "section_spacing_and_tones": "global custom CSS owns af-s-biologiai-vedelem section paddings/backgrounds with !important, including flat sage/paper/stone surfaces",
+    "legacy_headings": "global .af-sub-inner h2 fixed 39px !important; source-equivalent at wide desktop but mobile winner still diagnostic",
+    "stress": "global af-sub-split = 1.1fr/.9fr gap32; generic white .af-sub-card base; current structure makes card sit between the two explanatory paragraphs in DOM",
+    "technology": "global three-card grid/white card base and section tone; later visual rules already create current icons/callout rail, but source padding/watermark/hairline/checklist still differ",
+    "table": "global table wrap radius24, white surface, 15x16 cells and flat stone section; source title structure/stone gradient remain open",
+    "FAQ": "global .af-details details white/radius15/margins and summary base; current outer FAQ/CTA order/background handled separately by later page256 rules",
+    "review_counter_ordinal": "global custom CSS owns .af-reviews-menu counter-reset and .af-review-tab::before counter(afReview,decimal-leading-zero)",
+    "review_quote_base": "global custom CSS already has a source-like review quote base, but current ID35 inline style later overrides it to dark bronze",
+    "CTA_order": "global later rule #af-sub-bio-cta>.af-faq-content{order:10!important} is the sole identified class owner forcing FAQ after CTA"
+  },
+  "current_ID35_owners": {
+    "review_ordinal_second_owner": "nth-child tab::before literal 01/02/03",
+    "review_quote": "#B59A61, width46, mobile width38",
+    "review_dot": "9x9 base but active width30",
+    "review_controls": "generated aria-hidden visual dots plus prev/next buttons and exact tab accessible names",
+    "regions": "hero and FAQ region labels",
+    "tablist": "role/tablist accessible name"
+  },
+  "important_cascade_findings": [
+    "The visual 01/02/03 duplication is now fully owner-explained: global counter pseudo + ID35 literal pseudo on the same tab::before.",
+    "The active 30px review-dot width and dark quote color are ID35 presentation overrides, not unknown theme behavior.",
+    "No new prepared bio parity markers are present in the current global field, so future page-local CSS does not need to treat those blocks as already deployed.",
+    "Most current global page256 rules use !important. A page-local override must therefore be later in cascade and use equal/higher page256 specificity plus !important where necessary. Current prepared selectors satisfy that static requirement."
+  ],
+  "page_local_delivery_implication": {
+    "style_location": "a style element rendered in page256 body after document head would occur later than wp-custom-css and ID35 head styles",
+    "specificity": "current prepared CSS is rooted at body.page-id-256 and often concrete element IDs/classes; it is statically capable of overriding current shared !important owners when its own declarations are also !important",
+    "proof_still_required": "build/bio-page-local-style-carrier-probe-20260914-v001.json must prove that Elementor/WordPress preserves and applies such a style element safely; static cascade analysis alone does not prove the delivery mechanism."
+  },
+  "global_scope_rule": "This snapshot authorizes read-only owner analysis only. Do not mutate wp-custom-css or ID35 under the current page256-only/no-shared-resource scope.",
+  "pixel_pass": false
+}
