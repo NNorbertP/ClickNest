@@ -1,0 +1,37 @@
+/* af-bio-review-ordinal-v001:start
+ * Scope: page256 review tab ordinal presentation only.
+ * Current live cascade has TWO text-generating owners on the same ::before:
+ *   1) global wp-custom-css counter(afReview,decimal-leading-zero)
+ *   2) ID35 nth-child content:"01"/"02"/"03"
+ * Both are shared/global owners and remain untouched. This later page-local rule
+ * overrides generated TEXT with content:"" and redraws one ordinal as a CSS
+ * background SVG. CSS background artwork is decorative and should not produce
+ * the source-divergent standalone AX staticText. Fresh AX readback is mandatory.
+ */
+body.page-id-256 #af-subpage-bio .af-reviews-tabs .af-review-tab {
+  padding-left: 70px !important;
+}
+body.page-id-256 #af-subpage-bio .af-reviews-tabs .af-review-tab::before {
+  content: "" !important;
+  counter-increment: none !important;
+  position: absolute !important;
+  left: 22px !important;
+  top: 50% !important;
+  width: 28px !important;
+  height: 18px !important;
+  transform: translateY(-50%) !important;
+  background-position: left center !important;
+  background-repeat: no-repeat !important;
+  background-size: 28px 18px !important;
+  pointer-events: none !important;
+}
+body.page-id-256 #af-subpage-bio .af-reviews-tabs .af-review-tab:nth-child(1)::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 18'%3E%3Ctext x='0' y='14' font-family='Georgia,serif' font-size='13.12' font-weight='700' fill='%23B59A61'%3E01%3C/text%3E%3C/svg%3E") !important;
+}
+body.page-id-256 #af-subpage-bio .af-reviews-tabs .af-review-tab:nth-child(2)::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 18'%3E%3Ctext x='0' y='14' font-family='Georgia,serif' font-size='13.12' font-weight='700' fill='%23B59A61'%3E02%3C/text%3E%3C/svg%3E") !important;
+}
+body.page-id-256 #af-subpage-bio .af-reviews-tabs .af-review-tab:nth-child(3)::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 18'%3E%3Ctext x='0' y='14' font-family='Georgia,serif' font-size='13.12' font-weight='700' fill='%23B59A61'%3E03%3C/text%3E%3C/svg%3E") !important;
+}
+/* af-bio-review-ordinal-v001:end */
