@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "package": "hedge-interaction-static-audit-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_writes": 0,
+  "purpose": "Separate known interaction failures from proof-only gaps before any page272 runtime change.",
+  "reviews": {
+    "component": "native Atomic Tabs c3d30005",
+    "owner": "af-project 0.2.0 delegated Atomic Tabs keyboard parity",
+    "shared_component_proof": "reports/home/reviews-atomic-v001-target.json",
+    "shared_interactions_proven": ["click", "ArrowRight immediate select/focus", "Home first", "End last", "desktop", "mobile", "Elementor editor iframe"],
+    "page272_structure": "reports/subpages/hedge-native-reviews-v001.json documents the same D12 native Atomic Tabs pattern and preserves the shared handler.",
+    "page272_extra_semantics": "ID36 v001 currently owns tablist label and duplicate-dot AX/focus suppression; v003 is the prepared accessibility successor.",
+    "known_failure": false,
+    "decision": "Do not add or replace review keyboard/click handlers from page272. A fresh page272 keypress run is acceptance evidence only unless it reproduces an actual failure."
+  },
+  "proof_carousel": {
+    "element_id": "af2e004d",
+    "images": 21,
+    "shared_runtime": "build/source-interactions-v001.js installed site-wide through Head & Footer Code footer owner",
+    "source_contract": ["4000ms autoplay unless manual/reduced-motion/<2 slides", "arrow/dot click", "ArrowLeft/ArrowRight", "pointer swipe", "hover/focus pause-resume", "broken-slide removal", "reduced-motion change re-evaluation"],
+    "page272_live_evidence": "Historical WP-20260912-C/D checkpoint observed active proof image 5 -> 6 across consecutive fresh Opera AX reads, proving live 4000ms autoplay on page272; final HFC option readback recorded final marker, global guard, setInterval and MutationObserver.",
+    "later_preservation": "Later page272 closeout reports continue to require/prove af2e004d present while modifying gallery/legacy semantics only.",
+    "known_failure": false,
+    "proof_only_open": ["ArrowLeft/ArrowRight on page272", "pointer swipe", "hover/focus pause-resume", "prefers-reduced-motion no-autoplay/re-evaluation"],
+    "decision": "No new carousel JS is justified. Test when an interaction-capable trustworthy browser exists; write only if a reproducible failure appears."
+  },
+  "gallery": {
+    "owner": "EAEL Filterable Gallery b2e2c001 under D17",
+    "status": "28/28 content and page-local accessible-name decoupling already closed",
+    "decision": "Do not reintroduce legacy js-masonry/js-zoom behavior onto the EAEL gallery. Any lightbox/masonry interaction acceptance must follow the actual EAEL configuration rather than duplicate source-interactions runtime."
+  },
+  "opera": {
+    "current_session": "untrusted/stale for Hedge: tab URLs/titles were Hedge while AX/screenshot content remained Biológiai védelem",
+    "new_tabs_opened": 0,
+    "decision": "No further Opera interaction claims in this continuation."
+  },
+  "conclusion": "No page272 interaction-code defect is presently proven. Reviews and proof carousel have established shared owners; remaining page272 interaction items are acceptance/proof gaps. Do not add duplicate handlers or timers.",
+  "pixel_pass": false
+}
