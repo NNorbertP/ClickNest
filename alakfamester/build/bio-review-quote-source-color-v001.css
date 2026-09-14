@@ -1,0 +1,11 @@
+/* af-bio-review-quote-v001:start
+ * Scope: page256 review quote only. Prepared, not deployed.
+ * Direct same-browser source/target proof: target quote is materially darker;
+ * source exact .review__quote color is #D9C9A5 and width is 46px.
+ */
+body.page-id-256 .af-reviews-section .af-review-quote {
+  width: 46px !important;
+  color: #D9C9A5 !important;
+  margin-bottom: 12px !important;
+}
+/* af-bio-review-quote-v001:end */
