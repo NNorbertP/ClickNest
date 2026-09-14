@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "package": "bio-cta-source-contract-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "SOURCE_PROVEN_TARGET_DIAGNOSTIC_REQUIRED_NO_DEPLOYMENT",
+  "source_proof": {
+    "kind": "direct existing-Opera screenshot at #b-cta-title plus exact source CSS extraction",
+    "visual": [
+      "standalone rounded forest CTA band on paper background",
+      "left column contains Következő lépés eyebrow, white h2 and sage-light paragraph",
+      "right column contains dark translucent/green mail contact pill and bronze form button",
+      "organic ring/leaf decorative SVG is visible inside the band",
+      "band has large soft forest shadow and 36px radius"
+    ],
+    "markup": "div.cta-band > div.cta-band__decor + div.cta-band__grid.on-forest; left text block and right cta-band__actions block"
+  },
+  "exact_css_contract": {
+    "band": "position relative; overflow hidden; border-radius 36px; padding clamp(34px,4.4vw,64px); radial-gradient(90% 120% at 8% 0%,#205140 0%,transparent 58%) plus linear-gradient(150deg,#173D2D,#102A20); white; shadow 0 28px 70px rgba(23,61,45,.12)",
+    "grid": "relative z2; grid; columns minmax(0,1.25fr) minmax(0,.75fr); gap clamp(24px,3vw,48px); align-items center",
+    "heading": "white",
+    "body": "#B0C7B6",
+    "actions": "grid; gap12; align-content center; contact left-justified; button centered",
+    "decor": "absolute inset0 z1 pointer-events none opacity .5; SVG fills band"
+  },
+  "known_target_structure_before_current_outage": {
+    "outer": "section#af-sub-bio-cta",
+    "children_in_saved_frontend_order": [
+      "legacy af260015 FAQ widget",
+      "Atomic h2 af260009",
+      "Atomic paragraph af26000a",
+      "legacy text widget 9a1b2c3d containing the mailto contact",
+      "Atomic button af26000b"
+    ],
+    "known_order_bug": "af-faq-content legacy class forces FAQ widget to order 10, moving CTA before FAQ; separate v012 safe package prepares removing that sole ordering class",
+    "source_wrapper_delta": "Target has no confirmed dedicated wrapper around only the four CTA siblings."
+  },
+  "decision": {
+    "do_not": [
+      "do not make the entire #af-sub-bio-cta forest because the source FAQ remains on paper",
+      "do not duplicate CTA text/links into a legacy widget and hide existing Atomic nodes",
+      "do not use an unverified pseudo-element background spanning unknown grid rows",
+      "do not full-save Elementor solely to create a wrapper",
+      "do not move or replace the already-correct mailto/button hrefs"
+    ],
+    "next_when_target_recovers": [
+      "Fresh frontend DOM + screenshot after FAQ-before-CTA order fix and wave restoration.",
+      "Fresh raw _elementor_data boundary inspection around af260015/af260009/af26000a/9a1b2c3d/af26000b.",
+      "Determine whether a safe native V4 container bridge/wrapper already exists but is not rendered/classed, or whether a page-scoped grid/pseudo solution can exactly reproduce the band without semantic duplication.",
+      "Only then prepare the smallest reversible CTA visual package."
+    ]
+  },
+  "hard_preserve": [
+    "h2 and paragraph text",
+    "mailto href and accessible name ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+    "form link /kapcsolat/#ajanlatkeres",
+    "FAQ content and native interaction",
+    "all existing Elementor IDs",
+    "no full save/raw SQL/global CSS side effects"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
