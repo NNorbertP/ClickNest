@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "scope": "GitHub history + exact public filename/URL search; no WordPress write",
+  "status": "SOURCE_RECOVERY_FROM_GIT_NOT_AVAILABLE",
+  "findings": {
+    "project_creation_commit": {
+      "sha": "26e76dd05e46d723fa10a2d354a84d16649dc29a",
+      "message": "Create alakfamester project directory",
+      "files": ["alakfamester/.gitkeep"]
+    },
+    "first_readme_commit": {
+      "sha": "932598f733602974fc077ca2adae7536dd4299b1",
+      "observation": "README already referenced source/, specs/acceptance.json, specs/behaviors.json and tools/measure.cjs, but the commit tree contained only .gitkeep + README inside alakfamester. These referenced resources were therefore local/uncommitted at that point."
+    },
+    "late_2026_09_11_tree": {
+      "tree_sha": "63d258dbed9c88fadbcd097ae5759165817c11dc",
+      "observation": "By the end of the first construction day the committed project contained AGENTS.md, README.md, STATE.md, reports/, build/ and a reduced specs/ set, but still no source/, acceptance.json or behaviors.json."
+    },
+    "path_history": {
+      "alakfamester/specs/acceptance.json": 0,
+      "alakfamester/specs/behaviors.json": 0,
+      "alakfamester/source": 0,
+      "alakfamester/tools/measure.cjs": 0,
+      "alakfamester/source/kepek/biro-janos-portre.webp": 0,
+      "alakfamester/source/kepek/175725917368bda5a5b1ae6_370X354.webp": 0
+    },
+    "public_exact_search": {
+      "biro-janos-portre.webp": "No indexed exact filename/URL result found.",
+      "175725917368bda5a5b1ae6_370X354.webp": "No indexed exact filename/URL result found."
+    }
+  },
+  "conclusions": [
+    "specs/acceptance.json and specs/behaviors.json cannot be restored from this Git repository because GitHub reports no commits touching those paths.",
+    "The README's source/ and measurement-tool references describe a local preparation workspace that was never committed to NNorbertP/ClickNest.",
+    "The two missing source images cannot be restored from the expected Git source paths because those paths also have no Git history.",
+    "Do not recreate acceptance/behavior specs from memory and do not substitute visually similar images. The only authoritative resolution is recovery from the original local preparation workspace/source archive or restoration of the exact source-host bytes."
+  ],
+  "impact": {
+    "pixel_pass": false,
+    "blocked_assets": [
+      "Rólam: Biró János munka közben / biro-janos-portre.webp",
+      "Galéria: A többgömbös Ellwoodi niwaki, másik nézet / 175725917368bda5a5b1ae6_370X354.webp"
+    ],
+    "blocked_machine_acceptance": [
+      "specs/acceptance.json",
+      "specs/behaviors.json"
+    ]
+  },
+  "next_safe_actions": [
+    "Continue all independent source-verifiable parity packages from current evidence files.",
+    "If an original local source archive/workspace becomes available later, hash-map its files before any media upload and compare acceptance/behavior specs byte-for-byte before adopting them.",
+    "Never downgrade these blockers to PASS merely because the visible target appears close."
+  ]
+}
