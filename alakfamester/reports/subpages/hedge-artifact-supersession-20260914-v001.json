@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "package": "hedge-artifact-supersession-20260914-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Prevent stale prepared Hedge artifacts from being selected for a future page272 deployment after later safety corrections.",
+  "current_execution_sources": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "open_items": "reports/subpages/hedge-open-items-20260914-v003.json",
+    "next_live_window": "build/hedge-next-live-window-plan-20260914-v002.json",
+    "acceptance_matrix": "build/hedge-acceptance-matrix-20260914-v002.json",
+    "outer_regions_audit": "reports/subpages/hedge-outer-regions-static-audit-20260914-v002.json",
+    "required_radio_audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+    "native_required_source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+    "server_fallback_plan": "build/hedge-form-required-server-plan-20260914-v002.json",
+    "server_fallback_test_plan": "build/hedge-form-required-nondelivery-test-plan-20260914-v001.json",
+    "lightbox_audit": "reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json",
+    "interaction_audit": "reports/subpages/hedge-interaction-static-audit-20260914-v001.json"
+  },
+  "obsolete_for_deployment_keep_as_history_only": [
+    "build/hedge-semantic-runtime-v002.php",
+    "build/hedge-semantic-runtime-v003.php",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v002.json",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v003.json",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v005.json",
+    "reports/subpages/hedge-open-items-20260914-v001.json",
+    "reports/subpages/hedge-open-items-20260914-v002.json",
+    "build/hedge-next-live-window-plan-20260914-v001.json",
+    "build/hedge-acceptance-matrix-20260914-v001.json",
+    "reports/subpages/hedge-outer-regions-static-audit-20260914-v001.json",
+    "reports/subpages/hedge-metform-required-audit-20260914-v001.json",
+    "build/hedge-form-required-server-plan-20260914-v001.json"
+  ],
+  "why_v002_v003_semantic_runtime_is_obsolete": "Those candidates attempted to label #ajanlatkeres as the full source region Küldjön fotót a sövényről. Repository evidence does not prove that inner target root owns the separate af2e004c intro/contact content plus the Form33 composite. v004 removes this unproven outer-region mutation while preserving review and complete Form33 component semantics.",
+  "required_radio_rule": "Do not treat the server fallback plan as an automatic implementation. First read exact live #af-form-service settings. If mf_input_required=yes, prove native non-delivery rejection; use the fallback only if native Required is absent or demonstrably insufficient.",
+  "closed_packages_not_to_replay": [
+    "shared-media recovery",
+    "EAEL gallery id=0/full decoupling",
+    "legacy semantic saved-data package",
+    "24-hour reply patch",
+    "hero/proof/reviews/gallery/form structural migrations"
+  ],
+  "future_reader_rule": "Fresh live readback always outranks this ledger. If a newer verified runtime/package exists, reconcile it first; never overwrite unknown newer code with any artifact listed here.",
+  "status": "CURRENT_ARTIFACT_GRAPH_EXPLICIT"
+}
