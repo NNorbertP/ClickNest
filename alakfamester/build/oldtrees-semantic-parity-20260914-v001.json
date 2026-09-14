@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-semantic-parity-20260914-v001",
+  "status": "PREPARED_NOT_SENT_WPVIBE_429",
+  "date": "2026-09-14",
+  "scope": {
+    "page_id": 264,
+    "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+    "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+    "wordpress_write_scope": "page264 only",
+    "no_global_or_other_page_writes": true
+  },
+  "precondition": {
+    "last_verified_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "last_verified_char_length": 48867,
+    "json_valid": true,
+    "rule": "Before any write, re-read page264 _elementor_data SHA256 and JSON validity. If SHA differs, do not apply this package until the new live tree is reconciled."
+  },
+  "source_target_accessibility_audit": {
+    "source_heading_count": 38,
+    "target_heading_count": 29,
+    "missing_target_heading_roles": [
+      "Állapotfelmérés",
+      "A megtartható szerkezet kiválasztása",
+      "A korona csökkentése",
+      "Karakteres forma kialakítása",
+      "Seb- és egészségügyi kezelés",
+      "További formanevelés",
+      "Fotók",
+      "Előzetes vélemény",
+      "Helyszíni felmérés"
+    ],
+    "source_named_regions": [
+      "Túlnőtt a fa? Mielőtt kivágatná, nézzük meg, lehet-e belőle alakfa",
+      "Amit a megbízóim mondanak",
+      "Ezekkel a helyzetekkel keresnek a leggyakrabban",
+      "Kivágás vagy átalakítás?",
+      "Hat lépés a kivágás helyett",
+      "Nem minden növényt kell és nem minden növényt lehet megmenteni",
+      "Növények, amiket nem vágtunk ki",
+      "Van hasonló növénye?",
+      "Három lépés, kötelezettség nélkül",
+      "Túlnőtt növények – kérdések",
+      "Küldjön róla néhány képet"
+    ],
+    "target_named_regions_observed": ["Amit a megbízóim mondanak"],
+    "source_unnamed_content_section": "Mennyire változik meg már az első alkalommal? block",
+    "preserve_target_unnamed_section": "af2a004d"
+  },
+  "safe_visual_neutral_edits": {
+    "legacy_region_wrappers": [
+      {"widget":"af2a0007","label":"Ezekkel a helyzetekkel keresnek a leggyakrabban"},
+      {"widget":"af2a0045","label":"Kivágás vagy átalakítás?"},
+      {"widget":"af2a0047","label":"Hat lépés a kivágás helyett"},
+      {"widget":"af2a0049","label":"Nem minden növényt kell és nem minden növényt lehet megmenteni"},
+      {"widget":"af2a004a","label":"Növények, amiket nem vágtunk ki"},
+      {"widget":"af2a004b","label":"Van hasonló növénye?"},
+      {"widget":"af2a004f","label":"Három lépés, kötelezettség nélkül"},
+      {"widget":"af2a0050","label":"Túlnőtt növények – kérdések"}
+    ],
+    "implementation_rule": "Use guarded content/search then match-once content/edit on page264 _elementor_data. Add role='region' and aria-label to the existing .af-sub-inner opening tag only. Do not change classes, IDs, order, text, CSS, dimensions or global snippets.",
+    "step_heading_roles": [
+      {"widget":"af2a0047","text":"Állapotfelmérés"},
+      {"widget":"af2a0047","text":"A megtartható szerkezet kiválasztása"},
+      {"widget":"af2a0047","text":"A korona csökkentése"},
+      {"widget":"af2a0047","text":"Karakteres forma kialakítása"},
+      {"widget":"af2a0047","text":"Seb- és egészségügyi kezelés"},
+      {"widget":"af2a0047","text":"További formanevelés"},
+      {"widget":"af2a004f","text":"Fotók"},
+      {"widget":"af2a004f","text":"Előzetes vélemény"},
+      {"widget":"af2a004f","text":"Helyszíni felmérés"}
+    ],
+    "heading_implementation_rule": "Keep existing strong elements to preserve .af-number-steps strong CSS. Add role='heading' aria-level='3' only; do not replace strong/span tags with h3/p because that could change geometry.",
+    "cta_accessible_name": {
+      "widget":"af2a004b",
+      "existing_href":"mailto:kreativ@alakfa-mester.hu",
+      "target_aria_label":"ÍRJON BÁTRAN kreativ@alakfa-mester.hu",
+      "implementation_rule":"Add aria-label to the existing mailto anchor only. Do not move the visible email/strong markup until visual evidence proves an order/layout mismatch."
+    }
+  },
+  "explicitly_not_in_this_package": [
+    "Atomic hero region semantics: an earlier Elementor 4.2.4 Atomic aria pilot on another page stored but did not render aria-labelledby; do not guess the attributes transformable shape here.",
+    "MetForm33 form name/group/legend semantics: MetForm33 is shared; modifying it would exceed page264-only WordPress scope. A page-scoped solution requires separate proof.",
+    "Source/target offer-vs-three-steps DOM ordering: accessibility order differs, but no deterministic visual/computed-style proof yet; do not reorder based only on AX flattening.",
+    "Carousel current image identity: source and target autoplay states differ by capture time; do not change media based on an arbitrary live slide.",
+    "Global Code Snippets 9/15, Additional CSS, header/footer templates or any other page."
+  ],
+  "verification_after_write": [
+    "Re-read SHA256, JSON validity and protected IDs af2a0008, af2a0047, af2a004b, af2a004f, af2a0054, af2a0055.",
+    "Fresh frontend HTML: eight legacy .af-sub-inner wrappers carry exact region label; nine strong step labels carry heading level 3; mailto anchor carries exact aria-label.",
+    "Fresh accessibility tree: target heading count should increase from 29 to 38 without changing visible text; legacy named regions should match source for the eight patched sections.",
+    "Recheck source-visible 24-hour sentence remains exposed and source-absent 'Az első alkalom' eyebrow remains absent.",
+    "Do not purge cache unless a fresh rendered read is stale; normal meta edit cache handling should be used first.",
+    "No SMTP, no form submission, no external message."
+  ],
+  "blockers": {
+    "wpvibe": "HTTP 429 Too Many Requests currently blocks reliable target reads/writes.",
+    "opera_screenshot": "Screenshot connection unavailable; do not claim PIXEL_PASS.",
+    "pixel_pass": false
+  }
+}
