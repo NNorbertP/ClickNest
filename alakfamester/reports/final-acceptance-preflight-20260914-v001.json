@@ -1,0 +1,75 @@
+{
+  "package": "final-acceptance-preflight-20260914-v001",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "wordpress_write_performed": false,
+  "wpvibe": {
+    "account": "ncsnorbert+20260914-3@gmail.com",
+    "plan": "free",
+    "rolling_24h_used_at_close": 15,
+    "rolling_24h_limit": 300,
+    "remaining_at_close": 285,
+    "required_reserve": 10,
+    "available_above_reserve": 275
+  },
+  "environment": {
+    "wordpress": "7.1",
+    "php": "8.3.33",
+    "wpvibe": "1.16.4",
+    "active_theme": "hello-elementor",
+    "active_theme_version": "3.5.1",
+    "connection_verified": true
+  },
+  "preflight_readback": {
+    "page268_elementor": {
+      "bytes": 46622,
+      "sha256": "af362a9e7295cf06757b94c487e7504dbc5a01f84ee956906c16d6c93059e747",
+      "matches_closed_cta_package": true
+    },
+    "hello_additional_css_post8": {
+      "bytes": 576084,
+      "sha256": "7ac99daf3e30139ce30d57963506de3730db97fd62f03fc729cc3308ab5407f1",
+      "write_performed": false
+    }
+  },
+  "reference_checks": {
+    "homepage_loaded_in_browser_connector": true,
+    "target_homepage_loaded_without_diagnostic_query": true,
+    "biro_janos_portre_url": {
+      "url": "https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp",
+      "status_observed": "404 / This Page Does Not Exist"
+    },
+    "ellwoodi_gallery_url": {
+      "url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+      "status_observed": "404 / This Page Does Not Exist"
+    }
+  },
+  "acceptance_tooling": {
+    "specs_acceptance_json_present_on_main": false,
+    "specs_behaviors_json_present_on_main": false,
+    "older_checked_documented_commit_contains_acceptance_json": false,
+    "local_playwright_available": false,
+    "local_runtime_network_dns_available": false,
+    "opera_accessibility_tree_available": true,
+    "opera_screenshot_available": false,
+    "opera_screenshot_error": "Browser not connected for screenshot capture",
+    "deterministic_viewport_dpr_zoom_control_available": false
+  },
+  "status": "blocked",
+  "pixel_pass": false,
+  "blockers": [
+    "The machine-readable specs/acceptance.json and specs/behaviors.json are absent from GitHub main and were not found at the checked documented prior checkpoint; do not reconstruct them by guesswork.",
+    "No deterministic screenshot runner with the frozen 1920/1440/1024/768/390/360 viewport matrix is available in this session: local Playwright is absent and the local runtime has no DNS; Opera screenshot capture is unavailable and the connector does not expose deterministic viewport/DPR/zoom controls.",
+    "The two documented missing source assets still return 404 on the reference site; do not invent replacements.",
+    "Authenticated Elementor editor reopen proof remains unavailable because the existing browser editor tab redirects to wp-login reauthentication. Do not resave page268 merely to obtain proof.",
+    "SMTP/delivery and real MetForm submission remain prompt-3 scope and were not performed."
+  ],
+  "next_safe_action": [
+    "Before any future WordPress write, recheck the exact WPVibe counter and affected resource hashes.",
+    "If acceptance.json and behaviors.json are supplied/restored, run their exact matrix and store results under reports/.",
+    "If deterministic viewport control becomes available, run the frozen six-view source-target screenshot/overlay/diff plus geometry, overflow, console and asset checks; keep animation and reduced-motion checks separate.",
+    "If either missing source asset becomes available, hash-map it against existing media before any upload and never duplicate an existing attachment.",
+    "If an authenticated Elementor browser session becomes available, reopen page268 for editor proof without resaving unless a real discrepancy is found."
+  ]
+}
