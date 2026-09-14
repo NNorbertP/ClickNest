@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "package": "floating-contact-dock-diagnostic-plan-20260914-v002",
+  "date": "2026-09-14",
+  "scope": "Global floating quick-contact component only. Diagnostic/preparation; no WordPress write.",
+  "status": "REPRODUCIBLE_TARGET_VISUAL_DELTA_EXACT_SOURCE_CONTRACT_KNOWN_TARGET_CASCADE_PENDING",
+  "browser_evidence": {
+    "tabs": "same two existing Opera source/target tabs; zero new tabs",
+    "viewport_px": [1640, 920],
+    "source_explicit_screenshots": "dock renders phone icon, e-mail icon and green Felmérést kérek CTA",
+    "target_explicit_screenshots": "white pill renders nearly blank on repeated explicit captures",
+    "target_ax": ["Gyors kapcsolatfelvétel", "Telefonhívás: +36 30 539 48 20", "E-mail írása: kreativ@alakfa-mester.hu", "Felmérést kérek"],
+    "conclusion": "DOM/accessibility content exists; defect is paint/layout/cascade rather than missing links."
+  },
+  "exact_reference_css_contract_recovered_from_source_ax": {
+    ".dock": "position:fixed; right:clamp(16px,2vw,28px); bottom:clamp(16px,2vw,28px); z-index sticky; display:flex; align-items:center; gap:10px; padding:8px; pill radius; rgba white background; blur; 1px border; soft shadow",
+    ".dock__icon": "display:grid; place-items:center; width/height 46px; flex:none; leaf radius; sage-pale background; subtle border; forest foreground",
+    ".dock__icon svg": "20x20; currentColor stroke; no fill",
+    ".dock__cta": "inline-flex; align-items:center; min-height:46px; padding:12px 22px; pill radius; primary green background; white text; .95rem/650; nowrap",
+    "mobile_max_900": "dock becomes left/right/bottom 0 full-width bar; CTA flex:1 centered",
+    "mobile_max_560": "CTA .9rem and 14px inline padding",
+    "mobile_max_400": "CTA 12px inline padding"
+  },
+  "known_target_history": {
+    "base_mapping": "build/header-live-source-v001.css previously mapped the source header/dock contract into target CSS.",
+    "later_observed_override": ".af-source-dock safe-area rule was previously observed to affect bottom positioning only; that alone does not explain blank children.",
+    "runtime": "ID7 owns the existing global header/dock runtime; do not create a second dock owner."
+  },
+  "required_live_reads_before_any_fix": [
+    "Verify +5 WPVibe profile/site connection/quota.",
+    "Read current ID7 exact body/hash and extract the emitted dock wrapper + child class names/hrefs/aria-labels.",
+    "Search current post8 for every '.dock', '.dock__icon', '.dock__cta', '.af-source-dock' and exact emitted child-class declaration using small server-side snippets.",
+    "Inspect later declarations for display, flex, width/min/max, height/min/max, overflow, opacity, visibility, position/inset, transform, z-index, color/background and child shrink/grow.",
+    "Reconcile current post8 hash after page264 v004/v005; do not use the old pre-v005 full hash."
+  ],
+  "fix_policy": [
+    "Do not recreate markup or links.",
+    "Do not edit ID7 unless fresh markup proves the CSS selectors cannot address the defect.",
+    "Prefer one dedicated source-exact CSS marker overriding only the proven losing declarations.",
+    "Keep header nav/body/footer/forms outside the effect selector.",
+    "Postwrite verify two explicit target screenshots after stable load plus AX names; if the blank state is timing-dependent rather than deterministic, diagnose load/paint timing instead of forcing layout."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
