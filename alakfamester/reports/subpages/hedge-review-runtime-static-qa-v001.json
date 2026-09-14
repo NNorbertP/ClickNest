@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "package": "hedge-review-runtime-static-qa-v001",
+  "date": "2026-09-14",
+  "scope": "local/static QA only; no WordPress write",
+  "source_helper": "build/hedge-review-runtime-v001.php",
+  "source_commit": "10a7b4a7fe268a7f446ccff63588f579dcba4044",
+  "status": "STATIC_QA_PASS_NOT_DEPLOYED",
+  "checks": {
+    "page_guard": "is_page(272)",
+    "runtime_marker": "af-hedge-review-semantic-parity-v001",
+    "css_write": false,
+    "visible_text_replacement": false,
+    "dom_reordering": false,
+    "tablist_change": "aria-label=Ügyfélvélemények only",
+    "dot_change": "tabindex=-1 and aria-hidden=true only on .af-review-source-dot",
+    "dot_click_handler_preserved": true,
+    "real_atomic_tabs_untouched": true,
+    "mutation_observer_scope": "childList + subtree; helper attribute writes do not create addedNodes and therefore do not self-loop",
+    "delayed_reapply_ms": 900,
+    "reason_for_delay": "Global reusable reviews ID14 has a documented 700 ms delayed boot; the helper reapplies after it without altering ID14."
+  },
+  "deployment_preconditions": [
+    "Fresh page272 53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 JSON-valid readback or reconciliation if drifted.",
+    "Use Code Snippets own REST API, not raw SQL.",
+    "Create one page272-only front-end snippet; verify active=true and code_error=null.",
+    "Fresh frontend proof must show tablist accessible name Ügyfélvélemények and no focusable numbered dot controls while real tabs and prev/next remain intact.",
+    "If deployment causes any review regression, disable/remove only this helper; do not alter global ID14 during the page272 package."
+  ],
+  "pixel_pass": false
+}
