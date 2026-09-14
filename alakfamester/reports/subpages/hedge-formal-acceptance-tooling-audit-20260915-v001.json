@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "package": "hedge-formal-acceptance-tooling-audit-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Make the formal/pixel acceptance boundary explicit so missing historical tooling is never replaced by invented specs or an informal screenshot claim.",
+  "repository_current_main": {
+    "README_historical_commands": [
+      "node tools/measure.cjs",
+      "node tools/behaviors.cjs",
+      "node tools/compare-behaviors.cjs"
+    ],
+    "recursive_tree_finding": "Current main does not expose a tools/ directory containing those runners.",
+    "specs_acceptance_json": "ABSENT",
+    "specs_behaviors_json": "ABSENT",
+    "source_workspace": "Frozen original source/acceptance workspace is not present on current main as a directly runnable formal harness."
+  },
+  "history_recovery_context": "Prior repository history audits already concluded that acceptance.json and behaviors.json were local-only/missing and did not recover trustworthy bytes. Do not fabricate replacements merely to obtain a green run.",
+  "required_formal_visual_contract": {
+    "viewports": ["1920x1080", "1440x1000", "1024x900", "768x1024", "390x844", "360x800"],
+    "requirements": [
+      "same source/target browser engine",
+      "known equal DPR",
+      "100% zoom",
+      "synchronized load, font, image, focus, scroll and animation states",
+      "paired source/target screenshots",
+      "overlay/diff artifacts",
+      "geometry and overflow inspection",
+      "shared header/dock/footer failures classified to their global owners rather than hidden in page272 fixes"
+    ]
+  },
+  "current_runtime_limitations": [
+    "Opera is disconnected/intermittent and previously returned stale page content under Hedge URLs.",
+    "Opera connector in this environment does not provide the complete deterministic viewport/DPR/zoom/action surface required by the historical formal contract.",
+    "Public Clicknest HTTP fallback is unavailable in the current environment.",
+    "WPVibe is disabled in this conversation and is not a screenshot/diff harness anyway."
+  ],
+  "what_is_still_valid_without_formal_harness": [
+    "saved-data hash/JSON readback",
+    "exact component IDs/counts/settings",
+    "static source/runtime code review",
+    "fresh rendered DOM/AX comparisons when a trustworthy browser/read channel returns",
+    "targeted synchronized screenshots as supporting evidence, but not a substitute for formal multi-viewport pixel acceptance"
+  ],
+  "completion_rule": "PIXEL_PASS must remain false until the required frozen inputs and deterministic source-target capture/diff environment are genuinely available and run successfully. Do not create CSS merely because formal tooling is absent.",
+  "pixel_pass": false,
+  "status": "FORMAL_ACCEPTANCE_TOOLCHAIN_NOT_CURRENTLY_REPRODUCIBLE"
+}
