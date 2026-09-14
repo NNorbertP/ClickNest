@@ -1,0 +1,159 @@
+{
+  "version": "header-behaviors-v001",
+  "date": "2026-09-14",
+  "scope": "global header only",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "source_evidence": "direct live reference script.js read",
+  "tests": [
+    {
+      "id": "H01",
+      "name": "sticky threshold",
+      "setup": "desktop, page at scrollY=0",
+      "steps": ["capture initial header", "scroll to 8px", "scroll to 9px"],
+      "expected": ["not stuck at 0", "not stuck at exactly 8", "stuck above 8"],
+      "target_mapping": "#af-site-header.is-scrolled"
+    },
+    {
+      "id": "H02",
+      "name": "sticky event scheduling",
+      "setup": "desktop",
+      "steps": ["generate normal scroll movement"],
+      "expected": "visual stuck state remains correct while state computation is requestAnimationFrame-throttled rather than repeated for every raw scroll event"
+    },
+    {
+      "id": "H03",
+      "name": "desktop dropdown click",
+      "setup": "width >1240, both dropdowns closed",
+      "steps": ["click Szolgáltatások", "click Referenciák", "click Referenciák again"],
+      "expected": ["Services opens", "Services closes and References opens", "References closes"]
+    },
+    {
+      "id": "H04",
+      "name": "desktop dropdown outside click",
+      "setup": "one dropdown open",
+      "steps": ["click outside .js-dropdown / af-nav-dropdown-host"],
+      "expected": "all dropdowns close and aria-expanded becomes false"
+    },
+    {
+      "id": "H05",
+      "name": "desktop ArrowDown entry",
+      "setup": "focus Services trigger, closed",
+      "steps": ["press ArrowDown"],
+      "expected": "Services opens, aria-expanded=true, first panel link receives focus"
+    },
+    {
+      "id": "H06",
+      "name": "desktop panel ArrowDown traversal",
+      "setup": "Services open, first child focused",
+      "steps": ["press ArrowDown repeatedly through all links", "press ArrowDown once more on final link"],
+      "expected": "focus advances one link at a time; final extra ArrowDown keeps focus on final link"
+    },
+    {
+      "id": "H07",
+      "name": "desktop panel ArrowUp traversal",
+      "setup": "Services open, any child focused",
+      "steps": ["press ArrowUp until first child", "press ArrowUp once more"],
+      "expected": "focus moves backward; ArrowUp from first child focuses Services trigger"
+    },
+    {
+      "id": "H08",
+      "name": "desktop Escape return",
+      "setup": "dropdown open with child focused",
+      "steps": ["press Escape"],
+      "expected": "dropdown closes, aria-expanded=false, trigger receives focus"
+    },
+    {
+      "id": "H09",
+      "name": "native Enter and Space trigger activation",
+      "setup": "dropdown trigger focused",
+      "steps": ["press Enter", "close", "press Space"],
+      "expected": "native button activation toggles via click behavior; no separate custom keydown branch is required"
+    },
+    {
+      "id": "H10",
+      "name": "homepage current state",
+      "setup": "normal homepage with no #szolgaltatasi-utak hash",
+      "steps": ["load page"],
+      "expected": "Főoldal is current-page style with bronze dot; Services is not current-section"
+    },
+    {
+      "id": "H11",
+      "name": "services current group",
+      "setup": "load /idos-fak-megmentese-szolgaltatas/",
+      "steps": ["inspect closed header", "open Services"],
+      "expected": "Services trigger has source is-section visual state without bronze top-level dot; exact 'Ne vágja ki – formáljuk át' child has aria-current=page, sage background and bronze leaf bullet"
+    },
+    {
+      "id": "H12",
+      "name": "home services-section hash state",
+      "setup": "load /#szolgaltatasi-utak",
+      "steps": ["inspect header"],
+      "expected": "Services parent is current-section; normal homepage without this hash remains not current-section"
+    },
+    {
+      "id": "H13",
+      "name": "references current group",
+      "setup": "load /galeria/ then /referencia-videok/",
+      "steps": ["inspect closed header", "open References"],
+      "expected": "References parent is current-section and exact child alone is aria-current=page/current-child style"
+    },
+    {
+      "id": "H14",
+      "name": "mobile drawer open focus",
+      "setup": "width <=1240, drawer closed, menu toggle focused",
+      "steps": ["activate menu toggle"],
+      "expected": "drawer opens, body scrolling locks, toggle aria-expanded=true/label changes to Menü bezárása, first a/button in drawer receives focus"
+    },
+    {
+      "id": "H15",
+      "name": "mobile submenu",
+      "setup": "drawer open",
+      "steps": ["activate Szolgáltatások group", "activate again"],
+      "expected": "aria-expanded and controlled submenu visibility toggle correctly; decorative caret reflects expanded state"
+    },
+    {
+      "id": "H16",
+      "name": "mobile Escape",
+      "setup": "drawer open",
+      "steps": ["press Escape"],
+      "expected": "drawer closes, body unlocks, toggle aria-expanded=false and receives focus"
+    },
+    {
+      "id": "H17",
+      "name": "mobile-to-desktop resize unlock",
+      "setup": "drawer open at <=1240",
+      "steps": ["resize above 1240"],
+      "expected": "drawer closes and body is not left scroll-locked"
+    },
+    {
+      "id": "H18",
+      "name": "hidden native ElementsKit mobile navigation",
+      "setup": "width <=1240",
+      "steps": ["Tab through header controls"],
+      "expected": "only custom drawer trigger/content participates; hidden native ElementsKit hamburger/panel does not create duplicate focusable navigation"
+    },
+    {
+      "id": "H19",
+      "name": "brand whole-block link",
+      "setup": "desktop and mobile",
+      "steps": ["focus brand link", "activate from name/whole brand hit area"],
+      "expected": "one accessible home link named 'Alakfa mester BIRÓ JÁNOS'; no duplicate logo link or broken image alt announcement"
+    },
+    {
+      "id": "H20",
+      "name": "header landmark",
+      "setup": "fresh visitor page",
+      "steps": ["inspect accessibility tree"],
+      "expected": "global header is banner/header landmark, not a generic sectionHeader; main navigation is named Főmenü"
+    }
+  ],
+  "execution_policy": {
+    "source_and_target": "run the same applicable behavior test on both source and target; WordPress URLs may differ but role/content destination must map correctly",
+    "no_external_messages": true,
+    "no_form_submission": true,
+    "no_new_opera_tabs": "reuse one source + one target tab",
+    "record": "for each run store browser, viewport, state, observed focus target/aria state, screenshot where visual, and PASS/FAIL with exact mismatch"
+  },
+  "current_status": "SPEC_READY_TARGET_RUNTIME_V005_NOT_DEPLOYED"
+}
