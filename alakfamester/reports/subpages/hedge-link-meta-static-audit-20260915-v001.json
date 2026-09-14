@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "package": "hedge-link-meta-static-audit-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_writes": 0,
+  "purpose": "Separate already-closed page272 link routing from still-unproven document-head metadata so future exactness work does not mutate working links or guess Yoast fields.",
+  "link_layer": {
+    "status": "CLOSED_PRESERVE_RECHECK_AFTER_ANY_FUTURE_WRITE",
+    "page272_exact_local_contract": [
+      "#ajanlatkeres remains the local request-form anchor",
+      "tel:+36305394820 remains the direct phone destination",
+      "mailto:kreativ@alakfa-mester.hu remains the e-mail destination",
+      "Van hasonló növénye? mailto range and af2e004c contact accessible names were later read back source-equivalent"
+    ],
+    "sitewide_structural_evidence": [
+      "page272 is one of the ten published canonical pages in the final structural audit",
+      "canonical Elementor data set had zero source-host references",
+      "canonical Elementor data set had zero .html references",
+      "canonical Elementor data set had zero stale /fooldal/ contact-route references"
+    ],
+    "d09_specific_evidence": "The D09 contact-link correction package listed pages 20, 21, 256, 258, 260, 262 and 270, not page272. Do not manufacture a page272 D09 rewrite from that package.",
+    "authorized_divergence": "D09 intentionally maps static .html routes to WordPress /slug/ routes while preserving anchors; literal .html equality is not an acceptance requirement.",
+    "write_rule": "No current page272 link write is justified. Only reopen from a fresh reproduced broken/wrong destination."
+  },
+  "metadata_layer": {
+    "status": "OPEN_PROOF_ONLY_NO_WRITE",
+    "known_policy": "AGENTS assigns necessary metadata to Yoast and forbids duplicated title/canonical/schema output.",
+    "missing_evidence": "No page272-specific direct source-target head capture was found for document title, meta description, canonical, robots, Open Graph fields or emitted schema ownership/count.",
+    "not_a_defect_yet": true,
+    "future_read_only_capture": {
+      "reference": [
+        "document title",
+        "meta description if present",
+        "canonical href if present",
+        "robots if present",
+        "og:title/og:description/og:url if present",
+        "structured-data scripts/types if present"
+      ],
+      "target": [
+        "document title",
+        "meta description",
+        "exactly one canonical and its WordPress /soveny-specialista/ destination",
+        "robots",
+        "Open Graph title/description/url",
+        "Yoast/schema script count and top-level types; no duplicate owner"
+      ]
+    },
+    "acceptance_rule": "Preserve source metadata intent while allowing D09 canonical WordPress routing and documented WordPress/Yoast implementation differences. Do not mutate Yoast/post meta from absence of evidence.",
+    "current_tool_blocker": "WPVibe is disabled; Opera is disconnected/stale; public Clicknest HTTP fallback is unavailable."
+  },
+  "historical_reconciliation": {
+    "old_readonly_hero_gap": "CLOSED by hedge-hero-v4-v001: af2e004e frontend present, exact accessible SVG title/description, logged-out AX source match and editor reopen PASS.",
+    "old_media_background_gap": "CLOSED by later Hedge continuation/do-not-reopen evidence; no media/background replay."
+  },
+  "status": "PAGE272_LINKS_CLOSED_METADATA_CAPTURE_STILL_READ_ONLY_OPEN"
+}
