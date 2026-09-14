@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-visual-coverage-reconciliation-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "scope": "Reconcile every delta in oldtrees-visual-audit-20260914-v001 against later deployed CSS and fresh post-v005 evidence. No WordPress write.",
+  "sources": [
+    "reports/subpages/oldtrees-visual-audit-20260914-v001.json",
+    "build/oldtrees-visual-parity-v004.css",
+    "reports/subpages/oldtrees-visual-live-qa-20260914-v006.json",
+    "reports/subpages/oldtrees-post-v005-visual-qa-20260914-v007.json",
+    "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css"
+  ],
+  "comparison_section_af2a0045": {
+    "bronze_leaf_eyebrow_style": {
+      "old_failure": "eyebrow styling missing",
+      "implementation": "v004 maps source typography and bronze leaf ::before onto .af-sub-eyebrow",
+      "live_evidence": "KÉT ÚT exists in both source and target AX in the comparison region; one anchor-aligned screenshot starts at different vertical content, so visibility/scroll ownership is not a proven styling failure.",
+      "status": "IMPLEMENTED_HOLD_NO_WRITE_UNLESS_MATCHED_CAPTURE_PROVES_STYLE_FAILURE"
+    },
+    "negative_positive_surfaces": {
+      "old_failure": "generic white cards",
+      "implementation": "v004 declares beige #EFEDE4 negative and sage gradient positive surfaces; v005 strengthens the proven losing cascade.",
+      "live_evidence": "Fresh post-v005 same-browser capture explicitly shows beige/sage surfaces.",
+      "status": "PASS_LIVE"
+    },
+    "header_icons": {
+      "old_failure": "source warning/growth header icons missing",
+      "implementation": "v004 supplies source-shaped data-URL SVGs in page264-only pseudo-elements.",
+      "live_evidence": "v004 live capture and post-v005 capture show warning/growth icons.",
+      "status": "PASS_LIVE"
+    },
+    "list_markers": {
+      "old_failure": "default browser bullets instead of X/check leaf markers",
+      "implementation": "v004 removes list-style and maps X/check SVG markers.",
+      "live_evidence": "v004 live capture and post-v005 capture show cross/check markers.",
+      "status": "PASS_LIVE"
+    },
+    "equal_height": {
+      "old_failure": "uneven card heights/visual weight",
+      "implementation": "v004 declares grid stretch; v005 makes surface/stretch correction win.",
+      "live_evidence": "Fresh post-v005 capture explicitly says card heights stretch together.",
+      "status": "PASS_LIVE"
+    },
+    "equal_width_and_wrapping": {
+      "old_failure": "source has two equal large rounded cards; target geometry remains unequal after v005",
+      "implementation": "v004 already declares 1fr/1fr but loses cascade; v007 is the narrow prepared cascade-strength fix.",
+      "live_evidence": "Fresh post-v005 capture shows target left wider/right narrower and an extra wrapped line on the positive card.",
+      "status": "PROVEN_FAIL_V007_READY_GATED_NOT_DEPLOYED"
+    },
+    "responsive_single_column": {
+      "contract": "v004 and v007 both retain one column at <=900px; v004 reduces card padding at <=720px.",
+      "status": "STATIC_CONTRACT_PRESENT_FORMAL_VIEWPORT_CAPTURE_OPEN"
+    }
+  },
+  "request_form_ajanlatkeres": {
+    "centered_heading_intro": {
+      "old_failure": "heading block left aligned",
+      "implementation": "v004 centers eyebrow/heading/body on page264.",
+      "live_evidence": "Fresh post-v005 capture explicitly reports centered heading.",
+      "status": "PASS_LIVE"
+    },
+    "reply_clock": {
+      "old_failure": "reply SVG expands to a huge arc",
+      "implementation": "v004 constrains reply SVG to 18x18 with fixed flex basis.",
+      "live_evidence": "Fresh post-v005 capture explicitly reports compact clock.",
+      "status": "PASS_LIVE"
+    },
+    "joined_panel": {
+      "old_failure": "intro and MetForm do not visually join into source form panel",
+      "implementation": "v004 gives af2a0054 top borders/radii and af2a0055 bottom borders/radii with zero joining margin.",
+      "live_evidence": "Fresh post-v005 capture explicitly reports joined white panel.",
+      "status": "PASS_LIVE"
+    },
+    "contact_button_shape_geometry": {
+      "old_failure": "source compact green contact components absent/not winning",
+      "implementation": "v004 restores green pill, 60px minimum height, 40px leaf icon, intrinsic width through 401-560px and full width only <=400px.",
+      "live_evidence": "Fresh post-v005 reconciliation narrows the remaining reproducible contact-button defect to foreground color only, so broad geometry is no longer a reproduced failure.",
+      "status": "NO_CURRENT_FAILURE_FORMAL_MULTI_VIEW_CAPTURE_OPEN"
+    },
+    "contact_button_foreground": {
+      "old_failure": "not isolated in the first broad audit; discovered after v004/v005",
+      "implementation": "v004 declares white text but live cascade overrides it; v006 strengthens only three color declarations.",
+      "live_evidence": "Fresh post-v005 target label/value remain dark while source is white.",
+      "status": "PROVEN_FAIL_V006_READY_GATED_NOT_DEPLOYED"
+    },
+    "organic_glow_and_field_continuity": {
+      "implementation": "v004 supplies page264-only radial glow behind af2a0054 and joins the MetForm sibling visually.",
+      "live_evidence": "No later synchronized evidence reports a remaining broad panel defect; the freshest report says old broad form defects are no longer current, but the formal multi-viewport capture remains open.",
+      "status": "NO_CURRENT_FAILURE_FORMAL_CAPTURE_OPEN"
+    }
+  },
+  "not_part_of_original_visual_audit_but_still_open": {
+    "hero_vertical_offset": "Observed later; root cause unproven. Use build/oldtrees-hero-geometry-diagnostic-20260914-v001.json; no speculative write.",
+    "floating_dock": "Observed later but globally owned; outside page264 write scope unless exact page264-scoped cascade correction is proven.",
+    "formal_pixel_matrix": "Still absent; PIXEL_PASS remains false."
+  },
+  "deployment_priority": [
+    "Do not reopen PASS_LIVE items.",
+    "Fresh-gate only v006 and v007; if both still fail use the prepared one-write bundle.",
+    "After any selected write, recapture only affected sections plus adjacent preserved geometry.",
+    "Treat multi-viewport/formal visual checks as acceptance, not a reason to invent another CSS layer without a reproduced failure."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "OLD_VISUAL_AUDIT_FULLY_RECONCILED_TWO_GATED_LOCAL_DELTAS_REMAIN"
+}
