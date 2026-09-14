@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "package": "bio-expectations-source-structure-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "status": "PREPARED_NOT_DEPLOYED_WPVIBE_UNAVAILABLE_TARGET_504",
+  "source_proof": {
+    "kind": "direct existing-Opera screenshot plus exact reference CSS extraction",
+    "viewport": "shared Opera approximately 1640x920",
+    "source_anchor": "#b-expect-title",
+    "observed": [
+      "sage section background",
+      "left white organic card contains the Mit várhatunk – és mit nem? heading, then three green-check items and two brown-X items in the same card",
+      "right sage organic card contains Hogyan kapcsolódik az alakfa ápolásához?, its paragraph and Az alakfa ápolása arrow link",
+      "two equal columns with large gap",
+      "both cards carry the lower-right translucent organic leaf watermark",
+      "wave separator follows the section before the paper FAQ section"
+    ]
+  },
+  "supersedes": {
+    "file": "build/bio-visual-parity-v002-expectations.css",
+    "status": "OBSOLETE_DO_NOT_DEPLOY",
+    "reason": "v002 mapped the current positive and muted list wrappers as two side-by-side cards. Direct source visual proof shows both positive and negative lists belong to one left white card, while the right card owns the how-it-connects heading/copy/link."
+  },
+  "new_css": {
+    "file": "build/bio-expectations-source-structure-v003.css",
+    "commit": "d6cb87ebd240c5e1ce256fc0de81bed4390d8bb3",
+    "marker": "af-bio-expectations-source-v003",
+    "scope": "body.page-id-256 .elementor-element-af260013 only",
+    "requires_companion_markup_classes": [
+      "af-expect-grid",
+      "af-expect-card",
+      "af-expect-card--sage",
+      "af-expect-list",
+      "af-expect-list--cross",
+      "af-expect-link"
+    ]
+  },
+  "precondition": {
+    "elementor_bytes": 35382,
+    "elementor_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "semantic_runtime_snippet_id": 35,
+    "rule": "Freshly re-read immediately before any mutation; stop and reconcile if any value differs."
+  },
+  "known_current_markup_shape": {
+    "outer": "af260013 text-editor with af-sub-inner role=region aria-label=Mit várhatunk – és mit nem?",
+    "order": [
+      "h2 Mit várhatunk – és mit nem?",
+      "af-sub-split",
+      "af-sub-card af-card-positive containing the three positive list items",
+      "af-sub-card af-card-muted containing the two negative list items",
+      "h3 Hogyan kapcsolódik az alakfa ápolásához?",
+      "paragraph",
+      "paragraph containing af-text-link href=/#apolas"
+    ],
+    "content_order_status": "already source-aligned",
+    "article_role_status": "source 2 articles; target 0 articles"
+  },
+  "required_fresh_searches": [
+    "Fresh content/search on meta post_id 256 key _elementor_data for af260013 or a unique ASCII fragment near Mit v / af-card-positive.",
+    "Fresh content/search for the exact boundary between the positive and muted wrappers.",
+    "Fresh content/search for the exact boundary after the negative list and before Hogyan kapcsolódik.",
+    "Fresh content/search for the exact final af-text-link range."
+  ],
+  "guarded_transformation_intent": [
+    {
+      "step": 1,
+      "purpose": "open source-equivalent two-column grid and left article while keeping the existing h2 text bytes",
+      "method": "Use only an exact returned escaped snippet. Replace the smallest unique boundary that currently emits h2 followed by af-sub-split/positive wrapper so h2 becomes the first child of article.af-expect-card inside div.af-expect-grid.",
+      "do_not": "Do not reconstruct the full widget from memory."
+    },
+    {
+      "step": 2,
+      "purpose": "merge the positive and negative lists into the same left article",
+      "method": "At the exact returned boundary between current positive and muted wrappers, close neither article nor grid. Convert the two existing ul roots to af-expect-list and af-expect-list af-expect-list--cross while removing only the obsolete intermediate card boundary.",
+      "preserve": "all five li text strings byte-for-byte"
+    },
+    {
+      "step": 3,
+      "purpose": "create the source right sage article",
+      "method": "At the exact returned boundary before the existing h3, close the left article and open article.af-expect-card.af-expect-card--sage; keep h3 and paragraph bytes unchanged."
+    },
+    {
+      "step": 4,
+      "purpose": "restore source arrow-link presentation and close the right article/grid",
+      "method": "From a fresh exact snippet around the existing af-text-link, preserve href /#apolas and accessible text Az alakfa ápolása; change only the class to af-expect-link and append the source arrow SVG with aria-hidden=true/focusable=false before closing the right article and grid.",
+      "accessible_name_must_remain": "Az alakfa ápolása"
+    }
+  ],
+  "source_css_contract": {
+    "grid": "repeat(2,minmax(0,1fr)); gap 32px",
+    "card": "32px padding; #fff; rgba(215,210,198,.6) border; 28px 34px 26px 32px radius; 0 16px 40px rgba(47,58,47,.08) shadow",
+    "sage_card": "#DDE7DF; rgba(47,93,70,.16) border; no shadow",
+    "watermark": "150x150 lower-right leaf at right -46 / bottom -56 / rotate -16deg; primary .045, forest .05 on sage",
+    "checklist": "no native marker; 20px leaf marker; green white-check and #7d5a52 white-X variants; 12px gap; line-height 1.55",
+    "link": "inline-flex; gap 8; min-height 44; weight 650; primary; 17px arrow; bronze underline and arrow translate on hover/focus"
+  },
+  "postconditions": [
+    "outer region role/name unchanged",
+    "exact same two visible headings and all body/list text",
+    "source-equivalent article count 2",
+    "left article owns h2 plus all five comparison items",
+    "right article owns h3, paragraph and the existing /#apolas link",
+    "link accessible name remains Az alakfa ápolása",
+    "all five list strings remain exact",
+    "page JSON valid and all unrelated IDs/settings unchanged",
+    "fresh source-target AX and visual verification before declaring pass"
+  ],
+  "deployment_order": {
+    "recommended": "Do markup micro-patches first after fresh exact searches and readback; add the v003 CSS only after the new classes are confirmed in frontend DOM. CSS selectors are page256/af260013 scoped but should not be deployed blindly before markup proof.",
+    "rollback": "If any patch regresses structure, undo only the exact most recent match-once replacement. Never full-save or restore an old full _elementor_data blob."
+  },
+  "hard_preserve": [
+    "no full Elementor save",
+    "no raw SQL write",
+    "ID35 runtime remains active",
+    "all already-closed page256 content/semantic fixes remain unchanged",
+    "no other page/global template/media/plugin-setting/SMTP write"
+  ],
+  "wordpress_writes_in_preparation": 0,
+  "pixel_pass": false
+}
