@@ -1,3 +1,32 @@
+# STATE - 2026-09-14, BIOLOGICAL PROTECTION CTA PATCHED; WPVIBE 429 BLOCKS REMAINING PARITY WRITES
+
+## Current continuation point - Biological Protection page256
+Target: https://alakfamester-wp.clicknest.hu/biologiai-vedelem/ ; reference: https://alakfamester.clicknest.hu/biologiai-vedelem.html.
+Evidence: `reports/subpages/bio-parity-fix-20260914-v003.json`, commit `5d4b4d104ee4ddf58a248ecef0371621e0b66fce`.
+WPVibe account: `ncsnorbert+20260914-3@gmail.com`. **Latest exact counter: 278/300 used, 22 remaining** in the rolling 24-hour window. Preserve at least **10 calls** for D11 recovery/closeout; only 12 are available above reserve.
+
+Pre-write page256 `_elementor_data` was re-read at **34930 B**, SHA256 `c84feb47f8ca33218914b546d0dd2d10dd924a60b703fb049c4b8652bca9f729`. No whole-page restore/full-save was used.
+
+### Applied and verified
+- guarded match-once `/wpvibe/v1/content/edit` changed only final contact widget `9a1b2c3d` so the e-mail and `Írjon bátran` label are inside the same `mailto:kreativ@alakfa-mester.hu` anchor, with the e-mail in `strong`, matching the source child structure and restoring the full clickable range;
+- post-write readback: **34930 B**, SHA256 `1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d`;
+- fresh cache-busted Opera accessibility read confirms the final CTA is now one mailto link containing both pieces of text;
+- CSS text transformation still causes the computed target accessible name to differ in order/case from the source. A no-visual-change explicit `aria-label` follow-up was prepared but **not written** because the server returned HTTP 429.
+
+### Source-proven differences still open
+- source named regions: hero, reviews, four content sections, FAQ; target currently exposes only the reviews region by name;
+- source review tablist name `Ügyfélvélemények`; target tablist remains unnamed;
+- source symptom-table headers are `TÜNET`, `MIT VIZSGÁLOK`, `LEHETSÉGES IRÁNY`, and the four first-column body cells are row headers; target still has title-case headers and regular cells;
+- 13 verified legacy list items on target still have trailing periods absent from the source;
+- final CTA accessible-name case/order still needs the prepared semantic-only follow-up.
+
+### Safe continuation rules
+Do not retry guessed Atomic V4 attributes: the prior isolated typed-attributes pilot stored but did not render `aria-labelledby` and was fully rolled back. Do not full-save page256 while D18-sensitive legacy `_css_classes` remain. When site-level 429 clears, first verify the page256 hash is still `1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d`, then use only exact `content/search` + match-once `content/edit` operations for the legacy list/table/complete-section fixes. Do not change another page, global template, Additional CSS, plugin configuration, SMTP or perform a real submission.
+
+Opera screenshot remained disconnected, so controlled screenshot/overlay/diff evidence is still unavailable and `PIXEL_PASS=false`.
+
+---
+
 # STATE - 2026-09-14, HEDGE DATA PATCHED; CONCURRENT MEDIA DRIFT + FRONTEND CACHE BLOCKER
 
 ## Current continuation point
