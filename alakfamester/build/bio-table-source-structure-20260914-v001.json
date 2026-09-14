@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "package": "bio-table-source-structure-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "element": "af260011",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "source": {
+    "intro": "inside .section-head; muted 1.125rem max104ch; section-head margin-bottom32",
+    "table_title": "p.table-title#tunet-tabla-cim outside .table-wrap; .9rem, weight600, muted, margin-bottom12",
+    "table": "table.data aria-labelledby=tunet-tabla-cim; no page-specific caption node",
+    "row_semantics": "three scope=col headers and four scope=row body row headers"
+  },
+  "target_last_verified": {
+    "intro": "plain p after h2",
+    "title": "caption inside af-table-wrap/table",
+    "headers_rows": "already corrected and must be preserved"
+  },
+  "guarded_future_edit": [
+    "Fresh content/search on page256 _elementor_data around the exact af260011 boundary before af-table-wrap and the caption string.",
+    "Use only returned escaped snippets. Preserve the title text byte-for-byte while moving ownership from <caption> to <p class='af-table-title' id='tunet-tabla-cim'> immediately before af-table-wrap.",
+    "Add aria-labelledby='tunet-tabla-cim' to the existing table start tag and remove only the now-redundant caption element.",
+    "Do not alter thead/tbody cells, scope attributes, region wrapper, heading or any table text."
+  ],
+  "css_after_markup_readback": {
+    "file": "build/bio-table-source-structure-v001.css",
+    "commit": "1d1030bb2d9d61afe1b1de1817bbc64f6ae8ded8",
+    "marker": "af-bio-table-source-structure-v001",
+    "dependency": "build/bio-visual-parity-v001.css continues to own table-wrap/table/cell visuals; build/bio-table-section-tone-v001.css owns section stone gradient."
+  },
+  "postconditions": [
+    "table title visible immediately above bordered table surface, not inside it",
+    "exact title text unchanged",
+    "table accessible name still exact via aria-labelledby",
+    "three uppercase column headers + four row headers unchanged",
+    "page JSON valid and region name unchanged"
+  ],
+  "rollback": "Reverse only the exact title/table boundary microfix if it regresses; do not restore old full widget/page blobs.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
