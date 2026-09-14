@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "package": "bio-page-local-visual-delivery-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_REQUIRES_CARRIER_PROBE_PASS",
+  "purpose": "Deliver source-proven parity CSS through page256-owned Elementor content instead of the globally shared Hello Additional CSS field.",
+  "scope_basis": "Current user package permits page256 modification only and excludes shared/global resources. See reports/subpages/bio-css-delivery-scope-reconciliation-20260914-v001.json.",
+  "required_first_proof": "build/bio-page-local-style-carrier-probe-20260914-v001.json must PASS in a future usable page256 WPVibe window. A failed/stripped style probe cancels this delivery path.",
+  "physical_owner_after_probe": {
+    "carrier_element": "af260016 legacy text-editor",
+    "style_id": "af-page256-parity",
+    "wrapper": "<style id='af-page256-parity'> ... </style>",
+    "internal_start_marker": "/* af-page256-parity:start */",
+    "internal_end_marker": "/* af-page256-parity:end */",
+    "reason": "single page-local style owner makes subsequent block insertion/removal surgical while all existing page content remains editable and visible"
+  },
+  "owner_creation_strategy": [
+    "After the probe passes and is rolled back/cleaned, fresh-search af260016 again; do not transform the probe into the final owner from stale bytes.",
+    "Prepend one final style element containing start/end markers and only the first approved dependency-safe CSS phase.",
+    "Keep the original af260016 hero-contact/CTA/fact markup byte-for-byte after the style element.",
+    "Immediately read page JSON/hash and rendered page HTML; require style#af-page256-parity exactly once and all original hero-extra content intact."
+  ],
+  "first_local_visual_payload": {
+    "design_source": "build/bio-visual-single-write-plan-20260914-v007.json",
+    "delivery_change": "Do NOT write Hello Additional CSS. Concatenate only the v007 CSS blocks as text inside style#af-page256-parity.",
+    "blocks_in_order": [
+      "build/bio-visual-parity-v001.css",
+      "build/bio-hero-layout-parity-v003.css",
+      "build/bio-card-mobile-source-v001.css",
+      "build/bio-table-section-tone-v001.css",
+      "build/bio-wave-source-core-v001.css",
+      "build/bio-review-quote-source-color-v002.css"
+    ],
+    "note": "The fourth FAQ wave remains excluded until the FAQ paper conversion phase."
+  },
+  "later_block_append_model": {
+    "method": "Fresh-search the exact internal end marker in af260016 and insert one complete marked CSS block immediately before it with match-once content/edit.",
+    "precondition_per_block": "The corresponding structure/dependency/pseudo-owner/responsive gates must already pass; the existence of the local style owner does not bypass them.",
+    "marker_rule": "Every CSS component keeps its own unique internal /* af-...:start/end */ marker. A marker count of 1 means live; 0 means absent; >1 is stop/reconcile.",
+    "rollback": "Fresh-search the exact component start/end marker range in the page-local style owner and remove only that block. Never rewrite the full page or restore an old full _elementor_data blob."
+  },
+  "read_only_global_cascade_checks_still_allowed": [
+    "Existing shared/global Additional CSS may be read to identify competing pseudo/cascade owners before page-local overrides.",
+    "Read-only inspection of shared resources does not authorize mutating them.",
+    "If an essential existing owner conflicts, redesign the page-local block or stop; do not overwrite the global owner."
+  ],
+  "sanitization_and_editor_safety": [
+    "A successful inert probe is mandatory because style tags inside text-editor content may be sanitized depending WordPress/Elementor context.",
+    "After final owner creation, reopen/read rendered markup and page JSON; do not rely only on database bytes.",
+    "If Elementor later strips/moves the style owner or the editor cannot round-trip the widget safely, remove the page-local style element and mark this delivery path unsupported."
+  ],
+  "forbidden": [
+    "Hello Additional CSS mutation under current scope",
+    "WPCode/Code Snippets/Head Footer Code global injection",
+    "theme file edits",
+    "Elementor full save",
+    "V4 Custom CSS",
+    "raw SQL/search-replace",
+    "a second hidden page widget created only as a style carrier",
+    "splitting parity CSS across multiple arbitrary content widgets without a proven reason"
+  ],
+  "future_acceptance_after_each_local_CSS_write": [
+    "page256 JSON valid",
+    "style#af-page256-parity exactly once",
+    "internal owner markers exactly once",
+    "original carrier visible content unchanged",
+    "no non-page256 selector effects",
+    "fresh frontend/AX visual owner checks",
+    "no other WordPress resource modified"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
