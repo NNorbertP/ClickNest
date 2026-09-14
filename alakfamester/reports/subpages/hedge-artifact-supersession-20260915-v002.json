@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "package": "hedge-artifact-supersession-20260915-v002",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "supersedes_for_planning": "reports/subpages/hedge-artifact-supersession-20260914-v001.json",
+  "current_execution_sources": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v006.json",
+    "open_items": "reports/subpages/hedge-open-items-20260914-v004.json",
+    "next_live_window": "build/hedge-next-live-window-plan-20260915-v003.json",
+    "acceptance_matrix": "build/hedge-acceptance-matrix-20260915-v003.json",
+    "continuation_checkpoint": "reports/subpages/hedge-continuation-20260914-v011.json",
+    "state_prepend_candidate": "build/hedge-state-prepend-20260915-v008.md",
+    "outer_regions_audit": "reports/subpages/hedge-outer-regions-static-audit-20260914-v002.json",
+    "required_radio_audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+    "native_required_source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+    "server_fallback_plan": "build/hedge-form-required-server-plan-20260914-v002.json",
+    "server_fallback_test": "build/hedge-form-required-nondelivery-test-plan-20260914-v001.json",
+    "interaction_audit": "reports/subpages/hedge-interaction-static-audit-20260914-v001.json",
+    "lightbox_audit": "reports/subpages/hedge-gallery-lightbox-audit-20260914-v001.json",
+    "proof_carousel_role_audit": "reports/subpages/hedge-proof-carousel-role-audit-20260915-v001.json",
+    "intentional_divergence_ledger": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json"
+  },
+  "obsolete_for_deployment_history_only": [
+    "build/hedge-semantic-runtime-v002.php",
+    "build/hedge-semantic-runtime-v003.php",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v002.json",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v003.json",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v004.json",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v005.json",
+    "reports/subpages/hedge-open-items-20260914-v001.json",
+    "reports/subpages/hedge-open-items-20260914-v002.json",
+    "reports/subpages/hedge-open-items-20260914-v003.json",
+    "build/hedge-next-live-window-plan-20260914-v001.json",
+    "build/hedge-next-live-window-plan-20260914-v002.json",
+    "build/hedge-acceptance-matrix-20260914-v001.json",
+    "build/hedge-acceptance-matrix-20260914-v002.json",
+    "reports/subpages/hedge-outer-regions-static-audit-20260914-v001.json",
+    "reports/subpages/hedge-metform-required-audit-20260914-v001.json",
+    "build/hedge-form-required-server-plan-20260914-v001.json"
+  ],
+  "do_not_replay_closed_remote_packages": [
+    "shared-media recovery",
+    "EAEL gallery id=0/full decoupling",
+    "legacy semantic saved-data patch",
+    "24-hour reply patch",
+    "hero/proof/review/gallery/Form33 structural migrations"
+  ],
+  "critical_corrections": [
+    "v004 removed the unproven #ajanlatkeres outer-region label from v002/v003.",
+    "required-radio server validation is fallback only; native Required exact setting and non-delivery behavior proof come first.",
+    "proof-carousel historical group/listitem role divergence is reopened only as a live read-only audit, not an automatic rollback.",
+    "heading text-set parity is not sufficient for H1-H6 level/order parity; next trustworthy rendered read should capture the ordered tree.",
+    "page272 lightbox remains no-write until source-specific zoom proof."
+  ],
+  "fresh_truth_rule": "Any newer verified live WordPress state outranks this map. Unknown newer ID36/page data must be reconciled, never overwritten by a prepared artifact.",
+  "status": "CURRENT_PAGE272_ARTIFACT_GRAPH_V004_EXPLICIT"
+}
