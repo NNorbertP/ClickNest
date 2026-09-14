@@ -1,0 +1,151 @@
+/* af-bio-expectations-source-v003:start
+ * Scope: body.page-id-256, widget af260013 only.
+ * Prepared, not deployed.
+ * Direct source proof: 2026-09-14 existing-Opera screenshot at #b-expect-title
+ * plus exact reference .card/.card--sage/.checklist/.link-arrow CSS extraction.
+ * Requires the companion guarded markup transformation documented in
+ * bio-expectations-source-structure-20260914-v003.json.
+ */
+
+body.page-id-256 .elementor-element-af260013 .af-expect-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 32px !important;
+  align-items: stretch !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-card {
+  position: relative !important;
+  box-sizing: border-box !important;
+  padding: 32px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(215, 210, 198, .6) !important;
+  border-radius: 28px 34px 26px 32px !important;
+  box-shadow: 0 16px 40px rgba(47, 58, 47, .08) !important;
+  overflow: hidden !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-card::after {
+  content: "";
+  position: absolute;
+  right: -46px;
+  bottom: -56px;
+  width: 150px;
+  height: 150px;
+  border-radius: 4px 64% 4px 64%;
+  background: #2F5D46;
+  opacity: .045;
+  transform: rotate(-16deg);
+  pointer-events: none;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-card--sage {
+  background: #DDE7DF !important;
+  border-color: rgba(47, 93, 70, .16) !important;
+  box-shadow: none !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-card--sage::after {
+  background: #173D2D;
+  opacity: .05;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-card > h2,
+body.page-id-256 .elementor-element-af260013 .af-expect-card > h3 {
+  margin: 0 0 16px !important;
+  color: #173D2D !important;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif !important;
+  font-size: 1.375rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -.005em !important;
+  line-height: 1.32 !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-card > p {
+  margin: 0 0 16px !important;
+  color: #4A5750 !important;
+  font-size: 1rem !important;
+  line-height: 1.65 !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 24px 0 0 !important;
+  display: grid !important;
+  gap: 12px !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-list > li {
+  position: relative !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  color: #202723 !important;
+  line-height: 1.55 !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-list > li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  margin-top: 3px;
+  border-radius: 4px 64% 4px 64%;
+  background-color: #2F5D46;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 13px 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-list--cross > li::before {
+  background-color: #7d5a52;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.4' stroke-linecap='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'/%3E%3Cline x1='6' y1='6' x2='18' y2='18'/%3E%3C/svg%3E");
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  min-height: 44px !important;
+  margin-top: 24px !important;
+  color: #2F5D46 !important;
+  font-weight: 650 !important;
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent !important;
+  transition: border-color 220ms cubic-bezier(.22,.68,.36,1), color 220ms cubic-bezier(.22,.68,.36,1) !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-link svg {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 220ms cubic-bezier(.22,.68,.36,1);
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-link:hover,
+body.page-id-256 .elementor-element-af260013 .af-expect-link:focus-visible {
+  border-bottom-color: #B59A61 !important;
+  color: #234737 !important;
+}
+
+body.page-id-256 .elementor-element-af260013 .af-expect-link:hover svg,
+body.page-id-256 .elementor-element-af260013 .af-expect-link:focus-visible svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  body.page-id-256 .elementor-element-af260013 .af-expect-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+
+/* af-bio-expectations-source-v003:end */
