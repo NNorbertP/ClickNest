@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "status": "HOST_OR_WAF_THROTTLE_CONFIRMED_ACCOUNT_QUOTA_NOT_EXHAUSTED",
+  "evidence": {
+    "wpvibe_account": "ncsnorbert+20260914-4@gmail.com",
+    "latest_exact_counter_before_second_probe": "241/300 used; 59 remaining",
+    "d11_reserve": 10,
+    "site_probe_1": "read-only page272 db query returned HTTP 429 after three WPVibe exponential-backoff retries; no Retry-After header",
+    "site_probe_2": "a later read-only page272 db query, separated by GitHub/Opera work, returned the same HTTP 429 after three retries",
+    "wpvibe_relay_guidance": "REST is reachable but something throttles requests; WPVibe sends X-WPVibe: 1 and User-Agent WPVibe/1.0. Likely layers include host WAF/proxy/CDN, Wordfence-style rate limiting, nginx limit_req or Cloudflare rate limiting.",
+    "browser_challenge": "A prior target HTML read returned a browser-check page loading /hcdn-cgi/jschallenge, which is consistent with a host/CDN challenge layer rather than account quota exhaustion.",
+    "opera_target": "Existing target Opera tab later became blocked for actions; no new tabs were opened.",
+    "container_http": "Direct curl from the local container cannot resolve alakfamester.clicknest.hu, so the container is not a usable alternate live-check path.",
+    "repository_security_plugin_search": "No current repository evidence was found proving an active Wordfence-specific rate-limit configuration. No security plugin setting was changed."
+  },
+  "critical_write_rule": "A WPVibe write returning 429 must be treated as UNKNOWN, not failed/not-run. Page272 af2e0007 proved that a content/edit returned 429 while the mutation later appeared in exact hash/fragment readback. Never blindly retry such a write.",
+  "safe_operating_policy": [
+    "Do not spam site calls while the throttle is active; a nominal single call can consume three automatic retries.",
+    "Keep the 10-call D11 recovery reserve intact.",
+    "Before any next write, perform one combined bytes/SHA/JSON plus fragment-state readback on the affected resource.",
+    "Do not change WordPress security, WAF, Cloudflare or host configuration without direct proof that that layer owns the limit.",
+    "If the operator can configure the edge layer, prefer an allow/skip rule scoped to the target host plus X-WPVibe: 1 or User-Agent WPVibe/1.0 rather than IP allowlisting, because relay source IPs may rotate."
+  ],
+  "current_parity_consequence": {
+    "page272": "Four legacy regions are confirmed written; CTA + form contact semantics wait on a successful combined readback.",
+    "page256": "The last af260013 punctuation write remains UNKNOWN until fresh raw snippet/hash readback.",
+    "global_header": "Prepared only; do not start while page-level closeouts are blocked and rate limiting is active."
+  }
+}
