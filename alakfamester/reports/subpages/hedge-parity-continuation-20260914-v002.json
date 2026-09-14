@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "package": "hedge-parity-continuation-20260914-v002",
+  "date": "2026-09-14",
+  "scope": {
+    "target_page_id": 272,
+    "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+    "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+    "write_scope": "Only page272 is an allowed final behavior/content target. Shared media metadata touched during diagnosis is being restored to its pre-package state."
+  },
+  "governing_decisions": ["D03","D07","D09","D11","D12","D17","D18"],
+  "page272_last_verified": {
+    "elementor_bytes": 53097,
+    "elementor_sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+    "json_valid": true,
+    "saved_fixes": [
+      "EAEL b2e2c001 image resolution restored from medium to full.",
+      "Exact source sentence restored: Jellemzően 24 órán belül válaszolok."
+    ],
+    "preserved": [
+      "hero af2e004e",
+      "proof carousel af2e004d",
+      "native Atomic reviews c3d30005",
+      "MetForm af2e0011",
+      "2026-09-14 source-copy expansions",
+      "#ajanlatkeres anchor",
+      "six previously hidden legacy image widgets remain removed"
+    ]
+  },
+  "fresh_frontend_before_opera_disconnect": {
+    "reply_sentence_present": true,
+    "eael_gallery_uses_full_original_media_urls": true,
+    "form_controls_source_target_match": true,
+    "heading_text_set_source_target_match": true,
+    "canonical_page_content_links_match_d09": true,
+    "pixel_pass": false,
+    "note": "Opera screenshot remained unavailable and the connector later disconnected. Accessibility-tree reads were available before disconnect."
+  },
+  "shared_media_scope_recovery": {
+    "reason": "The first media-alt parity job changed shared attachment metadata. Some hedge attachments are also used by page258 Gallery, so those global changes exceed the page272-only modification scope.",
+    "prepackage_alt_map_source": "Captured before the first media-alt write in this continuation.",
+    "restored_ids": [204,203,206,205,112,207,208,209,210,211,212,213,214,215,216,217,218,219,104,105,106,107,108,109],
+    "restored_count": 24,
+    "pending_ids": [110,111],
+    "pending_expected_prepackage_values": {
+      "110": "Saját sövénymunka, 15. kép",
+      "111": "Saját sövénymunka, 16. kép"
+    },
+    "last_known_current_pending_values": {
+      "110": "Sövénymunka, 20. kép",
+      "111": "Sövénymunka, 21. kép"
+    },
+    "write_attempts_for_110_after_detection": "All returned HTTP 429 before execution; no successful 110 restore is claimed.",
+    "write_attempts_for_111_after_detection": "None executed after scope detection; 111 remains pending.",
+    "batch_probe": "WordPress /batch/v1 rejected media subrequests with rest_batch_not_allowed; no batch media writes executed."
+  },
+  "page272_gallery_final_plan": {
+    "widget": "b2e2c001 eael-filterable-gallery",
+    "items": 28,
+    "decision": "D17",
+    "source_code_confirmation": "EAEL Filterable_Gallery.php reads attachment _wp_attachment_image_alt first and falls back to the item title. Therefore page272 must not depend on shared attachment alt metadata for source-specific accessible names.",
+    "required_page_only_change": "After shared-media rollback is complete, preserve each EAEL item URL/name/order/repeater id and set eael_fg_gallery_img.id = 0 for all 28 items, matching the previously proven D17 implementation. Prefer one exact validated eael_fg_gallery_items replacement; avoid a full Elementor save unless D18 inventory is re-proven.",
+    "do_not": [
+      "Do not re-edit shared attachment alts for page272 parity.",
+      "Do not restore the old full page272 revision wholesale.",
+      "Do not reintroduce the hidden legacy image widgets."
+    ]
+  },
+  "fresh_accessibility_differences_prepared_not_written": {
+    "contact_cta_af2e000f": "Source exposes ÍRJON BÁTRAN + kreativ@alakfa-mester.hu as one mailto link; target currently links only the e-mail address.",
+    "form_intro_af2e004c": "Source contact links expose exact uppercase/spaced accessible names; target current accessible names collapse label+value and use title case.",
+    "named_regions": {
+      "source": [
+        "Minőségi sövény formára vágás, metszés és megújítás",
+        "Amit a megbízóim mondanak",
+        "Egy sövény nem csak egyenes zöld fal lehet",
+        "A sövény ritkán egyik napról a másikra romlik le",
+        "Egyszerű nyírás vagy szerkezeti fenntartás?",
+        "Milyen munkákat vállalok?",
+        "Sövénymunkák",
+        "Van hasonló növénye?",
+        "Küldjön fotót a sövényről"
+      ],
+      "target_current": ["Amit a megbízóim mondanak"],
+      "safe_legacy_candidates": ["af2e0007","af2e0045","af2e0047","af2e0049","af2e000f"],
+      "safety_note": "Only add a region where the complete source section is wholly contained by the legacy text-editor root. Do not create partial/fake regions for the Atomic hero, gallery+EAEL composite, or form+MetForm composite."
+    },
+    "reviews": {
+      "source_tablist_name": "Ügyfélvélemények",
+      "target_tablist_name": null,
+      "source_tab_numeric_prefixes": false,
+      "target_tab_numeric_prefixes": true,
+      "target_extra_focusable_controls": ["1. vélemény","2. vélemény","3. vélemény"],
+      "safety_note": "Do not guess Atomic aria attributes. The page256 Elementor 4.2.4 pilot proved a stored e-flexbox aria-labelledby attribute was not emitted. Inspect live e-tabs schema first when quota/throttling permits; otherwise leave explicit."
+    }
+  },
+  "wpvibe": {
+    "account": "ncsnorbert+20260914-3@gmail.com",
+    "exact_counter_at_closeout": "280/300 used",
+    "remaining": 20,
+    "mandatory_reserve": 10,
+    "usable_above_reserve": 10,
+    "site_status": "HTTP 429 Too Many Requests persists for WPVibe site requests even after pauses and built-in exponential retries; no Retry-After header.",
+    "fleet_jobs": {
+      "media_parity": "fj_75bc98a970c64ce7",
+      "scope_restore_partial": "fj_9d41f7d4efff49db"
+    }
+  },
+  "blockers": [
+    "The next complete remote work package does not fit safely above the 10-call closeout reserve, and host-level HTTP 429 is still active. Per project rules no new partial remote package may be started.",
+    "Opera connector is disconnected; screenshot capture was unavailable before disconnect.",
+    "specs/acceptance.json and specs/behaviors.json are absent. Controlled six-viewport screenshot/overlay/diff cannot be produced in this session. PIXEL_PASS=false."
+  ],
+  "next_safe_operation": [
+    "Re-check exact WPVibe counter and page272 hash before any write.",
+    "Re-read media 110/111; if still at the last-known source-specific values, restore only those two to the recorded prepackage values.",
+    "Verify all 26 shared attachment alt values equal the prepackage map; make no more shared-media writes.",
+    "Apply the single page272-only EAEL gallery item-array change to id:0 for all 28 items while preserving URL/name/order/repeater ids and full resolution.",
+    "Apply only the verified page272 legacy semantic fixes (af2e000f mailto range; af2e004c accessible link names; complete legacy named-region roots).",
+    "Inspect live e-tabs schema before any review semantics change. Do not guess Atomic attributes.",
+    "Read back page hash/JSON and fresh frontend; verify hero/proof/reviews/gallery/form preservation and 28 gallery source names.",
+    "Update STATE.md and this report only after the remote closeout is verified."
+  ]
+}
