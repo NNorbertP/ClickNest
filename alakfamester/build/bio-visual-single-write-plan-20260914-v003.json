@@ -1,0 +1,70 @@
+{
+  "schema_version": 3,
+  "package": "bio-visual-single-write-plan-20260914-v003",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_SINGLE_WRITE_NOT_DEPLOYED",
+  "goal": "Deploy all currently source-proven page256 visual corrections with one guarded Additional CSS insertion instead of three WordPress writes.",
+  "ordered_blocks": [
+    {
+      "order": 1,
+      "file": "build/bio-visual-parity-v001.css",
+      "content_sha": "8859a3ce497f00b947d19851d6312a90ac8852e4",
+      "marker": "af-bio-visual-v001",
+      "scope": "body.page-id-256 only",
+      "owners": ["af260007 direct eyebrow", "af260010 technology", "af260011 symptom table", "af260015 FAQ"],
+      "source_commit": "fa54f456427b23ea486f1d24dc0373a7df6a14f9"
+    },
+    {
+      "order": 2,
+      "file": "build/bio-visual-parity-v002-expectations.css",
+      "content_sha": "5ff5258064082087cf3c90bc47b140aed0771e87",
+      "marker": "af-bio-expectations-visual-v002",
+      "scope": "body.page-id-256 .elementor-element-af260013 only",
+      "owners": ["expectations two-card comparison", "positive/negative checklist markers"],
+      "source_commit": "018b6b8d80b834b11cf0850c998b160591d7e33e"
+    },
+    {
+      "order": 3,
+      "file": "build/bio-hero-layout-parity-v001.css",
+      "content_sha": "56f0f32bb2c1974d461eb63302e7eda9406d423c",
+      "marker": "af-bio-hero-layout-v001",
+      "scope": "body.page-id-256 #af-sub-bio-hero only, min-width 901px only",
+      "owners": ["desktop hero grid/rhythm", "46rem copy measure", "contact pair geometry", "proof/meta wrap geometry"],
+      "source_commit": "1aa319be9f37a52b8a38d243c18e73ea57eeeb1f"
+    }
+  ],
+  "collision_audit": {
+    "selector_overlap_between_blocks": false,
+    "breakpoint_conflict": false,
+    "reason": "v001 targets af260007/010/011/015, expectations targets only af260013, hero targets only #af-sub-bio-hero. v001/expectations max-width:900px rules and hero min-width:901px rule are disjoint.",
+    "global_header_footer": false,
+    "other_page_selectors": false,
+    "section_height_rules": false,
+    "saved_elementor_data_change": false,
+    "javascript_change": false,
+    "visible_copy_change": false,
+    "form_submission_change": false
+  },
+  "single_write_contract": [
+    "Do not execute while provider balance is at/below D11 reserve. Latest exact counter at preparation is 291/300 used, 9 remaining: zero WPVibe site calls permitted.",
+    "When headroom returns, first re-read page256 Elementor bytes/SHA/JSON and require 35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / valid unless drift is reconciled.",
+    "Fresh-read complete Additional CSS post8 state and reconcile page264 visual v004+v005 plus header-v004. Never use the older 601189-byte header-only baseline as the current write base.",
+    "Require exactly one /* af-project:end */ marker and prove all three page256 markers are absent. If any marker is present, stop and inventory rather than duplicate it.",
+    "Retrieve the three exact current GitHub files above, concatenate them in order 1->2->3 separated only by newlines, and insert that complete concatenation immediately before the unique project-end marker using ONE match-once /wpvibe/v1/content/edit call.",
+    "A 429-returned write is UNKNOWN. Do not retry. Read marker counts/hash first when quota permits.",
+    "Read back Additional CSS bytes/SHA and all three marker counts plus page256 unchanged Elementor hash/JSON.",
+    "Use at most the existing two Opera tabs for source/target visual QA; do not create replacement tabs if the connector is disconnected or another flow owns them."
+  ],
+  "visual_acceptance_after_write": [
+    "Hero: source-like desktop copy vertical start, 46rem measure, contact spacing and third proof item wrapping without changing outer hero height/art size/mobile stack.",
+    "Technology: source 32px card padding, organic radii, white/sage surfaces, top botanical hairline, current icon badges preserved, collision-free lower-right leaf watermarks, custom green-check list markers with no native listMarker.",
+    "Symptom table: source organic surface, sage uppercase header, 13x24 cell spacing, alternating row tint and horizontal-scroll edge treatment while text/rowHeader semantics remain unchanged.",
+    "Expectations: equal two-card desktop comparison, sage positive/beige negative surfaces and source check/X leaf markers; one column <=900px.",
+    "FAQ: native details behavior preserved with source card/summary/plus-minus/open/hover visual mapping.",
+    "No regression of reviews, CTA, form links, hero art, exact section-height acceptance rules or global header/dock."
+  ],
+  "rollback": "If a proven regression appears, remove only the exact three newly inserted marked blocks (or the exact combined inserted string) by guarded match-once edit; never restore an old full Additional CSS snapshot.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
