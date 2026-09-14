@@ -1,0 +1,39 @@
+{
+  "schema_version": 3,
+  "package": "source-asset-recovery-audit-20260914-v003",
+  "date": "2026-09-14",
+  "scope": "read-only exact source asset recovery; no WordPress/media write",
+  "supersedes_for_archive_attempt_notes": "reports/source-asset-recovery-audit-20260914-v002.json",
+  "assets": [
+    {
+      "page": 270,
+      "source_url": "https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp",
+      "semantic_role": "Biró János munka közben",
+      "source_status": "documented 404",
+      "git_history": "no committed source path/history",
+      "indexed_archive_search": "zero exact filename/host results from web.archive.org/archive.org constrained search"
+    },
+    {
+      "page": 258,
+      "source_url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+      "semantic_role": "A többgömbös Ellwoodi niwaki, másik nézet",
+      "source_status": "documented 404",
+      "git_history": "no committed source path/history",
+      "indexed_archive_search": "zero exact filename/host results from web.archive.org/archive.org constrained search"
+    }
+  ],
+  "archive_api_attempt": {
+    "wayback_front_page": "reachable",
+    "cdx_exact_url_queries": "environment safety layer refused the parameterized CDX URLs even after the Wayback origin itself was opened",
+    "availability_api_queries": "same environment safety restriction",
+    "container_direct_download": "blocked because the exact parameterized archive URL could not first be accepted by the browsing safety gate",
+    "conclusion": "A definitive archive miss is still NOT claimed. Exact archived bytes/digest remain technically unproven from this environment."
+  },
+  "decision": [
+    "Keep both assets as hard blockers.",
+    "Do not redraw, substitute, upscale another photo, or duplicate a visually similar target asset.",
+    "Only exact original bytes, a proven archived 200 original/digest, or the original local preparation workspace may clear either blocker."
+  ],
+  "wordpress_writes": 0,
+  "media_writes": 0
+}
