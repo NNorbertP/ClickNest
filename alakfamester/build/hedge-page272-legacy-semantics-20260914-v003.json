@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "hedge-page272-legacy-semantics-20260914-v003",
+  "date": "2026-09-14",
+  "status": "PREPARED_NOT_SENT_HOST_429",
+  "scope": {
+    "target_page_id": 272,
+    "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+    "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+    "write_rule": "Only page272 Elementor data may change in this package. No global template, Additional CSS, plugin, shared media, SMTP or other-page write."
+  },
+  "precondition": {
+    "elementor_bytes": 53041,
+    "elementor_sha256": "b283e07f441a11a8f2390a685c91323ea66d58be2b15713c2b4e6d1ca35d0627",
+    "json_valid": true,
+    "reason_for_new_baseline": "The previously prepared page-only EAEL decoupling completed asynchronously: all 28 gallery media ids are now 0. The exact 56-byte decrease from the 53097-byte baseline is fully explained by 28 three-digit attachment ids becoming one-digit zero values."
+  },
+  "preserve": [
+    "EAEL widget b2e2c001: 28 items, all media_id=0, exact item names, URLs, order and repeater ids, resolution=full",
+    "26 shared attachment alt values restored to their recorded pre-package state",
+    "hero af2e004e",
+    "proof carousel af2e004d",
+    "native review tabs c3d30005",
+    "MetForm af2e0011",
+    "Jellemzően 24 órán belül válaszolok.",
+    "#ajanlatkeres",
+    "removed legacy image widgets af2e0009-af2e000e stay absent"
+  ],
+  "operations": [
+    {
+      "element_id": "af2e0007",
+      "purpose": "complete source-equivalent named region",
+      "old": "<div class='af-sub-inner' id='formara-vagas'>",
+      "new": "<div class='af-sub-inner' id='formara-vagas' role='region' aria-label='Egy sövény nem csak egyenes zöld fal lehet'>"
+    },
+    {
+      "element_id": "af2e0045",
+      "purpose": "complete source-equivalent named region",
+      "old": "<div class='af-sub-inner'><p class='af-sub-eyebrow'>Milyen problémákkal keresnek?</p><h2>A sövény ritkán egyik napról a másikra romlik le</h2>",
+      "new": "<div class='af-sub-inner' role='region' aria-label='A sövény ritkán egyik napról a másikra romlik le'><p class='af-sub-eyebrow'>Milyen problémákkal keresnek?</p><h2>A sövény ritkán egyik napról a másikra romlik le</h2>"
+    },
+    {
+      "element_id": "af2e0047",
+      "purpose": "complete source-equivalent named region",
+      "old": "<div class='af-sub-inner'><p class='af-sub-eyebrow'>A különbség</p><h2>Egyszerű nyírás vagy szerkezeti fenntartás?</h2>",
+      "new": "<div class='af-sub-inner' role='region' aria-label='Egyszerű nyírás vagy szerkezeti fenntartás?'><p class='af-sub-eyebrow'>A különbség</p><h2>Egyszerű nyírás vagy szerkezeti fenntartás?</h2>"
+    },
+    {
+      "element_id": "af2e0049",
+      "purpose": "complete source-equivalent named region",
+      "old": "<div class='af-sub-inner'><p class='af-sub-eyebrow'>Szolgáltatás</p><h2>Milyen munkákat vállalok?</h2>",
+      "new": "<div class='af-sub-inner' role='region' aria-label='Milyen munkákat vállalok?'><p class='af-sub-eyebrow'>Szolgáltatás</p><h2>Milyen munkákat vállalok?</h2>"
+    },
+    {
+      "element_id": "af2e000f",
+      "purpose": "named region plus exact source mailto clickable range",
+      "old": "<div class='af-sub-inner'><h2>Van hasonló növénye?</h2><p>Küldjön róla 3–5 fotót, és megírom, milyen lehetőségeket látok benne.</p><p><a href='mailto:kreativ@alakfa-mester.hu'>kreativ@alakfa-mester.hu</a><br><strong>Írjon bátran</strong></p><a class='af-btn af-btn-bronze' href='#ajanlatkeres'>Tovább az űrlaphoz</a><p class='af-sub-eyebrow'>Következő lépés</p></div>",
+      "new": "<div class='af-sub-inner' role='region' aria-label='Van hasonló növénye?'><h2>Van hasonló növénye?</h2><p>Küldjön róla 3–5 fotót, és megírom, milyen lehetőségeket látok benne.</p><p><a href='mailto:kreativ@alakfa-mester.hu' aria-label='ÍRJON BÁTRAN kreativ@alakfa-mester.hu'><strong>kreativ@alakfa-mester.hu</strong><br>Írjon bátran</a></p><a class='af-btn af-btn-bronze' href='#ajanlatkeres'>Tovább az űrlaphoz</a><p class='af-sub-eyebrow'>Következő lépés</p></div>"
+    },
+    {
+      "element_id": "af2e004c",
+      "purpose": "exact source accessible names for existing phone and e-mail links without href/style changes",
+      "old_phone": "<a class='contact-btn' href='tel:+36305394820'>",
+      "new_phone": "<a class='contact-btn' href='tel:+36305394820' aria-label='HÍVJON NYUGODTAN +36 30 539 48 20'>",
+      "old_email": "<a class='contact-btn' href='mailto:kreativ@alakfa-mester.hu'>",
+      "new_email": "<a class='contact-btn' href='mailto:kreativ@alakfa-mester.hu' aria-label='ÍRJON BÁTRAN kreativ@alakfa-mester.hu'>"
+    }
+  ],
+  "execution": {
+    "method": "WPVibe /wpvibe/v1/content/search followed by exact match-once /wpvibe/v1/content/edit on page272 meta:_elementor_data",
+    "full_save": false,
+    "raw_sql_write": false,
+    "search_rule": "Confirm each current old fragment occurs exactly once before editing; abort the package on drift or multiple matches.",
+    "readback": "Require JSON_VALID=1, fresh hash, protected element IDs present, removed legacy IDs absent and fresh frontend accessibility verification."
+  },
+  "review_semantics": {
+    "status": "NOT_INCLUDED",
+    "reason": "Elementor 4.2.4 Atomic attributes must not be guessed. Inspect live e-tabs schema only after host throttling clears."
+  },
+  "acceptance": [
+    "Source and target expose region names for the five complete legacy sections in this package.",
+    "Van hasonló növénye? mailto exposes exact accessible name ÍRJON BÁTRAN kreativ@alakfa-mester.hu and still preserves #ajanlatkeres.",
+    "Form intro phone/e-mail links expose the exact source accessible names and unchanged hrefs.",
+    "24-hour reply sentence remains present.",
+    "EAEL gallery remains 28 items, media ids remain 0, names/URLs/order unchanged and resolution remains full.",
+    "Hero, proof carousel, native reviews and MetForm remain present.",
+    "No SMTP or external submission/test message."
+  ]
+}
