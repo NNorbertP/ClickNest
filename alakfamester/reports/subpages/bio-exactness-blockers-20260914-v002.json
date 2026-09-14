@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "package": "bio-exactness-blockers-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "CURRENT_HARD_BLOCKERS_NOT_TO_BE_BYPASSED_WITH_UNSAFE_WORKAROUNDS",
+  "supersedes": "reports/subpages/bio-exactness-blockers-20260914-v001.json",
+  "purpose": "Keep source-perfect residuals separate from safe visual/semantic improvements so page256 is never called complete while known structure/runtime/accessibility gaps remain.",
+  "semantic_oracle": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+  "semantic_rule": "Final accessibility acceptance is section-local. Whole-page aggregate role counts are regression heuristics only because shared header/footer structures can accidentally compensate unrelated main-content deltas.",
+  "blockers": [
+    {
+      "id": "scope_remote",
+      "area": "remote execution",
+      "current_block": "Fresh STATE.md still assigns authoritative WordPress write scope to page264 only; WPVibe is disabled; +5 target-site connection/quota unknown; shared Opera tabs are owned by the parallel page264 QA flow.",
+      "unsafe_shortcut_forbidden": "Do not steal shared tabs, overwrite concurrent STATE history, use stale quota or mutate another page/shared resource.",
+      "resolution": "Normal scope handoff + released browser + usable verified +5 WPVibe."
+    },
+    {
+      "id": "page_local_css_carrier",
+      "area": "visual delivery",
+      "current_block": "Current scope forbids global/shared Hello Additional CSS and the page-local style carrier inside af260016 has not yet been proven to survive Elementor/WordPress sanitization/rendering safely.",
+      "safe_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+      "unsafe_shortcut_forbidden": "No global CSS/plugin/theme/snippet fallback without explicit scope expansion.",
+      "resolution": "Probe PASS with saved/rendered/no-op verification and rollback margin."
+    },
+    {
+      "id": "review_points_semantics",
+      "area": "Panasonic review body",
+      "source_requirement": "One testimonial-points list containing exactly three listitems between the intro and final testimonial paragraphs.",
+      "current_target": "Five inline span siblings inside p.af-review-text; the three middle source points have no list/listitem semantics.",
+      "evidence": "Current source/target raw DOM diff; section-local AX gate v002 supersedes misleading whole-page aggregate list counts.",
+      "safe_candidate": "build/bio-review-points-semantics-20260914-v001.json",
+      "remaining_block": "The proposed inline ARIA-equivalent list/listitem mapping has not yet been verified in browser AX and may interact with the Atomic paragraph/tabPanel reading order.",
+      "unsafe_shortcut_forbidden": "Do not inject block ul/li inside the existing rendered p without a proven owner transform; do not claim parity from whole-page list counts; do not duplicate visible point text.",
+      "resolution": "Fresh active-review AX proof, then only a compact page256-only semantic mapping whose AX readback yields list1/items3 in source order without changing tab/panel semantics or visible copy."
+    },
+    {
+      "id": "stress_dom_order",
+      "area": "af260007 stress",
+      "source_requirement": "Saved/read/AX order p1 -> p2 -> article/list.",
+      "current_target": "p1 -> aside/list -> p2.",
+      "safe_partial": "bio-stress-current-dom-visual-v003.css reproduces source presentation; bio-stress-article-semantic-20260914-v001.json can atomically fix aside->article if exactly two proven whole-word matches exist.",
+      "remaining_block": "No supported atomic node-move primitive is proven for moving p2 before the card in one valid transaction.",
+      "unsafe_shortcut_forbidden": "No duplicate-then-delete text, multi-call invalid wrapper surgery, JS reorder or old full blob restore.",
+      "resolution": "Future supported atomic owner/node move or one exact server-side transformation primitive proven safe."
+    },
+    {
+      "id": "expectations_article_ownership",
+      "area": "af260013 expectations",
+      "source_requirement": "Left article owns h2 + 3 positive + 2 negative items; right article owns h3 + body + link.",
+      "current_target": "h2 outside; two list-card divs inside split; h3/body/link outside.",
+      "source_contract": "build/bio-expectations-source-structure-20260914-v004.json",
+      "remaining_block": "Correct ownership requires moving separated subtrees across wrapper boundaries; current safe snippet workflow has no proven single atomic regrouping primitive.",
+      "unsafe_shortcut_forbidden": "Do not create article wrappers with separate opening/closing writes, duplicate protected copy, or assign article roles to the wrong current wrappers merely to satisfy counts.",
+      "resolution": "Future atomic owner-level transform or separately approved builder path preserving D18 constraints."
+    },
+    {
+      "id": "FAQ_exact_runtime",
+      "area": "FAQ",
+      "source_requirement": "Four real buttons with aria-expanded/controls, ArrowUp/Down/Left/Right + Home/End focus collection, and source 280ms/220ms panel motion.",
+      "current_target": "Functional native details/summary disclosureTriangle controls.",
+      "oracle": "build/bio-faq-source-interaction-contract-20260914-v001.json",
+      "safe_partial": "Page-local CSS may make native controls visually source-like while preserving functionality.",
+      "remaining_block": "Exact role/keyboard/motion requires runtime behavior not supplied by native details.",
+      "unsafe_shortcut_forbidden": "No ad-hoc page-local JS, no global ID35/snippet/plugin edit and no unsynchronized fake ARIA under current constraints.",
+      "resolution": "Sanctioned page-local/runtime owner or explicit scope/project change with interaction regression plan."
+    },
+    {
+      "id": "review_prev_next_focus",
+      "area": "reviews",
+      "source_requirement": "Prev/next switches review and explicitly focuses the newly active tabpanel.",
+      "current_target": "ID35 switches tabs/dots but does not explicitly focus the new panel.",
+      "oracle": "build/bio-review-source-interaction-contract-20260914-v001.json",
+      "safe_partial": "Preserve working Atomic Tabs/ID35 while fixing presentation locally.",
+      "unsafe_shortcut_forbidden": "Do not replace Atomic Tabs or modify global ID35 under page256-only scope.",
+      "resolution": "Approved page-local/runtime correction proven against the source interaction contract."
+    },
+    {
+      "id": "review_ordinal_AX",
+      "area": "review tabs",
+      "source_requirement": "One visible ordinal per tab and no ordinal contribution to AX because source tab-mark is aria-hidden.",
+      "current_target": "Global counter pseudo + ID35 literal pseudo duplicate the visual ordinal; prior AX exposed standalone ordinal staticText.",
+      "safe_candidate": "build/bio-review-ordinal-source-v001.css as an isolated page-local block after carrier PASS.",
+      "remaining_block": "Browser AX effect of replacing generated textual content with SVG background is unverified.",
+      "resolution": "Isolated local-style append + immediate visual/AX readback proving one visual mark and zero standalone ordinal AX text while tab names remain exact."
+    },
+    {
+      "id": "responsive_unverified",
+      "area": "responsive final QA",
+      "source_requirement": "Source behavior at >=1400, <=1000, <=900, <=760, <=720, <=560 and narrow ~390.",
+      "current_block": "Parallel browser ownership and remote write gates prevented controlled final responsive source-target acceptance.",
+      "safe_partial": "Source responsive contracts are frozen; several responsive CSS payloads are prepared.",
+      "resolution": "Released two-tab browser workflow + final controlled responsive QA after writes."
+    }
+  ],
+  "section_local_semantic_status": {
+    "reviews": "OPEN list1/items3 + ordinal AX; Atomic tabs/panel names otherwise protected",
+    "stress": "OPEN article role and exact reading order; list1/items4 already present",
+    "technology": "semantic counts source-like: articles3/list1/items4",
+    "table": "OPEN caption1->0 while column3/row4 already protected",
+    "expectations": "OPEN articles0->2 while lists2/items5 already present",
+    "FAQ": "OPEN disclosures4->source buttons4 plus source runtime behavior"
+  },
+  "rule": "A visual approximation, whole-page role-count match or prepared design artifact does not clear a hard blocker. Each blocker requires explicit resolution evidence before exact page256 parity can be declared.",
+  "current_result": "EXACT_PARITY_BLOCKED; many low-risk improvements are prepared but final PASS is not currently truthful.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
