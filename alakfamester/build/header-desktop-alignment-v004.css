@@ -1,0 +1,18 @@
+/* af-project:header-desktop-alignment-v004:start */
+@media(min-width:1241px){
+  body .elementor-element.elementor-element-a1000002{position:relative!important}
+  body .elementor-element.elementor-element-a1000003{flex:0 0 270px!important;width:270px!important;max-width:270px!important;--width:270px!important}
+  body .elementor-element.elementor-element-a1000009{position:absolute!important;left:50%!important;top:50%!important;width:auto!important;max-width:none!important;transform:translate(-50%,-50%)!important}
+  body .elementor-element.elementor-element-a100000a{flex:0 0 270px!important;width:270px!important;max-width:270px!important;margin-left:auto!important;--width:270px!important}
+}
+body .elementor-element-a1000009 .af-nav-dropdown-host>button::after{content:none!important;display:none!important}
+body .elementor-element-a1000009 .af-nav-dropdown-host>button .elementskit-submenu-indicator{display:inline-flex!important;flex:0 0 12px!important;width:12px!important;height:12px!important;margin:0!important;padding:0!important;line-height:12px!important;align-items:center!important;justify-content:center!important}
+body .elementor-element-a1000009 .af-nav-dropdown-host>button .elementskit-submenu-indicator~.elementskit-submenu-indicator,
+body .elementor-element-a1000009 .af-nav-dropdown-host>button>.icon,
+body .elementor-element-a1000009 .af-nav-dropdown-host>button>.ekit-submenu-indicator,
+body .elementor-element-a1000009 .af-nav-dropdown-host>button>i:not(.elementskit-submenu-indicator){display:none!important}
+body .elementor-element-a1000009 .af-nav-dropdown-host.is-current>button,
+body .elementor-element-a1000009 .elementskit-navbar-nav>li.current-menu-parent>.af-nav-dropdown-host>button,
+body .elementor-element-a1000009 .elementskit-navbar-nav>li.current-menu-ancestor>.af-nav-dropdown-host>button,
+body .elementor-element-a1000009 .elementskit-navbar-nav>li.current-menu-item>.af-nav-dropdown-host>button{background:#DDE7DF!important;border-color:rgba(47,93,70,.2)!important;color:#173D2D!important}
+/* af-project:header-desktop-alignment-v004:end */
