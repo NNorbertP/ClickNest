@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-responsive-acceptance-matrix-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 264,
+  "mode": "VISUAL_ACCEPTANCE_ONLY_NO_WRITE",
+  "basis": [
+    "reports/subpages/oldtrees-problem-grid-v001.json",
+    "build/oldtrees-visual-parity-v004.css",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+    "reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json",
+    "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json"
+  ],
+  "formal_views": [
+    {"width":1920,"height":1080},
+    {"width":1440,"height":1000},
+    {"width":1024,"height":900},
+    {"width":768,"height":1024},
+    {"width":390,"height":844},
+    {"width":360,"height":800}
+  ],
+  "known_breakpoint_contracts": {
+    "problem_grid_af2a0007": {
+      "desktop": "4 columns, 16px gap, 48px top margin, 16px chip padding, 24px chip radius, 22px icon",
+      "max_960": "2 columns",
+      "max_760": "1 column"
+    },
+    "comparison_af2a0045": {
+      "above_900": "2 equal minmax(0,1fr) columns with 24px gap and stretch",
+      "max_900": "1 column",
+      "card_padding_default": "32px",
+      "card_padding_max_720": "24px"
+    },
+    "request_contact_af2a0054": {
+      "default": "source-like intrinsic-width green pills",
+      "max_560": "intrinsic width retained, reduced right padding, strong text 0.92rem",
+      "max_400": "100% button width"
+    }
+  },
+  "view_expectations": {
+    "1920x1080": [
+      "problem grid 4 columns",
+      "comparison 2 equal columns, 24px gap, equal height, beige/sage surfaces",
+      "request contact pills intrinsic width with white foreground after v006 if deployed/needed",
+      "hero geometry measured under the dedicated diagnostic rather than adjusted by impression"
+    ],
+    "1440x1000": [
+      "problem grid 4 columns",
+      "comparison 2 equal columns, 24px gap, equal height",
+      "request panel joined and contact pills intrinsic width",
+      "no horizontal overflow"
+    ],
+    "1024x900": [
+      "problem grid remains 4 columns because width is above 960",
+      "comparison remains 2 equal columns because width is above 900",
+      "request contact pills intrinsic width",
+      "no premature mobile stacking"
+    ],
+    "768x1024": [
+      "problem grid 2 columns because width <=960 and >760",
+      "comparison 1 column because width <=900",
+      "comparison card padding remains 32px because width >720",
+      "request contact pills intrinsic width",
+      "no horizontal overflow from cards/forms"
+    ],
+    "390x844": [
+      "problem grid 1 column because width <=760",
+      "comparison 1 column with 24px card padding because width <=720",
+      "request contact buttons are 100% width because width <=400",
+      "reply clock remains 18x18 and joined form panel does not overflow",
+      "all visible source copy remains present without artificial line-break edits"
+    ],
+    "360x800": [
+      "problem grid 1 column",
+      "comparison 1 column with 24px card padding",
+      "request contact buttons 100% width",
+      "no horizontal overflow or clipped fields/contact values",
+      "hero diagnosis must distinguish natural text wrapping from spacing/cascade errors"
+    ]
+  },
+  "all_views_common_checks": [
+    "Source and target use the same browser engine, DPR, zoom, font/image readiness, scroll state and moving-content state.",
+    "Comparison warning/growth icons and X/check markers remain source-like.",
+    "Request heading stays centered, reply clock stays compact and af2a0054/af2a0055 remain one joined visual panel.",
+    "Review/tiszafa/Nordmann semantics already accepted statically must not regress during visual work.",
+    "Measure page width/scrollWidth and fail unexplained horizontal overflow.",
+    "Capture source image, target image, overlay/difference and key geometry; do not resize/crop to manufacture parity."
+  ],
+  "interpretation_rules": [
+    "This matrix defines known breakpoint expectations; it is not a PIXEL_PASS by itself.",
+    "A mismatch outside the documented page264 breakpoint contracts requires fresh source computed-style/geometry evidence before CSS changes.",
+    "Do not alter content to force line wrapping. Width/font/line-height/cascade ownership must be diagnosed first.",
+    "Moving carousel/review states must be synchronized or excluded from static pixel-diff regions."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "RESPONSIVE_ACCEPTANCE_MATRIX_READY"
+}
