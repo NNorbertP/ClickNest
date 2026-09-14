@@ -1,0 +1,15 @@
+/* af-bio-review-quote-v002:start
+ * Scope: page256 review quote only. Prepared, not deployed.
+ * Supersedes v001: source reduces quote width from 46px to 38px <=760px.
+ */
+body.page-id-256 .af-reviews-section .af-review-quote {
+  width: 46px !important;
+  color: #D9C9A5 !important;
+  margin-bottom: 12px !important;
+}
+@media (max-width: 760px) {
+  body.page-id-256 .af-reviews-section .af-review-quote {
+    width: 38px !important;
+  }
+}
+/* af-bio-review-quote-v002:end */
