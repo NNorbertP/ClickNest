@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "package": "hedge-metform-required-audit-20260914-v002",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_writes": 0,
+  "supersedes_for_planning": "reports/subpages/hedge-metform-required-audit-20260914-v001.json",
+  "decision": "D05",
+  "requirement_interpretation": {
+    "exact_project_requirement": "The required service/topic choice must be genuinely enforced on the WordPress target; source visible copy must not change.",
+    "clarification": "D05 requires functional enforcement but does not explicitly require server-side enforcement when MetForm's native Required control itself reliably blocks an empty user submission.",
+    "consequence": "Do not add a server validator merely because the generic PHP path does not independently prove an absent-radio rejection. First prove the actual Form33 radio setting and native behavior without a real submission."
+  },
+  "native_metform_contract": {
+    "radio_setting_key": "mf_input_required",
+    "enabled_value": "yes",
+    "frontend_effect": "MetForm Radio maps mf_input_required=yes to required=true in its frontend validation configuration and renders the required-label marker.",
+    "status": "NATIVE_CLIENT_ENFORCEMENT_CAPABILITY_PROVEN"
+  },
+  "server_path_observation": {
+    "finding": "The audited generic PHP validation path does not independently prove rejection of a completely absent required radio. This is a hardening concern, not by itself proof that the live target fails D05.",
+    "supported_extension": "mf_after_validation_check can reject submissions and is already used by project snippet ID5 for photo-count validation.",
+    "fallback_plan": "build/hedge-form-required-server-plan-20260914-v002.json",
+    "fallback_status": "OPTIONAL_UNTIL_NATIVE_LIVE_BEHAVIOR_PROVES_INSUFFICIENT"
+  },
+  "mandatory_next_live_read": [
+    "Read the current Form33 #af-form-service radio widget only: exact widget ID/type, exact mf_input_name, exact mf_input_required, exact six option values/order.",
+    "Do not infer the field name from Miben kér segítséget? label text.",
+    "Do not edit shared Form33 as part of this page272-only package."
+  ],
+  "decision_tree_after_live_read": [
+    {
+      "condition": "mf_input_required != yes or required configuration is absent",
+      "status": "REAL_CONFIGURATION_DELTA",
+      "next": "Because Form33 is shared, do not change the shared widget setting from strict page272 scope. Prepare a page272-local enforcement solution only after current field ownership and current ID5/ID36 inventory are read."
+    },
+    {
+      "condition": "mf_input_required == yes",
+      "status": "NATIVE_CONFIGURATION_PRESENT",
+      "next": "Prove native empty-choice rejection with a non-delivery/non-entry validation path if available. Do not create PHP fallback merely to duplicate working native enforcement."
+    },
+    {
+      "condition": "native required is present but a safe non-delivery proof reproduces acceptance of an empty group",
+      "status": "FUNCTIONAL_DELTA_PROVEN",
+      "next": "Use the existing-ID36 page272/Form33-scoped mf_after_validation_check fallback design after exact field/ID5 reads."
+    },
+    {
+      "condition": "native required is present and safe non-delivery proof rejects empty choice",
+      "status": "D05_FUNCTIONAL_REQUIREMENT_PASS",
+      "next": "No server fallback. Preserve native configuration and record proof only."
+    }
+  ],
+  "shared_form_constraint": "MetForm33 is shared. No shared Form33 configuration mutation is authorized from page272-only scope merely to satisfy this page.",
+  "fallback_server_design_constraints": [
+    "Existing ID36 only; no second default validator snippet.",
+    "Keep ID36 front-end scope; Code Snippets loads front-end PHP snippets on non-admin requests, including the non-admin MetForm REST path.",
+    "Strict Form33 insert route + wp_get_referer()->url_to_postid()==272 + exact live field-name guards.",
+    "Preserve earlier validation failures unchanged.",
+    "No invented user-visible error copy.",
+    "No real form submission, entry creation, SMTP or external delivery test."
+  ],
+  "nondelivery_test_plan": "build/hedge-form-required-nondelivery-test-plan-20260914-v001.json",
+  "conclusion": "The required-radio item is LIVE_READ_AND_NONDELIVERY_PROOF_FIRST, not an automatic server-PHP implementation. Server enforcement is a prepared fallback only if the live native Required path is absent or demonstrably insufficient.",
+  "smtp_or_external_submission": false,
+  "pixel_pass": false
+}
