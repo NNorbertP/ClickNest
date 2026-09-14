@@ -1,18 +1,36 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "package": "oldtrees-post-v005-acceptance-plan-20260914-v001",
   "date": "2026-09-14",
   "page_id": 264,
-  "mode": "NO_WRITE_BY_DEFAULT",
+  "mode": "NO_WRITE_BY_DEFAULT_WITH_ONE_PROVEN_CONDITIONAL_MICROFIX",
   "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
   "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
   "preconditions": [
     "WPVibe account must be ncsnorbert+20260914-5@gmail.com, verified, and the target site connection must be confirmed.",
     "Exact rolling quota must be read; keep at least 10 calls for D11 recovery/closeout.",
     "page264 _elementor_data must be JSON-valid and reconciled against 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a.",
-    "Additional CSS must expose exactly one af-oldtrees-visual-v004 marker, one af-oldtrees-visual-v005 marker and one af-project:end marker. If marker counts differ, stop and reconcile; do not insert another visual block.",
+    "Additional CSS must expose exactly one af-oldtrees-visual-v004 marker, one af-oldtrees-visual-v005 marker and one af-project:end marker. For the conditional contact fix also require af-oldtrees-visual-v006 count=0. If marker counts differ, stop and reconcile rather than write.",
     "Use at most one reference + one target browser tab; reuse both tabs. Do not open replacement tabs after connector instability."
   ],
+  "proven_conditional_microfix": {
+    "build": "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "static_qa": "reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json",
+    "direct_evidence": "reports/subpages/oldtrees-direct-live-compare-20260914-v005.json",
+    "proven_delta": "At the same 1640x920 Opera viewport after v005, target green request-form contact buttons render dark label/value text while reference renders white.",
+    "cause_class": "cascade strength: v004 already declares source white foreground but a later rule wins",
+    "scope": "body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 only",
+    "properties": ["contact button color #FFF !important", "label color rgba(255,255,255,.9) !important", "strong/value color #FFF !important"],
+    "no_changes": ["layout", "background", "spacing", "DOM", "visible copy", "MetForm fields/processing", "other pages", "header/footer"],
+    "deploy_gate": [
+      "Fresh page264 saved-data read still matches or is explicitly reconciled.",
+      "Fresh complete/compact post8 marker inventory proves v004=1, v005=1, v006=0 and af-project:end=1.",
+      "No newer live CSS already makes the contact label/value white.",
+      "Insert the complete v006 block once immediately before af-project:end using guarded server-side match-once content/edit.",
+      "If write returns 429, treat outcome as UNKNOWN and read back v006 marker before any retry.",
+      "After readback, same-browser capture must show white contact text while geometry/background remain unchanged."
+    ]
+  },
   "visual_checks": [
     {
       "id": "comparison-v005",
@@ -30,7 +48,7 @@
       "failure_rule": "Only a fresh post-v005 screenshot/computed-style/geometry mismatch justifies another CSS change. Do not change copy or DOM."
     },
     {
-      "id": "request-form-v004",
+      "id": "request-form-v004-v006",
       "anchor": "#ajanlatkeres",
       "target_scope": "body.page-id-264 #ajanlatkeres",
       "expected": [
@@ -40,10 +58,11 @@
         "form reply clock SVG is 18x18, never an expanded arc",
         "organic sage radial glow remains behind content and does not cover fields",
         "contact buttons use source-like green pill/leaf-icon treatment and lift 2px on hover/focus-visible",
+        "contact button label/value foreground is white, with label rgba(255,255,255,.9)",
         "contact buttons retain intrinsic width at 401-560px and become 100% only at <=400px",
         "MetForm fields continue naturally within the same visual panel"
       ],
-      "failure_rule": "Do not touch shared MetForm33 just to solve a page264 surface/layout mismatch; use page264-scoped CSS only after a measured cause is proven."
+      "failure_rule": "The only currently proven local failure is contact foreground color. Do not touch shared MetForm33 or other panel geometry unless a fresh synchronized measurement proves another failure."
     },
     {
       "id": "hero-geometry",
@@ -52,8 +71,13 @@
         "source copy, line breaks, hero art identity and accessible title/description remain intact",
         "re-measure vertical geometry only after matching browser, viewport, DPR, zoom, font/image readiness and focus/load state"
       ],
-      "known_unproven_observation": "An earlier diagnostic suggested roughly 40px lower target content, but no responsible CSS/computed-style cause was proven.",
+      "known_unproven_observation": "A same-browser 1640x920 diagnostic shows target left hero copy begins lower than source while lower hero boundary is close; copy-column spacing/alignment is suspected but no owner/cascade cause is proven.",
       "failure_rule": "No padding/margin patch from screenshot impression alone. Require measured geometry and computed-style cause."
+    },
+    {
+      "id": "floating-contact-dock",
+      "scope_rule": "The direct compare proves a visual defect on the target dock while AX proves phone/mail/CTA content already exists. Because this task may not affect other pages, any future fix must be diagnostic-first and page264-scoped even if the underlying component is globally shared.",
+      "failure_rule": "Do not recreate markup/runtime and do not deploy a global dock change from this page264 task."
     },
     {
       "id": "comparison-dark-divider",
@@ -113,6 +137,6 @@
     "No deterministic screenshot tooling: keep PIXEL_PASS=false.",
     "Two attempted fixes without measurable improvement: stop CSS iteration and re-diagnose root cause."
   ],
-  "success_condition": "All existing page264 content/semantic/runtime contracts remain intact; v005 comparison and v004 form visuals match synchronized reference captures within documented measurement tolerances; no unproven new write remains. Formal pixel pass still requires deterministic overlay/diff tooling.",
+  "success_condition": "All existing page264 content/semantic/runtime contracts remain intact; v005 comparison and v004 form visuals match synchronized reference captures; the proven contact foreground delta is closed by either an already-live newer rule or the guarded v006 microfix; no unproven new write remains. Formal pixel pass still requires deterministic overlay/diff tooling.",
   "wordpress_writes": 0
 }
