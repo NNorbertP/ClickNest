@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "project": "alakfamester",
+  "package": "hedge-parity-next-20260914-v002",
+  "date": "2026-09-14",
+  "status": "PREPARED_PARTIAL_REMOTE_BLOCKED_BY_429",
+  "scope": {
+    "target_page_id": 272,
+    "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+    "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+    "rule": "Only page272 may change. Shared media metadata must end in its pre-package state."
+  },
+  "last_verified_page272": {
+    "elementor_bytes": 53097,
+    "elementor_sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+    "json_valid": true,
+    "confirmed_saved_fixes": [
+      "EAEL gallery resolution medium -> full",
+      "Restored exact sentence: Jellemzően 24 órán belül válaszolok."
+    ]
+  },
+  "shared_media_scope_recovery": {
+    "reason": "EAEL with a real media ID reads the attachment _wp_attachment_image_alt value. The first parity job changed shared attachment metadata, but some hedge images are also used by page258 Gallery, so those global metadata edits exceed the user-scoped page272 modification boundary.",
+    "eael_source_evidence": "Filterable_Gallery.php uses attachment alt first and item title as fallback; D17 page272 originally used id:0 with the source item names.",
+    "restored_to_prepackage_ids": [204,203,206,205,112,207,208,209,210,211,212,213,214,215,216,217,218,219,104,105,106,107,108,109],
+    "pending_ids_due_429": [110,111],
+    "pending_values": {
+      "110": "Saját sövénymunka, 15. kép",
+      "111": "Saját sövénymunka, 16. kép"
+    },
+    "next_rule": "Re-read 110/111 before retry; restore only if still changed. After all 26 shared values match the recorded pre-package map, make no further shared media writes."
+  },
+  "page272_gallery_patch": {
+    "widget_id": "b2e2c001",
+    "item_count": 28,
+    "required_resolution": "full",
+    "operation": "Within page272 _elementor_data only, preserve each item URL, item name, order, repeater _id and all widget settings, but set eael_fg_gallery_img.id = 0 for all 28 items, matching the proven D17 implementation. Prefer one exact validated eael_fg_gallery_items array replacement; do not full-save the page unless D18 inventory is re-proven first.",
+    "verification": [
+      "28 items remain",
+      "all source-order URLs unchanged",
+      "frontend uses full/original URLs",
+      "accessible image names equal each eael_fg_gallery_item_name",
+      "page258/shared media metadata unchanged after scope recovery"
+    ]
+  },
+  "page272_legacy_semantics": {
+    "contact_cta_af2e000f": "Restore source clickable range so the entire ÍRJON BÁTRAN + kreativ@alakfa-mester.hu block is one mailto link; preserve #ajanlatkeres CTA and all other content.",
+    "form_intro_af2e004c": [
+      "Preserve restored 24-hour reply sentence.",
+      "Give the two existing contact links exact page-only accessible names: HÍVJON NYUGODTAN +36 30 539 48 20 and ÍRJON BÁTRAN kreativ@alakfa-mester.hu, without changing href or visible styling."
+    ],
+    "safe_legacy_named_regions": [
+      {"element_id":"af2e0007","name":"Egy sövény nem csak egyenes zöld fal lehet"},
+      {"element_id":"af2e0045","name":"A sövény ritkán egyik napról a másikra romlik le"},
+      {"element_id":"af2e0047","name":"Egyszerű nyírás vagy szerkezeti fenntartás?"},
+      {"element_id":"af2e0049","name":"Milyen munkákat vállalok?"},
+      {"element_id":"af2e000f","name":"Van hasonló növénye?"}
+    ],
+    "region_rule": "Add region semantics only where the complete source section is wholly contained by the legacy text-editor root. Do not fake hero/gallery/form outer regions from a partial child."
+  },
+  "review_semantics": {
+    "confirmed_reference": {
+      "tablist_name": "Ügyfélvélemények",
+      "tab_names_have_numeric_prefix": false,
+      "extra_review_index_buttons": false
+    },
+    "confirmed_target": {
+      "tablist_name": null,
+      "tab_names_have_numeric_prefix": true,
+      "extra_review_index_buttons": ["1. vélemény","2. vélemény","3. vélemény"]
+    },
+    "safety": "Do not guess Atomic attributes. The page256 Elementor 4.2.4 pilot proved stored e-flexbox aria-labelledby attributes were not emitted on frontend. First inspect live e-tabs schema after throttling clears; only use a native proven control or an explicitly page272-scoped proven lifecycle solution."
+  },
+  "already_matching": [
+    "All hedge page heading texts",
+    "MetForm field labels, radios, placeholders and upload control",
+    "Canonical WordPress equivalents of source page-content links",
+    "Hero illustration presence",
+    "Native review tab count and review content",
+    "EAEL gallery item count",
+    "Restored reply timing sentence and full-size gallery resolution in saved data"
+  ],
+  "known_blockers": [
+    "WPVibe site requests currently return HTTP 429 without Retry-After, including read-only calls after repeated exponential backoff.",
+    "Opera connector is currently disconnected; screenshot capture was unavailable even before disconnect.",
+    "specs/acceptance.json and specs/behaviors.json remain absent; controlled six-viewport pixel/overlay/diff evidence remains unavailable. PIXEL_PASS=false."
+  ]
+}
