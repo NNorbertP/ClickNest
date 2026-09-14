@@ -1,0 +1,114 @@
+{
+  "schema_version": 2,
+  "package": "canonical-pages-current-state-matrix-20260915-v002",
+  "date": "2026-09-15",
+  "supersedes_for_planning": "reports/canonical-pages-current-state-matrix-20260914-v001.json",
+  "scope": "Read-only planning synthesis. STATE.md remains the sole current WordPress write-scope authority.",
+  "canonical_pages": [
+    {
+      "page_id": 56,
+      "name": "Főoldal",
+      "implementation": "BODY_CONTENT_STRUCTURE_CLOSED_GLOBAL_CHROME_EXTERNAL",
+      "preserve": ["canonical body/navigation destinations", "shared Form33 direct-call note", "footer cleanup", "native reviews and accepted hero/media structure"],
+      "open": ["global header homepage Services active-state bug through header plan v010", "global floating dock paint/layout diagnosis", "formal deterministic visual/interaction acceptance"],
+      "write_now": false
+    },
+    {
+      "page_id": 256,
+      "name": "Biológiai védelem",
+      "implementation": "SEMANTICS_MOSTLY_CLOSED_STRUCTURE_VISUAL_PACKAGES_PREPARED_FUTURE_SCOPE",
+      "historical_baseline": "35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 / JSON valid / ID35; fresh live state required",
+      "authoritative": ["reports/subpages/bio-continuation-20260914-v024.json", "reports/subpages/bio-evidence-supersedence-20260915-v003.json", "build/bio-remote-call-budget-20260914-v003.json"],
+      "preserve": ["13/13 corrected list strings", "table headers/four row-header semantics", "four legacy regions plus ID35 hero/review/FAQ semantics", "exact review tab names/prev-next and duplicate-dot AX suppression", "final CTA semantics", "hero art/copy/links/contact/fact icons", "existing technology callout surface/rail"],
+      "future_delivery": "First prove page-local style carrier in existing af260016; no Hello Additional CSS mutation from page256-only scope. Probe failure cancels CSS delivery path.",
+      "future_chain": ["page-local carrier probe", "page-local visual owner using visual v007", "structural v014", "stress semantic/visual", "table structure", "expectations v003", "accessibility-safe FAQ/CTA v006", "owner-proven review microfixes"],
+      "review_behavior": "Exact source interaction contract frozen; Atomic Tabs are preserved and used as target owner unless a fresh behavior mismatch proves a minimal correction necessary.",
+      "write_now": false
+    },
+    {
+      "page_id": 258,
+      "name": "Galéria",
+      "implementation": "STRUCTURE_REVIEWS_GALLERY_RUNTIME_STRUCTURE_CLOSED_ONE_EXACT_ASSET_BLOCKER",
+      "preserve": ["native Atomic review tabs", "7 project cards", "4 BA controls", "6 manual carousels", "44 masonry items/zoom controls", "single shared interaction runtime"],
+      "open": ["exact frozen Ellwoodi alternate-view asset equivalence", "BA/carousel/lightbox live interaction proof", "deterministic visual matrix"],
+      "asset_note": "Same-basename old public JPG is strong provenance only and is not accepted as the frozen WEBP without exact/deterministic equivalence proof.",
+      "write_now": false
+    },
+    {
+      "page_id": 260,
+      "name": "GYIK",
+      "implementation": "IMPLEMENTATION_CLOSED_PROOF_ONLY",
+      "preserve": ["hero widget/V4 bridges", "native reviews", "disclosure content/structure"],
+      "open": ["formal frozen visual/behavior acceptance only"],
+      "write_now": false
+    },
+    {
+      "page_id": 262,
+      "name": "Gyümölcsfa metszés és védelem",
+      "implementation": "IMPLEMENTATION_CLOSED_PROOF_ONLY",
+      "preserve": ["hero widget/V4 bridges", "native reviews", "accepted source-equivalent content structure"],
+      "open": ["formal frozen visual/behavior acceptance only"],
+      "write_now": false
+    },
+    {
+      "page_id": 264,
+      "name": "Idős fák megmentése",
+      "implementation": "ACTIVE_SCOPE_CONTENT_SEMANTICS_MEDIA_CLOSED_TWO_VISUAL_MICROFIXES_CONDITIONAL",
+      "baseline": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+      "authoritative": ["reports/subpages/oldtrees-continuation-20260915-v010.json", "build/oldtrees-next-remote-window-20260915-v003.json", "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json"],
+      "live_preserve": ["visual v004", "visual v005", "existing ID33 semantic owner", "38/38 headings", "11/11 ordered named regions", "accepted review/Form33/static interaction contracts"],
+      "conditional_candidates": ["v006 request-contact foreground", "v007 equal comparison columns", "combined bundle only if both fresh failures reproduce"],
+      "proof_only": ["Form33 native required/non-delivery behavior", "inner field geometry/style", "href readback", "review keyboard", "tiszafa pointer/keyboard", "Nordmann timing/swipe/pause/reduced motion", "hero measured owner/cascade", "six-view matrix"],
+      "write_now": "Only after restored +5/site/quota and compact page/hash/marker plus trustworthy matched-browser gate; at most one CSS write"
+    },
+    {
+      "page_id": 266,
+      "name": "Kapcsolat",
+      "implementation": "IMPLEMENTATION_CLOSED_PROOF_ONLY",
+      "preserve": ["hero widget/V4 bridges", "Elérhetőségek h2", "four process h3 headings", "form-section ownership"],
+      "open": ["formal visual/behavior acceptance", "SMTP/real submission intentionally excluded"],
+      "write_now": false
+    },
+    {
+      "page_id": 268,
+      "name": "Referencia videók",
+      "implementation": "STRUCTURAL_IMPLEMENTATION_CLOSED_PROOF_ONLY",
+      "accepted_latest": "46622 B / af362a9e7295cf06757b94c487e7504dbc5a01f84ee956906c16d6c93059e747",
+      "preserve": ["fixed CTA sibling/focus order", "seven video controls/IDs", "privacy-mode/lazy structure", "native reviews", "hero"],
+      "open": ["authenticated editor-reopen proof after latest structural save", "review/video/hero runtime interaction proof", "deterministic visual matrix"],
+      "write_now": false
+    },
+    {
+      "page_id": 270,
+      "name": "Rólam",
+      "implementation": "BODY_STRUCTURE_HERO_CLOSED_ASSET_REQUIREMENT_NEEDS_FRESH_REFERENCE_RECONCILIATION",
+      "preserve": ["Rólam hero art", "timeline/content headings", "5-slide manual carousel", "three BA project cards", "accepted visible media roles apart from the disputed portrait requirement"],
+      "open": ["fresh trustworthy reference DOM/screenshot must decide whether Biró János munka közben is currently required", "if required exact portrait bytes remain unrecovered", "BA direct interaction proof", "formal deterministic visual/animation acceptance"],
+      "write_policy": "No portrait upload/removal/substitute until acceptance visibility is freshly proven; no stock/similar replacement.",
+      "write_now": false
+    },
+    {
+      "page_id": 272,
+      "name": "Sövény specialista",
+      "implementation": "SAVED_CONTENT_MEDIA_CLOSED_ONE_SEMANTIC_RUNTIME_SUCCESSOR_STRICTLY_GATED_FUTURE_SCOPE",
+      "baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid; fresh read required",
+      "authoritative": ["reports/subpages/hedge-artifact-supersession-20260915-v004.json", "reports/subpages/hedge-continuation-20260915-v014.json", "build/hedge-next-live-window-plan-20260915-v005.json", "build/hedge-acceptance-matrix-20260915-v005.json"],
+      "preserve": ["26/26 shared-media recovery", "EAEL 28/28 page-local id=0/full/original/order", "five saved legacy regions", "CTA/contact semantics and 24h sentence", "hero/proof/reviews/Form33 structures", "removed legacy widgets", "closed D09 links"],
+      "only_candidate": "Existing ID36 -> hedge-semantic-runtime-v004.php only after fresh baseline/cardinality/native-ARIA/ID uniqueness gates; any native semantic conflict makes the prepared write HOLD.",
+      "read_first": ["complete outer roots", "H1-H6 tree", "proof-carousel roles/owner", "Form33 required saved settings/native safe rejection", "document-head metadata/schema ownership"],
+      "page_css_candidate": "NONE",
+      "write_now": false
+    }
+  ],
+  "global_shared": {
+    "header": "Future build/header-deployment-plan-v010.json only after global scope handoff; existing ID7 owner; homepage Főoldal current/Services neutral and real service-child Services current-section are mandatory route matrix outcomes.",
+    "floating_dock": "Diagnostic-first global owner. AX controls exist while visual pill is blank/clipped; exact ID7 markup and winning cascade are required before any fix.",
+    "metform33": "ID5 photo validator, ID6 rows=5 and local success state are accepted. Service/topic required must be proven from exact saved setting and safe non-delivery behavior before any fallback code.",
+    "assets": "Ellwoodi exact frozen equivalence remains open. Portrait exact bytes are unrecovered but current acceptance visibility must be freshly resolved before treating it as an implementation blocker.",
+    "formal": "acceptance.json/behaviors.json absent; deterministic six-view exact-browser matrix unavailable; stable generic click/keyboard automation unavailable; PIXEL_PASS=false"
+  },
+  "precedence": ["STATE.md controls write scope", "fresh trustworthy live evidence outranks this matrix", "later specific reconciliation/closeout outranks older broad audits", "proof-only/tooling gaps never license speculative code"],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "CANONICAL_PAGE_MATRIX_RECONCILED_TO_LATEST_STATIC_PLANS_ACTIVE_PAGE264_ONLY"
+}
