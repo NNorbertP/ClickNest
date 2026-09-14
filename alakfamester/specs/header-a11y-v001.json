@@ -1,0 +1,59 @@
+{
+  "version": "header-a11y-v001",
+  "date": "2026-09-14",
+  "scope": "global header accessibility parity",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "closed_desktop_reference_tree": {
+    "header_role": "header/banner",
+    "brand": {
+      "role": "link",
+      "name": "Alakfa mester BIRÓ JÁNOS",
+      "children": ["staticText: Alakfa mester", "staticText: BIRÓ JÁNOS"],
+      "separate_logo_object": false,
+      "separate_tagline_after_link": false
+    },
+    "main_nav": {
+      "role": "navigation",
+      "name": "Főmenü",
+      "top_level_order": ["Főoldal", "Szolgáltatások", "Referenciák", "Rólam", "Kapcsolat"],
+      "services": {"role":"popUpButton","name":"Szolgáltatások","hasPopup":"menu","decorative_caret_exposed_as_image":false},
+      "references": {"role":"popUpButton","name":"Referenciák","hasPopup":"menu","decorative_caret_exposed_as_image":false}
+    }
+  },
+  "fresh_target_tree_before_next_package": {
+    "header_role": "sectionHeader",
+    "brand_link_name": "Alakfa mester BIRÓ JÁNOS",
+    "brand_separate_tagline_static_text": true,
+    "brand_separate_unnamed_logo_image": true,
+    "main_nav_name": "Főmenü",
+    "top_level_roles_names": "match reference",
+    "popup_svg_exposed_as_unnamed_image_child": true,
+    "closed_native_elementskit_submenu_exposed": false
+  },
+  "required_after_runtime_v008": [
+    "Global header root exposes banner/header landmark role.",
+    "Brand is announced once as one home link named 'Alakfa mester BIRÓ JÁNOS'.",
+    "Separate visual tagline is aria-hidden because its text is already included in the brand link accessible name.",
+    "Decorative logo is not exposed as a separate image object; visible logo remains unchanged.",
+    "Főmenü remains named and top-level order/roles remain unchanged.",
+    "Szolgáltatások and Referenciák popup buttons expose text/hasPopup but no decorative image child.",
+    "Closed native ElementsKit duplicate submenu remains outside accessibility tree; when custom runtime exists it is additionally aria-hidden/inert/non-tabbable.",
+    "No duplicate mobile/native navigation enters tab order at <=1240."
+  ],
+  "open_state_checks": [
+    "Only the custom dropdown implementation is visible/focusable.",
+    "Exact current child link may expose aria-current=page; popup parent itself does not gain aria-current.",
+    "Focus order follows reference keyboard contract from specs/header-behaviors-v001.json."
+  ],
+  "regression_failures": [
+    "brand tagline announced twice",
+    "decorative logo or caret announced as image",
+    "two submenu implementations present in accessibility tree/tab order",
+    "header loses banner landmark",
+    "main nav name changes or becomes empty",
+    "top-level link/button order changes"
+  ],
+  "owner": "build/header-runtime-parity-v008.json",
+  "current_status": "SPEC_READY_RUNTIME_NOT_DEPLOYED"
+}
