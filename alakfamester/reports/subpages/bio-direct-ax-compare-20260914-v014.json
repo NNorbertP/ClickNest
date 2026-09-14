@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "package": "bio-direct-ax-compare-20260914-v014",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "source": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "wordpress_writes": 0,
+  "browser_policy": {
+    "browser": "existing shared Opera tabs only",
+    "new_tabs_opened": 0,
+    "source_tab_id": 1672632766,
+    "target_tab_id": 1672632815,
+    "note": "Both source and target accessibility trees were captured successfully before a concurrent process repurposed the target tab. No replacement tab was opened."
+  },
+  "direct_ax_findings": {
+    "stress_section": {
+      "region_name_both": "Miért nem ér véget a munka a metszéssel?",
+      "source_card_role": "article",
+      "target_card_role": "complementary",
+      "card_heading_both": "Mi történik a metszés után?",
+      "status": "PROVEN_DELTA",
+      "safe_direction": "Fresh raw content/search of af260007, then opening/closing aside -> article only if exact live snippet matches. Preserve class, text, IDs and order."
+    },
+    "expectations_section": {
+      "region_name_both": "Mit várhatunk – és mit nem?",
+      "source_article_count": 2,
+      "target_article_count": 0,
+      "source_headings": ["Mit várhatunk – és mit nem?", "Hogyan kapcsolódik az alakfa ápolásához?"],
+      "target_headings": ["Mit várhatunk – és mit nem?", "Hogyan kapcsolódik az alakfa ápolásához?"],
+      "status": "PROVEN_ROLE_DELTA_WITH_CONTENT_ORDER_ALREADY_ALIGNED",
+      "safe_direction": "Do not infer a full widget rewrite from AX. Fresh raw af260013 snippet is still required before adding neutral article roots/wrappers."
+    },
+    "technology_section": {
+      "source_article_count": 3,
+      "target_article_count": 3,
+      "status": "SEMANTIC_ROLE_PARITY"
+    },
+    "symptom_table": {
+      "source_table_name": "Gyakori tünetcsoportok örökzöldeken és formára nyírt növényeken",
+      "target_table_name": "Gyakori tünetcsoportok örökzöldeken és formára nyírt növényeken",
+      "status": "TABLE_NAME_PARITY"
+    },
+    "major_regions": "Source and target expose matching names for hero, reviews, stress, biological approach, symptoms, expectations and FAQ regions in this capture."
+  },
+  "live_write_status": "BLOCKED_IN_THIS_CHAT: WPVibe connector became unavailable after the account-switch attempt, so no WordPress mutation was sent.",
+  "opera_followup": "A later attempt to align both tabs at #technologiak was abandoned when the shared target tab was concurrently navigated to the old-trees page. Do not use that later state as comparison evidence.",
+  "pixel_pass": false,
+  "next_action": "When WPVibe is available under the new account, reconcile page256 against the accepted 35382 B / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 baseline, inspect af260007 and af260013 raw snippets, and apply only exact tag/role changes supported by those snippets."
+}
