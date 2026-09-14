@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "package": "final-acceptance-preflight-20260914-v002",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "supersedes": "reports/final-acceptance-preflight-20260914-v001.json",
+  "wordpress_writes_in_this_preflight": 0,
+  "current_scope": "STATE.md currently authorizes page264-only WordPress writes; this preflight does not expand that scope.",
+  "current_tool_state": {
+    "wpvibe_requested_profile": "ncsnorbert+20260914-5@gmail.com",
+    "profile_email_previous_verification": true,
+    "site_connection": "UNCONFIRMED",
+    "exact_rolling_24h_quota": "UNKNOWN",
+    "latest_attempt": "WPVibe plugin is installed, but the first read-only list_sites call in this continuation returned tool disabled; zero WordPress writes followed.",
+    "opera": "Two existing project tabs only; zero new/replacement tabs. Connector is intermittent and tabs are shared/repurposed by another flow. Same-browser screenshots were temporarily available but deterministic viewport/DPR/zoom control is still unavailable.",
+    "local_browser": "A local Chromium runtime has existed in earlier diagnostics, but Clicknest DNS from the container/runtime is not a reliable deterministic acceptance path."
+  },
+  "implementation_not_yet_final": {
+    "page264_active_scope": [
+      "v006 request-contact white foreground is prepared/gated, not deployed",
+      "v007 equal comparison-grid cascade is prepared/gated, not deployed",
+      "hero vertical delta requires owner/computed-style proof before any patch",
+      "review/range/carousel interaction acceptance remains open",
+      "Form33 service/topic submit-time required enforcement remains unproven"
+    ],
+    "page256_future_scope": [
+      "page-only structural package v012 is prepared, not sent",
+      "fresh v015/v016 same-browser evidence re-proves hero and technology visual deltas matching the existing visual v001/hero-layout candidates",
+      "structure and visual changes must remain separate rollback units",
+      "expectations visual v002 remains HOLD without direct fresh visual proof"
+    ],
+    "global_header_future_scope": [
+      "authoritative deployment plan is build/header-deployment-plan-v010.json",
+      "fresh page256 evidence proves current live Services current-state is inconsistent across service children",
+      "multi-route postdeploy matrix is required; no new independent route helper"
+    ],
+    "page272_future_scope": [
+      "hedge semantic runtime v003 is statically ready but requires live MetForm33 wrapper ownership proof and update/readback of existing ID36 only",
+      "no current page272 visual/content change is justified without a newly reproduced delta"
+    ],
+    "global_dock": "visual blank-pill defect is reproducible while AX content exists; exact source CSS is known, but target winning cascade remains unproven, therefore diagnostic-first/no-write"
+  },
+  "accepted_do_not_reopen": [
+    "page264 saved baseline/content/semantic closeout and v004+v005 live visual blocks",
+    "page272 53606-byte accepted saved baseline, 26/26 shared-media recovery, 28/28 page-local gallery and legacy semantic closeout",
+    "page256 semantic closeout baseline and ID35",
+    "page268 CTA structural order + seven video controls",
+    "shared MetForm33 ID5 photo-count validation, ID6 effective rows=5 and configured local success state",
+    "already-solved hero/class bridge items documented for page260/page262/page266/page270"
+  ],
+  "hard_asset_blockers": {
+    "page270_portrait": "exact source bytes unavailable; source URL documented 404; Git history has no source path; exact archive-index search produced no hit and direct CDX/availability API is blocked by the environment; no substitute permitted",
+    "page258_ellwoodi_alternate": "same status: exact source bytes unavailable/404/no Git source; no substitute permitted",
+    "latest_evidence": "reports/source-asset-recovery-audit-20260914-v003.json"
+  },
+  "machine_acceptance_blockers": [
+    "specs/acceptance.json is absent from current Git main and no Git path history proves recoverable bytes",
+    "specs/behaviors.json is absent from current Git main and no Git path history proves recoverable bytes",
+    "deterministic source-target 1920/1440/1024/768/390/360 browser viewport + DPR + zoom + stable-load controller is unavailable",
+    "no trustworthy automated overlay/diff runner against those frozen states",
+    "current Opera connector exposes no generic click/keyboard action API for the remaining interaction matrix"
+  ],
+  "proof_only_blockers": [
+    "authenticated Elementor editor reopen proof for page268 remains unavailable; never resave solely to obtain proof",
+    "Gallery lightbox/before-after/carousel interactions require an interaction-capable stable browser",
+    "Reference Videos review/video/hero animation interactions remain proof-only",
+    "global header dropdown/mobile/sticky behavior needs the authoritative package first, then interaction acceptance"
+  ],
+  "excluded": [
+    "SMTP configuration",
+    "external mail delivery",
+    "real form submission"
+  ],
+  "completion_rule": "Do not declare final/pixel pass while any active implementation package, formal asset blocker, missing machine acceptance spec, deterministic visual matrix, or required interaction proof remains open.",
+  "next_safe_action": "Obey STATE.md: restore WPVibe +5 site/quota read access, fresh page264 hash/post8/visual gate, conditionally deploy at most one page264 v006/v007 write and read it back. Other page/global packages wait for explicit scope handoff.",
+  "pixel_pass": false,
+  "status": "NOT_FINAL_IMPLEMENTATION_AND_FORMAL_ACCEPTANCE_STILL_OPEN"
+}
