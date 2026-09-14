@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "package": "bio-continuation-20260914-v024",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "reference": "https://alakfamester.clicknest.hu/biologiai-vedelem.html",
+  "scope": "Current user conversation continues page256 parity. Reference read-only. No WordPress write in this continuation while WPVibe is disabled and fresh repository STATE.md assigns authoritative WordPress write scope to page264 only.",
+  "wordpress_writes_this_round": 0,
+  "remote_blockers": {
+    "wpvibe": "DISABLED in this chat before any new write",
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "plus5_target_site_connection": "UNKNOWN",
+    "plus5_exact_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "repository_STATE": "fresh read still PAGE264 ONLY",
+    "opera": "exactly 2 shared tabs; later taken by parallel page264 QA, so page256 browser work is paused rather than stealing/navigating them"
+  },
+  "last_verified_page256_saved_baseline_before_wpvibe_loss": {
+    "bytes": 35382,
+    "sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "runtime_snippet_id": 35,
+    "warning": "Historical baseline only; future fresh live state is authoritative."
+  },
+  "closed_protect": [
+    "13/13 corrected list strings",
+    "uppercase table headers and four rowHeader cells",
+    "four legacy region names plus ID35 hero/review/FAQ semantics",
+    "review exact accessible tab names and previous/next controls",
+    "duplicate numbered review controls suppressed from AX/focus by ID35",
+    "final CTA mailto href and exact accessible name",
+    "hero artwork/copy/links and existing phone/mail/fact icons",
+    "technology three articles/icons/content/order and existing use-case callout surface/left rail"
+  ],
+  "latest_authoritative_planning": {
+    "supersedence": "reports/subpages/bio-evidence-supersedence-20260914-v001.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260914-v002.json",
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "AX_role_gate": "reports/subpages/bio-ax-role-count-gate-20260914-v001.json",
+    "final_acceptance": "specs/bio-final-acceptance-20260914-v001.json",
+    "scope_handoff": "build/bio-scope-handoff-ready-20260914-v001.json",
+    "next_remote_runbook": "build/bio-next-remote-window-20260914-v001.json",
+    "call_budget": "build/bio-remote-call-budget-20260914-v002.json",
+    "responsive_contract": "build/bio-responsive-source-contract-20260914-v001.json"
+  },
+  "preferred_future_remote_sequence": [
+    {
+      "order": 1,
+      "package": "build/bio-visual-single-write-plan-20260914-v007.json",
+      "purpose": "structure-independent page256 CSS only: technology/table/FAQ internals, corrected hero v003 geometry, first three dependency-safe exact waves, stone gradient, source mobile card padding, review quote v002"
+    },
+    {
+      "order": 2,
+      "package": "build/bio-page256-next-safe-package-20260914-v014.json",
+      "purpose": "one-at-a-time exact structural microfixes: FAQ order class, stress two-paragraph wrapper, optional review anchor if safe Atomic owner proven"
+    },
+    {
+      "order": 3,
+      "packages": ["build/bio-semantic-resume-20260914-v013.json", "build/bio-stress-source-visual-20260914-v002.json"],
+      "purpose": "stress aside->article semantics + source lead/forest card visual after structure/pseudo readback"
+    },
+    {
+      "order": 4,
+      "package": "build/bio-table-source-structure-20260914-v001.json",
+      "purpose": "move title from internal caption to source external table-title + aria-labelledby; preserve all cells/scopes"
+    },
+    {
+      "order": 5,
+      "package": "build/bio-expectations-source-structure-20260914-v003.json",
+      "purpose": "guarded two-article source regrouping in a large enough quota window"
+    },
+    {
+      "order": 6,
+      "packages": ["build/bio-cta-mail-structure-20260914-v001.json", "build/bio-faq-cta-source-layout-20260914-v006.json"],
+      "purpose": "deterministic mail child order + accessibility-safe paper FAQ / separate CTA band; fourth exact wave lands in same transaction as paper conversion"
+    },
+    {
+      "order": 7,
+      "packages": ["build/bio-reviews-cascade-diagnostic-20260914-v001.json", "build/bio-review-ordinal-accessibility-20260914-v001.json", "build/bio-review-third-author-role-text-20260914-v001.json"],
+      "purpose": "tiny owner-proven review ordinal/dot/role-line fixes only; optional review decor last after pseudo-slot proof"
+    },
+    {
+      "order": 8,
+      "package": "specs/bio-final-acceptance-20260914-v001.json",
+      "purpose": "final content/AX/anchor/visual/responsive/interaction/regression gates"
+    }
+  ],
+  "latest_static_QA_findings": [
+    "Do not deploy hero icon CSS; fresh live target already has source contact/fact icons.",
+    "Do not deploy technology callout wrapper; fresh live target already has the source-like callout surface/rail.",
+    "Do not deploy old expectations v002; direct source proof shows one left white comparison article + one right sage article.",
+    "Do not deploy all four waves early; the fourth FAQ wave is dependency-bound to FAQ paper conversion.",
+    "Do not generate CTA eyebrow inside h2; accessibility-safe CTA layout v002 keeps it as separate outer staticText and explicitly suppresses h2::before.",
+    "Review visual ordinal is not only duplicated: a generated ordinal also appeared as AX staticText, while source mark is aria-hidden; final ordinal fix must include AX parity.",
+    "Source table has external table-title + aria-labelledby and no caption; target caption is a real structural delta.",
+    "Desktop legacy h2 ~39px is source-equivalent; mobile fluid-heading issue remains diagnostic-only until winning target cascade is measured.",
+    "Third review author role was previously shorter on target than source; no repo decision justifies shortening, but future edit still requires fresh live confirmation."
+  ],
+  "AX_count_gate": {
+    "source": {"article":6,"complementary":1,"list":9,"listItem":32,"region":7,"table":1,"caption":0,"button":6,"disclosureTriangle":0,"tab":3,"tabList":1,"tabPanel":1},
+    "target_last_page256": {"article":3,"complementary":2,"list":9,"listItem":32,"region":7,"table":1,"caption":1,"button":2,"disclosureTriangle":4,"tab":3,"tabList":1,"tabPanel":1},
+    "expected_after_nonFAQ_structural_fixes": "article6 / complementary1 / caption0 while list9/listItem32/region7/table1/tabs remain unchanged",
+    "FAQ": "four disclosureTriangle vs source buttons remains a documented exactness HOLD until source behavior can be safely reproduced"
+  },
+  "global_out_of_scope": [
+    "service-child header current-state Szolgáltatások pill",
+    "nearly blank target floating contact dock"
+  ],
+  "hard_rules": [
+    "fresh live state always outranks prepared artifacts",
+    "no full Elementor save",
+    "no raw SQL/search-replace",
+    "429 write UNKNOWN until readback; never blind retry",
+    "no page264/global/shared/SMTP write from this page256 package",
+    "keep Opera at exactly two tabs and do not steal them from parallel QA",
+    "future remote package must fit complete write/readback above 10-call D11 reserve"
+  ],
+  "current_result": "READ_ONLY_PREPARATION_ADVANCED; REMOTE_PARITY_NOT_FINISHED",
+  "pixel_pass": false
+}
