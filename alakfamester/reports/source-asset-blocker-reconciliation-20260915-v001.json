@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "package": "source-asset-blocker-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "scope": "Read-only evidence reconciliation for the two historically missing source assets. No WordPress/media write and no blocker is cleared by this file alone.",
+  "evidence_precedence": [
+    "Fresh trusted frozen-reference DOM/screenshot proving whether an element is actually visible outranks older role counts for acceptance requirement.",
+    "Exact original bytes/digest or a documented deterministic source conversion are required for byte/pixel-equivalent media replacement.",
+    "Later reports do not silently erase an earlier fact unless they explicitly re-measure the same property; asset recoverability and current visible requirement are separate properties."
+  ],
+  "page258_ellwoodi": {
+    "frozen_source": {
+      "url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+      "role": "A többgömbös Ellwoodi niwaki, másik nézet",
+      "status": "404 / exact frozen bytes unavailable"
+    },
+    "exact_recovery": "HARD_BLOCKER_OPEN",
+    "git_history": "No expected source-path history.",
+    "archive_status": "No indexed exact frozen filename/host hit; parameterized archive APIs were blocked by the environment, so a definitive archive miss is not claimed.",
+    "public_provenance_candidate": {
+      "url": "https://alakfamester.hu/uploads/site11252/175725917368bda5a5b1ae6_370X354.jpg",
+      "strength": "Strong provenance candidate: same generated basename stem and matching subject family, but not byte/pixel-equivalence proof."
+    },
+    "acceptance_requirement": "Historically documented as a missing Gallery source role. Keep it open until a fresh trusted acceptance capture proves otherwise or exact equivalence is established.",
+    "write_policy": "Do not upload or substitute the JPG merely because the basename matches. Require exact frozen/local source bytes, a proven archive digest/original, or deterministic conversion/pixel-equivalence evidence first."
+  },
+  "page270_portrait": {
+    "frozen_source": {
+      "url": "https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp",
+      "role": "Biró János munka közben",
+      "status": "404 / exact frozen bytes unavailable"
+    },
+    "exact_recovery": "HARD_BLOCKER_OPEN_IF_ASSET_IS_REQUIRED",
+    "git_history": "No expected source-path history.",
+    "archive_status": "No indexed exact frozen filename/host hit; parameterized archive APIs were blocked by the environment, so a definitive archive miss is not claimed.",
+    "acceptance_requirement": {
+      "status": "CONFLICTING_EVIDENCE_REQUIRES_FRESH_TRUSTED_REFERENCE_PROOF",
+      "older_2026_09_12_media_recheck": "about-oldtrees-media-finalization-v001 counted source main 10 vs target main 9 and named the portrait as the only missing source image.",
+      "later_2026_09_14_web_reconciliation": "source-asset-recovery-web-evidence-v001 cites about-survivor-source-parity-v001 as evidence that the frozen source live main DOM did not require the portrait for that documented page state.",
+      "latest_exact_recovery_2026_09_14": "source-asset-recovery-audit-v003, committed later than the web reconciliation, confirms exact bytes are still unrecovered and conservatively keeps both assets blocked; it does not independently re-measure whether the portrait is currently visible/required in the acceptance DOM."
+    },
+    "decision": "Do not upload, invent, remove, or declare the portrait solved. Before treating it as an implementation blocker in a future live scope, obtain one fresh trustworthy frozen-reference DOM/screenshot proving that Biró János munka közben is currently a visible required role. If required, exact-byte recovery remains mandatory; if absent from the authoritative acceptance state, record the requirement as stale without importing anything."
+  },
+  "commit_time_reconciliation": {
+    "about_media_recheck": "882007531c0e08cbe1408e17a58b1b309b679d23 @ 2026-09-12T21:17:38Z",
+    "web_evidence": "05ce647865ddbb8812c03d0a135d1fe25ed509da @ 2026-09-14T20:52:01Z",
+    "exact_recovery_v003": "7aff910c5621a2df7c95378d57c902f63cb1d4ba @ 2026-09-14T21:51:50Z"
+  },
+  "safety": [
+    "No similar/stock/redrawn/upscaled image is acceptable as a substitute.",
+    "Do not duplicate an existing target attachment when exact source bytes later become available; hash-map first.",
+    "Do not change shared media from the current page264-only STATE scope.",
+    "This report distinguishes recoverability from acceptance visibility and does not relax PIXEL_PASS requirements."
+  ],
+  "wordpress_writes": 0,
+  "media_writes": 0,
+  "pixel_pass": false,
+  "status": "ASSET_RECOVERY_AND_ACCEPTANCE_REQUIREMENT_SEPARATED_NO_MEDIA_WRITE_AUTHORIZED"
+}
