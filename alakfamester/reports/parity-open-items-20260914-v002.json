@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "project": "alakfamester",
+  "date": "2026-09-14",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "reference": "https://alakfamester.clicknest.hu/",
+  "purpose": "Current deduplicated parity queue after concurrent 2026-09-14 updates. Supersedes v001 for continuation planning; does not rewrite historical evidence.",
+  "quota_guard": {
+    "exact_used": 290,
+    "limit": 300,
+    "remaining": 10,
+    "mandatory_D11_reserve": 10,
+    "usable_above_reserve": 0,
+    "evidence": "reports/subpages/bio-parity-continuation-20260914-v004.json",
+    "decision": "No WPVibe call is allowed until rolling-window calls age out. This includes read-only probes."
+  },
+  "opera_guard": {
+    "status": "disconnected in latest verified work",
+    "policy": "When available again, reuse at most one source/target pair for the active package and close stale diagnostic tabs."
+  },
+  "priority_queue": [
+    {
+      "priority": 1,
+      "resource": "page272 Hedge",
+      "state": "PARTIAL_CLOSEOUT_SCOPE_RECOVERY_24_OF_26",
+      "evidence": [
+        "reports/subpages/hedge-parity-continuation-20260914-v002.json",
+        "build/hedge-parity-next-20260914-v002.json",
+        "STATE.md top Hedge block from commit 897b4b03eb823c915a52252a1d487a3b267a56c8"
+      ],
+      "verified_page_sha256": "bdc3586b55335935e875251209a04c42b56efeaea1cfea98aecd9d9b1a3964fc",
+      "next_remote_package": [
+        "Re-read quota and page272 hash when calls free up.",
+        "Read shared attachments 110/111 only; if still drifted restore 110='Saját sövénymunka, 15. kép' and 111='Saját sövénymunka, 16. kép'.",
+        "One full 26-item shared-alt readback proving exact pre-package metadata recovery; after this, no more shared-media writes for Hedge.",
+        "Page272-only EAEL b2e2c001 patch: preserve all 28 item URLs/names/order/repeater IDs/settings, set eael_fg_gallery_img.id=0 for all 28 items, keep resolution=full.",
+        "Legacy semantic fixes: af2e000f complete mailto range; af2e004c exact phone/mail accessible names; complete named regions af2e0007/0045/0047/0049/000f.",
+        "Inspect native e-tabs/live frontend before any review semantics workaround; no guessed Atomic attributes.",
+        "Read back JSON/hash and fresh frontend."
+      ]
+    },
+    {
+      "priority": 2,
+      "resource": "page256 Biological Protection",
+      "state": "V004_PREPARED_NOT_SENT_DUE_D11_RESERVE",
+      "evidence": [
+        "build/bio-parity-fix-20260914-v004.json",
+        "reports/subpages/bio-parity-continuation-20260914-v004.json"
+      ],
+      "fresh_verified": {
+        "bytes": 34930,
+        "sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+        "json_valid": true
+      },
+      "next_remote_package": [
+        "Fresh quota/hash check first.",
+        "Do not use /batch/v1 for WPVibe content/search; it was proven rest_batch_not_allowed.",
+        "Search only with ASCII anchors or literal escaped snippets obtained from successful content/search; rendered Hungarian Unicode is not a valid byte-literal search key.",
+        "Individual guarded match-once content/edit only: 13 trailing periods; af260011 uppercase table headers and four th scope=row cells; four complete legacy named regions; final CTA aria-label only if fresh AX still requires it.",
+        "No guessed Atomic attributes, no full Elementor save, no raw SQL."
+      ],
+      "atomic_blockers": [
+        "hero named region",
+        "FAQ outer named region",
+        "review tablist name Ügyfélvélemények"
+      ],
+      "atomic_reason": "Elementor 4.2.4 Attributes_Transformer returns null and live pilot stored attributes without rendering them. Current page-only/no-plugin-config scope forbids a new runtime workaround here."
+    },
+    {
+      "priority": 3,
+      "resource": "page264 Old Trees",
+      "state": "RUNTIME_INSTALLED_FRONTEND_VERIFICATION_NOT_YET_RECORDED",
+      "evidence": [
+        "build/oldtrees-semantic-runtime-v001.php",
+        "commit 64605f00a711a1c357b7f5e97481fa6a1cc04319",
+        "reports/subpages/oldtrees-semantic-runtime-static-qa-v001.json"
+      ],
+      "installed": {
+        "mechanism": "Code Snippets",
+        "snippet_id": 33,
+        "page_scope": 264
+      },
+      "runtime_targets": [
+        "hero + complete source section region names",
+        "step labels as heading level 3",
+        "review tablist label Ügyfélvélemények and source-like tab names",
+        "CTA/form phone/mail accessible names",
+        "form Ajánlatkérés label, service group association and city help describedby"
+      ],
+      "static_qa": "PASS: PHP lint, embedded JS syntax, page264 guard, attribute-only/no-CSS/no-DOM-reorder review.",
+      "open": [
+        "Fresh frontend/accessibility-tree verification of ID33 effects and absence of regressions.",
+        "Verify page264 saved hash/content remained unchanged by the runtime-only installation.",
+        "If any selector misses or causes semantic duplication, update/rollback only snippet ID33 through supported plugin path."
+      ]
+    },
+    {
+      "priority": 4,
+      "resource": "global header",
+      "state": "MINIMAL_NAV_VISUAL_FIX_PREPARED_NOT_DEPLOYED",
+      "evidence": [
+        "build/header-nav-visual-fix-v001.css commit 3471486fdb5a85fd3c1657cc7623e6024d1a9c6f",
+        "reports/header/header-nav-visual-fix-static-qa-v001.json",
+        "reports/header/header-live-source-audit-20260914-v003.json",
+        "build/header-runtime-threshold-v001.json"
+      ],
+      "preferred_first_css_package": "Use the minimal nav visual fix first after fresh post8/header state preflight; do not automatically send the larger full header remap while a lower-blast-radius package can address the proven nav-state/caret/dropdown mismatch.",
+      "minimal_css_static_qa": "PASS: balanced rules/markers; all selectors limited to nav wrapper a1000009 and af-nav-dropdown-panel.",
+      "after_css_pass": "Only then consider Code Snippets ID7 sticky threshold 24px -> 8px using verified plugin REST GET/PUT/readback workflow.",
+      "still_requires": "matched desktop/narrow/mobile frontend behavior verification before retaining changes"
+    }
+  ],
+  "source_asset_blockers": [
+    {
+      "page": 270,
+      "missing": "Biró János munka közben",
+      "url": "https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp",
+      "status": "404; source bytes unavailable; no substitute permitted"
+    },
+    {
+      "page": 258,
+      "missing": "A többgömbös Ellwoodi niwaki, másik nézet",
+      "url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+      "status": "404; source bytes unavailable; no substitute permitted"
+    }
+  ],
+  "content_structure_closed_except_formal_acceptance": [
+    "Homepage page56 content/navigation/footer packages",
+    "FAQ page260 Témakörök/17 FAQ/hero/native reviews",
+    "Fruit page262 corrected FAQ and timing heading/hero/native reviews",
+    "Contact page266 semantic headings/hero/form structure",
+    "Reference Videos page268 seven videos + CTA order; editor reopen proof remains separately open",
+    "Gallery page258 hero/60 main images/44-item EAEL/native reviews except missing 404 Ellwoodi source asset"
+  ],
+  "behavior_acceptance_open": {
+    "gallery258": [
+      "BA drag/keyboard proof",
+      "manual carousel arrows/dots/swipe proof",
+      "masonry lightbox open/next/close/focus-lock proof",
+      "controlled desktop/mobile screenshot comparison",
+      "computed layout/page-height and console/network capture",
+      "second browser engine"
+    ],
+    "global": [
+      "deterministic 1920x1080, 1440x1000, 1024x900, 768x1024, 390x844, 360x800 screenshot pairs/overlay/diff",
+      "animation start/intermediate/end + reduced-motion",
+      "remaining editor reopen/editability proofs"
+    ]
+  },
+  "acceptance_infrastructure_blockers": [
+    "specs/acceptance.json absent and not found in searched commit history",
+    "specs/behaviors.json absent and not found in searched commit history",
+    "Opera visual connector disconnected",
+    "container cannot resolve Clicknest hosts"
+  ],
+  "pixel_pass": false
+}
