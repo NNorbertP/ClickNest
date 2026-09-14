@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "package": "bio-scope-handoff-ready-20260914-v001",
+  "date": "2026-09-14",
+  "page256_target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "status": "PREPARED_NO_SCOPE_MUTATION",
+  "current_conflict": {
+    "repository_STATE": "latest fresh STATE.md read assigns authoritative WordPress write scope to page264 only",
+    "opera": "the two shared tabs were later repurposed by the parallel page264 source/target QA flow",
+    "wpvibe": "disabled in this chat; +5 site connection/quota unknown"
+  },
+  "handoff_must_not_happen_until": [
+    "The parallel page264 flow has reached its own safe stop/continuation point and no longer owns the two shared Opera tabs for an in-progress comparison.",
+    "Fresh STATE.md top is re-read and the page264 owner no longer indicates an in-flight remote package that would be clobbered by a scope change.",
+    "The intended active user task is still page256 parity.",
+    "WPVibe is usable again and the intended +5 account/site connection can be verified."
+  ],
+  "handoff_sequence": [
+    "1. Read STATE.md fresh; never rely on the prepared v013 prepend alone.",
+    "2. Preserve the full existing state history. Do not replace STATE.md with a partial/truncated body merely to change the top scope line.",
+    "3. Add/merge a new page256 active-scope continuation block through a safe full-file-preserving method only. If the connector still offers only unsafe truncated replacement, leave STATE.md unchanged and use the explicit continuation report instead.",
+    "4. Re-read Opera tabs. Only navigate them to page256 source/target if they are no longer owned by page264 QA. Keep exactly two tabs; do not open replacements.",
+    "5. Verify WPVibe profile/site/quota and page256 live baseline before any mutation.",
+    "6. Reconcile prepared page256 artifacts against fresh live state; never replay a package because its filename says READY."
+  ],
+  "authoritative_page256_files_after_handoff": [
+    "reports/subpages/bio-continuation-20260914-v023.json",
+    "reports/subpages/bio-convergence-ledger-20260914-v002.json",
+    "reports/subpages/bio-ax-role-count-gate-20260914-v001.json",
+    "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "build/bio-remote-call-budget-20260914-v001.json",
+    "build/state-prepend-20260914-v013.md"
+  ],
+  "first_remote_candidate_after_handoff": "build/bio-visual-single-write-plan-20260914-v006.json, but only after all of its fresh preconditions pass.",
+  "forbidden": [
+    "do not modify page264 from the page256 conversation",
+    "do not steal/navigate shared Opera tabs mid-page264 QA",
+    "do not claim page256 scope in STATE.md by truncating existing content",
+    "do not use stale +4/+5 quota numbers",
+    "do not start a remote package that cannot complete above D11 reserve"
+  ],
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "pixel_pass": false
+}
