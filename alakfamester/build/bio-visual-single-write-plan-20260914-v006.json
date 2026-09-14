@@ -1,0 +1,77 @@
+{
+  "schema_version": 6,
+  "package": "bio-visual-single-write-plan-20260914-v006",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED_REMOTE_WRITE_BLOCKED",
+  "supersedes_for_first_visual_phase": "build/bio-visual-single-write-plan-20260914-v005.json",
+  "goal": "One credit-efficient Additional CSS insertion containing only source-proven, page256-scoped, structure-independent visual fixes that are safe on the current live DOM.",
+  "blocks_in_order": [
+    {
+      "file": "build/bio-visual-parity-v001.css",
+      "blob_sha": "8859a3ce497f00b947d19851d6312a90ac8852e4",
+      "marker": "af-bio-visual-v001",
+      "covers": "legacy eyebrow leaf, technology lead/cards/watermarks/sage hairline/checklist markers, exact table surface, exact native-details FAQ static/open visuals"
+    },
+    {
+      "file": "build/bio-hero-layout-parity-v003.css",
+      "blob_sha": "8f0e4709276ca8fef74f942e47bc94d56bfe51a4",
+      "marker": "af-bio-hero-layout-v003",
+      "covers": "source hero--inner desktop columns/padding/gap/copy measure/contact/meta rhythm; no duplicate icons"
+    },
+    {
+      "file": "build/bio-card-mobile-source-v001.css",
+      "blob_sha": "a48cab25c589dc5f720ff0a26d0d7e0898eed797",
+      "marker": "af-bio-card-mobile-v001",
+      "covers": "source 24px card/CTA padding contract <=720 for prepared/current relevant selectors"
+    },
+    {
+      "file": "build/bio-table-section-tone-v001.css",
+      "blob_sha": "292d518d368398bee7479b277b4f83f02cb6590c",
+      "marker": "af-bio-table-section-tone-v001",
+      "covers": "source section--stone #EFEDE4 -> #F5F3ED vertical gradient"
+    },
+    {
+      "file": "build/bio-wave-source-exact-v001.css",
+      "blob_sha": "0e4cb41d8b349effbdacb6c8ef28358dd27e3f86",
+      "marker": "af-bio-wave-source-v001",
+      "covers": "exact source SVG curve on all four existing page256 divider Atomic elements; no Atomic settings write"
+    },
+    {
+      "file": "build/bio-review-quote-source-color-v002.css",
+      "blob_sha": "534da3cdaaf308899c30352bdb14f03f306f8e9e",
+      "marker": "af-bio-review-quote-v002",
+      "covers": "source warm quote color + source 46px/38px responsive width"
+    }
+  ],
+  "explicitly_not_in_phase": [
+    "review ordinal/dot fixes until exact winning CSS owners are read back",
+    "review deep-link ID until fresh af26000d raw Atomic settings prove safe owner",
+    "stress wrapper/article/forest visual until structure readback",
+    "expectations regrouping/card visual until structure readback",
+    "FAQ-before-CTA order and CTA band layout until structural predecessors read back",
+    "hero decorative icon file because live target already has source phone/mail/fact icons",
+    "obsolete technology callout wrapper because live target already has source-like panel/rail",
+    "any global header/dock fix"
+  ],
+  "remote_preflight": [
+    "Normal project handoff reconciles repository STATE.md write scope from current page264-only to page256.",
+    "WPVibe becomes usable again; verify profile is intended +5 account, target site is connected, exact quota known, leave >=10 D11 calls after complete package/readback/rollback margin.",
+    "Fresh-read page256 _elementor_data bytes/SHA/JSON; accepted historical baseline is 35382 / 55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3 but live state wins.",
+    "Fresh-read complete Additional CSS length/SHA and unique af-project:end marker.",
+    "Require every v006 marker count=0. Search obsolete hero-v001/v002 and wave approximation owners; stop/reconcile on unexpected live overlap.",
+    "Fresh cascade search must confirm no essential pseudo owner collision with the v006 blocks."
+  ],
+  "write": "Concatenate the six complete marked blocks in listed order and insert once immediately before the unique af-project:end via guarded server-side match-once content/edit. Never round-trip full Additional CSS through chat.",
+  "unknown_rule": "HTTP 429 write result is UNKNOWN. Do not retry; first read marker counts/hash when safe.",
+  "immediate_post_write": [
+    "Read Additional CSS bytes/SHA + each marker count exactly1.",
+    "Re-read page256 Elementor bytes/SHA/JSON and require no mutation from CSS write.",
+    "Purge only through normal WordPress save hooks / existing cache behavior; no unrelated setting write.",
+    "Use only the two existing Opera tabs for source-target hero/review/technology/table/FAQ/wave checks.",
+    "At <=720/760, verify card padding and quote width contract before declaring responsive pass.",
+    "If one block regresses, remove only that exact marked block; do not roll back the whole stylesheet snapshot."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
