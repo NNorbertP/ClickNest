@@ -1,0 +1,58 @@
+{
+  "schema_version": 6,
+  "package": "bio-faq-cta-source-layout-20260914-v006",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED",
+  "supersedes": "build/bio-faq-cta-source-layout-20260914-v005.json",
+  "reason": "Static accessibility QA found that the previous layout generated the source eyebrow from h2::before, which could contaminate the h2 accessible name. v006 uses accessibility-safe layout CSS v002: the eyebrow is a separate outer-section ::after grid item and the h2::before is explicitly suppressed.",
+  "structural_predecessors": [
+    "build/bio-page256-next-safe-package-20260914-v014.json op1 — remove sole af-faq-content order:10 owner",
+    "build/bio-cta-mail-structure-20260914-v001.json — preserve exact mail href/aria-label/strings and create deterministic .af-sub-cta-label child"
+  ],
+  "css_blocks_after_predecessor_readback": [
+    {"file":"build/bio-visual-parity-v001.css","marker":"af-bio-visual-v001","note":"May already be live from first visual phase; never duplicate."},
+    {"file":"build/bio-wave-source-faq-v001.css","blob_sha":"0e31639b0e7136d5d5c8fec11cbe003ba46327e1","marker":"af-bio-wave-faq-v001","role":"source expectations sage -> FAQ paper wave in same transaction as paper conversion"},
+    {"file":"build/bio-faq-cta-source-layout-v002.css","commit":"86660e18ffca61944ebb53e536517ed660963f51","marker":"af-bio-faq-cta-source-v002","role":"paper FAQ + separate forest CTA band; eyebrow is separate outer generated staticText, not part of h2 name"},
+    {"file":"build/bio-faq-cta-mail-label-v001.css","marker":"af-bio-faq-cta-mail-label-v001","role":"deterministic label-above-email row"},
+    {"file":"build/bio-faq-cta-mail-interaction-v001.css","marker":"af-bio-faq-cta-mail-interaction-v001","role":"source mail pill shadow/hover/mobile state"},
+    {"file":"build/bio-faq-cta-button-interaction-v001.css","marker":"af-bio-faq-cta-button-interaction-v001","role":"source bronze button transition/hover/active"},
+    {"file":"build/bio-faq-cta-section-spacing-v001.css","marker":"af-bio-faq-cta-spacing-v001","role":"exact source wave-adjacent vertical rhythm"},
+    {"file":"build/bio-card-mobile-source-v001.css","marker":"af-bio-card-mobile-v001","note":"May already be live from first visual phase; never duplicate; supplies source <=720 24px CTA padding."}
+  ],
+  "obsolete_components_do_not_deploy": [
+    {"file":"build/bio-faq-cta-source-layout-v001.css","reason":"superseded by accessibility-safe v002 layout"},
+    {"file":"build/bio-faq-cta-generated-label-guard-v001.css","reason":"v002 directly owns/reuses outer ::after as the separate source eyebrow instead of suppressing it"},
+    {"file":"build/bio-faq-cta-eyebrow-accessible-v001.css","reason":"v002 no longer generates eyebrow from h2::before; h2::before is suppressed"}
+  ],
+  "duplicate_marker_rule": "Fresh-read every marker. Include only count=0 required blocks; marker=1 means dependency already live; marker>1 is stop/reconcile. Never insert v001 and v002 CTA layout markers together.",
+  "accessibility_contract": [
+    "h2 accessible name must remain exactly Egészségi problémát lát az alakfán?",
+    "source eyebrow underlying string is separate Következő lépés static text, visually uppercase",
+    "mailto accessible name remains exactly ÍRJON BÁTRAN kreativ@alakfa-mester.hu via unchanged aria-label",
+    "form button text/href unchanged",
+    "native FAQ control names/answers remain unchanged"
+  ],
+  "mandatory_preflight": [
+    "page256 scope handoff + released Opera tabs",
+    "verified +5 WPVibe target connection/quota + D11 reserve",
+    "fresh page256 baseline",
+    "FAQ-order and CTA-mail structural predecessors separately read back",
+    "fresh Additional CSS owner search for #af-sub-bio-cta::before and ::after plus all planned/obsolete markers",
+    "ensure no essential pseudo owner is destroyed by v002; if one exists, stop and redesign instead of stacking",
+    "af260014 still exists and FAQ will become paper in this same CSS transaction"
+  ],
+  "postconditions": [
+    "fourth source wave enters paper FAQ",
+    "FAQ precedes CTA and is no longer inside a forest outer field",
+    "FAQ controls remain functional/source-like visually",
+    "CTA appears as separate source forest band",
+    "eyebrow is separate from h2 semantics and appears exactly once",
+    "mail label/email visual order source-like with exact existing aria-label/href",
+    "bronze form button source-like with exact existing href/text",
+    "desktop and <=900/720/560 source states verified"
+  ],
+  "rollback": "Remove only blocks newly inserted in the transaction. Do not remove shared v007 dependencies already live before the transaction.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
