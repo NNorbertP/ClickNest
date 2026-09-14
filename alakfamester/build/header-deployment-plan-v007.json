@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-14",
+  "scope": "header-only guarded remote deployment plan",
+  "target": "https://alakfamester-wp.clicknest.hu/",
+  "requested_wpvibe_account": "ncsnorbert+20260914-5@gmail.com",
+  "status": "READY_WHEN_WPVIBE_RETURNS",
+  "packages": {
+    "css": {
+      "path": "build/header-source-flex-responsive-v006.css",
+      "commit": "3860464e951e34b1441272988e9a9f89b4c4ec5e",
+      "new_marker": "af-project:header-source-flex-responsive-v006",
+      "replaces_live_marker": "af-project:header-desktop-alignment-v003",
+      "preserve_marker": "af-project:header-live-source-v001"
+    },
+    "runtime": {
+      "path": "build/header-runtime-parity-v005.json",
+      "commit": "c36c89cf991833c753960b29ca05b3192372847a",
+      "snippet_id": 7,
+      "required_prewrite_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+      "required_prewrite_bytes": 9723
+    },
+    "contract": {
+      "path": "specs/header-contract-v001.json",
+      "commit": "87b58189a3c43505adac039bbd19168f8598a101"
+    }
+  },
+  "last_verified_live_baseline": {
+    "additional_css_post_id": 8,
+    "post8_bytes": 600999,
+    "post8_sha256": "8cd8a9cfb804ba6ca5ab57a8ff59d7858c2e14bfb940f4921f2bceddefd80b83",
+    "snippet7_sha256": "260f11e080437159c227019da27a3dd5c8099a35c7d10d82cf861bc7ce8200dd",
+    "snippet7_bytes": 9723,
+    "header20_elementor_data_sha256": "db264139dd139df1f2451cd06f0d7bb44aff685eaa46179bcd58436af2735c0d",
+    "header20_elementor_data_bytes": 7729
+  },
+  "minimum_call_budget": {
+    "normal_expected_remote_calls": 8,
+    "mandatory_closeout_reserve": 10,
+    "retry_margin": 7,
+    "required_remaining_before_start": 25,
+    "rationale": "Previous host-side 429 behavior amplified a single logical action into several billed retries. Start only if the complete package plus reserve and retry margin fits."
+  },
+  "execution": [
+    {
+      "step": 1,
+      "action": "Verify WPVibe profile email exactly matches requested account and site connection; read rolling quota once.",
+      "stop_if": "wrong account, site not connected, or fewer than 25 calls remain"
+    },
+    {
+      "step": 2,
+      "action": "One guarded read-only preflight for post8 bytes/hash/marker counts, header20 bytes/hash, and snippet7 bytes/hash/active state where possible.",
+      "stop_if": "any live baseline differs; treat as manual/intervening drift and reconcile before writing"
+    },
+    {
+      "step": 3,
+      "action": "Use content/search on post8 for the v003 start marker and retrieve the exact current block. Do not reconstruct old_content from memory.",
+      "stop_if": "zero/multiple matches or snippet truncation prevents exact whole-block replacement"
+    },
+    {
+      "step": 4,
+      "action": "Replace the exact v003 refinement block with the complete v006 CSS block using one match-once /wpvibe/v1/content/edit operation. Preserve every other post8 byte.",
+      "rollback": "exact prewrite v003 block captured in step3"
+    },
+    {
+      "step": 5,
+      "action": "Read back post8. Require base marker exactly once, v003 marker absent, v006 marker exactly once, valid total content and expected new hash recorded. Do not run an extra full cache purge if the supported edit already regenerated the needed CSS."
+    },
+    {
+      "step": 6,
+      "action": "GET Code Snippets ID7 through /code-snippets/v1/snippets/7. Require exact prewrite hash/bytes, active=true, existing marker, threshold8, breakpoint1240, Főmenü and current accessible-name fixes. Save complete code as rollback payload."
+    },
+    {
+      "step": 7,
+      "action": "Apply only header-runtime-parity-v005 deltas through the Code Snippets plugin REST update route; no raw SQL, no generic table search-replace.",
+      "rollback": "complete prewrite code from step6"
+    },
+    {
+      "step": 8,
+      "action": "GET snippet7 again and verify active=true, code_error=null, marker/protected values intact and exact new behavior code present."
+    }
+  ],
+  "browser_qa_without_extra_wpvibe_calls": [
+    "Reuse only one reference and one target Opera tab.",
+    "Closed desktop header: brand/nav/CTA geometry and accessibility roles/names.",
+    "Homepage current-page pill and bronze dot.",
+    "Services child: Services parent is-section pill, exact current child sage+bronze state.",
+    "References child: References parent/child states.",
+    "Dropdown click, outside click, trigger ArrowDown, panel ArrowDown/ArrowUp, Escape focus return.",
+    "Sticky state around >8px scroll and fresh scrolled screenshot.",
+    "1460 compaction, 1240 drawer switch, 900 68px header/CTA hide, 560 brand compact state when deterministic viewport control is available.",
+    "Mobile drawer initial focus, submenu state, Escape return and resize unlock.",
+    "Confirm no body/footer/form change."
+  ],
+  "retention_rule": "Keep a change only if readback succeeds and the relevant source-target checks measurably improve or remain equal. On regression restore the isolated CSS block and/or snippet payload before attempting a different cause.",
+  "pixel_pass": false
+}
