@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "package": "hedge-metform-native-required-source-proof-20260914-v001",
+  "date": "2026-09-14",
+  "page_id": 272,
+  "form_id": 33,
+  "wordpress_writes": 0,
+  "purpose": "Prove the MetForm 4.x Radio widget's native Required setting is wired into the actual front-end validation rules, while explicitly not claiming the current Form33 radio setting is enabled until live readback exists.",
+  "plugin_source": {
+    "radio_widget": "common-repository/metform widgets/radio/radio.php",
+    "frontend_app": "common-repository/metform public/assets/js/app.js"
+  },
+  "radio_widget_contract": {
+    "setting_key": "mf_input_required",
+    "enabled_value": "yes",
+    "mapping": "The Radio widget builds a validation config with required = (mf_input_required === yes) and passes that config plus the radio input element into parent.activateValidation(...).",
+    "meaning": "Required is not only a decorative label/star flag; it is forwarded into the form validation system."
+  },
+  "frontend_validation_contract": {
+    "function": "activateValidation(config, element, callback)",
+    "required_rule": "When config.required is true, the function creates a required validation rule and registers it through the form validation register(...) path.",
+    "conditional_exception": "A field inside a conditionally hidden Elementor element can have required disabled for that hidden state, matching MetForm's conditional form behavior.",
+    "submit_flow": "MetForm's React form uses the same validation object/register/trigger state before network submission; the radio Required capability is therefore wired into the live front-end validation layer."
+  },
+  "what_this_proves": [
+    "MetForm has a real native client-side required mechanism for radio fields.",
+    "If the live #af-form-service widget has mf_input_required=yes and is not conditionally hidden, the native front-end validation stack is configured to require a choice.",
+    "A separate PHP validator is not automatically justified merely because the generic server validation path does not independently reject a totally absent radio."
+  ],
+  "what_this_does_not_prove": [
+    "It does not prove the current shared Form33 #af-form-service has mf_input_required=yes; that exact saved setting still requires a live read.",
+    "It does not substitute for a safe non-delivery behavior proof that an empty service group is blocked in the current rendered Form33 instance.",
+    "It does not authorize changing shared Form33 settings from page272-only scope.",
+    "It does not prove server-side hardening is unnecessary if the native rendered behavior later fails."
+  ],
+  "next": "Read exact live #af-form-service settings. If mf_input_required=yes, test native empty-choice rejection through a non-entry/non-delivery path before considering the existing-ID36 server fallback plan.",
+  "server_fallback": "build/hedge-form-required-server-plan-20260914-v002.json",
+  "status": "NATIVE_VALIDATION_CAPABILITY_STRONGLY_PROVEN_LIVE_SETTING_AND_BEHAVIOR_STILL_GATED"
+}
