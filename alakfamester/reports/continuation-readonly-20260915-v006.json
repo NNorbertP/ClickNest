@@ -1,0 +1,86 @@
+{
+  "schema_version": 6,
+  "package": "continuation-readonly-20260915-v006",
+  "date": "2026-09-15",
+  "supersedes_for_resume": "reports/continuation-readonly-20260915-v005.json",
+  "scope_authority": "Fresh STATE.md remains PAGE264 ONLY for WordPress writes. This checkpoint never broadens or replaces STATE.md.",
+  "state_sha_at_checkpoint": "332cdc1f5d5acae636c4ce0c69f6113b290abd85",
+  "main_head_before_checkpoint": "518e2b77babc8838e8949757b02e8466f1f6519a",
+  "wordpress_writes_current_continuation": 0,
+  "opera_new_tabs_current_continuation": 0,
+  "tool_state": {
+    "wpvibe": "Frozen for the rest of this continuation: first read-only list_sites returned tool disabled. Intended +5 site connection and exact rolling quota remain UNKNOWN; do not reuse +3/+4 counters.",
+    "opera": "Frozen for the rest of this continuation: existing target tab returned page-mismatched stale AX content. Two existing tabs preserved, zero new/replacement tabs, no reload/reconnect loop.",
+    "github": "Reliable channel used for immutable reconciliation/planning only."
+  },
+  "active_page264": {
+    "baseline": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid; fresh live read before mutation",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v010.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json",
+    "preserve": ["live visual v004", "live visual v005", "existing ID33 semantic owner", "accepted content/main media/38 headings/11 regions/review/Form33 static contracts"],
+    "only_conditional_visual_candidates": ["v006 request-contact foreground", "v007 equal desktop comparison columns", "combined v006+v007 only if both reproduce in the same trustworthy fresh gate"],
+    "proof_only": ["Form33 service/topic native required + safe non-delivery behavior", "inner form field geometry/style", "href readback", "review keyboard", "Tiszafa pointer/keyboard", "Nordmann timing/swipe/pause/reduced motion", "hero measured owner/cascade", "six-view deterministic visual matrix"],
+    "next_exact_live_action": "When live tools are trustworthy again: verify +5 identity/site/exact quota once and preserve >=10 D11 calls -> compact page264 saved-data + Additional CSS marker/hash gate -> exactly one trustworthy source/target tab pair -> reproduce v006/v007 -> at most one selected page264-scoped CSS write -> mandatory marker/project-end/page-hash readback. Any HTTP 429 write is UNKNOWN until exact readback; never blind retry."
+  },
+  "current_cross_project_planning": {
+    "queue": "reports/parity-open-items-20260915-v016.json",
+    "canonical_matrix": "reports/canonical-pages-current-state-matrix-20260915-v003.json",
+    "final_preflight": "reports/final-acceptance-preflight-20260915-v004.json",
+    "do_not_reopen": "reports/stale-blockers-do-not-reopen-20260915-v002.json",
+    "asset_reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "formal_acceptance_recovery": "reports/formal-acceptance-artifact-recovery-20260915-v001.json"
+  },
+  "page256_future_only_after_scope_handoff": {
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v006.json",
+    "acceptance": "specs/bio-final-acceptance-20260914-v002.json",
+    "budget": "build/bio-remote-call-budget-20260914-v003.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "local_visual_delivery": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "first_visual_payload": ["bio visual v001", "hero layout v003", "card mobile", "table tone", "first three exact source waves", "review quote v002", "review dot source v001"],
+    "structure": "build/bio-page256-next-safe-package-20260914-v014.json and later documented section transactions",
+    "review_plan": "build/bio-reviews-current-fix-plan-20260914-v002.json",
+    "content_microfix": "build/bio-review-third-author-role-text-20260914-v002.json only after fresh SAVED-data exact confirmation",
+    "hard_exactness_open": [
+      "stress actual saved/read DOM order p1 -> p2 -> article; CSS-only visual reorder is insufficient",
+      "FAQ exact button roles + aria + Arrow/Home/End keyboard collection + source motion; native details/summary functionality alone is insufficient",
+      "review previous/next must focus the newly active panel as source does; current ID35 exact interaction remains OPEN and no unsafe global/ad-hoc JS is allowed"
+    ],
+    "rule": "Carrier probe failure cancels page-local CSS delivery and never authorizes shared/global Additional CSS fallback."
+  },
+  "page272_future_only_after_scope_handoff": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v004.php updating existing ID36 only",
+    "semantic_gate": "fresh baseline/rollback/cardinality/native role+ARIA/ID uniqueness; stronger native relation conflict => HOLD v004 and design preserving successor",
+    "review_names": ["Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető", "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető", "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"],
+    "review_panel_preservation": "Capture all three panel quote text, visible author/company/role, image identity/accessibility and tab-panel bijection read-only. Any proven content/media mismatch is a separate smallest-owner correction, never folded into attribute-only ID36 v004.",
+    "page_css_candidate": "NONE"
+  },
+  "global_future_only_after_scope_handoff": {
+    "header": "build/header-deployment-plan-v010.json through existing ID7 only; homepage Főoldal current/Services neutral and real service-child Services current-section across the route matrix",
+    "floating_dock": "diagnostic-first current ID7 markup/winning CSS owner; AX controls exist while visual pill is blank/clipped; never recreate markup/runtime before owner proof"
+  },
+  "assets": {
+    "ellwoodi": "Exact frozen WEBP unresolved. Same-basename old public JPG is strong provenance only, not exact byte/pixel equivalence; do not upload without deterministic proof.",
+    "portrait": "Exact bytes unresolved and acceptance visibility conflicts; obtain a fresh trustworthy reference DOM/screenshot before treating it as a required implementation blocker. No substitute."
+  },
+  "formal_acceptance": {
+    "recovery_audit": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "repo_recovery": "README-referenced original acceptance.json, behaviors.json, reports/index.json and runner files were not recoverable from exposed main/sync branches, tags or exact-path commit history; do not reconstruct by guess and call them original.",
+    "remaining": ["original external specs/harness or explicitly authorized replacement acceptance contract", "deterministic same-browser 1920/1440/1024/768/390/360 DPR/zoom/font/load-state captures + overlays/diffs", "stable action-capable browser for remaining keyboard/pointer/timing proofs"]
+  },
+  "safety_rules": [
+    "Fresh trustworthy live state outranks all plans.",
+    "Never replay solved work merely to refresh evidence.",
+    "Fresh exact search bytes before structural edits; prepared escaped strings are never future old_content.",
+    "Missing tooling or stale browser output never licenses speculative CSS/JS.",
+    "Max one source + one target Opera project tab; no replacement fan-out or reload loops.",
+    "Do not merge unrelated page/global packages merely to save calls."
+  ],
+  "known_wpvibe_budget": "UNKNOWN for +5",
+  "pixel_pass": false,
+  "status": "READ_ONLY_CONVERGENCE_MAXIMIZED_ACTIVE_PAGE264_LIVE_GATE_BLOCKED"
+}
