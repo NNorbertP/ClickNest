@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "package": "header-route-current-static-qa-v001",
+  "date": "2026-09-14",
+  "scope": "local/static QA only; no WordPress write",
+  "source": "build/header-route-current-runtime-v001.php",
+  "source_commit": "bcb251b4884c834377e83922099f5d8e9308e857",
+  "status": "STATIC_QA_PASS_NOT_DEPLOYED",
+  "checks": {
+    "css_write": false,
+    "visible_text_change": false,
+    "href_change": false,
+    "dom_reordering": false,
+    "class_change_only": ".af-nav-dropdown-host.is-current",
+    "services_paths": ["/soveny-specialista/","/idos-fak-megmentese-szolgaltatas/","/biologiai-vedelem/","/gyumolcsfak-metszese-es-vedelme/"],
+    "reference_paths": ["/galeria/","/referencia-videok/"],
+    "homepage_excluded": true,
+    "other_routes_clear_current": true,
+    "mutation_observer": "childList+subtree only; classList changes do not self-trigger",
+    "compatibility": "Runs after existing ID7 header runtime and retries at 400/1400 ms to cover ID7 boot timings."
+  },
+  "deployment_gate": [
+    "Require post8 v004 block readback and ID7 v005 baseline preserved.",
+    "Create one front-end Code Snippets helper through code-snippets/v1 REST; verify active=true/code_error=null.",
+    "Fresh target DOM on a service route must expose af-nav-services host is-current; a reference route must expose af-nav-references is-current; unrelated route must not be marked.",
+    "Do not change ID7 code in this package."
+  ],
+  "pixel_pass": false
+}
