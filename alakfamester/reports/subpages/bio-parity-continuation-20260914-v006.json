@@ -1,0 +1,56 @@
+{
+  "package": "bio-parity-continuation-20260914-v006",
+  "date": "2026-09-14",
+  "page_id": 256,
+  "slug": "biologiai-vedelem",
+  "scope": "Only https://alakfamester-wp.clicknest.hu/biologiai-vedelem/ may be modified. Reference is read-only.",
+  "decision_refs": ["D03", "D07", "D11", "D18"],
+  "preflight": {
+    "elementor_data_bytes": 34930,
+    "elementor_data_sha256": "1cb2c00b74f10ed25ce6624421dc5c4ee653e0b0222c10ea27c78966c759c54d",
+    "precondition_match": true,
+    "wpvibe_counter_at_start": "48/300 used; 252 remaining"
+  },
+  "successful_writes": [
+    "af260007 list item 1: removed terminal period",
+    "af260007 list item 2: removed terminal period",
+    "af260007 list item 3: removed terminal period",
+    "af260007 list item 4: removed terminal period",
+    "af260010 list item 1: removed terminal period",
+    "af260010 list item 2: removed terminal period",
+    "af260010 list item 3: removed terminal period",
+    "af260010 list item 4: removed terminal period"
+  ],
+  "write_receipts": {
+    "all_successful_replacements": 1,
+    "last_successful_reported_bytes": 34922,
+    "hash_after_partial_package": "unknown because target throttled before readback"
+  },
+  "rejected_write": {
+    "intended_change": "af260013 list item 1: remove terminal period",
+    "result": "HTTP 429 Too Many Requests",
+    "status": "not confirmed written; do not retry until fresh readback proves current state"
+  },
+  "throttle_state": {
+    "rest_api": "HTTP 429",
+    "wp_cli_read": "HTTP 429 after 3 exponential-backoff retries",
+    "retry_after_header": false,
+    "account_quota_not_exhausted": true,
+    "decision": "Stop all further WPVibe calls until target-side throttle clears. Do not touch global firewall/rate-limit settings because they are outside the page-only scope."
+  },
+  "opera": {
+    "memory_policy": "Reuse at most two tabs for source/target; no new diagnostic tab fan-out.",
+    "status": "Browser Connector disconnected during follow-up AX query; do not reconnect-spam.",
+    "pixel_pass": false
+  },
+  "remaining_when_unthrottled": [
+    "First read page256 bytes/SHA and search af260013 before any retry because the last attempted write returned 429.",
+    "Finish the five af260013 terminal-period removals only where still present.",
+    "Patch af260011 headers to TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY and convert the four first body cells to th scope=row using exact content/search snippets.",
+    "Add source-equivalent named-region semantics to complete legacy-contained sections af260007, af260010, af260011, af260013 using exact widget-prefix snippets.",
+    "Fresh AX recheck of final CTA 9a1b2c3d; add explicit aria-label only if accessible name still differs.",
+    "Do not guess Atomic hero/FAQ/review-tablist attributes; keep those open until a proven Elementor 4.2.4-safe implementation exists.",
+    "Read back bytes/SHA/JSON validity and fresh-load source/target; preserve all unrelated content and IDs."
+  ],
+  "smtp_or_submission": false
+}
