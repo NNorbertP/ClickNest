@@ -3,7 +3,7 @@
  * AF old trees semantic parity runtime v001
  * Scope: page ID 264 only.
  * Visual-neutral: attributes only; no CSS, no DOM reordering, no text replacement.
- * Prepared 2026-09-14. Install only after fresh page264 hash/state preflight.
+ * Installed as Code Snippets ID 33 on 2026-09-14 after exact page264 hash preflight.
  */
 add_action('wp_footer', function () {
     if (!is_page(264)) {
@@ -27,6 +27,12 @@ add_action('wp_footer', function () {
     ['#ajanlatkeres', 'Küldjön róla néhány képet']
   ];
 
+  var REVIEW_LABELS = [
+    'Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető',
+    'Otolecz Transzportbeton Kft.',
+    "ARKER'S Építésziroda Kft."
+  ];
+
   function setRegion(selector, label) {
     var el = document.querySelector(selector);
     if (!el) return;
@@ -45,6 +51,15 @@ add_action('wp_footer', function () {
     if (!el) return null;
     if (!el.id) el.id = id;
     return el.id;
+  }
+
+  function fixReviewSemantics() {
+    var tabList = document.querySelector('.af-reviews-tabs [role="tablist"]');
+    if (tabList) tabList.setAttribute('aria-label', 'Ügyfélvélemények');
+
+    document.querySelectorAll('.af-reviews-tabs [role="tab"]').forEach(function (tab, index) {
+      if (REVIEW_LABELS[index]) tab.setAttribute('aria-label', REVIEW_LABELS[index]);
+    });
   }
 
   function fixFormSemantics() {
@@ -77,9 +92,9 @@ add_action('wp_footer', function () {
 
   function apply() {
     REGION_MAP.forEach(function (item) { setRegion(item[0], item[1]); });
-
     setStepHeadings('.elementor-element-af2a0047 .af-number-steps strong');
     setStepHeadings('.elementor-element-af2a004f .af-number-steps strong');
+    fixReviewSemantics();
 
     var ctaMail = document.querySelector('.elementor-element-af2a004b a[href="mailto:kreativ@alakfa-mester.hu"]');
     if (ctaMail) {
@@ -90,6 +105,7 @@ add_action('wp_footer', function () {
     if (formPhone) {
       formPhone.setAttribute('aria-label', 'HÍVJON NYUGODTAN +36 30 539 48 20');
     }
+
     var formMail = document.querySelector('.elementor-element-af2a0054 a[href="mailto:kreativ@alakfa-mester.hu"]');
     if (formMail) {
       formMail.setAttribute('aria-label', 'ÍRJON BÁTRAN kreativ@alakfa-mester.hu');
