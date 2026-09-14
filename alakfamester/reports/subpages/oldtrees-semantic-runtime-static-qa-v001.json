@@ -1,0 +1,38 @@
+{
+  "package": "oldtrees-semantic-runtime-static-qa-v001",
+  "date": "2026-09-14",
+  "scope": "local/static QA only; no WordPress write",
+  "source_helper": "build/oldtrees-semantic-runtime-v001.php",
+  "source_commit": "7ed98e26bbae65dcebf17f7ab99a844b6195dee6",
+  "tests": {
+    "php_lint": "PASS",
+    "embedded_javascript_node_check": "PASS",
+    "page_guard_is_page_264": true,
+    "runtime_marker_count": 1,
+    "style_tag_present": false,
+    "mutation_observer_present": true,
+    "mutation_observer_scope": "childList + subtree; helper attribute mutations do not themselves create addedNodes, so the helper does not self-trigger an attribute loop"
+  },
+  "static_scope_review": {
+    "visible_text_replacement": false,
+    "css_write": false,
+    "dom_reordering": false,
+    "attribute_only_runtime_changes": true,
+    "page_scope": "page264 only",
+    "regions_targeted": 10,
+    "step_heading_selectors": [
+      ".elementor-element-af2a0047 .af-number-steps strong",
+      ".elementor-element-af2a004f .af-number-steps strong"
+    ],
+    "contact_semantics": "aria-label only on existing tel/mailto links",
+    "form_semantics": "aria-label/describedby/group relationships only; no field values, validation, submission or SMTP behavior changed"
+  },
+  "deployment_preconditions": [
+    "Fresh page264 hash must still equal the documented baseline or the live drift must be reconciled first.",
+    "Fresh WPVibe quota must fit install/readback/frontend verification plus D11 10-call reserve and retry margin.",
+    "Use a supported plugin-aware page-scoped runtime path; do not inject through unrelated global CSS or raw database mutation.",
+    "After deployment, verify source/target accessibility tree and Elementor/editor lifecycle; static lint is not frontend acceptance."
+  ],
+  "status": "STATIC_QA_PASS_NOT_DEPLOYED",
+  "pixel_pass": false
+}
