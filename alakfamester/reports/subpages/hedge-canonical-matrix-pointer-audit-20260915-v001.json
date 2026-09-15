@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "package": "hedge-canonical-matrix-pointer-audit-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "shared_matrix_write": 0,
+  "inspected_commit": "518e2b77babc8838e8949757b02e8466f1f6519a",
+  "inspected_artifact": "reports/canonical-pages-current-state-matrix-20260915-v003.json",
+  "matrix_scope": "Read-only planning synthesis; STATE.md remains write-scope authority.",
+  "stale_hedge_pointers": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v004.php"
+  },
+  "current_page272_chain": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v009.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v016.json",
+    "gallery_reconciliation": "reports/subpages/hedge-gallery-final-state-reconciliation-20260915-v001.json"
+  },
+  "seo_implication": "The stale planning pointer is not evidence of a title/meta/canonical/robots/OG/schema defect. Document-head parity remains read-only proof open and no Yoast/post-meta write is justified without direct source-target head evidence.",
+  "decision": [
+    "Do not edit the shared canonical matrix from this page272-only continuation.",
+    "Do not execute a future Hedge write from the matrix's v004 pointers.",
+    "When the shared matrix owner next refreshes planning, reconcile page272 to the current chain above after reading the latest Hedge precedence artifact.",
+    "Keep document-head parity independent from planning-pointer freshness."
+  ],
+  "status": "CANONICAL_MATRIX_HEDGE_POINTERS_STALE_RECORDED_NO_SHARED_MUTATION"
+}
