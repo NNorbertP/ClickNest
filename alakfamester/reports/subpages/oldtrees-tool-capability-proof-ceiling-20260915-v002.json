@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-tool-capability-proof-ceiling-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "PAGE264_ONLY proof-capability update. No WordPress write.",
+  "supersedes_for_current_tool_planning": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v001.json",
+  "principle": "Missing proof capability is not an implementation failure and never authorizes speculative CSS/JS. Fresh evidence obtained in this work session supersedes the v001 unavailable-tool snapshot.",
+  "current_tool_state": {
+    "wpvibe": {
+      "status": "READ_ONLY_RECOVERED_THEN_BUDGET_STOP",
+      "fresh_reads_completed": [
+        "page264 identity/meta baseline",
+        "Additional CSS live marker inventory",
+        "active dock runtime owner ID7",
+        "current reference DOM/CSS excerpts including hero--inner contract"
+      ],
+      "latest_exact_quota_used": 296,
+      "quota_limit": 300,
+      "remaining": 4,
+      "policy": "STOP for this work session. No further WPVibe call and no WordPress mutation; do not consume the remaining reserve."
+    },
+    "opera": {
+      "status": "ONE_SEQUENTIAL_TAB_STATIC_AX_AVAILABLE_SCREENSHOT_UNRELIABLE",
+      "project_tabs_opened_this_continuation": 0,
+      "tab_policy": "Reuse exactly one existing project tab sequentially for source/target. No replacement fan-out.",
+      "successful": [
+        "fresh source-target form topic AX comparison",
+        "fresh source-target floating dock AX comparison",
+        "fresh source-target hero content/semantic AX comparison"
+      ],
+      "unreliable_or_unavailable": [
+        "screenshot connection path",
+        "jq accessibility query path after one TypeError",
+        "generic click",
+        "keyboard dispatch",
+        "pointer drag/swipe",
+        "JavaScript evaluation/getComputedStyle",
+        "viewport/DPR/zoom control"
+      ],
+      "policy": "Do not retry screenshot/JQ loops in this work session."
+    },
+    "github": "Available for exact repository readback and versioned evidence/planning artifacts."
+  },
+  "proof_classes": {
+    "server_state": {
+      "status": "FRESH_READBACK_OBTAINED_THEN_BUDGET_STOP",
+      "new_truth": "Live Additional CSS marker inventory confirms v008/v009/v010/v012 exactly once, v011 absent, project-end unique; protected current acceptance remains v004-v010 plus v012.",
+      "future_requirement": "A later write-capable session must first obtain a fresh quota/page/hash/marker preflight and leave rollback/readback reserve."
+    },
+    "static_ax": {
+      "status": "FRESH_SOURCE_TARGET_PASS_FOR_FORM_DOCK_HERO_CONTENT",
+      "closed_new_facts": [
+        "Current six reference service-topic labels exactly match target; older topic-label evidence is stale.",
+        "Current source and target dock expose the same region, phone, email and request actions.",
+        "Current source and target hero accessible content/CTAs/facts/art semantics match."
+      ]
+    },
+    "static_visual_screenshot": {
+      "status": "BLOCKED_BY_UNRELIABLE_SCREENSHOT_CHANNEL_NOT_A_DEFECT",
+      "remaining": ["v010 visual postcheck", "hero transition/1024/v011 decision", "six-view formal matrix"]
+    },
+    "computed_cascade_geometry": {
+      "status": "PARTIAL_STATIC_RECONSTRUCTION_ONLY",
+      "known": "Reference hero--inner contract and target historical 719.03125px calibration are known; v011 exact artifact is statically source-faithful.",
+      "unknown": "Effective target bounding boxes/outer centering/winning declarations cannot be measured with the current action set.",
+      "safe_rule": "Keep v011 gated."
+    },
+    "active_interactions": {
+      "status": "NOT_EXECUTABLE_WITH_CURRENT_OPERA_ACTION_SET",
+      "proof_only": [
+        "review keyboard/prev-next",
+        "Tiszafa pointer/keyboard range mutation",
+        "Nordmann timer reset/swipe/compound pause/reduced-motion",
+        "FAQ pointer/keyboard/focus",
+        "safe non-delivering Form33 required-radio action"
+      ],
+      "safe_rule": "Do not add duplicate handlers or mutate shared form/runtime owners to compensate for unavailable test actions."
+    },
+    "deterministic_pixel_acceptance": {
+      "status": "HARNESS_NOT_AVAILABLE",
+      "required_views": ["1920x1080", "1440x1000", "1024x900", "768x1024", "390x844", "360x800"],
+      "rule": "PIXEL_PASS remains false until same-engine controlled captures plus overlay/diff/key geometry and overflow are produced."
+    }
+  },
+  "implementation_state": {
+    "closed_preserve": ["v004", "v005", "v006", "v007", "v008", "v009", "v010", "v012", "Nordmann six group-role corrections"],
+    "only_prepared_visual_candidate": "build/oldtrees-visual-v011-hero-source-grid.css",
+    "v011_decision": "HOLD_GATED_NOT_LIVE",
+    "new_reproduced_page264_defects": []
+  },
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "UPDATED_PROOF_CEILING_AX_AND_SERVER_READS_ADVANCED_WRITE_AND_PIXEL_GATES_STOPPED"
+}
