@@ -8,7 +8,7 @@
   "wordpress_write_scope": "page272-specific runtime/content only",
   "wordpress_writes_this_continuation": 0,
   "supersedes_for_continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
-  "purpose": "Static pointer reconciliation only. v017 correctly described the current page272 state but its single_entrypoint still named supersession v010 after newer supersession files existed. v018 now points to the current v012 entrypoint. No live state or implementation claim is advanced here.",
+  "purpose": "Current static page272 continuation. It preserves the accepted saved/content/media state, points to the v012 entrypoint, and uses the capability-aligned v008 live plan without claiming any new live implementation state.",
   "accepted_saved_baseline": {
     "bytes": 53606,
     "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
@@ -21,22 +21,24 @@
     "static_evidence_reconciliation": "reports/subpages/hedge-static-evidence-reconciliation-20260915-v001.json",
     "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
     "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "semantic_syntax_qa": "reports/subpages/hedge-semantic-runtime-syntax-qa-20260915-v001.json",
     "semantic_delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
     "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
     "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
-    "live_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
-    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "live_plan": "build/hedge-next-live-window-plan-20260915-v008.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v009.json",
     "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json"
   },
   "verified_static_state": {
     "v005_live": false,
     "live_owner_documented_as": "Code Snippets ID36 v001, but exact live body/state must be re-read before any update",
-    "only_conditional_future_write": "existing ID36 -> build/hedge-semantic-runtime-v005.php after all live gates",
+    "only_conditional_future_write": "existing ID36 -> build/hedge-semantic-runtime-v005.php after all target live gates",
     "current_page272_css_candidate": "NONE",
     "shared_media_write_allowed": false,
     "shared_form33_write_allowed": false,
     "state_md_write_allowed_from_page272_lane": false,
-    "outer_form_region_rule": "Do not restore the superseded #ajanlatkeres-as-complete-source-region assumption; require fresh intro+Form33 common-root ancestry proof."
+    "outer_form_region_rule": "Do not restore the superseded #ajanlatkeres-as-complete-source-region assumption; require fresh intro+Form33 common-root ancestry proof.",
+    "tool_split": "WPVibe rendered HTML owns future target raw DOM/head reads; Opera owns only AX/screenshot observations and never raw DOM/head/interactions."
   },
   "closed_preserve": [
     "26/26 shared media recovery",
@@ -48,17 +50,18 @@
     "CTA/contact semantics and exact 24-hour sentence",
     "D09 page272 links/anchors",
     "removed legacy af2e0009-af2e000e",
-    "visible heading text-set parity historically passed"
+    "visible heading text-set parity historically passed",
+    "native MetForm radio required capability exists when mf_input_required=yes"
   ],
   "remaining_read_first": [
     "fresh page272 saved baseline and exact current ID36 state",
-    "all three review-panel exact inner content plus one-to-one tab-panel wiring",
+    "all three review-panel exact inner content plus one-to-one target tab-panel wiring and trustworthy source comparison",
     "complete hero/gallery/form outer section roots",
     "ordered main-content H1-H6 level/name tree",
     "proof-carousel current parent/item roles and owner",
-    "Form33 service required saved setting and safe native no-delivery rejection proof if available",
+    "Form33 service current saved mf_input_required/name/options and safe native no-delivery rejection proof if available",
     "native Form33 idle/error ARIA relations without real submission",
-    "document title/description/canonical/robots/OpenGraph/schema ownership"
+    "target document title/description/canonical/robots/OpenGraph/schema plus trustworthy source head through a raw-source route when available"
   ],
   "proof_only_no_code_until_failure": [
     "review direct click/Arrow/Home/End",
@@ -67,15 +70,16 @@
     "visual/CSS until synchronized same-environment local delta and owner are proven"
   ],
   "tool_state": {
-    "wpvibe": "disabled/unavailable in this conversation; do not retry-loop",
-    "opera": "disconnected on list-tabs attempt; zero new tabs; do not reconnect-loop",
+    "wpvibe": "disabled/unavailable in this continuation; do not retry-loop",
+    "opera": "disconnected on prior list-tabs attempt; zero new tabs; do not reconnect-loop",
     "github": "available",
-    "public_http": "not trustworthy/available for the two parity URLs"
+    "public_http": "not trustworthy/available for the two parity URLs",
+    "conversation_files": "none"
   },
-  "opera_memory_rule": "At most one source and one target project tab when Opera returns; open zero fan-out/replacement tabs and stop on stale/disconnected state.",
+  "opera_memory_rule": "At most one source and one target project tab when Opera returns; open no fan-out/admin/editor/diagnostic tabs and stop on stale/disconnected state.",
   "formal_status": "PIXEL_PASS=false until the original frozen acceptance/behavior harness returns or an explicitly accepted replacement contract exists.",
   "smtp_or_external_submission": false,
   "real_form_submission": false,
   "pixel_pass": false,
-  "status": "PAGE272_V018_STATIC_POINTER_RECONCILED_NO_LIVE_MUTATION"
+  "status": "PAGE272_V018_CAPABILITY_ALIGNED_STATIC_CONTINUATION_NO_LIVE_MUTATION"
 }
