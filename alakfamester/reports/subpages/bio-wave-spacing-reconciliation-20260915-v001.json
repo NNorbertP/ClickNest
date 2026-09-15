@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "package": "bio-wave-spacing-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_SOURCE_CONTRACT_RECONCILIATION_NO_LIVE_WRITE",
+  "finding": {
+    "source_wave": "build/bio-wave-source-exact-20260914-v001.json records each source .wave as height clamp(34px,4vw,66px) with margin-bottom:-1px.",
+    "current_prepared_wave_css": "bio-wave-source-core-v001.css, bio-wave-source-faq-v001.css and bio-wave-source-exact-v001.css use margin:0, so they omit the source 1px overlap/seam behavior.",
+    "source_post_wave_spacing": "The source reduced section top rhythm is a separate .wave + .section behavior. Existing source evidence explicitly says to consider this only after wave visual proof and not bundle it blindly.",
+    "current_FAQ_delivery_problem": "bio-faq-cta-page-local-delivery-v003 includes bio-faq-cta-section-spacing-v001.css in the base static payload even though wave4 is a later conditional node. That can subtract 24px before the expected wave predecessor is present/source-like."
+  },
+  "decision": {
+    "wave_geometry": "Prepare v002 wave CSS with margin:0 0 -1px while preserving exact height/path/background contracts. Treat the negative margin as wave seam geometry, not section spacing.",
+    "FAQ_base_static": "Remove section-spacing-v001 from the base FAQ/CTA append. Base static payload is source-layout-v002 + mail-label-v001 + mail-interaction-v001 + button-interaction-v001 only.",
+    "FAQ_wave4": "Use revised wave4 v002 only after expectations surface is fresh-proven sage and FAQ outer state is source-like paper.",
+    "FAQ_post_wave_spacing": "Only after wave4 rendered PASS should section-spacing-v001 be evaluated/appended. Fresh source/target vertical geometry must show the 24px reduction is still needed; otherwise record no-op PASS."
+  },
+  "why_safe": [
+    "No live WordPress state is changed by this reconciliation.",
+    "The prepared wave change is a one-property correction to match the recorded source contract and remains page256/divider-ID scoped.",
+    "The 24px section reduction becomes more conservative by moving later in the dependency chain instead of applying before its wave predecessor is proven.",
+    "Live acceptance still requires tight same-browser seam/vertical-rhythm proof; prepared CSS is not treated as rendered PASS."
+  ],
+  "live_acceptance": [
+    "No visible 1px paper/sage seam at each affected wave boundary.",
+    "Wave box/path size matches source without horizontal overflow.",
+    "FAQ top rhythm is measured after wave4; append the 24px spacing block only when the source/target difference proves it necessary.",
+    "If margin-bottom:-1px introduces overlap/clipping under the actual Elementor flow, stop and diagnose winning geometry rather than forcing the prepared rule."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
