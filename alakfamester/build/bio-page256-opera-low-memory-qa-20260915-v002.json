@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "package": "bio-page256-opera-low-memory-qa-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_NOT_RUN_BROWSER_DISCONNECTED",
+  "supersedes_for_execution": "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+  "goal": "Close page256 visual/responsive/interaction/AX evidence using the same two project tabs with minimal retained browser state.",
+  "hard_prerequisites": [
+    "For post-write acceptance, normal page264 release/handoff and fresh page256 saved-data reconciliation already occurred.",
+    "Existing reference and target Opera tabs are available/released. If not, STOP; do not open replacements.",
+    "Before each evidence read verify the actual URL/anchor because prior connector navigation can move shared tabs."
+  ],
+  "memory_contract": {
+    "max_tabs":2,
+    "new_tabs":0,
+    "tab_use":"one reference + one target reused for all anchors/viewports",
+    "screenshots":"at most one tight source and one tight target capture for the currently selected component; discard/advance before next component",
+    "AX":"literal/section-local subtree only; never retain/paginate whole-page AX unless the exact blocker cannot be isolated",
+    "reload":"normally none; maximum one deliberate clean reload per side for a stateful interaction sequence; disconnect/504 => STOP, no loop",
+    "viewport":"change the same two tabs; finish all checks at a viewport before moving to the next",
+    "reset":"restore active review tab/FAQ state after each interaction sequence"
+  },
+  "desktop_order_one_anchor_at_a_time": [
+    {
+      "anchor":"hero",
+      "visual":["source/target vertical rhythm after phase1", "art identity unchanged", "health and technology CTA computed state"],
+      "decision":"If both CTAs already render source-equivalent, PASS/no write despite class-name difference; otherwise only the proven divergent button owner may get a page-local override.",
+      "AX":["hero region/name preserved"]
+    },
+    {
+      "anchor":"reviews",
+      "visual":["quote #D9C9A5/46px", "active dot 9x9 + source transform", "one visual ordinal/tab", "media contained"],
+      "AX":["tablist1/tabs3/active panel1", "no standalone ordinal 01/02/03 staticText", "Panasonic points list1/items3 if semantic candidate ran", "step buttons2"],
+      "measure":["first media-box ratio should be source 1.78 before any geometry override"],
+      "interactions":["native tab keys preserved", "prev/next wrap", "new active panel focus source-equivalent or blocker remains"]
+    },
+    {
+      "anchor":"stress",
+      "visual":["p1+p2 left composition and forest card right after page-local visual block"],
+      "AX":["article1/complementary0 if role microfix ran", "list1/items4", "physical reading order p1 -> p2 -> article/list before exact PASS"]
+    },
+    {
+      "anchor":"technology",
+      "visual":["eyebrow bronze leaf", "source lead measure", "card padding/radius/shadow/watermarks", "middle hairline", "leaf/check checklist", "tight icon badge comparison for size/shape/orientation/color/offset"],
+      "decision":"Icon badge exact => PASS_PRESERVE; only a concrete reproduced icon geometry delta permits later icon override.",
+      "AX":["articles3/list1/items4 unchanged"]
+    },
+    {
+      "anchor":"table",
+      "visual":["external table title .9rem/600/muted/12px", "table surface/cell rhythm", "stone section tone"],
+      "AX":["caption0", "table1 named by tunet-tabla-cim", "columnHeaders3", "rowHeaders4"],
+      "dependency":"TABLE_TITLE_VISUAL is checked only after TABLE_TITLE structure and page-local style carrier PASS."
+    },
+    {
+      "anchor":"expectations",
+      "visual":["only after structure PASS: left white article/right sage article geometry and watermark/check/cross/link"],
+      "AX":["article2/lists2/items5 with source child ownership"],
+      "rule":"If one-shot owner transform has not passed, do not waste screenshot memory trying to close exact expectations visuals; record blocker and move on."
+    },
+    {
+      "anchor":"FAQ/CTA",
+      "visual":["FAQ before CTA", "paper FAQ", "forest CTA band", "mail label/email order", "fourth wave only if dependency ran"],
+      "AX":["FAQ region/H2 exact", "CTA H2 not contaminated by eyebrow", "unique mail/form actions"],
+      "interaction":"Exact source FAQ button/keyboard/motion only if sanctioned runtime owner exists; otherwise native details remains functional but blocker stays OPEN."
+    }
+  ],
+  "responsive_passes": [
+    {"viewport":"1000 and just below","anchors":["reviews"],"checks":["review grid transition", "first media ratio/contain", "no overflow"]},
+    {"viewport":"900 and just below","anchors":["hero","technology","stress","table","expectations","FAQ/CTA"],"checks":["one-column transitions", "source gap/rhythm", "no desktop override leakage"]},
+    {"viewport":"760 and just below","anchors":["reviews"],"checks":["single-column rail", "56px tab", "left active rule", "38px quote", "ordinal/dot remain decorative"]},
+    {"viewport":"720 and just below","anchors":["hero","technology","stress","expectations","FAQ/CTA"],"checks":["card/CTA padding", "hero CTA width", "mobile h2 winning computed size before any override"]},
+    {"viewport":"560 then ~390","anchors":["reviews","hero","CTA","table"],"checks":["review narrow media/monogram", "table horizontal-scroll edge", "no page overflow", "focus-visible", "CTA rhythm"]}
+  ],
+  "measurement_no_write_rules": [
+    "First review natural image ratio is not a defect; write only if rendered media box itself diverges from source 1.78/contain.",
+    "Desktop 39px legacy H2 is source-like; write a fluid clamp only if <=720/~390 winning computed size remains materially source-divergent.",
+    "Hero CTA class strings are not acceptance; computed visual/focus state is.",
+    "Technology icon subject/order is already protected; geometry must be concretely reproduced as wrong before override.",
+    "If a structure hard blocker is still open, do not declare its visual approximation exact."
+  ],
+  "stop_conditions": ["Opera disconnect/instability", "wrong URL/anchor", "target state drift from reconciled saved baseline", "protected content/IDs/assets/tab relationship regression", "ambiguous source/target comparison due zoom/DPR/owner uncertainty"],
+  "acceptance_rule":"No PIXEL_PASS until all required section-local desktop/responsive checks and every semantic/runtime blocker relevant to exactness are freshly closed. No new tabs are permitted merely to finish evidence faster.",
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
