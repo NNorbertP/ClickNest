@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "package": "hedge-intentional-divergence-ledger-20260915-v002",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "supersedes": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json",
+  "wordpress_writes": 0,
+  "authorized_divergences": [
+    {
+      "area": "URL routing",
+      "decision": "D09",
+      "source": ".html/static source URLs",
+      "target": "canonical WordPress /slug/ destinations while anchors are preserved",
+      "closeout_rule": "Do not rewrite target links back to .html merely for literal URL equality."
+    },
+    {
+      "area": "Form submission model and success body",
+      "decision": "D05 / reports/home/metform33-source-parity-v001.json",
+      "source": "Frozen demo form has empty endpoint and states that no message was sent.",
+      "target": "MetForm stores local entries with external notifications/webhooks disabled; truthful local-processing success copy is retained.",
+      "closeout_rule": "No SMTP/external message/real submission in this mode; do not copy demo-only no-send wording onto a target that records locally."
+    },
+    {
+      "area": "WordPress implementation technology",
+      "decision": "D02/D03/D04/D12/D17/D18",
+      "source": "static HTML/CSS/JS",
+      "target": "Hello Elementor plus documented Atomic/legacy/addon/project runtime boundaries",
+      "closeout_rule": "Judge accepted output/behavior/semantics, not implementation byte identity."
+    },
+    {
+      "area": "Proof carousel item role",
+      "decision": "2026-09-15 fresh live accessibility preservation decision",
+      "source_fresh_ax": "active proof slide exposed as role=group; source carousel also exposes Képek közötti váltás as group",
+      "target_fresh_ax": "active proof slide exposed as role=listItem; Képek közötti váltás remains group",
+      "target_owner_proof": "af2e004d renders a real list parent with listitem children; historical 21-image/4000ms carousel behavior remains protected",
+      "rationale": "The target list/listitem relationship is internally valid accessibility structure and was already protected as intentional live drift. Rolling it back to group solely for literal AX-role equality would remove valid list semantics without a reproduced usability defect.",
+      "closeout_rule": "Retain list/listitem semantics. Do not add a second carousel behavior owner or change autoplay/visual content. Reopen only if the target parent/item structure becomes invalid or a user-observable accessibility failure is reproduced."
+    }
+  ],
+  "still_open_not_authorized_as_divergence": [
+    "Fresh source/target ordered heading-name sequence differs; do not classify it as intentional until visual/source-DOM ownership is understood.",
+    "Reference raw document-head parity remains unavailable and is a proof gap, not an authorized divergence."
+  ],
+  "formal_tooling_gap": "Six-viewport deterministic pixel equality remains unclaimed because the frozen acceptance/behavior harness and deterministic viewport control are unavailable.",
+  "status": "PROOF_CAROUSEL_ROLE_DIVERGENCE_EXPLICITLY_AUTHORIZED_HEADING_ORDER_REMAINS_OPEN"
+}
