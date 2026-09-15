@@ -1,0 +1,63 @@
+{
+  "schema_version": 14,
+  "package": "bio-evidence-supersedence-20260915-v014",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_PRECEDENCE_MAP_READ_ONLY",
+  "supersedes_for_next_page256_work": "reports/subpages/bio-evidence-supersedence-20260915-v013.json",
+  "pointer_rule": "This file is the current page256 resume authority. Its explicit pointers override older internal context pointers in subordinate artifacts when executable logic is unchanged.",
+  "scope_gate": {
+    "STATE": "PAGE264 ONLY",
+    "page264_current_continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "page264_current_precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v006.json",
+    "page264_release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json",
+    "release": "NOT_RELEASED",
+    "effect": "No page256 WordPress mutation is presently authorized."
+  },
+  "current": {
+    "continuation": "reports/subpages/bio-continuation-20260915-v033.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260915-v005.json",
+    "acceptance_status": "reports/subpages/bio-final-acceptance-status-20260915-v003.json",
+    "body_hard_blockers": "reports/subpages/bio-exactness-blockers-20260915-v003.json",
+    "blocker_execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v002.json",
+    "shared_chrome_gate": "reports/subpages/bio-shared-chrome-exactness-audit-20260915-v001.json",
+    "identity_reconciliation": "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "final_acceptance_spec": "specs/bio-final-acceptance-20260914-v003.json",
+    "remote_runbook": "build/bio-next-remote-window-20260915-v007.json",
+    "remote_budget": "build/bio-remote-call-budget-20260915-v007.json",
+    "transaction_DAG": "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "microtransaction_package": "build/bio-page256-next-safe-package-20260915-v016.json",
+    "scope_handoff": "build/bio-scope-handoff-ready-20260915-v004.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "phase1_visual": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "FAQ_CTA_delivery": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "browser_QA": "build/bio-page256-opera-low-memory-qa-20260915-v001.json"
+  },
+  "execution_corrections_in_this_generation": [
+    "v016 supersedes v015 for execution because v015 still contained a stale +5 page256 identity precondition.",
+    "execution matrix v002 supersedes v001 and uses current acceptance v003 plus v016.",
+    "remote runbook v007 supersedes v006 and points to current page264 release authority and current bio chain.",
+    "scope handoff v004 supersedes v003 and points to current page264 v014/v006 and page256 +4 identity gate."
+  ],
+  "stale_for_execution_or_resume": [
+    "build/bio-page256-next-safe-package-20260914-v015.json",
+    "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v001.json",
+    "build/bio-next-remote-window-20260915-v006.json",
+    "build/bio-scope-handoff-ready-20260915-v003.json",
+    "reports/subpages/bio-evidence-supersedence-20260915-v013.json as latest map",
+    "reports/subpages/bio-continuation-20260915-v032.json as latest resume point"
+  ],
+  "identity_rule": "Page256 live mutation requires exact ncsnorbert+20260914-4@gmail.com plus fresh site/quota. +5 is not page256 authorization.",
+  "opera_memory_rule": "At most one source plus one target tab, reused; no replacement fan-out, no repeated full-page/whole-AX dumps and no reconnect/reload loop on instability.",
+  "acceptance_layers": {
+    "page256_body": "Nine blocker classes remain OPEN until fresh explicit resolution evidence exists.",
+    "whole_page_shared_chrome": "Two separate shared/global gates remain open: Services current-section header state and floating contact dock visual/owner state.",
+    "pass_rule": "Whole-page reference exactness requires body closure plus both shared/global gate closures and a fresh same-browser page256 regression check."
+  },
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
