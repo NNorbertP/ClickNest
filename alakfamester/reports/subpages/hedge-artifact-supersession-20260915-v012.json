@@ -4,7 +4,7 @@
   "date": "2026-09-15",
   "page_id": 272,
   "wordpress_writes": 0,
-  "purpose": "Current single static page272 entrypoint. The v018 continuation and capability-aligned v008 live plan preserve all accepted page272 work while keeping live writes gated behind fresh evidence.",
+  "purpose": "Current single static page272 entrypoint. The v018 continuation, capability-aligned v008 live plan and v008 acceptance preserve all accepted page272 work while keeping live writes gated behind fresh evidence.",
   "supersedes": "reports/subpages/hedge-artifact-supersession-20260915-v011.json",
   "scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
   "authoritative": {
@@ -16,7 +16,7 @@
     "semantic_syntax_qa": "reports/subpages/hedge-semantic-runtime-syntax-qa-20260915-v001.json",
     "semantic_delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
     "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
-    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v008.json",
     "live_plan": "build/hedge-next-live-window-plan-20260915-v008.json",
     "open_items": "reports/subpages/hedge-open-items-20260915-v009.json",
     "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
