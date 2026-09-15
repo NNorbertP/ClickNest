@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "package": "bio-faq-cta-post-wave-spacing-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "MEASUREMENT_GATED_POST_WAVE_CANDIDATE_NOT_DEPLOYED",
+  "supersedes_for_execution": "build/bio-faq-cta-post-wave-spacing-20260915-v001.json",
+  "base_spacing": "build/bio-faq-cta-section-spacing-base-v002.css already supplies normal source section top+bottom rhythm in the FAQ base payload.",
+  "payload": "build/bio-faq-cta-post-wave-top-v001.css",
+  "depends_on": ["FAQ base static PASS", "FAQ wave4 v002 PASS", "fresh same-browser source/target vertical geometry"],
+  "decision": [
+    "If wave4 plus normal base section spacing already matches source, record no-op PASS.",
+    "If the FAQ top is still exactly the source-contract wave-adjacent 24px too tall, append the top-only override once.",
+    "Do not change bottom padding in this node.",
+    "Immediately remeasure desktop and <=720 wave-to-FAQ rhythm."
+  ],
+  "rollback": "Remove only the post-wave-top marker if geometry regresses; preserve base spacing, wave4 and FAQ/CTA layout.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
