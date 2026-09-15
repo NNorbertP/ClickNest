@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "package": "bio-convergence-ledger-20260915-v007",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_COMPLETE_CURRENT_CONVERGENCE",
+  "supersedes_for_planning": "reports/subpages/bio-convergence-ledger-20260915-v006.json",
+  "scope": "page256 only; current STATE remains PAGE264 ONLY / NOT_RELEASED so no live page256 write is authorized",
+  "sections": {
+    "hero": {"protected":["copy","art/alt","contact/fact owners"],"prepared":"phase1 hero v003","measurement":["CTA computed state", "desktop/responsive rhythm"]},
+    "reviews": {"protected":["Atomic Tabs","exact tab names","media/alt","ID35 naming/dots/step controls"],"conditional":["anchor", "third role copy"],"presentation":["quote","dot","ordinal after AX"],"semantic_candidate":"build/bio-review-points-semantics-20260915-v002.json physical inline list wrapper diagnostic-first","hard_runtime":"prev/next panel focus no sanctioned owner","measurement":["first media-box 1.78/contain", "ordinal AX zero staticText"]},
+    "stress": {"protected":["copy","list1/items4","region"],"role_candidate":"build/bio-stress-article-resume-20260915-v002.json one complete boundary","visual":"bio-stress-current-dom-visual-v003.css after carrier/cascade","hard_blocker":"physical p1 -> p2 -> article/list needs complete fresh owner + one atomic owner-level transform"},
+    "technology": {"protected":["articles3","content/order","use-case list1/items4","current icon owner"],"phase1":"eyebrow/lead/cards/watermark/hairline/checklist","measurement":"tight icon geometry; no proven icon defect yet"},
+    "table": {"protected":["columnHeaders3","rowHeaders4","all text"],"structure":"TABLE_TITLE via v016","visual_dependency":"build/bio-table-source-structure-v001.css only after TABLE_TITLE + carrier PASS","evidence":"reports/subpages/bio-table-title-execution-gap-20260915-v001.json"},
+    "expectations": {"protected":["all copy/link","lists2/items5"],"hard_blocker_candidate":"build/bio-expectations-source-structure-20260915-v005.json complete fresh owner + one-shot editor-value transform","visual":"v003 CSS only after exact two-article structure PASS"},
+    "FAQ": {"protected":["four Q/A", "working current disclosure behavior"],"conditional":"FAQ_ORDER","static":"FAQ/CTA v002","hard_blocker":"exact source button/aria/sibling-keyboard/motion has no sanctioned physical page-local runtime owner"},
+    "final_CTA": {"protected":["H2/body","mailto href/AX label","form link","IDs/actions"],"conditional":"mail child order","static":"FAQ/CTA v002","measurement":"desktop/mobile rhythm and eyebrow/H2 AX separation"}
+  },
+  "dependency_execution": {
+    "DAG":"build/bio-transaction-dependency-graph-20260915-v004.json",
+    "runbook":"build/bio-next-remote-window-20260915-v009.json",
+    "budget":"build/bio-remote-call-budget-20260915-v009.json",
+    "micro":"build/bio-page256-next-safe-package-20260915-v016.json",
+    "carrier":"build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "phase1":"build/bio-page-local-visual-delivery-20260915-v003.json",
+    "FAQ_CTA":"build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "browser":"build/bio-page256-opera-low-memory-qa-20260915-v002.json"
+  },
+  "additional_required_work_beyond_hard_blocker_count": ["FAQ_ORDER write/no-op", "REVIEW_ANCHOR write/no-op", "REVIEW_ROLE_COPY write/no-op", "TABLE_TITLE write/no-op", "TABLE_TITLE_VISUAL after structure", "CTA_MAIL_STRUCTURE write/no-op", "phase1 seven-block visual", "conditional stress article role", "FAQ/CTA static/fourth wave", "all measurement gates"],
+  "body_hard_blocker_count":9,
+  "shared_global_whole_page_gate_count":2,
+  "identity":"exact live +4 required; live quota unknown; D11>=10",
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
