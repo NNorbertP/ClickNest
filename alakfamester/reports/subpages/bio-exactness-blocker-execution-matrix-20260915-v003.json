@@ -1,0 +1,75 @@
+{
+  "schema_version": 3,
+  "package": "bio-exactness-blocker-execution-matrix-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_EXECUTION_CLASSIFICATION_CURRENT",
+  "supersedes_for_execution": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v002.json",
+  "authorities": [
+    "STATE.md plus latest page264 release evidence",
+    "reports/subpages/bio-final-acceptance-status-20260915-v004.json",
+    "reports/subpages/bio-exactness-blockers-20260915-v004.json",
+    "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "specs/bio-final-acceptance-20260914-v003.json",
+    "build/bio-page256-next-safe-package-20260915-v016.json",
+    "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "build/bio-page-local-visual-delivery-20260915-v003.json",
+    "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "build/bio-transaction-dependency-graph-20260915-v003.json"
+  ],
+  "class_A_small_transaction_or_noop_after_fresh_read": ["FAQ_ORDER af260015", "REVIEW_ANCHOR af26000d optional", "REVIEW_ROLE_COPY b2560031", "TABLE_TITLE af260011", "CTA_MAIL_STRUCTURE 9a1b2c3d"],
+  "class_A_rule": "Use only fresh complete exact boundaries. If already source-exact, record no-op PASS. Otherwise one smallest guarded edit plus immediate saved/rendered/AX readback; abort on non-unique boundary or drift.",
+  "class_B_carrier_dependent": [
+    {
+      "item": "PHASE1_VISUAL",
+      "package": "build/bio-page-local-visual-delivery-20260915-v003.json",
+      "prerequisite": "build/bio-page-local-style-carrier-probe-20260915-v002.json PASS and cleanup",
+      "excludes": ["expectations ownership-dependent visuals", "fourth FAQ wave", "review ordinal", "unmeasured mobile h2 override"]
+    },
+    {
+      "item": "REVIEW_ORDINAL",
+      "package": "build/bio-review-ordinal-source-v001.css",
+      "prerequisite": "carrier PASS plus fresh generated-owner diagnostic",
+      "final_gate": "one visible ordinal/tab, zero standalone AX ordinal text, exact tab names"
+    },
+    {
+      "item": "STRESS_VISUAL",
+      "package": "build/bio-stress-current-dom-visual-v003.css",
+      "prerequisite": "carrier PASS plus fresh cascade proof",
+      "warning": "visual composition never clears physical DOM/AX order blocker"
+    },
+    {
+      "item": "FAQ_CTA_STATIC",
+      "package": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+      "prerequisite": "carrier PASS plus FAQ_ORDER and CTA_MAIL_STRUCTURE PASS/no-op PASS",
+      "warning": "static layout never clears FAQ exact runtime blocker"
+    }
+  ],
+  "class_C_complete_owner_plus_atomic_restructure_required": [
+    "stress_dom_order: fresh complete af260007 owner + one supported single atomic owner-level transform; otherwise OPEN",
+    "expectations_article_ownership: fresh complete af260013 owner + one safe atomic two-article regrouping; otherwise OPEN"
+  ],
+  "class_D_diagnostic_first": [
+    "Panasonic three-point semantics: active-panel source/target AX + exact saved spans before any candidate",
+    "stress aside->article: complete tag boundaries before tag-only edit; role parity does not close physical order"
+  ],
+  "class_E_no_sanctioned_runtime_owner": [
+    "FAQ exact runtime: no ad-hoc page-local JS, global ID35/Code Snippets/plugin or fake ARIA",
+    "review prev/next panel focus: no stale ID35 replay/global mutation/Atomic replacement"
+  ],
+  "class_F_browser_measurement_only": ["responsive 1000/900/760/720/560/~390", "mobile h2 winning owner", "first review media aspect/fit", "hero CTA visual state", "technology icon exact geometry", "final section-local pixel/AX/interaction acceptance"],
+  "global_stop_rules": [
+    "page264 scope not released -> no page256 write",
+    "live page256 profile not exact ncsnorbert+20260914-4@gmail.com -> no write",
+    "site/quota unknown or insufficient above D11 reserve=10 -> no write",
+    "Elementor skill unavailable -> no mutation",
+    "Opera unavailable for browser-required node -> leave node OPEN; no replacement tabs",
+    "429/5xx/ambiguous mutation -> read back, never blind retry",
+    "no full Elementor save/raw SQL/global Additional CSS/global ID35/plugin/theme/shared-resource workaround"
+  ],
+  "body_blocker_count": 9,
+  "shared_global_gate_count": 2,
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
