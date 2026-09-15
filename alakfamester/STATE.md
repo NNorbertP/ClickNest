@@ -13,20 +13,23 @@ Current planning/evidence:
 - `reports/subpages/oldtrees-content-coverage-reconciliation-20260914-v001.json` — current copy/media reconciliation; no known page264 content/main-media gap;
 - `reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json` — supersedes the stale 29/38 heading and 1/11 region audit snapshot;
 - `reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json` — reconciles every original visual-audit defect; only v006/v007 remain reproduced page-local failures;
-- `reports/subpages/oldtrees-evidence-supersedence-20260914-v001.json` — authoritative/stale/do-not-replay map;
-- `reports/subpages/oldtrees-continuation-20260915-v011.json` — current continuation checkpoint and actual tool-state/static-deepening record;
+- `reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json` — current authoritative/stale/do-not-replay map; supersedes the 20260914 v001 map for planning;
+- `reports/subpages/oldtrees-continuation-20260915-v012.json` — current continuation checkpoint and actual tool-state/static-convergence record;
 - `reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json` — exact artifact-aligned v006/v007 ownership proof; v007 has no invented flex/box-sizing claim;
+- `reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json` — parser/scope QA: v006/v007/bundle parse cleanly and every effect selector is page264-scoped;
 - `reports/subpages/oldtrees-section-coverage-20260915-v001.json` — classifies every completed page264 section as PASS / proven failure / diagnostic / proof-only;
-- `reports/subpages/oldtrees-link-route-ledger-20260915-v001.json` — current page-local CTA/related/tel/mail route invariants;
-- `reports/subpages/oldtrees-visual-live-qa-20260914-v006.json`
-- `reports/subpages/oldtrees-direct-live-compare-20260914-v005.json`
-- `reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json`
-- `build/oldtrees-visual-deploy-manifest-20260915-v001.json` — exact v006/v007/bundle blob SHAs, markers and both/one/neither deployment decision;
-- `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`
-- `build/oldtrees-interaction-acceptance-20260915-v002.json` — current no-write review/tiszafa/Nordmann/FAQ test matrix including compound hover+focus carousel states;
+- `reports/subpages/oldtrees-link-route-ledger-20260915-v001.json` — exact page-local CTA/related/tel/mail route invariants, including `/biologiai-vedelem/`;
+- `reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json` — reconciles the shared Form33 5568→6068 saved-data timeline and the accepted `#af-form-direct-call` dependency;
+- `reports/subpages/oldtrees-visual-live-qa-20260914-v006.json`;
+- `reports/subpages/oldtrees-direct-live-compare-20260914-v005.json`;
+- `reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json`;
+- `build/oldtrees-visual-deploy-manifest-20260915-v001.json` — parser-backed exact v006/v007/bundle blob SHAs, markers and both/one/neither deployment decision;
+- `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`;
+- `build/oldtrees-interaction-acceptance-20260915-v002.json` — current no-write review/tiszafa/Nordmann/FAQ matrix including synchronized carousel AX role gate, first-manual-action autoplay latch, compound hover+focus and reduced-motion states;
+- `build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json` — source visual-dot pointer behavior proof gate; current target pointer behavior is not changed without source observation;
 - `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json` — exact no-write owner/cascade gate for the unproven hero offset;
 - `build/oldtrees-responsive-acceptance-matrix-20260914-v001.json` — six-view responsive acceptance expectations from proven page264 breakpoint contracts;
-- `build/oldtrees-form-required-validation-plan-20260915-v001.json` — native-required-first D05 read/decision/non-delivery test gate;
+- `build/oldtrees-form-required-validation-plan-20260915-v001.json` — native-required-first D05 gate with fresh shared Form33 identity + `#af-form-direct-call` preservation;
 - `build/oldtrees-form-field-visual-diagnostic-20260915-v001.json` — inner MetForm field visual measurement gate; no current inner-field defect proven;
 - `build/floating-contact-dock-diagnostic-plan-20260915-v003.json` — corrected dock provenance and page264-only owner/cascade gate; no global write authorization;
 - `build/oldtrees-next-remote-window-20260915-v004.json` — current low-call live plan; supersedes v003 for planning.
@@ -84,9 +87,17 @@ Scope/effect:
 
 Bundle: `build/oldtrees-visual-v006-v007-single-write-bundle.css`.  
 QA: `reports/subpages/oldtrees-visual-v006-v007-single-write-static-qa-20260914-v001.json`.  
+Parser/scope QA: `reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json`.  
 Identity/marker manifest: `build/oldtrees-visual-deploy-manifest-20260915-v001.json`.
 
-Use the bundle **only** if fresh preflight + fresh same-browser check proves both failures still reproduce. If only one fails, deploy only that standalone block. If neither fails, write nothing.
+Parser QA result:
+- v006: **0 parse error / 3 selector / 3 declaration**;
+- v007: **0 parse error / 3 selector / 8 declaration**;
+- combined bundle: **0 parse error / 6 selector / 11 declaration**;
+- every effect selector begins with `body.page-id-264`;
+- the bundle declaration sequence is exactly v006 followed by v007, with each start/end marker exactly once.
+
+Use the bundle **only** if fresh preflight + fresh same-browser check proves both failures still reproduce. If only one fails, deploy only that standalone block. If neither fails, write nothing. Parser PASS is not deployment authorization.
 
 Required preflight for any visual write:
 - verify +5 account/site/quota and preserve D11 10-call reserve;
@@ -146,8 +157,9 @@ Runtime evidence: `reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json`
 Preserve:
 - ID33 page guard `is_page(264)` and its semantic fixes;
 - exact three review tab names and source-equivalent previous/next controls;
-- numbered duplicate review dots absent from AX/focus while pointer behavior remains;
+- numbered duplicate review dots absent from AX/focus while their target pointer behavior remains unchanged pending source pointer proof;
 - form accessible name/description, service group labelling, Település describedby;
+- shared Form33 `#af-form-direct-call` because ID33 uses it as the form `aria-describedby` target;
 - tiszafa initial value 50, native 0..100 step1 range;
 - hero `af2a0052` exact title/description;
 - seven-chip problem grid `af2a0007` and source SVG geometry;
@@ -155,7 +167,9 @@ Preserve:
 - inline MetForm33 section and visible 24-hour reply;
 - current page264 IDs/order/data baseline.
 
-Do not add duplicate review/slider/carousel/FAQ JS without a stable failing interaction proof. `source-interactions-v001.js` statically contains the before/after input→`--ba-pos`, 4000ms carousel, ArrowLeft/Right, >=40px horizontal swipe, pause/resume and reduced-motion logic. Its hover/focus pause states do not use independent flags, so compound hover+focus exit order is now an explicit **parity test**, not an automatic code fix. If a live interaction failure appears, read the current deployed runtime owner before any JS write.
+Do not add duplicate review/slider/carousel/FAQ JS without a stable failing interaction proof. `source-interactions-v001.js` statically contains the before/after input→`--ba-pos`, 4000ms carousel, ArrowLeft/Right, >=40px horizontal swipe, pause/resume and reduced-motion logic. Every by-user carousel navigation path sets `manual=true`; on that initialized source-runtime instance autoplay then remains latched off because later `start()` calls refuse to restart while manual is true. Its hover/focus pause states do not use independent flags, so compound hover+focus exit order before the manual latch is an explicit **parity test**, not an automatic code fix. If a live interaction failure appears, read the current deployed runtime owner before any JS write.
+
+The old Nordmann source `group` at slide 2/6 versus target `listItem` at slide 1/6 snapshot was unsynchronized. It is neither PASS nor write authority. The current interaction plan first puts source and target on the same slide, pauses motion, compares current/noncurrent AX roles and `aria-hidden`, and compares six caption/alt entries in DOM order. Only a synchronized surviving role delta is a real semantic failure.
 
 ## Semantic audit reconciliation — current static/AX PASS
 
@@ -168,6 +182,15 @@ Do not add duplicate review/slider/carousel/FAQ JS without a stable failing inte
 
 Do not replay `oldtrees-semantic-parity-20260914-v001.json`, older ID33 runtime versions, or create a second semantic owner. Interaction proof remains separate.
 
+### Review visual-dot pointer behavior — proof gate, not current regression
+
+`build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json` isolates one remaining exact-behavior question. Source AX does not expose numbered dot controls and recovered source markup describes visual dots as spans, but span markup alone does **not** prove pointer inertness because JavaScript may attach click handlers. Target ID14 creates pointer-active `.af-review-source-dot` buttons; page264 ID33 only removes them from focus/AX.
+
+Therefore:
+- if synchronized source visual dots are also pointer-active and target matches, current ID14 pointer behavior + ID33 AX/focus containment is PASS and no write is needed;
+- if source visual dots are pointer-inert while target dots change review, that is a real behavior delta, but page264 scope still forbids modifying global ID14; first read current ID14/ID33 and consider only the smallest page264-local containment;
+- unreliable/moving source state is HOLD, not permission to change runtime.
+
 ## Shared MetForm33 — solved items must not be rebuilt
 
 `reports/home/metform33-source-parity-v001.json` proves:
@@ -179,7 +202,16 @@ Do not replay `oldtrees-semantic-parity-20260914-v001.json`, older ID33 runtime 
 
 Do not add another photo validator, rows helper or success-state rewrite.
 
-Only form validation proof still open: D05 requires service/topic radio submission-time mandatory enforcement. Repository source inspection proves that MetForm `mf_input_required=yes` is a real client-validation input, not merely a visual required star, but the **current shared Form33 service-radio `mf_input_required` value is still unread**. A later shared page272 audit was rechecked and also contains no exact current field setting, so there is no hidden PASS to reuse. Follow `build/oldtrees-form-required-validation-plan-20260915-v001.json`: read the exact current field name/required state/options plus ID5/ID33 first, prove native behavior without delivery, and change nothing if native required already passes. Do **not** mutate shared Form33 or install a second validator from this page264 package.
+### Shared Form33 saved-data timeline
+
+`reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json` resolves a historical hash difference:
+- the earlier Form33 Elementor tree was **5568 B / `47152dff5fa5d5369a8955f7581e71b0652604c39a6c283fd15e243a543d01f3`**;
+- `home-final-audit-v001` later intentionally added Atomic paragraph `af04000d / #af-form-direct-call` with `tel:+36305394820`;
+- after that supported save Form33 became **6068 B / `ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3`**, and later site-wide finalization recorded the same value;
+- 6068/`ea091…` is the **latest documented historical reference**, not a substitute for fresh current readback and not a restore target;
+- page264 ID33 depends on `#af-form-direct-call` for the form `aria-describedby`, so page264 work must never delete, rename or duplicate that node.
+
+Only form validation proof still open: D05 requires service/topic radio submission-time mandatory enforcement. Repository source inspection proves that MetForm `mf_input_required=yes` is a real client-validation input, not merely a visual required star, but the **current shared Form33 service-radio `mf_input_required` value is still unread**. A later shared page272 audit was rechecked and also contains no exact current field setting, so there is no hidden PASS to reuse. Follow `build/oldtrees-form-required-validation-plan-20260915-v001.json`: first read current shared Form33 length/hash + `#af-form-direct-call`, then the exact current service field name/required state/options plus ID5/ID33, prove native behavior without delivery, and change nothing if native required already passes. If current Form33 has drifted from the latest documented 6068/`ea091…` reference, reconcile the current tree/settings before designing any page264 validation fallback. Do **not** mutate shared Form33 or install a second validator from this page264 package.
 
 Inner form field styling is also a **measurement gate, not a reproduced defect**. `build/oldtrees-form-field-visual-diagnostic-20260915-v001.json` records the recovered source contract (desktop two-column grid; text controls min-height 52px, 13×16px padding, #F5F3ED background, 1.5px #B9B2A2 border, ~14–16px radius; textarea min-height 132px/rows5; radio options two columns desktop). v004 intentionally did not restyle `.mf-input`/textarea. Do not add field CSS unless synchronized computed-style/geometry proves a real difference.
 
@@ -191,14 +223,14 @@ Inner form field styling is also a **measurement gate, not a reproduced defect**
 - Nordmann static AX controls prev/next + dots 1–6 match;
 - reviewed named page regions match source names/order.
 
-These are not reasons for more static/semantic writes.
+These are not reasons for more static/semantic writes. Nordmann current-slide role semantics, timing and manual-latch behavior remain separate synchronized interaction proof.
 
 ## Route / CTA invariants to preserve
 
 Use `reports/subpages/oldtrees-link-route-ledger-20260915-v001.json` for the next non-activating live readback:
 - the two page-local request CTAs target `#ajanlatkeres`; stale `/fooldal/#ajanlatkeres` must remain absent;
 - trip-fee link targets `/kapcsolat/#kiszallas`;
-- the biological-support card uses the canonical WordPress biological-protection route;
+- the biological-support card targets exact canonical WordPress route **`/biologiai-vedelem/`** (source reference route `/biologiai-vedelem.html`, target page256), consistent with D09 `.html` → `/slug/` mapping;
 - direct phone is `tel:+36305394820` with source-equivalent accessible name;
 - direct e-mail is `mailto:kreativ@alakfa-mester.hu` with source-equivalent accessible name.
 
@@ -206,7 +238,7 @@ Do not activate phone/e-mail handlers merely for QA.
 
 ## Remaining QA after/around v006/v007
 
-Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `reports/subpages/oldtrees-section-coverage-20260915-v001.json`, `build/oldtrees-next-remote-window-20260915-v004.json`, `build/oldtrees-interaction-acceptance-20260915-v002.json`, `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json`, `build/oldtrees-responsive-acceptance-matrix-20260914-v001.json`, `build/oldtrees-form-required-validation-plan-20260915-v001.json`, `build/oldtrees-form-field-visual-diagnostic-20260915-v001.json`, `build/floating-contact-dock-diagnostic-plan-20260915-v003.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
+Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `reports/subpages/oldtrees-section-coverage-20260915-v001.json`, `build/oldtrees-next-remote-window-20260915-v004.json`, `build/oldtrees-interaction-acceptance-20260915-v002.json`, `build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json`, `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json`, `build/oldtrees-responsive-acceptance-matrix-20260914-v001.json`, `build/oldtrees-form-required-validation-plan-20260915-v001.json`, `build/oldtrees-form-field-visual-diagnostic-20260915-v001.json`, `build/floating-contact-dock-diagnostic-plan-20260915-v003.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
 
 Visual:
 - after v007 or if a newer rule already fixes it, prove equal desktop comparison columns/source-like wrapping and preserve beige/sage surfaces/icons/bullets;
@@ -219,21 +251,25 @@ Visual:
 
 Interaction:
 - reviews ArrowRight/Down/Left/Up/Home/End plus previous/next synchronization;
+- visual review-dot pointer behavior must be compared source/target directly before changing the existing pointer-active ID14 dots;
 - tiszafa pointer + keyboard with native range and `--ba-pos` staying synchronized;
-- Nordmann ~4000 ms normal autoplay, ArrowLeft/Right, >40px horizontal swipe, reduced-motion stop/re-evaluation, simple hover/focus pause and compound hover+focus exit-order parity;
+- Nordmann fresh-instance ~4000 ms autoplay, synchronized current/noncurrent slide role/`aria-hidden` and caption/alt order, ArrowLeft/Right, >40px horizontal swipe, reduced-motion stop/re-evaluation, simple hover/focus pause, compound hover+focus exit-order parity, and **first manual navigation latching autoplay off** for the initialized source-runtime instance;
 - all four FAQ disclosures: source-equivalent initial expanded state, pointer/keyboard activation, multi-open vs accordion behavior, focus/ARIA/ID integrity and restored fourth-question preservation;
 - these are proof-only by default: lack of an action-capable browser is not a reason to add another runtime owner.
 
 ## Evidence precedence / stale reports
 
-Use `reports/subpages/oldtrees-evidence-supersedence-20260914-v001.json` before acting on historical open arrays. In particular:
+Use `reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json` before acting on historical open arrays. In particular:
 - old `readonly-source-target-audit-v001` hero/form gaps are closed;
 - old `oldtrees-semantic-audit-v001` 29/38 and 1/11 counts are closed;
-- old `oldtrees-runtime-live-qa-v002` partial review names/extra-dot state are closed by later evidence;
-- old `oldtrees-inline-form-v001` rows/photo-count/success-state opens are closed by Form33 ID5/ID6/settings;
+- old `oldtrees-runtime-live-qa-v002` partial review names/extra-dot state are closed by later evidence for AX/focus; its unsynchronized Nordmann slide-role snapshot is not a fix specification;
+- old `oldtrees-inline-form-v001` rows/photo-count/success-state opens are closed by Form33 ID5/ID6/settings, and its older 5568/`47152…` Form33 hash predates the accepted `#af-form-direct-call` addition;
 - old broad visual v001 audit is superseded by v004/v005 plus the visual reconciliation;
 - `build/floating-contact-dock-diagnostic-plan-20260914-v002.json` has stale CSS-owner provenance for page264 planning; use v003;
 - `build/oldtrees-interaction-acceptance-20260914-v001.json` is superseded for planning by the 20260915 v002 interaction matrix;
+- `build/oldtrees-next-remote-window-20260915-v003.json` is superseded by v004;
+- `reports/subpages/oldtrees-continuation-20260915-v011.json` is superseded by v012;
+- `reports/subpages/oldtrees-readback-closeout-20260915-v001.json` is a historical SHA closeout from before the current parser/Form33/interaction/route/review-dot reconciliation;
 - never redeploy historical visual bundles or obsolete semantic runtime versions.
 
 Fresh live truth always outranks this documentation; reconcile drift instead of forcing a stale snapshot.
@@ -244,14 +280,14 @@ In the latest continuation the first Opera action was a single `list-tabs`, whic
 
 WPVibe returned disabled on the first read-only `list_sites` attempt in the latest continuation; no repeat call was made.
 
-Generic web fetch/search did not produce a usable live page, and local curl cannot currently resolve the Clicknest hosts by DNS. Thus no trustworthy current live QA/write gate is available in this conversation.
+Generic web/direct runtime fallback did not produce a usable live source/target page. Thus no trustworthy current live QA/write gate is available in this conversation.
 
 `specs/acceptance.json` and `specs/behaviors.json` are absent on `main`; do not invent them.
 
 ## Current status
 
-**Elkészült:** page264 content/semantics and main media reconciled with no known copy/media gap; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; exact v006/v007 single-write bundle + deploy manifest; authoritative acceptance ledger; content/semantic/visual/cascade coverage reconciliations; evidence-supersedence map; complete section coverage map; interaction acceptance v002 including FAQ and compound carousel pause states; hero computed-style/geometry diagnostic gate; six-view responsive acceptance matrix; native-required-first Form33 validation gate; inner-field visual diagnostic gate; route/CTA ledger; corrected dock owner diagnostic v003; refined next-live-window v004 plan; continuation v011 checkpoint.  
-**Ellenőrzött:** historical live hash; v004/v005 markers; v004 icons/bullets; current visual PASS items; exact v006/v007 property ownership and artifact blob identities; 38/38 heading names; 11/11 ordered regions; final review AX; tiszafa initial AX; Nordmann static AX; seven-chip problem-grid source geometry/breakpoints; 5/5 main media roles; shared Form33 ID5/ID6/settings; MetForm native required capability; no current proof of an inner-field styling defect; header standalone artifacts do not own dock CSS; latest repository plans/reconciliations.  
-**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; current Form33 service-radio `mf_input_required` + native no-delivery proof; inner form field computed-style visual proof; fresh route/href readback; review/tiszafa/Nordmann/FAQ interaction acceptance; hero measured root-cause proof; dock actual CSS-owner discovery and page264-local exception only if proven; deterministic six-view pixel matrix.  
-**Következő művelet:** follow `build/oldtrees-next-remote-window-20260915-v004.json`: verify WPVibe +5 connection/quota → repo identity + compact hash/marker preflight → trustworthy two-tab v006/v007 visual gate → at most one exact repository CSS write → mandatory readback/regression capture → native Form33 required proof → form-field/route/interaction/hero/dock/responsive acceptance as capacity/tooling permits.  
+**Elkészült:** page264 content/semantics and main media reconciled with no known copy/media gap; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; shared Form33 saved-data timeline/direct-call dependency reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; exact v006/v007 single-write bundle + parser-backed deploy manifest; authoritative acceptance ledger; content/semantic/visual/cascade coverage reconciliations; current evidence-supersedence v002 map; complete section coverage map; interaction acceptance v002 including synchronized Nordmann role gate, first-manual autoplay latch, compound carousel pause states and FAQ; review-dot pointer diagnostic; hero computed-style/geometry diagnostic gate; six-view responsive acceptance matrix; native-required-first Form33 validation gate; inner-field visual diagnostic gate; exact route/CTA ledger; corrected dock owner diagnostic v003; refined next-live-window v004 plan; continuation v012 checkpoint.  
+**Ellenőrzött:** historical live page264 hash; v004/v005 markers; v004 icons/bullets; current visual PASS items; exact v006/v007 property ownership/artifact identities/parser syntax/scope; 38/38 heading names; 11/11 ordered regions; final review AX; tiszafa initial AX; Nordmann static controls; seven-chip problem-grid source geometry/breakpoints; 5/5 main media roles; shared Form33 ID5/ID6/settings; accepted `#af-form-direct-call` change explains the 5568→6068 Form33 hash transition; MetForm native required capability; exact biological route `/biologiai-vedelem/`; no current proof of an inner-field styling defect; header standalone artifacts do not own dock CSS; latest repository plans/reconciliations.  
+**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; current shared Form33 identity + service-radio `mf_input_required` + native no-delivery proof; inner form field computed-style visual proof; fresh route/href readback; review keyboard + visual-dot pointer proof; tiszafa behavior; Nordmann synchronized slide-role/caption-alt order + timing/manual-latch/swipe/pause/reduced-motion proof; FAQ interaction acceptance; hero measured root-cause proof; dock actual CSS-owner discovery and page264-local exception only if proven; deterministic six-view pixel matrix.  
+**Következő művelet:** follow `build/oldtrees-next-remote-window-20260915-v004.json`: verify WPVibe +5 connection/quota → repo identity + compact hash/marker preflight → trustworthy two-tab v006/v007 visual gate → at most one exact repository CSS write → mandatory readback/regression capture → current shared Form33/native required proof → form-field/route/review-dot/interaction/hero/dock/responsive acceptance as capacity/tooling permits.  
 **Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; actual counter must be read once before any package, and the mandatory 10-call D11 reserve must remain intact.
