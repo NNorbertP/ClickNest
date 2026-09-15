@@ -1,0 +1,70 @@
+{
+  "schema_version": 16,
+  "package": "bio-page256-next-safe-package-20260915-v016",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED_SCOPE_REMOTE_BLOCKED",
+  "supersedes_for_execution": "build/bio-page256-next-safe-package-20260914-v015.json",
+  "reason": "Remove the stale +5 identity precondition from v015 and bind every future microtransaction to the current page256 +4 identity, current scope gate, fresh live owner evidence and D11 reserve.",
+  "global_preconditions": [
+    "Fresh STATE.md explicitly releases PAGE264 ONLY and hands writable scope to page256. Current page264 v014/release gate is NOT_RELEASED, so this package is planning only until that changes.",
+    "The first live WPVibe profile read returns exactly ncsnorbert+20260914-4@gmail.com. +5 or any other identity means zero page256 mutation authority.",
+    "Exact current site connection and quota are read live; historical 19/300 is stale. The entire selected transaction, readback and rollback margin must leave D11 reserve >=10.",
+    "Elementor skill loads successfully in the live mutation session.",
+    "Fresh page256 _elementor_data bytes/SHA/JSON and FULL live ID35 state are reconciled before selecting an operation.",
+    "Every mutation begins from a fresh exact saved-data search/boundary. No stale escaped snippet replay, no full Elementor save and no raw SQL/search-replace mutation."
+  ],
+  "operations": [
+    {
+      "id": "FAQ_ORDER",
+      "element": "af260015",
+      "purpose": "Restore source FAQ-before-CTA order.",
+      "precondition": "Fresh exact settings still prove af-faq-content is present and is the winning order owner.",
+      "write": "Remove only the af-faq-content token/value with one guarded match-once edit; preserve widget ID/editor HTML/copy.",
+      "verify": ["FAQ precedes CTA in rendered order", "four native details controls remain functional", "copy unchanged", "page JSON valid"],
+      "no_op": "If fresh state is already source-exact, record PASS without a write."
+    },
+    {
+      "id": "REVIEW_ANCHOR",
+      "element": "af26000d",
+      "purpose": "Restore source deep-link #ugyfelvelemenyek.",
+      "precondition": "Fresh Atomic settings expose a proven supported existing _cssid-style owner/mechanism. Typed/guessed attributes are forbidden.",
+      "write": "Set exact id ugyfelvelemenyek using the smallest guarded match-once edit.",
+      "verify": ["frontend id=ugyfelvelemenyek exactly once", "deep-link lands on reviews when browser QA is available", "Atomic Tabs hierarchy/IDs/live ID35 semantics unchanged"],
+      "optional": true
+    },
+    {
+      "id": "REVIEW_ROLE_COPY",
+      "element": "b2560031",
+      "purpose": "Restore full third review author role line.",
+      "target_if_still_short": "ügyvezető · ARKER'S Építésziroda Kft.",
+      "source_text": "ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™)",
+      "precondition": "Fresh exact saved paragraph value still equals the short target line.",
+      "write": "Replace only that exact paragraph value; preserve element ID/type/classes, review body and tab accessible name.",
+      "verify": ["full source role visible exactly once", "third tab accessible name unchanged", "review body/title/author unchanged", "page JSON valid"],
+      "no_op": "If already exact, record PASS without a write."
+    },
+    {
+      "id": "TABLE_TITLE",
+      "element": "af260011",
+      "purpose": "Match source external p.table-title + aria-labelledby ownership with no caption.",
+      "precondition": "One fresh exact returned saved-data boundary contains the complete caption and table-opening transition.",
+      "write": "Atomically replace only that compact boundary: external p.af-table-title#tunet-tabla-cim before af-table-wrap and table aria-labelledby=tunet-tabla-cim; never reconstruct the whole widget.",
+      "verify": ["caption role 0", "external title exactly once", "table accessible name exact via aria-labelledby", "three uppercase column headers preserved", "four rowHeaders preserved", "page JSON valid"],
+      "abort": "If the complete boundary cannot be isolated in one safe edit, leave OPEN."
+    }
+  ],
+  "separate_or_blocked": [
+    "stress physical p1 -> p2 -> article/list order: HOLD until fresh complete owner plus a proven single atomic owner-level transform",
+    "stress aside->article: separate conditional tag-only transaction after fresh complete boundaries",
+    "stress visuals: page-local CSS only after carrier PASS",
+    "expectations two-article ownership: HOLD until fresh complete owner plus a safe single transaction",
+    "CTA mail child order: separate FAQ/CTA dependency node; no-op if already exact",
+    "FAQ exact runtime and review prev/next panel focus: zero mutation authority until a sanctioned physical runtime owner is proven"
+  ],
+  "transaction_rule": "Each selected operation is search/read -> one exact edit or no-op decision -> immediate saved/rendered/AX readback. Stop on no_match, multiple_matches, drift, 429/5xx ambiguity, unexpected hash/JSON change or protected-content regression.",
+  "identity_authority": "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+  "scope_authority": "STATE.md plus the latest page264 continuation/release gate",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
