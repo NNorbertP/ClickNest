@@ -1,0 +1,33 @@
+{
+  "schema_version": 6,
+  "package": "bio-exactness-blocker-execution-matrix-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_EXECUTION_CLASSIFICATION_READ_ONLY",
+  "supersedes_for_execution": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v005.json",
+  "inherits_semantic_classification_from": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v005.json",
+  "current_visual_dependencies": {
+    "phase1": "build/bio-page-local-visual-delivery-20260915-v004.json with first-three wave core-v002",
+    "table_title_visual": "build/bio-table-source-structure-v001.css after carrier+TABLE_TITLE",
+    "FAQ_base": "build/bio-faq-cta-page-local-delivery-20260915-v005.json with normal section top+bottom spacing",
+    "FAQ_wave4": "build/bio-wave-source-faq-v002.css after FAQ base + expectations ownership + fresh sage/paper proof",
+    "FAQ_post_wave_top": "build/bio-faq-cta-post-wave-spacing-20260915-v002.json; no-op or top-only -24px after wave4 and geometry proof"
+  },
+  "hard_structural_candidates": {
+    "stress": "build/bio-stress-article-resume-20260915-v002.json",
+    "expectations": "build/bio-expectations-source-structure-20260915-v005.json",
+    "Panasonic": "build/bio-review-points-semantics-20260915-v002.json"
+  },
+  "runtime_blockers": ["FAQ exact runtime no sanctioned physical owner", "review prev/next active-panel focus no sanctioned physical owner"],
+  "measurement_gates": ["responsive", "mobile h2", "review media", "hero CTA", "technology icon geometry", "wave seams", "FAQ post-wave vertical rhythm"],
+  "DAG": "build/bio-transaction-dependency-graph-20260915-v007.json",
+  "runbook": "build/bio-next-remote-window-20260915-v012.json",
+  "budget": "build/bio-remote-call-budget-20260915-v012.json",
+  "browser": "build/bio-page256-opera-low-memory-qa-20260915-v002.json",
+  "global_stop_rules": ["page264 not released", "live profile not exact +4", "site/quota unknown or D11 insufficient", "Elementor skill unavailable", "Opera unavailable for browser-required node", "ambiguous mutation", "non-unique boundary", "protected regression"],
+  "body_blocker_count": 9,
+  "shared_global_gate_count": 2,
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
