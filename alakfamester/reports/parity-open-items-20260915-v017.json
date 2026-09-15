@@ -1,0 +1,83 @@
+{
+  "schema_version": 17,
+  "project": "alakfamester",
+  "date": "2026-09-15",
+  "type": "PLANNING_ONLY_NO_SCOPE_OVERRIDE",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260915-v016.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; this queue authorizes no page256/page272/global/media write.",
+  "tool_freeze": "WPVibe remains intentionally unused after the first disabled result; Opera remains intentionally untouched after stale/disconnected evidence. Zero WordPress writes and zero new Opera tabs in this continuation.",
+  "page264_active": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v010.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "only_conditional_visual_candidates": [
+      "v006 request-contact white foreground",
+      "v007 equal comparison columns",
+      "combined single insertion only if both fresh failures reproduce"
+    ],
+    "proof_only": [
+      "Form33 service/topic native required + safe rejection",
+      "inner field visual measurements",
+      "href readback",
+      "review/Tiszafa/Nordmann direct interactions including compound hover/focus edge cases",
+      "hero measured owner/cascade",
+      "deterministic six-view matrix"
+    ],
+    "next": "Only in a trustworthy live window: intended +5/site/exact quota -> compact page/hash/marker gate -> stable one-source/one-target visual gate -> at most one selected page264 CSS write -> mandatory readback; 429 UNKNOWN until readback."
+  },
+  "page256_future": {
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v008.json",
+    "continuation": "reports/subpages/bio-continuation-20260914-v027.json",
+    "acceptance": "specs/bio-final-acceptance-20260914-v003.json",
+    "remote_plan": "build/bio-next-remote-window-20260914-v004.json",
+    "budget": "build/bio-remote-call-budget-20260914-v005.json",
+    "delivery": "carrier probe -> page-local visual delivery v002; no global fallback",
+    "safe_structure": "build/bio-page256-next-safe-package-20260914-v015.json",
+    "review_plan": "build/bio-reviews-current-fix-plan-20260914-v003.json",
+    "hard_exactness_open": [
+      "Panasonic review point-list section-local semantics",
+      "stress physical saved/read/AX order p1->p2->article/list",
+      "expectations exact two-article ownership",
+      "FAQ exact button/keyboard/motion runtime",
+      "review prev/next focus newly active panel",
+      "review decorative ordinal AX parity",
+      "final responsive acceptance"
+    ],
+    "write_now": false
+  },
+  "page272_future": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v002.json",
+    "only_semantic_candidate": "existing ID36 -> build/hedge-semantic-runtime-v004.php after fresh baseline/cardinality/native-ARIA/ID gates",
+    "review_panel_gate": "capture all three quote/author-company-role/image identities and tab-panel wiring read-only; any mismatch is a separate smallest-owner correction",
+    "page_css_candidate": "NONE",
+    "write_now": false
+  },
+  "global_future": {
+    "header": "build/header-deployment-plan-v010.json through existing ID7 only after explicit global scope handoff",
+    "floating_dock": "diagnostic-first current ID7/markup/winning cascade; do not recreate or hide with page-local duplicate UI"
+  },
+  "assets_and_formal": {
+    "asset_reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "formal_recovery": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "runner_recovery_confirmation": "reports/formal-runner-recovery-audit-20260915-v001.json",
+    "pixel_pass": false
+  },
+  "rules": [
+    "fresh trustworthy live truth wins",
+    "STATE.md controls current write scope",
+    "preserve >=10 WPVibe calls",
+    "fresh search bytes before structural edits",
+    "maximum two Opera project tabs and no replacement/reload loop after instability",
+    "missing tooling never licenses speculative code",
+    "prepared packages are not PASS evidence",
+    "a 429-returned write is UNKNOWN until readback"
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "status": "QUEUE_CURRENT_PAGE264_ACTIVE_PAGE256_V008_RECONCILED_HEDGE_V007_FUTURE"
+}
