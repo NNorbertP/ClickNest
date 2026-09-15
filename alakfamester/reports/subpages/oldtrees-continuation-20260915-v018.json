@@ -1,0 +1,65 @@
+{
+  "schema_version": 18,
+  "package": "oldtrees-continuation-20260915-v018",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CURRENT_CONTINUATION_FULL_FRESH_AX_RECONCILED_BROWSER_PROJECT_TABS_CLOSED_NO_WRITE",
+  "scope": "PAGE264 ONLY. No global or other-page write authorized.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-continuation-20260915-v017.json",
+  "current_chain": {
+    "state_scope": "STATE.md",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v012.json",
+    "fresh_full_ax": "reports/subpages/oldtrees-fresh-full-ax-reconciliation-20260915-v001.json",
+    "fresh_live_proof": "reports/subpages/oldtrees-live-proof-continuation-20260915-v001.json",
+    "hero_decision": "build/oldtrees-hero-v011-deploy-decision-20260915-v001.json",
+    "ax_delta_decision": "build/oldtrees-fresh-ax-delta-decision-20260915-v001.json",
+    "tool_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v002.json",
+    "acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+    "visual_coverage": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260915-v002.json"
+  },
+  "fresh_closeout": {
+    "visible_page264_copy_sections": "NO_NEW_GAP_IN_FULL_FRESH_AX",
+    "form_topics": "EXACT_CURRENT_SOURCE_TARGET_MATCH",
+    "dock_ax": "EXACT_CURRENT_SOURCE_TARGET_REGION_ACTION_MATCH",
+    "hero_content_ax": "MATCH",
+    "hero_geometry": "OPEN_PROOF_ONLY",
+    "new_reproduced_visual_defects": [],
+    "wordpress_writes_this_continuation": 0
+  },
+  "protected_live": {
+    "visual_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "v011": "PREPARED_GATED_NOT_LIVE",
+    "nordmann_roles": "six group-role corrections accepted",
+    "single_owners": ["ID7 dock", "ID33 page264 semantic/runtime", "Head & Footer Code source interactions", "shared Form33"]
+  },
+  "fresh_semantic_deltas": {
+    "review_inactive_tab_names": "HOLD until selected-state source/target matrix can be exercised.",
+    "faq_control_role": "Preserve native target details/summary; no behavioral failure proven.",
+    "story_dt_case": "HOLD pending visual/computed-style proof.",
+    "global_header_footer": "Recorded only; outside PAGE264 scope.",
+    "nordmann_index": "Unsynchronized autoplay snapshot, ignore as defect."
+  },
+  "tool_state": {
+    "wpvibe": "296/300 used; four remaining intentionally unused; no more calls this work session.",
+    "opera": "Reference and target project tabs closed after full AX comparison. Only blank/base Opera tab remains, minimizing memory. Screenshot/JQ branches remain stopped.",
+    "github": "Available for static reconciliation/versioned evidence only."
+  },
+  "future_first_steps_when_stronger_tooling_returns": [
+    "Do not start with a write. Re-read current STATE scope, this v018 continuation, v012 precedence and exact live server state.",
+    "Confirm a safe WPVibe budget with enough readback/rollback reserve before any mutation.",
+    "Use a deterministic same-engine viewport/DPR/zoom harness for hero and dock first, then the six-view matrix.",
+    "Keep v011 undeployed unless controlled hero geometry proves a surviving grid/art defect and the exact candidate improves it without regression.",
+    "Use an interaction-capable browser to classify review dynamic tab names and the existing review/Tiszafa/Nordmann/FAQ/Form33 proof-only lanes before considering semantic/runtime changes.",
+    "Any header/footer correction requires explicit global scope handoff; never compensate inside page264."
+  ],
+  "hard_stop_rules": [
+    "No WPVibe call in the remainder of this work session.",
+    "No WordPress write in the remainder of this work session.",
+    "No Opera project tab reopen solely to retry screenshot/JQ.",
+    "No speculative CSS/JS/content change from a proof gap.",
+    "No PIXEL_PASS claim without deterministic capture/overlay/diff."
+  ],
+  "pixel_pass": false,
+  "status": "PAGE264_V018_FULL_FRESH_AX_RECONCILED_OPERA_PROJECT_TABS_CLOSED_V011_HOLD"
+}
