@@ -1,0 +1,164 @@
+{
+  "schema_version": 5,
+  "package": "bio-next-remote-window-20260915-v005",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READY_AS_RUNBOOK_NOT_AUTHORIZATION",
+  "supersedes": "build/bio-next-remote-window-20260914-v004.json",
+  "authoritative_read_only_prework": [
+    "reports/subpages/bio-continuation-20260915-v029.json",
+    "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "reports/subpages/bio-final-acceptance-status-20260915-v001.json"
+  ],
+  "stage_0_no_write_until_all_true": [
+    "Fresh STATE.md has a normal handoff from the current page264-only owner to page256; do not overwrite or steal scope.",
+    "The two shared Opera tabs are released for page256 source/target; open no replacement tabs.",
+    "WPVibe is usable under intended ncsnorbert+20260914-5@gmail.com identity; target site connection and exact quota are verified.",
+    "Current user task still authorizes page256-only changes; Hello Additional CSS, Code Snippets/ID35 and other shared/global resources remain out of scope.",
+    "Host is not in unresolved 429/5xx state."
+  ],
+  "stage_1_read_only_preflight": [
+    "Elementor skill is already loaded in this conversation; do not full-save page256.",
+    "Read exact WPVibe counter and calculate usable calls above the 10-call D11 reserve.",
+    "Read page256 _elementor_data bytes/SHA/JSON; fresh live state outranks historical 35382 / 55fd9bbe...990f3 baseline.",
+    "Fresh-read the COMPLETE LIVE ID35 record from Code Snippets REST. Do not use build/bio-semantic-runtime-v001.php as a replacement source because public-runtime evidence proves the live snippet has later review step-control code not mirrored in the repo.",
+    "Confirm ID35 remains active, page256-guarded, error-free and preserves the seven region/review naming semantics.",
+    "Read current global CSS/ID35 owners only for diagnostics; do not mutate them.",
+    "Fresh-search af260016 exact owner boundary for the page-local style carrier probe.",
+    "Reassign only the two existing Opera tabs to normalized page256 source/target and reconfirm the deltas involved in the FIRST package only."
+  ],
+  "stage_2_first_write_carrier_probe": {
+    "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "write": "One inert style probe only.",
+    "pass": "saved JSON valid + probe style renders exactly once, active/not escaped, no visible change",
+    "fail": "remove/reconcile only the probe and STOP page-local CSS path; no Hello Additional CSS fallback"
+  },
+  "stage_3_phase1_page_local_visual": {
+    "package": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "blocks": [
+      "bio-visual-v001",
+      "bio-hero-layout-v003",
+      "bio-card-mobile-v001",
+      "bio-table-section-tone-v001",
+      "bio-wave-core-v001",
+      "bio-review-quote-v002",
+      "bio-review-dot-v001"
+    ],
+    "rules": [
+      "One style#af-page256-parity owner only.",
+      "Never duplicate a marker already present once; marker>1 = stop/reconcile.",
+      "Do not include expectations, fourth FAQ wave, review ordinal or responsive diagnostic-only overrides in phase1.",
+      "After write: fresh page JSON + rendered marker inventory + source/target visual and compact AX regression check before next mutation."
+    ]
+  },
+  "stage_4_small_structural_transactions": {
+    "package": "build/bio-page256-next-safe-package-20260914-v015.json",
+    "rule": "One complete search/edit/readback transaction at a time; no combined unrelated edit.",
+    "queue": [
+      "FAQ order: remove only the sole af-faq-content order owner after exact fresh snippet proof.",
+      "Review #ugyfelvelemenyek: only if current af26000d Atomic settings expose a proven safe _cssid boundary; no guessed typed attribute payload.",
+      "Third review author role: fresh b2560031 saved text search, then exact copy-only microfix if still short.",
+      "Table external title: only if one compact fresh boundary contains the whole caption/table opening transform."
+    ]
+  },
+  "stage_5_stress": {
+    "safe_role_microfix": "Run bio-stress-article-semantic-20260914-v001.json only if fresh saved af260007 proves exactly two whole-word aside tokens; article role fix alone does not close exactness.",
+    "visual": "Append bio-stress-current-dom-visual-v003.css only after local style owner is proven and current pseudo/cascade owners are reconfirmed.",
+    "hard_blocker": "Public DOM is p1 -> card -> p2 while source is p1 -> p2 -> article/card. Repository audit found NO complete byte-exact saved owner snapshot. Never reconstruct from old evidence. Physical order requires a fresh owner boundary plus a supported one-transaction owner/node move; otherwise leave exactness OPEN."
+  },
+  "stage_6_table": {
+    "package": "build/bio-table-source-structure-20260914-v001.json",
+    "rule": "If v015 did not already close it, transform caption to external p#tunet-tabla-cim + table aria-labelledby only when one compact exact live boundary supports the complete atomic edit. Otherwise stop."
+  },
+  "stage_7_expectations": {
+    "status": "HOLD",
+    "reason": "Source requires two article owners; target content spans separated sibling/wrapper nodes. Repository audit found no complete byte-exact saved owner snapshot.",
+    "rule": "Do not deploy old visual expectations v002, old multi-step regrouping v003, fake article roles on wrong wrappers, JS reparenting, or reconstructed full widget blobs. Fresh owner boundaries must first reveal one supported atomic ownership transform; otherwise keep blocker open."
+  },
+  "stage_8_FAQ_CTA": {
+    "structural": [
+      "Run CTA mail child-structure microfix from fresh exact mailto snippet, preserving href and exact aria-label.",
+      "FAQ must already be before CTA from the v015 order microfix."
+    ],
+    "visual": "Append only currently absent blocks required by bio-faq-cta-source-layout-20260914-v006.json; fourth wave must land in the same transaction that turns FAQ paper/separates forest CTA.",
+    "exact_runtime": "Remain OPEN unless a physically page-local runtime owner is explicitly proven/approved or scope is explicitly broadened. Native details/summary CSS skinning does not satisfy the source button/keyboard/motion contract."
+  },
+  "stage_9_reviews": {
+    "preserve": [
+      "native Atomic Tabs hierarchy",
+      "af-project click + Arrow/Up/Down/Home/End behavior already project-proven",
+      "live ID35 naming/hidden-dot semantics",
+      "review images/alt text and previous/next controls"
+    ],
+    "ordinal": "Append bio-review-ordinal-source-v001.css only as an isolated marked block; immediately verify one visible ordinal, exact tab names and zero standalone ordinal AX staticText. Roll back this block alone on AX regression.",
+    "Panasonic_points": "Run a SECTION-LOCAL active-panel AX diagnostic first. Only if source list1/items3 and target still list0/items0 are fresh-proven may bio-review-points-semantics-v001 candidate be evaluated; aria-owns must not reorder/duplicate protected reading order.",
+    "third_author_role": "Use the v015 copy microfix only if fresh saved text remains short.",
+    "prev_next_focus": "Freshly test step buttons. Source requires newly active panel focus; public runtime audit says live ID35 currently tab.click()s without explicit panel focus. Do NOT modify global ID35 under page256-only scope and do NOT reconstruct it from stale repo mirror. If no sanctioned page-local owner exists, keep blocker OPEN.",
+    "media_aspect": "Measure rendered first media container aspect/object-fit before any image geometry change; preserve asset/crop until proven."
+  },
+  "stage_10_responsive_and_visual_acceptance": {
+    "source_contract": "build/bio-responsive-source-contract-20260914-v001.json",
+    "must_measure": [
+      ">=1400 hero columns/gap and hero CTA visual states",
+      "<=1000 review vertical layout/media behavior",
+      "<=900 hero/grids/CTA stacks",
+      "<=760 review rail/quote",
+      "<=720 card/CTA padding + winning legacy h2 size + section spacing",
+      "<=560 review/monogram/contact state",
+      "~390 overflow/clipping/focus"
+    ],
+    "do_not_infer": [
+      "Do not change hero health CTA from class names alone; compare computed/rendered state.",
+      "Do not add fluid h2 override merely because a 39px base rule exists; measure the winning mobile owner first.",
+      "Do not patch review panel width/media from screenshots without normalized viewport/DPR evidence."
+    ]
+  },
+  "stage_11_final_acceptance": {
+    "spec": "specs/bio-final-acceptance-20260914-v003.json",
+    "status_matrix": "reports/subpages/bio-final-acceptance-status-20260915-v001.json",
+    "require": [
+      "fresh saved page256 readback",
+      "unique page-local style owner/markers",
+      "protected content equality",
+      "section-local AX exactness",
+      "deep-link checks",
+      "desktop/responsive visual checks",
+      "review + FAQ keyboard/focus behavior checks"
+    ],
+    "never_claim_exact_PASS_while_open": [
+      "stress physical read order",
+      "expectations article ownership",
+      "FAQ exact runtime",
+      "review Panasonic list semantics",
+      "review prev/next panel focus",
+      "review ordinal AX",
+      "responsive unverified"
+    ]
+  },
+  "stop_conditions": [
+    "STATE scope conflict",
+    "Opera still unavailable/owned by parallel QA",
+    "unknown +5 site/quota",
+    "usable quota cannot finish current complete transaction above D11 reserve",
+    "unresolved 429/5xx",
+    "unexpected page256 or live ID35 drift",
+    "carrier probe failure",
+    "multiple/no-match exact edit boundary",
+    "section-local semantic regression",
+    "review semantic candidate changes tab/panel reading order or duplicates protected text"
+  ],
+  "forbidden": [
+    "Hello Additional CSS write",
+    "global Code Snippets/ID35/plugin/theme mutation",
+    "full Elementor save",
+    "raw SQL/search-replace builder mutation",
+    "blind 429 retry",
+    "new Opera tabs to bypass ownership",
+    "stale live-ID35 reconstruction from build/bio-semantic-runtime-v001.php",
+    "old v014 stress wrapper",
+    "old expectations v002/v003 regrouping",
+    "review Atomic Tabs replacement or duplicate source review JS"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
