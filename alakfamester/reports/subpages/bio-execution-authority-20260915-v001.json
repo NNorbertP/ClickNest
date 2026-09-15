@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "package": "bio-execution-authority-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CANONICAL_EXECUTION_POINTER_MAP_NO_LIVE_AUTHORIZATION",
+  "purpose": "Provide one non-circular current mapping for future page256 execution. When a subordinate historical artifact contains an older internal planning pointer, this map wins unless a later explicit execution-authority file supersedes it.",
+  "scope_authority": {
+    "STATE": "PAGE264 ONLY",
+    "page264_continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "page264_precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v006.json",
+    "page264_release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json",
+    "current_release": false,
+    "rule": "No page256 WordPress mutation before a normal page264 release/handoff preserving complete STATE history."
+  },
+  "identity_authority": {
+    "reconciliation": "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "required_page256_profile": "ncsnorbert+20260914-4@gmail.com",
+    "forbidden_interpretation": "+5 references in older page256 artifacts are documentation drift, not authorization",
+    "quota": "must be read live; historical 19/300 is stale",
+    "D11_reserve": 10
+  },
+  "current_execution": {
+    "acceptance_status": "reports/subpages/bio-final-acceptance-status-20260915-v005.json",
+    "hard_blockers": "reports/subpages/bio-exactness-blockers-20260915-v005.json",
+    "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v003.json",
+    "runbook": "build/bio-next-remote-window-20260915-v008.json",
+    "budget": "build/bio-remote-call-budget-20260915-v008.json",
+    "DAG": "build/bio-transaction-dependency-graph-20260915-v003.json",
+    "microtransactions": "build/bio-page256-next-safe-package-20260915-v016.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "phase1_visual": "build/bio-page-local-visual-delivery-20260915-v003.json",
+    "FAQ_CTA": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "browser_QA": "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+    "final_acceptance_spec": "specs/bio-final-acceptance-20260914-v003.json"
+  },
+  "evidence_only_not_execution_pointer": {
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "shared_chrome": "reports/subpages/bio-shared-chrome-exactness-audit-20260915-v001.json",
+    "technology_icon_diagnostic": "reports/subpages/bio-technology-icon-exactness-audit-20260915-v001.json",
+    "phase1_static_QA": "reports/subpages/bio-page-local-phase1-static-qa-20260915-v001.json",
+    "convergence_ledger": "reports/subpages/bio-convergence-ledger-20260915-v005.json"
+  },
+  "explicitly_stale_for_execution": [
+    "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "build/bio-page256-next-safe-package-20260914-v015.json",
+    "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "build/bio-remote-call-budget-20260915-v007.json",
+    "build/bio-next-remote-window-20260915-v007.json and earlier",
+    "build/bio-scope-handoff-ready-20260915-v004.json and earlier",
+    "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v002.json and earlier",
+    "reports/subpages/bio-exactness-blockers-20260915-v004.json and earlier as current authority",
+    "reports/subpages/bio-final-acceptance-status-20260915-v004.json and earlier as current status"
+  ],
+  "safety_invariants": [
+    "No full Elementor save, raw SQL/search-replace builder mutation, Hello Additional CSS, global ID35/Code Snippets/plugin/theme/shared-resource workaround.",
+    "Every selected write begins from fresh exact live owner evidence and finishes immediate readback before another write.",
+    "Already-exact state is a no-op PASS; never rewrite merely to match a prepared package.",
+    "429/5xx/ambiguous write => exact readback next, never blind retry.",
+    "Browser acceptance uses at most one source plus one target Opera tab, reused; no replacement fan-out/reconnect loop.",
+    "Perfect parity is not claimable while any of nine page256 body blockers or either shared/global whole-page gate remains open."
+  ],
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
