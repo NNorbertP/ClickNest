@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-runtime-parity-continuation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "PAGE264_ONLY",
+  "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "source_runtime_direct_readback": {
+    "script_url": "https://alakfamester.clicknest.hu/script.js",
+    "reviews": "Source review dots are presentation spans. The source review runtime only toggles is-on on dots; click/keyboard navigation is bound to review tabs and previous/next buttons, never to the dots.",
+    "faq": "Each .js-faq-trigger toggles only its own item/aria-expanded; there is no close-other-items logic, so source FAQ is independent multi-open. All four source questions start aria-expanded=false.",
+    "before_after": "Native .js-ba-range input drives --ba-pos on input and on initialization.",
+    "carousel": "Non-manual .js-carousel uses 4000ms autoplay; arrows/dots/ArrowLeft/ArrowRight/qualifying >=40px horizontal swipe call goTo then start; hover/focus stops/restarts; reduced-motion blocks autoplay; broken-slide path removes/reindexes/clamps."
+  },
+  "target_runtime_owner": {
+    "option": "auhfc_settings_sitewide",
+    "bytes": 9790,
+    "sha256": "9bbbe49c223be1f7ca15b5604ed4855b8a8966a184c20fc4b45fd77990cfa34f",
+    "script_id": "af-source-interactions-v001",
+    "marker": "__AF_SOURCE_INTERACTIONS_V001__",
+    "frontend_script_present": true,
+    "verified_fragments": [
+      "carousel--manual initialization",
+      "4000ms autoplay",
+      "ArrowLeft/ArrowRight",
+      ">=40px horizontally dominant swipe",
+      "mouseenter/mouseleave and focusin/focusout stop/start",
+      "broken-slide clamp/reindex contract",
+      "reduced-motion listener"
+    ],
+    "duplicate_owner_added": false
+  },
+  "review_parity": {
+    "target_shared_owner": "Code Snippets ID14 AF reusable reviews controls v005",
+    "target_page_containment_owner": "Code Snippets ID33 AF old trees semantic parity v001",
+    "fresh_delta": "ID14 creates clickable .af-review-source-dot buttons while source dots are pointer-inert spans. ID33 already removes target dots from AX/focus but did not remove pointer activation.",
+    "fix": "build/oldtrees-visual-v012-review-dot-pointer.css",
+    "fix_blob_sha": "6e71ad934471c35310296aa60a9e38934271a2da",
+    "fix_scope": "body.page-id-264 .af-reviews-section .af-review-source-dot only",
+    "fix_effect": "pointer-events:none and cursor:default; no visual/tab/previous-next owner change",
+    "live": true,
+    "post_css_bytes": 617608,
+    "post_css_sha256": "7f19dc5a63e4d03249e27b42b72e08c0e6b7847a9372125a866a9e7bf56a7523",
+    "markers": "v012 start=1,end=1,af-project:end=1",
+    "status": "SOURCE_POINTER_CONTRACT_CLOSED_WITH_PAGE264_ONLY_CONTAINMENT"
+  },
+  "faq_parity": {
+    "source": "Four exact questions/answers; all start closed; independent multi-open runtime.",
+    "target": "Four exact questions/answers in four independent native details/summary elements; none has open attribute.",
+    "new_runtime_or_write": false,
+    "status": "STATIC_AND_BEHAVIOR_DESIGN_CONTRACT_MATCH; no duplicate accordion owner justified"
+  },
+  "story_component_parity": {
+    "target_dom": "Fresh frontend readback of af2a004a contains source-like .ba.js-ba and non-manual .carousel.js-carousel with six slides, previous/next and six dots.",
+    "tiszafa": "Native range min=0,max=100,step=1,value=50 and source runtime selector match. No replacement owner needed.",
+    "nordmann_source_role": "Reference six slides use role=group, aria-roledescription=dia, labels 1/6..6/6.",
+    "nordmann_target_prewrite_role": "Fresh saved-data/frontend target used role=listitem on exactly six Nordmann slides. Target/source carousel runtime does not rewrite role, so this was a stable semantic delta independent of autoplay frame.",
+    "nordmann_role_fix": {
+      "method": "Supported WPVibe content/edit on page264 _elementor_data, exact replace_all of role='listitem' aria-roledescription='dia' to role='group' aria-roledescription='dia'.",
+      "replaced": 6,
+      "post_elementor_bytes": 48856,
+      "post_elementor_sha256": "7c3e1a5c13e8f8c1ead29dd85e25ac74091300ba81e30f96fa77513d8ad4910c",
+      "json_valid": true,
+      "saved_listitem_count": 0,
+      "saved_group_count": 6,
+      "frontend_readback": "All six target Nordmann slides now render role=group with unchanged labels/images/controls.",
+      "content_copy_or_media_change": false
+    },
+    "status": "STATIC_RUNTIME_WIRING_AND_SLIDE_SEMANTIC_ROLE_RECONCILED; action timing proof still formal/browser-dependent"
+  },
+  "form": {
+    "service_radio": "Current Form33 service field uses mf_input_required=yes with six exact options and native activateValidation required:true wiring.",
+    "submission": "No form submission/file upload/SMTP/external delivery test performed.",
+    "inner_field_css": "No fresh synchronized measured defect; no speculative field CSS added."
+  },
+  "visual_browser_status": {
+    "opera": "Navigation/list calls intermittently work but screenshot immediately disconnects. No reconnect loop or tab fan-out.",
+    "local_chromium": "Unavailable as fallback: project hostnames do not resolve in local container and Playwright is not installed.",
+    "holds": ["v010 visual dock proof", "final hero/v011 decision", "deterministic six-view screenshot-overlay-diff matrix"]
+  },
+  "current_live_data": {
+    "elementor_bytes": 48856,
+    "elementor_sha256": "7c3e1a5c13e8f8c1ead29dd85e25ac74091300ba81e30f96fa77513d8ad4910c",
+    "elementor_json_valid": true,
+    "additional_css_bytes": 617608,
+    "additional_css_sha256": "7f19dc5a63e4d03249e27b42b72e08c0e6b7847a9372125a866a9e7bf56a7523",
+    "live_visual_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "v011": "PREPARED_GATED_NOT_LIVE"
+  },
+  "wordpress_writes_in_this_runtime_package": 2,
+  "writes": ["v012 Additional CSS containment", "six Nordmann role replacements inside page264 Elementor data"],
+  "other_page_write": false,
+  "shared_runtime_owner_write": false,
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "RUNTIME_STATIC_PARITY_ADVANCED_BROWSER_VISUAL_CLOSEOUT_STILL_BLOCKED"
+}
