@@ -8,7 +8,7 @@
   "wordpress_write_scope": "page272-specific runtime/content only",
   "wordpress_writes_this_continuation": 0,
   "supersedes_for_continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
-  "purpose": "Current static page272 continuation. It preserves the accepted saved/content/media state, points to the v012 entrypoint, and uses the capability-aligned v008 live plan without claiming any new live implementation state.",
+  "purpose": "Current static page272 continuation. It preserves the accepted saved/content/media state, points to the v012 entrypoint, and uses the capability-aligned v008 live plan and v008 acceptance without claiming any new live implementation state.",
   "accepted_saved_baseline": {
     "bytes": 53606,
     "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
@@ -24,7 +24,7 @@
     "semantic_syntax_qa": "reports/subpages/hedge-semantic-runtime-syntax-qa-20260915-v001.json",
     "semantic_delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
     "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
-    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v008.json",
     "live_plan": "build/hedge-next-live-window-plan-20260915-v008.json",
     "open_items": "reports/subpages/hedge-open-items-20260915-v009.json",
     "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json"
