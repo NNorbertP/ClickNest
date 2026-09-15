@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "package": "oldtrees-next-remote-window-20260915-v005",
   "date": "2026-09-15",
   "page_id": 264,
@@ -13,7 +13,7 @@
   "authoritative_inputs": {
     "state": "STATE.md",
     "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json",
-    "continuation": "reports/subpages/oldtrees-continuation-20260915-v012.json until corrected v013 exists",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v013.json",
     "acceptance_ledger": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
     "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
     "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
@@ -45,13 +45,14 @@
     "current_note": "This planning update executes no live calls and opens no browser tabs."
   },
   "phase_1_repo_identity_gate": {
-    "action": "Re-read current STATE, page264 precedence, exact v006/v007/bundle artifacts, deploy manifest, parser QA and interaction v003 before any remote write. Fresh repository truth outranks recorded SHAs.",
+    "action": "Re-read current STATE, page264 precedence, continuation v013, exact v006/v007/bundle artifacts, deploy manifest, parser QA, source-carousel reconciliation and interaction v003 before any remote write. Fresh repository truth outranks recorded SHAs.",
     "known_artifact_blobs": {
       "v006": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
       "v007": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
       "bundle": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
       "deploy_manifest": "4f8a9209a5ab498a6a1f524a58d341830e6cb863",
-      "interaction_v003": "186ea852f48b9794de2bf34ed5b5a2a8ca5484e3"
+      "interaction_v003": "1982d63d6f5974baaebb2bdef78b8104e82221f2",
+      "source_carousel_runtime_reconciliation": "28b77c37e1bb9bae7b056afa916aa5b8b3c92b4b"
     },
     "stop": "If current repo truth differs, reconcile the newer file before using this plan."
   },
@@ -92,8 +93,10 @@
     "routes": "Run reports/subpages/oldtrees-link-route-ledger-20260915-v001.json read-only: two #ajanlatkeres CTAs, /kapcsolat/#kiszallas, /biologiai-vedelem/, tel:+36305394820 and mailto:kreativ@alakfa-mester.hu without activation."
   },
   "phase_8_interactions": {
-    "plan": "build/oldtrees-interaction-acceptance-20260915-v003.json",
+    "plan": "build/oldtrees-interaction-acceptance-20260915-v003.json schema >=6",
+    "source_runtime": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json schema >=2",
     "corrected_nordmann_rule": "Never use v002 permanent manual-latch expectations. First record carousel--manual class presence. On a non-manual instance successful arrow/dot/key/swipe navigation calls start() and resets/restarts the ~4000ms interval; on a carousel--manual instance autoplay is disabled from initialization.",
+    "broken_slide_caveat": "drop() removes/reindexes/clamps/re-renders but itself calls neither stop() nor start(). start() has a <2-slides guard only when start() runs; do not claim immediate runtime timer cancellation after slide removal without source observation.",
     "checks": ["review ArrowLeft/Right/Up/Down/Home/End and previous/next synchronization","review visual-dot pointer behavior via dedicated diagnostic","tiszafa native range pointer/keyboard and --ba-pos synchronization","Nordmann synchronized AX roles/captions/alts, autoplay/timer reset, swipe, hover/focus compound state, reduced-motion and no duplicate timers","four FAQ disclosures: source-observed initial state, pointer/keyboard activation, multi-open vs accordion behavior, focus/ARIA/ID integrity"],
     "rule": "Proof-only by default. Read current owner before any JavaScript change; missing action tooling is not a failure."
   },
@@ -111,5 +114,5 @@
   "stop_conditions": ["WPVibe disabled/unverified or unsafe quota -> no WordPress write.","Opera disconnected/stale/repurposed -> no screenshot-driven write and no replacement tabs.","Fresh live truth contradicts repo baseline -> reconcile first.","Two attempted fixes without measurable improvement -> stop and diagnose owner/cascade.","No deterministic visual harness -> no PIXEL_PASS claim."],
   "wordpress_writes": 0,
   "pixel_pass": false,
-  "status": "READY_FOR_MINIMAL_LIVE_GATE_WITH_CORRECTED_INTERACTION_V003_AND_SHARED_FORM33_GUARD"
+  "status": "READY_FOR_MINIMAL_LIVE_GATE_WITH_CORRECTED_INTERACTION_V003_EXACT_DROP_CAVEAT_AND_SHARED_FORM33_GUARD"
 }
