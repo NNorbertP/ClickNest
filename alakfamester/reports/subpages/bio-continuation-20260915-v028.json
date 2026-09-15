@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "package": "bio-continuation-20260915-v028",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "AUTHORITATIVE_READ_ONLY_RECONCILIATION_REMOTE_SCOPE_BLOCKED",
+  "scope": "Current user task is page256 parity only; reference read-only; no other page/shared/global WordPress resource may be mutated.",
+  "wordpress_writes_this_continuation": 0,
+  "tool_state": {
+    "WPVibe": "disabled/unavailable in this chat; no write attempted",
+    "Opera": "connector unavailable after prior two-tab workflow; no reconnect loop and no new tab opened in this continuation",
+    "GitHub": "available for read-only reconciliation and this continuation artifact"
+  },
+  "fresh_scope_state": {
+    "STATE_md_sha": "332cdc1f5d5acae636c4ce0c69f6113b290abd85",
+    "STATE_heading": "PAGE264 ONLY; V004+V005 LIVE; V006+V007 READY/GATED; LIVE GATE UNAVAILABLE",
+    "page256_wordpress_write": "BLOCKED_UNTIL_NORMAL_SCOPE_HANDOFF",
+    "page264_latest_checkpoint": "reports/subpages/oldtrees-continuation-20260915-v010.json is a read-only safe checkpoint, but it does not release STATE scope"
+  },
+  "historical_page256_baseline_for_future_reconciliation_only": {
+    "elementor_bytes": 35382,
+    "elementor_sha256": "55fd9bbe1710db728a30188ff93ea6a2da9df6a6f33cad02632835e4eca990f3",
+    "json_valid": true,
+    "ID35": "last verified active/page256 guarded",
+    "warning": "Fresh future live state always outranks this historical baseline."
+  },
+  "precedence_reconciliation": {
+    "bio_page256_next_safe_v015_commit_time_utc": "2026-09-14T23:02:56Z",
+    "page_local_visual_delivery_v002_commit_time_utc": "2026-09-14T23:03:55Z",
+    "cross_project_parity_v016_commit_time_utc": "2026-09-14T23:06:04Z",
+    "hard_blocker_precedence_v007_commit_time_utc": "2026-09-14T23:08:19Z",
+    "bio_continuation_v027_commit_time_utc": "2026-09-14T23:20:16Z",
+    "decision": "v027 is later than the apparent v006/v007 cross-project precedence snapshots and points to the current v015/v003/v004/v006/v005 execution chain. Use v027 plus its named current artifacts; preserve the v007 hard-blocker rule where consistent.",
+    "obsolete_structural_direction": "bio-page256-next-safe-package-v014 stress paragraph-wrapper operation is forbidden; v015 explicitly supersedes it after current public DOM proved p1 -> card -> p2."
+  },
+  "current_authoritative_chain": {
+    "continuation": "reports/subpages/bio-continuation-20260914-v027.json",
+    "detail": "reports/subpages/bio-continuation-20260914-v026.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260914-v004.json",
+    "semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "exactness_blockers": "reports/subpages/bio-exactness-blockers-20260914-v002.json",
+    "artifact_map": "reports/subpages/bio-evidence-supersedence-20260914-v004.json",
+    "scope_css_reconciliation": "reports/subpages/bio-css-delivery-scope-reconciliation-20260914-v001.json",
+    "acceptance": "specs/bio-final-acceptance-20260914-v003.json",
+    "remote_runbook": "build/bio-next-remote-window-20260914-v004.json",
+    "call_budget": "build/bio-remote-call-budget-20260914-v005.json",
+    "structure_queue": "build/bio-page256-next-safe-package-20260914-v015.json"
+  },
+  "phase1_page_local_visual_static_QA": {
+    "delivery_owner": "build/bio-page-local-visual-delivery-20260914-v002.json; requires carrier probe PASS first",
+    "selector_scope": "PASS_STATIC; every effective phase-1 selector is page256 rooted or a page256-unique owner",
+    "resource_scope": "PASS_ONLY_IF_PAGE_LOCAL_CARRIER_PROBE_PASSES; Hello Additional CSS remains forbidden",
+    "blocks": [
+      {
+        "file": "bio-visual-parity-v001.css",
+        "status": "CURRENT_DESIGN_PAYLOAD",
+        "covers": "technology/table/FAQ internal source-like component surfaces"
+      },
+      {
+        "file": "bio-hero-layout-parity-v003.css",
+        "status": "STATIC_CONTRACT_ALIGNED",
+        "notes": ">900 only; >=1400 uses source 56px gap; existing mobile hero rules preserved"
+      },
+      {
+        "file": "bio-card-mobile-source-v001.css",
+        "status": "STATIC_CONTRACT_ALIGNED",
+        "notes": "<=720 uses source 24px card/CTA padding; future absent selectors are inert"
+      },
+      {
+        "file": "bio-table-section-tone-v001.css",
+        "status": "STATIC_CONTRACT_ALIGNED",
+        "notes": "af260011 only; source stone gradient"
+      },
+      {
+        "file": "bio-wave-source-core-v001.css",
+        "status": "STATIC_CONTRACT_ALIGNED",
+        "notes": "first three exact waves only; fourth remains dependency-bound to FAQ paper conversion"
+      },
+      {
+        "file": "bio-review-quote-source-color-v002.css",
+        "status": "STATIC_CONTRACT_ALIGNED",
+        "notes": "source #D9C9A5 and 46px/38px <=760"
+      },
+      {
+        "file": "bio-review-dot-source-v001.css",
+        "status": "LATER_OWNER_AUDIT_PROMOTED_TO_PHASE1",
+        "notes": "page-local-delivery-v002 was committed after visual-v007 and intentionally promotes the source 9x9 active-dot override while preserving ID35 aria-hidden/tabindex ownership"
+      }
+    ],
+    "remote_checks_still_required": [
+      "carrier style tag survives sanitization and renders once",
+      "fresh ID35/current page baseline",
+      "no unexpected live pseudo/cascade owner drift",
+      "controlled desktop/responsive source-target visual QA"
+    ]
+  },
+  "exactness_blockers_unchanged": [
+    "scope_remote",
+    "page_local_css_carrier",
+    "review_points_semantics",
+    "stress_dom_order",
+    "expectations_article_ownership",
+    "FAQ_exact_runtime",
+    "review_prev_next_focus",
+    "review_ordinal_AX",
+    "responsive_unverified"
+  ],
+  "important_current_structure_truth": {
+    "stress": "public DOM p1 -> aside/card -> p2; safe aside->article role fix exists but physical source order needs an unsupported atomic owner/node move",
+    "expectations": "source requires two article owners but current nodes span separated siblings/wrappers; v004 remains deployment HOLD",
+    "table": "caption must become external p#tunet-tabla-cim + aria-labelledby only if one compact exact boundary supports an atomic edit",
+    "FAQ_CTA": "server order is FAQ then CTA, but sole af-faq-content order class visually moves FAQ after CTA; v015 FAQ-order microfix remains current",
+    "reviews": "Panasonic 3-point list semantics missing; third author role current public target remains short; #ugyfelvelemenyek still candidate after safe owner proof"
+  },
+  "do_not_reopen_or_replay": [
+    "13 punctuation fixes",
+    "table uppercase headers/four row headers",
+    "legacy/ID35 region and review tab accessible naming",
+    "final CTA href/aria-label",
+    "bio structural v014 stress wrapper",
+    "expectations v003 live regrouping",
+    "visual expectations v002",
+    "global Hello Additional CSS or ID35 mutation under current scope",
+    "full Elementor save or raw SQL/search-replace"
+  ],
+  "next_remote_action_when_all_gates_reopen": [
+    "Fresh STATE scope handoff to page256 without truncating prior history.",
+    "Verify +5 WPVibe identity, target connection and exact quota; preserve >=10 D11 calls.",
+    "Fresh page256 bytes/SHA/JSON + ID35 state; reconcile any drift.",
+    "Fresh af260016 exact owner search.",
+    "Run only bio-page-local-style-carrier-probe-v001 as the first write; failure stops CSS path with no global fallback.",
+    "After probe PASS, follow bio-next-remote-window-v004 one complete transaction/readback at a time."
+  ],
+  "opera_policy": "Maximum two project tabs; no replacement/reconnect loop while connector is unavailable or another flow owns them.",
+  "pixel_pass": false
+}
