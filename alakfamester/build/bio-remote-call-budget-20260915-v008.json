@@ -1,0 +1,86 @@
+{
+  "schema_version": 8,
+  "package": "bio-remote-call-budget-20260915-v008",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_IDENTITY_AND_SCOPE_REQUIRED",
+  "supersedes_for_execution": "build/bio-remote-call-budget-20260915-v007.json",
+  "known": {
+    "user_authorized_profile": "ncsnorbert+20260914-4@gmail.com",
+    "historical_quota": "19/300 used, 281 remaining from an earlier session; STALE and unusable as current budget",
+    "current_site_connection": "UNKNOWN",
+    "exact_current_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "repo_scope": "PAGE264 ONLY / NOT_RELEASED",
+    "dependency_graph": "build/bio-transaction-dependency-graph-20260915-v003.json"
+  },
+  "hard_gates": [
+    "No page256 mutation before a normal page264 release/handoff.",
+    "First live profile must be exact ncsnorbert+20260914-4@gmail.com; +5/other identity => mutation budget ZERO.",
+    "Exact current quota/site must be read live; do not reuse historical quota.",
+    "Elementor skill must load.",
+    "Never spend below D11 reserve=10.",
+    "429/5xx/ambiguous write result consumes uncertainty budget: next action is readback, never blind retry."
+  ],
+  "phase_0_preflight": {
+    "range": "6-8 logical WPVibe actions",
+    "mandatory": ["profile + exact quota", "site connection", "page256 bytes/SHA/JSON", "COMPLETE LIVE ID35 code/state", "fresh af260016 owner", "only first-node-specific owner diagnostics"]
+  },
+  "phase_1_carrier_probe": {
+    "range": "4-6 plus 1-2 rollback/readback margin",
+    "package": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "stop_on_fail": true
+  },
+  "phase_2_first_local_visual": {
+    "range": "4-5",
+    "package": "build/bio-page-local-visual-delivery-20260915-v003.json",
+    "shape": "one style#af-page256-parity transaction with exactly seven approved blocks plus saved/rendered/browser readback"
+  },
+  "phase_3_microtransactions": {
+    "package": "build/bio-page256-next-safe-package-20260915-v016.json",
+    "FAQ_ORDER": "~3 if still needed; otherwise fresh no-op PASS",
+    "REVIEW_ANCHOR": "~3 only if supported _cssid owner exists and id is absent",
+    "REVIEW_ROLE_COPY": "~3 only if saved copy is still short",
+    "TABLE_TITLE": "~3-5 only if one complete atomic boundary exists",
+    "rule": "Each node must finish read -> one edit/no-op -> immediate readback before another starts."
+  },
+  "phase_4_stress": {
+    "article_role": "~3 only after exact complete tag-boundary proof",
+    "visual_append": "~3-4 after carrier PASS/cascade proof",
+    "physical_order": "ZERO speculative mutation budget until complete owner + supported single atomic transform are proven"
+  },
+  "phase_5_expectations": {
+    "budget": 0,
+    "reason": "No complete owner/safe one-transaction regrouping primitive proven."
+  },
+  "phase_6_FAQ_CTA": {
+    "package": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "dependency_graph": "build/bio-transaction-dependency-graph-20260915-v003.json",
+    "mail_child": "~3 conditional or no-op PASS",
+    "static_layout": "~3-4 after carrier + FAQ_ORDER + CTA_MAIL_STRUCTURE PASS",
+    "fourth_wave": "~2-3 only after fresh rendered surface proof",
+    "exact_runtime": "ZERO mutation budget until sanctioned physical runtime owner exists"
+  },
+  "phase_7_reviews": {
+    "ordinal_visual_AX": "~3-4 isolated after carrier PASS and fresh generated-owner diagnostic",
+    "Panasonic_AX_diagnostic": "browser-only preferred; zero WP mutation before exact section-local proof",
+    "Panasonic_semantic_candidate": "reserve 4-6 only after AX + boundary proof",
+    "prev_next_focus": "diagnostic only; ZERO mutation budget until sanctioned runtime owner exists",
+    "media_aspect": "browser-only diagnostic"
+  },
+  "closeout": {
+    "range": "3-5 logical WPVibe reads plus browser QA",
+    "must_include": ["final page bytes/SHA/JSON", "style/internal marker inventory", "live ID35 status for touched review paths", "section-local AX", "protected-copy/link/asset invariants"]
+  },
+  "window_rules": [
+    "<10 calls above reserve: no mutation.",
+    "10-17 above reserve: at most one complete low-risk probe or microfix unit with rollback/readback margin.",
+    "18-30 above reserve: probe+phase1 MAY fit only after compact preflight and stable host.",
+    "Prefer >=35 above reserve before probe+phase1 due full ID35 reconciliation and host uncertainty.",
+    "Never start a dependency chain unless the whole selected path plus rollback/readback fits above reserve.",
+    "HARD_BLOCKER nodes get zero speculative mutation budget."
+  ],
+  "opera_rule": "Browser diagnostics use at most one existing source + one target tab; no new-tab workaround or reconnect/reload loop.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
