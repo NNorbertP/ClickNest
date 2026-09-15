@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "package": "bio-shared-chrome-exactness-audit-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "WHOLE_PAGE_PIXEL_PASS_BLOCKED_BY_SHARED_GLOBAL_CHROME",
+  "scope": "Read-only whole-page acceptance reconciliation for page256. This artifact does not authorize or perform any shared/global header, dock, plugin, template, Additional CSS, Code Snippets, or page mutation.",
+  "page256_body_blocker_count": 9,
+  "counting_rule": "The shared/global chrome gates below do NOT increase or replace the nine page256 body/execution blocker classes. They are a separate whole-page acceptance layer. Even if all nine page-local blocker classes close, WHOLE_PAGE_PIXEL_PASS remains false until these shared/global gates also close with fresh same-browser evidence.",
+  "header_current_section_gate": {
+    "status": "OPEN_REPRODUCED_GLOBAL_OWNER",
+    "page256_evidence": "reports/header/header-service-child-route-live-qa-20260914-v008.json",
+    "last_trusted_page256_result": "FAIL_TARGET_CURRENT_GROUP at 1640x920: source showed Szolgáltatások/Services current-section pill on /biologiai-vedelem/, target rendered it neutral.",
+    "cross_route_context": "The same evidence recorded page264 PASS and homepage negative-gate PASS, proving the issue cannot be generalized from one route and requires the authoritative route-current global runtime/package.",
+    "prepared_global_plan": "build/header-deployment-plan-v010.json",
+    "plan_state": "AUTHORITATIVE_READY_WHEN_WPVIBE_RETURNS; not deployed in the cited evidence.",
+    "homepage_guard_context": "reports/header/header-home-services-active-bug-20260915-v001.json separately proves a homepage bug/guard requirement. Global header acceptance must therefore verify both service-child current state and homepage Services-neutral state.",
+    "owner": "shared/global header CSS/runtime (existing header workstream), not page256 body content",
+    "page256_action": "NONE. Do not create a page256-local fake current pill or duplicate route-current helper.",
+    "future_closeout": [
+      "Wait for explicit global header handoff; do not execute from page256 scope.",
+      "Use the authoritative header workstream and its own current identity/preflight rules, which are separate from page256's +4 gate.",
+      "After any global header deployment, same-browser verify /biologiai-vedelem/ shows Services current-section, homepage shows Főoldal current + Services neutral, and representative other service-child routes remain correct.",
+      "Reconfirm duplicate caret/submenu and focus/hover/open behavior do not regress."
+    ]
+  },
+  "floating_contact_dock_gate": {
+    "status": "OPEN_REPRODUCIBLE_VISUAL_DELTA_OWNER_UNPROVEN",
+    "authority": "build/floating-contact-dock-diagnostic-plan-20260915-v003.json",
+    "last_trusted_finding": "Source dock visibly contains phone, e-mail and green request CTA; repeated target captures showed a nearly blank white pill while AX still exposed the expected quick-contact region/links. Markup/accessibility content exists; paint/layout/cascade or timing is the unresolved layer.",
+    "owner_state": "Exact live target dock CSS owner is not yet proven. Header artifacts previously assumed to own it were explicitly corrected as not containing the dock rules.",
+    "source_contract_known": true,
+    "page256_action": "NONE. Do not recreate dock markup, apply page256-local cosmetic reconstruction, edit ID7, or guess global CSS declarations.",
+    "future_closeout": [
+      "Under an explicit shared/global or otherwise valid owner-discovery scope, inspect rendered dock classes/computed boxes and exact CSS source order before any mutation.",
+      "Distinguish deterministic cascade/layout failure from transient/timing paint behavior using stable repeated captures.",
+      "If the owner is global/shared, resolve only in that workstream and verify multiple representative pages including page256.",
+      "Same-browser final proof must cover desktop dock geometry, icon/CTA visibility, focus, links and narrow responsive bar behavior."
+    ]
+  },
+  "cross_project_support": {
+    "open_items": "reports/parity-open-items-20260915-v020.json lists header v010 under global_future and floating dock as diagnostic-first with live CSS owner unproven.",
+    "canonical_matrix": "reports/canonical-pages-current-state-matrix-20260915-v005.json keeps shared/global pixel_pass=false and records global header/dock work separately from page256 body.",
+    "no_third_named_shared_chrome_delta": "The current canonical/global summaries inspected for this audit identify header and floating dock as the relevant shared/global visual workstreams; this does not prove every future full-page regression absent, so final whole-page same-browser acceptance remains mandatory."
+  },
+  "identity_separation": {
+    "page256": "Future page256 mutation gate remains exact ncsnorbert+20260914-4@gmail.com per reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json.",
+    "global_header": "Cross-project planning records its own separate future execution identity/handoff. Never import that identity into page256 mutation authorization.",
+    "rule": "Different workstreams' connector identities are not interchangeable. Each live mutation must satisfy the active scope's explicit identity gate."
+  },
+  "opera_memory_policy": {
+    "max_project_tabs": 2,
+    "page256_final_check": "Reuse only one reference + one target tab after they are released; no diagnostic duplicate tabs.",
+    "header": "Navigate the same target/reference pair through homepage and selected service-child routes serially.",
+    "dock": "Inspect/capture the dock in the same pair and same viewport; do not open separate dock tabs.",
+    "avoid": ["whole-page AX pagination when section-local evidence is enough", "repeated full-page screenshots", "reconnect/reload loops"]
+  },
+  "acceptance_effect": {
+    "page256_body_exact_pass": "May only become true after its own nine blocker classes close.",
+    "whole_page_reference_exact_pass": "Must remain false while either header_current_section_gate or floating_contact_dock_gate is OPEN/UNPROVEN, even if the page256 body itself later passes.",
+    "pixel_pass": false
+  },
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0
+}
