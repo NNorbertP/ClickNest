@@ -1,0 +1,102 @@
+{
+  "schema_version": 7,
+  "package": "bio-remote-call-budget-20260915-v007",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_AND_IDENTITY_REQUIRED",
+  "supersedes": "build/bio-remote-call-budget-20260915-v006.json",
+  "reason": "Correct copied +5 identity drift, require the user-authorized +4 profile before any mutation, and align FAQ/CTA costing to the corrected v002 transaction graph/page-local delivery.",
+  "known": {
+    "user_authorized_profile": "ncsnorbert+20260914-4@gmail.com",
+    "historical_verified_profile": "ncsnorbert+20260914-4@gmail.com",
+    "historical_quota_evidence": "19/300 used, 281 remaining from an earlier session; STALE and unusable as current budget",
+    "current_site_connection": "UNKNOWN",
+    "exact_current_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "repo_scope": "PAGE264 ONLY until normal release/handoff",
+    "identity_reconciliation": "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "live_ID35_repo_drift": "PROVEN: live/public runtime contains review step controls absent from stale build/bio-semantic-runtime-v001.php"
+  },
+  "identity_gate": [
+    "First live WPVibe account read must return exactly ncsnorbert+20260914-4@gmail.com before any site/page write.",
+    "If +5 or any other identity is returned, mutation budget is ZERO: stop rather than silently switching or proceeding.",
+    "Current exact quota must be read live even if identity is +4; do not reuse 19/300."
+  ],
+  "counting_note": "Logical WPVibe actions only. Connector retries/remote failures may consume additional calls; live counter and host state are authoritative.",
+  "phase_0_preflight": {
+    "range": "6-8 logical actions",
+    "mandatory": [
+      "profile identity + exact quota",
+      "site/target connection",
+      "page256 _elementor_data bytes/SHA/JSON",
+      "FULL live ID35 record/code/active/page-guard/error state; never use stale repo mirror",
+      "fresh af260016 owner boundary",
+      "only the current owner diagnostics needed for the first selected transaction"
+    ],
+    "browser": "Use at most the two released existing Opera source/target tabs; no new-tab workaround."
+  },
+  "phase_1_carrier_probe": {
+    "range": "4-6 plus 1-2 rollback/readback margin",
+    "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "stop_on_fail": true
+  },
+  "phase_2_first_local_visual": {
+    "range": "4-5",
+    "package": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "write_shape": "one style#af-page256-parity transaction containing exactly the seven approved phase-1 blocks, followed by saved/rendered/browser readback"
+  },
+  "phase_3_v015_microtransactions": {
+    "FAQ_order": "~3 if fresh settings still contain the winning af-faq-content order token",
+    "review_anchor_optional": "~3 only if a proven safe _cssid owner exists",
+    "third_review_role": "~3 only if fresh saved copy remains short",
+    "table_title_conditional": "~3-5 only if one compact complete caption/table-opening boundary exists",
+    "rule": "Each transaction finishes search -> one edit/no-op decision -> immediate readback before another starts."
+  },
+  "phase_4_stress": {
+    "aside_to_article": "~3 only if fresh complete tag boundaries make the tag-only change exact",
+    "visual_append": "~3-4 after carrier PASS and current owner/cascade proof",
+    "physical_order": "ZERO SPECULATIVE BUDGET until a fresh complete saved owner and supported atomic move/replacement are proven"
+  },
+  "phase_5_expectations": {
+    "budget": 0,
+    "reason": "No complete saved owner or safe one-transaction ownership regrouping primitive is proven."
+  },
+  "phase_6_FAQ_CTA": {
+    "dependency_graph": "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "mail_child_microfix": "~3 conditional; no-op if fresh complete anchor is already source exact",
+    "static_layout_append": "~3-4 after CARRIER_PROBE + FAQ_ORDER + CTA_MAIL_STRUCTURE/no-op PASS",
+    "fourth_wave": "~2-3 only after fresh rendered paper-FAQ / sage-predecessor proof",
+    "combined_safe_window_estimate": "8-12 logical actions plus browser checks if all dependencies are already proven in the same live state; do not start near reserve",
+    "exact_FAQ_runtime": "ZERO MUTATION BUDGET under current page256-only ownership because no sanctioned physical runtime owner exists"
+  },
+  "phase_7_reviews": {
+    "ordinal_visual_AX": "~3-4 isolated after carrier PASS",
+    "Panasonic_AX_diagnostic": "browser-only preferred; zero WP mutation budget before exact section-local proof",
+    "Panasonic_semantic_candidate": "reserve 4-6 only after fresh AX proof + isolatable saved boundaries; abort on ordering/duplication risk",
+    "prev_next_panel_focus": "diagnostic only; ZERO mutation budget until a sanctioned owner exists",
+    "media_aspect": "browser diagnostic only",
+    "role_copy_anchor": "handled by v015 microtransactions if still needed"
+  },
+  "closeout": {
+    "range": "3-5 logical WPVibe reads plus browser QA",
+    "must_include": [
+      "final page data bytes/SHA/JSON",
+      "page-local style owner/internal marker inventory",
+      "live ID35 status appropriate to touched review paths",
+      "section-local AX acceptance",
+      "protected-copy and link invariants"
+    ]
+  },
+  "window_rules": [
+    "<10 calls above D11 reserve: no mutation; read-only reconciliation only.",
+    "10-17 above reserve: at most one complete low-risk carrier-probe or microfix unit with rollback/readback margin.",
+    "18-30 above reserve: one probe+phase1 session MAY fit only after compact preflight, stable host and no extra diagnostics.",
+    "Prefer >=35 above reserve before starting carrier probe + phase1 because full live ID35 reconciliation and 429 uncertainty increase cost.",
+    "FAQ/CTA dependent chain should not start unless its entire chosen dependency path plus rollback/readback fits above reserve.",
+    "Never spend below D11 reserve=10.",
+    "429/5xx write outcome is UNKNOWN: next action is readback, never blind retry.",
+    "HARD_BLOCKER nodes receive zero speculative mutation budget."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
