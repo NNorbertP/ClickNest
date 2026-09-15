@@ -4,7 +4,7 @@
   "date": "2026-09-15",
   "page_id": 272,
   "wordpress_writes": 0,
-  "purpose": "Advance the single static page272 entrypoint to continuation v018 after reconciling v017's stale single_entrypoint pointer. No WordPress/live implementation state is changed.",
+  "purpose": "Current single static page272 entrypoint. The v018 continuation and capability-aligned v008 live plan preserve all accepted page272 work while keeping live writes gated behind fresh evidence.",
   "supersedes": "reports/subpages/hedge-artifact-supersession-20260915-v011.json",
   "scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
   "authoritative": {
@@ -13,11 +13,12 @@
     "static_evidence_reconciliation": "reports/subpages/hedge-static-evidence-reconciliation-20260915-v001.json",
     "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
     "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "semantic_syntax_qa": "reports/subpages/hedge-semantic-runtime-syntax-qa-20260915-v001.json",
     "semantic_delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
     "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
     "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
-    "live_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
-    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "live_plan": "build/hedge-next-live-window-plan-20260915-v008.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v009.json",
     "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
     "gallery_final": "reports/subpages/hedge-gallery-final-state-reconciliation-20260915-v001.json",
     "heading_reconciliation": "reports/subpages/hedge-heading-evidence-reconciliation-20260915-v001.json",
@@ -25,7 +26,7 @@
     "sitewide_pointer_audit": "reports/subpages/hedge-cross-project-pointer-audit-20260915-v001.json",
     "canonical_pointer_audit": "reports/subpages/hedge-canonical-matrix-pointer-audit-20260915-v001.json"
   },
-  "execution_truth": "No page272 WordPress write was performed. The only conditional future write remains the existing Code Snippets ID36 -> semantic v005, gated by fresh saved-baseline, rollback-owner, cardinality, native-ARIA/resolved-IDREF, unique-ID and budget/readback checks. v005 is not claimed live.",
+  "execution_truth": "No page272 WordPress write was performed. The only conditional future write remains the existing Code Snippets ID36 -> semantic v005, gated by fresh saved-baseline, rollback-owner, target cardinality, native-ARIA/resolved-IDREF, unique-ID and budget/readback checks. v005 is not claimed live.",
   "do_not_replay": [
     "semantic v004 and older prepared semantic candidates",
     "old real-media-ID plus shared attachment-alt Hedge strategy",
@@ -33,7 +34,8 @@
     "older media/background defects already reconciled",
     "outer-region guesses on partial widgets, including the superseded #ajanlatkeres-as-complete-form-root assumption",
     "proof-carousel role rollback without fresh parent/owner evidence",
-    "new CSS without synchronized reproduced page272-local visual delta"
+    "new CSS without synchronized reproduced page272-local visual delta",
+    "Opera as a raw-DOM/document-head/interactions provider; its current connector surface is AX/screenshot/navigation only"
   ],
   "critical_rules": [
     "Fresh trustworthy live truth wins over repository history.",
@@ -41,13 +43,14 @@
     "Preserve at least 10 WPVibe calls for D11 closeout/recovery when the connector returns.",
     "429/unknown write remains UNKNOWN until exact readback; never blind retry.",
     "At most one source and one target Opera project tab; no reconnect/replacement-tab loops.",
+    "Use WPVibe rendered HTML for target DOM/head rather than opening extra Opera diagnostic tabs.",
     "No SMTP, external message or real Form33 submission.",
     "PIXEL_PASS remains false until original frozen tooling returns or an explicitly accepted replacement contract exists."
   ],
   "tool_state": {
-    "wpvibe": "disabled/unavailable in current conversation",
-    "opera": "disconnected; zero new tabs",
+    "wpvibe": "disabled/unavailable in current continuation; schema confirms rendered-HTML read capability for a future live window",
+    "opera": "disconnected previously; zero new tabs; connector capability limited to tabs/AX/jq/screenshot/navigation/close",
     "github": "available"
   },
-  "status": "HEDGE_V012_CURRENT_STATIC_ENTRYPOINT_V018_LIVE_EXECUTION_BLOCKED"
+  "status": "HEDGE_V012_CURRENT_STATIC_ENTRYPOINT_V018_CAPABILITY_ALIGNED_LIVE_EXECUTION_BLOCKED"
 }
