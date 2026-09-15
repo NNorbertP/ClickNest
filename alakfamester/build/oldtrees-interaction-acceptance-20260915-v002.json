@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "package": "oldtrees-interaction-acceptance-20260915-v002",
   "date": "2026-09-15",
   "page_id": 264,
@@ -21,13 +21,15 @@
       "One-time data-af-carousel-init guard.",
       "translateX by -index*100%; aria-hidden on slides; aria-current on active dot; counter/caption update.",
       "4000 ms setInterval autoplay unless manual, reduced-motion, disconnected or fewer than two slides.",
+      "Every byUser navigation path sets manual=true; later start() calls refuse to restart autoplay while manual remains true.",
       "ArrowLeft/ArrowRight keyboard navigation.",
       "Pointer swipe requires |dx| >= 40 and |dx| >= |dy|.",
       "mouseenter/focusin call stop(); mouseleave/focusout call start().",
       "prefers-reduced-motion change calls start(), whose first action stops the current timer and then conditionally restarts.",
       "Broken slides are removed and remaining dot data-go values are reindexed."
     ],
-    "important_compound_state_caveat": "Hover and focus pause are not represented by independent state flags. Because mouseleave and focusout each call start() unconditionally, autoplay may restart while the other pause condition still remains true. This is not declared a parity defect until synchronized source behavior is observed; it is an explicit live acceptance edge case.",
+    "manual_latch_contract": "Prev/next button, dot navigation, ArrowLeft/ArrowRight and qualifying pointer swipe call go(..., true), setting manual=true. Therefore normal source-runtime autoplay is expected to remain stopped after the first manual navigation for that initialized carousel instance, even if hover/focus later exits or reduced-motion preference changes.",
+    "important_compound_state_caveat": "Hover and focus pause are not represented by independent state flags. Because mouseleave and focusout each call start() unconditionally, autoplay may restart while the other pause condition still remains true before any manual navigation. This is not declared a parity defect until synchronized source behavior is observed; it is an explicit live acceptance edge case.",
     "historical_carousel_role_caveat": "oldtrees-runtime-live-qa-v002 sampled source current slide role=group at 2/6 and target role=listItem at 1/6. Later direct v005 proof closed control-name parity but did not re-measure synchronized slide roles. The old unsynchronized role snapshot is therefore neither PASS nor write authority.",
     "faq_note": "The common source-interactions-v001.js does not own FAQ disclosure behavior. FAQ must therefore be tested against the current rendered/native/addon disclosure owner before any runtime change is considered."
   },
@@ -73,23 +75,32 @@
       "If source remains role=group and target role=listItem in a truly synchronized state, classify a semantic delta and identify the exact current DOM/runtime owner before any change. Do not infer a fix from the historical unsynchronized snapshot."
     ],
     "normal_motion_tests": [
-      "At stable t0 with no hover/focus, after >4.1s exactly one forward autoplay advance; another >4.1s gives exactly one more.",
+      "On a fresh page load with no manual action, no hover and no focus, after >4.1s exactly one forward autoplay advance; another >4.1s gives exactly one more.",
       "ArrowRight exactly one forward; ArrowLeft exactly one backward.",
       "Horizontal pointer swipe >40px with horizontal dominance gives exactly one direction-appropriate advance.",
       "Movement <40px or vertical-dominant movement produces no slide change.",
-      "mouseenter held >4.1s pauses autoplay; mouseleave resumes when focus is not inside.",
-      "focus held inside >4.1s pauses autoplay; focusout resumes when pointer is not hovering."
+      "Before any manual navigation, mouseenter held >4.1s pauses autoplay; mouseleave resumes when focus is not inside.",
+      "Before any manual navigation, focus held inside >4.1s pauses autoplay; focusout resumes when pointer is not hovering."
+    ],
+    "manual_latch_tests": [
+      "Reload/reset both source and target to a fresh carousel instance. After confirming autoplay works once, activate one manual navigation path (prev/next, a dot, ArrowLeft/ArrowRight or qualifying swipe).",
+      "After that manual navigation, remove hover/focus and observe >8.2s. Source and target must remain on the manually selected slide unless the live reference proves a different runtime than the recovered source-interactions contract.",
+      "After manual=true is established, toggling hover/focus in and out must not create a new autoplay timer.",
+      "After manual=true is established, toggling prefers-reduced-motion off/on/off must not restart autoplay through start().",
+      "Repeat with at least one pointer path and one keyboard/button path so the byUser latch is not only proven for a single control type.",
+      "If target resumes autoplay after manual navigation while source remains latched, inspect the deployed runtime owner/duplicate timer before changing CSS or markup."
     ],
     "compound_pause_state_tests": [
+      "Run these on a fresh instance before any manual navigation has set manual=true.",
       "Focus a carousel control, then also hover the carousel. Keep focus inside and move pointer out. Observe >4.1s: reference and target must behave the same; specifically record whether autoplay remains paused or restarts.",
       "Hover the carousel, then focus a carousel control. Keep pointer hovering and move focus outside. Observe >4.1s: reference and target must behave the same.",
       "With both hover and focus active, remove both in opposite orders and require no duplicate timers or double-step autoplay.",
       "Do not treat a logically surprising result as a target bug if the source runtime/reference exhibits the same observable behavior; parity outranks redesign."
     ],
     "reduced_motion_tests": [
-      "With prefers-reduced-motion: reduce active, observe >8.2s with no autoplay advance.",
-      "Manual ArrowLeft/ArrowRight and pointer controls remain functional under reduced motion.",
-      "Live media-query toggle, if supported, re-evaluates autoplay without duplicate timers."
+      "On a fresh instance before manual navigation, with prefers-reduced-motion: reduce active, observe >8.2s with no autoplay advance.",
+      "Manual ArrowLeft/ArrowRight and pointer controls remain functional under reduced motion and then establish the same manual latch.",
+      "Live media-query toggle, if supported, re-evaluates autoplay without duplicate timers; after manual latch it must not restart autoplay."
     ],
     "failure_policy": "Inspect current deployed runtime owner and initialization marker before changing JavaScript or slide semantics. Missing action tooling is not an implementation failure."
   },
@@ -113,7 +124,7 @@
     "No form submission, upload, SMTP or external delivery occurs.",
     "Keep only the active source/target pair; do not leave extra autoplay tabs running."
   ],
-  "pass_definition": "Source and target complete the same observable review, range, carousel and FAQ behavior including synchronized carousel AX semantics, compound hover/focus, disclosure and reduced-motion states, without AX/focus or visual regression.",
+  "pass_definition": "Source and target complete the same observable review, range, carousel and FAQ behavior including synchronized carousel AX semantics, first-manual-action autoplay latch, compound hover/focus, disclosure and reduced-motion states, without AX/focus or visual regression.",
   "current_execution_status": "PREPARED_NOT_RUN: Opera connector is currently disconnected and WPVibe is disabled; no runtime write is justified.",
   "wordpress_writes": 0,
   "pixel_pass": false
