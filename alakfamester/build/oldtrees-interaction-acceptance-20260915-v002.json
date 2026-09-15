@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-interaction-acceptance-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "supersedes_for_planning": "build/oldtrees-interaction-acceptance-20260914-v001.json",
+  "mode": "READ_ONLY_ACCEPTANCE_NO_WRITE_BY_DEFAULT",
+  "scope": "Page264 review tabs, tiszafa before-after and Nordmann carousel only.",
+  "browser_policy": {
+    "required": "interaction-capable browser with one source and one target tab",
+    "max_project_tabs": 2,
+    "reuse_only": true,
+    "stop_on_disconnect_or_stale_tab": true,
+    "replacement_tabs_after_instability": 0
+  },
+  "static_runtime_reconciliation": {
+    "source_runtime": "build/source-interactions-v001.js",
+    "source_runtime_blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "before_after_implementation": "One-time .js-ba initialization; native range input updates --ba-pos to value + '%'; initial apply runs immediately.",
+    "carousel_implementation": [
+      "One-time data-af-carousel-init guard.",
+      "translateX by -index*100%; aria-hidden on slides; aria-current on active dot; counter/caption update.",
+      "4000 ms setInterval autoplay unless manual, reduced-motion, disconnected or fewer than two slides.",
+      "ArrowLeft/ArrowRight keyboard navigation.",
+      "Pointer swipe requires |dx| >= 40 and |dx| >= |dy|.",
+      "mouseenter/focusin call stop(); mouseleave/focusout call start().",
+      "prefers-reduced-motion change calls start(), whose first action stops the current timer and then conditionally restarts.",
+      "Broken slides are removed and remaining dot data-go values are reindexed."
+    ],
+    "important_compound_state_caveat": "Hover and focus pause are not represented by independent state flags. Because mouseleave and focusout each call start() unconditionally, autoplay may restart while the other pause condition still remains true. This is not declared a parity defect until synchronized source behavior is observed; it is now an explicit live acceptance edge case."
+  },
+  "preconditions": [
+    "Fresh target tab is page264 and source tab is the exact reference page.",
+    "Page264 saved-data hash/JSON is reconciled before attributing a failure to runtime code.",
+    "Review static AX still exposes exactly three real tabs plus source-equivalent previous/next, with numbered source dots absent from AX/focus on page264.",
+    "Tiszafa remains native range min=0 max=100 step=1 value=50 with data-af-ba-init=1.",
+    "Nordmann static controls still match source previous/next plus dots 1-6."
+  ],
+  "review_tabs": {
+    "owners": ["shared Code Snippets ID14", "page264 containment Code Snippets ID33"],
+    "tests": [
+      "Tab1 ArrowRight -> Tab2 -> Tab3 -> Tab1 wrap.",
+      "Tab1 ArrowLeft -> Tab3 wrap.",
+      "ArrowDown mirrors ArrowRight and ArrowUp mirrors ArrowLeft if current ID14 remains the owner.",
+      "Home from Tab2 -> Tab1; End -> Tab3.",
+      "Previous/next controls keep selected real tab/panel synchronized.",
+      "After every change numbered .af-review-source-dot elements remain tabindex=-1 and aria-hidden=true and do not re-enter focus/AX.",
+      "No duplicate tablist/review accessible names appear after dynamic state changes."
+    ],
+    "failure_policy": "Read current ID14 and ID33 owners first. Never add a second review handler from page264 scope."
+  },
+  "tiszafa_before_after": {
+    "selector": ".js-ba",
+    "tests": [
+      "Initial value 50 and --ba-pos 50%.",
+      "ArrowRight once -> 51 and --ba-pos 51%; ArrowLeft -> 50/50%.",
+      "Native Home/End behavior may be used if source-equivalent; do not add custom key handlers merely for test convenience.",
+      "Pointer drag to a clearly different position keeps native value and visual split synchronized.",
+      "Return to 50 and confirm accessible naming/alt text remains unchanged."
+    ],
+    "failure_policy": "Prove missing/duplicate owner or CSS-variable loss before any runtime change; never replace the native range by default."
+  },
+  "nordmann_carousel": {
+    "selector": ".carousel.js-carousel",
+    "normal_motion_tests": [
+      "At stable t0 with no hover/focus, after >4.1s exactly one forward autoplay advance; another >4.1s gives exactly one more.",
+      "ArrowRight exactly one forward; ArrowLeft exactly one backward.",
+      "Horizontal pointer swipe >40px with horizontal dominance gives exactly one direction-appropriate advance.",
+      "Movement <40px or vertical-dominant movement produces no slide change.",
+      "mouseenter held >4.1s pauses autoplay; mouseleave resumes when focus is not inside.",
+      "focus held inside >4.1s pauses autoplay; focusout resumes when pointer is not hovering."
+    ],
+    "compound_pause_state_tests": [
+      "Focus a carousel control, then also hover the carousel. Keep focus inside and move pointer out. Observe >4.1s: reference and target must behave the same; specifically record whether autoplay remains paused or restarts.",
+      "Hover the carousel, then focus a carousel control. Keep pointer hovering and move focus outside. Observe >4.1s: reference and target must behave the same.",
+      "With both hover and focus active, remove both in opposite orders and require no duplicate timers or double-step autoplay.",
+      "Do not treat a logically surprising result as a target bug if the source runtime/reference exhibits the same observable behavior; parity outranks redesign."
+    ],
+    "reduced_motion_tests": [
+      "With prefers-reduced-motion: reduce active, observe >8.2s with no autoplay advance.",
+      "Manual ArrowLeft/ArrowRight and pointer controls remain functional under reduced motion.",
+      "Live media-query toggle, if supported, re-evaluates autoplay without duplicate timers."
+    ],
+    "failure_policy": "Inspect current deployed runtime owner and initialization marker before changing JavaScript. Missing action tooling is not an implementation failure."
+  },
+  "cross_component_invariants": [
+    "No test changes visible copy, page264 Elementor data, form state or v004/v005/v006/v007 visual ownership.",
+    "No duplicate MutationObserver, timer, keyboard or pointer handler is introduced as a workaround.",
+    "No form submission, upload, SMTP or external delivery occurs.",
+    "Keep only the active source/target pair; do not leave extra autoplay tabs running."
+  ],
+  "pass_definition": "Source and target complete the same observable review, range and carousel behavior including compound hover/focus and reduced-motion states, without AX/focus or visual regression.",
+  "current_execution_status": "PREPARED_NOT_RUN: Opera connector is currently disconnected and WPVibe is disabled; no runtime write is justified.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
