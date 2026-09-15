@@ -10,6 +10,7 @@
   "authoritative": {
     "continuation": "reports/subpages/hedge-continuation-20260915-v018.json",
     "chain_integrity": "reports/subpages/hedge-static-chain-integrity-20260915-v001.json",
+    "static_evidence_reconciliation": "reports/subpages/hedge-static-evidence-reconciliation-20260915-v001.json",
     "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
     "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
     "semantic_delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
@@ -30,7 +31,7 @@
     "old real-media-ID plus shared attachment-alt Hedge strategy",
     "partial 4/28 gallery resume checkpoint",
     "older media/background defects already reconciled",
-    "outer-region guesses on partial widgets",
+    "outer-region guesses on partial widgets, including the superseded #ajanlatkeres-as-complete-form-root assumption",
     "proof-carousel role rollback without fresh parent/owner evidence",
     "new CSS without synchronized reproduced page272-local visual delta"
   ],
