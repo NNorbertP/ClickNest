@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "package": "bio-page-local-style-carrier-probe-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "status": "PREPARED_NOT_RUN_SCOPE_REMOTE_BLOCKED",
+  "supersedes_for_execution": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+  "purpose": "Prove one physically page-local CSS delivery owner inside page256 without touching Hello Additional CSS or any global/shared resource.",
+  "candidate_carrier": {
+    "element_id": "af260016",
+    "type": "legacy text-editor widget",
+    "style_probe_id": "af-page256-parity-probe",
+    "reason": "Existing page-local legacy owner that can be surgically edited through supported saved-data search/edit without a full Elementor save."
+  },
+  "historical_baseline_rule": "All historical page256 byte/SHA values are evidence only and are NOT mutation preconditions. Fresh live bytes/SHA/JSON plus a fresh exact af260016 escaped boundary are mandatory.",
+  "remote_gates_before_probe": [
+    "Fresh STATE.md and page264 release evidence explicitly hand writable scope to page256; current page264 v014/release gate is NOT_RELEASED, so the probe may not run yet.",
+    "The first live WPVibe profile read returns exactly ncsnorbert+20260914-4@gmail.com. +5 or any other identity means STOP.",
+    "Target site connection and exact current quota are known; the complete probe/readback/rollback margin leaves D11 reserve >=10.",
+    "Elementor skill loads successfully.",
+    "Fresh page256 bytes/SHA/JSON and COMPLETE LIVE ID35 state are reconciled.",
+    "Fresh saved-data search returns the exact current af260016 boundary; stale escaped bytes are forbidden.",
+    "If visual confirmation is required, only the released existing source/target Opera pair is reused; no replacement tabs."
+  ],
+  "probe_payload": {
+    "style_id": "af-page256-parity-probe",
+    "suggested_css": "body.page-id-256{--af-page256-probe:1}",
+    "placement": "Immediately inside the current af260016 editor content before its existing visible hero-extra markup, using only a fresh exact match-once boundary.",
+    "visible_effect": "none"
+  },
+  "execution": [
+    "1. Fresh-search a unique ASCII anchor inside af260016 and use only the returned exact escaped bytes.",
+    "2. Perform one guarded match-once edit inserting exactly one inert style#af-page256-parity-probe; do not reconstruct the whole widget.",
+    "3. Immediately read fresh page bytes/SHA/JSON and require valid JSON plus only the expected local change.",
+    "4. Read rendered HTML and require exactly one retained, active, unescaped probe style; all original af260016 visible content/links/order remain unchanged.",
+    "5. If browser is available/released, verify no visible layout change using the same target tab; do not open a new tab.",
+    "6. PASS only if every criterion holds. On strip/escape/duplicate/regression/ambiguous mutation, freshly locate and remove only the probe before any dependent write."
+  ],
+  "success_criteria": [
+    "one rendered style#af-page256-parity-probe",
+    "probe rule retained and active, not printed as text",
+    "no visible change",
+    "all original af260016 visible content/links/order unchanged",
+    "page JSON valid",
+    "no other page/post/shared resource changed",
+    "no full Elementor save/global CSS write"
+  ],
+  "failure_stop_conditions": [
+    "style stripped/escaped/moved/duplicated",
+    "no_match/multiple_matches",
+    "429/5xx/ambiguous mutation",
+    "unexpected saved-data/hash/JSON drift",
+    "visible/editor/frontend regression",
+    "scope, identity or quota gate changes mid-transaction"
+  ],
+  "rollback": "Freshly search the exact saved probe marker and remove only that style element with one guarded edit; then re-read page bytes/SHA/JSON/rendered marker. Never restore an old full _elementor_data blob.",
+  "after_success_only": "Clean/reconcile the probe, fresh-search af260016 again, then a later approved package may create exactly one style#af-page256-parity owner with uniquely marked dependency-safe blocks.",
+  "estimated_logical_wpvibe_actions": "about 4-6 plus 1-2 rollback/readback margin; live quota is authoritative",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
