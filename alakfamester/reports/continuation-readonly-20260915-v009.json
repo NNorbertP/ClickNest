@@ -1,0 +1,63 @@
+{
+  "schema_version": 9,
+  "package": "continuation-readonly-20260915-v009",
+  "date": "2026-09-15",
+  "supersedes_for_resume": "reports/continuation-readonly-20260915-v008.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; this checkpoint is read-only planning and does not expand WordPress write scope.",
+  "tool_state": {
+    "wpvibe": "First attempt in this continuation returned disabled; no further WPVibe calls here. Intended +5 identity/site/exact quota remain unknown.",
+    "opera": "Intentionally not retried after stale/disconnected evidence; zero new tabs and no reconnect/reload/replacement loop.",
+    "github": "Available for static reconciliation only.",
+    "wordpress_writes": 0,
+    "smtp_or_external_submission": false
+  },
+  "active_page264": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v011.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v004.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v004.json",
+    "deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "implementation_candidates": "Only conditional v006 request-contact foreground and v007 equal comparison columns. v004/v005 are live and protected.",
+    "proof_only": "Form33 required, inner fields, routes, review/Tiszafa/Nordmann/four FAQ interactions, hero owner/cascade, floating-dock owner discovery and deterministic six-view acceptance.",
+    "handoff_rule": "Tool unavailability does not release page264. A future scope switch requires an explicit safe page264 release and fresh full STATE reconciliation."
+  },
+  "future_page256": {
+    "handoff": "build/bio-scope-handoff-ready-20260915-v002.json",
+    "continuation": "reports/subpages/bio-continuation-20260915-v029.json",
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v009.json",
+    "blocker_audit": "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "remote_plan": "build/bio-next-remote-window-20260915-v005.json",
+    "budget": "build/bio-remote-call-budget-20260915-v006.json",
+    "first_write": "Inert af260016 page-local style carrier probe only after explicit handoff, exact +5/site/quota and full live ID35 readback.",
+    "stop_rules": "Never reconstruct ID35 from stale repo mirror; stress/expectations physical owner transforms require fresh live boundaries; FAQ runtime and review panel-focus stay open without sanctioned physical owner; no global CSS/runtime fallback."
+  },
+  "future_page272": {
+    "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v010.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "candidate": "build/hedge-semantic-runtime-v005.php",
+    "only_future_write": "Existing ID36 -> v005 after fresh baseline/rollback/cardinality/resolved native IDREF/unique-ID/budget gates.",
+    "form_policy": "Native required first; server fallback v003 remains deferred and must not be combined into first v005 deployment.",
+    "proof_only": "full review panel internals, outer roots, heading levels/order/roles, proof-carousel semantics, Form33 required/dynamic error state, document head, interactions and visuals"
+  },
+  "global_and_assets": {
+    "header": "build/header-deployment-plan-v010.json only after explicit global handoff; +5 identity reconciled in reports/header-account-preflight-reconciliation-20260915-v001.json",
+    "floating_dock": "diagnostic-first exact live owner/cascade; source contract known but current CSS owner unproven",
+    "ellwoodi": "exact frozen alternate-view asset remains unrecovered; no substitute",
+    "about_portrait": "exact historical bytes unrecovered; current/frozen acceptance visibility must be proved first"
+  },
+  "formal_acceptance": {
+    "preflight": "reports/final-acceptance-preflight-20260915-v005.json",
+    "canonical_matrix": "reports/canonical-pages-current-state-matrix-20260915-v004.json",
+    "cross_project_queue": "reports/parity-open-items-20260915-v019.json",
+    "original_runner_recovery": "exhausted from inspected Git; do not synthesize originals",
+    "deterministic_harness": "unavailable",
+    "pixel_pass": false
+  },
+  "resume_rule": "Fresh trustworthy live truth always wins. In a future usable live window obey STATE scope, verify intended +5/site/exact quota once, preserve >=10 D11 calls, use at most one source plus one target Opera tab, and treat every 429/5xx write as UNKNOWN until exact readback. Do not convert proof gaps into speculative code.",
+  "wordpress_writes_current_continuation": 0,
+  "opera_new_tabs_current_continuation": 0,
+  "pixel_pass": false,
+  "status": "CURRENT_READONLY_RESUME_V009_PAGE264_ACTIVE_PAGE256_V009_HEDGE_V010"
+}
