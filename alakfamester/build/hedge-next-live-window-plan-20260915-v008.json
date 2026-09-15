@@ -12,21 +12,8 @@
   "static_reconciliation": "reports/subpages/hedge-static-evidence-reconciliation-20260915-v001.json",
   "status": "READY_WHEN_LIVE_TOOLS_RETURN_CAPABILITY_ALIGNED_LOW_OPERA_MEMORY",
   "capability_reconciliation": {
-    "opera_available_surface": [
-      "list tabs",
-      "read accessibility tree",
-      "jq-query accessibility tree",
-      "screenshot",
-      "navigate/reuse a tab",
-      "close a tab"
-    ],
-    "opera_not_available": [
-      "arbitrary JavaScript execution",
-      "raw DOM attribute query",
-      "document-head metadata query",
-      "click/key/pointer interaction automation",
-      "deterministic viewport resize"
-    ],
+    "opera_available_surface": ["list tabs", "read accessibility tree", "jq-query accessibility tree", "screenshot", "navigate/reuse a tab", "close a tab"],
+    "opera_not_available": ["arbitrary JavaScript execution", "raw DOM attribute query", "document-head metadata query", "click/key/pointer interaction automation", "deterministic viewport resize"],
     "wpvibe_rendered_html_surface": "WPVibe get_page_html can read JavaScript-executed rendered HTML for a specific URL/selector on the connected site and is the preferred target DOM/head source when the connector is live.",
     "correction_from_v007": "Do not ask the Opera pair to supply raw DOM wiring or document-head fields. Use Opera only for trustworthy AX/screenshot observations; use WPVibe rendered HTML for target DOM/head. Reference raw DOM/head remains a separate read-only gate unless a trustworthy source-HTML route becomes available."
   },
@@ -72,8 +59,10 @@
         "one review root, one tablist, three tabs in Panasonic -> Otolecz -> ARKER'S order",
         "current tablist/tab aria-label/aria-labelledby state and numeric-dot controls",
         "one Form33 wrapper/form/direct-call/service label+wrapper/city input+help",
-        "all current form/service/city role/name/description/error IDREF tokens resolved exactly once",
+        "all current form/service/city role/name/description/error IDREF tokens resolved to exact owner+text exactly once",
         "planned/reused relation IDs unique/non-conflicting",
+        "if the exact intended element ID is already referenced, treat addIdRef as no-op for that relation",
+        "if a different existing IDREF already supplies semantically equivalent direct-call/service-label/city-help text, HOLD v005 to avoid duplicated speech",
         "any stronger/newer native semantic owner, unexpected service role or unresolved/duplicate IDREF => HOLD v005"
       ],
       "target_read_only_diagnostics_from_same_payload": [
@@ -84,7 +73,7 @@
         "protected IDs and removed-widget absence",
         "target title, description, canonical count/href, robots, OG fields and JSON-LD scripts/types/owner clues"
       ],
-      "rule": "Only the v005 structure/native-ARIA/ID gate controls the semantic write. Content/heading/outer-region/carousel/head findings never broaden the same write."
+      "rule": "Only the v005 structure/native-ARIA/ID/semantic-duplication gate controls the semantic write. Content/heading/outer-region/carousel/head findings never broaden the same write."
     },
     {
       "step": 4,
@@ -118,35 +107,21 @@
     "memory_rule": "Keep no more than the two project tabs for the duration of the evidence pass; do not open editor/admin/diagnostic tabs in Opera."
   },
   "reference_exactness_gate": {
-    "AX_sufficient_for": [
-      "visible review copy/company-person-role order when fully represented",
-      "named regions",
-      "heading roles/levels/names when exposed",
-      "coarse carousel/form accessibility observations"
-    ],
-    "raw_source_DOM_or_head_needed_for": [
-      "exact source tab-panel DOM wiring if AX does not expose relations",
-      "source canonical/robots/OpenGraph/JSON-LD metadata",
-      "source-specific DOM ancestry where AX hierarchy is insufficient"
-    ],
+    "AX_sufficient_for": ["visible review copy/company-person-role order when fully represented", "named regions", "heading roles/levels/names when exposed", "coarse carousel/form accessibility observations"],
+    "raw_source_DOM_or_head_needed_for": ["exact source tab-panel DOM wiring if AX does not expose relations", "source canonical/robots/OpenGraph/JSON-LD metadata", "source-specific DOM ancestry where AX hierarchy is insufficient"],
     "fallback_rule": "If a trustworthy raw reference-HTML route is unavailable, leave those items open. Never infer source head/DOM attributes from target/Yoast/project conventions."
   },
   "write_phase": {
-    "condition": "fresh baseline, exact ID36 rollback owner, target review/Form33 structure, native-ARIA/IDREF and uniqueness gates all pass; v005 not already live",
+    "condition": "fresh baseline, exact ID36 rollback owner, target review/Form33 structure, native-ARIA/IDREF/semantic-duplication and uniqueness gates all pass; v005 not already live",
     "action": "plugin-aware update of existing ID36 only to build/hedge-semantic-runtime-v005.php",
-    "forbidden": [
-      "duplicate helper",
-      "native ARIA/IDREF deletion",
-      "review content/media correction mixed into semantic package",
-      "Elementor/Form33/shared-media/global-CSS/header/footer/dock mutation",
-      "outer-region/heading/carousel/lightbox/SEO change"
-    ],
+    "forbidden": ["duplicate helper", "native ARIA/IDREF deletion", "review content/media correction mixed into semantic package", "Elementor/Form33/shared-media/global-CSS/header/footer/dock mutation", "outer-region/heading/carousel/lightbox/SEO change"],
     "unknown_or_429": "UNKNOWN until exact ID36 readback; no blind retry"
   },
   "postwrite": [
     "ID36 exact v005 body/front-end scope/active=true/code_error=null",
     "page272 Elementor bytes/SHA unchanged",
     "optional one target rendered-HTML read proves v005 marker once, exact review names, duplicate numeric dots excluded from AX/tab order where inspectable, Form33 relations preserved/resolvable and review inner content unchanged",
+    "computed Form33 name/description/service/city semantics contain each intended meaningful phrase once; no duplicated help/direct-call/label speech",
     "protected hero/proof/reviews/gallery/form IDs preserved"
   ],
   "required_radio_decision": {
