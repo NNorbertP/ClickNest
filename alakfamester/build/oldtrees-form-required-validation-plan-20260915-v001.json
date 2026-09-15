@@ -1,16 +1,24 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "package": "oldtrees-form-required-validation-plan-20260915-v001",
   "date": "2026-09-15",
   "page_id": 264,
   "form_id": 33,
   "decision": "D05",
   "mode": "READ_FIRST_NO_SUBMISSION_NO_WRITE_BY_DEFAULT",
-  "goal": "Prove that the mandatory Miben kér segítséget? service/topic choice is genuinely enforced for page264-origin Form33 submissions, while preserving shared Form33, ID5, ID6 and all other pages.",
+  "goal": "Prove that the mandatory Miben kér segítséget? service/topic choice is genuinely enforced for page264-origin Form33 submissions, while preserving shared Form33, ID5, ID6, #af-form-direct-call and all other pages.",
+  "historical_shared_form_reference": {
+    "reconciliation": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json",
+    "latest_documented_elementor_bytes": 6068,
+    "latest_documented_elementor_sha256": "ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3",
+    "meaning": "This later baseline supersedes the older 5568/47152dff... snapshot after the source direct-call note was added as af04000d/#af-form-direct-call. It is a drift reference, not a substitute for a fresh live read.",
+    "page264_dependency": "ID33 uses #af-form-direct-call as the page264 form aria-describedby target; preserve it."
+  },
   "why_open": {
     "d05": "The source radio-group JavaScript does not prove group-level checked validation; the target must genuinely enforce the mandatory topic choice.",
     "existing_page264_evidence": "ID33 proves accessible group labelling and six option semantics, but AX semantics are not submission-time validation proof.",
-    "shared_form_report": "metform33-source-parity-v001 proves the photo upload required state and ID5 photo-count validation, but does not record the service-radio required property or a group-level validation result."
+    "shared_form_report": "metform33-source-parity-v001 proves the photo upload required state and ID5 photo-count validation, but does not record the service-radio required property or a group-level validation result.",
+    "later_form_change": "home-final-audit-v001 changed Form33 only by adding the final direct-call paragraph and produced 6068 B / ea091a697...; that change is not evidence for or against the service-radio required setting."
   },
   "ownership_preference": [
     "First prefer an already-correct native MetForm field setting/validation path and make no change if it truly rejects an empty required radio group.",
@@ -19,6 +27,7 @@
   ],
   "mandatory_live_reads_before_any_code": [
     "Current page264 accepted Elementor hash/JSON validity.",
+    "Current shared Form33 Elementor saved-data length/hash plus presence of af04000d/#af-form-direct-call. Compare 6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3 only as the latest documented reference; any drift must be reconciled before assuming field/wrapper ownership.",
     "Current Code Snippets ID33 body, active state, scope, code_error and hash; require page264 semantic behavior reconciliation before modification.",
     "Current #af-form-service exact MetForm widget ID/type and settings, including exact mf_input_name, mf_input_required, six option values/order and any native validation/error-text settings.",
     "Current ID5 exact body, hook registration/priority, active state, code_error and route guard so a future service validator cannot overwrite photo-count failures.",
@@ -28,6 +37,7 @@
     "native_required_and_enforced": "PASS with read-only evidence; change nothing.",
     "native_required_false_but_page264_can_be_corrected_without_shared_side_effect": "Prefer the narrowest supported page264-local owner/control; prove no shared Form33 mutation before write.",
     "native_required_true_but_group_not_enforced": "Prepare an ID33 extension only after exact live field/route/error-copy reads; do not create a second validator snippet by default.",
+    "form33_saved_data_drift": "STOP and reconcile the current shared Form33 tree/settings, especially #af-form-service and #af-form-direct-call, before any page264 validator design.",
     "field_or_owner_drift": "STOP and reconcile; never guess mf_input_name, options, error message or hook priority."
   },
   "future_id33_server_filter_contract_if_needed": {
@@ -43,7 +53,8 @@
     "other_route": "Return unchanged.",
     "shared_Form33_mutation": false,
     "ID5_mutation": false,
-    "ID6_mutation": false
+    "ID6_mutation": false,
+    "direct_call_note_mutation": false
   },
   "non_delivery_acceptance_if_filter_needed": [
     {
@@ -80,17 +91,19 @@
     "No file upload test.",
     "No second global validator snippet by default.",
     "No guessed field name/value/error text.",
+    "No deletion/rename of #af-form-direct-call.",
     "No change to shared Form33 merely because page264 proof is missing."
   ],
   "postwrite_readback_if_future_fix_is_needed": [
     "ID33 active=true, code_error=null and new exact hash recorded.",
     "Existing semantic/runtime body preserved plus exactly one named service validator/filter registration.",
     "ID5 and ID6 unchanged.",
+    "Shared Form33 Elementor saved data and #af-form-direct-call unchanged by the page264 fix.",
     "Page264 Elementor hash/JSON unchanged.",
     "Direct non-delivery callback cases all pass.",
-    "Fresh page264 AX semantics remain unchanged."
+    "Fresh page264 AX semantics remain unchanged, including form aria-describedby -> #af-form-direct-call."
   ],
-  "current_status": "PREPARED_READ_ONLY_GATE_REQUIRED; NO_CUSTOM_VALIDATOR_JUSTIFIED_YET",
+  "current_status": "PREPARED_READ_ONLY_GATE_REQUIRED_SHARED_FORM_BASELINE_RECONCILED_NO_CUSTOM_VALIDATOR_JUSTIFIED_YET",
   "wordpress_writes": 0,
   "smtp_or_external_submission": false,
   "pixel_pass": false
