@@ -1,0 +1,40 @@
+{
+  "schema_version": 9,
+  "package": "bio-convergence-ledger-20260915-v009",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_COMPLETE_CURRENT_CONVERGENCE",
+  "supersedes_for_planning": "reports/subpages/bio-convergence-ledger-20260915-v008.json",
+  "scope": "STATE remains PAGE264 ONLY / NOT_RELEASED; no live page256 write.",
+  "current_execution": {
+    "DAG": "build/bio-transaction-dependency-graph-20260915-v007.json",
+    "runbook": "build/bio-next-remote-window-20260915-v012.json",
+    "budget": "build/bio-remote-call-budget-20260915-v012.json",
+    "carrier": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "phase1": "build/bio-page-local-visual-delivery-20260915-v004.json",
+    "FAQ_base": "build/bio-faq-cta-page-local-delivery-20260915-v005.json",
+    "FAQ_wave4": "build/bio-wave-source-faq-v002.css",
+    "FAQ_post_wave_top": "build/bio-faq-cta-post-wave-spacing-20260915-v002.json",
+    "browser": "build/bio-page256-opera-low-memory-qa-20260915-v002.json"
+  },
+  "wave_spacing_truth": {
+    "first_three": "phase1 uses core-v002 with source -1px seam overlap",
+    "FAQ_base": "normal source section top+bottom spacing is in base v005",
+    "FAQ_wave4": "separate sage->paper wave v002",
+    "FAQ_post_wave": "only top is reduced by 24px after wave4 if fresh geometry proves it necessary; otherwise no-op PASS",
+    "obsolete": ["wave core-v001", "FAQ wave-v001", "combined section-spacing-v001 as current execution"]
+  },
+  "other_current_structural_paths": {
+    "table": "TABLE_TITLE + separate TABLE_TITLE_VISUAL",
+    "stress": "v002 one-boundary role + one-shot physical-order blocker",
+    "expectations": "v005 complete-owner one-shot only",
+    "Panasonic": "v002 physical inline list candidate after diagnostic"
+  },
+  "additional_required_nonblocker_work": ["FAQ_ORDER", "REVIEW_ANCHOR", "REVIEW_ROLE_COPY", "TABLE_TITLE", "TABLE_TITLE_VISUAL", "CTA_MAIL_STRUCTURE", "phase1", "conditional stress role", "FAQ base", "FAQ wave4", "FAQ post-wave top no-op/write", "all measurement gates"],
+  "body_hard_blocker_count": 9,
+  "shared_global_gate_count": 2,
+  "identity": "future exact live +4; current quota unknown; D11>=10",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
