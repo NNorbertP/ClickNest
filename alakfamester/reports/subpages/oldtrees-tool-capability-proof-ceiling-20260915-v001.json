@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-tool-capability-proof-ceiling-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Tool-capability boundary for page264 acceptance. No WordPress write and no browser mutation.",
+  "purpose": "Separate implementation defects from evidence that cannot be obtained with the currently available/disconnected tools, preventing speculative CSS/JS or scope expansion.",
+  "current_tool_state": {
+    "wpvibe": "disabled/unavailable on the single first attempt in continuation v015; no retry",
+    "opera": "Browser not connected on the single list-tabs attempt in continuation v015; no retry, navigation, screenshot or new tab",
+    "github": "available for repository read/write of evidence and planning artifacts only",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0
+  },
+  "opera_connector_capabilities_when_connected": {
+    "available": ["list tabs", "recent history", "read accessibility tree", "jq-query accessibility tree", "screenshot", "navigate", "close tab"],
+    "not_exposed": ["generic click action", "keyboard/key dispatch", "pointer drag/swipe action", "text input action", "JavaScript evaluation", "getComputedStyle evaluation", "CSS winning-rule/devtools cascade inspection", "viewport/DPR/zoom setter"],
+    "consequence": "A connected Opera session can provide synchronized AX/static visual evidence, but this connector alone cannot execute the full review/range/carousel/FAQ interaction matrix or prove exact winning CSS declarations."
+  },
+  "proof_classes": {
+    "server_state": {
+      "requires": "working WPVibe or another authorized WordPress connector",
+      "examples": ["page264 saved-data hash/JSON", "Additional CSS marker/hash inventory", "ID33/Form33 current state", "guarded match-once write/readback"],
+      "current_status": "BLOCKED_BY_TOOL_UNAVAILABILITY_NOT_A_DEFECT"
+    },
+    "static_visual_and_ax": {
+      "requires": "connected trusted source+target browser pair, at most two tabs",
+      "examples": ["fresh v006/v007 both-one-neither gate", "same-state section screenshots", "AX role/name/order readback"],
+      "current_status": "BLOCKED_BY_BROWSER_DISCONNECT_NOT_A_DEFECT"
+    },
+    "computed_cascade": {
+      "requires": "browser/devtools or equivalent computed-style and winning-rule capability",
+      "examples": ["exact losing color owner", "exact comparison width/grid owner", "hero owner/cascade", "dock owner/cascade"],
+      "current_status": "NOT_AVAILABLE_IN_CURRENT_OPERA_CONNECTOR",
+      "safe_fallback": "Use only already parser-checked source-contract candidates after fresh visual reproduction; never invent a narrower patch from screenshot inference."
+    },
+    "active_interaction": {
+      "requires": "browser capable of click, keyboard, pointer drag/swipe and timed observation",
+      "examples": ["review Arrow/Home/End", "review visual-dot pointer behavior", "Tiszafa pointer/keyboard", "Nordmann arrow/dot/key/swipe/pause/reduced-motion", "FAQ pointer/keyboard disclosure behavior"],
+      "current_status": "NOT_EXECUTABLE_WITH_CURRENT_OPERA_ACTION_SET",
+      "safe_fallback": "Remain proof-only; do not create duplicate handlers."
+    },
+    "deterministic_pixel_acceptance": {
+      "requires": "same engine plus controlled viewport, DPR, zoom, font/image readiness, scroll and motion state; synchronized moving content; captures plus overlay/diff",
+      "views": ["1920x1080", "1440x1000", "1024x900", "768x1024", "390x844", "360x800"],
+      "current_status": "HARNESS_NOT_AVAILABLE",
+      "rule": "PIXEL_PASS must remain false."
+    }
+  },
+  "implementation_status_not_changed_by_missing_proof": [
+    "No known page264 content/main-media gap; 5/5 main media roles reconciled.",
+    "38/38 heading names and 11/11 ordered named regions accepted.",
+    "v004/v005 accepted live state remains preserve-only.",
+    "Only v006 contact foreground and v007 comparison equal-column parity are reproduced conditional page264-local visual write candidates.",
+    "Hero, inner form, review/Tiszafa/Nordmann/FAQ, dock and six-view matrix stay diagnostic/proof lanes until fresh evidence demonstrates an implementation failure."
+  ],
+  "future_acceptance_rule": "When stronger tooling becomes available, gather the missing evidence first and compare source/target in synchronized state. New implementation work is authorized only by a reproduced mismatch with a named current owner; evidence unavailability alone never authorizes a fix.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "PROOF_CEILING_DOCUMENTED_NO_SPECULATIVE_IMPLEMENTATION"
+}
