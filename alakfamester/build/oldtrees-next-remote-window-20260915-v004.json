@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "package": "oldtrees-next-remote-window-20260915-v004",
   "date": "2026-09-15",
   "page_id": 264,
@@ -17,7 +17,10 @@
     "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
     "visual_parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
     "cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "source_runtime_reconciliation": "reports/subpages/oldtrees-source-runtime-reconciliation-20260915-v001.json",
     "interaction_acceptance": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "review_dot_pointer_gate": "build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json",
+    "form33_shared_baseline": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json",
     "form_required_gate": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
     "inner_form_visual_gate": "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json",
     "route_ledger": "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json",
@@ -36,16 +39,18 @@
       "Reuse existing project tabs and verify URL/title/content before trusting them.",
       "On disconnect/stale/repurposed state, stop; do not open replacement fan-out."
     ],
-    "current_note": "In the 2026-09-15 continuation that produced this plan, WPVibe was disabled on the single first call and Opera was not connected on the single list-tabs call, so no live claim/write was made."
+    "current_note": "In the 2026-09-15 continuation that last reconciled this plan, WPVibe was disabled on the single first call and Opera was not connected on the single list-tabs call, so no live claim/write was made and neither tool was retried."
   },
   "phase_1_repo_identity_gate": {
-    "action": "Re-read current STATE plus exact v006/v007/bundle artifacts, deploy manifest and parser QA before a remote write. Fresh repository truth outranks recorded SHAs.",
+    "action": "Re-read current STATE plus exact v006/v007/bundle artifacts, deploy manifest, parser QA, source-runtime reconciliation and interaction plan before a remote write. Fresh repository truth outranks recorded SHAs.",
     "known_artifact_blobs_at_plan_update": {
       "v006": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
       "v007": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
       "bundle": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
       "deploy_manifest": "4f8a9209a5ab498a6a1f524a58d341830e6cb863",
-      "parser_qa": "STATIC_PARSER_AND_SCOPE_QA_PASS"
+      "parser_qa": "3c4a2f7657a8c39216126e9e86ee56d1a6aa710d",
+      "source_runtime_reconciliation": "f258d175c80dad73979983b807ef85f99feb5f05",
+      "interaction_acceptance": "25598c8f8ed8b67ef63d7f8bdcf1dc63c63469fb"
     },
     "stop": "If any current repo artifact differs, reconcile the newer file before using this plan."
   },
@@ -107,18 +112,23 @@
   },
   "phase_6_form_required_native_first": {
     "plan": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "shared_form_historical_reference": "Latest documented Form33 Elementor state is 6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3 after af04000d/#af-form-direct-call was added. This is a drift reference only; fresh current state wins.",
     "read": [
+      "current shared Form33 Elementor length/hash and reconciliation against the historical reference",
+      "unique #af-form-direct-call presence and tel:+36305394820 dependency used by page264 ID33 aria-describedby",
       "exact current service radio widget ID/type",
       "exact mf_input_name",
       "mf_input_required",
       "six exact option values/order",
       "native validation/error text",
       "ID5 current hook/priority/route guard/body/state",
-      "ID33 current body/state/hash"
+      "ID33 current body/state/hash",
+      "ID6 active/state only"
     ],
     "decision": {
       "native_required_and_enforced": "PASS; no write.",
-      "native_setting_absent_or_native_behavior_fails": "Only after exact live facts, prepare a page264-local fallback using the existing ID33 owner if that can be done without shared Form33 mutation and without overwriting ID5 failures."
+      "native_setting_absent_or_native_behavior_fails": "Only after exact live facts, prepare a page264-local fallback using the existing ID33 owner if that can be done without shared Form33 mutation and without overwriting ID5 failures.",
+      "shared_form_drift": "STOP and reconcile before assuming field name, wrapper, required state or direct-call ownership. Never restore an old shared Form33 hash from page264 scope."
     },
     "test": "Non-delivery validation proof only. No real MetForm submission, entry creation, upload, SMTP, e-mail or webhook."
   },
@@ -127,11 +137,15 @@
     "routes": "Run reports/subpages/oldtrees-link-route-ledger-20260915-v001.json read-only: two #ajanlatkeres CTAs, /kapcsolat/#kiszallas, /biologiai-vedelem/, tel:+36305394820 and mailto:kreativ@alakfa-mester.hu without activation."
   },
   "phase_8_interactions": {
-    "plan": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "plan": "build/oldtrees-interaction-acceptance-20260915-v002.json schema >=6",
+    "source_contract": "reports/subpages/oldtrees-source-runtime-reconciliation-20260915-v001.json",
     "checks": [
       "review ArrowLeft/Right/Up/Down/Home/End and previous/next synchronization",
+      "review visual-dot pointer parity using build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json; AX absence alone does not prove source pointer inertness",
       "tiszafa native range pointer/keyboard and --ba-pos synchronization",
-      "Nordmann 4000ms autoplay, arrows, >40px swipe, reduced-motion, hover/focus pause plus compound hover+focus exit-order edge cases",
+      "Nordmann 4000ms autoplay, synchronized slide roles/caption-alt order, arrows, >40px swipe, reduced-motion, hover/focus pause plus compound hover+focus exit-order edge cases",
+      "On a non-manual Nordmann, manual navigation calls start() and should reset/restart the approximately 4s autoplay countdown; do not expect a first-user-action autoplay latch",
+      "If a broken slide occurs naturally, compare removal/reindex/clamp/current-state behavior; do not assert immediate timer stop because drop() itself calls neither stop() nor start()",
       "four FAQ disclosures: source-equivalent initial state, pointer and keyboard activation, multiple-open vs accordion behavior, focus/ARIA/ID integrity"
     ],
     "rule": "Proof-only by default. Read current owner before any JavaScript change; missing action tooling is not a failure."
@@ -159,7 +173,8 @@
     "Problem grid source-resolved 4/2/1 layout, seven labels and seven source SVG geometries implemented/read back.",
     "Comparison v005 beige/sage surfaces, equal-height stretch, warning/growth icons and X/check markers accepted.",
     "Request heading, 18x18 clock and joined white panel accepted.",
-    "Shared Form33 rows=5/photo-count/success-state solved; do not rebuild those items."
+    "Shared Form33 rows=5/photo-count/success-state solved; do not rebuild those items.",
+    "The accepted #af-form-direct-call shared Form33 paragraph must be preserved because ID33 uses it as the page264 form description target."
   ],
   "stop_conditions": [
     "WPVibe disabled/unverified or unsafe quota -> no WordPress write.",
@@ -170,5 +185,5 @@
   ],
   "wordpress_writes": 0,
   "pixel_pass": false,
-  "status": "READY_FOR_MINIMAL_LIVE_GATE_WITH_PARSER_BACKED_VISUAL_ARTIFACTS_EXPANDED_INTERACTION_AND_CORRECTED_DOCK_OWNERSHIP"
+  "status": "READY_FOR_MINIMAL_LIVE_GATE_WITH_RECONCILED_SOURCE_RUNTIME_FORM33_BASELINE_AND_PARSER_BACKED_VISUAL_ARTIFACTS"
 }
