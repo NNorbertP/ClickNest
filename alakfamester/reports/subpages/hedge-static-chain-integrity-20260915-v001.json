@@ -14,7 +14,7 @@
     "reports/subpages/hedge-semantic-runtime-syntax-qa-20260915-v001.json",
     "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
     "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
-    "build/hedge-acceptance-matrix-20260915-v007.json",
+    "build/hedge-acceptance-matrix-20260915-v008.json",
     "build/hedge-next-live-window-plan-20260915-v008.json",
     "reports/subpages/hedge-open-items-20260915-v009.json",
     "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
@@ -36,16 +36,17 @@
     {
       "artifact": "build/hedge-acceptance-matrix-20260915-v007.json",
       "fields": [
+        "next_live_plan -> hedge-next-live-window-plan-20260915-v007.json",
         "convergence_ledger -> hedge-convergence-ledger-20260915-v001.json"
       ],
-      "resolution": "Acceptance requirements remain current, but convergence v002 supersedes v001 for stale-history protection."
+      "resolution": "Acceptance v008 supersedes v007 and separates invariant requirements from currently available proof routes; convergence v002 supersedes v001."
     },
     {
       "artifact": "reports/subpages/hedge-open-items-20260915-v008.json",
       "fields": [
         "current_execution_chain.live_plan -> hedge-next-live-window-plan-20260915-v007.json"
       ],
-      "resolution": "Open-items v009 supersedes v008 and points to the capability-aligned v008 live plan."
+      "resolution": "Open-items v009 supersedes v008 and points to acceptance/live plan v008."
     },
     {
       "artifact": "build/hedge-next-live-window-plan-20260915-v007.json",
@@ -110,5 +111,5 @@
     "github": "available"
   },
   "formal_status": "PIXEL_PASS=false; no static artifact or coarse screenshot may substitute for the missing deterministic six-view acceptance proof.",
-  "status": "CURRENT_CHAIN_V008_V009_VERIFIED_STALE_POINTERS_QUARANTINED_NO_LIVE_MUTATION"
+  "status": "CURRENT_CHAIN_ACCEPTANCE_LIVEPLAN_V008_OPENITEMS_V009_VERIFIED_NO_LIVE_MUTATION"
 }
