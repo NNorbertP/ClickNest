@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "package": "oldtrees-interaction-acceptance-20260915-v003",
   "date": "2026-09-15",
   "page_id": 264,
@@ -16,6 +16,7 @@
   "source_runtime": {
     "path": "build/source-interactions-v001.js",
     "blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json",
     "corrected_carousel_contract": [
       "manual is initialized once as c.classList.contains('carousel--manual') and is never assigned again.",
       "go(n) changes index and renders only; it has no byUser/manual parameter.",
@@ -28,14 +29,16 @@
       "On a carousel--manual instance, autoplay is disabled from initialization onward; manual actions still change slides but start() will refuse a timer every time.",
       "mouseenter/focusin stop(); mouseleave/focusout start() unconditionally, so compound hover+focus exit order may restart autoplay while the other pause condition is still active on a non-manual instance.",
       "prefers-reduced-motion change calls start(); turning reduce off can restart autoplay on a connected non-manual multi-slide instance.",
-      "Broken-slide drop removes the slide and matching dot, reindexes dot data-go, hides the containing project/proof owner if no slides remain, and stops autoplay when fewer than two slides remain."
-    ]
+      "Broken-slide drop() removes the broken slide and matching dot, reindexes remaining dot data-go values, clamps index, hides the containing project/proof owner only when zero slides remain, and calls go(index). drop() itself calls neither stop() nor start()."
+    ],
+    "broken_slide_timer_caveat": "Although start() will refuse a newly requested timer when fewer than two slides remain, drop() itself does not stop/restart an already-running timer. Therefore acceptance must not assert immediate timer cancellation after runtime slide removal unless synchronized source behavior proves it."
   },
   "superseded_claims_do_not_test_as_source_truth": [
     "v002 manual_latch_contract claiming by-user navigation sets manual=true",
     "v002 manual_latch_tests requiring no autoplay for >8.2s after first manual action",
     "v012 continuation statement that every by-user path sets manual=true and autoplay stays latched off",
-    "any target fix whose only justification is failure to remain permanently paused after manual navigation"
+    "any target fix whose only justification is failure to remain permanently paused after manual navigation",
+    "any historical acceptance sentence that treats drop() as if it implicitly called stop() or start()"
   ],
   "preconditions": [
     "Fresh target tab is page264 and source tab is the exact reference page.",
@@ -100,7 +103,7 @@
       "On a non-carousel--manual instance, toggling reduce from true to false calls start() and may restart a fresh 4s timer; compare observable source/target behavior.",
       "On a carousel--manual instance, reduced-motion toggles never enable autoplay because manual remains statically true."
     ],
-    "broken_slide_observation": "Do not deliberately break assets. If a natural broken slide exists, verify source/target remove corresponding slide+dot, reindex dots and avoid invalid current index; otherwise this is static implementation knowledge, not a required destructive test.",
+    "broken_slide_observation": "Do not deliberately break assets. If a natural broken slide exists, verify source/target remove corresponding slide+dot, reindex dots, clamp the current index and re-render current state. Do not assert stop/restart timing from static code because drop() calls neither stop() nor start(); observe timer parity only if this rare state occurs naturally.",
     "failure_policy": "Read the current deployed target runtime owner and initialization marker before any JavaScript/semantic change. Missing action tooling is not an implementation failure."
   },
   "faq_disclosures": {
@@ -123,7 +126,12 @@
     "No form submission, upload, SMTP or external delivery.",
     "Keep exactly the synchronized source/target pair and do not leave extra autoplay tabs running."
   ],
-  "pass_definition": "Source and target show the same observable review, range, carousel and FAQ behavior under synchronized state, including the corrected static-manual/timer-reset contract, compound hover/focus and reduced-motion behavior, without AX/focus or visual regression.",
+  "pass_definition": "Source and target show the same observable review, range, carousel and FAQ behavior under synchronized state, including the corrected static-manual/timer-reset contract, exact broken-slide static caveat, compound hover/focus and reduced-motion behavior, without AX/focus or visual regression.",
+  "source_code_correction": {
+    "manual_latch": "Corrected from v002/v012: manual is class-derived and never set by user navigation.",
+    "broken_slide_timer": "Corrected from v003 schema 5 wording: drop() itself does not stop/restart a timer; fewer-than-two is a start() guard when start() executes, not an implicit drop() side effect.",
+    "wordpress_impact": "none"
+  },
   "current_execution_status": "PREPARED_NOT_RUN: live browser is unavailable in this continuation; no runtime write is justified.",
   "wordpress_writes": 0,
   "opera_tabs_opened": 0,
