@@ -1,0 +1,115 @@
+{
+  "schema_version": 6,
+  "package": "bio-convergence-ledger-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_COMPLETE_REMAINING_WORK_LEDGER",
+  "supersedes_for_planning": "reports/subpages/bio-convergence-ledger-20260915-v005.json",
+  "resource_scope": "page256 only; other pages and shared/global style/runtime/media/template/plugin resources are not writable from this workstream",
+  "current_scope": "STATE PAGE264 ONLY / NOT_RELEASED, therefore all page256 WordPress work remains blocked",
+  "canonical_execution": "reports/subpages/bio-execution-authority-20260915-v001.json",
+  "completion_layers": {
+    "protected_already_good": "Do not rewrite unless a fresh regression is proven.",
+    "conditional_microfix_or_noop": "Fresh owner/readback decides whether a tiny write is still needed; already exact => no-op PASS.",
+    "carrier_dependent_visual": "May run only after corrected carrier v002 PASS.",
+    "hard_blocker": "No speculative write; exact owner/runtime path must first become proven.",
+    "measurement_gate": "Browser/read-only proof required before related CSS/geometry change or final PASS."
+  },
+  "sections": [
+    {
+      "name": "hero",
+      "protected": ["copy", "assets/alt", "contact/fact owners"],
+      "carrier_dependent": "hero desktop geometry in phase1 v003",
+      "measurement_gate": ["fresh rendered CTA state", "desktop/responsive same-browser acceptance"]
+    },
+    {
+      "name": "reviews",
+      "protected": ["native Atomic Tabs", "exact tab names", "images/alt", "af-project general keyboard behavior", "live ID35 naming/hidden-dot semantics"],
+      "conditional_microfix_or_noop": ["REVIEW_ANCHOR #ugyfelvelemenyek", "REVIEW_ROLE_COPY full ARKER role"],
+      "carrier_dependent": ["quote color", "active dot", "isolated ordinal candidate after diagnostic"],
+      "hard_blocker": ["Panasonic list semantics until AX/boundary proof", "previous/next -> active panel focus until sanctioned runtime owner"],
+      "measurement_gate": ["first media aspect/object-fit", "ordinal AX zero-staticText proof"]
+    },
+    {
+      "name": "stress",
+      "protected": ["exact visible copy", "list1/items4"],
+      "conditional_microfix_or_noop": ["aside->article tag-only role if exact complete boundaries prove it"],
+      "carrier_dependent": ["current-DOM source-like visual composition after cascade proof"],
+      "hard_blocker": ["physical saved/read/AX order p1 -> p2 -> article/list"]
+    },
+    {
+      "name": "technology",
+      "protected": ["three card content/order", "articles3", "use-case list1/items4", "existing icon owners"],
+      "carrier_dependent": ["eyebrow/lead/card surfaces/watermarks/hairline/checklist presentation in phase1 v003"],
+      "measurement_gate": ["icon badge exact geometry", "responsive/final visual acceptance"],
+      "note": "No concrete icon-geometry defect is currently proven; do not replace icons blindly."
+    },
+    {
+      "name": "table",
+      "protected": ["table1", "uppercase columnHeaders3", "rowHeaders4"],
+      "conditional_microfix_or_noop": ["TABLE_TITLE compact caption -> external p#tunet-tabla-cim + aria-labelledby transform"],
+      "carrier_dependent": ["section tone in phase1 v003"],
+      "measurement_gate": ["external-title presentation after structural state is known"]
+    },
+    {
+      "name": "expectations",
+      "protected": ["visible content", "lists2/items5"],
+      "hard_blocker": ["two source-equivalent article owners with correct left/right child ownership"],
+      "forbidden": ["old v002/v003 expectations replay", "role-count substitute", "multi-step wrapper surgery", "JS reparenting"]
+    },
+    {
+      "name": "FAQ",
+      "protected": ["four exact Q/A strings", "working native disclosure controls"],
+      "conditional_microfix_or_noop": ["FAQ_ORDER remove af-faq-content only if it still wins incorrect order"],
+      "carrier_dependent": ["FAQ/CTA static page-local layout v002", "fourth wave only after rendered dependency proof"],
+      "hard_blocker": ["source-exact button/aria/sibling-keyboard/280ms-220ms runtime has no sanctioned physical page-local owner"]
+    },
+    {
+      "name": "final_CTA",
+      "protected": ["H2/body copy", "mailto href", "exact mail accessible label", "form link", "existing IDs/actions"],
+      "conditional_microfix_or_noop": ["CTA_MAIL_STRUCTURE label/email child order"],
+      "carrier_dependent": ["separate forest-band static layout via FAQ/CTA v002"],
+      "measurement_gate": ["desktop/responsive layout", "eyebrow must not contaminate H2 AX name", "unique mail/form actions"]
+    }
+  ],
+  "waves": {
+    "first_three": "exact source SVG wave blocks are phase1 carrier-dependent",
+    "fourth": "separate dependency-gated append after paper FAQ + sage predecessor proof"
+  },
+  "open_work_not_counted_as_separate_hard_blocker_class": [
+    "FAQ_ORDER fresh write/no-op decision",
+    "REVIEW_ANCHOR fresh write/no-op decision",
+    "REVIEW_ROLE_COPY fresh write/no-op decision",
+    "TABLE_TITLE fresh atomic-boundary write/no-op decision",
+    "CTA_MAIL_STRUCTURE fresh write/no-op decision",
+    "phase1 seven-block visual delivery after carrier proof",
+    "stress article-role conditional microfix",
+    "FAQ/CTA static delivery and fourth-wave dependency",
+    "all section-local/responsive measurement gates"
+  ],
+  "hard_blockers": {
+    "count": 9,
+    "authority": "reports/subpages/bio-exactness-blockers-20260915-v005.json",
+    "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v003.json"
+  },
+  "shared_global_whole_page_gates": {
+    "count": 2,
+    "authority": "reports/subpages/bio-shared-chrome-exactness-audit-20260915-v001.json",
+    "rule": "not page256 body blockers and no page256 workaround allowed, but both must close before whole-page exact PASS"
+  },
+  "execution": {
+    "runbook": "build/bio-next-remote-window-20260915-v008.json",
+    "budget": "build/bio-remote-call-budget-20260915-v008.json",
+    "DAG": "build/bio-transaction-dependency-graph-20260915-v003.json",
+    "microtransactions": "build/bio-page256-next-safe-package-20260915-v016.json",
+    "carrier": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "phase1": "build/bio-page-local-visual-delivery-20260915-v003.json",
+    "FAQ_CTA": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "browser": "build/bio-page256-opera-low-memory-qa-20260915-v001.json"
+  },
+  "identity": "Exact live ncsnorbert+20260914-4@gmail.com required before page256 mutation; current quota unknown; D11 reserve >=10.",
+  "current_result": "SAFE_PREPARATION_ADVANCED; NO LIVE WRITE AUTHORITY; BODY AND WHOLE_PAGE EXACT PASS FALSE",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
