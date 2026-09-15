@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "package": "bio-page-local-phase1-static-qa-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_QA_PASS_LIVE_RENDER_UNPROVEN",
+  "supersedes_for_current_phase1_QA": "reports/subpages/bio-page-local-phase1-static-qa-20260915-v001.json",
+  "delivery": "build/bio-page-local-visual-delivery-20260915-v004.json",
+  "checks": {
+    "seven_blocks": "PASS_STATIC: the phase remains exactly seven blocks; only the first-three wave file advances core-v001 -> core-v002.",
+    "wave_source_contract": "PASS_STATIC: core-v002 preserves path/height/colors and restores source-recorded margin-bottom:-1px.",
+    "wave_scope": "PASS_STATIC: only af26000e/af26000f/af260012 are affected; fourth FAQ wave remains excluded.",
+    "other_blocks": "PASS_STATIC: hero/technology/table/review/mobile-card behavior remains as in v001 QA; no new structure/runtime owner is introduced.",
+    "expectations": "PASS_STATIC: no expectations structure-dependent visual is activated in phase1.",
+    "FAQ": "PASS_STATIC: no FAQ outer layout, fourth wave or post-wave top-spacing is activated in phase1.",
+    "D18": "PASS_STATIC: no Atomic settings/full-save dependency."
+  },
+  "live_required": [
+    "carrier v002 PASS/cleanup",
+    "all seven internal markers once",
+    "original af260016 visible content unchanged",
+    "tight source/target seam proof for first three dividers",
+    "tight hero/technology/table/review checks",
+    "compact AX regression"
+  ],
+  "result": "STATIC_PAYLOAD_INTERNAL_CONSISTENCY_PASS",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
