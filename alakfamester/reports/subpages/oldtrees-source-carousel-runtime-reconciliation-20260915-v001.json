@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "package": "oldtrees-source-carousel-runtime-reconciliation-20260915-v001",
   "date": "2026-09-15",
   "page_id": 264,
@@ -10,8 +10,8 @@
   },
   "disproved_previous_interpretation": {
     "stale_claim_locations": [
-      "build/oldtrees-interaction-acceptance-20260915-v002.json manual_latch_contract/manual_latch_tests",
-      "reports/subpages/oldtrees-continuation-20260915-v012.json interaction_deepening.nordmann manual=true claim"
+      "build/oldtrees-interaction-acceptance-20260915-v002.json historical manual_latch_contract/manual_latch_tests",
+      "reports/subpages/oldtrees-continuation-20260915-v012.json historical interaction_deepening.nordmann manual=true claim"
     ],
     "stale_claim": "By-user prev/next/dot/Arrow/swipe navigation sets manual=true, permanently latching autoplay off.",
     "direct_source_code_finding": "FALSE. The local variable manual is initialized once from c.classList.contains('carousel--manual') and is never assigned afterward. go(n) has no by-user argument. Successful manual navigation paths call go(...) followed by start().",
@@ -23,28 +23,32 @@
     "Prev/next arrow click, dot click, ArrowLeft/ArrowRight and qualifying pointer swipe all call start() after moving. On a non-manual carousel this resets/restarts the autoplay interval; it does not permanently stop autoplay.",
     "mouseenter and focusin stop(); mouseleave and focusout call start() without independent pause flags, so compound hover/focus exit ordering can restart autoplay while the other condition is still active. This surprising behavior is source contract until live reference disproves the recovered runtime.",
     "A prefers-reduced-motion change calls start(). Turning reduce off restarts autoplay on a connected non-manual multi-slide instance; turning it on suppresses the new interval.",
-    "Broken-slide removal reindexes dots and may stop/hide the carousel based on remaining slide count."
+    "Broken-slide drop() removes the broken slide and matching dot, reindexes dot data-go values, clamps index, hides the containing project/proof owner only when no slides remain, and calls go(index). drop() itself calls neither stop() nor start()."
   ],
+  "broken_slide_timer_caveat": "start() refuses to create a new timer when fewer than two slides remain, but drop() does not itself stop or restart a timer that was already running. Therefore static source code does not prove immediate timer cancellation after runtime removal reduces the slide count. If this rare state occurs naturally, compare synchronized source and target observation; do not synthesize a stronger timer contract.",
   "current_acceptance_owner": "build/oldtrees-interaction-acceptance-20260915-v003.json",
   "obsolete_for_nordmann_timing_oracle": [
-    "oldtrees interaction v002 manual-latch test block",
-    "v012 continuation manual-latch sentence"
+    "historical oldtrees interaction v002 manual-latch test block",
+    "v012 continuation manual-latch sentence",
+    "any acceptance statement that treats drop() as an implicit stop()/start() call"
   ],
   "live_gate": [
     "Observe source and target root class lists first, especially carousel--manual.",
     "Historical autoplay evidence strongly suggests the observed Nordmann source instance is non-manual, but class presence must still be recorded in the synchronized live test rather than assumed.",
     "For a non-manual instance, verify the timer is reset/restarted by each successful manual navigation and does not double-step from duplicate timers.",
     "For a manual instance, expect no autoplay from initialization onward; only manual controls move slides.",
-    "Compound hover+focus and reduced-motion behavior must be compared as observable source parity, not redesigned to an ideal policy."
+    "Compound hover+focus and reduced-motion behavior must be compared as observable source parity, not redesigned to an ideal policy.",
+    "Do not deliberately break working media. If a slide is naturally broken, compare removal/reindex/clamp/current-state behavior; timer behavior after runtime removal is observational proof only."
   ],
   "do_not": [
     "do not change target runtime solely to implement a permanent manual latch",
     "do not edit source-interactions-v001.js; it is evidence, not a target deployment artifact",
     "do not create duplicate carousel runtime while current target owner is unread",
-    "do not use the old unsynchronized current-slide role snapshot as semantic write authority"
+    "do not use the old unsynchronized current-slide role snapshot as semantic write authority",
+    "do not claim drop() stops an already-running timer when the source code does not call stop() there"
   ],
   "wordpress_writes": 0,
   "opera_tabs_opened": 0,
   "pixel_pass": false,
-  "status": "SOURCE_CAROUSEL_TIMER_CONTRACT_CORRECTED_V003_ORACLE_CURRENT"
+  "status": "SOURCE_CAROUSEL_TIMER_MANUAL_AND_DROP_CONTRACT_RECONCILED_CURRENT"
 }
