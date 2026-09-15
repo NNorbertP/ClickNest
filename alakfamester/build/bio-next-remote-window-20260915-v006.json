@@ -1,0 +1,171 @@
+{
+  "schema_version": 6,
+  "package": "bio-next-remote-window-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READY_AS_RUNBOOK_NOT_AUTHORIZATION",
+  "supersedes": "build/bio-next-remote-window-20260915-v005.json",
+  "reason": "Correct copied +5 account drift, use the current v002 transaction graph and page-local FAQ/CTA delivery, and point resume state to v030.",
+  "authoritative_read_only_prework": [
+    "reports/subpages/bio-continuation-20260915-v030.json",
+    "reports/subpages/bio-evidence-supersedence-20260915-v010.json",
+    "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v001.json",
+    "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "reports/subpages/bio-final-acceptance-status-20260915-v001.json",
+    "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "build/bio-remote-call-budget-20260915-v007.json"
+  ],
+  "stage_0_no_write_until_all_true": [
+    "Fresh STATE.md explicitly releases PAGE264 ONLY and hands writable scope to page256; do not steal or overwrite scope.",
+    "WPVibe is usable and the FIRST account check returns exactly ncsnorbert+20260914-4@gmail.com, the user-authorized page256 identity. Any +5/other identity -> STOP mutation.",
+    "Target site connection and exact current quota are verified; historical 19/300 is stale and may not be budgeted.",
+    "Current user instruction still authorizes page256-only changes and still forbids other pages/global/shared resources.",
+    "Elementor skill loads successfully in that live session.",
+    "Host/connector is not in unresolved 429/5xx/ambiguous mutation state.",
+    "If browser acceptance is needed for the selected unit, the two existing Opera source/target tabs are available; open no replacement tabs."
+  ],
+  "stage_1_read_only_preflight": [
+    "Read exact WPVibe counter; calculate usable calls above D11 reserve=10 using build/bio-remote-call-budget-20260915-v007.json.",
+    "Read fresh page256 _elementor_data bytes/SHA/JSON; fresh live state outranks every historical hash/size.",
+    "Read the COMPLETE LIVE ID35 record/code/active/page guard/error state; never use build/bio-semantic-runtime-v001.php as replacement source.",
+    "Confirm ID35 remains active, page256-guarded/error-free and preserve its already-good region/review naming and hidden-dot semantics.",
+    "Read current shared/global owners only diagnostically; do not mutate them.",
+    "Fresh-search af260016 exact owner boundary for the page-local style carrier probe.",
+    "If Opera is used, normalize only the existing source and target tabs and reconfirm deltas for the FIRST chosen unit rather than dumping the whole page."
+  ],
+  "stage_2_first_write_carrier_probe": {
+    "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "write": "One inert style probe in af260016 only.",
+    "pass": "saved JSON valid + probe style renders exactly once + not escaped + original visible content/order unchanged",
+    "fail": "remove/reconcile only the probe and STOP the page-local CSS path; no Global Additional CSS fallback"
+  },
+  "stage_3_phase1_page_local_visual": {
+    "package": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "static_QA": "reports/subpages/bio-page-local-phase1-static-qa-20260915-v001.json",
+    "blocks": [
+      "bio-visual-v001",
+      "bio-hero-layout-v003",
+      "bio-card-mobile-v001",
+      "bio-table-section-tone-v001",
+      "bio-wave-core-v001",
+      "bio-review-quote-v002",
+      "bio-review-dot-v001"
+    ],
+    "rules": [
+      "One style#af-page256-parity owner only.",
+      "Never duplicate a marker already present once; marker>1 -> stop/reconcile.",
+      "Do not include expectations, fourth FAQ wave, review ordinal or diagnostic-only responsive overrides in phase1.",
+      "After write: fresh page JSON + rendered marker inventory + tight hero/technology/table/review visual QA + compact AX regression before another mutation."
+    ]
+  },
+  "stage_4_compact_structural_transactions": {
+    "package": "build/bio-page256-next-safe-package-20260914-v015.json",
+    "dependency_graph": "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "rule": "One complete search/edit-or-no-op/readback transaction at a time; never combine unrelated edits merely to save calls.",
+    "queue": [
+      "FAQ order: remove only af-faq-content if a fresh exact setting still proves that token/value and its order effect.",
+      "Review #ugyfelvelemenyek: only if current af26000d settings expose a proven safe existing _cssid-style mechanism.",
+      "Third review author role: exact copy-only microfix if fresh b2560031 saved text is still short.",
+      "Table external title: only if one compact fresh boundary contains the complete caption/table-opening atomic transform; there is no predefined TABLE_TITLE_VISUAL node."
+    ]
+  },
+  "stage_5_stress": {
+    "role_microfix": "Run only if fresh complete tag boundaries prove a tag-only article-role correction. Do not rely on old token counts without revalidation.",
+    "visual": "Append build/bio-stress-current-dom-visual-v003.css only after carrier PASS and current cascade proof.",
+    "hard_blocker": "Physical source order p1 -> p2 -> article/list cannot be reconstructed from repo snapshots. Fresh complete saved owner + a supported single atomic move/replacement are mandatory; otherwise remain OPEN."
+  },
+  "stage_6_expectations": {
+    "status": "HOLD",
+    "reason": "No complete exact saved owner snapshot or supported single-transaction ownership regrouping is proven.",
+    "rule": "Do not replay old visual expectations v002, old multi-step regrouping v003, fake article roles, JS reparenting or reconstructed widget blobs."
+  },
+  "stage_7_FAQ_CTA": {
+    "package": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "dependency_graph_nodes": ["FAQ_ORDER", "CTA_MAIL_STRUCTURE", "FAQ_CTA_STATIC_LAYOUT", "FAQ_WAVE4"],
+    "structural": [
+      "FAQ_ORDER must be fresh PASS/no-op-exact before layout.",
+      "CTA mail child-order microfix runs only if a fresh complete anchor boundary still differs; if already exact, satisfy dependency with a documented no-op PASS."
+    ],
+    "static_layout": "Append build/bio-faq-cta-source-layout-v002.css only to style#af-page256-parity after CARRIER_PROBE and both structural predecessors pass.",
+    "fourth_wave": "Append build/bio-wave-source-faq-v001.css only after fresh rendered proof that FAQ is paper/source-like and the predecessor surface is still sage.",
+    "exact_runtime": "Remain OPEN. No JavaScript, Code Snippets/ID35/plugin mutation or fake ARIA is authorized by this CSS package."
+  },
+  "stage_8_reviews": {
+    "preserve": [
+      "native Atomic Tabs hierarchy",
+      "af-project click + Arrow/Up/Down/Home/End behavior",
+      "live ID35 naming/hidden-dot semantics",
+      "review assets/alt text and existing previous/next controls"
+    ],
+    "ordinal": "Append build/bio-review-ordinal-source-v001.css only as an isolated marked block after a fresh owner diagnostic; immediately verify one visual ordinal, exact tab names and zero standalone ordinal AX staticText.",
+    "Panasonic_points": "Section-local AX diagnostic first. Evaluate the ARIA-equivalent list candidate only with isolatable fresh saved boundaries and abort on any protected reading-order duplication/reordering.",
+    "prev_next_focus": "Freshly test step controls. If the active panel still is not focused and no sanctioned page-local runtime owner exists, keep blocker OPEN; do not modify global live ID35 or reconstruct it from the stale repo mirror.",
+    "media_aspect": "Measure rendered first media container aspect/object-fit before any geometry change."
+  },
+  "stage_9_responsive_and_visual_acceptance": {
+    "source_contract": "build/bio-responsive-source-contract-20260914-v001.json",
+    "low_memory_QA": "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+    "technology_icon_gate": "reports/subpages/bio-technology-icon-exactness-audit-20260915-v001.json",
+    "method": "At most two reused Opera tabs; one section/viewport at a time; tight captures/targeted AX; no repeated full-page dumps.",
+    "must_measure": [
+      "desktop hero/CTA/technology/reviews/stress/table/expectations/FAQ-CTA",
+      "1000 threshold review media/body",
+      "900 threshold hero/content/CTA stacks",
+      "760 threshold review rail/quote",
+      "720 threshold card padding + section spacing + mobile h2 winning owner",
+      "560 and ~390 overflow/media/contact/focus states",
+      "technology icon badge exact geometry before any icon-owner change"
+    ]
+  },
+  "stage_10_final_acceptance": {
+    "spec": "specs/bio-final-acceptance-20260914-v003.json",
+    "status_matrix": "reports/subpages/bio-final-acceptance-status-20260915-v001.json",
+    "require": [
+      "fresh saved page256 readback",
+      "unique page-local style owner and marker inventory",
+      "protected content/link/asset invariants",
+      "section-local AX exactness",
+      "deep-link checks",
+      "desktop/responsive visual checks",
+      "review and FAQ keyboard/focus behavior checks"
+    ],
+    "never_claim_exact_PASS_while_open": [
+      "scope_remote",
+      "page_local_css_carrier",
+      "review_points_semantics",
+      "stress_dom_order",
+      "expectations_article_ownership",
+      "FAQ_exact_runtime",
+      "review_prev_next_focus",
+      "review_ordinal_AX",
+      "responsive_unverified"
+    ]
+  },
+  "stop_conditions": [
+    "STATE scope conflict/not released",
+    "WPVibe identity is not exact +4",
+    "site/quota unknown or usable quota cannot finish chosen node above D11 reserve",
+    "Elementor skill unavailable",
+    "Opera unavailable when the chosen node requires browser acceptance",
+    "unresolved 429/5xx/ambiguous write",
+    "unexpected page256 or live ID35 drift",
+    "carrier probe failure",
+    "multiple/no-match exact edit boundary",
+    "protected semantic/content/link/asset regression"
+  ],
+  "forbidden": [
+    "Hello Additional CSS page256 write",
+    "global Code Snippets/ID35/plugin/theme mutation",
+    "full Elementor save",
+    "raw SQL/search-replace builder mutation",
+    "blind 429 retry",
+    "new Opera tabs as workaround",
+    "stale live-ID35 reconstruction from build/bio-semantic-runtime-v001.php",
+    "obsolete v014 stress wrapper",
+    "old expectations v002/v003 regrouping",
+    "duplicate/replacement Atomic review implementation"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
