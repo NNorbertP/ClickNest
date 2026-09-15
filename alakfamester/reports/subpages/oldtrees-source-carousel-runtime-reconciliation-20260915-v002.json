@@ -1,0 +1,47 @@
+{
+  "schema_version": 3,
+  "package": "oldtrees-source-carousel-runtime-reconciliation-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Static source-runtime reconciliation only; no WordPress/browser mutation.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json",
+  "source_runtime": {
+    "path": "build/source-interactions-v001.js",
+    "blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "direct_readback": "Confirmed again from current main on 2026-09-15 before this correction."
+  },
+  "manual_and_navigation_contract": [
+    "manual is initialized once from c.classList.contains('carousel--manual') and is never reassigned.",
+    "start() calls stop() first, then creates a 4000ms interval only when manual=false, reduced-motion=false, slides>=2 and the carousel is connected.",
+    "Prev/next, dot, ArrowLeft/ArrowRight and qualifying horizontal swipe call go(...) then start(); on a non-manual carousel this resets/restarts the autoplay countdown.",
+    "mouseenter/focusin call stop(); mouseleave/focusout call start() without independent pause flags.",
+    "prefers-reduced-motion changes call start(), so disabling reduced motion can restart autoplay on a connected non-manual multi-slide carousel."
+  ],
+  "broken_slide_contract_corrected": {
+    "removal": "drop(slide) removes the broken slide and corresponding dot, reindexes remaining data-go values and clamps/re-renders the current index.",
+    "zero_remaining": "When no slides remain, drop() calls stop(), hides the closest .project-card__extra/.hero-proof owner (or the carousel itself), then returns.",
+    "one_remaining": "When exactly one slide remains, drop() executes if(slides.length<2) stop() before go(...), so any existing autoplay timer is cancelled immediately.",
+    "two_or_more_remaining": "When at least two slides remain, drop() does not call stop() or start(); the existing interval is neither reset nor restarted by the removal itself, and go(...) simply re-renders the clamped current state.",
+    "source_excerpt_logic": "if(!slides.length){stop(); ... hidden=true; return;} if(slides.length<2)stop(); go(Math.min(index,slides.length-1));"
+  },
+  "disproved_stale_claims": [
+    "v001 claim that drop() itself calls neither stop() nor start() in all cases",
+    "v001 caveat that reducing to fewer than two slides does not statically prove immediate timer cancellation",
+    "interaction v003 wording that drop() itself never stops/restarts a timer"
+  ],
+  "acceptance_consequences": [
+    "Do not deliberately break working media merely to exercise this path.",
+    "If a natural image failure reduces the source carousel to one or zero slides, source truth requires the existing autoplay timer to be stopped immediately.",
+    "If a natural image failure still leaves two or more slides, do not expect the timer countdown to reset solely because drop() ran; compare source/target observable cadence if relevant.",
+    "The corrected broken-slide contract is not evidence of a current target failure and does not authorize a runtime write.",
+    "Preserve the existing target runtime owner until a synchronized live failure is reproduced."
+  ],
+  "obsolete_for_execution": [
+    "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json broken-slide timer statements",
+    "build/oldtrees-interaction-acceptance-20260915-v003.json broken_slide_timer_caveat and any equivalent no-stop wording"
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "SOURCE_CAROUSEL_MANUAL_AND_BROKEN_SLIDE_TIMER_CONTRACT_CORRECTED"
+}
