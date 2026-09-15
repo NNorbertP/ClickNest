@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "package": "oldtrees-scope-release-gate-20260915-v001",
   "date": "2026-09-15",
   "page_id": 264,
@@ -7,10 +7,13 @@
   "purpose": "Define when page264 may safely release exclusive WordPress write scope to a later page without treating tool unavailability or a read-only checkpoint as completion.",
   "scope_authority": "STATE.md remains PAGE264 ONLY until these criteria are actually proven and the full state history is safely preserved during a normal handoff.",
   "current_release": false,
+  "current_remote_plan": "build/oldtrees-next-remote-window-20260915-v005.json",
+  "current_continuation": "reports/subpages/oldtrees-continuation-20260915-v013.json",
+  "current_precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json",
   "blocking_write_capable_items": [
     "Fresh trustworthy source/target live gate for v006 request-contact foreground.",
     "Fresh trustworthy source/target live gate for v007 desktop comparison equal-column parity.",
-    "If either/both still fail, exactly one selected repository artifact/bundle insertion through oldtrees-next-remote-window-v004 plus mandatory server/browser readback.",
+    "If either/both still fail, exactly one selected repository artifact/bundle insertion through oldtrees-next-remote-window-v005 plus mandatory server/browser readback.",
     "If neither fails, explicit fresh evidence that both are already source-equivalent and no v006/v007 write is required."
   ],
   "mandatory_release_evidence": [
@@ -40,10 +43,10 @@
     "Release is being inferred only because WPVibe/Opera/public HTTP is unavailable."
   ],
   "handoff_contract_after_release": [
-    "Re-read fresh STATE.md and latest page264 continuation immediately before handoff.",
+    "Re-read fresh STATE.md, current precedence and latest page264 continuation immediately before handoff.",
     "Preserve all existing STATE history; never truncate the file to force a scope switch.",
     "Record page264 closed implementation state and remaining proof-only/formal blockers separately.",
-    "Only then allow the next page handoff plan (for example bio-scope-handoff-ready-v002) to take write scope.",
+    "Only then allow the next page handoff plan to take write scope.",
     "Shared Opera tabs must be explicitly released; the next page reuses at most those two, with no replacement fan-out."
   ],
   "current_reason_not_released": "WPVibe/Opera live gates are unavailable in this continuation and v006/v007 remain reproduced conditional implementation candidates. Static preparation alone cannot close them.",
