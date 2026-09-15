@@ -1,0 +1,70 @@
+{
+  "schema_version": 32,
+  "package": "bio-continuation-20260915-v032",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_CONVERGENCE_ADVANCED_SCOPE_AND_REMOTE_STILL_BLOCKED",
+  "supersedes_for_resume": "reports/subpages/bio-continuation-20260915-v031.json",
+  "scope_state": "Fresh STATE.md remains PAGE264 ONLY; page264 v013/release gate is not released. No page256 WordPress write, no page264 modification and no forced STATE handoff.",
+  "tool_state": {
+    "wpvibe": "disabled/unavailable in this chat; no retries; current page256 site/quota unknown",
+    "elementor_skill": "unavailable in this session; live mutation forbidden",
+    "opera": "disconnected/unavailable; zero new tabs; no reconnect/replacement loop",
+    "github": "available for read-only convergence and versioned planning"
+  },
+  "body_exactness": {
+    "blocker_count": 9,
+    "authority": "reports/subpages/bio-exactness-blockers-20260915-v003.json",
+    "acceptance": "reports/subpages/bio-final-acceptance-status-20260915-v003.json",
+    "result": "OPEN_NOT_PASS"
+  },
+  "new_whole_page_truth": {
+    "authority": "reports/subpages/bio-shared-chrome-exactness-audit-20260915-v001.json",
+    "header": "OPEN_REPRODUCED: reports/header/header-service-child-route-live-qa-20260914-v008.json records source Services current-section pill on /biologiai-vedelem/ while target was neutral. Physical owner is shared/global header workstream; no page256 workaround is permitted.",
+    "dock": "OPEN_REPRODUCIBLE_OWNER_UNPROVEN: build/floating-contact-dock-diagnostic-plan-20260915-v003.json proves markup/AX exists but visual paint/layout remains wrong and exact target CSS owner is unproven. No page256 recreation is permitted.",
+    "counting": "These are separate shared/global whole-page gates and do not change the nine page256 body blocker classes.",
+    "effect": "WHOLE_PAGE_PIXEL_PASS remains false even after future body closure until both shared/global gates close under their own valid scope and fresh same-browser proof."
+  },
+  "identity_separation": {
+    "page256": "Future page256 mutation requires exact live ncsnorbert+20260914-4@gmail.com plus fresh site/quota and D11 reserve.",
+    "global_header": "The separate global header workstream has its own current preflight/identity authority. Its account must never be imported as page256 authorization.",
+    "rule": "Connector identities are workstream-specific gates, not interchangeable credentials."
+  },
+  "current_execution_chain": {
+    "runbook": "build/bio-next-remote-window-20260915-v006.json",
+    "budget": "build/bio-remote-call-budget-20260915-v007.json",
+    "dependency_graph": "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "scope_handoff": "build/bio-scope-handoff-ready-20260915-v003.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "phase1_visual": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "FAQ_CTA": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "low_memory_browser": "build/bio-page256-opera-low-memory-qa-20260915-v001.json"
+  },
+  "preserve": [
+    "13 corrected period-free legacy list strings",
+    "exact uppercase table headers and four rowHeaders",
+    "native Atomic review hierarchy and af-project general tab keyboard behavior",
+    "protected hero/review assets and alt text",
+    "mail href and exact accessible label",
+    "technology visible content/order and last-trusted semantics",
+    "already-closed region/review names"
+  ],
+  "next_after_normal_handoff": [
+    "Exact +4 WPVibe identity/site/quota and D11 budget.",
+    "Elementor skill must load.",
+    "Fresh page256 bytes/SHA/JSON + FULL live ID35 readback.",
+    "af260016 inert style carrier probe only.",
+    "If PASS, seven-block phase1 page-local style transaction then immediate tight regression QA.",
+    "Run only fresh-boundary self-contained v015 microtransactions; already-exact items are no-op PASS.",
+    "Leave stress/expectations/runtime blockers open unless their required atomic owner path becomes proven.",
+    "Finish page256 body with max-two-tab low-memory Opera QA.",
+    "Do not claim whole-page exactness until separate global header and dock workstreams also close and page256 is rechecked in the same browser."
+  ],
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "page256_body_exact_pass": false,
+  "whole_page_reference_exact_pass": false,
+  "pixel_pass": false,
+  "perfect_match_claimed": false
+}
