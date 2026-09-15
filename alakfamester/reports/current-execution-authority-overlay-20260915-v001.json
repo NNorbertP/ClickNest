@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "package": "current-execution-authority-overlay-20260915-v001",
+  "date": "2026-09-15",
+  "scope": "Planning/execution authority overlay only; no WordPress write and no scope handoff.",
+  "reason": "Broad sitewide matrix/queue files are useful summaries but can lag rapidly evolving page-specific authority. Do not duplicate or overwrite newer page256/page272 lanes merely to refresh the page264 block.",
+  "global_precedence": [
+    "fresh trustworthy live truth",
+    "STATE.md for active WordPress write scope and preserved history",
+    "latest page-specific state overlay / precedence / continuation / remote plan / release gate",
+    "latest page-specific acceptance oracle and deploy manifest",
+    "broad canonical matrix / parity queue as overview only",
+    "historical reports/builds"
+  ],
+  "active_write_scope": "PAGE264 ONLY per STATE.md until the page264 release gate is actually satisfied and a normal history-preserving handoff occurs.",
+  "page264_current": {
+    "state_overlay": "reports/subpages/oldtrees-state-resume-overlay-20260915-v002.json",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v016.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v009.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v007.json",
+    "release_gate": "build/oldtrees-scope-release-gate-20260915-v003.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+    "source_runtime_reconciliation": "reports/subpages/oldtrees-source-runtime-reconciliation-20260915-v002.json",
+    "source_carousel_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
+    "visual_write_candidates": ["build/oldtrees-visual-v006-contact-text-cascade.css", "build/oldtrees-visual-v007-comparison-grid-cascade.css", "build/oldtrees-visual-v006-v007-single-write-bundle.css"],
+    "release": false
+  },
+  "known_stale_page264_overview_blocks": [
+    "reports/canonical-pages-current-state-matrix-20260915-v006.json page264 block",
+    "reports/parity-open-items-20260915-v021.json page264 block",
+    "STATE.md Current planning/evidence pointer block; retain STATE scope/history but use page264 state overlay v002 for current pointers"
+  ],
+  "cross_lane_rule": "For page256, page272 and every other page, use that page's latest specific authority rather than copying values out of the broad matrix/queue. This overlay does not change their status or authorize writes there.",
+  "critical_page264_oracle_correction": "The frozen source carousel drop() stops autoplay when a natural removal leaves zero or one slide. When two or more remain, drop() does not reset/restart the existing interval. Interaction v004/source-runtime v002 supersede the v003/v001 no-stop caveat.",
+  "tool_state": "WPVibe unavailable and Opera not connected in this continuation; no live retry loops, no WordPress writes, no Opera tabs opened.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "PAGE_SPECIFIC_EXECUTION_AUTHORITY_OVERLAY_CURRENT"
+}
