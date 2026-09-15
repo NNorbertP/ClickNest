@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "package": "bio-wpvibe-identity-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "IDENTITY_DRIFT_DETECTED_LIVE_REVERIFICATION_REQUIRED",
+  "wordpress_writes": 0,
+  "problem": "Recent page256 planning artifacts v029/v005/v006 refer to ncsnorbert+20260914-5@gmail.com, while the user-authorized page256 connection and earlier verified site/account evidence in this conversation were ncsnorbert+20260914-4@gmail.com. No currently usable WPVibe call is available to prove an authorized identity change.",
+  "user_authorized_identity": "ncsnorbert+20260914-4@gmail.com",
+  "historical_verified_identity": {
+    "account": "ncsnorbert+20260914-4@gmail.com",
+    "context": "Earlier live WPVibe account/site checks for this page256 task returned the +4 account; a historical counter read later showed 19/300 used and 281 remaining.",
+    "freshness": "STALE_FOR_CURRENT_QUOTA_AND_CONNECTION; identity evidence is historical only."
+  },
+  "conflicting_repository_artifacts": [
+    "reports/subpages/bio-continuation-20260915-v029.json",
+    "build/bio-next-remote-window-20260915-v005.json",
+    "build/bio-remote-call-budget-20260915-v006.json"
+  ],
+  "classification": "DOCUMENTATION_IDENTITY_DRIFT_NOT_AUTHORIZATION",
+  "decision": [
+    "Do not infer that +5 is authorized merely because several later planning files copied it forward.",
+    "Do not rely on the historical +4 quota; exact current counter must be read live.",
+    "At the next usable WPVibe preflight, the account identity must be read before any site/page mutation.",
+    "If the live WPVibe identity is exactly ncsnorbert+20260914-4@gmail.com, continue with site/quota/page reconciliation.",
+    "If the live identity is +5 or any other account, STOP page256 mutation. Do not silently proceed, reconnect, switch accounts or reinterpret the user instruction; require an explicit valid connection/authorization for the +4 account before write work resumes."
+  ],
+  "quota_rule": "Current exact quota is UNKNOWN. Preserve D11 reserve >=10 after complete transaction/readback/rollback margin; historical 19/300 is evidence only, not a current budget.",
+  "docs_to_supersede": {
+    "next_remote_window": "Create a later runbook that replaces the +5 stage-0 requirement with an exact +4 identity gate.",
+    "call_budget": "Create a later budget that marks +5 as drift and exact live +4 profile/quota as mandatory."
+  },
+  "safety": [
+    "No WordPress write was performed to investigate this drift.",
+    "No raw SQL, full Elementor save, account-switch workaround or blind WPVibe retry is allowed.",
+    "Fresh live identity always outranks copied repository metadata, but it must also satisfy the explicit user-authorized account gate before mutation."
+  ],
+  "pixel_pass": false
+}
