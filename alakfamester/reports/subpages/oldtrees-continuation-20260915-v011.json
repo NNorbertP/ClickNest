@@ -1,0 +1,80 @@
+{
+  "schema_version": 11,
+  "package": "oldtrees-continuation-20260915-v011",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CURRENT_CONTINUATION_STATIC_DEEPENING_NO_SCOPE_CHANGE",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; no global/other-page WordPress write is authorized.",
+  "tool_state_this_continuation": {
+    "wpvibe": "The single initial list_sites call returned tool disabled. No second WPVibe call was made.",
+    "opera": "The single list-tabs call returned Browser not connected. No navigation, screenshot, replacement tab or reconnect loop was attempted in this continuation.",
+    "public_fetch": "Generic web search/open did not produce a fetchable reference/target page; direct curl from the runtime could not resolve the Clicknest host. No repeated network loop was used.",
+    "github": "Used for repository reconciliation, exact artifact readback and no-WordPress planning/report updates.",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0,
+    "smtp_or_external_submission": false
+  },
+  "accepted_remote_baseline_preserved_not_reverified": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "live_visual_blocks": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "semantic_owner": "Code Snippets ID33 last accepted active with page264 guard",
+    "note": "No current live channel was available to supersede these historical accepted readbacks; therefore no WordPress write was attempted."
+  },
+  "static_deepening_completed": {
+    "v006_v007_artifact_identity": "Exact v006, v007 and combined bundle were re-read. A documentation-only ownership mismatch was corrected: v007 sets display/grid-template/gap/align-items plus width/max-width/min-width; it does not set flex or box-sizing.",
+    "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json freezes current artifact blob SHAs, markers and both/one/neither decision matrix.",
+    "problem_grid": "oldtrees-problem-grid-v001 confirms deployed/read-back source-resolved 4/2/1 columns, 16px gap, 48px margin-top, 16px chip padding, 24px radius, 22px icons, seven labels and seven source SVG geometries.",
+    "form_required": "Shared page272/Form33 audit was rechecked and contains no later exact service-radio widget setting. Native mf_input_required=yes capability is proven, but current Form33 value/behavior remains an explicit live read/non-delivery proof gate.",
+    "interaction_runtime": "source-interactions-v001.js was re-read. BA and carousel implementation contracts are present. A compound hover+focus pause caveat was identified and added as a parity edge-case test rather than changed in code.",
+    "faq": "Four FAQ disclosures were added to the current interaction acceptance plan: initial state, pointer/keyboard activation, multi-open versus accordion behavior, focus/ARIA/ID integrity and preservation of the restored fourth question.",
+    "dock_provenance": "Exact header-live-source-v001.css full range and header-source-flex-responsive-v007.css contain no dock rules. The older claim that header-live-source-v001 mapped the dock is stale. New dock v003 requires fresh live CSS-owner discovery and forbids global modification from page264.",
+    "hero": "Hero-art ownership/content remains exact; the approximately 40-45px left-copy offset still has no single proven page264 owner and remains diagnostic-only.",
+    "mobile_contact_font": "Current repo records <=560 strong text .92rem but the original source selector scope is not independently recoverable from Git. No new mail-only/general font CSS is justified without fresh mobile source/target evidence."
+  },
+  "new_or_updated_files": [
+    "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "build/floating-contact-dock-diagnostic-plan-20260915-v003.json",
+    "build/oldtrees-next-remote-window-20260915-v004.json",
+    "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json"
+  ],
+  "current_reproduced_page264_local_visual_failures": [
+    "v006 request contact foreground dark on target versus white reference",
+    "v007 desktop comparison columns unequal versus equal reference columns"
+  ],
+  "diagnostic_or_proof_only_not_new_failures": [
+    "hero left-copy vertical offset exact owner/cascade",
+    "inner MetForm field computed-style/geometry",
+    "current Form33 service-radio mf_input_required and safe native empty-choice behavior",
+    "review keyboard/prev-next dynamic behavior",
+    "tiszafa pointer/keyboard behavior",
+    "Nordmann timing/swipe/reduced-motion/compound hover+focus behavior",
+    "four FAQ disclosure behavior",
+    "fresh page-local route/href readback",
+    "floating dock actual CSS owner and whether any correction can be strictly page264-scoped",
+    "six-view deterministic overlay/diff"
+  ],
+  "authoritative_next_plan": "build/oldtrees-next-remote-window-20260915-v004.json",
+  "next_safe_live_order": [
+    "WPVibe +5 identity/site/quota once; preserve >=10 calls after the entire selected package.",
+    "Re-read repo artifact identities plus compact page264 hash/JSON and Additional CSS marker/hash preflight.",
+    "Trustworthy two-tab v006/v007 visual gate only.",
+    "At most one exact repository CSS insertion according to both/one/neither outcome.",
+    "Mandatory marker/project-end/page-hash readback and changed-section regression capture.",
+    "Then native Form33 required proof and inner-field/route reads if capacity remains.",
+    "Then interaction v002, hero diagnostic, dock owner-discovery and deterministic responsive matrix; proof gaps alone never authorize new CSS/JS."
+  ],
+  "hard_preserve": [
+    "Never replay oldtrees visual v001-v005 or stale semantic saved-data packages.",
+    "Never add a second review/slider/carousel/FAQ runtime owner because tooling cannot perform the proof.",
+    "Never mutate shared Form33 or global dock/header/footer from page264 scope.",
+    "Never blindly retry a 429 write; read exact outcome first.",
+    "Never exceed one source plus one target Opera tab when the connector returns.",
+    "Never claim PIXEL_PASS without deterministic same-state source/target captures, overlay and diff."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_STATIC_CONVERGENCE_DEEPENED_LIVE_WRITE_GATE_UNAVAILABLE"
+}
