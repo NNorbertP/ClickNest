@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-form33-shared-baseline-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "form_id": 33,
+  "scope": "Read-only reconciliation of the shared MetForm33 saved-data timeline relevant to page264. No WordPress write and no authorization to mutate the shared form from page264 scope.",
+  "timeline": [
+    {
+      "evidence": "reports/subpages/oldtrees-inline-form-v001.json",
+      "state": "Form33 embedded into page264 request section; recorded Form33 sha256 47152dff5fa5d5369a8955f7581e71b0652604c39a6c283fd15e243a543d01f3."
+    },
+    {
+      "evidence": "reports/home/metform33-source-parity-v001.json",
+      "state": "Form33 Elementor data 5568 B / 47152dff5fa5d5369a8955f7581e71b0652604c39a6c283fd15e243a543d01f3. ID5 photo-count validation and ID6 rows=5 runtime were added without changing this Elementor-data hash; success settings were stored separately."
+    },
+    {
+      "evidence": "reports/home/home-final-audit-v001.json",
+      "state": "The shared Form33 Elementor tree was intentionally changed once: source final direct-call note added as Atomic paragraph af04000d / #af-form-direct-call with tel:+36305394820. Post-save Form33 state became 6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3 and frontend readback proved the direct-call note visible."
+    },
+    {
+      "evidence": "reports/sitewide-functional-finalization-v001.json",
+      "state": "Later site-wide finalization still records Form33 6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3, confirming that this is the latest documented saved-data baseline in repository evidence."
+    }
+  ],
+  "page264_dependency": {
+    "owner": "Code Snippets ID33 / build/oldtrees-semantic-runtime-v003.php",
+    "behavior": "formFix() finds #af-form-direct-call inside #af-survivor-metform and assigns that element ID as the form aria-describedby target.",
+    "preserve": "Do not delete, rename or duplicate #af-form-direct-call from page264 work. Its shared Form33 presence is part of the accepted page264 form description contract."
+  },
+  "what_this_does_not_prove": [
+    "The 5568->6068 change was the direct-call paragraph addition; it is not evidence that the service/topic radio mf_input_required value changed or is currently correct.",
+    "The latest documented 6068/ea091... value is historical repository evidence, not a substitute for fresh current Form33 readback before a shared-form-sensitive diagnosis.",
+    "Page264 scope does not authorize restoring Form33 to either historical hash or editing its shared template merely to resolve a page264-only issue."
+  ],
+  "fresh_live_gate": [
+    "If a future page264 diagnostic needs Form33 saved-data identity, read current Form33 length/hash first and compare to 6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3 only as the latest documented reference.",
+    "If current Form33 differs, reconcile the changed tree/settings before assuming D05 required-radio state or direct-call ownership.",
+    "Preserve ID5, ID6, #af-form-direct-call, notifications/webhooks-disabled state and local-entry behavior.",
+    "Required service-radio proof still follows build/oldtrees-form-required-validation-plan-20260915-v001.json; no shared Form33 mutation by default."
+  ],
+  "latest_documented_form33_elementor_baseline": {
+    "bytes": 6068,
+    "sha256": "ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3",
+    "source": ["reports/home/home-final-audit-v001.json", "reports/sitewide-functional-finalization-v001.json"]
+  },
+  "wordpress_writes": 0,
+  "status": "SHARED_FORM33_BASELINE_RECONCILED_DIRECT_CALL_DEPENDENCY_EXPLICIT_D05_STILL_LIVE_READ_FIRST"
+}
