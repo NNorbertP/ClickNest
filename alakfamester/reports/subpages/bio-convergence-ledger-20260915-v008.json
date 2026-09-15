@@ -1,0 +1,32 @@
+{
+  "schema_version":8,
+  "package":"bio-convergence-ledger-20260915-v008",
+  "date":"2026-09-15",
+  "page_id":256,
+  "status":"READ_ONLY_COMPLETE_CURRENT_CONVERGENCE",
+  "supersedes_for_planning":"reports/subpages/bio-convergence-ledger-20260915-v007.json",
+  "inherits_section_findings_from":"reports/subpages/bio-convergence-ledger-20260915-v007.json",
+  "current_execution":{
+    "DAG":"build/bio-transaction-dependency-graph-20260915-v005.json",
+    "runbook":"build/bio-next-remote-window-20260915-v010.json",
+    "budget":"build/bio-remote-call-budget-20260915-v010.json",
+    "micro":"build/bio-page256-next-safe-package-20260915-v016.json",
+    "carrier":"build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "phase1":"build/bio-page-local-visual-delivery-20260915-v003.json",
+    "table_title_visual":"build/bio-table-source-structure-v001.css",
+    "stress":"build/bio-stress-article-resume-20260915-v002.json",
+    "expectations":"build/bio-expectations-source-structure-20260915-v005.json",
+    "Panasonic":"build/bio-review-points-semantics-20260915-v002.json",
+    "FAQ_CTA":"build/bio-faq-cta-page-local-delivery-20260915-v003.json",
+    "browser":"build/bio-page256-opera-low-memory-qa-20260915-v002.json"
+  },
+  "FAQ_CTA_completion_note":"Static payload is now source-layout-v002 + deterministic mail label + mail/form interaction states + section spacing. Old H2 eyebrow/outer-label-guard companions are explicitly obsolete. Exact FAQ runtime still OPEN.",
+  "body_hard_blocker_count":9,
+  "shared_global_gate_count":2,
+  "additional_required_nonblocker_work":["FAQ_ORDER", "REVIEW_ANCHOR", "REVIEW_ROLE_COPY", "TABLE_TITLE", "TABLE_TITLE_VISUAL", "CTA_MAIL_STRUCTURE", "phase1 seven-block visual", "conditional stress role", "FAQ/CTA v003 static + optional wave4", "all measurement gates"],
+  "scope":"STATE PAGE264 ONLY / NOT_RELEASED; no live page256 write authorized",
+  "identity":"future page256 exact +4; current quota unknown; D11>=10",
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
