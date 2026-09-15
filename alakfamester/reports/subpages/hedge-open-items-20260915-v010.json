@@ -1,0 +1,104 @@
+{
+  "schema_version": 10,
+  "package": "hedge-open-items-20260915-v010",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "reports/subpages/hedge-open-items-20260915-v009.json",
+  "live_owner": {
+    "code_snippets_id": 36,
+    "name": "AF Hedge semantic parity v007",
+    "artifact": "build/hedge-semantic-runtime-v007.php",
+    "scope": "front-end",
+    "active": true,
+    "code_error": null
+  },
+  "accepted_saved_baseline_postwrite": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "elementor_data_changed_by_v007": false
+  },
+  "newly_closed_preserve": [
+    "Fresh owner scan proved ID36 is the only Hedge/page272 semantic snippet owner.",
+    "Fresh target ancestry proved #af-sub-hedge-hero is the complete hero section root containing hero copy, CTAs, 21-image proof carousel and hero art.",
+    "Fresh target ancestry proved #af-hedge-gallery is the complete Sövénymunkák section root containing its heading and the final 28-item EAEL gallery.",
+    "Fresh target ancestry proved #ajanlatkeres is the complete Küldjön fotót a sövényről section root containing intro/contact content and MetForm33.",
+    "ID36 v007 labels only those three previously unnamed complete section roots and preserves all verified v006 review/Form33 behavior.",
+    "Fresh target AX after v007 exposes the exact nine source named regions in the same set.",
+    "Fresh target AX after v007 preserves Ügyfélvélemények tablist, exact three review tab names and Ajánlatkérés form name/direct-call description.",
+    "Fresh Form33 saved settings: af040007 mf-radio, name=kapcsolat-tema, required=yes, six expected ordered labels/values.",
+    "Current target review subtree captured from saved Elementor data: three distinct panels, image IDs 75/76/77, distinct Panasonic/Otolecz/ARKER'S content and author/role data; no saved-content duplication detected.",
+    "Fresh source and target AX re-observed proof-carousel role difference; target list/listitem owner is valid and is now explicitly retained in hedge-intentional-divergence-ledger-20260915-v002.json.",
+    "Target document head captured: one Yoast canonical to /soveny-specialista/, index/follow robots, matching title/OG title, matching description/OG description, one Yoast schema graph owner.",
+    "Mobile target Lighthouse: accessibility 100, best-practices 100, SEO 100.",
+    "Desktop target Lighthouse: best-practices 100, SEO 100; accessibility 97 with target-size plus label-content-name-mismatch diagnostics. No speculative write from node-less summary."
+  ],
+  "closed_preserve_from_v009": [
+    "hero af2e004e accessible SVG/source contract",
+    "proof carousel af2e004d 21 images and protected 4000ms behavior",
+    "review native structure c3d30005 exactly 3 tabs/panels and exact tab-name contract",
+    "EAEL gallery b2e2c001 final 28 page-local id=0/full/original URL/name/order state",
+    "five legacy named regions",
+    "CTA/contact semantics and exact 24-hour sentence",
+    "D09 page272 links/anchors",
+    "26/26 shared-media recovery; no Hedge shared-media writes",
+    "removed legacy af2e0009-af2e000e remain absent",
+    "visible heading text-set parity",
+    "no current page272 CSS candidate"
+  ],
+  "remaining_read_first_or_blocked": [
+    {
+      "item": "ordered main-content heading tree",
+      "status": "FRESH_MISMATCH_REPRODUCED_NO_WRITE_YET",
+      "source_fresh_order_clues": [
+        "active Panasonic review heading precedes Amit a megbízóim mondanak",
+        "form-shape card headings precede Egy sövény nem csak egyenes zöld fal lehet",
+        "Sövény megújítása / Forma és dekoratív sövényvégek / Beteg, ritkuló, károsodott sövény precede Egyszerű nyírás / Szerkezeti fenntartás",
+        "Ajánlatkérés precedes Küldjön fotót a sövényről"
+      ],
+      "target_fresh_order_clues": [
+        "Amit a megbízóim mondanak precedes active Panasonic review heading",
+        "Egy sövény nem csak egyenes zöld fal lehet precedes its form-shape card headings",
+        "Egyszerű nyírás / Szerkezeti fenntartás precede the three service-card headings",
+        "Küldjön fotót a sövényről precedes Ajánlatkérés"
+      ],
+      "owner": "page272 saved review child order and legacy/text-editor markup order",
+      "hold_rule": "Do not reorder DOM/content until synchronized coarse visual or trustworthy source raw-DOM evidence proves how the reference preserves visible layout. Opera screenshot disconnected during the attempted coarse capture."
+    },
+    {
+      "item": "full three-panel review source preservation",
+      "status": "TARGET_FULL_CONTENT_CAPTURED_REFERENCE_PANELS_2_3_RAW_CONTENT_UNAVAILABLE",
+      "rule": "Do not reconstruct or rewrite Otolecz/ARKER'S content from names/image IDs/memory."
+    },
+    {
+      "item": "reference document head",
+      "status": "TARGET_CAPTURED_REFERENCE_RAW_HEAD_BLOCKED",
+      "reason": "Direct source fetch returns browser challenge; Opera AX is not a head provider. No Yoast guess/write."
+    },
+    {
+      "item": "Form33 native required behavior and dynamic error ARIA",
+      "status": "SAVED_REQUIRED_CAPABILITY_PROVEN_DYNAMIC_SAFE_TRIGGER_OPEN",
+      "rule": "No real submission/network request; no shared Form33 mutation from page272 scope."
+    },
+    {
+      "item": "desktop Lighthouse accessibility diagnostics",
+      "status": "OBSERVED_NOT_LOCALIZED",
+      "diagnostics": ["target-size", "label-content-name-mismatch"],
+      "rule": "Do not change page272 without exact failing node and owner; issue may be shared/global or intentional accessible naming."
+    },
+    {
+      "item": "formal visual parity",
+      "status": "BLOCKED",
+      "reason": "Original acceptance/behavior specs and deterministic six-view same-engine capture/diff harness remain unavailable; Opera screenshot disconnected and has no deterministic viewport resize. PIXEL_PASS=false."
+    }
+  ],
+  "opera_memory_state": "Browser branch stopped immediately on screenshot disconnect. No reload/reconnect loop. Project page tabs were not intentionally retained.",
+  "next_write_candidate": "NONE until heading-order visual/source-DOM proof or another fresh page272-local failure is localized to an owner.",
+  "state_md_rule": "Do not overwrite page264-owned STATE.md from page272 lane.",
+  "smtp_or_external_submission": false,
+  "real_form_submission": false,
+  "pixel_pass": false,
+  "status": "PAGE272_V010_LIVE_V007_OUTER_REGIONS_CLOSED_HEADING_ORDER_AND_FORMAL_VISUAL_OPEN"
+}
