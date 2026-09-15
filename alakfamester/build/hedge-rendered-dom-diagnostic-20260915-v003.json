@@ -1,0 +1,127 @@
+{
+  "schema_version": 3,
+  "package": "hedge-rendered-dom-diagnostic-20260915-v003",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "mode": "READ_ONLY",
+  "wordpress_writes": 0,
+  "supersedes_for_execution": "build/hedge-rendered-dom-diagnostic-20260915-v002.json",
+  "goal": "Harvest all remaining page272 local structural/semantic/review/head evidence from one trustworthy rendered target payload plus one matching reference payload, while explicitly preserving native validation semantics and avoiding false review-content PASS from lossy normalization.",
+  "target_selectors": {
+    "review_root": ".elementor-element-c3d30005",
+    "review_tablist": ".elementor-element-c3d30005 [role=tablist]",
+    "review_tabs": ".elementor-element-c3d30005 [role=tab]",
+    "review_panels": ".elementor-element-c3d30005 [role=tabpanel]",
+    "review_images": ".elementor-element-c3d30005 [role=tabpanel] img",
+    "proof_carousel": ".elementor-element-af2e004d",
+    "hero_art": ".elementor-element-af2e004e",
+    "gallery_widget": ".elementor-element-b2e2c001",
+    "form_intro_contact": ".elementor-element-af2e004c",
+    "form_wrapper": ".mf-form-wrapper[data-form-id=33]",
+    "form_service": "#af-form-service",
+    "form_city": "#af-form-city",
+    "headings": "h1,h2,h3,h4,h5,h6"
+  },
+  "trust_gate": [
+    "target URL/title/content all identify /soveny-specialista/",
+    "reference URL/title/content all identify /soveny-specialista.html",
+    "no stale prior-page AX/DOM payload",
+    "browser branch uses at most one source + one target tab and opens no replacement loop",
+    "if any identity mismatch/disconnect occurs, stop the browser branch and record no PASS"
+  ],
+  "text_capture_contract": {
+    "capture_both": ["raw textContent", "normalized visible-text comparison string"],
+    "normalization_allowed": [
+      "Unicode NFC normalization",
+      "convert non-breaking whitespace characters to ordinary spaces for comparison",
+      "collapse runs of layout whitespace to one space",
+      "trim leading/trailing comparison whitespace"
+    ],
+    "normalization_forbidden": [
+      "case folding",
+      "punctuation removal",
+      "word reordering",
+      "accent/diacritic removal",
+      "quote-mark substitution",
+      "company/person/role token removal"
+    ],
+    "rule": "A mismatch in meaningful characters/tokens remains a mismatch even if visual wrapping differs. Keep raw text evidence so normalization can be audited."
+  },
+  "review_capture": {
+    "known_exact_tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "known_saved_target_image_ids": [75, 76, 77],
+    "for_each_pair": [
+      "source-order index",
+      "tab DOM id, raw visible text, computed accessible name, aria-label, aria-labelledby, aria-controls, aria-selected, tabindex",
+      "panel DOM id, aria-labelledby, role, hidden/display/inert state and source-order index",
+      "raw + normalized full visible quote text",
+      "raw + normalized visible company/person/role line(s)",
+      "image src and currentSrc",
+      "image srcset/sizes when emitted",
+      "image naturalWidth/naturalHeight and rendered width/height when available",
+      "image alt and computed accessible name",
+      "stable class/data/attachment clue when present"
+    ],
+    "pair_checks": [
+      "exact three source-order tab↔panel bijections",
+      "each tab aria-controls resolves to exactly its panel",
+      "each panel aria-labelledby resolves to exactly its tab",
+      "no quote/author/image content accidentally duplicated between panels",
+      "current target compared against trustworthy reference before any content correction"
+    ],
+    "write_rule": "A content/media mismatch is diagnostic only here. It becomes its own smallest-owner package and is never folded into semantic ID36."
+  },
+  "form_idle_capture": {
+    "form": ["role", "aria-label", "aria-labelledby", "aria-describedby"],
+    "direct_call": ["owner element", "id", "raw text", "href"],
+    "service_wrapper": ["role", "aria-label", "aria-labelledby", "aria-describedby"],
+    "service_label": ["id", "raw text"],
+    "city_input": ["id", "name", "aria-label", "aria-labelledby", "aria-describedby", "aria-errormessage", "aria-invalid", "required"],
+    "city_help": ["id", "raw text"],
+    "relation_resolution": "Resolve every IDREF token to its actual element and capture the referenced raw text; unresolved or duplicate IDs fail the semantic gate."
+  },
+  "form_safe_validation_capture_if_available": {
+    "network_policy": "No real form submission, entry creation, SMTP or external request. Only a client-side/native validation trigger that can be proven not to send data is eligible.",
+    "capture_after_trigger": [
+      "same form/service/city ARIA attributes as idle",
+      "all validation/error nodes added under Form33 with IDs/roles/text",
+      "whether aria-describedby/aria-errormessage/aria-invalid changed",
+      "whether each added IDREF resolves exactly once",
+      "whether project-owned descriptor IDs remain alongside native error/help IDs rather than replacing them"
+    ],
+    "if_no_safe_trigger": "Do not improvise a submission. Leave dynamic validation-state proof open and retain the v005 preservation design plus live idle conflict gate."
+  },
+  "other_exact_capture": {
+    "headings": "Ordered main-content array of {level, rawText, normalizedText, stable owner/ancestor}; exclude global header/footer headings from page-local tree but record them separately if encountered.",
+    "proof_carousel": "Container role; direct item count; emitted item roles; parent roles; names; active marker; owner classes/data; do not authorize role rewrite until source is re-observed in same trustworthy pair.",
+    "hero": "Hero art ancestry plus ordered hero-copy heading/paragraph/CTA descendants for each candidate common ancestor.",
+    "gallery": "Exact Sövénymunkák heading node ancestry plus b2e2c001 ancestry.",
+    "form_outer": "af2e004c ancestry plus Form33 wrapper ancestry; candidate root must contain complete source-equivalent intro+form and must not swallow unrelated neighboring sections.",
+    "document_head": "title; meta description; canonical count/href; robots; og:title/og:description/og:url; JSON-LD script count, parser-validity, top-level @type/@graph types and owner clues. D09 /slug/ route adaptation is allowed."
+  },
+  "v005_deployment_gate_from_same_payload": [
+    "review root count=1, tablist count=1, tab count=3 and expected source order",
+    "current review aria naming state is conflict-free with exact label contract",
+    "Form33 wrapper/form/direct-call/service/city cardinality gates pass",
+    "all current native IDREF tokens resolve and no unexpected semantic owner requires HOLD",
+    "planned/reused relation IDs are unique",
+    "v005 is not already live",
+    "any unresolved native semantic ambiguity => HOLD rather than write"
+  ],
+  "no_write_findings": [
+    "review panel inner-content mismatch",
+    "complete hero/gallery/form outer-region root discovery",
+    "heading level/order differences",
+    "proof carousel group/listitem difference",
+    "head metadata difference",
+    "unexpected extra source/target section semantics",
+    "dynamic validation-state uncertainty"
+  ],
+  "browser_memory_rule": "Exactly one source + one target project tab maximum; zero replacement/reconnect loops. Stop on stale, repurposed or disconnected state.",
+  "call_budget_effect": "No extra target WPVibe call versus v002 when all target evidence comes from the already-planned broad rendered payload; optional safe client-side validation capture is browser-side and must not create an entry/network submission.",
+  "status": "READY_FOR_STRICT_ONE_PASS_PAGE272_PRESERVATION_DIAGNOSTIC"
+}
