@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-source-runtime-reconciliation-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Read-only source runtime reconciliation for page264 acceptance; no WordPress/browser mutation.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-source-runtime-reconciliation-20260915-v001.json",
+  "source_runtime": {
+    "path": "build/source-interactions-v001.js",
+    "blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d"
+  },
+  "before_after_contract": [
+    "Each .js-ba initializes once through data-af-ba-init=1.",
+    "The native range input's input event writes --ba-pos from input.value.",
+    "Broken BA layer image handling removes the closest .ba figure; no replacement UI is synthesized."
+  ],
+  "carousel_contract": [
+    "Each .js-carousel initializes once through data-af-carousel-init=1 when track and at least one slide exist.",
+    "render() applies track translateX, slide aria-hidden, dot aria-current, counter, caption and carousel--single state.",
+    "manual is initialized once from carousel--manual and never changed by user interaction.",
+    "start() first stop()s any existing interval, then refuses a new 4000ms timer when manual, reduced-motion, fewer than two slides or disconnected.",
+    "Prev/next, dot, ArrowLeft/ArrowRight and qualified swipe move then call start(), so non-manual navigation resets/restarts the countdown.",
+    "mouseenter/focusin stop; mouseleave/focusout start without separate hover/focus state flags.",
+    "prefers-reduced-motion changes call start()."
+  ],
+  "broken_slide_contract": [
+    "drop() removes the slide and matching dot and reindexes remaining dots.",
+    "If no slides remain: drop() calls stop(), hides the nearest .project-card__extra/.hero-proof owner or carousel, then returns.",
+    "If exactly one slide remains: drop() calls stop() through the slides.length<2 branch, then clamps and re-renders with go(...).",
+    "If two or more slides remain: drop() does not stop/start; it clamps and re-renders, leaving the existing timer cadence un-reset by the removal itself."
+  ],
+  "current_acceptance": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+  "carousel_specific_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
+  "superseded_claims": [
+    "v001 source-runtime statement that drop() itself calls neither stop() nor start() in all cases",
+    "v001 pointer to interaction v002 as current plan",
+    "interaction v003 broken-slide no-stop caveat"
+  ],
+  "target_policy": "These source facts do not prove a target failure. Preserve the existing target BA/carousel owner; require synchronized live evidence and owner readback before any runtime mutation.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "SOURCE_BA_AND_CAROUSEL_RUNTIME_RECONCILED_V002"
+}
