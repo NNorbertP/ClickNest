@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "package": "bio-transaction-dependency-graph-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_NO_AUTHORIZATION",
+  "wordpress_writes": 0,
+  "global_gates": [
+    "STATE normal handoff to page256",
+    "+5 WPVibe target/quota verified; D11 >=10 preserved",
+    "Opera two existing tabs released",
+    "fresh page256 bytes/SHA/JSON + complete live ID35 readback reconciled",
+    "no unresolved 429/5xx"
+  ],
+  "nodes": [
+    {
+      "id": "CARRIER_PROBE",
+      "owner": "af260016",
+      "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "MUST_FINISH",
+      "postreadback": ["saved JSON", "rendered style once", "no visible change", "probe cleanup/reconciliation"],
+      "failure": "STOP all page-local CSS; no global fallback"
+    },
+    {
+      "id": "PHASE1_VISUAL",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-page-local-visual-delivery-20260914-v002.json",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "MUST_FINISH",
+      "postreadback": ["saved JSON", "style/internal marker counts", "technology/table/review/hero visual QA", "compact AX regression"],
+      "failure": "remove/reconcile only the new page-local style owner; preserve page content/ID35"
+    },
+    {
+      "id": "FAQ_ORDER",
+      "owner": "af260015 settings._css_classes",
+      "package": "build/bio-page256-next-safe-package-20260914-v015.json op1",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED",
+      "postreadback": ["server/frontend FAQ before CTA", "four details intact", "JSON valid"],
+      "enables": ["FAQ_CTA_STRUCTURE_VISUAL"]
+    },
+    {
+      "id": "REVIEW_ANCHOR",
+      "owner": "af26000d Atomic settings",
+      "package": "build/bio-page256-next-safe-package-20260914-v015.json op2",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_OPTIONAL",
+      "precondition": "fresh exact settings prove safe _cssid mechanism",
+      "postreadback": ["id=ugyfelvelemenyek exactly once", "deep-link lands on reviews", "Atomic Tabs/ID35 unchanged"]
+    },
+    {
+      "id": "REVIEW_ROLE_COPY",
+      "owner": "b2560031 paragraph value",
+      "package": "build/bio-page256-next-safe-package-20260914-v015.json op3",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED",
+      "precondition": "fresh saved role still short",
+      "postreadback": ["full source role exactly once", "tab accessible name unchanged", "JSON valid"]
+    },
+    {
+      "id": "TABLE_TITLE",
+      "owner": "af260011 compact caption/table opening",
+      "package": "build/bio-table-source-structure-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_CONDITIONAL",
+      "precondition": "one compact exact boundary includes complete caption/table opening",
+      "postreadback": ["caption role 0", "external title once", "aria-labelledby exact", "3 column headers + 4 rowHeaders preserved", "JSON valid"],
+      "enables": ["TABLE_TITLE_VISUAL"]
+    },
+    {
+      "id": "STRESS_ROLE",
+      "owner": "af260007 legacy root tag",
+      "package": "build/bio-stress-article-semantic-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED",
+      "precondition": "fresh saved af260007 proves exactly two whole-word aside tokens",
+      "postreadback": ["article=1 complementary=0", "text/list unchanged", "JSON valid"],
+      "warning": "Does NOT close physical p1/card/p2 order blocker"
+    },
+    {
+      "id": "STRESS_VISUAL",
+      "owner": "page-local style owner",
+      "package": "build/bio-stress-current-dom-visual-v003.css",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "SELF_CONTAINED_STYLE_APPEND",
+      "postreadback": ["visual p1+p2 left/card right", "mobile visual p1->p2->card", "AX order unchanged/known open"],
+      "warning": "Never count visual reorder as DOM/AX exactness"
+    },
+    {
+      "id": "CTA_MAIL_STRUCTURE",
+      "owner": "final mailto anchor visual children",
+      "package": "build/bio-cta-mail-structure-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED",
+      "postreadback": ["label then strong email", "href exact", "aria-label exact", "JSON valid"],
+      "enables": ["FAQ_CTA_STRUCTURE_VISUAL"]
+    },
+    {
+      "id": "FAQ_CTA_STRUCTURE_VISUAL",
+      "owner": "page-local style owner",
+      "package": "build/bio-faq-cta-source-layout-20260914-v006.json",
+      "depends_on": ["CARRIER_PROBE", "FAQ_ORDER", "CTA_MAIL_STRUCTURE"],
+      "atomic_window": "MUST_FINISH_WITH_DEPENDENCY_READBACK",
+      "postreadback": ["FAQ paper before separate forest CTA", "fourth wave correct", "h2 accessible name unchanged", "mail/button states", "responsive <=900/720/560"],
+      "warning": "Visual/source layout does not close exact FAQ runtime blocker"
+    },
+    {
+      "id": "REVIEW_ORDINAL",
+      "owner": "page-local style owner",
+      "package": "build/bio-review-ordinal-source-v001.css",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "MUST_FINISH_WITH_AX_READBACK",
+      "postreadback": ["one visible ordinal each", "zero standalone ordinal AX text", "exact tab names unchanged"],
+      "failure": "rollback this block alone"
+    },
+    {
+      "id": "REVIEW_POINTS_DIAGNOSTIC",
+      "owner": "active Panasonic panel AX only",
+      "package": "build/bio-review-points-semantics-20260914-v001.json diagnostic phase",
+      "depends_on": [],
+      "atomic_window": "READ_ONLY",
+      "postreadback": ["source list1/items3", "target current list0/items0", "protected reading order captured"],
+      "enables": ["REVIEW_POINTS_CANDIDATE"]
+    },
+    {
+      "id": "REVIEW_POINTS_CANDIDATE",
+      "owner": "Panasonic point span semantics",
+      "depends_on": ["REVIEW_POINTS_DIAGNOSTIC"],
+      "atomic_window": "HOLD_UNTIL_BOUNDARY_AND_AX_PROOF",
+      "postreadback": ["list1/items3", "no duplicate/reordered protected text", "tab/panel relationships unchanged"]
+    },
+    {
+      "id": "STRESS_PHYSICAL_ORDER",
+      "owner": "af260007 full content owner",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "No exact saved owner snapshot and no supported atomic node move; do not budget speculative mutation."
+    },
+    {
+      "id": "EXPECTATIONS_ARTICLE_OWNERSHIP",
+      "owner": "af260013 full ownership boundary",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "No complete exact owner snapshot; source ownership spans nodes separated in current target."
+    },
+    {
+      "id": "FAQ_EXACT_RUNTIME",
+      "owner": "unknown sanctioned physically page-local runtime",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "Global Code Snippets/ID35 mutation forbidden; CSS cannot change disclosure runtime to exact source button/keyboard/motion behavior."
+    },
+    {
+      "id": "REVIEW_PREV_NEXT_PANEL_FOCUS",
+      "owner": "unknown sanctioned page-local owner or explicitly broadened live ID35 scope",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "Live ID35 switches tabs but does not explicitly focus new panel; stale repo mirror cannot be used to rewrite it."
+    }
+  ],
+  "safe_partial_window_policy": [
+    "Only start nodes marked SELF_CONTAINED/READ_ONLY when the whole node + postreadback + rollback margin fits above D11 reserve.",
+    "Never start a dependency node if its required predecessors have not been freshly verified in the same current live state.",
+    "Nodes marked MUST_FINISH cannot be split across uncertain 429/5xx states.",
+    "HARD_BLOCKER nodes receive zero speculative mutation budget."
+  ],
+  "pixel_pass": false
+}
