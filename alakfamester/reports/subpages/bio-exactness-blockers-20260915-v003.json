@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "package": "bio-exactness-blockers-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_HARD_BLOCKERS_NOT_TO_BE_BYPASSED",
+  "supersedes": "reports/subpages/bio-exactness-blockers-20260914-v002.json",
+  "semantic_oracle": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+  "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v001.json",
+  "semantic_rule": "Final acceptance is section-local and interaction-local. Whole-page counts, screenshot similarity, prepared CSS and role-count-only changes are never exactness proof.",
+  "blockers": [
+    {
+      "id": "scope_remote",
+      "area": "remote execution",
+      "current_block": "Fresh STATE.md still assigns WordPress write scope to page264 only; its scope-release gate remains not released. WPVibe is disabled/unavailable in this chat; current site/quota unknown. Opera is disconnected/unavailable for fresh acceptance.",
+      "identity_gate": "The user-authorized page256 WPVibe identity is ncsnorbert+20260914-4@gmail.com. Copied +5 references are documentation drift and do not authorize mutation.",
+      "unsafe_shortcut_forbidden": "Do not steal scope/tabs, rewrite STATE to force a handoff, use stale quota/account values, switch accounts silently, mutate page264, or use global/shared fallbacks.",
+      "resolution": "Explicit page264 release/handoff + exact live +4 profile/site/quota + successful Elementor skill load + fresh page256/full ID35 reconciliation + released two-tab browser when acceptance requires it."
+    },
+    {
+      "id": "page_local_css_carrier",
+      "area": "visual delivery",
+      "current_block": "Shared/global CSS is forbidden and af260016 has not yet passed the inert page-local style carrier probe.",
+      "safe_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+      "unsafe_shortcut_forbidden": "No Hello Additional CSS, plugin/theme/snippet or second hidden style-owner fallback.",
+      "resolution": "Probe PASS with saved JSON + rendered marker exactly once + original visible af260016 content/order unchanged + rollback margin."
+    },
+    {
+      "id": "review_points_semantics",
+      "area": "Panasonic review body",
+      "source_requirement": "One testimonial-points list with exactly three listitems between intro and final testimonial text.",
+      "current_target_last_trusted": "Five inline span siblings inside p.af-review-text; the three middle point strings lack list/listitem semantics.",
+      "candidate": "build/bio-review-points-semantics-20260914-v001.json",
+      "remaining_block": "The ARIA-equivalent candidate has not been freshly verified against active-panel AX and may reorder/duplicate the Atomic paragraph/tabPanel reading order.",
+      "unsafe_shortcut_forbidden": "No invalid block ul/li insertion into a p, duplicated visible text, whole-page count shortcut or unverified aria-owns deployment.",
+      "resolution": "Fresh source/target active-panel AX + isolatable saved boundaries, then only a compact mapping whose AX readback is list1/items3 in source order with intro/final outside and tab/panel semantics unchanged."
+    },
+    {
+      "id": "stress_dom_order",
+      "area": "af260007 stress",
+      "source_requirement": "Physical saved/read/AX order p1 -> p2 -> article/list.",
+      "current_target_last_trusted": "p1 -> card/aside/list -> p2.",
+      "safe_partial": "Current-DOM visual CSS may reproduce the source visual composition; a tag-only article-role change may be possible if a fresh complete saved boundary proves it.",
+      "remaining_block": "Repository audit found no complete byte-exact af260007 owner snapshot and no proven supported single atomic node move/replacement that relocates p2 before the card.",
+      "unsafe_shortcut_forbidden": "No obsolete v014 paragraph wrapper, duplicate/delete text, multi-call invalid wrapper surgery, JS reorder or old full-blob restore.",
+      "resolution": "Fresh complete live saved owner plus a supported single atomic owner-level transformation; otherwise remain OPEN."
+    },
+    {
+      "id": "expectations_article_ownership",
+      "area": "af260013 expectations",
+      "source_requirement": "Two source-equivalent article owners with correct left/right child ownership, while preserving exact visible content/lists/links.",
+      "current_target_last_trusted": "Relevant headings/lists/body/link are split across separated sibling/wrapper nodes rather than two source-equivalent articles.",
+      "source_contract": "build/bio-expectations-source-structure-20260914-v004.json",
+      "remaining_block": "No complete byte-exact saved owner snapshot or proven one-transaction regrouping primitive exists.",
+      "unsafe_shortcut_forbidden": "No multi-step opening/closing wrapper writes, copy duplication, role assignment to wrong wrappers, JS reparenting or old v002/v003 expectations replay.",
+      "resolution": "Fresh complete live saved owner plus one supported atomic ownership transform; otherwise remain OPEN."
+    },
+    {
+      "id": "FAQ_exact_runtime",
+      "area": "FAQ",
+      "source_requirement": "Four button controls with synchronized aria-expanded/controls, sibling ArrowUp/Down/Left/Right + Home/End focus collection and source 280ms/220ms panel motion.",
+      "current_target_last_trusted": "Functional native details/summary disclosure controls.",
+      "oracle": "build/bio-faq-source-interaction-contract-20260914-v001.json",
+      "safe_partial": "build/bio-faq-cta-page-local-delivery-20260915-v001.json may make static layout/appearance source-like after dependencies.",
+      "remaining_block": "No sanctioned physically page-local runtime owner is proven under current scope.",
+      "unsafe_shortcut_forbidden": "No ad-hoc script inferred from CSS carrier, global Code Snippets/ID35/plugin edit, fake unsynchronized ARIA or CSS-only PASS claim.",
+      "resolution": "A sanctioned page-local/runtime owner or explicit scope/project change with exact interaction regression testing."
+    },
+    {
+      "id": "review_prev_next_focus",
+      "area": "reviews",
+      "source_requirement": "Previous/next changes the review and focuses the newly active tabpanel.",
+      "current_target_last_trusted": "Live ID35 step controls switch tabs through tab.click() but public runtime evidence showed no explicit active-panel focus.",
+      "safe_partial": "Preserve native Atomic Tabs, af-project keyboard behavior, current live ID35 naming/dot semantics and locally fix presentation only.",
+      "unsafe_shortcut_forbidden": "No Atomic Tabs replacement, stale build/bio-semantic-runtime-v001.php replay, global ID35 mutation or duplicate source review runtime.",
+      "resolution": "Fresh live behavior/ID35 readback plus a sanctioned physical runtime owner for the smallest focus-only correction; otherwise remain OPEN."
+    },
+    {
+      "id": "review_ordinal_AX",
+      "area": "review tabs",
+      "source_requirement": "One visible ordinal per tab and no ordinal contribution to AX because the source mark is decorative/hidden.",
+      "current_target_last_trusted": "Two generated textual ordinal owners can visually/AX-duplicate the number.",
+      "safe_candidate": "build/bio-review-ordinal-source-v001.css after carrier PASS",
+      "remaining_block": "Browser AX effect of replacing generated text with a decorative SVG background is not freshly proven.",
+      "resolution": "Fresh owner diagnostic -> isolated marked local-style append -> immediate visual/AX readback proving one visible mark, zero standalone ordinal staticText and exact tab names."
+    },
+    {
+      "id": "responsive_unverified",
+      "area": "responsive and final visual QA",
+      "source_requirement": "Source-equivalent behavior/visuals at normalized desktop and critical <=1000/900/760/720/560/~390 thresholds.",
+      "current_block": "No current same-browser final target/reference acceptance exists after the pending page-local work; technology icon badge exact geometry, review media owner, mobile h2 owner and hero CTA state also remain measurement gates.",
+      "safe_plan": "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+      "unsafe_shortcut_forbidden": "No memory-heavy duplicate tabs, repeated full-page/whole-AX dumps, screenshot inference without normalized viewport/DPR, or unmeasured CSS overrides.",
+      "resolution": "After required writes, reuse at most one source + one target Opera tab and complete section-local visual/AX/interaction acceptance one viewport at a time."
+    }
+  ],
+  "blocker_count": 9,
+  "rule": "A blocker clears only with fresh explicit resolution evidence. A partial visual fix, prepared artifact, no-op planning file or aggregate count match cannot clear it.",
+  "current_result": "EXACT_PARITY_BLOCKED; safe preparation is advanced but perfect/reference-exact PASS is not currently truthful.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
