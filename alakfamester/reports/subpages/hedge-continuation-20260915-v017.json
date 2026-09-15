@@ -1,0 +1,81 @@
+{
+  "schema_version": 17,
+  "package": "hedge-continuation-20260915-v017",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "page272-specific runtime/content only",
+  "wordpress_writes_this_continuation": 0,
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required_before_write": true
+  },
+  "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v010.json",
+  "current_chain": {
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "live_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json"
+  },
+  "additional_reconciliations": [
+    "reports/subpages/hedge-gallery-final-state-reconciliation-20260915-v001.json",
+    "reports/subpages/hedge-heading-evidence-reconciliation-20260915-v001.json",
+    "reports/subpages/hedge-cross-project-pointer-audit-20260915-v001.json",
+    "reports/subpages/hedge-canonical-matrix-pointer-audit-20260915-v001.json",
+    "build/hedge-form-required-server-plan-20260915-v003.json"
+  ],
+  "only_conditional_write": "Existing Code Snippets ID36 -> semantic v005 only after fresh baseline + exact rollback + review/Form33 cardinality + resolved native ARIA/IDREF + unique-ID + budget/readback gates. v005 is NOT live.",
+  "v005_reason": "Unlike prepared v004, v005 preserves existing native aria-describedby/aria-labelledby IDREF tokens and leaves unexpected service roles untouched. This hardening does not remove the live ownership/error-state gate.",
+  "closed_preserve": [
+    "26/26 shared media recovery; no future Hedge shared-media writes",
+    "EAEL final 28/28 id=0/full/original URLs/exact names/order; partial 4/28 recovery checkpoint is stale",
+    "hero accessible SVG",
+    "proof 21 images and historical 4000ms autoplay proof",
+    "review 3-tab/3-panel structure and exact tab names",
+    "five legacy named regions",
+    "CTA/contact exact semantics + 24h sentence",
+    "D09 links/anchors",
+    "removed legacy widgets absent",
+    "heading visible-text set historically matched",
+    "no current page272 CSS candidate"
+  ],
+  "read_first": [
+    "all three review panel exact quote/author-company-role/image content and wiring",
+    "complete roots for hero/gallery/form outer named regions",
+    "heading level/order/role only",
+    "proof carousel group/listitem parent+owner decision",
+    "Form33 service required saved config + safe native rejection",
+    "dynamic validation ARIA only without network/entry",
+    "document head title/description/canonical/robots/OG/schema"
+  ],
+  "proof_only": [
+    "review direct interactions unless a failure reproduces",
+    "proof carousel arrows/swipe/pause/reduced-motion",
+    "Hedge lightbox until source-specific zoom/click evidence",
+    "visual/CSS until synchronized current local delta + owner proof"
+  ],
+  "external_shared_observation_only": [
+    "global header Services-parent current state",
+    "global floating contact dock",
+    "footer gross regression"
+  ],
+  "formal_status": "PIXEL_PASS=false; original frozen acceptance/behavior specs and runner are absent/unrecoverable from inspected Git. No fabricated replacement is used.",
+  "tool_state": {
+    "wpvibe": "disabled; no further calls in this conversation",
+    "opera": "not connected on one list-tabs attempt; zero new tabs; no reconnect loop",
+    "public_target_reference_http": "not trustworthy/available; stopped",
+    "github": "available"
+  },
+  "parallel_repo_state": "STATE.md is page264-only and may be changing in another continuation; do not overwrite it from this page272 lane.",
+  "future_wpvibe_budget": "Nominal max 9 calls; preserve >=10 D11 reserve; exact current quota unknown because tool is disabled.",
+  "smtp_or_external_submission": false,
+  "real_form_submission": false,
+  "pixel_pass": false,
+  "status": "PAGE272_V010_CHAIN_CHECKPOINTED_NO_LIVE_MUTATION"
+}
