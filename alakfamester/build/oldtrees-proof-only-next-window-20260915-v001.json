@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "package": "oldtrees-proof-only-next-window-20260915-v001",
   "date": "2026-09-15",
   "page_id": 264,
@@ -7,11 +7,13 @@
   "objective": "Finish the remaining page264 proof-only acceptance with the fewest remote calls and at most one source + one target browser tab, while preserving the released implementation exactly.",
   "authoritative_inputs": {
     "implementation_closeout": "reports/subpages/oldtrees-live-closeout-20260915-v001.json",
-    "continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v015.json",
     "proof_reconciliation": "reports/subpages/oldtrees-proof-only-reconciliation-20260915-v002.json",
     "acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
     "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
     "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v010.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+    "source_carousel_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
     "direct_source_runtime": "build/source-interactions-v001.js",
     "hero": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
     "dock": "build/floating-contact-dock-diagnostic-plan-20260915-v003.json",
@@ -40,7 +42,7 @@
       "Keep at least 10 calls unused for D11 closeout/recovery."
     ],
     "opera": [
-      "Call list-tabs once.",
+      "Call list-tabs once only when browser QA is actually going to run.",
       "Keep or navigate at most two tabs total: one source page264 and one target page264.",
       "Close unrelated project tabs before screenshots.",
       "If stale/not-found/disconnected, stop Opera for the continuation; do not open replacement fan-out."
@@ -73,6 +75,7 @@
     "expected_calls": 1
   },
   "phase_3_action_proof_order": {
+    "prerequisite": "Use build/oldtrees-interaction-acceptance-20260915-v004.json, not v003 or older.",
     "why_ordered": "Run cheapest deterministic interactions first and reuse the same two tabs/state; do not reopen already-passed static work.",
     "tests": [
       {
@@ -93,7 +96,7 @@
       {
         "id": "nordmann",
         "source_target": "Synchronize slide index/caption; record carousel--manual. On non-manual instance verify ~4000ms fresh autoplay, successful navigation -> start() interval reset, ArrowLeft/Right, >=40px horizontally dominant swipe, simple/compound hover-focus pause behavior and reduced-motion. Compare current/noncurrent role/aria-hidden and all six caption/alt entries.",
-        "drop_contract": "Direct source truth: zero remaining -> stop()+hide+return; one remaining -> stop()+go(); two or more remaining -> drop() itself does not stop/restart solely because of removal. Do not manufacture broken images merely to force this edge case.",
+        "drop_contract": "Direct source truth: zero remaining -> stop()+hide+return; one remaining -> stop()+go(); two or more remaining -> no stop/start solely because of removal. Do not manufacture broken images merely to force this edge case.",
         "write_if_fail": "None without stable target-only failure and exact current runtime owner."
       },
       {
@@ -122,7 +125,18 @@
     ],
     "decision": "Only if a target-only delta survives identical browser/state and an exact winning/losing declaration is named may a page264-local correction be prepared. Otherwise record PASS/measurement-no-fix."
   },
-  "phase_5_dock_scope_gate": {
+  "phase_5_inner_form_visual_gate": {
+    "source_contract": "Use build/oldtrees-form-field-visual-diagnostic-20260915-v001.json. No inner-field defect is currently reproduced.",
+    "measure_only_if_browser_stable": [
+      "desktop two-column grid and responsive one-column collapse",
+      "text control min-height/padding/background/border/radius",
+      "textarea rows5/min-height",
+      "radio desktop columns and mobile collapse",
+      "zero horizontal overflow"
+    ],
+    "rule": "If source-equivalent, mark PASS and write nothing. Never restyle fields from memory or plugin defaults."
+  },
+  "phase_6_dock_scope_gate": {
     "read_only_first": [
       "fresh target dock DOM ancestry/classes and link geometry",
       "source dock structure if present",
@@ -131,10 +145,10 @@
     ],
     "rule": "No global dock/header/footer write from page264. If the actual owner is shared/global and cannot be corrected strictly below body.page-id-264 without breaking other pages, record it as a scope blocker rather than changing it."
   },
-  "phase_6_deterministic_matrix": {
+  "phase_7_deterministic_matrix": {
     "views": ["1920x1080","1440x1000","1024x900","768x1024","390x844","360x800"],
-    "memory_strategy": "Reuse the same two tabs and process viewports sequentially; after each viewport persist only the required evidence and discard transient screenshots from browser memory if the connector permits. Never fan out one tab per viewport.",
-    "state": "Same browser engine, DPR, zoom, font/image readiness, scroll position and motion state. Synchronize reviews/carousel or exclude their moving pixels from static diff.",
+    "memory_strategy": "Reuse the same two tabs and process viewports sequentially; after each viewport persist only required evidence and avoid extra project tabs. Never fan out one tab per viewport.",
+    "state": "Same browser engine, DPR, zoom, font/image readiness, scroll position and motion state. Synchronize reviews/carousel or exclude moving pixels from static diff.",
     "outputs_per_view": ["source screenshot","target screenshot","overlay/diff","key geometry","horizontal overflow result"],
     "known_breakpoints": ["problem grid 4->2 at <=960->1 at <=760","comparison 2->1 at <=900","contact strong .92rem/right padding <=560 and button width100% <=400"],
     "pixel_pass_rule": "Set PIXEL_PASS only after this matrix actually completes with documented thresholds; never infer it from targeted v006/v007 PASS."
@@ -143,14 +157,14 @@
     "server_preflight": 1,
     "runtime_identity": 1,
     "optional_targeted_owner_reads_after_proven_failure": "0-3",
-    "browser_actions": "Opera connector actions do not spend WPVibe calls but are memory-limited to two tabs.",
+    "browser_actions": "Browser actions do not spend WPVibe calls but are memory-limited to two project tabs.",
     "write_budget": "0 by default; implementation remains closed.",
     "reserve": 10,
     "rule": "Do not spend WPVibe calls on repeated HTML/static facts already accepted."
   },
   "stop_conditions": [
     "First WPVibe call still 429/5xx/disabled.",
-    "Opera disconnect/stale/not-found state.",
+    "Browser disconnect/stale/not-found state.",
     "Fresh saved-data/marker/runtime identity drift is unexplained.",
     "No stable synchronized source state for an interaction/geometry comparison.",
     "A suspected issue cannot be isolated to a page264-authorized owner/cascade.",
@@ -159,5 +173,5 @@
   "next_wordpress_write": "NONE_PLANNED",
   "wordpress_writes": 0,
   "pixel_pass": false,
-  "status": "READY_AFTER_THROTTLE_FOR_LOW_CALL_TWO_TAB_PROOF_ONLY_CLOSEOUT"
+  "status": "READY_AFTER_THROTTLE_FOR_LOW_CALL_TWO_TAB_PROOF_ONLY_CLOSEOUT_V2"
 }
