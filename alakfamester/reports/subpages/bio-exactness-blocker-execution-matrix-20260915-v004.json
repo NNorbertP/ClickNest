@@ -1,0 +1,63 @@
+{
+  "schema_version": 4,
+  "package": "bio-exactness-blocker-execution-matrix-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_EXECUTION_CLASSIFICATION_READ_ONLY",
+  "supersedes_for_execution": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v003.json",
+  "class_A_small_edit_or_noop": [
+    "FAQ_ORDER via v016",
+    "REVIEW_ANCHOR via v016 only with safe supported Atomic id owner",
+    "REVIEW_ROLE_COPY via v016",
+    "TABLE_TITLE via v016 only with one complete caption/table boundary",
+    "CTA_MAIL_STRUCTURE with one complete anchor-child boundary"
+  ],
+  "class_B_carrier_dependent_visual": [
+    "PHASE1_VISUAL via build/bio-page-local-visual-delivery-20260915-v003.json",
+    "TABLE_TITLE_VISUAL via build/bio-table-source-structure-v001.css after TABLE_TITLE PASS",
+    "STRESS_VISUAL via build/bio-stress-current-dom-visual-v003.css after cascade proof",
+    "EXPECTATIONS_VISUAL via build/bio-expectations-source-structure-v003.css only after expectations structure PASS",
+    "FAQ_CTA_STATIC and FAQ_WAVE4 via v002 dependencies",
+    "REVIEW_ORDINAL isolated with immediate AX"
+  ],
+  "class_C_one_shot_owner_transform_required": [
+    {
+      "item":"STRESS_PHYSICAL_ORDER",
+      "candidate":"build/bio-stress-article-resume-20260915-v002.json",
+      "gate":"fresh complete af260007 owner + one single owner-level transform preserving bytes/classes/content; role-only tag edit is separate and cannot clear order"
+    },
+    {
+      "item":"EXPECTATIONS_ARTICLE_OWNERSHIP",
+      "candidate":"build/bio-expectations-source-structure-20260915-v005.json",
+      "gate":"supported fresh complete af260013 owner read + exactly one guarded owner-value edit creating both article owners; otherwise remain OPEN"
+    }
+  ],
+  "class_D_diagnostic_then_one_boundary_candidate": [
+    {
+      "item":"REVIEW_POINTS_SEMANTICS",
+      "candidate":"build/bio-review-points-semantics-20260915-v002.json",
+      "preferred_shape":"physical inline role=list wrapper around the existing three point spans, each role=listitem",
+      "gate":"active-panel source/target AX + one complete contiguous 3-span saved boundary + proof current visual CSS does not require direct p>span ownership, or an exact page-local replacement selector is proven",
+      "fallback":"keep OPEN; aria-owns is diagnostic context, not automatic write fallback"
+    },
+    {
+      "item":"STRESS_ROLE_ONLY",
+      "candidate":"build/bio-stress-article-resume-20260915-v002.json",
+      "gate":"both aside boundaries in one unique owner slice; one edit only"
+    }
+  ],
+  "class_E_no_physical_runtime_owner": [
+    "FAQ_EXACT_RUNTIME: native details remains working but source button/aria/keyboard/motion cannot be declared exact without sanctioned page-local runtime owner",
+    "REVIEW_PREV_NEXT_PANEL_FOCUS: preserve ID35; no global mutation until sanctioned physical owner exists"
+  ],
+  "class_F_measurement_only_before_related_change": ["responsive 1000/900/760/720/560/~390", "mobile h2 winning owner", "first review media aspect/fit", "hero CTA state", "technology icon exact geometry", "final section-local pixel/AX/interaction acceptance"],
+  "dependency_graph":"build/bio-transaction-dependency-graph-20260915-v004.json",
+  "runbook":"build/bio-next-remote-window-20260915-v009.json",
+  "budget":"build/bio-remote-call-budget-20260915-v009.json",
+  "global_stop_rules": ["page264 not released", "page256 live identity not exact +4", "site/quota unknown or insufficient above D11=10", "Elementor skill unavailable", "Opera unavailable for browser-required node", "429/5xx ambiguous until readback", "non-unique owner boundary", "protected regression"],
+  "body_blocker_count":9,
+  "shared_global_gate_count":2,
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
