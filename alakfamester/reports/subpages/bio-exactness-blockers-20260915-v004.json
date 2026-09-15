@@ -1,0 +1,82 @@
+{
+  "schema_version": 4,
+  "package": "bio-exactness-blockers-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_HARD_BLOCKERS_NOT_TO_BE_BYPASSED",
+  "supersedes_for_execution": "reports/subpages/bio-exactness-blockers-20260915-v003.json",
+  "semantic_oracle": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+  "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v002.json",
+  "rule": "A blocker clears only with fresh explicit resolution evidence. Prepared files, visual approximation, role counts or no-op planning cannot clear it.",
+  "blockers": [
+    {
+      "id": "scope_remote",
+      "current_block": "STATE/page264 v014 release gate remains NOT_RELEASED; WPVibe unavailable/current quota unknown; Elementor skill unavailable; Opera disconnected.",
+      "identity_gate": "Future page256 mutation requires exact ncsnorbert+20260914-4@gmail.com; +5/other identity is not authorization.",
+      "resolution": "Normal page264 release/handoff + exact live +4/site/quota + D11 margin + successful Elementor skill + fresh page256/ID35 reconciliation + released browser pair when required."
+    },
+    {
+      "id": "page_local_css_carrier",
+      "current_block": "af260016 has not yet passed the corrected inert page-local style carrier proof; global/shared CSS is forbidden.",
+      "safe_probe": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+      "dependent_phase1": "build/bio-page-local-visual-delivery-20260915-v003.json",
+      "resolution": "Probe PASS with valid saved JSON, exactly one active rendered marker, no visible change and original af260016 content/order preserved; clean/reconcile probe before final owner creation."
+    },
+    {
+      "id": "review_points_semantics",
+      "source_requirement": "Active Panasonic testimonial has exactly one 3-item semantic list between intro and final text.",
+      "last_trusted_target": "Three middle point strings are inline span siblings inside p.af-review-text without list/listitem semantics.",
+      "candidate": "build/bio-review-points-semantics-20260914-v001.json",
+      "resolution": "Fresh section-local source/target AX + isolatable saved boundaries; authorize only if readback gives list1/items3 in exact order with intro/final outside and Atomic tabPanel order/name unchanged."
+    },
+    {
+      "id": "stress_dom_order",
+      "source_requirement": "saved/read/AX order p1 -> p2 -> article/list",
+      "last_trusted_target": "p1 -> card/list -> p2",
+      "resolution": "Fresh complete af260007 owner plus one supported single atomic owner-level transformation; otherwise remain OPEN.",
+      "forbidden": "obsolete wrapper surgery, duplication/deletion, multi-call partial wrapper edits, JS reorder, old full-blob restore"
+    },
+    {
+      "id": "expectations_article_ownership",
+      "source_requirement": "two source-equivalent article owners with correct left/right child ownership",
+      "last_trusted_target": "relevant content is split across sibling/wrapper nodes",
+      "resolution": "Fresh complete af260013 owner plus one safe atomic ownership regrouping primitive; otherwise remain OPEN.",
+      "forbidden": "multi-step wrapper surgery, fake roles, JS reparenting, old expectations package replay"
+    },
+    {
+      "id": "FAQ_exact_runtime",
+      "source_requirement": "four buttons with synchronized aria-expanded/controls, sibling arrow/Home/End focus collection and 280ms/220ms motion",
+      "last_trusted_target": "functional native details/summary",
+      "static_partial": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+      "resolution": "sanctioned physical page-local runtime owner or explicit project/scope change plus exact interaction regression testing",
+      "forbidden": "ad-hoc JS inferred from CSS carrier, global ID35/Code Snippets/plugin mutation, fake unsynchronized ARIA"
+    },
+    {
+      "id": "review_prev_next_focus",
+      "source_requirement": "step navigation changes review and focuses newly active tabpanel",
+      "last_trusted_target": "live ID35 switches through tab.click() without explicit panel focus",
+      "resolution": "Fresh live behavior/ID35 readback plus sanctioned physical runtime owner for the smallest focus-only correction; otherwise OPEN.",
+      "forbidden": "stale ID35 repo replay, global ID35 mutation, Atomic Tabs replacement"
+    },
+    {
+      "id": "review_ordinal_AX",
+      "source_requirement": "one visible ordinal per tab and zero ordinal contribution to AX",
+      "last_trusted_target": "two generated textual ordinal owners can duplicate visual/AX number",
+      "candidate": "build/bio-review-ordinal-source-v001.css after corrected carrier PASS",
+      "resolution": "Fresh generated-owner diagnostic -> isolated page-local append -> immediate visual/AX readback proving one mark, zero standalone ordinal staticText and exact tab names."
+    },
+    {
+      "id": "responsive_unverified",
+      "source_requirement": "source-equivalent desktop plus critical 1000/900/760/720/560/~390 behavior",
+      "current_block": "No fresh same-browser final acceptance after pending local work; technology icon geometry, review media, mobile h2 and hero CTA remain measurement gates.",
+      "safe_plan": "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+      "resolution": "After required writes, reuse at most one source + one target tab; complete section-local visual/AX/interaction acceptance one viewport at a time."
+    }
+  ],
+  "blocker_count": 9,
+  "shared_global_whole_page_gates": "Tracked separately in reports/subpages/bio-shared-chrome-exactness-audit-20260915-v001.json and do not change the 9 body blocker classes.",
+  "current_result": "EXACT_PARITY_BLOCKED",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
