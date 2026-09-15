@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "package": "bio-faq-cta-v005-static-qa-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_SOURCE_CASCADE_QA_PASS_LIVE_RENDER_UNPROVEN",
+  "delivery": "build/bio-faq-cta-page-local-delivery-20260915-v005.json",
+  "wave_spacing_reconciliation": "reports/subpages/bio-wave-spacing-reconciliation-20260915-v002.json",
+  "checks": {
+    "base_payload": "PASS_STATIC: source layout + mail label + mail interaction + form-button interaction + normal source section spacing.",
+    "axis_ownership": "PASS_STATIC: source-layout-v002 owns horizontal padding/layout; spacing-base-v002 owns top/bottom only, so axes do not overwrite each other.",
+    "normal_section_rhythm": "PASS_STATIC: base spacing uses normal source section clamps on desktop and <=720 without subtracting 24px.",
+    "wave4": "PASS_STATIC: separate wave-faq-v002 restores the source -1px seam overlap and does not alter FAQ padding.",
+    "post_wave": "PASS_STATIC: post-wave-top-v001 changes only padding-top; bottom rhythm remains the base value.",
+    "conditional_reduction": "PASS_STATIC: post-wave top override is unreachable until wave4 PASS plus fresh geometry proof; no early 24px subtraction.",
+    "eyebrow": "PASS_STATIC: obsolete H2-eyebrow and outer-label-guard companion files remain excluded.",
+    "runtime": "PASS_STATIC: no JavaScript introduced; native FAQ remains the current functional runtime and exact source runtime stays OPEN."
+  },
+  "live_required": [
+    "base layout + normal section spacing tight source/target proof",
+    "wave4 seam proof",
+    "post-wave geometry measurement at desktop and <=720",
+    "no-op post-wave PASS or one top-only override",
+    "CTA H2 AX name, mail/form uniqueness and native FAQ controls unchanged"
+  ],
+  "result": "STATIC_SOURCE_CASCADE_MODEL_PASS; LIVE_EXACTNESS_FALSE",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
