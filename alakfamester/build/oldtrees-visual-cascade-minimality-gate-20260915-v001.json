@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-visual-cascade-minimality-gate-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Read-only decision gate for the two prepared page264 visual cascade fixes. This file does not authorize a WordPress write and creates no CSS replacement by itself.",
+  "purpose": "Prefer the smallest proven cascade override while preserving the already-live v004/v005 geometry and appearance. Do not weaken the existing both/one/neither deployment gate.",
+  "authoritative_inputs": {
+    "v004_live_contract": "build/oldtrees-visual-parity-v004.css",
+    "v005_live_contract": "build/oldtrees-visual-parity-v005-cascade-fix.css",
+    "v006_candidate": "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "v007_candidate": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+    "cascade_audit": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "v006_qa": "reports/subpages/oldtrees-visual-v006-contact-text-static-qa-20260914-v001.json",
+    "v007_qa": "reports/subpages/oldtrees-visual-v007-comparison-grid-static-qa-20260914-v001.json",
+    "direct_compare": "reports/subpages/oldtrees-direct-live-compare-20260914-v005.json"
+  },
+  "known_static_truth": {
+    "v006": "v004 already declares source-white contact foreground. v006 repeats only the source values with page264-scoped !important and changes no layout/background/spacing property.",
+    "v007": "v004 already declares display:grid, repeat(2,minmax(0,1fr)), gap:24px and stretch. The freshest post-v005 capture showed unequal target card widths, but the prior evidence did not identify which exact computed declaration lost. v007 strengthens those four root properties plus card width/max-width/min-width and preserves the <=900px one-column contract.",
+    "v005_non_overlap": "v005 owns card align-self/height and beige/sage backgrounds only; neither candidate overwrites a v005-owned property."
+  },
+  "browser_capability_note": "The available Opera connector exposes tabs, accessibility content and screenshots but no JavaScript/computed-style evaluation. Do not claim a winning CSS declaration merely from a screenshot. If a future tool can expose computed style or exact winning rules, use that evidence; otherwise use the existing source-contract candidate rather than inventing an unproven narrower patch.",
+  "v006_minimality_gate": {
+    "fresh_fail_condition": "In the same trusted source/target state, the target green contact label/value foreground is still dark while the reference is white.",
+    "preferred_extra_evidence_if_available": [
+      "computed color for .contact-btn",
+      "computed color for .contact-btn__label",
+      "computed color for .contact-btn strong",
+      "winning declaration/source for each mismatching color"
+    ],
+    "decision": {
+      "failure_absent": "No v006 write.",
+      "failure_present_without_property_owner_tool": "Existing v006 remains an acceptable minimal candidate because it is color-only, page264-scoped and value-identical to the source contract; do not create another CSS variant merely to guess which child rule loses.",
+      "failure_present_with_exact_owner_proof": "A narrower future artifact may be prepared only if exact evidence proves one of the three v006 declarations is unnecessary. It must not replace the current artifact until separately parser/scope-checked and added to the deploy manifest."
+    }
+  },
+  "v007_minimality_gate": {
+    "fresh_fail_condition": "At a matched >900px state, source comparison cards are equal width and target cards remain unequal with source-like v005 surfaces/icons/bullets otherwise intact.",
+    "measure_if_exact_style_geometry_tooling_is_available": {
+      "split": ["display", "grid-template-columns", "gap/column-gap", "align-items", "bounding width"],
+      "cards": ["bounding width for each direct card", "width", "min-width", "max-width", "box-sizing", "flex-basis", "flex-grow", "flex-shrink"]
+    },
+    "decision": {
+      "failure_absent": "No v007 write.",
+      "root_grid_wrong": "Existing v007 is justified; it restores the exact v004/source root grid contract and neutralizes child width constraints.",
+      "root_grid_exact_but_child_constraint_proven": "Prepare a new narrower child-only candidate only from exact proof, parser/scope-check it, and update the manifest before using it. Do not hand-edit v007 during the live write.",
+      "exact_owner_unavailable_but_failure_reproduces": "Use the existing parser-checked v007 if the normal preflight passes. It is a value-identical strengthening of the source grid contract, does not overlap v005-owned properties, and is safer than inventing an unverified alternative.",
+      "ambiguous_or_moving_state": "HOLD. Do not write."
+    }
+  },
+  "cross_component_preserve": [
+    "Never replay or edit live v004/v005.",
+    "Never change page264 Elementor data for v006/v007.",
+    "Never change comparison backgrounds, borders, height, icons, bullets, typography or copy from this gate.",
+    "Never change request button geometry, background, hover transform, responsive width or MetForm behavior from this gate.",
+    "Never use a screenshot-only impression to invent a new property owner.",
+    "At most one selected exact repository artifact insertion after the standard both/one/neither fresh gate."
+  ],
+  "status": "PREPARED_READ_ONLY_MINIMALITY_GATE_NO_LIVE_WRITE",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
