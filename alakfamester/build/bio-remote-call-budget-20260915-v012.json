@@ -1,0 +1,31 @@
+{
+  "schema_version": 12,
+  "package": "bio-remote-call-budget-20260915-v012",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_SCOPE_AND_SKILL_REQUIRED",
+  "supersedes_for_execution": "build/bio-remote-call-budget-20260915-v011.json",
+  "DAG": "build/bio-transaction-dependency-graph-20260915-v007.json",
+  "identity": "Exact live ncsnorbert+20260914-4@gmail.com; current site/quota must be read fresh; D11 >=10.",
+  "cost_model": {
+    "base_preflight": "6-8 logical WPVibe actions",
+    "carrier_probe": "4-6 plus rollback/readback margin",
+    "phase1_v004": "4-5",
+    "small_microfix": "~3 each or no-op PASS; table-title ~3-5",
+    "table_title_visual": "~2-3 after structure + carrier PASS",
+    "stress_role": "~3 only on one complete boundary; physical order zero speculative budget",
+    "expectations_one_shot": "zero speculative; if complete fresh owner capability is proven, separate 5-7 action window",
+    "Panasonic_candidate": "zero mutation until AX/CSS/boundary proof; then estimate 4-6 including rollback margin",
+    "FAQ_base_v005": "~3-4 as one five-block page-local append plus readback",
+    "FAQ_wave4_v002": "~2-3 only after expectations structure PASS and fresh surface proof",
+    "FAQ_post_wave_top": "browser geometry first; no-op PASS costs no write, otherwise ~2-3 for top-only append/readback",
+    "review_ordinal": "~3-4 with immediate AX",
+    "final_closeout": "3-5 reads plus browser QA"
+  },
+  "sequence_rule": "FAQ base, wave4 and post-wave top are three separate dependency units. Never pre-spend or batch the later two with the base write.",
+  "window_policy": ["<10 above reserve: no mutation", "10-17: one small unit", "18-30: one medium dependency-safe unit", ">=35 preferred for carrier+phase1", "one-shot structural transforms normally get a separate window", "ambiguous mutation => readback, never retry blindly"],
+  "browser_memory": "At most one existing source + one existing target Opera tab, reused; no reconnect/reload loop.",
+  "current_live": {"scope":"PAGE264 ONLY / NOT_RELEASED","site":"UNKNOWN","quota":"UNKNOWN","elementor_skill":"unavailable","opera":"not connected"},
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
