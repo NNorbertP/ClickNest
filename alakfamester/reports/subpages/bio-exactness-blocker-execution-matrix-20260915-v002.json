@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "package": "bio-exactness-blocker-execution-matrix-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_EXECUTION_CLASSIFICATION_CURRENT",
+  "supersedes_for_execution": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v001.json",
+  "scope": "Page256 planning only. No WordPress/browser/global/shared-resource write is authorized by this artifact.",
+  "authorities": [
+    "STATE.md and latest page264 continuation/release gate",
+    "reports/subpages/bio-evidence-supersedence-20260915-v013.json",
+    "reports/subpages/bio-continuation-20260915-v032.json",
+    "reports/subpages/bio-final-acceptance-status-20260915-v003.json",
+    "reports/subpages/bio-exactness-blockers-20260915-v003.json",
+    "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "specs/bio-final-acceptance-20260914-v003.json",
+    "build/bio-page256-next-safe-package-20260915-v016.json",
+    "build/bio-transaction-dependency-graph-20260915-v002.json"
+  ],
+  "class_A_live_read_then_small_page256_transaction_or_noop": [
+    {
+      "item": "FAQ_before_CTA_order",
+      "owner": "af260015 settings._css_classes",
+      "package": "build/bio-page256-next-safe-package-20260915-v016.json FAQ_ORDER",
+      "required_read": "fresh exact settings boundary",
+      "write_only_if": "af-faq-content still exists and is still the winning order owner",
+      "no_op_pass": "fresh rendered order is already source-exact",
+      "final_gate": "FAQ before CTA; four disclosure controls and copy unchanged"
+    },
+    {
+      "item": "review_deep_link",
+      "owner": "af26000d Atomic settings",
+      "package": "build/bio-page256-next-safe-package-20260915-v016.json REVIEW_ANCHOR",
+      "required_read": "fresh Atomic owner proving a supported _cssid-style path",
+      "write_only_if": "safe mechanism exists and id is absent",
+      "no_op_pass": "frontend id already exists exactly once and deep-link works",
+      "final_gate": "Atomic Tabs/live ID35 relationships unchanged"
+    },
+    {
+      "item": "third_review_role_copy",
+      "owner": "b2560031 paragraph value",
+      "package": "build/bio-page256-next-safe-package-20260915-v016.json REVIEW_ROLE_COPY",
+      "required_read": "fresh exact text around unique ARKER'S anchor",
+      "write_only_if": "saved text still equals the known short line",
+      "no_op_pass": "full source role already present exactly once",
+      "final_gate": "tab name/body/title/author unchanged"
+    },
+    {
+      "item": "table_external_title",
+      "owner": "af260011 compact caption/table opening",
+      "package": "build/bio-page256-next-safe-package-20260915-v016.json TABLE_TITLE",
+      "required_read": "one fresh exact boundary containing the complete caption-to-thead transition",
+      "write_only_if": "the full atomic boundary is isolatable",
+      "no_op_pass": "caption already absent and exact external title/aria-labelledby already present",
+      "final_gate": "caption0, table1, columnHeaders3, rowHeaders4, exact table name"
+    },
+    {
+      "item": "final_CTA_mail_child_order",
+      "owner": "9a1b2c3d mailto anchor children",
+      "package": "build/bio-cta-mail-structure-20260914-v001.json",
+      "required_read": "fresh complete anchor-child boundary",
+      "write_only_if": "source/target child order still differs",
+      "no_op_pass": "visible label/email child order, href and aria-label are already exact",
+      "final_gate": "one mail action only; href and accessible label unchanged"
+    }
+  ],
+  "class_B_page_local_style_carrier_dependent": [
+    {
+      "item": "approved_phase1_visual_bundle",
+      "prerequisite": "af260016 inert style carrier probe PASS",
+      "package": "build/bio-page-local-visual-delivery-20260914-v002.json",
+      "scope": "seven approved blocks only; expectations/fourth-wave/review-ordinal/unmeasured h2 excluded",
+      "final_gate": "saved/rendered marker uniqueness plus tight hero/technology/table/review visual and compact AX regression"
+    },
+    {
+      "item": "review_ordinal_visual_and_AX",
+      "prerequisite": "carrier PASS plus fresh diagnostic reconfirming the two generated text owners",
+      "package": "build/bio-review-ordinal-source-v001.css",
+      "final_gate": "one visible ordinal per tab, zero standalone ordinal AX staticText, exact tab names"
+    },
+    {
+      "item": "stress_visual_only",
+      "prerequisite": "carrier PASS plus fresh cascade proof",
+      "package": "build/bio-stress-current-dom-visual-v003.css",
+      "final_gate": "visual source composition only; physical DOM/AX order remains independently OPEN until structurally fixed"
+    }
+  ],
+  "class_C_fresh_complete_owner_and_safe_atomic_restructure_required": [
+    {
+      "item": "stress_dom_order",
+      "required_exact": "p1 -> p2 -> article/list",
+      "last_trusted_target": "p1 -> card/list -> p2",
+      "rule": "Fresh complete af260007 saved owner mandatory. Authorize only a supported single atomic owner-level replacement/move; otherwise OPEN."
+    },
+    {
+      "item": "expectations_article_ownership",
+      "required_exact": "two source-equivalent article owners with correct child ownership",
+      "rule": "Fresh complete af260013 owner mandatory. No multi-step wrapper surgery, role-count substitute, JS reparenting or stale package replay."
+    }
+  ],
+  "class_D_diagnostic_first_semantic_candidate": [
+    {
+      "item": "Panasonic_three_point_list_semantics",
+      "required_read": "source/target active Panasonic section-local AX plus fresh exact saved spans",
+      "candidate": "build/bio-review-points-semantics-20260914-v001.json",
+      "authorize_only_if": "AX proves list1/items3 in exact source order, intro/final outside, no tabPanel order/name regression"
+    },
+    {
+      "item": "stress_aside_to_article_role",
+      "required_read": "fresh complete start/end tag boundaries",
+      "authorize_only_if": "tag-only atomic edit is exact",
+      "warning": "role parity does not close physical stress order"
+    }
+  ],
+  "class_E_current_ownership_blocked": [
+    {
+      "item": "FAQ_exact_runtime",
+      "gap": "native details/summary differs from source button/aria/sibling-keyboard/280-220ms motion contract",
+      "clear_only_if": "a sanctioned physical page-local runtime owner is proven or project scope explicitly changes",
+      "forbidden": ["global ID35/Code Snippets/plugin mutation", "ad-hoc JavaScript inferred from CSS carrier", "fake unsynchronized ARIA"]
+    },
+    {
+      "item": "review_prev_next_panel_focus",
+      "gap": "last trusted ID35 tab.click() switch lacks explicit new-panel focus",
+      "clear_only_if": "fresh live behavior/ID35 readback plus sanctioned physical runtime owner",
+      "forbidden": ["stale ID35 repo replay", "global ID35 mutation", "Atomic Tabs replacement"]
+    }
+  ],
+  "class_F_browser_measurement_only_before_related_write": [
+    "responsive thresholds 1000/900/760/720/560/~390",
+    "mobile h2 winning owner",
+    "first review media aspect/object-fit",
+    "hero CTA visual state",
+    "technology icon badge exact geometry",
+    "final desktop/responsive section-local pixel and AX acceptance"
+  ],
+  "global_stop_rules": [
+    "PAGE264 ONLY remains NOT_RELEASED -> no page256 WordPress write.",
+    "Exact live page256 profile is not ncsnorbert+20260914-4@gmail.com -> no write.",
+    "Current quota/site unknown or selected unit cannot finish above D11 reserve=10 -> no write.",
+    "Elementor skill unavailable -> no mutation.",
+    "Opera unavailable for a browser-required node -> leave that node OPEN; do not open replacement tabs.",
+    "429/5xx/ambiguous mutation -> read back, never blind retry.",
+    "No full Elementor save, raw SQL mutation, global Additional CSS, global ID35/plugin/theme or shared-resource workaround."
+  ],
+  "body_blocker_count": 9,
+  "shared_global_whole_page_gate_count": 2,
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
