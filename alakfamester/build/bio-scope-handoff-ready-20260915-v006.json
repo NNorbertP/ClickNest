@@ -1,0 +1,19 @@
+{
+  "schema_version": 6,
+  "package": "bio-scope-handoff-ready-20260915-v006",
+  "date": "2026-09-15",
+  "page256_target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "status": "PREPARED_NO_SCOPE_MUTATION_CURRENTLY_BLOCKED",
+  "supersedes_for_handoff": "build/bio-scope-handoff-ready-20260915-v005.json",
+  "current_scope": {"STATE":"PAGE264 ONLY","page264_continuation":"reports/subpages/oldtrees-continuation-20260915-v014.json","page264_precedence":"reports/subpages/oldtrees-evidence-supersedence-20260915-v006.json","release_gate":"build/oldtrees-scope-release-gate-20260915-v001.json","release":"NOT_RELEASED"},
+  "handoff_gates": ["explicit page264 release with preserved STATE history", "current user page256-only scope", "exact live +4 page256 profile", "exact target site/current quota with D11>=10", "Elementor skill", "released existing source/target Opera pair for browser-required work"],
+  "after_handoff_authority": "reports/subpages/bio-execution-authority-20260915-v004.json",
+  "first_live_order": ["fresh page256 bytes/SHA/JSON", "COMPLETE LIVE ID35", "protected invariants", "corrected carrier probe v002 as first possible write", "then current DAG v008/runbook v013 only"],
+  "current_visual_sequence": ["phase1 v004", "TABLE_TITLE_VISUAL after structure", "expectations v006 + visual after structure", "FAQ base v005", "FAQ wave4 v002", "measured FAQ post-wave top no-op/write", "review ordinal/measurement gates"],
+  "browser": "build/bio-page256-opera-low-memory-qa-20260915-v004.json; max one source + one target tab, zero replacements",
+  "forbidden": ["modify page264 from this flow", "truncate STATE", "use +5/other page256 identity", "stale quota/hash/ID35 as current truth", "global/shared workaround", "full save/raw SQL", "invented expectations arrow SVG", "blind retry"],
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
