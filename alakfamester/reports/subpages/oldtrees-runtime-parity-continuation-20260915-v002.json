@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-runtime-parity-continuation-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "PAGE264_ONLY",
+  "supersedes_for_runtime_planning": "reports/subpages/oldtrees-runtime-parity-continuation-20260915-v001.json",
+  "source": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "source_runtime_direct_truth": {
+    "source_script": "https://alakfamester.clicknest.hu/script.js",
+    "review_dots": "Presentation spans only; source review runtime never binds click to dots.",
+    "review_navigation": "Tabs own ArrowRight/Down/Left/Up/Home/End; previous/next buttons step selected review.",
+    "faq": "Source script.js directly owns FAQ behavior. Each trigger toggles only its own item; all four start closed and multi-open is allowed because no close-other-items logic exists.",
+    "before_after": "Native range input event synchronizes --ba-pos and initialization applies current value.",
+    "nordmann": "Non-manual carousel, 4000ms autoplay, arrow/dot/keyboard/swipe paths call navigation then start(), hover/focus stop/start, reduced-motion guard/listener, broken-slide removal/reindex/clamp contract."
+  },
+  "target_runtime": {
+    "head_footer_option": "auhfc_settings_sitewide",
+    "bytes": 9790,
+    "sha256": "9bbbe49c223be1f7ca15b5604ed4855b8a8966a184c20fc4b45fd77990cfa34f",
+    "script_id": "af-source-interactions-v001",
+    "frontend_script_present": true,
+    "target_story_dom": "af2a004a contains .ba.js-ba native range and non-manual .carousel.js-carousel with six slides, previous/next and six dots.",
+    "duplicate_owner_added": false
+  },
+  "review": {
+    "shared_owner": "ID14 AF reusable reviews controls v005",
+    "page264_semantic_owner": "ID33 AF old trees semantic parity v001",
+    "fresh_pointer_delta": "ID14 created click-active visual dot buttons whereas source dots are inert spans. ID33 already removed target dots from AX/focus.",
+    "live_fix": "build/oldtrees-visual-v012-review-dot-pointer.css",
+    "fix_blob_sha": "6e71ad934471c35310296aa60a9e38934271a2da",
+    "effect": "page264-only pointer-events:none and cursor:default on .af-review-source-dot; visual/nav/tab owners unchanged.",
+    "post_css_bytes": 617608,
+    "post_css_sha256": "7f19dc5a63e4d03249e27b42b72e08c0e6b7847a9372125a866a9e7bf56a7523",
+    "marker_readback": "v012 start=1,end=1,af-project:end=1",
+    "status": "POINTER_DELTA_CLOSED"
+  },
+  "nordmann_semantics": {
+    "fresh_source_dom": "Six reference slides are role=group / aria-roledescription=dia with labels 1/6..6/6.",
+    "fresh_target_prewrite_dom": "Exactly six target slides were role=listitem / aria-roledescription=dia; target/source carousel runtime does not rewrite role.",
+    "saved_data_prewrite": {
+      "bytes": 48874,
+      "sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+      "json_valid": true,
+      "listitem_pattern_count": 6
+    },
+    "write": "Supported WPVibe content/edit on page264 _elementor_data; exact replace_all of role='listitem' aria-roledescription='dia' to role='group' aria-roledescription='dia'.",
+    "replaced": 6,
+    "saved_data_postwrite": {
+      "bytes": 48856,
+      "sha256": "7c3e1a5c13e8f8c1ead29dd85e25ac74091300ba81e30f96fa77513d8ad4910c",
+      "json_valid": true,
+      "listitem_pattern_count": 0,
+      "group_pattern_count": 6
+    },
+    "frontend_dom_postwrite": "All six target slides render role=group with unchanged labels, images, dots, previous/next and copy.",
+    "synchronized_opera_ax": {
+      "source_state": "2 / 6",
+      "source_current_role": "group",
+      "target_state": "2 / 6",
+      "target_current_role": "group",
+      "controls": "Both expose source-equivalent previous/next and six dot controls.",
+      "status": "PASS"
+    },
+    "autoplay": "Fresh source and fresh target both visibly advance in AX without user action. Exact 4.0s single-step tolerance is not claimed because connector/tool-call latency is not deterministic.",
+    "status": "STABLE_ROLE_DELTA_CLOSED; source-like autoplay presence confirmed; precise timer/reset/pause/swipe timing remains formal browser proof"
+  },
+  "tiszafa": {
+    "synchronized_opera_ax": {
+      "source_name": "Előtte–utána csúszka: 50+ éves tiszafa – matuzsálemből niwaki",
+      "target_name": "Előtte–utána csúszka: 50+ éves tiszafa – matuzsálemből niwaki",
+      "source_role": "slider",
+      "target_role": "slider",
+      "source_value": 50,
+      "target_value": 50,
+      "source_actions": ["decrement","increment","setValue"],
+      "target_actions": ["decrement","increment","setValue"]
+    },
+    "runtime_contract": "Both source and target use .js-ba native range input with input-event synchronization to --ba-pos.",
+    "status": "INITIAL_AX_AND_RUNTIME_WIRING_PASS; pointer-drag/keyboard mutation proof remains action-tool dependent"
+  },
+  "faq": {
+    "source": "Four exact Q/A, all initially closed; source script.js per-item toggle, multi-open.",
+    "target": "Four exact Q/A, all initially closed, four independent native details/summary controls.",
+    "owner_note": "Earlier interaction-oracle note claiming source-interactions-v001.js does not own FAQ was about the reduced target runtime artifact, not the live reference script.js; direct live source script is authoritative.",
+    "write": false,
+    "status": "CONTENT_INITIAL_STATE_AND_MULTI_OPEN_DESIGN_MATCH; no duplicate FAQ runtime justified"
+  },
+  "dock": {
+    "source_ax": "Complementary 'Gyors kapcsolatfelvétel' with phone, email and request links.",
+    "target_ax_historical_fresh_same_session": "Same complementary and three accessible actions; WordPress request route maps to /kapcsolat/#ajanlatkeres per D09.",
+    "visual": "v010 removes only the obsolete page264 body::after fallback that covered the real ID7 dock. Screenshot proof remains blocked by Opera screenshot disconnect.",
+    "status": "AX_CONTRACT_MATCH; VISUAL_POSTCHECK_HOLD"
+  },
+  "browser_policy_and_state": {
+    "opera_tabs": 1,
+    "mode": "Single sequential source-target tab; no new-tab fan-out.",
+    "ax_channel": "Stable enough for synchronized read-only AX comparisons.",
+    "screenshot_channel": "Unstable/disconnecting; no screenshot retry loop.",
+    "local_browser_fallback": "Unavailable: project DNS does not resolve in local container and Playwright is absent.",
+    "latest_navigation_note": "A later target navigation was blocked by platform safety classification; it was not retried in a loop."
+  },
+  "current_live_state": {
+    "elementor_bytes": 48856,
+    "elementor_sha256": "7c3e1a5c13e8f8c1ead29dd85e25ac74091300ba81e30f96fa77513d8ad4910c",
+    "elementor_json_valid": true,
+    "additional_css_bytes": 617608,
+    "additional_css_sha256": "7f19dc5a63e4d03249e27b42b72e08c0e6b7847a9372125a866a9e7bf56a7523",
+    "live_visual_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "v011": "PREPARED_GATED_NOT_LIVE"
+  },
+  "known_quota_at_latest_exact_counter": {
+    "used": 243,
+    "limit": 300,
+    "remaining": 57,
+    "reserve_required": 10,
+    "note": "WPVibe returned an exact usage note on the latest rendered-page read; no WPVibe writes occurred after that note."
+  },
+  "writes_in_v002_scope": 2,
+  "writes": ["v012 page264 Additional CSS containment","six page264 Nordmann role replacements"],
+  "other_page_write": false,
+  "shared_runtime_owner_write": false,
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "remaining_hard_blockers": [
+    "Stable screenshot-based v010 dock visual proof",
+    "Final hero source-target visual geometry and v011 deploy/no-deploy decision",
+    "Deterministic six-view source-target screenshot/overlay/diff matrix",
+    "Precise interaction timing/reset/pause/swipe/reduced-motion action proof where tool latency/actions are required",
+    "Form native required no-delivery action proof without submission if a safe action-capable harness becomes available"
+  ],
+  "status": "RUNTIME_STATIC_AND_SYNCHRONIZED_AX_PARITY_ADVANCED_VISUAL_CLOSEOUT_BLOCKED_BY_SCREENSHOT_CHANNEL"
+}
