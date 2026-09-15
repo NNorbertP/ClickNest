@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "package": "oldtrees-acceptance-ledger-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "reference": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "scope": "Authoritative post-closeout page264 acceptance ledger with direct-source carousel timer correction. No WordPress write.",
+  "supersedes_for_planning": [
+    "reports/subpages/oldtrees-acceptance-ledger-20260915-v002.json",
+    "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json"
+  ],
+  "authoritative_evidence": [
+    "reports/subpages/oldtrees-live-closeout-20260915-v001.json",
+    "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "reports/subpages/oldtrees-proof-only-reconciliation-20260915-v002.json",
+    "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+    "build/source-interactions-v001.js"
+  ],
+  "accepted_live_baseline": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "elementor_json_valid": true,
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "marker_counts": {"af-project:end":1,"v004":1,"v005":1,"v006":1,"v007":1},
+    "implementation_release": "RELEASED_CLOSED"
+  },
+  "pass_do_not_rebuild": {
+    "content_media": [
+      "No known page264 source copy/main-media gap.",
+      "Five target main-media roles reconciled.",
+      "Seven-chip problem grid source labels/SVG geometries present.",
+      "Comparison exact content and maintenance caveat present.",
+      "Request source intro, visible 24-hour reply and local #ajanlatkeres route present."
+    ],
+    "semantics": [
+      "38/38 heading names and 11/11 ordered named regions accepted.",
+      "Review tab names/prev-next accepted; numbered duplicate dots excluded from page264 AX/focus.",
+      "Form accessible name/description, service group and city help relationship preserved.",
+      "Tiszafa initial native range min0/max100/step1/value50 accepted.",
+      "Nordmann six-slide static controls/content accepted."
+    ],
+    "visual": [
+      "v004 comparison icons and X/check markers.",
+      "v005 beige/sage surfaces and equal-height stretch.",
+      "v006 request-contact white foreground targeted PASS.",
+      "v007 equal desktop columns/source-like wrapping targeted PASS.",
+      "Centered request heading, compact clock and joined white panel accepted."
+    ],
+    "form33": [
+      "Form33 6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3 remains accepted readback baseline.",
+      "#af-form-direct-call is protected and unique.",
+      "ID5 photo count, ID6 rows5 and configured success state remain protected.",
+      "Service af040007/#af-form-service uses kapcsolat-tema, mf_input_required=yes, six exact options, native activateValidation(required:true) and matching error component."
+    ]
+  },
+  "closed_visual_packages": {
+    "v006": "LIVE_EXACTLY_ONCE_TARGETED_PASS_DO_NOT_REDEPLOY",
+    "v007": "LIVE_EXACTLY_ONCE_TARGETED_PASS_DO_NOT_REDEPLOY"
+  },
+  "direct_source_runtime_truth": {
+    "blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "before_after": "initBA adds one input listener and writes range.value + '%' to --ba-pos; it applies once at initialization.",
+    "manual": "Initialized once from carousel--manual and never reassigned.",
+    "successful_navigation": "prev/next/dot/ArrowLeft/ArrowRight/qualifying swipe executes go() then start(); on non-manual instances start() stops the old interval and starts a new 4000ms interval when other guards allow.",
+    "pause_resume": "mouseenter/focusin call stop(); mouseleave/focusout call start(); no independent hover/focus state flags are tracked.",
+    "drop": "After removal/reindex: zero slides -> stop(), hide nearest project-card__extra/hero-proof owner or carousel, return. Exactly one remaining slide -> stop() because slides.length<2, then go(). Two or more remaining -> drop() itself neither stops nor restarts solely due removal.",
+    "target_db_marker": "Unique __AF_SOURCE_INTERACTIONS_V001__ database owner found under Head & Footer Code option auhfc_settings_sitewide; exact option content/hash proof remains pending after HTTP 429."
+  },
+  "proof_only_open": {
+    "form_required_action": "Non-delivery action proof only; no real submission/entry/upload/SMTP.",
+    "review": "Keyboard/prev-next synchronization and source visual-dot pointer parity.",
+    "tiszafa": "Pointer/keyboard range -> value/--ba-pos synchronization.",
+    "nordmann": "Synchronized role/aria/caption-alt, autoplay/restart/swipe/compound pause/reduced-motion under corrected drop contract.",
+    "faq": "Four native disclosure actions and source multi-open/accordion behavior.",
+    "hero": "Exact same-browser geometry and computed owner/cascade for historical vertical offset.",
+    "dock": "Fresh global/shared owner/cascade discovery; no global fix from page264.",
+    "pixel_matrix": "Six exact viewports with same browser/DPR/zoom/load/motion, source/target captures, overlay/diff, key geometry and overflow."
+  },
+  "regression_invariants": [
+    "Preserve page264 Elementor hash/IDs/order unless a separately proven content change is explicitly authorized.",
+    "Preserve v004-v007 exactly once each.",
+    "Preserve ID33 page guard and shared ID14; do not duplicate runtimes.",
+    "Preserve shared Form33/ID5/ID6/direct-call dependency.",
+    "Do not modify other pages, global header/footer/dock owner, shared media/settings, SMTP, notifications or webhooks from this page264 scope.",
+    "Only a fresh reproducible page264 defect with exact owner/cascade evidence may reopen implementation."
+  ],
+  "tooling_stop_state": {
+    "wpvibe": "Stopped after HTTP 429 during proof-only read; no blind retry and no WordPress write.",
+    "opera": "Stopped after stale/not-found state with no replacement tab fan-out.",
+    "latest_exact_quota": "99/300 used, 201 remaining at implementation closeout; post-proof exact count unknown.",
+    "d11_reserve": 10
+  },
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "POST_CLOSEOUT_ACCEPTANCE_V003_IMPLEMENTATION_CLOSED_DIRECT_SOURCE_TIMER_CORRECTED"
+}
