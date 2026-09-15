@@ -1,0 +1,92 @@
+{
+  "schema_version": 3,
+  "package": "hedge-form-required-server-plan-20260915-v003",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "form_id": 33,
+  "wordpress_writes": 0,
+  "supersedes_for_planning": "build/hedge-form-required-server-plan-20260914-v002.json",
+  "status": "FALLBACK_ONLY_NOT_GENERATED_NATIVE_REQUIRED_FIRST_V005_SEMANTIC_OWNER_PRESERVED",
+  "decision": "D05",
+  "goal": "Provide a page272-origin-only server hardening path for the Form33 service/topic choice only if fresh exact configuration and a safe non-delivery behavior proof show native Required is absent or insufficient, without mutating shared Form33 or creating a second validator owner.",
+  "current_semantic_chain": {
+    "live_owner_until_readback": "existing Code Snippets ID36 v001",
+    "prepared_semantic_successor": "build/hedge-semantic-runtime-v005.php",
+    "prepared_successor_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "rule": "Semantic v005 must be handled as its own conditional package first. Do not combine an unproven required-radio fallback into the first v005 deployment."
+  },
+  "native_first_decision_tree": [
+    {
+      "condition": "mf_input_required == yes AND a provably no-network/no-entry validation check rejects an empty service group",
+      "result": "NATIVE_PASS",
+      "action": "No server fallback. Close D05 required-choice item and preserve shared Form33."
+    },
+    {
+      "condition": "mf_input_required != yes OR required configuration is absent",
+      "result": "REAL_CONFIGURATION_DELTA",
+      "action": "Do not edit shared Form33 from page272 scope. Read exact current ID5/ID36/field ownership and only then design a page272-origin server fallback."
+    },
+    {
+      "condition": "mf_input_required == yes BUT a safe non-delivery/no-entry validation check reproduces acceptance of an empty group",
+      "result": "FUNCTIONAL_DELTA_PROVEN",
+      "action": "Evaluate the page272-origin ID36 server fallback below after exact ID5/field/error-copy reads."
+    },
+    {
+      "condition": "No safe no-network/no-entry behavior trigger exists",
+      "result": "PROOF_BLOCKED",
+      "action": "Do not improvise a real submission. Leave behavior proof open; do not generate or deploy fallback code solely from uncertainty."
+    }
+  ],
+  "mandatory_live_reads_before_any_fallback_code_generation": [
+    "fresh/reconciled page272 saved baseline/hash",
+    "exact current ID36 body/name/scope/active/code_error after any semantic-v005 deployment/readback state is known",
+    "exact #af-form-service widget ID/type/mf_input_name/mf_input_required and six labels/values/order",
+    "exact current ID5 body/hook priority/registration style/route guard/active/code_error",
+    "current visible/native required error copy and ownership if any fallback will emit user-visible text",
+    "confirm no newer validator owner already handles the same field/page origin"
+  ],
+  "future_combined_candidate": {
+    "name": "semantic v006 + server required fallback",
+    "generation_status": "DO_NOT_GENERATE_YET",
+    "base": "the exact verified live/postread semantic v005 body, not a remembered reconstruction",
+    "owner": "existing Code Snippets ID36 only",
+    "scope": "keep front-end scope unless fresh Code Snippets/REST execution evidence proves that is no longer valid; never broaden scope casually",
+    "server_callback": "one named mf_after_validation_check callback generated only after exact field/route/error-copy reads",
+    "semantic_preservation": "preserve v005 page272 footer semantic code byte-for-byte except version marker/comment changes required by the new candidate"
+  },
+  "future_filter_contract": [
+    "If incoming validation is already false, return the complete prior result unchanged so ID5/photo and native errors are preserved.",
+    "Return unchanged for every route that is not the exact current Form33 insert route.",
+    "Return unchanged unless referer resolves exactly to post/page 272 using the same proven MetForm origin mechanism.",
+    "Inspect only the exact live-read service field name; never infer from visible label text.",
+    "Treat missing/empty service choice as invalid only after native behavior failure/absence is proven.",
+    "Use exact proven user-visible error copy; never invent one.",
+    "Present service choice returns unchanged; do not whitelist or rewrite values unless exact six live option values/order are read and such validation is specifically required.",
+    "Never mutate shared Form33, ID5, ID6, entries, notifications or SMTP."
+  ],
+  "write_and_readback_contract_if_eventually_needed": [
+    "one plugin-aware update of existing ID36 only",
+    "no second snippet",
+    "no scope broadening by default",
+    "HTTP 429/unknown is UNKNOWN until exact ID36 readback; no blind retry",
+    "read back exact body/scope/active/code_error",
+    "page272 Elementor hash/JSON unchanged",
+    "shared Form33 saved data/settings unchanged",
+    "ID5/ID6 unchanged",
+    "prove callback result with direct/non-delivery callback-level tests or another no-entry path; do not create a real Form33 entry"
+  ],
+  "forbidden": [
+    "generating fallback code before exact field/ID5/error-copy reads",
+    "using a real form submission merely to prove required behavior",
+    "changing shared Form33 required setting from the page272 package",
+    "creating a new global validator snippet",
+    "changing ID36 to global scope just to make a guessed REST path work",
+    "overwriting an earlier validation failure",
+    "inventing field names, option values or error text",
+    "mixing review/content/SEO/CSS/outer-region fixes into the fallback package"
+  ],
+  "nondelivery_test_plan": "build/hedge-form-required-nondelivery-test-plan-20260914-v001.json",
+  "smtp_or_external_submission": false,
+  "real_form_submission": false,
+  "status_summary": "SERVER_FALLBACK_DEFERRED_UNTIL_NATIVE_FAILURE_OR_ABSENCE_IS_PROVEN"
+}
