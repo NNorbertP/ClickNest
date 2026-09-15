@@ -1,0 +1,53 @@
+{
+  "schema_version": 4,
+  "package": "bio-faq-cta-page-local-delivery-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_BASE_STATIC_PAYLOAD_NOT_DEPLOYED",
+  "supersedes_for_execution": "build/bio-faq-cta-page-local-delivery-20260915-v003.json",
+  "scope": "Page256-only static FAQ/CTA delivery. Runtime JavaScript/global/shared authority remains absent.",
+  "preconditions": [
+    "Normal page264 release/handoff; exact +4 page256 identity/current site/quota/D11 margin; Elementor skill; fresh page256/ID35 baseline.",
+    "Corrected carrier probe v002 PASS/cleanup and one style#af-page256-parity owner.",
+    "FAQ_ORDER PASS/no-op and CTA_MAIL_STRUCTURE PASS/no-op."
+  ],
+  "base_static_payload_in_order_one_append": [
+    "build/bio-faq-cta-source-layout-v002.css",
+    "build/bio-faq-cta-mail-label-v001.css",
+    "build/bio-faq-cta-mail-interaction-v001.css",
+    "build/bio-faq-cta-button-interaction-v001.css"
+  ],
+  "removed_from_base_vs_v003": "build/bio-faq-cta-section-spacing-v001.css is no longer part of the base append because its 24px reduced top rhythm is conditional on a preceding source-like wave.",
+  "separate_dependencies": {
+    "FAQ_WAVE4": {
+      "payload": "build/bio-wave-source-faq-v002.css",
+      "precondition": "Fresh rendered expectations surface is source-like sage and FAQ outer state is source-like paper.",
+      "acceptance": "Exact source path/height/colors plus -1px seam overlap, with no visible seam/clipping."
+    },
+    "FAQ_POST_WAVE_SPACING": {
+      "plan": "build/bio-faq-cta-post-wave-spacing-20260915-v001.json",
+      "payload": "build/bio-faq-cta-section-spacing-v001.css",
+      "precondition": "FAQ_WAVE4 PASS plus fresh source/target vertical geometry proves the 24px reduced top rhythm is still needed.",
+      "no_op": "If wave4 alone yields source-equivalent vertical rhythm, do not append spacing."
+    }
+  },
+  "explicitly_obsolete_do_not_append": [
+    "build/bio-faq-cta-eyebrow-accessible-v001.css",
+    "build/bio-faq-cta-generated-label-guard-v001.css",
+    "build/bio-wave-source-faq-v001.css for current execution",
+    "base inclusion of bio-faq-cta-section-spacing-v001.css before wave4 proof"
+  ],
+  "base_readback": [
+    "four base payload markers exactly once in the single page-local style owner",
+    "FAQ before CTA; FAQ paper/narrow; forest CTA band",
+    "outer eyebrow separate from CTA H2 AX name",
+    "deterministic mail label/email rows with exact href/aria-label",
+    "mail/form hover/focus states without overflow",
+    "native FAQ controls and exact copy preserved",
+    "no global/shared resource changed"
+  ],
+  "runtime_exactness": "FAQ source button/aria/sibling-keyboard/motion remains independently OPEN.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
