@@ -1,0 +1,45 @@
+{
+  "schema_version": 16,
+  "package": "bio-evidence-supersedence-20260915-v016",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_PRECEDENCE_MAP_READ_ONLY_PREPARED_TO_LIVE_BOUNDARY",
+  "supersedes_for_next_page256_work": "reports/subpages/bio-evidence-supersedence-20260915-v015.json",
+  "pointer_rule": "Use bio-execution-authority-20260915-v001.json for executable package selection. This precedence map supplies the latest continuation/convergence/static-QA/evidence context and overrides older resume pointers.",
+  "scope_gate": {
+    "STATE": "PAGE264 ONLY",
+    "page264_continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "page264_precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v006.json",
+    "release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json",
+    "release": "NOT_RELEASED"
+  },
+  "current": {
+    "continuation": "reports/subpages/bio-continuation-20260915-v035.json",
+    "execution_authority": "reports/subpages/bio-execution-authority-20260915-v001.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260915-v006.json",
+    "static_execution_QA": "reports/subpages/bio-execution-chain-static-qa-20260915-v001.json",
+    "acceptance": "reports/subpages/bio-final-acceptance-status-20260915-v005.json",
+    "hard_blockers": "reports/subpages/bio-exactness-blockers-20260915-v005.json",
+    "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v003.json",
+    "identity": "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "scope_CSS_reconciliation": "reports/subpages/bio-css-delivery-scope-reconciliation-20260914-v001.json",
+    "shared_chrome": "reports/subpages/bio-shared-chrome-exactness-audit-20260915-v001.json",
+    "technology_icon": "reports/subpages/bio-technology-icon-exactness-audit-20260915-v001.json",
+    "final_spec": "specs/bio-final-acceptance-20260914-v003.json"
+  },
+  "resume_rule": "Do not create more pointer-only versions unless scope/tool/live truth changes or a substantive package changes. At the next usable live window start from continuation v035 + execution-authority v001 + this v016 map.",
+  "identity_rule": "Page256 mutation requires exact live ncsnorbert+20260914-4@gmail.com; current quota must be read live; preserve D11 >=10.",
+  "D18_rule": "No full Elementor save in the current page256 plan; use only fresh owner-local supported edits so legacy Atomic class loss is not triggered.",
+  "opera_rule": "At most one source + one target tab, reused; section-local AX/tight captures; no replacement/reconnect loop.",
+  "acceptance_state": {
+    "body_hard_blockers": 9,
+    "shared_global_gates": 2,
+    "additional_conditional_measurement_work": "see convergence v006",
+    "body_pass": false,
+    "whole_page_pass": false,
+    "pixel_pass": false
+  },
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0
+}
