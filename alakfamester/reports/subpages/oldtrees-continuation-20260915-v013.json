@@ -1,0 +1,99 @@
+{
+  "schema_version": 13,
+  "package": "oldtrees-continuation-20260915-v013",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CURRENT_CONTINUATION_STATIC_CONVERGENCE_CORRECTED_INTERACTION_NO_SCOPE_CHANGE",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; this checkpoint authorizes no global/other-page WordPress write.",
+  "tool_state_this_continuation": {
+    "wpvibe": "The first attempt in this conversation returned disabled; no retry loop and no WordPress write was made.",
+    "opera": "Kept untouched after stale/disconnected evidence; zero new/replacement tabs and no reconnect/reload loop.",
+    "github": "Used for exact source-runtime readback, static reconciliation and planning only.",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0,
+    "smtp_or_external_submission": false
+  },
+  "accepted_remote_baseline_preserved_not_reverified": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "live_visual_blocks": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "semantic_owner": "Code Snippets ID33 last accepted active with page264 guard",
+    "note": "No current live channel was available to supersede these accepted historical readbacks."
+  },
+  "current_chain": {
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v005.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v003.json",
+    "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json",
+    "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "visual_parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
+    "form33_shared_baseline": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json",
+    "review_dot_pointer_gate": "build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json",
+    "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json"
+  },
+  "critical_interaction_correction": {
+    "source_runtime": "build/source-interactions-v001.js",
+    "source_runtime_blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "stale_claim": "v002/v012 claimed by-user navigation sets manual=true and permanently disables autoplay.",
+    "direct_code_truth": "manual is initialized once from c.classList.contains('carousel--manual') and never reassigned. Successful arrow/dot/ArrowKey/swipe navigation calls go(...) then start(). On a non-manual instance start() clears and restarts a fresh 4000ms timer; on a carousel--manual instance autoplay is disabled from initialization.",
+    "execution_rule": "The v002 manual-latch tests and the v012 manual-latch sentence are obsolete and must never justify a target runtime change. Interaction v003 is the current oracle."
+  },
+  "visual_candidate_state": {
+    "reproduced_conditional_failures": ["v006 request-contact foreground dark on target versus white reference", "v007 desktop comparison columns unequal versus equal reference columns"],
+    "v006_blob_sha": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+    "v007_blob_sha": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+    "bundle_blob_sha": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+    "parser_qa": "0 parse errors for v006/v007/bundle; all effect selectors page264-scoped",
+    "write_rule": "Fresh both/one/neither live gate decides. At most one exact repository artifact insertion; parser PASS alone is not authorization."
+  },
+  "shared_form33_guard": {
+    "latest_documented_historical_state": "6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3",
+    "explained_change": "accepted addition of af04000d/#af-form-direct-call with tel:+36305394820",
+    "page264_dependency": "ID33 uses #af-form-direct-call as the form aria-describedby target",
+    "rule": "Never restore the old 5568 state, never delete/rename/duplicate #af-form-direct-call, and never infer current service-radio required behavior from the historical hash. Fresh shared-form identity is required before D05 diagnosis."
+  },
+  "interaction_proof_state": {
+    "reviews": "Keyboard/previous-next remains proof-only; visual-dot pointer behavior is a separate source-observation gate because AX absence does not prove pointer inertness.",
+    "tiszafa": "Native range 0..100 step1 value50 plus --ba-pos synchronization remains proof-only.",
+    "nordmann": "Use synchronized slide AX/caption/alt checks, observed carousel--manual class, fresh-load autoplay, per-action timer reset/restart on non-manual instances, hover/focus compound state, reduced-motion and duplicate-timer checks.",
+    "faq": "source-interactions-v001.js is not the FAQ owner; multi-open/accordion and native control behavior must be observed from the actual source/target rendered owner before any runtime change."
+  },
+  "proof_only_not_new_failures": [
+    "current Form33 service-radio required configuration and safe no-delivery behavior",
+    "inner form field computed styles/geometry",
+    "page-local href/route readback",
+    "review-dot pointer behavior before synchronized source observation",
+    "Nordmann synchronized timer/AX/pause/reduced-motion behavior",
+    "FAQ behavior before live owner observation",
+    "hero offset before exact computed owner/cascade proof",
+    "floating dock before actual live owner and page264-local exception proof",
+    "six-view deterministic overlay/diff while no harness exists"
+  ],
+  "next_safe_live_order": [
+    "Verify intended +5 WPVibe identity/site/exact quota once; preserve >=10 D11 calls after the complete selected transaction.",
+    "Re-read current STATE, this continuation/precedence, exact v006/v007/bundle identities, page264 hash/JSON and Additional CSS marker/hash inventory.",
+    "Use exactly one synchronized source and one target tab for the v006/v007 visual gate.",
+    "Execute at most one exact selected repository CSS insertion, or no write if neither failure reproduces.",
+    "Mandatory marker/project-end/page-hash readback plus targeted source/target visual regression check.",
+    "Then, only if capacity remains, run fresh Form33 identity/#af-form-direct-call + native required proof, routes/inner-field reads, and corrected interaction v003 proof.",
+    "Evaluate the page264 scope-release gate only after write-capable items are closed; tool unavailability is never release evidence."
+  ],
+  "hard_preserve": [
+    "Never replay oldtrees visual v001-v005 or stale semantic saved-data packages.",
+    "Never use interaction v002 permanent manual-latch expectations.",
+    "Never restore shared Form33 to 5568/47152dff... from page264 scope.",
+    "Never remove/rename #af-form-direct-call or duplicate ID5/ID6/ID33 owners.",
+    "Never add a second review/slider/carousel/FAQ runtime owner merely because action tooling is unavailable.",
+    "Never mutate global ID14 or global dock/header/footer from page264 scope.",
+    "Never blindly retry a 429/5xx write; read exact outcome first.",
+    "Never exceed one source plus one target Opera tab when the connector returns.",
+    "Never claim PIXEL_PASS without deterministic same-state captures, overlay and diff."
+  ],
+  "release_status": "NOT_RELEASED",
+  "release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_V013_CORRECTED_INTERACTION_CHAIN_READY_FOR_FUTURE_LIVE_GATE_SCOPE_NOT_RELEASED"
+}
