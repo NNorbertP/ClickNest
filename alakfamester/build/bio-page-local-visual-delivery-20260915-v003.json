@@ -1,0 +1,54 @@
+{
+  "schema_version": 3,
+  "package": "bio-page-local-visual-delivery-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_REQUIRES_CORRECTED_CARRIER_PROBE_PASS",
+  "supersedes_for_execution": "build/bio-page-local-visual-delivery-20260914-v002.json",
+  "purpose": "Deliver the first low-risk structure-independent page256 visual parity phase through the corrected page-local style-owner proof only.",
+  "required_first_proof": "build/bio-page-local-style-carrier-probe-20260915-v002.json must PASS and be safely cleaned/reconciled before final owner creation.",
+  "physical_owner": {
+    "carrier_element": "af260016 legacy text-editor",
+    "style_id": "af-page256-parity",
+    "start_marker": "/* af-page256-parity:start */",
+    "end_marker": "/* af-page256-parity:end */"
+  },
+  "blocks_in_exact_order": [
+    "build/bio-visual-parity-v001.css",
+    "build/bio-hero-layout-parity-v003.css",
+    "build/bio-card-mobile-source-v001.css",
+    "build/bio-table-section-tone-v001.css",
+    "build/bio-wave-source-core-v001.css",
+    "build/bio-review-quote-source-color-v002.css",
+    "build/bio-review-dot-source-v001.css"
+  ],
+  "not_in_first_payload": [
+    "build/bio-review-ordinal-source-v001.css: isolated later AX-gated block",
+    "review decor: pseudo-owner HOLD",
+    "stress v003 visual: later after semantic/cascade checks",
+    "expectations visuals: structure-dependent",
+    "FAQ/CTA outer layout and fourth wave: separate dependency package",
+    "unmeasured mobile h2 override"
+  ],
+  "owner_creation_strategy": [
+    "After the corrected probe is cleaned/reconciled, fresh-search af260016 again; never reuse probe bytes.",
+    "Prepend exactly one style#af-page256-parity containing start/end markers and the seven approved blocks in order.",
+    "Keep original af260016 hero-extra markup content/order unchanged after the style element.",
+    "Immediately read saved JSON, rendered style/internal markers and the first affected sections before another mutation."
+  ],
+  "mandatory_postconditions": [
+    "page256 JSON valid",
+    "style#af-page256-parity exactly once",
+    "all seven internal block markers exactly once",
+    "af260016 original visible contact/CTA/fact content unchanged",
+    "hero/technology/table/review targeted source-target visual state checked",
+    "compact AX regression shows no protected name/role/order drift",
+    "review quote/dot presentation matches prepared source contract without changing ID35 creation/aria-hidden/tabindex behavior",
+    "no shared/global WordPress resource changed"
+  ],
+  "later_append_model": "Fresh-search the exact internal end marker and append only one dependency-approved uniquely marked page256 CSS block at a time with immediate saved/rendered/AX readback and block-level rollback.",
+  "forbidden": ["Hello Additional CSS", "global ID35/Code Snippets", "theme/plugin/global setting mutation", "full Elementor save", "raw SQL/search-replace", "blind block concatenation", "any +5 page256 identity assumption"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
