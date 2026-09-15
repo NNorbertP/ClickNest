@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-fresh-full-ax-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "PAGE264_ONLY evidence classification; global header/footer differences are recorded but not authorized for mutation.",
+  "mode": "ONE_SEQUENTIAL_OPERA_TAB_FULL_AX_COMPARISON_NO_WORDPRESS_WRITE",
+  "method": {
+    "opera_tabs_before_cleanup": 2,
+    "cleanup": "Requested close of the inactive reference tab. Connector returned a screenshot-path error, then list-tabs readback proved the tab had actually closed.",
+    "opera_tabs_after_cleanup": 1,
+    "comparison": "Read target accessibility tree page 0/1 and 1/1, navigated the same remaining tab to the live reference, then read reference page 0/1 and 1/1.",
+    "screenshot_used": false,
+    "jq_used": false,
+    "new_tab_opened": false
+  },
+  "page_local_visible_content_reconciliation": {
+    "status": "NO_NEW_VISIBLE_COPY_OR_SECTION_GAP_OBSERVED_IN_FRESH_AX",
+    "matched_families": [
+      "hero title/body/contact actions/facts/art description",
+      "reviews section heading and current Panasonic review content",
+      "seven problem labels",
+      "comparison copy and both option lists",
+      "six-step process labels/descriptions",
+      "credibility copy and five-item checklist",
+      "Tiszafa before/after labels, slider name and story copy",
+      "Nordmann six-control carousel contract and story copy",
+      "similar-plant CTA copy",
+      "support/gain content",
+      "three-step assessment content",
+      "four FAQ question texts",
+      "request intro/contact text and complete form field labels/placeholders/consent/submit/direct-call text"
+    ],
+    "important_current_form_topics": [
+      "Új alakfa kialakítása",
+      "Meglévő alakfa / niwaki ápolása",
+      "Túlnőtt fa átalakítása",
+      "Sövény",
+      "Növény-egészségügyi probléma",
+      "Gyümölcsfa"
+    ]
+  },
+  "moving_state_not_defect": {
+    "nordmann_target_snapshot": "5 / 6",
+    "nordmann_reference_snapshot": "2 / 6",
+    "classification": "UNSYNCHRONIZED_AUTOPLAY_SNAPSHOT; not content/implementation evidence. Formal pixel comparison must synchronize or exclude moving state."
+  },
+  "fresh_page_local_ax_deltas_requiring_classification_not_blind_fix": [
+    {
+      "area": "review inactive tab accessible names",
+      "reference_snapshot": ["Otolecz Transzportbeton Kft.", "ARKER'S Építésziroda Kft."],
+      "target_snapshot": ["Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető", "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"],
+      "selected_panasonic": "Both snapshots expose Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető for the selected tab.",
+      "classification": "SEMANTIC_DYNAMIC_NAME_DIFFERENCE; no visual defect proven. Existing ID33/v012 review semantics must not be changed without reproducing source name behavior across selection states with an interaction-capable browser."
+    },
+    {
+      "area": "FAQ controls",
+      "reference_snapshot": "Question headings contain button controls with aria-controls.",
+      "target_snapshot": "Native details/summary appears as disclosureTriangle controls.",
+      "classification": "SEMANTIC_IMPLEMENTATION_DIFFERENCE_WITH_EQUIVALENT_MULTI_OPEN_DESIGN; no duplicate FAQ runtime or markup rewrite justified from AX role difference alone."
+    },
+    {
+      "area": "story definition-term text casing",
+      "reference_snapshot": ["KIINDULÓ HELYZET", "DÖNTÉS", "EREDMÉNY"],
+      "target_snapshot": ["Kiinduló helyzet", "Döntés", "Eredmény"],
+      "classification": "AX_TEXT_CASE_DIFFERENCE; likely separable from visual text-transform. Requires a visual/computed-style check before any content mutation; do not uppercase stored target copy merely to change AX."
+    }
+  ],
+  "global_owner_differences_outside_page264_write_scope": [
+    {
+      "area": "header brand AX",
+      "reference": "Alakfa mester",
+      "target": "Alakfa mester BIRÓ JÁNOS plus separate logo image semantics",
+      "classification": "GLOBAL_HEADER_OWNER; record for future global handoff only."
+    },
+    {
+      "area": "footer brand/byline",
+      "reference_observation": "Reference AX includes Készítette: before the ClickNest credit and does not expose the target's BIRÓ JÁNOS · TOPIARISTA line in the same place.",
+      "target_observation": "Target AX exposes BIRÓ JÁNOS · TOPIARISTA and the ClickNest credit without a separate Készítette: static text in the same snapshot.",
+      "classification": "GLOBAL_FOOTER_OWNER; no page264-local mutation authorized."
+    }
+  ],
+  "preserve": [
+    "Do not reopen accepted v004-v010 or v012 visual layers.",
+    "Do not alter current six service-topic labels; they are fresh source-target exact match.",
+    "Do not change Nordmann because its current slide number differs in unsynchronized autoplay snapshots.",
+    "Do not mutate ID33 review naming until selected/unselected source behavior can be actively exercised.",
+    "Do not replace native target FAQ ownership merely to force identical AX role names.",
+    "Do not touch global header/footer from PAGE264 scope."
+  ],
+  "tool_state": {
+    "opera_tabs_final": 1,
+    "opera_memory_policy": "One sequential tab preserved; no screenshot/JQ retries.",
+    "wpvibe": "296/300 used; no further calls in this work session.",
+    "wordpress_writes": 0
+  },
+  "pixel_pass": false,
+  "status": "FRESH_FULL_AX_NO_VISIBLE_PAGE264_COPY_GAP_SEMANTIC_DELTAS_CLASSIFIED_NO_WRITE"
+}
