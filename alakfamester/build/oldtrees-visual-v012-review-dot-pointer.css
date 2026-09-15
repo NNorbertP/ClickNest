@@ -1,0 +1,11 @@
+/* af-oldtrees-visual-v012:start
+ * Scope: page264 review visual dots only.
+ * Source dots are presentation spans and source script.js never binds a click handler to them.
+ * Target ID14 creates button dots with click handlers; ID33 already removes them from AX/focus.
+ * This page-local rule removes only pointer activation so the target matches source behavior.
+ */
+body.page-id-264 .af-reviews-section .af-review-source-dot {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+/* af-oldtrees-visual-v012:end */
