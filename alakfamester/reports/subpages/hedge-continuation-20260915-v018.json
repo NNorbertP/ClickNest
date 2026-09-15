@@ -1,0 +1,79 @@
+{
+  "schema_version": 18,
+  "package": "hedge-continuation-20260915-v018",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "page272-specific runtime/content only",
+  "wordpress_writes_this_continuation": 0,
+  "supersedes_for_continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
+  "purpose": "Static pointer reconciliation only. v017 correctly described the current page272 state but its single_entrypoint still named supersession v010 even though v011 already superseded it. No live state or implementation claim is advanced here.",
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "historical_until_fresh_live_read": true,
+    "fresh_read_required_before_write": true
+  },
+  "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v011.json",
+  "current_chain": {
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "semantic_delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "live_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json"
+  },
+  "verified_static_state": {
+    "v005_live": false,
+    "live_owner_documented_as": "Code Snippets ID36 v001, but exact live body/state must be re-read before any update",
+    "only_conditional_future_write": "existing ID36 -> build/hedge-semantic-runtime-v005.php after all live gates",
+    "current_page272_css_candidate": "NONE",
+    "shared_media_write_allowed": false,
+    "shared_form33_write_allowed": false,
+    "state_md_write_allowed_from_page272_lane": false
+  },
+  "closed_preserve": [
+    "26/26 shared media recovery",
+    "EAEL gallery 28/28 page-local id=0/full/original URLs/exact names/order",
+    "hero af2e004e accessible SVG contract",
+    "proof af2e004d 21 images and historical 4000ms autoplay proof",
+    "review c3d30005 exactly 3 tabs/panels and exact tab-name contract",
+    "five legacy named regions",
+    "CTA/contact semantics and exact 24-hour sentence",
+    "D09 page272 links/anchors",
+    "removed legacy af2e0009-af2e000e",
+    "visible heading text-set parity historically passed"
+  ],
+  "remaining_read_first": [
+    "fresh page272 saved baseline and exact current ID36 state",
+    "all three review-panel exact inner content plus one-to-one tab-panel wiring",
+    "complete hero/gallery/form outer section roots",
+    "ordered main-content H1-H6 level/name tree",
+    "proof-carousel current parent/item roles and owner",
+    "Form33 service required saved setting and safe native no-delivery rejection proof if available",
+    "native Form33 idle/error ARIA relations without real submission",
+    "document title/description/canonical/robots/OpenGraph/schema ownership"
+  ],
+  "proof_only_no_code_until_failure": [
+    "review direct click/Arrow/Home/End",
+    "proof-carousel arrows/swipe/pause/reduced-motion",
+    "Hedge lightbox source-specific behavior",
+    "visual/CSS until synchronized same-environment local delta and owner are proven"
+  ],
+  "tool_state": {
+    "wpvibe": "disabled/unavailable in this conversation; do not retry-loop",
+    "opera": "disconnected on list-tabs attempt; zero new tabs; do not reconnect-loop",
+    "github": "available",
+    "public_http": "not trustworthy/available for the two parity URLs"
+  },
+  "opera_memory_rule": "At most one source and one target project tab when Opera returns; open zero fan-out/replacement tabs and stop on stale/disconnected state.",
+  "formal_status": "PIXEL_PASS=false until the original frozen acceptance/behavior harness returns or an explicitly accepted replacement contract exists.",
+  "smtp_or_external_submission": false,
+  "real_form_submission": false,
+  "pixel_pass": false,
+  "status": "PAGE272_V018_STATIC_POINTER_RECONCILED_NO_LIVE_MUTATION"
+}
