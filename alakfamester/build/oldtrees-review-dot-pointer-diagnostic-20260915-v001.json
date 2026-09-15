@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-review-dot-pointer-diagnostic-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "mode": "READ_ONLY_BEHAVIOR_DIAGNOSTIC_NO_WRITE",
+  "scope": "Pointer behavior of the visually rendered review dots on page264 only.",
+  "known_evidence": {
+    "source_ax": "Source exposes three real review tabs plus previous/next controls, but no numbered dot controls in the accessibility tree.",
+    "source_markup_style_evidence": "Recovered source review CSS/markup evidence describes visual review dots as spans rather than button elements. Span markup alone does not prove pointer-inert behavior because JavaScript listeners could still be attached.",
+    "target_owner": "Code Snippets ID14 AF reusable reviews controls v005 creates three .af-review-source-dot button controls and each pointer click activates/focuses the corresponding real Atomic tab.",
+    "page264_current_containment": "Code Snippets ID33 sets tabindex=-1 and aria-hidden=true on the ID14 dot buttons after insertion. Visual appearance and ID14 pointer click behavior are intentionally preserved in the accepted semantic containment state.",
+    "global_plan": "build/reviews-controls-v006-dot-a11y-plan.json proposed only the same tabindex/aria-hidden semantic change globally and explicitly preserved pointer click; it did not prove pointer parity with the source."
+  },
+  "why_open": "For exact behavior parity, source visual-dot pointer behavior must be observed directly. AX absence proves only keyboard/accessibility-tree parity, not whether a source span reacts to pointer clicks.",
+  "live_test_preconditions": [
+    "Use exactly one synchronized source and one page264 target tab in an interaction-capable browser.",
+    "Verify the three source real tabs and target real Atomic tabs have the accepted exact names before testing dots.",
+    "Start source and target on the same real review/tab and record the selected tab/panel.",
+    "Do not modify ID14 or ID33 before this observation."
+  ],
+  "tests": [
+    "Identify the three visible source review-dot hit areas and record their actual rendered element tags/classes plus cursor/pointer-events; do not infer behavior from AX absence.",
+    "Pointer-click source visual dot 2 while review 1 is selected and record whether the visible/selected review changes to 2.",
+    "Repeat source visual dot 3 and then dot 1; record whether focus changes, whether selection changes, and whether any URL/hash changes.",
+    "Run the identical pointer sequence on target .af-review-source-dot controls and record real Atomic tab/panel selection plus focus.",
+    "Repeat once after using previous/next to prove dot behavior is not a one-time initialization artifact."
+  ],
+  "decision_tree": {
+    "source_dots_pointer_active_and_target_matches": "PASS; preserve ID14 pointer behavior plus ID33 AX/focus containment. No write.",
+    "source_dots_pointer_inert_target_dots_active": "REAL_BEHAVIOR_DELTA. Before any code, read current ID14/ID33 and determine the smallest page264-only containment that prevents dot activation without changing dot visuals, previous/next, real tab keyboard behavior or global pages.",
+    "source_behavior_unreliable_or_moving_state_unsynchronized": "HOLD; no write.",
+    "target_dots_missing_or_owner_changed": "STOP and reconcile current runtime ownership before using this plan."
+  },
+  "future_fix_constraints_if_mismatch_proven": [
+    "Do not modify shared/global ID14 from page264 scope.",
+    "Prefer extending the existing page264 ID33 owner rather than creating a new snippet.",
+    "Preserve the three real Atomic tabs, previous/next controls, Arrow/Home/End handling and exact accessible names.",
+    "Preserve dot visual rendering if the source has decorative dots; only the proven extra pointer behavior may be contained.",
+    "No DOM rebuild or CSS pointer-events shortcut until focus/hover/visual consequences are measured."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "SOURCE_POINTER_BEHAVIOR_NOT_YET_PROVEN_NO_CHANGE_JUSTIFIED"
+}
