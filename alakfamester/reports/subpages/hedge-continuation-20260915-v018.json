@@ -18,6 +18,7 @@
   },
   "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v012.json",
   "current_chain": {
+    "static_evidence_reconciliation": "reports/subpages/hedge-static-evidence-reconciliation-20260915-v001.json",
     "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
     "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
     "semantic_delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
@@ -34,7 +35,8 @@
     "current_page272_css_candidate": "NONE",
     "shared_media_write_allowed": false,
     "shared_form33_write_allowed": false,
-    "state_md_write_allowed_from_page272_lane": false
+    "state_md_write_allowed_from_page272_lane": false,
+    "outer_form_region_rule": "Do not restore the superseded #ajanlatkeres-as-complete-source-region assumption; require fresh intro+Form33 common-root ancestry proof."
   },
   "closed_preserve": [
     "26/26 shared media recovery",
