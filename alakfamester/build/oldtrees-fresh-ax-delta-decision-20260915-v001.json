@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-fresh-ax-delta-decision-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "mode": "SEMANTIC_DECISION_GATE_NO_WORDPRESS_WRITE",
+  "basis": "reports/subpages/oldtrees-fresh-full-ax-reconciliation-20260915-v001.json",
+  "principle": "Exact visual parity, accessible behavioral parity and identical accessibility-tree implementation are different acceptance dimensions. Do not destroy working native behavior merely to make role strings look identical in a static AX snapshot.",
+  "review_inactive_tab_names": {
+    "fresh_delta": "Reference inactive tabs expose company-only names while target inactive tabs currently include company + person/title; selected Panasonic includes person/title on both.",
+    "risk": "The source name may change dynamically with selection because hidden/visible metadata contributes to accessible naming. Current Opera connector cannot activate tabs or observe the post-selection source name transition.",
+    "decision": "HOLD_NO_ID33_OR_V012_CHANGE",
+    "future_gate": [
+      "With an interaction-capable browser, record all three reference tab accessible names in each selected state.",
+      "Repeat on target without changing code.",
+      "Only if a stable dynamic naming contract differs, modify the single existing page264 semantic owner; never add a second handler/owner.",
+      "Re-test Arrow/Home/End, prev/next, panel focus and v012 visual-dot pointer containment before release."
+    ]
+  },
+  "faq_control_roles": {
+    "fresh_delta": "Reference exposes question buttons with aria-controls; target exposes native details/summary disclosureTriangle controls.",
+    "known_behavior_contract": "Direct live source script toggles only the activated item and allows independent multi-open. Target native details/summary implements the same multi-open design without duplicate JS.",
+    "decision": "PRESERVE_NATIVE_TARGET_OWNER",
+    "reason": "A static role-label implementation difference is not evidence of visual or behavioral failure. Rebuilding native details into scripted buttons would increase regression risk and duplicate ownership without a proven user-facing defect.",
+    "future_gate": "Only reopen if pointer/keyboard/focus behavior itself fails against source in an interaction-capable synchronized test."
+  },
+  "story_dt_casing": {
+    "fresh_delta": "Reference AX text uses KIINDULÓ HELYZET / DÖNTÉS / EREDMÉNY; target AX text is title case.",
+    "visual_uncertainty": "The target may already use CSS text-transform for the visible uppercase treatment; AX casing alone cannot prove a visible mismatch.",
+    "decision": "HOLD_NO_COPY_MUTATION",
+    "future_gate": [
+      "Obtain synchronized visual/computed-style evidence for dt text-transform and rendered casing.",
+      "If visuals already match, preserve stored target copy.",
+      "If visuals differ, prefer a page264-local visual style owner rather than changing semantic text solely to imitate uppercase rendering."
+    ]
+  },
+  "global_header_footer": {
+    "decision": "OUT_OF_PAGE264_WRITE_SCOPE",
+    "rule": "Record for future explicit global handoff only. Do not compensate inside page264 body content or local CSS/JS."
+  },
+  "moving_carousel_state": {
+    "decision": "IGNORE_AS_UNSYNCHRONIZED_SNAPSHOT",
+    "rule": "Nordmann 5/6 target versus 2/6 reference is not a defect unless captured at synchronized timing/state."
+  },
+  "protected_owners": [
+    "page264 ID33 semantics/runtime owner",
+    "page264 v012 review-dot pointer containment",
+    "native target FAQ details/summary owner",
+    "Head & Footer Code source-interaction runtime",
+    "shared Form33"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "FRESH_AX_DELTAS_CLASSIFIED_NO_UNSAFE_FIX_AUTHORIZED"
+}
