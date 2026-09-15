@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "package": "header-account-preflight-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "scope": "planning-only global-header documentation reconciliation; no WordPress write and no current scope expansion",
+  "current_state_scope": "STATE.md is PAGE264 ONLY, so no header/global deployment is authorized now.",
+  "authoritative_future_execution": {
+    "deployment_plan": "build/header-deployment-plan-v010.json",
+    "base_plan": "build/header-deployment-plan-v009.json",
+    "runtime_delta_description": "build/header-runtime-parity-v008.json",
+    "intended_profile": "ncsnorbert+20260914-5@gmail.com"
+  },
+  "reconciled_conflict": {
+    "stale_text": "header-runtime-parity-v008 guarded_execution says 'Verify requested -5 profile'",
+    "correct_execution_fact": "header-deployment-plan-v009 explicitly requires ncsnorbert+20260914-5@gmail.com and v010 inherits v009 preflight/hash/quota/rollback guards",
+    "decision": "Treat '-5' in the runtime artifact as stale documentation only. It does not authorize or describe a different account. Future execution identity must be the exact +5 e-mail from v009/v010, verified live once before any write."
+  },
+  "do_not": [
+    "do not rewrite runtime implementation merely to fix this documentation typo",
+    "do not deploy header/runtime/CSS from current page264-only scope",
+    "do not substitute any historical account quota or connection state for a fresh +5 read",
+    "do not create a second header runtime owner or route helper"
+  ],
+  "future_preflight": [
+    "explicit global scope handoff",
+    "verify exact profile ncsnorbert+20260914-5@gmail.com, target-site connection and fresh rolling quota",
+    "require the v009/v010 minimum-call and D11 reserve guards",
+    "fresh-read post8/header20/snippet7 hashes, sizes, markers, active/code_error before mutation",
+    "capture exact immediate-prewrite owners for rollback",
+    "apply only the current v010 plan through existing owners"
+  ],
+  "dock_boundary": "This reconciliation does not establish or modify floating-contact-dock CSS ownership. Header runtime v008 explicitly protects quick-contact dock content; dock remains diagnostic-first and separately gated.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "status": "HEADER_FUTURE_PREFLIGHT_IDENTITY_RECONCILED_TO_PLUS5_NO_LIVE_AUTHORIZATION"
+}
