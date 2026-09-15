@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "package": "oldtrees-interaction-acceptance-20260915-v002",
   "date": "2026-09-15",
   "page_id": 264,
@@ -20,16 +20,17 @@
     "carousel_implementation": [
       "One-time data-af-carousel-init guard.",
       "translateX by -index*100%; aria-hidden on slides; aria-current on active dot; counter/caption update.",
-      "4000 ms setInterval autoplay unless manual, reduced-motion, disconnected or fewer than two slides.",
+      "4000 ms setInterval autoplay unless manual, reduced-motion, disconnected or fewer than two slides when start() evaluates its guards.",
       "manual is initialized once from c.classList.contains('carousel--manual'); user navigation does not mutate it.",
       "Prev/next, dot, ArrowLeft/ArrowRight and qualifying swipe call go(...) and then start(); on a non-manual carousel this restarts the 4000 ms timer unless reduced-motion or another start() guard blocks it.",
       "ArrowLeft/ArrowRight keyboard navigation.",
       "Pointer swipe requires |dx| >= 40 and |dx| >= |dy|.",
       "mouseenter/focusin call stop(); mouseleave/focusout call start().",
       "prefers-reduced-motion change calls start(), whose first action stops the current timer and then conditionally restarts.",
-      "Broken slides are removed and remaining dot data-go values are reindexed."
+      "Broken slides are removed with their matching dots; remaining dot data-go values are reindexed, index is clamped, and go(index) reapplies visible state. drop() itself does not call stop() or start()."
     ],
     "manual_mode_contract": "The recovered runtime has no first-user-action latch. A carousel is manual only when it already has the carousel--manual class at initialization. The observed Nordmann contract has autoplay, so manual navigation on that non-manual instance should restart its timer through start().",
+    "broken_slide_timer_caveat": "start() refuses to create a timer when fewer than two slides exist, but the image-error drop() path itself does not stop or restart an already-running timer. Therefore static code does not justify claiming immediate timer cancellation after a runtime removal. If this state occurs naturally, compare source and target observation rather than inventing a stronger contract.",
     "important_compound_state_caveat": "Hover and focus pause are not represented by independent state flags. Because mouseleave and focusout each call start() unconditionally, autoplay may restart while the other pause condition still remains true. This is not declared a parity defect until synchronized source behavior is observed; it is an explicit live acceptance edge case.",
     "historical_carousel_role_caveat": "oldtrees-runtime-live-qa-v002 sampled source current slide role=group at 2/6 and target role=listItem at 1/6. Later direct v005 proof closed control-name parity but did not re-measure synchronized slide roles. The old unsynchronized role snapshot is therefore neither PASS nor write authority.",
     "faq_note": "The common source-interactions-v001.js does not own FAQ disclosure behavior. FAQ must therefore be tested against the current rendered/native/addon disclosure owner before any runtime change is considered."
@@ -102,8 +103,9 @@
       "When reduced-motion changes back to no-preference on a connected non-manual carousel with at least two slides, the media-query listener calls start() and autoplay should resume without duplicate timers.",
       "A carousel initialized with carousel--manual must remain non-autoplaying across reduced-motion preference changes because start() exits on manual."
     ],
-    "broken_slide_tests_if_reproducible_without_network_manipulation": [
-      "Do not deliberately break working media. If an image is already broken, verify its slide and matching dot are removed together, remaining data-go values are reindexed, the current index is clamped, and autoplay stops when fewer than two slides remain.",
+    "broken_slide_tests_if_naturally_reproducible": [
+      "Do not deliberately break working media. If an image is already broken, verify its slide and matching dot are removed together, remaining data-go values are reindexed, the current index is clamped, and current visible/counter/caption state is reapplied.",
+      "Do not assert a timer stop/restart merely from static code: drop() calls neither stop() nor start(). If slide count falls below two at runtime, record actual synchronized source/target behavior if observable and require parity.",
       "If every slide is lost naturally, the enclosing project-card__extra or hero-proof container is hidden. No synthetic media failure is required for acceptance."
     ],
     "failure_policy": "Inspect current deployed runtime owner and initialization marker before changing JavaScript or slide semantics. Missing action tooling is not an implementation failure."
@@ -131,8 +133,14 @@
   "pass_definition": "Source and target complete the same observable review, range, carousel and FAQ behavior including synchronized carousel AX semantics, non-manual restart-after-navigation, compound hover/focus, disclosure and reduced-motion states, without AX/focus or visual regression.",
   "source_code_correction": {
     "date": "2026-09-15",
-    "previous_planning_error": "schema v4 incorrectly claimed each by-user navigation path sets manual=true and permanently latches autoplay off.",
-    "correct_source_fact": "source-interactions-v001.js sets manual only once from c.classList.contains('carousel--manual'); user navigation calls go(...) then start() and does not mutate manual.",
+    "previous_planning_errors": [
+      "schema v4 incorrectly claimed each by-user navigation path sets manual=true and permanently latches autoplay off.",
+      "schema v5 overstated the broken-slide path by requiring autoplay to stop when runtime removal leaves fewer than two slides, even though drop() itself calls neither stop() nor start()."
+    ],
+    "correct_source_facts": [
+      "source-interactions-v001.js sets manual only once from c.classList.contains('carousel--manual'); user navigation calls go(...) then start() and does not mutate manual.",
+      "start() guards against fewer than two slides when it runs; drop() removes/reindexes/clamps/re-renders but does not itself stop or restart an existing timer."
+    ],
     "wordpress_impact": "none; this corrects acceptance planning only and does not change the live site."
   },
   "current_execution_status": "PREPARED_NOT_RUN: Opera connector is currently disconnected and WPVibe is disabled; no runtime write is justified.",
