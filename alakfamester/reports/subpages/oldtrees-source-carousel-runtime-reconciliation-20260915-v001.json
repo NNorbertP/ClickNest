@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-source-carousel-runtime-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Static source-runtime reconciliation only; no WordPress or browser mutation.",
+  "source_runtime": {
+    "path": "build/source-interactions-v001.js",
+    "blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d"
+  },
+  "disproved_previous_interpretation": {
+    "stale_claim_locations": [
+      "build/oldtrees-interaction-acceptance-20260915-v002.json manual_latch_contract/manual_latch_tests",
+      "reports/subpages/oldtrees-continuation-20260915-v012.json interaction_deepening.nordmann manual=true claim"
+    ],
+    "stale_claim": "By-user prev/next/dot/Arrow/swipe navigation sets manual=true, permanently latching autoplay off.",
+    "direct_source_code_finding": "FALSE. The local variable manual is initialized once from c.classList.contains('carousel--manual') and is never assigned afterward. go(n) has no by-user argument. Successful manual navigation paths call go(...) followed by start().",
+    "risk_if_uncorrected": "A source-correct target that restarts autoplay after manual navigation could be misclassified as a failure and receive an unnecessary/regressive runtime change."
+  },
+  "correct_contract": [
+    "manual is a static per-instance class-derived flag: true only when the carousel root has carousel--manual at initialization.",
+    "start() always clears the existing timer first; it creates a new 4000ms interval only when manual is false, reduced-motion is false, slides>=2 and the root remains connected.",
+    "Prev/next arrow click, dot click, ArrowLeft/ArrowRight and qualifying pointer swipe all call start() after moving. On a non-manual carousel this resets/restarts the autoplay interval; it does not permanently stop autoplay.",
+    "mouseenter and focusin stop(); mouseleave and focusout call start() without independent pause flags, so compound hover/focus exit ordering can restart autoplay while the other condition is still active. This surprising behavior is source contract until live reference disproves the recovered runtime.",
+    "A prefers-reduced-motion change calls start(). Turning reduce off restarts autoplay on a connected non-manual multi-slide instance; turning it on suppresses the new interval.",
+    "Broken-slide removal reindexes dots and may stop/hide the carousel based on remaining slide count."
+  ],
+  "current_acceptance_owner": "build/oldtrees-interaction-acceptance-20260915-v003.json",
+  "obsolete_for_nordmann_timing_oracle": [
+    "oldtrees interaction v002 manual-latch test block",
+    "v012 continuation manual-latch sentence"
+  ],
+  "live_gate": [
+    "Observe source and target root class lists first, especially carousel--manual.",
+    "Historical autoplay evidence strongly suggests the observed Nordmann source instance is non-manual, but class presence must still be recorded in the synchronized live test rather than assumed.",
+    "For a non-manual instance, verify the timer is reset/restarted by each successful manual navigation and does not double-step from duplicate timers.",
+    "For a manual instance, expect no autoplay from initialization onward; only manual controls move slides.",
+    "Compound hover+focus and reduced-motion behavior must be compared as observable source parity, not redesigned to an ideal policy."
+  ],
+  "do_not": [
+    "do not change target runtime solely to implement a permanent manual latch",
+    "do not edit source-interactions-v001.js; it is evidence, not a target deployment artifact",
+    "do not create duplicate carousel runtime while current target owner is unread",
+    "do not use the old unsynchronized current-slide role snapshot as semantic write authority"
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "SOURCE_CAROUSEL_TIMER_CONTRACT_CORRECTED_V003_ORACLE_CURRENT"
+}
