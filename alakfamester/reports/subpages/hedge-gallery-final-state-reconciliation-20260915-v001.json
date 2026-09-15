@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "package": "hedge-gallery-final-state-reconciliation-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Resolve the chronological ambiguity between the partial page-local gallery patch recorded inside shared-media recovery v004 and the later completed gallery finalization v005 so no future continuation resumes a stale 4/28 checkpoint.",
+  "shared_media": {
+    "authoritative_evidence": "reports/subpages/hedge-shared-media-recovery-20260914-v004.json",
+    "status": "PASS_26_OF_26",
+    "restored_ids": [104,105,106,107,108,109,110,111,112,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219],
+    "rule": "No further shared attachment metadata writes are allowed for Hedge parity."
+  },
+  "partial_checkpoint_inside_recovery_v004": {
+    "historical_only": true,
+    "state": "first four EAEL image IDs had been set to zero; 24 remained after a 429",
+    "bytes": 53089,
+    "stale_resume_instruction": "resume from b2e2c105/attachment206",
+    "current_status": "SUPERSEDED_BY_LATER_GALLERY_FINALIZATION"
+  },
+  "final_gallery_state": {
+    "authoritative_evidence": "reports/subpages/hedge-gallery-page-only-finalization-20260914-v005.json",
+    "status": "CLOSED_PAGE_LOCAL_PASS",
+    "page272_bytes_at_gallery_close": 53041,
+    "page272_sha256_at_gallery_close": "b283e07f441a11a8f2390a685c91323ea66d58be2b15713c2b4e6d1ca35d0627",
+    "json_valid": true,
+    "widget": "b2e2c001",
+    "item_count": 28,
+    "gallery_image_object_count": 28,
+    "image_id_zero_count": 28,
+    "resolution": "full",
+    "frontend_original_webp_urls": true,
+    "frontend_page_specific_names_as_alt": true,
+    "urls_names_order_repeater_ids_preserved": true,
+    "shared_media_dependency": false
+  },
+  "later_page272_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "meaning": "Subsequent verified semantic/content packages advanced the page bytes/hash while preserving the completed gallery invariants. Do not expect the historical 53041-byte gallery-close hash before current semantic work."
+  },
+  "do_not_replay": [
+    "Do not resume the recovery-v004 b2e2c105 checkpoint.",
+    "Do not change any gallery media id from 0 back to a shared attachment ID.",
+    "Do not write shared attachment alt metadata for Hedge.",
+    "Do not restore revision 378 or any older whole-page revision to recover gallery state.",
+    "Do not rebuild the EAEL gallery from memory; preserve all 28 URLs/names/order/repeater IDs/settings."
+  ],
+  "future_readback_invariant": [
+    "b2e2c001 exists exactly once",
+    "28 items",
+    "28 image IDs are zero",
+    "resolution=full",
+    "28 exact URLs/names/order/repeater IDs preserved",
+    "original upload URLs render",
+    "page-specific accessible names do not depend on shared attachment alts"
+  ],
+  "status": "FINAL_GALLERY_28_OF_28_OVERRIDES_STALE_PARTIAL_RESUME_CHECKPOINT"
+}
