@@ -1,0 +1,99 @@
+{
+  "schema_version": 8,
+  "package": "hedge-semantic-runtime-static-qa-v008",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "source": "build/hedge-semantic-runtime-v005.php",
+  "source_commit": "d3d12aecad5a2b26e380ee85ea007d24a8404bd4",
+  "intended_live_snippet": 36,
+  "wordpress_writes": 0,
+  "status": "STATIC_PASS_V005_PRESERVES_EXISTING_IDREFS_LIVE_NATIVE_ARIA_GATE_STILL_REQUIRED",
+  "supersedes_for_deployment_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+  "v004_to_v005_delta": [
+    "script marker advances from af-hedge-semantic-parity-v004 to v005",
+    "adds addIdRef(el, attr, id) which tokenizes whitespace-separated IDREF values, appends the project-owned ID only when absent, and writes a deduplicated relation",
+    "form aria-describedby now preserves existing IDREF tokens instead of replacing the entire attribute",
+    "service aria-labelledby now preserves existing IDREF tokens instead of replacing the entire attribute",
+    "city input aria-describedby now preserves existing IDREF tokens instead of replacing the entire attribute",
+    "service role is set to group only when the current role is absent or already group; an unexpected native role is left untouched",
+    "review labels/dot suppression, form name, selectors, timing, observer and page guard are otherwise unchanged"
+  ],
+  "synthetic_idref_tests": {
+    "runner": "local Node helper-equivalence check",
+    "cases": [
+      {"existing": "", "add": "x", "expected": "x"},
+      {"existing": "a", "add": "x", "expected": "a x"},
+      {"existing": "a x", "add": "x", "expected": "a x"},
+      {"existing": "a  b", "add": "x", "expected": "a b x"},
+      {"existing": "err help", "add": "help", "expected": "err help"}
+    ],
+    "status": "PASS"
+  },
+  "source_re_read_findings": [
+    "server guard remains is_page(272)",
+    "wp_footer priority remains 120",
+    "no outer #ajanlatkeres region mutation",
+    "no CSS/style injection",
+    "no visible text replacement",
+    "no DOM reorder/removal",
+    "no form validation/submission handler",
+    "no click/keyboard interaction handler",
+    "no Elementor/Form33/shared-media mutation",
+    "review changes remain aria-label on tablist/tabs plus tabindex/aria-hidden on duplicate source dots",
+    "form changes remain accessibility attributes/IDs only"
+  ],
+  "why_v005_is_safer_than_v004": "The v004 direct setAttribute calls could replace a meaningful aria-describedby/aria-labelledby token if a native/plugin relation exists when apply() reruns. v005 only adds the intended IDREF token and preserves every current token. This is a static monotonic-preservation improvement; it does not prove current MetForm 4.3.0 runtime behavior and therefore does not remove the live conflict/readback gates.",
+  "metform_source_limit": {
+    "official_plugin_page": "WordPress.org documents installed-equivalent MetForm 4.3.0 dated 2026-08-30 and points to public SVN/source, but the current environment cannot retrieve the 4.3.0 SVN/ZIP source bytes for exact dynamic error-ARIA inspection.",
+    "claim_not_made": "Do not claim that MetForm currently adds or removes aria-describedby during validation from this static evidence alone.",
+    "consequence": "Keep the existing native ARIA/error-state live capture gate."
+  },
+  "mandatory_preupdate_baseline_gate": [
+    "verify intended +5 account/site/quota and preserve D11 reserve plus full readback margin",
+    "fresh page272 _elementor_data exactly reconciled with accepted 53606 B / ef688b...13b56 or STOP",
+    "read exact current ID36 body/name/scope/active/code_error and save rollback body",
+    "no newer page272 helper or existing v005 marker requiring readback instead of replay"
+  ],
+  "mandatory_review_structure_gate": [
+    "exactly one .elementor-element-c3d30005",
+    "exactly one role=tablist and exactly three real role=tab elements",
+    "visible/company identity order Panasonic -> Otolecz -> ARKER'S",
+    "capture current tablist/tab aria-label and aria-labelledby",
+    "capture duplicate .af-review-source-dot count/current tabindex/aria-hidden",
+    "if any stronger/newer native accessible-name owner conflicts with the exact source-equivalent label contract, HOLD and redesign"
+  ],
+  "mandatory_form_structure_and_native_aria_gate": [
+    "exactly one .mf-form-wrapper[data-form-id=33] and one form",
+    "exactly one wrapper-owned #af-form-direct-call OR exact wrapper-scoped tel:+36305394820 paragraph fallback",
+    "exactly one #af-form-service .mf-input-wrapper + .mf-input-label",
+    "exactly one #af-form-city input[name=telepules] + .mf-input-help",
+    "capture form role/aria-label/aria-labelledby/aria-describedby",
+    "capture service role/aria-label/aria-labelledby/aria-describedby",
+    "capture city aria-label/aria-labelledby/aria-describedby/aria-errormessage/aria-invalid",
+    "capture idle state and, if a safe non-delivery validation state is exercised, capture the validation/error state too",
+    "unexpected native owner/role/description relation remains a HOLD condition even though v005 preserves IDREF tokens"
+  ],
+  "mandatory_id_uniqueness_gate": [
+    "#af-form-direct-call is intended wrapper descendant or absent before ensureId fallback",
+    "#af-hedge-form-service-label must not belong to another element before creation",
+    "#af-hedge-form-city-help must not belong to another element before creation",
+    "all resulting relation IDs unique; duplicate IDs => STOP"
+  ],
+  "write_contract_if_all_gates_pass": [
+    "update existing Code Snippets ID36 only through the proven plugin-aware path",
+    "keep front-end scope and active state",
+    "never create duplicate helper",
+    "no Elementor/Form33/media/CSS/global-setting write",
+    "HTTP 429/unknown remains UNKNOWN until exact ID36 readback; no blind retry"
+  ],
+  "mandatory_postupdate_readback": [
+    "ID36 stored body exactly v005; active=true; code_error=null; front-end scope",
+    "page272 Elementor bytes/SHA unchanged",
+    "v005 marker once and obsolete page272 semantic markers absent in trustworthy rendered evidence",
+    "review tablist + three tab computed names exact; duplicate dots absent from AX/tab order",
+    "Form33 name/description, service name and city help exact while all pre-existing native IDREF/error relations remain present",
+    "all generated/reused relation IDs unique",
+    "protected hero/proof/reviews/gallery/form IDs preserved"
+  ],
+  "pixel_pass": false
+}
