@@ -1,0 +1,97 @@
+{
+  "schema_version": 11,
+  "package": "bio-evidence-supersedence-20260915-v011",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_PRECEDENCE_MAP_READ_ONLY",
+  "supersedes_for_next_page256_work": "reports/subpages/bio-evidence-supersedence-20260915-v010.json",
+  "purpose": "Make the identity-corrected remote chain, corrected v002 dependency graph, v003 handoff plan and v002 acceptance status authoritative while preserving v010 source/component truth.",
+  "scope_gate": "Fresh STATE.md still says PAGE264 ONLY and its release gate remains not released. Page256 stays repository-only. WPVibe is disabled/unavailable in this chat; Opera is disconnected; do not retry-loop either tool.",
+  "authoritative_current": {
+    "continuation": "reports/subpages/bio-continuation-20260915-v030.json",
+    "precedence_parent": "reports/subpages/bio-evidence-supersedence-20260915-v010.json",
+    "identity_reconciliation": "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "final_acceptance_spec": "specs/bio-final-acceptance-20260914-v003.json",
+    "acceptance_status": "reports/subpages/bio-final-acceptance-status-20260915-v002.json",
+    "blocker_execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v001.json",
+    "owner_runtime_blocker_audit": "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "hard_exactness_blockers": "reports/subpages/bio-exactness-blockers-20260914-v002.json",
+    "remote_runbook": "build/bio-next-remote-window-20260915-v006.json",
+    "remote_call_budget": "build/bio-remote-call-budget-20260915-v007.json",
+    "transaction_dependency_graph": "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "scope_handoff": "build/bio-scope-handoff-ready-20260915-v003.json",
+    "compact_structure_queue": "build/bio-page256-next-safe-package-20260914-v015.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "page_local_visual_delivery": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "phase1_static_QA": "reports/subpages/bio-page-local-phase1-static-qa-20260915-v001.json",
+    "FAQ_CTA_page_local_delivery": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "low_memory_browser_QA": "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+    "technology_icon_exactness": "reports/subpages/bio-technology-icon-exactness-audit-20260915-v001.json"
+  },
+  "identity_truth": {
+    "user_authorized_page256_WPVibe_account": "ncsnorbert+20260914-4@gmail.com",
+    "historical_verified_account": "ncsnorbert+20260914-4@gmail.com",
+    "current_live_profile_quota": "UNKNOWN because WPVibe is unavailable",
+    "stale_conflict": "+5 references copied into v029/v005/v006 are not authorization and are superseded by the identity reconciliation + runbook v006 + budget v007.",
+    "mutation_rule": "Future live profile must be exact +4 before any page256 site/page write; otherwise STOP."
+  },
+  "FAQ_CTA_truth": {
+    "source_measurement_authorities": [
+      "build/bio-faq-cta-source-layout-20260914-v006.json",
+      "build/bio-faq-cta-source-layout-v002.css",
+      "build/bio-wave-source-faq-v001.css",
+      "build/bio-cta-source-contract-20260914-v001.json",
+      "build/bio-faq-source-interaction-contract-20260914-v001.json"
+    ],
+    "physical_delivery_authority": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "delivery_owner": "style#af-page256-parity inside af260016 after carrier-probe PASS",
+    "fourth_wave": "separate dependency node after fresh paper-FAQ/sage-predecessor render proof",
+    "runtime": "remains HARD_BLOCKER; static CSS/layout never closes exact source runtime"
+  },
+  "transaction_truth": [
+    "Use build/bio-transaction-dependency-graph-20260915-v002.json, not v001.",
+    "TABLE_TITLE has no predefined TABLE_TITLE_VISUAL node. After the structure microfix, measure presentation and only create a local CSS rule if a concrete source delta is reproduced.",
+    "CTA_MAIL_STRUCTURE may be a no-op dependency if fresh complete anchor read proves source-exact child order.",
+    "FAQ_CTA_STATIC_LAYOUT and FAQ_WAVE4 are separate dependency nodes; do not blindly bundle the fourth wave into the first layout write.",
+    "HARD_BLOCKER nodes receive zero speculative mutation budget."
+  ],
+  "stale_or_forbidden_for_execution": [
+    "reports/subpages/bio-continuation-20260915-v029.json as resume entrypoint",
+    "reports/subpages/bio-evidence-supersedence-20260915-v010.json as latest map",
+    "reports/subpages/bio-final-acceptance-status-20260915-v001.json",
+    "build/bio-next-remote-window-20260915-v005.json",
+    "build/bio-remote-call-budget-20260915-v006.json",
+    "build/bio-transaction-dependency-graph-20260915-v001.json",
+    "build/bio-scope-handoff-ready-20260915-v002.json",
+    "build/bio-page256-next-safe-package-20260914-v014.json",
+    "old expectations v002/v003 regrouping",
+    "build/bio-semantic-runtime-v001.php as replacement source for live ID35",
+    "Global Hello Additional CSS page256 deployment",
+    "global Code Snippets/ID35/plugin mutation",
+    "full Elementor save, raw SQL/search-replace, blind 429 retry, replacement Opera tabs"
+  ],
+  "hard_blockers": [
+    "scope_remote",
+    "page_local_css_carrier",
+    "review_points_semantics",
+    "stress_dom_order",
+    "expectations_article_ownership",
+    "FAQ_exact_runtime",
+    "review_prev_next_focus",
+    "review_ordinal_AX",
+    "responsive_unverified"
+  ],
+  "critical_rules": [
+    "Fresh trustworthy STATE/site/account/page/ID35/rendered DOM always outranks repository planning evidence.",
+    "Prepared/static-QA is not live authorization or acceptance.",
+    "Every future mutation begins from a fresh exact owner boundary and ends with immediate saved/rendered/section-local AX readback as applicable.",
+    "Never reopen protected PASS content without a freshly reproduced regression.",
+    "D11 reserve >=10; use budget v007.",
+    "Exact/PIXEL PASS is forbidden while any hard blocker or required responsive proof remains open."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
