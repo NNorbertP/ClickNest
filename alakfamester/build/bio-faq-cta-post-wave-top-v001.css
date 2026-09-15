@@ -1,0 +1,14 @@
+/* af-bio-faq-cta-post-wave-top-v001:start
+ * Source .wave + .section rhythm for page256 FAQ/CTA.
+ * Apply only after the expectations->FAQ wave is live/proven and fresh geometry
+ * confirms the source 24px top reduction is required.
+ */
+body.page-id-256 #af-sub-bio-cta {
+  padding-top: calc(clamp(48px, 5.6vw, 88px) - 24px) !important;
+}
+@media (max-width: 720px) {
+  body.page-id-256 #af-sub-bio-cta {
+    padding-top: calc(clamp(40px, 9vw, 60px) - 24px) !important;
+  }
+}
+/* af-bio-faq-cta-post-wave-top-v001:end */
