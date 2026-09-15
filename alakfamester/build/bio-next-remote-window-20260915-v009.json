@@ -1,0 +1,60 @@
+{
+  "schema_version": 9,
+  "package": "bio-next-remote-window-20260915-v009",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READY_AS_RUNBOOK_NOT_LIVE_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-next-remote-window-20260915-v008.json",
+  "stage_0": [
+    "Fresh STATE/page264 release gate must explicitly hand page256 write scope; current state is NOT_RELEASED.",
+    "Current user scope remains page256 only.",
+    "Elementor skill loads.",
+    "First live WPVibe profile is exactly ncsnorbert+20260914-4@gmail.com; exact site/current quota known; D11>=10 after selected unit.",
+    "No unresolved 429/5xx/ambiguous mutation; browser-required node has released existing source/target Opera pair."
+  ],
+  "stage_1_read_only": [
+    "Fresh page256 _elementor_data bytes/SHA/JSON.",
+    "COMPLETE LIVE ID35 code/state; stale repo mirror is not write authority.",
+    "Protected content/link/asset/region invariants and current marker inventory.",
+    "Fresh only-first-node owner boundaries."
+  ],
+  "stage_2_first_possible_write": "build/bio-page-local-style-carrier-probe-20260915-v002.json only; clean/reconcile probe before dependents.",
+  "stage_3_phase1": "build/bio-page-local-visual-delivery-20260915-v003.json after carrier PASS; seven blocks only; immediate tight visual + compact AX readback.",
+  "stage_4_small_transactions": {
+    "package":"build/bio-page256-next-safe-package-20260915-v016.json",
+    "nodes":["FAQ_ORDER","REVIEW_ANCHOR optional","REVIEW_ROLE_COPY","TABLE_TITLE"],
+    "rule":"fresh read -> exact edit or no-op PASS -> immediate readback"
+  },
+  "stage_5_table_after_structure": {
+    "node":"TABLE_TITLE_VISUAL",
+    "payload":"build/bio-table-source-structure-v001.css",
+    "evidence":"reports/subpages/bio-table-title-execution-gap-20260915-v001.json",
+    "depends_on":["CARRIER_PROBE","TABLE_TITLE"],
+    "verify":["external title source-like", "caption0", "aria-labelledby exact", "3 col headers + 4 row headers unchanged"]
+  },
+  "stage_6_stress": {
+    "role":"build/bio-stress-article-resume-20260915-v002.json one complete-boundary aside->article only",
+    "visual":"build/bio-stress-current-dom-visual-v003.css after carrier/cascade proof",
+    "physical_order":"HARD BLOCKER until complete fresh owner + one atomic owner-level transform"
+  },
+  "stage_7_expectations": {
+    "candidate":"build/bio-expectations-source-structure-20260915-v005.json",
+    "rule":"HARD BLOCKER until a supported read returns the complete fresh af260013 owner/editor value and one guarded owner-value edit can perform the whole two-article regrouping in one transaction",
+    "visual":"build/bio-expectations-source-structure-v003.css only after structure PASS + carrier PASS"
+  },
+  "stage_8_FAQ_CTA": "build/bio-faq-cta-page-local-delivery-20260915-v002.json after carrier + FAQ_ORDER + CTA_MAIL_STRUCTURE; fourth wave only after surface proof; exact FAQ runtime remains OPEN.",
+  "stage_9_reviews": {
+    "ordinal":"isolated bio-review-ordinal-source-v001.css after carrier + immediate AX",
+    "Panasonic":"build/bio-review-points-semantics-20260915-v002.json diagnostic first; prefer one physical inline role=list wrapper over aria-owns only after complete 3-span boundary + CSS/AX proof",
+    "prev_next_focus":"HOLD until sanctioned physical runtime owner",
+    "media":"measure before geometry change"
+  },
+  "stage_10_browser": "build/bio-page256-opera-low-memory-qa-20260915-v001.json; max one source+one target tab, reused; section/viewport one at a time.",
+  "stage_11_acceptance": "Use specs/bio-final-acceptance-20260914-v003.json; never claim exactness while any body blocker, conditional convergence item or separate shared/global gate remains open.",
+  "dependency_graph":"build/bio-transaction-dependency-graph-20260915-v004.json",
+  "budget":"build/bio-remote-call-budget-20260915-v009.json",
+  "forbidden":["page264 mutation", "other pages/global/shared workaround", "Hello Additional CSS", "global ID35/Code Snippets/plugin/theme", "full Elementor save", "raw SQL/search-replace builder write", "blind retry", "replacement Opera tabs", "multi-step stress/expectations wrapper surgery", "aria-owns automatic fallback"],
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
