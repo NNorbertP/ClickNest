@@ -3,19 +3,22 @@
   "package": "oldtrees-section-coverage-20260915-v004",
   "date": "2026-09-15",
   "page_id": 264,
-  "mode": "POST_CLOSEOUT_SECTION_ACCEPTANCE_CORRECTED_SOURCE_TIMER_NO_WORDPRESS_WRITE",
+  "mode": "CURRENT_SECTION_ACCEPTANCE_AFTER_V008_V012_AND_SYNCHRONIZED_AX_NO_WORDPRESS_WRITE",
   "supersedes_for_planning": [
     "reports/subpages/oldtrees-section-coverage-20260915-v003.json",
     "reports/subpages/oldtrees-section-coverage-20260915-v002.json",
     "reports/subpages/oldtrees-section-coverage-20260915-v001.json"
   ],
-  "principle": "A proof gap is not a reproduced implementation failure. Page264 implementation remains closed unless fresh synchronized evidence proves a defect and its owner/cascade.",
-  "implementation_baseline": {
-    "elementor_bytes": 48874,
-    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
-    "additional_css_bytes": 614248,
-    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
-    "markers": {"v004":1,"v005":1,"v006":1,"v007":1,"af-project:end":1}
+  "principle": "A proof gap is not a reproduced implementation failure. Preserve accepted sections. Reopen implementation only for fresh reproducible page264 defects with a safe page264 owner/cascade; screenshot-unavailable state never authorizes speculative CSS.",
+  "current_live_baseline": {
+    "elementor_bytes": 48856,
+    "elementor_sha256": "7c3e1a5c13e8f8c1ead29dd85e25ac74091300ba81e30f96fa77513d8ad4910c",
+    "elementor_json_valid": true,
+    "intentional_elementor_delta": "Exactly six Nordmann slide roles changed listitem -> group and were synchronized source/target AX verified.",
+    "additional_css_bytes": 617608,
+    "additional_css_sha256": "7f19dc5a63e4d03249e27b42b72e08c0e6b7847a9372125a866a9e7bf56a7523",
+    "live_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "prepared_not_live": ["v011"]
   },
   "sections": [
     {
@@ -23,16 +26,18 @@
       "name": "Túlnőtt a fa? Mielőtt kivágatná, nézzük meg, lehet-e belőle alakfa",
       "owners": ["#af-sub-survivor-hero","af2a0041","af2a0052"],
       "content_semantics_media": "PASS",
-      "implementation_visual": "NO_FRESH_REPRODUCED_DEFECT_AFTER_CLOSEOUT",
-      "proof_only": "Historical same-browser evidence showed target copy lower than source. Keep the dedicated hero geometry diagnostic open until exact same-browser owner/cascade geometry is measured."
+      "implementation_visual": "V008_V009_LIVE_MATERIALLY_IMPROVED_FINAL_SCREENSHOT_OPEN",
+      "accepted": ["exact hero copy/description","hero media/art preserved","source-like top/eyebrow and lead wrapping materially improved by fresh browser captures"],
+      "open": "Stable screenshot comparison of final transition/height and 1024 behavior; v011 source-grid decision only from that evidence.",
+      "v011": "PREPARED_GATED_NOT_LIVE"
     },
     {
       "order": 2,
       "name": "Amit a megbízóim mondanak",
-      "owners": ["native Atomic Tabs",".af-reviews-tabs","shared ID14","page264 ID33"],
+      "owners": ["native Atomic Tabs",".af-reviews-tabs","shared ID14","page264 ID33","page264 v012 pointer containment"],
       "content_semantics_media": "PASS_FINAL_AX",
-      "implementation_visual": "NO_REPRODUCED_PAGE264_LOCAL_DEFECT",
-      "proof_only": "Keyboard/prev-next synchronization and source visual-dot pointer parity only."
+      "implementation_visual": "NO_REPRODUCED_PAGE264_LOCAL_VISUAL_DEFECT",
+      "interaction": "Direct reference script proves visual dots are not pointer controls. Target-only dot pointer activation is CLOSED by v012 while ID33 preserves AX/focus containment. Keyboard/prev-next action proof remains formal."
     },
     {
       "order": 3,
@@ -56,15 +61,13 @@
     {
       "order": 5,
       "name": "Hat lépés a kivágás helyett",
-      "owners": ["af2a0047",".af-number-steps"],
       "content_semantics_media": "PASS",
       "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
-      "proof_only": "Matched geometry/typography capture in formal matrix."
+      "proof_only": "Formal matched capture only."
     },
     {
       "order": 6,
       "name": "Nem minden növényt kell és nem minden növényt lehet megmenteni",
-      "owners": ["af2a0049"],
       "content_semantics_media": "PASS",
       "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
       "proof_only": "Formal matched capture only."
@@ -72,16 +75,15 @@
     {
       "order": 7,
       "name": "Növények, amiket nem vágtunk ki",
-      "owners": ["af2a004a",".ba.js-ba",".carousel.js-carousel"],
+      "owners": ["af2a004a",".ba.js-ba",".carousel.js-carousel","frontend #af-source-interactions-v001 from Head & Footer Code auhfc_settings_sitewide"],
       "content_semantics_media": "PASS",
-      "tiszafa_static": "PASS: native range min0 max100 step1 value50 and source alt contract intact.",
-      "nordmann_static": "PASS: six slides, prev/next, six dots and six ordered media entries intact.",
-      "proof_only": "Tiszafa pointer/keyboard value-to---ba-pos; Nordmann synchronized role/aria/caption-alt, timer reset, swipe, compound hover/focus and reduced-motion behavior."
+      "tiszafa": "Synchronized source/target AX exact name, native slider role/actions and value50 PASS. Same .js-ba input-event -> --ba-pos runtime contract.",
+      "nordmann": "All six saved/frontend target slides now source-equivalent role=group. Synchronized source/target Opera AX at 2/6 PASS with same prev/next/six dots. Fresh source and target autoplay presence confirmed.",
+      "proof_only": "Tiszafa pointer/keyboard mutation; Nordmann precise timer reset/swipe/compound hover-focus/reduced-motion timing/action proof."
     },
     {
       "order": 8,
       "name": "Van hasonló növénye?",
-      "owners": ["af2a004b"],
       "content_semantics_media": "PASS",
       "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
       "proof_only": "Formal matched capture/focus-visible sampling."
@@ -89,7 +91,6 @@
     {
       "order": 9,
       "name": "Support/gain content block",
-      "owners": ["af2a004d"],
       "content_semantics_media": "PASS",
       "semantics": "INTENTIONALLY_UNNAMED_SECTION",
       "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
@@ -98,7 +99,6 @@
     {
       "order": 10,
       "name": "Három lépés, kötelezettség nélkül",
-      "owners": ["af2a004f",".af-number-steps"],
       "content_semantics_media": "PASS",
       "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
       "proof_only": "Formal matched capture."
@@ -108,8 +108,8 @@
       "name": "Túlnőtt növények – kérdések",
       "owners": ["af2a0050","four native details/summary"],
       "content_semantics_media": "PASS",
-      "static_runtime": "PASS: four native details exist; no page264 duplicate disclosure owner found.",
-      "proof_only": "Pointer/keyboard, focus and source multi-open-vs-accordion observation."
+      "static_runtime": "PASS: four exact Q/A, all initially closed. Direct live reference script toggles only its activated item with no close-other logic; target independent native details/summary therefore matches the multi-open design.",
+      "proof_only": "Pointer/keyboard/focus action proof only. No duplicate FAQ owner justified."
     },
     {
       "order": 12,
@@ -118,43 +118,52 @@
       "content_semantics_media": "PASS",
       "implementation_visual": "PASS_POST_V006",
       "accepted": ["centered heading","compact 18x18 clock","joined white intro+form panel","contact-button geometry","white contact label/value foreground"],
-      "form_required_static": "PASS_WIRING: Form33 af040007/#af-form-service uses kapcsolat-tema, mf_input_required=yes, six exact option values, native activateValidation(required:true) and matching error component.",
-      "proof_only": "No-delivery action proof of required radio validation."
+      "form_required_static": "PASS_WIRING: Form33 af040007/#af-form-service uses kapcsolat-tema, mf_input_required=yes, six exact values, native activateValidation(required:true) and matching error component.",
+      "proof_only": "Safe non-submitting no-delivery required-radio action proof; inner-field computed geometry only if a fresh measured defect appears."
     },
     {
       "order": 13,
       "name": "Nordmann six-slide carousel component",
-      "owners": [".carousel.js-carousel","unique __AF_SOURCE_INTERACTIONS_V001__ database marker found under Head & Footer Code option auhfc_settings_sitewide"],
-      "content_semantics_media": "PASS_STATIC_AX",
+      "owners": [".carousel.js-carousel","Head & Footer Code auhfc_settings_sitewide 9790 B / SHA256 9bbbe49c223be1f7ca15b5604ed4855b8a8966a184c20fc4b45fd77990cfa34f","frontend #af-source-interactions-v001"],
+      "content_semantics_media": "PASS_SYNCHRONIZED_AX",
       "direct_source_runtime_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
       "source_runtime_truth": [
         "manual is initialized once from carousel--manual and never reassigned.",
-        "Successful navigation on a non-manual instance calls go() then start(), resetting/restarting the ~4000ms interval.",
-        "drop() removes slide/dot and reindexes. At zero remaining slides it calls stop(), hides the nearest project-card__extra/hero-proof owner or carousel and returns. At exactly one remaining slide it calls stop() because slides.length<2, then go(). At two or more remaining slides it neither stops nor restarts solely because of removal."
+        "Successful navigation on a non-manual instance calls go() then start(), resetting/restarting the ~4000ms interval when guards allow.",
+        "Corrected drop contract: zero remaining -> stop()+hide+return; exactly one remaining -> stop() then go(); two or more remaining -> no stop/start solely due removal."
       ],
-      "proof_only": "Exact deployed Head & Footer Code option identity plus synchronized action/timing proof."
+      "accepted": "Six group roles and synchronized current-state AX at 2/6; autoplay presence on source and target.",
+      "proof_only": "Precise action/timing/reset/swipe/compound pause/reduced-motion proof."
+    },
+    {
+      "order": 14,
+      "name": "Floating quick-contact dock",
+      "owners": ["active ID7 runtime .dock.af-source-dock","shared .dock CSS","historical v017 body::after fallback","page264 v010"],
+      "ax": "PASS source/target Gyors kapcsolatfelvétel plus phone/email/request actions with D09 route mapping.",
+      "cascade": "PROVEN: v017 blank body::after z-index9990 covered real .dock z-index900; v010 removes only page264 fallback.",
+      "responsive": "PROVEN_STATIC: fallback exists only min-width:760 and v010 applies only min-width:760; real dock max-width:700 responsive layout remains untouched.",
+      "visual": "POSTWRITE_SCREENSHOT_HOLD because Opera screenshot disconnects."
     }
   ],
-  "global_component_outside_page264_write_scope": {
-    "floating_contact_dock": {
-      "historical_observation": "Target pill looked clipped/empty while AX content existed.",
-      "current_classification": "OWNER/CASCADE_DIAGNOSTIC_ONLY",
-      "write_rule": "No global/header/dock write from page264. A local exception requires exact current losing declaration and every effect selector under body.page-id-264."
-    }
-  },
   "formal_visual_matrix": {
     "views": ["1920x1080","1440x1000","1024x900","768x1024","390x844","360x800"],
     "required": ["same browser engine/DPR/zoom","font/image readiness","same scroll/motion state","source capture","target capture","overlay/diff","key geometry","overflow check"],
     "moving_regions": "Synchronize or exclude moving review/carousel states.",
     "pixel_pass": false
   },
+  "only_prepared_visual_candidate": {
+    "artifact": "build/oldtrees-visual-v011-hero-source-grid.css",
+    "blob_sha": "ea12406dc43faf7e1e7dbb2337713bfb9990885a",
+    "status": "GATED_NOT_LIVE"
+  },
   "write_policy": [
-    "v006 and v007 are closed; never redeploy them.",
+    "Never redeploy v004-v010 or v012.",
     "Do not modify PASS content/semantics/media to obtain proof.",
     "No interaction proof gap authorizes duplicate JS.",
-    "Hero/dock remain diagnostics, not write specifications.",
-    "Only a fresh reproducible page264 defect with proven owner/cascade may reopen implementation."
+    "Do not deploy v011 without stable immediate source-target screenshot proof plus fresh current page/CSS/quota/marker preflight.",
+    "No new visual write while screenshot capability is unavailable."
   ],
-  "wordpress_writes": 0,
-  "status": "POST_CLOSEOUT_SECTION_COVERAGE_CORRECTED_DIRECT_SOURCE_TIMER_IMPLEMENTATION_CLOSED"
+  "wordpress_writes_by_this_report_update": 0,
+  "pixel_pass": false,
+  "status": "CURRENT_SECTION_COVERAGE_V004_V012_NORDMANN_ROLE_PASS_V011_GATED_SCREENSHOT_HOLD"
 }
