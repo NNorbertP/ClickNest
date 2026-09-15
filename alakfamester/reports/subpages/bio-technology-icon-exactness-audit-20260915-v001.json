@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "package": "bio-technology-icon-exactness-audit-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "scope": "Read-only evidence reconciliation for #technologiak. No WordPress, global CSS, plugin, shared resource, source-site or browser mutation.",
+  "status": "VISUAL_EXACTNESS_UNPROVEN_PRESERVE_CURRENT_ICON_OWNER",
+  "evidence": [
+    "reports/subpages/bio-technology-live-compare-20260914-v016.json",
+    "reports/subpages/bio-visual-deep-audit-20260914-v011.json",
+    "build/bio-visual-parity-v001.json",
+    "build/bio-visual-parity-v001.css"
+  ],
+  "proven": [
+    "The three technology cards are source-aligned in visible heading/copy/order.",
+    "Existing target generated icon badges are present and align in subject/order with the source cards.",
+    "The prepared visual package intentionally does not write article::before or article::after because those pseudos are current icon owners.",
+    "Known technology visual deltas are card padding/radius/shadow/sage hairline/watermark, section lead/eyebrow treatment and checklist marker/callout presentation; prepared page256-local visual rules cover those independently."
+  ],
+  "not_proven": [
+    "No repository evidence establishes pixel-exact icon-badge geometry, path data, stroke/shape, rotation or per-card placement against the source.",
+    "The phrase 'align in subject/order' is not a pixel-exactness proof.",
+    "No raw immutable source HTML/CSS snapshot containing the exact icon badge SVG/path is currently versioned in the repository."
+  ],
+  "decision": {
+    "classification": "DIAGNOSTIC_ONLY_NOT_A_PROVEN_DELTA",
+    "preserve": "Do not replace, suppress or restyle the current technology article icon pseudo-elements from static evidence alone.",
+    "reason": "A blind icon replacement could regress an already source-aligned owner; exact source geometry must be observed first.",
+    "hard_blocker_effect": "Do not increase or clear the authoritative hard-blocker count from this audit alone. Keep PIXEL_PASS=false until live visual acceptance covers the icon badges."
+  },
+  "next_live_proof": [
+    "Reuse only the existing source/target Opera pair when browser ownership returns; open no diagnostic tabs.",
+    "At the same desktop viewport/DPR/zoom, capture or inspect a tight #technologiak card-icon comparison rather than another full-page capture.",
+    "Confirm badge box size, leaf/icon shape, orientation, color and offset for all three cards.",
+    "If visually exact, mark the icon owner PASS_PRESERVE and leave the pseudos untouched.",
+    "If a concrete geometry delta is reproduced, recover the source rule/path first and prepare the smallest page256-local override; never infer SVG geometry from memory or card subject."
+  ],
+  "opera_memory": {
+    "max_project_tabs": 2,
+    "new_tabs_for_this_check": 0,
+    "avoid_full_ax_tree": true,
+    "preferred_evidence": "tight visual/card-owner inspection only"
+  },
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
