@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "package": "source-asset-blocker-reconciliation-20260915-v002",
+  "date": "2026-09-15",
+  "scope": "Read-only evidence precedence for the two unresolved frozen-reference assets. No WordPress/media write and no write-scope change.",
+  "supersedes_for_planning": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+  "page270_portrait": {
+    "frozen_source_url": "https://alakfamester.clicknest.hu/kepek/biro-janos-portre.webp",
+    "role": "Biró János munka közben",
+    "exact_asset_state": "HARD_BLOCKER_OPEN: frozen bytes remain unavailable/404",
+    "earlier_evidence": {
+      "report": "reports/subpages/about-survivor-source-parity-v001.json",
+      "commit": "188e1a3cb853750d103de17f64177ce9af4d3654",
+      "time_utc": "2026-09-12T09:27:22Z",
+      "finding": "That sampled page state did not require biro-janos-portre.webp as a visible source element."
+    },
+    "later_direct_evidence": {
+      "report": "reports/subpages/about-oldtrees-media-finalization-v001.json",
+      "commit": "882007531c0e08cbe1408e17a58b1b309b679d23",
+      "time_utc": "2026-09-12T21:17:38Z",
+      "finding": "Later direct frozen-reference source/target media recheck measured source main images=10 and target main images=9 and identified Biró János munka közben / biro-janos-portre.webp as the only missing source image role."
+    },
+    "precedence_resolution": "CURRENTLY_REQUIRED_BY_LATER_DIRECT_FROZEN_REFERENCE_MEDIA_MEASUREMENT",
+    "reason": "The later report directly re-measures the same visible-media question and is approximately twelve hours newer, so the older not-required snapshot must not be used to dismiss the portrait requirement.",
+    "public_provenance_candidate": "https://alakfamester.hu/uploads/site11252/175710979668bb5e24d0840_555x305.jpg",
+    "candidate_limit": "Current public-site working image is provenance-only: different generated filename/publication state and no frozen-byte or pixel-equivalence proof.",
+    "write_policy": "Do not upload, redraw, upscale, substitute or remove media for this role until exact frozen/local bytes are recovered or deterministic equivalence is proven. A still-fresher trustworthy frozen-reference capture may supersede the visibility requirement."
+  },
+  "page258_ellwoodi": {
+    "frozen_source_url": "https://alakfamester.clicknest.hu/kepek/175725917368bda5a5b1ae6_370X354.webp",
+    "role": "A többgömbös Ellwoodi niwaki, másik nézet",
+    "exact_asset_state": "HARD_BLOCKER_OPEN: frozen WEBP bytes remain unavailable/404",
+    "public_provenance_candidate": "https://alakfamester.hu/uploads/site11252/175725917368bda5a5b1ae6_370X354.jpg",
+    "candidate_strength": "Strong provenance because generated basename stem and 370x354 dimensions match and the visible subject belongs to the Ellwoodi/niwaki image family; still not frozen WEBP byte/pixel equivalence.",
+    "duplicate_guard": "Historical target attachment 150 / A kialakított forma may be relevant but its mapping to this asset could not be proven offline. Fresh target media metadata/hash mapping must precede any import.",
+    "write_policy": "Do not upload/substitute the JPG solely from basename/subject correspondence; avoid duplicate target media."
+  },
+  "recovery_findings": [
+    "Git history confirms the original local source workspace and the missing frozen WEBPs were never committed, so Git cannot recover their exact bytes.",
+    "GitHub Actions/workflow runs and Releases contain no recovery artifact for the missing source assets or formal runner.",
+    "Public-site candidates improve provenance only and do not lower the exactness requirement."
+  ],
+  "scope_safety": {
+    "active_wordpress_write_scope": "PAGE264 ONLY per STATE.md until formal release/handoff.",
+    "page258_write_now": false,
+    "page270_write_now": false,
+    "wordpress_writes": 0,
+    "media_writes": 0,
+    "opera_tabs_opened": 0,
+    "pixel_pass": false
+  },
+  "status": "PORTRAIT_REQUIREMENT_PRECEDENCE_RESOLVED_EXACT_PORTRAIT_AND_ELLWOODI_ASSETS_STILL_BLOCKED"
+}
