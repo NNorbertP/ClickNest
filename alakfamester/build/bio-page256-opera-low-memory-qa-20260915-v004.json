@@ -1,0 +1,21 @@
+{
+  "schema_version": 4,
+  "package": "bio-page256-opera-low-memory-qa-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_NOT_RUN_BROWSER_DISCONNECTED",
+  "supersedes_for_execution": "build/bio-page256-opera-low-memory-qa-20260915-v003.json",
+  "inherits_all_memory_rules_from": "build/bio-page256-opera-low-memory-qa-20260915-v003.json",
+  "memory_contract": "unchanged: max two existing tabs, zero new tabs, tight current-component evidence only, section-local AX, stop on disconnect/no loop",
+  "expectations_pre_transform_source_capture": {
+    "when": "Only if the one-shot expectations transform is otherwise write-ready from a fresh complete target owner.",
+    "reference_tab_action": "At the existing source expectations link, read/capture only the exact link child markup sufficient to prove the decorative arrow SVG element/path/viewBox and aria-hidden/focusable state. Do not dump/store the whole page.",
+    "target_use": "Pass the exact source SVG bytes into the one-shot expectations transform only if fully captured/trustworthy.",
+    "no_capture": "Do not invent or approximate an arrow; allow structural article/list ownership work only if otherwise safe and keep EXPECTATIONS_LINK_ARROW_VISUAL OPEN."
+  },
+  "wave_spacing_checks": "unchanged from v003: first-three seam, FAQ base normal spacing, wave4 seam, then measured no-op/top-only post-wave decision.",
+  "other_checks": "unchanged from v003/v002: hero CTA computed state, review media/ordinal/Panasonic, stress physical order, technology icon geometry, table title, mobile h2 and final responsive/AX acceptance.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
