@@ -13,8 +13,10 @@ Current planning/evidence:
 - `reports/subpages/oldtrees-content-coverage-reconciliation-20260914-v001.json` — current copy/media reconciliation; no known page264 content/main-media gap;
 - `reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json` — supersedes the stale 29/38 heading and 1/11 region audit snapshot;
 - `reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json` — reconciles every original visual-audit defect; only v006/v007 remain reproduced page-local failures;
-- `reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json` — current authoritative/stale/do-not-replay map; supersedes the 20260914 v001 map for planning;
-- `reports/subpages/oldtrees-continuation-20260915-v012.json` — current continuation checkpoint and actual tool-state/static-convergence record;
+- `reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json` — current authoritative/stale/do-not-replay map; aligned to continuation v013, remote v005 and source-exact interaction v003;
+- `reports/subpages/oldtrees-continuation-20260915-v013.json` — current continuation checkpoint; supersedes v012 for resume;
+- `reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json` — current exact source carousel contract, including class-derived manual mode and the broken-slide timer caveat;
+- `reports/subpages/oldtrees-source-runtime-reconciliation-20260915-v001.json` — supplemental source-runtime audit for page264 acceptance;
 - `reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json` — exact artifact-aligned v006/v007 ownership proof; v007 has no invented flex/box-sizing claim;
 - `reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json` — parser/scope QA: v006/v007/bundle parse cleanly and every effect selector is page264-scoped;
 - `reports/subpages/oldtrees-section-coverage-20260915-v001.json` — classifies every completed page264 section as PASS / proven failure / diagnostic / proof-only;
@@ -24,15 +26,17 @@ Current planning/evidence:
 - `reports/subpages/oldtrees-direct-live-compare-20260914-v005.json`;
 - `reports/subpages/oldtrees-form-runtime-reconciliation-20260914-v001.json`;
 - `build/oldtrees-visual-deploy-manifest-20260915-v001.json` — parser-backed exact v006/v007/bundle blob SHAs, markers and both/one/neither deployment decision;
-- `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`;
-- `build/oldtrees-interaction-acceptance-20260915-v002.json` — current no-write review/tiszafa/Nordmann/FAQ matrix including synchronized carousel AX role gate, first-manual-action autoplay latch, compound hover+focus and reduced-motion states;
+- `build/oldtrees-interaction-acceptance-20260915-v003.json` — current no-write review/tiszafa/Nordmann/FAQ oracle; v002 is superseded for Nordmann timing/manual/drop semantics;
 - `build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json` — source visual-dot pointer behavior proof gate; current target pointer behavior is not changed without source observation;
 - `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json` — exact no-write owner/cascade gate for the unproven hero offset;
 - `build/oldtrees-responsive-acceptance-matrix-20260914-v001.json` — six-view responsive acceptance expectations from proven page264 breakpoint contracts;
 - `build/oldtrees-form-required-validation-plan-20260915-v001.json` — native-required-first D05 gate with fresh shared Form33 identity + `#af-form-direct-call` preservation;
 - `build/oldtrees-form-field-visual-diagnostic-20260915-v001.json` — inner MetForm field visual measurement gate; no current inner-field defect proven;
 - `build/floating-contact-dock-diagnostic-plan-20260915-v003.json` — corrected dock provenance and page264-only owner/cascade gate; no global write authorization;
-- `build/oldtrees-next-remote-window-20260915-v004.json` — current low-call live plan; supersedes v003 for planning.
+- `build/oldtrees-next-remote-window-20260915-v005.json` — current low-call live plan; supersedes v004 for planning;
+- `build/oldtrees-scope-release-gate-20260915-v001.json` — page264 remains NOT RELEASED until fresh v006/v007 implementation closeout; tool unavailability is not release evidence.
+
+`build/oldtrees-post-v005-acceptance-plan-20260914-v001.json` is historical measurement context only. It predates v007 and the current both/one/neither deployment decision and must not be used as the execution plan.
 
 ## Live state to preserve
 
@@ -106,7 +110,7 @@ Required preflight for any visual write:
 - re-read current repository artifact/manifest identity; do not manually reconstruct the CSS at write time;
 - no newer live rule already fixes the selected failure;
 - one guarded server-side match-once insertion only;
-- any HTTP 429 write result is UNKNOWN until marker/hash readback; never blind-retry.
+- any HTTP 429/5xx write result is UNKNOWN until marker/hash readback; never blind-retry.
 
 Postwrite:
 - read back marker(s), unique `af-project:end`, unchanged page264 hash/JSON;
@@ -139,7 +143,7 @@ At <=560px the current repo contract says intrinsic contact-button width, reduce
 
 Requested WPVibe identity was verified as **`ncsnorbert+20260914-5@gmail.com`**, email verified. `connect_site` returned a one-click authorization URL, but WPVibe became unavailable before `list_sites` / `site_info` could confirm site connection or rolling quota.
 
-In the latest 2026-09-15 continuation, the first read-only `list_sites` call returned the WPVibe tool as disabled. No further WPVibe call was made in that continuation.
+In the latest 2026-09-15 continuation, the first WPVibe attempt returned the tool as disabled. No further WPVibe call was made in that continuation.
 
 Therefore:
 - current `-5` site connection is **not confirmed**;
@@ -152,7 +156,7 @@ No WordPress write was made through the unavailable `-5` connection in the lates
 
 ## Existing page264 content/runtime to preserve
 
-Runtime evidence: `reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json`, `reports/subpages/oldtrees-runtime-ownership-static-qa-20260914-v001.json`, `build/oldtrees-semantic-runtime-v003.php`, `build/source-interactions-v001.js`.
+Runtime evidence: `reports/subpages/oldtrees-runtime-live-qa-20260914-v004.json`, `reports/subpages/oldtrees-runtime-ownership-static-qa-20260914-v001.json`, `build/oldtrees-semantic-runtime-v003.php`, `build/source-interactions-v001.js`, `reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json`.
 
 Preserve:
 - ID33 page guard `is_page(264)` and its semantic fixes;
@@ -167,9 +171,14 @@ Preserve:
 - inline MetForm33 section and visible 24-hour reply;
 - current page264 IDs/order/data baseline.
 
-Do not add duplicate review/slider/carousel/FAQ JS without a stable failing interaction proof. `source-interactions-v001.js` statically contains the before/after input→`--ba-pos`, 4000ms carousel, ArrowLeft/Right, >=40px horizontal swipe, pause/resume and reduced-motion logic. Every by-user carousel navigation path sets `manual=true`; on that initialized source-runtime instance autoplay then remains latched off because later `start()` calls refuse to restart while manual is true. Its hover/focus pause states do not use independent flags, so compound hover+focus exit order before the manual latch is an explicit **parity test**, not an automatic code fix. If a live interaction failure appears, read the current deployed runtime owner before any JS write.
+Do not add duplicate review/slider/carousel/FAQ JS without a stable failing interaction proof. The exact recovered carousel contract is:
+- `manual` is initialized once from `c.classList.contains('carousel--manual')` and is never changed by user navigation;
+- on a non-manual instance, prev/next, dot, ArrowLeft/Right and qualifying swipe call `go(...)` followed by `start()`, so the ~4000ms timer is reset/restarted unless the current `start()` guards block it;
+- on a `carousel--manual` instance autoplay is disabled from initialization;
+- hover/focus pause conditions are not tracked with independent flags, so compound exit-order behavior must match the source even if it is surprising;
+- `drop()` removes/reindexes/clamps/re-renders a broken slide state but itself calls neither `stop()` nor `start()`. The `<2 slides` check belongs to `start()` when `start()` runs, so do not infer immediate timer cancellation after runtime removal from static code.
 
-The old Nordmann source `group` at slide 2/6 versus target `listItem` at slide 1/6 snapshot was unsynchronized. It is neither PASS nor write authority. The current interaction plan first puts source and target on the same slide, pauses motion, compares current/noncurrent AX roles and `aria-hidden`, and compares six caption/alt entries in DOM order. Only a synchronized surviving role delta is a real semantic failure.
+The old permanent manual-latch claim in v002/v012 is **superseded and must never be used as write authority**. The old Nordmann source `group` at slide 2/6 versus target `listItem` at slide 1/6 snapshot was also unsynchronized. It is neither PASS nor write authority. The current interaction v003 first puts source and target on the same slide, pauses motion, compares current/noncurrent AX roles and `aria-hidden`, and compares six caption/alt entries in DOM order. Only a synchronized surviving role delta is a real semantic failure.
 
 ## Semantic audit reconciliation — current static/AX PASS
 
@@ -223,7 +232,7 @@ Inner form field styling is also a **measurement gate, not a reproduced defect**
 - Nordmann static AX controls prev/next + dots 1–6 match;
 - reviewed named page regions match source names/order.
 
-These are not reasons for more static/semantic writes. Nordmann current-slide role semantics, timing and manual-latch behavior remain separate synchronized interaction proof.
+These are not reasons for more static/semantic writes. Nordmann current-slide role semantics, timing, timer reset after manual navigation, compound pause and reduced-motion behavior remain separate synchronized interaction proof.
 
 ## Route / CTA invariants to preserve
 
@@ -238,7 +247,7 @@ Do not activate phone/e-mail handlers merely for QA.
 
 ## Remaining QA after/around v006/v007
 
-Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `reports/subpages/oldtrees-section-coverage-20260915-v001.json`, `build/oldtrees-next-remote-window-20260915-v004.json`, `build/oldtrees-interaction-acceptance-20260915-v002.json`, `build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json`, `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json`, `build/oldtrees-responsive-acceptance-matrix-20260914-v001.json`, `build/oldtrees-form-required-validation-plan-20260915-v001.json`, `build/oldtrees-form-field-visual-diagnostic-20260915-v001.json`, `build/floating-contact-dock-diagnostic-plan-20260915-v003.json` and `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json`.
+Follow `reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json`, `reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json`, `reports/subpages/oldtrees-continuation-20260915-v013.json`, `reports/subpages/oldtrees-section-coverage-20260915-v001.json`, `build/oldtrees-next-remote-window-20260915-v005.json`, `reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json`, `build/oldtrees-interaction-acceptance-20260915-v003.json`, `build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json`, `build/oldtrees-hero-geometry-diagnostic-20260914-v001.json`, `build/oldtrees-responsive-acceptance-matrix-20260914-v001.json`, `build/oldtrees-form-required-validation-plan-20260915-v001.json`, `build/oldtrees-form-field-visual-diagnostic-20260915-v001.json`, `build/floating-contact-dock-diagnostic-plan-20260915-v003.json` and `build/oldtrees-scope-release-gate-20260915-v001.json`.
 
 Visual:
 - after v007 or if a newer rule already fixes it, prove equal desktop comparison columns/source-like wrapping and preserve beige/sage surfaces/icons/bullets;
@@ -253,23 +262,26 @@ Interaction:
 - reviews ArrowRight/Down/Left/Up/Home/End plus previous/next synchronization;
 - visual review-dot pointer behavior must be compared source/target directly before changing the existing pointer-active ID14 dots;
 - tiszafa pointer + keyboard with native range and `--ba-pos` staying synchronized;
-- Nordmann fresh-instance ~4000 ms autoplay, synchronized current/noncurrent slide role/`aria-hidden` and caption/alt order, ArrowLeft/Right, >40px horizontal swipe, reduced-motion stop/re-evaluation, simple hover/focus pause, compound hover+focus exit-order parity, and **first manual navigation latching autoplay off** for the initialized source-runtime instance;
+- Nordmann: first record `carousel--manual`; on a non-manual instance verify fresh ~4000ms autoplay and that successful manual navigation resets/restarts the countdown instead of permanently latching autoplay off; synchronize current/noncurrent slide role/`aria-hidden` and caption/alt order; verify ArrowLeft/Right, >=40px horizontally dominant swipe, reduced-motion, simple + compound hover/focus behavior and no duplicate timers;
+- if a broken Nordmann slide occurs naturally, verify slide/dot removal, reindex, index clamp and current-state rendering, but do **not** infer stop/restart timing from `drop()` because it calls neither `stop()` nor `start()`;
 - all four FAQ disclosures: source-equivalent initial expanded state, pointer/keyboard activation, multi-open vs accordion behavior, focus/ARIA/ID integrity and restored fourth-question preservation;
 - these are proof-only by default: lack of an action-capable browser is not a reason to add another runtime owner.
 
 ## Evidence precedence / stale reports
 
-Use `reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json` before acting on historical open arrays. In particular:
+Use `reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json` before acting on historical open arrays. In particular:
 - old `readonly-source-target-audit-v001` hero/form gaps are closed;
 - old `oldtrees-semantic-audit-v001` 29/38 and 1/11 counts are closed;
 - old `oldtrees-runtime-live-qa-v002` partial review names/extra-dot state are closed by later evidence for AX/focus; its unsynchronized Nordmann slide-role snapshot is not a fix specification;
 - old `oldtrees-inline-form-v001` rows/photo-count/success-state opens are closed by Form33 ID5/ID6/settings, and its older 5568/`47152…` Form33 hash predates the accepted `#af-form-direct-call` addition;
 - old broad visual v001 audit is superseded by v004/v005 plus the visual reconciliation;
 - `build/floating-contact-dock-diagnostic-plan-20260914-v002.json` has stale CSS-owner provenance for page264 planning; use v003;
-- `build/oldtrees-interaction-acceptance-20260914-v001.json` is superseded for planning by the 20260915 v002 interaction matrix;
-- `build/oldtrees-next-remote-window-20260915-v003.json` is superseded by v004;
-- `reports/subpages/oldtrees-continuation-20260915-v011.json` is superseded by v012;
-- `reports/subpages/oldtrees-readback-closeout-20260915-v001.json` is a historical SHA closeout from before the current parser/Form33/interaction/route/review-dot reconciliation;
+- `build/oldtrees-interaction-acceptance-20260915-v002.json` is superseded for current interaction planning by v003;
+- `build/oldtrees-next-remote-window-20260915-v004.json` is superseded by v005;
+- `reports/subpages/oldtrees-continuation-20260915-v012.json` is superseded by v013;
+- historical interaction v003 schema 5 broken-slide wording is superseded by the current schema 6 content at the same path;
+- `build/oldtrees-post-v005-acceptance-plan-20260914-v001.json` is historical measurement context only, not current execution authority;
+- `reports/subpages/oldtrees-readback-closeout-20260915-v001.json` and v002 are historical SHA closeouts from before the current v013/v005/v003 source-runtime reconciliation;
 - never redeploy historical visual bundles or obsolete semantic runtime versions.
 
 Fresh live truth always outranks this documentation; reconcile drift instead of forcing a stale snapshot.
@@ -278,7 +290,7 @@ Fresh live truth always outranks this documentation; reconcile drift instead of 
 
 In the latest continuation the first Opera action was a single `list-tabs`, which returned **Browser not connected**. No Opera navigation, screenshot, new/replacement tab or reconnect loop was attempted afterward. When stable again, use at most one source + one target tab and stop on instability instead of tab fan-out.
 
-WPVibe returned disabled on the first read-only `list_sites` attempt in the latest continuation; no repeat call was made.
+WPVibe returned disabled on the first attempt in the latest continuation; no repeat call was made.
 
 Generic web/direct runtime fallback did not produce a usable live source/target page. Thus no trustworthy current live QA/write gate is available in this conversation.
 
@@ -286,8 +298,9 @@ Generic web/direct runtime fallback did not produce a usable live source/target 
 
 ## Current status
 
-**Elkészült:** page264 content/semantics and main media reconciled with no known copy/media gap; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; shared Form33 saved-data timeline/direct-call dependency reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; exact v006/v007 single-write bundle + parser-backed deploy manifest; authoritative acceptance ledger; content/semantic/visual/cascade coverage reconciliations; current evidence-supersedence v002 map; complete section coverage map; interaction acceptance v002 including synchronized Nordmann role gate, first-manual autoplay latch, compound carousel pause states and FAQ; review-dot pointer diagnostic; hero computed-style/geometry diagnostic gate; six-view responsive acceptance matrix; native-required-first Form33 validation gate; inner-field visual diagnostic gate; exact route/CTA ledger; corrected dock owner diagnostic v003; refined next-live-window v004 plan; continuation v012 checkpoint.  
-**Ellenőrzött:** historical live page264 hash; v004/v005 markers; v004 icons/bullets; current visual PASS items; exact v006/v007 property ownership/artifact identities/parser syntax/scope; 38/38 heading names; 11/11 ordered regions; final review AX; tiszafa initial AX; Nordmann static controls; seven-chip problem-grid source geometry/breakpoints; 5/5 main media roles; shared Form33 ID5/ID6/settings; accepted `#af-form-direct-call` change explains the 5568→6068 Form33 hash transition; MetForm native required capability; exact biological route `/biologiai-vedelem/`; no current proof of an inner-field styling defect; header standalone artifacts do not own dock CSS; latest repository plans/reconciliations.  
-**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; current shared Form33 identity + service-radio `mf_input_required` + native no-delivery proof; inner form field computed-style visual proof; fresh route/href readback; review keyboard + visual-dot pointer proof; tiszafa behavior; Nordmann synchronized slide-role/caption-alt order + timing/manual-latch/swipe/pause/reduced-motion proof; FAQ interaction acceptance; hero measured root-cause proof; dock actual CSS-owner discovery and page264-local exception only if proven; deterministic six-view pixel matrix.  
-**Következő művelet:** follow `build/oldtrees-next-remote-window-20260915-v004.json`: verify WPVibe +5 connection/quota → repo identity + compact hash/marker preflight → trustworthy two-tab v006/v007 visual gate → at most one exact repository CSS write → mandatory readback/regression capture → current shared Form33/native required proof → form-field/route/review-dot/interaction/hero/dock/responsive acceptance as capacity/tooling permits.  
-**Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; actual counter must be read once before any package, and the mandatory 10-call D11 reserve must remain intact.
+**Elkészült:** page264 content/semantics and main media reconciled with no known copy/media gap; v004+v005 live; shared Form33 photo-count/textarea/success reconciled; shared Form33 saved-data timeline/direct-call dependency reconciled; v006 color microfix prepared; v007 comparison-grid microfix prepared; exact v006/v007 single-write bundle + parser-backed deploy manifest; authoritative acceptance ledger; content/semantic/visual/cascade coverage reconciliations; evidence-supersedence v005; complete section coverage map; source-carousel runtime reconciliation with exact manual/drop contracts; interaction v003; review-dot pointer diagnostic; hero computed-style/geometry diagnostic gate; six-view responsive acceptance matrix; native-required-first Form33 validation gate; inner-field visual diagnostic gate; exact route/CTA ledger; corrected dock owner diagnostic v003; next-live-window v005; continuation v013; scope-release gate.  
+**Ellenőrzött:** historical live page264 hash; v004/v005 markers; v004 icons/bullets; current visual PASS items; exact v006/v007 property ownership/artifact identities/parser syntax/scope; 38/38 heading names; 11/11 ordered regions; final review AX; tiszafa initial AX; Nordmann static controls; source carousel class-derived manual contract and exact `drop()` caveat; seven-chip problem-grid source geometry/breakpoints; 5/5 main media roles; shared Form33 ID5/ID6/settings; accepted `#af-form-direct-call` change explains the 5568→6068 Form33 hash transition; MetForm native required capability; exact biological route `/biologiai-vedelem/`; no current proof of an inner-field styling defect; header standalone artifacts do not own dock CSS; latest repository plans/reconciliations.  
+**Nyitott:** fresh +5 connection/quota/hash/marker preflight; conditional v006/v007 live deployment/readback; postwrite targeted screenshots; current shared Form33 identity + service-radio `mf_input_required` + native no-delivery proof; inner form field computed-style visual proof; fresh route/href readback; review keyboard + visual-dot pointer proof; tiszafa behavior; Nordmann synchronized slide-role/caption-alt order + timing/manual-navigation reset/swipe/pause/reduced-motion proof; FAQ interaction acceptance; hero measured root-cause proof; dock actual CSS-owner discovery and page264-local exception only if proven; deterministic six-view pixel matrix.  
+**Következő művelet:** follow `build/oldtrees-next-remote-window-20260915-v005.json`: verify WPVibe +5 connection/quota → repo identity + compact hash/marker preflight → trustworthy two-tab v006/v007 visual gate → at most one exact repository CSS write → mandatory readback/regression capture → current shared Form33/native required proof → form-field/route/review-dot/interaction/hero/dock/responsive acceptance as capacity/tooling permits → evaluate the scope-release gate only after fresh implementation closeout.  
+**Ismert jelenlegi keret:** **unknown** for `ncsnorbert+20260914-5@gmail.com`; actual counter must be read once before any package, and the mandatory 10-call D11 reserve must remain intact.  
+**Release:** page264 is **NOT RELEASED**. Tool unavailability or static preparation is not completion evidence.
