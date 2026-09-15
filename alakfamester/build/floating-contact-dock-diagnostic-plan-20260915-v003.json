@@ -1,0 +1,69 @@
+{
+  "schema_version": 3,
+  "package": "floating-contact-dock-diagnostic-plan-20260915-v003",
+  "date": "2026-09-15",
+  "scope": "Floating quick-contact component as observed on page264. Diagnostic only; no WordPress write and no authorization for a global header/dock change.",
+  "supersedes_for_page264_planning": "build/floating-contact-dock-diagnostic-plan-20260914-v002.json",
+  "status": "REPRODUCIBLE_VISUAL_DELTA_SOURCE_CONTRACT_KNOWN_TARGET_CSS_OWNER_NOT_YET_PROVEN",
+  "browser_evidence": {
+    "source": "At 1640x920 the source dock visibly contains phone icon, e-mail icon and green Felmérést kérek CTA.",
+    "target": "Repeated same-browser target captures showed a nearly blank white pill while AX still exposed the expected quick-contact region and three links.",
+    "conclusion": "Markup/accessibility content exists; the failure is paint/layout/cascade or timing, not missing content."
+  },
+  "source_contract": {
+    ".dock": "fixed; right/bottom clamp(16px,2vw,28px); sticky-level z-index; flex center; 10px gap; 8px padding; pill radius; translucent white/blur/border/shadow",
+    ".dock__icon": "grid center; 46x46; flex none; leaf radius; pale-sage background; subtle border; forest foreground",
+    ".dock__icon svg": "20x20 currentColor stroke, no fill",
+    ".dock__cta": "inline-flex center; min-height 46px; padding 12px 22px; pill; primary green; white .95rem/650 nowrap",
+    "max_900": "full-width bottom bar with left/right/bottom zero; CTA flex:1 centered",
+    "max_560": "CTA .9rem and 14px inline padding",
+    "max_400": "CTA 12px inline padding"
+  },
+  "corrected_provenance": {
+    "header_live_source_v001": {
+      "path": "build/header-live-source-v001.css",
+      "blob_sha": "1f61ae53c8563540d41fb0fe926f9888d9f88146",
+      "finding": "Exact file read through its full 1-760 line range contains header/nav/mobile-drawer rules but no .dock, .dock__icon, .dock__cta or .af-source-dock rule. Therefore the previous statement that this artifact mapped the dock is stale/incorrect."
+    },
+    "header_source_flex_v007": {
+      "path": "build/header-source-flex-responsive-v007.css",
+      "blob_sha": "6cbcf669a42f532e34c4d497f1bdc77c1562a6fa",
+      "finding": "Header/nav/caret/current-state/hamburger responsive rules only; no quick-contact dock styling."
+    },
+    "header_runtime_v008": {
+      "path": "build/header-runtime-parity-v008.json",
+      "blob_sha": "0089ebcb7378f02fdd2ea1a48af59578561aa17f",
+      "finding": "Explicitly protects quick-contact dock content from the header package; does not establish the dock CSS owner."
+    },
+    "current_conclusion": "The actual live dock CSS owner may be another portion of the large central af-project Additional CSS block, runtime-emitted styling or a later rule not preserved as a standalone build artifact. It must be discovered from fresh live post8/DOM evidence before any fix."
+  },
+  "page264_scope_rule": {
+    "global_write_from_page264_package": false,
+    "possible_local_exception": "Only if fresh live cascade proof identifies exact losing declarations and the visual correction can be expressed entirely below body.page-id-264 without editing ID7/global header/footer/shared dock behavior.",
+    "otherwise": "Record as global owner/out-of-scope for this package; do not change it."
+  },
+  "required_live_owner_discovery": [
+    "Verify target is page264 and read current rendered dock wrapper/child classes and computed display/size/overflow/opacity/visibility/position/transform/color/background values.",
+    "Read current Code Snippets ID7 only to learn emitted dock markup/classes/ownership; do not edit from this page264 package.",
+    "Search current Hello Additional CSS post8 server-side for exact rendered dock wrapper class plus .dock/.dock__icon/.dock__cta/.af-source-dock fragments; return small snippets only.",
+    "For every matching declaration, record source order and whether !important is present for display/flex/width/min/max/height/overflow/opacity/visibility/position/inset/transform/z-index/color/background/flex-shrink/flex-grow.",
+    "Measure child bounding boxes. If children are present but 0-sized/clipped, identify the first ancestor whose computed box/overflow creates the loss.",
+    "Check timing by two screenshots after stable load before assuming a deterministic cascade failure."
+  ],
+  "decision_tree": {
+    "global_owner_only": "No write from page264. Preserve the defect as an explicit global-scope blocker.",
+    "page264_specific_losing_rule_proven": "Prepare the smallest body.page-id-264-scoped property override; do not recreate markup and do not edit ID7.",
+    "timing_or_transient_paint": "Do not force CSS. Diagnose load/runtime timing with stable repeated captures.",
+    "markup_missing_live": "Stop and reconcile against historical AX evidence; do not rebuild from memory."
+  },
+  "future_page264_override_gate_if_applicable": [
+    "Every effect selector starts with body.page-id-264 and targets the exact live dock class hierarchy.",
+    "Only proven losing properties change.",
+    "Header/nav/footer/forms/page content stay outside effect selectors.",
+    "Fresh post8 marker/hash preflight and mandatory readback.",
+    "Source/target screenshot plus AX regression check after write.",
+    "If any non-page264 page would change, reject the override and leave the issue to the global header/dock workstream."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
