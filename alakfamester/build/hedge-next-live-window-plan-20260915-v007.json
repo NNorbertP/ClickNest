@@ -1,0 +1,136 @@
+{
+  "schema_version": 7,
+  "package": "hedge-next-live-window-plan-20260915-v007",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-next-live-window-plan-20260915-v006.json",
+  "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+  "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+  "one_pass_dom_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+  "review_panel_audit": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+  "status": "READY_WHEN_LIVE_TOOLS_RETURN_V005_IDREF_PRESERVING_AND_REVIEW_GATED",
+  "nominal_wp_call_budget": {
+    "quota_site_check": 1,
+    "page272_baseline": 1,
+    "ID36_read": 1,
+    "target_rendered_HTML_or_DOM_read": 1,
+    "Form33_service_settings_read": 1,
+    "ID36_update_if_all_gates_pass": 1,
+    "ID36_readback": 1,
+    "page272_hash_readback": 1,
+    "optional_postwrite_rendered_read": 1,
+    "nominal_max": 9,
+    "D11_reserve": 10,
+    "preferred_start_remaining_after_counter": 21
+  },
+  "preconditions": [
+    "WPVibe is available in a future live window; verify intended +5 identity/site/quota once",
+    "fresh live truth outranks repository plans",
+    "do not start if package plus mandatory readback cannot complete above the 10-call reserve",
+    "browser evidence is valid only when URL/title/content/AX/screenshot are internally consistent",
+    "do not modify current parallel page264 STATE.md ownership from this page272 package"
+  ],
+  "read_phase": [
+    {
+      "step": 1,
+      "read": "page272 _elementor_data bytes/SHA/JSON",
+      "accept": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / valid, or fully reconciled intentional newer page272 baseline",
+      "failure": "STOP"
+    },
+    {
+      "step": 2,
+      "read": "Code Snippets ID36 exact body/name/scope/active/code_error",
+      "accept": "known page272 owner, exact rollback body saved, no newer helper and v005 not already live",
+      "failure": "STOP"
+    },
+    {
+      "step": 3,
+      "read": "one broad trustworthy rendered target HTML/DOM payload, preferably including document head",
+      "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+      "v005_structure_and_native_aria_gate": [
+        "one review root, one tablist, three tabs in Panasonic -> Otolecz -> ARKER'S order",
+        "capture current tablist/tab aria-label/aria-labelledby and duplicate source-dot state",
+        "one Form33 wrapper/form/direct-call/service-label+wrapper/city-input+help",
+        "capture every current form/service/city role/name/description/error IDREF and resolve every token",
+        "planned relation IDs unique/non-conflicting",
+        "any stronger/newer native semantic owner or unresolved IDREF => HOLD v005; never delete native semantics"
+      ],
+      "review_panel_preservation_from_same_payload": [
+        "all three tab ids/names/aria-controls",
+        "all three panel ids/aria-labelledby/hidden-selected relation/order",
+        "raw and narrowly normalized full quote text",
+        "visible company/person/role lines",
+        "review image src/currentSrc/srcset/dimensions/alt/computed name and stable media clue",
+        "prove one-to-one tab-panel wiring and no accidental duplicated panel/image content"
+      ],
+      "other_free_evidence": [
+        "complete hero/gallery/form common-root candidates",
+        "ordered target main-content H1-H6 level/name tree",
+        "proof-carousel item/parent roles and owner clues",
+        "protected IDs and removed-widget absence",
+        "if head included: title, description, canonical count/href, robots, OG fields and structured-data scripts/types/owner clues"
+      ],
+      "rule": "Only v005 structural/native-ARIA/ID gate controls the semantic write. Review/content/heading/region/carousel/head findings never expand the same write."
+    },
+    {
+      "step": 4,
+      "read": "Form33 #af-form-service saved radio settings only",
+      "capture": ["widget ID/type", "mf_input_name", "mf_input_required", "six exact labels/values/order"],
+      "write": false
+    }
+  ],
+  "write_phase": {
+    "condition": "baseline, ID36, review/Form33 structure, native-ARIA and ID-uniqueness gates pass; v005 not already live",
+    "action": "plugin-aware update of existing ID36 only to build/hedge-semantic-runtime-v005.php",
+    "why_v005": "Same page272-only semantic target as v004 but form/service/city IDREF attributes preserve any existing current native tokens rather than replacing the whole value; unexpected service roles are left untouched.",
+    "forbidden": [
+      "duplicate helper",
+      "native ARIA/IDREF deletion",
+      "review panel quote/image/content correction mixed into this package",
+      "Elementor/Form33/shared media/global CSS/header/footer/dock mutation",
+      "outer-region/heading/carousel/lightbox/SEO change"
+    ],
+    "unknown_or_429": "UNKNOWN until exact ID36 readback; no blind retry"
+  },
+  "postwrite": [
+    "ID36 exact v005 body, front-end scope, active=true, code_error=null",
+    "page272 Elementor bytes/SHA unchanged",
+    "v005 marker once and obsolete page272 semantic markers absent when trustworthy rendered evidence is available",
+    "exact review tablist/tab computed names with duplicate dots excluded from AX/tab order",
+    "Form33 computed name/description/service/city semantics while preserving every pre-existing native IDREF/error relation",
+    "all relation IDs unique/resolvable",
+    "protected hero/proof/reviews/gallery/form IDs preserved",
+    "review panel inner content unchanged by attribute-only runtime"
+  ],
+  "required_radio_decision": {
+    "required_yes": "prove native empty-choice rejection only through a proven non-delivery/non-entry path; do not send a real form",
+    "native_pass": "close D05; add no PHP validator",
+    "native_absent_or_fail": "record real delta; do not mutate shared Form33 from page272 scope; only then evaluate a page272-only fallback after exact current ID5/ID36 reads"
+  },
+  "trusted_browser_pair": {
+    "max_tabs": 2,
+    "new_tabs": 0,
+    "pair": "one source + one target",
+    "collect_in_same_pass": [
+      "all three source/target review panel internals and tab-panel wiring",
+      "source/target main-content H1-H6 trees",
+      "proof-carousel roles/parents",
+      "complete region boundaries",
+      "document head comparison",
+      "post-v005 AX if write occurred",
+      "changed-section visual neutrality",
+      "shared header route-current, floating dock and footer state as observation only"
+    ],
+    "safe_validation_optional": "Only a provably client-side/no-network trigger may be used to inspect dynamic error ARIA. Otherwise leave it open.",
+    "stale_or_disconnect": "stop immediately; no reload/reconnect/tab loop"
+  },
+  "formal_visual": {
+    "views": [1920, 1440, 1024, 768, 390, 360],
+    "status": "BLOCKED_UNTIL_ORIGINAL_FROZEN_HARNESS_OR_EXPLICIT_REPLACEMENT_CONTRACT_AVAILABLE",
+    "pixel_pass": false
+  },
+  "smtp_or_external_submission": false,
+  "real_form_submission": false
+}
