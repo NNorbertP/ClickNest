@@ -1,0 +1,75 @@
+{
+  "schema_version": 9,
+  "package": "hedge-artifact-supersession-20260915-v009",
+  "date": "2026-09-15",
+  "page_id": 272,
+  "purpose": "Declare the IDREF-preserving v005 preparation chain authoritative for future page272 execution while keeping all live writes gated. No WordPress mutation.",
+  "scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
+  "supersedes": "reports/subpages/hedge-artifact-supersession-20260915-v008.json",
+  "current_chain": {
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "review_name_resolution": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "review_panel_preservation": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "one_pass_dom_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "live_window": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v016.json"
+  },
+  "execution_truth": "The sole conditional page272 write candidate is update existing Code Snippets ID36 to semantic runtime v005, and only after fresh baseline/rollback/cardinality/native-ARIA/resolved-IDREF/ID-uniqueness gates. v005 is not live. All review-inner-content, heading, region, carousel-role, required-radio and document-head questions remain read-first/proof-only and may not expand the same write.",
+  "why_v005_supersedes_v004_for_future_execution": [
+    "v004 directly replaced form/city aria-describedby and service aria-labelledby whole values",
+    "v005 preserves all existing whitespace-separated IDREF tokens and adds the intended project token at most once",
+    "v005 leaves an unexpected service role untouched rather than replacing it with group",
+    "idle output is equivalent when no native tokens/role conflict exist",
+    "live native-owner conflict/readback gates remain mandatory"
+  ],
+  "superseded_for_execution": [
+    "build/hedge-semantic-runtime-v004.php",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "build/hedge-rendered-dom-diagnostic-20260915-v002.json",
+    "build/hedge-acceptance-matrix-20260915-v006.json",
+    "build/hedge-next-live-window-plan-20260915-v006.json",
+    "reports/subpages/hedge-open-items-20260915-v007.json",
+    "reports/subpages/hedge-continuation-20260915-v015.json",
+    "reports/subpages/hedge-artifact-supersession-20260915-v008.json"
+  ],
+  "not_superseded_evidence": [
+    "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "reports/subpages/hedge-convergence-ledger-20260915-v001.json",
+    "reports/subpages/hedge-css-ownership-static-audit-20260915-v001.json",
+    "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
+    "reports/subpages/hedge-shared-chrome-external-gates-20260915-v001.json",
+    "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+    "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json"
+  ],
+  "review_contract": {
+    "tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "structure_and_names": "CLOSED_PRESERVE",
+    "full_panel_inner_content": "READ_ONLY_PRESERVATION_PROOF_OPEN",
+    "no_reconstruction": true
+  },
+  "critical_rules": [
+    "Fresh trustworthy live truth outranks repository plans.",
+    "If stronger/newer native semantics conflict, HOLD v005; never delete native relations to make it win.",
+    "Any HTTP 429/unknown write remains UNKNOWN until exact readback; no blind retry.",
+    "Preserve >=10 WPVibe calls for D11 closeout/recovery.",
+    "At most one source and one target Opera project tab; no replacement/reconnect loops.",
+    "A real content/media mismatch receives the smallest owning correction package, never the attribute-only semantic package.",
+    "Current parallel page264 STATE.md is not overwritten by the page272 chain."
+  ],
+  "tool_state": {
+    "wpvibe": "disabled current conversation",
+    "opera": "not connected current conversation; zero new tabs",
+    "github": "available"
+  },
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "HEDGE_PRECEDENCE_ALIGNED_TO_IDREF_PRESERVING_V005_CHAIN"
+}
