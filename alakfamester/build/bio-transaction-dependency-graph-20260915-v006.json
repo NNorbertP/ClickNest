@@ -1,0 +1,47 @@
+{
+  "schema_version": 6,
+  "package": "bio-transaction-dependency-graph-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_NO_LIVE_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-transaction-dependency-graph-20260915-v005.json",
+  "inherits_unmodified_nodes_from": "build/bio-transaction-dependency-graph-20260915-v005.json",
+  "overrides": {
+    "PHASE1_VISUAL": {
+      "package": "build/bio-page-local-visual-delivery-20260915-v004.json",
+      "depends_on": ["CARRIER_PROBE"],
+      "note": "Uses revised first-three wave core-v002 with source -1px seam overlap."
+    },
+    "FAQ_CTA_STATIC_LAYOUT": {
+      "package": "build/bio-faq-cta-page-local-delivery-20260915-v004.json",
+      "depends_on": ["CARRIER_PROBE", "FAQ_ORDER", "CTA_MAIL_STRUCTURE"],
+      "payload": "base four-block append only; no section-spacing and no wave4"
+    },
+    "FAQ_WAVE4": {
+      "package": "build/bio-wave-source-faq-v002.css",
+      "depends_on": ["FAQ_CTA_STATIC_LAYOUT", "EXPECTATIONS_ARTICLE_OWNERSHIP"],
+      "mode": "STYLE_APPEND_AFTER_FRESH_SURFACE_PROOF",
+      "precondition": "Rendered expectations surface is source-like sage and FAQ outer state is source-like paper.",
+      "postreadback": ["source SVG/path/height/colors", "-1px seam behaves source-like", "no visible gap/clipping/overflow"]
+    },
+    "FAQ_POST_WAVE_SPACING": {
+      "package": "build/bio-faq-cta-post-wave-spacing-20260915-v001.json",
+      "payload": "build/bio-faq-cta-section-spacing-v001.css",
+      "depends_on": ["FAQ_WAVE4"],
+      "mode": "MEASUREMENT_GATED_STYLE_APPEND_OR_NOOP",
+      "precondition": "Fresh same-browser source/target vertical geometry after wave4 proves the 24px reduced top rhythm is still needed.",
+      "no_op": "If wave4 alone yields source-equivalent spacing, record PASS without write."
+    }
+  },
+  "wave_authority": {
+    "reconciliation": "reports/subpages/bio-wave-spacing-reconciliation-20260915-v001.json",
+    "static_QA": "reports/subpages/bio-wave-v002-static-qa-20260915-v001.json"
+  },
+  "FAQ_static_QA": "reports/subpages/bio-faq-cta-v004-static-qa-20260915-v001.json",
+  "all_other_current_paths": "Keep table-title visual, stress v002, expectations v005, Panasonic v002, runtime blockers and small microtransaction nodes from v005/v004 hierarchy unchanged.",
+  "global_gates": ["page264 release/handoff", "exact live +4/current site+quota", "D11>=10", "Elementor skill", "fresh page256 + COMPLETE LIVE ID35", "no unresolved 429/5xx ambiguity"],
+  "forbidden": ["base FAQ 24px top reduction before wave4 proof", "old wave core-v001/FAQ wave-v001 for current execution", "global/shared CSS/runtime workaround", "full Elementor save", "raw SQL", "multi-step owner surgery", "blind retry"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
