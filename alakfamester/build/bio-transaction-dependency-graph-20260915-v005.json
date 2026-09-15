@@ -1,0 +1,23 @@
+{
+  "schema_version": 5,
+  "package": "bio-transaction-dependency-graph-20260915-v005",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_NO_LIVE_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-transaction-dependency-graph-20260915-v004.json",
+  "inherits_all_nodes_and_rules_from": "build/bio-transaction-dependency-graph-20260915-v004.json",
+  "substantive_override": {
+    "node":"FAQ_CTA_STATIC_LAYOUT",
+    "package":"build/bio-faq-cta-page-local-delivery-20260915-v003.json",
+    "depends_on":["CARRIER_PROBE","FAQ_ORDER","CTA_MAIL_STRUCTURE"],
+    "payload":"one page-local append containing source-layout-v002 + mail-label-v001 + mail-interaction-v001 + button-interaction-v001 + section-spacing-v001",
+    "static_QA":"reports/subpages/bio-faq-cta-v003-static-qa-20260915-v001.json",
+    "postreadback":["five internal markers once", "FAQ before CTA", "CTA H2 AX name clean", "deterministic label/email rows", "mail/form hover/focus safe", "desktop/mobile section rhythm"]
+  },
+  "FAQ_WAVE4_rule":"Remains a separate node depending on FAQ_CTA_STATIC_LAYOUT; append bio-wave-source-faq-v001.css only after fresh rendered paper-FAQ + sage-predecessor proof.",
+  "obsolete_FAQ_execution_package":"build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+  "all_other_nodes":"unchanged from v004, including table-title visual, stress v002, expectations v005 and Panasonic v002 gates",
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
