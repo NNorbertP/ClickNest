@@ -1,0 +1,117 @@
+{
+  "schema_version": 10,
+  "package": "hedge-artifact-supersession-20260915-v010",
+  "date": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Single authoritative entrypoint for future page272 continuation after v005 IDREF-preserving semantic hardening, gallery chronology reconciliation, heading evidence reconciliation and shared-planning pointer audits.",
+  "scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
+  "supersedes": "reports/subpages/hedge-artifact-supersession-20260915-v009.json",
+  "execution_chain": {
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "one_pass_dom_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "live_window": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v016.json"
+  },
+  "reconciliation_and_invariants": {
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "gallery_final_state": "reports/subpages/hedge-gallery-final-state-reconciliation-20260915-v001.json",
+    "heading_evidence": "reports/subpages/hedge-heading-evidence-reconciliation-20260915-v001.json",
+    "review_name_contract": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "review_panel_preservation": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "outer_regions": "reports/subpages/hedge-outer-regions-static-audit-20260914-v002.json",
+    "proof_carousel_roles": "reports/subpages/hedge-proof-carousel-role-audit-20260915-v001.json",
+    "intentional_divergence": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json",
+    "links_and_head": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
+    "shared_chrome": "reports/subpages/hedge-shared-chrome-external-gates-20260915-v001.json",
+    "css_ownership": "reports/subpages/hedge-css-ownership-static-audit-20260915-v001.json"
+  },
+  "form_chain": {
+    "required_audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+    "native_required_source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+    "server_fallback_plan": "build/hedge-form-required-server-plan-20260915-v003.json",
+    "nondelivery_test": "build/hedge-form-required-nondelivery-test-plan-20260914-v001.json",
+    "policy": "Native required configuration/behavior first. Fallback is not generated or deployed from uncertainty; shared Form33 is never mutated from page272 scope."
+  },
+  "shared_planning_pointer_audits": {
+    "sitewide_queue": "reports/subpages/hedge-cross-project-pointer-audit-20260915-v001.json",
+    "canonical_matrix": "reports/subpages/hedge-canonical-matrix-pointer-audit-20260915-v001.json",
+    "rule": "Both shared planning artifacts currently contain older Hedge v004/v006 pointers. They authorize no page272 write and are not to be edited from this page272 continuation. Future shared-owner refresh should reconcile to this v010 entrypoint."
+  },
+  "formal_acceptance": {
+    "recovery": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "status": "BLOCKED_MISSING_ORIGINAL_FROZEN_SPECS_AND_RUNNER",
+    "rule": "Do not fabricate original acceptance files or claim PIXEL_PASS. An explicitly accepted replacement contract/harness would be a separate future path."
+  },
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required": true
+  },
+  "closed_preserve": [
+    "26/26 shared-media recovery and zero future Hedge shared-media writes",
+    "b2e2c001 final 28/28 id=0, full, original URLs, exact names/order; recovery-v004 partial 4/28 resume is stale",
+    "hero af2e004e exact accessible SVG",
+    "proof af2e004d 21 source images and historical 4000ms autoplay proof",
+    "native reviews c3d30005 3 tabs/panels and exact three tab-name contract",
+    "five complete legacy named regions",
+    "CTA/contact exact semantics and 24-hour sentence",
+    "D09 page272 links/anchors",
+    "removed af2e0009-af2e000e",
+    "historical image-count and stone/sage defects stale/closed",
+    "heading visible-text set historically source-target matched",
+    "no current page272 CSS candidate"
+  ],
+  "only_conditional_write": {
+    "owner": "existing Code Snippets ID36",
+    "candidate": "build/hedge-semantic-runtime-v005.php",
+    "live_now": false,
+    "why_v005": "Preserves current native IDREF tokens and unexpected service roles rather than replacing whole aria relation values.",
+    "required_gates": [
+      "fresh accepted/reconciled page272 baseline",
+      "exact current ID36 rollback body/name/scope/active/code_error",
+      "v005 not already live and no newer helper owner",
+      "one review root/tablist/three real tabs in exact source order",
+      "one Form33 wrapper/form/direct-call/service/city structure",
+      "current native role/name/description/error IDREFs captured and every token resolves uniquely",
+      "planned/reused IDs unique",
+      "no stronger native semantic owner conflict",
+      "D11 >=10 reserve plus complete readback margin"
+    ],
+    "hold": "Any ambiguity, stronger native owner, unexpected unresolved relation, duplicate ID or insufficient budget => no write.",
+    "429": "UNKNOWN until exact readback; never blind retry"
+  },
+  "read_first_local": [
+    "all three review panel exact quote/author-company-role/image content and tab-panel bijection",
+    "complete hero/gallery/form common roots for remaining outer regions",
+    "ordered H1-H6 level/order/role compare only; visible heading copy is protected",
+    "proof-carousel source/target item+parent role/owner; group/listitem is unresolved and not authorized divergence",
+    "Form33 service radio exact saved required/name/six options and safe native rejection",
+    "dynamic validation/error ARIA only through a proven no-network path",
+    "document head title/description/canonical/robots/OG/schema direct source-target compare"
+  ],
+  "proof_only": [
+    "page272 direct review click/Arrow/Home/End unless failure reproduces",
+    "proof-carousel arrows/swipe/pause/reduced-motion; no duplicate behavior owner",
+    "Hedge lightbox: preserve popup=none until source-specific zoom/click proof",
+    "visual/CSS: no write without synchronized current local delta and owner/cascade proof"
+  ],
+  "external_shared_observation_only": [
+    "global header Services-parent current state on /soveny-specialista/",
+    "global floating dock paint/layout",
+    "footer gross regression"
+  ],
+  "current_tools": {
+    "wpvibe": "disabled in this conversation; no further calls",
+    "opera": "not connected on one list-tabs attempt; zero new tabs; no reconnect loop",
+    "public_target_reference_http": "not trustworthy/available; stopped",
+    "github": "available"
+  },
+  "parallel_state_rule": "Current STATE.md is page264-only and was changed by another continuation. Do not overwrite or use it to execute page272 writes from this blocked static lane.",
+  "pixel_pass": false,
+  "status": "HEDGE_V010_SINGLE_ENTRYPOINT_STATIC_PREPARATION_MAXIMIZED_LIVE_PROOF_BLOCKED"
+}
