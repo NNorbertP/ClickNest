@@ -1,0 +1,63 @@
+{
+  "schema_version": 3,
+  "package": "oldtrees-evidence-supersedence-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "purpose": "Small precedence update after interaction acceptance v002 refined Nordmann compound hover/focus behavior. Planning/evidence only; no WordPress write or scope change.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY",
+  "precedence_rule": "Fresh trustworthy live readback/capture > current STATE.md > current continuation/reconciliation > current acceptance oracle > prepared gated candidate > historical audit/build.",
+  "authoritative_now": {
+    "state": "STATE.md",
+    "overall_acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+    "current_continuation": "reports/subpages/oldtrees-continuation-20260915-v010.json",
+    "current_remote_plan": "build/oldtrees-next-remote-window-20260915-v003.json",
+    "content_reconciliation": "reports/subpages/oldtrees-content-coverage-reconciliation-20260914-v001.json",
+    "semantic_reconciliation": "reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json",
+    "visual_reconciliation": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "css_cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "route_ledger": "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json",
+    "semantic_runtime_mirror": "build/oldtrees-semantic-runtime-v003.php",
+    "form_required_gate": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "inner_form_visual_gate": "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json",
+    "interaction_plan": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "hero_diagnostic": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "responsive_matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json"
+  },
+  "accepted_do_not_rebuild": [
+    "No known page264 copy or main-media implementation gap remains.",
+    "38/38 heading structure and 11/11 ordered named regions remain accepted from later evidence.",
+    "Final review tab names/buttons, numbered-dot containment, form AX relationships, tiszafa initial native range and Nordmann static control names remain accepted.",
+    "Shared Form33 ID5 photo-count validator, ID6 rows=5 helper and configured local success state remain the sole accepted owners for those behaviors.",
+    "Visual v004 and v005 are live and must not be replayed."
+  ],
+  "only_current_page_local_visual_candidates": {
+    "build/oldtrees-visual-v006-contact-text-cascade.css": "Conditional only if a fresh matched source/target gate still proves dark target contact foreground and marker count is zero.",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css": "Conditional only if a fresh matched desktop gate still proves unequal target columns and marker count is zero.",
+    "build/oldtrees-visual-v006-v007-single-write-bundle.css": "Conditional only if both failures reproduce together; otherwise use only the single failing block or no write."
+  },
+  "proof_only_not_implementation": {
+    "build/oldtrees-form-required-validation-plan-20260915-v001.json": "Native-required/read-first D05 gate; no custom validator without exact live Form33/ID5/ID33 facts and safe non-delivery proof.",
+    "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json": "No inner field defect currently proven; measure before CSS.",
+    "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json": "Observed offset is not a fix spec; exact owner/cascade required.",
+    "build/oldtrees-interaction-acceptance-20260915-v002.json": "Current review/Tiszafa/Nordmann acceptance oracle. Compound hover+focus behavior must be compared source-to-target even if the shared runtime behavior is logically surprising; parity outranks redesign.",
+    "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json": "Formal visual proof only; unavailable deterministic tooling never generates CSS."
+  },
+  "superseded_do_not_resume": [
+    "build/oldtrees-interaction-acceptance-20260914-v001.json",
+    "build/oldtrees-next-remote-window-20260914-v001.json",
+    "build/oldtrees-next-remote-window-20260914-v002.json",
+    "reports/subpages/oldtrees-continuation-20260914-v007.json",
+    "reports/subpages/oldtrees-continuation-20260914-v008.json",
+    "reports/subpages/oldtrees-continuation-20260915-v009.json",
+    "reports/subpages/oldtrees-evidence-supersedence-20260914-v001.json",
+    "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json"
+  ],
+  "interaction_memory_rule": "Use at most one source and one target tab, reuse only, zero replacement tabs after stale/disconnected evidence, and do not leave autoplay tabs running unnecessarily.",
+  "live_resume_rule": "When tools return, follow oldtrees-next-remote-window-v003: intended +5/site/quota -> compact hash/marker preflight -> trustworthy v006/v007 visual gate -> at most one selected CSS write -> mandatory readback -> then read-only Form33/link/interaction/hero/responsive proof. Any 429 write is UNKNOWN until exact readback.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_PRECEDENCE_RECONCILED_TO_INTERACTION_V002"
+}
