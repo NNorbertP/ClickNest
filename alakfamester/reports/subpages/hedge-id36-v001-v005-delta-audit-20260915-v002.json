@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "package": "hedge-id36-v001-v005-delta-audit-20260915-v002",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "documented_live_source": "build/hedge-review-runtime-v001.php",
+  "prepared_successor": "build/hedge-semantic-runtime-v005.php",
+  "successor_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+  "status": "STATIC_FUNCTIONAL_SUPERSET_WITH_IDREF_PRESERVATION_LIVE_READBACK_STILL_REQUIRED",
+  "preserved_v001_lifecycle": [
+    "server guard remains is_page(272)",
+    "wp_footer priority remains 120",
+    "review tablist aria-label remains Ügyfélvélemények",
+    "duplicate .af-review-source-dot controls still receive tabindex=-1 and aria-hidden=true",
+    "DOMContentLoaded once when loading, otherwise immediate apply",
+    "single 900ms delayed reapply after documented reusable review boot",
+    "MutationObserver still reacts only when child nodes are added somewhere in the subtree",
+    "attribute-only writes do not trigger a self-loop because the observer watches childList/subtree, not attributes",
+    "no CSS, visible-text replacement, DOM reorder/removal, validation, submission, click or keyboard handlers"
+  ],
+  "intentional_successor_delta": [
+    "review selector narrows from generic .af-reviews-tabs to protected page272 Elementor root .elementor-element-c3d30005",
+    "three real tabs receive exact source-equivalent full accessible names in protected source order",
+    "Form33 receives page-local accessibility naming/description relations after exact live structure gates",
+    "form/service/city IDREF relations use add/deduplicate semantics rather than replacing whole aria-describedby/aria-labelledby values",
+    "service role is set to group only when absent or already group; an unexpected native role is preserved and should have blocked deployment at preflight anyway",
+    "script marker changes to af-hedge-semantic-parity-v005"
+  ],
+  "deliberately_removed_from_older_prepared_candidates": [
+    "No #ajanlatkeres outer region mutation. The form intro/contact and MetForm composite are not proven to share that inner root, so v005 avoids a misleading partial region.",
+    "No guessed Atomic saved aria attributes; all review semantics are runtime attributes on the proven rendered structure.",
+    "No server required-radio validator; native Required configuration/behavior is a separate read-first path."
+  ],
+  "preupdate_owner_gate": [
+    "Read exact current ID36 body/name/scope/active/code_error; do not assume the documented v001 bytes are still live.",
+    "If current ID36 differs from documented v001, reconcile every additional live behavior before replacing it.",
+    "Require exactly one protected review root, one tablist and three real tabs in Panasonic -> Otolecz -> ARKER'S order.",
+    "Require exactly one Form33 wrapper/form and exact direct-call/service/city elements.",
+    "Capture current native role/name/description/error relations and resolve every IDREF token.",
+    "Require planned/reused relation IDs unique and no stronger native semantic owner.",
+    "Require v005 marker not already live; if already present, read back rather than replay."
+  ],
+  "postupdate_regression_gate": [
+    "existing ID36 remains the only page272 semantic helper",
+    "v005 marker exactly once and obsolete page272 semantic markers absent",
+    "ID36 active, front-end scope and code_error null",
+    "page272 Elementor bytes/SHA unchanged",
+    "tablist name and exact three tab computed names match source contract",
+    "duplicate source dots remain visual-only and are absent from AX/tab order",
+    "all previously present native Form33 IDREF/error relations remain present alongside project-owned descriptors",
+    "all IDREF targets resolve exactly once",
+    "hero/proof/reviews/gallery/form protected component IDs remain present",
+    "review-panel visible copy/image content unchanged because v005 is attribute-only"
+  ],
+  "rollback": "Before any update, store the exact current live ID36 body/state. On any marker/cardinality/AX/native-relation regression, restore only that exact body/state through the same plugin-aware owner path. Do not touch Elementor data, ID14, Form33, media, CSS or shared settings.",
+  "429_rule": "A 429/unknown update result is neither PASS nor FAIL. Do not repeat. First exact-read ID36 and page272 state; only decide after readback.",
+  "conclusion": "Prepared v005 preserves every documented live-v001 lifecycle behavior while adding exact tab/Form33 semantics more conservatively than v004. It remains a conditional candidate, not a deployed or accepted live state."
+}
