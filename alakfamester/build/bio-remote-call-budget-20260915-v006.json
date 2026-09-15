@@ -1,0 +1,82 @@
+{
+  "schema_version": 6,
+  "package": "bio-remote-call-budget-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_REQUIRED",
+  "supersedes": "build/bio-remote-call-budget-20260914-v005.json",
+  "known": {
+    "last_verified_profile": "ncsnorbert+20260914-5@gmail.com",
+    "site_connection": "UNKNOWN",
+    "exact_quota": "UNKNOWN",
+    "D11_reserve": 10,
+    "repo_scope": "page264-only until normal handoff",
+    "live_ID35_repo_drift": "PROVEN: public runtime contains review step-control code absent from stale build/bio-semantic-runtime-v001.php"
+  },
+  "counting_note": "Logical WPVibe actions only; automatic retry bursts may consume more. Fresh live account counter is authoritative.",
+  "phase_0_preflight": {
+    "range": "5-7 logical actions",
+    "mandatory": [
+      "profile/site/exact quota",
+      "page256 bytes/SHA/JSON",
+      "FULL live ID35 record readback including code, active/page guard/error state; never substitute stale repo mirror",
+      "read-only current global owner diagnostics only if needed for the selected next package",
+      "fresh af260016 owner search"
+    ],
+    "browser": "Use only the two released existing Opera tabs; browser QA does not consume WPVibe budget."
+  },
+  "phase_1_carrier_probe": {
+    "range": "4-6 plus 1-2 rollback/readback margin",
+    "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "stop_on_fail": true
+  },
+  "phase_2_first_local_visual": {
+    "range": "4-5",
+    "package": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "write_shape": "one final style-owner transaction containing seven phase-1 blocks, followed by saved/rendered/browser readback"
+  },
+  "phase_3_v015_microtransactions": {
+    "FAQ_order": "~3",
+    "review_anchor_optional": "~3",
+    "third_review_role": "~3",
+    "table_title_conditional": "~3-5 only if one compact exact boundary exists",
+    "rule": "Never combine unrelated structural edits merely to save calls; each unit must finish its readback before the next."
+  },
+  "phase_4_stress": {
+    "aside_to_article": "~3 if fresh saved data proves exactly two whole-word aside tokens",
+    "visual_append": "~3-4 after local owner/cascade proof",
+    "physical_order": "ZERO SPECULATIVE BUDGET; no supported atomic move currently exists"
+  },
+  "phase_5_expectations": {
+    "budget": 0,
+    "reason": "No complete byte-exact owner snapshot or safe one-transaction regrouping primitive is proven."
+  },
+  "phase_6_FAQ_CTA": {
+    "range": "7-9 after order predecessor and local carrier are proven",
+    "includes": "CTA mail child microfix + dependency-approved local visual blocks/fourth wave",
+    "exact_FAQ_runtime": "ZERO MUTATION BUDGET under page256-only physical-resource scope until a sanctioned owner exists"
+  },
+  "phase_7_reviews": {
+    "ordinal_visual_AX": "~3-4 isolated",
+    "Panasonic_AX_diagnostic": "prefer browser-only; zero mutation budget before fresh section-local proof",
+    "Panasonic_semantic_candidate": "reserve 4-6 only after AX proof + isolatable saved boundaries; do not start near reserve",
+    "prev_next_panel_focus": "diagnostic only; zero mutation budget until sanctioned owner/live ID35 strategy exists",
+    "media_aspect": "browser diagnostic only",
+    "third_role_and_anchor": "normally handled in v015"
+  },
+  "closeout": {
+    "range": "3-5 logical WPVibe reads plus browser QA",
+    "must_include": ["final page data", "rendered local-style marker inventory", "final full/targeted ID35 status as appropriate", "section-local AX acceptance"]
+  },
+  "window_rules": [
+    "<10 calls above D11 reserve: no mutation; use read-only reconciliation only",
+    "10-17 above reserve: at most one complete low-risk carrier-probe or microfix unit with rollback/readback margin",
+    "18-30 above reserve: carrier probe + first visual MAY fit only if preflight is compact, host stable and no extra owner diagnostics are needed",
+    "Prefer >=35 above reserve before starting a probe+visual session because 429 retries and full live ID35 reconciliation add uncertainty.",
+    "Never spend below the 10-call D11 reserve.",
+    "429/5xx write outcome is UNKNOWN; next safe action is readback, never blind retry.",
+    "No speculative budget for unsupported owner moves, expectations regrouping, FAQ runtime or review panel-focus mutation."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
