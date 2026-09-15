@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "package": "bio-faq-cta-page-local-delivery-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_NOT_DEPLOYED_SCOPE_REMOTE_BLOCKED",
+  "supersedes_for_execution": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+  "scope": "Page256-only static FAQ/CTA source-parity delivery. It grants no global/shared or JavaScript runtime authority.",
+  "source_contracts_preserved": [
+    "build/bio-faq-cta-source-layout-20260914-v006.json measurements/structural findings only",
+    "build/bio-cta-source-contract-20260914-v001.json",
+    "build/bio-faq-source-interaction-contract-20260914-v001.json"
+  ],
+  "hard_preconditions": [
+    "STATE/page264 release evidence has handed writable scope to page256.",
+    "Live WPVibe profile is exactly ncsnorbert+20260914-4@gmail.com; exact target site/quota are known and selected work leaves D11 reserve >=10.",
+    "Elementor skill loads successfully.",
+    "Fresh page256 bytes/SHA/JSON and COMPLETE LIVE ID35 state are reconciled.",
+    "build/bio-page-local-style-carrier-probe-20260915-v002.json has passed and the probe is safely cleaned/reconciled.",
+    "Exactly one current style#af-page256-parity owner exists or will be created by the approved phase1 path; no second style owner/global fallback.",
+    "No full Elementor save/raw SQL/Global Additional CSS/global ID35/plugin/shared-resource mutation."
+  ],
+  "structural_predecessors": [
+    {
+      "id": "FAQ_ORDER",
+      "owner": "af260015 settings._css_classes",
+      "source": "build/bio-page256-next-safe-package-20260915-v016.json",
+      "rule": "Fresh exact state first. Remove only af-faq-content if it still exists and still owns the incorrect order; if already source-exact, record no-op PASS.",
+      "required_readback": ["FAQ before CTA", "four native disclosure controls functional", "copy unchanged", "page JSON valid"]
+    },
+    {
+      "id": "CTA_MAIL_STRUCTURE",
+      "owner": "9a1b2c3d mailto anchor children",
+      "rule": "Fresh complete anchor-child boundary first. Change only child order if it still differs; if already exact, record no-op PASS.",
+      "hard_preserve": ["mailto:kreativ@alakfa-mester.hu", "accessible name ÍRJON BÁTRAN kreativ@alakfa-mester.hu", "one mail action only"],
+      "required_readback": ["visible label then strong email", "href/accessibility unchanged", "page JSON valid"]
+    }
+  ],
+  "visual_delivery": {
+    "physical_owner": "style#af-page256-parity inside af260016",
+    "write_model": "Append one uniquely marked FAQ/CTA block to the proven existing page-local style owner; never create another owner.",
+    "static_layout_file": "build/bio-faq-cta-source-layout-v002.css",
+    "fourth_wave_file": "build/bio-wave-source-faq-v001.css",
+    "ordering": [
+      "Append static layout only after carrier PASS plus both structural predecessor PASS/no-op PASS states.",
+      "Append fourth wave only after fresh rendered proof that the FAQ outer state is source-like paper and the preceding expectations surface is still sage."
+    ]
+  },
+  "preserve_contract": [
+    "FAQ H2 accessible name exactly Biológiai védelem – kérdések",
+    "CTA H2 accessible name exactly Egészségi problémát lát az alakfán?",
+    "generated Következő lépés eyebrow remains semantically separate from CTA H2",
+    "all four FAQ questions/answers and native controls remain intact",
+    "mail href/accessibility exact",
+    "form action remains /kapcsolat/#ajanlatkeres",
+    "existing Elementor IDs/assets/protected copy unchanged"
+  ],
+  "post_write_verification": [
+    "unique FAQ/CTA marker exactly once inside style#af-page256-parity",
+    "FAQ before CTA; FAQ paper surface; CTA separate forest rounded band",
+    "fourth wave only when its dependency gate passes",
+    "desktop source-equivalent FAQ spacing and two-column CTA",
+    "<=900 stack behavior and <=720 rhythm without overflow",
+    "CTA H2 name not contaminated by eyebrow",
+    "no duplicate mail/form action in visual DOM or AX",
+    "FAQ native controls remain functional"
+  ],
+  "runtime_exactness": {
+    "status": "REMAINS_OPEN",
+    "reason": "Static layout does not reproduce source button/aria/sibling-keyboard/motion runtime and no sanctioned page-local runtime owner is proven.",
+    "forbidden": ["JavaScript injection inferred from CSS carrier", "global Code Snippets/ID35/plugin mutation", "fake unsynchronized ARIA"]
+  },
+  "rollback": "Remove only the uniquely marked FAQ/CTA CSS block or independently reverse only the exact structural predecessor changed; stop on ambiguous readback/regression.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
