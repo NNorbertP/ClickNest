@@ -1,0 +1,27 @@
+{
+  "schema_version": 5,
+  "package": "bio-exactness-blockers-20260915-v005",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_HARD_BLOCKERS_NOT_TO_BE_BYPASSED",
+  "supersedes_for_current_authority": "reports/subpages/bio-exactness-blockers-20260915-v004.json",
+  "inherits_blocker_definitions_from": "reports/subpages/bio-exactness-blockers-20260915-v004.json",
+  "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v003.json",
+  "corrected_execution_paths": {
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "phase1_visual": "build/bio-page-local-visual-delivery-20260915-v003.json",
+    "FAQ_CTA_static": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "microtransactions": "build/bio-page256-next-safe-package-20260915-v016.json",
+    "DAG": "build/bio-transaction-dependency-graph-20260915-v003.json",
+    "budget": "build/bio-remote-call-budget-20260915-v008.json"
+  },
+  "blocker_ids": ["scope_remote", "page_local_css_carrier", "review_points_semantics", "stress_dom_order", "expectations_article_ownership", "FAQ_exact_runtime", "review_prev_next_focus", "review_ordinal_AX", "responsive_unverified"],
+  "blocker_count": 9,
+  "identity_rule": "Page256 mutation requires exact live ncsnorbert+20260914-4@gmail.com; +5 is stale documentation drift and never authorization.",
+  "scope_rule": "Current page264 v014/release gate remains NOT_RELEASED; no page256 WordPress mutation until a normal handoff.",
+  "shared_global_whole_page_gates": "Two separate gates remain in bio-shared-chrome-exactness-audit-20260915-v001.json and do not alter the nine body blocker classes.",
+  "clear_rule": "Every blocker requires fresh explicit resolution evidence; package readiness or visual approximation is not PASS.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
