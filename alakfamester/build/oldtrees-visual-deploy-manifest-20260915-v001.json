@@ -1,9 +1,10 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "package": "oldtrees-visual-deploy-manifest-20260915-v001",
   "date": "2026-09-15",
   "page_id": 264,
-  "mode": "PREDEPLOY_IDENTITY_AND_MARKER_MANIFEST_NO_WORDPRESS_WRITE",
+  "mode": "PREDEPLOY_IDENTITY_MARKER_AND_PARSER_MANIFEST_NO_WORDPRESS_WRITE",
+  "parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
   "standalone": {
     "v006": {
       "path": "build/oldtrees-visual-v006-contact-text-cascade.css",
@@ -14,6 +15,7 @@
       "required_postwrite_start_marker_count": 1,
       "scope_root": "body.page-id-264 #ajanlatkeres .elementor-element-af2a0054",
       "properties": ["color"],
+      "parser": {"errors": 0, "qualified_selectors": 3, "declarations": 3, "all_effect_selectors_page264_scoped": true},
       "purpose": "Make the already-source-correct v004 white request-contact foreground win the live cascade."
     },
     "v007": {
@@ -25,7 +27,9 @@
       "required_postwrite_start_marker_count": 1,
       "scope_root": "body.page-id-264 .elementor-element-af2a0045",
       "properties": ["display", "grid-template-columns", "gap", "align-items", "width", "max-width", "min-width"],
+      "not_present": ["flex", "box-sizing"],
       "responsive": "At max-width:900px keep one minmax(0,1fr) column.",
+      "parser": {"errors": 0, "qualified_selectors": 3, "declarations": 8, "all_effect_selectors_page264_scoped": true},
       "purpose": "Make the already-source-correct v004 equal desktop comparison grid win the live cascade."
     }
   },
@@ -36,7 +40,9 @@
     "contains_v006_end_marker_once": true,
     "contains_v007_start_marker_once": true,
     "contains_v007_end_marker_once": true,
-    "content_identity_review": "The actual v006 and v007 rule bodies and marked blocks in the bundle match the standalone files; the bundle adds only its policy header and inter-block separation.",
+    "parser": {"errors": 0, "qualified_selectors": 6, "declarations": 11, "all_effect_selectors_page264_scoped": true},
+    "declaration_sequence_equals_exact_v006_then_v007": true,
+    "content_identity_review": "The actual v006 and v007 declarations in the bundle are declaration-equivalent to the standalone artifacts; the bundle adds only its policy header and inter-block separation.",
     "use_only_when": "Fresh trustworthy source/target gate proves BOTH v006 and v007 failures still reproduce and both live new-marker counts are zero."
   },
   "existing_live_markers_to_require": {
@@ -52,6 +58,7 @@
   },
   "insert_contract": [
     "Fresh current server-side Additional CSS marker/hash inventory must be read before insertion.",
+    "Re-read the selected repository artifact plus this manifest immediately before the remote write; newer repository truth wins.",
     "Insert exactly the selected complete marked block or bundle immediately before the unique af-project:end marker with a supported match-once edit.",
     "Do not assemble a new CSS block manually during the remote write; use the repository artifact identified by this manifest.",
     "Do not replay or alter v004/v005 or any earlier oldtrees visual block.",
@@ -66,5 +73,5 @@
   ],
   "rollback_contract": "If the new block causes a measurable regression, remove only the exact newly inserted marked block through a guarded current-state edit. Never restore a stale full Additional CSS snapshot.",
   "wordpress_writes": 0,
-  "status": "DEPLOY_ARTIFACT_IDENTITIES_AND_MARKERS_FROZEN_FOR_NEXT_LIVE_GATE"
+  "status": "DEPLOY_ARTIFACT_IDENTITIES_MARKERS_AND_PARSER_SCOPE_FROZEN_FOR_NEXT_LIVE_GATE"
 }
