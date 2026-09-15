@@ -1,0 +1,60 @@
+{
+  "schema_version": 10,
+  "package": "oldtrees-evidence-supersedence-20260915-v009",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "purpose": "Current page264 precedence map after direct source-runtime correction of the broken-slide timer contract. No WordPress mutation.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-evidence-supersedence-20260915-v008.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; page264 is not released.",
+  "precedence_rule": "Fresh trustworthy live truth > STATE.md write scope/history > current state overlay > current continuation/precedence > corrected source-runtime/oracle > current remote/release/deploy plans > parser-checked candidates > historical evidence.",
+  "authoritative_current": {
+    "state_resume_overlay": "reports/subpages/oldtrees-state-resume-overlay-20260915-v002.json",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v016.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v007.json",
+    "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v003.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+    "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
+    "source_runtime": "build/source-interactions-v001.js",
+    "visual_minimality_gate": "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json",
+    "tool_capability_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v001.json",
+    "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "visual_parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
+    "css_cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "acceptance_ledger": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "review_dot_pointer_gate": "build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json",
+    "form33_shared_baseline": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json"
+  },
+  "critical_source_timer_truth": [
+    "manual is initialized once from carousel--manual and never reassigned.",
+    "Non-manual successful arrow/dot/ArrowKey/swipe navigation calls start() and resets/restarts the ~4000ms autoplay timer.",
+    "carousel--manual disables autoplay from initialization.",
+    "drop() leaving zero slides calls stop(), hides the nearest project/proof owner (or carousel) and returns.",
+    "drop() leaving exactly one slide calls stop() via slides.length<2, then re-renders the clamped state.",
+    "drop() leaving at least two slides does not stop/start; existing timer is not reset solely by removal."
+  ],
+  "only_conditional_write_candidates": {
+    "v006": "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "v007": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+    "bundle": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+    "selection": "fresh synchronized both/one/neither gate only; at most one exact repository insertion; no write on neither; HOLD on ambiguity"
+  },
+  "superseded_for_execution": [
+    "reports/subpages/oldtrees-evidence-supersedence-20260915-v008.json and earlier",
+    "reports/subpages/oldtrees-continuation-20260915-v015.json and earlier as current resume owner",
+    "build/oldtrees-next-remote-window-20260915-v006.json and earlier as current remote plan",
+    "build/oldtrees-interaction-acceptance-20260915-v003.json broken-slide timer contract",
+    "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json broken-slide timer contract",
+    "any statement that drop() never calls stop()",
+    "v002 permanent-manual-latch expectations and v012 latch sentence"
+  ],
+  "proof_only_not_new_failures": [
+    "Form33 native-required/safe validation", "inner fields", "routes", "review interactions/dot pointer", "Tiszafa interaction", "Nordmann corrected v004 live parity", "FAQ interactions", "hero owner", "dock owner", "six-view deterministic diff"
+  ],
+  "release_rule": "Page264 remains unreleased until v006/v007 receive fresh live no-write PASS or selected exact artifact write plus mandatory readback. Tool unavailability is not release evidence.",
+  "opera_memory_rule": "At most one source and one target tab; reuse only; no replacement/reconnect/reload loops.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_CURRENT_V016_V009_REMOTE_V007_INTERACTION_V004_SCOPE_NOT_RELEASED"
+}
