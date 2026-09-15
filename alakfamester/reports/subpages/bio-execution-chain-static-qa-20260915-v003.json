@@ -1,0 +1,28 @@
+{
+  "schema_version": 3,
+  "package": "bio-execution-chain-static-qa-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_CHAIN_CONSISTENCY_PASS_LIVE_AUTHORIZATION_FALSE",
+  "supersedes_for_static_QA": "reports/subpages/bio-execution-chain-static-qa-20260915-v002.json",
+  "authority": "reports/subpages/bio-execution-authority-20260915-v004.json",
+  "checks": {
+    "scope_identity_D11_D18": "PASS_STATIC: page264 release required; exact +4; fresh quota; D11>=10; no full save/raw SQL.",
+    "page_local_CSS": "PASS_STATIC: all visual paths depend on corrected carrier v002; no global Additional CSS fallback.",
+    "phase1_wave": "PASS_STATIC: phase1 v004 uses core-v002 with source -1px seam; fourth wave excluded.",
+    "FAQ_cascade": "PASS_STATIC: base v005 provides normal source section top+bottom; wave4 v002 is separate; post-wave top-only 24px reduction is measurement-gated/no-op capable.",
+    "FAQ_conflicting_files": "PASS_STATIC: old H2 eyebrow, outer-label guard, FAQ wave-v001 and combined section-spacing-v001 are stale/forbidden for current execution.",
+    "table": "PASS_STATIC: TABLE_TITLE and TABLE_TITLE_VISUAL remain separate dependency nodes.",
+    "stress": "PASS_STATIC: role change one complete boundary; physical order one-shot only; current visual CSS statically compatible before/after physical reorder.",
+    "expectations": "PASS_STATIC: complete-owner one-shot v006; no multi-step wrapper surgery; exact decorative arrow source bytes required, never invented.",
+    "Panasonic": "PASS_STATIC: physical inline list candidate after AX/CSS/boundary proof; no automatic aria-owns fallback.",
+    "runtime": "PASS_STATIC: FAQ exact runtime and review panel-focus remain blocked without sanctioned physical page-local owner.",
+    "Opera_memory": "PASS_STATIC: browser v004 max two existing tabs, zero replacements, tight source markup capture only for expectations arrow when needed.",
+    "pass_guard": "PASS_STATIC: acceptance v008 remains OPEN with 9 body blockers, convergence dependencies and 2 shared/global gates."
+  },
+  "result": "STATIC_EXECUTION_CHAIN_PASS; LIVE_PAGE256_AND_PIXEL_PASS_FALSE",
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
