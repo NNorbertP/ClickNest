@@ -125,7 +125,7 @@
     "candidate": "build/hedge-semantic-runtime-v005.php",
     "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
     "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
-    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v008.json",
     "live_plan": "build/hedge-next-live-window-plan-20260915-v008.json"
   },
   "low_memory_tool_split": {
