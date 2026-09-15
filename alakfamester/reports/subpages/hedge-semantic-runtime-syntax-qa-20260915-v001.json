@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "package": "hedge-semantic-runtime-syntax-qa-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "source": "build/hedge-semantic-runtime-v005.php",
+  "source_blob_sha": "143ec162f2e553e4ea9568f0c1bcbc0af37b624d",
+  "source_bytes": 3993,
+  "wordpress_writes": 0,
+  "checks": {
+    "php_lint": {
+      "command_class": "php -l on exact reconstructed GitHub file bytes",
+      "result": "PASS",
+      "output": "No syntax errors detected"
+    },
+    "javascript_syntax": {
+      "extraction": "Exact inline script body between the single v005 script tags",
+      "command_class": "node --check",
+      "result": "PASS",
+      "output": "empty success output"
+    }
+  },
+  "what_this_proves": [
+    "The current committed v005 PHP file is syntactically valid PHP.",
+    "The current committed inline v005 JavaScript is syntactically valid JavaScript under the available Node parser.",
+    "A future deployment need not spend a live WordPress call merely to discover a static parse error."
+  ],
+  "what_this_does_not_prove": [
+    "It does not prove current live DOM selectors/cardinality/ownership.",
+    "It does not prove MetForm runtime error-ARIA behavior.",
+    "It does not prove the current ID36 body/state or that v005 is not already live.",
+    "It does not replace the required fresh baseline, native-ARIA/IDREF, unique-ID, postwrite readback or AX gates.",
+    "It does not make PIXEL_PASS true."
+  ],
+  "status": "V005_PHP_AND_JS_SYNTAX_PASS_LIVE_GATES_UNCHANGED"
+}
