@@ -1,0 +1,95 @@
+{
+  "schema_version": 9,
+  "package": "bio-evidence-supersedence-20260915-v009",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_PRECEDENCE_MAP_READ_ONLY",
+  "supersedes_for_next_page256_work": "reports/subpages/bio-evidence-supersedence-20260915-v008.json",
+  "purpose": "Carry v008 execution truth forward while adding the later v029 continuation, owner/runtime blocker audit, acceptance status matrix, v005 remote runbook and v006 call budget created after v008.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "scope_gate": "Fresh STATE.md remains PAGE264 ONLY. Page256 stays read-only until a normal explicit handoff. WPVibe is disabled in this chat and Opera is not connected; do not retry-loop either tool.",
+  "authoritative_current": {
+    "continuation": "reports/subpages/bio-continuation-20260915-v029.json",
+    "owner_runtime_blocker_audit": "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "acceptance_status_matrix": "reports/subpages/bio-final-acceptance-status-20260915-v001.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260914-v004.json",
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "hard_exactness_blockers": "reports/subpages/bio-exactness-blockers-20260914-v002.json",
+    "css_resource_scope": "reports/subpages/bio-css-delivery-scope-reconciliation-20260914-v001.json",
+    "public_css_owner_snapshot": "reports/subpages/bio-current-public-css-cascade-audit-20260914-v001.json",
+    "live_ID35_public_runtime_snapshot": "reports/subpages/bio-id35-public-runtime-audit-20260914-v001.json",
+    "final_acceptance_spec": "specs/bio-final-acceptance-20260914-v003.json",
+    "next_remote_window": "build/bio-next-remote-window-20260915-v005.json",
+    "remote_call_budget": "build/bio-remote-call-budget-20260915-v006.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "page_local_visual_delivery": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "compact_structure_queue": "build/bio-page256-next-safe-package-20260914-v015.json"
+  },
+  "current_component_authorities": {
+    "hero": ["build/bio-hero-layout-parity-v003.css", "build/bio-hero-cta-state-diagnostic-20260914-v001.json"],
+    "reviews": [
+      "build/bio-reviews-current-fix-plan-20260914-v003.json",
+      "build/bio-reviews-source-contract-20260914-v001.json",
+      "build/bio-review-source-interaction-contract-20260914-v001.json",
+      "build/bio-review-points-semantics-20260914-v001.json",
+      "build/bio-review-third-author-role-text-20260914-v002.json",
+      "build/bio-review-anchor-parity-20260914-v001.json",
+      "build/bio-review-media-aspect-diagnostic-20260914-v001.json"
+    ],
+    "stress": ["build/bio-stress-source-visual-20260914-v003.json", "build/bio-stress-current-dom-visual-v003.css", "build/bio-stress-article-semantic-20260914-v001.json"],
+    "technology_table": ["build/bio-visual-parity-v001.css", "build/bio-table-section-tone-v001.css", "build/bio-table-source-structure-20260914-v001.json"],
+    "expectations": "build/bio-expectations-source-structure-20260914-v004.json (HOLD)",
+    "FAQ_CTA": ["build/bio-faq-source-interaction-contract-20260914-v001.json", "build/bio-faq-cta-source-layout-20260914-v006.json", "build/bio-cta-mail-structure-20260914-v001.json"],
+    "responsive": ["build/bio-responsive-source-contract-20260914-v001.json", "build/bio-mobile-heading-owner-diagnostic-20260914-v001.json", "build/bio-card-mobile-source-v001.css"],
+    "waves": "build/bio-wave-source-core-v001.css; fourth wave dependency-bound to FAQ paper conversion"
+  },
+  "new_execution_truth_since_v008": [
+    "No complete byte-exact saved owner snapshot exists in the repository for af260007 stress physical reordering or af260013 expectations article regrouping. Public DOM evidence is not an Elementor saved-data edit boundary. Fresh live owner reads are mandatory; offline reconstruction is forbidden.",
+    "The live ID35 is newer than build/bio-semantic-runtime-v001.php: public runtime evidence proves generated review visual dots and previous/next step controls that are absent from the repo mirror. Never overwrite/reconstruct live ID35 from that stale file.",
+    "General Atomic Tabs keyboard behavior is not a page256 rebuild target: homepage Atomic Tabs evidence proves af-project click + Arrow/Up/Down/Home/End activation/focus behavior on desktop/mobile/editor. Preserve the native Atomic hierarchy and af-project owner.",
+    "The remaining review runtime gap is narrower: live ID35 previous/next switches tabs via tab.click() but does not explicitly focus the newly active tabpanel, while the source contract requires panel focus.",
+    "Page-local runtime effect via is_page(256) does not equal page-local physical ownership. Existing semantic helpers are Code Snippets/wp_footer global plugin resources; under current scope they are behavior precedents only, not authorization for new global runtime mutation.",
+    "Phase-1 visual delivery remains one style#af-page256-parity transaction containing seven approved blocks after carrier-probe PASS; no redundant standalone bundle is needed.",
+    "Remote preflight now requires a FULL live ID35 code/state readback, so the minimum safe WPVibe window is larger than v005 budget assumed."
+  ],
+  "stale_or_forbidden_for_execution": [
+    "build/bio-page256-next-safe-package-20260914-v014.json",
+    "build/bio-next-remote-window-20260914-v004.json",
+    "build/bio-remote-call-budget-20260914-v005.json",
+    "build/bio-visual-parity-v002-expectations.css",
+    "older expectations v003 multi-step regrouping",
+    "build/bio-semantic-runtime-v001.php as a replacement source for current live ID35",
+    "Hello Additional CSS page256 deployment under current scope",
+    "global Code Snippets/ID35 mutation under current scope",
+    "full Elementor save, raw SQL/search-replace, blind 429 retry, replacement Opera tabs"
+  ],
+  "protected_closed": [
+    "13 period-free legacy list strings",
+    "uppercase table headers + four rowHeader cells",
+    "closed region/review accessible names",
+    "final mailto href + exact aria-label",
+    "native Atomic review hierarchy and protected review assets/alt text"
+  ],
+  "hard_blockers": [
+    "scope_remote",
+    "page_local_css_carrier",
+    "review_points_semantics",
+    "stress_dom_order",
+    "expectations_article_ownership",
+    "FAQ_exact_runtime",
+    "review_prev_next_focus",
+    "review_ordinal_AX",
+    "responsive_unverified"
+  ],
+  "critical_rules": [
+    "Fresh trustworthy STATE/site/page/ID35/rendered DOM always outranks repository planning evidence.",
+    "Prepared is not authorization.",
+    "No approximate visual or aggregate AX count may clear an exactness blocker.",
+    "Every future mutation starts with a fresh exact owner boundary and ends with immediate saved/rendered/section-local AX readback as applicable.",
+    "D11 reserve >=10 must remain; use build/bio-remote-call-budget-20260915-v006.json.",
+    "Exact PASS is forbidden while any hard blocker remains."
+  ],
+  "pixel_pass": false
+}
