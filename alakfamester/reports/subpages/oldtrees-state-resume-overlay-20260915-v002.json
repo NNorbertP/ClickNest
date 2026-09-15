@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-state-resume-overlay-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Planning-pointer overlay only. STATE.md remains authoritative for write scope/history and is not rewritten by this package.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-state-resume-overlay-20260915-v001.json",
+  "reason": "STATE.md correctly preserves PAGE264 ONLY scope and accepted live state, but its planning pointer block is stale. Full-file replacement solely for pointers would add avoidable corruption/concurrency risk.",
+  "state_facts_to_keep_authoritative": [
+    "WordPress write scope remains page264 only.",
+    "Every page264 Additional CSS effect selector must be page264-scoped.",
+    "Live v004 and v005 are preserve-only accepted state and must not be replayed.",
+    "Accepted historical saved-data baseline remains 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid until fresh live truth supersedes it.",
+    "No other page, global header/footer/dock owner, shared media/plugin setting, SMTP or real/external form submission is authorized."
+  ],
+  "current_resume_pointers": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v016.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v009.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v007.json",
+    "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v003.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+    "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
+    "visual_minimality_gate": "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json",
+    "tool_capability_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v001.json"
+  },
+  "superseded_pointer_chain": [
+    "oldtrees-state-resume-overlay v001 -> v015/v008/v006/release-v002/interaction-v003",
+    "interaction v003/source-carousel reconciliation v001 broken-slide timer wording",
+    "any older STATE pointer block naming v013/v005/v005/release-v001"
+  ],
+  "corrected_carousel_resume_fact": "Source drop() stops autoplay when removal leaves zero or one slide; when two or more remain it does not reset the existing timer. Manual navigation on a non-manual carousel still resets/restarts the ~4000ms timer via start().",
+  "precedence_rule": "Use STATE.md for write scope/history, this overlay for current execution pointers, and fresh trustworthy live truth above both.",
+  "safe_merge_rule": "If STATE.md is later updated, first read the complete current file and preserve all history. Never reconstruct/truncate it from snippets solely to merge pointers.",
+  "wordpress_writes": 0,
+  "state_file_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "STATE_SCOPE_PRESERVED_CURRENT_V016_V009_V007_V004_POINTERS_OVERLAID"
+}
