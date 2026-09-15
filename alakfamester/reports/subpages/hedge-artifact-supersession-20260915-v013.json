@@ -1,0 +1,47 @@
+{
+  "schema_version": 13,
+  "package": "hedge-artifact-supersession-20260915-v013",
+  "date": "2026-09-15",
+  "page_id": 272,
+  "supersedes": "reports/subpages/hedge-artifact-supersession-20260915-v012.json",
+  "purpose": "Current single page272 entrypoint after the live v007 execution and mandatory readback. Fresh live truth supersedes the v012/v018 static assumption that ID36 was still v001 with v005 only a future candidate.",
+  "scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
+  "authoritative": {
+    "continuation": "reports/subpages/hedge-continuation-20260915-v019.json",
+    "semantic_live": "build/hedge-semantic-runtime-v007.php",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v010.json",
+    "intentional_divergences": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v002.json",
+    "acceptance_base": "build/hedge-acceptance-matrix-20260915-v008.json",
+    "previous_live_plan": "build/hedge-next-live-window-plan-20260915-v008.json",
+    "heading_reconciliation": "reports/subpages/hedge-heading-evidence-reconciliation-20260915-v001.json",
+    "review_preservation": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "link_meta_audit": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json"
+  },
+  "execution_truth": {
+    "live_owner": "Code Snippets ID36 v007",
+    "live_state": "front-end / active=true / code_error=null",
+    "elementor_baseline": "53606 B / ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56 / JSON valid / unchanged by v007",
+    "outer_regions": "Fresh complete-root ancestry plus postwrite AX readback closed hero, Sövénymunkák and Küldjön fotót a sövényről region gaps.",
+    "next_wordpress_write": "NONE until a fresh localized page272 failure has safe owner proof and the D11 reserve/readback package fits."
+  },
+  "do_not_replay": [
+    "ID36 v001/v005-not-live assumption from v012/v018",
+    "semantic v004/v005 as a downgrade target",
+    "older partial outer-region assumptions now superseded by fresh complete-root proof",
+    "shared attachment-alt or real-media-ID Hedge strategies",
+    "proof carousel listitem-to-group rollback; current list/listitem relation is explicitly retained",
+    "heading DOM reorder without synchronized visual/source-DOM proof",
+    "new page272 CSS without synchronized reproduced visual delta and owner",
+    "SMTP/external message/real Form33 submission",
+    "page264 STATE.md edits from this page272 lane"
+  ],
+  "critical_rules": [
+    "Fresh trustworthy live truth wins over repository history.",
+    "Preserve at least 10 WPVibe calls for closeout/recovery before every future write.",
+    "Any unknown/429 write remains UNKNOWN until exact readback; never blind retry.",
+    "Opera remains low-memory evidence only: at most one source and one target project page, stop immediately on stale/disconnect, no reconnect loop.",
+    "Reference raw head/source DOM gaps remain OPEN rather than guessed.",
+    "PIXEL_PASS remains false until the original frozen harness or an explicitly accepted deterministic replacement contract exists."
+  ],
+  "status": "HEDGE_V013_CURRENT_ENTRYPOINT_LIVE_V007_VERIFIED"
+}
