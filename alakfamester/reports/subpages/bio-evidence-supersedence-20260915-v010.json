@@ -1,0 +1,122 @@
+{
+  "schema_version": 10,
+  "package": "bio-evidence-supersedence-20260915-v010",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_PRECEDENCE_MAP_READ_ONLY",
+  "supersedes_for_next_page256_work": "reports/subpages/bio-evidence-supersedence-20260915-v009.json",
+  "purpose": "Carry v009 forward while making v030 and the new owner-safe visual/acceptance planning artifacts authoritative for the next page256 session.",
+  "scope_gate": "Fresh STATE.md still says PAGE264 ONLY, now aligned to page264 continuation v013; oldtrees scope is NOT RELEASED until its live v006/v007 closeout. Page256 remains repository-only. WPVibe is disabled/unavailable in this chat and Opera is disconnected; do not retry-loop either tool.",
+  "authoritative_current": {
+    "continuation": "reports/subpages/bio-continuation-20260915-v030.json",
+    "final_acceptance_spec": "specs/bio-final-acceptance-20260914-v003.json",
+    "acceptance_status_matrix": "reports/subpages/bio-final-acceptance-status-20260915-v001.json",
+    "blocker_execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v001.json",
+    "owner_runtime_blocker_audit": "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "hard_exactness_blockers": "reports/subpages/bio-exactness-blockers-20260914-v002.json",
+    "next_remote_window": "build/bio-next-remote-window-20260915-v005.json",
+    "remote_call_budget": "build/bio-remote-call-budget-20260915-v006.json",
+    "transaction_dependency_graph": "build/bio-transaction-dependency-graph-20260915-v001.json",
+    "compact_structure_queue": "build/bio-page256-next-safe-package-20260914-v015.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "page_local_visual_delivery": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "phase1_static_qa": "reports/subpages/bio-page-local-phase1-static-qa-20260915-v001.json",
+    "FAQ_CTA_page_local_delivery": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "low_memory_browser_QA": "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+    "technology_icon_exactness": "reports/subpages/bio-technology-icon-exactness-audit-20260915-v001.json"
+  },
+  "component_authorities": {
+    "hero": [
+      "build/bio-hero-layout-parity-v003.css",
+      "build/bio-hero-cta-state-diagnostic-20260914-v001.json"
+    ],
+    "reviews": [
+      "build/bio-reviews-current-fix-plan-20260914-v003.json",
+      "build/bio-reviews-source-contract-20260914-v001.json",
+      "build/bio-review-source-interaction-contract-20260914-v001.json",
+      "build/bio-review-points-semantics-20260914-v001.json",
+      "build/bio-review-ordinal-accessibility-20260914-v001.json",
+      "build/bio-review-third-author-role-text-20260914-v002.json",
+      "build/bio-review-anchor-parity-20260914-v001.json",
+      "build/bio-review-media-aspect-diagnostic-20260914-v001.json",
+      "reports/subpages/bio-id35-public-runtime-audit-20260914-v001.json"
+    ],
+    "technology": [
+      "build/bio-visual-parity-v001.css",
+      "reports/subpages/bio-technology-live-compare-20260914-v016.json",
+      "reports/subpages/bio-technology-icon-exactness-audit-20260915-v001.json"
+    ],
+    "stress": [
+      "build/bio-stress-source-visual-20260914-v003.json",
+      "build/bio-stress-current-dom-visual-v003.css",
+      "build/bio-stress-article-semantic-20260914-v001.json"
+    ],
+    "table": [
+      "build/bio-table-section-tone-v001.css",
+      "build/bio-table-source-structure-20260914-v001.json"
+    ],
+    "expectations": "build/bio-expectations-source-structure-20260914-v004.json (HOLD until a fresh complete saved owner makes exact regrouping atomic)",
+    "FAQ_CTA_source_truth": [
+      "build/bio-faq-source-interaction-contract-20260914-v001.json",
+      "build/bio-faq-cta-source-layout-20260914-v006.json",
+      "build/bio-faq-cta-source-layout-v002.css",
+      "build/bio-wave-source-faq-v001.css",
+      "build/bio-cta-source-contract-20260914-v001.json",
+      "build/bio-cta-mail-structure-20260914-v001.json"
+    ],
+    "FAQ_CTA_current_delivery_owner": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "responsive": [
+      "build/bio-responsive-source-contract-20260914-v001.json",
+      "build/bio-mobile-heading-owner-diagnostic-20260914-v001.json",
+      "build/bio-card-mobile-source-v001.css",
+      "build/bio-page256-opera-low-memory-qa-20260915-v001.json"
+    ],
+    "waves": "build/bio-wave-source-core-v001.css for first three; build/bio-wave-source-faq-v001.css only after FAQ paper dependency passes"
+  },
+  "new_execution_truth_since_v009": [
+    "Fresh STATE advanced the parallel page264 continuation to v013 but retained PAGE264 ONLY and NOT RELEASED; page256 still has no remote ownership.",
+    "Technology icon-badge exact geometry is not proven. Existing target icon pseudos are protected until same-browser source/target evidence reproduces a concrete geometry delta.",
+    "The page256 responsive/final QA path is now explicitly capped at two reused Opera tabs with section-local captures and targeted AX reads.",
+    "The authoritative seven-block phase-1 CSS payload passed static scope/dependency QA; this is not a carrier/render/pixel PASS.",
+    "FAQ/CTA source measurements remain authoritative, but its physical delivery owner is now explicitly page-local style#af-page256-parity in af260016 after carrier-probe PASS. Global Additional CSS references in the old FAQ/CTA delivery assumptions are stale.",
+    "The fourth sage-to-paper FAQ wave is dependency-bound and must not be appended until the outer FAQ paper state is freshly proven.",
+    "FAQ exact runtime and review previous/next panel focus remain hard blockers under current ownership rules; neither may be falsely closed by CSS or static layout work."
+  ],
+  "stale_or_forbidden_for_execution": [
+    "reports/subpages/bio-continuation-20260915-v029.json as resume entrypoint",
+    "reports/subpages/bio-evidence-supersedence-20260915-v009.json as latest map",
+    "build/bio-page256-next-safe-package-20260914-v014.json",
+    "build/bio-next-remote-window-20260914-v004.json",
+    "build/bio-remote-call-budget-20260914-v005.json",
+    "old expectations v003 multi-step regrouping",
+    "build/bio-semantic-runtime-v001.php as replacement source for current live ID35",
+    "the Global Additional CSS delivery assumption in build/bio-faq-cta-source-layout-20260914-v006.json",
+    "Hello Additional CSS page256 deployment",
+    "global Code Snippets/ID35/plugin mutation",
+    "full Elementor save, raw SQL/search-replace, blind 429 retry, replacement Opera tabs"
+  ],
+  "hard_blockers": [
+    "scope_remote",
+    "page_local_css_carrier",
+    "review_points_semantics",
+    "stress_dom_order",
+    "expectations_article_ownership",
+    "FAQ_exact_runtime",
+    "review_prev_next_focus",
+    "review_ordinal_AX",
+    "responsive_unverified"
+  ],
+  "critical_rules": [
+    "Fresh trustworthy STATE/site/page/ID35/rendered DOM always outranks repository planning evidence.",
+    "Prepared is not authorization and static QA is not live acceptance.",
+    "Every future mutation starts with a fresh exact owner boundary and ends with immediate saved/rendered/section-local AX readback as applicable.",
+    "Never reopen protected PASS content merely because an old audit lists a historical delta.",
+    "D11 reserve >=10 must remain; use build/bio-remote-call-budget-20260915-v006.json.",
+    "Exact/PiXEL PASS is forbidden while any hard blocker or required responsive proof remains open."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
