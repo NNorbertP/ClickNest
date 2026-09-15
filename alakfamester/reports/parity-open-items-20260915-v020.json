@@ -1,0 +1,78 @@
+{
+  "schema_version": 20,
+  "project": "alakfamester",
+  "date": "2026-09-15",
+  "type": "PLANNING_ONLY_NO_SCOPE_OVERRIDE",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260915-v019.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY until build/oldtrees-scope-release-gate-20260915-v001.json is actually satisfied and a normal history-preserving handoff occurs; tool unavailability alone is never a scope handoff.",
+  "tool_state": {
+    "wpvibe": "disabled after the first attempt in this conversation; no retry; intended +5 site/quota unknown",
+    "opera": "kept untouched after stale/disconnected evidence; zero new tabs; no reconnect/reload/replacement loop",
+    "github": "available for static convergence",
+    "wordpress_writes": 0
+  },
+  "page264_active": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v012.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v004.json",
+    "deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v003.json",
+    "source_carousel_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json",
+    "form33_baseline": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json",
+    "release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json",
+    "conditional_write": "only v006 and/or v007 exact repository artifact selected by the fresh visual gate; at most one insertion before af-project:end",
+    "critical_oracle_rule": "Do not use interaction v002 or the v012 manual-latch sentence for Nordmann timing. On a non-carousel--manual source instance manual navigation resets/restarts the 4000ms timer; manual is a static class-derived flag, not a by-user latch.",
+    "proof_only": ["Form33 native required", "inner fields", "routes", "review keyboard/prev-next and review-dot pointer", "Tiszafa", "Nordmann corrected timer/AX/pause/reduced-motion", "four FAQ interactions", "hero owner/cascade", "dock owner discovery", "deterministic six-view acceptance"],
+    "release_rule": "Do not infer release from WPVibe/Opera failure. v006/v007 must be closed by fresh no-write PASS or selected write plus mandatory readback before page264 can release scope."
+  },
+  "page256_future": {
+    "handoff": "build/bio-scope-handoff-ready-20260915-v002.json",
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v009.json",
+    "continuation": "reports/subpages/bio-continuation-20260915-v029.json",
+    "blocker_audit": "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "remote_plan": "build/bio-next-remote-window-20260915-v005.json",
+    "budget": "build/bio-remote-call-budget-20260915-v006.json",
+    "first_future_write": "inert page-local style carrier probe only after explicit handoff, full live ID35 readback and quota gates",
+    "critical_stop_rules": [
+      "never reconstruct current ID35 from stale build/bio-semantic-runtime-v001.php",
+      "no offline stress physical reordering without fresh exact owner boundary",
+      "no offline expectations regrouping without fresh exact owner boundary",
+      "no global ID35/Code Snippets or Hello Additional CSS mutation from page256-only scope",
+      "FAQ exact runtime and review prev/next panel focus remain hard runtime gates until a sanctioned physical owner exists"
+    ],
+    "write_now": false
+  },
+  "page272_future": {
+    "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v010.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "only_conditional_write": "existing ID36 to v005 after fresh baseline/rollback/cardinality/resolved native IDREF/unique-ID/budget gates",
+    "form_policy": "native required first; server fallback v003 is not generated/deployed from uncertainty and must not be combined into the first semantic-v005 deployment",
+    "closed_preserve": "26/26 shared media + final 28/28 page-local gallery + visible heading text + five regions + CTA/contact/24h + D09; no current page272 CSS candidate",
+    "write_now": false
+  },
+  "global_future": {
+    "header": "build/header-deployment-plan-v010.json only after explicit global handoff; reports/header-account-preflight-reconciliation-20260915-v001.json makes +5 the exact future execution identity and treats runtime-v008 '-5' text as stale documentation",
+    "floating_dock": "diagnostic-first; source contract known, target AX/markup historically present, live CSS owner unproven; no page-local recreation"
+  },
+  "shared_current_state": {
+    "canonical_matrix": "reports/canonical-pages-current-state-matrix-20260915-v005.json",
+    "formal_runner_recovery": "reports/formal-runner-recovery-audit-20260915-v001.json",
+    "asset_reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "pixel_pass": false
+  },
+  "rules": [
+    "fresh trustworthy live truth outranks repository plans",
+    "STATE.md controls WordPress write scope",
+    "prepared/QA is not live PASS evidence",
+    "keep >=10 WPVibe calls D11 reserve",
+    "429/5xx write outcome is UNKNOWN until exact readback; never blind retry",
+    "at most one source + one target Opera tab; no replacement loops",
+    "missing formal tooling never licenses speculative code or PIXEL_PASS"
+  ],
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "QUEUE_V020_PAGE264_V012_CORRECTED_V003_PAGE256_V009_HEDGE_V010"
+}
