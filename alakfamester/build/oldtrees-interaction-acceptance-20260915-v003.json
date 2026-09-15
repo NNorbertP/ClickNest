@@ -1,0 +1,131 @@
+{
+  "schema_version": 5,
+  "package": "oldtrees-interaction-acceptance-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "supersedes_for_planning": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+  "mode": "READ_ONLY_ACCEPTANCE_NO_WRITE_BY_DEFAULT",
+  "reason_for_v003": "Direct re-read of build/source-interactions-v001.js disproved the v002/v012 manual-latch interpretation. The source runtime never changes the local manual variable after initialization; it is a static boolean derived only from carousel--manual class presence.",
+  "browser_policy": {
+    "required": "interaction-capable browser with exactly one synchronized source and one target tab",
+    "max_project_tabs": 2,
+    "reuse_only": true,
+    "stop_on_disconnect_or_stale_tab": true,
+    "replacement_tabs_after_instability": 0
+  },
+  "source_runtime": {
+    "path": "build/source-interactions-v001.js",
+    "blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "corrected_carousel_contract": [
+      "manual is initialized once as c.classList.contains('carousel--manual') and is never assigned again.",
+      "go(n) changes index and renders only; it has no byUser/manual parameter.",
+      "Prev/next arrow click calls go(...) then start().",
+      "Visual dot click calls go(...) then start().",
+      "ArrowLeft/ArrowRight calls go(...) then start().",
+      "Qualifying pointer swipe calls go(...) then start().",
+      "start() always stop()s the existing timer first, then refuses to start only if manual is statically true, reduced-motion currently matches, fewer than two slides remain, or the carousel is disconnected.",
+      "Therefore on a non-carousel--manual instance, every successful manual navigation resets/restarts the 4000ms autoplay interval; it does NOT create a permanent manual latch.",
+      "On a carousel--manual instance, autoplay is disabled from initialization onward; manual actions still change slides but start() will refuse a timer every time.",
+      "mouseenter/focusin stop(); mouseleave/focusout start() unconditionally, so compound hover+focus exit order may restart autoplay while the other pause condition is still active on a non-manual instance.",
+      "prefers-reduced-motion change calls start(); turning reduce off can restart autoplay on a connected non-manual multi-slide instance.",
+      "Broken-slide drop removes the slide and matching dot, reindexes dot data-go, hides the containing project/proof owner if no slides remain, and stops autoplay when fewer than two slides remain."
+    ]
+  },
+  "superseded_claims_do_not_test_as_source_truth": [
+    "v002 manual_latch_contract claiming by-user navigation sets manual=true",
+    "v002 manual_latch_tests requiring no autoplay for >8.2s after first manual action",
+    "v012 continuation statement that every by-user path sets manual=true and autoplay stays latched off",
+    "any target fix whose only justification is failure to remain permanently paused after manual navigation"
+  ],
+  "preconditions": [
+    "Fresh target tab is page264 and source tab is the exact reference page.",
+    "Page264 saved-data/hash/JSON is reconciled before attributing runtime failure.",
+    "Review static AX still exposes exactly three real tabs plus source-equivalent previous/next, with generated numbered dots absent from AX/focus.",
+    "Tiszafa remains native range min=0 max=100 step=1 value=50 with data-af-ba-init=1.",
+    "Nordmann controls still expose previous/next plus dots 1-6.",
+    "Record the exact source and target carousel root class lists before timing tests, especially presence/absence of carousel--manual; do not infer this solely from historical timing evidence.",
+    "FAQ still contains the four accepted source questions/answers."
+  ],
+  "review_tabs": {
+    "inherit_from_v002": true,
+    "tests": [
+      "ArrowRight/Down next with wrap; ArrowLeft/Up previous with wrap; Home first; End last.",
+      "Previous/next keep selected real tab/panel synchronized.",
+      "After every change .af-review-source-dot remains tabindex=-1 and aria-hidden=true and never re-enters AX/focus.",
+      "No duplicate tablist/review accessible names appear after dynamic changes."
+    ],
+    "pointer_dot_behavior": "Use build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json separately; AX absence does not prove pointer inertness.",
+    "failure_policy": "Read current ID14 and ID33 first; never add a second review handler or mutate global ID14 from page264 scope."
+  },
+  "tiszafa_before_after": {
+    "selector": ".js-ba",
+    "tests": [
+      "Initial 50 / --ba-pos 50%.",
+      "ArrowRight -> 51/51%; ArrowLeft -> 50/50%.",
+      "Pointer drag keeps native value and visual split synchronized.",
+      "Return to 50 and preserve accessible names/alts."
+    ],
+    "failure_policy": "Prove owner/CSS-variable failure before runtime change; preserve native range by default."
+  },
+  "nordmann_carousel": {
+    "selector": ".carousel.js-carousel",
+    "synchronized_static_ax_gate": [
+      "Put source and target on slide 1/6 using their real first-dot controls, then pause movement without changing content.",
+      "Compare root/current/noncurrent AX roles/names in the same synchronized state.",
+      "Compare aria-hidden/current exposure for all noncurrent slides.",
+      "Compare all six captions and image alts in DOM order.",
+      "Historical source role=group at 2/6 vs target role=listItem at 1/6 is unsynchronized evidence and is neither PASS nor write authority."
+    ],
+    "fresh_non_manual_autoplay_tests": [
+      "Only if source root lacks carousel--manual: on fresh load with reduced-motion off, no hover/focus and >=2 slides, >4.1s advances exactly once; another >4.1s advances exactly once.",
+      "Perform exactly one previous/next manual action. Immediately after it, require no autoplay before the restarted ~4s interval, then after >4.1s require the same next autoplay advance the source exhibits. Do NOT expect permanent pause.",
+      "Repeat the reset/restart timing with one dot action and one ArrowLeft/ArrowRight or qualifying swipe path.",
+      "A successful manual action must reset the timer via start(); target/source should not double-step from an old timer plus a new timer.",
+      "If source root has carousel--manual, replace all autoplay expectations with no-timer expectations and verify only manual navigation; this class state must be observed, not guessed."
+    ],
+    "pointer_and_keyboard": [
+      "ArrowRight exactly one forward; ArrowLeft exactly one backward.",
+      "Horizontal pointer swipe with |dx| >=40 and |dx| >= |dy| advances exactly one appropriate direction.",
+      "Movement <40px or vertical-dominant movement does not change slide."
+    ],
+    "pause_resume_tests": [
+      "Before compound tests, verify simple mouseenter >4.1s pauses; mouseleave calls start() and on a non-manual/reduced-off instance restarts a fresh ~4s interval.",
+      "Focusin >4.1s pauses; focusout calls start() and on a non-manual/reduced-off instance restarts a fresh ~4s interval.",
+      "With both hover and focus active, remove only one condition and observe the actual source behavior; because there are no independent pause flags, a restart while the other condition remains can be source-correct. Target must match source, not an idealized policy.",
+      "Remove both in both orders and require no duplicate timers/double-step."
+    ],
+    "reduced_motion_tests": [
+      "With prefers-reduced-motion: reduce active, >8.2s yields no autoplay.",
+      "Manual controls remain functional while reduced motion is active.",
+      "On a non-carousel--manual instance, toggling reduce from true to false calls start() and may restart a fresh 4s timer; compare observable source/target behavior.",
+      "On a carousel--manual instance, reduced-motion toggles never enable autoplay because manual remains statically true."
+    ],
+    "broken_slide_observation": "Do not deliberately break assets. If a natural broken slide exists, verify source/target remove corresponding slide+dot, reindex dots and avoid invalid current index; otherwise this is static implementation knowledge, not a required destructive test.",
+    "failure_policy": "Read the current deployed target runtime owner and initialization marker before any JavaScript/semantic change. Missing action tooling is not an implementation failure."
+  },
+  "faq_disclosures": {
+    "section_owner": "af2a0050",
+    "accepted_count": 4,
+    "source_runtime_note": "build/source-interactions-v001.js does not own FAQ behavior; no accordion/multi-open rule may be inferred from it.",
+    "tests": [
+      "Enumerate the four exact source/target question controls.",
+      "Record initial expanded/collapsed state.",
+      "Pointer activate each control and require only its associated answer state to change as source does.",
+      "Use the native control's supported Enter/Space behavior and preserve predictable focus.",
+      "Observe source multi-open vs accordion behavior directly and require target to match; do not impose a generic rule.",
+      "Verify IDs, accessible names, answer ownership and restored fourth question remain intact."
+    ],
+    "failure_policy": "Identify current rendered/native/addon owner first; never create a second FAQ runtime from missing evidence."
+  },
+  "cross_component_invariants": [
+    "No test changes visible copy, page264 Elementor data, shared Form33 state or accepted v004/v005 visual blocks.",
+    "No duplicate timer/MutationObserver/keyboard/pointer/disclosure owner is introduced.",
+    "No form submission, upload, SMTP or external delivery.",
+    "Keep exactly the synchronized source/target pair and do not leave extra autoplay tabs running."
+  ],
+  "pass_definition": "Source and target show the same observable review, range, carousel and FAQ behavior under synchronized state, including the corrected static-manual/timer-reset contract, compound hover/focus and reduced-motion behavior, without AX/focus or visual regression.",
+  "current_execution_status": "PREPARED_NOT_RUN: live browser is unavailable in this continuation; no runtime write is justified.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
