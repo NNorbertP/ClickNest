@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-live-closeout-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "PAGE264_ONLY",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "reference": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "wpvibe_identity": "ncsnorbert+20260914-5@gmail.com",
+  "wpvibe_site": "https://alakfamester-wp.clicknest.hu",
+  "quota_closeout": {
+    "used": 99,
+    "limit": 300,
+    "remaining": 201,
+    "d11_reserve_required": 10,
+    "reserve_preserved": true
+  },
+  "prewrite": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_json_valid": true,
+    "additional_css_bytes": 612379,
+    "additional_css_sha256": "e3980469873ad39c0841dd2768e6974f0b209e94c33815825d2109b7a63f9396",
+    "markers": {
+      "af-project:end": 1,
+      "af-oldtrees-visual-v004:start": 1,
+      "af-oldtrees-visual-v005:start": 1,
+      "af-oldtrees-visual-v006:start": 0,
+      "af-oldtrees-visual-v007:start": 0
+    },
+    "visual_gate": {
+      "v006": "FAIL_REPRODUCED: target request-contact label/value foreground dark while reference white",
+      "v007": "FAIL_REPRODUCED: target desktop comparison columns unequal with extra right-card wrapping while reference columns equal"
+    }
+  },
+  "selected_artifact": {
+    "path": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+    "github_blob_sha": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+    "decision": "both fresh failures reproduced; deploy exact combined bundle once",
+    "write_method": "WPVibe content/edit guarded match-once insertion immediately before unique af-project:end",
+    "write_count": 1
+  },
+  "postwrite": {
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "markers": {
+      "af-project:end": 1,
+      "af-oldtrees-visual-v006:start": 1,
+      "af-oldtrees-visual-v006:end": 1,
+      "af-oldtrees-visual-v007:start": 1,
+      "af-oldtrees-visual-v007:end": 1
+    },
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_json_valid": true,
+    "visual_gate": {
+      "v006": "PASS: fresh target capture shows white request-contact label/value foreground matching reference; form panel/button geometry preserved",
+      "v007": "PASS: fresh target capture shows equal desktop comparison columns and source-like wrapping; accepted beige/sage surfaces, icons and bullets preserved"
+    },
+    "pixel_pass": false,
+    "pixel_pass_reason": "No deterministic exact-state overlay/diff harness was run; this closeout is targeted visual/structural evidence only."
+  },
+  "cache_note": "WPVibe run_wp_cli db-query readbacks reported automatic Elementor CSS/object-cache purge. No separate manual cache purge was issued.",
+  "release_gate": {
+    "blocking_write_capable_items_closed": true,
+    "unresolved_mutation_outcome": false,
+    "other_page264_specific_prepared_write_justified_by_fresh_failure": false,
+    "remaining_items": "Proof-only/formal acceptance only, as enumerated by build/oldtrees-scope-release-gate-20260915-v001.json",
+    "page264_write_scope_can_release_after_state_update": true
+  },
+  "wordpress_writes": 1,
+  "smtp_or_external_submission": false,
+  "other_page_write": false,
+  "status": "PAGE264_V006_V007_LIVE_CLOSEOUT_PASS_STATE_UPDATE_REQUIRED"
+}
