@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-proof-only-next-window-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "mode": "LOW_CALL_READ_FIRST_PROOF_ONLY_NO_IMPLEMENTATION_BY_DEFAULT",
+  "objective": "Finish the remaining page264 proof-only acceptance with the fewest remote calls and at most one source + one target browser tab, while preserving the released implementation exactly.",
+  "authoritative_inputs": {
+    "implementation_closeout": "reports/subpages/oldtrees-live-closeout-20260915-v001.json",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "proof_reconciliation": "reports/subpages/oldtrees-proof-only-reconciliation-20260915-v002.json",
+    "acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v010.json",
+    "direct_source_runtime": "build/source-interactions-v001.js",
+    "hero": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "dock": "build/floating-contact-dock-diagnostic-plan-20260915-v003.json",
+    "responsive": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json"
+  },
+  "frozen_live_baseline": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_json_valid": true,
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "required_markers": {"af-project:end":1,"v004":1,"v005":1,"v006":1,"v007":1},
+    "implementation_status": "RELEASED_CLOSED"
+  },
+  "hard_preserve": [
+    "No page264 implementation write unless a fresh synchronized defect is reproduced and its exact owner/cascade is proven.",
+    "Never redeploy v001-v007 or duplicate existing marked blocks.",
+    "Do not change another page, global header/footer/dock owner, shared media, shared Form33 settings, SMTP, notifications or webhooks.",
+    "Preserve ID14/ID33 ownership, ID5/ID6, #af-form-direct-call, page264 IDs/order/hash and current plugin/theme versions.",
+    "No real MetForm submission, entry creation, upload or external delivery in this mode."
+  ],
+  "phase_0_throttle_and_identity": {
+    "wpvibe": [
+      "Make exactly one initial site/quota read after the previous HTTP 429 has clearly cleared.",
+      "If the first WPVibe call returns 429/5xx/disabled, stop WPVibe for the continuation and do not retry.",
+      "Keep at least 10 calls unused for D11 closeout/recovery."
+    ],
+    "opera": [
+      "Call list-tabs once.",
+      "Keep or navigate at most two tabs total: one source page264 and one target page264.",
+      "Close unrelated project tabs before screenshots.",
+      "If stale/not-found/disconnected, stop Opera for the continuation; do not open replacement fan-out."
+    ]
+  },
+  "phase_1_compact_read_only_server_preflight": {
+    "target": "One compact read if possible, returning only scalar identity facts.",
+    "must_match": [
+      "page264 _elementor_data length/SHA/JSON validity",
+      "Additional CSS length/SHA plus af-project:end/v004/v005/v006/v007 marker counts",
+      "ID14 and ID33 active/hash",
+      "Form33 length/SHA and #af-form-direct-call uniqueness"
+    ],
+    "stop_if": [
+      "page264 saved data drift is unexplained",
+      "any required CSS marker is missing/duplicated",
+      "v006/v007 no longer exactly once",
+      "ID14/ID33/Form33 drift is unexplained"
+    ],
+    "expected_calls": 1
+  },
+  "phase_2_exact_source_interaction_owner": {
+    "goal": "Close the only remaining deployment-identity uncertainty before action testing.",
+    "read": "Exact current Head & Footer Code option auhfc_settings_sitewide: length, SHA256, count of __AF_SOURCE_INTERACTIONS_V001__, and only the bounded marked source-interaction block if a hash/content comparison is required.",
+    "expected": "Exactly one marker and a declaration-equivalent copy of build/source-interactions-v001.js, with no second DB/runtime owner.",
+    "decision": {
+      "exact_match": "PASS runtime identity; continue proof-only actions.",
+      "drift": "STOP and reconcile the exact current runtime before any behavior conclusion. Do not overwrite it from a stale snapshot."
+    },
+    "expected_calls": 1
+  },
+  "phase_3_action_proof_order": {
+    "why_ordered": "Run cheapest deterministic interactions first and reuse the same two tabs/state; do not reopen already-passed static work.",
+    "tests": [
+      {
+        "id": "faq",
+        "source_target": "Observe initial open states, pointer activation, keyboard Enter/Space behavior, focus integrity and whether multiple disclosures can stay open.",
+        "write_if_fail": "None by default. First prove exact owner; native details should be preserved whenever possible."
+      },
+      {
+        "id": "tiszafa",
+        "source_target": "Synchronize both at value50; test keyboard and pointer movement; require range value and --ba-pos to stay synchronized.",
+        "write_if_fail": "None without stable reproduced target-only failure and current source-interaction owner proof."
+      },
+      {
+        "id": "reviews",
+        "source_target": "Synchronize selected review; test ArrowLeft/Right/Up/Down/Home/End plus prev/next and visual-dot pointer behavior.",
+        "write_if_fail": "Read ID14/ID33 current body first; page264 may not mutate global ID14."
+      },
+      {
+        "id": "nordmann",
+        "source_target": "Synchronize slide index/caption; record carousel--manual. On non-manual instance verify ~4000ms fresh autoplay, successful navigation -> start() interval reset, ArrowLeft/Right, >=40px horizontally dominant swipe, simple/compound hover-focus pause behavior and reduced-motion. Compare current/noncurrent role/aria-hidden and all six caption/alt entries.",
+        "drop_contract": "Direct source truth: zero remaining -> stop()+hide+return; one remaining -> stop()+go(); two or more remaining -> drop() itself does not stop/restart solely because of removal. Do not manufacture broken images merely to force this edge case.",
+        "write_if_fail": "None without stable target-only failure and exact current runtime owner."
+      },
+      {
+        "id": "form_required",
+        "source_target": "Use a non-delivery/client-side validation action only to prove empty kapcsolat-tema is blocked and the current native message appears. Do not submit Form33 to its REST insert route.",
+        "write_if_fail": "Only after proving native required actually fails; prefer existing page264 owner ID33, never shared Form33 mutation from this scope."
+      }
+    ]
+  },
+  "phase_4_hero_diagnostic_only": {
+    "viewport_first": "Use the same stable desktop viewport that reproduced the historical offset before any multi-view matrix.",
+    "measure_both": [
+      "hero outer rect",
+      "hero inner/max-width rect",
+      "hero grid rect",
+      "copy rect",
+      "eyebrow rect",
+      "h1 rect and line boxes if available",
+      "description rect",
+      "visual rect",
+      "computed hero top/bottom padding",
+      "computed grid gap/alignment",
+      "header height/position",
+      "body margin/admin-bar state",
+      "scroll position"
+    ],
+    "decision": "Only if a target-only delta survives identical browser/state and an exact winning/losing declaration is named may a page264-local correction be prepared. Otherwise record PASS/measurement-no-fix."
+  },
+  "phase_5_dock_scope_gate": {
+    "read_only_first": [
+      "fresh target dock DOM ancestry/classes and link geometry",
+      "source dock structure if present",
+      "current matching Additional CSS and shared owner declarations",
+      "winning/losing display/position/inset/width/padding/overflow/visibility/opacity/z-index/transform properties"
+    ],
+    "rule": "No global dock/header/footer write from page264. If the actual owner is shared/global and cannot be corrected strictly below body.page-id-264 without breaking other pages, record it as a scope blocker rather than changing it."
+  },
+  "phase_6_deterministic_matrix": {
+    "views": ["1920x1080","1440x1000","1024x900","768x1024","390x844","360x800"],
+    "memory_strategy": "Reuse the same two tabs and process viewports sequentially; after each viewport persist only the required evidence and discard transient screenshots from browser memory if the connector permits. Never fan out one tab per viewport.",
+    "state": "Same browser engine, DPR, zoom, font/image readiness, scroll position and motion state. Synchronize reviews/carousel or exclude their moving pixels from static diff.",
+    "outputs_per_view": ["source screenshot","target screenshot","overlay/diff","key geometry","horizontal overflow result"],
+    "known_breakpoints": ["problem grid 4->2 at <=960->1 at <=760","comparison 2->1 at <=900","contact strong .92rem/right padding <=560 and button width100% <=400"],
+    "pixel_pass_rule": "Set PIXEL_PASS only after this matrix actually completes with documented thresholds; never infer it from targeted v006/v007 PASS."
+  },
+  "call_budget_estimate": {
+    "server_preflight": 1,
+    "runtime_identity": 1,
+    "optional_targeted_owner_reads_after_proven_failure": "0-3",
+    "browser_actions": "Opera connector actions do not spend WPVibe calls but are memory-limited to two tabs.",
+    "write_budget": "0 by default; implementation remains closed.",
+    "reserve": 10,
+    "rule": "Do not spend WPVibe calls on repeated HTML/static facts already accepted."
+  },
+  "stop_conditions": [
+    "First WPVibe call still 429/5xx/disabled.",
+    "Opera disconnect/stale/not-found state.",
+    "Fresh saved-data/marker/runtime identity drift is unexplained.",
+    "No stable synchronized source state for an interaction/geometry comparison.",
+    "A suspected issue cannot be isolated to a page264-authorized owner/cascade.",
+    "Two attempted diagnostics produce no measurable narrowing; stop rather than stack CSS/JS guesses."
+  ],
+  "next_wordpress_write": "NONE_PLANNED",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "READY_AFTER_THROTTLE_FOR_LOW_CALL_TWO_TAB_PROOF_ONLY_CLOSEOUT"
+}
