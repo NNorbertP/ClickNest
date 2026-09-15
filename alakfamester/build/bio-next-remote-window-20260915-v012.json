@@ -1,0 +1,40 @@
+{
+  "schema_version": 12,
+  "package": "bio-next-remote-window-20260915-v012",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READY_AS_RUNBOOK_NOT_LIVE_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-next-remote-window-20260915-v011.json",
+  "stage_0": ["fresh page264 release/handoff", "exact +4 page256 profile/site/current quota/D11", "Elementor skill", "no unresolved ambiguous mutation", "released existing Opera pair for browser-required work"],
+  "stage_1": "Fresh page256 bytes/SHA/JSON + COMPLETE LIVE ID35 + protected invariants + only first selected node owner boundaries.",
+  "stage_2": "Carrier probe v002 only as first possible write.",
+  "stage_3": "Phase1 v004 after carrier PASS; seven blocks including revised first-three wave core-v002; immediate seam/section/AX checks.",
+  "stage_4": "Guarded v016 microtransactions individually, with TABLE_TITLE_VISUAL only after TABLE_TITLE + carrier PASS.",
+  "stage_5": "Stress v002 conditional role + separate physical-order blocker; visual append only after carrier/cascade proof.",
+  "stage_6": "Expectations v005 complete-owner one-shot transform only; visual after structure PASS + carrier.",
+  "stage_7_FAQ_base": {
+    "package": "build/bio-faq-cta-page-local-delivery-20260915-v005.json",
+    "payload": "source layout + mail label + mail interaction + form-button interaction + normal source section top/bottom spacing",
+    "depends_on": ["carrier", "FAQ_ORDER", "CTA_MAIL_STRUCTURE"]
+  },
+  "stage_8_FAQ_wave4": {
+    "payload": "build/bio-wave-source-faq-v002.css",
+    "depends_on": ["FAQ base PASS", "expectations article ownership PASS", "fresh expectations sage/FAQ paper proof"],
+    "verify": "source path/height/colors/-1px seam with no gap/clipping/overflow"
+  },
+  "stage_9_FAQ_post_wave_top": {
+    "plan": "build/bio-faq-cta-post-wave-spacing-20260915-v002.json",
+    "payload": "build/bio-faq-cta-post-wave-top-v001.css",
+    "depends_on": ["wave4 PASS", "fresh same-browser vertical geometry"],
+    "action": "no-op PASS if exact; otherwise append top-only -24px override once and remeasure desktop + <=720"
+  },
+  "stage_10_reviews": "Ordinal after carrier/AX; Panasonic v002 diagnostic-first physical list; prev/next focus remains runtime blocker; media measured before geometry change.",
+  "stage_11_browser": "Use low-memory Opera v002: max one source + one target tab, reused, one section/viewport at a time.",
+  "stage_12_acceptance": "Perfect/pass remains false until every body blocker, convergence item and shared/global gate is freshly closed.",
+  "DAG": "build/bio-transaction-dependency-graph-20260915-v007.json",
+  "budget": "build/bio-remote-call-budget-20260915-v012.json",
+  "forbidden": ["early FAQ -24px top reduction", "old wave core/FAQ v001", "combined section-spacing-v001", "global/shared workaround", "full Elementor save", "raw SQL", "blind retry", "replacement Opera tabs"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
