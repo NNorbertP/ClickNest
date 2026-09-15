@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "package": "bio-wave-spacing-reconciliation-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_SOURCE_CONTRACT_RECONCILIATION_NO_LIVE_WRITE",
+  "supersedes_for_planning": "reports/subpages/bio-wave-spacing-reconciliation-20260915-v001.json",
+  "source_logic": {
+    "base_section": "Normal .section uses source section top and bottom rhythm.",
+    "wave": "Source .wave uses height clamp(34px,4vw,66px), exact SVG transition and margin-bottom:-1px.",
+    "wave_plus_section": "Only when a wave immediately precedes a section is the section top rhythm reduced by 24px; bottom rhythm remains the normal section value."
+  },
+  "prepared_mapping": {
+    "first_three_waves": "build/bio-wave-source-core-v002.css",
+    "FAQ_wave4": "build/bio-wave-source-faq-v002.css",
+    "FAQ_base_section_spacing": "build/bio-faq-cta-section-spacing-base-v002.css",
+    "FAQ_post_wave_top_override": "build/bio-faq-cta-post-wave-top-v001.css"
+  },
+  "obsolete_current_execution": [
+    "build/bio-wave-source-core-v001.css",
+    "build/bio-wave-source-faq-v001.css",
+    "build/bio-faq-cta-section-spacing-v001.css as a combined base/post-wave block"
+  ],
+  "dependency": [
+    "FAQ base layout receives normal source section top+bottom spacing immediately with its static payload.",
+    "FAQ wave4 is a separate later node after source-like expectations sage + FAQ paper proof.",
+    "After wave4 PASS, measure source/target vertical geometry. If the normal top spacing is still 24px too large relative to the source wave-adjacent contract, append only post-wave-top-v001; otherwise no-op PASS.",
+    "Never change bottom padding in the post-wave override."
+  ],
+  "why_more_exact_than_v001": "v001 moved the old combined spacing block after wave4, which would withhold normal base section top/bottom rhythm until the wave dependency. v002 mirrors the source cascade itself: normal base section spacing first, then a top-only wave-adjacent override.",
+  "live_acceptance": ["tight seam proof", "normal FAQ base rhythm before wave4", "post-wave top reduction only if measured necessary", "bottom section rhythm remains stable", "no clipping/overflow or CTA displacement"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
