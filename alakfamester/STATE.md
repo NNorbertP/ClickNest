@@ -1,3 +1,33 @@
+# STATE - 2026-09-15, PAGE264 IMPLEMENTATION CLOSED; V004+V005+V006+V007 LIVE; PROOF-ONLY QA REMAINS
+
+## Latest live closeout checkpoint — 2026-09-15, ncsnorbert+20260914-5
+
+This checkpoint supersedes the immediately following **Opera-blocked/no-write** checkpoint for current planning, while preserving that checkpoint and all older history verbatim below.
+
+- **Current user WordPress scope is still page264 only:** `https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/`. This closeout does **not** authorize writes to another page, global header/footer, shared media, shared Form33, shared plugin settings, SMTP, notification/webhook or external form submission.
+- Current live evidence: `reports/subpages/oldtrees-live-closeout-20260915-v001.json`; current continuation: `reports/subpages/oldtrees-continuation-20260915-v014.json`.
+- WPVibe identity/site verified: `ncsnorbert+20260914-5@gmail.com` → `https://alakfamester-wp.clicknest.hu`. Latest exact quota check after the implementation/readback window: **99/300 used, 201 remaining**. D11's 10-call reserve remains preserved.
+- Fresh prewrite page264 `_elementor_data` exactly matched the accepted baseline: **48874 B**, SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, JSON valid.
+- Fresh prewrite Additional CSS post8 was **612379 B**, SHA256 **`e3980469873ad39c0841dd2768e6974f0b209e94c33815825d2109b7a63f9396`**, with `af-project:end=1`, v004=1, v005=1, v006=0, v007=0.
+- The synchronized same-browser gate reproduced **both** frozen page264-local failures: v006 request-contact label/value foreground was dark on target vs white on source; v007 target desktop comparison columns were unequal and caused extra wrapping vs equal source columns.
+- Per `build/oldtrees-visual-deploy-manifest-20260915-v001.json`, exactly one repository artifact was selected: `build/oldtrees-visual-v006-v007-single-write-bundle.css`, blob SHA **`a962b85dff18b902f580c0ce42d036b4e1ac1ef3`**. It was inserted once through guarded match-once `content/edit` immediately before the unique `af-project:end`. Every effect selector remains explicitly rooted at `body.page-id-264`.
+- Postwrite Additional CSS is **614248 B**, SHA256 **`c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce`**. Marker readback: `af-project:end=1`, v006 start/end=1/1, v007 start/end=1/1. No duplicate/partial marker exists.
+- Postwrite page264 `_elementor_data` is still **48874 B**, SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, JSON valid; the visual closeout did not alter Elementor data.
+- Fresh source/target regression captures close both write-capable defects: **v006 PASS** (white request-contact label/value foreground; accepted form/button geometry preserved) and **v007 PASS** (equal desktop comparison columns and source-like wrapping; accepted beige/sage surfaces, icons and bullets preserved).
+- `PIXEL_PASS` remains **false** because no deterministic exact-state viewport/DPR/zoom overlay+diff harness was run. This does not reopen v006/v007 as implementation failures.
+- No unresolved 429/5xx mutation outcome exists. One WordPress content write occurred in this closeout; no other page write, shared Form33 write, snippet write, SMTP action or external submission occurred.
+- The scope-release criteria's **write-capable page264 blockers are closed**. Remaining items are proof-only/formal acceptance: dynamic native Form33 required/no-delivery interaction, inner-field computed-style measurement if a defect is reproduced, review/tiszafa/Nordmann/FAQ action proof, hero exact owner/cascade proof, dock actual-owner/page264-local-exception gate, and deterministic six-view overlay/diff.
+
+**Elkészült:** v006+v007 live page264-only cascade closeout; exact repository bundle deployed once; server-side marker/hash/data readback; targeted source/target regression checks; closeout evidence and continuation v014 updated.  
+**Ellenőrzött:** page264 Elementor baseline unchanged; v004/v005 preserved; v006/v007 each exactly once; v006/v007 targeted visual PASS; no known content/main-media gap reopened; D11 reserve preserved.  
+**Nyitott:** proof-only/formal acceptance listed above; no fresh reproduced page264-specific implementation defect currently justifies another write.  
+**Következő művelet:** do not perform another page264 implementation write unless fresh evidence proves a new defect. Keep proof-only items open until suitable action-capable/deterministic tooling is available. Do not start another WordPress page under this request without an explicit new scope/handoff.  
+**Release:** page264 **implementation scope is RELEASED/CLOSED**; proof-only QA remains open and `PIXEL_PASS=false`.
+
+---
+
+# Previous checkpoints retained verbatim below
+
 # STATE - 2026-09-15, PAGE264 ONLY; LIVE PREFLIGHT PASS; VISUAL GATE BLOCKED BY OPERA; NO WORDPRESS WRITE
 
 ## Latest continuation checkpoint — 2026-09-15, ncsnorbert+20260914-5
