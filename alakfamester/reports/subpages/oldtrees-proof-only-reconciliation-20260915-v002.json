@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-proof-only-reconciliation-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "READ_ONLY_PROOF_ONLY_AFTER_V014_IMPLEMENTATION_CLOSEOUT",
+  "supersedes_for_planning": "reports/subpages/oldtrees-proof-only-reconciliation-20260915-v001.json",
+  "authority": {
+    "state": "STATE.md",
+    "implementation_closeout": "reports/subpages/oldtrees-live-closeout-20260915-v001.json",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "direct_source_runtime": "build/source-interactions-v001.js",
+    "rule": "Page264 implementation remains closed. No new WordPress write is authorized by this proof package without a fresh reproduced page264 defect."
+  },
+  "live_css_reconciliation": {
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "marker_counts": {"af-project:end":1,"af-oldtrees-visual-v004:start":1,"af-oldtrees-visual-v005:start":1,"af-oldtrees-visual-v006:start":1,"af-oldtrees-visual-v007:start":1},
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_json_valid": true,
+    "v006": "PASS remains authoritative from live closeout; live selector owner still matches the two intended request contact buttons.",
+    "v007": "PASS remains authoritative; a fresh same-browser target capture also showed equal desktop comparison columns.",
+    "rule": "Never redeploy or duplicate v006/v007."
+  },
+  "form33_required_reconciliation": {
+    "form_id": 33,
+    "saved_data_bytes": 6068,
+    "saved_data_sha256": "ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3",
+    "service_owner": "af040007/#af-form-service",
+    "widget_type": "mf-radio",
+    "input_name": "kapcsolat-tema",
+    "required_setting": "yes",
+    "options": ["uj-alakfa","apolas","tulnott","soveny","egeszseg","gyumolcs"],
+    "validation_message": "Válasszon egy lehetőséget.",
+    "render_template_proof": "Each radio template calls parent.activateValidation({message:'Válasszon egy lehetőséget.',required:true},el), binds aria-invalid to validation.errors['kapcsolat-tema'] and renders validation.ErrorMessage for the same name.",
+    "decision": "Native required wiring is strongly proven. No custom service validator is justified unless an action-capable non-delivery test reproduces a native failure."
+  },
+  "review_runtime_reconciliation": {
+    "shared_id14": "active; sole shared source-style prev/next/dot/keyboard owner",
+    "page264_id33": "active; page264 semantic/AX containment owner",
+    "status": "Static content/AX ownership accepted; pointer/keyboard synchronization remains proof-only."
+  },
+  "before_after_reconciliation": {
+    "root": ".ba.js-ba",
+    "initial_css_variable": "--ba-pos:50%",
+    "range": {"min":0,"max":100,"step":1,"value":50},
+    "source_runtime_truth": "initBA adds one input handler that writes r.value+'%' to --ba-pos and runs apply() once at initialization.",
+    "status": "Static initial state intact; pointer/keyboard synchronization remains proof-only."
+  },
+  "nordmann_reconciliation": {
+    "root": ".carousel.js-carousel",
+    "slides": 6,
+    "dots": 6,
+    "source_runtime_blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "source_runtime_truth": [
+      "manual is initialized once from c.classList.contains('carousel--manual') and is never reassigned.",
+      "start() always calls stop() first, then starts a 4000ms interval only when not manual, not reduced-motion, slides.length>=2 and the carousel is connected.",
+      "Successful arrow/dot/ArrowLeft/ArrowRight/qualifying swipe navigation calls go(...) followed by start(); on a non-manual instance this resets/restarts the interval.",
+      "mouseenter and focusin call stop(); mouseleave and focusout call start(). Compound exit-order behavior therefore follows those raw events without independent hover/focus flags.",
+      "drop(slide) removes the slide/dot, reindexes and clamps. If no slides remain it calls stop(), hides the nearest project-card__extra/hero-proof owner or the carousel, and returns. If exactly one slide remains it calls stop() because slides.length<2, then go(...). If two or more remain it does not stop or restart the existing timer solely because of removal.",
+      "The previous statement that drop() itself never calls stop() is superseded and must not be used."
+    ],
+    "runtime_location_discovery": "Database search for __AF_SOURCE_INTERACTIONS_V001__ found exactly one DB owner: Head & Footer Code option auhfc_settings_sitewide; no Code Snippets duplicate was found. Exact option content/hash readback remains pending because the host returned HTTP 429.",
+    "status": "Static structure intact; synchronized action/timing behavior remains proof-only."
+  },
+  "faq_reconciliation": {
+    "owner": "af2a0050",
+    "count": 4,
+    "target_native_owner": "four native details/summary elements",
+    "initial_server_markup": "all four omit the open attribute",
+    "duplicate_page264_runtime_found": false,
+    "status": "Static owner/content integrity proven; pointer/keyboard and source multi-open-vs-accordion behavior remain proof-only."
+  },
+  "hero_reconciliation": {
+    "status": "DIAGNOSTIC_ONLY",
+    "historical_observation": "At 1640x920 the target hero copy started lower while the lower section boundary was close.",
+    "required_before_fix": "Same-browser hero/inner/grid/copy/h1/visual rectangles plus computed padding/gap/alignment/header/body state and exact owner/cascade. No spacing patch from screenshot impression."
+  },
+  "dock_reconciliation": {
+    "status": "GLOBAL_OR_SHARED_OWNER_DIAGNOSTIC_ONLY",
+    "historical_observation": "Target floating pill looked clipped/empty while AX links existed.",
+    "required_before_fix": "Fresh DOM ancestry/class owner, exact matching CSS and winning/losing declaration plus current shared runtime owner. No global write from page264 scope."
+  },
+  "tooling": {
+    "opera": "Reduced to one source + one target page264 tab; stopped on stale/not-found state with no replacement fan-out.",
+    "local_chromium": "Could not resolve project hostnames; no persistent browser kept running.",
+    "wpvibe": "Read-only checks stopped immediately on HTTP 429 while attempting exact auhfc_settings_sitewide read. No blind retry and zero WordPress writes in this proof package.",
+    "latest_exact_quota": "99/300 used, 201 remaining at implementation closeout; exact post-proof counter unknown until throttle clears.",
+    "reserve": 10
+  },
+  "remaining_proof_only": [
+    "dynamic native Form33 required no-delivery interaction proof",
+    "review key/pointer synchronization proof",
+    "Tiszafa pointer/keyboard -> value/--ba-pos synchronization proof",
+    "Nordmann synchronized role/caption-alt plus timer/reset/swipe/pause/reduced-motion proof under the corrected drop contract",
+    "FAQ pointer/keyboard and source multi-open-vs-accordion behavior proof",
+    "hero exact computed owner/cascade measurement",
+    "floating dock actual owner and page264-local exception gate",
+    "six-view deterministic exact-state screenshot/overlay/diff matrix"
+  ],
+  "next_safe_action": "After host throttle clears and a stable action-capable browser exists, first verify current page264 hash/markers and exact auhfc_settings_sitewide identity without writing. Then run proof-only interaction/geometry checks. Do not perform another implementation write unless a fresh reproducible defect is proven.",
+  "wordpress_writes": 0,
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "status": "PROOF_ONLY_RECONCILIATION_V002_CORRECTED_DROP_TIMER_CONTRACT_NO_NEW_IMPLEMENTATION_DEFECT"
+}
