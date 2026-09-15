@@ -1,0 +1,35 @@
+{
+  "schema_version": 8,
+  "package": "bio-transaction-dependency-graph-20260915-v008",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_NO_LIVE_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-transaction-dependency-graph-20260915-v007.json",
+  "inherits_unmodified_nodes_from": "build/bio-transaction-dependency-graph-20260915-v007.json",
+  "overrides": {
+    "EXPECTATIONS_ARTICLE_OWNERSHIP": {
+      "package": "build/bio-expectations-source-structure-20260915-v006.json",
+      "mode": "HARD_BLOCKER_UNTIL_COMPLETE_FRESH_OWNER_ONE_SHOT_EDIT_CAPABILITY",
+      "required_before_write": ["complete fresh af260013 owner", "unique one-shot replacement", "fresh source link-arrow SVG bytes if arrow is to be included"]
+    },
+    "EXPECTATIONS_LINK_ARROW_VISUAL": {
+      "package": "build/bio-expectations-source-structure-20260915-v006.json arrow_gate",
+      "depends_on": ["EXPECTATIONS_ARTICLE_OWNERSHIP"],
+      "mode": "SOURCE_BYTES_REQUIRED_OR_REMAIN_OPEN",
+      "rule": "Do not invent SVG. If exact source bytes were captured before the one-shot transform, verify decorative arrow + unchanged link AX name. Otherwise leave this visual exactness item OPEN."
+    },
+    "EXPECTATIONS_VISUAL": {
+      "package": "build/bio-expectations-source-structure-v003.css",
+      "depends_on": ["CARRIER_PROBE", "EXPECTATIONS_ARTICLE_OWNERSHIP"],
+      "mode": "STYLE_APPEND_AFTER_STRUCTURE_PASS",
+      "warning": "CSS styles an SVG child only if exact source arrow proof allowed that child."
+    }
+  },
+  "browser_QA": "build/bio-page256-opera-low-memory-qa-20260915-v004.json",
+  "FAQ_chain": "unchanged from v007: base v005 -> wave4 v002 -> measurement-gated top-only post-wave override",
+  "all_other_nodes": "unchanged from v007",
+  "global_gates": ["page264 release/handoff", "exact live +4/current site+quota", "D11>=10", "Elementor skill", "fresh page256 + COMPLETE LIVE ID35", "no unresolved mutation ambiguity"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
