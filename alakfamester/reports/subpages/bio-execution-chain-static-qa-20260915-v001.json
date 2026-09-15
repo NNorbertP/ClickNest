@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "package": "bio-execution-chain-static-qa-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_POINTER_AND_SCOPE_QA_PASS_LIVE_AUTHORIZATION_FALSE",
+  "scope": "Repository/static QA only. No WordPress/browser mutation and no claim that prepared packages are live-safe without their fresh gates.",
+  "checked_current_chain": {
+    "execution_authority": "reports/subpages/bio-execution-authority-20260915-v001.json",
+    "acceptance": "reports/subpages/bio-final-acceptance-status-20260915-v005.json",
+    "blockers": "reports/subpages/bio-exactness-blockers-20260915-v005.json",
+    "matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v003.json",
+    "runbook": "build/bio-next-remote-window-20260915-v008.json",
+    "budget": "build/bio-remote-call-budget-20260915-v008.json",
+    "DAG": "build/bio-transaction-dependency-graph-20260915-v003.json",
+    "microtransactions": "build/bio-page256-next-safe-package-20260915-v016.json",
+    "carrier": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "phase1": "build/bio-page-local-visual-delivery-20260915-v003.json",
+    "FAQ_CTA": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "handoff": "build/bio-scope-handoff-ready-20260915-v005.json",
+    "browser": "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260915-v006.json",
+    "spec": "specs/bio-final-acceptance-20260914-v003.json"
+  },
+  "checks": {
+    "page256_identity": "PASS_STATIC: all current executable package gates require +4 or defer to canonical +4 authority; +5 artifacts are stale/evidence-only and not executable",
+    "D11": "PASS_STATIC: current budget/runbook preserve reserve >=10 and allocate zero speculative budget to hard blockers",
+    "D18": "PASS_STATIC: current execution path forbids full Elementor save and uses guarded saved-data edits, avoiding Atomic legacy _css_classes loss path",
+    "D07_scope_reconciliation": "PASS_STATIC: reports/subpages/bio-css-delivery-scope-reconciliation-20260914-v001.json explicitly gives current page256-only user scope precedence over global Additional CSS preference and requires a page-local carrier probe",
+    "global_resource_safety": "PASS_STATIC: current executable chain forbids Hello Additional CSS, global ID35/Code Snippets/plugin/theme/shared-resource writes",
+    "carrier_dependency": "PASS_STATIC: phase1 v003 and FAQ/CTA v002 depend on corrected carrier v002; no current executable path depends on carrier v001",
+    "microtransaction_dependency": "PASS_STATIC: current DAG/runbook use v016, not +5-contaminated v015",
+    "FAQ_runtime_separation": "PASS_STATIC: static FAQ/CTA package does not claim runtime exactness or authorize JavaScript",
+    "review_preservation": "PASS_STATIC: native Atomic Tabs, af-project general keyboard path and live ID35 are preservation invariants; stale repo runtime is never replay authority",
+    "Opera_memory": "PASS_STATIC: max two reused tabs, no replacement fan-out, targeted AX/tight captures, stop on disconnect",
+    "perfect_pass_guard": "PASS_STATIC: current acceptance keeps 9 body blockers + 2 shared/global gates open and forbids perfect/pixel PASS claims"
+  },
+  "known_non_execution_stale_evidence": [
+    "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json contains a stale +5 sentence in next_remote_gate; its owner findings remain evidence but its remote gate is superseded by canonical +4 execution authority",
+    "reports/subpages/bio-convergence-ledger-20260915-v005.json contains stale execution pointers and is superseded by v006",
+    "older carrier/phase1/FAQ/micro/DAG/budget/runbook/handoff artifacts remain historical only"
+  ],
+  "live_blocks": ["STATE remains PAGE264 ONLY / page264 NOT_RELEASED", "WPVibe current site/quota unavailable", "Elementor skill unavailable", "Opera browser not connected"],
+  "result": "STATIC_CHAIN_CONSISTENT; LIVE_EXECUTION_NOT_AUTHORIZED; PIXEL_PASS_FALSE",
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
