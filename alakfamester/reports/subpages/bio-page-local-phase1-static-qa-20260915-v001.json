@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "package": "bio-page-local-phase1-static-qa-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_QA_PASS_DELIVERY_MECHANISM_AND_LIVE_RENDER_STILL_UNPROVEN",
+  "scope": "Read-only static reconciliation of the seven blocks listed by build/bio-page-local-visual-delivery-20260914-v002.json. No WordPress/browser write.",
+  "authoritative_delivery": "build/bio-page-local-visual-delivery-20260914-v002.json",
+  "blocks_checked": [
+    {
+      "file": "build/bio-visual-parity-v001.css",
+      "scope": "body.page-id-256 legacy technology/table/FAQ internals",
+      "finding": "FAQ rules affect only .af-details/details/summary/p internals; no outer FAQ paper background/order or fourth wave is forced. Technology desktop cards collapse only at <=900."
+    },
+    {
+      "file": "build/bio-hero-layout-parity-v003.css",
+      "scope": "body.page-id-256 #af-sub-bio-hero",
+      "finding": "Rules start at min-width 901px; existing target mobile stack/h1/art measurements are intentionally untouched. >=1400 changes only column gap to 56px."
+    },
+    {
+      "file": "build/bio-card-mobile-source-v001.css",
+      "scope": "page256 <=720px technology/stress/future expectations card selectors and CTA custom property",
+      "finding": "Current expectations public DOM uses .af-card-positive/.af-card-muted, not .af-expect-card, so the expectations selector currently has no effect. #af-sub-bio-cta receives only a custom property and changes no current layout without the later CTA CSS consumer."
+    },
+    {
+      "file": "build/bio-table-section-tone-v001.css",
+      "scope": "body.page-id-256 .elementor-element-af260011.af-s-biologiai-vedelem-7",
+      "finding": "One section background declaration only; no table text/role/DOM mutation."
+    },
+    {
+      "file": "build/bio-wave-source-core-v001.css",
+      "scope": "page256 divider IDs af26000e/af26000f/af260012 only",
+      "finding": "Contains exactly the first three source transitions. Expectations->FAQ fourth wave is absent by design."
+    },
+    {
+      "file": "build/bio-review-quote-source-color-v002.css",
+      "scope": "page256 review quote",
+      "finding": "Presentation-only width/color/margin; <=760 width=38. No semantic/focus owner."
+    },
+    {
+      "file": "build/bio-review-dot-source-v001.css",
+      "scope": "page256 generated ID35 visual dots",
+      "finding": "Presentation-only 9x9 leaf geometry and active transform. Does not modify ID35-created aria-hidden/tabindex/aria-current behavior."
+    }
+  ],
+  "dependency_reconciliation": {
+    "visual_single_write_v007": "Older v007 listed six blocks and deferred review dot pending owner proof.",
+    "delivery_v002": "Later v002 intentionally promotes review-dot-v001 after the public ID35 owner audit proved the 30px active-width owner and preserved dot semantics.",
+    "current_truth": "Use the seven-block v002 list, not the older six-block v007 count."
+  },
+  "explicitly_not_in_phase1": [
+    "review ordinal CSS",
+    "stress forest visual",
+    "expectations visual/ownership mapping",
+    "FAQ outer paper/CTA layout",
+    "fourth expectations->FAQ wave",
+    "review optional decor",
+    "mobile h2 override",
+    "review media aspect override"
+  ],
+  "remaining_gates_before_any_deployment": [
+    "Normal scope handoff from PAGE264 ONLY to page256.",
+    "WPVibe usable under intended identity; exact live quota leaves >=10 D11 calls after full transaction/readback.",
+    "Fresh page256 saved-data and live ID35 reconciliation.",
+    "af260016 page-local style carrier probe PASS and clean reconciliation.",
+    "Fresh render confirms every internal marker once, original af260016 visible content unchanged and no protected semantic regression."
+  ],
+  "result": "STATIC_PAYLOAD_INTERNAL_CONSISTENCY_PASS",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
