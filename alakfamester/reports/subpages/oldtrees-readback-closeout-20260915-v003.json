@@ -1,0 +1,54 @@
+{
+  "schema_version": 3,
+  "package": "oldtrees-readback-closeout-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Repository identity/readback closeout after source-runtime correction and current-chain reconciliation. No WordPress write, no Opera tab creation and no scope expansion.",
+  "tool_state": {
+    "wpvibe": "disabled on the single initial attempt in this continuation; no retry",
+    "opera": "Browser not connected on the single list-tabs attempt; no navigation/replacement/reconnect loop",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0,
+    "smtp_or_external_submission": false
+  },
+  "authoritative_current_readbacks": {
+    "STATE.md": "233f9e93ad1318ebeecf80858308ced8079e0fc3",
+    "reports/subpages/oldtrees-continuation-20260915-v013.json": "ee9529f942a16f3fc506f7c04988e8a59f69270c",
+    "reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json": "7bd4c1be22653fa7bfd9edf881ff00a824ae470c",
+    "build/oldtrees-next-remote-window-20260915-v005.json": "819cc74180af99914449a23237627bdd95af141f",
+    "build/oldtrees-interaction-acceptance-20260915-v003.json": "1982d63d6f5974baaebb2bdef78b8104e82221f2",
+    "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json": "28b77c37e1bb9bae7b056afa916aa5b8b3c92b4b",
+    "build/oldtrees-scope-release-gate-20260915-v001.json": "0338d8348d0104cf3a0bc9b793b52eab57d2c0be",
+    "build/oldtrees-visual-deploy-manifest-20260915-v001.json": "4f8a9209a5ab498a6a1f524a58d341830e6cb863",
+    "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json": "3c4a2f7657a8c39216126e9e86ee56d1a6aa710d",
+    "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json": "e5de298b9e32340cf8983fc20e544bea29e91ae2",
+    "build/oldtrees-form-required-validation-plan-20260915-v001.json": "33e7c63ff2214916ce07ba89f5676f3800731e0a",
+    "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json": "7a2ac480a6e9aad4c11748d485c5820854532813",
+    "build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json": "e5cebb54a30fe3502efdf02fc1ab29c29c3169fc",
+    "reports/subpages/oldtrees-source-runtime-reconciliation-20260915-v001.json": "f258d175c80dad73979983b807ef85f99feb5f05"
+  },
+  "visual_artifact_identity_preserved": {
+    "v006": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+    "v007": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+    "bundle": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+    "decision": "Fresh both/one/neither live gate remains mandatory; no visual artifact was deployed in this continuation."
+  },
+  "source_runtime_closeout": {
+    "source_interactions_blob": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "manual_contract": "manual is class-derived from carousel--manual and never set by user navigation; successful manual navigation on a non-manual instance calls start() and resets/restarts the approximately 4000ms timer.",
+    "drop_contract": "drop() removes/reindexes/clamps/re-renders but calls neither stop() nor start(); the fewer-than-two-slides guard belongs to start() when start() executes. No immediate timer-cancellation claim is permitted from static code alone.",
+    "live_impact": "none; repository acceptance planning only"
+  },
+  "live_baseline_not_reverified_but_preserved": {
+    "page264_elementor": "48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid",
+    "live_visual_blocks": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "conditional_visual_candidates": ["v006 contact foreground", "v007 equal desktop comparison columns"],
+    "pixel_pass": false
+  },
+  "resume": "Read STATE.md first, then current precedence v005, continuation v013 and remote v005. Verify +5 WPVibe identity/site/quota once when the tool returns; preserve >=10 D11 calls. Use at most one source and one target Opera tab. Run compact page/hash/marker preflight and trustworthy v006/v007 both/one/neither gate before any WordPress write. Never use historical permanent manual-latch or implicit drop()-timer-stop claims as acceptance authority.",
+  "release": "NOT_RELEASED; build/oldtrees-scope-release-gate-20260915-v001.json controls implementation handoff.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "CURRENT_PAGE264_REPOSITORY_CHAIN_READBACK_CLOSED_READY_FOR_FUTURE_LIVE_GATE"
+}
