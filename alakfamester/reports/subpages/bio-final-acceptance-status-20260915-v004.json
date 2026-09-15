@@ -1,0 +1,47 @@
+{
+  "schema_version": 4,
+  "package": "bio-final-acceptance-status-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "OPEN_NOT_PASS",
+  "supersedes_for_current_status": "reports/subpages/bio-final-acceptance-status-20260915-v003.json",
+  "spec": "specs/bio-final-acceptance-20260914-v003.json",
+  "body_exactness": {
+    "blocker_count": 9,
+    "authority": "reports/subpages/bio-exactness-blockers-20260915-v004.json",
+    "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v002.json",
+    "blockers": ["scope_remote", "page_local_css_carrier", "review_points_semantics", "stress_dom_order", "expectations_article_ownership", "FAQ_exact_runtime", "review_prev_next_focus", "review_ordinal_AX", "responsive_unverified"],
+    "result": "OPEN_NOT_PASS"
+  },
+  "current_execution_chain": {
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "phase1_visual": "build/bio-page-local-visual-delivery-20260915-v003.json",
+    "microtransactions": "build/bio-page256-next-safe-package-20260915-v016.json",
+    "FAQ_CTA": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "dependency_graph": "build/bio-transaction-dependency-graph-20260915-v003.json",
+    "budget": "build/bio-remote-call-budget-20260915-v008.json"
+  },
+  "resource_gate": {
+    "state": "PAGE264 ONLY / NOT_RELEASED",
+    "page256_identity": "Future mutation requires exact ncsnorbert+20260914-4@gmail.com; +5 is stale drift.",
+    "wpvibe": "unavailable; current site/quota unknown",
+    "elementor_skill": "unavailable in this session",
+    "opera": "browser not connected; no new tabs opened",
+    "effect": "No live page256 mutation or final browser acceptance can run now."
+  },
+  "shared_global_chrome": {
+    "authority": "reports/subpages/bio-shared-chrome-exactness-audit-20260915-v001.json",
+    "gate_count": 2,
+    "header_service_current_section": "OPEN_REPRODUCED; shared/global header owner; page256 workaround forbidden",
+    "floating_contact_dock": "OPEN_REPRODUCIBLE_OWNER_UNPROVEN; page256 workaround forbidden"
+  },
+  "whole_page_acceptance": {
+    "page256_body_exact_pass": false,
+    "shared_chrome_pass": false,
+    "whole_page_reference_exact_pass": false,
+    "pixel_pass": false,
+    "rule": "Perfect parity requires all 9 page256 body blocker classes plus both shared/global chrome gates to close with fresh evidence and a final same-browser page256 regression check."
+  },
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0
+}
