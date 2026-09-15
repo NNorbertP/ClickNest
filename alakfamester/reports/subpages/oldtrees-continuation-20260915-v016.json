@@ -1,0 +1,91 @@
+{
+  "schema_version": 16,
+  "package": "oldtrees-continuation-20260915-v016",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CURRENT_CONTINUATION_CAROUSEL_ORACLE_CORRECTION_NO_SCOPE_CHANGE",
+  "supersedes_for_planning": "reports/subpages/oldtrees-continuation-20260915-v015.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; this checkpoint authorizes no global or other-page WordPress write.",
+  "tool_state": {
+    "wpvibe": "Unavailable/disabled on the single earlier attempt; no retry loop and no WordPress mutation.",
+    "opera": "Not connected on the single earlier list-tabs attempt; no navigation/reconnect/replacement tabs.",
+    "github": "Repository readback plus versioned evidence correction only.",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0
+  },
+  "accepted_remote_baseline_preserved_not_reverified": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "live_visual_blocks": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "semantic_owner": "Code Snippets ID33 last accepted active with is_page(264) guard"
+  },
+  "current_chain": {
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v009.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v007.json",
+    "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v003.json",
+    "state_resume_overlay": "reports/subpages/oldtrees-state-resume-overlay-20260915-v002.json",
+    "visual_minimality_gate": "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+    "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
+    "source_runtime": "build/source-interactions-v001.js",
+    "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "visual_parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
+    "css_cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "form33_shared_baseline": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json"
+  },
+  "new_static_reconciliation": {
+    "source_runtime_blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "finding": "Direct current-main readback disproves the v003/v001 broken-slide no-stop caveat.",
+    "correct_drop_contract": [
+      "zero remaining slides -> drop() calls stop(), hides owner/carousel and returns",
+      "exactly one remaining slide -> drop() calls stop() via slides.length<2 before go(...) re-render",
+      "two or more remaining slides -> drop() does not stop/start; existing interval is not reset solely by removal"
+    ],
+    "impact": "Acceptance/documentation correction only. It proves no current target failure and authorizes no runtime write."
+  },
+  "visual_candidate_state": {
+    "conditional_failures": ["v006 request-contact foreground", "v007 desktop equal comparison columns"],
+    "v006_blob_sha": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+    "v007_blob_sha": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+    "bundle_blob_sha": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+    "write_rule": "Fresh synchronized both/one/neither gate only; at most one exact repository insertion; no write on neither; HOLD on ambiguous evidence."
+  },
+  "proof_only_not_new_failures": [
+    "Form33 native required/safe non-delivery behavior",
+    "inner form computed styles/geometry",
+    "page-local routes",
+    "review keyboard/prev-next and review-dot pointer parity",
+    "Tiszafa native range interaction",
+    "Nordmann synchronized AX/timer/pause/reduced-motion/duplicate-timer behavior under corrected v004",
+    "four FAQ interactions from actual rendered owner",
+    "hero exact owner/cascade",
+    "floating dock owner discovery and strict page264-local gate",
+    "deterministic six-view overlay/diff"
+  ],
+  "hard_preserve": [
+    "Never replay/edit visual v001-v005 from the v006/v007 lane.",
+    "Never duplicate ID33/ID14/ID5/ID6 or add a second BA/carousel/FAQ owner.",
+    "Never remove/rename/duplicate #af-form-direct-call or restore stale Form33 state.",
+    "Never mutate global ID14/header/footer/dock from page264 scope.",
+    "Never blindly retry 429/5xx mutation; exact readback first.",
+    "Never exceed one source plus one target Opera tab when browser QA returns.",
+    "Never claim PIXEL_PASS without deterministic same-state capture/overlay/diff.",
+    "Never use interaction v003/source-carousel reconciliation v001 broken-slide caveat as current source truth."
+  ],
+  "next_safe_live_order": [
+    "Verify intended +5 WPVibe identity, target site and exact quota once; preserve >=10 D11 calls after selected transaction.",
+    "Re-read STATE scope plus current v016/v009/v007/v003-release/v002-overlay chain and exact visual artifacts.",
+    "Compact page264 saved-data/hash/JSON + Additional CSS marker/hash preflight.",
+    "Use exactly one synchronized source and target tab for fresh v006/v007 both/one/neither visual gate.",
+    "Execute at most one selected exact CSS insertion or no write/HOLD according to evidence.",
+    "Mandatory marker/project-end/page-hash readback plus targeted visual regression check.",
+    "Only afterward run proof-only gates as tooling permits; use interaction v004 for Nordmann."
+  ],
+  "release_status": "NOT_RELEASED",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_V016_CORRECTED_CAROUSEL_ORACLE_SCOPE_NOT_RELEASED"
+}
