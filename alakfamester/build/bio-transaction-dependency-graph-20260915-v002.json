@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "package": "bio-transaction-dependency-graph-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_NO_AUTHORIZATION",
+  "supersedes": "build/bio-transaction-dependency-graph-20260915-v001.json",
+  "reason": "Replace the stale FAQ/CTA v006 delivery edge with the current page-local delivery owner, split the fourth wave into its own dependency-gated node, and remove the undefined TABLE_TITLE_VISUAL edge.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "global_gates": [
+    "STATE explicitly releases PAGE264 ONLY and hands writable scope to page256.",
+    "Intended WPVibe account/site/quota verified; full chosen unit plus verification leaves D11 >=10 calls.",
+    "Elementor skill is successfully loaded in the live mutation session.",
+    "Fresh page256 bytes/SHA/JSON + rendered DOM + FULL live ID35 state reconciled.",
+    "No unresolved 429/5xx/ambiguous mutation state.",
+    "Opera uses at most the existing source/target pair; no replacement-tab workaround."
+  ],
+  "nodes": [
+    {
+      "id": "CARRIER_PROBE",
+      "owner": "af260016",
+      "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "MUST_FINISH",
+      "postreadback": ["saved JSON", "probe style rendered once", "no visible copy/order change", "probe cleanup/reconciliation"],
+      "failure": "STOP all page-local CSS; no global fallback."
+    },
+    {
+      "id": "PHASE1_VISUAL",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-page-local-visual-delivery-20260914-v002.json",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "MUST_FINISH",
+      "postreadback": ["saved JSON", "style and internal marker counts", "hero/technology/table/review targeted render QA", "compact AX regression"],
+      "failure": "Remove only this page-local style payload/owner addition; preserve content and ID35."
+    },
+    {
+      "id": "FAQ_ORDER",
+      "owner": "af260015 settings._css_classes",
+      "package": "build/bio-page256-next-safe-package-20260914-v015.json op1",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED",
+      "precondition": "Fresh exact settings still prove af-faq-content is present and is the winning order owner.",
+      "postreadback": ["server/frontend FAQ before CTA", "four native details controls intact", "copy unchanged", "JSON valid"],
+      "enables": ["FAQ_CTA_STATIC_LAYOUT"]
+    },
+    {
+      "id": "REVIEW_ANCHOR",
+      "owner": "af26000d Atomic settings",
+      "package": "build/bio-page256-next-safe-package-20260914-v015.json op2",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_OPTIONAL",
+      "precondition": "Fresh exact settings prove a safe existing _cssid-style mechanism; guessed attributes are forbidden.",
+      "postreadback": ["id=ugyfelvelemenyek exactly once", "deep-link lands on reviews", "Atomic Tabs/ID35 unchanged"]
+    },
+    {
+      "id": "REVIEW_ROLE_COPY",
+      "owner": "b2560031 paragraph value",
+      "package": "build/bio-page256-next-safe-package-20260914-v015.json op3",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED",
+      "precondition": "Fresh saved role still equals the short target line.",
+      "postreadback": ["full source role exactly once", "third tab accessible name unchanged", "review body unchanged", "JSON valid"]
+    },
+    {
+      "id": "TABLE_TITLE",
+      "owner": "af260011 compact caption/table opening",
+      "package": "build/bio-table-source-structure-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_CONDITIONAL",
+      "precondition": "One fresh exact returned saved-data boundary contains the complete caption/table opening.",
+      "postreadback": ["caption role 0", "external title exactly once", "aria-labelledby exact", "3 uppercase column headers + 4 rowHeaders preserved", "JSON valid", "external-title visual state measured"],
+      "note": "v001 referenced undefined TABLE_TITLE_VISUAL. No separate current table-title CSS artifact was found. Do not invent one; measure the external title after structure change and prepare a page-local rule only if a concrete source delta is reproduced."
+    },
+    {
+      "id": "STRESS_ROLE",
+      "owner": "af260007 legacy root tag",
+      "package": "build/bio-stress-article-semantic-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_CONDITIONAL",
+      "precondition": "Fresh complete tag boundaries prove a tag-only atomic edit; old two-token assumptions must be revalidated live.",
+      "postreadback": ["article role source-equivalent", "text/list unchanged", "JSON valid"],
+      "warning": "Does not close physical p1/card/p2 reading-order blocker."
+    },
+    {
+      "id": "STRESS_VISUAL",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-stress-current-dom-visual-v003.css",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "SELF_CONTAINED_STYLE_APPEND",
+      "postreadback": ["desktop visual p1+p2 left/card right", "mobile visual p1->p2->card", "AX physical order explicitly remains measured/open unless separately corrected"],
+      "warning": "Never count CSS visual reorder as DOM/AX exactness."
+    },
+    {
+      "id": "CTA_MAIL_STRUCTURE",
+      "owner": "9a1b2c3d final mailto anchor children",
+      "package": "build/bio-cta-mail-structure-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_CONDITIONAL",
+      "precondition": "Fresh complete anchor-child boundary proves source/target child order still differs. If already exact, mark no-op PASS and do not rewrite.",
+      "postreadback": ["visible label then strong email", "href exact", "aria-label exact", "one mail action only", "JSON valid"],
+      "enables": ["FAQ_CTA_STATIC_LAYOUT"]
+    },
+    {
+      "id": "FAQ_CTA_STATIC_LAYOUT",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+      "depends_on": ["CARRIER_PROBE", "FAQ_ORDER", "CTA_MAIL_STRUCTURE"],
+      "atomic_window": "MUST_FINISH_WITH_DEPENDENCY_READBACK",
+      "delivery_piece": "build/bio-faq-cta-source-layout-v002.css only",
+      "postreadback": ["FAQ paper before separate forest CTA band", "CTA eyebrow does not contaminate H2 accessible name", "mail/form actions remain unique and exact", "four native FAQ controls intact", "desktop and <=900/<=720 no overflow"],
+      "enables": ["FAQ_WAVE4"],
+      "warning": "Static layout does not close FAQ exact-runtime blocker."
+    },
+    {
+      "id": "FAQ_WAVE4",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-wave-source-faq-v001.css",
+      "depends_on": ["FAQ_CTA_STATIC_LAYOUT"],
+      "atomic_window": "SELF_CONTAINED_STYLE_APPEND",
+      "precondition": "Fresh rendered proof that FAQ outer state is source-like paper and preceding expectations surface is still sage; source transition boundary is intact.",
+      "postreadback": ["af260014 is source sage-to-paper wave", "wave height/shape source-equivalent", "no section overlap/overflow", "responsive thresholds remain stable"],
+      "failure": "Remove only the fourth-wave block."
+    },
+    {
+      "id": "REVIEW_ORDINAL",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-review-ordinal-source-v001.css",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "MUST_FINISH_WITH_AX_READBACK",
+      "precondition": "Fresh diagnostic still shows the two generated ordinal text owners the candidate was designed to neutralize.",
+      "postreadback": ["one visible ordinal/tab", "zero standalone ordinal AX staticText", "exact tab names unchanged"],
+      "failure": "Rollback this block alone."
+    },
+    {
+      "id": "REVIEW_POINTS_DIAGNOSTIC",
+      "owner": "active Panasonic panel section-local AX + exact saved spans",
+      "package": "build/bio-review-points-semantics-20260914-v001.json diagnostic phase",
+      "depends_on": [],
+      "atomic_window": "READ_ONLY",
+      "postreadback": ["source list1/items3", "target current semantics captured", "protected intro/items/final reading order captured"],
+      "enables": ["REVIEW_POINTS_CANDIDATE"]
+    },
+    {
+      "id": "REVIEW_POINTS_CANDIDATE",
+      "owner": "Panasonic point span semantics",
+      "depends_on": ["REVIEW_POINTS_DIAGNOSTIC"],
+      "atomic_window": "HOLD_UNTIL_BOUNDARY_AND_AX_PROOF",
+      "postreadback": ["list1/items3", "intro/final remain outside list", "no duplicated/reordered protected text", "tab/panel relationships unchanged"]
+    },
+    {
+      "id": "STRESS_PHYSICAL_ORDER",
+      "owner": "af260007 complete saved owner",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "No repository byte-exact owner snapshot and no proven supported atomic node move. Fresh complete live owner read is mandatory; obsolete v014 wrapper plan is forbidden."
+    },
+    {
+      "id": "EXPECTATIONS_ARTICLE_OWNERSHIP",
+      "owner": "af260013 complete saved ownership boundary",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "No complete exact owner snapshot. Source article ownership spans nodes separated in current target; role-count-only or partial regrouping cannot clear exactness."
+    },
+    {
+      "id": "FAQ_EXACT_RUNTIME",
+      "owner": "no sanctioned physically page-local runtime currently proven",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "Global Code Snippets/ID35/plugin mutation is forbidden; CSS cannot produce exact source button/aria/sibling-keyboard/motion behavior; do not infer JS permission from the CSS carrier."
+    },
+    {
+      "id": "REVIEW_PREV_NEXT_PANEL_FOCUS",
+      "owner": "no sanctioned page-local runtime currently proven",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "Current live ID35 switches tabs but lacks source panel-focus step; stale repo mirror cannot be used to reconstruct it and global ID35 is outside page-only scope."
+    }
+  ],
+  "safe_partial_window_policy": [
+    "Only start SELF_CONTAINED/READ_ONLY nodes when the entire node, readback and rollback margin fit above D11 reserve.",
+    "MUST_FINISH nodes cannot be split across uncertain 429/5xx states.",
+    "Never start a dependency node if its predecessors are not freshly verified in the current live state.",
+    "A no-op predecessor that is freshly proven already source-exact may satisfy the dependency without a write.",
+    "HARD_BLOCKER nodes receive zero speculative mutation budget."
+  ],
+  "pixel_pass": false
+}
