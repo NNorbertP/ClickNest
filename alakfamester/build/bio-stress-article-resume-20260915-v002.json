@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "package": "bio-stress-article-resume-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "element_id": "af260007",
+  "status": "PREPARED_CONDITIONAL_NOT_WRITE_READY",
+  "supersedes_for_execution": "build/bio-stress-article-resume-20260914-v001.json",
+  "scope": "Only page256 saved Elementor data after normal scope release. No full save/global/shared/plugin/SMTP/media write.",
+  "source_target_contract": {
+    "source_card_role": "article",
+    "last_trusted_target_card_role": "aside/complementary",
+    "source_reading_order": "p1 -> p2 -> article/list",
+    "last_trusted_target_reading_order": "p1 -> aside/list -> p2",
+    "protected": "all stress copy/list strings, region name, classes and IDs"
+  },
+  "role_only_transaction": {
+    "goal": "Change only the stress-card tag pair aside -> article while leaving physical child order unchanged.",
+    "mandatory_precondition": "Fresh content/search returns one compact exact af260007 boundary containing BOTH the opening aside tag and its matching closing aside tag and no unrelated aside owner.",
+    "method": "One guarded match-once replacement of that complete compact boundary, changing only the tag names. Do not use two separate opening/closing writes and do not use page-wide replace_all.",
+    "abort_if": ["both tag boundaries cannot be isolated in one exact unique owner slice", "another aside occurs inside the selected slice ambiguously", "current target already renders article", "scope/identity/quota/skill gates fail"],
+    "acceptance": ["JSON valid", "card is article and not complementary", "all four stress strings unchanged", "region name unchanged", "visual geometry unchanged before any optional visual CSS"]
+  },
+  "physical_order_blocker": {
+    "required_exact": "p1 -> p2 -> article/list",
+    "current_known": "p1 -> article/list -> p2",
+    "rule": "Role-only tag fix never clears reading-order parity.",
+    "safe_future_shape": "Only a fresh complete af260007 owner may authorize one single owner-level replacement that preserves p1/p2/card bytes but emits the source physical sequence in one transaction. If that complete owner cannot be safely isolated, do not move nodes.",
+    "forbidden": ["remove/reinsert across calls", "duplicate p2", "temporary invalid markup", "JS/CSS reorder counted as semantic PASS", "stale full-owner reconstruction"]
+  },
+  "visual_separation": "build/bio-stress-current-dom-visual-v003.css remains an independent presentation candidate after carrier/cascade proof; it does not clear physical order.",
+  "fresh_gates": ["STATE/page264 release -> page256", "exact +4 page256 profile/site/current quota", "D11 >=10 margin", "Elementor skill", "fresh page256 bytes/SHA/JSON", "fresh exact af260007 owner"],
+  "rollback": "Reverse only the same complete post-write boundary with one guarded edit if immediate readback fails.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
