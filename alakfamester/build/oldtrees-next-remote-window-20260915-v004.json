@@ -15,6 +15,7 @@
     "acceptance_ledger": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
     "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
     "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "visual_parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
     "cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
     "interaction_acceptance": "build/oldtrees-interaction-acceptance-20260915-v002.json",
     "form_required_gate": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
@@ -38,12 +39,13 @@
     "current_note": "In the 2026-09-15 continuation that produced this plan, WPVibe was disabled on the single first call and Opera was not connected on the single list-tabs call, so no live claim/write was made."
   },
   "phase_1_repo_identity_gate": {
-    "action": "Re-read current STATE plus exact v006/v007/bundle artifacts and deploy manifest before a remote write. Fresh repository truth outranks recorded SHAs.",
-    "known_artifact_blobs_at_plan_creation": {
+    "action": "Re-read current STATE plus exact v006/v007/bundle artifacts, deploy manifest and parser QA before a remote write. Fresh repository truth outranks recorded SHAs.",
+    "known_artifact_blobs_at_plan_update": {
       "v006": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
       "v007": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
       "bundle": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
-      "deploy_manifest": "f254090efa5779b82d5db3d75f4b4aebc357b514"
+      "deploy_manifest": "4f8a9209a5ab498a6a1f524a58d341830e6cb863",
+      "parser_qa": "STATIC_PARSER_AND_SCOPE_QA_PASS"
     },
     "stop": "If any current repo artifact differs, reconcile the newer file before using this plan."
   },
@@ -122,7 +124,7 @@
   },
   "phase_7_inner_form_and_routes": {
     "inner_fields": "Run build/oldtrees-form-field-visual-diagnostic-20260915-v001.json. No inner-field CSS unless synchronized source/target computed-style/geometry proves a difference.",
-    "routes": "Run reports/subpages/oldtrees-link-route-ledger-20260915-v001.json read-only: two #ajanlatkeres CTAs, /kapcsolat/#kiszallas, canonical biological service route, tel:+36305394820 and mailto:kreativ@alakfa-mester.hu without activation."
+    "routes": "Run reports/subpages/oldtrees-link-route-ledger-20260915-v001.json read-only: two #ajanlatkeres CTAs, /kapcsolat/#kiszallas, /biologiai-vedelem/, tel:+36305394820 and mailto:kreativ@alakfa-mester.hu without activation."
   },
   "phase_8_interactions": {
     "plan": "build/oldtrees-interaction-acceptance-20260915-v002.json",
@@ -168,5 +170,5 @@
   ],
   "wordpress_writes": 0,
   "pixel_pass": false,
-  "status": "READY_FOR_MINIMAL_LIVE_GATE_WITH_EXPANDED_INTERACTION_AND_CORRECTED_DOCK_OWNERSHIP"
+  "status": "READY_FOR_MINIMAL_LIVE_GATE_WITH_PARSER_BACKED_VISUAL_ARTIFACTS_EXPANDED_INTERACTION_AND_CORRECTED_DOCK_OWNERSHIP"
 }
