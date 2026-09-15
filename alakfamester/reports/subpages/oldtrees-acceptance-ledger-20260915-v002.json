@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-acceptance-ledger-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "reference": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "scope": "Authoritative post-closeout page264 acceptance ledger. No WordPress write performed by this package.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+  "evidence_precedence": [
+    "Fresh trustworthy live readback/capture outranks older audit notes.",
+    "reports/subpages/oldtrees-live-closeout-20260915-v001.json closes the v006/v007 implementation defects.",
+    "reports/subpages/oldtrees-proof-only-reconciliation-20260915-v001.json records current read-only implementation/runtime facts.",
+    "Static/source runtime contracts define expected behavior but do not substitute for an action-capable synchronized test."
+  ],
+  "accepted_live_baseline": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "elementor_json_valid": true,
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "marker_counts": {"af-project:end":1,"v004":1,"v005":1,"v006":1,"v007":1},
+    "semantic_id33_sha256": "810e62e37b30b553dc96212783954e808e9bf251eb5c72ab8c509beb4957b22f",
+    "review_id14_sha256": "1adc70159cf96b2e8ac9544ec9a7c47d6a3b5106a66ad80d88787fbde9c4555f"
+  },
+  "implementation_pass_do_not_rebuild": {
+    "content_media": [
+      "No known page264 source copy/main-media gap.",
+      "Five target main-media roles reconciled.",
+      "Problem grid has seven source labels and source SVG geometries.",
+      "Comparison has exact copy/eight list items/maintenance caveat.",
+      "Request section has source intro, visible 24-hour reply and local #ajanlatkeres routing."
+    ],
+    "semantics_accessibility": [
+      "38/38 heading names and 11/11 ordered named regions accepted.",
+      "Review tablist and exact three tab names plus previous/next controls accepted; numbered target-only review dots excluded from page264 AX/focus.",
+      "Form accessible name/description, service group labelling and Település help relation preserved.",
+      "Tiszafa initial native range state min0/max100/step1/value50 accepted.",
+      "Nordmann static prev/next and dots1-6 names/structure accepted."
+    ],
+    "shared_form": [
+      "Form33 saved data 6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3 remains current readback baseline.",
+      "#af-form-direct-call is protected and unique.",
+      "ID5 is sole documented 3-5 photo count validator; ID6 is sole rows=5 helper; success state remains configured; SMTP/external delivery not tested.",
+      "Service af040007/#af-form-service uses kapcsolat-tema, mf_input_required=yes, six exact options and native required validation wiring."
+    ],
+    "visual": [
+      "v004 source-like comparison icons and X/check markers.",
+      "v005 beige/sage surfaces and equal-height stretch.",
+      "v006 white request-contact label/value foreground targeted PASS.",
+      "v007 equal desktop comparison columns/source-like wrapping targeted PASS.",
+      "Request heading centered, reply clock 18x18 and joined white intro/form panel accepted."
+    ]
+  },
+  "closed_visual_packages": {
+    "v006": {
+      "artifact": "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "live_marker_count": 1,
+      "status": "CLOSED_TARGETED_PASS",
+      "rule": "Never redeploy or duplicate."
+    },
+    "v007": {
+      "artifact": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "live_marker_count": 1,
+      "status": "CLOSED_TARGETED_PASS",
+      "rule": "Never redeploy or duplicate."
+    },
+    "deployment": "The exact combined repository bundle was inserted once during live closeout; postwrite readback and regression capture passed."
+  },
+  "proof_only_no_write_without_failure": {
+    "form_service_radio_required": "Static/runtime wiring strongly proves native required configuration. Remaining action proof must be non-delivery; no custom validator unless native behavior actually fails.",
+    "review": "Verify keyboard/prev-next synchronization and source visual-dot pointer behavior; no duplicate handler without failure.",
+    "tiszafa": "Verify pointer drag and keyboard update both range value and --ba-pos; preserve native slider if it passes.",
+    "nordmann": "Verify synchronized current/noncurrent state, caption/alt order, ~4000ms autoplay, restart after successful navigation on non-manual instance, >=40px dominant swipe, compound hover/focus pause behavior and reduced motion.",
+    "faq": "Verify four native disclosure interactions and source multi-open/accordion behavior; no second FAQ runtime.",
+    "hero": "Historical offset remains diagnostic only until exact same-browser geometry/computed owner/cascade is measured.",
+    "dock": "Historical visual clipped/blank state requires exact current shared/global owner/cascade discovery. No global write from page264 scope.",
+    "pixel_matrix": "Run six exact viewports with synchronized states, captures, overlay/diff, geometry and overflow. PIXEL_PASS remains false until actually completed."
+  },
+  "source_runtime_truth": {
+    "before_after": "Native input range drives --ba-pos in source interaction runtime.",
+    "carousel_manual": "manual is initialized once from carousel--manual and never reassigned.",
+    "carousel_user_navigation": "On non-manual instances successful prev/next/dot/key/swipe navigation calls go() then start(), resetting/restarting the ~4000ms interval.",
+    "carousel_drop": "drop() removes/reindexes/clamps/renders but calls neither stop() nor start(); <2 slide guard belongs to start() when start() runs.",
+    "target_runtime_db_owner": "Unique __AF_SOURCE_INTERACTIONS_V001__ database marker was found under Head & Footer Code option auhfc_settings_sitewide; exact option content/hash remains pending due host 429."
+  },
+  "regression_invariants": [
+    "Preserve page264 Elementor data hash/IDs/order unless a separately proven content change is authorized.",
+    "Preserve v004-v007 exactly once each; never replay old visual packages.",
+    "Preserve ID33 page guard and ID14 shared review owner; no duplicate runtime.",
+    "Preserve shared Form33, ID5/ID6 and direct-call dependency.",
+    "Do not change other pages, global header/footer/dock owner, shared media/settings, SMTP, notifications or webhooks from this scope.",
+    "Only a fresh reproducible page264 defect with proven owner/cascade may reopen implementation."
+  ],
+  "tooling_state": {
+    "wpvibe": "Proof-only reads stopped after HTTP 429; no blind retry and no WordPress write in proof package.",
+    "opera": "Stopped after stale/not-found state; kept memory policy and opened no replacement fan-out.",
+    "latest_exact_quota": "99/300 used, 201 remaining at implementation closeout; exact post-proof count unknown until throttle clears.",
+    "reserve": 10
+  },
+  "implementation_release": "RELEASED_CLOSED",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "POST_CLOSEOUT_ACCEPTANCE_LEDGER_IMPLEMENTATION_PASS_PROOF_ONLY_REMAINS"
+}
