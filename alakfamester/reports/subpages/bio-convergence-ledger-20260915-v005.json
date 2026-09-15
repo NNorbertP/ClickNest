@@ -1,0 +1,128 @@
+{
+  "schema_version": 5,
+  "package": "bio-convergence-ledger-20260915-v005",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_PREPARATION_REMOTE_BLOCKED",
+  "supersedes": "reports/subpages/bio-convergence-ledger-20260914-v004.json",
+  "resource_scope": "page256 only; shared/global CSS/runtime resources are read-only/forbidden under the current user scope",
+  "delivery": "future page-local style#af-page256-parity inside af260016 only after inert carrier probe PASS",
+  "sections": [
+    {
+      "name": "hero",
+      "protected": "copy/assets/alt and existing contact/fact icon owners",
+      "prepared": "build/bio-hero-layout-parity-v003.css for source-proven desktop geometry",
+      "open": ["fresh hero CTA rendered state", "desktop/responsive same-browser acceptance"],
+      "state": "OPEN_DIAGNOSTIC_AND_GATED_VISUAL"
+    },
+    {
+      "name": "reviews",
+      "protected": "native Atomic Tabs hierarchy, exact tab names, review images/alt, af-project general tabs keyboard, live ID35 naming/dot semantics",
+      "prepared": ["review quote v002", "review dot v001", "ordinal candidate", "third-role copy microfix", "optional review anchor microfix"],
+      "open": ["Panasonic list1/items3 semantics", "decorative ordinal zero AX text", "previous/next -> active panel focus", "third role if still short", "#ugyfelvelemenyek if still missing", "first media aspect/fit measurement"],
+      "runtime_rule": "Do not replace Atomic Tabs or modify/reconstruct global live ID35 from the stale repo mirror.",
+      "state": "MULTI_GATE_OPEN"
+    },
+    {
+      "name": "wave_reviews_stress",
+      "prepared": "exact first-wave source SVG in build/bio-wave-source-core-v001.css",
+      "state": "READY_AFTER_CARRIER"
+    },
+    {
+      "name": "stress",
+      "protected": "exact copy + list1/items4",
+      "prepared": ["current-DOM visual composition", "conditional tag-only article-role candidate"],
+      "open": "Physical order must be p1 -> p2 -> article/list; last trusted target is p1 -> card -> p2 and no complete saved owner/atomic move is proven.",
+      "state": "HARD_BLOCKER_PHYSICAL_ORDER"
+    },
+    {
+      "name": "wave_stress_technology",
+      "prepared": "exact second source SVG in build/bio-wave-source-core-v001.css",
+      "state": "READY_AFTER_CARRIER"
+    },
+    {
+      "name": "technology",
+      "protected": "three cards, visible heading/copy/order, articles3, use-case list1/items4, current icon pseudo owners",
+      "prepared": "source eyebrow/lead/card surfaces/watermarks/hairline/checklist presentation in phase1",
+      "open": "Pixel-exact icon badge geometry and responsive/final visual acceptance; no concrete icon-geometry defect is currently proven.",
+      "authority": "reports/subpages/bio-technology-icon-exactness-audit-20260915-v001.json",
+      "state": "SEMANTIC_PASS_VISUAL_GATED"
+    },
+    {
+      "name": "table",
+      "protected": "table1, exact uppercase column headers3, rowHeaders4",
+      "prepared": "conditional compact caption -> external p#tunet-tabla-cim + aria-labelledby owner transform; section tone in phase1",
+      "open": "Fresh complete caption/table-opening boundary; after transform measure external-title presentation rather than assuming a missing TABLE_TITLE_VISUAL node.",
+      "state": "OPEN_MICROFIX"
+    },
+    {
+      "name": "wave_table_expectations",
+      "prepared": "exact third source SVG in build/bio-wave-source-core-v001.css",
+      "state": "READY_AFTER_CARRIER"
+    },
+    {
+      "name": "expectations",
+      "protected": "visible content, lists2/items5",
+      "open": "Source-equivalent articles2 and correct left/right child ownership. No complete saved owner snapshot or safe one-transaction regrouping is proven.",
+      "forbidden": "old visual v002 / multi-step regrouping v003 / fake roles / JS reparenting",
+      "state": "HARD_BLOCKER_OWNERSHIP"
+    },
+    {
+      "name": "wave_expectations_FAQ",
+      "prepared": "build/bio-wave-source-faq-v001.css",
+      "dependency": "Append only after FAQ_CTA_STATIC_LAYOUT fresh readback proves source-like paper FAQ and sage predecessor. Separate node, not blind same-transaction bundle.",
+      "state": "DEPENDENCY_GATED"
+    },
+    {
+      "name": "FAQ",
+      "protected": "four exact questions/answers and working native details controls",
+      "prepared": "source-like internal/static layout via page-local CSS after order/carrier dependencies",
+      "open": "Exact button/aria/sibling-keyboard/280ms-220ms runtime has no sanctioned page-local physical owner.",
+      "state": "VISUAL_GATED_RUNTIME_HARD_BLOCKER"
+    },
+    {
+      "name": "final_CTA",
+      "protected": "CTA H2/body copy, mail href, exact mail accessible label, form link, existing IDs/actions",
+      "prepared": "build/bio-faq-cta-page-local-delivery-20260915-v001.json with accessibility-safe separate generated eyebrow and page-local forest-band layout",
+      "dependencies": ["carrier PASS", "FAQ order PASS/no-op exact", "mail child-order PASS/no-op exact"],
+      "open": "Static delivery + desktop/responsive acceptance; FAQ runtime remains separate.",
+      "state": "GATED"
+    }
+  ],
+  "content_state": {
+    "protected_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "only_known_visible_copy_delta": "third review role line if a fresh saved read still shows the short value"
+  },
+  "semantic_state": {
+    "authority": "reports/subpages/bio-final-acceptance-status-20260915-v002.json",
+    "hard_blockers": "reports/subpages/bio-exactness-blockers-20260915-v003.json",
+    "execution_classification": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v001.json"
+  },
+  "delivery_state": {
+    "global_Additional_CSS": "FORBIDDEN_WRITE",
+    "global_ID35_CodeSnippets_plugin": "PRESERVE_READ_ONLY",
+    "page_local_style_carrier": "UNPROVEN_LIVE; probe first",
+    "first_local_visual_payload": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "phase1_static_QA": "reports/subpages/bio-page-local-phase1-static-qa-20260915-v001.json",
+    "FAQ_CTA_delivery": "build/bio-faq-cta-page-local-delivery-20260915-v001.json"
+  },
+  "remote_state": {
+    "STATE_md": "PAGE264 ONLY on latest fresh read; page264 release gate not released",
+    "WPVibe": "disabled/unavailable in this chat",
+    "authorized_profile": "ncsnorbert+20260914-4@gmail.com",
+    "profile_site_quota_current": "UNKNOWN; must be fresh-read before mutation",
+    "identity_drift_authority": "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "Opera": "disconnected/unavailable for fresh acceptance; future page256 QA max two reused tabs",
+    "browser_plan": "build/bio-page256-opera-low-memory-qa-20260915-v001.json"
+  },
+  "execution_state": {
+    "runbook": "build/bio-next-remote-window-20260915-v006.json",
+    "budget": "build/bio-remote-call-budget-20260915-v007.json",
+    "DAG": "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "handoff": "build/bio-scope-handoff-ready-20260915-v003.json"
+  },
+  "current_result": "SAFE_PREPARATION_ADVANCED; NINE EXACTNESS BLOCKER CLASSES REMAIN; PIXEL_PASS=false",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
