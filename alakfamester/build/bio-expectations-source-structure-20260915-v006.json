@@ -1,0 +1,42 @@
+{
+  "schema_version": 6,
+  "package": "bio-expectations-source-structure-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "element": "af260013",
+  "status": "ONE_SHOT_OWNER_TRANSFORM_CANDIDATE_NOT_WRITE_READY",
+  "supersedes_for_execution": "build/bio-expectations-source-structure-20260915-v005.json",
+  "source_contract": {
+    "left_article": "owns h2 + positive list3 + negative list2",
+    "right_article": "owns h3 + body + /#apolas link",
+    "article_count": 2,
+    "lists": 2,
+    "list_items": 5,
+    "link_accessible_name": "Az alakfa ápolása",
+    "link_visual": "source includes a decorative arrow SVG"
+  },
+  "one_shot_structure_rule": "Only a supported fresh COMPLETE af260013 editor/owner value may be transformed, in one guarded match-once edit, into div.af-expect-grid containing the two source-equivalent article owners. Never reconstruct from old snippets or split wrapper creation across calls.",
+  "required_structure_transform": [
+    "preserve all current visible text/link bytes",
+    "left article.af-expect-card owns h2 and both ul lists",
+    "positive ul becomes af-expect-list; negative ul becomes af-expect-list af-expect-list--cross",
+    "right article.af-expect-card.af-expect-card--sage owns h3, paragraph and link",
+    "link class becomes af-expect-link while href stays /#apolas and accessible text stays exact",
+    "outer region ID/name unchanged"
+  ],
+  "arrow_gate": {
+    "status": "EXACT_SOURCE_BYTES_REQUIRED",
+    "known": "Historical source proof says an arrow SVG exists and must be aria-hidden=true/focusable=false, while build/bio-expectations-source-structure-v003.css contains svg sizing/hover rules.",
+    "unknown": "The repository does not currently contain a trustworthy exact source arrow SVG markup/path byte sequence.",
+    "rule": "Do not invent a generic arrow path. Before the one-shot edit, retrieve the exact source link child markup from the existing reference page/DOM using the released browser if available. If exact SVG bytes are captured, include them inside the link in the same owner transform with aria-hidden=true/focusable=false. If not, perform no arrow invention and keep EXPECTATIONS_LINK_ARROW_VISUAL explicitly OPEN after structural PASS.",
+    "accessible_name": "Any included SVG must remain decorative and must not change Az alakfa ápolása."
+  },
+  "CSS_after_structure": "build/bio-expectations-source-structure-v003.css only after structure PASS + carrier PASS. Its .af-expect-link svg rules become effective only if exact source SVG proof allowed the decorative child.",
+  "acceptance_structure": ["JSON valid", "article2/lists2/listItems5 exact ownership", "all copy/hrefs unchanged", "no duplicates", "FAQ/wave/CTA following order unchanged"],
+  "acceptance_visual": ["two-card source geometry", "check/cross markers decorative", "right link source-like including exact decorative arrow when proven", "link AX name unchanged"],
+  "abort": ["complete fresh owner unavailable/non-unique", "transform would include unrelated content", "protected text/link changes", "article/list ownership wrong", "ambiguous mutation until exact readback"],
+  "forbidden": ["multi-step wrapper surgery", "role-only fake articles", "aria-owns/JS reparenting", "invented arrow SVG", "full Elementor save", "raw SQL write"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
