@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-proof-only-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "READ_ONLY_PROOF_ONLY_AFTER_V014_IMPLEMENTATION_CLOSEOUT",
+  "authority": {
+    "state": "STATE.md",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "live_closeout": "reports/subpages/oldtrees-live-closeout-20260915-v001.json",
+    "rule": "Page264 implementation remains closed. No new WordPress write is authorized by this proof package without a fresh reproduced page264 defect."
+  },
+  "live_css_reconciliation": {
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "marker_counts": {
+      "af-project:end": 1,
+      "af-oldtrees-visual-v004:start": 1,
+      "af-oldtrees-visual-v005:start": 1,
+      "af-oldtrees-visual-v006:start": 1,
+      "af-oldtrees-visual-v007:start": 1
+    },
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_json_valid": true,
+    "block_readback": "Fresh SQL substring readback returned the complete marked v006 block immediately followed by the complete marked v007 block, declaration-equivalent to the frozen standalone repository artifacts.",
+    "cascade_checks": [
+      "For body.page-id-264 #ajanlatkeres .elementor-element-af2a0054 .contact-btn, current Additional CSS search finds the v004 base declaration and the later v006 !important declarations; no later matching project rule was found.",
+      "For body.page-id-264 .elementor-element-af2a0045 .af-sub-split, current Additional CSS search finds v004 base declarations and v007 !important desktop/mobile declarations; no later matching project rule was found."
+    ],
+    "visual_status": {
+      "v006": "PASS remains authoritative from oldtrees-live-closeout-20260915-v001; current proof package did not reopen it.",
+      "v007": "PASS remains authoritative; a fresh same-browser target comparison capture in this continuation also showed equal desktop columns."
+    }
+  },
+  "contact_section_static_readback": {
+    "owner": "af2a0054",
+    "contact_buttons": 2,
+    "phone_href": "tel:+36305394820",
+    "mail_href": "mailto:kreativ@alakfa-mester.hu",
+    "classes": ["contact-btn", "contact-btn__label", "contact-btn__text"],
+    "meaning": "The live v006 selectors still match exactly the intended two request-contact controls; no structural/content drift was observed."
+  },
+  "form33_required_reconciliation": {
+    "form_id": 33,
+    "saved_data_bytes": 6068,
+    "saved_data_sha256": "ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3",
+    "direct_call_unique": true,
+    "service_owner": "af040007/#af-form-service",
+    "widget_type": "mf-radio",
+    "input_name": "kapcsolat-tema",
+    "required_setting": "yes",
+    "options": ["uj-alakfa", "apolas", "tulnott", "soveny", "egeszseg", "gyumolcs"],
+    "validation_message": "Válasszon egy lehetőséget.",
+    "render_template_proof": "Each radio template calls parent.activateValidation({message:'Válasszon egy lehetőséget.', required:true}, el), binds aria-invalid to validation.errors['kapcsolat-tema'], and renders validation.ErrorMessage for the same field name.",
+    "decision": "Native required wiring is strongly proven and no custom service validator is justified. A true action/no-delivery interaction proof remains proof-only because no real form submission is permitted."
+  },
+  "review_runtime_reconciliation": {
+    "shared_owner": {
+      "snippet_id": 14,
+      "name": "AF reusable reviews controls v005",
+      "active": true,
+      "sha256": "1adc70159cf96b2e8ac9544ec9a7c47d6a3b5106a66ad80d88787fbde9c4555f"
+    },
+    "page264_owner": {
+      "snippet_id": 33,
+      "name": "AF old trees semantic parity v001",
+      "active": true,
+      "sha256": "810e62e37b30b553dc96212783954e808e9bf251eb5c72ab8c509beb4957b22f"
+    },
+    "static_dom": "Native Atomic tabs still contain exactly three real tabs/panels with accepted source content. ID14 remains the only shared source-style prev/next/dot/keyboard owner; ID33 remains the page264 containment owner.",
+    "pointer_gate": "ID14 dot buttons remain pointer-active by design; source visual-dot pointer behavior still requires synchronized action proof before any page264 containment change."
+  },
+  "before_after_reconciliation": {
+    "section_owner": "af2a004a",
+    "target_markup": {
+      "root_class": "ba js-ba",
+      "initial_css_variable": "--ba-pos:50%",
+      "control": "native input[type=range]",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "value": 50,
+      "before_alt": "Az 50+ éves tiszafa a beavatkozás előtt",
+      "after_alt": "Ugyanaz a tiszafa a formázás után: többszintes niwaki"
+    },
+    "status": "Static structure and accepted initial state remain intact; pointer/keyboard synchronization stays proof-only."
+  },
+  "nordmann_reconciliation": {
+    "section_owner": "af2a004a",
+    "root": "carousel js-carousel",
+    "root_label": "Nordmann-jegenyefenyő koronaátalakítása – munkafotók",
+    "slides": 6,
+    "prev_next": true,
+    "dots": 6,
+    "alts_in_order": [
+      "Nordmann-jegenyefenyő koronaátalakítása, 1. kép",
+      "Nordmann-jegenyefenyő koronaátalakítása, 2. kép",
+      "Nordmann-jegenyefenyő koronaátalakítása, 3. kép",
+      "Nordmann-jegenyefenyő koronaátalakítása, 4. kép",
+      "Nordmann-jegenyefenyő koronaátalakítása, 5. kép",
+      "Nordmann-jegenyefenyő koronaátalakítása, 6. kép"
+    ],
+    "source_contract": "build/source-interactions-v001.js blob 2e8e0e3fc9be28510595aad42b4b7dc309cdd30d remains the acceptance oracle for timer/navigation/swipe/pause/reduced-motion behavior.",
+    "runtime_location_discovery": "Database search for __AF_SOURCE_INTERACTIONS_V001__ found exactly one DB owner: option auhfc_settings_sitewide (Head & Footer Code). No Code Snippets duplicate was found. Exact option-content/hash readback was interrupted by host HTTP 429 before completion.",
+    "status": "Markup/static controls intact; timed/action behavior remains proof-only."
+  },
+  "faq_reconciliation": {
+    "owner": "af2a0050",
+    "count": 4,
+    "target_native_owner": "four native <details>/<summary> elements",
+    "initial_server_markup": "all four details omit the open attribute",
+    "page264_duplicate_runtime_found": false,
+    "snippet_audit": [
+      "Active global ID9 adds heading semantics inside details>summary but does not own disclosure state.",
+      "Active ID11 uses homepage-specific #af-faq-section/#af-partner-section selectors and is not a page264 disclosure owner."
+    ],
+    "status": "Static owner/content integrity proven; pointer/keyboard and source multi-open-vs-accordion observation remain proof-only."
+  },
+  "environment_preservation": {
+    "active_theme": "hello-elementor 3.5.1",
+    "af_project": "0.2.0",
+    "elementor": "4.2.4",
+    "elementskit": "4.0.4",
+    "metform": "4.3.0",
+    "decision": "No plugin/theme update was performed; available updates were intentionally not applied because they are unrelated and could create regressions."
+  },
+  "tooling": {
+    "opera": "Started with three project-related tabs; the unrelated hedge target tab was closed, leaving one source and one target page264 tab. Source/target comparison capture succeeded. A subsequent target navigation returned a stale/not-found tab error; Opera use stopped immediately with no replacement tabs.",
+    "local_chromium_fallback": "Unavailable for live comparison because the container cannot resolve the project hostnames; no persistent browser instance was kept.",
+    "wpvibe": "Read-only checks continued until a host HTTP 429 occurred while reading auhfc_settings_sitewide. Per project policy no blind retry was attempted and no further WPVibe calls were made in this continuation.",
+    "latest_exact_quota": "99/300 used, 201 remaining from v014 closeout; current exact counter after this proof package is unknown because the 429 stopped a fresh quota read.",
+    "d11_reserve": 10
+  },
+  "writes": {
+    "wordpress_writes_in_this_proof_package": 0,
+    "github_evidence_write": true,
+    "smtp_or_external_submission": false,
+    "other_page_write": false
+  },
+  "remaining_proof_only": [
+    "dynamic native Form33 required no-delivery interaction proof",
+    "review key/pointer synchronization proof",
+    "Tiszafa pointer/keyboard -> value/--ba-pos synchronization proof",
+    "Nordmann synchronized slide-role/caption-alt plus timer/reset/swipe/pause/reduced-motion proof",
+    "FAQ pointer/keyboard and source multi-open-vs-accordion behavior proof",
+    "hero exact computed owner/cascade measurement",
+    "floating dock actual owner and page264-local exception gate",
+    "six-view deterministic exact-state screenshot/overlay/diff matrix"
+  ],
+  "next_safe_action": "After the host 429 clears and a stable action-capable browser exists, first verify current page264 hash/markers and exact auhfc_settings_sitewide runtime identity without writing. Then run proof-only interaction/geometry checks. Do not perform another page264 implementation write unless a fresh reproducible defect is proven.",
+  "pixel_pass": false,
+  "status": "PROOF_ONLY_RECONCILIATION_ADVANCED_NO_NEW_IMPLEMENTATION_DEFECT_PROVEN_HOST_429_STOP"
+}
