@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "package": "bio-page256-opera-low-memory-qa-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_NOT_RUN_OPERA_DISCONNECTED",
+  "goal": "Finish page256 source/target visual, responsive, interaction and AX acceptance with at most two reused Opera tabs and without repeated full-page/AX captures.",
+  "prerequisites": [
+    "STATE.md has explicitly released PAGE264 ONLY and handed the writable scope to page256.",
+    "WPVibe is available on the intended account and a fresh page256 saved-data baseline is reconciled before any target write.",
+    "For read-only browser checks that do not depend on a new write, source and target URLs must be verified before evidence is accepted."
+  ],
+  "memory_policy": {
+    "max_project_tabs": 2,
+    "tabs": ["one reference tab", "one page256 target tab"],
+    "new_tabs": 0,
+    "navigation": "Reuse the same two tab IDs and only change anchor/viewport/state.",
+    "ax": "Use section-local or literal-targeted AX reads. Never paginate the whole page AX tree unless a specific blocker cannot be isolated.",
+    "screenshots": "Prefer tight section captures. Do not keep multiple screenshot views or duplicate source/target tabs open.",
+    "reloads": "At most one deliberate reload per side for a state requiring a clean load; no retry loops on disconnect/504.",
+    "interaction_reset": "After each interactive check restore the section to its initial tab/FAQ state before moving on."
+  },
+  "ordered_checks": [
+    {
+      "phase": 1,
+      "viewport": "desktop matched source/target, preferably the previously used 1640x920 evidence viewport",
+      "sections": ["hero", "reviews", "technology", "stress", "table", "expectations", "FAQ/CTA"],
+      "method": "section-by-section tight visual/AX check; do not capture the full page repeatedly",
+      "must_close": [
+        "hero vertical rhythm and CTA state",
+        "technology card surfaces/checklist and technology icon badge exactness diagnostic",
+        "review quote/dot/ordinal visuals plus Panasonic list semantics",
+        "stress physical reading order and article role",
+        "table external title/aria-labelledby structure",
+        "expectations two-article ownership",
+        "FAQ-before-CTA order and final mail child order"
+      ]
+    },
+    {
+      "phase": 2,
+      "viewport": "1000px then just below 1000px",
+      "sections": ["reviews"],
+      "must_close": ["source one-column review body/media/by transition", "media container ratio/fit owner", "no overflow"]
+    },
+    {
+      "phase": 3,
+      "viewport": "900px then just below 900px",
+      "sections": ["hero", "technology", "stress", "table", "expectations", "FAQ/CTA"],
+      "must_close": ["hero one-column stack", "source 32px stack gap", "cards/grids one-column", "CTA actions rhythm", "no breakpoint jump caused by desktop parity blocks"]
+    },
+    {
+      "phase": 4,
+      "viewport": "760px then just below 760px",
+      "sections": ["reviews"],
+      "must_close": ["review rail single-column", "56px tab height", "active left bronze rule", "inactive meta hidden/active meta shown", "38px quote owner", "ordinal/dots remain decorative"]
+    },
+    {
+      "phase": 5,
+      "viewport": "720px then just below 720px",
+      "sections": ["hero", "technology", "stress", "expectations", "FAQ/CTA"],
+      "must_close": ["24px card/CTA padding mapping where applicable", "hero CTA full width", "section spacing winning owner measured before any override", "mobile h2 winning owner measured"]
+    },
+    {
+      "phase": 6,
+      "viewport": "560px then approximately 390px",
+      "sections": ["reviews", "hero", "CTA", "table"],
+      "must_close": ["review 4/3 media", "40x40 monogram", "no horizontal overflow", "table scroll-edge behavior", "focus visibility", "source-equivalent narrow CTA rhythm"]
+    }
+  ],
+  "interaction_checks_after_visual_structure_is_stable": {
+    "reviews": [
+      "Tab click and ArrowRight/Left/Up/Down/Home/End remain handled by the native Atomic Tabs + af-project path.",
+      "Previous/next wraps in source order and the new active tabpanel receives focus; if not, leave exactness blocker open unless a sanctioned physical runtime owner exists.",
+      "No duplicate numbered control enters focus order; decorative 01/02/03 produces no standalone AX staticText after ordinal fix."
+    ],
+    "FAQ": [
+      "If exact source runtime has a sanctioned owner by then: click and native Enter/Space activation, ArrowRight/Down/Left/Up/Home/End trigger navigation, aria-expanded/controls synchronization and 280ms/220ms motion.",
+      "If no sanctioned runtime owner exists, retain functional native details and leave FAQ_exact_runtime explicitly open rather than faking PASS."
+    ],
+    "anchors": [
+      "#ugyfelvelemenyek resolves to the review section after anchor microfix.",
+      "Existing hero/technology/contact destinations continue to resolve; do not rewrite already-correct links."
+    ]
+  },
+  "stop_conditions": [
+    "Opera connector disconnects or becomes unstable: stop immediately; do not open replacement tabs.",
+    "Target saved/rendered state no longer matches the latest reconciled baseline: stop acceptance and return to saved-data reconciliation.",
+    "Any write causes protected copy, IDs, tab relationships, assets or already-closed semantics to drift: rollback only that atomic unit before continuing.",
+    "A viewport check cannot distinguish source/cascade ownership: record diagnostic evidence and do not guess a CSS override."
+  ],
+  "acceptance_rule": "PIXEL_PASS and exact PASS remain false until every affected desktop/narrow component is freshly compared in the same browser engine and every hard semantic/runtime blocker is closed or explicitly proven impossible under the current allowed ownership model.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
