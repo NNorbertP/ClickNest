@@ -1,0 +1,69 @@
+{
+  "schema_version": 4,
+  "package": "oldtrees-scope-release-gate-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "supersedes_for_planning": "build/oldtrees-scope-release-gate-20260915-v002.json",
+  "status": "PREPARED_RELEASE_CRITERIA_NOT_RELEASED",
+  "purpose": "Page264 release criteria after correcting the source carousel broken-slide timer oracle. No scope release occurs by creating this file.",
+  "scope_authority": "STATE.md remains PAGE264 ONLY until release criteria are actually proven and a normal history-preserving handoff occurs.",
+  "current_release": false,
+  "current_remote_plan": "build/oldtrees-next-remote-window-20260915-v007.json",
+  "current_continuation": "reports/subpages/oldtrees-continuation-20260915-v016.json",
+  "current_precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v009.json",
+  "current_state_overlay": "reports/subpages/oldtrees-state-resume-overlay-20260915-v002.json",
+  "current_interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+  "current_source_carousel_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
+  "visual_minimality_gate": "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json",
+  "blocking_write_capable_items": [
+    "Fresh trustworthy synchronized source/target live gate for v006 request-contact foreground.",
+    "Fresh trustworthy synchronized source/target live gate for v007 desktop equal-column parity.",
+    "If either/both reproduce, at most one exact current repository artifact/bundle insertion through remote v007 plus mandatory server/browser readback.",
+    "If neither reproduces, explicit fresh no-write PASS evidence for both."
+  ],
+  "mandatory_release_evidence": [
+    "Intended +5 WPVibe identity, target site connection and exact quota verified; >=10 D11 reserve preserved.",
+    "Fresh page264 _elementor_data bytes/SHA/JSON reconciled and valid.",
+    "Additional CSS has exactly one af-project:end, accepted v004/v005 exactly once, and any selected v006/v007 marker exactly once with no partial/duplicate state.",
+    "Changed-section source/target visual closeout proves the selected both/one/neither result and no regression to accepted v004/v005/form/responsive contracts.",
+    "Any write used the exact repository artifact from the deploy manifest, not a hand-reconstructed variant.",
+    "No unresolved 429/5xx write outcome remains.",
+    "No other page264-specific prepared write remains justified by fresh reproduced evidence."
+  ],
+  "corrected_interaction_authority": [
+    "Interaction v004 and source-carousel reconciliation v002 supersede v003/v001 for Nordmann broken-slide timer semantics.",
+    "If natural image failure leaves zero or one carousel slide, source drop() stops the existing timer immediately.",
+    "If natural image failure leaves two or more slides, drop() does not reset/restart the timer solely because of the removal.",
+    "This correction is proof-only and does not add a new release blocker or authorize a runtime write."
+  ],
+  "items_allowed_to_remain_open_after_release_as_proof_only": [
+    "Form33 service/topic native-required and safe non-delivery behavior when no native failure is reproduced.",
+    "Inner MetForm field visual measurements when no synchronized defect is proven.",
+    "Read-only route/href confirmation when no mismatch is reproduced.",
+    "Review/Tiszafa/Nordmann/four-FAQ direct interaction acceptance when action tooling is unavailable and no failure is reproduced; Nordmann uses v004.",
+    "Hero exact owner/cascade diagnosis without proven writable owner.",
+    "Floating-dock owner discovery when global/unproven and no strictly page264-scoped correction is justified.",
+    "Deterministic six-view pixel/overlay acceptance while the required harness is unavailable."
+  ],
+  "release_forbidden_if": [
+    "v006 or v007 remains a reproduced failure without completed write/readback or explicit no-write PASS.",
+    "Current page/hash/marker state is unknown or drift unexplained.",
+    "A 429/5xx mutation outcome is UNKNOWN.",
+    "Execution still relies on interaction v003/source-carousel v001 broken-slide no-stop wording.",
+    "STATE.md cannot be safely updated while preserving complete history.",
+    "A parallel page264 QA/write owner is still active.",
+    "Release is inferred solely from unavailable tools."
+  ],
+  "handoff_contract_after_release": [
+    "Re-read fresh STATE.md, v002 state overlay, v016 continuation and v009 precedence immediately before handoff.",
+    "Preserve all existing STATE history; never truncate to force a scope switch.",
+    "Record page264 implementation closeout separately from remaining proof-only/formal blockers.",
+    "Only then allow a later page to take write scope.",
+    "Release shared Opera tabs explicitly; later work reuses at most one source plus one target tab."
+  ],
+  "current_reason_not_released": "WPVibe remains unavailable and Opera disconnected in the current continuation, so v006/v007 do not yet have the fresh live both/one/neither closeout required for release.",
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
