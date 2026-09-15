@@ -9,6 +9,7 @@
   "scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
   "authoritative": {
     "continuation": "reports/subpages/hedge-continuation-20260915-v018.json",
+    "chain_integrity": "reports/subpages/hedge-static-chain-integrity-20260915-v001.json",
     "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
     "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
     "semantic_delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
