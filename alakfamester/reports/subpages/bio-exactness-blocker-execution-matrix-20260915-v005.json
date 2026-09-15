@@ -1,0 +1,26 @@
+{
+  "schema_version":5,
+  "package":"bio-exactness-blocker-execution-matrix-20260915-v005",
+  "date":"2026-09-15",
+  "page_id":256,
+  "status":"CURRENT_EXECUTION_CLASSIFICATION_READ_ONLY",
+  "supersedes_for_execution":"reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v004.json",
+  "inherits_classification_from":"reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v004.json",
+  "current_overrides":{
+    "FAQ_CTA_STATIC":"build/bio-faq-cta-page-local-delivery-20260915-v003.json after carrier + FAQ_ORDER + CTA_MAIL_STRUCTURE; five-block one-append payload; runtime remains separate blocker",
+    "browser_QA":"build/bio-page256-opera-low-memory-qa-20260915-v002.json",
+    "DAG":"build/bio-transaction-dependency-graph-20260915-v005.json",
+    "runbook":"build/bio-next-remote-window-20260915-v010.json",
+    "budget":"build/bio-remote-call-budget-20260915-v010.json"
+  },
+  "hard_structural_candidates":{
+    "stress":"build/bio-stress-article-resume-20260915-v002.json",
+    "expectations":"build/bio-expectations-source-structure-20260915-v005.json",
+    "Panasonic":"build/bio-review-points-semantics-20260915-v002.json"
+  },
+  "body_blocker_count":9,
+  "shared_global_gate_count":2,
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
