@@ -1,0 +1,64 @@
+{
+  "schema_version": 12,
+  "package": "oldtrees-evidence-supersedence-20260915-v012",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "purpose": "Current page264 execution precedence after full fresh one-tab source-target AX reconciliation, Opera project-tab cleanup, server readback and explicit hero/semantic HOLD gates. No WordPress mutation.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-evidence-supersedence-20260915-v011.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY. Global header/footer observations are evidence only and do not expand write scope.",
+  "precedence_rule": "Fresh trustworthy live truth > STATE write scope > this v012 precedence + fresh full AX/live proof + hero/AX decision gates + current acceptance/coverage/runtime evidence > prepared artifacts > historical snapshots.",
+  "authoritative_current": {
+    "fresh_full_ax": "reports/subpages/oldtrees-fresh-full-ax-reconciliation-20260915-v001.json",
+    "fresh_live_proof": "reports/subpages/oldtrees-live-proof-continuation-20260915-v001.json",
+    "hero_decision": "build/oldtrees-hero-v011-deploy-decision-20260915-v001.json",
+    "ax_delta_decision": "build/oldtrees-fresh-ax-delta-decision-20260915-v001.json",
+    "tool_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v002.json",
+    "acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+    "visual_coverage": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260915-v002.json",
+    "runtime": "reports/subpages/oldtrees-runtime-parity-continuation-20260915-v002.json"
+  },
+  "current_page264_truth": {
+    "visible_copy_or_section_gap_in_fresh_full_ax": false,
+    "form_topics": "FRESH_EXACT_SOURCE_TARGET_MATCH",
+    "dock_structure": "FRESH_EXACT_SOURCE_TARGET_AX_MATCH",
+    "hero_content_semantics": "FRESH_MATCH",
+    "hero_geometry": "SCREENSHOT_BOUNDING_GEOMETRY_PROOF_OPEN",
+    "live_visual_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "prepared_not_live": ["v011"],
+    "new_reproduced_visual_defects": []
+  },
+  "fresh_ax_deltas_not_authorized_as_fixes": {
+    "review_inactive_tab_names": "HOLD until interaction-capable selected-state name matrix exists.",
+    "faq_role_implementation": "Preserve native details/summary; source and target multi-open design is behaviorally reconciled, role-string difference alone is not a defect.",
+    "story_dt_case": "HOLD pending visual/computed-style evidence; do not mutate copy from AX casing alone.",
+    "nordmann_snapshot_index": "Ignore unsynchronized autoplay state.",
+    "global_header_footer": "Out of page264 write scope; future global handoff only."
+  },
+  "hero_v011": {
+    "status": "HOLD_GATED_NOT_LIVE",
+    "artifact": "build/oldtrees-visual-v011-hero-source-grid.css",
+    "rule": "No deployment without controlled immediate source-target geometry/screenshot evidence plus future fresh server/quota/hash/marker preflight and rollback reserve."
+  },
+  "tool_state": {
+    "wpvibe": "296/300 used; STOP, four calls remain unused.",
+    "opera": "All project pages closed after fresh full AX comparison; only Opera blank/base tab remains. No screenshot/JQ retries and no replacement tabs.",
+    "wordpress_writes": 0
+  },
+  "closed_preserve": [
+    "v004-v010 and v012",
+    "Nordmann six group-role correction",
+    "current six service-topic labels",
+    "ID7 dock owner plus page264 v010 fallback suppression",
+    "ID33/source-interaction/shared Form33 single-owner architecture"
+  ],
+  "remaining_acceptance_ceiling": [
+    "controlled hero/dock visual proof",
+    "six-view deterministic pixel matrix",
+    "interaction-capable review/Tiszafa/Nordmann/FAQ/Form33 proof",
+    "future explicit global handoff for any header/footer difference"
+  ],
+  "wordpress_writes_by_this_update": 0,
+  "pixel_pass": false,
+  "status": "CURRENT_PRECEDENCE_V012_FULL_FRESH_AX_NO_NEW_VISUAL_DEFECT_HERO_V011_HOLD"
+}
