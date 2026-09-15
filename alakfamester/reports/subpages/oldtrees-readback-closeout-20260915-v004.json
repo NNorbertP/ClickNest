@@ -1,0 +1,73 @@
+{
+  "schema_version": 4,
+  "package": "oldtrees-readback-closeout-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Repository identity/readback closeout after v015/v008/remote-v006/release-v002/minimality/proof-ceiling reconciliation. No WordPress mutation, no Opera tab creation and no scope expansion.",
+  "tool_state": {
+    "wpvibe": "disabled/unavailable on the single initial attempt in continuation v015; no retry",
+    "opera": "Browser not connected on the single list-tabs attempt; no navigation, screenshot, replacement tab or reconnect loop",
+    "github": "repository readback and planning/evidence writes only",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0,
+    "smtp_or_external_submission": false
+  },
+  "authoritative_current_readbacks": {
+    "STATE.md_scope_history": "233f9e93ad1318ebeecf80858308ced8079e0fc3",
+    "reports/subpages/oldtrees-state-resume-overlay-20260915-v001.json": "ebd698a59da794fa50b2fd3e8fb3d332e2cb1b14",
+    "reports/subpages/oldtrees-continuation-20260915-v015.json": "60faaa46dbd8b9f6b9266ef24342359a727824ae",
+    "reports/subpages/oldtrees-evidence-supersedence-20260915-v008.json": "52164509ba15fa07fcfa5464e293c9c5b38c989f",
+    "build/oldtrees-next-remote-window-20260915-v006.json": "f48b69ed740186b0e9538a6d2b2c770a4e8f2425",
+    "build/oldtrees-scope-release-gate-20260915-v002.json": "67ee802b33ec26278a9779e61d8e280c6c910753",
+    "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json": "6cde646943014d2d04695896c866a50342f1b97a",
+    "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v001.json": "e030daac785c00e6ad42c11f4cd636f810e6d432",
+    "build/oldtrees-interaction-acceptance-20260915-v003.json": "1982d63d6f5974baaebb2bdef78b8104e82221f2",
+    "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json": "28b77c37e1bb9bae7b056afa916aa5b8b3c92b4b",
+    "build/oldtrees-visual-deploy-manifest-20260915-v001.json": "4f8a9209a5ab498a6a1f524a58d341830e6cb863",
+    "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json": "3c4a2f7657a8c39216126e9e86ee56d1a6aa710d"
+  },
+  "visual_artifact_identities_preserved": {
+    "v006_contact_foreground": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+    "v007_comparison_grid": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+    "v006_v007_bundle": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+    "rule": "These remain prepared/gated, not deployed by this continuation. Fresh live both/one/neither evidence plus server preflight is still mandatory."
+  },
+  "state_pointer_reconciliation": {
+    "state_file_action": "STATE.md was deliberately not rewritten from a partial/snippet representation.",
+    "reason": "Its page264-only scope/history and live v004/v005 baseline remain authoritative, while its planning pointer block is stale. Replacing a 31KB historical file solely for pointers would create avoidable corruption/truncation risk.",
+    "current_pointer_owner": "reports/subpages/oldtrees-state-resume-overlay-20260915-v001.json",
+    "current_precedence_owner": "reports/subpages/oldtrees-evidence-supersedence-20260915-v008.json",
+    "safe_rule": "Use STATE for write scope/history and the resume overlay/v008 for current planning until a complete exact STATE read/merge is intentionally performed."
+  },
+  "static_convergence_result": {
+    "known_page264_content_media_gap": "none",
+    "heading_and_region_state": "38/38 heading names and 11/11 ordered named regions accepted",
+    "accepted_live_visual_layers": ["v004", "v005"],
+    "only_reproduced_conditional_page_local_visual_candidates": ["v006 contact foreground", "v007 desktop comparison equal columns"],
+    "hero_inner_form_interactions_dock_pixel_matrix": "diagnostic/proof lanes only unless fresh evidence reproduces a named implementation mismatch",
+    "pixel_pass": false
+  },
+  "minimality_and_tooling_result": [
+    "No new CSS variant was created for v006/v007. Existing candidates remain exact parser-checked source-contract strengthenings.",
+    "A future narrower artifact requires exact computed/winning-rule evidence plus parser/scope QA and deploy-manifest registration before it is writable.",
+    "Current Opera connector does not expose click/keyboard/pointer/JS/getComputedStyle/winning-rule/viewport-DPR control, so missing active-interaction/computed/pixel proof is not itself a defect.",
+    "No duplicate JS/runtime owner is justified by tool limitations."
+  ],
+  "next_safe_live_order": [
+    "Verify intended +5 WPVibe identity/site/exact quota once and preserve >=10 D11 calls after the selected transaction.",
+    "Read current STATE scope plus resume overlay, v015, v008, remote v006, release v002 and exact artifact identities.",
+    "Compact page264 hash/JSON and Additional CSS marker/hash preflight.",
+    "Use exactly one source and one target tab for fresh v006/v007 both/one/neither evidence; stop on browser instability.",
+    "Apply minimality gate; do not invent a narrower patch from screenshots.",
+    "Perform at most one exact selected repository insertion or no write/HOLD.",
+    "Mandatory marker/project-end/page-hash and targeted visual regression readback.",
+    "Only then continue remaining proof-only form/route/interaction/hero/dock/responsive acceptance if tooling supports it.",
+    "Evaluate release v002; tool unavailability is never release evidence."
+  ],
+  "release_status": "NOT_RELEASED",
+  "wordpress_writes": 0,
+  "state_file_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "STATIC_READBACK_CLOSED_CURRENT_CHAIN_STABLE_LIVE_IMPLEMENTATION_GATE_STILL_REQUIRED"
+}
