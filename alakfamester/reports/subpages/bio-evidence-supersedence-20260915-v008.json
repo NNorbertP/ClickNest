@@ -1,0 +1,75 @@
+{
+  "schema_version": 8,
+  "package": "bio-evidence-supersedence-20260915-v008",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "purpose": "Reconcile the 20260915 v007 hard-blocker map with the newer execution chain named by continuation v027 and the detailed 20260914 v004 artifact map. Planning/evidence precedence only; no WordPress write or scope handoff.",
+  "scope_gate": "STATE.md remains PAGE264 ONLY; page256 is read-only until an explicit normal scope handoff.",
+  "reconciles": [
+    "reports/subpages/bio-evidence-supersedence-20260915-v007.json",
+    "reports/subpages/bio-evidence-supersedence-20260914-v004.json",
+    "reports/subpages/bio-continuation-20260914-v027.json"
+  ],
+  "authoritative_current": {
+    "continuation": "reports/subpages/bio-continuation-20260914-v027.json",
+    "continuation_detail": "reports/subpages/bio-continuation-20260914-v026.json",
+    "convergence": "reports/subpages/bio-convergence-ledger-20260914-v004.json",
+    "content_manifest": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "semantic_gate": "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "hard_exactness_blockers": "reports/subpages/bio-exactness-blockers-20260914-v002.json",
+    "css_resource_scope": "reports/subpages/bio-css-delivery-scope-reconciliation-20260914-v001.json",
+    "final_acceptance": "specs/bio-final-acceptance-20260914-v003.json",
+    "next_remote_window": "build/bio-next-remote-window-20260914-v004.json",
+    "remote_call_budget": "build/bio-remote-call-budget-20260914-v005.json",
+    "carrier_probe": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "page_local_visual_delivery": "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "compact_structure_queue": "build/bio-page256-next-safe-package-20260914-v015.json",
+    "review_plan": "build/bio-reviews-current-fix-plan-20260914-v003.json",
+    "review_interaction_oracle": "build/bio-review-source-interaction-contract-20260914-v001.json",
+    "faq_interaction_oracle": "build/bio-faq-source-interaction-contract-20260914-v001.json",
+    "stress_semantic": "build/bio-stress-article-semantic-20260914-v001.json",
+    "stress_visual": "build/bio-stress-source-visual-20260914-v003.json",
+    "stress_current_dom_css": "build/bio-stress-current-dom-visual-v003.css",
+    "expectations_contract": "build/bio-expectations-source-structure-20260914-v004.json"
+  },
+  "execution_truth": [
+    "The first future page256 mutation, after a real scope handoff and verified +5/site/quota/browser gates, is the inert page-local style carrier probe; failure blocks CSS delivery and never authorizes a global/shared fallback.",
+    "After probe PASS, the first visual phase is page-local visual delivery v002 with seven low-risk blocks; review ordinal remains isolated for immediate AX readback.",
+    "Safe structure/content candidates are v015 operations one transaction at a time: FAQ order, optional proven review anchor, confirmed third-review role text, and conditional compact table-title transform.",
+    "Stress physical p2 movement and expectations article regrouping have no proven safe atomic primitive and remain HOLD rather than receiving approximate DOM surgery.",
+    "FAQ exact button/keyboard/motion parity and review prev/next panel-focus parity remain hard runtime blockers; no global ID35/ad-hoc JS workaround is authorized under page256-only scope.",
+    "Panasonic review point-list semantics require section-local AX proof before any semantic write; whole-page role counts are not sufficient proof."
+  ],
+  "hard_blockers_preserved_from_v007": [
+    "scope_remote",
+    "page_local_css_carrier",
+    "review_points_semantics",
+    "stress_dom_order",
+    "expectations_article_ownership",
+    "FAQ_exact_runtime",
+    "review_prev_next_focus",
+    "review_ordinal_AX",
+    "responsive_unverified"
+  ],
+  "stale_execution_references_do_not_use": [
+    "specs/bio-final-acceptance-20260914-v002.json",
+    "build/bio-remote-call-budget-20260914-v003.json",
+    "build/bio-next-remote-window-20260914-v003.json",
+    "build/bio-reviews-current-fix-plan-20260914-v002.json",
+    "build/bio-page256-next-safe-package-20260914-v014.json",
+    "build/bio-page-local-visual-delivery-20260914-v001.json"
+  ],
+  "rules": [
+    "Fresh trustworthy live state always outranks this map.",
+    "Prepared means candidate, never authorization.",
+    "Do not use visual approximation or aggregate role counts to clear a hard exactness blocker.",
+    "Do not use Hello Additional CSS, global ID35, plugin/theme/global runtime writes under page256-only scope.",
+    "Every future write begins from fresh exact saved bytes and ends with immediate saved/rendered/AX readback where applicable.",
+    "HTTP 429 write outcome is UNKNOWN until exact readback; never blind retry.",
+    "Keep at least 10 WPVibe calls in D11 reserve and at most two Opera project tabs with no replacement loop."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "PAGE256_PRECEDENCE_RECONCILED_TO_V027_EXECUTION_CHAIN_WITH_V007_HARD_BLOCKERS"
+}
