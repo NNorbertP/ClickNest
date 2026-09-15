@@ -5,7 +5,7 @@
   "page_id": 272,
   "wordpress_writes": 0,
   "opera_new_tabs": 0,
-  "purpose": "Consolidate newly re-read historical/static page272 evidence so future live work does not reopen closed components, replay superseded assumptions, or spend browser/WPVibe budget on facts already proven.",
+  "purpose": "Consolidate re-read historical/static page272 evidence so future live work does not reopen closed components, replay superseded assumptions, or spend browser/WPVibe budget on facts already proven.",
   "current_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v012.json",
   "current_continuation": "reports/subpages/hedge-continuation-20260915-v018.json",
   "reconciled": {
@@ -41,7 +41,7 @@
       "migration_commit": "c1b9a9d016cc0c61409ff608b892ac9c48486137",
       "closed": "native Atomic Tabs root c3d30005, exactly three tabs/panels, review images 75/76/77, old custom review widget removed, shared D12 implementation reused",
       "repository_history_limit": "The migration commit contains the evidence report only; no deleted/generated whole-page payload with all three exact review-panel inner texts was committed.",
-      "still_open": "trustworthy source-target full panel text/company-person-role/image/order and tab-panel bijection readback",
+      "still_open": "trustworthy source-target full panel text/company-person-role/image/order and target tab-panel bijection readback",
       "rule": "Never reconstruct missing review copy from media IDs, names or memory."
     },
     "heading": {
@@ -68,8 +68,8 @@
     "document_head": {
       "source": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
       "closed": "page-local route/link/anchor contract",
-      "still_open": "title, description, canonical, robots, OpenGraph and schema ownership/count/types",
-      "rule": "No Yoast/post-meta write from absence of evidence."
+      "still_open": "target title/description/canonical/robots/OpenGraph/schema plus trustworthy reference raw head",
+      "rule": "No Yoast/post-meta write from absence of evidence; Opera AX cannot provide document head."
     },
     "formal_acceptance": {
       "status": "BLOCKED_NOT_FAILED",
@@ -89,24 +89,30 @@
     ]
   },
   "next_live_window": {
-    "plan": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "plan": "build/hedge-next-live-window-plan-20260915-v008.json",
     "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
-    "browser_memory": "Exactly one reference plus one target project tab maximum; no replacement/reconnect loops.",
+    "browser_memory": "Exactly one reference plus one target project tab maximum; no replacement/reconnect loops; no editor/admin/diagnostic Opera tabs.",
+    "tool_split": {
+      "wpvibe": "fresh quota/baseline/ID36, one target JavaScript-executed rendered HTML read including target head, Form33 saved service setting, conditional ID36 write/readback",
+      "opera": "AX/screenshot observations only; no raw DOM/head/interactions claims",
+      "reference_raw_dom_head": "separate read-only gate; leave open if no trustworthy route exists"
+    },
     "first_gates": [
       "fresh exact WPVibe quota and D11 reserve",
       "fresh page272 saved baseline/hash/JSON",
       "exact current Code Snippets ID36 body/active/error state",
-      "one trustworthy source-target rendered payload covering reviews/headings/outer-region ancestry/proof carousel/form idle relations/document head",
-      "narrow Form33 saved setting read for #af-form-service"
+      "one trustworthy target rendered HTML payload covering v005 structure/native-IDREF gate and target diagnostics",
+      "narrow Form33 saved setting read for #af-form-service",
+      "optional trustworthy source/target Opera AX pair without reconnect or tab fan-out"
     ],
-    "write_scope": "Only existing ID36 -> semantic v005 if every semantic gate passes; unrelated diagnostic failures become separate read-only findings and do not broaden that write."
+    "write_scope": "Only existing ID36 -> semantic v005 if every target semantic gate passes; unrelated diagnostic failures become separate read-only findings and do not broaden that write."
   },
   "tool_state": {
-    "wpvibe": "disabled/unavailable in this continuation; not retried",
-    "opera": "disconnected on prior list-tabs attempt; zero new tabs; not retried",
+    "wpvibe": "disabled/unavailable in this continuation; not retried; tool schema confirms target get_page_html capability for future live use",
+    "opera": "disconnected on prior list-tabs attempt; zero new tabs; not retried; schema confirms AX/screenshot/navigation surface only",
     "github": "available",
     "conversation_files": "none",
     "public_http": "source/target not fetchable trustworthily"
   },
-  "status": "STATIC_EVIDENCE_RECONCILED_NO_LIVE_MUTATION_PIXEL_PASS_FALSE"
+  "status": "STATIC_EVIDENCE_RECONCILED_CAPABILITY_SPLIT_NO_LIVE_MUTATION_PIXEL_PASS_FALSE"
 }
