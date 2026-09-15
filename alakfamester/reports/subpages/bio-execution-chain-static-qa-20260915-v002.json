@@ -1,0 +1,30 @@
+{
+  "schema_version":2,
+  "package":"bio-execution-chain-static-qa-20260915-v002",
+  "date":"2026-09-15",
+  "page_id":256,
+  "status":"STATIC_CHAIN_CONSISTENCY_PASS_LIVE_AUTHORIZATION_FALSE",
+  "supersedes_for_static_QA":"reports/subpages/bio-execution-chain-static-qa-20260915-v001.json",
+  "authority":"reports/subpages/bio-execution-authority-20260915-v003.json",
+  "checks":{
+    "scope":"PASS_STATIC: execution is blocked while STATE/page264 release is NOT_RELEASED; no package authorizes page264/global/shared work.",
+    "identity":"PASS_STATIC: executable gates require exact +4; +5 remains stale page256 drift.",
+    "D11":"PASS_STATIC: budget v010 retains reserve>=10 and zero speculative mutation budget for hard blockers.",
+    "D18":"PASS_STATIC: no current package requires a full Elementor save; all possible writes are fresh owner-local match-once operations.",
+    "D07_scope_reconciliation":"PASS_STATIC: current explicit page256-only scope uses documented local-carrier exception rather than global Hello Additional CSS.",
+    "carrier":"PASS_STATIC: phase1/table/stress/expectations/FAQ visual paths all require corrected carrier v002.",
+    "table":"PASS_STATIC: TABLE_TITLE structure and TABLE_TITLE_VISUAL are separate dependency nodes; external title cannot be declared visually complete after markup alone.",
+    "Panasonic":"PASS_STATIC: preferred candidate is physical inline role=list wrapper after complete 3-span/CSS/AX proof; aria-owns is not an automatic fallback.",
+    "stress":"PASS_STATIC: role-only aside->article requires both tags in one owner slice; physical order remains separate complete-owner one-shot blocker.",
+    "expectations":"PASS_STATIC: no multi-step wrapper surgery; only complete fresh owner + one-shot transform may clear article ownership.",
+    "FAQ_CTA":"PASS_STATIC: v003 includes source layout, deterministic mail label, mail/form interaction and section spacing; conflicting old eyebrow/label-guard companions are excluded; exact FAQ runtime remains open.",
+    "runtime":"PASS_STATIC: no ad-hoc inline JS/global ID35/plugin write is authorized for FAQ or review panel focus.",
+    "Opera_memory":"PASS_STATIC: browser v002 max two existing tabs, zero replacement tabs, section-local AX/tight captures, no disconnect/reload loop.",
+    "pass_guard":"PASS_STATIC: acceptance v007 remains OPEN with 9 body blockers + 2 shared/global gates + separate convergence items."
+  },
+  "result":"STATIC_EXECUTION_CHAIN_PASS; LIVE_PAGE256_AND_PIXEL_PASS_FALSE",
+  "wordpress_writes":0,
+  "state_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
