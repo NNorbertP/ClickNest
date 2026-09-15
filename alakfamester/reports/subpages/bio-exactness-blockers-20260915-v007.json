@@ -1,0 +1,22 @@
+{
+  "schema_version":7,
+  "package":"bio-exactness-blockers-20260915-v007",
+  "date":"2026-09-15",
+  "page_id":256,
+  "status":"CURRENT_HARD_BLOCKERS_NOT_TO_BE_BYPASSED",
+  "supersedes_for_current_authority":"reports/subpages/bio-exactness-blockers-20260915-v006.json",
+  "inherits_blocker_definitions_from":"reports/subpages/bio-exactness-blockers-20260915-v006.json",
+  "execution_matrix":"reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v005.json",
+  "current_candidates":{
+    "review_points_semantics":"build/bio-review-points-semantics-20260915-v002.json",
+    "stress_dom_order":"build/bio-stress-article-resume-20260915-v002.json",
+    "expectations_article_ownership":"build/bio-expectations-source-structure-20260915-v005.json",
+    "responsive_unverified":"build/bio-page256-opera-low-memory-qa-20260915-v002.json"
+  },
+  "blocker_count":9,
+  "FAQ_static_note":"build/bio-faq-cta-page-local-delivery-20260915-v003.json improves static parity but does not clear FAQ_exact_runtime.",
+  "scope":"PAGE264 ONLY / NOT_RELEASED",
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
