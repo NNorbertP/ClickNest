@@ -1,0 +1,178 @@
+{
+  "schema_version": 8,
+  "package": "hedge-acceptance-matrix-20260915-v008",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "build/hedge-acceptance-matrix-20260915-v007.json",
+  "write_scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required": true
+  },
+  "proof_route_principle": "Acceptance requirements are invariant; unavailable tools leave proof OPEN rather than lowering the requirement or licensing speculative code.",
+  "proof_routes": {
+    "target_raw_dom_and_head": "WPVibe get_page_html JavaScript-executed rendered HTML when live",
+    "target_saved_state": "WPVibe narrow page/meta/Code Snippets/Form33 reads",
+    "reference_and_target_accessibility": "Opera accessibility tree/jq only when URL/title/content identity is trustworthy",
+    "coarse_visual": "Opera screenshot only; not formal pixel acceptance",
+    "reference_raw_dom_head": "separate trustworthy raw-source route required; if unavailable, keep exact source DOM/head items open",
+    "interactions": "requires an action-capable trusted browser or other sanctioned interaction route; current Opera connector alone does not satisfy click/key/pointer behavior proof",
+    "formal_visual": "original frozen harness or explicitly accepted replacement with deterministic same-engine viewport/DPR/zoom/font/load control"
+  },
+  "closed_preserve": [
+    "hero af2e004e exact accessible SVG and historical frontend/editor proof",
+    "proof af2e004d 21 images",
+    "reviews c3d30005 exactly 3 tabs/panels and exact tab-name contract",
+    "EAEL b2e2c001 28 items / 28 page-local IDs zero / full / original URLs / exact names/order",
+    "52 reference main-image roles reconciled as 21 proof + 3 reviews + 28 gallery",
+    "five complete legacy named regions",
+    "full CTA mailto + exact af2e004c contact names + 24h sentence",
+    "MetForm af2e0011 and accepted shared textarea/photo/success contracts",
+    "D09 page272 links/anchors",
+    "removed af2e0009-af2e000e",
+    "historical media deficit and stone/sage background gap stale/closed",
+    "visible heading text-set parity historically passed",
+    "native MetForm radio mf_input_required=yes capability is genuinely wired into client validation"
+  ],
+  "review_contract": {
+    "exact_tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "saved_review_image_ids": [75, 76, 77],
+    "name_resolution": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "panel_preservation_audit": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "structure_status": "CLOSED_PRESERVE",
+    "full_three_panel_inner_content_status": "READ_ONLY_PRESERVATION_PROOF_OPEN",
+    "future_acceptance": [
+      "three one-to-one target tab↔panel pairs in source order",
+      "raw + narrowly normalized full quote text per panel source-equivalent",
+      "visible company/person/role lines source-equivalent",
+      "review image identity/accessibility/order source-equivalent",
+      "no accidental duplicate panel/image content"
+    ],
+    "route": "Target wiring/raw content via WPVibe rendered HTML; reference visible copy/order may use trustworthy Opera AX when complete, but exact source DOM wiring stays open unless a raw-source route is available.",
+    "write_rule": "Do not reconstruct quotes/images from historical IDs or memory. Any proven content mismatch gets a separate smallest-owner correction, never semantic ID36."
+  },
+  "semantic_runtime": {
+    "live_owner_until_verified_successor": "ID36 v001",
+    "preferred_candidate": "build/hedge-semantic-runtime-v005.php",
+    "superseded_prepared_candidate": "build/hedge-semantic-runtime-v004.php",
+    "authoritative_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "syntax_qa": "reports/subpages/hedge-semantic-runtime-syntax-qa-20260915-v001.json",
+    "delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
+    "v005_safety_delta": "Adds project-owned IDREF tokens without deleting existing aria-describedby/aria-labelledby tokens; service role changes only when absent/already group; does not recreate the superseded partial #ajanlatkeres outer-region label.",
+    "required_prewrite": [
+      "fresh accepted/reconciled page272 hash/JSON",
+      "exact current ID36 body/name/scope/active/code_error and rollback body",
+      "target review + Form33 element cardinality/identity gates",
+      "existing target review/form/service/city ARIA attributes and resolved IDREFs captured from trustworthy target rendered HTML",
+      "planned relation IDs unique/non-conflicting",
+      "no newer semantic helper/marker",
+      "v005 not already live",
+      "D11 reserve remains available for mandatory readback"
+    ],
+    "conflict_rule": "If a stronger/newer native naming/description/role/ID owner conflicts or any current IDREF is unresolved/ambiguous, HOLD v005 and reconcile ownership. Preserving tokens is not permission to mask a semantic conflict.",
+    "expected_delta_only": [
+      "exact three review tab accessible names",
+      "review tablist name Ügyfélvélemények",
+      "duplicate source-style dot controls excluded from AX/tab order",
+      "Form33 name Ajánlatkérés",
+      "wrapper-owned direct-call description",
+      "service group naming relation",
+      "city help relation"
+    ],
+    "no_change": ["CSS", "visible text", "review panel inner content", "DOM order", "Elementor data", "form validation/submission", "click/keyboard behavior", "outer form region"]
+  },
+  "local_read_first": [
+    {
+      "item": "complete hero/gallery/form outer regions",
+      "acceptance": "nearest stable common roots contain the whole source-equivalent section and no unrelated neighbor",
+      "route": "target ancestry via WPVibe rendered HTML; source complete-boundary proof via trustworthy source AX/DOM route",
+      "write": "only after complete-root proof; never label inner hero art, EAEL widget or partial #ajanlatkeres root by assumption"
+    },
+    {
+      "item": "ordered main-content heading tree",
+      "acceptance": "source/target H1-H6 level/name/order parity after excluding global header/footer headings",
+      "route": "target rendered HTML + trustworthy source AX/DOM; visible text identity itself is already historically PASS"
+    },
+    {
+      "item": "proof-carousel roles",
+      "acceptance": "current source and target item/parent semantics understood and target structure valid",
+      "route": "target rendered HTML/AX plus trustworthy source AX/DOM",
+      "write": "no automatic listitem->group rollback"
+    },
+    {
+      "item": "Form33 service required",
+      "acceptance": "exact current widget/name/options/required setting plus safe native rejection proof when possible",
+      "route": "saved setting via WPVibe; behavior only through provably non-delivery/no-entry interaction route",
+      "shared_form_write": false
+    },
+    {
+      "item": "document head",
+      "acceptance": "source intent and target title/description/canonical/robots/OG/schema ownership/count/types equivalent subject to D09 WordPress route adaptation",
+      "route": "target via WPVibe rendered head; source requires separate raw-source head route",
+      "write": "none from absence of source evidence"
+    },
+    {
+      "item": "native validation/error ARIA",
+      "acceptance": "existing and project-added description/error/help IDREFs remain resolved and non-destructive across safe validation state",
+      "route": "target rendered HTML idle; dynamic state only if a provably no-network trigger exists"
+    }
+  ],
+  "proof_only": [
+    "review direct interaction unless a failure reproduces; current Opera connector alone cannot execute click/key actions",
+    "proof-carousel arrows/swipe/pause/reduced-motion; autoplay historical pass",
+    "Hedge lightbox until source-specific proof; historical target popup setting was none",
+    "visual/CSS changes until synchronized reproduced page272-local delta and owner proof"
+  ],
+  "links_and_metadata": {
+    "audit": "reports/subpages/hedge-link-meta-static-audit-20260915-v001.json",
+    "links": "CLOSED_PRESERVE",
+    "head": "READ_ONLY_OPEN_NO_YOAST_GUESS",
+    "canonical_rule": "D09 permits target /soveny-specialista/ instead of literal reference .html"
+  },
+  "form_required": {
+    "audit": "reports/subpages/hedge-metform-required-audit-20260914-v002.json",
+    "native_source_proof": "reports/subpages/hedge-metform-native-required-source-proof-20260914-v001.json",
+    "status": "LIVE_SETTING_AND_SAFE_BEHAVIOR_READ_FIRST",
+    "shared_form_write": false,
+    "server_fallback": "Only after exact current field/ID5/ID36 reads and a real configuration/behavior delta; never automatic."
+  },
+  "shared_chrome_external": {
+    "audit": "reports/subpages/hedge-shared-chrome-external-gates-20260915-v001.json",
+    "header": "global owner route-matrix gate; no local hack",
+    "floating_dock": "known global paint/layout delta; no local fix",
+    "footer": "observe only unless global owner defect reproduced"
+  },
+  "authorized_divergences": {
+    "ledger": "reports/subpages/hedge-intentional-divergence-ledger-20260915-v001.json",
+    "allowed": ["D09 WordPress /slug/ routing", "truthful local-processing form success state", "documented implementation-tech differences where output/behavior is equivalent"],
+    "not_yet_authorized": ["proof-carousel source group vs target listitem until re-observed"]
+  },
+  "css_ownership": {
+    "audit": "reports/subpages/hedge-css-ownership-static-audit-20260915-v001.json",
+    "current_page272_css_candidate": "NONE"
+  },
+  "formal_acceptance": {
+    "recovery_audit": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "views": [1920, 1440, 1024, 768, 390, 360],
+    "status": "BLOCKED_MISSING_ORIGINAL_FROZEN_SPECS_AND_DETERMINISTIC_CAPTURE_DIFF_HARNESS",
+    "replacement_rule": "Do not synthesize missing originals. A future replacement harness must be explicitly labeled replacement and must use an explicitly accepted contract.",
+    "opera_limit": "Current Opera connector has no deterministic viewport control, so its screenshots cannot satisfy formal six-view acceptance.",
+    "pixel_pass": false
+  },
+  "one_pass_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+  "next_live_plan": "build/hedge-next-live-window-plan-20260915-v008.json",
+  "open_items": "reports/subpages/hedge-open-items-20260915-v009.json",
+  "static_reconciliation": "reports/subpages/hedge-static-evidence-reconciliation-20260915-v001.json",
+  "convergence_ledger": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+  "parallel_state_rule": "Current STATE.md is page264-only and is not overwritten by this page272 package.",
+  "pixel_pass": false,
+  "status": "AUTHORITATIVE_PAGE272_ACCEPTANCE_V008_REQUIREMENTS_PRESERVED_PROOF_ROUTES_CAPABILITY_ALIGNED"
+}
