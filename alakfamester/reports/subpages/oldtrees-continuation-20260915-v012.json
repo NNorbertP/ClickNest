@@ -1,0 +1,130 @@
+{
+  "schema_version": 12,
+  "package": "oldtrees-continuation-20260915-v012",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CURRENT_CONTINUATION_STATIC_CONVERGENCE_CHECKPOINT_NO_SCOPE_CHANGE",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; this checkpoint authorizes no global/other-page WordPress write.",
+  "tool_state_this_continuation": {
+    "wpvibe": "The single initial list_sites attempt returned tool disabled. No later WPVibe call was made.",
+    "opera": "The single list-tabs attempt returned Browser not connected. No navigation, screenshot, new/replacement tab or reconnect loop was attempted afterward.",
+    "public_fetch": "Generic web/direct runtime fallback did not yield a trustworthy live source/target page; repeated network attempts were not used.",
+    "github": "Used for exact artifact readback, static QA, repository reconciliation and planning only.",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0,
+    "smtp_or_external_submission": false
+  },
+  "accepted_remote_baseline_preserved_not_reverified": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "live_visual_blocks": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "semantic_owner": "Code Snippets ID33 last accepted active with page264 guard",
+    "note": "No current live channel was available to supersede these accepted historical readbacks; therefore no WordPress write was attempted."
+  },
+  "visual_candidate_hardening": {
+    "parser_qa": {
+      "path": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
+      "blob_sha": "3c4a2f7657a8c39216126e9e86ee56d1a6aa710d",
+      "v006": "0 parse errors / 3 selectors / 3 declarations / all effect selectors body.page-id-264 scoped",
+      "v007": "0 parse errors / 3 selectors / 8 declarations / all effect selectors body.page-id-264 scoped; no flex or box-sizing",
+      "bundle": "0 parse errors / 6 selectors / 11 declarations; exact declaration sequence equals v006 then v007; both marker pairs occur once"
+    },
+    "deploy_manifest": {
+      "path": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+      "current_blob_sha": "4f8a9209a5ab498a6a1f524a58d341830e6cb863",
+      "rule": "Fresh both/one/neither visual gate still required; parser PASS is not deployment authorization."
+    },
+    "artifacts_unchanged": {
+      "v006": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+      "v007": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+      "bundle": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3"
+    }
+  },
+  "shared_form33_reconciliation": {
+    "path": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json",
+    "blob_sha": "e5de298b9e32340cf8983fc20e544bea29e91ae2",
+    "older_state": "5568 B / 47152dff5fa5d5369a8955f7581e71b0652604c39a6c283fd15e243a543d01f3",
+    "latest_documented_state": "6068 B / ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3",
+    "explained_change": "home-final-audit-v001 added Atomic paragraph af04000d/#af-form-direct-call with tel:+36305394820; sitewide finalization later retained the same 6068/ea091... state.",
+    "page264_dependency": "ID33 uses #af-form-direct-call as the form aria-describedby target. Preserve it; 6068/ea091... is only a historical drift reference and must be freshly re-read before shared-form-sensitive diagnosis.",
+    "required_radio": "Still open. The direct-call paragraph addition proves nothing about current #af-form-service mf_input_required/native rejection behavior."
+  },
+  "form_required_plan_update": {
+    "path": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "current_blob_sha": "33e7c63ff2214916ce07ba89f5676f3800731e0a",
+    "new_gate": "Fresh Form33 length/hash plus af04000d/#af-form-direct-call presence must be reconciled before using exact service widget/name/required/options or considering an ID33 server validator extension.",
+    "write_default": "No custom validator; native-required-first and no shared Form33 mutation."
+  },
+  "route_reconciliation": {
+    "path": "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json",
+    "current_blob_sha": "7a2ac480a6e9aad4c11748d485c5820854532813",
+    "resolved_related_route": "/biologiai-vedelem/",
+    "source_route": "/biologiai-vedelem.html",
+    "decision_basis": "page256 exact target/reference audit plus D09 .html -> WordPress /slug/ mapping",
+    "other_invariants": ["two #ajanlatkeres CTAs", "/kapcsolat/#kiszallas", "tel:+36305394820", "mailto:kreativ@alakfa-mester.hu"]
+  },
+  "interaction_deepening": {
+    "plan": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "current_blob_sha": "4279d1b10e73b323bd6b9b8ad1ba06fb62755c7e",
+    "nordmann": [
+      "Fresh synchronized slide-1 AX gate must resolve the old unsynchronized source role=group at 2/6 versus target role=listItem at 1/6 snapshot before any semantic change.",
+      "Compare six caption/alt items in DOM order, not random autoplay current slide.",
+      "Recovered source runtime sets manual=true after prev/next/dot/Arrow/swipe by-user navigation; autoplay should remain latched off for that initialized instance, including after hover/focus exit or reduced-motion toggles unless fresh reference behavior proves otherwise.",
+      "Compound hover+focus exit-order behavior remains a parity observation, not an automatic code fix."
+    ],
+    "faq": "Four disclosure controls now have initial-state/pointer/Enter-Space/multi-open-vs-accordion/focus-ARIA-ID acceptance; current exact widget owner remains intentionally unresolved until live DOM/runtime read.",
+    "reviews": "Existing keyboard/prev-next proof remains open; new visual-dot pointer behavior is separated into a dedicated diagnostic."
+  },
+  "review_dot_pointer_gate": {
+    "path": "build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json",
+    "blob_sha": "e5cebb54a30fe3502efdf02fc1ab29c29c3169fc",
+    "reason": "Source AX absence plus span markup does not prove source visual dots are pointer-inert. Target ID14 dots are pointer-active while ID33 only removes them from focus/AX.",
+    "decision": {
+      "source_pointer_active_and_target_matches": "PASS; preserve current ID14 pointer behavior plus ID33 semantic containment.",
+      "source_pointer_inert_target_active": "Real page264 behavior delta; read current ID14/ID33 and consider only a minimal page264-local containment. No global ID14 change from this scope.",
+      "unreliable_state": "HOLD; no write."
+    }
+  },
+  "dock_and_hero_hold": {
+    "dock": "Corrected v003 diagnostic remains authoritative: standalone header CSS artifacts do not own dock styling; actual current CSS owner must be discovered live before any page264 exception, and global dock/header writes remain forbidden.",
+    "hero": "Approximately 40-45px left-copy offset still has no proven page264 computed owner/cascade; no arbitrary spacing correction."
+  },
+  "current_reproduced_page264_local_visual_failures": [
+    "v006 request contact foreground dark on target versus white reference",
+    "v007 desktop comparison columns unequal versus equal reference columns"
+  ],
+  "not_new_failures": [
+    "Formal screenshot proof gaps for already-correct sections",
+    "inner MetForm field styling without computed-style difference",
+    "Form33 service-radio required state without current live read",
+    "review-dot pointer behavior before source observation",
+    "Nordmann synchronized slide role/timing/manual-latch before live interaction proof",
+    "FAQ behavior before live interaction proof",
+    "hero geometry before owner/cascade proof",
+    "dock visual defect before actual owner/page264-local exception proof"
+  ],
+  "authoritative_next_plan": "build/oldtrees-next-remote-window-20260915-v004.json",
+  "next_safe_live_order": [
+    "WPVibe +5 identity/site/quota once; preserve >=10 calls after complete selected package.",
+    "Re-read current STATE/current repository artifacts plus compact page264 hash/JSON and post8 marker/hash preflight.",
+    "Trustworthy one-source/one-target v006/v007 visual gate only.",
+    "At most one exact repository CSS insertion according to both/one/neither outcome.",
+    "Mandatory marker/project-end/page-hash readback and targeted visual regression capture.",
+    "Then current shared Form33 identity/#af-form-direct-call + native service-radio required proof; no delivery.",
+    "Then exact routes/inner form measurement/review-dot pointer + interaction v002/hero/dock/responsive acceptance as tooling and safe capacity permit."
+  ],
+  "hard_preserve": [
+    "Never replay oldtrees visual v001-v005 or stale semantic saved-data packages.",
+    "Never restore shared Form33 to the old 5568/47152dff... state from page264 scope.",
+    "Never remove/rename #af-form-direct-call or duplicate ID5/ID6/ID33 owners.",
+    "Never add a second review/slider/carousel/FAQ runtime owner merely because action tooling is unavailable.",
+    "Never mutate global ID14 or global dock/header/footer from page264 scope.",
+    "Never blindly retry a 429 write; read exact outcome first.",
+    "Never exceed one source plus one target Opera tab when the connector returns.",
+    "Never claim PIXEL_PASS without deterministic same-state source/target captures, overlay and diff."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_STATIC_CONVERGENCE_MAXIMIZED_FURTHER_LIVE_PROOF_AND_TWO_GATED_VISUAL_MICROFIXES_REMAIN"
+}
