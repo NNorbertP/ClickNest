@@ -7,7 +7,7 @@
   "source_commit": "d3d12aecad5a2b26e380ee85ea007d24a8404bd4",
   "intended_live_snippet": 36,
   "wordpress_writes": 0,
-  "status": "STATIC_PASS_V005_PRESERVES_EXISTING_IDREFS_LIVE_NATIVE_ARIA_GATE_STILL_REQUIRED",
+  "status": "STATIC_PASS_V005_PRESERVES_EXISTING_IDREFS_LIVE_NATIVE_ARIA_AND_SEMANTIC_DUPLICATION_GATES_REQUIRED",
   "supersedes_for_deployment_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
   "v004_to_v005_delta": [
     "script marker advances from af-hedge-semantic-parity-v004 to v005",
@@ -43,6 +43,18 @@
     "form changes remain accessibility attributes/IDs only"
   ],
   "why_v005_is_safer_than_v004": "The v004 direct setAttribute calls could replace a meaningful aria-describedby/aria-labelledby token if a native/plugin relation exists when apply() reruns. v005 only adds the intended IDREF token and preserves every current token. This is a static monotonic-preservation improvement; it does not prove current MetForm 4.3.0 runtime behavior and therefore does not remove the live conflict/readback gates.",
+  "semantic_duplication_risk": {
+    "finding": "Token preservation alone is not sufficient if an existing different IDREF already resolves to semantically equivalent label/help/direct-call text. Appending a second relation can duplicate the computed accessible name/description even though no token is deleted.",
+    "preupdate_rule": [
+      "Resolve every existing form aria-describedby token and compare its referenced text/owner to the intended direct-call paragraph.",
+      "Resolve every existing service aria-labelledby token and compare its referenced text/owner to the intended service label.",
+      "Resolve every existing city aria-describedby token and compare its referenced text/owner to the intended city help.",
+      "If the exact intended element ID is already referenced, addIdRef is a no-op and this aspect is safe.",
+      "If a different existing referenced element already supplies the same semantic text/purpose, HOLD v005 rather than create duplicated speech.",
+      "If an existing native relation supplies a stronger/different valid semantic owner, HOLD v005 and reconcile ownership rather than append blindly."
+    ],
+    "postupdate_rule": "Computed accessible name/description must contain each intended semantic phrase once, with every pre-existing valid native error/help relation still present and resolved. Repeated meaningful description text is a failure even if ID tokens themselves are unique."
+  },
   "metform_source_limit": {
     "official_plugin_page": "WordPress.org documents installed-equivalent MetForm 4.3.0 dated 2026-08-30 and points to public SVN/source, but the current environment cannot retrieve the 4.3.0 SVN/ZIP source bytes for exact dynamic error-ARIA inspection.",
     "claim_not_made": "Do not claim that MetForm currently adds or removes aria-describedby during validation from this static evidence alone.",
@@ -70,6 +82,8 @@
     "capture form role/aria-label/aria-labelledby/aria-describedby",
     "capture service role/aria-label/aria-labelledby/aria-describedby",
     "capture city aria-label/aria-labelledby/aria-describedby/aria-errormessage/aria-invalid",
+    "resolve every current IDREF token to exact owner+text and reject unresolved/duplicate IDs",
+    "HOLD if a different existing IDREF already supplies the intended direct-call/service-label/city-help semantic text and v005 would duplicate the computed name/description",
     "capture idle state and, if a safe non-delivery validation state is exercised, capture the validation/error state too",
     "unexpected native owner/role/description relation remains a HOLD condition even though v005 preserves IDREF tokens"
   ],
@@ -92,6 +106,7 @@
     "v005 marker once and obsolete page272 semantic markers absent in trustworthy rendered evidence",
     "review tablist + three tab computed names exact; duplicate dots absent from AX/tab order",
     "Form33 name/description, service name and city help exact while all pre-existing native IDREF/error relations remain present",
+    "computed names/descriptions contain each intended semantic phrase once; no duplicated meaningful help/direct-call/label speech",
     "all generated/reused relation IDs unique",
     "protected hero/proof/reviews/gallery/form IDs preserved"
   ],
