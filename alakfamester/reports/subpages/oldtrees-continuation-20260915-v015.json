@@ -3,102 +3,63 @@
   "package": "oldtrees-continuation-20260915-v015",
   "date": "2026-09-15",
   "page_id": 264,
-  "type": "CURRENT_CONTINUATION_STATIC_MINIMALITY_RECONCILIATION_NO_SCOPE_CHANGE",
+  "type": "POST_CLOSEOUT_PROOF_ONLY_CORRECTED_SOURCE_RUNTIME_AND_TOOL_STOP",
   "supersedes_for_planning": "reports/subpages/oldtrees-continuation-20260915-v014.json",
-  "scope_authority": "STATE.md remains PAGE264 ONLY; this checkpoint authorizes no global or other-page WordPress write.",
-  "tool_state_this_continuation": {
-    "wpvibe": "A single initial WPVibe skill/load attempt returned disabled/unavailable. No WPVibe retry loop, connection retry, site read or WordPress mutation followed.",
-    "opera": "A single list-tabs attempt returned Browser not connected. No navigation, screenshot, replacement tab, reconnect/reload loop or second Opera call followed.",
-    "github": "Used for exact repository readback, current-chain reconciliation and read-only planning artifacts only.",
-    "wordpress_writes": 0,
-    "opera_new_tabs": 0,
-    "smtp_or_external_submission": false
+  "scope_authority": "Page264 implementation remains RELEASED/CLOSED. Current user write scope remains page264 only; no other page/global shared owner is authorized.",
+  "implementation_authority": "reports/subpages/oldtrees-live-closeout-20260915-v001.json",
+  "current_proof": "reports/subpages/oldtrees-proof-only-reconciliation-20260915-v002.json",
+  "current_acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
+  "current_section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+  "current_precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v010.json",
+  "next_window": "build/oldtrees-proof-only-next-window-20260915-v001.json",
+  "direct_source_runtime": {
+    "path": "build/source-interactions-v001.js",
+    "blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "manual": "Initialized once from carousel--manual and never reassigned.",
+    "navigation": "Successful prev/next/dot/ArrowLeft/ArrowRight/qualifying swipe calls go() then start(); non-manual instances reset/restart the interval when guards allow.",
+    "drop": "zero remaining -> stop()+hide+return; one remaining -> stop()+go(); two or more remaining -> no stop/start solely because of removal.",
+    "correction": "Any earlier statement that drop() never calls stop() is superseded."
   },
-  "accepted_remote_baseline_preserved_not_reverified": {
+  "frozen_live_baseline": {
     "page264_elementor_bytes": 48874,
     "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
-    "json_valid": true,
-    "live_visual_blocks": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
-    "semantic_owner": "Code Snippets ID33 last accepted active with is_page(264) guard",
-    "note": "No live WordPress or trusted browser channel was available in this continuation to supersede these accepted historical readbacks."
+    "page264_json_valid": true,
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "markers": {"af-project:end":1,"v004":1,"v005":1,"v006":1,"v007":1},
+    "v006": "TARGETED_PASS_LIVE_ONCE",
+    "v007": "TARGETED_PASS_LIVE_ONCE"
   },
-  "current_chain": {
-    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v008.json",
-    "remote_plan": "build/oldtrees-next-remote-window-20260915-v006.json",
-    "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v002.json",
-    "visual_minimality_gate": "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json",
-    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v003.json",
-    "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json",
-    "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
-    "visual_parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
-    "css_cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
-    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
-    "form33_shared_baseline": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json"
-  },
-  "static_convergence_this_continuation": {
-    "section_coverage_recheck": "The 13-section page264 coverage still records only v006 and v007 as reproduced page-local visual failures. Hero, inner-form, interactions and dock remain diagnostics/proof gates rather than automatic write authority.",
-    "v006_recheck": "Exact artifact remains page264-scoped and color-only: source-white contact foreground strengthening with no geometry/background/MetForm change.",
-    "v007_recheck": "Exact artifact remains page264-scoped and limited to the existing source grid contract plus direct-card width/min/max neutralization and <=900px one-column contract.",
-    "v005_overlap_recheck": "Accepted v005 owns only card stretch/height and beige/sage backgrounds; neither v006 nor v007 overwrites a v005-owned accepted property.",
-    "minimality_gate_added": "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json prevents screenshot-only winning-rule claims and requires exact evidence before any future narrower cascade artifact replaces the current parser-checked candidates."
-  },
-  "visual_candidate_state": {
-    "conditional_failures_requiring_fresh_live_reproduction": [
-      "v006 request-contact foreground dark on target versus white reference",
-      "v007 desktop comparison columns unequal versus equal reference columns"
-    ],
-    "v006_blob_sha": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
-    "v007_blob_sha": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
-    "bundle_blob_sha": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
-    "minimality_gate_blob_sha": "6cde646943014d2d04695896c866a50342f1b97a",
-    "write_rule": "Fresh synchronized both/one/neither gate only. At most one exact current repository artifact insertion. No write when neither failure reproduces; HOLD on ambiguous/moving evidence."
-  },
-  "critical_interaction_truth": {
-    "source_runtime": "build/source-interactions-v001.js",
-    "source_runtime_blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
-    "manual_mode": "manual is initialized once from carousel--manual and is never reassigned; successful manual navigation on a non-manual instance calls start() and resets/restarts the ~4000ms autoplay timer.",
-    "drop_caveat": "Broken-slide drop removes/reindexes/clamps/re-renders but itself calls neither stop() nor start(); do not infer immediate timer cancellation from static code.",
-    "obsolete": [
-      "build/oldtrees-interaction-acceptance-20260915-v002.json permanent-manual-latch expectation",
-      "reports/subpages/oldtrees-continuation-20260915-v012.json permanent-manual-latch sentence"
-    ]
-  },
-  "proof_only_not_new_failures": [
-    "Current Form33 service/topic native-required configuration and safe non-delivery validation",
-    "Inner form field computed styles and geometry",
-    "Page-local route/href confirmation",
-    "Review keyboard, previous/next and visual-dot pointer parity",
-    "Tiszafa native range interaction and --ba-pos synchronization",
-    "Nordmann synchronized AX/timer-reset/pause/reduced-motion/duplicate-timer behavior",
-    "Four FAQ disclosure interactions from their actual rendered owner",
-    "Hero exact computed owner/cascade for the historical vertical offset observation",
-    "Floating dock actual live owner and strict page264-local exception gate",
-    "Six-view deterministic source/target overlay/diff"
+  "proof_progress": [
+    "Form33 native required wiring strongly proven; no custom validator justified without action failure.",
+    "ID14/ID33 review ownership reconciled; no duplicate handler added.",
+    "Tiszafa native range static state and source runtime update contract reconciled.",
+    "Nordmann six-slide static structure reconciled and direct-source timer/drop contract corrected.",
+    "FAQ four native disclosure owner/content integrity reconciled; no duplicate page264 FAQ runtime found.",
+    "Unique __AF_SOURCE_INTERACTIONS_V001__ database owner located at Head & Footer Code option auhfc_settings_sitewide; exact content/hash still pending."
   ],
-  "hard_preserve": [
-    "Never replay or edit visual v001-v005 from the v006/v007 lane.",
-    "Never use stale semantic saved-data packages or duplicate ID33/ID14/ID5/ID6 owners.",
-    "Never restore shared Form33 to the old 5568/47152dff state or remove/rename/duplicate #af-form-direct-call.",
-    "Never create a new narrower visual artifact from screenshot inference alone.",
-    "Never mutate global ID14, header, footer or dock from page264 scope.",
-    "Never blindly retry a 429/5xx mutation; exact outcome readback first.",
-    "Never exceed one source plus one target Opera tab when browser QA returns.",
-    "Never claim PIXEL_PASS without deterministic same-state captures, overlay and diff."
+  "tool_stop": {
+    "wpvibe": "HTTP 429 occurred during read-only exact auhfc_settings_sitewide read. No blind retry; no further WPVibe in that continuation; zero WordPress writes in proof package.",
+    "opera": "Reduced to one source + one target page264 tab, then stopped after stale/not-found state. No replacement fan-out.",
+    "local_browser": "Container DNS could not resolve project hosts; no fallback browser left running.",
+    "latest_exact_quota": "99/300 used, 201 remaining at v014 implementation closeout; exact post-proof counter unknown.",
+    "reserve": 10
+  },
+  "remaining_proof_only": [
+    "exact auhfc_settings_sitewide runtime identity",
+    "Form33 native required action/no-delivery proof",
+    "review keyboard/prev-next and visual-dot pointer parity",
+    "Tiszafa pointer/keyboard -> --ba-pos synchronization",
+    "Nordmann synchronized AX/timing/swipe/pause/reduced-motion proof",
+    "FAQ source/target action and multi-open/accordion proof",
+    "hero exact geometry/computed owner/cascade measurement",
+    "dock current owner/cascade and page264-local exception gate",
+    "six-view deterministic overlay/diff matrix"
   ],
-  "next_safe_live_order": [
-    "Verify intended +5 WPVibe identity, target site and exact rolling quota once; budget the selected transaction so at least 10 D11 calls remain afterward.",
-    "Re-read current STATE, v015 continuation, precedence v008, remote v006, release v002, minimality gate and exact v006/v007/bundle identities.",
-    "Compact live preflight: page264 _elementor_data bytes/SHA/JSON plus Additional CSS af-project:end/v004/v005/v006/v007 marker inventory and necessary hashes.",
-    "Use exactly one synchronized source and one target Opera tab for a fresh v006/v007 both/one/neither visual gate; reuse only.",
-    "Apply the visual minimality gate. Use exact computed-owner evidence if available; otherwise do not invent a narrower patch from screenshots.",
-    "Execute at most one exact selected repository CSS insertion, or no write if neither failure reproduces / HOLD if evidence is ambiguous.",
-    "Mandatory marker/project-end/page-hash readback plus targeted source-target regression check.",
-    "Only after implementation closeout, run remaining proof-only form/route/interaction/hero/dock/responsive gates as capacity and tooling permit.",
-    "Evaluate scope-release v002 only after write-capable items are closed; tool unavailability is never release evidence."
-  ],
-  "release_status": "NOT_RELEASED",
-  "wordpress_writes": 0,
-  "opera_tabs_opened": 0,
+  "next_safe_action": "After throttle clears, follow build/oldtrees-proof-only-next-window-20260915-v001.json: one initial WPVibe/site-quota check, one compact saved-state preflight, one exact Head & Footer Code runtime identity read, then two-tab proof-only interaction/geometry tests. No implementation write unless a fresh reproducible defect is proven.",
+  "release_status": "IMPLEMENTATION_RELEASED_PROOF_ONLY_ITEMS_REMAIN",
+  "wordpress_writes_in_proof_package": 0,
+  "smtp_or_external_submission": false,
   "pixel_pass": false,
-  "status": "PAGE264_V015_STATIC_MINIMALITY_CHAIN_READY_FOR_FUTURE_LIVE_GATE_SCOPE_NOT_RELEASED"
+  "status": "PAGE264_IMPLEMENTATION_CLOSED_PROOF_ONLY_V015_TOOL_BLOCKED_READY_FOR_LOW_CALL_RESUME"
 }
