@@ -1,0 +1,46 @@
+/* af-oldtrees-visual-v009:start
+ * Scope: page264 survivor hero copy typography/flow only.
+ * Restores exact source hero inner-page text controls after shared v026-v028 overrides.
+ */
+@media (min-width: 901px) {
+  body.page-id-264 #af-sub-survivor-hero > #af-sub-survivor-hero-eyebrow {
+    margin-bottom: 16px !important;
+    font-size: .8rem !important;
+    line-height: 1.65 !important;
+    letter-spacing: .16em !important;
+  }
+
+  body.page-id-264 #af-sub-survivor-hero > #af-sub-survivor-hero-body {
+    width: 100% !important;
+    max-width: 60ch !important;
+    font-size: clamp(1.03rem, .96rem + .35vw, 1.19rem) !important;
+    line-height: 1.6 !important;
+  }
+
+  body.page-id-264 #af-sub-survivor-hero .af-hero-contact > a > span {
+    font-size: .68rem !important;
+    line-height: 1.18 !important;
+    letter-spacing: .13em !important;
+  }
+
+  body.page-id-264 #af-sub-survivor-hero .af-hero-contact > a > strong {
+    font-size: 1.02rem !important;
+    line-height: 1.18 !important;
+    letter-spacing: .01em !important;
+  }
+
+  body.page-id-264 #af-sub-survivor-hero .af-hero-ctas > a {
+    min-height: 48px !important;
+    padding: 14px 24px !important;
+    font-size: 1rem !important;
+    font-weight: 650 !important;
+    line-height: 1.2 !important;
+  }
+
+  body.page-id-264 #af-sub-survivor-hero .af-hero-facts > span {
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+    line-height: 1.65 !important;
+  }
+}
+/* af-oldtrees-visual-v009:end */
