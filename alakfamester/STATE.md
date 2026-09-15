@@ -1,3 +1,27 @@
+# STATE - 2026-09-15, PAGE264 IMPLEMENTATION CLOSED; PROOF-ONLY RECONCILIATION ADVANCED; WPVIBE 429 / OPERA HOLD
+
+## Latest proof-only checkpoint — 2026-09-15
+
+This checkpoint supersedes the immediately following v014 closeout only for **proof-only continuation planning**. The v014 implementation closeout remains authoritative for the live WordPress result.
+
+- **Scope remains page264 only:** `https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/`. Page264 implementation remains CLOSED/RELEASED; no new WordPress implementation write occurred in this proof package.
+- New proof evidence: `reports/subpages/oldtrees-proof-only-reconciliation-20260915-v001.json`. Preserve `reports/subpages/oldtrees-live-closeout-20260915-v001.json` and `reports/subpages/oldtrees-continuation-20260915-v014.json` as the implementation authority.
+- Fresh read-only reconciliation again found Additional CSS **614248 B**, SHA256 **`c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce`**, with `af-project:end=1`, v004=1, v005=1, v006=1, v007=1. Page264 `_elementor_data` remained **48874 B**, SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, JSON valid. The complete live v006→v007 blocks were read back and no later matching project override was found.
+- v006/v007 remain PASS; a fresh same-browser comparison capture in this continuation also showed the v007 desktop columns equal. Do not redeploy or duplicate either block.
+- Form33 remains **6068 B / `ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3`**. `af040007/#af-form-service` uses `kapcsolat-tema`, `mf_input_required=yes`, six accepted values and native `activateValidation(... required:true ...)` + matching error component. No custom service validator is justified without a real failing non-delivery proof.
+- Review ownership is unchanged: shared ID14 is the only source-style review navigation/keyboard owner; page264 ID33 is the semantic containment owner. Tiszafa still uses the native 0..100 step1 range at 50; Nordmann still has the full six-slide/prev-next/six-dot structure; FAQ still has four native `<details>/<summary>` disclosures. No duplicate page264 runtime was found or added.
+- Source `.js-ba` / `.js-carousel` runtime marker `__AF_SOURCE_INTERACTIONS_V001__` was found in exactly one database owner, Head & Footer Code option `auhfc_settings_sitewide`; no Code Snippets duplicate was found. Exact option-content/hash readback is still pending because the host returned HTTP 429 on that read.
+- Opera memory policy was observed: the unrelated third project tab was closed, leaving one source + one target page264 tab; after a later stale/not-found navigation error Opera use stopped immediately and no replacement tabs were opened. Local Chromium fallback could not resolve the project hostnames and was not kept running.
+- WPVibe proof reads stopped immediately on HTTP 429; there was no blind retry and no unresolved mutation because this package made **zero WordPress writes**. Latest exact quota remains the v014 value **99/300 used, 201 remaining**; the exact post-proof counter is unknown until the throttle clears. Preserve the D11 10-call reserve.
+
+**Elkészült ebben a proof-only csomagban:** live v006/v007 block/cascade reconciliation; contact-owner static readback; Form33 native required wiring reconciliation; ID14/ID33 ownership check; Tiszafa/Nordmann/FAQ static owner/content reconciliation; source interaction runtime DB-owner discovery; evidence file written.  
+**Ellenőrzött:** no fresh page264 implementation defect was proven; v006/v007 stay closed; page264 saved data unchanged; no duplicate interaction owner introduced; no plugin/theme update, SMTP or external submission occurred.  
+**Nyitott kizárólag proof-only:** Form33 action/no-delivery proof; review pointer/keyboard proof; Tiszafa pointer/keyboard → `--ba-pos` proof; Nordmann synchronized role/timing/reset/swipe/pause/reduced-motion proof; FAQ action and source multi-open/accordion proof; hero computed owner/cascade measurement; dock owner/page264-local exception gate; six-view deterministic overlay/diff.  
+**Következő művelet:** after the host 429 clears and a stable action-capable browser is available, first perform a read-only page264 hash/marker + exact `auhfc_settings_sitewide` runtime-identity preflight, then continue the remaining proof-only interaction/geometry/matrix tests. Do not perform another implementation write unless a fresh reproducible page264 defect is proven.  
+**Release:** page264 implementation remains **RELEASED/CLOSED**; `PIXEL_PASS=false` until the deterministic matrix is actually completed.
+
+---
+
 # STATE - 2026-09-15, PAGE264 IMPLEMENTATION CLOSED; V004+V005+V006+V007 LIVE; PROOF-ONLY QA REMAINS
 
 ## Latest live closeout checkpoint — 2026-09-15, ncsnorbert+20260914-5
@@ -34,7 +58,7 @@ This checkpoint supersedes the immediately following **Opera-blocked/no-write** 
 
 This checkpoint supersedes the stale WPVibe/Opera availability notes below while preserving all earlier acceptance evidence and scope rules.
 
-- **Hard WordPress scope remains page264 only:** `https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/`. No other page, global header/footer, shared media, shared Form33 settings, SMTP, notification/webhook or external submission was modified.
+- **Hard WordPress scope remains page264 only:** `https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/`. No other page, global header/footer template, shared media, shared plugin setting, SMTP or send a real/external form test from this package.
 - WPVibe identity/site are now live-verified: account `ncsnorbert+20260914-5@gmail.com`, exactly one connected site `https://alakfamester-wp.clicknest.hu`, Hello Elementor 3.5.1 active. Latest quota check in this continuation: **89/300 used, 211 remaining**; keep the D11 10-call closeout/recovery reserve.
 - Fresh page264 preflight exactly matches the accepted saved-data baseline: `_elementor_data` **48874 B**, SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, JSON valid.
 - Fresh Hello Additional CSS post8: **612379 B**, SHA256 **`e3980469873ad39c0841dd2768e6974f0b209e94c33815825d2109b7a63f9396`**; marker counts `af-project:end=1`, v004=1, v005=1, v006=0, v007=0. The size increase after historical v005 is reconciled: a newer homepage-only marked block `af-project:header-home-services-inactive-v001` sits between v005 and `af-project:end`; it must be preserved and is not a page264 fix.
@@ -48,7 +72,7 @@ This checkpoint supersedes the stale WPVibe/Opera availability notes below while
 
 **Elkészült ebben a munkacsomagban:** +5 account/site/quota verification; repo/artifact identity gate; compact page264/CSS marker preflight; reconciliation of post-v005 CSS growth; Form33 identity/required-setting/native-render wiring readback; ID5/ID6/ID33 readback; route invariant readback.  
 **Ellenőrzött:** page264 saved-data baseline unchanged; v004/v005 present once; v006/v007 absent; Form33 baseline/direct-call unchanged; native required configuration present; no stale homepage request route in page264; canonical trip-fee/bio/tel/mail targets remain in saved content.  
-**Nyitott:** trustworthy synchronized source/target v006/v007 visual gate and conditional at-most-one CSS deployment/readback; dynamic native radio-required no-delivery interaction proof; inner-field computed-style proof; review/tiszafa/Nordmann/FAQ interactions; hero root-cause; dock owner; six-view responsive/pixel matrix.  
+**Nyitott:** trustworthy synchronized source/target v006/v007 visual gate and conditional at-most-one CSS deployment/readback; dynamic native radio-required no-delivery interaction proof; inner form field computed-style visual proof; fresh route/href readback; review keyboard + visual-dot pointer proof; tiszafa behavior; Nordmann synchronized slide-role/caption-alt order + timing/manual-navigation reset/swipe/pause/reduced-motion proof; FAQ interaction acceptance; hero measured root-cause proof; dock actual CSS-owner discovery and page264-local exception only if proven; deterministic six-view pixel matrix.  
 **Következő művelet:** when Opera is stable, reuse exactly one source + one target page264 tab and run the v006/v007 visual decision gate. If both/one/neither fail, follow the frozen decision matrix; at most one exact repository artifact write, followed immediately by marker/hash readback and targeted regression capture.  
 **Release:** page264 remains **NOT RELEASED**; visual gate/tool availability is not completion evidence.
 
