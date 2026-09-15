@@ -1,0 +1,59 @@
+{
+  "schema_version": 5,
+  "package": "bio-scope-handoff-ready-20260915-v005",
+  "date": "2026-09-15",
+  "page256_target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "status": "PREPARED_NO_SCOPE_MUTATION_CURRENTLY_BLOCKED",
+  "supersedes_for_handoff": "build/bio-scope-handoff-ready-20260915-v004.json",
+  "current_scope": {
+    "STATE": "PAGE264 ONLY",
+    "page264_continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "page264_precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v006.json",
+    "page264_release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json",
+    "release": "NOT_RELEASED"
+  },
+  "resource_state": {
+    "page256_identity": "ncsnorbert+20260914-4@gmail.com only",
+    "wpvibe": "unavailable/current site and quota unknown",
+    "elementor_skill": "unavailable in this session",
+    "opera": "browser not connected; no new tabs opened"
+  },
+  "handoff_must_not_happen_until": [
+    "Page264 release contract is explicitly satisfied and fresh STATE history-preserving handoff gives page256 write scope.",
+    "Current user instruction still limits writes to page256.",
+    "First live WPVibe profile is exact +4, exact target site/quota are known and the selected node leaves D11 >=10.",
+    "Elementor skill loads successfully.",
+    "Browser-required work can reuse the released existing source/target Opera pair without opening replacements."
+  ],
+  "handoff_sequence": [
+    "Re-read STATE plus latest page264 continuation/precedence/release gate.",
+    "Verify explicit release evidence; never infer release from elapsed time/tool failure/READY filenames.",
+    "Preserve full STATE history during scope handoff; if complete STATE cannot be safely updated, do not claim handoff.",
+    "Verify exact +4 WPVibe profile before any site/page action, then exact site/quota.",
+    "Load Elementor skill.",
+    "Fresh-read page256 bytes/SHA/JSON and COMPLETE LIVE ID35 state.",
+    "Reuse at most one source + one target Opera tab for the first selected unit when browser proof is required.",
+    "First possible mutation is only build/bio-page-local-style-carrier-probe-20260915-v002.json."
+  ],
+  "authoritative_execution_chain_after_handoff": [
+    "reports/subpages/bio-final-acceptance-status-20260915-v004.json",
+    "reports/subpages/bio-exactness-blockers-20260915-v004.json",
+    "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v002.json",
+    "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "build/bio-next-remote-window-20260915-v008.json",
+    "build/bio-remote-call-budget-20260915-v008.json",
+    "build/bio-transaction-dependency-graph-20260915-v003.json",
+    "build/bio-page256-next-safe-package-20260915-v016.json",
+    "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+    "build/bio-page-local-visual-delivery-20260915-v003.json",
+    "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+    "build/bio-page256-opera-low-memory-qa-20260915-v001.json",
+    "specs/bio-final-acceptance-20260914-v003.json"
+  ],
+  "whole_page_note": "Even after page256 body closure, whole-page exactness remains blocked until separate shared/global header and dock gates close under their own scopes and page256 is rechecked in the same browser.",
+  "forbidden": ["modify page264 from page256 work", "steal/recreate Opera tabs", "truncate STATE", "use +5/other account for page256 write", "reuse stale quota/hash/ID35 as current truth", "start incomplete transaction near D11 reserve", "full save/raw SQL/global CSS/global ID35/plugin/theme/shared workaround"],
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
