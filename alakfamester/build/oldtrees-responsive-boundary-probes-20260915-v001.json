@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-responsive-boundary-probes-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "mode": "TARGETED_RESPONSIVE_ACCEPTANCE_ONLY_NO_WRITE",
+  "purpose": "Complement the six formal responsive views with exact two-sided breakpoint probes so off-by-one media-query regressions cannot hide between the broad captures.",
+  "basis": [
+    "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json",
+    "build/oldtrees-visual-parity-v004.css",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+    "reports/subpages/oldtrees-problem-grid-v001.json"
+  ],
+  "browser_requirement": "Requires a deterministic harness that can set exact CSS viewport width, with stable DPR/zoom/font/image/motion state. Current Opera connector does not expose viewport/DPR/zoom control, so these probes remain prepared until capable tooling is available.",
+  "probe_policy": "At each pair, inspect only the components whose known source contract changes at that boundary. Do not reinterpret natural text wrapping elsewhere as a defect.",
+  "boundary_pairs": [
+    {
+      "name": "problem-grid desktop-to-tablet",
+      "widths_px": [961, 960],
+      "expect": {
+        "961": "problem grid remains 4 columns",
+        "960": "problem grid becomes 2 columns"
+      },
+      "invariants": ["16px gap", "48px top margin", "16px chip padding", "24px radius", "22px icon", "no horizontal overflow"]
+    },
+    {
+      "name": "problem-grid tablet-to-single",
+      "widths_px": [761, 760],
+      "expect": {
+        "761": "problem grid remains 2 columns",
+        "760": "problem grid becomes 1 column"
+      },
+      "invariants": ["all seven labels/icons remain present", "no clipping", "no content reorder introduced"]
+    },
+    {
+      "name": "comparison two-to-one column",
+      "widths_px": [901, 900],
+      "expect": {
+        "901": "comparison is 2 equal minmax(0,1fr) columns with 24px gap",
+        "900": "comparison is 1 minmax(0,1fr) column"
+      },
+      "invariants": ["beige/sage surfaces", "equal-height behavior where two-column layout applies", "warning/growth icons", "X/check markers", "copy unchanged"]
+    },
+    {
+      "name": "comparison card padding",
+      "widths_px": [721, 720],
+      "expect": {
+        "721": "comparison card padding remains 32px",
+        "720": "comparison card padding becomes 24px"
+      },
+      "invariants": ["single-column comparison state", "card radius/surfaces/icons/bullets unchanged", "no overflow"]
+    },
+    {
+      "name": "request contact compact typography/padding",
+      "widths_px": [561, 560],
+      "expect": {
+        "561": "contact button retains default right padding 24px and strong text 1.02rem; intrinsic width",
+        "560": "contact button right padding becomes 16px and strong text .92rem; width remains intrinsic/auto"
+      },
+      "invariants": ["green pill background", "white foreground if v006 is needed/deployed", "40px icon", "no forced full width", "joined request panel"]
+    },
+    {
+      "name": "request contact intrinsic-to-full width",
+      "widths_px": [401, 400],
+      "expect": {
+        "401": "contact button width remains auto/intrinsic",
+        "400": "contact button width becomes 100%"
+      },
+      "invariants": ["16px right padding and .92rem strong text on both widths", "no clipping of phone/e-mail value", "no horizontal overflow", "joined form panel"]
+    }
+  ],
+  "measurement_outputs": [
+    "exact CSS viewport width",
+    "component bounding boxes for the affected grid/cards/buttons",
+    "computed column count or direct-child left/right geometry",
+    "computed request-button width/padding-right/font-size at 561/560/401/400 if the harness can expose computed styles",
+    "page clientWidth/scrollWidth",
+    "source and target screenshot for the affected component only when synchronized"
+  ],
+  "interpretation_rules": [
+    "A boundary mismatch must reproduce source-versus-target at the exact paired widths before it becomes a defect.",
+    "Do not add a new media query merely because the current tool cannot set the boundary width.",
+    "Do not alter visible copy or insert line breaks to make boundary wrapping look similar.",
+    "If a current prepared artifact changes the expected boundary contract, stop and reconcile it before deployment."
+  ],
+  "known_current_artifact_check": {
+    "v004": "Matches all listed known boundaries: problem grid contract is documented separately; comparison max900/max720; request max560/max400.",
+    "v007": "Preserves max900 one-column comparison and does not alter max720 padding or request breakpoints.",
+    "v006": "Color-only and cannot alter any boundary geometry."
+  },
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "BOUNDARY_PROBES_PREPARED_NOT_RUN"
+}
