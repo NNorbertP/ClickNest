@@ -1,0 +1,22 @@
+{
+  "schema_version": 10,
+  "package": "bio-remote-call-budget-20260915-v010",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_SCOPE_AND_SKILL_REQUIRED",
+  "supersedes_for_execution": "build/bio-remote-call-budget-20260915-v009.json",
+  "inherits_cost_model_from": "build/bio-remote-call-budget-20260915-v009.json",
+  "DAG": "build/bio-transaction-dependency-graph-20260915-v005.json",
+  "FAQ_CTA_STATIC_LAYOUT": {
+    "package":"build/bio-faq-cta-page-local-delivery-20260915-v003.json",
+    "estimated_logical_actions":"~3-4 after dependencies, unchanged from v009 because five validated companion CSS blocks are concatenated into one page-local append followed by readback",
+    "fourth_wave":"separate ~2-3 only after fresh rendered surface proof"
+  },
+  "identity":"exact live ncsnorbert+20260914-4@gmail.com required for page256 mutation",
+  "current_site_quota":"UNKNOWN; historical counters are stale",
+  "D11_reserve":10,
+  "all_other_costs":"unchanged from v009, including table-title visual, stress v002, expectations v005 and Panasonic v002 conditional windows",
+  "browser_memory":"max one existing source + one existing target Opera tab, reused; no replacement/reconnect loop",
+  "wordpress_writes":0,
+  "pixel_pass":false
+}
