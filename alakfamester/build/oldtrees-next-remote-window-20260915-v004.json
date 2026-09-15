@@ -1,0 +1,172 @@
+{
+  "schema_version": 4,
+  "package": "oldtrees-next-remote-window-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "supersedes_for_planning": "build/oldtrees-next-remote-window-20260915-v003.json",
+  "objective": "Close only fresh page264 failures using the fewest safe live operations while preserving all accepted content, media, semantics, runtime ownership and v004/v005 visual state.",
+  "hard_scope": [
+    "Only page264 may change.",
+    "Any Additional CSS effect selector from this package must begin with body.page-id-264 and be rooted to the proven page264 owner where possible.",
+    "No other page, global header/footer/dock owner, shared media, shared plugin setting, shared Form33 template mutation, SMTP, notification, webhook or real form submission is authorized."
+  ],
+  "authoritative_inputs": {
+    "state": "STATE.md",
+    "acceptance_ledger": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "interaction_acceptance": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "form_required_gate": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "inner_form_visual_gate": "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json",
+    "route_ledger": "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json",
+    "hero_gate": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "responsive_matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json",
+    "dock_diagnostic": "build/floating-contact-dock-diagnostic-plan-20260915-v003.json"
+  },
+  "phase_0_tools_and_budget": {
+    "wpvibe": [
+      "Verify authenticated identity ncsnorbert+20260914-5@gmail.com, target site connection and exact rolling quota once.",
+      "Preserve at least 10 calls after the complete selected package/readback per D11.",
+      "If the tool reports disabled, stop all WPVibe attempts for that continuation; do not loop."
+    ],
+    "opera": [
+      "Use at most one source and one target tab.",
+      "Reuse existing project tabs and verify URL/title/content before trusting them.",
+      "On disconnect/stale/repurposed state, stop; do not open replacement fan-out."
+    ],
+    "current_note": "In the 2026-09-15 continuation that produced this plan, WPVibe was disabled on the single first call and Opera was not connected on the single list-tabs call, so no live claim/write was made."
+  },
+  "phase_1_repo_identity_gate": {
+    "action": "Re-read current STATE plus exact v006/v007/bundle artifacts and deploy manifest before a remote write. Fresh repository truth outranks recorded SHAs.",
+    "known_artifact_blobs_at_plan_creation": {
+      "v006": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+      "v007": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+      "bundle": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+      "deploy_manifest": "f254090efa5779b82d5db3d75f4b4aebc357b514"
+    },
+    "stop": "If any current repo artifact differs, reconcile the newer file before using this plan."
+  },
+  "phase_2_compact_server_preflight": {
+    "facts": [
+      "page264 _elementor_data length/SHA256/JSON validity; accepted historical baseline is 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / valid, but fresh live truth wins",
+      "Hello Additional CSS post8 compact marker/hash inventory: af-project:end count, v004 count, v005 count, v006 count, v007 count",
+      "ID33 active/scope/code_error/hash only if semantic/form validation work is going to be considered after visual closeout"
+    ],
+    "economy": "Prefer one compact supported read returning scalar facts. Do not round-trip the full 600KB+ Additional CSS value unless no safe match-once edit exists and a fresh full value is explicitly required by the supported write path.",
+    "stop_conditions": [
+      "page264 drift is unexplained",
+      "af-project:end is missing/duplicated",
+      "v004 or v005 marker is missing/duplicated",
+      "v006/v007 marker exists in an unreconciled state"
+    ]
+  },
+  "phase_3_two_delta_visual_gate": {
+    "v006": {
+      "anchor": "#ajanlatkeres",
+      "fail_only_if": "Target green contact label/value foreground remains dark while reference is white in the same trusted browser state.",
+      "artifact": "build/oldtrees-visual-v006-contact-text-cascade.css"
+    },
+    "v007": {
+      "anchor": "Kivágás vagy átalakítás?",
+      "fail_only_if": "Target desktop comparison columns remain unequal while reference columns are equal, with source-like v005 surfaces/icons/bullets otherwise intact.",
+      "artifact": "build/oldtrees-visual-v007-comparison-grid-cascade.css"
+    },
+    "decision_matrix": {
+      "both_fail": "Insert the exact repository bundle once.",
+      "only_v006": "Insert exact v006 standalone once.",
+      "only_v007": "Insert exact v007 standalone once.",
+      "neither": "Write nothing."
+    },
+    "mobile_contact_note": "Do not create a new <=560 font-size correction from memory. Current responsive matrix records strong text .92rem; source-selector scope beyond that is not independently recoverable from Git. Resolve by fresh source/target mobile computed style or screenshot before any new CSS."
+  },
+  "phase_4_at_most_one_visual_write": {
+    "method": "One supported guarded match-once insertion of the selected complete repository artifact immediately before the unique af-project:end marker.",
+    "rules": [
+      "Selected new marker(s) must be absent immediately before insertion.",
+      "Never manually retype/reconstruct the CSS during the remote write; use the exact current repo artifact.",
+      "Never replay v001-v005 or edit existing oldtrees blocks.",
+      "Do not modify page264 Elementor data for v006/v007.",
+      "HTTP 429 write outcome is UNKNOWN until exact readback; never blind-retry."
+    ]
+  },
+  "phase_5_mandatory_visual_closeout": {
+    "server": [
+      "Selected new start/end marker counts exactly one each.",
+      "af-project:end remains exactly one.",
+      "page264 Elementor hash/JSON is unchanged from the reconciled prewrite state."
+    ],
+    "browser": [
+      "v006 PASS requires white label/value foreground with unchanged green button background/shape/size, joined panel and compact clock.",
+      "v007 PASS requires equal desktop columns/source-like wrapping while preserving v005 beige/sage surfaces, equal height, warning/growth icons and X/check markers.",
+      "If only one microfix was selected, verify the other accepted area did not regress."
+    ],
+    "rollback": "Remove only the exact newly inserted marked block via guarded current-state edit if a measurable regression appears. Never restore a stale full Additional CSS snapshot."
+  },
+  "phase_6_form_required_native_first": {
+    "plan": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "read": [
+      "exact current service radio widget ID/type",
+      "exact mf_input_name",
+      "mf_input_required",
+      "six exact option values/order",
+      "native validation/error text",
+      "ID5 current hook/priority/route guard/body/state",
+      "ID33 current body/state/hash"
+    ],
+    "decision": {
+      "native_required_and_enforced": "PASS; no write.",
+      "native_setting_absent_or_native_behavior_fails": "Only after exact live facts, prepare a page264-local fallback using the existing ID33 owner if that can be done without shared Form33 mutation and without overwriting ID5 failures."
+    },
+    "test": "Non-delivery validation proof only. No real MetForm submission, entry creation, upload, SMTP, e-mail or webhook."
+  },
+  "phase_7_inner_form_and_routes": {
+    "inner_fields": "Run build/oldtrees-form-field-visual-diagnostic-20260915-v001.json. No inner-field CSS unless synchronized source/target computed-style/geometry proves a difference.",
+    "routes": "Run reports/subpages/oldtrees-link-route-ledger-20260915-v001.json read-only: two #ajanlatkeres CTAs, /kapcsolat/#kiszallas, canonical biological service route, tel:+36305394820 and mailto:kreativ@alakfa-mester.hu without activation."
+  },
+  "phase_8_interactions": {
+    "plan": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "checks": [
+      "review ArrowLeft/Right/Up/Down/Home/End and previous/next synchronization",
+      "tiszafa native range pointer/keyboard and --ba-pos synchronization",
+      "Nordmann 4000ms autoplay, arrows, >40px swipe, reduced-motion, hover/focus pause plus compound hover+focus exit-order edge cases",
+      "four FAQ disclosures: source-equivalent initial state, pointer and keyboard activation, multiple-open vs accordion behavior, focus/ARIA/ID integrity"
+    ],
+    "rule": "Proof-only by default. Read current owner before any JavaScript change; missing action tooling is not a failure."
+  },
+  "phase_9_hero": {
+    "plan": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "rule": "No arbitrary spacing correction. Name the exact computed owner and losing declaration before a page264 fix."
+  },
+  "phase_10_dock_scope_gate": {
+    "plan": "build/floating-contact-dock-diagnostic-plan-20260915-v003.json",
+    "corrected_fact": "build/header-live-source-v001.css and header-source-flex-responsive-v007.css do not contain dock rules; actual live CSS owner is not yet proven.",
+    "rule": "No global dock/header write from page264. A page264 Additional CSS exception is allowed only after exact live owner/cascade proof and only if every effect selector stays below body.page-id-264. Otherwise record the dock as an explicit global-scope blocker."
+  },
+  "phase_11_responsive_and_pixel_acceptance": {
+    "matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json",
+    "views": ["1920x1080", "1440x1000", "1024x900", "768x1024", "390x844", "360x800"],
+    "required_state": "Same browser engine, DPR, zoom, font/image readiness, scroll position and motion state. Synchronize moving components or exclude them from the diff.",
+    "outputs": ["source capture", "target capture", "overlay/diff", "key geometry measurements", "horizontal overflow check"],
+    "rule": "Missing deterministic proof alone does not justify a new CSS layer. PIXEL_PASS remains false until this matrix is actually completed."
+  },
+  "known_static_pass_do_not_reopen": [
+    "No known page264 content/main-media gap; 5/5 main media roles reconciled.",
+    "38/38 heading names and 11/11 ordered named regions accepted.",
+    "Review final AX names/buttons accepted and numbered source dots excluded from page264 AX/focus.",
+    "Problem grid source-resolved 4/2/1 layout, seven labels and seven source SVG geometries implemented/read back.",
+    "Comparison v005 beige/sage surfaces, equal-height stretch, warning/growth icons and X/check markers accepted.",
+    "Request heading, 18x18 clock and joined white panel accepted.",
+    "Shared Form33 rows=5/photo-count/success-state solved; do not rebuild those items."
+  ],
+  "stop_conditions": [
+    "WPVibe disabled/unverified or unsafe quota -> no WordPress write.",
+    "Opera disconnected/stale/repurposed -> no screenshot-driven write and no replacement tabs.",
+    "Fresh live truth contradicts repo baseline -> reconcile first.",
+    "Two attempted fixes without measurable improvement -> stop and diagnose owner/cascade.",
+    "No deterministic visual harness -> no PIXEL_PASS claim."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "READY_FOR_MINIMAL_LIVE_GATE_WITH_EXPANDED_INTERACTION_AND_CORRECTED_DOCK_OWNERSHIP"
+}
