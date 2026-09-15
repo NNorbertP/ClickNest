@@ -1,0 +1,82 @@
+{
+  "schema_version": 10,
+  "package": "oldtrees-evidence-supersedence-20260915-v010",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "purpose": "Current post-closeout page264 precedence map with direct-source carousel timer truth and released implementation state. No WordPress mutation.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-evidence-supersedence-20260915-v009.json",
+  "scope_authority": "STATE.md remains page264-only. Page264 implementation is RELEASED/CLOSED; proof-only acceptance remains open separately.",
+  "precedence_rule": "Fresh trustworthy live truth > STATE.md write scope/current closeout > this post-closeout precedence/current proof-only reconciliation > direct source runtime/current interaction oracle > historical audits/candidate plans.",
+  "authoritative_current": {
+    "state": "STATE.md",
+    "implementation_closeout": "reports/subpages/oldtrees-live-closeout-20260915-v001.json",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v014.json",
+    "proof_only_reconciliation": "reports/subpages/oldtrees-proof-only-reconciliation-20260915-v002.json",
+    "acceptance_ledger": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+    "direct_source_runtime": "build/source-interactions-v001.js",
+    "hero_diagnostic": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "dock_diagnostic": "build/floating-contact-dock-diagnostic-plan-20260915-v003.json",
+    "responsive_matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json"
+  },
+  "implementation_truth": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_json_valid": true,
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "marker_counts": {"af-project:end":1,"v004":1,"v005":1,"v006":1,"v007":1},
+    "v006": "LIVE_EXACTLY_ONCE_TARGETED_PASS",
+    "v007": "LIVE_EXACTLY_ONCE_TARGETED_PASS",
+    "release": "IMPLEMENTATION_RELEASED_CLOSED"
+  },
+  "critical_supersedence": {
+    "deployment": "Any historical file that says v006/v007 are absent, prepared/not-deployed, current failures or release blockers is historical only. Never redeploy/duplicate them.",
+    "release": "Historical NOT_RELEASED statements are superseded for implementation scope by the live closeout/v014. PIXEL_PASS=false remains a separate formal-proof state.",
+    "form_required": "Historical current-setting-unread claims are superseded: Form33 af040007/#af-form-service uses kapcsolat-tema, mf_input_required=yes, six exact values, native activateValidation(required:true) and matching error component. No custom validator without reproduced action failure.",
+    "target_runtime_owner": "The unique DB marker __AF_SOURCE_INTERACTIONS_V001__ was found under Head & Footer Code option auhfc_settings_sitewide, with no Code Snippets duplicate. Exact option content/hash remains pending because HTTP 429 stopped the proof-only read.",
+    "carousel_manual": "manual is initialized once from carousel--manual and never reassigned. Successful user navigation on non-manual instances calls start() and restarts the interval.",
+    "carousel_drop": "Direct source build/source-interactions-v001.js SHA 2e8e0e3fc9be28510595aad42b4b7dc309cdd30d is authoritative: zero remaining slides -> stop()+hide+return; exactly one remaining -> stop() then go(); two or more -> no stop/start solely due drop. Statements that drop never calls stop are stale, as are statements that every removal restarts the interval."
+  },
+  "protected_pass": [
+    "No known page264 copy/main-media gap; five main-media roles reconciled.",
+    "38/38 heading names and 11/11 ordered named regions accepted.",
+    "Review final AX names/prev-next and numbered-dot AX/focus containment accepted.",
+    "Tiszafa native range initial 0..100 step1 value50 accepted.",
+    "Nordmann six-slide static controls/content intact.",
+    "Problem grid source labels/SVG geometry and 4/2/1 breakpoint contract accepted.",
+    "Comparison v004/v005/v007 visual contract accepted.",
+    "Request panel/clock/joined form/v006 white foreground accepted.",
+    "Shared Form33 ID5/ID6/success/direct-call contracts protected.",
+    "Page264 Elementor hash/IDs/order protected."
+  ],
+  "proof_only_not_failures": [
+    "Form33 action/no-delivery required-radio proof",
+    "review keyboard/prev-next synchronization and visual-dot source pointer parity",
+    "Tiszafa pointer/keyboard range-to---ba-pos synchronization",
+    "Nordmann synchronized role/aria/caption-alt, timer/restart/swipe/compound pause/reduced-motion under the corrected drop contract",
+    "FAQ pointer/keyboard and source multi-open/accordion observation",
+    "hero exact same-browser geometry/computed owner/cascade measurement",
+    "floating dock exact current owner/cascade; no global write from page264 scope",
+    "six-view deterministic capture/overlay/diff/key-geometry/overflow matrix"
+  ],
+  "superseded_for_execution": [
+    "reports/subpages/oldtrees-evidence-supersedence-20260915-v009.json and earlier",
+    "reports/subpages/oldtrees-proof-only-reconciliation-20260915-v001.json for carousel drop semantics",
+    "reports/subpages/oldtrees-section-coverage-20260915-v003.json and earlier",
+    "reports/subpages/oldtrees-acceptance-ledger-20260915-v002.json and earlier",
+    "all pre-closeout remote/deploy plans that expect v006/v007 marker count zero",
+    "any statement that drop() never calls stop()",
+    "any permanent manual-latch expectation"
+  ],
+  "tooling_stop_state": {
+    "wpvibe": "Proof-only reads stopped on HTTP 429; no blind retry and no WordPress write.",
+    "opera": "Stopped on stale/not-found state; no replacement fan-out.",
+    "latest_exact_quota": "99/300 used, 201 remaining at implementation closeout; post-proof exact count unknown until throttle clears.",
+    "d11_reserve": 10
+  },
+  "resume_rule": "After throttle clears and a stable action-capable browser exists, first read-only verify page264 hash/markers and exact auhfc_settings_sitewide identity. Continue proof-only tests. Reopen implementation only for a fresh reproducible page264 defect with exact owner/cascade evidence.",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "POST_CLOSEOUT_PRECEDENCE_V010_IMPLEMENTATION_RELEASED_PROOF_ONLY_CORRECTED_SOURCE_RUNTIME"
+}
