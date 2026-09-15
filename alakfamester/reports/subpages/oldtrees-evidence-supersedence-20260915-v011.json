@@ -1,0 +1,82 @@
+{
+  "schema_version": 11,
+  "package": "oldtrees-evidence-supersedence-20260915-v011",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "purpose": "Current page264 evidence precedence after fresh live source-target form/dock/hero AX, current server marker readback and explicit hero-v011 deployment HOLD. No WordPress mutation.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-evidence-supersedence-20260915-v010.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY. This precedence update authorizes no global, shared-form, header/footer/dock-owner or other-page mutation.",
+  "precedence_rule": "Fresh trustworthy live server/browser truth > current STATE write scope/top checkpoint > this v011 precedence + current live-proof/hero decision/tool ceiling > acceptance/section/visual/runtime reconciliations > direct source runtime/CSS > prepared candidate > historical audits/snapshots.",
+  "authoritative_current": {
+    "state": "STATE.md top checkpoint remains PAGE264 V012 LIVE / NORDMANN ROLE PASS / V011 GATED / SCREENSHOT HOLD",
+    "fresh_live_proof": "reports/subpages/oldtrees-live-proof-continuation-20260915-v001.json",
+    "hero_v011_decision": "build/oldtrees-hero-v011-deploy-decision-20260915-v001.json",
+    "tool_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v002.json",
+    "acceptance_ledger": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+    "visual_reconciliation": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260915-v002.json",
+    "runtime_reconciliation": "reports/subpages/oldtrees-runtime-parity-continuation-20260915-v002.json",
+    "visual_history": "reports/subpages/oldtrees-post-release-visual-continuation-20260915-v001.json",
+    "direct_source_runtime": "build/source-interactions-v001.js plus direct live reference script.js readback where needed",
+    "responsive_matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json"
+  },
+  "fresh_current_truth": {
+    "additional_css_bytes": 617608,
+    "additional_css_md5": "7c089bf62e477a3f7809528d48326a51",
+    "marker_counts": {"v008":1,"v009":1,"v010":1,"v011":0,"v012":1,"af_project_end":1},
+    "accepted_live_visual_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "prepared_not_live": ["v011"],
+    "current_form_topics": [
+      "Új alakfa kialakítása",
+      "Meglévő alakfa / niwaki ápolása",
+      "Túlnőtt fa átalakítása",
+      "Sövény",
+      "Növény-egészségügyi probléma",
+      "Gyümölcsfa"
+    ],
+    "form_topics_source_target": "FRESH_EXACT_AX_MATCH",
+    "dock_source_target": "FRESH_AX_MATCH_REGION_PHONE_MAIL_CTA",
+    "hero_content_source_target": "FRESH_AX_MATCH; geometry remains screenshot-gated"
+  },
+  "closed_preserve_do_not_replay": {
+    "v006": "LIVE_TARGETED_PASS",
+    "v007": "LIVE_TARGETED_PASS",
+    "v008": "LIVE_HERO_ROOT_GEOMETRY_MATERIALLY_IMPROVED",
+    "v009": "LIVE_HERO_COPY_FLOW_MATERIALLY_IMPROVED",
+    "v010": "LIVE_PAGE264_DOCK_FALLBACK_SUPPRESSION; fresh dock AX structure matches source",
+    "v012": "LIVE_REVIEW_DOT_POINTER_CONTAINMENT",
+    "nordmann_role": "SIX_GROUP_ROLE_CORRECTIONS_SYNCHRONIZED_AX_PASS"
+  },
+  "hero_v011": {
+    "artifact": "build/oldtrees-visual-v011-hero-source-grid.css",
+    "blob_sha": "ea12406dc43faf7e1e7dbb2337713bfb9990885a",
+    "static_source_fidelity": "Confirmed including >=1400 56px column gap, 1.12/0.88 grid, source vertical padding, title/body widths and 7/6 art mapping.",
+    "target_calibration_fact": "Current target 719.03125px left track is approximately the source 719.04px large-desktop left-track width from a 1340px inner width minus 56px gap.",
+    "decision": "HOLD_GATED_NOT_LIVE",
+    "rule": "No deployment from static reasoning. Require controlled immediate source-target geometry/screenshot evidence plus a future fresh preflight and rollback reserve."
+  },
+  "newly_superseded_for_execution": [
+    "Any historical evidence that treats the old diagnostic/tomograph-style service-topic labels as the current reference contract.",
+    "Any plan that reopens v006 or v007 as current conditional candidates; both are live targeted PASS.",
+    "oldtrees-tool-capability-proof-ceiling v001 claims that server/AX proof was wholly unavailable; v002 records the later successful reads and current budget stop.",
+    "Any partial-reading statement claiming v011 lacks the >=1400px 56px gap; the exact artifact contains it.",
+    "Any plan that treats the dock as missing from current target structure; fresh source-target AX matches."
+  ],
+  "remaining_proof_only_not_failures": [
+    "hero controlled transition/1024 geometry and final v011 deploy/no-deploy decision",
+    "dock visual screenshot postcheck",
+    "review keyboard/prev-next actions",
+    "Tiszafa pointer/keyboard range action",
+    "Nordmann precise timer/swipe/pause/reduced-motion actions",
+    "FAQ pointer/keyboard/focus actions",
+    "safe non-delivery Form33 required action",
+    "six deterministic viewport captures/overlays/diffs/key geometry/overflow"
+  ],
+  "tool_stop_state": {
+    "wpvibe": "296/300 used; four remain; STOP and do not consume reserve in this work session.",
+    "opera": "One sequential existing tab only; screenshot branch stopped; jq failed once and was not retried; no tab fan-out.",
+    "wordpress_writes_this_continuation": 0
+  },
+  "pixel_pass": false,
+  "status": "CURRENT_PRECEDENCE_V011_FRESH_AX_SERVER_TRUTH_V011_HERO_GATED_NO_WRITE"
+}
