@@ -1,0 +1,25 @@
+{
+  "schema_version": 10,
+  "package": "bio-next-remote-window-20260915-v010",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READY_AS_RUNBOOK_NOT_LIVE_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-next-remote-window-20260915-v009.json",
+  "inherits_stages_from": "build/bio-next-remote-window-20260915-v009.json",
+  "substantive_overrides": {
+    "dependency_graph":"build/bio-transaction-dependency-graph-20260915-v005.json",
+    "budget":"build/bio-remote-call-budget-20260915-v010.json",
+    "FAQ_CTA":"build/bio-faq-cta-page-local-delivery-20260915-v003.json",
+    "FAQ_CTA_payload":"source-layout-v002 + mail-label-v001 + mail-interaction-v001 + button-interaction-v001 + section-spacing-v001 in one page-local append",
+    "FAQ_CTA_static_QA":"reports/subpages/bio-faq-cta-v003-static-qa-20260915-v001.json",
+    "browser_QA":"build/bio-page256-opera-low-memory-qa-20260915-v002.json"
+  },
+  "FAQ_CTA_predecessors":["CARRIER_PROBE PASS/cleanup","FAQ_ORDER PASS/no-op","CTA_MAIL_STRUCTURE PASS/no-op"],
+  "FAQ_CTA_readback":["five payload markers once", "FAQ before CTA", "outer eyebrow does not contaminate CTA H2 AX", "label/email deterministic rows", "mail/form hover/focus source-like", "desktop/mobile section rhythm", "native FAQ still functional"],
+  "FAQ_runtime":"remains OPEN; no static package or CSS carrier authorizes custom JavaScript",
+  "all_other_current_paths":"same as v009: carrier v002, phase1 v003, micro v016, table-title visual, stress v002, expectations v005, Panasonic v002, no sanctioned runtime owner, low-memory browser v002",
+  "stage_0_stop_rules":["page264 not released","page256 identity not exact +4","site/quota unknown or D11 margin insufficient","Elementor skill unavailable","Opera unavailable for browser-required node","unresolved 429/5xx/ambiguous state","protected regression"],
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
