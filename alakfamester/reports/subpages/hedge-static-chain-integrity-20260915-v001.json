@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "package": "hedge-static-chain-integrity-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Verify the current page272 execution/documentation chain after the v018/v012 pointer reconciliation and quarantine older embedded pointers that are historical rather than executable authority.",
+  "current_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v012.json",
+  "current_continuation": "reports/subpages/hedge-continuation-20260915-v018.json",
+  "verified_existing_current_chain": [
+    "build/hedge-semantic-runtime-v005.php",
+    "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
+    "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "build/hedge-acceptance-matrix-20260915-v007.json",
+    "build/hedge-next-live-window-plan-20260915-v007.json",
+    "reports/subpages/hedge-open-items-20260915-v008.json",
+    "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "reports/subpages/hedge-gallery-final-state-reconciliation-20260915-v001.json",
+    "reports/subpages/hedge-heading-evidence-reconciliation-20260915-v001.json",
+    "build/hedge-form-required-server-plan-20260915-v003.json",
+    "reports/subpages/hedge-cross-project-pointer-audit-20260915-v001.json",
+    "reports/subpages/hedge-canonical-matrix-pointer-audit-20260915-v001.json"
+  ],
+  "stale_embedded_pointers_not_for_execution": [
+    {
+      "artifact": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+      "fields": [
+        "current_execution_chain.continuation -> hedge-continuation-20260915-v016.json",
+        "current_execution_chain.precedence -> hedge-artifact-supersession-20260915-v009.json"
+      ],
+      "resolution": "Historical snapshot only. Current v012 entrypoint and v018 continuation override these fields."
+    },
+    {
+      "artifact": "build/hedge-acceptance-matrix-20260915-v007.json",
+      "fields": [
+        "convergence_ledger -> hedge-convergence-ledger-20260915-v001.json"
+      ],
+      "resolution": "The acceptance requirements remain current, but convergence v002 supersedes v001 for stale-history protection."
+    },
+    {
+      "artifact": "reports/subpages/hedge-cross-project-pointer-audit-20260915-v001.json",
+      "fields": [
+        "current_page272_chain.precedence -> v009",
+        "current_page272_chain.continuation -> v016"
+      ],
+      "resolution": "The audit's finding about stale shared-queue ownership remains valid; use v012/v018 for current page272 execution."
+    },
+    {
+      "artifact": "reports/subpages/hedge-canonical-matrix-pointer-audit-20260915-v001.json",
+      "fields": [
+        "current_page272_chain.precedence -> v009",
+        "current_page272_chain.continuation -> v016"
+      ],
+      "resolution": "The audit's no-shared-matrix-write decision remains valid; use v012/v018 for current page272 execution."
+    }
+  ],
+  "execution_truth": {
+    "semantic_v005_live": false,
+    "only_conditional_future_write": "existing Code Snippets ID36 -> semantic v005 after fresh live gates",
+    "current_page272_css_candidate": "NONE",
+    "shared_media_write": false,
+    "shared_form33_write": false,
+    "state_md_write_from_page272_lane": false
+  },
+  "tool_state": {
+    "wpvibe": "disabled/unavailable; no retry loop",
+    "opera": "disconnected; zero new tabs; no reconnect loop",
+    "github": "available"
+  },
+  "formal_status": "PIXEL_PASS=false; no static artifact may substitute for the missing deterministic live acceptance proof.",
+  "status": "CURRENT_CHAIN_VERIFIED_STALE_EMBEDDED_POINTERS_QUARANTINED_NO_LIVE_MUTATION"
+}
