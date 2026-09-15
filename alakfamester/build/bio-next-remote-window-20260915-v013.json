@@ -1,0 +1,26 @@
+{
+  "schema_version": 13,
+  "package": "bio-next-remote-window-20260915-v013",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READY_AS_RUNBOOK_NOT_LIVE_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-next-remote-window-20260915-v012.json",
+  "inherits_stages_from": "build/bio-next-remote-window-20260915-v012.json",
+  "expectations_override": {
+    "package": "build/bio-expectations-source-structure-20260915-v006.json",
+    "structure_gate": "complete fresh af260013 owner + one guarded owner-value transform",
+    "arrow_gate": "Before write, use the existing source Opera tab only if available to capture the exact decorative link SVG bytes. Never invent a generic path.",
+    "if_arrow_captured": "Include exact source SVG in the same one-shot owner transform with aria-hidden=true/focusable=false and verify link AX name unchanged.",
+    "if_arrow_not_captured": "Do not invent it. Structure may only proceed if otherwise safe, but EXPECTATIONS_LINK_ARROW_VISUAL remains OPEN until exact source bytes are later proven.",
+    "visual": "expectations v003 CSS only after structure + carrier PASS"
+  },
+  "browser_QA": "build/bio-page256-opera-low-memory-qa-20260915-v004.json",
+  "DAG": "build/bio-transaction-dependency-graph-20260915-v008.json",
+  "budget": "build/bio-remote-call-budget-20260915-v012.json",
+  "FAQ_chain": "unchanged: FAQ base v005 -> wave4 v002 -> measured no-op/top-only post-wave override",
+  "all_other_paths": "unchanged from v012",
+  "stop_rules": ["page264 not released", "identity not exact +4", "site/quota unknown or D11 insufficient", "Elementor skill unavailable", "Opera unavailable for browser-required node", "non-unique owner", "ambiguous mutation", "protected regression"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
