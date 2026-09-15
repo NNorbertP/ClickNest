@@ -1,21 +1,22 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "package": "oldtrees-evidence-supersedence-20260915-v005",
   "date": "2026-09-15",
   "page_id": 264,
-  "purpose": "Align page264 planning precedence with continuation v012 and the corrected interaction v003 source-carousel contract while preserving STATE.md as the write-scope authority. No WordPress mutation.",
+  "purpose": "Align page264 planning precedence with continuation v013, remote plan v005 and the source-exact interaction v003 carousel contract while preserving STATE.md as the write-scope authority. No WordPress mutation.",
   "supersedes_for_planning": "reports/subpages/oldtrees-evidence-supersedence-20260915-v004.json",
   "scope_authority": "STATE.md remains PAGE264 ONLY",
-  "precedence_rule": "Fresh trustworthy live readback/capture > STATE.md scope > this/current continuation and source-runtime reconciliation > current acceptance oracle/deploy manifest > prepared gated candidate > historical audit/build.",
+  "precedence_rule": "Fresh trustworthy live readback/capture > STATE.md scope > this/current continuation and source-runtime reconciliation > current acceptance oracle/remote plan/deploy manifest > prepared gated candidate > historical audit/build.",
   "authoritative_current": {
     "state": "STATE.md",
-    "continuation": "reports/subpages/oldtrees-continuation-20260915-v012.json",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v013.json",
     "overall_acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260914-v001.json",
-    "remote_plan": "build/oldtrees-next-remote-window-20260915-v004.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v005.json",
     "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
     "visual_parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
     "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v003.json",
     "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json",
+    "source_runtime_supplement": "reports/subpages/oldtrees-source-runtime-reconciliation-20260915-v001.json",
     "review_dot_pointer_gate": "build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json",
     "form33_shared_baseline": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json",
     "form_required_gate": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
@@ -31,10 +32,24 @@
     "dock_diagnostic": "build/floating-contact-dock-diagnostic-plan-20260915-v003.json",
     "responsive_matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json"
   },
-  "critical_correction": {
-    "stale_claim": "The v002 interaction oracle and continuation v012 stated that by-user carousel navigation sets manual=true and permanently latches autoplay off.",
-    "direct_source_code_truth": "build/source-interactions-v001.js initializes manual once from carousel--manual and never assigns it again. Prev/next, dot, ArrowLeft/Right and qualifying swipe call go(...) followed by start(). On a non-manual instance this resets/restarts the 4000ms timer; on a carousel--manual instance autoplay is disabled from initialization.",
-    "execution_rule": "Never use the v002 manual-latch block or the v012 manual-latch sentence as live acceptance or write authority. Use interaction v003 and the source-carousel runtime reconciliation."
+  "current_identity_snapshot": {
+    "interaction_v003": "1982d63d6f5974baaebb2bdef78b8104e82221f2",
+    "source_carousel_runtime_reconciliation": "28b77c37e1bb9bae7b056afa916aa5b8b3c92b4b",
+    "remote_v005": "819cc74180af99914449a23237627bdd95af141f",
+    "visual_deploy_manifest": "4f8a9209a5ab498a6a1f524a58d341830e6cb863",
+    "visual_parser_qa": "3c4a2f7657a8c39216126e9e86ee56d1a6aa710d"
+  },
+  "critical_corrections": {
+    "manual_latch": {
+      "stale_claim": "Historical v002/v012 planning stated that by-user carousel navigation sets manual=true and permanently latches autoplay off.",
+      "direct_source_code_truth": "build/source-interactions-v001.js initializes manual once from carousel--manual and never assigns it again. Prev/next, dot, ArrowLeft/Right and qualifying swipe call go(...) followed by start(). On a non-manual instance this resets/restarts the 4000ms timer; on a carousel--manual instance autoplay is disabled from initialization.",
+      "execution_rule": "Never use the historical manual-latch block/sentence as live acceptance or write authority."
+    },
+    "broken_slide_timer": {
+      "stale_overstatement": "Historical interaction v003 schema 5 wording said broken-slide removal stops autoplay below two slides.",
+      "direct_source_code_truth": "drop() removes slide+dot, reindexes, clamps, optionally hides the owner at zero slides and calls go(index), but calls neither stop() nor start(). start() has a <2-slides guard only when start() executes.",
+      "execution_rule": "Do not claim immediate timer cancellation after runtime removal from static code. If this rare state occurs naturally, compare synchronized source/target behavior; never break media deliberately."
+    }
   },
   "accepted_preserve": [
     "No known page264 copy/main-media gap; 5/5 main-media roles reconciled.",
@@ -56,7 +71,7 @@
     "page-local href/route readback",
     "review keyboard/prev-next and visual-dot pointer behavior",
     "Tiszafa native range interaction",
-    "Nordmann synchronized AX/timer/pause/reduced-motion behavior under corrected static-manual contract",
+    "Nordmann synchronized AX/timer/pause/reduced-motion behavior under corrected static-manual and exact drop() contracts",
     "four FAQ disclosure interactions; source-interactions-v001.js is not their owner",
     "hero exact computed owner/cascade for the observed offset",
     "floating dock CSS-owner discovery; no global dock/header write from page264 scope",
@@ -65,8 +80,11 @@
   "superseded_for_resume_or_oracle": [
     "reports/subpages/oldtrees-evidence-supersedence-20260915-v004.json",
     "reports/subpages/oldtrees-continuation-20260915-v011.json",
-    "build/oldtrees-interaction-acceptance-20260915-v002.json for Nordmann timing/manual semantics",
-    "the manual-latch sentence inside reports/subpages/oldtrees-continuation-20260915-v012.json"
+    "reports/subpages/oldtrees-continuation-20260915-v012.json",
+    "build/oldtrees-next-remote-window-20260915-v004.json",
+    "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "historical interaction v003 schema 5 broken-slide stop wording",
+    "build/oldtrees-post-v005-acceptance-plan-20260914-v001.json as an execution plan; it predates the v007/both-one-neither decision matrix and is retained only as historical measurement context"
   ],
   "release_rule": "Page264 is NOT released. build/oldtrees-scope-release-gate-20260915-v001.json requires fresh v006/v007 both/one/neither closeout, reconciled page/hash/markers and no unresolved write outcome before normal handoff. Tool unavailability is never release evidence.",
   "live_resume_rule": "When live tools return: verify intended +5 identity/site/exact quota once and preserve >=10 calls; re-read current repo identities; compact page264 hash/JSON + Additional CSS marker/hash preflight; trustworthy one-source/one-target v006/v007 gate; at most one selected exact artifact insertion; mandatory marker/project-end/page-hash and visual regression readback. Treat every HTTP 429/5xx write outcome as UNKNOWN until exact readback; never blind retry.",
@@ -74,5 +92,5 @@
   "wordpress_writes": 0,
   "opera_tabs_opened": 0,
   "pixel_pass": false,
-  "status": "PAGE264_PRECEDENCE_ALIGNED_TO_V012_CORRECTED_INTERACTION_V003_SCOPE_NOT_RELEASED"
+  "status": "PAGE264_PRECEDENCE_ALIGNED_TO_V013_REMOTE_V005_SOURCE_EXACT_INTERACTION_V003_SCOPE_NOT_RELEASED"
 }
