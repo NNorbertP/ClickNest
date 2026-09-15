@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "package": "bio-faq-cta-v003-static-qa-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_INTERNAL_CONSISTENCY_PASS_LIVE_RENDER_UNPROVEN",
+  "delivery": "build/bio-faq-cta-page-local-delivery-20260915-v003.json",
+  "checks": {
+    "eyebrow_semantics":"PASS_STATIC: source-layout-v002 owns outer #af-sub-bio-cta::after and explicitly disables #af-sub-bio-cta-title::before; obsolete eyebrow-v001 and outer-label-guard-v001 are excluded, so no planned rule reintroduces eyebrow content into the H2 pseudo owner.",
+    "mail_grid":"PASS_STATIC: source-layout-v002 owns envelope pseudo column1 rows1-2 and strong email column2 row2; mail-label-v001 explicitly owns .af-sub-cta-label column2 row1, removing reliance on auto-placement.",
+    "mail_interaction":"PASS_STATIC: mail-interaction-v001 modifies only transition/hover/focus shadow/background/transform and <=560 padding/email size; it does not touch href, aria-label, display grid placement or generated semantics.",
+    "form_interaction":"PASS_STATIC: button-interaction-v001 layers transition/hover/focus/active onto the source-layout base form button without changing href/text/AX.",
+    "section_spacing":"PASS_STATIC: spacing-v001 writes padding-top/padding-bottom only; source-layout-v002 writes horizontal padding separately, so the two blocks do not erase each other's axes.",
+    "FAQ_runtime":"PASS_STATIC_SEPARATION: none of the five blocks injects JavaScript or claims source button/aria/keyboard/motion parity; native disclosure functionality remains the live runtime to preserve until a sanctioned exact owner exists.",
+    "scope":"PASS_STATIC: every selector is rooted at body.page-id-256/#af-sub-bio-cta; physical delivery is still conditional on the page-local carrier and does not authorize global Additional CSS."
+  },
+  "mandatory_live_gates": ["FAQ_ORDER PASS/no-op", "CTA_MAIL_STRUCTURE PASS/no-op", "carrier v002 PASS/cleanup", "exact +4/current quota/D11/Elementor skill", "rendered H2 AX name remains exact", "mail/form actions unique and focus states no overflow", "desktop/mobile tight visual proof"],
+  "fourth_wave":"Not part of the five-block static append; remains a separate post-layout rendered-surface dependency.",
+  "result":"STATIC_PAYLOAD_PASS; LIVE_EXACTNESS_NOT_PASS",
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
