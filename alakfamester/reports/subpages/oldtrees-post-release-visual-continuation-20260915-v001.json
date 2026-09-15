@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-post-release-visual-continuation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "PAGE264_ONLY",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "reference": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "reason_for_reopening": "Fresh same-browser page264 evidence reproduced hero geometry/copy drift after the prior implementation closeout, and a separate dock cascade diagnosis proved an obsolete global fallback visually covered the correct runtime dock. The user explicitly requested continued parity work without disturbing accepted sections.",
+  "baseline_before_v008": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "preserved_live_blocks": ["v004", "v005", "v006", "v007"]
+  },
+  "hero_diagnosis": {
+    "source_contract": "Source .hero--inner is content-height, uses clamp(20px,2.2vw,34px) top and clamp(28px,3.2vw,50px) bottom padding, 1.12fr/0.88fr inner grid, responsive hero body typography and 7/6 art geometry.",
+    "proven_target_cascade": [
+      "v015 forced #af-sub-survivor-hero height:566px, 40px vertical padding and align-content:center with higher specificity.",
+      "v013/v015 and later v026-v028 forced a 719px/560px copy geometry and target-specific typography; .af-sub-hero-extras was widened to 840px.",
+      "Fresh same-browser screenshots reproduced the target copy starting materially lower than the reference while the hero art/lower boundary were closer."
+    ]
+  },
+  "live_writes": [
+    {
+      "version": "v008",
+      "artifact": "build/oldtrees-visual-v008-hero-geometry.css",
+      "blob_sha": "b4b89c2e5268fc393b13e2e1ac2882d486d79c08",
+      "scope": "body.page-id-264 #af-subpage-survivor > #af-sub-survivor-hero desktop root geometry and .af-sub-hero-extras width only",
+      "write": "one guarded match-once Additional CSS insertion immediately before unique af-project:end",
+      "post_css_bytes": 615141,
+      "post_css_sha256": "35a13d83ac16c4b368b60b8ab5613301c29783d9c532382be111b69065f4b35f",
+      "marker_readback": "start=1,end=1,af-project:end=1",
+      "page_data_unchanged": true,
+      "visual_result": "Fresh target/source screenshots showed a major improvement: hero top/eyebrow alignment moved close to reference and fact wrapping became source-like. Remaining lower-boundary/copy-flow drift required further diagnosis; v008 was not declared a final hero PASS."
+    },
+    {
+      "version": "v009",
+      "artifact": "build/oldtrees-visual-v009-hero-copy.css",
+      "blob_sha": "c754466998102ffe77bc27ed447e4fc4833d4f49",
+      "scope": "body.page-id-264 #af-sub-survivor-hero desktop eyebrow/body/contact/CTA/fact typography-flow controls only",
+      "write": "one guarded match-once Additional CSS insertion immediately before unique af-project:end",
+      "post_css_bytes": 616617,
+      "post_css_sha256": "0ed37f371113f2090297be44910c2ba146205ad01afa84479e91f9cae4c2cdef",
+      "marker_readback": "start=1,end=1,af-project:end=1",
+      "page_data_unchanged": true,
+      "visual_result": "Fresh sequential source/target capture showed source-like lead wrapping and materially closer hero copy typography. Full hero section-height/transition parity was still not proven."
+    },
+    {
+      "version": "v010",
+      "artifact": "build/oldtrees-visual-v010-dock-unmask.css",
+      "blob_sha": "5864a5d369d9974cb664c8e19588bb90392ca61f",
+      "scope": "body.page-id-264::after desktop fallback only",
+      "write": "one guarded match-once Additional CSS insertion immediately before unique af-project:end",
+      "post_css_bytes": 617077,
+      "post_css_sha256": "ea5124da1b361ea342707af92f5100edc63cf6d918a7a015613cfef5f3b306cf",
+      "marker_readback": "start=1,end=1,af-project:end=1",
+      "page_data_unchanged": true,
+      "root_cause": "Active Code Snippets ID7 emits the correct .dock.af-source-dock markup with phone, mail and CTA. Older af-reference-parity-v017 adds body::after as a white fallback pill at z-index:9990, while the real .dock is z-index:900, exactly explaining the visually blank pill with intact AX links.",
+      "visual_result": "Server/cascade fix is fully read back, but immediate screenshot verification was blocked when Opera disconnected after navigation. Do not claim visual PASS until a stable browser confirms the real dock is visible."
+    }
+  ],
+  "post_v010_live_state": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "json_valid": true,
+    "additional_css_bytes": 617077,
+    "additional_css_sha256": "ea5124da1b361ea342707af92f5100edc63cf6d918a7a015613cfef5f3b306cf",
+    "af_project_end": 1,
+    "v008": 1,
+    "v009": 1,
+    "v010": 1
+  },
+  "prepared_not_deployed": {
+    "version": "v011",
+    "artifact": "build/oldtrees-visual-v011-hero-source-grid.css",
+    "blob_sha": "ea12406dc43faf7e1e7dbb2337713bfb9990885a",
+    "purpose": "Map the page264 hero direct children to the exact source 1.12fr/0.88fr inner-grid and 7/6 art contract, including source max-width and >=1400 gap behavior.",
+    "status": "GATED_NOT_LIVE",
+    "deployment_rule": "Do not deploy without a stable immediate source-target visual gate and a fresh current CSS/page hash/marker preflight. If deployed and it regresses, remove only the exact v011 marked block."
+  },
+  "form_and_runtime_reconciliation": {
+    "form33": "Native service radio required wiring remains present; no shared form mutation or submission was performed.",
+    "inner_fields": "No fresh synchronized measured inner-field defect was proven; no speculative field CSS was added.",
+    "dock_owner": "ID7 read-only; no global snippet mutation.",
+    "review_tiszafa_nordmann_faq": "Existing accepted/static owners preserved; no duplicate runtime added."
+  },
+  "audits": {
+    "desktop": {"accessibility": 97, "best_practices": 100, "notes": ["target-size", "label-content-name-mismatch", "valid-source-maps"]},
+    "mobile": {"accessibility": 100, "best_practices": 100, "notes": ["label-content-name-mismatch", "valid-source-maps"]},
+    "interpretation": "Regression signal only; not a pixel-parity substitute."
+  },
+  "opera": {
+    "memory_policy": "Reduced to sequential single-tab target/source navigation when parallel tabs changed externally; no new tab fan-out.",
+    "latest_state": "Browser connector disconnected immediately after navigating for the v010 visual postcheck; no reconnect/reload loop was attempted.",
+    "visual_blockers": ["v010 dock postwrite visual proof", "final hero/transition proof", "six-view deterministic matrix"]
+  },
+  "wpvibe": {
+    "identity": "ncsnorbert+20260914-5@gmail.com",
+    "site": "https://alakfamester-wp.clicknest.hu",
+    "latest_quota_used": 216,
+    "quota_limit": 300,
+    "quota_remaining": 84,
+    "d11_reserve": 10,
+    "reserve_preserved": true,
+    "throttle_note": "One read-only request earlier returned HTTP 429 and was not blindly retried; later calls recovered."
+  },
+  "wordpress_writes_this_package": 3,
+  "other_page_write": false,
+  "shared_setting_or_snippet_write": false,
+  "smtp_or_external_submission": false,
+  "pixel_pass": false,
+  "release_status": "PAGE264_REOPENED_BY_FRESH_REPRODUCED_VISUAL_DEFECTS_V008_V010_LIVE_BROWSER_CLOSEOUT_PENDING",
+  "next_safe_action": "With no WordPress write, update STATE preserving all prior history. When Opera is stable, use a single sequential tab to verify v010 and current v009 hero. Only then consider gated v011 after a fresh live hash/marker/quota preflight; otherwise keep v011 undeployed."
+}
