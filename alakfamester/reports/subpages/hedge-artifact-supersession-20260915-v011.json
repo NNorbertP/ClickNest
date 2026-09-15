@@ -1,0 +1,46 @@
+{
+  "schema_version": 11,
+  "package": "hedge-artifact-supersession-20260915-v011",
+  "date": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "purpose": "Final static precedence pointer for the current page272 continuation. It keeps v010's full safety/reconciliation map and advances only the continuation pointer to v017 so future entry is internally consistent.",
+  "supersedes": "reports/subpages/hedge-artifact-supersession-20260915-v010.json",
+  "scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/SMTP/other-page writes",
+  "authoritative": {
+    "continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "live_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "gallery_final": "reports/subpages/hedge-gallery-final-state-reconciliation-20260915-v001.json",
+    "heading_reconciliation": "reports/subpages/hedge-heading-evidence-reconciliation-20260915-v001.json",
+    "form_fallback": "build/hedge-form-required-server-plan-20260915-v003.json",
+    "sitewide_pointer_audit": "reports/subpages/hedge-cross-project-pointer-audit-20260915-v001.json",
+    "canonical_pointer_audit": "reports/subpages/hedge-canonical-matrix-pointer-audit-20260915-v001.json"
+  },
+  "execution_truth": "No page272 WordPress write was performed in this static continuation. The sole future conditional write is existing ID36 -> semantic v005, gated by fresh baseline/rollback/cardinality/native-ARIA/resolved-IDREF/ID-uniqueness/budget checks. Everything else is read-first, proof-only, separate-owner correction, external shared observation or formal-tooling blocker.",
+  "do_not_replay": [
+    "prepared semantic v004 and older semantic candidates",
+    "old real-media-ID + shared attachment-alt Hedge strategy",
+    "partial 4/28 gallery resume checkpoint from shared-media recovery v004",
+    "older broad media/background defects already reconciled",
+    "older page272 pointers in sitewide/canonical shared planning files",
+    "outer-region guesses on partial widgets",
+    "proof-carousel role rollback without fresh parent/owner evidence",
+    "new CSS without synchronized reproduced local visual delta"
+  ],
+  "critical_rules": [
+    "Fresh trustworthy live truth wins.",
+    "Do not overwrite current page264-only STATE.md from this page272 lane.",
+    "Preserve >=10 WPVibe calls for D11 closeout/recovery.",
+    "429/unknown write remains UNKNOWN until exact readback; never blind retry.",
+    "At most one source and one target Opera project tab; stop on stale/disconnected state and do not open replacement loops.",
+    "No SMTP/external message/real Form33 submission.",
+    "PIXEL_PASS remains false until original frozen harness or an explicitly accepted replacement acceptance contract exists."
+  ],
+  "status": "HEDGE_V011_CURRENT_STATIC_ENTRYPOINT_LIVE_EXECUTION_BLOCKED"
+}
