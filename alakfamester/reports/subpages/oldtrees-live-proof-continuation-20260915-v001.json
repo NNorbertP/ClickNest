@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-live-proof-continuation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "PAGE264_ONLY",
+  "mode": "FRESH_LIVE_READBACK_NO_WORDPRESS_WRITE",
+  "precedence_rule": "Fresh trustworthy live source/target/server truth outranks older repository snapshots. This file records only evidence gathered after the v012/Nordmann-role acceptance state and authorizes no WordPress mutation.",
+  "target": "https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/",
+  "reference": "https://alakfamester.clicknest.hu/idos-fak-megmentese-szolgaltatas.html",
+  "fresh_live_form_topic_reconciliation": {
+    "source_and_target_exact_match": true,
+    "current_exact_labels": [
+      "Új alakfa kialakítása",
+      "Meglévő alakfa / niwaki ápolása",
+      "Túlnőtt fa átalakítása",
+      "Sövény",
+      "Növény-egészségügyi probléma",
+      "Gyümölcsfa"
+    ],
+    "interpretation": "Older evidence naming Állapotfelmérés/diagnosztika, tomograph or other previous labels is stale reference history and must not be restored. No Form33 or page264 content write is justified."
+  },
+  "fresh_live_dock_reconciliation": {
+    "source_target_ax_match": true,
+    "region": "Gyors kapcsolatfelvétel",
+    "phone_href": "tel:+36305394820",
+    "phone_name": "Telefonhívás: +36 30 539 48 20",
+    "mail_href": "mailto:kreativ@alakfa-mester.hu",
+    "mail_name": "E-mail írása: kreativ@alakfa-mester.hu",
+    "cta_href": "/kapcsolat/#ajanlatkeres",
+    "cta_name": "Felmérést kérek",
+    "owner": "Active Code Snippets ID7 emits .dock.af-source-dock; page264 v010 suppresses only the obsolete covering fallback.",
+    "status": "LIVE_STRUCTURE_PASS; visual screenshot postcheck remains a proof gap, not a reproduced defect."
+  },
+  "fresh_live_hero_reconciliation": {
+    "content_semantics": "PASS: source/target hero title, descriptive copy, actions, facts and accessible art content match in fresh sequential Opera AX reads.",
+    "reference_dom": "section.hero.hero--inner > div.container.container--wide > div.hero__grid > div.hero__copy + div.hero__visual",
+    "reference_css_authoritative_inner_contract": {
+      "grid": "minmax(0,1.12fr) minmax(0,.88fr)",
+      "padding_block": "clamp(20px,2.2vw,34px) clamp(28px,3.2vw,50px)",
+      "art_aspect_ratio": "7 / 6",
+      "art_max_width_default": "430px",
+      "desktop_gap_ge_1400": "56px"
+    },
+    "target_live_known_calibration": "Current live Additional CSS contains a high-specificity desktop 719.03125px left-column calibration and no live 1.12fr v011 block.",
+    "remaining_question": "Exact current source-target bounding-box/transition geometry at controlled viewports. No screenshot/computed-box evidence was obtainable in this work session.",
+    "status": "CONTENT_AX_PASS_GEOMETRY_DECISION_GATED"
+  },
+  "fresh_server_readback": {
+    "additional_css_post_id": 8,
+    "additional_css_bytes": 617608,
+    "additional_css_md5": "7c089bf62e477a3f7809528d48326a51",
+    "marker_counts": {
+      "v008": 1,
+      "v009": 1,
+      "v010": 1,
+      "v011": 0,
+      "v012": 1,
+      "af_project_end": 1
+    },
+    "protected_live_blocks_from_current_acceptance": ["v004", "v005", "v006", "v007", "v008", "v009", "v010", "v012"],
+    "prepared_not_live": ["v011"],
+    "note": "No WordPress write was performed during this continuation."
+  },
+  "v011_static_reconciliation": {
+    "artifact": "build/oldtrees-visual-v011-hero-source-grid.css",
+    "blob_sha": "ea12406dc43faf7e1e7dbb2337713bfb9990885a",
+    "important_correction": "The exact artifact DOES include the source >=1400px column-gap:56px rule. Any earlier partial-reading concern that it omitted this rule is superseded.",
+    "large_desktop_math": "With a 1340px source inner width and 56px gap, 1.12/(1.12+0.88) of the remaining 1284px is 719.04px, explaining the target's historical 719.03125px left-column calibration.",
+    "decision": "HOLD_GATED_NOT_LIVE",
+    "reason": "Static equivalence is not sufficient to prove the target's current effective outer root width/centering/art placement. Deploying v011 without controlled immediate visual geometry could disturb an already calibrated hero."
+  },
+  "tool_state": {
+    "wpvibe": "Recovered for read-only server/source-CSS diagnostics, then exact quota reached 296/300 used. Stop: no further WPVibe calls and no WordPress writes in this work session.",
+    "wpvibe_remaining": 4,
+    "opera": "Exactly one existing sequential project tab reused for source/target navigation. No new project tab was opened. AX reads worked; screenshot branch remains stopped after connection failures; one jq AX query failed and was not retried.",
+    "wordpress_writes": 0
+  },
+  "protected_no_reopen": [
+    "v006 request-contact foreground targeted PASS",
+    "v007 comparison equal columns/wrapping targeted PASS",
+    "v008 hero root geometry live",
+    "v009 hero copy flow live",
+    "v010 page264 dock fallback suppression live",
+    "v012 review-dot pointer containment live",
+    "six Nordmann group-role corrections",
+    "all accepted page264 content/media/heading/region contracts"
+  ],
+  "remaining_proof_only": [
+    "hero controlled screenshot/bounding geometry and v011 deploy/no-deploy decision",
+    "v010 dock screenshot visual postcheck",
+    "review keyboard/prev-next actions",
+    "Tiszafa pointer/keyboard range mutation",
+    "Nordmann precise timer reset/swipe/compound pause/reduced-motion actions",
+    "FAQ pointer/keyboard/focus actions",
+    "safe non-delivering Form33 required-radio action proof",
+    "deterministic six-view source-target capture/overlay/diff/geometry/overflow matrix"
+  ],
+  "write_policy": "No new WordPress write is justified from this evidence. A proof gap is not an implementation defect. Preserve accepted live state and keep v011 gated until stronger visual geometry tooling is available.",
+  "pixel_pass": false,
+  "status": "FRESH_LIVE_FORM_AND_DOCK_AX_PASS_HERO_CONTENT_PASS_V011_GATED_NO_WRITE"
+}
