@@ -1,3 +1,31 @@
+# STATE - 2026-09-15, PAGE264 ONLY; LIVE PREFLIGHT PASS; VISUAL GATE BLOCKED BY OPERA; NO WORDPRESS WRITE
+
+## Latest continuation checkpoint — 2026-09-15, ncsnorbert+20260914-5
+
+This checkpoint supersedes the stale WPVibe/Opera availability notes below while preserving all earlier acceptance evidence and scope rules.
+
+- **Hard WordPress scope remains page264 only:** `https://alakfamester-wp.clicknest.hu/idos-fak-megmentese-szolgaltatas/`. No other page, global header/footer, shared media, shared Form33 settings, SMTP, notification/webhook or external submission was modified.
+- WPVibe identity/site are now live-verified: account `ncsnorbert+20260914-5@gmail.com`, exactly one connected site `https://alakfamester-wp.clicknest.hu`, Hello Elementor 3.5.1 active. Latest quota check in this continuation: **89/300 used, 211 remaining**; keep the D11 10-call closeout/recovery reserve.
+- Fresh page264 preflight exactly matches the accepted saved-data baseline: `_elementor_data` **48874 B**, SHA256 **`09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a`**, JSON valid.
+- Fresh Hello Additional CSS post8: **612379 B**, SHA256 **`e3980469873ad39c0841dd2768e6974f0b209e94c33815825d2109b7a63f9396`**; marker counts `af-project:end=1`, v004=1, v005=1, v006=0, v007=0. The size increase after historical v005 is reconciled: a newer homepage-only marked block `af-project:header-home-services-inactive-v001` sits between v005 and `af-project:end`; it must be preserved and is not a page264 fix.
+- Repository identity for v006/v007/bundle was re-read and still matches `build/oldtrees-visual-deploy-manifest-20260915-v001.json`. No v006/v007 CSS was deployed.
+- Opera was reduced toward one source + one target page264 tab. The source screenshot succeeded, but the target screenshot call disconnected the Opera connector. Per `build/oldtrees-next-remote-window-20260915-v005.json`, the synchronized two-tab visual gate therefore remains **BLOCKED/HOLD**; no replacement-tab fan-out and no screenshot-driven CSS write was attempted.
+- Shared Form33 fresh saved-data baseline is unchanged: **6068 B**, SHA256 **`ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3`**, JSON valid; `af04000d/#af-form-direct-call` exactly once and `#af-form-service` exactly once.
+- Current service radio is widget `af040007` / `mf-radio`, input name `kapcsolat-tema`, `mf_input_required=yes`, exact six options `uj-alakfa`, `apolas`, `tulnott`, `soveny`, `egeszseg`, `gyumolcs`, with native error text `Válasszon egy lehetőséget.`. Fresh rendered widget markup calls MetForm `activateValidation(... required:true ...)` and exposes the matching error component. This confirms native required wiring; no custom service validator is justified without a failing non-delivery interaction proof.
+- Current snippets remain active/read-only checked: ID5 SHA256 `67c32bf9b9a3baab3e6b4eb120df943b6cc63cd9564ced0f14d5bd75fea0c5ac`, ID6 SHA256 `7a39d56d3ffb712928df5063f70cf7b8912585a891acbd2da057f59a4d5562ca`, ID33 SHA256 `810e62e37b30b553dc96212783954e808e9bf251eb5c72ab8c509beb4957b22f`; ID33 still has the `is_page(264)` guard. No snippet write occurred.
+- Fresh page264 data keeps stale `/fooldal/#ajanlatkeres` at zero; exact saved markup still contains `/kapcsolat/#kiszallas`, `/biologiai-vedelem/`, `tel:+36305394820` and `mailto:kreativ@alakfa-mester.hu`. No route write occurred.
+- WPVibe's `db query` wrapper reported automatic Elementor/object-cache purge messages even for these read-only SQL inspections. No intentional content/settings/cache write was requested; do not treat those tool-side purge notices as a completed page264 change.
+
+**Elkészült ebben a munkacsomagban:** +5 account/site/quota verification; repo/artifact identity gate; compact page264/CSS marker preflight; reconciliation of post-v005 CSS growth; Form33 identity/required-setting/native-render wiring readback; ID5/ID6/ID33 readback; route invariant readback.  
+**Ellenőrzött:** page264 saved-data baseline unchanged; v004/v005 present once; v006/v007 absent; Form33 baseline/direct-call unchanged; native required configuration present; no stale homepage request route in page264; canonical trip-fee/bio/tel/mail targets remain in saved content.  
+**Nyitott:** trustworthy synchronized source/target v006/v007 visual gate and conditional at-most-one CSS deployment/readback; dynamic native radio-required no-delivery interaction proof; inner-field computed-style proof; review/tiszafa/Nordmann/FAQ interactions; hero root-cause; dock owner; six-view responsive/pixel matrix.  
+**Következő művelet:** when Opera is stable, reuse exactly one source + one target page264 tab and run the v006/v007 visual decision gate. If both/one/neither fail, follow the frozen decision matrix; at most one exact repository artifact write, followed immediately by marker/hash readback and targeted regression capture.  
+**Release:** page264 remains **NOT RELEASED**; visual gate/tool availability is not completion evidence.
+
+---
+
+# Previous checkpoint retained verbatim below
+
 # STATE - 2026-09-15, PAGE264 ONLY; V004+V005 LIVE; V006+V007 READY/GATED; LIVE GATE UNAVAILABLE
 
 ## Current continuation point — Idős fák / page264 only
