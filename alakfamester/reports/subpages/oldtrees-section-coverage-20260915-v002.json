@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-section-coverage-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CORRECTION_OVERLAY_ON_V001_NO_SCOPE_CHANGE",
+  "supersedes_for_planning": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+  "base_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+  "inheritance_rule": "All v001 section PASS/failure/diagnostic classifications remain unchanged except the exact ownership/oracle corrections below.",
+  "corrections": {
+    "section_13_nordmann": {
+      "owners": [
+        ".carousel.js-carousel rendered component",
+        "target runtime owner NOT YET IDENTIFIED by trustworthy live readback"
+      ],
+      "source_runtime_evidence": "build/source-interactions-v001.js is the frozen-source interaction oracle only; it must not be described as a proven target deployment owner.",
+      "current_interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+      "source_runtime_reconciliation": "reports/subpages/oldtrees-source-runtime-reconciliation-20260915-v002.json",
+      "source_carousel_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
+      "content_semantics_media": "PASS_STATIC_AX remains unchanged; six-slide controls/content are preserved and moving state must be synchronized before role/current-state comparison.",
+      "interaction": "OPEN_PROOF_ONLY remains unchanged. Read the actual deployed target runtime owner before any JavaScript change; missing owner identity is not itself an implementation failure."
+    },
+    "floating_contact_dock": {
+      "classification": "REPRODUCIBLE_VISUAL_DELTA_GLOBAL_OR_SHARED_OWNER_BOUNDARY_UNRESOLVED",
+      "known": "Target historical AX/markup exposes the quick-contact region/links while repeated visual captures showed a nearly blank pill.",
+      "markup_runtime": "ID7 may be relevant to rendered shared markup/classes, but current evidence does not prove ID7 or any standalone header artifact owns the losing CSS declarations.",
+      "css_owner": "UNPROVEN. Must be discovered from fresh live DOM/computed/post8 evidence.",
+      "page264_write_policy": "No global fix from page264 scope. A local exception is eligible only after exact proof that the correction can be expressed strictly under body.page-id-264 without editing the shared/global owner."
+    }
+  },
+  "corrected_carousel_timer_fact": "For a natural broken slide, source drop() stops the timer when zero or one slide remains; with two or more remaining it does not reset/restart the existing interval. This is proof-only and not a current failure.",
+  "unchanged_current_page264_local_write_candidates": [
+    "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+    "build/oldtrees-visual-v006-v007-single-write-bundle.css only if both reproduce"
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "SECTION_COVERAGE_V002_OWNERSHIP_CORRECTED_NO_IMPLEMENTATION_SCOPE_CHANGE"
+}
