@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "package": "oldtrees-link-route-ledger-20260915-v001",
   "date": "2026-09-15",
   "page_id": 264,
@@ -19,9 +19,11 @@
     },
     {
       "purpose": "Biológiai támogatás related-service card",
-      "target": "canonical WordPress biological-protection page route",
-      "evidence": "oldtrees-content-parity-v002 restored the source card with its canonical biological-protection link.",
-      "rule": "Do not replace with a source .html host URL or homepage anchor."
+      "target": "/biologiai-vedelem/",
+      "reference_source_route": "/biologiai-vedelem.html",
+      "target_page_id": 256,
+      "evidence": "oldtrees-content-parity-v002 restored the related-service card; bio-parity-current-audit-v002 records exact target https://alakfamester-wp.clicknest.hu/biologiai-vedelem/ and reference https://alakfamester.clicknest.hu/biologiai-vedelem.html.",
+      "rule": "Preserve the canonical WordPress /biologiai-vedelem/ route. Do not replace with the frozen source .html URL or a homepage anchor."
     },
     {
       "purpose": "Direct request phone",
@@ -54,17 +56,19 @@
   "verification_state": {
     "page_local_cta_remap": "PASS_AT_LAST_READBACK",
     "trip_fee_route": "PASS_AT_CONTENT_PACKAGE",
-    "biological_route": "PASS_AT_CONTENT_PACKAGE",
+    "biological_route": "PASS_AT_CONTENT_PACKAGE_AND_EXACT_CANONICAL_ROUTE_RESOLVED_FROM_PAGE256_AUDIT",
     "phone_mail_semantic_names": "PASS_AT_LATER_PAGE264_AX_READBACK",
     "fresh_current_hrefs": "LIVE_READBACK_PENDING because current WordPress/Opera gate is unavailable"
   },
   "future_live_gate": [
     "From a fresh rendered page264 payload, enumerate only main-content anchors under the page content root; exclude global header/footer/dock from page-local route assertions.",
-    "Require exactly the expected local #ajanlatkeres CTAs and canonical related-page routes; record any extra stale /fooldal/#ajanlatkeres or frozen-source .html URL as a real regression.",
+    "Require the two page-local request CTAs to resolve to #ajanlatkeres; stale /fooldal/#ajanlatkeres must remain absent.",
+    "Require the trip-fee link to resolve to /kapcsolat/#kiszallas and the biological-support link to /biologiai-vedelem/.",
+    "Record any frozen-source .html URL left in page264 main-content routes as a real D09 regression unless a newer documented canonical mapping supersedes this ledger.",
     "Verify tel/mail hrefs and accessible names without activating them; do not trigger phone/mail clients.",
     "Do not rewrite URLs solely because source and target hosts differ; apply D09 canonical WordPress mapping."
   ],
   "wordpress_writes": 0,
   "smtp_or_external_submission": false,
-  "status": "KNOWN_PAGE264_ROUTE_CONTRACTS_CONSOLIDATED_FRESH_READBACK_PENDING"
+  "status": "KNOWN_PAGE264_ROUTE_CONTRACTS_EXACTLY_RESOLVED_FRESH_READBACK_PENDING"
 }
