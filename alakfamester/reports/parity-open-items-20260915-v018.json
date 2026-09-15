@@ -1,0 +1,103 @@
+{
+  "schema_version": 18,
+  "project": "alakfamester",
+  "date": "2026-09-15",
+  "type": "PLANNING_ONLY_NO_SCOPE_OVERRIDE",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260915-v017.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; this queue authorizes no page256/page272/global/media WordPress write.",
+  "tool_state": {
+    "wpvibe": "disabled after the first attempt in this conversation; no retry and current +5 quota/site status unknown",
+    "opera": "kept untouched after stale/disconnected evidence; zero new tabs and no reconnect/reload/replacement loop",
+    "github": "available for read-only/static convergence",
+    "wordpress_writes_this_continuation": 0
+  },
+  "page264_active": {
+    "state": "STATE.md",
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v011.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v004.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v004.json",
+    "deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "only_conditional_visual_candidates": [
+      "v006 request-contact white foreground",
+      "v007 equal comparison columns",
+      "combined exact repository bundle only if both fresh failures reproduce"
+    ],
+    "proof_only": [
+      "Form33 service/topic native required setting plus safe no-delivery rejection",
+      "inner Form33 field computed-style/geometry",
+      "page-local href readback",
+      "review/Tiszafa/Nordmann/four-FAQ direct interactions",
+      "hero exact owner/cascade diagnosis",
+      "floating dock exact CSS-owner discovery without global mutation",
+      "deterministic six-view overlay/diff"
+    ],
+    "next": "Only in a trustworthy future live window: intended +5/site/exact quota once -> compact page/hash/marker gate -> stable one-source/one-target v006/v007 visual gate -> at most one exact repository CSS insertion -> mandatory marker/page-hash/visual regression readback. 429 write outcome remains UNKNOWN until readback."
+  },
+  "page256_future": {
+    "latest_readonly_continuation": "reports/subpages/bio-continuation-20260915-v028.json",
+    "precedence_reconciliation": "reports/subpages/bio-evidence-supersedence-20260915-v008.json",
+    "acceptance": "specs/bio-final-acceptance-20260914-v003.json",
+    "remote_plan": "build/bio-next-remote-window-20260914-v004.json",
+    "budget": "build/bio-remote-call-budget-20260914-v005.json",
+    "delivery": "inert page-local carrier probe first; after PASS, page-local visual delivery v002; never fall back to Hello Additional CSS",
+    "safe_structure": "build/bio-page256-next-safe-package-20260914-v015.json",
+    "review_plan": "build/bio-reviews-current-fix-plan-20260914-v003.json",
+    "hard_exactness_open": [
+      "Panasonic review point-list section-local semantics",
+      "stress true saved/read/AX order p1 -> p2 -> article/list",
+      "expectations exact two-article ownership",
+      "FAQ exact button/ARIA/keyboard/motion runtime",
+      "review previous/next focus newly active panel",
+      "review decorative ordinal AX parity",
+      "final responsive acceptance"
+    ],
+    "write_now": false
+  },
+  "page272_future": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v009.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v016.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "only_conditional_write": "existing ID36 -> semantic v005 after fresh baseline/rollback/cardinality/resolved-native-IDREF/ID-uniqueness gates; v005 preserves existing IDREF tokens and unexpected service roles",
+    "read_first": [
+      "all three review panel exact quote/author/image content and wiring",
+      "complete outer-region roots",
+      "main-content heading tree",
+      "proof-carousel roles/owner",
+      "Form33 required setting/options and safe native behavior",
+      "document-head metadata/schema"
+    ],
+    "page_css_candidate": "NONE",
+    "write_now": false
+  },
+  "global_future": {
+    "header": "existing ID7/current global owner only after explicit global scope handoff and fresh multi-route gate; no parallel route helper",
+    "floating_dock": "diagnostic-first exact live markup/current ID7/winning cascade owner; no page-local duplicate UI or global write from page264"
+  },
+  "assets_and_formal": {
+    "asset_reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "formal_recovery": "reports/formal-acceptance-artifact-recovery-20260915-v001.json",
+    "runner_recovery_confirmation": "reports/formal-runner-recovery-audit-20260915-v001.json",
+    "ellwoodi": "exact frozen alternate-view bytes/pixels still not proven; no substitute import",
+    "about_portrait": "exact historical bytes unrecovered; acceptance visibility is a separate read-only question before any media write",
+    "pixel_pass": false
+  },
+  "rules": [
+    "Fresh trustworthy live truth outranks prepared repository artifacts.",
+    "STATE.md controls current WordPress write scope.",
+    "Prepared/QA means candidate, never PASS evidence for live behavior.",
+    "Preserve at least 10 WPVibe calls for D11 recovery/readback.",
+    "A 429-returned write is UNKNOWN until exact readback; never blind retry.",
+    "At most one source plus one target Opera project tab; stop on stale/disconnected/repurposed state without replacement loops.",
+    "Missing formal tooling never licenses speculative code or a PIXEL_PASS claim."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "QUEUE_CURRENT_PAGE264_V011_PAGE256_V028_HEDGE_IDREF_PRESERVING_V005_CHAIN"
+}
