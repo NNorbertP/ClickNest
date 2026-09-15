@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "package": "hedge-final-preflight-pointer-audit-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "shared_preflight_write": 0,
+  "inspected": "reports/final-acceptance-preflight-20260915-v004.json",
+  "shared_preflight_scope": "Read-only finalization gate; STATE.md remains current write-scope authority.",
+  "stale_page272_pointers": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v004.php"
+  },
+  "current_page272_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v011.json",
+  "current_semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+  "current_open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+  "current_acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+  "current_live_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
+  "current_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+  "preflight_rules_that_remain_authoritative": [
+    "No final parity/PIXEL_PASS while required deterministic/interaction acceptance remains open.",
+    "Tool absence is not defect evidence and never licenses speculative CSS/JS.",
+    "Full review quote/author-company-role/image/tab-panel preservation is read-only before any content correction.",
+    "No page272 CSS candidate exists without a fresh synchronized visual delta.",
+    "Original acceptance/behavior specs and runner are unrecoverable from exposed Git and must not be fabricated as originals."
+  ],
+  "decision": [
+    "Do not edit the shared final-preflight artifact from page272 scope.",
+    "Do not execute a future Hedge semantic write from its stale v004 pointer.",
+    "When shared finalization planning is next owned, refresh its page272 block from Hedge precedence v011 after reading fresh live truth.",
+    "Its global completion rule remains valid and is incorporated into Hedge v011."
+  ],
+  "status": "FINAL_PREFLIGHT_HEDGE_POINTERS_STALE_RULES_PRESERVED_NO_SHARED_MUTATION"
+}
