@@ -71,21 +71,28 @@
       "fresh accepted/reconciled page272 hash/JSON",
       "exact current ID36 body/name/scope/active/code_error and rollback body",
       "target review + Form33 element cardinality/identity gates",
-      "existing target review/form/service/city ARIA attributes and resolved IDREFs captured from trustworthy target rendered HTML",
+      "existing target review/form/service/city ARIA attributes and every IDREF resolved to exact owner+text from trustworthy target rendered HTML",
+      "if the exact intended relation element is already referenced, v005 must be a no-op for that relation",
+      "if a different current IDREF already provides semantically equivalent direct-call/service-label/city-help content, HOLD v005 instead of creating duplicate speech",
       "planned relation IDs unique/non-conflicting",
       "no newer semantic helper/marker",
       "v005 not already live",
       "D11 reserve remains available for mandatory readback"
     ],
-    "conflict_rule": "If a stronger/newer native naming/description/role/ID owner conflicts or any current IDREF is unresolved/ambiguous, HOLD v005 and reconcile ownership. Preserving tokens is not permission to mask a semantic conflict.",
+    "conflict_rule": "If a stronger/newer native naming/description/role/ID owner conflicts, any current IDREF is unresolved/ambiguous, or an existing different IDREF already supplies the intended semantic phrase, HOLD v005 and reconcile ownership. Token preservation alone is not sufficient if the computed accessible name/description would repeat meaningful content.",
     "expected_delta_only": [
       "exact three review tab accessible names",
       "review tablist name Ügyfélvélemények",
       "duplicate source-style dot controls excluded from AX/tab order",
       "Form33 name Ajánlatkérés",
-      "wrapper-owned direct-call description",
-      "service group naming relation",
-      "city help relation"
+      "wrapper-owned direct-call description exactly once",
+      "service group naming relation exactly once",
+      "city help relation exactly once"
+    ],
+    "postwrite_semantic_acceptance": [
+      "all pre-existing valid native IDREF/error relations remain present and resolved",
+      "each intended direct-call/service-label/city-help semantic phrase contributes once to the computed name/description",
+      "no meaningful help/label/direct-call text is duplicated merely because two different IDs resolve to equivalent content"
     ],
     "no_change": ["CSS", "visible text", "review panel inner content", "DOM order", "Elementor data", "form validation/submission", "click/keyboard behavior", "outer form region"]
   },
@@ -121,7 +128,7 @@
     },
     {
       "item": "native validation/error ARIA",
-      "acceptance": "existing and project-added description/error/help IDREFs remain resolved and non-destructive across safe validation state",
+      "acceptance": "existing and project-added description/error/help IDREFs remain resolved and non-destructive across safe validation state, with no duplicate meaningful speech",
       "route": "target rendered HTML idle; dynamic state only if a provably no-network trigger exists"
     }
   ],
@@ -174,5 +181,5 @@
   "convergence_ledger": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
   "parallel_state_rule": "Current STATE.md is page264-only and is not overwritten by this page272 package.",
   "pixel_pass": false,
-  "status": "AUTHORITATIVE_PAGE272_ACCEPTANCE_V008_REQUIREMENTS_PRESERVED_PROOF_ROUTES_CAPABILITY_ALIGNED"
+  "status": "AUTHORITATIVE_PAGE272_ACCEPTANCE_V008_REQUIREMENTS_PRESERVED_IDREF_SEMANTIC_DEDUP_GATED"
 }
