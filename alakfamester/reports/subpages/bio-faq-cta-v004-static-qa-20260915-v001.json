@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "package": "bio-faq-cta-v004-static-qa-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_DEPENDENCY_QA_PASS_LIVE_RENDER_UNPROVEN",
+  "delivery": "build/bio-faq-cta-page-local-delivery-20260915-v004.json",
+  "wave_reconciliation": "reports/subpages/bio-wave-spacing-reconciliation-20260915-v001.json",
+  "checks": {
+    "base_payload": "PASS_STATIC: four blocks only: source-layout-v002, mail-label-v001, mail-interaction-v001, button-interaction-v001.",
+    "top_spacing_not_early": "PASS_STATIC: section-spacing-v001 is excluded from the base append, so no 24px reduction occurs before wave4 is proven.",
+    "wave4": "PASS_STATIC: current wave candidate is bio-wave-source-faq-v002.css with source-recorded -1px seam overlap.",
+    "post_wave_spacing": "PASS_STATIC: section-spacing-v001 is reachable only through the separate measurement-gated post-wave plan after wave4 PASS.",
+    "eyebrow_semantics": "PASS_STATIC: obsolete H2 eyebrow and outer-label-guard companion files remain excluded.",
+    "mail_grid_and_interaction": "PASS_STATIC: deterministic label row/email row plus hover/focus companions remain in base payload.",
+    "runtime_separation": "PASS_STATIC: no JavaScript/runtime owner is introduced; exact FAQ runtime remains OPEN.",
+    "scope": "PASS_STATIC: selectors remain page256-local and final physical owner remains the page-local style carrier."
+  },
+  "live_sequence_required": [
+    "base FAQ/CTA layout PASS",
+    "fresh expectations sage + FAQ paper proof",
+    "wave4 v002 append and seam proof",
+    "fresh source/target vertical geometry",
+    "post-wave spacing no-op PASS or one spacing append",
+    "final desktop/mobile FAQ/CTA visual + AX regression"
+  ],
+  "result": "STATIC_DEPENDENCY_CHAIN_PASS; LIVE_EXACTNESS_FALSE",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
