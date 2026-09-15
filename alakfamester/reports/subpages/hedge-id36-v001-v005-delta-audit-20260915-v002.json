@@ -7,7 +7,7 @@
   "documented_live_source": "build/hedge-review-runtime-v001.php",
   "prepared_successor": "build/hedge-semantic-runtime-v005.php",
   "successor_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
-  "status": "STATIC_FUNCTIONAL_SUPERSET_WITH_IDREF_PRESERVATION_LIVE_READBACK_STILL_REQUIRED",
+  "status": "STATIC_FUNCTIONAL_SUPERSET_WITH_IDREF_AND_SEMANTIC_DUPLICATION_PRESERVATION_LIVE_READBACK_STILL_REQUIRED",
   "preserved_v001_lifecycle": [
     "server guard remains is_page(272)",
     "wp_footer priority remains 120",
@@ -19,6 +19,12 @@
     "attribute-only writes do not trigger a self-loop because the observer watches childList/subtree, not attributes",
     "no CSS, visible-text replacement, DOM reorder/removal, validation, submission, click or keyboard handlers"
   ],
+  "review_dot_ownership_reconciliation": {
+    "documented_v001": "build/hedge-review-runtime-v001.php already applies tabindex=-1 and aria-hidden=true to .af-review-source-dot.",
+    "shared_interaction_owner": "reports/subpages/hedge-interaction-static-audit-20260914-v001.json records af-project 0.2.0 delegated Atomic Tabs handling for real tab click/Arrow/Home/End interactions and no known page272 review interaction failure.",
+    "consequence": "v005 dot suppression is preservation of documented ID36 behavior, not a new review navigation owner. Do not add page272 click/key handlers.",
+    "live_rule": "Still read the exact current ID36 body before replacement; if current live behavior differs from the documented v001 source, reconcile it before any write."
+  },
   "intentional_successor_delta": [
     "review selector narrows from generic .af-reviews-tabs to protected page272 Elementor root .elementor-element-c3d30005",
     "three real tabs receive exact source-equivalent full accessible names in protected source order",
@@ -37,7 +43,9 @@
     "If current ID36 differs from documented v001, reconcile every additional live behavior before replacing it.",
     "Require exactly one protected review root, one tablist and three real tabs in Panasonic -> Otolecz -> ARKER'S order.",
     "Require exactly one Form33 wrapper/form and exact direct-call/service/city elements.",
-    "Capture current native role/name/description/error relations and resolve every IDREF token.",
+    "Capture current native role/name/description/error relations and resolve every IDREF token to an exact unique owner and referenced text.",
+    "If the exact intended relation element is already referenced, the v005 append must be a no-op for that relation.",
+    "If a different existing IDREF already supplies semantically equivalent intended direct-call/service-label/city-help text, HOLD v005 rather than create duplicate speech.",
     "Require planned/reused relation IDs unique and no stronger native semantic owner.",
     "Require v005 marker not already live; if already present, read back rather than replay."
   ],
@@ -50,10 +58,11 @@
     "duplicate source dots remain visual-only and are absent from AX/tab order",
     "all previously present native Form33 IDREF/error relations remain present alongside project-owned descriptors",
     "all IDREF targets resolve exactly once",
+    "each intended direct-call/service-label/city-help semantic phrase occurs once in the computed accessible result; no meaningful duplicate speech through different IDs",
     "hero/proof/reviews/gallery/form protected component IDs remain present",
     "review-panel visible copy/image content unchanged because v005 is attribute-only"
   ],
-  "rollback": "Before any update, store the exact current live ID36 body/state. On any marker/cardinality/AX/native-relation regression, restore only that exact body/state through the same plugin-aware owner path. Do not touch Elementor data, ID14, Form33, media, CSS or shared settings.",
+  "rollback": "Before any update, store the exact current live ID36 body/state. On any marker/cardinality/AX/native-relation/semantic-duplication regression, restore only that exact body/state through the same plugin-aware owner path. Do not touch Elementor data, ID14, Form33, media, CSS or shared settings.",
   "429_rule": "A 429/unknown update result is neither PASS nor FAIL. Do not repeat. First exact-read ID36 and page272 state; only decide after readback.",
-  "conclusion": "Prepared v005 preserves every documented live-v001 lifecycle behavior while adding exact tab/Form33 semantics more conservatively than v004. It remains a conditional candidate, not a deployed or accepted live state."
+  "conclusion": "Prepared v005 preserves every documented live-v001 lifecycle behavior, including duplicate source-dot suppression, while adding exact tab/Form33 semantics more conservatively than v004. It remains a conditional candidate, not a deployed or accepted live state."
 }
