@@ -1,0 +1,84 @@
+{
+  "schema_version": 22,
+  "project": "alakfamester",
+  "date": "2026-09-15",
+  "type": "PLANNING_ONLY_NO_SCOPE_OVERRIDE",
+  "supersedes_for_cross_project_planning": "reports/parity-open-items-20260915-v021.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY. This queue does not hand off scope to page256/page272/global work.",
+  "page264_active": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v018.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v012.json",
+    "state_overlay": "reports/subpages/oldtrees-state-resume-overlay-20260915-v003.json",
+    "fresh_full_ax": "reports/subpages/oldtrees-fresh-full-ax-reconciliation-20260915-v001.json",
+    "fresh_live_proof": "reports/subpages/oldtrees-live-proof-continuation-20260915-v001.json",
+    "hero_decision": "build/oldtrees-hero-v011-deploy-decision-20260915-v001.json",
+    "ax_delta_decision": "build/oldtrees-fresh-ax-delta-decision-20260915-v001.json",
+    "tool_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v002.json",
+    "closed_preserve": ["v004","v005","v006","v007","v008","v009","v010","v012","Nordmann six group-role corrections"],
+    "fresh_current": [
+      "no new visible page264 copy/section gap in full fresh source-target AX",
+      "current six service-topic labels exact source-target match",
+      "floating dock region/phone/mail/CTA exact source-target AX match",
+      "hero content/CTA/facts/art semantics match"
+    ],
+    "only_prepared_visual_candidate": "build/oldtrees-visual-v011-hero-source-grid.css",
+    "v011_status": "GATED_NOT_LIVE; static source fidelity confirmed including >=1400 56px gap, but no deploy without controlled visual geometry",
+    "proof_only": [
+      "hero controlled geometry/transition/1024 proof and v011 final deploy/no-deploy decision",
+      "dock screenshot visual postcheck",
+      "review dynamic tab-name/keyboard/prev-next proof",
+      "Tiszafa pointer/keyboard range proof",
+      "Nordmann timer/swipe/pause/reduced-motion proof",
+      "FAQ pointer/keyboard/focus proof",
+      "safe non-delivery Form33 required action proof",
+      "six-view deterministic pixel matrix"
+    ],
+    "fresh_semantic_holds": [
+      "review inactive accessible names differ; do not change ID33/v012 without selected-state interaction matrix",
+      "FAQ source button vs target native details/summary role difference does not justify duplicate runtime",
+      "story dt AX casing difference requires visual/computed-style proof before any copy/style change",
+      "global header/footer observations are out of page264 scope"
+    ],
+    "tool_stop": "WPVibe 296/300 used with four deliberately unused; Opera project pages closed, no screenshot/JQ retries; no WordPress write this continuation.",
+    "release_rule": "Do not claim PIXEL_PASS or deploy v011 from static reasoning. A proof gap is not a reproduced defect."
+  },
+  "page256_future": {
+    "handoff": "build/bio-scope-handoff-ready-20260915-v002.json",
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v009.json",
+    "continuation": "reports/subpages/bio-continuation-20260915-v029.json",
+    "blocker_audit": "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "remote_plan": "build/bio-next-remote-window-20260915-v005.json",
+    "budget": "build/bio-remote-call-budget-20260915-v006.json",
+    "write_now": false
+  },
+  "page272_future": {
+    "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v010.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "write_now": false
+  },
+  "global_future": {
+    "header": "build/header-deployment-plan-v010.json only after explicit global handoff.",
+    "floating_dock": "Current page264 source-target dock AX matches; any broader global dock work remains diagnostic-first and outside current write scope.",
+    "fresh_header_footer_ax_note": "Full page264 AX comparison observed global header/footer content/name differences. Record only; do not compensate inside page264."
+  },
+  "shared_current_state": {
+    "canonical_matrix": "reports/canonical-pages-current-state-matrix-20260915-v006.json",
+    "formal_runner_recovery": "reports/formal-runner-recovery-audit-20260915-v001.json",
+    "asset_reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "pixel_pass": false
+  },
+  "rules": [
+    "fresh trustworthy live truth outranks repository plans",
+    "STATE.md controls WordPress write scope",
+    "prepared/QA is not live PASS evidence",
+    "do not consume the remaining four WPVibe calls in the current work session",
+    "429/5xx write outcome is UNKNOWN until exact readback; never blind retry",
+    "keep Opera project pages closed for the rest of this work session; no replacement screenshot/JQ loop",
+    "missing deterministic tooling never licenses speculative code or PIXEL_PASS"
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "QUEUE_V022_PAGE264_V018_V012_FRESH_AX_HERO_V011_HOLD"
+}
