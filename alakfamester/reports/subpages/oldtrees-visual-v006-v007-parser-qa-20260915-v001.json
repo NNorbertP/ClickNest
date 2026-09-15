@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-visual-v006-v007-parser-qa-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Local parser/static-scope QA of the two remaining page264 visual microfix artifacts and their combined bundle. No WordPress write.",
+  "parser": "tinycss2 stylesheet + declaration parse",
+  "artifacts": {
+    "v006": {
+      "path": "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "github_blob_sha": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+      "parse_errors": 0,
+      "qualified_selectors": 3,
+      "declarations": 3,
+      "all_effect_selectors_begin_body_page_id_264": true,
+      "declaration_contract": [
+        "contact button color #FFF !important",
+        "contact label color rgba(255,255,255,.9) !important",
+        "contact strong color #FFF !important"
+      ]
+    },
+    "v007": {
+      "path": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "github_blob_sha": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+      "parse_errors": 0,
+      "qualified_selectors": 3,
+      "declarations": 8,
+      "all_effect_selectors_begin_body_page_id_264": true,
+      "declaration_contract": [
+        "desktop split display:grid !important",
+        "desktop split grid-template-columns:repeat(2,minmax(0,1fr)) !important",
+        "desktop split gap:24px !important",
+        "desktop split align-items:stretch !important",
+        "card width:auto !important",
+        "card max-width:none !important",
+        "card min-width:0 !important",
+        "max-width:900px split grid-template-columns:minmax(0,1fr) !important"
+      ],
+      "not_present": ["flex", "box-sizing"]
+    },
+    "bundle": {
+      "path": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+      "github_blob_sha": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+      "parse_errors": 0,
+      "qualified_selectors": 6,
+      "declarations": 11,
+      "all_effect_selectors_begin_body_page_id_264": true,
+      "declaration_sequence_equals_v006_then_v007": true,
+      "v006_start_marker_count": 1,
+      "v006_end_marker_count": 1,
+      "v007_start_marker_count": 1,
+      "v007_end_marker_count": 1
+    }
+  },
+  "conclusion": "The repository artifacts are syntactically parseable, remain strictly page264-scoped, and the combined bundle is declaration-equivalent to concatenating the exact standalone microfixes. This does not authorize deployment without the fresh live both/one/neither gate.",
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "STATIC_PARSER_AND_SCOPE_QA_PASS"
+}
