@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "package": "bio-final-acceptance-status-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "acceptance_spec": "specs/bio-final-acceptance-20260914-v003.json",
+  "status": "OPEN_NOT_PASS_READ_ONLY_STATUS_MATRIX",
+  "wordpress_writes": 0,
+  "opera_new_tabs": 0,
+  "status_legend": {
+    "PASS_PROTECTED": "Evidence is sufficient and the property must be preserved; do not reopen without fresh regression proof.",
+    "OPEN_MICROFIX": "A small future mutation path is prepared but needs fresh live precondition/readback.",
+    "OPEN_DIAGNOSTIC": "Needs fresh live/AX/visual measurement before deciding whether any mutation is needed.",
+    "HARD_BLOCKER": "Cannot be safely closed with current physical scope/tooling/atomic edit capabilities.",
+    "GATED": "Implementation is prepared but cannot be run until scope/tool/resource gates pass."
+  },
+  "resource_scope_gate": {
+    "status": "HARD_BLOCKER",
+    "facts": [
+      "Fresh STATE.md remains PAGE264 ONLY.",
+      "WPVibe is disabled in this chat.",
+      "Hello Additional CSS and Code Snippets/ID35 are physically global resources and forbidden by current page256-only scope.",
+      "Page-local style carrier af260016 has not yet passed the live probe."
+    ],
+    "next": "Normal STATE handoff -> verify +5 WPVibe/quota -> fresh page256/ID35 read -> af260016 carrier probe only."
+  },
+  "content_gate": {
+    "status": "OPEN_MICROFIX",
+    "authority": "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "protected_pass": [
+      "13 corrected period-free legacy list strings",
+      "table headers TÜNET / MIT VIZSGÁLOK / LEHETSÉGES IRÁNY",
+      "all four table row-header strings",
+      "hero/stress/technology/table/expectations/FAQ/final-CTA protected visible copy other than the known review role delta"
+    ],
+    "only_known_visible_copy_delta": "Third review role must be ügyvezető · ARKER'S Építésziroda Kft. és ARKER Mérnökiroda Kft. (3DPano™); last verified target is shorter.",
+    "next": "Fresh b2560031 saved-data search then one guarded visible-copy microfix only if still different."
+  },
+  "semantic_gate": {
+    "reviews_active_Panasonic": {
+      "status": "HARD_BLOCKER",
+      "pass": ["tabList=1", "tabs=3", "active panel relationship preserved", "step buttons exist", "exact tab accessible names protected"],
+      "open": [
+        "one semantic 3-item testimonial points list/listItems",
+        "decorative ordinal AX staticText count must be zero",
+        "previous/next must focus newly active panel"
+      ],
+      "next": "Isolated active-panel AX diagnostic; ordinal candidate only with immediate AX readback; runtime focus fix requires approved owner/live ID35 read."
+    },
+    "stress": {
+      "status": "HARD_BLOCKER",
+      "pass": ["list=1", "listItems=4", "content exact"],
+      "open": ["article=1/complementary=0", "physical saved/read/AX order p1 -> p2 -> article/list"],
+      "next": "Fresh live owner boundary. Tag-only aside->article is insufficient to claim exactness because public DOM is p1 -> card -> p2."
+    },
+    "technology": {
+      "status": "PASS_PROTECTED",
+      "facts": ["articles=3 source/target", "use-case list=1/items=4", "visible content protected"],
+      "next": "Presentation-only local CSS after carrier probe; do not change semantics."
+    },
+    "table": {
+      "status": "OPEN_MICROFIX",
+      "pass": ["table=1", "3 exact column headers", "4 rowHeaders"],
+      "open": ["caption must become external p#tunet-tabla-cim", "table must use aria-labelledby", "caption role/count must become 0"],
+      "next": "Only one compact fresh exact boundary may drive an atomic edit; otherwise leave open."
+    },
+    "expectations": {
+      "status": "HARD_BLOCKER",
+      "pass": ["lists=2", "listItems=5", "visible headings/list text aligned"],
+      "open": ["articles=2", "left/right source-equivalent child ownership"],
+      "next": "Fresh saved owner boundaries; no reusable exact owner snapshot exists in repo."
+    },
+    "FAQ": {
+      "status": "HARD_BLOCKER",
+      "pass": ["four exact question names", "working native disclosure behavior"],
+      "open": ["button roles=4/disclosures=0", "aria-expanded/controls source contract", "Arrow/Home/End collection", "280ms/220ms source motion"],
+      "next": "Needs approved physically page-local runtime owner or explicitly broadened runtime/plugin scope plus interaction QA."
+    }
+  },
+  "static_DOM_gate": {
+    "stress_order": "HARD_BLOCKER",
+    "Panasonic_points_list": "OPEN_DIAGNOSTIC",
+    "table_external_title": "OPEN_MICROFIX",
+    "expectations_two_articles": "HARD_BLOCKER",
+    "FAQ_before_CTA": "OPEN_MICROFIX via removal of sole af-faq-content order owner after fresh exact read",
+    "final_CTA_mail_children": "OPEN_MICROFIX via exact mailto child replacement preserving href/aria-label",
+    "source_exactness_rule": "No visual CSS workaround may be counted as static DOM parity."
+  },
+  "anchor_link_gate": {
+    "technology_anchor_and_documented_page_links": "PASS_PROTECTED_LAST_AUDIT: page-content technology anchor, /#apolas and contact-form links map to documented WordPress equivalents",
+    "review_anchor": "OPEN_MICROFIX: target last rendered review section lacked id=ugyfelvelemenyek; only add through fresh exact safe _cssid boundary",
+    "mailto": "PASS_PROTECTED: href mailto:kreativ@alakfa-mester.hu and exact aria-label already closed; visual child order remains separate DOM microfix",
+    "final_form_link": "PASS_PROTECTED_LAST_AUDIT"
+  },
+  "section_order_gate": {
+    "status": "GATED",
+    "known_open": [
+      "FAQ visual order before CTA currently affected by af-faq-content order class",
+      "first three source waves are phase-1 page-local CSS after carrier probe",
+      "fourth wave only in same transaction as FAQ paper conversion",
+      "stress exact internal p/card order remains hard blocker"
+    ]
+  },
+  "visual_gate": {
+    "status": "GATED",
+    "phase1_prepared": [
+      "bio-visual-parity-v001.css",
+      "bio-hero-layout-parity-v003.css",
+      "bio-card-mobile-source-v001.css",
+      "bio-table-section-tone-v001.css",
+      "bio-wave-source-core-v001.css",
+      "bio-review-quote-source-color-v002.css",
+      "bio-review-dot-source-v001.css"
+    ],
+    "deployment_owner": "af260016 style#af-page256-parity only after carrier probe PASS",
+    "important_HOLD": [
+      "expectations visual until source ownership is exact",
+      "fourth FAQ wave until FAQ paper conversion",
+      "review ordinal until isolated AX check",
+      "review media aspect until rendered owner measured",
+      "mobile heading fluid override until measured"
+    ],
+    "pixel_pass": false
+  },
+  "review_interaction_gate": {
+    "status": "HARD_BLOCKER",
+    "already_project_proven": "af-project Atomic Tabs click + Arrow/Up/Down/Home/End activation/focus behavior on desktop/mobile/editor",
+    "page256_specific_gap": "Live ID35 previous/next buttons call tab.click() but do not explicitly focus newly active panel; source requires focusPanel=true.",
+    "protection": "Do not replace Atomic Tabs or duplicate source review JS."
+  },
+  "FAQ_interaction_gate": {
+    "status": "HARD_BLOCKER",
+    "reason": "Target native details/summary is functional but not role/keyboard/motion exact; no sanctioned physically page-local runtime correction currently exists."
+  },
+  "responsive_gate": {
+    "status": "OPEN_DIAGNOSTIC",
+    "source_contract": "build/bio-responsive-source-contract-20260914-v001.json",
+    "static_aligned_prepared_rules": [">=1400 hero gap/columns in hero-v003", "<=760 review quote width", "<=720 card/CTA padding"],
+    "still_requires_live_controlled_viewports": ["<=1000 review vertical layout", "<=900 overall stacks", "<=560 review/contact state", "~390 overflow/focus", "mobile h2 winning owner"]
+  },
+  "wave_gate": {
+    "status": "GATED",
+    "first_three": "prepared exact page-local source wave CSS after carrier probe",
+    "fourth": "dependency-bound to FAQ paper conversion; never deploy earlier"
+  },
+  "regression_gate": {
+    "status": "PASS_CURRENT_READ_ONLY / MUST_REVERIFY_AFTER_ANY_WRITE",
+    "protected": ["ID35 active/page256 guard", "hero/review assets and alt text", "native Atomic tab/panel relationships", "no global resource mutation", "no full Elementor save"],
+    "current_continuation_wordpress_writes": 0
+  },
+  "exact_PASS_blockers_count": 9,
+  "exact_PASS_blockers": [
+    "scope_remote",
+    "page_local_css_carrier",
+    "review_points_semantics",
+    "stress_dom_order",
+    "expectations_article_ownership",
+    "FAQ_exact_runtime",
+    "review_prev_next_focus",
+    "review_ordinal_AX",
+    "responsive_unverified"
+  ],
+  "final_result": "OPEN_NOT_PASS. Do not claim perfect/reference-exact parity until all nine blocker classes plus the listed microfix/readback gates close with fresh evidence."
+}
