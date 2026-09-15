@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-scope-release-gate-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "status": "PREPARED_RELEASE_CRITERIA_NOT_RELEASED",
+  "purpose": "Define when page264 may safely release exclusive WordPress write scope to a later page without treating tool unavailability or a read-only checkpoint as completion.",
+  "scope_authority": "STATE.md remains PAGE264 ONLY until these criteria are actually proven and the full state history is safely preserved during a normal handoff.",
+  "current_release": false,
+  "blocking_write_capable_items": [
+    "Fresh trustworthy source/target live gate for v006 request-contact foreground.",
+    "Fresh trustworthy source/target live gate for v007 desktop comparison equal-column parity.",
+    "If either/both still fail, exactly one selected repository artifact/bundle insertion through oldtrees-next-remote-window-v004 plus mandatory server/browser readback.",
+    "If neither fails, explicit fresh evidence that both are already source-equivalent and no v006/v007 write is required."
+  ],
+  "mandatory_release_evidence": [
+    "Intended +5 WPVibe identity, target site connection and exact quota were verified in the successful live closeout window; >=10 D11 reserve preserved.",
+    "Fresh page264 _elementor_data bytes/SHA/JSON reconciled and valid.",
+    "Additional CSS has exactly one af-project:end, exactly one accepted v004 and v005 marker, and any selected v006/v007 marker exactly once; no unreconciled duplicate/partial marker.",
+    "Changed-section source/target visual check confirms the selected v006/v007 outcome and no regression to accepted v004/v005 surfaces/geometry.",
+    "No unresolved 429/5xx write outcome remains; every uncertain mutation was converted to exact readback before further action.",
+    "No other page264-specific prepared write remains justified by fresh reproduced evidence."
+  ],
+  "items_allowed_to_remain_open_after_release_as_proof_only": [
+    "Form33 service/topic native-required configuration and safe non-delivery behavior, provided no fallback code has been justified from a reproduced native failure.",
+    "Inner MetForm field visual measurements when no synchronized defect has been proven.",
+    "Read-only route/href confirmation when no route mismatch is reproduced.",
+    "Review/Tiszafa/Nordmann/four-FAQ direct interaction acceptance when action tooling is unavailable and no failure is reproduced.",
+    "Hero exact owner/cascade diagnosis when the observed offset has no proven writable owner.",
+    "Floating-dock owner discovery when the owner is global/unproven and no strictly page264-scoped correction is justified.",
+    "Deterministic six-view pixel/overlay acceptance while the original/replacement harness remains unavailable."
+  ],
+  "release_forbidden_if": [
+    "v006 or v007 is still a reproduced failure without completed write/readback or explicit no-write PASS evidence.",
+    "Current page/hash/marker state is unknown or drift is unexplained.",
+    "Any page264-specific fix is merely prepared but not reconciled against fresh live truth.",
+    "A 429/5xx mutation outcome is still UNKNOWN.",
+    "STATE.md cannot be safely updated while preserving complete history.",
+    "A parallel page264 QA/write owner is still active.",
+    "Release is being inferred only because WPVibe/Opera/public HTTP is unavailable."
+  ],
+  "handoff_contract_after_release": [
+    "Re-read fresh STATE.md and latest page264 continuation immediately before handoff.",
+    "Preserve all existing STATE history; never truncate the file to force a scope switch.",
+    "Record page264 closed implementation state and remaining proof-only/formal blockers separately.",
+    "Only then allow the next page handoff plan (for example bio-scope-handoff-ready-v002) to take write scope.",
+    "Shared Opera tabs must be explicitly released; the next page reuses at most those two, with no replacement fan-out."
+  ],
+  "current_reason_not_released": "WPVibe/Opera live gates are unavailable in this continuation and v006/v007 remain reproduced conditional implementation candidates. Static preparation alone cannot close them.",
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
