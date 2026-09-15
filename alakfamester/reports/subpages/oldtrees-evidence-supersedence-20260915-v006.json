@@ -1,0 +1,77 @@
+{
+  "schema_version": 6,
+  "package": "oldtrees-evidence-supersedence-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "purpose": "Single current page264 precedence map after correction of the Nordmann source timer contract. No WordPress mutation.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; page264 is not released.",
+  "precedence_rule": "Fresh trustworthy live readback/capture > STATE.md scope > current continuation/precedence/source-runtime reconciliation > current acceptance oracle/deploy manifest > prepared gated candidate > historical audit/build.",
+  "authoritative_current": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v013.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v005.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v003.json",
+    "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json",
+    "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "visual_parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
+    "css_cascade_ownership": "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json",
+    "content_reconciliation": "reports/subpages/oldtrees-content-coverage-reconciliation-20260914-v001.json",
+    "semantic_reconciliation": "reports/subpages/oldtrees-semantic-coverage-reconciliation-20260914-v001.json",
+    "visual_reconciliation": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "review_dot_pointer_gate": "build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json",
+    "form33_shared_baseline": "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json",
+    "form_required_gate": "build/oldtrees-form-required-validation-plan-20260915-v001.json",
+    "route_ledger": "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json",
+    "inner_form_visual_gate": "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json",
+    "hero_diagnostic": "build/oldtrees-hero-geometry-diagnostic-20260914-v001.json",
+    "dock_diagnostic": "build/floating-contact-dock-diagnostic-plan-20260915-v003.json",
+    "responsive_matrix": "build/oldtrees-responsive-acceptance-matrix-20260914-v001.json",
+    "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json"
+  },
+  "only_conditional_write_candidates": {
+    "v006": "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "v007": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+    "bundle": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+    "selection": "fresh synchronized source/target both-one-neither gate only; at most one exact repository insertion; no write if neither failure reproduces"
+  },
+  "critical_source_timer_truth": [
+    "manual is initialized once from carousel--manual and is never reassigned.",
+    "On a non-carousel--manual instance, successful arrow/dot/ArrowKey/swipe navigation calls start() and resets/restarts the 4000ms autoplay timer.",
+    "On a carousel--manual instance, autoplay is disabled from initialization onward.",
+    "v002 manual-latch tests and the v012 manual-latch sentence are obsolete and are not write authority."
+  ],
+  "protected_state": [
+    "page264 accepted historical Elementor baseline 48874 B / 09f661e0... / JSON valid until fresh live truth supersedes it",
+    "live visual v004 and v005; never replay or edit them from v006/v007 package",
+    "ID33 as existing page264 semantic owner",
+    "38/38 heading names, 11/11 ordered named regions, 5/5 main-media roles and accepted problem/comparison/request content",
+    "shared Form33 ID5/ID6/success state and #af-form-direct-call; historical 6068/ea091... is drift reference only, never a restore target",
+    "global ID14/header/dock/footer owners remain out of page264 mutation scope"
+  ],
+  "proof_only_not_new_failures": [
+    "Form33 service/topic native required and safe non-delivery behavior",
+    "inner form field computed styles/geometry",
+    "route/href confirmation",
+    "review keyboard/prev-next and review-dot pointer parity",
+    "Tiszafa native range interaction",
+    "Nordmann synchronized AX/timer reset/pause/reduced-motion parity under interaction v003",
+    "four FAQ disclosure interactions from their real rendered owner",
+    "hero exact computed owner/cascade",
+    "floating dock exact live owner and page264-local exception gate",
+    "six-view deterministic overlay/diff"
+  ],
+  "superseded_or_stale_for_execution": [
+    "reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json",
+    "reports/subpages/oldtrees-continuation-20260915-v012.json as current resume owner",
+    "build/oldtrees-next-remote-window-20260915-v004.json as current remote plan",
+    "build/oldtrees-interaction-acceptance-20260915-v002.json",
+    "any instruction that treats manual navigation as setting a permanent autoplay latch"
+  ],
+  "release_rule": "build/oldtrees-scope-release-gate-20260915-v001.json remains unsatisfied. v006/v007 must be closed by fresh no-write PASS or selected write plus mandatory readback, and no unresolved 429/5xx mutation may remain before scope handoff.",
+  "opera_memory_rule": "At most one source plus one target tab; reuse only; stop on stale/disconnected/repurposed state; no replacement/reload/reconnect loops.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_CURRENT_V013_REMOTE_V005_INTERACTION_V003_SCOPE_NOT_RELEASED"
+}
