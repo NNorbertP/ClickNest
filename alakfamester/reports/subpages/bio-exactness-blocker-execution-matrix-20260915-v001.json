@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "package": "bio-exactness-blocker-execution-matrix-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_EXECUTION_CLASSIFICATION",
+  "scope": "Page256 planning only. No WordPress/browser/global/shared-resource write.",
+  "authorities": [
+    "specs/bio-final-acceptance-20260914-v003.json",
+    "reports/subpages/bio-final-acceptance-status-20260915-v001.json",
+    "build/bio-page256-next-safe-package-20260914-v015.json",
+    "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "build/bio-reviews-current-fix-plan-20260914-v003.json"
+  ],
+  "class_A_live_read_then_small_page256_transaction": [
+    {
+      "item": "review_deep_link",
+      "owner": "af26000d",
+      "required_read": "fresh Atomic settings owner proving a supported _cssid-style path",
+      "write": "set id=ugyfelvelemenyek only if exact owner is proven",
+      "rollback_unit": "that single id setting",
+      "final_gate": "frontend id exactly once + deep-link + Atomic tab relationships unchanged"
+    },
+    {
+      "item": "third_review_role_copy",
+      "owner": "b2560031",
+      "required_read": "fresh saved text around unique ARKER'S anchor",
+      "write": "one exact text value only if still short",
+      "rollback_unit": "that one text value",
+      "final_gate": "visible exact source line once + tab name/body unchanged"
+    },
+    {
+      "item": "table_external_title",
+      "owner": "af260011",
+      "required_read": "fresh escaped boundary that completely contains caption -> thead transition",
+      "write": "atomic caption-to-external-p + aria-labelledby boundary edit only if returned snippet is complete",
+      "rollback_unit": "same exact boundary",
+      "final_gate": "caption 0, table 1, column headers 3, rowHeaders 4, exact accessible name"
+    },
+    {
+      "item": "FAQ_before_CTA_order",
+      "owner": "af260015 settings._css_classes",
+      "required_read": "fresh exact settings snippet",
+      "write": "remove only af-faq-content token/value if still present and still the winning order owner",
+      "rollback_unit": "that one class token",
+      "final_gate": "FAQ before CTA + four controls still functional + copy unchanged"
+    },
+    {
+      "item": "final_CTA_mail_child_order",
+      "owner": "9a1b2c3d current page-local markup",
+      "required_read": "fresh exact complete anchor child boundary",
+      "write": "smallest exact child-order edit only if source/target DOM still differ",
+      "rollback_unit": "same child boundary",
+      "final_gate": "visible label then strong email; href and exact aria-label unchanged"
+    }
+  ],
+  "class_B_page_local_style_carrier_dependent": [
+    {
+      "item": "approved_phase1_visual_bundle",
+      "prerequisite": "af260016 inert style carrier probe PASS with preserved visible content",
+      "delivery": "one style#af-page256-parity owner containing only current approved page256 blocks",
+      "includes": ["hero desktop geometry", "technology/table/FAQ static surfaces", "first three waves", "review quote", "review active dot", "mobile card padding"],
+      "excludes": ["expectations before exact article ownership", "fourth wave before paper FAQ", "unmeasured mobile h2 override"]
+    },
+    {
+      "item": "review_ordinal_visual_and_AX",
+      "prerequisite": "carrier PASS + fresh owner diagnostic reconfirming two generated text owners",
+      "delivery": "isolated page-local ordinal block using empty generated text + SVG background",
+      "final_gate": "one visual ordinal/tab + zero ordinal AX staticText + exact tab names"
+    }
+  ],
+  "class_C_requires_fresh_complete_saved_owner_and_safe_atomic_restructure": [
+    {
+      "item": "stress_dom_order",
+      "current_proven_rendered_order": "p1 -> card -> p2",
+      "required_exact_order": "p1 -> p2 -> article/list",
+      "repo_owner_snapshot": "absent",
+      "rule": "Fresh live saved owner boundary mandatory. Do not reconstruct from public DOM or obsolete v014 wrapper plan.",
+      "write_authorization": "Only if a supported single atomic owner-level replacement/move can be proven; otherwise remain blocked."
+    },
+    {
+      "item": "expectations_article_ownership",
+      "required_exact": "two source-equivalent article owners with correct left/right child ownership",
+      "repo_owner_snapshot": "absent",
+      "rule": "Fresh live saved owner boundary mandatory. Role-count-only or multi-step partial regrouping cannot clear exactness.",
+      "write_authorization": "Only one safely bounded owner-level transaction or another separately proven atomic primitive; otherwise remain blocked."
+    }
+  ],
+  "class_D_diagnostic_first_semantic_candidate": [
+    {
+      "item": "Panasonic_three_point_list_semantics",
+      "required_read": "active Panasonic section-local AX + fresh exact saved spans",
+      "candidate": "ARIA-equivalent list/listitem/aria-owns shape from bio-review-points-semantics-v001",
+      "rule": "Candidate is not approved until AX proves list1/items3, correct order, intro/final outside, no tabPanel reading-order regression.",
+      "abort": "Any duplication/reorder/name drift or non-isolatable saved boundary."
+    },
+    {
+      "item": "stress_aside_to_article_role",
+      "required_read": "fresh complete start/end tag boundaries proving a tag-only atomic edit",
+      "rule": "May close article/complementary role count but does not by itself close physical order; never conflate the two blockers."
+    }
+  ],
+  "class_E_current_ownership_blocked_no_sanctioned_page_local_runtime": [
+    {
+      "item": "FAQ_exact_runtime",
+      "gap": "native details/summary is functional but differs from source button role, explicit aria contract, sibling keyboard collection and 280/220ms motion",
+      "forbidden": ["global ID35/Code Snippets mutation", "ad-hoc page-local JavaScript inferred merely from CSS carrier", "fake ARIA without synchronized behavior"],
+      "clear_only_if": "An existing sanctioned page-local runtime owner is proven or scope/project rules explicitly authorize a separately reviewed runtime path."
+    },
+    {
+      "item": "review_prev_next_panel_focus",
+      "gap": "current live ID35 switches tab via click but does not focus newly active tabpanel as source does",
+      "forbidden": ["overwrite live ID35 from stale repo mirror", "global Code Snippets mutation", "replace native Atomic tabs"],
+      "clear_only_if": "Fresh live ID35 readback plus a sanctioned physical runtime owner allows the smallest focus-only correction."
+    }
+  ],
+  "class_F_browser_measurement_only_before_any_write": [
+    "responsive breakpoints 1000/900/760/720/560/~390",
+    "mobile h2 winning owner",
+    "first review rendered media aspect/fit",
+    "hero CTA actual visual state",
+    "technology icon badge exact geometry",
+    "final desktop/responsive pixel acceptance"
+  ],
+  "global_stop_rules": [
+    "PAGE264 ONLY remains active -> no page256 WordPress write.",
+    "WPVibe disabled/untrusted identity/quota unknown -> no write.",
+    "429/ambiguous mutation result -> stop and read back before any retry.",
+    "No full Elementor save, raw SQL mutation, global CSS, global ID35/Code Snippets or shared-resource workaround.",
+    "A prepared candidate never equals authorization; fresh owner evidence wins."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
