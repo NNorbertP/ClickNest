@@ -6,7 +6,15 @@
   "mode": "READ_ONLY",
   "wordpress_writes": 0,
   "supersedes_for_execution": "build/hedge-rendered-dom-diagnostic-20260915-v002.json",
-  "goal": "Harvest all remaining page272 local structural/semantic/review/head evidence from one trustworthy rendered target payload plus one matching reference payload, while explicitly preserving native validation semantics and avoiding false review-content PASS from lossy normalization.",
+  "goal": "Harvest the remaining page272 target structural/semantic/review/head evidence from one trustworthy JavaScript-executed rendered target HTML payload, supplement it with at most one trustworthy source + one target Opera AX/screenshot pair, and keep raw reference DOM/head requirements OPEN when no trustworthy source-HTML route exists. Preserve native validation semantics and avoid false PASS from lossy text normalization or semantically duplicated IDREFs.",
+  "proof_route_split": {
+    "target_raw_dom_head": "WPVibe get_page_html when live",
+    "target_saved_state": "WPVibe narrow saved page/Code Snippets/Form33 reads",
+    "reference_target_accessibility": "Opera AX/jq only, maximum one reference + one target project tab",
+    "coarse_visual": "Opera screenshot only",
+    "reference_raw_dom_head": "separate trustworthy source route; otherwise remain OPEN",
+    "interactions": "not provided by the current Opera connector; safe validation and click/key/pointer behavior remain OPEN unless another sanctioned action-capable route exists"
+  },
   "target_selectors": {
     "review_root": ".elementor-element-c3d30005",
     "review_tablist": ".elementor-element-c3d30005 [role=tablist]",
@@ -23,14 +31,16 @@
     "headings": "h1,h2,h3,h4,h5,h6"
   },
   "trust_gate": [
-    "target URL/title/content all identify /soveny-specialista/",
-    "reference URL/title/content all identify /soveny-specialista.html",
-    "no stale prior-page AX/DOM payload",
-    "browser branch uses at most one source + one target tab and opens no replacement loop",
-    "if any identity mismatch/disconnect occurs, stop the browser branch and record no PASS"
+    "target rendered HTML URL/content identity identifies /soveny-specialista/",
+    "if Opera branch is used, target URL/title/content all identify /soveny-specialista/ and reference URL/title/content all identify /soveny-specialista.html",
+    "no stale prior-page AX/HTML payload",
+    "Opera branch uses at most one source + one target project tab and opens no replacement/reconnect loop",
+    "if any browser identity mismatch/disconnect occurs, stop the browser branch and record no browser-derived PASS",
+    "absence of a raw reference DOM/head route is OPEN proof, not target failure and not permission to infer source attributes"
   ],
   "text_capture_contract": {
-    "capture_both": ["raw textContent", "normalized visible-text comparison string"],
+    "capture_both_when_raw_html_available": ["raw textContent", "normalized visible-text comparison string"],
+    "opera_ax_capture": "Preserve the exact AX-exposed string and source order; do not pretend AX text is raw DOM textContent.",
     "normalization_allowed": [
       "Unicode NFC normalization",
       "convert non-breaking whitespace characters to ordinary spaces for comparison",
@@ -45,7 +55,7 @@
       "quote-mark substitution",
       "company/person/role token removal"
     ],
-    "rule": "A mismatch in meaningful characters/tokens remains a mismatch even if visual wrapping differs. Keep raw text evidence so normalization can be audited."
+    "rule": "A mismatch in meaningful characters/tokens remains a mismatch even if visual wrapping differs. Keep raw target text evidence and exact source AX/raw-source evidence so normalization can be audited."
   },
   "review_capture": {
     "known_exact_tab_names": [
@@ -54,24 +64,26 @@
       "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
     ],
     "known_saved_target_image_ids": [75, 76, 77],
-    "for_each_pair": [
-      "source-order index",
-      "tab DOM id, raw visible text, computed accessible name, aria-label, aria-labelledby, aria-controls, aria-selected, tabindex",
-      "panel DOM id, aria-labelledby, role, hidden/display/inert state and source-order index",
+    "target_raw_html_for_each_pair": [
+      "target source-order index",
+      "tab DOM id, raw visible text, aria-label, aria-labelledby, aria-controls, aria-selected, tabindex",
+      "panel DOM id, aria-labelledby, role, hidden/display/inert state and target source-order index",
       "raw + normalized full visible quote text",
       "raw + normalized visible company/person/role line(s)",
-      "image src and currentSrc",
-      "image srcset/sizes when emitted",
-      "image naturalWidth/naturalHeight and rendered width/height when available",
-      "image alt and computed accessible name",
-      "stable class/data/attachment clue when present"
+      "image src/currentSrc/srcset/sizes/alt and stable class/data/media clue where emitted"
+    ],
+    "opera_ax_when_available": [
+      "source and target tablist/tabs/panels accessible names in order",
+      "source and target full visible review copy/company-person-role text when completely represented in AX",
+      "source and target image accessible names where represented"
     ],
     "pair_checks": [
-      "exact three source-order tab↔panel bijections",
-      "each tab aria-controls resolves to exactly its panel",
-      "each panel aria-labelledby resolves to exactly its tab",
-      "no quote/author/image content accidentally duplicated between panels",
-      "current target compared against trustworthy reference before any content correction"
+      "target exactly three source-order tab↔panel bijections",
+      "each target tab aria-controls resolves to exactly its target panel",
+      "each target panel aria-labelledby resolves to exactly its target tab",
+      "no target quote/author/image content accidentally duplicated between panels",
+      "visible review copy/order is compared against trustworthy reference evidence before any content correction",
+      "exact source DOM tab-panel wiring remains OPEN unless a raw-source route actually exposes it"
     ],
     "write_rule": "A content/media mismatch is diagnostic only here. It becomes its own smallest-owner package and is never folded into semantic ID36."
   },
@@ -82,35 +94,57 @@
     "service_label": ["id", "raw text"],
     "city_input": ["id", "name", "aria-label", "aria-labelledby", "aria-describedby", "aria-errormessage", "aria-invalid", "required"],
     "city_help": ["id", "raw text"],
-    "relation_resolution": "Resolve every IDREF token to its actual element and capture the referenced raw text; unresolved or duplicate IDs fail the semantic gate."
+    "relation_resolution": "Resolve every IDREF token to the actual target element, capture referenced owner/type/raw text, and prove the target ID occurs exactly once; unresolved or duplicate IDs fail the semantic gate.",
+    "semantic_duplication_checks": [
+      "For form aria-describedby, compare every current referenced text/owner to the intended direct-call paragraph.",
+      "For service aria-labelledby, compare every current referenced text/owner to the intended service label.",
+      "For city aria-describedby, compare every current referenced text/owner to the intended city help.",
+      "If the exact intended element ID is already referenced, v005 addIdRef is a no-op for that relation.",
+      "If a different existing referenced element already supplies semantically equivalent intended text/purpose, HOLD v005 to avoid duplicate computed speech.",
+      "If a different native relation is stronger or semantically different but valid, HOLD and reconcile ownership rather than append blindly."
+    ]
   },
   "form_safe_validation_capture_if_available": {
     "network_policy": "No real form submission, entry creation, SMTP or external request. Only a client-side/native validation trigger that can be proven not to send data is eligible.",
-    "capture_after_trigger": [
+    "current_opera_limit": "The current Opera connector has no click/key/JS interaction automation, so it cannot itself satisfy this trigger.",
+    "capture_after_trigger_if_another_sanctioned_route_exists": [
       "same form/service/city ARIA attributes as idle",
       "all validation/error nodes added under Form33 with IDs/roles/text",
       "whether aria-describedby/aria-errormessage/aria-invalid changed",
       "whether each added IDREF resolves exactly once",
-      "whether project-owned descriptor IDs remain alongside native error/help IDs rather than replacing them"
+      "whether project-owned descriptor IDs remain alongside native error/help IDs rather than replacing them",
+      "whether any meaningful label/help/error/direct-call phrase is now repeated through multiple resolved relations"
     ],
-    "if_no_safe_trigger": "Do not improvise a submission. Leave dynamic validation-state proof open and retain the v005 preservation design plus live idle conflict gate."
+    "if_no_safe_trigger": "Do not improvise a submission. Leave dynamic validation-state proof open and retain the v005 preservation plus semantic-duplication live gates."
   },
   "other_exact_capture": {
-    "headings": "Ordered main-content array of {level, rawText, normalizedText, stable owner/ancestor}; exclude global header/footer headings from page-local tree but record them separately if encountered.",
-    "proof_carousel": "Container role; direct item count; emitted item roles; parent roles; names; active marker; owner classes/data; do not authorize role rewrite until source is re-observed in same trustworthy pair.",
-    "hero": "Hero art ancestry plus ordered hero-copy heading/paragraph/CTA descendants for each candidate common ancestor.",
-    "gallery": "Exact Sövénymunkák heading node ancestry plus b2e2c001 ancestry.",
-    "form_outer": "af2e004c ancestry plus Form33 wrapper ancestry; candidate root must contain complete source-equivalent intro+form and must not swallow unrelated neighboring sections.",
-    "document_head": "title; meta description; canonical count/href; robots; og:title/og:description/og:url; JSON-LD script count, parser-validity, top-level @type/@graph types and owner clues. D09 /slug/ route adaptation is allowed."
+    "headings_target": "Ordered target main-content array of {level, rawText, normalizedText, stable owner/ancestor}; exclude global header/footer headings from the page-local tree but record them separately if encountered.",
+    "headings_reference": "Use trustworthy source AX levels/names/order when exposed; raw source DOM remains preferable and any unavailable detail stays OPEN.",
+    "proof_carousel_target": "Container role; direct item count; emitted item roles; parent roles; names; active marker; owner classes/data.",
+    "proof_carousel_reference": "Use trustworthy source AX/DOM evidence in the same evidence window; do not authorize role rewrite from historical memory alone.",
+    "hero_target": "Hero art ancestry plus ordered hero-copy heading/paragraph/CTA descendants for each candidate common ancestor.",
+    "gallery_target": "Exact Sövénymunkák heading node ancestry plus b2e2c001 ancestry.",
+    "form_outer_target": "af2e004c ancestry plus Form33 wrapper ancestry; candidate root must contain complete source-equivalent intro+form and must not swallow unrelated neighboring sections.",
+    "outer_reference": "Source AX hierarchy may support section-scale boundary identity, but raw-source DOM ancestry remains OPEN if AX is insufficient.",
+    "document_head_target": "title; meta description; canonical count/href; robots; og:title/og:description/og:url; JSON-LD script count, parser-validity, top-level @type/@graph types and owner clues. D09 /slug/ route adaptation is allowed.",
+    "document_head_reference": "Requires a trustworthy raw-source head route; Opera AX is not a head provider. If unavailable, source head comparison stays OPEN and no Yoast write is authorized."
   },
-  "v005_deployment_gate_from_same_payload": [
+  "v005_deployment_gate_from_target_payload": [
     "review root count=1, tablist count=1, tab count=3 and expected source order",
     "current review aria naming state is conflict-free with exact label contract",
     "Form33 wrapper/form/direct-call/service/city cardinality gates pass",
-    "all current native IDREF tokens resolve and no unexpected semantic owner requires HOLD",
+    "all current native IDREF tokens resolve to exact unique target owners and no unexpected semantic owner requires HOLD",
+    "no different current IDREF already supplies the same intended direct-call/service-label/city-help semantic phrase unless it is exactly the intended element relation",
     "planned/reused relation IDs are unique",
     "v005 is not already live",
-    "any unresolved native semantic ambiguity => HOLD rather than write"
+    "any unresolved native semantic ambiguity or semantic duplication risk => HOLD rather than write"
+  ],
+  "postwrite_acceptance_if_v005_runs": [
+    "all pre-existing valid native IDREF/error relations remain present and resolved",
+    "each intended direct-call/service-label/city-help phrase contributes once to computed accessible semantics",
+    "no duplicated meaningful help/direct-call/label speech through different resolved IDs",
+    "review inner text/media remains byte/attribute-equivalent to the prewrite target capture",
+    "page272 saved Elementor hash remains unchanged"
   ],
   "no_write_findings": [
     "review panel inner-content mismatch",
@@ -119,9 +153,10 @@
     "proof carousel group/listitem difference",
     "head metadata difference",
     "unexpected extra source/target section semantics",
-    "dynamic validation-state uncertainty"
+    "dynamic validation-state uncertainty",
+    "missing raw reference DOM/head route"
   ],
-  "browser_memory_rule": "Exactly one source + one target project tab maximum; zero replacement/reconnect loops. Stop on stale, repurposed or disconnected state.",
-  "call_budget_effect": "No extra target WPVibe call versus v002 when all target evidence comes from the already-planned broad rendered payload; optional safe client-side validation capture is browser-side and must not create an entry/network submission.",
-  "status": "READY_FOR_STRICT_ONE_PASS_PAGE272_PRESERVATION_DIAGNOSTIC"
+  "browser_memory_rule": "Exactly one source + one target project tab maximum when Opera is used; zero replacement/reconnect loops and zero editor/admin/diagnostic tabs. Stop on stale, repurposed or disconnected state.",
+  "call_budget_effect": "No extra target WPVibe call versus the live plan when target DOM/head evidence comes from the already-planned broad get_page_html read. Do not spend extra calls or Opera tabs merely to compensate for unavailable source raw DOM/head; leave that proof OPEN.",
+  "status": "READY_FOR_CAPABILITY_ALIGNED_ONE_PASS_PAGE272_TARGET_DIAGNOSTIC_WITH_SEMANTIC_DEDUP_GATE"
 }
