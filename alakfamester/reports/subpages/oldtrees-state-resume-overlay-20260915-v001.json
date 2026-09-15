@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-state-resume-overlay-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Planning-pointer overlay only. STATE.md remains the authoritative write-scope/history document and is not modified by this package.",
+  "reason": "The current STATE.md SHA 233f9e93ad1318ebeecf80858308ced8079e0fc3 correctly preserves PAGE264 ONLY scope, accepted live v004/v005 state and historical evidence, but its Current planning/evidence pointer block still names continuation v013, evidence v005, remote v005 and release v001. Replacing the full 31KB history solely for pointer maintenance would create unnecessary corruption risk.",
+  "state_sha_observed": "233f9e93ad1318ebeecf80858308ced8079e0fc3",
+  "state_facts_to_keep_authoritative": [
+    "WordPress write scope remains page264 only.",
+    "Every page264 Additional CSS effect selector must be explicitly page264-scoped.",
+    "Live v004 and v005 are accepted preserve-only state and must not be replayed.",
+    "Historical accepted page264 saved-data baseline remains 48874 B / 09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a / JSON valid until fresh live truth supersedes it.",
+    "No other page, global header/footer/dock owner, shared media, shared plugin setting, SMTP or real/external form submission is authorized."
+  ],
+  "stale_state_pointer_values_do_not_resume_from": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v013.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v005.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v005.json",
+    "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v001.json"
+  },
+  "current_resume_pointers": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v015.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v008.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v006.json",
+    "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v002.json",
+    "visual_minimality_gate": "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json",
+    "tool_capability_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v001.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v003.json"
+  },
+  "precedence_rule": "Use STATE.md for write scope and preserved historical facts, but use current_resume_pointers above for execution planning. Fresh trustworthy live readback always outranks both.",
+  "safe_merge_rule": "If STATE.md is later updated, re-read the complete current file and preserve all history. Do not reconstruct/truncate it from snippets. Only after exact full-current readback may the pointer overlay be merged and this overlay retired.",
+  "wordpress_writes": 0,
+  "state_file_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "STATE_SCOPE_PRESERVED_CURRENT_RESUME_POINTERS_OVERLAID_WITHOUT_FULL_FILE_RISK"
+}
