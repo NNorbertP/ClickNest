@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "package": "bio-faq-cta-post-wave-spacing-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "MEASUREMENT_GATED_POST_WAVE_CANDIDATE_NOT_DEPLOYED",
+  "purpose": "Keep the source .wave + .section 24px reduced top rhythm separate from base FAQ/CTA layout and apply it only after the revised expectations->FAQ wave is rendered and proven.",
+  "payload": "build/bio-faq-cta-section-spacing-v001.css",
+  "depends_on": [
+    "FAQ_CTA_STATIC_LAYOUT PASS using bio-faq-cta-page-local-delivery-20260915-v004.json",
+    "FAQ_WAVE4 PASS using bio-wave-source-faq-v002.css",
+    "fresh same-browser source/target vertical geometry at the expectations->FAQ boundary"
+  ],
+  "decision_rule": [
+    "Measure from the bottom/visual end of the wave to the FAQ eyebrow/H2 and compare source vs target at desktop and <=720.",
+    "If target already matches source after wave4, record no-op PASS and do not append section-spacing-v001.",
+    "Only if target remains exactly source-contract-too-tall by the wave-adjacent section rhythm should section-spacing-v001 be appended as one uniquely marked page-local block.",
+    "After append, immediately re-measure the same boundary and ensure no negative overlap/clipping or CTA shift."
+  ],
+  "why_not_base_payload": "The source reduced top padding is conditional on a preceding .wave. Applying it before wave4 is live/proven can create a 24px top-gap error. Historical wave evidence explicitly warned not to bundle this reduction blindly.",
+  "preserve": ["FAQ/CTA DOM/order", "FAQ controls", "CTA H2 accessible name", "mail/form actions", "wave4 geometry", "no global/shared resource"],
+  "rollback": "Remove only the post-wave spacing marker block from style#af-page256-parity if live geometry regresses.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
