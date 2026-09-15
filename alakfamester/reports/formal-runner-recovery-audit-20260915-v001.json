@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "package": "formal-runner-recovery-audit-20260915-v001",
+  "date": "2026-09-15",
+  "scope": "read-only repository recovery audit; no WordPress or browser writes",
+  "missing_contracts": [
+    "alakfamester/specs/acceptance.json",
+    "alakfamester/specs/behaviors.json",
+    "alakfamester/tools/"
+  ],
+  "readme_declares": [
+    "node tools/measure.cjs",
+    "node tools/behaviors.cjs",
+    "node tools/compare-behaviors.cjs",
+    "lib.cjs / inventory.cjs / pin-external.cjs runner family"
+  ],
+  "recovery_checks": {
+    "main": "missing",
+    "branch_alakfamester_sync_20260911": "recursive tree inspected; specs directory exists but acceptance.json/behaviors.json and tools directory are absent",
+    "git_path_history_acceptance": "GET commits?path=alakfamester/specs/acceptance.json returned []",
+    "git_path_history_behaviors": "GET commits?path=alakfamester/specs/behaviors.json returned []",
+    "git_path_history_tools": "GET commits?path=alakfamester/tools returned []",
+    "tag_ref_endpoint": "connector returned 404/not available; no recoverable evidence obtained from tag refs"
+  },
+  "decision": "REPOSITORY_RECOVERY_EXHAUSTED_FOR_DECLARED_MISSING_MACHINE_ACCEPTANCE_FILES",
+  "do_not": [
+    "do not invent or regenerate acceptance.json/behaviors.json from memory",
+    "do not recreate the historical runner and call its output equivalent to the frozen original without an explicit new acceptance decision",
+    "do not declare PIXEL_PASS while deterministic same-browser viewport/DPR/zoom capture+diff remains unavailable"
+  ],
+  "allowed_future_paths": [
+    "recover exact files from an external archive/back-up if provenance is verifiable",
+    "or explicitly define a new acceptance harness/spec as a new decision rather than pretending it is the missing frozen one"
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
