@@ -1,0 +1,48 @@
+{
+  "schema_version": 8,
+  "package": "oldtrees-next-remote-window-20260915-v007",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CORRECTION_OVERLAY_ON_V006_NO_SCOPE_CHANGE",
+  "supersedes_for_planning": "build/oldtrees-next-remote-window-20260915-v006.json",
+  "base_plan": "build/oldtrees-next-remote-window-20260915-v006.json",
+  "inheritance_rule": "All v006 phases, v006/v007 CSS artifact identities, both/one/neither visual decision, one-write limit, readback/rollback rules, Form33/route/hero/dock/responsive gates, D11 reserve and Opera memory rules remain unchanged except where explicitly corrected below.",
+  "scope": "PAGE264 ONLY. No WordPress write is performed or newly authorized by this overlay.",
+  "corrected_authoritative_inputs": {
+    "interaction_acceptance": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+    "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
+    "source_runtime": "build/source-interactions-v001.js",
+    "source_runtime_blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d"
+  },
+  "corrected_phase_1_rule": "Before any remote mutation, re-read current STATE scope, current continuation/precedence/release overlay, exact visual artifacts, interaction v004 and source-carousel reconciliation v002. Do not resume from v006's recorded v003/v001 interaction identities.",
+  "corrected_phase_8_nordmann": {
+    "manual_navigation": "manual is initialized once from carousel--manual and never reassigned. On a non-manual instance successful prev/next/dot/Arrow/swipe calls go(...) then start(), resetting/restarting the approximately 4000ms timer.",
+    "broken_slide_zero": "If natural image failure leaves zero slides, source drop() calls stop(), hides the nearest project/proof owner (or carousel), then returns.",
+    "broken_slide_one": "If natural image failure leaves exactly one slide, source drop() executes if(slides.length<2) stop(), so any running autoplay timer is cancelled immediately, then go(...) re-renders the clamped state.",
+    "broken_slide_two_plus": "If two or more slides remain, source drop() removes/reindexes/clamps and calls go(...) without stop()/start(); the existing interval is not reset solely by the removal.",
+    "test_policy": "Do not deliberately break assets. If the path occurs naturally, source and target must match the corrected contract."
+  },
+  "explicitly_superseded_v006_text": [
+    "authoritative_inputs.interaction_acceptance -> interaction v003",
+    "authoritative_inputs.source_carousel_runtime_reconciliation -> v001",
+    "phase_1 interaction_v003/source-carousel-v001 recorded identities",
+    "phase_8 statement that broken-slide drop itself calls neither stop() nor start() in all cases"
+  ],
+  "unchanged_visual_transaction": {
+    "v006": "build/oldtrees-visual-v006-contact-text-cascade.css",
+    "v007": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+    "bundle": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+    "rule": "Fresh synchronized both/one/neither live gate only; at most one exact current repository insertion; no write on neither; HOLD on ambiguous evidence."
+  },
+  "stop_conditions": [
+    "WPVibe disabled/unverified or unsafe quota -> no WordPress write.",
+    "Opera disconnected/stale/repurposed -> no screenshot-driven write and no replacement tabs.",
+    "Fresh live truth contradicts repository baseline -> reconcile first.",
+    "Any execution path still relies on interaction v003/source-carousel v001 broken-slide no-stop wording -> stop and use v004/v002 instead.",
+    "No deterministic visual harness -> no PIXEL_PASS claim."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false,
+  "status": "CURRENT_REMOTE_PLAN_V007_INHERITS_V006_WITH_CORRECTED_CAROUSEL_ORACLE"
+}
