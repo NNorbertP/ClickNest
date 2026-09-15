@@ -1,0 +1,12 @@
+/* af-oldtrees-visual-v010:start
+ * Scope: page264 desktop floating contact dock only.
+ * v017 draws a body::after fallback at z-index 9990 over the real runtime .af-source-dock (z-index 900).
+ * ID7 already emits the correct accessible dock markup, so remove only the obsolete fallback on page264.
+ */
+@media (min-width: 760px) {
+  body.page-id-264::after {
+    content: none !important;
+    display: none !important;
+  }
+}
+/* af-oldtrees-visual-v010:end */
