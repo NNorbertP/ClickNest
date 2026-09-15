@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-source-runtime-reconciliation-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Read-only reconciliation of recovered source interaction behavior used by page264 acceptance planning. No WordPress write, no runtime deployment and no scope expansion.",
+  "source_runtime": {
+    "path": "build/source-interactions-v001.js",
+    "github_blob_sha": "2e8e0e3fc9be28510595aad42b4b7dc309cdd30d",
+    "relevant_components": [".js-ba before/after", ".carousel.js-carousel"]
+  },
+  "before_after_contract": [
+    "Each .js-ba initializes once using data-af-ba-init=1.",
+    "The native range input value is mirrored to the visible percentage label and the --ba-pos CSS custom property.",
+    "An image error removes the closest .ba component; no replacement implementation should be invented from acceptance tooling."
+  ],
+  "carousel_confirmed_contract": {
+    "initialization": "One-time data-af-carousel-init guard; current index starts at zero and go(index) applies transform, aria-hidden, data-active, dot aria-current, caption and counter state.",
+    "autoplay": "start() first calls stop(), then refuses a new timer when manual, prefers-reduced-motion, disconnected, fewer than two slides or missing slides. Otherwise it starts a 4000ms interval that advances one slide.",
+    "manual_mode": "manual is initialized once from c.classList.contains('carousel--manual'). User navigation does not set or mutate manual.",
+    "manual_navigation": "Previous/next buttons, data-go dots, ArrowLeft/ArrowRight and a qualifying horizontal swipe all call go(...) followed by start(). On a normal non-manual carousel this resets/restarts the 4000ms countdown unless another start() guard blocks it.",
+    "swipe": "Pointer movement changes slide only when absolute horizontal movement is at least 40px and is not smaller than absolute vertical movement.",
+    "pause_resume": "mouseenter and focusin call stop(); mouseleave and focusout call start(). Hover and focus are not tracked as independent pause flags, so compound exit order must be compared live against the source rather than redesigned.",
+    "reduced_motion": "A prefers-reduced-motion change invokes start(); start() stops any old timer first and then conditionally creates a new one only if the current guards allow it.",
+    "broken_slide": "Image-error drop() removes the broken slide and matching dot, reindexes remaining data-go values, clamps index, hides the enclosing .project-card__extra/.hero-proof when no slides remain, and calls go(index). drop() itself does not call stop() or start()."
+  },
+  "planning_corrections": [
+    {
+      "incorrect_claim": "First user navigation permanently latches autoplay off by setting manual=true.",
+      "correction": "False. manual comes only from the carousel--manual class at initialization. Normal user navigation ends with start(), so a non-manual carousel restarts its countdown."
+    },
+    {
+      "incorrect_claim": "If runtime image removal leaves fewer than two slides, autoplay is guaranteed to stop immediately.",
+      "correction": "Too strong. start() will refuse a new timer when fewer than two slides exist, but drop() itself neither stops nor restarts an already-running timer. If this rare state occurs naturally, synchronized source/target observation is required."
+    }
+  ],
+  "acceptance_consequences": [
+    "Use build/oldtrees-interaction-acceptance-20260915-v002.json schema >=6 as the current page264 interaction plan.",
+    "For Nordmann normal mode, verify autoplay before manual action and verify restart approximately four seconds after manual navigation rather than expecting a permanent by-user stop.",
+    "Treat carousel--manual as a distinct class-defined mode with no autoplay.",
+    "Do not synthesize broken media merely to test the error path; if it occurs naturally, compare source and target without asserting timer behavior not guaranteed by drop().",
+    "Preserve the existing runtime owner until a synchronized live source-target failure is reproduced."
+  ],
+  "wordpress_impact": "NONE. These are repository acceptance/evidence corrections only; no live JavaScript, WordPress data, Additional CSS, Form33 or shared runtime was changed.",
+  "opera_impact": "NONE. No browser connection, navigation or new tab was used for this reconciliation.",
+  "status": "SOURCE_RUNTIME_CONTRACT_RECONCILED_FOR_PAGE264_ACCEPTANCE",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
