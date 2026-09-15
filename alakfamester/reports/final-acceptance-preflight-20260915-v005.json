@@ -1,0 +1,68 @@
+{
+  "schema_version": 5,
+  "package": "final-acceptance-preflight-20260915-v005",
+  "date": "2026-09-15",
+  "supersedes_for_planning": "reports/final-acceptance-preflight-20260915-v004.json",
+  "scope": "Read-only finalization gate. STATE.md remains PAGE264 ONLY and is the sole current WordPress write-scope authority.",
+  "tool_state": {
+    "wpvibe": "Do not call again in this continuation: first attempt returned disabled; intended +5 site/quota unknown.",
+    "opera": "Do not call again in this continuation: stale/disconnected evidence; zero new/replacement tabs.",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0
+  },
+  "active_page264_not_final": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v011.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v004.json",
+    "remote_plan": "build/oldtrees-next-remote-window-20260915-v004.json",
+    "deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
+    "parser_qa": "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json",
+    "remaining_implementation_candidates": ["conditional v006 request-contact foreground", "conditional v007 equal comparison columns"],
+    "write_rule": "Fresh +5/site/exact quota + page/hash/marker + trusted paired visual gate; select at most one exact repository artifact/bundle; mandatory readback; 429/5xx UNKNOWN until readback.",
+    "proof_only": ["Form33 native required/safe rejection", "inner field visual measurement", "href readback", "review/Tiszafa/Nordmann/four FAQ interactions", "hero exact owner/cascade", "dock exact owner discovery", "six-view deterministic acceptance"]
+  },
+  "page256_future_not_final": {
+    "handoff": "build/bio-scope-handoff-ready-20260915-v002.json",
+    "precedence": "reports/subpages/bio-evidence-supersedence-20260915-v009.json",
+    "continuation": "reports/subpages/bio-continuation-20260915-v029.json",
+    "remote_plan": "build/bio-next-remote-window-20260915-v005.json",
+    "budget": "build/bio-remote-call-budget-20260915-v006.json",
+    "first_write": "inert page-local carrier probe after explicit safe handoff and full live ID35 readback; never global CSS/runtime fallback",
+    "hard_exactness": ["Panasonic point-list section-local semantics", "stress physical order", "expectations two-article ownership", "FAQ exact runtime", "review prev/next panel focus", "review ordinal AX", "responsive acceptance"],
+    "critical_preserve": "Never reconstruct live ID35 from stale repo mirror; general native Atomic Tabs keyboard behavior is already project-proven."
+  },
+  "page272_future_not_final": {
+    "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v010.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "only_semantic_candidate": "existing ID36 -> hedge-semantic-runtime-v005.php after fresh baseline/rollback/cardinality/resolved native IDREF/unique-ID/budget gates",
+    "form_rule": "Native required first. Server fallback v003 is deferred and must not be generated/deployed from uncertainty or bundled into initial v005 semantic deployment.",
+    "page_css_candidate": "NONE"
+  },
+  "accepted_do_not_reopen": [
+    "page264 accepted content/main-media/semantics plus live visual v004/v005",
+    "page272 baseline, 26/26 shared-media recovery, final 28/28 page-local gallery, five regions, CTA/contact/24h, D09 and heading visible text",
+    "page268 CTA order and seven video controls",
+    "completed page260/page262/page266/page270 hero/class work",
+    "shared Form33 ID5 photo validator, ID6 rows=5 and configured local success state"
+  ],
+  "global_open": {
+    "header": "build/header-deployment-plan-v010.json after explicit global handoff only; exact future account is +5 per reports/header-account-preflight-reconciliation-20260915-v001.json",
+    "floating_dock": "diagnostic-first; source contract known and target AX/markup historically present, but live CSS owner remains unproven"
+  },
+  "asset_open": {
+    "reconciliation": "reports/source-asset-blocker-reconciliation-20260915-v001.json",
+    "ellwoodi": "exact frozen WEBP equivalence unresolved; provenance candidate is not exact proof",
+    "portrait": "exact bytes unresolved; first prove whether current/frozen acceptance requires the portrait"
+  },
+  "formal_machine_acceptance": {
+    "recovery": ["reports/formal-acceptance-artifact-recovery-20260915-v001.json", "reports/formal-runner-recovery-audit-20260915-v001.json"],
+    "originals": "Frozen acceptance/behavior specs and historical runner are unrecoverable from inspected Git; do not synthesize and label as originals.",
+    "still_needed": ["original external artifacts or explicitly authorized replacement contract", "deterministic same-browser six-view DPR/zoom/font/load captures + overlay/diff", "stable action-capable browser for remaining interactions"]
+  },
+  "shared_current": ["reports/parity-open-items-20260915-v019.json", "reports/canonical-pages-current-state-matrix-20260915-v004.json"],
+  "completion_rule": "Never declare final parity or PIXEL_PASS while any active implementation candidate, hard exactness blocker, required asset equivalence or deterministic/interaction acceptance remains open. Tool absence is not failure evidence and never licenses speculative CSS/JS.",
+  "next_safe_action": "Obey STATE.md. When live tools are trustworthy again, resume page264 via oldtrees-next-remote-window-v004. Do not hand off merely because tools are unavailable.",
+  "known_wpvibe_budget": "UNKNOWN for +5; never reuse historical counters",
+  "pixel_pass": false,
+  "status": "NOT_FINAL_CURRENT_CHAINS_RECONCILED_LIVE_AND_EXACTNESS_GATES_OPEN"
+}
