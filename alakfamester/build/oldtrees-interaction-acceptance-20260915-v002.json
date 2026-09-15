@@ -5,7 +5,7 @@
   "page_id": 264,
   "supersedes_for_planning": "build/oldtrees-interaction-acceptance-20260914-v001.json",
   "mode": "READ_ONLY_ACCEPTANCE_NO_WRITE_BY_DEFAULT",
-  "scope": "Page264 review tabs, tiszafa before-after and Nordmann carousel only.",
+  "scope": "Page264 review tabs, tiszafa before-after, Nordmann carousel and four FAQ disclosures.",
   "browser_policy": {
     "required": "interaction-capable browser with one source and one target tab",
     "max_project_tabs": 2,
@@ -27,14 +27,16 @@
       "prefers-reduced-motion change calls start(), whose first action stops the current timer and then conditionally restarts.",
       "Broken slides are removed and remaining dot data-go values are reindexed."
     ],
-    "important_compound_state_caveat": "Hover and focus pause are not represented by independent state flags. Because mouseleave and focusout each call start() unconditionally, autoplay may restart while the other pause condition still remains true. This is not declared a parity defect until synchronized source behavior is observed; it is now an explicit live acceptance edge case."
+    "important_compound_state_caveat": "Hover and focus pause are not represented by independent state flags. Because mouseleave and focusout each call start() unconditionally, autoplay may restart while the other pause condition still remains true. This is not declared a parity defect until synchronized source behavior is observed; it is now an explicit live acceptance edge case.",
+    "faq_note": "The common source-interactions-v001.js does not own FAQ disclosure behavior. FAQ must therefore be tested against the current rendered/native/addon disclosure owner before any runtime change is considered."
   },
   "preconditions": [
     "Fresh target tab is page264 and source tab is the exact reference page.",
     "Page264 saved-data hash/JSON is reconciled before attributing a failure to runtime code.",
     "Review static AX still exposes exactly three real tabs plus source-equivalent previous/next, with numbered source dots absent from AX/focus on page264.",
     "Tiszafa remains native range min=0 max=100 step=1 value=50 with data-af-ba-init=1.",
-    "Nordmann static controls still match source previous/next plus dots 1-6."
+    "Nordmann static controls still match source previous/next plus dots 1-6.",
+    "FAQ still contains the four accepted source questions/answers, including Vállalja a munkát akkor is, ha nem én ültettem a növényt?."
   ],
   "review_tabs": {
     "owners": ["shared Code Snippets ID14", "page264 containment Code Snippets ID33"],
@@ -83,13 +85,27 @@
     ],
     "failure_policy": "Inspect current deployed runtime owner and initialization marker before changing JavaScript. Missing action tooling is not an implementation failure."
   },
+  "faq_disclosures": {
+    "section_owner": "af2a0050",
+    "accepted_count": 4,
+    "tests": [
+      "Enumerate the four source and four target disclosure controls by exact question text before interacting; do not rely on ordinal position alone.",
+      "Record initial expanded/collapsed state for each source and target item and require source-equivalent state.",
+      "Activate each disclosure by its native control with pointer/click and require exactly its associated answer to change visibility/expanded state.",
+      "Repeat activation by keyboard using the native control's supported Enter/Space semantics; focus must remain on or return predictably to the same question control.",
+      "After opening one item, observe whether the source allows multiple simultaneous open items or behaves like an accordion; require the target to match the source rather than imposing a generic accordion rule.",
+      "Open/close every item at least once and require no duplicate IDs, duplicate accessible names, orphaned answer region or focus jump outside the FAQ section.",
+      "Recheck the restored fourth question after interaction so it cannot silently disappear from the disclosure owner."
+    ],
+    "failure_policy": "Identify the current native/addon disclosure owner and exact DOM/ARIA state first. Do not add a second FAQ JavaScript owner merely because generic browser action tooling was previously unavailable."
+  },
   "cross_component_invariants": [
     "No test changes visible copy, page264 Elementor data, form state or v004/v005/v006/v007 visual ownership.",
-    "No duplicate MutationObserver, timer, keyboard or pointer handler is introduced as a workaround.",
+    "No duplicate MutationObserver, timer, keyboard, pointer or disclosure handler is introduced as a workaround.",
     "No form submission, upload, SMTP or external delivery occurs.",
     "Keep only the active source/target pair; do not leave extra autoplay tabs running."
   ],
-  "pass_definition": "Source and target complete the same observable review, range and carousel behavior including compound hover/focus and reduced-motion states, without AX/focus or visual regression.",
+  "pass_definition": "Source and target complete the same observable review, range, carousel and FAQ behavior including compound hover/focus, disclosure and reduced-motion states, without AX/focus or visual regression.",
   "current_execution_status": "PREPARED_NOT_RUN: Opera connector is currently disconnected and WPVibe is disabled; no runtime write is justified.",
   "wordpress_writes": 0,
   "pixel_pass": false
