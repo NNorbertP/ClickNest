@@ -11,6 +11,8 @@
   "current_acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
   "current_section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
   "current_precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v010.json",
+  "current_interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+  "current_source_carousel_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v002.json",
   "next_window": "build/oldtrees-proof-only-next-window-20260915-v001.json",
   "direct_source_runtime": {
     "path": "build/source-interactions-v001.js",
@@ -34,7 +36,7 @@
     "Form33 native required wiring strongly proven; no custom validator justified without action failure.",
     "ID14/ID33 review ownership reconciled; no duplicate handler added.",
     "Tiszafa native range static state and source runtime update contract reconciled.",
-    "Nordmann six-slide static structure reconciled and direct-source timer/drop contract corrected.",
+    "Nordmann six-slide static structure reconciled and direct-source timer/drop contract corrected in source-carousel v002 and interaction oracle v004.",
     "FAQ four native disclosure owner/content integrity reconciled; no duplicate page264 FAQ runtime found.",
     "Unique __AF_SOURCE_INTERACTIONS_V001__ database owner located at Head & Footer Code option auhfc_settings_sitewide; exact content/hash still pending."
   ],
