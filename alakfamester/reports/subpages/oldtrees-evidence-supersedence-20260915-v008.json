@@ -1,17 +1,19 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "package": "oldtrees-evidence-supersedence-20260915-v008",
   "date": "2026-09-15",
   "page_id": 264,
-  "purpose": "Single current page264 precedence map after continuation v015 and the visual cascade minimality gate. No WordPress mutation.",
+  "purpose": "Single current page264 precedence map after continuation v015, the visual cascade minimality gate, safe STATE resume overlay and explicit tool-capability proof ceiling. No WordPress mutation.",
   "supersedes_for_planning": "reports/subpages/oldtrees-evidence-supersedence-20260915-v007.json",
-  "scope_authority": "STATE.md remains PAGE264 ONLY; page264 is not released.",
-  "precedence_rule": "Fresh trustworthy live readback/capture > STATE.md write scope > current continuation/precedence/source-runtime reconciliation > current remote plan/release gate/acceptance oracle/deploy manifest > parser-checked gated candidate > historical audit/build.",
+  "scope_authority": "STATE.md remains PAGE264 ONLY; page264 is not released. Use the state resume overlay only for current planning pointers, not to replace STATE history/scope.",
+  "precedence_rule": "Fresh trustworthy live readback/capture > STATE.md write scope/history > state resume overlay for current pointers > current continuation/precedence/source-runtime reconciliation > current remote plan/release gate/acceptance oracle/deploy manifest > parser-checked gated candidate > historical audit/build.",
   "authoritative_current": {
+    "state_resume_overlay": "reports/subpages/oldtrees-state-resume-overlay-20260915-v001.json",
     "continuation": "reports/subpages/oldtrees-continuation-20260915-v015.json",
     "remote_plan": "build/oldtrees-next-remote-window-20260915-v006.json",
     "scope_release_gate": "build/oldtrees-scope-release-gate-20260915-v002.json",
     "visual_minimality_gate": "build/oldtrees-visual-cascade-minimality-gate-20260915-v001.json",
+    "tool_capability_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v001.json",
     "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v003.json",
     "source_carousel_runtime_reconciliation": "reports/subpages/oldtrees-source-carousel-runtime-reconciliation-20260915-v001.json",
     "visual_deploy_manifest": "build/oldtrees-visual-deploy-manifest-20260915-v001.json",
@@ -43,6 +45,12 @@
     "If future tooling exposes exact computed winning rules, a narrower candidate may be prepared only from that proof and only after parser/scope QA plus deploy-manifest registration.",
     "If exact owner tooling is unavailable, do not infer a losing declaration from screenshots and do not create a speculative alternative. A fresh reproduced failure may still use the current parser-checked v006/v007 artifact after normal preflight.",
     "Ambiguous/moving state is HOLD, not write authority."
+  ],
+  "tool_capability_rule": [
+    "Current Opera connector does not expose generic click, keyboard dispatch, pointer drag/swipe, JavaScript/getComputedStyle, winning-rule inspection or viewport/DPR/zoom control.",
+    "Missing interaction/computed/pixel evidence under those limits is not an implementation failure.",
+    "Never add duplicate review/range/carousel/FAQ runtime or speculative CSS merely because the connector cannot execute the acceptance action.",
+    "When stronger tooling is available, gather the missing synchronized evidence first and name the current owner before considering implementation changes."
   ],
   "critical_source_timer_truth": [
     "manual is initialized once from carousel--manual and is never reassigned.",
@@ -76,6 +84,7 @@
     "reports/subpages/oldtrees-continuation-20260915-v014.json and earlier continuations as current resume owner",
     "build/oldtrees-next-remote-window-20260915-v005.json and earlier remote plans as current execution plan",
     "build/oldtrees-scope-release-gate-20260915-v001.json as current release gate",
+    "the Current planning/evidence pointer block in STATE.md SHA 233f9e93... where it still names continuation v013/evidence v005/remote v005/release v001; retain STATE scope/history but use the resume overlay for current pointers",
     "build/oldtrees-interaction-acceptance-20260915-v002.json for Nordmann manual/timer semantics",
     "any instruction that treats manual navigation as setting a permanent autoplay latch",
     "any proposed new cascade patch justified only by a screenshot without exact property-owner evidence"
@@ -86,5 +95,5 @@
   "wordpress_writes": 0,
   "opera_tabs_opened": 0,
   "pixel_pass": false,
-  "status": "PAGE264_CURRENT_V015_REMOTE_V006_MINIMALITY_GATE_SCOPE_NOT_RELEASED"
+  "status": "PAGE264_CURRENT_V015_REMOTE_V006_STATE_OVERLAY_MINIMALITY_AND_PROOF_CEILING_SCOPE_NOT_RELEASED"
 }
