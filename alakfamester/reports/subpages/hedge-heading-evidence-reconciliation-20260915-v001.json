@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "package": "hedge-heading-evidence-reconciliation-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "source": "reports/subpages/hedge-parity-continuation-20260914-v002.json",
+  "historical_fresh_evidence": {
+    "date": "2026-09-14",
+    "method": "fresh Opera accessibility-tree source/target reads before connector disconnect",
+    "finding": "heading_text_set_source_target_match=true after the source-copy repair packages"
+  },
+  "closed_preserve": [
+    "Do not reopen missing-heading-copy work merely from older pre-repair audits.",
+    "Do not change visible heading wording without a new trustworthy source-target text mismatch.",
+    "The restored headings noted by hedge-content-parity-v002 remain protected content."
+  ],
+  "still_unproven": [
+    "exact ordered H1-H6 level sequence source versus target",
+    "whether every same-named target heading uses the same semantic level as source",
+    "whether any source heading is represented as static non-heading text despite the overall text-set match",
+    "page-local versus global header/footer heading ownership in a full document query"
+  ],
+  "next_read_contract": {
+    "source": "ordered main-content array of {level, raw text, normalized text, section/ancestor clue}",
+    "target": "same ordered array",
+    "exclude_from_page_local_compare": "global header/footer headings, but record them separately for gross-regression evidence",
+    "decision": "Only a reproduced level/order/role mismatch can justify a semantic correction. Text identity alone is already historically PASS."
+  },
+  "candidate_write": "NONE",
+  "pixel_pass": false,
+  "status": "HEADING_COPY_CLOSED_LEVEL_ORDER_SEMANTICS_READ_ONLY_OPEN"
+}
