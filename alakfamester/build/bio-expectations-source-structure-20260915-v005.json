@@ -1,0 +1,59 @@
+{
+  "schema_version": 5,
+  "package": "bio-expectations-source-structure-20260915-v005",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "element": "af260013",
+  "status": "ONE_SHOT_OWNER_TRANSFORM_CANDIDATE_NOT_WRITE_READY",
+  "supersedes_planning_direction": "build/bio-expectations-source-structure-20260914-v004.json",
+  "does_not_reauthorize": "build/bio-expectations-source-structure-20260914-v003.json multi-step live patch sequence",
+  "source_contract": {
+    "left_article": "owns h2 Mit várhatunk – és mit nem? + positive list3 + negative list2",
+    "right_article": "owns h3 Hogyan kapcsolódik az alakfa ápolásához? + body + /#apolas link",
+    "article_count": 2,
+    "lists": 2,
+    "list_items": 5,
+    "copy_links": "byte-equivalent protected content"
+  },
+  "last_trusted_target": "h2 outside split; split owns positive and negative list cards; h3/body/link are later siblings outside the cards; article count 0.",
+  "only_acceptable_future_transform_shape": [
+    "Use a supported READ path to retrieve fresh current page256 Elementor data without mutation and parse element id af260013.",
+    "Extract the exact complete current af260013 legacy text-editor owner value from that fresh response. Do not reconstruct it from repository snippets or old HTML.",
+    "Generate the replacement from that exact current owner value only: preserve every visible text string/link and outer named-region owner, but emit the two source-equivalent articles/classes in the required ownership/order.",
+    "Use one supported guarded match-once saved-data edit replacing exactly that current owner value with the transformed owner value.",
+    "Immediately read back the same owner plus full page JSON/hash/rendered/AX state before any CSS append."
+  ],
+  "mandatory_capability_gate": "If the available Elementor/WPVibe read/edit surface cannot return and uniquely match the COMPLETE fresh af260013 owner/editor value, this blocker remains OPEN. Do not approximate the owner from several snippets and do not split wrapper creation across calls.",
+  "transformation_invariants": [
+    "outer af260013 widget/region ID and region accessible name unchanged",
+    "all protected h2/h3/body/list/link strings byte-equivalent",
+    "href remains /#apolas and link accessible name remains Az alakfa ápolása",
+    "no duplicate or hidden mirror copy",
+    "left article owns h2 + both lists; right article owns h3 + body + link",
+    "the two original lists and five items remain semantic lists/listitems",
+    "no unrelated widget/page data changes"
+  ],
+  "target_classes_after_success": ["af-expect-grid", "af-expect-card", "af-expect-card--sage", "af-expect-list", "af-expect-list--cross", "af-expect-link"],
+  "visual_followup_only_after_structure_PASS": "build/bio-expectations-source-structure-v003.css may then be evaluated as a page-local style#af-page256-parity append after corrected carrier v002 PASS and a fresh CSS/pseudo-owner check; structure PASS must come first.",
+  "acceptance_before_visual_followup": [
+    "saved JSON valid and exact owner readback stable",
+    "rendered expectations article count exactly 2",
+    "section-local AX article2/lists2/listItems5 with correct child ownership",
+    "normalized visible text and link unchanged",
+    "no duplicate headings/lists/link",
+    "following FAQ/wave/CTA order unchanged"
+  ],
+  "abort_or_rollback_if": [
+    "complete fresh owner cannot be read or matched exactly once",
+    "current af260013 already differs materially from the last trusted DOM and transform cannot be derived mechanically from fresh owner",
+    "one write would include unrelated widget/page content",
+    "any protected text/link/region changes",
+    "article/list ownership is not exact after readback",
+    "429/5xx/ambiguous mutation until exact readback resolves state"
+  ],
+  "forbidden": ["multi-step wrapper open/close patches", "duplicate-then-delete migration", "role-only fake articles", "aria-owns/JS reparenting", "full Elementor save", "raw SQL write", "old full _elementor_data restore"],
+  "fresh_remote_gates": ["page264 release/handoff", "exact +4 page256 identity/current site/quota", "D11 margin", "Elementor skill", "fresh page256/ID35 baseline"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
