@@ -1,0 +1,154 @@
+{
+  "schema_version": 3,
+  "package": "oldtrees-section-coverage-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "mode": "POST_CLOSEOUT_SECTION_ACCEPTANCE_NO_WORDPRESS_WRITE",
+  "supersedes_for_planning": [
+    "reports/subpages/oldtrees-section-coverage-20260915-v001.json",
+    "reports/subpages/oldtrees-section-coverage-20260915-v002.json"
+  ],
+  "principle": "A proof gap is not a reproduced implementation failure. Page264 implementation remains closed unless fresh synchronized evidence proves a defect and its owner/cascade.",
+  "implementation_baseline": {
+    "elementor_bytes": 48874,
+    "elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "additional_css_bytes": 614248,
+    "additional_css_sha256": "c67ebf2f47beb5f73ff63209ae824c349c4ae116c4929b998669c59d4b1558ce",
+    "markers": {"v004":1,"v005":1,"v006":1,"v007":1,"af-project:end":1}
+  },
+  "sections": [
+    {
+      "order": 1,
+      "name": "Túlnőtt a fa? Mielőtt kivágatná, nézzük meg, lehet-e belőle alakfa",
+      "owners": ["#af-sub-survivor-hero","af2a0041","af2a0052"],
+      "content_semantics_media": "PASS",
+      "implementation_visual": "NO_FRESH_REPRODUCED_DEFECT_AFTER_CLOSEOUT",
+      "proof_only": "Historical 1640x920 evidence showed target copy lower than source. Keep build/oldtrees-hero-geometry-diagnostic-20260914-v001.json open until same-browser exact owner/cascade geometry is measured. No spacing patch from impression."
+    },
+    {
+      "order": 2,
+      "name": "Amit a megbízóim mondanak",
+      "owners": ["native Atomic Tabs",".af-reviews-tabs","shared ID14","page264 ID33"],
+      "content_semantics_media": "PASS_FINAL_AX",
+      "implementation_visual": "NO_REPRODUCED_PAGE264_LOCAL_DEFECT",
+      "proof_only": "ArrowRight/Down/Left/Up/Home/End, prev/next synchronization and source visual-dot pointer parity. Do not add a second handler without failure."
+    },
+    {
+      "order": 3,
+      "name": "Ezekkel a helyzetekkel keresnek a leggyakrabban",
+      "owners": ["af2a0007",".problem-grid",".problem-chip"],
+      "content_semantics_media": "PASS",
+      "implementation_visual": "PASS_SOURCE_BREAKPOINT_CONTRACT_IMPLEMENTED",
+      "known_contract": "4 columns desktop; <=960px 2; <=760px 1; 16px gap; 48px top margin; 16px chip padding; 24px radius; 22px icon.",
+      "proof_only": "Deterministic six-view capture/diff."
+    },
+    {
+      "order": 4,
+      "name": "Kivágás vagy átalakítás?",
+      "owners": ["af2a0045",".af-sub-split",".af-sub-card"],
+      "content_semantics_media": "PASS",
+      "implementation_visual": "PASS_POST_V007",
+      "accepted": ["equal desktop columns","24px desktop gap","beige/sage surfaces","equal-height stretch","warning/growth icons","X/check markers","source-like wrapping in targeted closeout capture"],
+      "responsive": ">900px two equal columns; <=900px one column; <=720px 24px card padding.",
+      "rule": "v007 is live exactly once. Never redeploy."
+    },
+    {
+      "order": 5,
+      "name": "Hat lépés a kivágás helyett",
+      "owners": ["af2a0047",".af-number-steps"],
+      "content_semantics_media": "PASS",
+      "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
+      "proof_only": "Matched geometry/typography capture in formal matrix."
+    },
+    {
+      "order": 6,
+      "name": "Nem minden növényt kell és nem minden növényt lehet megmenteni",
+      "owners": ["af2a0049"],
+      "content_semantics_media": "PASS",
+      "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
+      "proof_only": "Formal matched capture only."
+    },
+    {
+      "order": 7,
+      "name": "Növények, amiket nem vágtunk ki",
+      "owners": ["af2a004a",".ba.js-ba",".carousel.js-carousel"],
+      "content_semantics_media": "PASS",
+      "tiszafa_static": "PASS: native range min0 max100 step1 value50 and source alt contract intact.",
+      "nordmann_static": "PASS: six slides, prev/next, six dots and six ordered alt/caption entries intact.",
+      "proof_only": "Tiszafa pointer/keyboard value-to---ba-pos; Nordmann synchronized role/aria/caption-alt, ~4000ms timer reset, swipe, compound hover/focus and reduced-motion behavior."
+    },
+    {
+      "order": 8,
+      "name": "Van hasonló növénye?",
+      "owners": ["af2a004b"],
+      "content_semantics_media": "PASS",
+      "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
+      "proof_only": "Formal matched capture/focus-visible sampling."
+    },
+    {
+      "order": 9,
+      "name": "Support/gain content block",
+      "owners": ["af2a004d"],
+      "content_semantics_media": "PASS",
+      "semantics": "INTENTIONALLY_UNNAMED_SECTION",
+      "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
+      "proof_only": "Formal matched capture."
+    },
+    {
+      "order": 10,
+      "name": "Három lépés, kötelezettség nélkül",
+      "owners": ["af2a004f",".af-number-steps"],
+      "content_semantics_media": "PASS",
+      "implementation_visual": "NO_REPRODUCED_LOCAL_DEFECT",
+      "proof_only": "Formal matched capture."
+    },
+    {
+      "order": 11,
+      "name": "Túlnőtt növények – kérdések",
+      "owners": ["af2a0050","four native details/summary"],
+      "content_semantics_media": "PASS: four source Q/A items present.",
+      "static_runtime": "PASS: all four native details omit open in server markup; no page264 duplicate disclosure owner was found.",
+      "proof_only": "Pointer/keyboard, focus and source multi-open-vs-accordion observation."
+    },
+    {
+      "order": 12,
+      "name": "Küldjön róla néhány képet / Ajánlatkérés",
+      "owners": ["af2a0008","af2a0054","af2a0055","MetForm33"],
+      "content_semantics_media": "PASS",
+      "implementation_visual": "PASS_POST_V006",
+      "accepted": ["centered heading","compact 18x18 clock","joined white intro+form panel","contact-button geometry","white contact label/value foreground"],
+      "form_required_static": "PASS_WIRING: Form33 af040007/#af-form-service uses kapcsolat-tema, mf_input_required=yes, six exact option values, native activateValidation(required:true) and matching error component.",
+      "proof_only": "No-delivery action proof of required radio validation. No real submission/SMTP."
+    },
+    {
+      "order": 13,
+      "name": "Nordmann six-slide carousel component",
+      "owners": [".carousel.js-carousel","Head & Footer Code auhfc_settings_sitewide candidate owner found by unique __AF_SOURCE_INTERACTIONS_V001__ marker"],
+      "content_semantics_media": "PASS_STATIC_AX",
+      "source_runtime_truth": "manual initialized from carousel--manual only; successful navigation on non-manual calls start() and restarts ~4000ms interval. drop() calls neither stop() nor start(); the <2 guard belongs to start() when start() runs.",
+      "proof_only": "Exact deployed option hash/content identity plus synchronized action/timing proof."
+    }
+  ],
+  "global_component_outside_page264_write_scope": {
+    "floating_contact_dock": {
+      "historical_observation": "Target pill looked clipped/empty while AX content existed.",
+      "current_classification": "PROOF_ONLY_OWNER/CASCADE_DIAGNOSTIC; no fresh page264-local implementation defect has been proven after closeout.",
+      "write_rule": "No global/header/dock write from page264. A local exception requires exact current losing declaration and every effect selector under body.page-id-264."
+    }
+  },
+  "formal_visual_matrix": {
+    "views": ["1920x1080","1440x1000","1024x900","768x1024","390x844","360x800"],
+    "required": ["same browser engine/DPR/zoom","font/image readiness","same scroll/motion state","source capture","target capture","overlay/diff","key geometry","overflow check"],
+    "moving_regions": "Synchronize or exclude moving review/carousel states.",
+    "pixel_pass": false
+  },
+  "write_policy": [
+    "v006 and v007 are closed; never redeploy them.",
+    "Do not modify PASS content/semantics/media to obtain proof.",
+    "No interaction proof gap authorizes duplicate JS.",
+    "Hero/dock remain diagnostics, not write specifications.",
+    "Only a fresh reproducible page264 defect with proven owner/cascade may reopen implementation."
+  ],
+  "wordpress_writes": 0,
+  "status": "POST_CLOSEOUT_ALL_PAGE264_SECTIONS_CLASSIFIED_IMPLEMENTATION_CLOSED_PROOF_ONLY_MATRIX_REMAINS"
+}
