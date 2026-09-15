@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "package": "bio-stress-visual-order-compatibility-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "element": "af260007",
+  "status": "STATIC_COMPATIBILITY_PASS_LIVE_RENDER_STILL_REQUIRED",
+  "visual_css": "build/bio-stress-current-dom-visual-v003.css",
+  "finding": "Despite its historical name/comment, the CSS assigns visual positions by semantic class/type selectors rather than direct-child numeric index: first p -> grid row1, last p -> row2, .af-sub-card -> right span rows1-2; mobile uses the same selectors to place p1 row1, p2 row2, card row3.",
+  "compatibility": {
+    "current_saved_order": "p1 -> card -> p2",
+    "required_saved_order": "p1 -> p2 -> article/card",
+    "desktop_after_order_fix": "unchanged intended visual: p1+p2 left, card right spanning both rows",
+    "mobile_after_order_fix": "unchanged intended visual: p1 -> p2 -> card",
+    "aside_to_article": "safe for selectors because visual CSS targets .af-sub-card, not aside tag"
+  },
+  "implication": "The physical stress-order one-shot fix and the aside->article role fix do not automatically require a new visual CSS package. Keep v003 as the visual candidate and simply re-run tight live source/target proof after structure changes.",
+  "live_required": ["desktop grid unchanged after any structural fix", "<=900 order p1/p2/card", "no duplicate/hidden content", "AX reading order equals physical source order independently of visual CSS"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
