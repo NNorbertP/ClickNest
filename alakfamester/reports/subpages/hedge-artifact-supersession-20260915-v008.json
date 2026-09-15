@@ -1,0 +1,66 @@
+{
+  "schema_version": 8,
+  "package": "hedge-artifact-supersession-20260915-v008",
+  "date": "2026-09-15",
+  "page_id": 272,
+  "purpose": "Align the authoritative page272 artifact chain after review-panel preservation and continuation v015 reconciliation. Planning only; no WordPress mutation.",
+  "scope": "page272-specific runtime/content only; no shared media/Form33/global CSS/templates/header/footer/dock/other-page writes",
+  "supersedes": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+  "current_chain": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_static_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "review_name_resolution": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "review_panel_preservation": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "one_pass_dom_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v002.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "live_window": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v015.json"
+  },
+  "execution_truth": "The only conditional page272 write candidate is an update of existing Code Snippets ID36 to build/hedge-semantic-runtime-v004.php after fresh baseline/rollback/cardinality/native-ARIA/ID-uniqueness gates. Review panel inner content, heading/region/carousel/head differences are read-first and must not be bundled into ID36 v004. No page272 CSS candidate exists.",
+  "review_contract": {
+    "tab_names": [
+      "Panasonic Hűtő-Klíma Technikai Kft. Kardos Attila · ügyvezető",
+      "Otolecz Transzportbeton Kft. Otolecz Andrea · ügyvezető",
+      "ARKER'S Építésziroda Kft. Lőrincz Balázs · ügyvezető"
+    ],
+    "structure_and_names": "CLOSED_PRESERVE",
+    "full_panel_inner_content": "READ_ONLY_PRESERVATION_PROOF_OPEN",
+    "rule": "Never reconstruct quotes/images from names, attachment IDs or memory; prove source-target exactness first."
+  },
+  "form_required_contract": {
+    "status": "FRESH_READ_FIRST",
+    "reason": "Historical shared Form33 evidence does not preserve the current service-radio mf_input_required value or six exact option values/order.",
+    "shared_form_write": false,
+    "fallback": "Only after a live required=no/absent or safely reproduced native failure; no automatic PHP duplication."
+  },
+  "interaction_contract": {
+    "reviews": "No known failure; page272 direct click/keyboard evidence is proof-only unless a failure reproduces.",
+    "proof_carousel": "Historical 4000ms autoplay pass; remaining arrow/swipe/pause/reduced-motion checks are proof-only.",
+    "gallery": "EAEL remains owner; no legacy js-masonry/js-zoom reintroduction."
+  },
+  "superseded_for_execution": [
+    "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "reports/subpages/hedge-continuation-20260915-v014.json",
+    "reports/subpages/hedge-open-items-20260915-v006.json",
+    "build/hedge-acceptance-matrix-20260915-v005.json",
+    "build/hedge-next-live-window-plan-20260915-v005.json"
+  ],
+  "tool_state": {
+    "wpvibe": "disabled in current continuation; stop",
+    "opera": "not connected on one list-tabs attempt; zero new tabs; stop",
+    "public_http": "not trustworthy/available; stop",
+    "github": "available"
+  },
+  "critical_rules": [
+    "Fresh trustworthy live truth outranks repository plans.",
+    "If stronger native semantics conflict with v004, HOLD v004; do not delete native relations.",
+    "Any HTTP 429/unknown write remains UNKNOWN until exact readback; no blind retry.",
+    "Preserve >=10 WPVibe calls for D11 closeout/recovery.",
+    "At most one source and one target Opera project tab; stop on stale/disconnected state without replacement loops.",
+    "A content/media mismatch gets the smallest owning correction package; do not expand ID36 v004."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "HEDGE_PRECEDENCE_ALIGNED_TO_CONTINUATION_V015"
+}
