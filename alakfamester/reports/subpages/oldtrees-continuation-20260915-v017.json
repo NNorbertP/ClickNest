@@ -1,0 +1,65 @@
+{
+  "schema_version": 17,
+  "package": "oldtrees-continuation-20260915-v017",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "type": "CURRENT_CONTINUATION_FRESH_LIVE_AX_SERVER_PROOF_NO_WRITE",
+  "scope": "PAGE264 ONLY. No scope expansion and no WordPress mutation authorized.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-continuation-20260915-v016.json",
+  "authoritative_chain": {
+    "state_scope": "STATE.md",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v011.json",
+    "fresh_live_proof": "reports/subpages/oldtrees-live-proof-continuation-20260915-v001.json",
+    "hero_decision": "build/oldtrees-hero-v011-deploy-decision-20260915-v001.json",
+    "tool_ceiling": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v002.json",
+    "acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+    "visual_coverage": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260915-v002.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json",
+    "source_runtime": "build/source-interactions-v001.js"
+  },
+  "current_protected_live_state": {
+    "elementor_accepted_bytes": 48856,
+    "elementor_accepted_sha256": "7c3e1a5c13e8f8c1ead29dd85e25ac74091300ba81e30f96fa77513d8ad4910c",
+    "additional_css_bytes": 617608,
+    "additional_css_sha256_from_acceptance": "7f19dc5a63e4d03249e27b42b72e08c0e6b7847a9372125a866a9e7bf56a7523",
+    "fresh_additional_css_md5": "7c089bf62e477a3f7809528d48326a51",
+    "live_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "prepared_not_live": ["v011"],
+    "af_project_end_count": 1
+  },
+  "freshly_closed_or_reconciled": [
+    "Current source and target Form33 service-topic labels are an exact six-item AX match; stale historical label evidence must not be restored.",
+    "Current source and target floating quick-contact dock AX structure is an exact region/action match; v010 structural/cascade state stays preserved.",
+    "Current hero content/CTA/facts/art semantics match; only controlled geometry remains open.",
+    "Exact v011 artifact includes the source >=1400 56px gap and is statically source-faithful; no deployment is justified without visual geometry proof."
+  ],
+  "hero_v011": {
+    "status": "HOLD_GATED_NOT_LIVE",
+    "reason": "Existing 719.03125px target left-track calibration is approximately the same as the source 719.04px large-desktop left track, while current outer centering/art/transition geometry cannot be measured reliably. Preserve v008/v009."
+  },
+  "current_tool_stop": {
+    "wpvibe": "296/300 used, four remaining; no further calls this work session and no WordPress write.",
+    "opera": "Reuse at most the one existing sequential project tab for low-memory AX-only evidence. Do not retry screenshot or jq loops and do not open replacement tabs.",
+    "github": "May continue static source/evidence reconciliation and versioned documentation."
+  },
+  "safe_next_order": [
+    "Continue only low-memory one-tab static AX comparison if it can close a current proof question without screenshot.",
+    "Continue GitHub source/cascade/runtime reconciliation without changing WordPress.",
+    "Do not modify any accepted section merely because deterministic screenshots/actions are unavailable.",
+    "In a future session with safe WordPress budget and deterministic visual tooling, first take fresh quota/page/hash/marker preflight; then capture controlled hero/dock and six-view matrix before any v011 decision.",
+    "If the controlled hero evidence shows no surviving defect, permanently keep v011 undeployed; if it proves a precise source-grid/art mismatch, deploy only exact v011 once with immediate rollback-capable postcheck."
+  ],
+  "hard_preserve": [
+    "Never replay v004-v010 or v012.",
+    "Never duplicate ID7 dock, ID33 semantics/runtime, shared Form33 or source-interaction owners.",
+    "Never restore stale service-topic labels.",
+    "Never infer PIXEL_PASS from AX/static CSS/math.",
+    "Never consume the remaining four WPVibe calls in this work session.",
+    "Never exceed one sequential Opera project tab in this work session."
+  ],
+  "wordpress_writes": 0,
+  "opera_new_tabs": 0,
+  "pixel_pass": false,
+  "status": "PAGE264_V017_FRESH_LIVE_AX_SERVER_PROOF_V011_HOLD_NO_WRITE"
+}
