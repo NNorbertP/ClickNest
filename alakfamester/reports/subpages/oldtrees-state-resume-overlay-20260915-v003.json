@@ -1,0 +1,55 @@
+{
+  "schema_version": 3,
+  "package": "oldtrees-state-resume-overlay-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Planning-pointer overlay only. STATE.md remains authoritative for write scope/history and is not replaced by this file.",
+  "supersedes_for_planning": "reports/subpages/oldtrees-state-resume-overlay-20260915-v002.json",
+  "reason": "Current STATE scope/history remains valid, but page264 evidence advanced to a full fresh one-tab AX reconciliation, current server marker readback, v011 hero HOLD and browser-project-tab closeout. Updating pointers through a versioned overlay avoids risky full STATE replacement.",
+  "state_facts_to_preserve": [
+    "WordPress write scope remains PAGE264 ONLY.",
+    "Accepted live v004-v010 and v012 must not be replayed.",
+    "Nordmann six group-role corrections remain accepted.",
+    "No global header/footer/dock owner/shared Form33/other-page mutation is authorized.",
+    "Fresh live truth outranks older snapshots."
+  ],
+  "current_resume_pointers": {
+    "continuation": "reports/subpages/oldtrees-continuation-20260915-v018.json",
+    "precedence": "reports/subpages/oldtrees-evidence-supersedence-20260915-v012.json",
+    "fresh_full_ax": "reports/subpages/oldtrees-fresh-full-ax-reconciliation-20260915-v001.json",
+    "fresh_live_proof": "reports/subpages/oldtrees-live-proof-continuation-20260915-v001.json",
+    "hero_v011_decision": "build/oldtrees-hero-v011-deploy-decision-20260915-v001.json",
+    "fresh_ax_delta_decision": "build/oldtrees-fresh-ax-delta-decision-20260915-v001.json",
+    "tool_capability": "reports/subpages/oldtrees-tool-capability-proof-ceiling-20260915-v002.json",
+    "acceptance": "reports/subpages/oldtrees-acceptance-ledger-20260915-v003.json",
+    "section_coverage": "reports/subpages/oldtrees-section-coverage-20260915-v004.json",
+    "visual_coverage": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260915-v002.json",
+    "interaction_oracle": "build/oldtrees-interaction-acceptance-20260915-v004.json"
+  },
+  "current_live_summary": {
+    "additional_css_bytes": 617608,
+    "fresh_additional_css_md5": "7c089bf62e477a3f7809528d48326a51",
+    "live_visual_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "v011": "GATED_NOT_LIVE",
+    "current_form_topics": "fresh source-target exact match",
+    "dock_ax": "fresh source-target exact match",
+    "hero_content_ax": "fresh match; controlled geometry proof open",
+    "new_reproduced_visual_defects": []
+  },
+  "tool_stop": {
+    "wpvibe": "296/300 used; four remaining intentionally unused; no more calls this work session.",
+    "opera": "All project pages closed; only blank/base tab remains. Do not reopen to retry screenshot/JQ in this work session."
+  },
+  "superseded_for_execution": [
+    "v002 overlay pointers to v016/v009/v007 as the latest planning chain.",
+    "Any historical current-reference service-topic labels other than the fresh six-item set.",
+    "Any plan to redeploy/reopen v006/v007.",
+    "Any plan to treat current dock structure as missing.",
+    "Any plan to deploy v011 without deterministic visual geometry evidence."
+  ],
+  "safe_merge_rule": "If STATE.md is later updated, fetch and preserve its complete current content/history first. Never reconstruct or truncate STATE from snippets merely to update pointers.",
+  "wordpress_writes": 0,
+  "state_file_writes": 0,
+  "pixel_pass": false,
+  "status": "STATE_SCOPE_PRESERVED_CURRENT_V018_V012_FRESH_AX_POINTER_OVERLAY"
+}
