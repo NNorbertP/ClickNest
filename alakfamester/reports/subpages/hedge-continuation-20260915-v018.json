@@ -8,7 +8,7 @@
   "wordpress_write_scope": "page272-specific runtime/content only",
   "wordpress_writes_this_continuation": 0,
   "supersedes_for_continuation": "reports/subpages/hedge-continuation-20260915-v017.json",
-  "purpose": "Static pointer reconciliation only. v017 correctly described the current page272 state but its single_entrypoint still named supersession v010 even though v011 already superseded it. No live state or implementation claim is advanced here.",
+  "purpose": "Static pointer reconciliation only. v017 correctly described the current page272 state but its single_entrypoint still named supersession v010 after newer supersession files existed. v018 now points to the current v012 entrypoint. No live state or implementation claim is advanced here.",
   "accepted_saved_baseline": {
     "bytes": 53606,
     "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
@@ -16,7 +16,7 @@
     "historical_until_fresh_live_read": true,
     "fresh_read_required_before_write": true
   },
-  "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v011.json",
+  "single_entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v012.json",
   "current_chain": {
     "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
     "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
