@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "package": "hedge-cross-project-pointer-audit-20260915-v001",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "wordpress_writes": 0,
+  "shared_queue_write": 0,
+  "inspected": "reports/parity-open-items-20260915-v017.json",
+  "queue_scope_authority": "The shared queue explicitly says STATE.md remains PAGE264 ONLY and authorizes no page272 write.",
+  "stale_page272_pointers_in_shared_queue": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v007.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v002.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v004.php"
+  },
+  "current_page272_chain": {
+    "precedence": "reports/subpages/hedge-artifact-supersession-20260915-v009.json",
+    "convergence": "reports/subpages/hedge-convergence-ledger-20260915-v002.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v008.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "remote_plan": "build/hedge-next-live-window-plan-20260915-v007.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "semantic_candidate": "build/hedge-semantic-runtime-v005.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v016.json"
+  },
+  "why_current_chain_is_newer": [
+    "v005 preserves existing native aria-describedby/aria-labelledby IDREF tokens instead of replacing whole values",
+    "v005 leaves unexpected service roles untouched",
+    "v003 one-pass diagnostic adds auditable raw/narrow-normalized review content, resolved IDREFs and safe validation-state capture rules",
+    "v002 convergence ledger explicitly forbids replay of the old real-media-ID/shared-alt strategy"
+  ],
+  "decision": [
+    "Do not edit the shared parity queue from the page272-only continuation.",
+    "Do not execute a future Hedge write from the stale queue pointers.",
+    "When the sitewide queue owner next reconciles planning, it should update page272_future to the current chain above after re-reading fresh page272 precedence.",
+    "STATE.md remains untouched and continues to own the current page264 live-write scope."
+  ],
+  "status": "SHARED_QUEUE_STALE_FOR_HEDGE_RECORDED_NO_SHARED_FILE_MUTATION"
+}
