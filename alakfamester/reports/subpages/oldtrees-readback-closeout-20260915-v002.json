@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-readback-closeout-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Repository identity/readback closeout for the current page264 continuation. No WordPress write, no scope expansion.",
+  "authoritative_files_read_back": {
+    "STATE.md": "fdbc7eb31cbe94d3428b07d94c7ac37b2b41b882",
+    "reports/subpages/oldtrees-continuation-20260915-v012.json": "5bbe8095c709a9e835b309a4f9fd6b73d2e3d726",
+    "reports/subpages/oldtrees-evidence-supersedence-20260915-v002.json": "e884cece9d48ab3e72b900b1d86ceb6eacbc1fb4",
+    "build/oldtrees-next-remote-window-20260915-v004.json": "1aab4cad5bfccd20b5c4da341267bcae84085a9d",
+    "build/oldtrees-interaction-acceptance-20260915-v002.json": "4279d1b10e73b323bd6b9b8ad1ba06fb62755c7e",
+    "build/oldtrees-visual-deploy-manifest-20260915-v001.json": "4f8a9209a5ab498a6a1f524a58d341830e6cb863",
+    "reports/subpages/oldtrees-visual-v006-v007-parser-qa-20260915-v001.json": "3c4a2f7657a8c39216126e9e86ee56d1a6aa710d",
+    "reports/subpages/oldtrees-form33-shared-baseline-reconciliation-20260915-v001.json": "e5de298b9e32340cf8983fc20e544bea29e91ae2",
+    "build/oldtrees-form-required-validation-plan-20260915-v001.json": "33e7c63ff2214916ce07ba89f5676f3800731e0a",
+    "reports/subpages/oldtrees-link-route-ledger-20260915-v001.json": "7a2ac480a6e9aad4c11748d485c5820854532813",
+    "build/oldtrees-review-dot-pointer-diagnostic-20260915-v001.json": "e5cebb54a30fe3502efdf02fc1ab29c29c3169fc",
+    "reports/subpages/oldtrees-css-cascade-ownership-20260915-v001.json": "817fd8c79c844c36840f512822e0e650d33ed41e",
+    "build/oldtrees-form-field-visual-diagnostic-20260915-v001.json": "b9c831ae744de4f4cadb5ba16b6ea07c7fc1bc22",
+    "build/floating-contact-dock-diagnostic-plan-20260915-v003.json": "fcc2ceb29408dcea4f3c384171c5d65c9897c754",
+    "reports/subpages/oldtrees-section-coverage-20260915-v001.json": "579008862df8ac223d2b37df3ca1b72c15371bb6"
+  },
+  "visual_artifacts_frozen_for_fresh_gate": {
+    "v006": {
+      "path": "build/oldtrees-visual-v006-contact-text-cascade.css",
+      "blob_sha": "b6435c89e53380c8f2ec75e46d29f53453b17a5a",
+      "parser": "PASS 0 errors / 3 selectors / 3 declarations / page264-scoped"
+    },
+    "v007": {
+      "path": "build/oldtrees-visual-v007-comparison-grid-cascade.css",
+      "blob_sha": "7217f8d17d35cd1c9d70bfdfca760491486d4286",
+      "parser": "PASS 0 errors / 3 selectors / 8 declarations / page264-scoped; no flex or box-sizing"
+    },
+    "bundle": {
+      "path": "build/oldtrees-visual-v006-v007-single-write-bundle.css",
+      "blob_sha": "a962b85dff18b902f580c0ce42d036b4e1ac1ef3",
+      "parser": "PASS 0 errors / 6 selectors / 11 declarations / declaration-equivalent to exact v006 then v007 / page264-scoped"
+    },
+    "decision": "Fresh live both/one/neither reproduction is mandatory. Parser/static PASS does not authorize deployment."
+  },
+  "accepted_remote_baseline_not_reverified_this_run": {
+    "page264_elementor_bytes": 48874,
+    "page264_elementor_sha256": "09f661e095714c1b3149c40406d7f31f04887c49a392f59c7c41b11fee3a788a",
+    "page264_json_valid": true,
+    "live_visual_blocks": ["af-oldtrees-visual-v004", "af-oldtrees-visual-v005"],
+    "note": "These are accepted historical live readbacks, not a current server read. Fresh live truth must be read before any WordPress write."
+  },
+  "shared_form33_reference": {
+    "latest_documented_elementor_bytes": 6068,
+    "latest_documented_elementor_sha256": "ea091a697d1d4589998315fc24c0818479f5229a2fb6d64d99ab79b6d77518b3",
+    "explained_change": "Earlier 5568/47152dff... tree was later extended with af04000d/#af-form-direct-call; page264 ID33 uses that node as form aria-describedby.",
+    "rule": "Historical reference only. Re-read current Form33 identity/#af-form-direct-call before D05 service-radio diagnosis; never restore the old 5568 state from page264 scope."
+  },
+  "current_repo_decision": {
+    "known_content_main_media_gap": false,
+    "known_static_semantic_ax_gap": false,
+    "proven_page264_local_visual_failures": ["v006 contact foreground", "v007 comparison equal desktop columns"],
+    "prepared_visual_write_count_if_both_fail": 1,
+    "prepared_visual_write_count_if_one_fails": 1,
+    "prepared_visual_write_count_if_none_fail": 0,
+    "hero": "diagnostic only; no speculative spacing fix",
+    "inner_form_fields": "no defect proven; measurement only",
+    "service_radio_required": "native capability proven, current Form33 field setting/behavior requires fresh read and non-delivery proof",
+    "review_dot_pointer": "source pointer behavior not yet proven; no change to target pointer behavior without synchronized source observation",
+    "runtime_interactions": "proof-only unless a stable live failure is reproduced",
+    "dock": "known visual delta, actual current CSS owner unproven; no global write from page264"
+  },
+  "interaction_contract_now_includes": [
+    "review Arrow/Up/Down/Home/End plus previous/next synchronization",
+    "tiszafa native range pointer/keyboard -> --ba-pos synchronization",
+    "Nordmann synchronized slide AX role/aria-hidden/caption-alt order",
+    "Nordmann 4000ms fresh-instance autoplay, >40px horizontal swipe and reduced motion",
+    "Nordmann first manual navigation latches autoplay off for the recovered source-runtime instance",
+    "Nordmann compound hover+focus exit-order parity before manual latch",
+    "four FAQ disclosure initial state, pointer/keyboard, multi-open-vs-accordion and focus/ARIA/ID integrity",
+    "separate source visual-review-dot pointer parity observation"
+  ],
+  "exact_route_contract": [
+    "two page-local request CTAs -> #ajanlatkeres",
+    "trip fee -> /kapcsolat/#kiszallas",
+    "biological support -> /biologiai-vedelem/",
+    "phone -> tel:+36305394820",
+    "email -> mailto:kreativ@alakfa-mester.hu"
+  ],
+  "tool_state": {
+    "wpvibe": "Disabled on the single initial read-only attempt; no retry in this continuation.",
+    "opera": "Browser not connected on the single initial list-tabs attempt; no new/replacement tabs and no reconnect loop.",
+    "wordpress_writes": 0,
+    "opera_new_tabs": 0,
+    "smtp_or_external_submission": false
+  },
+  "next_run_drift_rule": [
+    "Re-read STATE.md, current supersedence map and remote v004 plan before acting.",
+    "Re-read exact v006/v007/bundle/deploy-manifest/parser-QA identities before remote insertion; if any listed repo SHA changed, reconcile newer repository truth first.",
+    "Verify current shared Form33 identity/#af-form-direct-call before D05 field assumptions.",
+    "Fresh WPVibe live state always outranks this closeout manifest.",
+    "Do not use this file as authorization to write if WPVibe identity/site/quota/hash/markers or the fresh visual failure gate is unavailable."
+  ],
+  "next_safe_live_sequence": [
+    "Verify +5 identity/site/exact quota once and preserve >=10-call D11 reserve.",
+    "Repo identity + compact page264 hash/JSON and Additional CSS marker/hash preflight.",
+    "Trustworthy one-source/one-target v006/v007 gate.",
+    "At most one exact repository CSS insertion according to both/one/neither outcome.",
+    "Mandatory marker/project-end/page-hash readback plus targeted regression capture.",
+    "Then fresh Form33/native required proof, exact routes/inner-field measurements and interaction/hero/dock/responsive acceptance as safe tooling/capacity permits."
+  ],
+  "wordpress_writes": 0,
+  "pixel_pass": false,
+  "status": "CURRENT_PAGE264_REPOSITORY_STATE_READ_BACK_AND_FROZEN_AT_V012_FOR_NEXT_SAFE_LIVE_GATE"
+}
