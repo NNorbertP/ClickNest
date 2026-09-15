@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "package": "oldtrees-hero-v011-deploy-decision-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "mode": "DEPLOY_DECISION_ONLY_NO_WRITE",
+  "candidate": {
+    "artifact": "build/oldtrees-visual-v011-hero-source-grid.css",
+    "blob_sha": "ea12406dc43faf7e1e7dbb2337713bfb9990885a",
+    "live_marker_count": 0,
+    "status": "PREPARED_GATED_NOT_LIVE"
+  },
+  "source_contract": {
+    "desktop_min_width": 901,
+    "inner_grid": "minmax(0,1.12fr) minmax(0,.88fr)",
+    "inner_max_family": "1340px centered wide-container contract",
+    "gap_901_1399": "clamp(24px,2.6vw,44px)",
+    "gap_ge_1400": "56px",
+    "padding_top": "clamp(20px,2.2vw,34px)",
+    "padding_bottom": "clamp(28px,3.2vw,50px)",
+    "title_max_width": "34ch",
+    "body_max_width": "60ch",
+    "art_aspect_ratio": "7 / 6",
+    "art_max_width_candidate": "430px"
+  },
+  "candidate_static_fidelity": {
+    "grid_ratio": "MATCH",
+    "desktop_56px_gap": "MATCH: exact v011 artifact contains a separate @media(min-width:1400px) column-gap:56px override.",
+    "vertical_padding": "MATCH",
+    "title_body_widths": "MATCH",
+    "art_ratio": "MATCH",
+    "page_scope": "MATCH: body.page-id-264 and #af-subpage-survivor/#af-sub-survivor-hero scoped."
+  },
+  "current_target_fact": {
+    "known_live_left_column": "719.03125px high-specificity desktop calibration",
+    "known_live_v011_ratio_string": "No live 1.12fr v011 block; marker count is zero.",
+    "accepted_existing_layers": ["v008", "v009"],
+    "historical_visual_result": "v008/v009 materially improved hero top/copy flow; final transition/height and 1024 behavior remain unproven."
+  },
+  "large_desktop_equivalence_math": {
+    "source_inner_width": 1340,
+    "source_gap": 56,
+    "remaining_grid_width": 1284,
+    "left_fraction": 0.56,
+    "source_left_width_px": 719.04,
+    "target_calibration_px": 719.03125,
+    "interpretation": "The existing target fixed left width is intentionally very close to the source large-desktop left-track width. This supports preservation until the effective outer centering/gap/art geometry is measured, rather than treating the fixed number itself as proof of a defect."
+  },
+  "unknowns_that_block_deploy": [
+    "Current target effective hero-root bounding width at controlled desktop viewports.",
+    "Whether an outer Elementor/container owner already centers/constrains the target hero independently of the live root declarations.",
+    "Current source-target art owner x/y/width at 1920, 1640, 1440 and 1024 widths.",
+    "Current source-target next-section transition y-coordinate after v008/v009.",
+    "Whether v011 improves those measurements at every required desktop/transition viewport without regressing accepted copy flow."
+  ],
+  "deployment_gate": [
+    "Use the same browser engine, DPR, zoom, scroll/sticky state and font/image readiness on source and target.",
+    "Obtain immediate controlled source-target captures or equivalent bounding-box geometry before modifying WordPress.",
+    "Re-read current page264 data/hash, Additional CSS hash/markers and quota before any future write.",
+    "Require a surviving page264-local hero grid/art geometry mismatch attributable to declarations that v011 exactly replaces.",
+    "If deployed, insert the exact unchanged v011 block once and perform immediate regression comparison; rollback only the exact marked v011 block if worse."
+  ],
+  "forbidden": [
+    "Do not deploy from source-CSS similarity alone.",
+    "Do not replace the current 719.03125px calibration solely because it is a fixed pixel value.",
+    "Do not add arbitrary negative margins/transforms or alter copy to manufacture alignment.",
+    "Do not touch global header/footer/dock or shared owners from this hero decision.",
+    "Do not consume the final WPVibe reserve in the current work session."
+  ],
+  "decision": "HOLD_V011_GATED_NO_WORDPRESS_WRITE",
+  "reason": "The candidate is statically source-faithful, but current tools cannot prove that replacing the accepted live composition improves the remaining visual geometry rather than regressing it.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
