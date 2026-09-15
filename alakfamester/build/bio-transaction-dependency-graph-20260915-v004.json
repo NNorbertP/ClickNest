@@ -1,0 +1,46 @@
+{
+  "schema_version": 4,
+  "package": "bio-transaction-dependency-graph-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_NO_LIVE_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-transaction-dependency-graph-20260915-v003.json",
+  "global_gates": [
+    "Fresh STATE/page264 release evidence hands writable scope to page256.",
+    "Exact live page256 profile ncsnorbert+20260914-4@gmail.com; exact site/current quota; selected node + readback/rollback leaves D11 >=10.",
+    "Elementor skill loads and fresh page256 bytes/SHA/JSON + COMPLETE LIVE ID35 are reconciled.",
+    "No unresolved 429/5xx/ambiguous mutation state; browser-required nodes reuse only the existing source/target Opera pair."
+  ],
+  "nodes": [
+    {"id":"CARRIER_PROBE","package":"build/bio-page-local-style-carrier-probe-20260915-v002.json","depends_on":[],"mode":"MUST_FINISH"},
+    {"id":"PHASE1_VISUAL","package":"build/bio-page-local-visual-delivery-20260915-v003.json","depends_on":["CARRIER_PROBE"],"mode":"MUST_FINISH"},
+    {"id":"FAQ_ORDER","package":"build/bio-page256-next-safe-package-20260915-v016.json FAQ_ORDER","depends_on":[],"mode":"SELF_CONTAINED_OR_NOOP"},
+    {"id":"REVIEW_ANCHOR","package":"build/bio-page256-next-safe-package-20260915-v016.json REVIEW_ANCHOR","depends_on":[],"mode":"OPTIONAL_CONDITIONAL"},
+    {"id":"REVIEW_ROLE_COPY","package":"build/bio-page256-next-safe-package-20260915-v016.json REVIEW_ROLE_COPY","depends_on":[],"mode":"SELF_CONTAINED_OR_NOOP"},
+    {"id":"TABLE_TITLE","package":"build/bio-page256-next-safe-package-20260915-v016.json TABLE_TITLE","depends_on":[],"mode":"SELF_CONTAINED_CONDITIONAL"},
+    {"id":"TABLE_TITLE_VISUAL","package":"build/bio-table-source-structure-v001.css","evidence":"reports/subpages/bio-table-title-execution-gap-20260915-v001.json","depends_on":["CARRIER_PROBE","TABLE_TITLE"],"mode":"SELF_CONTAINED_STYLE_APPEND","postreadback":["external title source-like", "caption0", "aria-labelledby exact", "columnHeaders3/rowHeaders4 unchanged"]},
+    {"id":"STRESS_ROLE","package":"build/bio-stress-article-resume-20260915-v002.json","depends_on":[],"mode":"ONE_BOUNDARY_CONDITIONAL","warning":"Does not clear physical order."},
+    {"id":"STRESS_VISUAL","package":"build/bio-stress-current-dom-visual-v003.css","depends_on":["CARRIER_PROBE"],"mode":"STYLE_APPEND","warning":"Visual order never counts as DOM/AX exactness."},
+    {"id":"STRESS_PHYSICAL_ORDER","package":"build/bio-stress-article-resume-20260915-v002.json physical_order_blocker","depends_on":[],"mode":"HARD_BLOCKER_UNTIL_COMPLETE_OWNER_PLUS_ONE_ATOMIC_TRANSFORM"},
+    {"id":"EXPECTATIONS_ARTICLE_OWNERSHIP","package":"build/bio-expectations-source-structure-20260915-v005.json","depends_on":[],"mode":"HARD_BLOCKER_UNTIL_COMPLETE_FRESH_OWNER_ONE_SHOT_EDIT_CAPABILITY"},
+    {"id":"EXPECTATIONS_VISUAL","package":"build/bio-expectations-source-structure-v003.css","depends_on":["CARRIER_PROBE","EXPECTATIONS_ARTICLE_OWNERSHIP"],"mode":"STYLE_APPEND_AFTER_STRUCTURE_PASS"},
+    {"id":"CTA_MAIL_STRUCTURE","package":"build/bio-cta-mail-structure-20260914-v001.json","depends_on":[],"mode":"SELF_CONTAINED_CONDITIONAL_OR_NOOP"},
+    {"id":"FAQ_CTA_STATIC_LAYOUT","package":"build/bio-faq-cta-page-local-delivery-20260915-v002.json","depends_on":["CARRIER_PROBE","FAQ_ORDER","CTA_MAIL_STRUCTURE"],"mode":"MUST_FINISH_WITH_DEPENDENCY_READBACK"},
+    {"id":"FAQ_WAVE4","package":"build/bio-wave-source-faq-v001.css","depends_on":["FAQ_CTA_STATIC_LAYOUT"],"mode":"STYLE_APPEND_AFTER_FRESH_SURFACE_PROOF"},
+    {"id":"REVIEW_ORDINAL","package":"build/bio-review-ordinal-source-v001.css","depends_on":["CARRIER_PROBE"],"mode":"MUST_FINISH_WITH_AX_READBACK"},
+    {"id":"REVIEW_POINTS_DIAGNOSTIC","package":"build/bio-review-points-semantics-20260915-v002.json","depends_on":[],"mode":"READ_ONLY_FIRST"},
+    {"id":"REVIEW_POINTS_PHYSICAL_LIST","package":"build/bio-review-points-semantics-20260915-v002.json","depends_on":["REVIEW_POINTS_DIAGNOSTIC"],"mode":"CONDITIONAL_ONE_BOUNDARY_EDIT_ONLY_AFTER_CSS_AND_AX_PROOF"},
+    {"id":"FAQ_EXACT_RUNTIME","depends_on":[],"mode":"HARD_BLOCKER_NO_SANCTIONED_PHYSICAL_PAGE_LOCAL_RUNTIME_OWNER"},
+    {"id":"REVIEW_PREV_NEXT_PANEL_FOCUS","depends_on":[],"mode":"HARD_BLOCKER_NO_SANCTIONED_PHYSICAL_PAGE_LOCAL_RUNTIME_OWNER"}
+  ],
+  "partial_window_policy": [
+    "Start only a node whose complete preflight/edit-or-noop/readback/rollback margin fits above D11 reserve.",
+    "Never split MUST_FINISH or wrapper/owner transforms across uncertain host states.",
+    "Fresh no-op exact PASS satisfies a predecessor without write.",
+    "HARD_BLOCKER nodes receive zero speculative mutation budget."
+  ],
+  "forbidden": ["full Elementor save", "raw SQL/search-replace builder write", "Global Additional CSS", "global ID35/plugin/theme/shared resource", "blind retry", "multi-step stress/expectations wrapper surgery", "aria-owns auto-fallback for Panasonic"],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
