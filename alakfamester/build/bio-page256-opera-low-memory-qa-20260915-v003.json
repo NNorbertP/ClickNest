@@ -1,0 +1,50 @@
+{
+  "schema_version": 3,
+  "package": "bio-page256-opera-low-memory-qa-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_NOT_RUN_BROWSER_DISCONNECTED",
+  "supersedes_for_execution": "build/bio-page256-opera-low-memory-qa-20260915-v002.json",
+  "inherits_general_sequence_from": "build/bio-page256-opera-low-memory-qa-20260915-v002.json",
+  "memory_contract": {
+    "max_tabs": 2,
+    "new_tabs": 0,
+    "use": "one reference + one target tab reused",
+    "screenshots": "one tight pair for current component only",
+    "AX": "section-local/literal only",
+    "reload": "normally none; at most one deliberate clean reload per side for a stateful sequence",
+    "disconnect": "STOP; no reconnect/replacement loop"
+  },
+  "new_or_refined_checks": {
+    "first_three_waves": [
+      "After phase1 v004, inspect af26000e/af26000f/af260012 one boundary at a time.",
+      "Require source-like SVG shape/height/colors and no visible 1px paper/sage seam, clipping or overlap artifact from the restored -1px margin.",
+      "Do not infer seam correctness from CSS text alone."
+    ],
+    "FAQ_base": [
+      "Before wave4, verify base FAQ/CTA has normal source section top+bottom rhythm from spacing-base-v002.",
+      "Do not treat the absence of the -24px wave-adjacent reduction as a defect before wave4 exists."
+    ],
+    "FAQ_wave4": [
+      "After wave4 v002, take one tight source/target boundary pair covering the bottom of expectations, full wave and top of FAQ.",
+      "First decide seam geometry: no gap/clipping, source-like wave height/path.",
+      "Separately measure wave visual end -> FAQ eyebrow/H2 vertical rhythm."
+    ],
+    "FAQ_post_wave_top": [
+      "If target vertical rhythm already equals source after wave4, record no-op PASS; do not append the top override.",
+      "Only a measured source/target residual matching the source 24px wave-adjacent reduction permits post-wave-top-v001.",
+      "After any top-only append, remeasure desktop and <=720; bottom spacing must remain unchanged."
+    ]
+  },
+  "other_measurement_no_write_rules": [
+    "review natural image ratio alone is not defect; rendered media box decides",
+    "desktop 39px H2 is source-like; mobile winning computed value decides",
+    "hero CTA class strings are not acceptance; computed state decides",
+    "technology icon subject/order is protected until a concrete geometry delta is reproduced",
+    "hard structure cannot be declared exact from visual approximation"
+  ],
+  "acceptance_rule": "No PIXEL_PASS until required desktop/responsive section checks, wave/spacing decisions, semantic/runtime blockers and shared/global gates are freshly closed.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
