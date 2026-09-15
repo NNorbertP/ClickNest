@@ -1,0 +1,51 @@
+{
+  "schema_version": 3,
+  "package": "bio-faq-cta-page-local-delivery-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_COMPLETE_STATIC_PAYLOAD_NOT_DEPLOYED",
+  "supersedes_for_execution": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+  "scope": "Page256-only static FAQ/CTA source-parity delivery. No runtime JavaScript/global/shared authority.",
+  "preconditions": [
+    "Normal page264 release/handoff; exact +4 page256 profile/current site/quota/D11 margin; Elementor skill; fresh page256/ID35 baseline.",
+    "Corrected carrier probe v002 PASS and cleanup; exactly one style#af-page256-parity owner.",
+    "FAQ_ORDER PASS/no-op and CTA_MAIL_STRUCTURE PASS/no-op with immediate readback."
+  ],
+  "static_payload_in_order_one_append": [
+    "build/bio-faq-cta-source-layout-v002.css",
+    "build/bio-faq-cta-mail-label-v001.css",
+    "build/bio-faq-cta-mail-interaction-v001.css",
+    "build/bio-faq-cta-button-interaction-v001.css",
+    "build/bio-faq-cta-section-spacing-v001.css"
+  ],
+  "why_each_block_is_required": {
+    "source_layout_v002":"Owns paper FAQ + separate forest CTA band, outer-section eyebrow so CTA H2 AX name stays clean, deterministic grid, mail/form base geometry and responsive layout.",
+    "mail_label_v001":"The guarded mail-child microfix creates .af-sub-cta-label. This block explicitly places/stylizes it in grid column2/row1 instead of relying on CSS auto-placement.",
+    "mail_interaction_v001":"Restores source mail-action hover/focus transform/background/shadow and narrow email sizing without changing href/AX.",
+    "button_interaction_v001":"Restores source bronze form-button hover/focus/active motion without changing href/text.",
+    "section_spacing_v001":"Restores source wave-adjacent FAQ/CTA vertical rhythm; source-layout-v002 has no padding-top rule."
+  },
+  "explicitly_obsolete_do_not_append": [
+    "build/bio-faq-cta-eyebrow-accessible-v001.css because it regenerates the eyebrow on CTA h2::before and can contaminate the H2 accessible name",
+    "build/bio-faq-cta-generated-label-guard-v001.css because it suppresses the outer section ::after that source-layout-v002 intentionally uses for the separate eyebrow"
+  ],
+  "fourth_wave": {
+    "file":"build/bio-wave-source-faq-v001.css",
+    "separate_dependency":"Append only after fresh rendered proof that FAQ is the paper section and the preceding expectations surface is sage/source-like."
+  },
+  "required_readback": [
+    "all five static internal markers exactly once inside the single page-local style owner",
+    "FAQ before CTA; FAQ paper/narrow; CTA forest organic band",
+    "generated Következő lépés remains separate from CTA H2 AX name",
+    "mail shows label above strong email deterministically; href and exact aria-label unchanged; one mail action only",
+    "form action href/text unchanged; source hover/focus/active states do not create overflow",
+    "desktop top/bottom section rhythm and <=720 rhythm match source contract",
+    "four native FAQ disclosures remain functional and all Q/A copy exact",
+    "no global/shared CSS/runtime resource changed"
+  ],
+  "runtime_exactness":"FAQ button/aria/sibling-keyboard/280ms-220ms source runtime remains an independent hard blocker. Static v003 does not claim to solve it.",
+  "rollback":"Remove only the uniquely marked combined FAQ/CTA static payload or the independently appended fourth-wave block; structural predecessors roll back separately.",
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
