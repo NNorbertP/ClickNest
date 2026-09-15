@@ -1,0 +1,26 @@
+{
+  "schema_version": 8,
+  "package": "bio-exactness-blockers-20260915-v008",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_HARD_BLOCKERS_NOT_TO_BE_BYPASSED",
+  "supersedes_for_current_authority": "reports/subpages/bio-exactness-blockers-20260915-v007.json",
+  "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v007.json",
+  "blockers": {
+    "scope_remote": "STATE/page264 release remains NOT_RELEASED; WPVibe/current quota/Elementor skill/Opera unavailable. Future page256 identity exact +4 only.",
+    "page_local_css_carrier": "carrier v002 not live-proven; no global fallback",
+    "review_points_semantics": "Panasonic v002 physical inline list candidate only after complete 3-span/CSS/AX proof",
+    "stress_dom_order": "complete fresh af260007 owner + one atomic owner-level order transform; role-only change separate",
+    "expectations_article_ownership": "expectations v006 complete fresh af260013 owner + one-shot two-article transform; exact source link-arrow SVG is a separate visual proof gate and may not be invented",
+    "FAQ_exact_runtime": "no sanctioned physical page-local runtime owner",
+    "review_prev_next_focus": "no sanctioned physical page-local runtime owner",
+    "review_ordinal_AX": "one visual ordinal/tab and zero standalone AX ordinal text after isolated carrier-dependent fix",
+    "responsive_unverified": "fresh same-browser section/responsive/wave-spacing acceptance still required using Opera low-memory v004"
+  },
+  "blocker_count": 9,
+  "nonblocker_exactness_dependencies": "See convergence v010, including expectations link-arrow visual, TABLE_TITLE_VISUAL and FAQ base/wave/post-wave spacing decisions.",
+  "shared_global_gate_count": 2,
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
