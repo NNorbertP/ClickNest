@@ -1,0 +1,40 @@
+{
+  "schema_version": 5,
+  "package": "bio-faq-cta-page-local-delivery-20260915-v005",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_BASE_STATIC_PAYLOAD_NOT_DEPLOYED",
+  "supersedes_for_execution": "build/bio-faq-cta-page-local-delivery-20260915-v004.json",
+  "preconditions": ["page264 release/handoff", "exact live +4/current site+quota/D11", "Elementor skill", "fresh page256+ID35", "carrier v002 PASS/cleanup", "FAQ_ORDER PASS/no-op", "CTA_MAIL_STRUCTURE PASS/no-op"],
+  "base_static_payload_in_order_one_append": [
+    "build/bio-faq-cta-source-layout-v002.css",
+    "build/bio-faq-cta-mail-label-v001.css",
+    "build/bio-faq-cta-mail-interaction-v001.css",
+    "build/bio-faq-cta-button-interaction-v001.css",
+    "build/bio-faq-cta-section-spacing-base-v002.css"
+  ],
+  "dependency_chain": {
+    "FAQ_WAVE4": {
+      "payload": "build/bio-wave-source-faq-v002.css",
+      "precondition": "fresh rendered expectations sage + FAQ paper proof after expectations structure PASS",
+      "acceptance": "source path/height/colors and -1px seam with no gap/clipping"
+    },
+    "FAQ_POST_WAVE_TOP": {
+      "plan": "build/bio-faq-cta-post-wave-spacing-20260915-v002.json",
+      "payload": "build/bio-faq-cta-post-wave-top-v001.css",
+      "precondition": "wave4 PASS plus fresh vertical geometry proves the source 24px wave-adjacent top reduction is needed",
+      "no_op": "if wave4 + normal base spacing is already exact, do not append"
+    }
+  },
+  "obsolete_do_not_append": [
+    "bio-faq-cta-eyebrow-accessible-v001.css",
+    "bio-faq-cta-generated-label-guard-v001.css",
+    "bio-faq-cta-section-spacing-v001.css combined block",
+    "bio-wave-source-faq-v001.css"
+  ],
+  "base_readback": ["five base markers once", "FAQ before CTA", "paper FAQ and forest CTA", "clean CTA H2 AX", "deterministic mail label/email", "mail/form interaction states", "normal source section top+bottom rhythm", "native FAQ controls/copy preserved"],
+  "runtime_exactness": "Source-exact FAQ button/aria/keyboard/motion remains OPEN; this package authorizes no JavaScript.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
