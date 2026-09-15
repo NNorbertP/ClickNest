@@ -1,0 +1,43 @@
+{
+  "schema_version": 4,
+  "package": "bio-page-local-visual-delivery-20260915-v004",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PREPARED_REQUIRES_CORRECTED_CARRIER_PROBE_PASS",
+  "supersedes_for_execution": "build/bio-page-local-visual-delivery-20260915-v003.json",
+  "purpose": "First low-risk page256 visual parity phase through the proven page-local style-owner path, now using source-contract-correct wave seam geometry.",
+  "required_first_proof": "build/bio-page-local-style-carrier-probe-20260915-v002.json PASS plus safe cleanup/reconciliation.",
+  "physical_owner": "style#af-page256-parity inside af260016",
+  "blocks_in_exact_order": [
+    "build/bio-visual-parity-v001.css",
+    "build/bio-hero-layout-parity-v003.css",
+    "build/bio-card-mobile-source-v001.css",
+    "build/bio-table-section-tone-v001.css",
+    "build/bio-wave-source-core-v002.css",
+    "build/bio-review-quote-source-color-v002.css",
+    "build/bio-review-dot-source-v001.css"
+  ],
+  "wave_change_vs_v003": "Only the first-three wave block advances from core-v001 to core-v002; source path/colors/height remain unchanged and source-recorded margin-bottom:-1px seam overlap is restored.",
+  "not_in_first_payload": [
+    "fourth FAQ wave: separate dependency using bio-wave-source-faq-v002.css",
+    "post-wave FAQ 24px top-spacing reduction: separate measurement-gated dependency",
+    "expectations ownership-dependent visuals",
+    "review ordinal",
+    "stress forest visual",
+    "unmeasured mobile h2 override",
+    "review media geometry override"
+  ],
+  "mandatory_postconditions": [
+    "valid page256 JSON",
+    "one style#af-page256-parity and each internal marker exactly once",
+    "original af260016 visible content/links/order unchanged",
+    "tight hero/technology/table/review checks",
+    "tight seam check for af26000e/af26000f/af260012 with no visible 1px gap/overlap artifact",
+    "compact AX regression",
+    "no shared/global resource changed"
+  ],
+  "rollback": "Remove only the unique phase1 block set or affected revised wave-core marker from the page-local style owner using fresh exact saved boundaries; never restore an old full page blob.",
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
