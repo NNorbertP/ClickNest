@@ -1,0 +1,30 @@
+{
+  "schema_version": 11,
+  "package": "bio-remote-call-budget-20260915-v011",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_LIVE_COUNTER_SCOPE_AND_SKILL_REQUIRED",
+  "supersedes_for_execution": "build/bio-remote-call-budget-20260915-v010.json",
+  "identity": "Exact live ncsnorbert+20260914-4@gmail.com required; live site/quota must be read fresh; D11 reserve >=10.",
+  "DAG": "build/bio-transaction-dependency-graph-20260915-v006.json",
+  "cost_overrides_vs_v010": {
+    "PHASE1_VISUAL": "~4-5, unchanged in call count; package advances to phase1 v004 with wave core-v002.",
+    "FAQ_CTA_STATIC_LAYOUT": "~3-4 after carrier + FAQ_ORDER + CTA_MAIL_STRUCTURE; base four-block append only.",
+    "FAQ_WAVE4": "~2-3 after expectations structure PASS and fresh sage/paper surface proof; uses wave-faq-v002.",
+    "FAQ_POST_WAVE_SPACING": "browser geometry read first; then 0 calls for a no-op PASS or ~2-3 for one page-local spacing append + readback if the 24px reduction is proven necessary."
+  },
+  "important_budget_rule": "Do not reserve or spend the post-wave spacing write budget before wave4 has passed and fresh geometry shows a real remaining spacing delta.",
+  "all_other_costs": "unchanged from v010/v009: microfixes, table-title visual, stress v002, expectations v005, Panasonic v002, runtime blockers and final closeout.",
+  "window_policy": [
+    "<10 calls above reserve: no mutation.",
+    "10-17 above reserve: one small self-contained/no-op unit only.",
+    "18-30 above reserve: one medium dependency-safe unit; do not chain FAQ base+wave+spacing blindly.",
+    ">=35 above reserve preferred before carrier+phase1.",
+    "one-shot structure transforms get separate windows unless live quota is comfortably above complete rollback/readback cost.",
+    "429/5xx/ambiguous mutation => exact readback next, never blind retry."
+  ],
+  "browser_memory": "At most one existing source + one existing target Opera tab, reused; section-local AX/tight captures; no reconnect/reload loop.",
+  "current_live": {"scope":"PAGE264 ONLY / NOT_RELEASED","site":"UNKNOWN","quota":"UNKNOWN","elementor_skill":"unavailable","opera":"not connected"},
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
