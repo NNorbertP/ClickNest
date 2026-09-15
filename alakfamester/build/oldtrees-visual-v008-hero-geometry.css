@@ -1,0 +1,21 @@
+/* af-oldtrees-visual-v008:start
+ * Scope: page264 survivor hero desktop geometry only.
+ * Source .hero--inner is content-height with responsive 20..34px top and 28..50px bottom padding.
+ * Current target v015 forces height:566px, 40px/40px padding, align-content:center and a 840px extras width.
+ * This block restores the source ownership without touching hero art, copy, DOM or other pages.
+ */
+@media (min-width: 901px) {
+  body.page-id-264 #af-subpage-survivor > #af-sub-survivor-hero {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-top: clamp(20px, 2.2vw, 34px) !important;
+    padding-bottom: clamp(28px, 3.2vw, 50px) !important;
+    align-content: start !important;
+  }
+
+  body.page-id-264 #af-subpage-survivor > #af-sub-survivor-hero > .af-sub-hero-extras {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+/* af-oldtrees-visual-v008:end */
