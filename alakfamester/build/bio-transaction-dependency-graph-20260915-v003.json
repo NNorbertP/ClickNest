@@ -1,0 +1,173 @@
+{
+  "schema_version": 3,
+  "package": "bio-transaction-dependency-graph-20260915-v003",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "PLANNING_ONLY_NO_AUTHORIZATION",
+  "supersedes_for_execution": "build/bio-transaction-dependency-graph-20260915-v002.json",
+  "reason": "Rebind all page-local style dependencies to corrected carrier v002, phase1 v003 and FAQ/CTA v002; bind page256 identity explicitly to +4.",
+  "global_gates": [
+    "STATE and latest page264 release evidence explicitly hand writable scope to page256.",
+    "First live WPVibe profile is exactly ncsnorbert+20260914-4@gmail.com; target site/current quota verified; selected node plus verification/rollback leaves D11 >=10.",
+    "Elementor skill loads successfully.",
+    "Fresh page256 bytes/SHA/JSON plus COMPLETE LIVE ID35 state reconciled.",
+    "No unresolved 429/5xx/ambiguous mutation state.",
+    "Browser-required nodes reuse at most the existing source/target Opera pair; no replacements."
+  ],
+  "nodes": [
+    {
+      "id": "CARRIER_PROBE",
+      "owner": "af260016",
+      "package": "build/bio-page-local-style-carrier-probe-20260915-v002.json",
+      "depends_on": [],
+      "atomic_window": "MUST_FINISH",
+      "postreadback": ["valid saved JSON", "probe rendered exactly once and active", "original af260016 visible content/order unchanged", "probe cleanup/reconciliation"],
+      "failure": "STOP all page-local CSS; no global/shared fallback."
+    },
+    {
+      "id": "PHASE1_VISUAL",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-page-local-visual-delivery-20260915-v003.json",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "MUST_FINISH",
+      "postreadback": ["valid saved JSON", "style/internal markers unique", "tight hero/technology/table/review render QA", "compact AX regression"]
+    },
+    {
+      "id": "FAQ_ORDER",
+      "owner": "af260015 settings._css_classes",
+      "package": "build/bio-page256-next-safe-package-20260915-v016.json FAQ_ORDER",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED",
+      "precondition": "Fresh exact state proves af-faq-content still owns incorrect order, otherwise no-op PASS.",
+      "postreadback": ["FAQ before CTA", "four native controls intact", "copy unchanged", "JSON valid"]
+    },
+    {
+      "id": "REVIEW_ANCHOR",
+      "owner": "af26000d Atomic settings",
+      "package": "build/bio-page256-next-safe-package-20260915-v016.json REVIEW_ANCHOR",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_OPTIONAL",
+      "precondition": "Fresh settings prove supported _cssid-style mechanism; guessed attributes forbidden.",
+      "postreadback": ["id=ugyfelvelemenyek exactly once", "deep-link works", "Atomic Tabs/live ID35 unchanged"]
+    },
+    {
+      "id": "REVIEW_ROLE_COPY",
+      "owner": "b2560031 paragraph value",
+      "package": "build/bio-page256-next-safe-package-20260915-v016.json REVIEW_ROLE_COPY",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED",
+      "precondition": "Fresh text is still the known short target line, otherwise no-op PASS.",
+      "postreadback": ["full source role once", "tab name/body/title/author unchanged", "JSON valid"]
+    },
+    {
+      "id": "TABLE_TITLE",
+      "owner": "af260011 compact caption/table opening",
+      "package": "build/bio-page256-next-safe-package-20260915-v016.json TABLE_TITLE",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_CONDITIONAL",
+      "precondition": "One fresh exact boundary contains the complete caption/table transition; otherwise leave OPEN.",
+      "postreadback": ["caption0", "external title once", "aria-labelledby exact", "3 uppercase column headers", "4 rowHeaders", "JSON valid"]
+    },
+    {
+      "id": "STRESS_ROLE",
+      "owner": "af260007 legacy root tag",
+      "package": "build/bio-stress-article-semantic-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_CONDITIONAL",
+      "precondition": "Fresh complete tag boundaries prove tag-only atomic edit.",
+      "warning": "Does not close physical reading-order blocker."
+    },
+    {
+      "id": "STRESS_VISUAL",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-stress-current-dom-visual-v003.css",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "SELF_CONTAINED_STYLE_APPEND",
+      "warning": "Visual reorder never counts as DOM/AX exactness."
+    },
+    {
+      "id": "CTA_MAIL_STRUCTURE",
+      "owner": "9a1b2c3d mailto anchor children",
+      "package": "build/bio-cta-mail-structure-20260914-v001.json",
+      "depends_on": [],
+      "atomic_window": "SELF_CONTAINED_CONDITIONAL",
+      "precondition": "Fresh complete child boundary differs, otherwise no-op PASS.",
+      "postreadback": ["label then strong email", "href exact", "aria-label exact", "one mail action", "JSON valid"]
+    },
+    {
+      "id": "FAQ_CTA_STATIC_LAYOUT",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-faq-cta-page-local-delivery-20260915-v002.json",
+      "depends_on": ["CARRIER_PROBE", "FAQ_ORDER", "CTA_MAIL_STRUCTURE"],
+      "atomic_window": "MUST_FINISH_WITH_DEPENDENCY_READBACK",
+      "delivery_piece": "build/bio-faq-cta-source-layout-v002.css only",
+      "warning": "Static layout does not close FAQ runtime exactness."
+    },
+    {
+      "id": "FAQ_WAVE4",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-wave-source-faq-v001.css",
+      "depends_on": ["FAQ_CTA_STATIC_LAYOUT"],
+      "atomic_window": "SELF_CONTAINED_STYLE_APPEND",
+      "precondition": "Fresh rendered FAQ is paper/source-like and preceding expectations surface is sage."
+    },
+    {
+      "id": "REVIEW_ORDINAL",
+      "owner": "af260016 style#af-page256-parity",
+      "package": "build/bio-review-ordinal-source-v001.css",
+      "depends_on": ["CARRIER_PROBE"],
+      "atomic_window": "MUST_FINISH_WITH_AX_READBACK",
+      "precondition": "Fresh diagnostic reconfirms the generated text owners.",
+      "postreadback": ["one visible ordinal/tab", "zero standalone ordinal AX staticText", "exact tab names"]
+    },
+    {
+      "id": "REVIEW_POINTS_DIAGNOSTIC",
+      "owner": "active Panasonic panel AX plus exact saved spans",
+      "package": "build/bio-review-points-semantics-20260914-v001.json diagnostic phase",
+      "depends_on": [],
+      "atomic_window": "READ_ONLY"
+    },
+    {
+      "id": "REVIEW_POINTS_CANDIDATE",
+      "owner": "Panasonic point span semantics",
+      "depends_on": ["REVIEW_POINTS_DIAGNOSTIC"],
+      "atomic_window": "HOLD_UNTIL_BOUNDARY_AND_AX_PROOF"
+    },
+    {
+      "id": "STRESS_PHYSICAL_ORDER",
+      "owner": "af260007 complete saved owner",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "Fresh complete owner plus a proven single atomic owner-level transform required."
+    },
+    {
+      "id": "EXPECTATIONS_ARTICLE_OWNERSHIP",
+      "owner": "af260013 complete saved ownership boundary",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER",
+      "reason": "Fresh complete owner plus safe single-transaction two-article regrouping required."
+    },
+    {
+      "id": "FAQ_EXACT_RUNTIME",
+      "owner": "no sanctioned physically page-local runtime proven",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER"
+    },
+    {
+      "id": "REVIEW_PREV_NEXT_PANEL_FOCUS",
+      "owner": "no sanctioned physical page-local runtime proven",
+      "depends_on": [],
+      "atomic_window": "HARD_BLOCKER"
+    }
+  ],
+  "safe_partial_window_policy": [
+    "Start only nodes whose full read/edit-or-no-op/readback/rollback margin fits above D11 reserve.",
+    "Never split MUST_FINISH nodes across uncertain host states.",
+    "Never start a dependent node without fresh predecessor PASS in the same live state.",
+    "Fresh no-op source-exact PASS may satisfy a predecessor without a write.",
+    "HARD_BLOCKER nodes receive zero speculative mutation budget."
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
