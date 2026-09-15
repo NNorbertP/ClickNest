@@ -1,0 +1,73 @@
+{
+  "schema_version": 3,
+  "package": "bio-scope-handoff-ready-20260915-v003",
+  "date": "2026-09-15",
+  "page256_target": "https://alakfamester-wp.clicknest.hu/biologiai-vedelem/",
+  "status": "PREPARED_NO_SCOPE_MUTATION",
+  "supersedes": "build/bio-scope-handoff-ready-20260915-v002.json",
+  "current_conflict": {
+    "STATE_md": "Fresh STATE.md still says PAGE264 ONLY.",
+    "page264_latest_seen": "reports/subpages/oldtrees-continuation-20260915-v013.json; oldtrees scope-release gate remains NOT RELEASED until fresh v006/v007 implementation closeout.",
+    "Opera": "disconnected/unavailable for fresh page256 acceptance in this chat; no new tabs opened",
+    "WPVibe": "disabled/unavailable in this chat; current connection/quota unknown",
+    "identity": "User-authorized page256 WPVibe identity is ncsnorbert+20260914-4@gmail.com. Later +5 references are reconciled as documentation drift in reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json."
+  },
+  "handoff_must_not_happen_until": [
+    "The page264 flow explicitly reaches its safe release/handoff gate; read-only/tool-blocked status alone is not release evidence.",
+    "Fresh STATE.md is read and no longer assigns an in-flight page264-only writer that would be clobbered.",
+    "The active user task still authorizes only page256 changes.",
+    "If browser acceptance is needed, the two shared Opera tabs are actually released; use only that pair and never replacement tabs.",
+    "WPVibe is usable and the first live profile check returns exactly ncsnorbert+20260914-4@gmail.com; any other identity means no page256 mutation.",
+    "Exact current quota/site connection is known and the complete selected transaction leaves D11 reserve >=10.",
+    "Elementor skill loads successfully for the live mutation session."
+  ],
+  "handoff_sequence": [
+    "1. Read STATE.md and the latest page264 continuation/release-gate fresh; do not infer release from timestamps or tool unavailability.",
+    "2. Preserve full STATE history. Change active-scope state only through a safe full-file-preserving update; if the complete current STATE cannot be obtained, leave it unchanged and do not claim handoff.",
+    "3. Verify WPVibe profile before site/page actions. Require exact +4 identity, then exact site connection/quota; +5/other profile -> STOP.",
+    "4. Load Elementor skill successfully.",
+    "5. Fresh-read page256 bytes/SHA/JSON and FULL live ID35 code/state; never reconstruct ID35 from the stale repository mirror.",
+    "6. If Opera is available/released, reuse only the two existing source/target tabs; normalize them without opening new tabs and reconfirm only the deltas for the first selected unit.",
+    "7. Reconcile every candidate against fresh exact owner boundaries. Live saved/rendered state outranks READY filenames.",
+    "8. First mutation, if every gate/call budget permits, is only the inert af260016 page-local style-carrier probe. There is no global CSS/runtime fallback."
+  ],
+  "authoritative_page256_files_after_handoff": [
+    "reports/subpages/bio-evidence-supersedence-20260915-v010.json",
+    "reports/subpages/bio-continuation-20260915-v030.json",
+    "reports/subpages/bio-wpvibe-identity-reconciliation-20260915-v001.json",
+    "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v001.json",
+    "reports/subpages/bio-owner-boundary-runtime-blocker-audit-20260915-v001.json",
+    "reports/subpages/bio-final-acceptance-status-20260915-v001.json",
+    "reports/subpages/bio-page-local-phase1-static-qa-20260915-v001.json",
+    "reports/subpages/bio-technology-icon-exactness-audit-20260915-v001.json",
+    "reports/subpages/bio-content-parity-manifest-20260914-v001.json",
+    "reports/subpages/bio-ax-role-gate-20260914-v002.json",
+    "specs/bio-final-acceptance-20260914-v003.json",
+    "build/bio-next-remote-window-20260915-v006.json",
+    "build/bio-remote-call-budget-20260915-v007.json",
+    "build/bio-transaction-dependency-graph-20260915-v002.json",
+    "build/bio-page256-next-safe-package-20260914-v015.json",
+    "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "build/bio-page-local-visual-delivery-20260914-v002.json",
+    "build/bio-faq-cta-page-local-delivery-20260915-v001.json",
+    "build/bio-page256-opera-low-memory-qa-20260915-v001.json"
+  ],
+  "first_remote_candidate_after_handoff": {
+    "package": "build/bio-page-local-style-carrier-probe-20260914-v001.json",
+    "why": "Every page256-local visual package depends on a physically page-local style owner, which is not yet live-proven.",
+    "failure": "Clean/reconcile the probe and stop the CSS path. Do not use Hello Additional CSS or another shared fallback."
+  },
+  "forbidden": [
+    "do not modify page264 from page256 work",
+    "do not steal/recreate Opera tabs mid-page264 QA",
+    "do not truncate STATE history to force scope switch",
+    "do not use +5 or another WPVibe account without explicit valid authorization; current page256 gate is exact +4",
+    "do not use stale quota/site/hash/ID35 values as current truth",
+    "do not start a transaction that cannot finish postreadback/rollback margin above D11 reserve",
+    "do not replay v014 stress wrapper, old expectations regrouping, full Elementor save, raw SQL/search-replace, global Additional CSS, global Code Snippets/ID35/plugin mutation"
+  ],
+  "wordpress_writes": 0,
+  "state_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
