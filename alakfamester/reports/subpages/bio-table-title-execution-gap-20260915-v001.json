@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "package": "bio-table-title-execution-gap-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "element": "af260011",
+  "status": "STATIC_EXECUTION_GAP_PROVEN_NO_WORDPRESS_WRITE",
+  "finding": "The planned TABLE_TITLE structural microfix converts the current internal caption into external p.af-table-title#tunet-tabla-cim + table aria-labelledby. The seven-block phase1 payload does not include the existing external-title companion CSS. bio-visual-parity-v001.css styles the current caption, so after the structural transform that selector no longer owns the visible external title.",
+  "source_contract": "build/bio-table-source-structure-20260914-v001.json proves external p.table-title is .9rem, weight600, muted, margin-bottom12; intro paragraph is 1.125rem/max104ch/margin-bottom32.",
+  "existing_exact_css": "build/bio-table-source-structure-v001.css already implements those source-proven values scoped to body.page-id-256 .elementor-element-af260011.",
+  "correct_dependency": {
+    "node": "TABLE_TITLE_VISUAL",
+    "depends_on": ["CARRIER_PROBE", "TABLE_TITLE"],
+    "payload": "build/bio-table-source-structure-v001.css",
+    "owner": "style#af-page256-parity inside af260016",
+    "rule": "Append as one uniquely marked page-local block only after fresh TABLE_TITLE structural readback proves caption0, external title once and aria-labelledby exact."
+  },
+  "why_not_phase1": "Before TABLE_TITLE markup exists, .af-table-title matches nothing. Keeping the block dependency-gated avoids coupling the first low-risk visual transaction to a structure that may still be current-caption state.",
+  "postconditions": ["external title visually sits 12px above table", "intro max-width/rhythm source-like", "caption remains absent", "table AX name remains exact via aria-labelledby", "columnHeaders3/rowHeaders4 unchanged"],
+  "rollback": "Remove only the TABLE_TITLE_VISUAL marker block; never restore the caption or unrelated phase1 CSS as a style rollback.",
+  "wordpress_writes": 0,
+  "pixel_pass": false
+}
