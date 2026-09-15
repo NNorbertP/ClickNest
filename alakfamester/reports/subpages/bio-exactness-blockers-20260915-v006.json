@@ -1,0 +1,26 @@
+{
+  "schema_version": 6,
+  "package": "bio-exactness-blockers-20260915-v006",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "CURRENT_HARD_BLOCKERS_NOT_TO_BE_BYPASSED",
+  "supersedes_for_current_authority": "reports/subpages/bio-exactness-blockers-20260915-v005.json",
+  "execution_matrix": "reports/subpages/bio-exactness-blocker-execution-matrix-20260915-v004.json",
+  "blockers": {
+    "scope_remote":"STATE PAGE264 ONLY / release NOT_RELEASED; WPVibe/current quota/Elementor skill/Opera unavailable. Future page256 identity must be exact +4.",
+    "page_local_css_carrier":"Corrected carrier v002 not live-proven; no global/shared CSS fallback.",
+    "review_points_semantics":"Prefer physical inline role=list wrapper via review-points v002 only after active-panel AX + complete 3-span boundary + CSS-owner proof; aria-owns is not automatic fallback.",
+    "stress_dom_order":"Role-only aside->article v002 is separate; exact physical order requires complete fresh af260007 owner + one single atomic owner-level transform.",
+    "expectations_article_ownership":"v005 candidate requires supported complete fresh af260013 owner read and one guarded one-shot owner-value transform; otherwise OPEN.",
+    "FAQ_exact_runtime":"No sanctioned physically page-local runtime owner for source button/aria/keyboard/motion contract.",
+    "review_prev_next_focus":"No sanctioned physical runtime owner for source-equivalent panel focus after ID35 step switch.",
+    "review_ordinal_AX":"One visual ordinal/tab and zero standalone AX ordinal staticText require isolated CSS + immediate AX after carrier PASS.",
+    "responsive_unverified":"Fresh same-browser desktop/critical-breakpoint acceptance still required; use Opera low-memory v002."
+  },
+  "blocker_count":9,
+  "separate_nonblocker_dependencies":"See convergence v007; hard-blocker count does not replace required microfix/no-op/style/measurement work such as TABLE_TITLE_VISUAL.",
+  "shared_global_gate_count":2,
+  "wordpress_writes":0,
+  "opera_tabs_opened":0,
+  "pixel_pass":false
+}
