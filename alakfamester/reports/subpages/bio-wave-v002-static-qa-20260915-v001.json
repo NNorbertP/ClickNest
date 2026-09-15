@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "package": "bio-wave-v002-static-qa-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "STATIC_SOURCE_CONTRACT_PASS_LIVE_RENDER_UNPROVEN",
+  "evidence": "build/bio-wave-source-exact-20260914-v001.json records source .wave height clamp(34px,4vw,66px), exact SVG path and margin-bottom:-1px.",
+  "files": [
+    "build/bio-wave-source-core-v002.css",
+    "build/bio-wave-source-faq-v002.css"
+  ],
+  "checks": {
+    "height": "PASS_STATIC: both v002 files keep the source clamp(34px,4vw,66px).",
+    "path": "PASS_STATIC: both use the recorded source SVG path unchanged.",
+    "transition_colors": "PASS_STATIC: first-three paper/sage transitions and FAQ sage->paper mapping match the source contract.",
+    "seam_overlap": "PASS_STATIC: v002 changes margin from 0 to 0 0 -1px, restoring the source recorded overlap.",
+    "scope": "PASS_STATIC: selectors remain body.page-id-256 plus exact divider element IDs only.",
+    "D18": "PASS_STATIC: no Atomic settings/classes or full Elementor save is required.",
+    "section_spacing_separation": "PASS_STATIC: wave v002 files do not alter following section padding. The separate 24px reduced top rhythm remains a later dependency."
+  },
+  "live_required": [
+    "tight source/target seam inspection at every deployed divider",
+    "no 1px paper/sage gap or visible overlap artifact",
+    "no horizontal overflow or changed section ownership",
+    "if the actual Elementor flow makes -1px harmful, stop and diagnose instead of forcing source-contract data blindly"
+  ],
+  "wordpress_writes": 0,
+  "opera_tabs_opened": 0,
+  "pixel_pass": false
+}
