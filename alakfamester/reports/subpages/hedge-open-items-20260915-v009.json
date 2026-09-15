@@ -1,0 +1,146 @@
+{
+  "schema_version": 9,
+  "package": "hedge-open-items-20260915-v009",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "supersedes_for_execution": "reports/subpages/hedge-open-items-20260915-v008.json",
+  "wordpress_writes": 0,
+  "opera_new_tabs": 0,
+  "current_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "historical_until_fresh_read": true,
+    "fresh_read_required_before_write": true
+  },
+  "closed_do_not_reopen_without_fresh_failure": [
+    "hero af2e004e widget accessible/source contract including exact SVG title/description",
+    "proof carousel af2e004d 21 images and historical 4000ms autoplay proof",
+    "native review structure c3d30005: exactly 3 tabs/panels and exact three tab-name contract",
+    "EAEL gallery b2e2c001: 28 page-local id=0 items, full resolution, original URLs, exact names/order",
+    "52 main image roles reconciled as 21 proof + 3 reviews + 28 gallery",
+    "five complete legacy named regions",
+    "Van hasonló növénye? full mailto semantics",
+    "af2e004c phone/e-mail accessible names and 24-hour reply sentence",
+    "D09 page272 links and anchors",
+    "26/26 shared-media recovery; no further Hedge shared-media writes",
+    "removed legacy af2e0009-af2e000e remain absent",
+    "old 52-to-16 media deficit and stone-to-sage background issue are stale/closed",
+    "visible heading text-set parity historically passed",
+    "MetForm radio mf_input_required=yes capability is genuinely wired into native client-side validation",
+    "no current page272 CSS candidate"
+  ],
+  "superseded_assumptions_do_not_replay": [
+    "#ajanlatkeres is NOT proven to be the complete source-equivalent Küldjön fotót a sövényről outer region; v002 outer-region audit supersedes v001 and semantic v004/v005 correctly omit this outer label",
+    "do not label hero art af2e004e or candidate container af2e0041 as the complete hero region without fresh common-root proof",
+    "do not label EAEL b2e2c001 alone as Sövénymunkák without heading+gallery common-root proof",
+    "do not auto-rollback proof-carousel listitem semantics to historical source group without current parent/owner evidence",
+    "do not restore old shared-media attachment-alt strategy or real media IDs into the final page-local gallery"
+  ],
+  "only_conditional_write_candidate": {
+    "owner": "existing Code Snippets ID36 only",
+    "candidate": "build/hedge-semantic-runtime-v005.php",
+    "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "syntax_qa": "reports/subpages/hedge-semantic-runtime-syntax-qa-20260915-v001.json",
+    "delta_audit": "reports/subpages/hedge-id36-v001-v005-delta-audit-20260915-v002.json",
+    "status": "NOT_DEPLOYED_CONDITIONAL_ON_FRESH_LIVE_GATES",
+    "safety_improvement": "v005 preserves existing aria-describedby/aria-labelledby IDREF tokens, does not overwrite unexpected service roles, and does not recreate the superseded #ajanlatkeres outer-region assumption.",
+    "must_pass": [
+      "fresh accepted/reconciled page272 baseline",
+      "exact current ID36 rollback body/state and v005-not-already-live check",
+      "exact review/Form33 cardinality and identity",
+      "current native naming/description/error/role IDREFs resolved and conflict-free",
+      "project relation IDs unique",
+      "D11 reserve plus full readback margin"
+    ],
+    "hold_rule": "Any stronger native owner, unexpected role, unresolved/duplicate IDREF or ambiguous current state => no write."
+  },
+  "read_first_page272_local": [
+    {
+      "item": "review panel full preservation",
+      "status": "OPEN_READ_ONLY",
+      "need": "all three raw/narrow-normalized quotes, visible company/person/role lines, image identity/accessibility/order and exact target tab↔panel wiring versus trustworthy reference",
+      "rule": "never reconstruct from attachment IDs/names/memory; Git history contains no full generated page272 review payload"
+    },
+    {
+      "item": "hero/gallery/form outer named-region boundaries",
+      "status": "OPEN_READ_ONLY",
+      "need": "nearest stable complete section-scale common roots without swallowing unrelated neighboring sections"
+    },
+    {
+      "item": "heading tree",
+      "status": "OPEN_READ_ONLY",
+      "need": "ordered main-content source/target H1-H6 level/name trees; visible text set itself is historically closed; exclude global header/footer headings from local compare"
+    },
+    {
+      "item": "proof-carousel semantics",
+      "status": "OPEN_READ_ONLY",
+      "need": "fresh source/target item and parent roles/names/ownership; do not authorize group/listitem rewrite from historical memory"
+    },
+    {
+      "item": "Form33 service required choice",
+      "status": "OPEN_READ_ONLY",
+      "need": "exact #af-form-service widget ID/type/mf_input_name/mf_input_required and six labels/values/order; if required=yes, only a provably no-network/no-entry validation trigger may prove rejection",
+      "shared_form_write": false
+    },
+    {
+      "item": "document head",
+      "status": "OPEN_READ_ONLY",
+      "need": "target title/description/canonical/robots/OG/schema via WPVibe rendered HTML plus trustworthy reference head through a separate raw-source route if one becomes available; Opera AX is not a head provider",
+      "write_rule": "no Yoast/post-meta guess from missing source capture"
+    },
+    {
+      "item": "dynamic Form33 native error semantics",
+      "status": "OPEN_IF_SAFE_TO_CAPTURE",
+      "need": "validation-state aria-describedby/aria-errormessage/aria-invalid and referenced error/help nodes without real submission/network request",
+      "fallback": "If no safe trigger exists, do not improvise; retain v005 token-preserving design and keep the proof open."
+    }
+  ],
+  "proof_only_no_code_until_failure": [
+    "review click/Arrow/Home/End direct page272 proof; current Opera connector has no interaction automation",
+    "proof-carousel ArrowLeft/Right, pointer swipe, hover/focus pause-resume and reduced-motion; current Opera connector has no interaction automation",
+    "EAEL lightbox/source behavior; historical target popup setting is none and no source-specific lightbox proof justifies a write",
+    "visual/CSS differences until synchronized same-environment page272-local failure and cascade owner are proven"
+  ],
+  "external_shared_observation_only": [
+    "global header Services-parent current state on /soveny-specialista/",
+    "global floating contact dock paint/layout",
+    "footer gross regression"
+  ],
+  "formal_blockers": [
+    "original specs/acceptance.json absent from current repository and unrecoverable from inspected Git history",
+    "original specs/behaviors.json absent",
+    "historical tools/measure.cjs/behaviors.cjs/compare-behaviors.cjs/lib.cjs absent",
+    "no conversation attachment containing the original ZIP/harness",
+    "Opera connector has no deterministic viewport resize",
+    "no accepted replacement six-view deterministic same-engine DPR/zoom screenshot/overlay/diff contract"
+  ],
+  "formal_views": [1920, 1440, 1024, 768, 390, 360],
+  "current_execution_chain": {
+    "entrypoint": "reports/subpages/hedge-artifact-supersession-20260915-v012.json",
+    "continuation": "reports/subpages/hedge-continuation-20260915-v018.json",
+    "static_reconciliation": "reports/subpages/hedge-static-evidence-reconciliation-20260915-v001.json",
+    "candidate": "build/hedge-semantic-runtime-v005.php",
+    "qa": "reports/subpages/hedge-semantic-runtime-static-qa-v008.json",
+    "diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v003.json",
+    "acceptance": "build/hedge-acceptance-matrix-20260915-v007.json",
+    "live_plan": "build/hedge-next-live-window-plan-20260915-v008.json"
+  },
+  "low_memory_tool_split": {
+    "wpvibe_when_available": "baseline, ID36, one target JavaScript-executed rendered HTML read, Form33 saved settings, conditional ID36 write/readback",
+    "opera_when_available": "at most one reference + one target tab for AX/screenshot only; no DOM/head/interactions claim, no reconnect/replacement loop",
+    "reference_raw_dom_head": "leave open unless a trustworthy non-Opera source route becomes available"
+  },
+  "tool_state": {
+    "wpvibe": "disabled/unavailable in this continuation; not retried",
+    "opera": "not connected on prior list-tabs attempt; zero new tabs; not retried",
+    "public_target_reference_http": "not trustworthy/available",
+    "conversation_files": "none",
+    "github": "available"
+  },
+  "parallel_state_rule": "Current STATE.md belongs to a page264-only continuation and must remain untouched from this page272 package.",
+  "pixel_pass": false,
+  "status": "PAGE272_OPEN_ITEMS_V009_CAPABILITY_ALIGNED_LIVE_AND_FORMAL_PROOF_BLOCKED"
+}
