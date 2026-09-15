@@ -1,0 +1,113 @@
+{
+  "schema_version": 15,
+  "package": "hedge-continuation-20260915-v015",
+  "checkpoint_local": "2026-09-15",
+  "page_id": 272,
+  "target": "https://alakfamester-wp.clicknest.hu/soveny-specialista/",
+  "reference": "https://alakfamester.clicknest.hu/soveny-specialista.html",
+  "wordpress_write_scope": "page272-specific runtime/content only",
+  "scope_status": "User explicitly continued the existing page272-only parity task in this conversation; no shared/global/media/other-page write is authorized.",
+  "wordpress_writes_this_continuation": 0,
+  "accepted_saved_baseline": {
+    "bytes": 53606,
+    "sha256": "ef688b2885adb2e7f0b272f294efb3a1066fd22c3005ec33ee2f0eada2213b56",
+    "json_valid": true,
+    "fresh_read_required_before_write": true
+  },
+  "authoritative_chain": {
+    "semantic_runtime": "build/hedge-semantic-runtime-v004.php",
+    "semantic_qa": "reports/subpages/hedge-semantic-runtime-static-qa-v007.json",
+    "review_name_resolution": "reports/subpages/hedge-review-name-contract-resolution-20260915-v001.json",
+    "review_panel_preservation": "reports/subpages/hedge-review-panel-preservation-audit-20260915-v001.json",
+    "one_pass_dom_diagnostic": "build/hedge-rendered-dom-diagnostic-20260915-v002.json",
+    "open_items": "reports/subpages/hedge-open-items-20260915-v007.json",
+    "next_live_window": "build/hedge-next-live-window-plan-20260915-v006.json",
+    "acceptance_matrix": "build/hedge-acceptance-matrix-20260915-v006.json",
+    "convergence_ledger": "reports/subpages/hedge-convergence-ledger-20260915-v001.json",
+    "artifact_precedence": "reports/subpages/hedge-artifact-supersession-20260915-v008.json"
+  },
+  "current_write_candidate": {
+    "resource": "build/hedge-semantic-runtime-v004.php",
+    "owner": "existing Code Snippets ID36 only",
+    "status": "CONDITIONAL_ONLY_NOT_EXECUTED",
+    "required_before_write": [
+      "fresh page272 baseline reconciled with accepted 53606 B / ef688b...13b56",
+      "exact current ID36 body/name/scope/active/code_error and rollback body",
+      "one review root/tablist and three real tabs in Panasonic -> Otolecz -> ARKER'S order",
+      "one Form33 wrapper/form/direct-call/service/city structure",
+      "existing review/form/service/city ARIA and error relations captured and conflict-free",
+      "planned/reused IDREF IDs unique",
+      "no newer native semantic owner/helper"
+    ],
+    "conflict_rule": "Any stronger/newer native semantics or ID conflict converts v004 to HOLD; never delete native relations just to make v004 win."
+  },
+  "review_panel_preservation": {
+    "structure_and_tab_names": "CLOSED_PRESERVE",
+    "exact_full_inner_content": "READ_ONLY_OPEN",
+    "capture_next": [
+      "all three tab ids/names/aria-controls",
+      "all three panel ids/aria-labelledby/hidden-selected relation/order",
+      "full normalized quote text per panel",
+      "visible company/person/role lines",
+      "image src/currentSrc or stable media identity plus alt/computed name",
+      "one-to-one tab-panel wiring and no accidental duplicate panel/image content"
+    ],
+    "write_rule": "Any proven panel content mismatch becomes a separate smallest-owner content/media correction; never fold it into attribute-only ID36 v004."
+  },
+  "form33_required_radio": {
+    "historical_evidence": "Shared Form33 history proves textarea/photo/success-state configuration but does not preserve the current service-radio mf_input_required value or six exact options.",
+    "status": "FRESH_READ_FIRST",
+    "next": "Read only #af-form-service widget id/type/mf_input_name/mf_input_required/options. If required=yes, prove native empty-choice rejection through a non-delivery/non-entry path before considering PHP fallback.",
+    "shared_form_write": false
+  },
+  "interaction_status": {
+    "reviews": "No known page272 interaction defect; shared D12 click/Arrow/Home/End implementation is proven on the representative native-tabs component. Direct page272 run is proof-only unless failure reproduces.",
+    "proof_carousel": "Historical page272 4000ms autoplay pass exists; Arrow/swipe/pause/reduced-motion remain proof-only. Do not add duplicate handlers/timers without a reproduced failure.",
+    "gallery": "Keep EAEL owner; do not reintroduce legacy js-masonry/js-zoom behavior."
+  },
+  "closed_preserve": [
+    "26/26 shared-media recovery; no further Hedge shared-media writes",
+    "EAEL 28/28 id=0/full/original URLs/exact names/order",
+    "five complete legacy named regions",
+    "full CTA mailto, exact contact names and 24-hour reply sentence",
+    "hero af2e004e, proof af2e004d, reviews c3d30005, gallery b2e2c001, Form33 af2e0011",
+    "removed legacy widgets af2e0009-af2e000e remain absent",
+    "D09 page272 links/anchors closed",
+    "historical media deficit and stone/sage background issues stale/closed",
+    "no page272 CSS candidate from current ownership registry/history"
+  ],
+  "read_first_local": [
+    "complete hero/gallery/form common roots for outer regions",
+    "ordered source/target H1-H6 level/name trees",
+    "proof-carousel item/parent role semantics and owner",
+    "all three review panel exact inner content and wiring",
+    "Form33 service-radio exact required setting/options and native rejection behavior",
+    "source/target title/description/canonical/robots/OG/schema ownership/count"
+  ],
+  "shared_global_observation_only": [
+    "global header Services-parent route state on /soveny-specialista/",
+    "global floating contact dock paint/layout",
+    "footer gross regression"
+  ],
+  "tool_state": {
+    "wpvibe": "Tool became disabled before any live page operation in this continuation; no further WPVibe calls permitted here.",
+    "opera": "Single list-tabs attempt returned Browser not connected; zero new tabs opened; no reconnect/reload loop.",
+    "public_http": "Direct/search fallback did not yield trustworthy page content and was stopped.",
+    "github": "available"
+  },
+  "future_budget": {
+    "nominal_wpvibe_max": 9,
+    "D11_reserve": 10,
+    "preferred_remaining_after_counter": 21
+  },
+  "formal_acceptance": {
+    "views": [1920, 1440, 1024, 768, 390, 360],
+    "status": "BLOCKED_MISSING_FROZEN_SPECS_AND_DETERMINISTIC_CAPTURE_DIFF_HARNESS",
+    "pixel_pass": false
+  },
+  "state_md": "Parallel STATE.md ownership is not overwritten from this page272 continuation; use a dedicated prepend only after state ownership reconciliation.",
+  "smtp_or_external_submission": false,
+  "real_form_submission": false,
+  "pixel_pass": false,
+  "status": "PAGE272_CHAIN_ALIGNED_STATIC_PROGRESS_CONTINUES_LIVE_EXECUTION_BLOCKED"
+}
