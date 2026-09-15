@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "package": "bio-owner-boundary-runtime-blocker-audit-20260915-v001",
+  "date": "2026-09-15",
+  "page_id": 256,
+  "status": "READ_ONLY_STATIC_BLOCKER_AUDIT",
+  "scope": "Only page256 parity analysis. Reference read-only. No WordPress mutation, no shared/global resource mutation.",
+  "wordpress_writes": 0,
+  "opera_new_tabs": 0,
+  "tool_state": {
+    "WPVibe": "disabled in this chat; do not retry",
+    "Opera": "not connected; no reconnect loop",
+    "GitHub": "available"
+  },
+  "stress_owner_boundary": {
+    "current_public_truth": "p1 -> aside/card -> p2",
+    "source_truth": "p1 -> p2 -> article/card",
+    "repo_search_result": "No complete byte-exact saved af260007 owner/widget snapshot exists in the repository. Existing artifacts contain local snippets, public DOM summaries and tag-only microfix plans only.",
+    "safe_offline_fix_available": false,
+    "allowed_future_microfix": "aside -> article tag-only role fix after fresh exact live content/search, but this does not close physical DOM order parity",
+    "hard_blocker": "Physical p2/card ordering requires a fresh live owner boundary plus a supported atomic owner/node move or a single exact owner replacement derived from that fresh read. Never reconstruct from old evidence."
+  },
+  "expectations_owner_boundary": {
+    "source_truth": "two article owners: left white comparison article containing h2 + 3 positive + 2 negative items; right sage article containing h3 + body + arrow link",
+    "target_truth": "same semantic copy distributed across separated sibling/wrapper nodes with zero article owners",
+    "repo_search_result": "No complete byte-exact saved af260013 owner/widget snapshot exists that can safely drive a one-shot regrouping edit.",
+    "safe_offline_fix_available": false,
+    "hard_blocker": "Fresh live owner boundaries are mandatory. Old visual expectations v002 and old multi-step regrouping directions must not be deployed."
+  },
+  "FAQ_runtime": {
+    "source_contract": "build/bio-faq-source-interaction-contract-20260914-v001.json",
+    "source": {
+      "control": "real button .faq__trigger with aria-expanded + aria-controls",
+      "navigation": "ArrowRight/Down next; ArrowLeft/Up previous; Home first; End last; Enter/Space native activation",
+      "state": "button aria-expanded and item .is-open",
+      "motion": "280ms grid-row panel transition plus 220ms opacity"
+    },
+    "target": "native details/summary disclosureTriangle; working semantics preserved but role/runtime is not source-exact",
+    "project_precedent_finding": "Existing page-guarded semantic helpers use Code Snippets/wp_footer. Their effect is page-local, but their physical owner is a global plugin resource.",
+    "scope_conclusion": "Current page256-only work package does not authorize a new/update global Code Snippets runtime merely because it is is_page(256)-guarded.",
+    "safe_offline_fix_available": false,
+    "hard_blocker": "Exact FAQ runtime requires either an approved physically page-local runtime owner or an explicitly broadened runtime/plugin scope, followed by click/keyboard/motion QA. CSS skinning alone cannot close this blocker."
+  },
+  "review_runtime": {
+    "source_contract": "build/bio-review-source-interaction-contract-20260914-v001.json",
+    "source": "Native-like three-tab system; tab click/Enter/Space and arrow/home/end select and focus panel; previous/next also select and explicitly focus new panel; no autoplay.",
+    "target_general_atomic_precedent": "reports/home/reviews-atomic-v001-target.json proves af-project 0.2.0 already closes click + Arrow/Up/Down/Home/End activation/focus behavior for Atomic Tabs on desktop/mobile/editor.",
+    "ID35_public_runtime_evidence": "reports/subpages/bio-id35-public-runtime-audit-20260914-v001.json proves live ID35 creates previous/next step buttons, calls tab.click(), but does not explicitly focus the newly active panel.",
+    "ID35_repo_drift": "build/bio-semantic-runtime-v001.php is an older mirror and does not contain the current generated step-control code. Repository search for af-reviews-dots returned no newer complete mirror. Therefore never overwrite/reconstruct live ID35 from the stale repo file.",
+    "live_QA_reconciliation": "reports/subpages/bio-semantic-runtime-live-qa-20260914-v009.json confirms review button names and current closed naming semantics but does not prove source-exact panel focus after step navigation.",
+    "remaining_focus_blocker": "Only the source-equivalent previous/next -> newly active panel focus behavior is unclosed at runtime; general Atomic Tabs keyboard behavior is already project-proven and must not be replaced.",
+    "safe_offline_fix_available": false,
+    "scope_conclusion": "Do not modify global ID35 under page256-only physical-resource scope. Future fix must start from a fresh live ID35 readback or a proven page-local owner."
+  },
+  "review_content_and_AX": {
+    "source_contract": "build/bio-reviews-source-contract-20260914-v001.json",
+    "preserve": [
+      "Atomic native tabs",
+      "three exact review tab names",
+      "review media/alt text",
+      "previous/next controls",
+      "ID35 naming and hidden-dot semantics"
+    ],
+    "open": [
+      "Panasonic three-point list/listItem semantics",
+      "decorative ordinal AX zero-staticText parity",
+      "third author role line visible copy",
+      "previous/next panel focus",
+      "page256 media container aspect/object-fit confirmation"
+    ],
+    "Panasonic_candidate": "bio-review-points-semantics-v001 remains diagnostic-first; aria-owns must not be applied without active-panel AX readback proving no duplication/reordering.",
+    "ordinal_candidate": "bio-review-ordinal-source-v001.css remains isolated and requires fresh AX readback immediately after deployment."
+  },
+  "runtime_precedent_scope_finding": {
+    "files_checked": [
+      "build/bio-semantic-runtime-v001.php",
+      "build/oldtrees-semantic-runtime-v003.php",
+      "build/hedge-semantic-runtime-v003.php"
+    ],
+    "common_pattern": "Code Snippets/wp_footer with is_page(page_id) guard",
+    "conclusion": "Page-local effect is not the same as page-local physical ownership. Under the current user restriction, these are precedents for behavior design only, not permission to mutate a global plugin resource."
+  },
+  "offline_conclusion": "The remaining hard exactness blockers cannot be safely solved by reconstructing Elementor owners or inventing a new runtime from repository summaries. Fresh live owner/runtime reads and controlled browser QA are mandatory.",
+  "next_remote_gate": [
+    "Wait for normal STATE scope handoff from page264 to page256.",
+    "Verify +5 WPVibe identity/site/quota and D11 reserve.",
+    "Fresh page256 Elementor + live ID35 readbacks; fresh reads outrank stale mirrors.",
+    "Run page-local style carrier probe before any page-local CSS payload.",
+    "Treat stress/expectations physical rearrangement and FAQ/review runtime as blocker-gated, not speculative work."
+  ],
+  "pixel_pass": false
+}
