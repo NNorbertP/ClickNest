@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "package": "oldtrees-interaction-acceptance-20260915-v002",
   "date": "2026-09-15",
   "page_id": 264,
@@ -27,7 +27,8 @@
       "prefers-reduced-motion change calls start(), whose first action stops the current timer and then conditionally restarts.",
       "Broken slides are removed and remaining dot data-go values are reindexed."
     ],
-    "important_compound_state_caveat": "Hover and focus pause are not represented by independent state flags. Because mouseleave and focusout each call start() unconditionally, autoplay may restart while the other pause condition still remains true. This is not declared a parity defect until synchronized source behavior is observed; it is now an explicit live acceptance edge case.",
+    "important_compound_state_caveat": "Hover and focus pause are not represented by independent state flags. Because mouseleave and focusout each call start() unconditionally, autoplay may restart while the other pause condition still remains true. This is not declared a parity defect until synchronized source behavior is observed; it is an explicit live acceptance edge case.",
+    "historical_carousel_role_caveat": "oldtrees-runtime-live-qa-v002 sampled source current slide role=group at 2/6 and target role=listItem at 1/6. Later direct v005 proof closed control-name parity but did not re-measure synchronized slide roles. The old unsynchronized role snapshot is therefore neither PASS nor write authority.",
     "faq_note": "The common source-interactions-v001.js does not own FAQ disclosure behavior. FAQ must therefore be tested against the current rendered/native/addon disclosure owner before any runtime change is considered."
   },
   "preconditions": [
@@ -64,6 +65,13 @@
   },
   "nordmann_carousel": {
     "selector": ".carousel.js-carousel",
+    "synchronized_static_ax_gate": [
+      "Before timing tests, use the source and target first-dot control to put both carousels on slide 1/6, then pause motion by hover/focus or reduced-motion without changing content.",
+      "Capture the carousel root/current-slide/noncurrent-slide accessibility roles and names in that same synchronized state.",
+      "Require source/target current slide role semantics to match after synchronization; compare aria-hidden/current exposure for all noncurrent slides.",
+      "Enumerate the six visible/accessible slide captions and image alt texts in DOM order where obtainable; compare order rather than whichever slide happened to be current before synchronization.",
+      "If source remains role=group and target role=listItem in a truly synchronized state, classify a semantic delta and identify the exact current DOM/runtime owner before any change. Do not infer a fix from the historical unsynchronized snapshot."
+    ],
     "normal_motion_tests": [
       "At stable t0 with no hover/focus, after >4.1s exactly one forward autoplay advance; another >4.1s gives exactly one more.",
       "ArrowRight exactly one forward; ArrowLeft exactly one backward.",
@@ -83,7 +91,7 @@
       "Manual ArrowLeft/ArrowRight and pointer controls remain functional under reduced motion.",
       "Live media-query toggle, if supported, re-evaluates autoplay without duplicate timers."
     ],
-    "failure_policy": "Inspect current deployed runtime owner and initialization marker before changing JavaScript. Missing action tooling is not an implementation failure."
+    "failure_policy": "Inspect current deployed runtime owner and initialization marker before changing JavaScript or slide semantics. Missing action tooling is not an implementation failure."
   },
   "faq_disclosures": {
     "section_owner": "af2a0050",
@@ -105,7 +113,7 @@
     "No form submission, upload, SMTP or external delivery occurs.",
     "Keep only the active source/target pair; do not leave extra autoplay tabs running."
   ],
-  "pass_definition": "Source and target complete the same observable review, range, carousel and FAQ behavior including compound hover/focus, disclosure and reduced-motion states, without AX/focus or visual regression.",
+  "pass_definition": "Source and target complete the same observable review, range, carousel and FAQ behavior including synchronized carousel AX semantics, compound hover/focus, disclosure and reduced-motion states, without AX/focus or visual regression.",
   "current_execution_status": "PREPARED_NOT_RUN: Opera connector is currently disconnected and WPVibe is disabled; no runtime write is justified.",
   "wordpress_writes": 0,
   "pixel_pass": false
