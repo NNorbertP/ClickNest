@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "package": "oldtrees-visual-coverage-reconciliation-20260915-v002",
+  "date": "2026-09-15",
+  "page_id": 264,
+  "scope": "Current page264 visual coverage after live v006-v010 and v012/runtime continuation. No WordPress write by this report.",
+  "supersedes_for_visual_planning": "reports/subpages/oldtrees-visual-coverage-reconciliation-20260914-v001.json",
+  "current_live_css": {
+    "bytes": 617608,
+    "sha256": "7f19dc5a63e4d03249e27b42b72e08c0e6b7847a9372125a866a9e7bf56a7523",
+    "live_blocks": ["v004","v005","v006","v007","v008","v009","v010","v012"],
+    "prepared_not_live": ["v011"]
+  },
+  "comparison_af2a0045": {
+    "surfaces_icons_markers_heights": "PASS_LIVE preserved from v004/v005.",
+    "equal_columns_wrapping": "PASS_LIVE after v007 fresh postwrite source-target capture.",
+    "responsive": "One column <=900 and reduced card padding <=720 remain in accepted contract.",
+    "status": "NO_CURRENT_REPRODUCED_DEFECT"
+  },
+  "request_form": {
+    "center_heading_clock_joined_panel": "PASS_LIVE preserved.",
+    "contact_geometry": "No current reproduced defect.",
+    "contact_foreground": "PASS_LIVE after v006 fresh postwrite source-target capture.",
+    "inner_fields": "No synchronized measured defect; source field contract exists only as a diagnostic gate, so no speculative field CSS is justified.",
+    "status": "NO_CURRENT_REPRODUCED_VISUAL_DEFECT; formal multi-view capture still open"
+  },
+  "hero": {
+    "historical_defect": "Fresh same-browser evidence reproduced target copy starting materially lower than source.",
+    "proven_cascade_causes": [
+      "shared v015 height:566px and 40/40 vertical padding / align-content:center",
+      "artificial 840px extras width",
+      "later shared fixed body/copy typography controls that differed from source"
+    ],
+    "v008": "LIVE page264 root geometry correction; fresh browser evidence materially improved top/eyebrow alignment and fact wrapping.",
+    "v009": "LIVE page264 source typography/flow controls; fresh browser evidence restored source-like lead wrapping and materially closer copy.",
+    "v011": "PREPARED_GATED_NOT_LIVE exact source 1.12fr/0.88fr direct-child grid + 7/6 art mapping.",
+    "status": "PARTIALLY_VERIFIED_IMPROVED; final source-target screenshot/transition geometry and 1024 proof required before v011 deploy/no-deploy decision"
+  },
+  "floating_dock": {
+    "root_cause": "Active ID7 emits real .dock.af-source-dock at z-index 900. Old v017 page-wide body::after fallback creates a blank white pill at z-index 9990 and covers the real dock.",
+    "v010": "LIVE page264-only body::after suppression under the exact same min-width:760px scope as the fallback; global ID7 untouched.",
+    "responsive_static_check": "Fallback itself exists only @media(min-width:760px). v010 also begins at min-width:760px, so there is no uncovered 701-759px regression window. Real .dock has its own max-width:700 responsive rule.",
+    "ax": "Source and target expose Gyors kapcsolatfelvétel with phone, email and request actions; D09 route mapping preserved.",
+    "status": "CASCADE_AND_RESPONSIVE_SCOPE_PROVEN; screenshot visual postcheck still HOLD because Opera screenshot disconnects"
+  },
+  "problem_grid": {
+    "contract": "4 columns desktop -> 2 <=960 -> 1 <=760; 16px gap, 48px top margin, 16px chip padding, 24px radius, 22px icon.",
+    "status": "STATIC/LIVE_CONTRACT_PRESENT; no current reproduced defect; formal screenshots only"
+  },
+  "remaining_sections": {
+    "reviews": "No current visual defect. Review pointer behavior was a runtime delta and is closed by v012 without changing visual styling.",
+    "six_steps": "No reproduced visual defect; formal capture only.",
+    "credibility": "No reproduced visual defect; formal capture only.",
+    "stories": "No reproduced styling defect; synchronized AX/runtime semantics advanced separately.",
+    "similar_plant_cta": "No reproduced visual defect; formal capture only.",
+    "support_gain": "No reproduced visual defect; formal capture only.",
+    "three_steps": "No reproduced visual defect; formal capture only.",
+    "faq": "No reproduced visual defect; content/initial behavior contract reconciled.",
+    "request_form": "No current reproduced broad visual defect after v006; formal viewport captures remain."
+  },
+  "formal_visual_blockers": {
+    "screenshot_channel": "Opera screenshot repeatedly disconnects while AX reads can work; screenshot retries stopped for this session.",
+    "local_browser": "Unavailable because project DNS does not resolve in container and Playwright is absent.",
+    "required_views": ["1920x1080","1440x1000","1024x900","768x1024","390x844","360x800"],
+    "required_outputs": ["source capture","target capture","overlay/diff","key geometry measurements"],
+    "pixel_pass": false
+  },
+  "write_policy": [
+    "Do not reopen v006/v007 or earlier PASS items.",
+    "Do not deploy v011 without stable immediate screenshot verification and fresh live preflight.",
+    "Do not change inner form fields or other formally uncaptured sections without a fresh reproduced defect.",
+    "Do not modify global dock/runtime owners from page264 scope."
+  ],
+  "wordpress_writes": 0,
+  "status": "CURRENT_VISUAL_COVERAGE_RECONCILED_NO_NEW_WRITE_JUSTIFIED_WITHOUT_SCREENSHOT_GATE"
+}
